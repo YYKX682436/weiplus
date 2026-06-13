@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:label="微+"
+        android:icon="@mipmap/ic_launcher">
+
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposedminversion" android:value="101" />
+        <meta-data android:name="xposeddescription" android:value="微+ - 微信增强模块" />
+        <meta-data android:name="xposedscope" android:resource="@array/xposed_scope" />
+
+        <activity
+            android:name="com.muchen.weiplus.ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WeiPlus.Overlay"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
