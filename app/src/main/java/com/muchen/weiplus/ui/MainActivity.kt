@@ -6,8 +6,11 @@ import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.Gravity
+import android.view.MotionEvent
 import android.view.View
+import android.view.ViewConfiguration
 import android.view.ViewGroup
+import android.view.animation.DecelerateInterpolator
 import android.widget.*
 
 class MainActivity : Activity() {
@@ -20,6 +23,12 @@ class MainActivity : Activity() {
     private var cleaner = false
 
     private lateinit var prefs: android.content.SharedPreferences
+
+    // 下拉关闭手势
+    private var dragStartY = 0f
+    private var panelStartTY = 0f
+    private var isDragging = false
+    private val touchSlop by lazy { ViewConfiguration.get(this).scaledTouchSlop }
 
     companion object {
         const val PREF_NAME = "weiplus_prefs"
@@ -44,10 +53,6 @@ class MainActivity : Activity() {
         window?.apply {
             setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
             decorView.setBackgroundColor(Color.TRANSPARENT)
-            val glassBg = GradientDrawable()
-            glassBg.cornerRadius = 0f
-            glassBg.setColor(Color.argb(0x66, 0xF2, 0xF2, 0xF8))
-            decorView.background = glassBg
             decorView.setOnClickListener { v -> if (v == decorView) finish() }
         }
         setContentView(buildUI())
@@ -83,15 +88,16 @@ class MainActivity : Activity() {
         panel.orientation = LinearLayout.VERTICAL
         panel.setPadding(0, 0, 0, dip(36))
 
-        // 真透明磨砂玻璃面板：低不透明度，微信内容透出
+        // iOS 26 液态玻璃面板 —— 极低不透明度 + 微妙的顶部渐变高光
         val bg = GradientDrawable()
         bg.cornerRadii = floatArrayOf(dpf(20), dpf(20), dpf(20), dpf(20), 0f, 0f, 0f, 0f)
-        bg.setColor(Color.argb(0x88, 0xF2, 0xF3, 0xF7))
+        bg.setColor(Color.argb(0x55, 0xF8, 0xF8, 0xFF))
         panel.background = bg
-        panel.elevation = dpf(6)
+        panel.elevation = dpf(8)
 
+        // 拖拽把手
         val handle = View(this)
-        handle.setBackgroundColor(Color.argb(0x30, 0x00, 0x00, 0x00))
+        handle.setBackgroundColor(Color.argb(0x40, 0x00, 0x00, 0x00))
         val hl = LinearLayout.LayoutParams(dip(36), dip(4))
         hl.gravity = Gravity.CENTER_HORIZONTAL
         hl.topMargin = dip(10); hl.bottomMargin = dip(10)
@@ -101,6 +107,7 @@ class MainActivity : Activity() {
         panel.addView(space(8))
 
         val scroll = ScrollView(this)
+        scroll.isNestedScrollingEnabled = true
         val content = LinearLayout(this)
         content.orientation = LinearLayout.VERTICAL
         content.setPadding(0, 0, 0, dip(8))
@@ -125,6 +132,76 @@ class MainActivity : Activity() {
 
         scroll.addView(content)
         panel.addView(scroll, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f))
+
+        // === 下拉关闭手势 ===
+        panel.setOnTouchListener { v, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    dragStartY = event.rawY
+                    panelStartTY = v.translationY
+                    isDragging = false
+                    false // 不消费，让孩子先处理
+                }
+                MotionEvent.ACTION_MOVE -> {
+                    val dy = event.rawY - dragStartY
+                    if (!isDragging && dy > touchSlop) {
+                        isDragging = true
+                    }
+                    if (isDragging) {
+                        // 只响应下拉（正方向）
+                        val targetTY = (panelStartTY + dy).coerceAtLeast(0f)
+                        v.translationY = targetTY
+                        // 下拉越多越透明
+                        val progress = (targetTY / (v.height * 0.6f)).coerceIn(0f, 1f)
+                        v.alpha = 1f - progress * 0.5f
+                        true
+                    } else {
+                        false
+                    }
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    if (isDragging) {
+                        isDragging = false
+                        val totalDy = v.translationY - panelStartTY
+                        val threshold = v.height * 0.22f
+                        if (v.translationY > threshold) {
+                            // 滑出屏幕 → 关闭
+                            v.animate()
+                                .translationY(v.height.toFloat())
+                                .alpha(0f)
+                                .setDuration(220)
+                                .setInterpolator(DecelerateInterpolator())
+                                .withEndAction { finish() }
+                                .start()
+                        } else {
+                            // 弹回原位
+                            v.animate()
+                                .translationY(0f)
+                                .alpha(1f)
+                                .setDuration(200)
+                                .setInterpolator(DecelerateInterpolator())
+                                .start()
+                        }
+                        true
+                    } else {
+                        false
+                    }
+                }
+                else -> false
+            }
+        }
+
+        // 入场动画：从底部滑入
+        panel.translationY = 200f
+        panel.alpha = 0f
+        panel.post {
+            panel.animate()
+                .translationY(0f)
+                .alpha(1f)
+                .setDuration(280)
+                .setInterpolator(DecelerateInterpolator())
+                .start()
+        }
 
         val lp = FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         lp.gravity = Gravity.BOTTOM
@@ -159,14 +236,14 @@ class MainActivity : Activity() {
         val lp = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         lp.setMargins(m, dip(6), m, dip(6))
         card.layoutParams = lp
+        // iOS 26 玻璃卡片：高透明度
         val cardBg = GradientDrawable()
         cardBg.cornerRadius = dpf(14)
-        cardBg.setColor(Color.argb(0xCC, 0xFF, 0xFF, 0xFF))
-        cardBg.setStroke(dip(1), Color.argb(0x18, 0x00, 0x00, 0x00))
+        cardBg.setColor(Color.argb(0x88, 0xFF, 0xFF, 0xFF))
+        cardBg.setStroke(dip(1), Color.argb(0x10, 0xFF, 0xFF, 0xFF))
         card.background = cardBg
         card.elevation = dpf(1)
 
-        // === 标题行（手风琴折叠触发区）===
         val header = LinearLayout(this)
         header.orientation = LinearLayout.HORIZONTAL
         header.setPadding(dip(16), dip(12), dip(16), dip(12))
@@ -187,9 +264,8 @@ class MainActivity : Activity() {
         ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x99, 0x99, 0xA0)); ts.textSize = 11f
         col.addView(ts)
 
-        // chevron 指示器
         val chevron = TextView(this)
-        chevron.text = "\u25B8" // ▸ 右箭头 = 收起
+        chevron.text = "\u25B8"
         chevron.textSize = 16f
         chevron.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))
         chevron.setPadding(dip(4), 0, 0, 0)
@@ -197,24 +273,22 @@ class MainActivity : Activity() {
 
         card.addView(header)
 
-        // === 可折叠内容区 ===
         val expandable = LinearLayout(this)
         expandable.orientation = LinearLayout.VERTICAL
-        expandable.visibility = View.GONE // 默认收起
+        expandable.visibility = View.GONE
         expandable.addView(cardDivider())
         expandable.content()
 
         card.addView(expandable)
 
-        // 点击标题行 → 折叠/展开
         header.setOnClickListener {
             val isExpanded = expandable.visibility == View.VISIBLE
             if (isExpanded) {
                 expandable.visibility = View.GONE
-                chevron.text = "\u25B8" // ▸
+                chevron.text = "\u25B8"
             } else {
                 expandable.visibility = View.VISIBLE
-                chevron.text = "\u25BE" // ▾
+                chevron.text = "\u25BE"
             }
         }
 
