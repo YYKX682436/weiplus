@@ -43,11 +43,10 @@ class MainActivity : Activity() {
 
         window?.apply {
             setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
-            // 毛玻璃半透明：底层能看到微信，覆盖一层半透明白色磨砂
             decorView.setBackgroundColor(Color.TRANSPARENT)
             val glassBg = GradientDrawable()
             glassBg.cornerRadius = 0f
-            glassBg.setColor(Color.argb(0x80, 0xF2, 0xF2, 0xF8))
+            glassBg.setColor(Color.argb(0x66, 0xF2, 0xF2, 0xF8))
             decorView.background = glassBg
             decorView.setOnClickListener { v -> if (v == decorView) finish() }
         }
@@ -84,10 +83,10 @@ class MainActivity : Activity() {
         panel.orientation = LinearLayout.VERTICAL
         panel.setPadding(0, 0, 0, dip(36))
 
-        // 毛玻璃面板：半透明白色，模拟磨砂玻璃
+        // 真透明磨砂玻璃面板：低不透明度，微信内容透出
         val bg = GradientDrawable()
         bg.cornerRadii = floatArrayOf(dpf(20), dpf(20), dpf(20), dpf(20), 0f, 0f, 0f, 0f)
-        bg.setColor(Color.argb(0xE6, 0xF8, 0xF8, 0xFC))
+        bg.setColor(Color.argb(0x88, 0xF2, 0xF3, 0xF7))
         panel.background = bg
         panel.elevation = dpf(6)
 
@@ -152,6 +151,7 @@ class MainActivity : Activity() {
         return row
     }
 
+    // === 手风琴折叠卡片 ===
     private fun featureCard(emoji: String, title: String, subtitle: String, content: LinearLayout.() -> Unit): LinearLayout {
         val card = LinearLayout(this)
         card.orientation = LinearLayout.VERTICAL
@@ -161,18 +161,23 @@ class MainActivity : Activity() {
         card.layoutParams = lp
         val cardBg = GradientDrawable()
         cardBg.cornerRadius = dpf(14)
-        cardBg.setColor(Color.argb(0xEE, 0xFF, 0xFF, 0xFF))
-        cardBg.setStroke(dip(1), Color.argb(0x12, 0x00, 0x00, 0x00))
+        cardBg.setColor(Color.argb(0xCC, 0xFF, 0xFF, 0xFF))
+        cardBg.setStroke(dip(1), Color.argb(0x18, 0x00, 0x00, 0x00))
         card.background = cardBg
         card.elevation = dpf(1)
 
+        // === 标题行（手风琴折叠触发区）===
         val header = LinearLayout(this)
         header.orientation = LinearLayout.HORIZONTAL
-        header.setPadding(dip(16), dip(12), dip(16), dip(8))
+        header.setPadding(dip(16), dip(12), dip(16), dip(12))
         header.gravity = Gravity.CENTER_VERTICAL
+        header.isClickable = true
+        header.isFocusable = true
+
         val icon = TextView(this)
         icon.text = emoji; icon.textSize = 20f; icon.setPadding(0, 0, dip(10), 0)
         header.addView(icon)
+
         val col = LinearLayout(this); col.orientation = LinearLayout.VERTICAL
         header.addView(col, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
         val tv = TextView(this)
@@ -182,9 +187,37 @@ class MainActivity : Activity() {
         ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x99, 0x99, 0xA0)); ts.textSize = 11f
         col.addView(ts)
 
+        // chevron 指示器
+        val chevron = TextView(this)
+        chevron.text = "\u25B8" // ▸ 右箭头 = 收起
+        chevron.textSize = 16f
+        chevron.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))
+        chevron.setPadding(dip(4), 0, 0, 0)
+        header.addView(chevron)
+
         card.addView(header)
-        card.addView(cardDivider())
-        card.content()
+
+        // === 可折叠内容区 ===
+        val expandable = LinearLayout(this)
+        expandable.orientation = LinearLayout.VERTICAL
+        expandable.visibility = View.GONE // 默认收起
+        expandable.addView(cardDivider())
+        expandable.content()
+
+        card.addView(expandable)
+
+        // 点击标题行 → 折叠/展开
+        header.setOnClickListener {
+            val isExpanded = expandable.visibility == View.VISIBLE
+            if (isExpanded) {
+                expandable.visibility = View.GONE
+                chevron.text = "\u25B8" // ▸
+            } else {
+                expandable.visibility = View.VISIBLE
+                chevron.text = "\u25BE" // ▾
+            }
+        }
+
         return card
     }
 
@@ -194,7 +227,6 @@ class MainActivity : Activity() {
         row.setPadding(dip(16), dip(12), dip(16), dip(12))
         row.gravity = Gravity.CENTER_VERTICAL
 
-        // 文字列：占满剩余空间，开关永远不被挤压
         val col = LinearLayout(this)
         col.orientation = LinearLayout.VERTICAL
         col.setPadding(0, 0, dip(8), 0)
@@ -207,7 +239,6 @@ class MainActivity : Activity() {
         ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93)); ts.textSize = 13f
         col.addView(ts)
 
-        // 开关：显式 WRAP_CONTENT，右对齐，垂直居中，不被裁切
         val sw = IosSwitch(this, 1.3f)
         sw.setChecked(getter(), false)
         val swLp = LinearLayout.LayoutParams(
