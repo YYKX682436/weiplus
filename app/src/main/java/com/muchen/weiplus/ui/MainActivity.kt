@@ -43,7 +43,12 @@ class MainActivity : Activity() {
 
         window?.apply {
             setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
-            decorView.setBackgroundColor(Color.argb(0x55, 0x00, 0x00, 0x00))
+            // 毛玻璃半透明：底层能看到微信，覆盖一层半透明白色磨砂
+            decorView.setBackgroundColor(Color.TRANSPARENT)
+            val glassBg = GradientDrawable()
+            glassBg.cornerRadius = 0f
+            glassBg.setColor(Color.argb(0x80, 0xF2, 0xF2, 0xF8))
+            decorView.background = glassBg
             decorView.setOnClickListener { v -> if (v == decorView) finish() }
         }
         setContentView(buildUI())
@@ -79,9 +84,10 @@ class MainActivity : Activity() {
         panel.orientation = LinearLayout.VERTICAL
         panel.setPadding(0, 0, 0, dip(36))
 
+        // 毛玻璃面板：半透明白色，模拟磨砂玻璃
         val bg = GradientDrawable()
         bg.cornerRadii = floatArrayOf(dpf(20), dpf(20), dpf(20), dpf(20), 0f, 0f, 0f, 0f)
-        bg.setColor(Color.argb(0xF2, 0xF2, 0xF2, 0xF7))
+        bg.setColor(Color.argb(0xE6, 0xF8, 0xF8, 0xFC))
         panel.background = bg
         panel.elevation = dpf(6)
 
@@ -112,21 +118,11 @@ class MainActivity : Activity() {
             addView(bigToggle("定时任务", "定时发送消息、朋友圈", { timedTask }, { timedTask = it }))
         })
 
-        content.addView(featureCard("\uD83C\uDF1F", "朋友圈", "无水印保存 · 强制显示") {
-            addView(bigToggle("朋友圈增强", "无水印保存、强制显示", { momentEnhance }, { momentEnhance = it }))
+        content.addView(featureCard("\uD83D\uDC63", "朋友圈", "去广告 · 强制深色 · 长按保存") {
+            addView(bigToggle("朋友圈增强", "去广告、强制深色模式", { momentEnhance }, { momentEnhance = it }))
+            addView(thinDivider())
+            addView(bigToggle("清理工具", "缓存清理、文件管理", { cleaner }, { cleaner = it }))
         })
-
-        content.addView(featureCard("\uD83D\uDD27", "工具", "深度清理 · 空间释放") {
-            addView(bigToggle("清理工具", "深度清理缓存和文件", { cleaner }, { cleaner = it }))
-        })
-
-        val ver = TextView(this)
-        ver.text = "微+ v1.0.0"
-        ver.setTextColor(Color.argb(0xFF, 0xA0, 0xA0, 0xB0))
-        ver.textSize = 12f
-        ver.gravity = Gravity.CENTER
-        ver.setPadding(0, dip(24), 0, dip(12))
-        content.addView(ver)
 
         scroll.addView(content)
         panel.addView(scroll, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f))
@@ -146,16 +142,12 @@ class MainActivity : Activity() {
         row.setPadding(dip(20), dip(8), dip(20), dip(2))
         row.gravity = Gravity.CENTER_VERTICAL
         val tv = TextView(this)
-        tv.text = "微+"; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E))
-        tv.textSize = 26f
+        tv.text = "微+"; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 26f
         row.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
         val badge = TextView(this)
         badge.text = "微信增强"; badge.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))
-        badge.textSize = 12f
-        badge.setPadding(dip(10), dip(3), dip(10), dip(4))
-        badge.background = GradientDrawable().apply {
-            cornerRadius = dpf(10); setColor(Color.argb(0x20, 0x00, 0x00, 0x00))
-        }
+        badge.textSize = 12f; badge.setPadding(dip(10), dip(3), dip(10), dip(4))
+        badge.background = GradientDrawable().apply { cornerRadius = dpf(10); setColor(Color.argb(0x20, 0x00, 0x00, 0x00)) }
         row.addView(badge)
         return row
     }
@@ -178,24 +170,16 @@ class MainActivity : Activity() {
         header.orientation = LinearLayout.HORIZONTAL
         header.setPadding(dip(16), dip(12), dip(16), dip(8))
         header.gravity = Gravity.CENTER_VERTICAL
-
         val icon = TextView(this)
-        icon.text = emoji; icon.textSize = 20f
-        icon.setPadding(0, 0, dip(10), 0)
+        icon.text = emoji; icon.textSize = 20f; icon.setPadding(0, 0, dip(10), 0)
         header.addView(icon)
-
-        val col = LinearLayout(this)
-        col.orientation = LinearLayout.VERTICAL
+        val col = LinearLayout(this); col.orientation = LinearLayout.VERTICAL
         header.addView(col, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
-
         val tv = TextView(this)
-        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E))
-        tv.textSize = 15f
+        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 15f
         col.addView(tv)
-
         val ts = TextView(this)
-        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x99, 0x99, 0xA0))
-        ts.textSize = 11f
+        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x99, 0x99, 0xA0)); ts.textSize = 11f
         col.addView(ts)
 
         card.addView(header)
@@ -207,33 +191,31 @@ class MainActivity : Activity() {
     private fun bigToggle(title: String, subtitle: String, getter: () -> Boolean, setter: (Boolean) -> Unit): LinearLayout {
         val row = LinearLayout(this)
         row.orientation = LinearLayout.HORIZONTAL
-        // 减小右侧 padding，给放大开关留空间
-        row.setPadding(dip(16), dip(14), dip(8), dip(14))
+        row.setPadding(dip(16), dip(12), dip(16), dip(12))
         row.gravity = Gravity.CENTER_VERTICAL
 
+        // 文字列：占满剩余空间，开关永远不被挤压
         val col = LinearLayout(this)
         col.orientation = LinearLayout.VERTICAL
         col.setPadding(0, 0, dip(8), 0)
         row.addView(col, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
 
         val tv = TextView(this)
-        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E))
-        tv.textSize = 17f
+        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 17f
         col.addView(tv)
-
         val ts = TextView(this)
-        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))
-        ts.textSize = 13f
+        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93)); ts.textSize = 13f
         col.addView(ts)
 
-        val sw = IosSwitch(this)
+        // 开关：显式 WRAP_CONTENT，右对齐，垂直居中，不被裁切
+        val sw = IosSwitch(this, 1.3f)
         sw.setChecked(getter(), false)
-        sw.setScaleX(1.3f)
-        sw.setScaleY(1.3f)
-        // 用 WRAP_CONTENT 让开关自适应，不会被裁切
-        row.addView(sw, LinearLayout.LayoutParams(
-            ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT
-        ))
+        val swLp = LinearLayout.LayoutParams(
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        )
+        swLp.gravity = Gravity.CENTER_VERTICAL or Gravity.END
+        row.addView(sw, swLp)
 
         row.setOnClickListener {
             val nv = !sw.isChecked
