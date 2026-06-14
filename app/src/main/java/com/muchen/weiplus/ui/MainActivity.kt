@@ -1,5 +1,7 @@
 ﻿package com.muchen.weiplus.ui
 
+import android.app.Activity
+import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
@@ -8,9 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 
+/**
+ * 微+ 全屏液态玻璃覆盖层
+ * 半透明背景 + 白色毛玻璃面板 + iOS开关
+ * 开关状态持久化到 SharedPreferences
+ */
+class MainActivity : Activity() {
 
-class MainActivity : android.app.Activity() {
-
+    // 功能开关（会持久化）
     private var antiRecall = false
     private var chatEnhance = false
     private var automation = false
@@ -18,34 +25,73 @@ class MainActivity : android.app.Activity() {
     private var momentEnhance = false
     private var cleaner = false
 
+    private lateinit var prefs: android.content.SharedPreferences
+
+    companion object {
+        const val PREF_NAME = "weiplus_prefs"
+        const val KEY_ANTI_RECALL = "anti_recall"
+        const val KEY_CHAT_ENHANCE = "chat_enhance"
+        const val KEY_AUTOMATION = "automation"
+        const val KEY_TIMED_TASK = "timed_task"
+        const val KEY_MOMENT_ENHANCE = "moment_enhance"
+        const val KEY_CLEANER = "cleaner"
+
+        /** 从 SharedPreferences 读取开关状态（供 ModuleEntry 使用） */
+        fun isFeatureEnabled(ctx: Context, key: String): Boolean {
+            return ctx.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+                .getBoolean(key, false)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 全屏 + 点击外部关闭
+        prefs = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+        loadPrefs()
+
         window?.apply {
             setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
             decorView.setBackgroundColor(Color.argb(0x66, 0x00, 0x00, 0x00))
-            decorView.setOnClickListener {
-                if (it == decorView) finish()
+            decorView.setOnClickListener { v ->
+                if (v == decorView) finish()
             }
         }
 
         setContentView(buildUI())
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        finish()
+    override fun onPause() {
+        super.onPause()
+        savePrefs()
+    }
+
+    private fun loadPrefs() {
+        antiRecall = prefs.getBoolean(KEY_ANTI_RECALL, false)
+        chatEnhance = prefs.getBoolean(KEY_CHAT_ENHANCE, false)
+        automation = prefs.getBoolean(KEY_AUTOMATION, false)
+        timedTask = prefs.getBoolean(KEY_TIMED_TASK, false)
+        momentEnhance = prefs.getBoolean(KEY_MOMENT_ENHANCE, false)
+        cleaner = prefs.getBoolean(KEY_CLEANER, false)
+    }
+
+    private fun savePrefs() {
+        prefs.edit()
+            .putBoolean(KEY_ANTI_RECALL, antiRecall)
+            .putBoolean(KEY_CHAT_ENHANCE, chatEnhance)
+            .putBoolean(KEY_AUTOMATION, automation)
+            .putBoolean(KEY_TIMED_TASK, timedTask)
+            .putBoolean(KEY_MOMENT_ENHANCE, momentEnhance)
+            .putBoolean(KEY_CLEANER, cleaner)
+            .apply()
     }
 
     private fun buildUI(): FrameLayout {
         val root = FrameLayout(this)
         root.layoutParams = ViewGroup.LayoutParams(
-            ViewGroup.LayoutParams.MATCH_PARENT,
-            ViewGroup.LayoutParams.MATCH_PARENT
+            ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT
         )
 
-        // 主面板 (白色液态玻璃, 从底部弹出)
+        // 白色液态玻璃面板
         val panel = LinearLayout(this)
         panel.orientation = LinearLayout.VERTICAL
         panel.setPadding(0, 0, 0, dip(40))
@@ -64,11 +110,11 @@ class MainActivity : android.app.Activity() {
         hl.topMargin = dip(12); hl.bottomMargin = dip(8)
         panel.addView(handle, hl)
 
-        // 标题行
+        // 标题
         panel.addView(titleRow("微+", "微信增强"))
         panel.addView(space(14))
 
-        // 滚动内容
+        // 可滚动内容
         val scroll = ScrollView(this)
         val content = LinearLayout(this)
         content.orientation = LinearLayout.VERTICAL
@@ -76,7 +122,7 @@ class MainActivity : android.app.Activity() {
         content.addView(categoryHeader("聊天增强"))
         content.addView(buildCard(
             toggleRow("防撤回", "防止好友撤回消息", { antiRecall }, { antiRecall = it }),
-            toggleRow("聊天增强", "多选转发、长截图", { chatEnhance }, { chatEnhance = it })
+            toggleRow("聊天增强", "多选转发、长截图等", { chatEnhance }, { chatEnhance = it })
         ))
         content.addView(space(14))
 
@@ -108,11 +154,9 @@ class MainActivity : android.app.Activity() {
         content.addView(ver)
 
         scroll.addView(content)
-        panel.addView(scroll, LinearLayout.LayoutParams(
-            ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f
-        ))
+        panel.addView(scroll, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f))
 
-        // 底部关闭按钮
+        // 关闭按钮
         val closeBtn = TextView(this)
         closeBtn.text = "关闭"
         closeBtn.setTextColor(Color.argb(0xFF, 0x00, 0x7A, 0xFF))
@@ -134,7 +178,7 @@ class MainActivity : android.app.Activity() {
         return root
     }
 
-    // === 构建组件 (与WeiPlusPanel相同) ===
+    // === 构建组件 ===
 
     private fun buildCard(vararg rows: View): LinearLayout {
         val card = LinearLayout(this)
@@ -160,8 +204,7 @@ class MainActivity : android.app.Activity() {
         row.orientation = LinearLayout.HORIZONTAL
         row.setPadding(dip(24), dip(10), dip(24), dip(6))
         val tv = TextView(this)
-        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E))
-        tv.textSize = 28f
+        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 28f
         row.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
         val st = TextView(this)
         st.text = subtitle; st.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))
@@ -188,7 +231,10 @@ class MainActivity : android.app.Activity() {
         return v
     }
 
-    private fun toggleRow(title: String, subtitle: String, getter: () -> Boolean, setter: (Boolean) -> Unit): LinearLayout {
+    private fun toggleRow(
+        title: String, subtitle: String,
+        getter: () -> Boolean, setter: (Boolean) -> Unit
+    ): LinearLayout {
         val row = LinearLayout(this)
         row.orientation = LinearLayout.HORIZONTAL
         row.setPadding(dip(16), dip(12), dip(12), dip(12))
@@ -199,8 +245,7 @@ class MainActivity : android.app.Activity() {
         row.addView(textCol, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
 
         val tv = TextView(this)
-        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E))
-        tv.textSize = 16f
+        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 16f
         textCol.addView(tv)
 
         val ts = TextView(this)
@@ -208,11 +253,16 @@ class MainActivity : android.app.Activity() {
         ts.textSize = 12f
         textCol.addView(ts)
 
-        val iosSwitch = IosSwitch(this)
-        iosSwitch.setChecked(getter(), false)
-        row.addView(iosSwitch, LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT))
-        row.setOnClickListener { val nv = !iosSwitch.isChecked; iosSwitch.setChecked(nv, true); setter(nv) }
-        iosSwitch.onToggle = setter
+        val sw = IosSwitch(this)
+        sw.setChecked(getter(), false)
+        row.addView(sw, LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT))
+
+        row.setOnClickListener {
+            val nv = !sw.isChecked
+            sw.setChecked(nv, true)
+            setter(nv)
+        }
+        sw.onToggle = setter
         return row
     }
 
