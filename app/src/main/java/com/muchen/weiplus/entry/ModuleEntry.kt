@@ -8,23 +8,21 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.view.Gravity
+import android.view.Menu
 import android.view.MenuItem
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.muchen.weiplus.features.*
-import de.robv.android.xposed.IXposedHookLoadPackage
-import de.robv.android.xposed.XC_MethodHook
-import de.robv.android.xposed.XposedHelpers
-import de.robv.android.xposed.callbacks.XC_LoadPackage
+import io.github.libxposed.api.XposedModule
+import io.github.libxposed.api.XposedModuleInterface.PackageReadyParam
 
-class ModuleEntry : IXposedHookLoadPackage {
+class ModuleEntry : XposedModule() {
 
     companion object {
         private const val TAG = "WeiPlus"
         private const val MENU_ID = 0x7701
 
-        /** 所有已注册的功能模块 */
         val FEATURES: List<BaseFeature> = listOf(
             AntiRecallFeature(),
             ChatEnhanceFeature(),
@@ -35,27 +33,28 @@ class ModuleEntry : IXposedHookLoadPackage {
         )
     }
 
+    private var fabAdded = false
     private var featuresActivated = false
 
-    override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
-        if (lpparam.packageName != "com.tencent.mm") return
-        if (lpparam.processName != "com.tencent.mm") return
+    override fun onPackageReady(param: PackageReadyParam) {
+        if (param.packageName != "com.tencent.mm") return
+                if (!param.isFirstPackage) return
 
-        Log.i(TAG, "微+ 注入微信主进程...")
+        log(Log.INFO, TAG, "微+ 注入微信主进程... (API $apiVersion)")
 
         Handler(Looper.getMainLooper()).postDelayed({
-            showToast("微+ 已注入 ✨")
+            showToast("微+ 已注入 \u2728")
         }, 2000)
 
-        injectEntry(lpparam.classLoader)
+        injectEntry(param.classLoader)
 
-        // 激活已开启的功能
         Handler(Looper.getMainLooper()).postDelayed({
-            activateFeatures(lpparam.classLoader)
+            activateFeatures(param.classLoader)
         }, 3000)
     }
 
-    /** 根据 SharedPreferences 激活功能 */
+    // === 功能激活 ===
+
     private fun activateFeatures(classLoader: ClassLoader) {
         if (featuresActivated) return
         featuresActivated = true
@@ -66,16 +65,16 @@ class ModuleEntry : IXposedHookLoadPackage {
             if (feature.isEnabled(ctx)) {
                 try {
                     feature.onEnable(classLoader)
-                    Log.i(TAG, "功能已激活: ${feature.name}")
+                    log(Log.INFO, TAG, "功能已激活: ${feature.name}")
                     count++
                 } catch (e: Throwable) {
-                    Log.e(TAG, "激活失败: ${feature.name}", e)
+                    log(Log.ERROR, TAG, "激活失败: ${feature.name}", e)
                 }
             } else {
-                Log.i(TAG, "功能未启用: ${feature.name}")
+                log(Log.INFO, TAG, "功能未启用: ${feature.name}")
             }
         }
-        Log.i(TAG, "共激活 $count 个功能")
+        log(Log.INFO, TAG, "共激活 $count 个功能")
     }
 
     // === 入口 Hook ===
@@ -84,48 +83,45 @@ class ModuleEntry : IXposedHookLoadPackage {
         try {
             val clz = classLoader.loadClass("com.tencent.mm.ui.LauncherUI")
 
-            // 右上角菜单
+            // 右上角菜单 — after hook
             try {
-                XposedHelpers.findAndHookMethod(clz, "onCreateOptionsMenu",
-                    android.view.Menu::class.java,
-                    object : XC_MethodHook() {
-                        override fun afterHookedMethod(param: MethodHookParam) {
-                            val menu = param.args[0] as android.view.Menu
-                            if (menu.findItem(MENU_ID) != null) return
-                            menu.add(0, MENU_ID, 0, "微+")
-                                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
-                        }
-                    })
+                val m = clz.getDeclaredMethod("onCreateOptionsMenu", Menu::class.java)
+                hook(m).intercept { chain ->
+                    chain.proceed()
+                    val menu = chain.args[0] as? Menu ?: return@intercept null
+                    if (menu.findItem(MENU_ID) != null) return@intercept null
+                    menu.add(0, MENU_ID, 0, "微+")
+                        .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
+                    null
+                }
             } catch (_: Throwable) {}
 
-            // 菜单点击 → 打开面板
+            // 菜单点击 → 打开面板 — before hook
             try {
-                XposedHelpers.findAndHookMethod(clz, "onOptionsItemSelected",
-                    MenuItem::class.java,
-                    object : XC_MethodHook() {
-                        override fun beforeHookedMethod(param: MethodHookParam) {
-                            val item = param.args[0] as MenuItem
-                            if (item.itemId == MENU_ID) {
-                                param.result = true
-                                (param.thisObject as? Activity)?.let { openPanel(it) }
-                            }
-                        }
-                    })
+                val m = clz.getDeclaredMethod("onOptionsItemSelected", MenuItem::class.java)
+                hook(m).intercept { chain ->
+                    val item = chain.args[0] as? MenuItem
+                    if (item?.itemId == MENU_ID) {
+                        (chain.thisObject as? Activity)?.let { openPanel(it) }
+                        return@intercept true
+                    }
+                    chain.proceed()
+                }
             } catch (_: Throwable) {}
 
-            // 浮动按钮 → 打开面板
+            // 浮动按钮 — after hook (只加一次)
             try {
-                XposedHelpers.findAndHookMethod(clz, "onResume",
-                    object : XC_MethodHook() {
-                        private var added = false
-                        override fun afterHookedMethod(param: MethodHookParam) {
-                            if (added) return
-                            val a = param.thisObject as Activity
-                            Handler(Looper.getMainLooper()).postDelayed({
-                                try { addFab(a); added = true } catch (_: Throwable) {}
-                            }, 1500)
-                        }
-                    })
+                val m = clz.getDeclaredMethod("onResume")
+                hook(m).intercept { chain ->
+                    chain.proceed()
+                    if (!fabAdded) {
+                        val a = chain.thisObject as? Activity ?: return@intercept null
+                        Handler(Looper.getMainLooper()).postDelayed({
+                            try { addFab(a); fabAdded = true } catch (_: Throwable) {}
+                        }, 1500)
+                    }
+                    null
+                }
             } catch (_: Throwable) {}
 
         } catch (_: Throwable) {}
@@ -135,17 +131,17 @@ class ModuleEntry : IXposedHookLoadPackage {
 
     private fun getAppContext(): Context? {
         return try {
-            XposedHelpers.callStaticMethod(
-                XposedHelpers.findClass("android.app.ActivityThread", null),
-                "currentApplication"
-            ) as? Context
+            val c = Class.forName("android.app.ActivityThread")
+            c.getDeclaredMethod("currentApplication").invoke(null) as? Context
         } catch (_: Throwable) { null }
     }
 
     private fun showToast(msg: String) {
         try {
-            val app = getAppContext() ?: return
-            Toast.makeText(app, msg, Toast.LENGTH_SHORT).show()
+            Handler(Looper.getMainLooper()).post {
+                val app = getAppContext() ?: return@post
+                Toast.makeText(app, msg, Toast.LENGTH_SHORT).show()
+            }
         } catch (_: Throwable) {}
     }
 
@@ -156,7 +152,7 @@ class ModuleEntry : IXposedHookLoadPackage {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             ctx.startActivity(intent)
         } catch (e: Throwable) {
-            Log.e(TAG, "startActivity fail", e)
+            log(Log.ERROR, TAG, "startActivity fail", e)
             Toast.makeText(ctx, "微+ 启动失败", Toast.LENGTH_SHORT).show()
         }
     }

@@ -7,11 +7,6 @@
         android:label="微+"
         android:icon="@mipmap/ic_launcher">
 
-        <meta-data android:name="xposedmodule" android:value="true" />
-        <meta-data android:name="xposedminversion" android:value="101" />
-        <meta-data android:name="xposeddescription" android:value="微+ - 微信增强模块" />
-        <meta-data android:name="xposedscope" android:resource="@array/xposed_scope" />
-
         <activity
             android:name="com.muchen.weiplus.ui.MainActivity"
             android:exported="true"

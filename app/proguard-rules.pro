@@ -1,7 +1,6 @@
-﻿# Xposed module rules
--keep public class * extends de.robv.android.xposed.IXposedHookLoadPackage {
-    public <init>();
-}
--keep public class * extends de.robv.android.xposed.IXposedHookZygoteInit {
+﻿# libxposed API 102
+-dontwarn io.github.libxposed.annotation.**
+-adaptresourcefilecontents META-INF/xposed/java_init.list
+-keep,allowoptimization,allowobfuscation public class * extends io.github.libxposed.api.XposedModule {
     public <init>();
 }
