@@ -83,16 +83,17 @@ class ModuleEntry : XposedModule() {
         try {
             val clz = classLoader.loadClass("com.tencent.mm.ui.LauncherUI")
 
-            // 右上角菜单 — after hook
+            // 右上角菜单 — after hook (onCreateOptionsMenu返回boolean，不能返回null)
             try {
                 val m = clz.getDeclaredMethod("onCreateOptionsMenu", Menu::class.java)
                 hook(m).intercept { chain ->
-                    chain.proceed()
-                    val menu = chain.args[0] as? Menu ?: return@intercept null
-                    if (menu.findItem(MENU_ID) != null) return@intercept null
-                    menu.add(0, MENU_ID, 0, "微+")
-                        .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
-                    null
+                    val result = chain.proceed() ?: false
+                    val menu = chain.args[0] as? Menu
+                    if (menu != null && menu.findItem(MENU_ID) == null) {
+                        menu.add(0, MENU_ID, 0, "微+")
+                            .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
+                    }
+                    result
                 }
             } catch (_: Throwable) {}
 
