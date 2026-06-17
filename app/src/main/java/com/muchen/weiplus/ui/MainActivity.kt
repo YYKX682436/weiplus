@@ -44,8 +44,9 @@ class MainActivity : Activity() {
         const val KEY_DISABLE_HOT_UPDATE = "disable_hot_update"
 
         fun isFeatureEnabled(ctx: Context, key: String): Boolean {
+            val def = key == KEY_DISABLE_HOT_UPDATE
             return ctx.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
-                .getBoolean(key, false)
+                .getBoolean(key, def)
         }
     }
 

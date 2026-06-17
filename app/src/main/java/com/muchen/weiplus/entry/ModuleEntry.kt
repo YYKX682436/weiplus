@@ -8,9 +8,8 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.view.Gravity
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.FrameLayout
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.muchen.weiplus.features.*
@@ -22,8 +21,7 @@ class ModuleEntry : XposedModule() {
 
     companion object {
         private const val TAG = "WeiPlus"
-        private const val MENU_ID = 0x7701
-
+        
         val FEATURES: List<BaseFeature> = listOf(
             DisableHotUpdateFeature(),
             AntiRecallFeature(),
@@ -43,26 +41,21 @@ class ModuleEntry : XposedModule() {
         if (param.packageName != "com.tencent.mm") return
         if (!param.isFirstPackage) return
 
+        // 无条件拦截 Tinker 热更新（最早时机），防止补丁改变类结构
         try {
-            val ctx = getAppContext() ?: return
-            val hotUpdate = DisableHotUpdateFeature()
-            if (hotUpdate.isEnabled(ctx)) {
-                try {
-                    val tinkerLoader = param.defaultClassLoader
-                        .loadClass("com.tencent.tinker.loader.TinkerLoader")
-                    val tryLoadMethod = tinkerLoader.getDeclaredMethod(
-                        "tryLoad",
-                        Class.forName("com.tencent.tinker.loader.app.TinkerApplication")
-                    )
-                    hook(tryLoadMethod).intercept { _ ->
-                        log(Log.INFO, TAG, "Tinker 热更新已拦截 — 补丁不会加载")
-                        false // 阻止加载热更新补丁
-                    }
-                } catch (e: Throwable) {
-                    log(Log.ERROR, TAG, "禁用热更新 Hook 失败", e)
-                }
+            val tinkerLoader = param.defaultClassLoader
+                .loadClass("com.tencent.tinker.loader.TinkerLoader")
+            val tryLoadMethod = tinkerLoader.getDeclaredMethod(
+                "tryLoad",
+                Class.forName("com.tencent.tinker.loader.app.TinkerApplication")
+            )
+            hook(tryLoadMethod).intercept { _ ->
+                log(Log.INFO, TAG, "Tinker 热更新已拦截 — 补丁不会加载")
+                false
             }
-        } catch (_: Throwable) {}
+        } catch (e: Throwable) {
+            log(Log.ERROR, TAG, "Tinker Hook 失败", e)
+        }
     }
 
     // === 阶段2: 包就绪时 — 主入口 Hook ===
@@ -107,57 +100,37 @@ class ModuleEntry : XposedModule() {
         log(Log.INFO, TAG, "共激活 $count 个功能")
     }
 
-    // === 入口 Hook (带诊断日志) ===
+    // === 入口注入: 往底部 cgi 布局加入「微+」入口 ===
 
     private fun injectEntry(classLoader: ClassLoader) {
         try {
+            var cgiId = -1
+            // 反射获取 R.id.cgi 的资源 ID
+            try {
+                val rId = classLoader.loadClass("com.tencent.mm.R\$id")
+                cgiId = rId.getDeclaredField("cgi").getInt(null)
+            } catch (e: Throwable) {
+                log(Log.ERROR, TAG, "获取 R.id.cgi 失败", e)
+            }
+
             val clz = classLoader.loadClass("com.tencent.mm.ui.LauncherUI")
-            log(Log.INFO, TAG, "LauncherUI 类加载成功")
+            log(Log.INFO, TAG, "LauncherUI 类加载成功, cgi=$cgiId")
 
-            // 右上角菜单 — after hook
-            try {
-                val m = clz.getDeclaredMethod("onCreateOptionsMenu", Menu::class.java)
-                hook(m).intercept { chain ->
-                    val result = chain.proceed() ?: false
-                    val menu = chain.args[0] as? Menu
-                    if (menu != null && menu.findItem(MENU_ID) == null) {
-                        menu.add(0, MENU_ID, 0, "微+")
-                            .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
-                    }
-                    result
-                }
-                log(Log.INFO, TAG, "onCreateOptionsMenu Hook 成功")
-            } catch (e: Throwable) {
-                log(Log.ERROR, TAG, "onCreateOptionsMenu Hook 失败", e)
-            }
-
-            // 菜单点击 → 打开面板 — before hook
-            try {
-                val m = clz.getDeclaredMethod("onOptionsItemSelected", MenuItem::class.java)
-                hook(m).intercept { chain ->
-                    val item = chain.args[0] as? MenuItem
-                    if (item?.itemId == MENU_ID) {
-                        (chain.thisObject as? Activity)?.let { openPanel(it) }
-                        return@intercept true
-                    }
-                    chain.proceed()
-                }
-                log(Log.INFO, TAG, "onOptionsItemSelected Hook 成功")
-            } catch (e: Throwable) {
-                log(Log.ERROR, TAG, "onOptionsItemSelected Hook 失败", e)
-            }
-
-            // 浮动按钮 — after hook
+            // 在 onResume 中向 cgi 布局注入入口
             try {
                 val m = clz.getDeclaredMethod("onResume")
                 hook(m).intercept { chain ->
                     chain.proceed()
-                    if (!fabAdded) {
-                        val a = chain.thisObject as? Activity ?: return@intercept null
-                        Handler(Looper.getMainLooper()).postDelayed({
-                            try { addFab(a); fabAdded = true } catch (_: Throwable) {}
-                        }, 1500)
-                    }
+                    val a = chain.thisObject as? Activity ?: return@intercept null
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        try {
+                            injectCgiEntry(a, cgiId)
+                            if (!fabAdded) {
+                                addFab(a)
+                                fabAdded = true
+                            }
+                        } catch (_: Throwable) {}
+                    }, 1500)
                     null
                 }
                 log(Log.INFO, TAG, "onResume Hook 成功")
@@ -166,8 +139,39 @@ class ModuleEntry : XposedModule() {
             }
 
         } catch (e: Throwable) {
-            log(Log.ERROR, TAG, "LauncherUI 类加载失败 — 微信可能已热更新", e)
+            log(Log.ERROR, TAG, "LauncherUI 类加载失败", e)
         }
+    }
+
+    /** 往 cgi 布局注入「微+」入口 */
+    private fun injectCgiEntry(activity: Activity, cgiId: Int) {
+        if (cgiId <= 0) return
+        val root = activity.window.decorView
+            .findViewById<android.view.ViewGroup>(android.R.id.content) ?: return
+        val cgiLayout = root.findViewById<LinearLayout>(cgiId) ?: return
+        if (cgiLayout.findViewWithTag<TextView>("weiplus_cgi") != null) return
+
+        val d = activity.resources.displayMetrics.density
+        val entry = TextView(activity).apply {
+            tag = "weiplus_cgi"
+            text = "微+"
+            setTextColor(Color.WHITE)
+            setBackgroundColor(Color.argb(200, 80, 140, 230))
+            textSize = 13f
+            gravity = Gravity.CENTER
+            setPadding((14 * d).toInt(), (8 * d).toInt(), (14 * d).toInt(), (8 * d).toInt())
+            setOnClickListener { openPanel(activity) }
+        }
+        // 靠右添加
+        cgiLayout.addView(entry, LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            0f
+        ).apply {
+            gravity = Gravity.CENTER_VERTICAL or Gravity.END
+            rightMargin = (12 * d).toInt()
+        })
+        log(Log.INFO, TAG, "cgi 入口注入成功")
     }
 
     // === 工具方法 ===
