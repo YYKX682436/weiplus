@@ -21,6 +21,7 @@ class MainActivity : Activity() {
     private var timedTask = false
     private var momentEnhance = false
     private var cleaner = false
+    private var disableHotUpdate = true
 
     private lateinit var prefs: android.content.SharedPreferences
 
@@ -40,6 +41,7 @@ class MainActivity : Activity() {
         const val KEY_TIMED_TASK = "timed_task"
         const val KEY_MOMENT_ENHANCE = "moment_enhance"
         const val KEY_CLEANER = "cleaner"
+        const val KEY_DISABLE_HOT_UPDATE = "disable_hot_update"
 
         fun isFeatureEnabled(ctx: Context, key: String): Boolean {
             return ctx.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
@@ -117,6 +119,7 @@ class MainActivity : Activity() {
         timedTask = prefs.getBoolean(KEY_TIMED_TASK, false)
         momentEnhance = prefs.getBoolean(KEY_MOMENT_ENHANCE, false)
         cleaner = prefs.getBoolean(KEY_CLEANER, false)
+        disableHotUpdate = prefs.getBoolean(KEY_DISABLE_HOT_UPDATE, true)
     }
 
     private fun savePrefs() {
@@ -127,6 +130,7 @@ class MainActivity : Activity() {
             .putBoolean(KEY_TIMED_TASK, timedTask)
             .putBoolean(KEY_MOMENT_ENHANCE, momentEnhance)
             .putBoolean(KEY_CLEANER, cleaner)
+            .putBoolean(KEY_DISABLE_HOT_UPDATE, disableHotUpdate)
             .apply()
     }
 
@@ -173,6 +177,10 @@ class MainActivity : Activity() {
             addView(bigToggle("自动任务", "定时消息、自动回复", { automation }, { automation = it }))
             addView(thinDivider())
             addView(bigToggle("定时任务", "定时发送消息、朋友圈", { timedTask }, { timedTask = it }))
+        })
+
+        content.addView(featureCard("🛡️", "系统", "禁用热更新 · 保持类结构稳定") {
+            addView(bigToggle("禁用热更新", "拦截 Tinker 补丁，防止微信热更新", { disableHotUpdate }, { disableHotUpdate = it }))
         })
 
         content.addView(featureCard("\uD83D\uDC63", "朋友圈", "去广告 · 强制深色 · 长按保存") {

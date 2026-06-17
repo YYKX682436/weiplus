@@ -15,6 +15,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.muchen.weiplus.features.*
 import io.github.libxposed.api.XposedModule
+import io.github.libxposed.api.XposedModuleInterface.PackageLoadedParam
 import io.github.libxposed.api.XposedModuleInterface.PackageReadyParam
 
 class ModuleEntry : XposedModule() {
@@ -24,6 +25,7 @@ class ModuleEntry : XposedModule() {
         private const val MENU_ID = 0x7701
 
         val FEATURES: List<BaseFeature> = listOf(
+            DisableHotUpdateFeature(),
             AntiRecallFeature(),
             ChatEnhanceFeature(),
             AutomationFeature(),
@@ -36,9 +38,37 @@ class ModuleEntry : XposedModule() {
     private var fabAdded = false
     private var featuresActivated = false
 
+    // === 阶段1: 包加载时 — 最早时机，拦截 Tinker 热更新 ===
+    override fun onPackageLoaded(param: PackageLoadedParam) {
+        if (param.packageName != "com.tencent.mm") return
+        if (!param.isFirstPackage) return
+
+        try {
+            val ctx = getAppContext() ?: return
+            val hotUpdate = DisableHotUpdateFeature()
+            if (hotUpdate.isEnabled(ctx)) {
+                try {
+                    val tinkerLoader = param.defaultClassLoader
+                        .loadClass("com.tencent.tinker.loader.TinkerLoader")
+                    val tryLoadMethod = tinkerLoader.getDeclaredMethod(
+                        "tryLoad",
+                        Class.forName("com.tencent.tinker.loader.app.TinkerApplication")
+                    )
+                    hook(tryLoadMethod).intercept { _ ->
+                        log(Log.INFO, TAG, "Tinker 热更新已拦截 — 补丁不会加载")
+                        false // 阻止加载热更新补丁
+                    }
+                } catch (e: Throwable) {
+                    log(Log.ERROR, TAG, "禁用热更新 Hook 失败", e)
+                }
+            }
+        } catch (_: Throwable) {}
+    }
+
+    // === 阶段2: 包就绪时 — 主入口 Hook ===
     override fun onPackageReady(param: PackageReadyParam) {
         if (param.packageName != "com.tencent.mm") return
-                if (!param.isFirstPackage) return
+        if (!param.isFirstPackage) return
 
         log(Log.INFO, TAG, "微+ 注入微信主进程... (API $apiVersion)")
 
@@ -77,13 +107,14 @@ class ModuleEntry : XposedModule() {
         log(Log.INFO, TAG, "共激活 $count 个功能")
     }
 
-    // === 入口 Hook ===
+    // === 入口 Hook (带诊断日志) ===
 
     private fun injectEntry(classLoader: ClassLoader) {
         try {
             val clz = classLoader.loadClass("com.tencent.mm.ui.LauncherUI")
+            log(Log.INFO, TAG, "LauncherUI 类加载成功")
 
-            // 右上角菜单 — after hook (onCreateOptionsMenu返回boolean，不能返回null)
+            // 右上角菜单 — after hook
             try {
                 val m = clz.getDeclaredMethod("onCreateOptionsMenu", Menu::class.java)
                 hook(m).intercept { chain ->
@@ -95,7 +126,10 @@ class ModuleEntry : XposedModule() {
                     }
                     result
                 }
-            } catch (_: Throwable) {}
+                log(Log.INFO, TAG, "onCreateOptionsMenu Hook 成功")
+            } catch (e: Throwable) {
+                log(Log.ERROR, TAG, "onCreateOptionsMenu Hook 失败", e)
+            }
 
             // 菜单点击 → 打开面板 — before hook
             try {
@@ -108,9 +142,12 @@ class ModuleEntry : XposedModule() {
                     }
                     chain.proceed()
                 }
-            } catch (_: Throwable) {}
+                log(Log.INFO, TAG, "onOptionsItemSelected Hook 成功")
+            } catch (e: Throwable) {
+                log(Log.ERROR, TAG, "onOptionsItemSelected Hook 失败", e)
+            }
 
-            // 浮动按钮 — after hook (只加一次)
+            // 浮动按钮 — after hook
             try {
                 val m = clz.getDeclaredMethod("onResume")
                 hook(m).intercept { chain ->
@@ -123,9 +160,14 @@ class ModuleEntry : XposedModule() {
                     }
                     null
                 }
-            } catch (_: Throwable) {}
+                log(Log.INFO, TAG, "onResume Hook 成功")
+            } catch (e: Throwable) {
+                log(Log.ERROR, TAG, "onResume Hook 失败", e)
+            }
 
-        } catch (_: Throwable) {}
+        } catch (e: Throwable) {
+            log(Log.ERROR, TAG, "LauncherUI 类加载失败 — 微信可能已热更新", e)
+        }
     }
 
     // === 工具方法 ===
