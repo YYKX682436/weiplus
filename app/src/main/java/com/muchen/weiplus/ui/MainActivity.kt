@@ -80,6 +80,8 @@ class MainActivity : Activity() {
     private lateinit var prefs: android.content.SharedPreferences
 
     private var panel: LinearLayout? = null
+    private var scrollView: ScrollView? = null
+    private var headerHeight = 0
     private var dragStartY = 0f
     private var panelStartTY = 0f
     private var isDragging = false
@@ -152,7 +154,7 @@ class MainActivity : Activity() {
             when (ev.action) {
                 MotionEvent.ACTION_DOWN -> {
                     val loc = IntArray(2); p.getLocationOnScreen(loc)
-                    touchInPanel = ev.rawY >= loc[1]
+                    touchInPanel = ev.rawY >= loc[1] && ev.rawY < loc[1] + headerHeight
                     if (touchInPanel) { dragStartY = ev.rawY; panelStartTY = p.translationY; isDragging = false }
                 }
                 MotionEvent.ACTION_MOVE -> {
@@ -323,9 +325,10 @@ class MainActivity : Activity() {
         panel!!.addView(handle, hl)
 
         panel!!.addView(titleBar())
+        headerHeight = dip(80)  // handle + title + space
         panel!!.addView(space(8))
 
-        val scroll = ScrollView(this)
+        scrollView = ScrollView(this); val scroll = scrollView!!
         val content = LinearLayout(this)
         content.orientation = LinearLayout.VERTICAL
         content.setPadding(0, 0, 0, dip(8))
@@ -448,7 +451,7 @@ class MainActivity : Activity() {
         })
 
         scroll.addView(content)
-        panel!!.addView(scroll, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f))
+        panel!!.addView(scrollView!!, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f))
 
         panel!!.post {
             panel!!.translationY = panel!!.height.toFloat() * 0.3f
@@ -586,3 +589,6 @@ class MainActivity : Activity() {
     private fun dip(v: Int): Int = (v * resources.displayMetrics.density + 0.5f).toInt()
     private fun dpf(v: Int): Float = v * resources.displayMetrics.density
 }
+
+
+
