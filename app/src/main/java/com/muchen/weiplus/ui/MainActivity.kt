@@ -47,6 +47,14 @@ class MainActivity : Activity() {
     private var blockAtMsg = false
     private var batchKickGroup = false
 
+    // 精简美化风格
+    private var globalRoundAvatar = false
+    private var globalChatBg = false
+    private var editChatBubble = false
+    private var fakeWechatId = false
+    private var fakeWechatNick = false
+    private var centerProfile = false
+
     // 朋友圈类功能
     private var autoLikeMoment = false
     private var autoCommentMoment = false
@@ -116,6 +124,12 @@ class MainActivity : Activity() {
         const val KEY_MSG_QUOTE_LOCATE = "msg_quote_locate"
         const val KEY_BLOCK_AT_MSG = "block_at_msg"
         const val KEY_BATCH_KICK_GROUP = "batch_kick_group"
+        const val KEY_GLOBAL_ROUND_AVATAR = "global_round_avatar"
+        const val KEY_GLOBAL_CHAT_BG = "global_chat_bg"
+        const val KEY_EDIT_CHAT_BUBBLE = "edit_chat_bubble"
+        const val KEY_FAKE_WECHAT_ID = "fake_wechat_id"
+        const val KEY_FAKE_WECHAT_NICK = "fake_wechat_nick"
+        const val KEY_CENTER_PROFILE = "center_profile"
         const val KEY_AUTO_LIKE_MOMENT = "auto_like_moment"
         const val KEY_AUTO_COMMENT_MOMENT = "auto_comment_moment"
         const val KEY_EDIT_LIKE_COUNT = "edit_like_count"
@@ -225,6 +239,12 @@ class MainActivity : Activity() {
         msgQuoteLocate = prefs.getBoolean(KEY_MSG_QUOTE_LOCATE, false)
         blockAtMsg = prefs.getBoolean(KEY_BLOCK_AT_MSG, false)
         batchKickGroup = prefs.getBoolean(KEY_BATCH_KICK_GROUP, false)
+        globalRoundAvatar = prefs.getBoolean(KEY_GLOBAL_ROUND_AVATAR, false)
+        globalChatBg = prefs.getBoolean(KEY_GLOBAL_CHAT_BG, false)
+        editChatBubble = prefs.getBoolean(KEY_EDIT_CHAT_BUBBLE, false)
+        fakeWechatId = prefs.getBoolean(KEY_FAKE_WECHAT_ID, false)
+        fakeWechatNick = prefs.getBoolean(KEY_FAKE_WECHAT_NICK, false)
+        centerProfile = prefs.getBoolean(KEY_CENTER_PROFILE, false)
         autoLikeMoment = prefs.getBoolean(KEY_AUTO_LIKE_MOMENT, false)
         autoCommentMoment = prefs.getBoolean(KEY_AUTO_COMMENT_MOMENT, false)
         editLikeCount = prefs.getBoolean(KEY_EDIT_LIKE_COUNT, false)
@@ -277,6 +297,12 @@ class MainActivity : Activity() {
             .putBoolean(KEY_MSG_QUOTE_LOCATE, msgQuoteLocate)
             .putBoolean(KEY_BLOCK_AT_MSG, blockAtMsg)
             .putBoolean(KEY_BATCH_KICK_GROUP, batchKickGroup)
+            .putBoolean(KEY_GLOBAL_ROUND_AVATAR, globalRoundAvatar)
+            .putBoolean(KEY_GLOBAL_CHAT_BG, globalChatBg)
+            .putBoolean(KEY_EDIT_CHAT_BUBBLE, editChatBubble)
+            .putBoolean(KEY_FAKE_WECHAT_ID, fakeWechatId)
+            .putBoolean(KEY_FAKE_WECHAT_NICK, fakeWechatNick)
+            .putBoolean(KEY_CENTER_PROFILE, centerProfile)
             .putBoolean(KEY_AUTO_LIKE_MOMENT, autoLikeMoment)
             .putBoolean(KEY_AUTO_COMMENT_MOMENT, autoCommentMoment)
             .putBoolean(KEY_EDIT_LIKE_COUNT, editLikeCount)
@@ -394,7 +420,22 @@ class MainActivity : Activity() {
             addView(bigToggle("批量踢出群聊", "一键批量踢出选中群友", { batchKickGroup }, { batchKickGroup = it }))
         })
 
-        // ── 朋友圈类功能 ──
+        
+        // ── 精简美化风格 ──
+        content.addView(featureCard("\uD83C\uDFA8", "精简美化风格") {
+            addView(bigToggle("全局头像圆角", "好友头像全局圆角显示", { globalRoundAvatar }, { globalRoundAvatar = it }))
+            addView(thinDivider())
+            addView(bigToggle("全局聊天背景", "全局自定义聊天背景图片", { globalChatBg }, { globalChatBg = it }))
+            addView(thinDivider())
+            addView(bigToggle("修改聊天气泡", "自定义聊天气泡样式颜色", { editChatBubble }, { editChatBubble = it }))
+            addView(thinDivider())
+            addView(bigToggle("伪装微信账号", "自定义修改微信账号显示", { fakeWechatId }, { fakeWechatId = it }))
+            addView(thinDivider())
+            addView(bigToggle("伪装微信昵称", "自定义修改微信昵称显示", { fakeWechatNick }, { fakeWechatNick = it }))
+            addView(thinDivider())
+            addView(bigToggle("主页资料居中", "个人主页资料内容居中显示", { centerProfile }, { centerProfile = it }))
+        })
+
         content.addView(featureCard("\uD83C\uDF1F", "朋友圈类功能") {
             addView(bigToggle("自动点赞动态", "自动为好友动态点赞", { autoLikeMoment }, { autoLikeMoment = it }))
             addView(thinDivider())
@@ -589,6 +630,7 @@ class MainActivity : Activity() {
     private fun dip(v: Int): Int = (v * resources.displayMetrics.density + 0.5f).toInt()
     private fun dpf(v: Int): Float = v * resources.displayMetrics.density
 }
+
 
 
 
