@@ -26,9 +26,7 @@ class ModuleEntry : XposedModule() {
         val FEATURES: List<BaseFeature> = listOf(
             DisableHotUpdateFeature(),
             AntiRecallFeature(),
-            MomentEnhanceFeature(),
-            CleanerFeature()
-        )
+            )
     }
 
     private var fabAdded = false
@@ -192,5 +190,6 @@ class ModuleEntry : XposedModule() {
         log(Log.INFO, TAG, "FAB 已添加 (右下角)")
     }
 }
+
 
 

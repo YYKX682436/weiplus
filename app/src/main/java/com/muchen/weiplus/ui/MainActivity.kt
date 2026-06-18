@@ -32,9 +32,18 @@ class MainActivity : Activity() {
     private var batchDelFriend = false
     private var fillMoments = false
 
-    // 朋友圈
-    private var momentEnhance = false
-    private var cleaner = false
+    // 群聊功能强化
+    private var autoAcceptInvite = false
+    private var editGroupAvatar = false
+    private var batchExitGroup = false
+    private var groupMsgMonitor = false
+    private var groupNickMonitor = false
+    private var groupJoinMonitor = false
+    private var groupQuitMonitor = false
+    private var newGroupNoDisturb = false
+    private var msgQuoteLocate = false
+    private var blockAtMsg = false
+    private var batchKickGroup = false
 
     // 系统
     private var disableHotUpdate = true
@@ -63,8 +72,17 @@ class MainActivity : Activity() {
         const val KEY_EDIT_FRIEND_AVATAR = "edit_friend_avatar"
         const val KEY_BATCH_DEL_FRIEND = "batch_del_friend"
         const val KEY_FILL_MOMENTS = "fill_moments"
-        const val KEY_MOMENT_ENHANCE = "moment_enhance"
-        const val KEY_CLEANER = "cleaner"
+        const val KEY_AUTO_ACCEPT_INVITE = "auto_accept_invite"
+        const val KEY_EDIT_GROUP_AVATAR = "edit_group_avatar"
+        const val KEY_BATCH_EXIT_GROUP = "batch_exit_group"
+        const val KEY_GROUP_MSG_MONITOR = "group_msg_monitor"
+        const val KEY_GROUP_NICK_MONITOR = "group_nick_monitor"
+        const val KEY_GROUP_JOIN_MONITOR = "group_join_monitor"
+        const val KEY_GROUP_QUIT_MONITOR = "group_quit_monitor"
+        const val KEY_NEW_GROUP_NO_DISTURB = "new_group_no_disturb"
+        const val KEY_MSG_QUOTE_LOCATE = "msg_quote_locate"
+        const val KEY_BLOCK_AT_MSG = "block_at_msg"
+        const val KEY_BATCH_KICK_GROUP = "batch_kick_group"
         const val KEY_DISABLE_HOT_UPDATE = "disable_hot_update"
 
         fun isFeatureEnabled(ctx: Context, key: String): Boolean {
@@ -151,8 +169,17 @@ class MainActivity : Activity() {
         editFriendAvatar = prefs.getBoolean(KEY_EDIT_FRIEND_AVATAR, false)
         batchDelFriend = prefs.getBoolean(KEY_BATCH_DEL_FRIEND, false)
         fillMoments = prefs.getBoolean(KEY_FILL_MOMENTS, false)
-        momentEnhance = prefs.getBoolean(KEY_MOMENT_ENHANCE, false)
-        cleaner = prefs.getBoolean(KEY_CLEANER, false)
+        autoAcceptInvite = prefs.getBoolean(KEY_AUTO_ACCEPT_INVITE, false)
+        editGroupAvatar = prefs.getBoolean(KEY_EDIT_GROUP_AVATAR, false)
+        batchExitGroup = prefs.getBoolean(KEY_BATCH_EXIT_GROUP, false)
+        groupMsgMonitor = prefs.getBoolean(KEY_GROUP_MSG_MONITOR, false)
+        groupNickMonitor = prefs.getBoolean(KEY_GROUP_NICK_MONITOR, false)
+        groupJoinMonitor = prefs.getBoolean(KEY_GROUP_JOIN_MONITOR, false)
+        groupQuitMonitor = prefs.getBoolean(KEY_GROUP_QUIT_MONITOR, false)
+        newGroupNoDisturb = prefs.getBoolean(KEY_NEW_GROUP_NO_DISTURB, false)
+        msgQuoteLocate = prefs.getBoolean(KEY_MSG_QUOTE_LOCATE, false)
+        blockAtMsg = prefs.getBoolean(KEY_BLOCK_AT_MSG, false)
+        batchKickGroup = prefs.getBoolean(KEY_BATCH_KICK_GROUP, false)
         disableHotUpdate = prefs.getBoolean(KEY_DISABLE_HOT_UPDATE, true)
     }
 
@@ -171,8 +198,17 @@ class MainActivity : Activity() {
             .putBoolean(KEY_EDIT_FRIEND_AVATAR, editFriendAvatar)
             .putBoolean(KEY_BATCH_DEL_FRIEND, batchDelFriend)
             .putBoolean(KEY_FILL_MOMENTS, fillMoments)
-            .putBoolean(KEY_MOMENT_ENHANCE, momentEnhance)
-            .putBoolean(KEY_CLEANER, cleaner)
+            .putBoolean(KEY_AUTO_ACCEPT_INVITE, autoAcceptInvite)
+            .putBoolean(KEY_EDIT_GROUP_AVATAR, editGroupAvatar)
+            .putBoolean(KEY_BATCH_EXIT_GROUP, batchExitGroup)
+            .putBoolean(KEY_GROUP_MSG_MONITOR, groupMsgMonitor)
+            .putBoolean(KEY_GROUP_NICK_MONITOR, groupNickMonitor)
+            .putBoolean(KEY_GROUP_JOIN_MONITOR, groupJoinMonitor)
+            .putBoolean(KEY_GROUP_QUIT_MONITOR, groupQuitMonitor)
+            .putBoolean(KEY_NEW_GROUP_NO_DISTURB, newGroupNoDisturb)
+            .putBoolean(KEY_MSG_QUOTE_LOCATE, msgQuoteLocate)
+            .putBoolean(KEY_BLOCK_AT_MSG, blockAtMsg)
+            .putBoolean(KEY_BATCH_KICK_GROUP, batchKickGroup)
             .putBoolean(KEY_DISABLE_HOT_UPDATE, disableHotUpdate)
             .apply()
     }
@@ -239,11 +275,29 @@ class MainActivity : Activity() {
             addView(bigToggle("一键补朋友圈", "一键补齐好友朋友圈内容", { fillMoments }, { fillMoments = it }))
         })
 
-        // ── 朋友圈 ──
-        content.addView(featureCard("\uD83D\uDC63", "朋友圈") {
-            addView(bigToggle("朋友圈增强", "去广告深色长按保存", { momentEnhance }, { momentEnhance = it }))
+        // ── 群聊功能强化 ──
+        content.addView(featureCard("\uD83D\uDC65\uD83D\uDCAC", "群聊功能强化") {
+            addView(bigToggle("自动通过邀请", "群聊邀请自动确认加入", { autoAcceptInvite }, { autoAcceptInvite = it }))
             addView(thinDivider())
-            addView(bigToggle("清理工具", "缓存清理文件管理工具", { cleaner }, { cleaner = it }))
+            addView(bigToggle("修改群聊头像", "自定义修改群聊头像显示", { editGroupAvatar }, { editGroupAvatar = it }))
+            addView(thinDivider())
+            addView(bigToggle("批量退出群聊", "一键批量退出选中群聊", { batchExitGroup }, { batchExitGroup = it }))
+            addView(thinDivider())
+            addView(bigToggle("群友消息监控", "实时监控群友发送消息", { groupMsgMonitor }, { groupMsgMonitor = it }))
+            addView(thinDivider())
+            addView(bigToggle("群友昵称监控", "监控群友昵称修改记录", { groupNickMonitor }, { groupNickMonitor = it }))
+            addView(thinDivider())
+            addView(bigToggle("群友进群监控", "监控群友加入群聊通知", { groupJoinMonitor }, { groupJoinMonitor = it }))
+            addView(thinDivider())
+            addView(bigToggle("群友退群监控", "监控群友退出群聊通知", { groupQuitMonitor }, { groupQuitMonitor = it }))
+            addView(thinDivider())
+            addView(bigToggle("新进群免打扰", "新进群聊默认免打扰模式", { newGroupNoDisturb }, { newGroupNoDisturb = it }))
+            addView(thinDivider())
+            addView(bigToggle("消息引用定位", "引用消息一键定位原文", { msgQuoteLocate }, { msgQuoteLocate = it }))
+            addView(thinDivider())
+            addView(bigToggle("屏蔽艾特消息", "屏蔽群聊艾特我的消息", { blockAtMsg }, { blockAtMsg = it }))
+            addView(thinDivider())
+            addView(bigToggle("批量踢出群聊", "一键批量踢出选中群友", { batchKickGroup }, { batchKickGroup = it }))
         })
 
         // ── 系统 ──
