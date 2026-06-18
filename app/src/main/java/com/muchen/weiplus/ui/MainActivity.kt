@@ -24,9 +24,13 @@ class MainActivity : Activity() {
     private var diceCheat = false
     private var repeatMsg = false
 
-    // 自动化
-    private var automation = false
-    private var timedTask = false
+    // 好友功能强化
+    private var autoAcceptFriend = false
+    private var findOneWayDelete = false
+    private var editFriendCount = false
+    private var editFriendAvatar = false
+    private var batchDelFriend = false
+    private var fillMoments = false
 
     // 朋友圈
     private var momentEnhance = false
@@ -53,8 +57,12 @@ class MainActivity : Activity() {
         const val KEY_UNLIMIT_CALL = "unlimit_call"
         const val KEY_DICE_CHEAT = "dice_cheat"
         const val KEY_REPEAT_MSG = "repeat_msg"
-        const val KEY_AUTOMATION = "automation"
-        const val KEY_TIMED_TASK = "timed_task"
+        const val KEY_AUTO_ACCEPT_FRIEND = "auto_accept_friend"
+        const val KEY_FIND_ONE_WAY_DELETE = "find_one_way_delete"
+        const val KEY_EDIT_FRIEND_COUNT = "edit_friend_count"
+        const val KEY_EDIT_FRIEND_AVATAR = "edit_friend_avatar"
+        const val KEY_BATCH_DEL_FRIEND = "batch_del_friend"
+        const val KEY_FILL_MOMENTS = "fill_moments"
         const val KEY_MOMENT_ENHANCE = "moment_enhance"
         const val KEY_CLEANER = "cleaner"
         const val KEY_DISABLE_HOT_UPDATE = "disable_hot_update"
@@ -137,8 +145,12 @@ class MainActivity : Activity() {
         unlimitCall = prefs.getBoolean(KEY_UNLIMIT_CALL, false)
         diceCheat = prefs.getBoolean(KEY_DICE_CHEAT, false)
         repeatMsg = prefs.getBoolean(KEY_REPEAT_MSG, false)
-        automation = prefs.getBoolean(KEY_AUTOMATION, false)
-        timedTask = prefs.getBoolean(KEY_TIMED_TASK, false)
+        autoAcceptFriend = prefs.getBoolean(KEY_AUTO_ACCEPT_FRIEND, false)
+        findOneWayDelete = prefs.getBoolean(KEY_FIND_ONE_WAY_DELETE, false)
+        editFriendCount = prefs.getBoolean(KEY_EDIT_FRIEND_COUNT, false)
+        editFriendAvatar = prefs.getBoolean(KEY_EDIT_FRIEND_AVATAR, false)
+        batchDelFriend = prefs.getBoolean(KEY_BATCH_DEL_FRIEND, false)
+        fillMoments = prefs.getBoolean(KEY_FILL_MOMENTS, false)
         momentEnhance = prefs.getBoolean(KEY_MOMENT_ENHANCE, false)
         cleaner = prefs.getBoolean(KEY_CLEANER, false)
         disableHotUpdate = prefs.getBoolean(KEY_DISABLE_HOT_UPDATE, true)
@@ -153,8 +165,12 @@ class MainActivity : Activity() {
             .putBoolean(KEY_UNLIMIT_CALL, unlimitCall)
             .putBoolean(KEY_DICE_CHEAT, diceCheat)
             .putBoolean(KEY_REPEAT_MSG, repeatMsg)
-            .putBoolean(KEY_AUTOMATION, automation)
-            .putBoolean(KEY_TIMED_TASK, timedTask)
+            .putBoolean(KEY_AUTO_ACCEPT_FRIEND, autoAcceptFriend)
+            .putBoolean(KEY_FIND_ONE_WAY_DELETE, findOneWayDelete)
+            .putBoolean(KEY_EDIT_FRIEND_COUNT, editFriendCount)
+            .putBoolean(KEY_EDIT_FRIEND_AVATAR, editFriendAvatar)
+            .putBoolean(KEY_BATCH_DEL_FRIEND, batchDelFriend)
+            .putBoolean(KEY_FILL_MOMENTS, fillMoments)
             .putBoolean(KEY_MOMENT_ENHANCE, momentEnhance)
             .putBoolean(KEY_CLEANER, cleaner)
             .putBoolean(KEY_DISABLE_HOT_UPDATE, disableHotUpdate)
@@ -193,38 +209,46 @@ class MainActivity : Activity() {
 
         // ── 聊天功能增强 ──
         content.addView(featureCard("\uD83D\uDCAC", "聊天功能增强") {
-            addView(bigToggle("防撤回", { antiRecall }, { antiRecall = it }))
+            addView(bigToggle("禁止消息撤回", "阻止好友撤回已发消息", { antiRecall }, { antiRecall = it }))
             addView(thinDivider())
-            addView(bigToggle("左滑消息引用", { swipeQuote }, { swipeQuote = it }))
+            addView(bigToggle("左滑消息引用", "左滑消息快速引用回复", { swipeQuote }, { swipeQuote = it }))
             addView(thinDivider())
-            addView(bigToggle("伪装语音时长", { fakeVoiceTime }, { fakeVoiceTime = it }))
+            addView(bigToggle("伪装语音时长", "自定义语音消息时长显示", { fakeVoiceTime }, { fakeVoiceTime = it }))
             addView(thinDivider())
-            addView(bigToggle("显示详细时间", { showDetailTime }, { showDetailTime = it }))
+            addView(bigToggle("显示详细时间", "消息列表显示精确时间", { showDetailTime }, { showDetailTime = it }))
             addView(thinDivider())
-            addView(bigToggle("解除通话限制", { unlimitCall }, { unlimitCall = it }))
+            addView(bigToggle("解除通话限制", "解除语音视频通话限制", { unlimitCall }, { unlimitCall = it }))
             addView(thinDivider())
-            addView(bigToggle("猜拳骰子作弊", { diceCheat }, { diceCheat = it }))
+            addView(bigToggle("猜拳骰子作弊", "猜拳骰子结果随意控制", { diceCheat }, { diceCheat = it }))
             addView(thinDivider())
-            addView(bigToggle("一键复读消息", { repeatMsg }, { repeatMsg = it }))
+            addView(bigToggle("一键复读消息", "长按消息一键复读发送", { repeatMsg }, { repeatMsg = it }))
         })
 
-        // ── 自动化 ──
-        content.addView(featureCard("\u26A1", "自动化") {
-            addView(bigToggle("自动任务", { automation }, { automation = it }))
+        // ── 好友功能强化 ──
+        content.addView(featureCard("\uD83D\uDC65", "好友功能强化") {
+            addView(bigToggle("自动通过好友", "好友请求自动验证通过", { autoAcceptFriend }, { autoAcceptFriend = it }))
             addView(thinDivider())
-            addView(bigToggle("定时任务", { timedTask }, { timedTask = it }))
+            addView(bigToggle("查找单向删除", "查找已把你删除的好友", { findOneWayDelete }, { findOneWayDelete = it }))
+            addView(thinDivider())
+            addView(bigToggle("修改好友数量", "自定义修改好友数量显示", { editFriendCount }, { editFriendCount = it }))
+            addView(thinDivider())
+            addView(bigToggle("修改好友头像", "自定义修改好友头像显示", { editFriendAvatar }, { editFriendAvatar = it }))
+            addView(thinDivider())
+            addView(bigToggle("批量删除好友", "一键批量删除选中好友", { batchDelFriend }, { batchDelFriend = it }))
+            addView(thinDivider())
+            addView(bigToggle("一键补朋友圈", "一键补齐好友朋友圈内容", { fillMoments }, { fillMoments = it }))
         })
 
         // ── 朋友圈 ──
         content.addView(featureCard("\uD83D\uDC63", "朋友圈") {
-            addView(bigToggle("朋友圈增强", { momentEnhance }, { momentEnhance = it }))
+            addView(bigToggle("朋友圈增强", "去广告深色长按保存", { momentEnhance }, { momentEnhance = it }))
             addView(thinDivider())
-            addView(bigToggle("清理工具", { cleaner }, { cleaner = it }))
+            addView(bigToggle("清理工具", "缓存清理文件管理工具", { cleaner }, { cleaner = it }))
         })
 
         // ── 系统 ──
         content.addView(featureCard("\uD83D\uDEE1\uFE0F", "系统") {
-            addView(bigToggle("禁用热更新", { disableHotUpdate }, { disableHotUpdate = it }))
+            addView(bigToggle("禁用热更新", "拦截补丁保持类结构", { disableHotUpdate }, { disableHotUpdate = it }))
         })
 
         scroll.addView(content)
@@ -326,15 +350,23 @@ class MainActivity : Activity() {
         return card
     }
 
-    private fun bigToggle(title: String, getter: () -> Boolean, setter: (Boolean) -> Unit): LinearLayout {
+    private fun bigToggle(title: String, subtitle: String, getter: () -> Boolean, setter: (Boolean) -> Unit): LinearLayout {
         val row = LinearLayout(this)
         row.orientation = LinearLayout.HORIZONTAL
         row.setPadding(dip(16), dip(12), dip(16), dip(12))
         row.gravity = Gravity.CENTER_VERTICAL
 
+        val col = LinearLayout(this)
+        col.orientation = LinearLayout.VERTICAL
+        col.setPadding(0, 0, dip(8), 0)
+        row.addView(col, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
+
         val tv = TextView(this)
         tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 17f
-        row.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
+        col.addView(tv)
+        val ts = TextView(this)
+        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93)); ts.textSize = 13f
+        col.addView(ts)
 
         val sw = IosSwitch(this, 1.3f)
         sw.setChecked(getter(), false)
