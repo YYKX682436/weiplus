@@ -15,17 +15,28 @@ import android.widget.*
 
 class MainActivity : Activity() {
 
+    // 聊天功能增强
     private var antiRecall = false
-    private var chatEnhance = false
+    private var swipeQuote = false
+    private var fakeVoiceTime = false
+    private var showDetailTime = false
+    private var unlimitCall = false
+    private var diceCheat = false
+    private var repeatMsg = false
+
+    // 自动化
     private var automation = false
     private var timedTask = false
+
+    // 朋友圈
     private var momentEnhance = false
     private var cleaner = false
+
+    // 系统
     private var disableHotUpdate = true
 
     private lateinit var prefs: android.content.SharedPreferences
 
-    // 下拉手势
     private var panel: LinearLayout? = null
     private var dragStartY = 0f
     private var panelStartTY = 0f
@@ -36,7 +47,12 @@ class MainActivity : Activity() {
     companion object {
         const val PREF_NAME = "weiplus_prefs"
         const val KEY_ANTI_RECALL = "anti_recall"
-        const val KEY_CHAT_ENHANCE = "chat_enhance"
+        const val KEY_SWIPE_QUOTE = "swipe_quote"
+        const val KEY_FAKE_VOICE_TIME = "fake_voice_time"
+        const val KEY_SHOW_DETAIL_TIME = "show_detail_time"
+        const val KEY_UNLIMIT_CALL = "unlimit_call"
+        const val KEY_DICE_CHEAT = "dice_cheat"
+        const val KEY_REPEAT_MSG = "repeat_msg"
         const val KEY_AUTOMATION = "automation"
         const val KEY_TIMED_TASK = "timed_task"
         const val KEY_MOMENT_ENHANCE = "moment_enhance"
@@ -115,7 +131,12 @@ class MainActivity : Activity() {
 
     private fun loadPrefs() {
         antiRecall = prefs.getBoolean(KEY_ANTI_RECALL, false)
-        chatEnhance = prefs.getBoolean(KEY_CHAT_ENHANCE, false)
+        swipeQuote = prefs.getBoolean(KEY_SWIPE_QUOTE, false)
+        fakeVoiceTime = prefs.getBoolean(KEY_FAKE_VOICE_TIME, false)
+        showDetailTime = prefs.getBoolean(KEY_SHOW_DETAIL_TIME, false)
+        unlimitCall = prefs.getBoolean(KEY_UNLIMIT_CALL, false)
+        diceCheat = prefs.getBoolean(KEY_DICE_CHEAT, false)
+        repeatMsg = prefs.getBoolean(KEY_REPEAT_MSG, false)
         automation = prefs.getBoolean(KEY_AUTOMATION, false)
         timedTask = prefs.getBoolean(KEY_TIMED_TASK, false)
         momentEnhance = prefs.getBoolean(KEY_MOMENT_ENHANCE, false)
@@ -126,7 +147,12 @@ class MainActivity : Activity() {
     private fun savePrefs() {
         prefs.edit()
             .putBoolean(KEY_ANTI_RECALL, antiRecall)
-            .putBoolean(KEY_CHAT_ENHANCE, chatEnhance)
+            .putBoolean(KEY_SWIPE_QUOTE, swipeQuote)
+            .putBoolean(KEY_FAKE_VOICE_TIME, fakeVoiceTime)
+            .putBoolean(KEY_SHOW_DETAIL_TIME, showDetailTime)
+            .putBoolean(KEY_UNLIMIT_CALL, unlimitCall)
+            .putBoolean(KEY_DICE_CHEAT, diceCheat)
+            .putBoolean(KEY_REPEAT_MSG, repeatMsg)
             .putBoolean(KEY_AUTOMATION, automation)
             .putBoolean(KEY_TIMED_TASK, timedTask)
             .putBoolean(KEY_MOMENT_ENHANCE, momentEnhance)
@@ -143,14 +169,11 @@ class MainActivity : Activity() {
         panel!!.orientation = LinearLayout.VERTICAL
         panel!!.setPadding(0, 0, 0, dip(36))
 
-        // iOS 液态玻璃面板：低不透明度白底 + 白微边框 + 柔和投影
         val bg = GradientDrawable()
         bg.cornerRadii = floatArrayOf(dpf(20), dpf(20), dpf(20), dpf(20), 0f, 0f, 0f, 0f)
         bg.setColor(Color.argb(0x99, 0xF2, 0xF3, 0xF7))
-        // 极淡半透明白色描边
         bg.setStroke(dip(1), Color.argb(0x18, 0xFF, 0xFF, 0xFF))
         panel!!.background = bg
-        // 柔和投影
         panel!!.elevation = dpf(12)
 
         val handle = View(this)
@@ -168,32 +191,45 @@ class MainActivity : Activity() {
         content.orientation = LinearLayout.VERTICAL
         content.setPadding(0, 0, 0, dip(8))
 
-        content.addView(featureCard("\uD83D\uDCAC", "聊天增强", "防撤回 · 多选转发 · 长截图") {
-            addView(bigToggle("防撤回", "阻止好友撤回消息", { antiRecall }, { antiRecall = it }))
+        // ── 聊天功能增强 ──
+        content.addView(featureCard("\uD83D\uDCAC", "聊天功能增强") {
+            addView(bigToggle("防撤回", { antiRecall }, { antiRecall = it }))
             addView(thinDivider())
-            addView(bigToggle("聊天增强", "多选转发、长截图", { chatEnhance }, { chatEnhance = it }))
+            addView(bigToggle("左滑消息引用", { swipeQuote }, { swipeQuote = it }))
+            addView(thinDivider())
+            addView(bigToggle("伪装语音时长", { fakeVoiceTime }, { fakeVoiceTime = it }))
+            addView(thinDivider())
+            addView(bigToggle("显示详细时间", { showDetailTime }, { showDetailTime = it }))
+            addView(thinDivider())
+            addView(bigToggle("解除通话限制", { unlimitCall }, { unlimitCall = it }))
+            addView(thinDivider())
+            addView(bigToggle("猜拳骰子作弊", { diceCheat }, { diceCheat = it }))
+            addView(thinDivider())
+            addView(bigToggle("一键复读消息", { repeatMsg }, { repeatMsg = it }))
         })
 
-        content.addView(featureCard("\u26A1", "自动化", "定时消息 · 自动回复 · 定时朋友圈") {
-            addView(bigToggle("自动任务", "定时消息、自动回复", { automation }, { automation = it }))
+        // ── 自动化 ──
+        content.addView(featureCard("\u26A1", "自动化") {
+            addView(bigToggle("自动任务", { automation }, { automation = it }))
             addView(thinDivider())
-            addView(bigToggle("定时任务", "定时发送消息、朋友圈", { timedTask }, { timedTask = it }))
+            addView(bigToggle("定时任务", { timedTask }, { timedTask = it }))
         })
 
-        content.addView(featureCard("🛡️", "系统", "禁用热更新 · 保持类结构稳定") {
-            addView(bigToggle("禁用热更新", "拦截 Tinker 补丁，防止微信热更新", { disableHotUpdate }, { disableHotUpdate = it }))
+        // ── 朋友圈 ──
+        content.addView(featureCard("\uD83D\uDC63", "朋友圈") {
+            addView(bigToggle("朋友圈增强", { momentEnhance }, { momentEnhance = it }))
+            addView(thinDivider())
+            addView(bigToggle("清理工具", { cleaner }, { cleaner = it }))
         })
 
-        content.addView(featureCard("\uD83D\uDC63", "朋友圈", "去广告 · 强制深色 · 长按保存") {
-            addView(bigToggle("朋友圈增强", "去广告、强制深色模式", { momentEnhance }, { momentEnhance = it }))
-            addView(thinDivider())
-            addView(bigToggle("清理工具", "缓存清理、文件管理", { cleaner }, { cleaner = it }))
+        // ── 系统 ──
+        content.addView(featureCard("\uD83D\uDEE1\uFE0F", "系统") {
+            addView(bigToggle("禁用热更新", { disableHotUpdate }, { disableHotUpdate = it }))
         })
 
         scroll.addView(content)
         panel!!.addView(scroll, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f))
 
-        // 入场动画
         panel!!.post {
             panel!!.translationY = panel!!.height.toFloat() * 0.3f
             panel!!.alpha = 0f
@@ -230,7 +266,7 @@ class MainActivity : Activity() {
         return row
     }
 
-    private fun featureCard(emoji: String, title: String, subtitle: String, content: LinearLayout.() -> Unit): LinearLayout {
+    private fun featureCard(emoji: String, title: String, content: LinearLayout.() -> Unit): LinearLayout {
         val card = LinearLayout(this)
         card.orientation = LinearLayout.VERTICAL
         val m = dip(14)
@@ -239,7 +275,6 @@ class MainActivity : Activity() {
         card.layoutParams = lp
         val cardBg = GradientDrawable()
         cardBg.cornerRadius = dpf(14)
-        // 卡片：玻璃白底，保持可读性
         cardBg.setColor(Color.argb(0xCC, 0xFF, 0xFF, 0xFF))
         cardBg.setStroke(dip(1), Color.argb(0x12, 0xFF, 0xFF, 0xFF))
         card.background = cardBg
@@ -256,14 +291,9 @@ class MainActivity : Activity() {
         icon.text = emoji; icon.textSize = 20f; icon.setPadding(0, 0, dip(10), 0)
         header.addView(icon)
 
-        val col = LinearLayout(this); col.orientation = LinearLayout.VERTICAL
-        header.addView(col, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
         val tv = TextView(this)
         tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 15f
-        col.addView(tv)
-        val ts = TextView(this)
-        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x99, 0x99, 0xA0)); ts.textSize = 11f
-        col.addView(ts)
+        header.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
 
         val chevron = TextView(this)
         chevron.text = "\u25B8"
@@ -296,23 +326,15 @@ class MainActivity : Activity() {
         return card
     }
 
-    private fun bigToggle(title: String, subtitle: String, getter: () -> Boolean, setter: (Boolean) -> Unit): LinearLayout {
+    private fun bigToggle(title: String, getter: () -> Boolean, setter: (Boolean) -> Unit): LinearLayout {
         val row = LinearLayout(this)
         row.orientation = LinearLayout.HORIZONTAL
         row.setPadding(dip(16), dip(12), dip(16), dip(12))
         row.gravity = Gravity.CENTER_VERTICAL
 
-        val col = LinearLayout(this)
-        col.orientation = LinearLayout.VERTICAL
-        col.setPadding(0, 0, dip(8), 0)
-        row.addView(col, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
-
         val tv = TextView(this)
         tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 17f
-        col.addView(tv)
-        val ts = TextView(this)
-        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93)); ts.textSize = 13f
-        col.addView(ts)
+        row.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
 
         val sw = IosSwitch(this, 1.3f)
         sw.setChecked(getter(), false)

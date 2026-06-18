@@ -26,7 +26,6 @@ class ModuleEntry : XposedModule() {
         val FEATURES: List<BaseFeature> = listOf(
             DisableHotUpdateFeature(),
             AntiRecallFeature(),
-            ChatEnhanceFeature(),
             AutomationFeature(),
             TimedTaskFeature(),
             MomentEnhanceFeature(),
@@ -195,3 +194,4 @@ class ModuleEntry : XposedModule() {
         log(Log.INFO, TAG, "FAB 已添加 (右下角)")
     }
 }
+
