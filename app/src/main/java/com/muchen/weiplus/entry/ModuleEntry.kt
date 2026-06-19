@@ -82,7 +82,7 @@ class ModuleEntry : XposedModule() {
         for (feature in FEATURES) {
             if (feature.isEnabled(ctx)) {
                 try {
-                    feature.onEnable(classLoader)
+                    feature.onEnable(this, classLoader)
                     log(Log.INFO, TAG, "功能已激活: ${feature.name}")
                     count++
                 } catch (e: Throwable) {
