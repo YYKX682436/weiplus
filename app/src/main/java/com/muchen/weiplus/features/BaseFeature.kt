@@ -15,9 +15,6 @@ abstract class BaseFeature {
     /** 功能名称（UI 显示） */
     abstract val name: String
 
-    /** 功能描述 */
-    abstract val description: String
-
     /** 当前是否启用 */
     fun isEnabled(ctx: Context): Boolean =
         MainActivity.isFeatureEnabled(ctx, key)

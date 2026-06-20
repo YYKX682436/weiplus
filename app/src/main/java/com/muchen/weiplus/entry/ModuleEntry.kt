@@ -35,9 +35,11 @@ class ModuleEntry : XposedModule() {
 
     override fun onPackageLoaded(param: PackageLoadedParam) {
         if (param.packageName != WECHAT_PKG) return
-        if (!param.isFirstPackage) return
 
-        isMainProcess = (getProcessName() == WECHAT_PKG)
+        val pn = getProcessName()
+        log(Log.INFO, TAG, "onPackageLoaded: $pn isFirstPkg=${param.isFirstPackage}")
+
+        isMainProcess = (pn == WECHAT_PKG)
 
         if (isMainProcess) {
             try {
@@ -57,9 +59,11 @@ class ModuleEntry : XposedModule() {
 
     override fun onPackageReady(param: PackageReadyParam) {
         if (param.packageName != WECHAT_PKG) return
-        if (!param.isFirstPackage) return
 
-        log(Log.INFO, TAG, "微+ 注入进程: ${getProcessName()} (API $apiVersion)")
+        val pn = getProcessName()
+        log(Log.INFO, TAG, "onPackageReady: $pn isFirstPkg=${param.isFirstPackage}")
+
+        log(Log.INFO, TAG, "微+ 注入进程: $pn (API $apiVersion)")
 
         if (isMainProcess) {
             Handler(Looper.getMainLooper()).postDelayed({
@@ -190,6 +194,3 @@ class ModuleEntry : XposedModule() {
         log(Log.INFO, TAG, "FAB 已添加 (右下角)")
     }
 }
-
-
-

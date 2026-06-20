@@ -6,7 +6,6 @@
 class DisableHotUpdateFeature : BaseFeature() {
     override val key = "disable_hot_update"
     override val name = "禁用热更新"
-    override val description = "阻止微信 Tinker 补丁加载，保持类结构稳定"
 
     override fun onEnable(module: io.github.libxposed.api.XposedModule, classLoader: ClassLoader) {
         // Hook 在 ModuleEntry.onPackageLoaded() 中执行（最早时机）
