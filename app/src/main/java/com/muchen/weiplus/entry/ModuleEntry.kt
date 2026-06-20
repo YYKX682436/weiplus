@@ -12,7 +12,6 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
-import com.muchen.weiplus.features.*
 import io.github.libxposed.api.XposedModule
 import io.github.libxposed.api.XposedModuleInterface.PackageLoadedParam
 import io.github.libxposed.api.XposedModuleInterface.PackageReadyParam
@@ -22,15 +21,9 @@ class ModuleEntry : XposedModule() {
     companion object {
         private const val TAG = "WeiPlus"
         private const val WECHAT_PKG = "com.tencent.mm"
-
-        val FEATURES: List<BaseFeature> = listOf(
-            DisableHotUpdateFeature(),
-            AntiRecallFeature(),
-            )
     }
 
     private var fabAdded = false
-    private var featuresActivated = false
     private var isMainProcess = false
 
     override fun onPackageLoaded(param: PackageLoadedParam) {
@@ -41,6 +34,7 @@ class ModuleEntry : XposedModule() {
 
         isMainProcess = (pn == WECHAT_PKG)
 
+        // 禁用微信热更新 — 拦截 Tinker
         if (isMainProcess) {
             try {
                 val cl = param.defaultClassLoader
@@ -62,8 +56,7 @@ class ModuleEntry : XposedModule() {
 
         val pn = getProcessName()
         log(Log.INFO, TAG, "onPackageReady: $pn isFirstPkg=${param.isFirstPackage}")
-
-        log(Log.INFO, TAG, "微+ 注入进程: $pn (API $apiVersion)")
+        log(Log.INFO, TAG, "微+ 已注入进程: $pn (API $apiVersion)")
 
         if (isMainProcess) {
             Handler(Looper.getMainLooper()).postDelayed({
@@ -71,32 +64,6 @@ class ModuleEntry : XposedModule() {
             }, 2000)
             injectEntry(param.classLoader)
         }
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            activateFeatures(param.classLoader)
-        }, 3000)
-    }
-
-    private fun activateFeatures(classLoader: ClassLoader) {
-        if (featuresActivated) return
-        featuresActivated = true
-
-        val ctx = getAppContext() ?: return
-        var count = 0
-        for (feature in FEATURES) {
-            if (feature.isEnabled(ctx)) {
-                try {
-                    feature.onEnable(this, classLoader)
-                    log(Log.INFO, TAG, "功能已激活: ${feature.name}")
-                    count++
-                } catch (e: Throwable) {
-                    log(Log.ERROR, TAG, "激活失败: ${feature.name}", e)
-                }
-            } else {
-                log(Log.INFO, TAG, "功能未启用: ${feature.name}")
-            }
-        }
-        log(Log.INFO, TAG, "共激活 $count 个功能")
     }
 
     // === 入口：FAB 浮动按钮 ===
