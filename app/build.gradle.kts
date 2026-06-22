@@ -37,6 +37,7 @@ android {
 dependencies {
     // XposedBridge API - compileOnly (provided by framework)
     compileOnly("io.github.libxposed:api:102.0.0")
+    compileOnly("androidx.recyclerview:recyclerview:1.3.2")
 
     // Compose
     val composeBom = platform("androidx.compose:compose-bom:2024.12.01")

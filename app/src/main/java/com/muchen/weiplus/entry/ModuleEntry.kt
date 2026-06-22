@@ -14,6 +14,7 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.muchen.weiplus.features.AntiRecallFeature
+import com.muchen.weiplus.features.SwipeQuoteFeature
 import com.muchen.weiplus.features.ToggleStore
 import io.github.libxposed.api.XposedModule
 import io.github.libxposed.api.XposedModuleInterface.PackageLoadedParam
@@ -81,6 +82,14 @@ class ModuleEntry : XposedModule() {
             log(Log.INFO, TAG, "AntiRecallFeature 已激活")
         } catch (e: Throwable) {
             log(Log.ERROR, TAG, "AntiRecallFeature 激活失败", e)
+        }
+
+        // 左滑引用
+        try {
+            SwipeQuoteFeature().onEnable(this, classLoader)
+            log(Log.INFO, TAG, "SwipeQuoteFeature 已激活")
+        } catch (e: Throwable) {
+            log(Log.ERROR, TAG, "SwipeQuoteFeature 激活失败", e)
         }
 
         // 聊天界面长按 ActionBarContainer 开关防撤回
