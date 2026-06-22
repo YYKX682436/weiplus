@@ -49,7 +49,7 @@ class SwipeQuoteFeature : BaseFeature() {
                         val dx = event.x - s.downX
                         if (dx < -SWIPE_PX && Math.abs(event.y - s.downY) < Math.abs(dx) * 0.5f) {
                             s.swiping = true
-                            doQuote(vg, s.downX, s.downY)
+                            if (PreferenceBridge.get(key, true)) doQuote(vg, s.downX, s.downY)
                             return@intercept true
                         }
                     }
@@ -78,58 +78,31 @@ class SwipeQuoteFeature : BaseFeature() {
                 val tagObj = findTagObj(child) ?: return@post
                 val cl = classLoader!!
 
-                // tag.go extends er; er.c() -> f9
                 val f9 = tagObj.javaClass.getMethod("c").invoke(tagObj) ?: run {
                     module.log(Log.WARN, TAG, "tag.c()=null"); return@post
                 }
-                module.log(Log.INFO, TAG, "f9 ok: ${f9.javaClass.name}")
 
                 val activity = getActivity(vg.context) ?: return@post
-                val cf = findViewByClass(activity.window.decorView, "com.tencent.mm.pluginsdk.ui.chat.ChatFooter")
-                    ?: run { module.log(Log.WARN, TAG, "no ChatFooter"); return@post }
+                val cf = findViewByClass(activity.window.decorView,
+                    "com.tencent.mm.pluginsdk.ui.chat.ChatFooter") ?: return@post
 
-                // Search for method F(com.tencent.mm.storage.f9, ...) using declaredMethods
                 val f9Class = cl.loadClass("com.tencent.mm.storage.f9")
-                val r15gClass = try { cl.loadClass("r15.g") } catch (_: Throwable) { null }
 
                 var foundMethod: java.lang.reflect.Method? = null
                 var scl: Class<*>? = cf.javaClass
                 while (scl != null && scl.name.startsWith("com.tencent")) {
                     for (m in scl.declaredMethods) {
-                        if (m.name == "F" && m.parameterTypes.size >= 1) {
-                            val p0 = m.parameterTypes[0]
-                            if (p0.isAssignableFrom(f9Class)) {
-                                foundMethod = m
-                                break
-                            }
-                        }
+                        if (m.name == "F" && m.parameterTypes.size >= 1
+                            && m.parameterTypes[0].isAssignableFrom(f9Class)
+                        ) { foundMethod = m; break }
                     }
                     if (foundMethod != null) break
                     scl = scl.superclass
                 }
-
-                if (foundMethod == null) {
-                    // Dump all F methods
-                    module.log(Log.ERROR, TAG, "no F method found. Dumping F* methods:")
-                    scl = cf.javaClass
-                    while (scl != null && scl.name.startsWith("com.tencent")) {
-                        for (m in scl.declaredMethods) {
-                            if (m.name.startsWith("F")) {
-                                module.log(Log.ERROR, TAG, "  ${m.name}(${m.parameterTypes.joinToString { it.simpleName }}) -> ${m.returnType.simpleName}")
-                            }
-                        }
-                        scl = scl.superclass
-                    }
-                    return@post
-                }
-
+                if (foundMethod == null) { module.log(Log.ERROR, TAG, "F method not found"); return@post }
                 foundMethod.isAccessible = true
-                if (foundMethod.parameterTypes.size >= 2) {
-                    foundMethod.invoke(cf, f9, null)
-                } else {
-                    foundMethod.invoke(cf, f9)
-                }
-                module.log(Log.INFO, TAG, "quote OK via ${foundMethod.name}(${foundMethod.parameterTypes.joinToString { it.simpleName }})")
+                if (foundMethod.parameterTypes.size >= 2) foundMethod.invoke(cf, f9, null)
+                else foundMethod.invoke(cf, f9)
             } catch (e: Throwable) {
                 module.log(Log.ERROR, TAG, "quote fail: ${e.message}")
             }
@@ -159,7 +132,8 @@ class SwipeQuoteFeature : BaseFeature() {
 
     private fun findViewByClass(root: View, className: String): Any? {
         if (root.javaClass.name == className) return root
-        if (root is ViewGroup) for (i in 0 until root.childCount) findViewByClass(root.getChildAt(i), className)?.let { return it }
+        if (root is ViewGroup) for (i in 0 until root.childCount)
+            findViewByClass(root.getChildAt(i), className)?.let { return it }
         return null
     }
 

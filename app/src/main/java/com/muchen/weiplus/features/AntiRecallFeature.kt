@@ -3,10 +3,6 @@
 import android.util.Log
 import io.github.libxposed.api.XposedModule
 
-/**
- * 防撤回 — 默认常开。
- * 开关联动(IPC)暂时搁置，后续通过 ContentProvider 或 root su 实现。
- */
 class AntiRecallFeature : BaseFeature() {
 
     companion object { private const val TAG = "AntiRecall" }
@@ -15,7 +11,11 @@ class AntiRecallFeature : BaseFeature() {
     override val name = "禁止消息撤回"
 
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
-        module.log(Log.INFO, TAG, "默认常开")
+        if (!PreferenceBridge.get(key, true)) {
+            module.log(Log.INFO, TAG, "已关闭")
+            return
+        }
+        module.log(Log.INFO, TAG, "已启用")
         try {
             val wcdb = classLoader.loadClass("com.tencent.wcdb.database.SQLiteDatabase")
             for (m in wcdb.declaredMethods) {
