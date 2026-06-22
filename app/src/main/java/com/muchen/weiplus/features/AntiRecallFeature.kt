@@ -4,31 +4,27 @@ import android.util.Log
 import io.github.libxposed.api.XposedModule
 
 /**
- * 跨进程开关 — 直接读取 WeiPlus 的 SharedPreferences XML 文件。
- * 微信进程 (root 权限) 可读 /data/data/com.muchen.weiplus/shared_prefs/weiplus_prefs.xml
- * WeiPlus 面板通过标准 SharedPreferences API 写入该文件。
+ * 跨进程开关 — 读取 WeiPlus 的 SharedPreferences XML。
+ * 尝试双路径: /data/data/... 和 /data/user/0/...
  */
 object ToggleStore {
-    private val PREFS_XML = "/data/data/com.muchen.weiplus/shared_prefs/weiplus_prefs.xml"
+    private val PREFS_PATHS = arrayOf(
+        "/data/data/com.muchen.weiplus/shared_prefs/weiplus_prefs.xml",
+        "/data/user/0/com.muchen.weiplus/shared_prefs/weiplus_prefs.xml"
+    )
 
     fun isEnabled(): Boolean {
-        return try {
-            val f = java.io.File(PREFS_XML)
-            if (!f.exists()) return true // 默认开启
-            val xml = f.readText()
-            // 查找 name="anti_recall" value="false" — 只有明确设为 false 才关闭
-            !xml.contains("""name="anti_recall" value="false"""")
-        } catch (_: Throwable) { true }
-    }
-
-    fun setEnabled(enabled: Boolean) {
-        // 由 WeiPlus 面板的 SharedPreferences 负责写入，这里不需要操作
-    }
-
-    fun toggle(): Boolean {
-        val new = !isEnabled()
-        setEnabled(new)
-        return new
+        for (path in PREFS_PATHS) {
+            try {
+                val f = java.io.File(path)
+                if (f.exists()) {
+                    val xml = f.readText()
+                    val enabled = !xml.contains("""name="anti_recall" value="false"""")
+                    return enabled
+                }
+            } catch (_: Throwable) {}
+        }
+        return true // 默认开启
     }
 }
 
@@ -55,9 +51,7 @@ class AntiRecallFeature : BaseFeature() {
                                 if (arg?.javaClass?.name?.contains("ContentValues") == true) {
                                     val getAsStr = arg.javaClass.getMethod("getAsString", String::class.java)
                                     val content = getAsStr.invoke(arg, "content") as? String
-                                    val type = try { getAsStr.invoke(arg, "type") as? String } catch (_: Throwable) { null }
-                                    val isRecall = (content != null && content.contains("撤回")) ||
-                                                   (type != null && type.contains("10000"))
+                                    val isRecall = content != null && content.contains("撤回")
                                     if (isRecall) {
                                         module.log(Log.INFO, TAG, "拦截撤回更新")
                                         return@intercept 0

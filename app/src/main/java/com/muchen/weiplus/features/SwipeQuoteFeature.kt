@@ -14,6 +14,7 @@ class SwipeQuoteFeature : BaseFeature() {
 
     companion object {
         private const val TAG = "SwipeQuote"
+        private const val CHATTING_UI = "com.tencent.mm.ui.chatting.ChattingUI"
         private const val SWIPE_PX = 150f
     }
 
@@ -21,7 +22,7 @@ class SwipeQuoteFeature : BaseFeature() {
     override val name = "左滑引用消息"
 
     private lateinit var module: XposedModule
-    private var injected = false
+    private val injectedActivities = mutableSetOf<String>()
     private var downX = 0f
     private var downY = 0f
     private var swiping = false
@@ -29,43 +30,46 @@ class SwipeQuoteFeature : BaseFeature() {
     override fun onEnable(m: XposedModule, classLoader: ClassLoader) {
         module = m
         try {
-            val chattingUI = classLoader.loadClass("com.tencent.mm.ui.chatting.ChattingUI")
-            val onResume = chattingUI.getDeclaredMethod("onResume")
+            // Hook Activity.onResume — 最可靠，每个 Activity 必调用
+            val activityClass = classLoader.loadClass("android.app.Activity")
+            val onResume = activityClass.getDeclaredMethod("onResume")
             module.hook(onResume).intercept { chain ->
                 chain.proceed()
                 val activity = chain.thisObject as? Activity ?: return@intercept null
-                // 多次重试，直到找到 RecyclerView
-                for (delay in longArrayOf(800, 2000, 4000)) {
-                    Handler(Looper.getMainLooper()).postDelayed({
-                        if (!injected) tryInject(activity)
-                    }, delay)
+                if (activity.javaClass.name == CHATTING_UI) {
+                    module.log(Log.INFO, TAG, "ChattingUI.onResume 触发")
+                    for (delay in longArrayOf(800, 2000, 4000)) {
+                        Handler(Looper.getMainLooper()).postDelayed({
+                            tryInject(activity)
+                        }, delay)
+                    }
                 }
                 null
             }
-            module.log(Log.INFO, TAG, "ChattingUI Hook 已安装")
+            module.log(Log.INFO, TAG, "Activity.onResume Hook 已安装")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "Hook 失败", e)
         }
     }
 
     private fun tryInject(activity: Activity) {
-        // 方式1: 反射 ChattingUI 字段找 RecyclerView
+        val key = activity.hashCode().toString()
+        if (injectedActivities.contains(key)) return
+
         val rv = findRecyclerViewByField(activity)
             ?: findRecyclerViewByWalk(activity.window.decorView)
         if (rv == null) {
-            module.log(Log.DEBUG, TAG, "RecyclerView 未找到, 稍后重试")
+            module.log(Log.INFO, TAG, "RecyclerView 未找到, 稍后重试")
             return
         }
         module.log(Log.INFO, TAG, "找到 RecyclerView: ${rv.javaClass.name}")
 
-        // 直接设置 OnTouchListener
         rv.setOnTouchListener { _, event -> handleTouch(rv, event) }
 
-        injected = true
+        injectedActivities.add(key)
         module.log(Log.INFO, TAG, "OnTouchListener 已注入")
     }
 
-    /** 反射查找 ChattingUI 及其父类的 RecyclerView 类型字段 */
     private fun findRecyclerViewByField(activity: Activity): ViewGroup? {
         var clz: Class<*>? = activity.javaClass
         while (clz != null && clz.name.startsWith("com.tencent")) {
@@ -74,6 +78,7 @@ class SwipeQuoteFeature : BaseFeature() {
                 try {
                     val v = f.get(activity)
                     if (v is ViewGroup && v.javaClass.name.contains("RecyclerView")) {
+                        module.log(Log.INFO, TAG, "通过字段找到: ${f.name} -> ${v.javaClass.name}")
                         return v
                     }
                 } catch (_: Throwable) {}
@@ -83,7 +88,6 @@ class SwipeQuoteFeature : BaseFeature() {
         return null
     }
 
-    /** 视图树遍历找 RecyclerView */
     private fun findRecyclerViewByWalk(view: View?): ViewGroup? {
         if (view == null) return null
         if (view is ViewGroup && view.javaClass.name.contains("RecyclerView")) return view
@@ -102,21 +106,20 @@ class SwipeQuoteFeature : BaseFeature() {
                 downX = event.x
                 downY = event.y
                 swiping = false
-                return false // 不消费，让 RecyclerView 正常滚动
+                return false
             }
             MotionEvent.ACTION_MOVE -> {
                 if (swiping) return true
                 val dx = event.x - downX
-                val dyAbs = Math.abs(event.y - downY)
-                if (dx < -SWIPE_PX && dyAbs < Math.abs(dx) * 0.5f) {
+                if (dx < -SWIPE_PX && Math.abs(event.y - downY) < Math.abs(dx) * 0.5f) {
                     swiping = true
                     val child = findChildAt(rv, downX, downY)
                     if (child != null) {
-                        module.log(Log.DEBUG, TAG, "检测到左滑, 触发引用")
+                        module.log(Log.INFO, TAG, "左滑触发引用")
                         child.performLongClick()
                         child.postDelayed({ autoClickQuote(rv) }, 300)
                     }
-                    return true // 消费事件
+                    return true
                 }
                 return false
             }
@@ -132,8 +135,8 @@ class SwipeQuoteFeature : BaseFeature() {
         for (i in parent.childCount - 1 downTo 0) {
             val c = parent.getChildAt(i)
             if (c.visibility == View.VISIBLE &&
-                x >= c.left.toFloat() && x <= c.right.toFloat() &&
-                y >= c.top.toFloat() && y <= c.bottom.toFloat()
+                x >= c.left && x <= c.right &&
+                y >= c.top && y <= c.bottom
             ) return c
         }
         return null
