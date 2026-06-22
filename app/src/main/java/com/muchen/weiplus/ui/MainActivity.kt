@@ -515,7 +515,7 @@ class MainActivity : Activity() {
         row.setPadding(dip(20), dip(8), dip(20), dip(2))
         row.gravity = Gravity.CENTER_VERTICAL
         val tv = TextView(this)
-        tv.text = "微+"; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 26f
+        tv.text = "WeiPlus"; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 26f
         row.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
         val badge = TextView(this)
         badge.text = "微信增强"; badge.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))

@@ -59,11 +59,11 @@ class ModuleEntry : XposedModule() {
 
         val pn = getProcessName()
         log(Log.INFO, TAG, "onPackageReady: $pn isFirstPkg=${param.isFirstPackage}")
-        log(Log.INFO, TAG, "微+ 已注入进程: $pn (API $apiVersion)")
+        log(Log.INFO, TAG, "WeiPlus 已注入进程: $pn (API $apiVersion)")
 
         if (isMainProcess) {
             Handler(Looper.getMainLooper()).postDelayed({
-                showToast("微+ 已注入 ✨")
+                showToast("WeiPlus 已注入 ✨")
             }, 2000)
             injectEntry(param.classLoader)
 
@@ -195,7 +195,7 @@ class ModuleEntry : XposedModule() {
             ctx.startActivity(intent)
         } catch (e: Throwable) {
             log(Log.ERROR, TAG, "startActivity fail", e)
-            Toast.makeText(ctx, "微+ 启动失败", Toast.LENGTH_SHORT).show()
+            Toast.makeText(ctx, "WeiPlus 启动失败", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -206,7 +206,7 @@ class ModuleEntry : XposedModule() {
         val d = activity.resources.displayMetrics.density
         val btn = TextView(activity).apply {
             tag = "weiplus_fab"
-            text = "微+"
+            text = "WeiPlus"
             setTextColor(Color.WHITE)
             setBackgroundColor(Color.argb(220, 70, 130, 250))
             textSize = 14f
