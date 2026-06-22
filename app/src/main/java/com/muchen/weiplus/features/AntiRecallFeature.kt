@@ -11,16 +11,13 @@ class AntiRecallFeature : BaseFeature() {
     override val name = "禁止消息撤回"
 
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
-        if (!PreferenceBridge.get(key, true)) {
-            module.log(Log.INFO, TAG, "已关闭")
-            return
-        }
         module.log(Log.INFO, TAG, "已启用")
         try {
             val wcdb = classLoader.loadClass("com.tencent.wcdb.database.SQLiteDatabase")
             for (m in wcdb.declaredMethods) {
                 if (m.name == "update" && m.parameterTypes.size >= 4) {
                     module.hook(m).intercept { chain ->
+                        if (!FeatureConfig.antiRecall) return@intercept chain.proceed()
                         try {
                             val table = chain.args.getOrNull(0)?.toString() ?: ""
                             if (!table.contains("message")) return@intercept chain.proceed()

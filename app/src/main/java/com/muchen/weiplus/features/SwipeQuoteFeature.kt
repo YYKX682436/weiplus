@@ -1,4 +1,4 @@
-﻿package com.muchen.weiplus.features
+package com.muchen.weiplus.features
 
 import android.os.Handler
 import android.os.Looper
@@ -49,7 +49,7 @@ class SwipeQuoteFeature : BaseFeature() {
                         val dx = event.x - s.downX
                         if (dx < -SWIPE_PX && Math.abs(event.y - s.downY) < Math.abs(dx) * 0.5f) {
                             s.swiping = true
-                            if (PreferenceBridge.get(key, true)) doQuote(vg, s.downX, s.downY)
+                            if (FeatureConfig.swipeQuote) doQuote(vg, s.downX, s.downY)
                             return@intercept true
                         }
                     }

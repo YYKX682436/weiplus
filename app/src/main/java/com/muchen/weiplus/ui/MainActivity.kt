@@ -12,7 +12,6 @@ import android.view.ViewConfiguration
 import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.widget.*
-import com.muchen.weiplus.features.PreferenceBridge
 
 class MainActivity : Activity() {
 
@@ -216,8 +215,6 @@ class MainActivity : Activity() {
     private fun loadPrefs() {
         antiRecall = prefs.getBoolean(KEY_ANTI_RECALL, true)
         swipeQuote = prefs.getBoolean(KEY_SWIPE_QUOTE, false)
-        PreferenceBridge.set(KEY_ANTI_RECALL, antiRecall)
-        PreferenceBridge.set(KEY_SWIPE_QUOTE, swipeQuote)
         fakeVoiceTime = prefs.getBoolean(KEY_FAKE_VOICE_TIME, false)
         showDetailTime = prefs.getBoolean(KEY_SHOW_DETAIL_TIME, false)
         unlimitCall = prefs.getBoolean(KEY_UNLIMIT_CALL, false)
@@ -364,9 +361,9 @@ class MainActivity : Activity() {
 
         // ── 聊天功能增强 ──
         content.addView(featureCard("\uD83D\uDCAC", "聊天功能增强") {
-            addView(bigToggle("禁止消息撤回", "阻止好友撤回已发消息", { antiRecall }, { antiRecall = it; PreferenceBridge.set(KEY_ANTI_RECALL, it) }))
+            addView(bigToggle("禁止消息撤回", "阻止好友撤回已发消息", { antiRecall }, { antiRecall = it }))
             addView(thinDivider())
-            addView(bigToggle("左滑消息引用", "左滑消息快速引用回复", { swipeQuote }, { swipeQuote = it; PreferenceBridge.set(KEY_SWIPE_QUOTE, it) }))
+            addView(bigToggle("左滑消息引用", "左滑消息快速引用回复", { swipeQuote }, { swipeQuote = it }))
             addView(thinDivider())
             addView(bigToggle("伪装语音时长", "自定义语音消息时长显示", { fakeVoiceTime }, { fakeVoiceTime = it }))
             addView(thinDivider())
