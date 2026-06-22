@@ -213,7 +213,7 @@ class MainActivity : Activity() {
     override fun onPause() { super.onPause(); savePrefs() }
 
     private fun loadPrefs() {
-        antiRecall = prefs.getBoolean(KEY_ANTI_RECALL, false)
+        antiRecall = prefs.getBoolean(KEY_ANTI_RECALL, true)
         swipeQuote = prefs.getBoolean(KEY_SWIPE_QUOTE, false)
         fakeVoiceTime = prefs.getBoolean(KEY_FAKE_VOICE_TIME, false)
         showDetailTime = prefs.getBoolean(KEY_SHOW_DETAIL_TIME, false)
@@ -361,7 +361,7 @@ class MainActivity : Activity() {
 
         // ── 聊天功能增强 ──
         content.addView(featureCard("\uD83D\uDCAC", "聊天功能增强") {
-            addView(bigToggle("禁止消息撤回", "阻止好友撤回已发消息", { antiRecall }, { antiRecall = it }))
+            addView(bigToggle("禁止消息撤回", "阻止好友撤回已发消息", { antiRecall }, { antiRecall = it; syncAntiRecallToFile(it) }))
             addView(thinDivider())
             addView(bigToggle("左滑消息引用", "左滑消息快速引用回复", { swipeQuote }, { swipeQuote = it }))
             addView(thinDivider())
@@ -629,8 +629,7 @@ class MainActivity : Activity() {
 
     private fun dip(v: Int): Int = (v * resources.displayMetrics.density + 0.5f).toInt()
     private fun dpf(v: Int): Float = v * resources.displayMetrics.density
+    private fun syncAntiRecallToFile(enabled: Boolean) {
+        try { java.io.File("/sdcard/weiplus_anti_recall").writeText(if (enabled) "1" else "0") } catch (_: Throwable) {}
+    }
 }
-
-
-
-

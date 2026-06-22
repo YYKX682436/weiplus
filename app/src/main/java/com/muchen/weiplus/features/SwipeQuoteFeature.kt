@@ -5,7 +5,9 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.view.MotionEvent
+import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import io.github.libxposed.api.XposedModule
 
@@ -63,7 +65,13 @@ class SwipeQuoteFeature : BaseFeature() {
                             if (dx < -threshold && dyAbs < Math.abs(dx) * 0.6f) {
                                 swiping = true
                                 val child = rv.findChildViewUnder(downX, downY)
-                                child?.performLongClick()
+                                if (child != null) {
+                                    // 长按弹出菜单，然后自动点击"引用"
+                                    child.performLongClick()
+                                    child.postDelayed({
+                                        autoClickQuote(activity)
+                                    }, 300)
+                                }
                                 return true
                             }
                         }
@@ -79,13 +87,35 @@ class SwipeQuoteFeature : BaseFeature() {
             })
 
             injected = true
-            module.log(Log.INFO, TAG, "滑动监听已注入")
+            module.log(Log.INFO, TAG, "滑动监听已注入 (直接引用)")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "注入滑动监听失败", e)
         }
     }
 
-    private fun findRecyclerView(view: android.view.View): RecyclerView? {
+    /** 在弹出菜单中查找并点击"引用" */
+    private fun autoClickQuote(activity: Activity) {
+        try {
+            val decor = activity.window.decorView
+            findAndClickText(decor, "引用")
+        } catch (_: Throwable) {}
+    }
+
+    private fun findAndClickText(view: View, text: String): Boolean {
+        if (view is TextView && view.text == text && view.isShown && view.isEnabled) {
+            view.performClick()
+            return true
+        }
+        if (view is ViewGroup) {
+            for (i in 0 until view.childCount) {
+                val child = view.getChildAt(i)
+                if (findAndClickText(child, text)) return true
+            }
+        }
+        return false
+    }
+
+    private fun findRecyclerView(view: View): RecyclerView? {
         if (view is RecyclerView) return view
         if (view is ViewGroup) {
             for (i in 0 until view.childCount) {

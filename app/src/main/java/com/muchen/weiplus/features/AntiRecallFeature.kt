@@ -4,15 +4,18 @@ import android.util.Log
 import io.github.libxposed.api.XposedModule
 
 /**
- * 跨进程开关状态 — 微信进程 & 模块进程均可读写
+ * 跨进程开关 — 默认开启。
+ * 微信进程 & WeiPlus 设置面板通过 /sdcard/weiplus_anti_recall 文件联动。
  */
 object ToggleStore {
     private const val FILE = "/sdcard/weiplus_anti_recall"
 
+    /** 默认开启：文件不存在或内容为 "1" 时返回 true */
     fun isEnabled(): Boolean {
         return try {
-            java.io.File(FILE).exists() && java.io.File(FILE).readText().trim() == "1"
-        } catch (_: Throwable) { false }
+            val f = java.io.File(FILE)
+            !f.exists() || f.readText().trim() == "1"
+        } catch (_: Throwable) { true }
     }
 
     fun setEnabled(enabled: Boolean) {
@@ -56,7 +59,7 @@ class AntiRecallFeature : BaseFeature() {
                         } catch (_: Throwable) {}
                         chain.proceed()
                     }
-                    module.log(Log.INFO, TAG, "WCDB Hook 已安装")
+                    module.log(Log.INFO, TAG, "WCDB Hook 已安装 (默认开启)")
                     return
                 }
             }
