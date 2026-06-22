@@ -8,10 +8,13 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.view.Gravity
+import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
+import com.muchen.weiplus.features.AntiRecallFeature
+import com.muchen.weiplus.features.ToggleStore
 import io.github.libxposed.api.XposedModule
 import io.github.libxposed.api.XposedModuleInterface.PackageLoadedParam
 import io.github.libxposed.api.XposedModuleInterface.PackageReadyParam
@@ -60,9 +63,41 @@ class ModuleEntry : XposedModule() {
 
         if (isMainProcess) {
             Handler(Looper.getMainLooper()).postDelayed({
-                showToast("微+ 已注入 \u2728")
+                showToast("微+ 已注入 ✨")
             }, 2000)
             injectEntry(param.classLoader)
+
+            // === 功能注册 ===
+            registerFeatures(param.classLoader)
+        }
+    }
+
+    // === 功能注册 ===
+
+    private fun registerFeatures(classLoader: ClassLoader) {
+        // 防撤回
+        try {
+            AntiRecallFeature().onEnable(this, classLoader)
+            log(Log.INFO, TAG, "AntiRecallFeature 已激活")
+        } catch (e: Throwable) {
+            log(Log.ERROR, TAG, "AntiRecallFeature 激活失败", e)
+        }
+
+        // 聊天界面长按 ActionBarContainer 开关防撤回
+        try {
+            val chattingUI = classLoader.loadClass("com.tencent.mm.ui.chatting.ChattingUI")
+            val onResume = chattingUI.getDeclaredMethod("onResume")
+            hook(onResume).intercept { chain ->
+                chain.proceed()
+                val activity = chain.thisObject as? Activity ?: return@intercept null
+                Handler(Looper.getMainLooper()).postDelayed({
+                    injectActionBarToggle(activity)
+                }, 1200)
+                null
+            }
+            log(Log.INFO, TAG, "ChattingUI 开关 Hook 已安装")
+        } catch (e: Throwable) {
+            log(Log.ERROR, TAG, "ChattingUI Hook 失败", e)
         }
     }
 
@@ -91,6 +126,35 @@ class ModuleEntry : XposedModule() {
         } catch (e: Throwable) {
             log(Log.ERROR, TAG, "LauncherUI 类加载失败", e)
         }
+    }
+
+    // === 长按 ActionBarContainer 切换防撤回 ===
+
+    private fun injectActionBarToggle(activity: Activity) {
+        try {
+            val root = activity.window.decorView
+                .findViewById<ViewGroup>(android.R.id.content) ?: return
+            findActionBarContainer(root) { bar ->
+                bar.setOnLongClickListener {
+                    val enabled = ToggleStore.toggle()
+                    showToast(if (enabled) "防撤回: 开" else "防撤回: 关")
+                    true
+                }
+            }
+        } catch (_: Throwable) {}
+    }
+
+    private fun findActionBarContainer(view: View, callback: (View) -> Unit): Boolean {
+        if (view.javaClass.name == "androidx.appcompat.widget.ActionBarContainer") {
+            callback(view)
+            return true
+        }
+        if (view is ViewGroup) {
+            for (i in 0 until view.childCount) {
+                if (findActionBarContainer(view.getChildAt(i), callback)) return true
+            }
+        }
+        return false
     }
 
     // === 工具方法 ===
