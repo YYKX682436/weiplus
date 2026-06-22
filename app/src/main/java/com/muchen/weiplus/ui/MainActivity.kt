@@ -361,7 +361,7 @@ class MainActivity : Activity() {
 
         // ── 聊天功能增强 ──
         content.addView(featureCard("\uD83D\uDCAC", "聊天功能增强") {
-            addView(bigToggle("禁止消息撤回", "阻止好友撤回已发消息", { antiRecall }, { antiRecall = it; syncAntiRecallToFile(it) }))
+            addView(bigToggle("禁止消息撤回", "阻止好友撤回已发消息", { antiRecall }, { antiRecall = it }))
             addView(thinDivider())
             addView(bigToggle("左滑消息引用", "左滑消息快速引用回复", { swipeQuote }, { swipeQuote = it }))
             addView(thinDivider())
