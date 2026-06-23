@@ -46,11 +46,18 @@ class ShowDetailTimeFeature : BaseFeature() {
                 if (tag != null && tag.javaClass.name.contains("viewitems.")) {
                     val f9 = tryGetF9(tag)
                     if (f9 != null) {
-                        // Cancel previous pending update for this view to prevent flicker
-                        pendingRunnables[view]?.let { mainHandler.removeCallbacks(it) }
-                        val runnable = Runnable { processTag(view, f9, tag) }
-                        pendingRunnables[view] = runnable
-                        mainHandler.postDelayed(runnable, 200)
+                        val root = findMessageRoot(view)
+                        val avatar = root?.let { findMaskLayout(it) }
+                        if (avatar != null && timeViewMap.containsKey(avatar)) {
+                            // Recycled view: update immediately, no flicker
+                            updateTimeLabel(avatar, f9)
+                        } else {
+                            // New view: post delayed for layout
+                            pendingRunnables[view]?.let { mainHandler.removeCallbacks(it) }
+                            val runnable = Runnable { processTag(view, f9, tag) }
+                            pendingRunnables[view] = runnable
+                            mainHandler.postDelayed(runnable, 200)
+                        }
                     }
                 }
                 null
