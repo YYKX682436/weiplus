@@ -78,6 +78,9 @@ class ModuleEntry : XposedModule() {
 
         try { SwipeQuoteFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "SwipeQuoteFeature OK") }
         catch (e: Throwable) { log(Log.ERROR, TAG, "SwipeQuoteFeature fail", e) }
+
+        try { ShowDetailTimeFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "ShowDetailTimeFeature OK") }
+        catch (e: Throwable) { log(Log.ERROR, TAG, "ShowDetailTimeFeature fail", e) }
     }
 
     private fun injectEntry(classLoader: ClassLoader) {
@@ -125,13 +128,12 @@ class ModuleEntry : XposedModule() {
         })
     }
 
-    // === 嵌入面板 (FrameLayout 容器 = backdrop + panel 一体) ===
+    // === 嵌入面板 ===
 
     private fun showPanel(activity: Activity) {
         val root = activity.window.decorView
             .findViewById<ViewGroup>(android.R.id.content) ?: return
 
-        // Toggle: if panel exists, remove it
         val existing = root.findViewWithTag<View>("weiplus_panel")
         if (existing != null) {
             root.removeView(existing)
@@ -140,14 +142,12 @@ class ModuleEntry : XposedModule() {
 
         val d = activity.resources.displayMetrics.density
 
-        // Container: FrameLayout wrapping backdrop + panel
         val container = FrameLayout(activity).apply {
             tag = "weiplus_panel"
             setBackgroundColor(Color.argb(100, 0, 0, 0))
             setOnClickListener { root.removeView(this) }
         }
 
-        // Panel card
         val panel = LinearLayout(activity).apply {
             orientation = LinearLayout.VERTICAL
             background = GradientDrawable().apply {
@@ -176,6 +176,11 @@ class ModuleEntry : XposedModule() {
             FeatureConfig.swipeQuote
         ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() })
 
+        // ShowDetailTime
+        panel.addView(switchRow(activity, d, "显示详细时间", "头像下方显示消息时间",
+            FeatureConfig.showDetailTime
+        ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() })
+
         // Close
         panel.addView(TextView(activity).apply {
             text = "关闭"
@@ -186,7 +191,6 @@ class ModuleEntry : XposedModule() {
             setOnClickListener { root.removeView(container) }
         })
 
-        // Panel centered in container (doesn't receive backdrop clicks)
         val panelLp = FrameLayout.LayoutParams(
             (300 * d).toInt(), FrameLayout.LayoutParams.WRAP_CONTENT
         ).apply { gravity = Gravity.CENTER }
