@@ -3,6 +3,7 @@
 object FeatureConfig {
     var antiRecall = true
     var swipeQuote = true
+    var showDetailTime = true
 
     fun load() {
         try {
@@ -15,6 +16,7 @@ object FeatureConfig {
                 when (parts[0].trim()) {
                     "anti_recall" -> antiRecall = v
                     "swipe_quote" -> swipeQuote = v
+                    "show_detail_time" -> showDetailTime = v
                 }
             }
         } catch (_: Throwable) {}
@@ -23,7 +25,7 @@ object FeatureConfig {
     fun save() {
         try {
             java.io.File("/sdcard/weiplus_prefs").writeText(
-                "anti_recall=$antiRecall\nswipe_quote=$swipeQuote\n"
+                "anti_recall=$antiRecall\nswipe_quote=$swipeQuote\nshow_detail_time=$showDetailTime\n"
             )
         } catch (_: Throwable) {}
     }

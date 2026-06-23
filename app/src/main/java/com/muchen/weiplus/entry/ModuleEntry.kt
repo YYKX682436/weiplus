@@ -16,6 +16,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.muchen.weiplus.features.AntiRecallFeature
 import com.muchen.weiplus.features.FeatureConfig
+import com.muchen.weiplus.features.ShowDetailTimeFeature
 import com.muchen.weiplus.features.SwipeQuoteFeature
 import com.muchen.weiplus.ui.IosSwitch
 import io.github.libxposed.api.XposedModule
@@ -77,6 +78,9 @@ class ModuleEntry : XposedModule() {
 
         try { SwipeQuoteFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "SwipeQuoteFeature OK") }
         catch (e: Throwable) { log(Log.ERROR, TAG, "SwipeQuoteFeature fail", e) }
+
+        try { ShowDetailTimeFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "ShowDetailTimeFeature OK") }
+        catch (e: Throwable) { log(Log.ERROR, TAG, "ShowDetailTimeFeature fail", e) }
     }
 
     private fun injectEntry(classLoader: ClassLoader) {
@@ -124,13 +128,12 @@ class ModuleEntry : XposedModule() {
         })
     }
 
-    // === 嵌入面板 (FrameLayout 容器 = backdrop + panel 一体) ===
+    // === 嵌入面板 ===
 
     private fun showPanel(activity: Activity) {
         val root = activity.window.decorView
             .findViewById<ViewGroup>(android.R.id.content) ?: return
 
-        // Toggle: if panel exists, remove it
         val existing = root.findViewWithTag<View>("weiplus_panel")
         if (existing != null) {
             root.removeView(existing)
@@ -139,14 +142,12 @@ class ModuleEntry : XposedModule() {
 
         val d = activity.resources.displayMetrics.density
 
-        // Container: FrameLayout wrapping backdrop + panel
         val container = FrameLayout(activity).apply {
             tag = "weiplus_panel"
             setBackgroundColor(Color.argb(100, 0, 0, 0))
             setOnClickListener { root.removeView(this) }
         }
 
-        // Panel card
         val panel = LinearLayout(activity).apply {
             orientation = LinearLayout.VERTICAL
             background = GradientDrawable().apply {
@@ -166,18 +167,23 @@ class ModuleEntry : XposedModule() {
         })
 
         // AntiRecall
-        panel.addView(switchRow(activity, d, "禁止消息撤回", "阻止好友撤回已发消息",
+        panel.addView(switchRow(activity, d, "Anti Recall", "Block recall message updates",
             FeatureConfig.antiRecall
         ) { FeatureConfig.antiRecall = it; FeatureConfig.save() })
 
         // SwipeQuote
-        panel.addView(switchRow(activity, d, "左滑引用消息", "左滑消息快速引用回复",
+        panel.addView(switchRow(activity, d, "Swipe Quote", "Swipe left to quote reply",
             FeatureConfig.swipeQuote
         ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() })
 
+        // ShowDetailTime
+        panel.addView(switchRow(activity, d, "Detail Time", "Show time below avatars",
+            FeatureConfig.showDetailTime
+        ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() })
+
         // Close
         panel.addView(TextView(activity).apply {
-            text = "关闭"
+            text = "Close"
             setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF))
             textSize = 14f
             gravity = Gravity.CENTER
@@ -185,7 +191,6 @@ class ModuleEntry : XposedModule() {
             setOnClickListener { root.removeView(container) }
         })
 
-        // Panel centered in container (doesn't receive backdrop clicks)
         val panelLp = FrameLayout.LayoutParams(
             (300 * d).toInt(), FrameLayout.LayoutParams.WRAP_CONTENT
         ).apply { gravity = Gravity.CENTER }
