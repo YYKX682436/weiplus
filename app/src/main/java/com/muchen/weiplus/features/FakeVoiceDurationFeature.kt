@@ -93,11 +93,32 @@ class FakeVoiceDurationFeature : BaseFeature() {
         module.log(Log.INFO, TAG, "modifyDuration: found " + durViews.size + " candidates, x" + multiplier)
         for (tv in durViews) {
             val text = tv.text?.toString() ?: ""
-            val num = text.replace(Regex("[^0-9]"), "").toIntOrNull()
-            if (num != null && num > 0 && num <= 120) {
-                val fake = (num * multiplier).toInt().coerceAtLeast(1)
-                tv.text = fake.toString() + "''"
-                module.log(Log.INFO, TAG, "Voice dur: " + text + " -> " + fake + "'' (x" + multiplier + ")")
+            module.log(Log.INFO, TAG, "  candidate: [" + text + "]")
+            var totalSecs: Int? = null
+            var wasMMSS = false
+            if (text.contains(":")) {
+                val parts = text.split(":")
+                if (parts.size == 2) {
+                    val min = parts[0].toIntOrNull()
+                    val sec = parts[1].toIntOrNull()
+                    if (min != null && sec != null) {
+                        totalSecs = min * 60 + sec
+                        wasMMSS = true
+                    }
+                }
+            } else {
+                totalSecs = text.replace(Regex("[^0-9]"), "").toIntOrNull()
+            }
+            if (totalSecs != null && totalSecs > 0) {
+                val fake = (totalSecs * multiplier).toInt().coerceAtLeast(1)
+                if (wasMMSS) {
+                    val fm = fake / 60
+                    val fs = fake % 60
+                    tv.text = String.format("%02d:%02d", fm, fs)
+                } else {
+                    tv.text = fake.toString() + "\x27\x27"
+                }
+                module.log(Log.INFO, TAG, "Voice dur: " + text + " -> " + tv.text + " (x" + multiplier + ")")
             }
         }
     }
