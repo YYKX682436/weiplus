@@ -1,4 +1,4 @@
-﻿package com.muchen.weiplus.features
+package com.muchen.weiplus.features
 
 import android.util.Log
 import io.github.libxposed.api.XposedModule

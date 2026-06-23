@@ -27,12 +27,12 @@ class SwipeQuoteFeature : BaseFeature() {
 
     private class TouchState(var downX: Float = 0f, var downY: Float = 0f, var swiping: Boolean = false)
 
-    override fun onEnable(m: XposedModule, cl: ClassLoader) {
-        module = m
-        classLoader = cl
+    override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
+        this.module = module
+        this.classLoader = classLoader
 
         try {
-            val vgClass = cl.loadClass("android.view.ViewGroup")
+            val vgClass = classLoader.loadClass("android.view.ViewGroup")
             val method = vgClass.getDeclaredMethod("onInterceptTouchEvent", MotionEvent::class.java)
             module.hook(method).intercept { chain ->
                 val vg = chain.thisObject as? ViewGroup ?: return@intercept chain.proceed()
@@ -76,7 +76,7 @@ class SwipeQuoteFeature : BaseFeature() {
             try {
                 val child = findViewUnder(vg, x, y) ?: return@post
                 val tagObj = findTagObj(child) ?: return@post
-                val cl = classLoader!!
+                val classLoader = classLoader!!
 
                 val f9 = tagObj.javaClass.getMethod("c").invoke(tagObj) ?: run {
                     module.log(Log.WARN, TAG, "tag.c()=null"); return@post
@@ -86,7 +86,7 @@ class SwipeQuoteFeature : BaseFeature() {
                 val cf = findViewByClass(activity.window.decorView,
                     "com.tencent.mm.pluginsdk.ui.chat.ChatFooter") ?: return@post
 
-                val f9Class = cl.loadClass("com.tencent.mm.storage.f9")
+                val f9Class = classLoader.loadClass("com.tencent.mm.storage.f9")
 
                 var foundMethod: java.lang.reflect.Method? = null
                 var scl: Class<*>? = cf.javaClass

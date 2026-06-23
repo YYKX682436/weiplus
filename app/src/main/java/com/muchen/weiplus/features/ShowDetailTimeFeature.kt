@@ -1,4 +1,4 @@
-﻿package com.muchen.weiplus.features
+package com.muchen.weiplus.features
 
 import android.os.Handler
 import android.os.Looper
@@ -31,9 +31,9 @@ class ShowDetailTimeFeature : BaseFeature() {
     private val lastF9Map = WeakHashMap<View, Any>()
     private val pendingRunnables = WeakHashMap<View, Runnable>()
 
-    override fun onEnable(m: XposedModule, cl: ClassLoader) {
-        module = m
-        classLoader = cl
+    override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
+        this.module = module
+        this.classLoader = classLoader
 
         try {
             val viewClass = View::class.java

@@ -1,4 +1,4 @@
-﻿package com.muchen.weiplus.features
+package com.muchen.weiplus.features
 
 object FeatureConfig {
     var antiRecall = true

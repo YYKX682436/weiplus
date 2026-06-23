@@ -1,4 +1,4 @@
-﻿package com.muchen.weiplus.ui
+package com.muchen.weiplus.ui
 
 import android.app.Activity
 import android.graphics.Color
@@ -23,27 +23,26 @@ class MainActivity : Activity() {
             setPadding(0, dip(16), 0, dip(16))
         }
 
-        addSection(panel, "娑堟伅澧炲己")
+        addSection(panel, "\u6d88\u606f\u589e\u5f3a")
         addCard(panel) { card ->
-            addToggle(card, "绂佹娑堟伅鎾ゅ洖", "闃绘濂藉弸鎾ゅ洖宸插彂娑堟伅",
+            addToggle(card, "\u7981\u6b62\u6d88\u606f\u64a4\u56de", "\u963b\u6b62\u597d\u53cb\u64a4\u56de\u5df2\u53d1\u6d88\u606f",
                 FeatureConfig.antiRecall
             ) { FeatureConfig.antiRecall = it; FeatureConfig.save() }
             addCardDivider(card)
-            addToggle(card, "宸︽粦寮曠敤娑堟伅", "宸︽粦娑堟伅蹇€熷紩鐢ㄥ洖澶?,
+            addToggle(card, "\u5de6\u6ed1\u5f15\u7528\u6d88\u606f", "\u5de6\u6ed1\u6d88\u606f\u5feb\u901f\u5f15\u7528\u56de\u590d",
                 FeatureConfig.swipeQuote
             ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() }
             addCardDivider(card)
-            addToggle(card, "鏄剧ず璇︾粏鏃堕棿", "澶村儚涓嬫柟鏄剧ず娑堟伅鏃堕棿 HH:mm:ss",
+            addToggle(card, "\u663e\u793a\u8be6\u7ec6\u65f6\u95f4", "\u5934\u50cf\u4e0b\u65b9\u663e\u793a\u6d88\u606f\u65f6\u95f4 HH:mm:ss",
                 FeatureConfig.showDetailTime
             ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() }
         }
 
         addSection(panel, "")
         addCard(panel) { card ->
-            addInfoRow(card, "鐗堟湰", "1.0.0")
+            addInfoRow(card, "\u7248\u672c", "1.0.0")
             addCardDivider(card)
-            addInfoRow(card, "璇存槑", "闇€瑕佹縺娲?LSPosed 妯″潡鍚庨噸鍚井淇♀€?\n" +
-                "鎵€鏈夊姛鑳藉潎闇€鏈夋晥鐨?LSPosed 鐜")
+            addInfoRow(card, "\u8bf4\u660e", "\u9700\u8981\u6fc0\u6d3b LSPosed \u6a21\u5757\u540e\u91cd\u542f\u5fae\u4fe1\u3002\n\u6240\u6709\u529f\u80fd\u5747\u9700\u6709\u6548\u7684 LSPosed \u73af\u5883")
         }
 
         val scroll = ScrollView(this).apply { addView(panel) }

@@ -1,6 +1,5 @@
-﻿plugins {
+plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -33,6 +32,5 @@ android {
 }
 
 dependencies {
-    // XposedBridge API - compileOnly (provided by framework)
     compileOnly("io.github.libxposed:api:102.0.0")
 }

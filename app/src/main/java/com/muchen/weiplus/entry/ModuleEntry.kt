@@ -1,4 +1,4 @@
-﻿package com.muchen.weiplus.entry
+package com.muchen.weiplus.entry
 
 import android.app.Activity
 import android.content.Context
@@ -46,11 +46,11 @@ class ModuleEntry : XposedModule() {
                 val appClass = cl.loadClass("com.tencent.tinker.loader.app.TinkerApplication")
                 val tryLoadMethod = tinkerLoader.getDeclaredMethod("tryLoad", appClass)
                 hook(tryLoadMethod).intercept { _ ->
-                    log(Log.INFO, TAG, "Tinker 鐑洿鏂板凡鎷︽埅")
+                    log(Log.INFO, TAG, "Tinker 热更新已拦截")
                     false
                 }
             } catch (e: Throwable) {
-                log(Log.ERROR, TAG, "Tinker Hook 澶辫触", e)
+                log(Log.ERROR, TAG, "Tinker Hook 失败", e)
             }
         }
     }
@@ -60,12 +60,12 @@ class ModuleEntry : XposedModule() {
 
         val pn = getProcessName()
         log(Log.INFO, TAG, "onPackageReady: $pn isFirstPkg=${param.isFirstPackage}")
-        log(Log.INFO, TAG, "WeiPlus 宸叉敞鍏ヨ繘绋? $pn (API $apiVersion)")
+        log(Log.INFO, TAG, "WeiPlus 已注入进程: $pn (API $apiVersion)")
 
         if (isMainProcess) {
             FeatureConfig.load()
             Handler(Looper.getMainLooper()).postDelayed({
-                showToast("WeiPlus 宸叉敞鍏?)
+                showToast("WeiPlus 已注入")
             }, 2000)
             injectEntry(param.classLoader)
             registerFeatures(param.classLoader)
@@ -81,6 +81,7 @@ class ModuleEntry : XposedModule() {
 
         try { ShowDetailTimeFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "ShowDetailTimeFeature OK") }
         catch (e: Throwable) { log(Log.ERROR, TAG, "ShowDetailTimeFeature fail", e) }
+
     }
 
     private fun injectEntry(classLoader: ClassLoader) {
@@ -115,24 +116,22 @@ class ModuleEntry : XposedModule() {
             setBackgroundColor(Color.argb(220, 70, 130, 250))
             textSize = 14f
             gravity = Gravity.CENTER
-            val size = (44 * d).toInt()
-            val margin = (16 * d).toInt()
-            val lp = FrameLayout.LayoutParams(size, size)
-            lp.gravity = Gravity.END or Gravity.BOTTOM
-            lp.setMargins(0, 0, margin, (80 * d).toInt())
-            layoutParams = lp
-            background = GradientDrawable().apply {
-                shape = GradientDrawable.OVAL
-                setColor(Color.argb(220, 70, 130, 250))
-            }
-            setOnClickListener { addPanel(activity) }
+            setPadding((16 * d).toInt(), (10 * d).toInt(), (16 * d).toInt(), (10 * d).toInt())
+            elevation = 8f * d
+            setOnClickListener { showPanel(activity) }
         }
-        root.addView(btn)
+        root.addView(btn, FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT,
+            Gravity.BOTTOM or Gravity.END
+        ).apply {
+            bottomMargin = (100 * d).toInt()
+            rightMargin = (16 * d).toInt()
+        })
     }
 
-    // === Panel ===
+    // === 嵌入面板 ===
 
-    private fun addPanel(activity: Activity) {
+    private fun showPanel(activity: Activity) {
         val root = activity.window.decorView
             .findViewById<ViewGroup>(android.R.id.content) ?: return
 
@@ -167,20 +166,21 @@ class ModuleEntry : XposedModule() {
             setPadding(0, (12 * d).toInt(), 0, (16 * d).toInt())
         })
 
-        panel.addView(switchRow(activity, d, "绂佹娑堟伅鎾ゅ洖", "闃绘濂藉弸鎾ゅ洖宸插彂娑堟伅",
+        panel.addView(switchRow(activity, d, "禁止消息撤回", "阻止好友撤回已发消息",
             FeatureConfig.antiRecall
         ) { FeatureConfig.antiRecall = it; FeatureConfig.save() })
 
-        panel.addView(switchRow(activity, d, "宸︽粦寮曠敤娑堟伅", "宸︽粦娑堟伅蹇€熷紩鐢ㄥ洖澶?,
+        panel.addView(switchRow(activity, d, "左滑引用消息", "左滑消息快速引用回复",
             FeatureConfig.swipeQuote
         ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() })
 
-        panel.addView(switchRow(activity, d, "鏄剧ず璇︾粏鏃堕棿", "澶村儚涓嬫柟鏄剧ず娑堟伅鏃堕棿",
+        panel.addView(switchRow(activity, d, "显示详细时间", "头像下方显示消息时间",
             FeatureConfig.showDetailTime
         ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() })
 
+
         panel.addView(TextView(activity).apply {
-            text = "鍏抽棴"
+            text = "关闭"
             setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF))
             textSize = 14f
             gravity = Gravity.CENTER
@@ -223,7 +223,7 @@ class ModuleEntry : XposedModule() {
         return row
     }
 
-    // === 宸ュ叿 ===
+    // === 工具 ===
 
     private fun getProcessName(): String {
         return try {
