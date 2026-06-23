@@ -601,7 +601,7 @@ class MainActivity : Activity() {
         swLp.gravity = Gravity.CENTER_VERTICAL or Gravity.END
         row.addView(sw, swLp)
 
-        row.setOnClickListener { val nv = !sw.isChecked; sw.setChecked(nv, true); setter(nv) }
+        // Click behavior: switch toggles, title opens settings
         sw.onToggle = setter
         return row
     }

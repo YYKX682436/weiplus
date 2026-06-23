@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import io.github.libxposed.api.XposedModule
+import java.util.WeakHashMap
 
 class FakeVoiceDurationFeature : BaseFeature() {
 
@@ -19,36 +20,45 @@ class FakeVoiceDurationFeature : BaseFeature() {
 
     private lateinit var module: XposedModule
     private val mainHandler = Handler(Looper.getMainLooper())
+    private val processedViews = WeakHashMap<View, Long>()
 
     override fun onEnable(m: XposedModule, cl: ClassLoader) {
         module = m
 
         try {
-            val yaClass = cl.loadClass("com.tencent.mm.ui.chatting.viewitems.ya")
-            for (method in yaClass.declaredMethods) {
-                if (method.name == "b" && method.parameterTypes.size == 4) {
-                    module.hook(method).intercept { chain ->
-                        chain.proceed()
-                        if (!FeatureConfig.fakeVoiceDuration) return@intercept null
-                        val tag = chain.thisObject
-                        mainHandler.postDelayed({
-                            try {
-                                val view = tag.javaClass.getMethod("getMainContainerView").invoke(tag) as? ViewGroup
-                                if (view != null) modifyDuration(view)
-                            } catch (e: Throwable) {
-                                module.log(Log.ERROR, TAG, "err: ${e.message}")
-                            }
-                        }, 300)
-                        null
-                    }
-                    module.log(Log.INFO, TAG, "ya.b Hook OK, multiplier=${FeatureConfig.voiceDurationMultiplier}")
-                    return
+            val viewClass = View::class.java
+            val setTagMethod = viewClass.getDeclaredMethod("setTag", Any::class.java)
+            module.hook(setTagMethod).intercept { chain ->
+                chain.proceed()
+                if (!FeatureConfig.fakeVoiceDuration) return@intercept null
+                val view = chain.thisObject as? View ?: return@intercept null
+                val tag = chain.args[0]
+                if (tag != null && tag.javaClass.name == "com.tencent.mm.ui.chatting.viewitems.ya") {
+                    val now = System.currentTimeMillis()
+                    val last = processedViews[view] ?: 0L
+                    if (now - last < 1000) return@intercept null
+                    processedViews[view] = now
+                    mainHandler.postDelayed({
+                        try {
+                            val root = view.getMainContainerView() as? ViewGroup ?: view as? ViewGroup
+                            if (root != null) modifyDuration(root)
+                        } catch (e: Throwable) {
+                            module.log(Log.ERROR, TAG, "err: ${e.message}")
+                        }
+                    }, 150)
                 }
+                null
             }
-            module.log(Log.WARN, TAG, "ya.b not found")
+            module.log(Log.INFO, TAG, "setTag(ya) Hook OK, multiplier=${FeatureConfig.voiceDurationMultiplier}")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "Hook fail: ${e.message}")
         }
+    }
+
+    private fun View.getMainContainerView(): View? {
+        return try {
+            javaClass.getMethod("getMainContainerView").invoke(this) as? View
+        } catch (_: Throwable) { null }
     }
 
     private fun modifyDuration(root: ViewGroup) {
@@ -58,7 +68,7 @@ class FakeVoiceDurationFeature : BaseFeature() {
         for (tv in durViews) {
             val text = tv.text?.toString() ?: ""
             val num = text.replace(Regex("[^0-9]"), "").toIntOrNull()
-            if (num != null && num > 0) {
+            if (num != null && num > 0 && num <= 120) {
                 val fake = (num * multiplier).toInt().coerceAtLeast(1)
                 tv.text = "${fake}''"
                 module.log(Log.INFO, TAG, "Voice dur: $text -> ${fake}'' (x$multiplier)")
