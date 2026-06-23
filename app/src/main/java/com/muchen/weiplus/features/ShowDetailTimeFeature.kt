@@ -8,6 +8,7 @@ import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import io.github.libxposed.api.XposedModule
 import java.text.SimpleDateFormat
@@ -66,7 +67,7 @@ class ShowDetailTimeFeature : BaseFeature() {
             updateTimeLabel(avatar, f9)
             return
         }
-        addTimeBelow(avatar, f9, tag)
+        addTimeBelow(avatar, f9)
     }
 
     private fun findMessageRoot(view: View): ViewGroup? {
@@ -78,7 +79,7 @@ class ShowDetailTimeFeature : BaseFeature() {
         return null
     }
 
-    private fun addTimeBelow(avatar: View, f9: Any, tag: Any) {
+    private fun addTimeBelow(avatar: View, f9: Any) {
         val timeStr = formatTime(f9) ?: return
         val parent = avatar.parent as? ViewGroup ?: return
         val ctx = parent.context
@@ -94,39 +95,49 @@ class ShowDetailTimeFeature : BaseFeature() {
             setPadding(0, (2 * d).toInt(), 0, (2 * d).toInt())
         }
 
-        // Check if parent is vertical LinearLayout -> just add after avatar
-        val isVertical = parent is LinearLayout && (parent as LinearLayout).orientation == LinearLayout.VERTICAL
-
-        if (isVertical) {
-            // Simple: add time view right after avatar
-            val avatarIdx = parent.indexOfChild(avatar)
-            parent.addView(timeView, avatarIdx + 1, ViewGroup.LayoutParams(
-                avatar.layoutParams.width,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            ))
-        } else {
-            // Wrap avatar + time in vertical container
-            val avatarIdx = parent.indexOfChild(avatar)
-            val oldLp = avatar.layoutParams
-            parent.removeView(avatar)
-
-            val wrapper = LinearLayout(ctx).apply {
-                orientation = LinearLayout.VERTICAL
-                gravity = Gravity.CENTER_HORIZONTAL
+        when {
+            // RelativeLayout: add with BELOW rule, don't wrap
+            parent is RelativeLayout -> {
+                val lp = RelativeLayout.LayoutParams(
+                    avatar.layoutParams.width,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+                )
+                lp.addRule(RelativeLayout.BELOW, avatar.id)
+                lp.addRule(RelativeLayout.ALIGN_LEFT, avatar.id)
+                parent.addView(timeView, lp)
             }
-            wrapper.addView(avatar, ViewGroup.LayoutParams(oldLp.width, oldLp.height))
-            wrapper.addView(timeView, ViewGroup.LayoutParams(
-                oldLp.width,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            ))
-            parent.addView(wrapper, avatarIdx, ViewGroup.LayoutParams(
-                oldLp.width,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            ))
+            // Vertical LinearLayout: add after avatar
+            parent is LinearLayout && (parent as LinearLayout).orientation == LinearLayout.VERTICAL -> {
+                val avatarIdx = parent.indexOfChild(avatar)
+                parent.addView(timeView, avatarIdx + 1, ViewGroup.LayoutParams(
+                    avatar.layoutParams.width,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+                ))
+            }
+            // Horizontal or other: wrap avatar + time
+            else -> {
+                val avatarIdx = parent.indexOfChild(avatar)
+                val oldLp = avatar.layoutParams
+                parent.removeView(avatar)
+
+                val wrapper = LinearLayout(ctx).apply {
+                    orientation = LinearLayout.VERTICAL
+                    gravity = Gravity.CENTER_HORIZONTAL
+                }
+                wrapper.addView(avatar, ViewGroup.LayoutParams(oldLp.width, oldLp.height))
+                wrapper.addView(timeView, ViewGroup.LayoutParams(
+                    oldLp.width,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+                ))
+                parent.addView(wrapper, avatarIdx, ViewGroup.LayoutParams(
+                    oldLp.width,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+                ))
+            }
         }
 
         timeViewMap[avatar] = timeView
-        module.log(Log.INFO, TAG, "Time: $timeStr (raw=${getCreateTime(f9)})")
+        module.log(Log.INFO, TAG, "Time: $timeStr")
     }
 
     private fun updateTimeLabel(avatar: View, f9: Any) {
