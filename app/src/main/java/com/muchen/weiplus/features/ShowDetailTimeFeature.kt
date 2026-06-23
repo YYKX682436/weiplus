@@ -26,6 +26,7 @@ class ShowDetailTimeFeature : BaseFeature() {
     private lateinit var module: XposedModule
     private var classLoader: ClassLoader? = null
     private val mainHandler = Handler(Looper.getMainLooper())
+    private val processed = Collections.newSetFromMap(WeakHashMap<View, Boolean>())
     private val timeViewMap = WeakHashMap<View, TextView>()
     private val wrapperMap = WeakHashMap<View, LinearLayout>()
 
@@ -34,66 +35,84 @@ class ShowDetailTimeFeature : BaseFeature() {
         classLoader = cl
 
         try {
-            // Hook g0.getMainContainerView - guaranteed to be called when view is accessed
-            val g0Class = cl.loadClass("com.tencent.mm.ui.chatting.viewitems.g0")
-            val mcvMethod = g0Class.getDeclaredMethod("getMainContainerView")
-            module.hook(mcvMethod).intercept { chain ->
-                val view = chain.proceed() as? View
-                if (view != null && FeatureConfig.showDetailTime) {
-                    val tag = chain.thisObject
-                    try {
-                        onViewReady(view, tag)
-                    } catch (e: Throwable) {
-                        module.log(Log.ERROR, TAG, "onViewReady err: ${e.message}")
-                    }
+            val viewClass = View::class.java
+            val setTagMethod = viewClass.getDeclaredMethod("setTag", Any::class.java)
+            module.hook(setTagMethod).intercept { chain ->
+                chain.proceed()
+                if (!FeatureConfig.showDetailTime) return@intercept null
+                val view = chain.thisObject as? View ?: return@intercept null
+                val tag = chain.args[0]
+                if (tag != null && tag.javaClass.name.contains("viewitems")) {
+                    onTagSet(view, tag)
                 }
-                view
+                null
             }
-            module.log(Log.INFO, TAG, "getMainContainerView Hook OK")
+            module.log(Log.INFO, TAG, "setTag Hook OK")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "Hook fail: ${e.message}")
         }
     }
 
-    private fun onViewReady(view: View, tag: Any) {
+    private fun onTagSet(view: View, tag: Any) {
+        if (processed.contains(view)) return
+        processed.add(view)
+
         mainHandler.postDelayed({
             try {
-                // Get f9 from tag via getCurrentMsgInfo - try with context
-                val f9 = getMsgInfo(tag, view) ?: return@postDelayed
-                addTimeLabel(view, f9)
+                val f9 = getMsgInfo(tag, view)
+                if (f9 != null) {
+                    addTimeLabel(view, f9)
+                } else {
+                    module.log(Log.WARN, TAG, "getMsgInfo null for ${tag.javaClass.name}")
+                }
             } catch (e: Throwable) {
-                module.log(Log.ERROR, TAG, "onViewReady inner: ${e.message}")
+                module.log(Log.ERROR, TAG, "onTagSet err: ${e.message}")
             }
         }, 200)
     }
 
     private fun getMsgInfo(tag: Any, view: View): Any? {
-        // Try er.c() first
+        // 1. er-style: c() returns f9
         try {
             val cMethod = tag.javaClass.getMethod("c")
             val f9 = cMethod.invoke(tag)
-            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via er.c()"); return f9 }
-        } catch (_: Throwable) {}
+            if (f9 != null) {
+                module.log(Log.INFO, TAG, "f9 via er.c()")
+                return f9
+            }
+        } catch (e: Throwable) {
+            module.log(Log.WARN, TAG, "er.c() fail: ${e.message}")
+        }
 
-        // Try g0.getCurrentMsgInfo with context
+        // 2. g0-style: getCurrentMsgInfo(yb5.d) - try with view.context
         try {
             val ctx = view.context
-            val gciMethod = tag.javaClass.getMethod("getCurrentMsgInfo", ctx.javaClass)
-            val f9 = gciMethod.invoke(tag, ctx)
-            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via getCurrentMsgInfo(ctx)"); return f9 }
-        } catch (_: Throwable) {}
-        try {
-            val gciMethod = tag.javaClass.getMethod("getCurrentMsgInfo", Any::class.java)
-            val f9 = gciMethod.invoke(tag, null)
-            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via getCurrentMsgInfo(null)"); return f9 }
-        } catch (_: Throwable) {}
-        try {
-            val gciMethod = tag.javaClass.getMethod("getCurrentMsgInfo")
-            val f9 = gciMethod.invoke(tag)
-            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via getCurrentMsgInfo()"); return f9 }
-        } catch (_: Throwable) {}
+            // The context might be yb5.d, try Class.getMethod with the actual ctx class
+            var clz: Class<*>? = ctx.javaClass
+            while (clz != null && clz != Any::class.java) {
+                try {
+                    val gm = tag.javaClass.getMethod("getCurrentMsgInfo", clz)
+                    val f9 = gm.invoke(tag, ctx)
+                    if (f9 != null) {
+                        module.log(Log.INFO, TAG, "f9 via getCurrentMsgInfo(${clz.simpleName})")
+                        return f9
+                    }
+                } catch (_: Throwable) {}
+                clz = clz.superclass
+            }
+            // Try with Object as param type
+            try {
+                val gm = tag.javaClass.getMethod("getCurrentMsgInfo", Any::class.java)
+                val f9 = gm.invoke(tag, ctx)
+                if (f9 != null) {
+                    module.log(Log.INFO, TAG, "f9 via getCurrentMsgInfo(Object)")
+                    return f9
+                }
+            } catch (_: Throwable) {}
+        } catch (e: Throwable) {
+            module.log(Log.WARN, TAG, "getCurrentMsgInfo fail: ${e.message}")
+        }
 
-        module.log(Log.WARN, TAG, "could not get f9 from tag ${tag.javaClass.name}")
         return null
     }
 
@@ -137,7 +156,7 @@ class ShowDetailTimeFeature : BaseFeature() {
 
         timeViewMap[avatar] = timeView
         wrapperMap[avatar] = wrapper
-        module.log(Log.INFO, TAG, "Time label: $timeStr")
+        module.log(Log.INFO, TAG, "Time: $timeStr")
     }
 
     private fun updateTimeLabel(avatar: View, f9: Any) {
