@@ -1,4 +1,4 @@
-ï»¿package com.muchen.weiplus.entry
+package com.muchen.weiplus.entry
 
 import android.app.Activity
 import android.content.Context
@@ -46,11 +46,11 @@ class ModuleEntry : XposedModule() {
                 val appClass = cl.loadClass("com.tencent.tinker.loader.app.TinkerApplication")
                 val tryLoadMethod = tinkerLoader.getDeclaredMethod("tryLoad", appClass)
                 hook(tryLoadMethod).intercept { _ ->
-                    log(Log.INFO, TAG, "Tinker çƒ­æ›´æ–°å·²æ‹¦æˆª")
+                    log(Log.INFO, TAG, "Tinker ÈÈ¸üĞÂÒÑÀ¹½Ø")
                     false
                 }
             } catch (e: Throwable) {
-                log(Log.ERROR, TAG, "Tinker Hook å¤±è´¥", e)
+                log(Log.ERROR, TAG, "Tinker Hook Ê§°Ü", e)
             }
         }
     }
@@ -60,12 +60,12 @@ class ModuleEntry : XposedModule() {
 
         val pn = getProcessName()
         log(Log.INFO, TAG, "onPackageReady: $pn isFirstPkg=${param.isFirstPackage}")
-        log(Log.INFO, TAG, "WeiPlus å·²æ³¨å…¥è¿›ç¨‹: $pn (API $apiVersion)")
+        log(Log.INFO, TAG, "WeiPlus ÒÑ×¢Èë½ø³Ì: $pn (API $apiVersion)")
 
         if (isMainProcess) {
             FeatureConfig.load()
             Handler(Looper.getMainLooper()).postDelayed({
-                showToast("WeiPlus å·²æ³¨å…¥")
+                showToast("WeiPlus ÒÑ×¢Èë")
             }, 2000)
             injectEntry(param.classLoader)
             registerFeatures(param.classLoader)
@@ -128,7 +128,7 @@ class ModuleEntry : XposedModule() {
         })
     }
 
-    // === åµŒå…¥é¢æ¿ ===
+    // === Ç¶ÈëÃæ°å ===
 
     private fun showPanel(activity: Activity) {
         val root = activity.window.decorView
@@ -167,23 +167,23 @@ class ModuleEntry : XposedModule() {
         })
 
         // AntiRecall
-        panel.addView(switchRow(activity, d, "Anti Recall", "Block recall message updates",
+        panel.addView(switchRow(activity, d, "½ûÖ¹ÏûÏ¢³·»Ø", "×èÖ¹ºÃÓÑ³·»ØÒÑ·¢ÏûÏ¢",
             FeatureConfig.antiRecall
         ) { FeatureConfig.antiRecall = it; FeatureConfig.save() })
 
         // SwipeQuote
-        panel.addView(switchRow(activity, d, "Swipe Quote", "Swipe left to quote reply",
+        panel.addView(switchRow(activity, d, "×ó»¬ÒıÓÃÏûÏ¢", "×ó»¬ÏûÏ¢¿ìËÙÒıÓÃ»Ø¸´",
             FeatureConfig.swipeQuote
         ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() })
 
         // ShowDetailTime
-        panel.addView(switchRow(activity, d, "Detail Time", "Show time below avatars",
+        panel.addView(switchRow(activity, d, "ÏÔÊ¾ÏêÏ¸Ê±¼ä", "Í·ÏñÏÂ·½ÏÔÊ¾ÏûÏ¢Ê±¼ä",
             FeatureConfig.showDetailTime
         ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() })
 
         // Close
         panel.addView(TextView(activity).apply {
-            text = "Close"
+            text = "¹Ø±Õ"
             setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF))
             textSize = 14f
             gravity = Gravity.CENTER
@@ -226,7 +226,7 @@ class ModuleEntry : XposedModule() {
         return row
     }
 
-    // === å·¥å…· ===
+    // === ¹¤¾ß ===
 
     private fun getProcessName(): String {
         return try {

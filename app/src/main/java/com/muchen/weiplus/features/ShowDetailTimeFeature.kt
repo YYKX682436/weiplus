@@ -26,7 +26,6 @@ class ShowDetailTimeFeature : BaseFeature() {
     private lateinit var module: XposedModule
     private var classLoader: ClassLoader? = null
     private val mainHandler = Handler(Looper.getMainLooper())
-    private val processed = Collections.newSetFromMap(WeakHashMap<View, Boolean>())
     private val timeViewMap = WeakHashMap<View, TextView>()
     private val wrapperMap = WeakHashMap<View, LinearLayout>()
 
@@ -35,41 +34,80 @@ class ShowDetailTimeFeature : BaseFeature() {
         classLoader = cl
 
         try {
+            // Hook tag classes that extend g0: their b(f9, ...) gets the message info directly
+            val tagClasses = arrayOf("ao", "ya")
+            for (name in tagClasses) {
+                try {
+                    val cls = cl.loadClass("com.tencent.mm.ui.chatting.viewitems.$name")
+                    for (method in cls.declaredMethods) {
+                        if (method.name == "b" && method.parameterTypes.size == 4) {
+                            module.hook(method).intercept { chain ->
+                                chain.proceed()
+                                if (!FeatureConfig.showDetailTime) return@intercept null
+                                val tag = chain.thisObject
+                                val f9 = chain.args[0]
+                                if (f9 != null) {
+                                    onBind(tag, f9)
+                                }
+                                null
+                            }
+                            module.log(Log.INFO, TAG, "$name.b Hook OK")
+                            break
+                        }
+                    }
+                } catch (_: Throwable) {}
+            }
+            module.log(Log.INFO, TAG, "All g0-subclass hooks installed")
+        } catch (e: Throwable) {
+            module.log(Log.ERROR, TAG, "Hook fail", e)
+        }
+
+        // Also hook setTag for er-based tags (like go)
+        try {
             val viewClass = View::class.java
             val setTagMethod = viewClass.getDeclaredMethod("setTag", Any::class.java)
             module.hook(setTagMethod).intercept { chain ->
                 chain.proceed()
+                if (!FeatureConfig.showDetailTime) return@intercept null
                 val view = chain.thisObject as? View ?: return@intercept null
                 val tag = chain.args[0]
-                if (tag != null && tag.javaClass.name.contains("viewitems")) {
-                    onChatTagSet(view, tag)
+                if (tag != null) {
+                    val tagName = tag.javaClass.name
+                    if (tagName.contains("viewitems") && !tagName.endsWith(".ao") && !tagName.endsWith(".ya")) {
+                        // For er-based tags, try c() method
+                        mainHandler.postDelayed({
+                            try {
+                                val f9 = tag.javaClass.getMethod("c").invoke(tag)
+                                if (f9 != null) addTimeLabel(view, f9)
+                            } catch (_: Throwable) {}
+                        }, 150)
+                    }
                 }
                 null
             }
-            module.log(Log.INFO, TAG, "View.setTag Hook OK")
+            module.log(Log.INFO, TAG, "setTag fallback Hook OK")
         } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "Hook fail", e)
+            module.log(Log.ERROR, TAG, "setTag Hook fail", e)
         }
     }
 
-    private fun onChatTagSet(view: View, tag: Any) {
-        if (!FeatureConfig.showDetailTime) return
-        if (processed.contains(view)) return
-        processed.add(view)
-
+    private fun onBind(tag: Any, f9: Any) {
         mainHandler.postDelayed({
-            try { addTimeLabel(view, tag) } catch (_: Throwable) {}
+            try {
+                val view = tag.javaClass.getMethod("getMainContainerView").invoke(tag) as? View ?: return@postDelayed
+                addTimeLabel(view, f9)
+            } catch (_: Throwable) {}
         }, 150)
     }
 
-    private fun addTimeLabel(root: View, tag: Any) {
-        val avatar = findMaskLayout(root as? ViewGroup ?: return) ?: return
+    private fun addTimeLabel(view: View, f9: Any) {
+        val avatar = findMaskLayout(view as? ViewGroup ?: return) ?: return
         if (wrapperMap.containsKey(avatar)) {
-            updateTimeLabel(avatar, tag)
+            updateTimeLabel(avatar, f9)
             return
         }
 
-        val timeStr = getMsgTime(tag) ?: return
+        val timeStr = formatTime(f9) ?: return
         val parent = avatar.parent as? ViewGroup ?: return
         val ctx = parent.context
         val d = ctx.resources.displayMetrics.density
@@ -105,9 +143,9 @@ class ShowDetailTimeFeature : BaseFeature() {
         module.log(Log.INFO, TAG, "Time label added: $timeStr")
     }
 
-    private fun updateTimeLabel(avatar: View, tag: Any) {
+    private fun updateTimeLabel(avatar: View, f9: Any) {
         val timeView = timeViewMap[avatar] ?: return
-        val timeStr = getMsgTime(tag) ?: return
+        val timeStr = formatTime(f9) ?: return
         timeView.text = timeStr
     }
 
@@ -120,39 +158,35 @@ class ShowDetailTimeFeature : BaseFeature() {
         return null
     }
 
-    private fun getCreateTimeFromMsg(f9: Any): Long? {
-        // Try getCreateTime method
+    private fun formatTime(f9: Any): String? {
+        return try {
+            val createTime = getCreateTime(f9) ?: return null
+            if (createTime <= 0) return null
+            val date = Date(createTime * 1000)
+            val cal = Calendar.getInstance()
+            val msgCal = Calendar.getInstance().apply { time = date }
+            val fmt = if (cal.get(Calendar.DAY_OF_YEAR) == msgCal.get(Calendar.DAY_OF_YEAR)
+                && cal.get(Calendar.YEAR) == msgCal.get(Calendar.YEAR))
+                SimpleDateFormat("HH:mm:ss", Locale.getDefault())
+            else
+                SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
+            fmt.format(date)
+        } catch (e: Throwable) {
+            module.log(Log.WARN, TAG, "formatTime fail: ${e.message}")
+            null
+        }
+    }
+
+    private fun getCreateTime(f9: Any): Long? {
         try { return f9.javaClass.getMethod("getCreateTime").invoke(f9) as? Long }
         catch (_: Throwable) {}
         try { return f9.javaClass.getDeclaredMethod("getCreateTime").invoke(f9) as? Long }
         catch (_: Throwable) {}
-        // Try superclass chain
         var clz: Class<*>? = f9.javaClass.superclass
         while (clz != null) {
             try { return clz.getDeclaredMethod("getCreateTime").invoke(f9) as? Long }
             catch (_: Throwable) { clz = clz.superclass }
         }
         return null
-    }
-
-    private fun getMsgTime(tag: Any): String? {
-        return try {
-            val f9 = tag.javaClass.getMethod("c").invoke(tag) ?: return null
-            val createTime = getCreateTimeFromMsg(f9) ?: return null
-            if (createTime <= 0) return null
-
-            val date = Date(createTime * 1000)
-            val today = Calendar.getInstance()
-            val msgDay = Calendar.getInstance().apply { time = date }
-            val fmt = if (today.get(Calendar.DAY_OF_YEAR) == msgDay.get(Calendar.DAY_OF_YEAR)
-                && today.get(Calendar.YEAR) == msgDay.get(Calendar.YEAR))
-                SimpleDateFormat("HH:mm:ss", Locale.getDefault())
-            else
-                SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
-            fmt.format(date)
-        } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "getMsgTime fail: ${e.message}")
-            null
-        }
     }
 }
