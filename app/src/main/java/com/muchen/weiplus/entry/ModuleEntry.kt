@@ -36,7 +36,7 @@ class ModuleEntry : XposedModule() {
         if (param.packageName != WECHAT_PKG) return
 
         val pn = getProcessName()
-        log(Log.INFO, TAG, "onPackageLoaded: $pn isFirstPkg=${param.isFirstPackage}")
+        log(Log.INFO, TAG, "onPackageLoaded: pn isFirstPkg={param.isFirstPackage}")
         isMainProcess = (pn == WECHAT_PKG)
 
         if (isMainProcess) {
@@ -46,11 +46,11 @@ class ModuleEntry : XposedModule() {
                 val appClass = cl.loadClass("com.tencent.tinker.loader.app.TinkerApplication")
                 val tryLoadMethod = tinkerLoader.getDeclaredMethod("tryLoad", appClass)
                 hook(tryLoadMethod).intercept { _ ->
-                    log(Log.INFO, TAG, "Tinker 热更新已拦截")
+                    log(Log.INFO, TAG, "Tinker hot update blocked")
                     false
                 }
             } catch (e: Throwable) {
-                log(Log.ERROR, TAG, "Tinker Hook 失败", e)
+                log(Log.ERROR, TAG, "Tinker Hook fail", e)
             }
         }
     }
@@ -59,13 +59,13 @@ class ModuleEntry : XposedModule() {
         if (param.packageName != WECHAT_PKG) return
 
         val pn = getProcessName()
-        log(Log.INFO, TAG, "onPackageReady: $pn isFirstPkg=${param.isFirstPackage}")
-        log(Log.INFO, TAG, "WeiPlus 已注入进程: $pn (API $apiVersion)")
+        log(Log.INFO, TAG, "onPackageReady: pn isFirstPkg={param.isFirstPackage}")
+        log(Log.INFO, TAG, "WeiPlus injected: pn (API apiVersion)")
 
         if (isMainProcess) {
             FeatureConfig.load()
             Handler(Looper.getMainLooper()).postDelayed({
-                showToast("WeiPlus 已注入")
+                showToast("WeiPlus injected")
             }, 2000)
             injectEntry(param.classLoader)
             registerFeatures(param.classLoader)
@@ -128,7 +128,7 @@ class ModuleEntry : XposedModule() {
         })
     }
 
-    // === 嵌入面板 ===
+    // === Panel ===
 
     private fun showPanel(activity: Activity) {
         val root = activity.window.decorView
@@ -158,7 +158,6 @@ class ModuleEntry : XposedModule() {
             elevation = 16f * d
         }
 
-        // Title
         panel.addView(TextView(activity).apply {
             text = "WeiPlus"
             setTextColor(Color.WHITE)
@@ -166,24 +165,26 @@ class ModuleEntry : XposedModule() {
             setPadding(0, (12 * d).toInt(), 0, (16 * d).toInt())
         })
 
-        // AntiRecall
-        panel.addView(switchRow(activity, d, "禁止消息撤回", "阻止好友撤回已发消息",
+        panel.addView(switchRow(activity, d,
+            "Anti Recall",
+            "Block recall message updates",
             FeatureConfig.antiRecall
         ) { FeatureConfig.antiRecall = it; FeatureConfig.save() })
 
-        // SwipeQuote
-        panel.addView(switchRow(activity, d, "左滑引用消息", "左滑消息快速引用回复",
+        panel.addView(switchRow(activity, d,
+            "Swipe Quote",
+            "Swipe left to quote reply",
             FeatureConfig.swipeQuote
         ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() })
 
-        // ShowDetailTime
-        panel.addView(switchRow(activity, d, "显示详细时间", "头像下方显示消息时间",
+        panel.addView(switchRow(activity, d,
+            "Detail Time",
+            "Show time below avatars",
             FeatureConfig.showDetailTime
         ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() })
 
-        // Close
         panel.addView(TextView(activity).apply {
-            text = "关闭"
+            text = "Close"
             setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF))
             textSize = 14f
             gravity = Gravity.CENTER
@@ -226,7 +227,7 @@ class ModuleEntry : XposedModule() {
         return row
     }
 
-    // === 工具 ===
+    // === Utils ===
 
     private fun getProcessName(): String {
         return try {

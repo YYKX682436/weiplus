@@ -1,4 +1,4 @@
-﻿package com.muchen.weiplus.features
+package com.muchen.weiplus.features
 
 import android.os.Handler
 import android.os.Looper
@@ -34,70 +34,29 @@ class ShowDetailTimeFeature : BaseFeature() {
         classLoader = cl
 
         try {
-            // Hook tag classes that extend g0: their b(f9, ...) gets the message info directly
-            val tagClasses = arrayOf("ao", "ya")
-            for (name in tagClasses) {
-                try {
-                    val cls = cl.loadClass("com.tencent.mm.ui.chatting.viewitems.$name")
-                    for (method in cls.declaredMethods) {
-                        if (method.name == "b" && method.parameterTypes.size == 4) {
-                            module.hook(method).intercept { chain ->
-                                chain.proceed()
-                                if (!FeatureConfig.showDetailTime) return@intercept null
-                                val tag = chain.thisObject
-                                val f9 = chain.args[0]
-                                if (f9 != null) {
-                                    onBind(tag, f9)
-                                }
-                                null
-                            }
-                            module.log(Log.INFO, TAG, "$name.b Hook OK")
-                            break
-                        }
+            // Hook a0.H(g0, f9) - receives both tag and msg info directly
+            val a0Class = cl.loadClass("com.tencent.mm.ui.chatting.viewitems.a0")
+            for (method in a0Class.declaredMethods) {
+                if (method.name == "H" && method.parameterTypes.size == 2) {
+                    module.hook(method).intercept { chain ->
+                        chain.proceed()
+                        if (!FeatureConfig.showDetailTime) return@intercept null
+                        try {
+                            val tag = chain.args[0]  // g0
+                            val f9 = chain.args[1]   // f9 msg info
+                            val view = tag.javaClass.getMethod("getMainContainerView").invoke(tag) as? View
+                            if (view != null) addTimeLabel(view, f9)
+                        } catch (_: Throwable) {}
+                        null
                     }
-                } catch (_: Throwable) {}
+                    module.log(Log.INFO, TAG, "a0.H(g0,f9) Hook OK")
+                    return
+                }
             }
-            module.log(Log.INFO, TAG, "All g0-subclass hooks installed")
+            module.log(Log.WARN, TAG, "a0.H method not found")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "Hook fail", e)
         }
-
-        // Also hook setTag for er-based tags (like go)
-        try {
-            val viewClass = View::class.java
-            val setTagMethod = viewClass.getDeclaredMethod("setTag", Any::class.java)
-            module.hook(setTagMethod).intercept { chain ->
-                chain.proceed()
-                if (!FeatureConfig.showDetailTime) return@intercept null
-                val view = chain.thisObject as? View ?: return@intercept null
-                val tag = chain.args[0]
-                if (tag != null) {
-                    val tagName = tag.javaClass.name
-                    if (tagName.contains("viewitems") && !tagName.endsWith(".ao") && !tagName.endsWith(".ya")) {
-                        // For er-based tags, try c() method
-                        mainHandler.postDelayed({
-                            try {
-                                val f9 = tag.javaClass.getMethod("c").invoke(tag)
-                                if (f9 != null) addTimeLabel(view, f9)
-                            } catch (_: Throwable) {}
-                        }, 150)
-                    }
-                }
-                null
-            }
-            module.log(Log.INFO, TAG, "setTag fallback Hook OK")
-        } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "setTag Hook fail", e)
-        }
-    }
-
-    private fun onBind(tag: Any, f9: Any) {
-        mainHandler.postDelayed({
-            try {
-                val view = tag.javaClass.getMethod("getMainContainerView").invoke(tag) as? View ?: return@postDelayed
-                addTimeLabel(view, f9)
-            } catch (_: Throwable) {}
-        }, 150)
     }
 
     private fun addTimeLabel(view: View, f9: Any) {
