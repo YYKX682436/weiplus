@@ -28,7 +28,6 @@ class ShowDetailTimeFeature : BaseFeature() {
     private val mainHandler = Handler(Looper.getMainLooper())
     private val timeViewMap = WeakHashMap<View, TextView>()
     private val wrapperMap = WeakHashMap<View, LinearLayout>()
-    private val pendingTags = WeakHashMap<View, Any>()
 
     override fun onEnable(m: XposedModule, cl: ClassLoader) {
         module = m
@@ -45,8 +44,7 @@ class ShowDetailTimeFeature : BaseFeature() {
                 if (tag != null && tag.javaClass.name.contains("viewitems")) {
                     val f9 = tryGetF9(tag)
                     if (f9 != null) {
-                        pendingTags[view] = f9
-                        mainHandler.postDelayed({ processPending(view, f9) }, 300)
+                        mainHandler.postDelayed({ processTag(view, f9) }, 300)
                     }
                 }
                 null
@@ -58,54 +56,30 @@ class ShowDetailTimeFeature : BaseFeature() {
     }
 
     private fun tryGetF9(tag: Any): Any? {
-        try {
-            val f9 = tag.javaClass.getMethod("c").invoke(tag)
-            if (f9 != null) return f9
-        } catch (_: Throwable) {}
-        return null
+        try { return tag.javaClass.getMethod("c").invoke(tag) }
+        catch (_: Throwable) { return null }
     }
 
-    private fun processPending(view: View, f9: Any) {
-        // Walk up from the tagged view to find the root message container
-        val root = findMessageRoot(view) ?: run {
-            module.log(Log.WARN, TAG, "message root not found")
-            return
-        }
-        // Find avatar in the root
-        val avatar = findMaskLayout(root) ?: run {
-            module.log(Log.WARN, TAG, "MaskLayout not found in root")
-            return
-        }
+    private fun processTag(view: View, f9: Any) {
+        val root = findMessageRoot(view) ?: return
+        val avatar = findMaskLayout(root) ?: return
         if (wrapperMap.containsKey(avatar)) {
             updateTimeLabel(avatar, f9)
             return
         }
-        addTimeLabel(avatar, f9)
+        addTimeBelow(avatar, root, f9)
     }
 
     private fun findMessageRoot(view: View): ViewGroup? {
-        // Walk up to find a ViewGroup that contains a MaskLayout avatar
         var current: View? = view
         while (current != null) {
-            if (current is ViewGroup) {
-                if (findMaskLayout(current) != null) return current
-            }
+            if (current is ViewGroup && findMaskLayout(current) != null) return current
             current = current.parent as? View
-        }
-        // Fallback: walk up several levels
-        current = view
-        var count = 0
-        while (current != null && count < 8) {
-            current = current.parent as? View
-            if (current is ViewGroup) {
-                if (findMaskLayout(current) != null) return current
-            }
-            count++
         }
         return null
     }
 
-    private fun addTimeLabel(avatar: View, f9: Any) {
+    private fun addTimeBelow(avatar: View, root: ViewGroup, f9: Any) {
         val timeStr = formatTime(f9) ?: return
         val parent = avatar.parent as? ViewGroup ?: return
         val ctx = parent.context
@@ -113,14 +87,15 @@ class ShowDetailTimeFeature : BaseFeature() {
 
         val timeView = TextView(ctx).apply {
             text = timeStr
-            setTextColor(0xFF999999.toInt())
-            textSize = 10f
+            setTextColor(0xFFAAAAAA.toInt())
+            textSize = 9f
             gravity = Gravity.CENTER
             maxLines = 1
             ellipsize = TextUtils.TruncateAt.END
-            setPadding(0, (2 * d).toInt(), 0, 0)
+            setPadding(0, (2 * d).toInt(), 0, (2 * d).toInt())
         }
 
+        // Wrap avatar in a vertical LinearLayout to add time below
         val avatarIdx = parent.indexOfChild(avatar)
         val oldLp = avatar.layoutParams
         parent.removeView(avatar)
@@ -128,14 +103,26 @@ class ShowDetailTimeFeature : BaseFeature() {
         val wrapper = LinearLayout(ctx).apply {
             orientation = LinearLayout.VERTICAL
             gravity = Gravity.CENTER_HORIZONTAL
-            layoutParams = oldLp
         }
-        wrapper.addView(avatar, LinearLayout.LayoutParams(oldLp.width, oldLp.height))
-        wrapper.addView(timeView, LinearLayout.LayoutParams(
-            ViewGroup.LayoutParams.WRAP_CONTENT,
+
+        // Recreate layout params for wrapper to match original avatar position
+        val wrapperLp = when (oldLp) {
+            is LinearLayout.LayoutParams -> {
+                LinearLayout.LayoutParams(oldLp).apply {
+                    height = ViewGroup.LayoutParams.WRAP_CONTENT
+                }
+            }
+            else -> ViewGroup.LayoutParams(oldLp).apply {
+                height = ViewGroup.LayoutParams.WRAP_CONTENT
+            }
+        }
+
+        wrapper.addView(avatar, ViewGroup.LayoutParams(oldLp.width, oldLp.height))
+        wrapper.addView(timeView, ViewGroup.LayoutParams(
+            oldLp.width,
             ViewGroup.LayoutParams.WRAP_CONTENT
         ))
-        parent.addView(wrapper, avatarIdx)
+        parent.addView(wrapper, avatarIdx, wrapperLp)
 
         timeViewMap[avatar] = timeView
         wrapperMap[avatar] = wrapper
@@ -170,10 +157,7 @@ class ShowDetailTimeFeature : BaseFeature() {
             else
                 SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
             fmt.format(date)
-        } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "formatTime: ${e.message}")
-            null
-        }
+        } catch (e: Throwable) { null }
     }
 
     private fun getCreateTime(f9: Any): Long? {
