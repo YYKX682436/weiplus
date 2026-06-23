@@ -21,6 +21,7 @@ class FakeVoiceDurationFeature : BaseFeature() {
     private lateinit var module: XposedModule
     private val mainHandler = Handler(Looper.getMainLooper())
     private val processedViews = WeakHashMap<View, Long>()
+    private var logCount = 0
 
     override fun onEnable(m: XposedModule, cl: ClassLoader) {
         module = m
@@ -31,47 +32,72 @@ class FakeVoiceDurationFeature : BaseFeature() {
             module.hook(setTagMethod).intercept { chain ->
                 chain.proceed()
                 if (!FeatureConfig.fakeVoiceDuration) return@intercept null
-                val view = chain.thisObject as? View ?: return@intercept null
-                val tag = chain.args[0]
-                if (tag != null && tag.javaClass.name == "com.tencent.mm.ui.chatting.viewitems.ya") {
-                    val now = System.currentTimeMillis()
-                    val last = processedViews[view] ?: 0L
-                    if (now - last < 1000) return@intercept null
-                    processedViews[view] = now
-                    mainHandler.postDelayed({
-                        try {
-                            val root = view.getMainContainerView() as? ViewGroup ?: view as? ViewGroup
-                            if (root != null) modifyDuration(root)
-                        } catch (e: Throwable) {
-                            module.log(Log.ERROR, TAG, "err: ${e.message}")
-                        }
-                    }, 150)
+                val tag = chain.args[0] ?: return@intercept null
+                val tagClassName = tag.javaClass.name
+
+                if (tagClassName.contains("viewitems.") && logCount < 30) {
+                    logCount++
+                    module.log(Log.INFO, TAG, "Tag class: " + tagClassName)
+                }
+
+                if (tagClassName == "com.tencent.mm.ui.chatting.viewitems.ya") {
+                    processVoiceTag(tag, chain.thisObject as? View ?: return@intercept null)
                 }
                 null
             }
-            module.log(Log.INFO, TAG, "setTag(ya) Hook OK, multiplier=${FeatureConfig.voiceDurationMultiplier}")
+            module.log(Log.INFO, TAG, "setTag(all) Hook OK, multiplier=" + FeatureConfig.voiceDurationMultiplier)
         } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "Hook fail: ${e.message}")
+            module.log(Log.ERROR, TAG, "Hook fail: " + (e.message ?: "unknown"))
         }
     }
 
-    private fun View.getMainContainerView(): View? {
-        return try {
-            javaClass.getMethod("getMainContainerView").invoke(this) as? View
-        } catch (_: Throwable) { null }
+    private fun processVoiceTag(tag: Any, view: View) {
+        val now = System.currentTimeMillis()
+        val last = processedViews[view] ?: 0L
+        if (now - last < 1000) {
+            module.log(Log.DEBUG, TAG, "skip: too soon")
+            return
+        }
+        processedViews[view] = now
+        module.log(Log.INFO, TAG, "processVoiceTag: view=" + view.javaClass.name)
+        mainHandler.postDelayed({
+            try {
+                var root: ViewGroup? = null
+                try {
+                    val m = tag.javaClass.getMethod("getMainContainerView")
+                    val mcv = m.invoke(tag)
+                    module.log(Log.INFO, TAG, "getMainContainerView=" + (mcv?.javaClass?.name ?: "null"))
+                    root = mcv as? ViewGroup
+                } catch (e: Throwable) {
+                    module.log(Log.ERROR, TAG, "getMCV fail: " + (e.message ?: ""))
+                }
+                if (root == null) {
+                    root = view as? ViewGroup
+                    module.log(Log.INFO, TAG, "fallback: view as ViewGroup, childCount=" + (root?.childCount ?: -1))
+                }
+                if (root != null) {
+                    modifyDuration(root)
+                } else {
+                    module.log(Log.WARN, TAG, "root is null")
+                }
+            } catch (e: Throwable) {
+                module.log(Log.ERROR, TAG, "err: " + (e.message ?: ""))
+            }
+        }, 150)
     }
 
     private fun modifyDuration(root: ViewGroup) {
         val durViews = mutableListOf<TextView>()
         findDurationViews(root, durViews)
         val multiplier = FeatureConfig.voiceDurationMultiplier
+        module.log(Log.INFO, TAG, "modifyDuration: found " + durViews.size + " candidates, x" + multiplier)
         for (tv in durViews) {
             val text = tv.text?.toString() ?: ""
             val num = text.replace(Regex("[^0-9]"), "").toIntOrNull()
             if (num != null && num > 0 && num <= 120) {
                 val fake = (num * multiplier).toInt().coerceAtLeast(1)
-                tv.text = "${fake}''"
-                module.log(Log.INFO, TAG, "Voice dur: $text -> ${fake}'' (x$multiplier)")
+                tv.text = fake.toString() + "''"
+                module.log(Log.INFO, TAG, "Voice dur: " + text + " -> " + fake + "'' (x" + multiplier + ")")
             }
         }
     }
