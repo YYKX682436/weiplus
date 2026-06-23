@@ -630,9 +630,9 @@ class MainActivity : Activity() {
         titleRow.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
 
         val gear = TextView(this).apply {
-            text = "\u2699"
-            setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))
-            textSize = 20f
+            text = "设置"
+            setTextColor(Color.argb(0xFF, 0x34, 0x8E, 0xFF)); background = GradientDrawable().apply { cornerRadius = dpf(4); setColor(Color.argb(0x15, 0x34, 0x8E, 0xFF)) }; setPadding(dip(6), dip(2), dip(6), dip(3))
+            textSize = 14f
             setPadding(dip(10), 0, dip(6), 0)
             setOnClickListener { onGear() }
         }
