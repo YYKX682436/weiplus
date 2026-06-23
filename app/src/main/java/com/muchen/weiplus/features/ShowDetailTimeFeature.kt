@@ -1,4 +1,4 @@
-package com.muchen.weiplus.features
+﻿package com.muchen.weiplus.features
 
 import android.os.Handler
 import android.os.Looper
@@ -28,6 +28,8 @@ class ShowDetailTimeFeature : BaseFeature() {
     private var classLoader: ClassLoader? = null
     private val mainHandler = Handler(Looper.getMainLooper())
     private val timeViewMap = WeakHashMap<View, TextView>()
+    private val lastF9Map = WeakHashMap<View, Any>()
+    private val pendingRunnables = WeakHashMap<View, Runnable>()
 
     override fun onEnable(m: XposedModule, cl: ClassLoader) {
         module = m
@@ -44,7 +46,11 @@ class ShowDetailTimeFeature : BaseFeature() {
                 if (tag != null && tag.javaClass.name.contains("viewitems.")) {
                     val f9 = tryGetF9(tag)
                     if (f9 != null) {
-                        mainHandler.postDelayed({ processTag(view, f9, tag) }, 300)
+                        // Cancel previous pending update for this view to prevent flicker
+                        pendingRunnables[view]?.let { mainHandler.removeCallbacks(it) }
+                        val runnable = Runnable { processTag(view, f9, tag) }
+                        pendingRunnables[view] = runnable
+                        mainHandler.postDelayed(runnable, 200)
                     }
                 }
                 null
@@ -63,6 +69,8 @@ class ShowDetailTimeFeature : BaseFeature() {
     private fun processTag(view: View, f9: Any, tag: Any) {
         val root = findMessageRoot(view) ?: return
         val avatar = findMaskLayout(root) ?: return
+        if (lastF9Map[avatar] === f9) return
+        lastF9Map[avatar] = f9
         if (timeViewMap.containsKey(avatar)) {
             updateTimeLabel(avatar, f9)
             return
@@ -96,7 +104,6 @@ class ShowDetailTimeFeature : BaseFeature() {
         }
 
         when {
-            // RelativeLayout: add with BELOW rule, don't wrap
             parent is RelativeLayout -> {
                 val lp = RelativeLayout.LayoutParams(
                     avatar.layoutParams.width,
@@ -106,7 +113,6 @@ class ShowDetailTimeFeature : BaseFeature() {
                 lp.addRule(RelativeLayout.ALIGN_LEFT, avatar.id)
                 parent.addView(timeView, lp)
             }
-            // Vertical LinearLayout: add after avatar
             parent is LinearLayout && (parent as LinearLayout).orientation == LinearLayout.VERTICAL -> {
                 val avatarIdx = parent.indexOfChild(avatar)
                 parent.addView(timeView, avatarIdx + 1, ViewGroup.LayoutParams(
@@ -114,7 +120,6 @@ class ShowDetailTimeFeature : BaseFeature() {
                     ViewGroup.LayoutParams.WRAP_CONTENT
                 ))
             }
-            // Horizontal or other: wrap avatar + time
             else -> {
                 val avatarIdx = parent.indexOfChild(avatar)
                 val oldLp = avatar.layoutParams

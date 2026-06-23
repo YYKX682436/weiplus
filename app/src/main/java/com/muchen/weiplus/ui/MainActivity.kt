@@ -1,4 +1,4 @@
-package com.muchen.weiplus.ui
+﻿package com.muchen.weiplus.ui
 
 import android.app.Activity
 import android.content.Context
@@ -12,6 +12,7 @@ import android.view.ViewConfiguration
 import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.widget.*
+import com.muchen.weiplus.features.FeatureConfig
 
 class MainActivity : Activity() {
 
@@ -365,7 +366,7 @@ class MainActivity : Activity() {
             addView(thinDivider())
             addView(bigToggle("左滑消息引用", "左滑消息快速引用回复", { swipeQuote }, { swipeQuote = it }))
             addView(thinDivider())
-            addView(bigToggle("伪装语音时长", "自定义语音消息时长显示", { fakeVoiceTime }, { fakeVoiceTime = it }))
+            addView(bigToggleWithGear("伪装语音时长", "自定义语音消息时长显示", { fakeVoiceTime }, { fakeVoiceTime = it }, { showVoiceMulDialog() }))
             addView(thinDivider())
             addView(bigToggle("显示详细时间", "消息列表显示精确时间", { showDetailTime }, { showDetailTime = it }))
             addView(thinDivider())
@@ -604,6 +605,73 @@ class MainActivity : Activity() {
         sw.onToggle = setter
         return row
     }
+    private fun bigToggleWithGear(title: String, subtitle: String, getter: () -> Boolean, setter: (Boolean) -> Unit, onGear: () -> Unit): LinearLayout {
+        val row = LinearLayout(this)
+        row.orientation = LinearLayout.HORIZONTAL
+        row.setPadding(dip(16), dip(12), dip(16), dip(12))
+        row.gravity = Gravity.CENTER_VERTICAL
+
+        val col = LinearLayout(this)
+        col.orientation = LinearLayout.VERTICAL
+        col.setPadding(0, 0, dip(8), 0)
+        row.addView(col, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
+
+        val titleRow = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER_VERTICAL
+            isClickable = true
+            isFocusable = true
+            setOnClickListener { onGear() }
+        }
+        col.addView(titleRow)
+
+        val tv = TextView(this)
+        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 17f
+        titleRow.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
+
+        val gear = TextView(this).apply {
+            text = "\u2699"
+            setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93))
+            textSize = 20f
+            setPadding(dip(10), 0, dip(6), 0)
+            setOnClickListener { onGear() }
+        }
+        titleRow.addView(gear)
+        val sw = IosSwitch(this, 1.3f)
+        sw.setChecked(getter(), false)
+        val swLp = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+        swLp.gravity = Gravity.CENTER_VERTICAL or Gravity.END
+        row.addView(sw, swLp)
+
+        row.setOnClickListener { val nv = !sw.isChecked; sw.setChecked(nv, true); setter(nv) }
+        sw.onToggle = setter
+        return row
+    }
+
+    private fun showVoiceMulDialog() {
+        val mul = FeatureConfig.voiceDurationMultiplier
+        val input = android.widget.EditText(this).apply {
+            setText(mul.toString())
+            inputType = android.text.InputType.TYPE_CLASS_NUMBER or android.text.InputType.TYPE_NUMBER_FLAG_DECIMAL
+            setSelectAllOnFocus(true)
+            setPadding(dip(16), dip(12), dip(16), dip(12))
+        }
+        android.app.AlertDialog.Builder(this)
+            .setTitle("语音时长倍数")
+            .setMessage("当前: \${mul}x\n设置语音消息外显时长的自定义倍数")
+            .setView(input)
+            .setPositiveButton("确定") { _, _ ->
+                val newMul = input.text.toString().toFloatOrNull()
+                if (newMul != null && newMul > 0) {
+                    FeatureConfig.voiceDurationMultiplier = newMul
+                    FeatureConfig.save()
+                    android.widget.Toast.makeText(this, "已设为 \${newMul}x", android.widget.Toast.LENGTH_SHORT).show()
+                }
+            }
+            .setNegativeButton("取消", null)
+            .show()
+    }
+
 
     private fun cardDivider(): View {
         val v = View(this)

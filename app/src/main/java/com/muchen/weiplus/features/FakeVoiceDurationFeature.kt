@@ -1,4 +1,4 @@
-package com.muchen.weiplus.features
+﻿package com.muchen.weiplus.features
 
 import android.os.Handler
 import android.os.Looper
@@ -41,7 +41,7 @@ class FakeVoiceDurationFeature : BaseFeature() {
                         }, 300)
                         null
                     }
-                    module.log(Log.INFO, TAG, "ya.b Hook OK")
+                    module.log(Log.INFO, TAG, "ya.b Hook OK, multiplier=${FeatureConfig.voiceDurationMultiplier}")
                     return
                 }
             }
@@ -54,13 +54,14 @@ class FakeVoiceDurationFeature : BaseFeature() {
     private fun modifyDuration(root: ViewGroup) {
         val durViews = mutableListOf<TextView>()
         findDurationViews(root, durViews)
+        val multiplier = FeatureConfig.voiceDurationMultiplier
         for (tv in durViews) {
             val text = tv.text?.toString() ?: ""
             val num = text.replace(Regex("[^0-9]"), "").toIntOrNull()
             if (num != null && num > 0) {
-                val fake = (num * 2.5).toInt().coerceAtLeast(1)
-                tv.text = "${fake}″"
-                module.log(Log.INFO, TAG, "Voice dur: $text -> ${fake}″")
+                val fake = (num * multiplier).toInt().coerceAtLeast(1)
+                tv.text = "${fake}''"
+                module.log(Log.INFO, TAG, "Voice dur: $text -> ${fake}'' (x$multiplier)")
             }
         }
     }
@@ -68,7 +69,6 @@ class FakeVoiceDurationFeature : BaseFeature() {
     private fun findDurationViews(view: View, result: MutableList<TextView>) {
         if (view is TextView) {
             val text = view.text?.toString() ?: ""
-            // Voice duration text: short, contains digits + maybe quote symbol
             if (text.isNotEmpty() && text.length <= 6 && text.any { it.isDigit() }) {
                 result.add(view)
             }
