@@ -26,9 +26,9 @@ class ShowDetailTimeFeature : BaseFeature() {
     private lateinit var module: XposedModule
     private var classLoader: ClassLoader? = null
     private val mainHandler = Handler(Looper.getMainLooper())
-    private val processed = Collections.newSetFromMap(WeakHashMap<View, Boolean>())
     private val timeViewMap = WeakHashMap<View, TextView>()
     private val wrapperMap = WeakHashMap<View, LinearLayout>()
+    private val pendingTags = WeakHashMap<View, Any>()
 
     override fun onEnable(m: XposedModule, cl: ClassLoader) {
         module = m
@@ -43,7 +43,11 @@ class ShowDetailTimeFeature : BaseFeature() {
                 val view = chain.thisObject as? View ?: return@intercept null
                 val tag = chain.args[0]
                 if (tag != null && tag.javaClass.name.contains("viewitems")) {
-                    onTagSet(view, tag)
+                    val f9 = tryGetF9(tag)
+                    if (f9 != null) {
+                        pendingTags[view] = f9
+                        mainHandler.postDelayed({ processPending(view, f9) }, 300)
+                    }
                 }
                 null
             }
@@ -53,76 +57,55 @@ class ShowDetailTimeFeature : BaseFeature() {
         }
     }
 
-    private fun onTagSet(view: View, tag: Any) {
-        if (processed.contains(view)) return
-        processed.add(view)
-
-        mainHandler.postDelayed({
-            try {
-                val f9 = getMsgInfo(tag, view)
-                if (f9 != null) {
-                    addTimeLabel(view, f9)
-                } else {
-                    module.log(Log.WARN, TAG, "getMsgInfo null for ${tag.javaClass.name}")
-                }
-            } catch (e: Throwable) {
-                module.log(Log.ERROR, TAG, "onTagSet err: ${e.message}")
-            }
-        }, 200)
-    }
-
-    private fun getMsgInfo(tag: Any, view: View): Any? {
-        // 1. er-style: c() returns f9
+    private fun tryGetF9(tag: Any): Any? {
         try {
-            val cMethod = tag.javaClass.getMethod("c")
-            val f9 = cMethod.invoke(tag)
-            if (f9 != null) {
-                module.log(Log.INFO, TAG, "f9 via er.c()")
-                return f9
-            }
-        } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "er.c() fail: ${e.message}")
-        }
-
-        // 2. g0-style: getCurrentMsgInfo(yb5.d) - try with view.context
-        try {
-            val ctx = view.context
-            // The context might be yb5.d, try Class.getMethod with the actual ctx class
-            var clz: Class<*>? = ctx.javaClass
-            while (clz != null && clz != Any::class.java) {
-                try {
-                    val gm = tag.javaClass.getMethod("getCurrentMsgInfo", clz)
-                    val f9 = gm.invoke(tag, ctx)
-                    if (f9 != null) {
-                        module.log(Log.INFO, TAG, "f9 via getCurrentMsgInfo(${clz.simpleName})")
-                        return f9
-                    }
-                } catch (_: Throwable) {}
-                clz = clz.superclass
-            }
-            // Try with Object as param type
-            try {
-                val gm = tag.javaClass.getMethod("getCurrentMsgInfo", Any::class.java)
-                val f9 = gm.invoke(tag, ctx)
-                if (f9 != null) {
-                    module.log(Log.INFO, TAG, "f9 via getCurrentMsgInfo(Object)")
-                    return f9
-                }
-            } catch (_: Throwable) {}
-        } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "getCurrentMsgInfo fail: ${e.message}")
-        }
-
+            val f9 = tag.javaClass.getMethod("c").invoke(tag)
+            if (f9 != null) return f9
+        } catch (_: Throwable) {}
         return null
     }
 
-    private fun addTimeLabel(view: View, f9: Any) {
-        val avatar = findMaskLayout(view as? ViewGroup ?: return) ?: return
+    private fun processPending(view: View, f9: Any) {
+        // Walk up from the tagged view to find the root message container
+        val root = findMessageRoot(view) ?: run {
+            module.log(Log.WARN, TAG, "message root not found")
+            return
+        }
+        // Find avatar in the root
+        val avatar = findMaskLayout(root) ?: run {
+            module.log(Log.WARN, TAG, "MaskLayout not found in root")
+            return
+        }
         if (wrapperMap.containsKey(avatar)) {
             updateTimeLabel(avatar, f9)
             return
         }
+        addTimeLabel(avatar, f9)
+    }
 
+    private fun findMessageRoot(view: View): ViewGroup? {
+        // Walk up to find a ViewGroup that contains a MaskLayout avatar
+        var current: View? = view
+        while (current != null) {
+            if (current is ViewGroup) {
+                if (findMaskLayout(current) != null) return current
+            }
+            current = current.parent as? View
+        }
+        // Fallback: walk up several levels
+        current = view
+        var count = 0
+        while (current != null && count < 8) {
+            current = current.parent as? View
+            if (current is ViewGroup) {
+                if (findMaskLayout(current) != null) return current
+            }
+            count++
+        }
+        return null
+    }
+
+    private fun addTimeLabel(avatar: View, f9: Any) {
         val timeStr = formatTime(f9) ?: return
         val parent = avatar.parent as? ViewGroup ?: return
         val ctx = parent.context
@@ -203,7 +186,6 @@ class ShowDetailTimeFeature : BaseFeature() {
             try { return clz.getDeclaredMethod("getCreateTime").invoke(f9) as? Long }
             catch (_: Throwable) { clz = clz.superclass }
         }
-        module.log(Log.WARN, TAG, "getCreateTime not found on ${f9.javaClass.name}")
         return null
     }
 }
