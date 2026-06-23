@@ -150,14 +150,7 @@ class ShowDetailTimeFeature : BaseFeature() {
             if (createTime <= 0) return null
             val adjusted = if (createTime > 1000000000000L) createTime else createTime * 1000
             val date = Date(adjusted)
-            val cal = Calendar.getInstance()
-            val msgCal = Calendar.getInstance().apply { time = date }
-            val fmt = if (cal.get(Calendar.DAY_OF_YEAR) == msgCal.get(Calendar.DAY_OF_YEAR)
-                && cal.get(Calendar.YEAR) == msgCal.get(Calendar.YEAR))
-                SimpleDateFormat("HH:mm:ss", Locale.getDefault())
-            else
-                SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
-            fmt.format(date)
+            SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(date)
         } catch (e: Throwable) { null }
     }
 

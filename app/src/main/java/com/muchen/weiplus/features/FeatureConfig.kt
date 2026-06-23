@@ -1,9 +1,10 @@
-﻿package com.muchen.weiplus.features
+package com.muchen.weiplus.features
 
 object FeatureConfig {
     var antiRecall = true
     var swipeQuote = true
     var showDetailTime = true
+    var fakeVoiceDuration = true
 
     fun load() {
         try {
@@ -17,6 +18,7 @@ object FeatureConfig {
                     "anti_recall" -> antiRecall = v
                     "swipe_quote" -> swipeQuote = v
                     "show_detail_time" -> showDetailTime = v
+                    "fake_voice_duration" -> fakeVoiceDuration = v
                 }
             }
         } catch (_: Throwable) {}
@@ -25,7 +27,10 @@ object FeatureConfig {
     fun save() {
         try {
             java.io.File("/sdcard/weiplus_prefs").writeText(
-                "anti_recall=$antiRecall\nswipe_quote=$swipeQuote\nshow_detail_time=$showDetailTime\n"
+                "anti_recall=$antiRecall\n" +
+                "swipe_quote=$swipeQuote\n" +
+                "show_detail_time=$showDetailTime\n" +
+                "fake_voice_duration=$fakeVoiceDuration\n"
             )
         } catch (_: Throwable) {}
     }

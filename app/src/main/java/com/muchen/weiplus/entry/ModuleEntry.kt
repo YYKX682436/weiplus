@@ -15,6 +15,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.muchen.weiplus.features.AntiRecallFeature
+import com.muchen.weiplus.features.FakeVoiceDurationFeature
 import com.muchen.weiplus.features.FeatureConfig
 import com.muchen.weiplus.features.ShowDetailTimeFeature
 import com.muchen.weiplus.features.SwipeQuoteFeature
@@ -81,6 +82,9 @@ class ModuleEntry : XposedModule() {
 
         try { ShowDetailTimeFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "ShowDetailTimeFeature OK") }
         catch (e: Throwable) { log(Log.ERROR, TAG, "ShowDetailTimeFeature fail", e) }
+
+        try { FakeVoiceDurationFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "FakeVoiceDurationFeature OK") }
+        catch (e: Throwable) { log(Log.ERROR, TAG, "FakeVoiceDurationFeature fail", e) }
     }
 
     private fun injectEntry(classLoader: ClassLoader) {
@@ -158,7 +162,6 @@ class ModuleEntry : XposedModule() {
             elevation = 16f * d
         }
 
-        // Title
         panel.addView(TextView(activity).apply {
             text = "WeiPlus"
             setTextColor(Color.WHITE)
@@ -166,22 +169,22 @@ class ModuleEntry : XposedModule() {
             setPadding(0, (12 * d).toInt(), 0, (16 * d).toInt())
         })
 
-        // AntiRecall
         panel.addView(switchRow(activity, d, "禁止消息撤回", "阻止好友撤回已发消息",
             FeatureConfig.antiRecall
         ) { FeatureConfig.antiRecall = it; FeatureConfig.save() })
 
-        // SwipeQuote
         panel.addView(switchRow(activity, d, "左滑引用消息", "左滑消息快速引用回复",
             FeatureConfig.swipeQuote
         ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() })
 
-        // ShowDetailTime
         panel.addView(switchRow(activity, d, "显示详细时间", "头像下方显示消息时间",
             FeatureConfig.showDetailTime
         ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() })
 
-        // Close
+        panel.addView(switchRow(activity, d, "伪装语音时长", "伪造语音消息外显时长",
+            FeatureConfig.fakeVoiceDuration
+        ) { FeatureConfig.fakeVoiceDuration = it; FeatureConfig.save() })
+
         panel.addView(TextView(activity).apply {
             text = "关闭"
             setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF))
