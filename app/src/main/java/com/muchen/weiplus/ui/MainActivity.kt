@@ -619,31 +619,36 @@ class MainActivity : Activity() {
         val titleRow = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            isClickable = true
-            isFocusable = true
-            setOnClickListener { onGear() }
         }
         col.addView(titleRow)
 
-        val tv = TextView(this)
-        tv.text = title; tv.setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); tv.textSize = 17f
+        val tv = TextView(this).apply {
+            text = title; setTextColor(Color.argb(0xFF, 0x1C, 0x1C, 0x1E)); textSize = 17f
+            isClickable = true; isFocusable = true
+            setOnClickListener { onGear() }
+        }
         titleRow.addView(tv, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
 
         val gear = TextView(this).apply {
             text = "设置"
-            setTextColor(Color.argb(0xFF, 0x34, 0x8E, 0xFF)); background = GradientDrawable().apply { cornerRadius = dpf(4); setColor(Color.argb(0x15, 0x34, 0x8E, 0xFF)) }; setPadding(dip(6), dip(2), dip(6), dip(3))
+            setTextColor(Color.argb(0xFF, 0x34, 0x8E, 0xFF))
+            background = GradientDrawable().apply { cornerRadius = dpf(4); setColor(Color.argb(0x15, 0x34, 0x8E, 0xFF)) }
+            setPadding(dip(8), dip(2), dip(8), dip(3))
             textSize = 14f
-            setPadding(dip(10), 0, dip(6), 0)
             setOnClickListener { onGear() }
         }
         titleRow.addView(gear)
+
+        val ts = TextView(this)
+        ts.text = subtitle; ts.setTextColor(Color.argb(0xFF, 0x8E, 0x8E, 0x93)); ts.textSize = 13f
+        col.addView(ts)
+
         val sw = IosSwitch(this, 1.3f)
         sw.setChecked(getter(), false)
         val swLp = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         swLp.gravity = Gravity.CENTER_VERTICAL or Gravity.END
         row.addView(sw, swLp)
 
-        row.setOnClickListener { val nv = !sw.isChecked; sw.setChecked(nv, true); setter(nv) }
         sw.onToggle = setter
         return row
     }
