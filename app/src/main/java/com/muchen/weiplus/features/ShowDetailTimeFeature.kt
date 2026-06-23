@@ -34,29 +34,67 @@ class ShowDetailTimeFeature : BaseFeature() {
         classLoader = cl
 
         try {
-            // Hook a0.H(g0, f9) - receives both tag and msg info directly
-            val a0Class = cl.loadClass("com.tencent.mm.ui.chatting.viewitems.a0")
-            for (method in a0Class.declaredMethods) {
-                if (method.name == "H" && method.parameterTypes.size == 2) {
-                    module.hook(method).intercept { chain ->
-                        chain.proceed()
-                        if (!FeatureConfig.showDetailTime) return@intercept null
-                        try {
-                            val tag = chain.args[0]  // g0
-                            val f9 = chain.args[1]   // f9 msg info
-                            val view = tag.javaClass.getMethod("getMainContainerView").invoke(tag) as? View
-                            if (view != null) addTimeLabel(view, f9)
-                        } catch (_: Throwable) {}
-                        null
+            // Hook g0.getMainContainerView - guaranteed to be called when view is accessed
+            val g0Class = cl.loadClass("com.tencent.mm.ui.chatting.viewitems.g0")
+            val mcvMethod = g0Class.getDeclaredMethod("getMainContainerView")
+            module.hook(mcvMethod).intercept { chain ->
+                val view = chain.proceed() as? View
+                if (view != null && FeatureConfig.showDetailTime) {
+                    val tag = chain.thisObject
+                    try {
+                        onViewReady(view, tag)
+                    } catch (e: Throwable) {
+                        module.log(Log.ERROR, TAG, "onViewReady err: ${e.message}")
                     }
-                    module.log(Log.INFO, TAG, "a0.H(g0,f9) Hook OK")
-                    return
                 }
+                view
             }
-            module.log(Log.WARN, TAG, "a0.H method not found")
+            module.log(Log.INFO, TAG, "getMainContainerView Hook OK")
         } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "Hook fail", e)
+            module.log(Log.ERROR, TAG, "Hook fail: ${e.message}")
         }
+    }
+
+    private fun onViewReady(view: View, tag: Any) {
+        mainHandler.postDelayed({
+            try {
+                // Get f9 from tag via getCurrentMsgInfo - try with context
+                val f9 = getMsgInfo(tag, view) ?: return@postDelayed
+                addTimeLabel(view, f9)
+            } catch (e: Throwable) {
+                module.log(Log.ERROR, TAG, "onViewReady inner: ${e.message}")
+            }
+        }, 200)
+    }
+
+    private fun getMsgInfo(tag: Any, view: View): Any? {
+        // Try er.c() first
+        try {
+            val cMethod = tag.javaClass.getMethod("c")
+            val f9 = cMethod.invoke(tag)
+            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via er.c()"); return f9 }
+        } catch (_: Throwable) {}
+
+        // Try g0.getCurrentMsgInfo with context
+        try {
+            val ctx = view.context
+            val gciMethod = tag.javaClass.getMethod("getCurrentMsgInfo", ctx.javaClass)
+            val f9 = gciMethod.invoke(tag, ctx)
+            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via getCurrentMsgInfo(ctx)"); return f9 }
+        } catch (_: Throwable) {}
+        try {
+            val gciMethod = tag.javaClass.getMethod("getCurrentMsgInfo", Any::class.java)
+            val f9 = gciMethod.invoke(tag, null)
+            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via getCurrentMsgInfo(null)"); return f9 }
+        } catch (_: Throwable) {}
+        try {
+            val gciMethod = tag.javaClass.getMethod("getCurrentMsgInfo")
+            val f9 = gciMethod.invoke(tag)
+            if (f9 != null) { module.log(Log.INFO, TAG, "got f9 via getCurrentMsgInfo()"); return f9 }
+        } catch (_: Throwable) {}
+
+        module.log(Log.WARN, TAG, "could not get f9 from tag ${tag.javaClass.name}")
+        return null
     }
 
     private fun addTimeLabel(view: View, f9: Any) {
@@ -99,7 +137,7 @@ class ShowDetailTimeFeature : BaseFeature() {
 
         timeViewMap[avatar] = timeView
         wrapperMap[avatar] = wrapper
-        module.log(Log.INFO, TAG, "Time label added: $timeStr")
+        module.log(Log.INFO, TAG, "Time label: $timeStr")
     }
 
     private fun updateTimeLabel(avatar: View, f9: Any) {
@@ -131,7 +169,7 @@ class ShowDetailTimeFeature : BaseFeature() {
                 SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
             fmt.format(date)
         } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "formatTime fail: ${e.message}")
+            module.log(Log.WARN, TAG, "formatTime: ${e.message}")
             null
         }
     }
@@ -146,6 +184,7 @@ class ShowDetailTimeFeature : BaseFeature() {
             try { return clz.getDeclaredMethod("getCreateTime").invoke(f9) as? Long }
             catch (_: Throwable) { clz = clz.superclass }
         }
+        module.log(Log.WARN, TAG, "getCreateTime not found on ${f9.javaClass.name}")
         return null
     }
 }
