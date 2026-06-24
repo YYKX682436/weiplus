@@ -16,6 +16,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.muchen.weiplus.features.AntiRecallFeature
 import com.muchen.weiplus.features.FeatureConfig
+import com.muchen.weiplus.features.GameCheatFeature
 import com.muchen.weiplus.features.ShowDetailTimeFeature
 import com.muchen.weiplus.features.SwipeQuoteFeature
 import com.muchen.weiplus.ui.IosSwitch
@@ -46,7 +47,7 @@ class ModuleEntry : XposedModule() {
                 val appClass = cl.loadClass("com.tencent.tinker.loader.app.TinkerApplication")
                 val tryLoadMethod = tinkerLoader.getDeclaredMethod("tryLoad", appClass)
                 hook(tryLoadMethod).intercept { _ ->
-                    log(Log.INFO, TAG, "Tinker 热更新已拦截")
+                    log(Log.INFO, TAG, "Tinker热更新已拦截")
                     false
                 }
             } catch (e: Throwable) {
@@ -60,7 +61,7 @@ class ModuleEntry : XposedModule() {
 
         val pn = getProcessName()
         log(Log.INFO, TAG, "onPackageReady: $pn isFirstPkg=${param.isFirstPackage}")
-        log(Log.INFO, TAG, "WeiPlus 已注入进程: $pn (API $apiVersion)")
+        log(Log.INFO, TAG, "WeiPlus 已注入进程 $pn (API $apiVersion)")
 
         if (isMainProcess) {
             FeatureConfig.load()
@@ -82,6 +83,8 @@ class ModuleEntry : XposedModule() {
         try { ShowDetailTimeFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "ShowDetailTimeFeature OK") }
         catch (e: Throwable) { log(Log.ERROR, TAG, "ShowDetailTimeFeature fail", e) }
 
+        try { GameCheatFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "GameCheatFeature OK") }
+        catch (e: Throwable) { log(Log.ERROR, TAG, "GameCheatFeature fail", e) }
     }
 
     private fun injectEntry(classLoader: ClassLoader) {
@@ -121,9 +124,9 @@ class ModuleEntry : XposedModule() {
             setOnClickListener { showPanel(activity) }
         }
         root.addView(btn, FrameLayout.LayoutParams(
-            FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT,
-            Gravity.BOTTOM or Gravity.END
+            FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT
         ).apply {
+            gravity = Gravity.BOTTOM or Gravity.END
             bottomMargin = (100 * d).toInt()
             rightMargin = (16 * d).toInt()
         })
@@ -178,6 +181,9 @@ class ModuleEntry : XposedModule() {
             FeatureConfig.showDetailTime
         ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() })
 
+        panel.addView(switchRow(activity, d, "猜拳骰子作弊", "自定义猜拳/骰子点数",
+            FeatureConfig.gameCheat
+        ) { FeatureConfig.gameCheat = it; FeatureConfig.save() })
 
         panel.addView(TextView(activity).apply {
             text = "关闭"

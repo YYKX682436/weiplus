@@ -4,6 +4,7 @@ object FeatureConfig {
     var antiRecall = true
     var swipeQuote = true
     var showDetailTime = true
+    var gameCheat = true
 
     fun load() {
         try {
@@ -18,6 +19,7 @@ object FeatureConfig {
                     "anti_recall" -> antiRecall = v.equals("true", ignoreCase = true)
                     "swipe_quote" -> swipeQuote = v.equals("true", ignoreCase = true)
                     "show_detail_time" -> showDetailTime = v.equals("true", ignoreCase = true)
+                    "game_cheat" -> gameCheat = v.equals("true", ignoreCase = true)
                 }
             }
         } catch (_: Throwable) {}
@@ -28,7 +30,8 @@ object FeatureConfig {
             java.io.File("/sdcard/weiplus_prefs").writeText(
                 "anti_recall=$antiRecall\n" +
                 "swipe_quote=$swipeQuote\n" +
-                "show_detail_time=$showDetailTime\n"
+                "show_detail_time=$showDetailTime\n" +
+                "game_cheat=$gameCheat\n"
             )
         } catch (_: Throwable) {}
     }

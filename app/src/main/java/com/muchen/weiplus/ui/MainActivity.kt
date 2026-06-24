@@ -23,26 +23,30 @@ class MainActivity : Activity() {
             setPadding(0, dip(16), 0, dip(16))
         }
 
-        addSection(panel, "\u6d88\u606f\u589e\u5f3a")
+        addSection(panel, "消息增强")
         addCard(panel) { card ->
-            addToggle(card, "\u7981\u6b62\u6d88\u606f\u64a4\u56de", "\u963b\u6b62\u597d\u53cb\u64a4\u56de\u5df2\u53d1\u6d88\u606f",
+            addToggle(card, "禁止消息撤回", "阻止好友撤回已发消息",
                 FeatureConfig.antiRecall
             ) { FeatureConfig.antiRecall = it; FeatureConfig.save() }
             addCardDivider(card)
-            addToggle(card, "\u5de6\u6ed1\u5f15\u7528\u6d88\u606f", "\u5de6\u6ed1\u6d88\u606f\u5feb\u901f\u5f15\u7528\u56de\u590d",
+            addToggle(card, "左滑引用消息", "左滑消息快速引用回复",
                 FeatureConfig.swipeQuote
             ) { FeatureConfig.swipeQuote = it; FeatureConfig.save() }
             addCardDivider(card)
-            addToggle(card, "\u663e\u793a\u8be6\u7ec6\u65f6\u95f4", "\u5934\u50cf\u4e0b\u65b9\u663e\u793a\u6d88\u606f\u65f6\u95f4 HH:mm:ss",
+            addToggle(card, "显示详细时间", "头像下方显示消息时间 HH:mm:ss",
                 FeatureConfig.showDetailTime
             ) { FeatureConfig.showDetailTime = it; FeatureConfig.save() }
+            addCardDivider(card)
+            addToggle(card, "猜拳骰子作弊", "点击猜拳/骰子表情时弹出选择",
+                FeatureConfig.gameCheat
+            ) { FeatureConfig.gameCheat = it; FeatureConfig.save() }
         }
 
         addSection(panel, "")
         addCard(panel) { card ->
-            addInfoRow(card, "\u7248\u672c", "1.0.0")
+            addInfoRow(card, "版本", "1.0.0")
             addCardDivider(card)
-            addInfoRow(card, "\u8bf4\u660e", "\u9700\u8981\u6fc0\u6d3b LSPosed \u6a21\u5757\u540e\u91cd\u542f\u5fae\u4fe1\u3002\n\u6240\u6709\u529f\u80fd\u5747\u9700\u6709\u6548\u7684 LSPosed \u73af\u5883")
+            addInfoRow(card, "说明", "需要激活 LSPosed 模块后重启微信。\n所有功能均需有效的 LSPosed 环境")
         }
 
         val scroll = ScrollView(this).apply { addView(panel) }
