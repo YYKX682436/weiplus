@@ -52,7 +52,7 @@ class GameCheatFeature : BaseFeature() {
                     expectGameRand = true
                     presetRandVal.set(-1)
                     mainHandler.post { showGameOverlay(v) }
-                    return@intercept null
+                    return@intercept false // boolean method — must not return null!
                 }
                 chain.proceed()
             }
@@ -68,22 +68,21 @@ class GameCheatFeature : BaseFeature() {
             while (p != null) {
                 val cn = p.javaClass.name.lowercase()
                 if (cn.contains("emoji") || cn.contains("sticker") || cn.contains("smiley") || cn.contains("expression")) {
-                    // Found emoji panel — check the view AND its children for game emoji indicators
                     val combined = collectViewInfo(view)
                     module.log(Log.INFO, TAG, "EMOJI view=${view.javaClass.simpleName} info=[$combined] parent=${p.javaClass.simpleName}")
 
-                    // Direct match
+                    // Dice: 骰子
                     if (combined.contains("dice") || combined.contains("骰")) { gameType = 2; return true }
-                    if (combined.contains("jsb") || combined.contains("猜拳") || combined.contains("mora") || combined.contains("game")) { gameType = 1; return true }
+                    // RPS: 猜拳 / 剪刀石头布 / jsb / mora
+                    if (combined.contains("jsb") || combined.contains("猜拳") || combined.contains("mora") ||
+                        combined.contains("game") || combined.contains("剪刀") || combined.contains("石头") ||
+                        combined.contains("拳")) { gameType = 1; return true }
 
-                    // Try adapter item data with deeper inspection
                     val item = tryGetAdapterItem(p, view)
                     if (item != null) {
-                        val itemClass = item.javaClass.name
-                        val itemStr = deepToString(item).lowercase()
-                        module.log(Log.INFO, TAG, "ADAPTER class=$itemClass str=[${itemStr.take(200)}]")
-                        if (itemStr.contains("dice") || itemStr.contains("骰")) { gameType = 2; return true }
-                        if (itemStr.contains("jsb") || itemStr.contains("猜拳") || itemStr.contains("mora") || itemStr.contains("game")) { gameType = 1; return true }
+                        val s = item.lowercase()
+                        if (s.contains("dice") || s.contains("骰")) { gameType = 2; return true }
+                        if (s.contains("jsb") || s.contains("猜拳") || s.contains("mora") || s.contains("剪刀") || s.contains("game") || s.contains("拳")) { gameType = 1; return true }
                     }
                     break
                 }
@@ -95,7 +94,6 @@ class GameCheatFeature : BaseFeature() {
         return false
     }
 
-    // Collect contentDescription + tag from view and all its children
     private fun collectViewInfo(view: View): String {
         val sb = StringBuilder()
         view.contentDescription?.toString()?.let { if (it.isNotEmpty()) sb.append("cd=$it ") }
@@ -110,26 +108,15 @@ class GameCheatFeature : BaseFeature() {
         return sb.toString().trim()
     }
 
-    // Deep toString: try fields of the item object
     private fun deepToString(obj: Any): String {
         val sb = StringBuilder()
         sb.append(obj.toString().take(500))
-        // Also try common fields
         for (name in listOf("field_md5", "field_id", "md5", "id", "key", "type", "desc", "name", "content", "emojiId", "groupId", "productId")) {
             try {
-                val f = obj.javaClass.getDeclaredField(name); f.isAccessible = true
-                val v = f.get(obj)
+                val f = findField(obj.javaClass, name)
+                val v = f?.get(obj)
                 if (v != null) sb.append(" $name=${v.toString().take(100)}")
             } catch (_: Throwable) {}
-            // Also try superclass
-            try {
-                var c: Class<*>? = obj.javaClass.superclass
-                while (c != null) {
-                    try { val f = c.getDeclaredField(name); f.isAccessible = true; val v = f.get(obj); if (v != null) sb.append(" $name=${v.toString().take(100)}") } catch (_: Throwable) {}
-                    c = c.superclass
-                }
-            } catch (_: Throwable) {}
-            // Also try getter methods
             try {
                 val getter = obj.javaClass.getMethod("get${name.replaceFirstChar { it.uppercase() }}")
                 val v = getter.invoke(obj)
@@ -137,6 +124,15 @@ class GameCheatFeature : BaseFeature() {
             } catch (_: Throwable) {}
         }
         return sb.toString()
+    }
+
+    private fun findField(cls: Class<*>, name: String): java.lang.reflect.Field? {
+        var c: Class<*>? = cls
+        while (c != null) {
+            try { val f = c.getDeclaredField(name); f.isAccessible = true; return f } catch (_: Throwable) {}
+            c = c.superclass
+        }
+        return null
     }
 
     private fun tryGetAdapterItem(recycler: Any, child: View): String? {
