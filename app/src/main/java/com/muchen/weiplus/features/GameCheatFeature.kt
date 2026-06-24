@@ -47,18 +47,14 @@ class GameCheatFeature : BaseFeature() {
                 if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
                 val v = chain.thisObject as? View ?: return@intercept chain.proceed()
 
-                // Replay pass-through: same view being re-clicked programmatically
-                if (v === blockedView) {
-                    blockedView = null
-                    return@intercept chain.proceed()
-                }
+                if (v === blockedView) { blockedView = null; return@intercept chain.proceed() }
 
                 if (isGameEmojiView(v)) {
                     blockedView = v
                     expectGameRand = true
                     presetRandVal.set(-1)
-                    mainHandler.post { showGameOverlay() }
-                    return@intercept false // block original click
+                    mainHandler.post { showGameOverlay(v) }
+                    return@intercept false
                 }
                 chain.proceed()
             }
@@ -126,21 +122,22 @@ class GameCheatFeature : BaseFeature() {
 
     // ==================== Overlay UI ====================
 
-    private fun showGameOverlay() {
+    private fun showGameOverlay(clickedView: View) {
         try {
-            val activity = findChatActivity() ?: run {
-                module.log(Log.WARN, TAG, "OVERLAY FAIL: no activity")
-                cancelBlocked()
-                return
-            }
-            val root = activity.window.decorView.findViewById<ViewGroup>(android.R.id.content)
-            if (root == null || activity.isFinishing) {
-                module.log(Log.WARN, TAG, "OVERLAY FAIL: root=$root isFinishing=${activity.isFinishing}")
-                cancelBlocked()
-                return
-            }
+            // Strategy 1: walk view context chain
+            val activity = getActivityFromContext(clickedView.context)
+                // Strategy 2: ActivityThread — prefer focused
+                ?: findFocusedActivity()
+                // Strategy 3: any LauncherUI
+                ?: findAnyLauncherUI()
+                // Strategy 4: any non-finishing activity
+                ?: findAnyActivity()
 
-            module.log(Log.INFO, TAG, "OVERLAY creating type=$gameType act=${activity.javaClass.simpleName}")
+            if (activity == null) { module.log(Log.WARN, TAG, "OVERLAY FAIL: no activity"); cancelBlocked(); return }
+            val root = activity.window.decorView.findViewById<ViewGroup>(android.R.id.content)
+            if (root == null || activity.isFinishing) { module.log(Log.WARN, TAG, "OVERLAY FAIL: root=$root"); cancelBlocked(); return }
+
+            module.log(Log.INFO, TAG, "OVERLAY type=$gameType act=${activity.javaClass.simpleName}")
             val d = activity.resources.displayMetrics.density
 
             val overlay = FrameLayout(activity).apply {
@@ -151,42 +148,26 @@ class GameCheatFeature : BaseFeature() {
 
             val panel = LinearLayout(activity).apply {
                 orientation = LinearLayout.VERTICAL
-                background = GradientDrawable().apply {
-                    cornerRadius = 16f * d
-                    setColor(Color.argb(0xF0, 0x1C, 0x1C, 0x1E))
-                }
+                background = GradientDrawable().apply { cornerRadius = 16f * d; setColor(Color.argb(0xF0, 0x1C, 0x1C, 0x1E)) }
                 setPadding((32 * d).toInt(), (24 * d).toInt(), (32 * d).toInt(), (24 * d).toInt())
                 elevation = 20f * d
             }
 
             val title = if (gameType == 2) "选择骰子点数" else "选择猜拳结果"
-            panel.addView(TextView(activity).apply {
-                text = title; setTextColor(Color.WHITE); textSize = 17f
-                gravity = Gravity.CENTER; setPadding(0, 0, 0, (20 * d).toInt())
-            })
+            panel.addView(TextView(activity).apply { text = title; setTextColor(Color.WHITE); textSize = 17f; gravity = Gravity.CENTER; setPadding(0, 0, 0, (20 * d).toInt()) })
 
-            val items = if (gameType == 2)
-                listOf("1点", "2点", "3点", "4点", "5点", "6点")
-            else
-                listOf("石头", "剪刀", "布")
-
+            val items = if (gameType == 2) listOf("1点", "2点", "3点", "4点", "5点", "6点") else listOf("石头", "剪刀", "布")
             for ((idx, label) in items.withIndex()) {
                 panel.addView(TextView(activity).apply {
                     text = label; setTextColor(Color.WHITE); textSize = 16f
                     setPadding(0, (10 * d).toInt(), 0, (10 * d).toInt())
-                    setOnClickListener {
-                        presetRandVal.set(idx)
-                        root.removeView(overlay)
-                        module.log(Log.INFO, TAG, "CHOSE type=$gameType idx=$idx")
-                        replayClick()
-                    }
+                    setOnClickListener { presetRandVal.set(idx); root.removeView(overlay); module.log(Log.INFO, TAG, "CHOSE type=$gameType idx=$idx"); replayClick() }
                 })
             }
 
             panel.addView(TextView(activity).apply {
-                text = "取消"; setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF)); textSize = 14f
-                gravity = Gravity.CENTER; setPadding(0, (16 * d).toInt(), 0, 0)
-                setOnClickListener { root.removeView(overlay); cancelBlocked() }
+                text = "取消"; setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF)); textSize = 14f; gravity = Gravity.CENTER
+                setPadding(0, (16 * d).toInt(), 0, 0); setOnClickListener { root.removeView(overlay); cancelBlocked() }
             })
 
             val panelLp = FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT).apply { gravity = Gravity.CENTER }
@@ -199,47 +180,45 @@ class GameCheatFeature : BaseFeature() {
         }
     }
 
-    private fun replayClick() {
-        val v = blockedView
-        if (v != null) {
-            // blockedView is already set — the hook will detect v === blockedView and pass through
-            mainHandler.post { v.performClick() }
-        } else {
-            expectGameRand = false
+    private fun replayClick() { val v = blockedView; if (v != null) mainHandler.post { v.performClick() } else { expectGameRand = false } }
+    private fun cancelBlocked() { expectGameRand = false; blockedView = null }
+
+    // === Activity discovery (4 strategies) ===
+
+    private fun getActivityFromContext(ctx: android.content.Context): Activity? {
+        var c: android.content.Context? = ctx
+        while (c != null) {
+            if (c is Activity) return c
+            c = if (c is android.content.ContextWrapper) c.baseContext else null
         }
+        return null
     }
 
-    private fun cancelBlocked() {
-        expectGameRand = false
-        blockedView = null
+    private fun findFocusedActivity(): Activity? {
+        return forEachActivity { a -> if (!a.isFinishing && a.hasWindowFocus()) a else null }
     }
 
-    // Find the chat Activity via ActivityThread, fallback to clicked view context
-    private fun findChatActivity(): Activity? {
+    private fun findAnyLauncherUI(): Activity? {
+        return forEachActivity { a -> if (!a.isFinishing && a.javaClass.name.contains("LauncherUI")) a else null }
+    }
+
+    private fun findAnyActivity(): Activity? {
+        return forEachActivity { a -> if (!a.isFinishing) a else null }
+    }
+
+    private fun forEachActivity(block: (Activity) -> Activity?): Activity? {
         try {
             val c = Class.forName("android.app.ActivityThread")
             val am = c.getDeclaredMethod("currentActivityThread").invoke(null)
             val f = c.getDeclaredField("mActivities"); f.isAccessible = true
             @Suppress("UNCHECKED_CAST")
-            val acts = f.get(am) as? Map<Any, Any>
-            if (acts != null) {
-                for (rec in acts.values) {
-                    try {
-                        val af = rec.javaClass.getDeclaredField("activity"); af.isAccessible = true
-                        val a = af.get(rec)
-                        if (a is Activity && !a.isFinishing && a.javaClass.name.contains("LauncherUI")) {
-                            return a
-                        }
-                    } catch (_: Throwable) {}
-                }
-                // Fallback: any non-finishing activity
-                for (rec in acts.values) {
-                    try {
-                        val af = rec.javaClass.getDeclaredField("activity"); af.isAccessible = true
-                        val a = af.get(rec)
-                        if (a is Activity && !a.isFinishing) return a
-                    } catch (_: Throwable) {}
-                }
+            val acts = f.get(am) as? Map<Any, Any> ?: return null
+            for (rec in acts.values) {
+                try {
+                    val af = rec.javaClass.getDeclaredField("activity"); af.isAccessible = true
+                    val a = af.get(rec)
+                    if (a is Activity) { val r = block(a); if (r != null) return r }
+                } catch (_: Throwable) {}
             }
         } catch (_: Throwable) {}
         return null
