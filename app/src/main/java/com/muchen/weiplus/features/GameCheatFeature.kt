@@ -28,10 +28,10 @@ class GameCheatFeature : BaseFeature() {
         module.log(Log.INFO, TAG, "OK")
     }
 
-    // ========= Helper: find method by name + param count (iterates hierarchy) =========
+    // ========= Helper =========
 
-    private fun findMethod(cls: Class<*>, name: String, paramCount: Int): java.lang.reflect.Method? {
-        var c: Class<*>? = cls
+    private fun findMethod(cls: Class<*>?, name: String, paramCount: Int): java.lang.reflect.Method? {
+        var c = cls
         while (c != null) {
             for (m in c.declaredMethods) {
                 if (m.name == name && m.parameterTypes.size == paramCount) return m
@@ -63,28 +63,26 @@ class GameCheatFeature : BaseFeature() {
                 if (rv == null) return@intercept chain.proceed()
 
                 try {
-                    // Get ViewHolder via reflection (iterate class hierarchy)
                     val gvh = findMethod(rv.javaClass, "getChildViewHolder", 1) ?: return@intercept chain.proceed()
                     val holder = gvh.invoke(rv, v)
                     val gap = findMethod(holder.javaClass, "getAdapterPosition", 0) ?: return@intercept chain.proceed()
                     val pos = gap.invoke(holder) as Int
 
-                    // Get adapter and item
                     val ga = findMethod(rv.javaClass, "getAdapter", 0) ?: return@intercept chain.proceed()
                     val adapter = ga.invoke(rv)
-                    val adapterCls = adapter?.javaClass?.name ?: "?"
+                    val ac = adapter?.javaClass
 
                     var item: Any? = null
-                    val gi = findMethod(adapter?.javaClass, "getItem", 1)
+                    val gi = findMethod(ac, "getItem", 1)
                     if (gi != null) item = gi.invoke(adapter, pos)
                     else {
-                        val gt = findMethod(adapter?.javaClass, "get", 1)
+                        val gt = findMethod(ac, "get", 1)
                         if (gt != null) item = gt.invoke(adapter, pos)
                     }
 
                     val itemStr = item?.toString()?.take(300) ?: "?"
                     val isGame = itemStr.lowercase().let { it.contains("jsb") || it.contains("dice") }
-                    module.log(Log.INFO, TAG, "EMOJI pos=$pos adapter=$adapterCls game=$isGame item=$itemStr")
+                    module.log(Log.INFO, TAG, "EMOJI pos=$pos adapter=${ac?.name} game=$isGame item=$itemStr")
 
                     if (isGame) {
                         module.log(Log.INFO, TAG, "GAME! pos=$pos")
