@@ -23,19 +23,18 @@ class GameCheatFeature : BaseFeature() {
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
         this.classLoader = classLoader
-        hookWcdbAllMethods(classLoader)
+        hookWcdbDiagnostic(classLoader)
         hookChatFooter(classLoader)
         hookEmojiInfo(classLoader)
-        hookMsgInfo(classLoader)
         module.log(Log.INFO, TAG, "OK")
     }
 
-    // Hook ALL WCDB operations on message table to spy on content format
-    private fun hookWcdbAllMethods(cl: ClassLoader) {
+    private fun hookWcdbDiagnostic(cl: ClassLoader) {
         try {
             val wcdb = cl.loadClass("com.tencent.wcdb.database.SQLiteDatabase")
+            var hooked = false
             for (m in wcdb.declaredMethods) {
-                if ((m.name == "insert" || m.name == "insertWithOnConflict" || m.name == "replace" || m.name == "update") && m.parameterTypes.size >= 3) {
+                if ((m.name == "insert" || m.name == "replace") && m.parameterTypes.size >= 3) {
                     module.hook(m).intercept { chain ->
                         if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
                         try {
@@ -43,33 +42,36 @@ class GameCheatFeature : BaseFeature() {
                             if (!table.contains("message", ignoreCase = true)) return@intercept chain.proceed()
                             for (arg in chain.args) {
                                 if (arg?.javaClass?.name?.contains("ContentValues") == true) {
+                                    // Dump all keys and values
+                                    val keySet = arg.javaClass.getMethod("keySet").invoke(arg) as? Set<*> ?: continue
                                     val getAsStr = arg.javaClass.getMethod("getAsString", String::class.java)
-                                    val content = getAsStr.invoke(arg, "content") as? String
-                                    if (content != null && content.isNotEmpty() && content.length > 10) {
-                                        // Dump ALL message content for analysis
-                                        val lc = content.lowercase()
-                                        module.log(Log.INFO, TAG, "MSG(${m.name}): ${content.take(150)}")
-                                        if (lc.contains("emoji") || lc.contains("game") || lc.contains("xml") || lc.contains("dice") || lc.contains("rps")) {
-                                            module.log(Log.INFO, TAG, ">>> CANDIDATE: ${content.take(300)}")
-                                        }
-                                        if (isGameEmoji(content)) {
-                                            module.log(Log.INFO, TAG, "!!! GAME EMOJI FOUND !!!")
-                                            blockedChain = chain; blockedContent = content
-                                            blockedGameType = if (lc.contains("dice")) 2 else 1
-                                            mainHandler.post { showPicker() }
-                                            return@intercept null
+                                    val getAsLong = arg.javaClass.getMethod("getAsLong", String::class.java)
+                                    val getAsInt = arg.javaClass.getMethod("getAsInteger", String::class.java)
+                                    val msgId = try { getAsLong.invoke(arg, "msgId") } catch (_: Throwable) { null }
+                                    val type = try { getAsInt.invoke(arg, "type") } catch (_: Throwable) { null }
+                                    val content = try { getAsStr.invoke(arg, "content") as? String } catch (_: Throwable) { null }
+                                    val isSend = try { getAsInt.invoke(arg, "isSend") } catch (_: Throwable) { null }
+                                    
+                                    // Check if this is a game emoji message by type
+                                    if (type != null) {
+                                        // WeChat emoji message types: 47=emoji, 268435505/271... for game
+                                        module.log(Log.INFO, TAG, "MSG type=$type content=${content?.take(100) ?: "null"}")
+                                        if (type.toString().contains("268") || type.toString().contains("47") || 
+                                            (content != null && (content.contains("<msg") || content.contains("emoji") || content.contains("game")))) {
+                                            module.log(Log.INFO, TAG, ">>> CANDIDATE: type=$type content=$content")
                                         }
                                     }
                                 }
                             }
-                        } catch (_: Throwable) {}
+                        } catch (e: Throwable) { module.log(Log.ERROR, TAG, "dump err: ${e.message}") }
                         chain.proceed()
                     }
+                    hooked = true
                     module.log(Log.INFO, TAG, "WCDB.${m.name} hooked")
-                    return
+                    break
                 }
             }
-            module.log(Log.WARN, TAG, "WCDB no suitable method")
+            if (!hooked) module.log(Log.WARN, TAG, "WCDB no method")
         } catch (e: Throwable) { module.log(Log.ERROR, TAG, "WCDB: ${e.message}") }
     }
 
@@ -85,14 +87,7 @@ class GameCheatFeature : BaseFeature() {
                             if (a is String && a.length > 10) {
                                 val lc = a.lowercase()
                                 if (lc.contains("emoji") || lc.contains("game") || lc.contains("xml") || lc.contains("dice")) {
-                                    module.log(Log.INFO, TAG, "CF.${m.name}: ${a.take(150)}")
-                                }
-                                if (isGameEmoji(a)) {
-                                    module.log(Log.INFO, TAG, "CF.${m.name} GAME!")
-                                    blockedChain = chain; blockedContent = a
-                                    blockedGameType = if (lc.contains("dice")) 2 else 1
-                                    mainHandler.post { showPicker() }
-                                    return@intercept null
+                                    module.log(Log.INFO, TAG, "CF.${m.name}: ${a.take(200)}")
                                 }
                             }
                         }
@@ -114,16 +109,11 @@ class GameCheatFeature : BaseFeature() {
                         val c = chain.args[0] as String
                         if (c.length > 10) {
                             val lc = c.lowercase()
-                            if (lc.contains("emoji") || lc.contains("game") || lc.contains("dice")) {
-                                module.log(Log.INFO, TAG, "SEI.${m.name}: ${c.take(150)}")
+                            if (lc.contains("emoji") || lc.contains("game") || lc.contains("dice") || lc.contains("<msg")) {
+                                module.log(Log.INFO, TAG, "SEI: ${c.take(250)}")
                             }
-                            if (isGameEmoji(c)) {
-                                module.log(Log.INFO, TAG, "SEI GAME!")
-                                blockedChain = chain; blockedContent = c
-                                blockedGameType = if (lc.contains("dice")) 2 else 1
-                                mainHandler.post { showPicker() }
-                            } else chain.proceed()
-                        } else chain.proceed()
+                        }
+                        chain.proceed()
                     }
                     module.log(Log.INFO, TAG, "SEI hooked")
                     return
@@ -132,48 +122,10 @@ class GameCheatFeature : BaseFeature() {
         } catch (_: Throwable) {}
     }
 
-    private fun hookMsgInfo(cl: ClassLoader) {
-        // Hook all known message info classes
-        val cns = listOf("com.tencent.mm.storage.bl", "com.tencent.mm.storage.br", "com.tencent.mm.storage.bs")
-        for (cn in cns) {
-            try {
-                val cls = cl.loadClass(cn)
-                for (m in cls.declaredMethods) {
-                    if (m.name == "setContent" && m.parameterTypes.size == 1 && m.parameterTypes[0] == String::class.java) {
-                        module.hook(m).intercept { chain ->
-                            if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
-                            val c = chain.args[0] as String
-                            if (c.length > 10) {
-                                val lc = c.lowercase()
-                                if (lc.contains("emoji") || lc.contains("game") || lc.contains("dice")) {
-                                    module.log(Log.INFO, TAG, "$cn.setContent: ${c.take(150)}")
-                                }
-                                if (isGameEmoji(c)) {
-                                    blockedChain = chain; blockedContent = c
-                                    blockedGameType = if (lc.contains("dice")) 2 else 1
-                                    mainHandler.post { showPicker() }
-                                } else chain.proceed()
-                            } else chain.proceed()
-                        }
-                        module.log(Log.INFO, TAG, "$cn.setContent hooked")
-                        return
-                    }
-                }
-            } catch (_: Throwable) {}
-        }
-    }
-
-    private fun isGameEmoji(c: String): Boolean {
-        if (c.length < 15) return false
-        val lc = c.lowercase()
-        return lc.contains("<emoji") || lc.contains("<gameext") || lc.contains("gamecontent") ||
-               lc.contains("appmsg") && lc.contains("emoji")
-    }
-
     private fun showPicker() {
         val ctx = tryGetActivity() ?: run { proceedBlocked(); return }
         val gt = blockedGameType
-        val title = if (gt == 2) "Pick Dice (1-6)" else "Pick RPS"
+        val title = if (gt == 2) "Pick Dice" else "Pick RPS"
         val items = if (gt == 2) arrayOf("1","2","3","4","5","6") else arrayOf("Rock","Scissors","Paper")
         AlertDialog.Builder(ctx).setTitle(title).setItems(items) { _, which ->
             val chosen = if (gt == 2) which + 1 else when (which) { 0 -> 2; 1 -> 1; 2 -> 0; else -> 0 }
