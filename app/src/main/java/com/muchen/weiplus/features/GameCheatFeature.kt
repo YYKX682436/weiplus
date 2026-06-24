@@ -1,7 +1,6 @@
 ﻿package com.muchen.weiplus.features
 
 import android.app.Activity
-import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Handler
@@ -26,7 +25,7 @@ class GameCheatFeature : BaseFeature() {
     private lateinit var module: XposedModule
     private val mainHandler = Handler(Looper.getMainLooper())
 
-    private var blockedChain: Any? = null
+    private var blockedView: View? = null
     private var gameType = 0
 
     @Volatile private var expectGameRand = false
@@ -47,12 +46,19 @@ class GameCheatFeature : BaseFeature() {
             module.hook(m).intercept { chain ->
                 if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
                 val v = chain.thisObject as? View ?: return@intercept chain.proceed()
+
+                // Replay pass-through: same view being re-clicked programmatically
+                if (v === blockedView) {
+                    blockedView = null
+                    return@intercept chain.proceed()
+                }
+
                 if (isGameEmojiView(v)) {
-                    blockedChain = chain
+                    blockedView = v
                     expectGameRand = true
                     presetRandVal.set(-1)
-                    mainHandler.post { showGameOverlay(v) }
-                    return@intercept false
+                    mainHandler.post { showGameOverlay() }
+                    return@intercept false // block original click
                 }
                 chain.proceed()
             }
@@ -120,29 +126,27 @@ class GameCheatFeature : BaseFeature() {
 
     // ==================== Overlay UI ====================
 
-    private fun showGameOverlay(clickedView: View) {
+    private fun showGameOverlay() {
         try {
-            val activity = getActivity(clickedView.context)
-            if (activity == null) {
-                module.log(Log.WARN, TAG, "OVERLAY FAIL: getActivity null")
-                proceedBlocked()
+            val activity = findChatActivity() ?: run {
+                module.log(Log.WARN, TAG, "OVERLAY FAIL: no activity")
+                cancelBlocked()
                 return
             }
-
             val root = activity.window.decorView.findViewById<ViewGroup>(android.R.id.content)
             if (root == null || activity.isFinishing) {
                 module.log(Log.WARN, TAG, "OVERLAY FAIL: root=$root isFinishing=${activity.isFinishing}")
-                proceedBlocked()
+                cancelBlocked()
                 return
             }
 
-            module.log(Log.INFO, TAG, "OVERLAY creating type=$gameType")
+            module.log(Log.INFO, TAG, "OVERLAY creating type=$gameType act=${activity.javaClass.simpleName}")
             val d = activity.resources.displayMetrics.density
 
             val overlay = FrameLayout(activity).apply {
                 tag = "weiplus_game_cheat"
                 setBackgroundColor(Color.argb(120, 0, 0, 0))
-                setOnClickListener { root.removeView(this); proceedBlocked() }
+                setOnClickListener { root.removeView(this); cancelBlocked() }
             }
 
             val panel = LinearLayout(activity).apply {
@@ -174,7 +178,7 @@ class GameCheatFeature : BaseFeature() {
                         presetRandVal.set(idx)
                         root.removeView(overlay)
                         module.log(Log.INFO, TAG, "CHOSE type=$gameType idx=$idx")
-                        proceedBlocked()
+                        replayClick()
                     }
                 })
             }
@@ -182,7 +186,7 @@ class GameCheatFeature : BaseFeature() {
             panel.addView(TextView(activity).apply {
                 text = "取消"; setTextColor(Color.argb(0xFF, 0x4A, 0x9E, 0xFF)); textSize = 14f
                 gravity = Gravity.CENTER; setPadding(0, (16 * d).toInt(), 0, 0)
-                setOnClickListener { root.removeView(overlay); proceedBlocked() }
+                setOnClickListener { root.removeView(overlay); cancelBlocked() }
             })
 
             val panelLp = FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT).apply { gravity = Gravity.CENTER }
@@ -191,37 +195,53 @@ class GameCheatFeature : BaseFeature() {
             module.log(Log.INFO, TAG, "OVERLAY shown")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "OVERLAY X: ${e.message}")
-            proceedBlocked()
+            cancelBlocked()
         }
     }
 
-    private fun proceedBlocked() {
-        val chain = blockedChain ?: return
+    private fun replayClick() {
+        val v = blockedView
+        if (v != null) {
+            // blockedView is already set — the hook will detect v === blockedView and pass through
+            mainHandler.post { v.performClick() }
+        } else {
+            expectGameRand = false
+        }
+    }
+
+    private fun cancelBlocked() {
+        expectGameRand = false
+        blockedView = null
+    }
+
+    // Find the chat Activity via ActivityThread, fallback to clicked view context
+    private fun findChatActivity(): Activity? {
         try {
-            // Try getDeclaredMethod first (handles non-public methods + inherited)
-            var found: java.lang.reflect.Method? = null
-            var c: Class<*>? = chain.javaClass
-            while (c != null) {
-                try { found = c.getDeclaredMethod("proceed"); found!!.isAccessible = true; break }
-                catch (_: Throwable) { c = c.superclass }
+            val c = Class.forName("android.app.ActivityThread")
+            val am = c.getDeclaredMethod("currentActivityThread").invoke(null)
+            val f = c.getDeclaredField("mActivities"); f.isAccessible = true
+            @Suppress("UNCHECKED_CAST")
+            val acts = f.get(am) as? Map<Any, Any>
+            if (acts != null) {
+                for (rec in acts.values) {
+                    try {
+                        val af = rec.javaClass.getDeclaredField("activity"); af.isAccessible = true
+                        val a = af.get(rec)
+                        if (a is Activity && !a.isFinishing && a.javaClass.name.contains("LauncherUI")) {
+                            return a
+                        }
+                    } catch (_: Throwable) {}
+                }
+                // Fallback: any non-finishing activity
+                for (rec in acts.values) {
+                    try {
+                        val af = rec.javaClass.getDeclaredField("activity"); af.isAccessible = true
+                        val a = af.get(rec)
+                        if (a is Activity && !a.isFinishing) return a
+                    } catch (_: Throwable) {}
+                }
             }
-            if (found != null) {
-                found.invoke(chain)
-            } else {
-                module.log(Log.WARN, TAG, "PROCEED: proceed() method not found on ${chain.javaClass.name}")
-            }
-        } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "PROCEED err: ${e.message}")
-        }
-        blockedChain = null
-    }
-
-    private fun getActivity(ctx: Context): Activity? {
-        var c: Context? = ctx
-        while (c != null) {
-            if (c is Activity) return c
-            c = if (c is android.content.ContextWrapper) c.baseContext else null
-        }
+        } catch (_: Throwable) {}
         return null
     }
 }
