@@ -54,11 +54,16 @@ class GameCheatFeature : BaseFeature() {
                                     
                                     // Check if this is a game emoji message by type
                                     if (type != null) {
-                                        // WeChat emoji message types: 47=emoji, 268435505/271... for game
-                                        module.log(Log.INFO, TAG, "MSG type=$type content=${content?.take(100) ?: "null"}")
-                                        if (type.toString().contains("268") || type.toString().contains("47") || 
-                                            (content != null && (content.contains("<msg") || content.contains("emoji") || content.contains("game")))) {
-                                            module.log(Log.INFO, TAG, ">>> CANDIDATE: type=$type content=$content")
+                                        if (type.toString() == "47") {
+                                            try {
+                                                val keys = arg.javaClass.getMethod("keySet").invoke(arg) as? Set<*>
+                                                val gs = arg.javaClass.getMethod("getAsString", String::class.java)
+                                                val sb = StringBuilder("DUMP47: ")
+                                                for (kk in (keys ?: emptySet<Any>())) {
+                                                    try { sb.append("$kk=${gs.invoke(arg, kk)?.toString()?.take(60)} | ") } catch (_: Throwable) {}
+                                                }
+                                                module.log(Log.INFO, TAG, sb.toString())
+                                            } catch (_: Throwable) {}
                                         }
                                     }
                                 }
