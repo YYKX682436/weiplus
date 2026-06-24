@@ -22,152 +22,77 @@ class GameCheatFeature : BaseFeature() {
     private var blockedGameType = 0
     private var blockedArgsIdx = 0
     private var currentDialog: AlertDialog? = null
-    private val gameEmojiFiles = setOf("jsb.png", "dice.png", "jsb", "dice")
+    private var lastClickTime = 0L
 
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
         this.classLoader = classLoader
-        hookEmojiInfoIntercept(classLoader)
-        hookWcdbIntercept(classLoader)
-        hookAdapterViewClick(classLoader)
+        hookViewClick()
         hookAllGameClasses(classLoader)
         module.log(Log.INFO, TAG, "OK")
     }
 
-    // ========= Strategy 1: EmojiInfo intercept (primary) =========
+    // ========= Strategy: Hook ALL View clicks in emoji context =========
 
-    private fun hookEmojiInfoIntercept(cl: ClassLoader) {
-        val clsNames = listOf(
-            "com.tencent.mm.storage.emotion.EmojiInfo",
-            "com.tencent.mm.plugin.emoji.model.EmojiInfo",
-        )
-        for (cn in clsNames) {
-            try {
-                val cls = cl.loadClass(cn)
-                for (m in cls.declaredMethods) {
-                    val mn = m.name.lowercase()
-                    val isTarget = mn in listOf("setcontent", "getcontent", "getxmldata",
-                        "setxmldata", "toxml", "getgamecontent", "setgamecontent",
-                        "getgameresult", "setgameresult")
-                    val hasStringParam = m.parameterTypes.any { it == String::class.java }
-                    val hasStringReturn = m.returnType == String::class.java
-                    if (isTarget || (hasStringParam && m.parameterTypes.size <= 2) || hasStringReturn) {
-                        module.hook(m).intercept { chain ->
-                            if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
-                            val result = chain.proceed()
-                            val resStr = result as? String ?: ""
-                            if (resStr.isNotEmpty() && isGameEmoji(resStr)) {
-                                module.log(Log.INFO, TAG, "EI.${m.name} GAME: ${resStr.take(120)}")
-                                blockedChain = chain; blockedContent = resStr
-                                blockedGameType = if (resStr.lowercase().contains("dice") || resStr.lowercase().contains("gameext")) 2 else 1
-                                mainHandler.post { showPicker() }
-                                return@intercept resStr
-                            }
-                            for (i in chain.args.indices) {
-                                val ar = chain.args[i]
-                                if (ar is String && isGameEmoji(ar)) {
-                                    module.log(Log.INFO, TAG, "EI.${m.name} ARG GAME: ${ar.take(120)}")
-                                    blockedChain = chain; blockedContent = ar; blockedArgsIdx = i
-                                    blockedGameType = if (ar.lowercase().contains("dice") || ar.lowercase().contains("gameext")) 2 else 1
-                                    mainHandler.post { showPicker() }
-                                    return@intercept null
-                                }
-                            }
-                            result
-                        }
-                        module.log(Log.INFO, TAG, "EI.${m.name} hooked")
-                    }
-                }
-            } catch (e: Throwable) { module.log(Log.DEBUG, TAG, "EI skip $cn: ${e.message}") }
-        }
-    }
-
-    // ========= Strategy 2: WCDB intercept (fallback 1) =========
-
-    private fun hookWcdbIntercept(cl: ClassLoader) {
+    private fun hookViewClick() {
         try {
-            val wcdb = cl.loadClass("com.tencent.wcdb.database.SQLiteDatabase")
-            for (m in wcdb.declaredMethods) {
-                if ((m.name == "insert" || m.name == "replace") && m.parameterTypes.size >= 3) {
-                    module.hook(m).intercept { chain ->
-                        if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
-                        try {
-                            val table = chain.args.getOrNull(0)?.toString() ?: ""
-                            if (!table.contains("message", ignoreCase = true)) return@intercept chain.proceed()
-                            for (arg in chain.args) {
-                                if (arg?.javaClass?.name?.contains("ContentValues") == true) {
-                                    val getStr = arg.javaClass.getMethod("getAsString", String::class.java)
-                                    val content = getStr.invoke(arg, "content") as? String ?: continue
-                                    if (isGameEmoji(content)) {
-                                        val getAsInt = arg.javaClass.getMethod("getAsInteger", String::class.java)
-                                        val type = try { (getAsInt.invoke(arg, "type") as? Number)?.toInt() } catch (_: Throwable) { -1 }
-                                        module.log(Log.INFO, TAG, "WCDB GAME type=$type content=${content.take(120)}")
-                                        blockedArgsIdx = 1; setupBlock(chain, content)
-                                        return@intercept null
-                                    }
-                                    val getAsInt = arg.javaClass.getMethod("getAsInteger", String::class.java)
-                                    val type = try { (getAsInt.invoke(arg, "type") as? Number)?.toInt() } catch (_: Throwable) { null }
-                                    if (type != null && type != 0 && type != 1) {
-                                        module.log(Log.INFO, TAG, "MSG t=$type: cnt=${getStr.invoke(arg, "content")?.toString()?.take(80)}")
-                                    }
-                                }
-                            }
-                        } catch (_: Throwable) {}
-                        chain.proceed()
-                    }
-                    module.log(Log.INFO, TAG, "WCDB hooked")
-                    return
-                }
-            }
-        } catch (e: Throwable) { module.log(Log.ERROR, TAG, "WCDB: ${e.message}") }
-    }
-
-    // ========= Strategy 3: AdapterView click (fallback 2) =========
-
-    private fun hookAdapterViewClick(cl: ClassLoader) {
-        try {
-            val av = cl.loadClass("android.widget.AdapterView")
-            val m = av.getDeclaredMethod("performItemClick", View::class.java, Integer.TYPE, java.lang.Long.TYPE)
+            val m = View::class.java.getDeclaredMethod("performClick")
             module.hook(m).intercept { chain ->
                 if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
-                val ao = chain.thisObject
-                val cn = ao.javaClass.name
+                val v = chain.thisObject as? View ?: return@intercept chain.proceed()
+                val cn = v.javaClass.name
+                // Only check views that could be emoji items
                 val lc = cn.lowercase()
-                if (lc.contains("emoji") || lc.contains("sticker") || lc.contains("smiley")) {
-                    val pos = chain.args[1] as Int
-                    try {
-                        val ad = ao.javaClass.getMethod("getAdapter").invoke(ao)
-                        val item = ad?.javaClass?.getMethod("getItem", Integer.TYPE)?.invoke(ad, pos)
-                        val its = item?.toString() ?: ""
-                        module.log(Log.INFO, TAG, "ADAPTER $cn pos=$pos item=${its.take(200)}")
-                        if (isGameEmoji(its) || gameEmojiFiles.any { its.lowercase().contains(it) }) {
-                            module.log(Log.INFO, TAG, "ADAPTER GAME: ${its.take(200)}")
-                            blockedChain = chain; blockedContent = its; blockedArgsIdx = 1
-                            blockedGameType = if (its.lowercase().contains("dice")) 2 else 1
-                            mainHandler.post { showPicker() }
-                            return@intercept null
-                        }
-                    } catch (e: Throwable) { module.log(Log.DEBUG, TAG, "ADAPTER err: ${e.message}") }
+                val inEmoji = lc.contains("emoji") || lc.contains("sticker") || lc.contains("smiley")
+                val ctxStr = v.context?.javaClass?.name?.lowercase() ?: ""
+                val inEmojiCtx = ctxStr.contains("emoji") || ctxStr.contains("chatting") || ctxStr.contains("launcher")
+                if (!inEmoji && !inEmojiCtx) return@intercept chain.proceed()
+
+                // Try to get emoji info from the view
+                val tag = try { v.tag } catch (_: Throwable) { null }
+                val tagStr = tag?.toString() ?: ""
+                // Also try getting contentDescription or text
+                val cd = try { v.contentDescription?.toString() } catch (_: Throwable) { null } ?: ""
+
+                val combined = "$tagStr $cd"
+                val now = System.currentTimeMillis()
+
+                // Log all emoji-related clicks for debugging
+                if (combined.isNotEmpty()) {
+                    module.log(Log.INFO, TAG, "CLICK $cn tag=${combined.take(120)}")
+                } else {
+                    val parent = try { (v.parent as? View)?.javaClass?.name } catch (_: Throwable) { "?" }
+                    module.log(Log.INFO, TAG, "CLICK $cn parent=$parent")
                 }
+
+                // Check if this is a game emoji click
+                val isGame = combined.lowercase().let { s ->
+                    s.contains("jsb") || s.contains("dice") || s.contains("game") ||
+                    s.contains("猜拳") || s.contains("骰子")
+                }
+                if (isGame) {
+                    module.log(Log.INFO, TAG, "CLICK GAME DETECTED: $cn tag=${combined.take(200)}")
+                    // Block the click, show dialog
+                    blockedChain = chain
+                    blockedContent = combined
+                    blockedGameType = if (combined.lowercase().contains("dice") || combined.lowercase().contains("骰子")) 2 else 1
+                    mainHandler.post { showPicker() }
+                    return@intercept null
+                }
+
                 chain.proceed()
             }
-            module.log(Log.INFO, TAG, "AdapterView hooked")
-        } catch (e: Throwable) { module.log(Log.ERROR, TAG, "AdapterView: ${e.message}") }
+            module.log(Log.INFO, TAG, "View.click hooked")
+        } catch (e: Throwable) { module.log(Log.ERROR, TAG, "View.click: ${e.message}") }
     }
 
-    // ========= Strategy 4: Diagnostic hooks (from v8) =========
+    // ========= Diagnostic hooks =========
 
     private fun hookAllGameClasses(cl: ClassLoader) {
         val targets = listOf(
-            "com.tencent.mm.plugin.game.luggage",
-            "com.tencent.mm.plugin.game.download.GameResourceDownloadProvider",
-            "com.tencent.mm.plugin.game.ui.GameMessageUI",
-            "com.tencent.mm.plugin.game.luggage.c",
-            "com.tencent.mm.plugin.game.luggage.d",
-            "com.tencent.mm.plugin.game.luggage.e",
-            "com.tencent.mm.plugin.emoji.b.d",
             "com.tencent.mm.storage.emotion.EmojiInfo",
             "com.tencent.mm.plugin.emoji.model.EmojiInfo",
+            "com.tencent.mm.plugin.emoji.b.d",
             "com.tencent.mm.message.AppMessage",
         )
         for (cn in targets) {
@@ -202,12 +127,6 @@ class GameCheatFeature : BaseFeature() {
         val lc = c.lowercase()
         return (lc.contains("<emoji") || lc.contains("<gameext") || lc.contains("gamecontent")) &&
                (lc.contains("<msg") || lc.contains("fromusername") || lc.contains("tousername") || lc.contains("<emotion"))
-    }
-
-    private fun setupBlock(chain: Any, content: String) {
-        blockedChain = chain; blockedContent = content
-        blockedGameType = if (content.lowercase().contains("dice") || content.lowercase().contains("gameext")) 2 else 1
-        mainHandler.post { showPicker() }
     }
 
     private fun showPicker() {
@@ -245,33 +164,14 @@ class GameCheatFeature : BaseFeature() {
     private fun replaceContent(chosen: Int, gameType: Int) {
         try {
             val chain = blockedChain ?: run { proceedBlocked(); return }
-            val c = blockedContent ?: run { proceedBlocked(); return }
-
-            val newContent = if (gameType == 2) {
-                c.replace(Regex("(content|type)=" + dq + "\\d+" + dq, RegexOption.IGNORE_CASE),
-                    "content=" + dq + chosen + dq)
-            } else {
-                c.replace(Regex("type=" + dq + "\\d+" + dq, RegexOption.IGNORE_CASE),
-                    "type=" + dq + chosen + dq)
-            }
-
-            module.log(Log.INFO, TAG, "Cheat: gt=$gameType v=$chosen old=${c.take(80)} new=${newContent.take(80)}")
-
-            try {
-                val af = chain.javaClass.getDeclaredField("args"); af.isAccessible = true
-                val args = af.get(chain) as Array<Any?>
-                var idx = blockedArgsIdx
-                if (idx >= args.size) idx = 0
-                if (args.isNotEmpty() && args[0] is String && isGameEmoji(args[0] as String)) idx = 0
-                args[idx] = newContent
-            } catch (_: Throwable) {}
-            chain.javaClass.getMethod("proceed").invoke(chain)
+            // First let the original click proceed to trigger WeChat's send
+            proceedBlocked()
+            // Then hook the send to modify content before it goes out
+            // For now just proceed and accept that we intercepted the click
+            module.log(Log.INFO, TAG, "Cheat: gt=$gameType v=$chosen")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "replace err: ${e.message}")
             proceedBlocked()
-        } finally {
-            blockedChain = null; blockedContent = null
-            currentDialog?.dismiss(); currentDialog = null
         }
     }
 
