@@ -28,7 +28,20 @@ class GameCheatFeature : BaseFeature() {
         module.log(Log.INFO, TAG, "OK")
     }
 
-    // ========= View.click hook - intercept EmojiPanelRecyclerView =========
+    // ========= Helper: find method by name + param count (iterates hierarchy) =========
+
+    private fun findMethod(cls: Class<*>, name: String, paramCount: Int): java.lang.reflect.Method? {
+        var c: Class<*>? = cls
+        while (c != null) {
+            for (m in c.declaredMethods) {
+                if (m.name == name && m.parameterTypes.size == paramCount) return m
+            }
+            c = c.superclass
+        }
+        return null
+    }
+
+    // ========= View.click hook =========
 
     private fun hookViewClick() {
         try {
@@ -37,41 +50,44 @@ class GameCheatFeature : BaseFeature() {
                 if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
                 val v = chain.thisObject as? View ?: return@intercept chain.proceed()
 
-                // Find if parent chain contains EmojiPanelRecyclerView
                 var p: Any? = v.parent
                 var rv: Any? = null
                 while (p != null) {
-                    if (p.javaClass.name.contains("EmojiPanelRecyclerView")) {
+                    val pcn = p.javaClass.name
+                    if (pcn.contains("PanelRecyclerView") || pcn.contains("EmojiRecycler")) {
                         rv = p
                         break
                     }
                     p = (p as? ViewGroup)?.parent
                 }
-
                 if (rv == null) return@intercept chain.proceed()
 
-                // Get ViewHolder and adapter position via reflection
                 try {
-                    val holder = rv.javaClass.getMethod("getChildViewHolder", View::class.java).invoke(rv, v)
-                    val pos = holder.javaClass.getMethod("getAdapterPosition").invoke(holder) as Int
-                    val adapter = rv.javaClass.getMethod("getAdapter").invoke(rv)
+                    // Get ViewHolder via reflection (iterate class hierarchy)
+                    val gvh = findMethod(rv.javaClass, "getChildViewHolder", 1) ?: return@intercept chain.proceed()
+                    val holder = gvh.invoke(rv, v)
+                    val gap = findMethod(holder.javaClass, "getAdapterPosition", 0) ?: return@intercept chain.proceed()
+                    val pos = gap.invoke(holder) as Int
+
+                    // Get adapter and item
+                    val ga = findMethod(rv.javaClass, "getAdapter", 0) ?: return@intercept chain.proceed()
+                    val adapter = ga.invoke(rv)
                     val adapterCls = adapter?.javaClass?.name ?: "?"
 
-                    // Try to get item at position
                     var item: Any? = null
-                    try { item = adapter?.javaClass?.getMethod("getItem", Integer.TYPE)?.invoke(adapter, pos) }
-                    catch (_: Throwable) {
-                        try { item = adapter?.javaClass?.getMethod("get", Integer.TYPE)?.invoke(adapter, pos) }
-                        catch (_: Throwable) {}
+                    val gi = findMethod(adapter?.javaClass, "getItem", 1)
+                    if (gi != null) item = gi.invoke(adapter, pos)
+                    else {
+                        val gt = findMethod(adapter?.javaClass, "get", 1)
+                        if (gt != null) item = gt.invoke(adapter, pos)
                     }
 
                     val itemStr = item?.toString()?.take(300) ?: "?"
                     val isGame = itemStr.lowercase().let { it.contains("jsb") || it.contains("dice") }
-
                     module.log(Log.INFO, TAG, "EMOJI pos=$pos adapter=$adapterCls game=$isGame item=$itemStr")
 
                     if (isGame) {
-                        module.log(Log.INFO, TAG, "GAME_EMOJI! pos=$pos")
+                        module.log(Log.INFO, TAG, "GAME! pos=$pos")
                         blockedChain = chain; blockedContent = itemStr
                         blockedGameType = if (itemStr.lowercase().contains("dice")) 2 else 1
                         mainHandler.post { showGameDialog() }
