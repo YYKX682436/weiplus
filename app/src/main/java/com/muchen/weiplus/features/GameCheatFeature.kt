@@ -26,11 +26,9 @@ class GameCheatFeature : BaseFeature() {
     private lateinit var module: XposedModule
     private val mainHandler = Handler(Looper.getMainLooper())
 
-    // Click block state
     private var blockedChain: Any? = null
-    private var gameType = 0 // 1=猜拳, 2=骰子
+    private var gameType = 0
 
-    // Random interception: set before click proceeds, consumed by Random.nextInt hook
     @Volatile private var expectGameRand = false
     private val presetRandVal = AtomicInteger(-1)
 
@@ -70,18 +68,22 @@ class GameCheatFeature : BaseFeature() {
             while (p != null) {
                 val cn = p.javaClass.name.lowercase()
                 if (cn.contains("emoji") || cn.contains("sticker") || cn.contains("smiley") || cn.contains("expression")) {
-                    val desc = view.contentDescription?.toString()?.lowercase() ?: ""
-                    val tag = view.tag?.toString()?.lowercase() ?: ""
-                    module.log(Log.INFO, TAG, "EMOJI view=${view.javaClass.simpleName} desc=[$desc] tag=[$tag] parent=${p.javaClass.simpleName}")
+                    // Found emoji panel — check the view AND its children for game emoji indicators
+                    val combined = collectViewInfo(view)
+                    module.log(Log.INFO, TAG, "EMOJI view=${view.javaClass.simpleName} info=[$combined] parent=${p.javaClass.simpleName}")
 
-                    if (desc.contains("dice") || desc.contains("骰") || tag.contains("dice") || tag.contains("骰")) { gameType = 2; return true }
-                    if (desc.contains("jsb") || desc.contains("猜拳") || desc.contains("mora") || tag.contains("jsb") || tag.contains("猜拳") || tag.contains("mora") || tag.contains("game")) { gameType = 1; return true }
+                    // Direct match
+                    if (combined.contains("dice") || combined.contains("骰")) { gameType = 2; return true }
+                    if (combined.contains("jsb") || combined.contains("猜拳") || combined.contains("mora") || combined.contains("game")) { gameType = 1; return true }
 
+                    // Try adapter item data with deeper inspection
                     val item = tryGetAdapterItem(p, view)
                     if (item != null) {
-                        val s = item.lowercase()
-                        if (s.contains("dice") || s.contains("骰")) { gameType = 2; return true }
-                        if (s.contains("jsb") || s.contains("猜拳") || s.contains("mora") || s.contains("game")) { gameType = 1; return true }
+                        val itemClass = item.javaClass.name
+                        val itemStr = deepToString(item).lowercase()
+                        module.log(Log.INFO, TAG, "ADAPTER class=$itemClass str=[${itemStr.take(200)}]")
+                        if (itemStr.contains("dice") || itemStr.contains("骰")) { gameType = 2; return true }
+                        if (itemStr.contains("jsb") || itemStr.contains("猜拳") || itemStr.contains("mora") || itemStr.contains("game")) { gameType = 1; return true }
                     }
                     break
                 }
@@ -91,6 +93,50 @@ class GameCheatFeature : BaseFeature() {
             module.log(Log.WARN, TAG, "check err: ${e.message}")
         }
         return false
+    }
+
+    // Collect contentDescription + tag from view and all its children
+    private fun collectViewInfo(view: View): String {
+        val sb = StringBuilder()
+        view.contentDescription?.toString()?.let { if (it.isNotEmpty()) sb.append("cd=$it ") }
+        view.tag?.toString()?.let { if (it.isNotEmpty()) sb.append("tag=$it ") }
+        if (view is ViewGroup) {
+            for (i in 0 until view.childCount) {
+                val child = view.getChildAt(i) ?: continue
+                child.contentDescription?.toString()?.let { if (it.isNotEmpty()) sb.append("c${i}cd=$it ") }
+                child.tag?.toString()?.let { if (it.isNotEmpty()) sb.append("c${i}tag=$it ") }
+            }
+        }
+        return sb.toString().trim()
+    }
+
+    // Deep toString: try fields of the item object
+    private fun deepToString(obj: Any): String {
+        val sb = StringBuilder()
+        sb.append(obj.toString().take(500))
+        // Also try common fields
+        for (name in listOf("field_md5", "field_id", "md5", "id", "key", "type", "desc", "name", "content", "emojiId", "groupId", "productId")) {
+            try {
+                val f = obj.javaClass.getDeclaredField(name); f.isAccessible = true
+                val v = f.get(obj)
+                if (v != null) sb.append(" $name=${v.toString().take(100)}")
+            } catch (_: Throwable) {}
+            // Also try superclass
+            try {
+                var c: Class<*>? = obj.javaClass.superclass
+                while (c != null) {
+                    try { val f = c.getDeclaredField(name); f.isAccessible = true; val v = f.get(obj); if (v != null) sb.append(" $name=${v.toString().take(100)}") } catch (_: Throwable) {}
+                    c = c.superclass
+                }
+            } catch (_: Throwable) {}
+            // Also try getter methods
+            try {
+                val getter = obj.javaClass.getMethod("get${name.replaceFirstChar { it.uppercase() }}")
+                val v = getter.invoke(obj)
+                if (v != null) sb.append(" get$name=${v.toString().take(100)}")
+            } catch (_: Throwable) {}
+        }
+        return sb.toString()
     }
 
     private fun tryGetAdapterItem(recycler: Any, child: View): String? {
@@ -131,7 +177,10 @@ class GameCheatFeature : BaseFeature() {
             while (c != null) {
                 for (m in c.declaredMethods) {
                     if ((m.name == "getItem" || m.name == "get") && m.parameterTypes.size == 1) {
-                        try { return m.invoke(adapter, pos)?.toString() } catch (_: Throwable) {}
+                        try {
+                            val item = m.invoke(adapter, pos)
+                            if (item != null) return deepToString(item)
+                        } catch (_: Throwable) {}
                     }
                 }
                 c = c.superclass
