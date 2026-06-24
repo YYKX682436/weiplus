@@ -14,78 +14,124 @@ class GameCheatFeature : BaseFeature() {
     override val key = "game_cheat"
     override val name = "Game Cheat"
 
+    private val dq = "\""
     private lateinit var module: XposedModule
-    private var classLoader: ClassLoader? = null
     private val mainHandler = Handler(Looper.getMainLooper())
+    private var blockedChain: Any? = null
+    private var blockedContent: String? = null
+    private var blockedGameType = 0
+    private var currentDialog: AlertDialog? = null
 
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
-        this.classLoader = classLoader
         hookViewClick()
-        hookAllGameClasses(classLoader)
         module.log(Log.INFO, TAG, "OK")
     }
 
-    // ========= View.click hook - diagnostic mode =========
+    // ========= View.click hook - intercept EmojiPanelRecyclerView =========
 
     private fun hookViewClick() {
         try {
             val m = View::class.java.getDeclaredMethod("performClick")
             module.hook(m).intercept { chain ->
+                if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
                 val v = chain.thisObject as? View ?: return@intercept chain.proceed()
-                val cn = v.javaClass.name
 
-                // Build parent chain
-                var parentChain = ""
+                // Find if parent chain contains EmojiPanelRecyclerView
                 var p: Any? = v.parent
-                var d = 0
-                while (p != null && d < 6) {
-                    parentChain += " -> " + p.javaClass.name
+                var rv: Any? = null
+                while (p != null) {
+                    if (p.javaClass.name.contains("EmojiPanelRecyclerView")) {
+                        rv = p
+                        break
+                    }
                     p = (p as? ViewGroup)?.parent
-                    d++
                 }
 
-                // Try getting text if TextView
-                val txt = try { (v as? android.widget.TextView)?.text?.toString()?.take(30) ?: "" } catch (_: Throwable) { "" }
-                val tag = try { v.tag?.toString()?.take(60) ?: "" } catch (_: Throwable) { "" }
+                if (rv == null) return@intercept chain.proceed()
 
-                module.log(Log.INFO, TAG, "CLICK $cn txt=$txt tag=$tag parents=$parentChain")
+                // Get ViewHolder and adapter position via reflection
+                try {
+                    val holder = rv.javaClass.getMethod("getChildViewHolder", View::class.java).invoke(rv, v)
+                    val pos = holder.javaClass.getMethod("getAdapterPosition").invoke(holder) as Int
+                    val adapter = rv.javaClass.getMethod("getAdapter").invoke(rv)
+                    val adapterCls = adapter?.javaClass?.name ?: "?"
+
+                    // Try to get item at position
+                    var item: Any? = null
+                    try { item = adapter?.javaClass?.getMethod("getItem", Integer.TYPE)?.invoke(adapter, pos) }
+                    catch (_: Throwable) {
+                        try { item = adapter?.javaClass?.getMethod("get", Integer.TYPE)?.invoke(adapter, pos) }
+                        catch (_: Throwable) {}
+                    }
+
+                    val itemStr = item?.toString()?.take(300) ?: "?"
+                    val isGame = itemStr.lowercase().let { it.contains("jsb") || it.contains("dice") }
+
+                    module.log(Log.INFO, TAG, "EMOJI pos=$pos adapter=$adapterCls game=$isGame item=$itemStr")
+
+                    if (isGame) {
+                        module.log(Log.INFO, TAG, "GAME_EMOJI! pos=$pos")
+                        blockedChain = chain; blockedContent = itemStr
+                        blockedGameType = if (itemStr.lowercase().contains("dice")) 2 else 1
+                        mainHandler.post { showGameDialog() }
+                        return@intercept null
+                    }
+                } catch (e: Throwable) {
+                    module.log(Log.INFO, TAG, "EMOJI err: ${e.message}")
+                }
                 chain.proceed()
             }
             module.log(Log.INFO, TAG, "View.click hooked")
         } catch (e: Throwable) { module.log(Log.ERROR, TAG, "View.click: ${e.message}") }
     }
 
-    // ========= Diagnostic hooks =========
+    private fun showGameDialog() {
+        val ctx = tryGetActivity()
+        if (ctx == null) { proceedBlocked(); return }
+        val gt = blockedGameType
+        val title = if (gt == 2) "选择骰子点数" else "选择猜拳结果"
+        val items = if (gt == 2)
+            arrayOf("⚀ 1", "⚁ 2", "⚂ 3", "⚃ 4", "⚄ 5", "⚅ 6")
+        else
+            arrayOf("✊ 石头", "✌️ 剪刀", "🖐 布")
 
-    private fun hookAllGameClasses(cl: ClassLoader) {
-        val targets = listOf(
-            "com.tencent.mm.storage.emotion.EmojiInfo",
-            "com.tencent.mm.plugin.emoji.model.EmojiInfo",
-            "com.tencent.mm.plugin.emoji.b.d",
-        )
-        for (cn in targets) {
-            try {
-                val cls = cl.loadClass(cn)
-                for (m in cls.declaredMethods) {
-                    if (m.parameterTypes.size in 0..6) {
-                        module.hook(m).intercept { chain ->
-                            if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
-                            val sb = StringBuilder()
-                            for (i in chain.args.indices) {
-                                val a = chain.args[i]
-                                val s = if (a is String) a.take(80) else a?.toString()?.take(40) ?: "null"
-                                if (s != "null" && s.isNotEmpty()) sb.append("a$i=$s | ")
-                            }
-                            val result = chain.proceed()
-                            if (result is String && result.length > 5) sb.append("ret=${result.take(120)}")
-                            if (sb.isNotEmpty()) module.log(Log.INFO, TAG, "$cn.${m.name}: $sb")
-                            result
-                        }
-                    }
-                }
-                module.log(Log.INFO, TAG, "$cn hooked")
-            } catch (_: Throwable) {}
-        }
+        currentDialog = AlertDialog.Builder(ctx)
+            .setTitle(title)
+            .setItems(items) { _, which ->
+                val chosen = if (gt == 1)
+                    when (which) { 0 -> 2; 1 -> 1; 2 -> 0; else -> 0 }
+                else which + 1
+                module.log(Log.INFO, TAG, "Chose: gt=$gt idx=$which val=$chosen")
+                proceedBlocked()
+            }
+            .setOnCancelListener { proceedBlocked() }
+            .create()
+        try { currentDialog?.window?.setType(android.view.WindowManager.LayoutParams.TYPE_APPLICATION) } catch (_: Throwable) {}
+        currentDialog?.show()
+    }
+
+    private fun proceedBlocked() {
+        try { blockedChain?.javaClass?.getMethod("proceed")?.invoke(blockedChain) } catch (_: Throwable) {}
+        blockedChain = null; blockedContent = null
+        currentDialog?.dismiss(); currentDialog = null
+    }
+
+    private fun tryGetActivity(): android.app.Activity? {
+        return try {
+            val c = Class.forName("android.app.ActivityThread")
+            val am = c.getDeclaredMethod("currentActivityThread").invoke(null)
+            val f = c.getDeclaredField("mActivities"); f.isAccessible = true
+            @Suppress("UNCHECKED_CAST")
+            val acts = f.get(am) as? Map<Any, Any>
+            if (acts != null) for (rec in acts.values) {
+                try {
+                    val af = rec.javaClass.getDeclaredField("activity"); af.isAccessible = true
+                    val a = af.get(rec)
+                    if (a is android.app.Activity && !a.isFinishing) return a
+                } catch (_: Throwable) {}
+            }
+            null
+        } catch (_: Throwable) { null }
     }
 }
