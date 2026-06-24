@@ -22,6 +22,8 @@ class GameCheatFeature : BaseFeature() {
     private var blockedContent: String? = null
     private var blockedGameType = 0
     private val hookedClasses = mutableSetOf<String>()
+    private val pendingHook = mutableSetOf<String>()
+    @Volatile private var inHook = false
 
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
@@ -32,29 +34,28 @@ class GameCheatFeature : BaseFeature() {
         module.log(Log.INFO, TAG, "OK")
     }
 
-    // Dynamic hook: when an emoji/game class is loaded, hook it immediately
     private fun hookClassLoaderDynamic(cl: ClassLoader) {
         try {
             val m = ClassLoader::class.java.getDeclaredMethod(
                 "loadClass", String::class.java, java.lang.Boolean.TYPE)
             module.hook(m).intercept { chain ->
                 val cn = chain.args[0] as? String ?: return@intercept chain.proceed()
-                if (cn.startsWith("com.tencent.mm") && !hookedClasses.contains(cn)) {
-                    val lc = cn.lowercase()
-                    if (lc.contains("emoji") || lc.contains("game") || lc.contains("sticker") || lc.contains("smiley") || lc.contains("expression")) {
-                        module.log(Log.INFO, TAG, "CLASS: $cn")
-                        // Load and hook after proceed
-                        val result = chain.proceed()
-                        tryHookClass(cl, cn)
-                        return@intercept result
-                    }
+                val needHook = !inHook && !hookedClasses.contains(cn) && cn.startsWith("com.tencent.mm")
+                val lc = cn.lowercase()
+                val isTarget = needHook && (lc.contains("emoji") || lc.contains("game") || lc.contains("sticker") || lc.contains("smiley") || lc.contains("expression"))
+                val result = chain.proceed()
+                if (isTarget) {
+                    module.log(Log.INFO, TAG, "CLASS: $cn")
+                    pendingHook.add(cn)
+                    mainHandler.postDelayed({ processPendingHooks() }, 100)
                 }
-                chain.proceed()
+                result
             }
-            module.log(Log.INFO, TAG, "CL dynamic hooked")
+            module.log(Log.INFO, TAG, "CL hooked")
         } catch (e: Throwable) { module.log(Log.ERROR, TAG, "CL: ${e.message}") }
 
-        // Also try immediate hook for already-loaded classes
+        // Also try already-loaded classes (with re-entrance protection)
+        inHook = true
         val cns = listOf(
             "com.tencent.mm.plugin.emoji.model.EmojiInfo",
             "com.tencent.mm.plugin.emoji.model.EmojiItem",
@@ -69,14 +70,39 @@ class GameCheatFeature : BaseFeature() {
             "com.tencent.mm.plugin.game.ui.GameMessageUI",
             "com.tencent.mm.message.AppMessage",
         )
-        for (cn in cns) { tryHookClass(cl, cn) }
+        for (cn in cns) {
+            try {
+                val cls = cl.loadClass(cn)
+                hookClassMethods(cls, cn)
+            } catch (_: Throwable) {}
+        }
+        inHook = false
+
+        // Also hook ChatFooter
+        try {
+            val cf = cl.loadClass("com.tencent.mm.pluginsdk.ui.chat.ChatFooter")
+            hookChatFooterMethods(cf)
+        } catch (_: Throwable) {}
     }
 
-    private fun tryHookClass(cl: ClassLoader, cn: String) {
+    private fun processPendingHooks() {
+        if (inHook) return
+        inHook = true
+        val toProcess = pendingHook.toList()
+        pendingHook.clear()
+        for (cn in toProcess) {
+            if (hookedClasses.contains(cn)) continue
+            try {
+                val cls = classLoader!!.loadClass(cn)
+                hookClassMethods(cls, cn)
+            } catch (_: Throwable) {}
+        }
+        inHook = false
+    }
+
+    private fun hookClassMethods(cls: Class<*>, cn: String) {
         if (hookedClasses.contains(cn)) return
         try {
-            val cls = cl.loadClass(cn)
-            hookedClasses.add(cn)
             for (m in cls.declaredMethods) {
                 if (m.parameterTypes.size == 1 && m.parameterTypes[0] == String::class.java) {
                     module.hook(m).intercept { chain ->
@@ -87,28 +113,34 @@ class GameCheatFeature : BaseFeature() {
                             interceptChain(chain, c)
                         } else chain.proceed()
                     }
+                    hookedClasses.add(cn)
                     module.log(Log.INFO, TAG, "HOOKED: $cn.${m.name}")
                     return
                 }
             }
-            // Also hook 0-param String getters
-            for (m in cls.declaredMethods) {
-                if (m.returnType == String::class.java && m.parameterTypes.isEmpty()) {
-                    try {
-                        module.hook(m).intercept { chain ->
-                            if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
-                            val result = chain.proceed() as? String
-                            if (result != null && isGameEmoji(result)) {
-                                module.log(Log.INFO, TAG, "GET: $cn.${m.name}")
-                            }
-                            result
+            hookedClasses.add(cn)
+            module.log(Log.INFO, TAG, "NOHIT: $cn")
+        } catch (e: Throwable) { module.log(Log.ERROR, TAG, "hook $cn: ${e.message}") }
+    }
+
+    private fun hookChatFooterMethods(cf: Class<*>) {
+        for (m in cf.declaredMethods) {
+            if (m.parameterTypes.size in 0..3) {
+                module.hook(m).intercept { chain ->
+                    if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
+                    for (i in chain.args.indices) {
+                        val a = chain.args[i]
+                        if (a is String && isGameEmoji(a)) {
+                            module.log(Log.INFO, TAG, "CF.${m.name} GAME!")
+                            interceptChain(chain, a)
+                            return@intercept null
                         }
-                    } catch (_: Throwable) {}
+                    }
+                    chain.proceed()
                 }
             }
-        } catch (e: Throwable) {
-            // module.log(Log.DEBUG, TAG, "skip $cn: ${e.message}")
         }
+        module.log(Log.INFO, TAG, "CF hooked")
     }
 
     private fun hookViewPerformClick() {
@@ -156,30 +188,6 @@ class GameCheatFeature : BaseFeature() {
             }
             module.log(Log.INFO, TAG, "AV hooked")
         } catch (e: Throwable) { module.log(Log.ERROR, TAG, "AV: ${e.message}") }
-    }
-
-    // Also hook ChatFooter.send for the normal path
-    private fun hookChatFooter(cl: ClassLoader) {
-        try {
-            val cf = cl.loadClass("com.tencent.mm.pluginsdk.ui.chat.ChatFooter")
-            for (m in cf.declaredMethods) {
-                if (m.parameterTypes.size in 0..3) {
-                    module.hook(m).intercept { chain ->
-                        if (!FeatureConfig.gameCheat) return@intercept chain.proceed()
-                        for (i in chain.args.indices) {
-                            val a = chain.args[i]
-                            if (a is String && isGameEmoji(a)) {
-                                module.log(Log.INFO, TAG, "CF.${m.name} GAME!")
-                                interceptChain(chain, a)
-                                return@intercept null
-                            }
-                        }
-                        chain.proceed()
-                    }
-                }
-            }
-            module.log(Log.INFO, TAG, "CF hooked")
-        } catch (_: Throwable) {}
     }
 
     private fun isGameEmoji(c: String): Boolean {
