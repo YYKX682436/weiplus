@@ -52,18 +52,16 @@ class GameCheatFeature : BaseFeature() {
                                     val content = try { getAsStr.invoke(arg, "content") as? String } catch (_: Throwable) { null }
                                     val isSend = try { getAsInt.invoke(arg, "isSend") } catch (_: Throwable) { null }
                                     
-                                    // Check if this is a game emoji message by type
+                                    // Log ALL message types
                                     if (type != null) {
-                                        if (type.toString() == "47") {
-                                            try {
-                                                val keys = arg.javaClass.getMethod("keySet").invoke(arg) as? Set<*>
-                                                val gs = arg.javaClass.getMethod("getAsString", String::class.java)
-                                                val sb = StringBuilder("DUMP47: ")
-                                                for (kk in (keys ?: emptySet<Any>())) {
-                                                    try { sb.append("$kk=${gs.invoke(arg, kk)?.toString()?.take(60)} | ") } catch (_: Throwable) {}
-                                                }
-                                                module.log(Log.INFO, TAG, sb.toString())
-                                            } catch (_: Throwable) {}
+                                        if (type.toString().contains("47") || type.toString() != "1" && type.toString() != "0") {
+                                            val keys = arg.javaClass.getMethod("keySet").invoke(arg) as? Set<*>
+                                            val gs = arg.javaClass.getMethod("getAsString", String::class.java)
+                                            val sb = StringBuilder("MSG t=$type: ")
+                                            for (kk in (keys ?: emptySet<Any>())) {
+                                                try { sb.append("$kk=${gs.invoke(arg, kk)?.toString()?.take(80)} | ") } catch (_: Throwable) {}
+                                            }
+                                            module.log(Log.INFO, TAG, sb.toString())
                                         }
                                     }
                                 }
