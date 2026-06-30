@@ -1,6 +1,5 @@
 ﻿package com.muchen.weiplus.features
 
-import android.app.Activity
 import android.util.Log
 import io.github.libxposed.api.XposedModule
 
@@ -14,75 +13,91 @@ class ForwardLimitFeature : BaseFeature() {
     override val name = "\u89e3\u9664\u8f6c\u53d1\u9650\u5236"
 
     private lateinit var module: XposedModule
-    private val hookedClasses = HashSet<String>()
 
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
 
-        // Strategy 1: Intercept max_limit_num = 9 -> 9999 (v8, confirmed working)
-        hookPutExtra(classLoader)
+        // Strategy 1: Intercept max_limit_num = 9 -> 9999 (working via getIntExtra)
         hookGetIntExtra(classLoader)
 
-        // Strategy 2: Boolean interceptors on forwarding-related classes
-        observeBools(classLoader, "com.tencent.mm.ui.contact.SelectContactUI")
-        observeBools(classLoader, "com.tencent.mm.pluginsdk.ui.MultiSelectContactView")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.ChattingUI")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.e")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.d")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.f")
+        // Strategy 2: Discovery — log ALL menu items created (db5.h4)
+        hookMenuItemCreate(classLoader)
 
-        // Strategy 3: Activity scanner with auto boolean intercept
-        hookActivityCreate(classLoader)
+        // Strategy 3: Discovery — log menu item clicks via u0.onItemClick
+        hookMenuClick(classLoader)
 
-        module.log(Log.INFO, TAG, "v9: max_limit_num + bool interceptors on 6 classes")
+        // Strategy 4: Hook ForwardFeatureService.Bi to see viewModels
+        hookForwardBi(classLoader)
+
+        module.log(Log.INFO, TAG, "v10: discovery — menu items + ForwardBi")
     }
 
-    private fun observeBools(classLoader: ClassLoader, clsName: String) {
+    // Hook db5.h4(Context, int groupId, int itemId) constructor
+    private fun hookMenuItemCreate(classLoader: ClassLoader) {
         try {
-            val clz = classLoader.loadClass(clsName)
-            var boolCount = 0
-            for (m in clz.declaredMethods) {
-                if (m.returnType != Boolean::class.javaPrimitiveType) continue
-                module.hook(m).intercept { chain ->
-                    val result = chain.proceed()
-                    if (FeatureConfig.forwardLimit && result as? Boolean == false) {
-                        module.log(Log.INFO, TAG, "BOOL " + clsName.substringAfterLast('.') + "." + m.name + "() F->T")
-                        return@intercept true
+            val h4 = classLoader.loadClass("db5.h4")
+            for (c in h4.declaredConstructors) {
+                if (c.parameterTypes.size == 3) {
+                    module.hook(c).intercept { chain ->
+                        chain.proceed()
+                        val groupId = chain.args[1] as Int
+                        val itemId = chain.args[2] as Int
+                        module.log(Log.INFO, TAG, "MENU_NEW g=$groupId id=$itemId")
                     }
-                    result
+                    module.log(Log.INFO, TAG, "  db5.h4.<init>(Ctx,int,int) Hook OK")
+                    return
                 }
-                boolCount++
             }
-            if (boolCount > 0)
-                module.log(Log.INFO, TAG, "  " + clsName.substringAfterLast('.') + " [" + boolCount + " bool hooks]")
-            else
-                module.log(Log.WARN, TAG, "  " + clsName.substringAfterLast('.') + " [" + clz.declaredMethods.size + "m, 0 bool]")
+            module.log(Log.WARN, TAG, "  db5.h4 no 3-arg ctor")
         } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "  " + clsName.substringAfterLast('.') + " NOT FOUND: " + (e.message ?: ""))
+            module.log(Log.ERROR, TAG, "  db5.h4 FAIL: " + (e.message ?: ""))
         }
     }
 
-    private fun hookPutExtra(classLoader: ClassLoader) {
+    // Hook com.tencent.mm.ui.widget.dialog.u0.onItemClick
+    private fun hookMenuClick(classLoader: ClassLoader) {
         try {
-            val intentClass = classLoader.loadClass("android.content.Intent")
-            val putExtraInt = intentClass.getDeclaredMethod(
-                "putExtra", String::class.java, Int::class.javaPrimitiveType!!
+            val u0 = classLoader.loadClass("com.tencent.mm.ui.widget.dialog.u0")
+            val onClick = u0.getDeclaredMethod("onItemClick",
+                classLoader.loadClass("android.widget.AdapterView"),
+                classLoader.loadClass("android.view.View"),
+                Int::class.javaPrimitiveType!!,
+                Long::class.javaPrimitiveType!!
             )
-            module.hook(putExtraInt).intercept { chain ->
-                val key = chain.args[0] as? String ?: ""
-                val value = (chain.args[1] as? Int) ?: 0
-                if (FeatureConfig.forwardLimit && key == "max_limit_num" && value in 1..100) {
-                    module.log(Log.INFO, TAG, "Intent.putExtra(max_limit_num): $value -> 9999")
-                    chain.args[1] = 9999
-                }
+            module.hook(onClick).intercept { chain ->
+                val pos = chain.args[2] as Int
+                module.log(Log.INFO, TAG, "MENU_CLICK pos=$pos")
                 chain.proceed()
             }
-            module.log(Log.INFO, TAG, "  Intent.putExtra Hook OK")
+            module.log(Log.INFO, TAG, "  u0.onItemClick Hook OK")
         } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "  Intent.putExtra FAIL: " + (e.message ?: ""))
+            module.log(Log.ERROR, TAG, "  u0.onItemClick FAIL: " + (e.message ?: ""))
         }
     }
 
+    // Hook dk5.b0.Bi(Context, co.a, n13.r) — ForwardFeatureService
+    private fun hookForwardBi(classLoader: ClassLoader) {
+        try {
+            val ffs = classLoader.loadClass("dk5.b0")
+            for (m in ffs.declaredMethods) {
+                if (m.name == "Bi" && m.parameterTypes.size == 3) {
+                    module.hook(m).intercept { chain ->
+                        val vm = chain.args[1]
+                        val vmName = vm?.javaClass?.simpleName ?: "null"
+                        module.log(Log.INFO, TAG, "FORWARD_Bi viewModel=$vmName")
+                        chain.proceed()
+                    }
+                    module.log(Log.INFO, TAG, "  dk5.b0.Bi Hook OK")
+                    return
+                }
+            }
+            module.log(Log.WARN, TAG, "  dk5.b0.Bi not found among ${ffs.declaredMethods.size} methods")
+        } catch (e: Throwable) {
+            module.log(Log.ERROR, TAG, "  dk5.b0 FAIL: " + (e.message ?: ""))
+        }
+    }
+
+    // Hook Intent.getIntExtra to override max_limit_num (working)
     private fun hookGetIntExtra(classLoader: ClassLoader) {
         try {
             val intentClass = classLoader.loadClass("android.content.Intent")
@@ -93,7 +108,7 @@ class ForwardLimitFeature : BaseFeature() {
                 val key = chain.args[0] as? String ?: ""
                 val result = chain.proceed() as Int
                 if (FeatureConfig.forwardLimit && key == "max_limit_num" && result in 1..100) {
-                    module.log(Log.INFO, TAG, "Intent.getIntExtra(max_limit_num): $result -> 9999")
+                    module.log(Log.INFO, TAG, "getIntExtra(max_limit_num): $result -> 9999")
                     return@intercept 9999
                 }
                 result
@@ -101,30 +116,6 @@ class ForwardLimitFeature : BaseFeature() {
             module.log(Log.INFO, TAG, "  Intent.getIntExtra Hook OK")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "  Intent.getIntExtra FAIL: " + (e.message ?: ""))
-        }
-    }
-
-    private fun hookActivityCreate(classLoader: ClassLoader) {
-        try {
-            val activityClass = classLoader.loadClass("android.app.Activity")
-            val onCreateMethod = activityClass.getDeclaredMethod("onCreate", android.os.Bundle::class.java)
-            module.hook(onCreateMethod).intercept { chain ->
-                chain.proceed()
-                val activity = chain.thisObject as? Activity ?: return@intercept null
-                val clsName = activity.javaClass.name
-                val lower = clsName.lowercase()
-                if ((lower.contains("forward") || lower.contains("transmit") ||
-                     lower.contains("selectcontact") || lower.contains("selectconv") ||
-                     lower.contains("multiselect") || lower.contains("sharehistory") ||
-                     lower.contains("msgrecord")) && hookedClasses.add(clsName)) {
-                    module.log(Log.INFO, TAG, "ACTIVITY: $clsName")
-                    try { observeBools(classLoader, clsName) } catch (_: Throwable) {}
-                }
-                null
-            }
-            module.log(Log.INFO, TAG, "  Activity.onCreate Hook OK")
-        } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "  Activity.onCreate FAIL: " + (e.message ?: ""))
         }
     }
 }
