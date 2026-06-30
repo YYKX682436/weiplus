@@ -17,6 +17,7 @@ import android.widget.Toast
 import com.muchen.weiplus.features.AntiRecallFeature
 import com.muchen.weiplus.features.FeatureConfig
 import com.muchen.weiplus.features.GameCheatFeature
+import com.muchen.weiplus.features.ForwardLimitFeature
 import com.muchen.weiplus.features.ShowDetailTimeFeature
 import com.muchen.weiplus.features.SwipeQuoteFeature
 import com.muchen.weiplus.ui.IosSwitch
@@ -85,6 +86,9 @@ class ModuleEntry : XposedModule() {
 
         try { GameCheatFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "GameCheatFeature OK") }
         catch (e: Throwable) { log(Log.ERROR, TAG, "GameCheatFeature fail", e) }
+
+        try { ForwardLimitFeature().onEnable(this, classLoader); log(Log.INFO, TAG, "ForwardLimitFeature OK") }
+        catch (e: Throwable) { log(Log.ERROR, TAG, "ForwardLimitFeature fail", e) }
     }
 
     private fun injectEntry(classLoader: ClassLoader) {
@@ -184,6 +188,10 @@ class ModuleEntry : XposedModule() {
         panel.addView(switchRow(activity, d, "猜拳骰子作弊", "自定义猜拳/骰子点数",
             FeatureConfig.gameCheat
         ) { FeatureConfig.gameCheat = it; FeatureConfig.save() })
+
+        panel.addView(switchRow(activity, d, "RemoveForwardLimit", "Allow fwd voice/card/emoji, no 9-limit",
+            FeatureConfig.forwardLimit
+        ) { FeatureConfig.forwardLimit = it; FeatureConfig.save() })
 
         panel.addView(TextView(activity).apply {
             text = "关闭"

@@ -5,6 +5,7 @@ object FeatureConfig {
     var swipeQuote = true
     var showDetailTime = true
     var gameCheat = true
+    var forwardLimit = true
 
     fun load() {
         try {
@@ -20,7 +21,8 @@ object FeatureConfig {
                     "swipe_quote" -> swipeQuote = v.equals("true", ignoreCase = true)
                     "show_detail_time" -> showDetailTime = v.equals("true", ignoreCase = true)
                     "game_cheat" -> gameCheat = v.equals("true", ignoreCase = true)
-                }
+                
+                    "forward_limit" -> forwardLimit = v.equals("true", ignoreCase = true)}
             }
         } catch (_: Throwable) {}
     }
@@ -31,7 +33,8 @@ object FeatureConfig {
                 "anti_recall=$antiRecall\n" +
                 "swipe_quote=$swipeQuote\n" +
                 "show_detail_time=$showDetailTime\n" +
-                "game_cheat=$gameCheat\n"
+                "game_cheat=$gameCheat\n" +
+                "forward_limit=$forwardLimit\n"
             )
         } catch (_: Throwable) {}
     }
