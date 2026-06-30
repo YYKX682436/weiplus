@@ -189,7 +189,7 @@ class ModuleEntry : XposedModule() {
             FeatureConfig.gameCheat
         ) { FeatureConfig.gameCheat = it; FeatureConfig.save() })
 
-        panel.addView(switchRow(activity, d, "RemoveForwardLimit", "Allow fwd voice/card/emoji, no 9-limit",
+        panel.addView(switchRow(activity, d, "解除转发限制", "允许转发语音/名片/表情，去除9人上限",
             FeatureConfig.forwardLimit
         ) { FeatureConfig.forwardLimit = it; FeatureConfig.save() })
 

@@ -7,18 +7,9 @@ class ForwardLimitFeature : BaseFeature() {
 
     companion object {
         private const val TAG = "ForwardLimit"
-        private val SELECT_LIMIT_CLASSES = listOf(
-            "com.tencent.mm.ui.contact.SelectContactUI",
-            "com.tencent.mm.ui.contact.MMBaseSelectContactUI",
-            "com.tencent.mm.ui.mvvm.state.SelectContactState",
-            "com.tencent.mm.pluginsdk.ui.MultiSelectContactView"
-        )
-        private val FORWARD_CHECK_CLASSES = listOf(
-            "com.tencent.mm.feature.forward.ui.ForwardMsgPreviewUI",
-            "com.tencent.mm.feature.forward.entry.BaseForwardUIC",
-            "com.tencent.mm.feature.forward.preview.BaseForwardMsgPreviewUIC",
-            "com.tencent.mm.feature.appmsg.ui.item.RecordDetailBaseItemConvert"
-        )
+        // 观察模式：Hook所有方法但只记日志，不修改行为
+        // 用户操作后从日志中找到真正触发的方法，再切换为拦截模式
+        private val DISCOVERY_MODE = true
     }
 
     override val key = "forward_limit"
@@ -29,94 +20,97 @@ class ForwardLimitFeature : BaseFeature() {
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
 
-        for (clsName in SELECT_LIMIT_CLASSES) {
-            try { hookSelectLimit(classLoader, clsName) }
-            catch (e: Throwable) { module.log(Log.WARN, TAG, clsName.substringAfterLast('.') + " not found") }
-        }
+        // Phase A: Observe SelectContactUI and related for 9-limit discovery
+        observeAll(classLoader, "com.tencent.mm.ui.contact.SelectContactUI")
+        observeAll(classLoader, "com.tencent.mm.pluginsdk.ui.MultiSelectContactView")
+        observeAll(classLoader, "com.tencent.mm.ui.contact.MMBaseSelectContactUI")
 
-        for (clsName in FORWARD_CHECK_CLASSES) {
-            try { hookForwardCheck(classLoader, clsName) }
-            catch (e: Throwable) { module.log(Log.WARN, TAG, clsName.substringAfterLast('.') + " not found") }
-        }
+        // Phase B: Observe forward preview and chat for type-check discovery
+        observeAll(classLoader, "com.tencent.mm.feature.forward.ui.ForwardMsgPreviewUI")
+        observeAll(classLoader, "com.tencent.mm.pluginsdk.ui.chat.ChatFooter")
+        observeAll(classLoader, "com.tencent.mm.ui.chatting.ChattingUI")
 
-        try { hookChatFooterForward(classLoader) }
-        catch (_: Throwable) {}
+        // Phase C: Also try to observe message item views (context menu origin)
+        tryObserveViewItems(classLoader)
 
-        module.log(Log.INFO, TAG, "All hook strategies attempted")
+        // Phase D: Broad interceptors for common patterns (active even in discovery mode)
+        broadInterceptBoolean(classLoader, "com.tencent.mm.feature.forward.ui.ForwardMsgPreviewUI")
+
+        module.log(Log.INFO, TAG, "All observers installed. DISCOVERY_MODE=" + DISCOVERY_MODE)
     }
 
-    private fun hookSelectLimit(classLoader: ClassLoader, clsName: String) {
-        val clz = classLoader.loadClass(clsName)
-        var hooked = 0
-        for (m in clz.declaredMethods) {
-            val rt = m.returnType
-            val mn = m.name.lowercase()
-            if (rt == Int::class.java || rt == Int::class.javaPrimitiveType) {
-                if (mn.contains("max") || mn.contains("limit") || mn.contains("count") || mn.contains("select")) {
-                    module.hook(m).intercept { chain ->
-                        if (!FeatureConfig.forwardLimit) return@intercept chain.proceed()
-                        val orig = chain.proceed() as? Int ?: 9
-                        if (orig in 1..100) {
-                            module.log(Log.INFO, TAG, clsName.substringAfterLast('.') + "." + m.name + "() " + orig + " -> MAX")
+    private fun observeAll(classLoader: ClassLoader, clsName: String) {
+        try {
+            val clz = classLoader.loadClass(clsName)
+            val methods = clz.declaredMethods
+            module.log(Log.INFO, TAG, "OBSERVE: " + clsName.substringAfterLast('.') + " [" + methods.size + " methods]")
+            for (m in methods) {
+                val rt = m.returnType
+                val ptypes = m.parameterTypes
+                val paramStr = ptypes.joinToString(",") { it.simpleName ?: "?" }
+                module.hook(m).intercept { chain ->
+                    val result = chain.proceed()
+                    // Only log in discovery mode or when feature is on
+                    if (DISCOVERY_MODE || FeatureConfig.forwardLimit) {
+                        val shortResult = when (result) {
+                            null -> "null"
+                            is Boolean -> if (result) "T" else "F"
+                            is Number -> result.toString()
+                            is String -> if (result.length > 20) result.substring(0, 20) + ".." else result
+                            else -> result.javaClass.simpleName ?: "obj"
+                        }
+                        module.log(Log.INFO, TAG, "CALL: " + clsName.substringAfterLast('.') +
+                            "." + m.name + "(" + paramStr + ") -> " + shortResult)
+                    }
+                    // In discovery mode, don't modify. Otherwise, override boolean/int
+                    if (!DISCOVERY_MODE && FeatureConfig.forwardLimit) {
+                        if (rt == Boolean::class.javaPrimitiveType && result as? Boolean == false) {
+                            return@intercept true
+                        }
+                        if ((rt == Int::class.java || rt == Int::class.javaPrimitiveType) &&
+                            (result as? Int ?: 0) in 1..100) {
                             return@intercept Int.MAX_VALUE
                         }
-                        orig
                     }
-                    hooked++
+                    result
                 }
             }
-            if (rt == Boolean::class.javaPrimitiveType) {
-                if (mn.contains("over") || mn.contains("reach") || mn.contains("exceed") || mn.contains("islimit") || mn.contains("ismax")) {
-                    module.hook(m).intercept { chain ->
-                        if (!FeatureConfig.forwardLimit) return@intercept chain.proceed()
-                        return@intercept false
-                    }
-                    hooked++
-                }
-            }
-        }
-        if (hooked > 0) {
-            module.log(Log.INFO, TAG, clsName.substringAfterLast('.') + ": " + hooked + " methods hooked")
+        } catch (e: Throwable) {
+            module.log(Log.WARN, TAG, clsName.substringAfterLast('.') + " NOT FOUND: " + (e.message ?: ""))
         }
     }
 
-    private fun hookForwardCheck(classLoader: ClassLoader, clsName: String) {
-        val clz = classLoader.loadClass(clsName)
-        var hooked = 0
-        for (m in clz.declaredMethods) {
-            if (m.returnType == Boolean::class.javaPrimitiveType) {
-                val mn = m.name.lowercase()
-                if (mn.contains("can") || mn.contains("support") || mn.contains("check") || mn.contains("allow") || mn.contains("valid") || mn.contains("forward") || mn.contains("retransmit") || mn.contains("transmit")) {
+    private fun tryObserveViewItems(classLoader: ClassLoader) {
+        // Try common chat view item classes that control context menu
+        val candidates = listOf(
+            "com.tencent.mm.ui.chatting.d",
+            "com.tencent.mm.ui.chatting.e",
+            "com.tencent.mm.ui.chatting.f",
+            "com.tencent.mm.ui.chatting.viewitems.ChattingItemAppMsg",
+        )
+        for (cls in candidates) {
+            try {
+                observeAll(classLoader, cls)
+            } catch (_: Throwable) {}
+        }
+    }
+
+    private fun broadInterceptBoolean(classLoader: ClassLoader, clsName: String) {
+        try {
+            val clz = classLoader.loadClass(clsName)
+            for (m in clz.declaredMethods) {
+                if (m.returnType == Boolean::class.javaPrimitiveType) {
                     module.hook(m).intercept { chain ->
                         if (!FeatureConfig.forwardLimit) return@intercept chain.proceed()
                         val orig = chain.proceed()
-                        if (orig as? Boolean == false) {
-                            module.log(Log.INFO, TAG, clsName.substringAfterLast('.') + "." + m.name + "() false->true")
+                        if (!DISCOVERY_MODE && orig as? Boolean == false) {
+                            module.log(Log.INFO, TAG, "INTERCEPT: " + clsName.substringAfterLast('.') + "." + m.name + "() false->true")
+                            return@intercept true
                         }
-                        return@intercept true
+                        orig
                     }
-                    hooked++
                 }
             }
-        }
-        if (hooked > 0) {
-            module.log(Log.INFO, TAG, clsName.substringAfterLast('.') + ": " + hooked + " methods hooked")
-        }
-    }
-
-    private fun hookChatFooterForward(classLoader: ClassLoader) {
-        val clz = classLoader.loadClass("com.tencent.mm.pluginsdk.ui.chat.ChatFooter")
-        for (m in clz.declaredMethods) {
-            if (m.returnType == Boolean::class.javaPrimitiveType) {
-                val mn = m.name.lowercase()
-                if (mn.contains("can") || mn.contains("support") || mn.contains("forward") || mn.contains("transmit") || mn.contains("retransmit")) {
-                    module.hook(m).intercept { chain ->
-                        if (!FeatureConfig.forwardLimit) return@intercept chain.proceed()
-                        return@intercept true
-                    }
-                    module.log(Log.INFO, TAG, "ChatFooter." + m.name + "() Hook OK")
-                }
-            }
-        }
+        } catch (_: Throwable) {}
     }
 }
