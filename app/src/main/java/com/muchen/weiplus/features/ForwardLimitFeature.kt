@@ -17,34 +17,28 @@ class ForwardLimitFeature : BaseFeature() {
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
 
-        // Strategy 1: Intercept max_limit_num = 9 -> 9999 (working via getIntExtra)
         hookGetIntExtra(classLoader)
-
-        // Strategy 2: Discovery — log ALL menu items created (db5.h4)
         hookMenuItemCreate(classLoader)
-
-        // Strategy 3: Discovery — log menu item clicks via u0.onItemClick
+        hookSetTitle(classLoader)
+        hookForwardBi(classLoader)
         hookMenuClick(classLoader)
 
-        // Strategy 4: Hook ForwardFeatureService.Bi to see viewModels
-        hookForwardBi(classLoader)
-
-        module.log(Log.INFO, TAG, "v10: discovery — menu items + ForwardBi")
+        module.log(Log.INFO, TAG, "v11: setTitle hook to identify Forward by name")
     }
 
-    // Hook db5.h4(Context, int groupId, int itemId) constructor
+    // Hook db5.h4(Context, int groupId, int itemId) — log group+id only
     private fun hookMenuItemCreate(classLoader: ClassLoader) {
         try {
             val h4 = classLoader.loadClass("db5.h4")
             for (c in h4.declaredConstructors) {
                 if (c.parameterTypes.size == 3) {
                     module.hook(c).intercept { chain ->
-                        chain.proceed()
                         val groupId = chain.args[1] as Int
                         val itemId = chain.args[2] as Int
                         module.log(Log.INFO, TAG, "MENU_NEW g=$groupId id=$itemId")
+                        chain.proceed()
                     }
-                    module.log(Log.INFO, TAG, "  db5.h4.<init>(Ctx,int,int) Hook OK")
+                    module.log(Log.INFO, TAG, "  db5.h4.<init> Hook OK")
                     return
                 }
             }
@@ -54,7 +48,28 @@ class ForwardLimitFeature : BaseFeature() {
         }
     }
 
-    // Hook com.tencent.mm.ui.widget.dialog.u0.onItemClick
+    // Hook db5.h4.setTitle(CharSequence) — log title with group/item from instance fields
+    private fun hookSetTitle(classLoader: ClassLoader) {
+        try {
+            val h4 = classLoader.loadClass("db5.h4")
+            val setTitle = h4.getDeclaredMethod("setTitle", CharSequence::class.java)
+            module.hook(setTitle).intercept { chain ->
+                val title = chain.args[0] as? CharSequence ?: "?"
+                val inst = chain.thisObject
+                // Read group + itemId from fields
+                val gField = h4.getDeclaredField("f228366g"); gField.isAccessible = true
+                val iField = h4.getDeclaredField("f228367h"); iField.isAccessible = true
+                val g = gField.getInt(inst)
+                val it = iField.getInt(inst)
+                module.log(Log.INFO, TAG, "MENU_TITLE g=$g id=$it title=''$title''")
+                chain.proceed()
+            }
+            module.log(Log.INFO, TAG, "  db5.h4.setTitle Hook OK")
+        } catch (e: Throwable) {
+            module.log(Log.ERROR, TAG, "  db5.h4.setTitle FAIL: " + (e.message ?: ""))
+        }
+    }
+
     private fun hookMenuClick(classLoader: ClassLoader) {
         try {
             val u0 = classLoader.loadClass("com.tencent.mm.ui.widget.dialog.u0")
@@ -75,7 +90,6 @@ class ForwardLimitFeature : BaseFeature() {
         }
     }
 
-    // Hook dk5.b0.Bi(Context, co.a, n13.r) — ForwardFeatureService
     private fun hookForwardBi(classLoader: ClassLoader) {
         try {
             val ffs = classLoader.loadClass("dk5.b0")
@@ -91,13 +105,12 @@ class ForwardLimitFeature : BaseFeature() {
                     return
                 }
             }
-            module.log(Log.WARN, TAG, "  dk5.b0.Bi not found among ${ffs.declaredMethods.size} methods")
+            module.log(Log.WARN, TAG, "  dk5.b0.Bi not found")
         } catch (e: Throwable) {
             module.log(Log.ERROR, TAG, "  dk5.b0 FAIL: " + (e.message ?: ""))
         }
     }
 
-    // Hook Intent.getIntExtra to override max_limit_num (working)
     private fun hookGetIntExtra(classLoader: ClassLoader) {
         try {
             val intentClass = classLoader.loadClass("android.content.Intent")
