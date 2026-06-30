@@ -18,56 +18,57 @@ class ForwardLimitFeature : BaseFeature() {
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
 
-        // Strategy 1: Hook onCreateContextMenu to find menu builder class
-        hookContextMenu(classLoader)
+        // Hook Intent.putExtra: intercept max_limit_num = 9 -> 9999
+        hookPutExtra(classLoader)
 
-        // Strategy 2: Hook Intent.putExtra(int) to find the max select key
-        hookIntentPutExtra(classLoader)
+        // Hook Intent.getIntExtra: also inflate on read side
+        hookGetIntExtra(classLoader)
 
-        // Strategy 3: Activity scanner (keep from v6)
+        // Activity scanner
         hookActivityCreate(classLoader)
 
-        module.log(Log.INFO, TAG, "v7: context menu + Intent discovery, no auto-intercept")
+        module.log(Log.INFO, TAG, "v8: intercept max_limit_num=9 -> 9999")
     }
 
-    private fun hookContextMenu(classLoader: ClassLoader) {
+    private fun hookPutExtra(classLoader: ClassLoader) {
         try {
-            val clz = classLoader.loadClass("com.tencent.mm.ui.chatting.ChattingUI")
-            val m = clz.getDeclaredMethod("onCreateContextMenu",
-                classLoader.loadClass("android.view.ContextMenu"),
-                classLoader.loadClass("android.view.View"),
-                classLoader.loadClass("android.view.ContextMenu\$ContextMenuInfo"))
-            module.hook(m).intercept { chain ->
-                if (FeatureConfig.forwardLimit) {
-                    val view = chain.args[1]
-                    val info = chain.args[2]
-                    module.log(Log.INFO, TAG, "CONTEXT_MENU ChattingUI view=" + (view?.javaClass?.simpleName ?: "null") + " info=" + (info?.javaClass?.simpleName ?: "null"))
+            val intentClass = classLoader.loadClass("android.content.Intent")
+            val putExtraInt = intentClass.getDeclaredMethod(
+                "putExtra", String::class.java, Int::class.javaPrimitiveType!!
+            )
+            module.hook(putExtraInt).intercept { chain ->
+                val key = chain.args[0] as? String ?: ""
+                val value = (chain.args[1] as? Int) ?: 0
+                if (FeatureConfig.forwardLimit && key == "max_limit_num" && value in 1..100) {
+                    module.log(Log.INFO, TAG, "Intent.putExtra(max_limit_num): $value -> 9999")
+                    chain.args[1] = 9999
                 }
                 chain.proceed()
             }
-            module.log(Log.INFO, TAG, "  ChattingUI.onCreateContextMenu Hook OK")
+            module.log(Log.INFO, TAG, "  Intent.putExtra Hook OK")
         } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "  ChattingUI.onCreateContextMenu: " + (e.message ?: ""))
+            module.log(Log.ERROR, TAG, "  Intent.putExtra FAIL: " + (e.message ?: ""))
         }
     }
 
-    private fun hookIntentPutExtra(classLoader: ClassLoader) {
+    private fun hookGetIntExtra(classLoader: ClassLoader) {
         try {
             val intentClass = classLoader.loadClass("android.content.Intent")
-            val putExtraInt = intentClass.getDeclaredMethod("putExtra", String::class.java, Int::class.javaPrimitiveType!!)
-            module.hook(putExtraInt).intercept { chain ->
-                if (FeatureConfig.forwardLimit) {
-                    val key = chain.args[0] as? String ?: ""
-                    val value = (chain.args[1] as? Int) ?: 0
-                    if (value in 1..1000) {
-                        module.log(Log.INFO, TAG, "Intent.putExtra($key, $value)")
-                    }
+            val getIntExtra = intentClass.getDeclaredMethod(
+                "getIntExtra", String::class.java, Int::class.javaPrimitiveType!!
+            )
+            module.hook(getIntExtra).intercept { chain ->
+                val key = chain.args[0] as? String ?: ""
+                val result = chain.proceed() as Int
+                if (FeatureConfig.forwardLimit && key == "max_limit_num" && result in 1..100) {
+                    module.log(Log.INFO, TAG, "Intent.getIntExtra(max_limit_num): $result -> 9999")
+                    return@intercept 9999
                 }
-                chain.proceed()
+                result
             }
-            module.log(Log.INFO, TAG, "  Intent.putExtra(int) Hook OK")
+            module.log(Log.INFO, TAG, "  Intent.getIntExtra Hook OK")
         } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "  Intent.putExtra FAIL: " + (e.message ?: ""))
+            module.log(Log.ERROR, TAG, "  Intent.getIntExtra FAIL: " + (e.message ?: ""))
         }
     }
 
@@ -85,21 +86,6 @@ class ForwardLimitFeature : BaseFeature() {
                     lower.contains("multiselect") || lower.contains("sharehistory") ||
                     lower.contains("msgrecord")) {
                     module.log(Log.INFO, TAG, "ACTIVITY: $clsName")
-                    // Log the intent extras
-                    try {
-                        val intent = activity.intent
-                        if (intent != null) {
-                            val extras = intent.extras
-                            if (extras != null) {
-                                for (key in extras.keySet()) {
-                                    val v = extras.get(key)
-                                    if (v is Number || v is String) {
-                                        module.log(Log.INFO, TAG, "  EXTRA: $key = $v")
-                                    }
-                                }
-                            }
-                        }
-                    } catch (_: Throwable) {}
                 }
                 null
             }
