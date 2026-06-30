@@ -1,0 +1,5 @@
+package a5;
+
+/* loaded from: classes12.dex */
+public interface o0 {
+}

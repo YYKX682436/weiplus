@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/jgp" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:background="@drawable/cs" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/gyb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:layout_marginBottom="@dimen/cn">
+            <RelativeLayout android:gravity="bottom" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:gravity="center" android:id="@id/h77" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_alignBottom="@id/k3k" android:layout_alignParentTop="true" android:layout_marginEnd="8.0dp" android:layout_alignParentStart="true">
+                    <ImageView android:id="@id/h5n" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/k3k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/h77" android:layout_alignParentTop="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="left|center" android:id="@id/k3f" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/kha" android:visibility="gone" android:layout_width="29.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/bvv" android:scaleType="fitCenter" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/g7t" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/bvb" android:scaleType="fitCenter" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/oim" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" android:src="@raw/app_brand_relieved_buy_icon" android:scaleType="fitCenter" />
+                        <TextView android:gravity="center" android:id="@id/cr9" android:background="@drawable/dc" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" style="@style/q_" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/km_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:src="@drawable/bvn" android:scaleType="fitCenter" android:minWidth="24.0dp" android:minHeight="14.0dp" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/vcf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" />
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="10.0dp" android:layout_height="20.0dp" android:layout_marginLeft="4.0dp" android:layout_marginTop="1.0px" android:src="@raw/icons_outlined_arrow" app:fs="@color/a84" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0dp" android:textColor="@color/tk" android:id="@id/r9v" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/oi9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/k3k">
+                    <TextView android:textSize="12.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:gravity="left|center" android:id="@id/mam" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="44.0dp" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/oi_" android:paddingTop="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/k3k">
+                        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/oib" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/oig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/c9">
+                                <TextView android:textSize="12.0dp" android:textColor="@color/a0c" android:id="@id/oid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交易评价" />
+                                <ImageView android:id="@id/oic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" />
+                                <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="@color/a0c" android:id="@id/oif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" />
+                                <TextView android:textSize="12.0dp" android:textColor="@color/a0c" android:id="@id/oih" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分" android:layout_marginStart="1.0dp" />
+                                <TextView android:textSize="12.0dp" android:textColor="@color/LinkFinder_100" android:id="@id/vgr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+                                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/oia" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" android:src="@raw/icons_filled_arrow" app:fs="@color/BW_0_Alpha_0_3" />
+                                <TextView android:textSize="12.0dp" android:textColor="@color/de" android:id="@id/r1d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+                                <TextView android:textSize="@dimen/ja" android:textColor="@color/Orange_100" android:id="@id/vgs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ao1" />
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/qqn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="6.0dp" android:layout_marginBottom="2.0dp" android:layout_marginStart="12.0dp" />
+                            <FrameLayout android:id="@id/oie" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="12.0dp" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/dy7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" android:paddingStart="@dimen/c9" />
+                            </FrameLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/vgt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginStart="12.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/oii" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:paddingStart="@dimen/c9">
+                            <TextView android:textSize="12.0dp" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/oik" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="你有交易可评价哦哈哈哈哈啊哈哈哈哈啊哈哈哈哈哈哈哈哈哈" android:maxLines="1" android:layout_weight="1.0" />
+                            <TextView android:textSize="12.0dp" android:textColor="@color/de" android:id="@id/oij" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去评价" />
+                        </LinearLayout>
+                        <View android:id="@id/d0v" android:background="@color/BW_0_Alpha_0_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/hbn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="12.0dp" />
+                    </LinearLayout>
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/mn6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_below="@id/oi9" android:layout_alignLeft="@id/h77" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/k3k" android:layout_alignTop="@id/k3k" android:layout_alignBottom="@id/mas">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nhz" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/nhu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="10.0dp" android:minHeight="14.0dp" />
+                        <TextView android:textSize="12.0dp" android:textColor="@color/df" android:ellipsize="end" android:gravity="left|center" android:id="@id/nhq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:singleLine="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

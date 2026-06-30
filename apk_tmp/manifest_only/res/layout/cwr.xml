@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/nof" android:background="@drawable/fn" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="300.0dp" android:layout_height="88.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/nog" android:visibility="gone" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginRight="@dimen/c9" android:scaleType="centerCrop" android:layout_centerVertical="true" app:i8="10.0dp" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/noi" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cn" android:src="@raw/finder_bgm_gif_first_page" android:layout_toRightOf="@id/nog" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.AudioWaveView android:id="@id/pg2" android:layout_width="74.0dp" android:layout_height="20.0dp" android:layout_marginTop="12.0dp" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true" />
+    <ProgressBar android:id="@id/noh" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_centerInParent="true" style="@style/wa" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.MusicLrcView android:textSize="@dimen/k" android:textColor="@color/a77" android:ellipsize="none" android:id="@id/nos" android:fadingEdge="horizontal" android:fadingEdgeLength="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="暂无歌词" android:singleLine="true" android:layout_toRightOf="@id/nog" android:layout_below="@id/noi" android:layout_centerHorizontal="true" android:requiresFadingEdge="horizontal" />
+</RelativeLayout>

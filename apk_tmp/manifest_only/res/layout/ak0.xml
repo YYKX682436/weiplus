@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/w4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mzh" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/enx" android:padding="@dimen/cn" android:layout_width="@dimen/dd" android:layout_height="@dimen/dj" android:layout_marginLeft="@dimen/dv" android:src="@raw/icons_outlined_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fs="@color/BW_100_Alpha_0_8" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/mzj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d02" android:layout_centerInParent="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/f4n" android:padding="@dimen/cn" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginRight="@dimen/dv" android:src="@raw/icons_outlined_help" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/BW_100_Alpha_0_3" />
+    </RelativeLayout>
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/mzi" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

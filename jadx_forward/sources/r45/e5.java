@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes5.dex */
+public class e5 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public e5() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(1, "uxinfo"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(2, "traceid"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(3, "rl"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(4, "apurl"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(5, ya.b.f77478x4cd4defb), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(6, "ad_posid"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(7, "aid"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(8, "tid"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(9, "hint_txt"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(10, "image_url"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(11, "image_url_dark"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(12, "landing_page_type"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(13, "url_scheme"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(14, com.p314xaae8f345.p347x615374d.p349x208df1fe.p358xd1075a44.p360x696c9db.C3365xfbc5fb5e.f13298xf9601dcd), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(15, "apk_name"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(16, "url_scheme_min_android_version"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(17, "ios_install_check_scheme"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(18, "appinfo_url"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(19, "canvas_id"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(20, "canvas_dynamic_info"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(21, "ad_info_xml"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(22, "is_ad_show"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(23, "report_extra_data"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(24, "ad_desc"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(25, "hint_txt_en"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(26, "ad_desc_en"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(27, "app_name"));
+        this.f38874x227b759e = true;
+    }
+}

@@ -1,0 +1,25 @@
+package az0;
+
+/* loaded from: classes16.dex */
+public final class n0 extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ az0.f2 f15727d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public n0(az0.f2 f2Var) {
+        super(1);
+        this.f15727d = f2Var;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        yz5.l it = (yz5.l) obj;
+        kotlin.jvm.internal.o.g(it, "it");
+        com.tencent.maas.camstudio.MJCamSession mJCamSession = this.f15727d.f15460d;
+        az0.i1 i1Var = new az0.i1(it);
+        mJCamSession.getClass();
+        mJCamSession.d0(new com.tencent.maas.camstudio.MJCamMusicDesc(), i1Var);
+        return jz5.f0.f302826a;
+    }
+}

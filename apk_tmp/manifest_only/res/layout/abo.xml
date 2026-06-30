@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/ch8" android:background="@color/m7" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0dp" android:textColor="@color/a8w" android:gravity="center" android:id="@id/mf6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c4" />
+        <include android:id="@id/dva" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_alignParentBottom="true" layout="@layout/ab0" />
+        <RelativeLayout android:id="@id/h0s" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/h0t" android:layout_width="match_parent" android:layout_height="48.0dp">
+                <View android:background="@color/br" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/aaq" android:gravity="center" android:id="@id/select_btn" android:paddingLeft="5.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/c9t" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/h0m" android:background="@drawable/bcd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp">
+                <View android:layout_width="0.0dp" android:layout_height="48.0dp" android:layout_weight="1.0" />
+                <ImageButton android:layout_gravity="center" android:id="@id/h0l" android:background="@null" android:padding="@dimen/j" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/tq" android:scaleType="fitXY" android:contentDescription="@string/g04" />
+                <View android:layout_width="0.0dp" android:layout_height="24.0dp" android:layout_weight="1.0" />
+                <ImageButton android:layout_gravity="center" android:id="@id/h0k" android:background="@null" android:padding="@dimen/j" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/tp" android:scaleType="fitXY" android:contentDescription="@string/g03" />
+                <View android:layout_width="0.0dp" android:layout_height="24.0dp" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/h0u" android:background="@color/m7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/dva" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/lw" android:gravity="left|center" android:id="@id/rq" android:background="@color/lv" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/f" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/f" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

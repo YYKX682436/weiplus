@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/j9a" android:padding="@dimen/g4" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/glm" android:layout_width="@dimen/gj" android:layout_height="@dimen/gj" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.tencent.mm.plugin.game.ui.GameDownloadView android:id="@id/gl0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/k" android:textColor="@color/si" android:ellipsize="end" android:id="@id/gnr" android:paddingLeft="@dimen/gc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/glm" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/sg" android:ellipsize="end" android:id="@id/gjd" android:paddingLeft="@dimen/gc" android:paddingRight="@dimen/gc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/gl0" android:layout_toRightOf="@id/gnr" android:layout_centerVertical="true" />
+</RelativeLayout>

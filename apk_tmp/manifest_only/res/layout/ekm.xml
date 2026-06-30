@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/uhg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="left|center" android:id="@id/aa8" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="@dimen/dd" android:paddingHorizontal="@dimen/cn">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@drawable/cs1" app:fs="@color/FG_0" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/adg" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/pbu" android:layout_below="@id/aa8" android:layout_centerHorizontal="true" android:textFontWeight="500" />
+    <com.tencent.mm.chatting.widget.RoundClipFrameLayout android:id="@id/a9w" android:layout_width="@dimen/bo" android:layout_height="@dimen/bo" android:layout_marginTop="@dimen/cn" android:layout_below="@id/odf" android:layout_centerHorizontal="true" app:clipRadius="@dimen/bl">
+        <ImageView android:id="@id/a_4" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.tencent.mm.chatting.widget.RoundClipFrameLayout>
+    <TextView android:textColor="@color/adg" android:id="@id/cut" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="@dimen/dv" android:text="@string/pbt" android:layout_below="@id/a9w" android:layout_marginHorizontal="@dimen/cn" android:textFontWeight="500" />
+</RelativeLayout>

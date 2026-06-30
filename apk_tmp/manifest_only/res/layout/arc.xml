@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gp5" android:layout_width="24.0dp" android:layout_height="24.0dp">
+        <com.tencent.mm.ui.widget.progress.RoundProgressBtn android:id="@id/gp4" android:layout_width="match_parent" android:layout_height="match_parent" app:hasPause="false" app:progress="30" app:l8="#ff6146" />
+        <ImageView android:id="@id/gp3" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/aaz" android:layout_gravity="center_vertical" android:id="@id/gp6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="2.0dp" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/esp" android:layout_width="8.0dp" android:layout_height="16.0dp" android:layout_marginRight="8.0dp" android:src="@raw/icons_outlined_arrow" app:fs="@color/ab0" />
+</LinearLayout>

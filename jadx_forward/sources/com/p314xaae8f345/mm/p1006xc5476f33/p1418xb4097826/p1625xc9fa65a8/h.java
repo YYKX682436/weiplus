@@ -1,0 +1,25 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1625xc9fa65a8;
+
+/* loaded from: classes2.dex */
+public final class h extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1625xc9fa65a8.ActivityC14941x5c78ef2b f207239d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public h(com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1625xc9fa65a8.ActivityC14941x5c78ef2b activityC14941x5c78ef2b) {
+        super(0);
+        this.f207239d = activityC14941x5c78ef2b;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        android.content.Context ll6 = ((c61.l7) ((zy2.b6) i95.n0.c(zy2.b6.class))).ll();
+        int i17 = com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.f4.f293323n;
+        com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.e4 e4Var = new com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.e4(ll6);
+        e4Var.f293309c = "notify " + pm0.v.u(this.f207239d.f207053t) + " success";
+        e4Var.c();
+        return jz5.f0.f384359a;
+    }
+}

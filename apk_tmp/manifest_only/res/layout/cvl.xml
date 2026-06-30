@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/al_" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="40.0dp" android:layout_height="match_parent" android:layout_marginLeft="60.0dp" android:layout_centerVertical="true">
+            <View android:background="@color/ale" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/hx5" android:layout_width="wrap_content" android:layout_height="45.0dp">
+            <TextView android:textColor="@color/all" android:gravity="right" android:id="@id/oqb" android:layout_width="60.0dp" android:layout_height="wrap_content" android:text="20:00" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/hyf" android:layout_width="40.0dp" android:layout_height="45.0dp" android:layout_toRightOf="@id/oqb" android:layout_centerVertical="true">
+                <View android:background="@color/ale" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/hlt" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/b3o" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/hyj" android:background="?ih" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_toLeftOf="@id/hxw" android:layout_toRightOf="@id/hx5">
+            <TextView android:textStyle="bold" android:textColor="@color/alk" android:id="@id/oqh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电量报告" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="10.0sp" android:textStyle="normal" android:textColor="@color/all" android:layout_gravity="right" android:id="@id/oqi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:00 - 14:00" />
+                <TextView android:textSize="10.0sp" android:textStyle="normal" android:textColor="@color/all" android:layout_gravity="right" android:id="@id/oqj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正常" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/hxw" android:background="?ih" android:layout_width="50.0dp" android:layout_height="45.0dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0sp" android:id="@id/oo7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/bdz" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/hwr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:layout_marginRight="50.0dp" android:layout_below="@id/hyj">
+            <RelativeLayout android:id="@id/hyg" android:layout_width="40.0dp" android:layout_height="match_parent" android:layout_centerVertical="true">
+                <View android:background="@color/ale" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/hww" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/hyg">
+                <include layout="@layout/cvn" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/hwx" android:background="?ih" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/hyg" android:layout_below="@id/hww">
+                <include layout="@layout/cvp" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/hws" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/hyg" android:layout_below="@id/hwx">
+                <include layout="@layout/cvm" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/hwt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/hyg" android:layout_below="@id/hws">
+                <include layout="@layout/cvm" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/hwu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/hyg" android:layout_below="@id/hwt">
+                <include layout="@layout/cvm" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/hwv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/hyg" android:layout_below="@id/hwu">
+                <include layout="@layout/cvm" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@android:anim/accelerate_decelerate_interpolator" android:shareInterpolator="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:duration="120" android:pivotX="50.0%" android:pivotY="100.0%" android:fillAfter="true" android:fromXScale="1.0" android:toXScale="1.05" android:fromYScale="1.0" android:toYScale="0.85" />
+    <set android:startOffset="120">
+        <scale android:duration="120" android:pivotX="50.0%" android:pivotY="100.0%" android:fillAfter="true" android:fromXScale="1.15" android:toXScale="0.95" android:fromYScale="0.7" android:toYScale="1.1" />
+    </set>
+    <set android:startOffset="240">
+        <scale android:duration="120" android:pivotX="50.0%" android:pivotY="100.0%" android:fillAfter="true" android:fromXScale="0.9" android:toXScale="1.05" android:fromYScale="1.1" android:toYScale="0.9" />
+    </set>
+    <set android:startOffset="360">
+        <scale android:duration="120" android:pivotX="50.0%" android:pivotY="100.0%" android:fillAfter="true" android:fromXScale="1.06" android:toXScale="0.95" android:fromYScale="0.8" android:toYScale="1.1" />
+    </set>
+    <set android:startOffset="480">
+        <scale android:duration="120" android:pivotX="50.0%" android:pivotY="100.0%" android:fillAfter="true" android:fromXScale="0.95" android:toXScale="1.0" android:fromYScale="1.1" android:toYScale="1.0" />
+    </set>
+</set>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Debug设置" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/t8m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="101.226.96.41" android:layout_weight="0.9" />
+            <Button android:id="@id/sli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:layout_weight="0.1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单域名接口测试" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/t8p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="game.weixin.qq.com" android:layout_weight="0.9" />
+            <Button android:id="@id/sll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:layout_weight="0.1" />
+        </LinearLayout>
+        <TextView android:id="@id/vj9" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="10" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="多域名接口测试" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/t8n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="game.weixin.qq.com;dlied4v6.myapp.com" android:layout_weight="0.9" />
+            <Button android:id="@id/slj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:layout_weight="0.1" />
+        </LinearLayout>
+        <TextView android:id="@id/viu" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="20" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+package com.p314xaae8f345.p457x3304c6.p470x35bb6d35;
+
+/* loaded from: classes5.dex */
+public class a extends com.p314xaae8f345.p457x3304c6.p470x35bb6d35.C4088x788992d6 {
+    public a(com.p314xaae8f345.p457x3304c6.p474x21ffc6bd.C4098xa14e19b4 c4098xa14e19b4, com.p314xaae8f345.p457x3304c6.p470x35bb6d35.C4079x793f83 c4079x793f83) {
+        super(c4098xa14e19b4.f129744a, 3, c4079x793f83);
+    }
+
+    public com.p314xaae8f345.p457x3304c6.p477x633fb29.p478x3652cd.C4129xdee64553 a() {
+        com.p314xaae8f345.p457x3304c6.p470x35bb6d35.C4079x793f83 c4079x793f83 = (com.p314xaae8f345.p457x3304c6.p470x35bb6d35.C4079x793f83) this.f129699b.get();
+        return c4079x793f83 == null ? com.p314xaae8f345.p457x3304c6.p477x633fb29.p478x3652cd.C4129xdee64553.f16108xa1116659 : c4079x793f83.m33404xdb08f3e8(this.f129698a);
+    }
+
+    public com.p314xaae8f345.p457x3304c6.p477x633fb29.p478x3652cd.C4129xdee64553 b() {
+        com.p314xaae8f345.p457x3304c6.p470x35bb6d35.C4079x793f83 c4079x793f83 = (com.p314xaae8f345.p457x3304c6.p470x35bb6d35.C4079x793f83) this.f129699b.get();
+        return c4079x793f83 == null ? com.p314xaae8f345.p457x3304c6.p477x633fb29.p478x3652cd.C4129xdee64553.f16108xa1116659 : c4079x793f83.m33405xd1c918d9(this.f129698a);
+    }
+}

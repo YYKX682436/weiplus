@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/amd" android:background="@color/c" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="@dimen/d1">
+        <com.tencent.mm.plugin.brandservice.ui.profile.BizDragHeaderView android:layout_gravity="center" android:id="@id/amf" android:layout_width="40.0dp" android:layout_height="16.0dp" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/ame" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:alpha="0.0" android:rotation="90.0" app:fs="@color/BW_0_Alpha_0_5" />
+    </FrameLayout>
+</LinearLayout>

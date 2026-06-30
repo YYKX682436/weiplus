@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m7o" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginEnd="@dimen/cs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/omi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:src="@drawable/bre" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/omh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" />
+        </LinearLayout>
+        <FrameLayout android:gravity="center" android:id="@id/hj0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.tencent.mm.ui.widget.button.WeButton android:gravity="center" android:id="@id/r9r" android:visibility="gone" android:text="" style="@style/y4" />
+            <com.tencent.mm.ui.widget.button.WeButton android:gravity="center" android:id="@id/r9s" android:visibility="gone" android:text="" style="@style/y4" />
+            <com.tencent.mm.ui.widget.button.WeButton android:textColor="@color/afh" android:gravity="center" android:id="@id/r9t" android:visibility="gone" android:text="@string/bz7" style="@style/y4" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/hjb" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:minWidth="@dimen/iz" android:minHeight="@dimen/j0">
+                <TextView android:textSize="@dimen/iy" android:textColor="@color/vm" android:gravity="center" android:id="@id/hjg" android:paddingLeft="@dimen/hq" android:paddingRight="@dimen/hq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:shadowRadius="1.2" />
+            </LinearLayout>
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/hjh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/l53" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/hj_" android:layout_width="@dimen/iz" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/hhl" android:layout_width="@dimen/iz" android:layout_height="wrap_content" android:max="100" android:progress="0" style="@style/is" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <com.google.android.flexbox.FlexboxLayout android:orientation="horizontal" android:id="@id/hq4" android:layout_width="match_parent" android:layout_height="wrap_content" app:justifyContent="3" />
+    <LinearLayout android:id="@id/sah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aii">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/aii" android:layout_height="@dimen/aii" android:src="@raw/icons_outlined_download" app:ci="@color/adg" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:gravity="center" android:id="@id/hob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xx次" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/aii" android:layout_height="@dimen/aii" android:src="@raw/icons_outlined_share" android:layout_marginStart="@dimen/aih" app:ci="@color/adg" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:id="@id/sak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xx次" />
+    </LinearLayout>
+    <View android:id="@id/ovq" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/cn" />
+</LinearLayout>

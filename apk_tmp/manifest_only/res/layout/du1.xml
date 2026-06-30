@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/zy" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="@color/an" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dzw" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.plugin.finder.live.widget.NextLiveCardView android:id="@id/ryi" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn" app:layout_constraintTop_toBottomOf="@id/obc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/b98" android:layout_width="match_parent" android:layout_height="192.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/oi7" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="56.0dp" app:layout_constraintGuide_begin="56.0dp" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:textColor="@color/an" android:id="@id/oi3" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginTop="@dimen/cn" android:src="@raw/icons_filled_close" android:contentDescription="@string/sg" android:layout_marginStart="@dimen/cz" app:fs="@color/an" app:layout_constraintBottom_toTopOf="@id/oi7" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/oi6" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginTop="@dimen/cn" android:src="@raw/icons_filled_done" android:contentDescription="@string/x1" android:layout_marginEnd="@dimen/cz" app:fs="@color/a7" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.plugin.vlog.ui.LabelSlider android:id="@id/oi5" android:layout_width="match_parent" android:layout_height="@dimen/dj" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

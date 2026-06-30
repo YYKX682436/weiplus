@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/uc_" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="64.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/a0c" android:id="@id/vis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="@dimen/apy" android:text="@string/h8h" android:layout_marginStart="24.0dp" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:layout_marginHorizontal="32.0dp">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u78" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@raw/exclamation_mark_circle_filled" app:fs="@color/ak" />
+                    <TextView android:textSize="22.0sp" android:textColor="@color/a0c" android:id="@id/vik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/oao" />
+                    <TextView android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/vil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/oap" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:id="@id/aur" android:background="@drawable/j0" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:layout_marginHorizontal="32.0dp">
+        <Button android:id="@id/sml" android:layout_marginBottom="@dimen/aq2" android:text="@string/oan" style="@style/kz" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/a5" android:id="@id/vit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/aq0" android:text="@string/oam" />
+    </LinearLayout>
+</LinearLayout>

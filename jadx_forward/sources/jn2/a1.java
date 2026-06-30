@@ -1,0 +1,56 @@
+package jn2;
+
+/* loaded from: classes10.dex */
+public final class a1 extends qz5.l implements yz5.p {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ jn2.c1 f382081d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ sf2.x f382082e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a1(jn2.c1 c1Var, sf2.x xVar, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        super(2, interfaceC29045xdcb5ca57);
+        this.f382081d = c1Var;
+        this.f382082e = xVar;
+    }
+
+    @Override // qz5.a
+    /* renamed from: create */
+    public final p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 mo148xaf65a0fc(java.lang.Object obj, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        return new jn2.a1(this.f382081d, this.f382082e, interfaceC29045xdcb5ca57);
+    }
+
+    @Override // yz5.p
+    /* renamed from: invoke */
+    public java.lang.Object mo149xb9724478(java.lang.Object obj, java.lang.Object obj2) {
+        jn2.a1 a1Var = (jn2.a1) mo148xaf65a0fc((p3325xe03a0797.p3326xc267989b.y0) obj, (p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57) obj2);
+        jz5.f0 f0Var = jz5.f0.f384359a;
+        a1Var.mo150x989b7ca4(f0Var);
+        return f0Var;
+    }
+
+    @Override // qz5.a
+    /* renamed from: invokeSuspend */
+    public final java.lang.Object mo150x989b7ca4(java.lang.Object obj) {
+        gn2.a aVar;
+        pz5.a aVar2 = pz5.a.f440719d;
+        p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+        java.util.ArrayList arrayList = ((mm2.m6) this.f382081d.f382102f.a(mm2.m6.class)).f410782q.f315618a;
+        boolean z17 = !arrayList.isEmpty();
+        sf2.x xVar = this.f382082e;
+        if (z17 && (aVar = xVar.f488880p) != null) {
+            aVar.e();
+        }
+        gn2.a aVar3 = xVar.f488880p;
+        if (aVar3 != null) {
+            aVar3.b(true);
+        }
+        gn2.a aVar4 = xVar.f488880p;
+        if (aVar4 != null) {
+            aVar4.k(arrayList.size());
+        }
+        return jz5.f0.f384359a;
+    }
+}

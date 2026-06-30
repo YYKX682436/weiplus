@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/q2" android:paddingLeft="@dimen/bf" android:layout_width="match_parent" android:layout_height="@dimen/i9" android:minHeight="@dimen/i9"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/k5l" android:layout_width="@dimen/i3" android:layout_height="@dimen/i3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bfj" android:paddingRight="@dimen/bf" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:minHeight="@dimen/i9" android:layout_weight="1.0">
+        <TextView android:textColor="#ff05295a" android:gravity="center_vertical" android:id="@id/mrx" android:padding="3.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="{title}" android:singleLine="true" android:drawablePadding="3.0dp" style="@style/j3" />
+        <TextView android:textColor="#ff05295a" android:id="@id/mqu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:maxLines="2" android:singleLine="false" android:layout_centerVertical="true" style="@style/j3" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/mqt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/a5" android:id="@id/k5r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/j3" />
+                <TextView android:textColor="@color/sy" android:id="@id/k5o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/h67" style="@style/j2" />
+                <ImageView android:id="@id/k5t" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/k5w" android:paddingLeft="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="#ff555555" android:id="@id/k5m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" style="@style/j2" />
+                <ImageView android:id="@id/k5v" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="3.0dp" android:layout_marginTop="8.0dp" android:src="@raw/find_more_friend_photograph_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/m4c" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:layout_gravity="center_vertical" android:id="@id/k5u" android:maxWidth="100.0dp" android:text="{signature}" style="@style/f_" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

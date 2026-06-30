@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/o72" android:layout_width="@dimen/dr" android:layout_height="@dimen/dr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/qgs" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1.0dp">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/o70" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:i8="@dimen/bl" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/o75" android:background="@drawable/c6k" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/o76" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginBottom="@dimen/bl" android:src="@raw/icons_filled_video_call" android:layout_marginStart="@dimen/bl" app:fs="@color/aaz" />
+        </FrameLayout>
+    </FrameLayout>
+    <View android:id="@id/o73" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

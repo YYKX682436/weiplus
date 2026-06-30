@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/se8" android:background="@drawable/c5w" android:paddingLeft="@dimen/ajw" android:paddingTop="@dimen/ajw" android:paddingRight="@dimen/ajw" android:paddingBottom="@dimen/ajr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginRight="@dimen/aii">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.appbrand.widget.recent.AppBrandRecentTaskView android:id="@id/se5" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.tencent.mm.plugin.appbrand.widget.recent.AppBrandCommonUsedTaskView android:id="@id/sdy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+        </LinearLayout>
+    </ScrollView>> 
+    <com.tencent.mm.plugin.appbrand.widget.recent.AppBrandCloseTaskView android:layout_gravity="center_horizontal" android:id="@id/sdw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajw" android:layout_marginBottom="@dimen/aih" />
+</LinearLayout>

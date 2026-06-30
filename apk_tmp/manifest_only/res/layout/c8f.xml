@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/qtx" android:background="@drawable/a1d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/gyq" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:id="@id/jjj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/lz9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/n_k" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_below="@id/gyq" />
+</RelativeLayout>

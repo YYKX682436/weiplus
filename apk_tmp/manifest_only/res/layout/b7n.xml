@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/l_l" android:background="@color/f" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:orientation="vertical" android:id="@id/lb3" android:layout_width="match_parent" android:layout_height="wrap_content" app:ds="@dimen/xd" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@id/fz0" android:background="@color/fy" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/c3z" android:scaleType="centerCrop" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="start|bottom" android:id="@id/qxa" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginBottom="13.0dp" android:src="@raw/ting_topic_ugc_hash_logo" android:layout_marginStart="13.0dp" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/lb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxWidth="@dimen/zf" android:singleLine="true" app:layout_constraintLeft_toLeftOf="@id/lb3" app:layout_constraintTop_toBottomOf="@id/lb3" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="start" android:id="@id/lb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:maxWidth="@dimen/zf" android:singleLine="true" app:layout_constraintLeft_toLeftOf="@id/lb3" app:layout_constraintTop_toBottomOf="@id/lb4" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/q09" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/c0" app:layout_constraintLeft_toLeftOf="@id/lb3" app:layout_constraintTop_toBottomOf="@id/lb2">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/q08" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@drawable/cl7" app:fs="@color/FG_1" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="start" android:id="@id/q07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/bo" android:singleLine="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

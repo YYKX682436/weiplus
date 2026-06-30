@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/gg3" android:layout_width="match_parent" android:layout_height="39.0dp" app:jh="@color/BW_0_Alpha_0_9" app:ji="true" app:jm="mcp" app:jp="@android:color/transparent" app:jq="@color/BW_0_Alpha_0_9" app:js="@style/ga" app:jt="@color/BW_0_Alpha_0_5" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/gg4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/gg3" />
+</RelativeLayout>

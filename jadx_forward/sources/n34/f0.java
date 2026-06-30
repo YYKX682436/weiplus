@@ -1,0 +1,12 @@
+package n34;
+
+/* loaded from: classes6.dex */
+public class f0 implements java.lang.Iterable {
+    public f0(n34.d0 d0Var) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new n34.e0(this, null);
+    }
+}

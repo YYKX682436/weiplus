@@ -1,0 +1,19 @@
+package h63;
+
+/* loaded from: classes.dex */
+public final class y implements db5.o4 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ android.content.Context f360832d;
+
+    public y(android.content.Context context) {
+        this.f360832d = context;
+    }
+
+    @Override // db5.o4
+    /* renamed from: onCreateMMMenu */
+    public final void mo887xc459429a(db5.g4 g4Var) {
+        android.content.Context context = this.f360832d;
+        g4Var.d(0, i65.a.d(context, com.p314xaae8f345.mm.R.C30859x5a72f63.f561015a31), i65.a.r(context, com.p314xaae8f345.mm.R.C30867xcad56011.f572169a26));
+    }
+}

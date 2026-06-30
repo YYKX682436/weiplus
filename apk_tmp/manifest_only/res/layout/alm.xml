@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/c7n" android:background="@color/a" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left" android:id="@id/c7j" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cn" android:src="@raw/icons_outlined_close" android:rotation="90.0" app:fs="@color/FG_0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/qhr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hh8" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/icons_outlined_person_tie" app:fs="@color/m" />
+            <TextView android:textSize="22.0dp" android:textColor="@color/FG_0" android:id="@id/hiq" android:layout_width="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/da3" android:layout_below="@id/hh8" android:layout_centerHorizontal="true" style="@style/ov" />
+        </LinearLayout>
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_1" android:gravity="center" android:id="@id/jbk" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/c9" android:text="@string/da4" android:layout_marginHorizontal="@dimen/c9" />
+        <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/c7k" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dn" android:verticalSpacing="@dimen/j" android:numColumns="4" />
+    </LinearLayout>
+</ScrollView>

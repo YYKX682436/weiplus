@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="H,3:4" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/hyl" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintGuide_percent="0.13" />
+        <Space android:id="@id/u9k" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="H,1:1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/hyl" app:layout_constraintWidth_percent="0.66" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bdv" android:layout_width="0.0dp" android:layout_height="0.0dp" android:src="@raw/microphone_note_filled" app:fs="#80ffffff" app:layout_constraintBottom_toBottomOf="@id/u9k" app:layout_constraintDimensionRatio="H,1:1" app:layout_constraintLeft_toLeftOf="@id/u9k" app:layout_constraintRight_toRightOf="@id/u9k" app:layout_constraintTop_toTopOf="@id/u9k" app:layout_constraintWidth_percent="0.46" />
+        <TextView android:textColor="@color/BW_F_Alpha_0_5" android:gravity="center" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="32.0dp" android:text="@string/orc" android:autoSizeTextType="uniform" android:textFontWeight="500" app:layout_constraintHeight_percent="0.15" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/u9k" app:layout_constraintWidth_percent="0.8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

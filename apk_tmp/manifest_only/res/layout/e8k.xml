@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sdl" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vb7" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/c9" android:layout_marginStart="@dimen/cn" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ubz" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    </ScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sdk" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/bl" android:overScrollMode="never" android:nestedScrollingEnabled="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@id/vb7" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:id="@id/vhm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cc" android:text="@string/lqn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <include android:id="@id/ssg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bu" app:layout_constraintTop_toTopOf="0" layout="@layout/dsj" />
+</androidx.constraintlayout.widget.ConstraintLayout>

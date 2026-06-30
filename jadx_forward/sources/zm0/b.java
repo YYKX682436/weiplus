@@ -1,0 +1,5 @@
+package zm0;
+
+/* loaded from: classes2.dex */
+public interface b {
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.FoursquareRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/jec" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/je0" android:background="@color/uj" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/orq" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/video_icon_in_gird" android:layout_marginStart="@dimen/dv" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/ab0" android:id="@id/ors" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="04:25" android:maxLines="1" android:layout_marginStart="@dimen/bl" />
+        </LinearLayout>
+        <CheckBox android:textSize="@dimen/j4" android:gravity="center" android:id="@id/jdh" android:focusable="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" android:layout_marginTop="@dimen/dv" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/dv" android:layout_alignParentEnd="true" style="@style/im" />
+    </com.tencent.mm.ui.widget.FoursquareRelativeLayout>
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/a0c" android:ellipsize="middle" android:id="@id/jdn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="我很长很长很长很长很长很长很长很长.mp4" android:singleLine="true" />
+    <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/jeb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="@dimen/dv" android:text="22M" />
+</LinearLayout>

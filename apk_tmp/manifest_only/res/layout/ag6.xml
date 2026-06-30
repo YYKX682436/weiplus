@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/a0k" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ava" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <FrameLayout android:id="@id/f6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_centerVertical="true">
+            <include android:id="@id/f6a" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" layout="@layout/awu" />
+        </FrameLayout>
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/fno" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dj" android:layout_marginRight="@dimen/dj" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/f8x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12312311231231123123112312311231231123123112312311231231123123112312311231231" android:maxLines="1" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_1" android:id="@id/fkw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1231231" android:maxLines="1" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fki" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/fkk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/og5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/db">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/gy1" android:background="@drawable/a0p" android:clipChildren="false" android:layout_width="@dimen/db" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/cn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/gxz" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:alpha="0.0" android:rotation="90.0" app:fs="@color/FG_2" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/av_" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ava" />
+</LinearLayout>

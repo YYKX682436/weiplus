@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="64.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="fill_vertical|left" android:layout_gravity="center_vertical" android:id="@id/odb" android:paddingLeft="@dimen/cz" android:layout_width="wrap_content" android:layout_height="64.0dp" android:text="@string/lzg" />
+    <View android:id="@id/q_s" android:background="@color/a" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" />
+    <com.tencent.mm.ui.widget.picker.CustomOptionPickNew android:id="@id/qv6" android:layout_width="match_parent" android:layout_height="218.0dp" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="56.0dp" android:layout_marginBottom="@dimen/hi">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/b5i" android:layout_width="120.0dp" android:layout_height="48.0dp" android:text="@string/aq7" style="@style/xl" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/c9z" android:layout_width="120.0dp" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/cn" android:text="@string/dpb" style="@style/xk" />
+    </LinearLayout>
+</LinearLayout>

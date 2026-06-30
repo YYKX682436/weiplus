@@ -1,0 +1,324 @@
+package com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d;
+
+/* renamed from: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory */
+/* loaded from: classes16.dex */
+public final class C2767x51f16110 implements com.p176xb6135e39.p280x308fcb.w {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.r f126260d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final com.p176xb6135e39.p280x308fcb.h f126261e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.C2760x7ab541f8 f126262f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.C2764xb8562aeb f126263g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final hb.b f126264h = hb.b.f361541a;
+
+    /* renamed from: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter */
+    /* loaded from: classes16.dex */
+    public static final class Adapter<T> extends com.p176xb6135e39.p280x308fcb.v {
+
+        /* renamed from: a, reason: collision with root package name */
+        public final com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.d0 f126265a;
+
+        /* renamed from: b, reason: collision with root package name */
+        public final java.util.Map f126266b;
+
+        public Adapter(com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.d0 d0Var, java.util.Map map) {
+            this.f126265a = d0Var;
+            this.f126266b = map;
+        }
+
+        @Override // com.p176xb6135e39.p280x308fcb.v
+        public java.lang.Object b(jb.b bVar) {
+            if (bVar.K() == jb.c.NULL) {
+                bVar.D();
+                return null;
+            }
+            java.lang.Object a17 = this.f126265a.a();
+            try {
+                bVar.b();
+                while (bVar.l()) {
+                    com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.d dVar = (com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.d) this.f126266b.get(bVar.A());
+                    if (dVar != null && dVar.f126303c) {
+                        com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.c cVar = (com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.c) dVar;
+                        java.lang.Object b17 = cVar.f126297f.b(bVar);
+                        if (b17 != null || !cVar.f126300i) {
+                            cVar.f126295d.set(a17, b17);
+                        }
+                    }
+                    bVar.Q();
+                }
+                bVar.j();
+                return a17;
+            } catch (java.lang.IllegalAccessException e17) {
+                throw new java.lang.AssertionError(e17);
+            } catch (java.lang.IllegalStateException e18) {
+                throw new com.p176xb6135e39.p280x308fcb.r(e18);
+            }
+        }
+
+        /* JADX WARN: Code restructure failed: missing block: B:15:0x0033, code lost:
+        
+            r7.k(r1.f126301a);
+            r1 = (com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.c) r1;
+            r2 = r1.f126295d.get(r8);
+            r3 = r1.f126296e;
+            r4 = r1.f126297f;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:16:0x0044, code lost:
+        
+            if (r3 == false) goto L19;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:18:0x0053, code lost:
+        
+            r4.c(r7, r2);
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:21:0x0047, code lost:
+        
+            r4 = new com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.C2771x76959876(r1.f126298g, r4, r1.f126299h.f371555b);
+         */
+        @Override // com.p176xb6135e39.p280x308fcb.v
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public void c(jb.d r7, java.lang.Object r8) {
+            /*
+                r6 = this;
+                if (r8 != 0) goto L6
+                r7.p()
+                return
+            L6:
+                r7.c()
+                java.util.Map r0 = r6.f126266b     // Catch: java.lang.IllegalAccessException -> L5b
+                java.util.Collection r0 = r0.values()     // Catch: java.lang.IllegalAccessException -> L5b
+                java.util.Iterator r0 = r0.iterator()     // Catch: java.lang.IllegalAccessException -> L5b
+            L13:
+                boolean r1 = r0.hasNext()     // Catch: java.lang.IllegalAccessException -> L5b
+                if (r1 == 0) goto L57
+                java.lang.Object r1 = r0.next()     // Catch: java.lang.IllegalAccessException -> L5b
+                com.google.gson.internal.bind.d r1 = (com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.d) r1     // Catch: java.lang.IllegalAccessException -> L5b
+                r2 = r1
+                com.google.gson.internal.bind.c r2 = (com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.c) r2     // Catch: java.lang.IllegalAccessException -> L5b
+                boolean r3 = r2.f126302b     // Catch: java.lang.IllegalAccessException -> L5b
+                r4 = 0
+                if (r3 != 0) goto L28
+                goto L31
+            L28:
+                java.lang.reflect.Field r2 = r2.f126295d     // Catch: java.lang.IllegalAccessException -> L5b
+                java.lang.Object r2 = r2.get(r8)     // Catch: java.lang.IllegalAccessException -> L5b
+                if (r2 == r8) goto L31
+                r4 = 1
+            L31:
+                if (r4 == 0) goto L13
+                java.lang.String r2 = r1.f126301a     // Catch: java.lang.IllegalAccessException -> L5b
+                r7.k(r2)     // Catch: java.lang.IllegalAccessException -> L5b
+                com.google.gson.internal.bind.c r1 = (com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.c) r1     // Catch: java.lang.IllegalAccessException -> L5b
+                java.lang.reflect.Field r2 = r1.f126295d     // Catch: java.lang.IllegalAccessException -> L5b
+                java.lang.Object r2 = r2.get(r8)     // Catch: java.lang.IllegalAccessException -> L5b
+                boolean r3 = r1.f126296e     // Catch: java.lang.IllegalAccessException -> L5b
+                com.google.gson.v r4 = r1.f126297f     // Catch: java.lang.IllegalAccessException -> L5b
+                if (r3 == 0) goto L47
+                goto L53
+            L47:
+                com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper r3 = new com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper     // Catch: java.lang.IllegalAccessException -> L5b
+                ib.a r5 = r1.f126299h     // Catch: java.lang.IllegalAccessException -> L5b
+                java.lang.reflect.Type r5 = r5.f371555b     // Catch: java.lang.IllegalAccessException -> L5b
+                com.google.gson.i r1 = r1.f126298g     // Catch: java.lang.IllegalAccessException -> L5b
+                r3.<init>(r1, r4, r5)     // Catch: java.lang.IllegalAccessException -> L5b
+                r4 = r3
+            L53:
+                r4.c(r7, r2)     // Catch: java.lang.IllegalAccessException -> L5b
+                goto L13
+            L57:
+                r7.j()
+                return
+            L5b:
+                r7 = move-exception
+                java.lang.AssertionError r8 = new java.lang.AssertionError
+                r8.<init>(r7)
+                throw r8
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.C2767x51f16110.Adapter.c(jb.d, java.lang.Object):void");
+        }
+    }
+
+    public C2767x51f16110(com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.r rVar, com.p176xb6135e39.p280x308fcb.h hVar, com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.C2760x7ab541f8 c2760x7ab541f8, com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.C2764xb8562aeb c2764xb8562aeb) {
+        this.f126260d = rVar;
+        this.f126261e = hVar;
+        this.f126262f = c2760x7ab541f8;
+        this.f126263g = c2764xb8562aeb;
+    }
+
+    /*  JADX ERROR: NullPointerException in pass: ConstructorVisitor
+        java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.RegisterArg.sameRegAndSVar(jadx.core.dex.instructions.args.InsnArg)" because "resultArg" is null
+        	at jadx.core.dex.visitors.MoveInlineVisitor.processMove(MoveInlineVisitor.java:52)
+        	at jadx.core.dex.visitors.MoveInlineVisitor.moveInline(MoveInlineVisitor.java:41)
+        	at jadx.core.dex.visitors.ConstructorVisitor.visit(ConstructorVisitor.java:35)
+        */
+    @Override // com.p176xb6135e39.p280x308fcb.w
+    public com.p176xb6135e39.p280x308fcb.v a(
+    /*  JADX ERROR: Method generation error
+        jadx.core.utils.exceptions.JadxRuntimeException: Code variable not set in r35v0 ??
+        	at jadx.core.dex.instructions.args.SSAVar.getCodeVar(SSAVar.java:237)
+        	at jadx.core.codegen.MethodGen.addMethodArguments(MethodGen.java:223)
+        	at jadx.core.codegen.MethodGen.addDefinition(MethodGen.java:168)
+        	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:401)
+        	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:335)
+        	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:301)
+        	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+        	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+        	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+        	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+        	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.end(ReferencePipeline.java:284)
+        	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:571)
+        	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+        	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+        	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+        	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+        	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+        	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:297)
+        	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:286)
+        	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:270)
+        	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:161)
+        	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:103)
+        	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
+        	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
+        	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
+        	at jadx.core.ProcessClass.process(ProcessClass.java:80)
+        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:118)
+        	at jadx.core.dex.nodes.ClassNode.generateClassCode(ClassNode.java:400)
+        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:388)
+        	at jadx.core.dex.nodes.ClassNode.getCode(ClassNode.java:338)
+        */
+    /*  JADX ERROR: NullPointerException in pass: ConstructorVisitor
+        java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.RegisterArg.sameRegAndSVar(jadx.core.dex.instructions.args.InsnArg)" because "resultArg" is null
+        	at jadx.core.dex.visitors.MoveInlineVisitor.processMove(MoveInlineVisitor.java:52)
+        	at jadx.core.dex.visitors.MoveInlineVisitor.moveInline(MoveInlineVisitor.java:41)
+        */
+
+    /* JADX WARN: Code restructure failed: missing block: B:22:0x0065, code lost:
+    
+        if (r0 == false) goto L31;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:44:0x00ab  */
+    /* JADX WARN: Removed duplicated region for block: B:46:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public boolean b(java.lang.reflect.Field r10, boolean r11) {
+        /*
+            r9 = this;
+            java.lang.Class r0 = r10.getType()
+            com.google.gson.internal.Excluder r1 = r9.f126262f
+            boolean r2 = r1.b(r0)
+            r3 = 0
+            r4 = 1
+            if (r2 != 0) goto L13
+            r1.c(r0, r11)
+            r0 = r3
+            goto L14
+        L13:
+            r0 = r4
+        L14:
+            if (r0 != 0) goto Lac
+            int r0 = r10.getModifiers()
+            int r2 = r1.f126220e
+            r0 = r0 & r2
+            if (r0 == 0) goto L21
+            goto L85
+        L21:
+            double r5 = r1.f126219d
+            r7 = -4616189618054758400(0xbff0000000000000, double:-1.0)
+            int r0 = (r5 > r7 ? 1 : (r5 == r7 ? 0 : -1))
+            if (r0 == 0) goto L40
+            java.lang.Class<fb.c> r0 = fb.c.class
+            java.lang.annotation.Annotation r0 = r10.getAnnotation(r0)
+            fb.c r0 = (fb.c) r0
+            java.lang.Class<fb.d> r2 = fb.d.class
+            java.lang.annotation.Annotation r2 = r10.getAnnotation(r2)
+            fb.d r2 = (fb.d) r2
+            boolean r0 = r1.d(r0, r2)
+            if (r0 != 0) goto L40
+            goto L85
+        L40:
+            boolean r0 = r10.isSynthetic()
+            if (r0 == 0) goto L47
+            goto L85
+        L47:
+            boolean r0 = r1.f126221f
+            if (r0 != 0) goto L68
+            java.lang.Class r0 = r10.getType()
+            boolean r2 = r0.isMemberClass()
+            if (r2 == 0) goto L64
+            int r0 = r0.getModifiers()
+            r0 = r0 & 8
+            if (r0 == 0) goto L5f
+            r0 = r4
+            goto L60
+        L5f:
+            r0 = r3
+        L60:
+            if (r0 != 0) goto L64
+            r0 = r4
+            goto L65
+        L64:
+            r0 = r3
+        L65:
+            if (r0 == 0) goto L68
+            goto L85
+        L68:
+            java.lang.Class r10 = r10.getType()
+            java.lang.Class<java.lang.Enum> r0 = java.lang.Enum.class
+            boolean r0 = r0.isAssignableFrom(r10)
+            if (r0 != 0) goto L82
+            boolean r0 = r10.isAnonymousClass()
+            if (r0 != 0) goto L80
+            boolean r10 = r10.isLocalClass()
+            if (r10 == 0) goto L82
+        L80:
+            r10 = r4
+            goto L83
+        L82:
+            r10 = r3
+        L83:
+            if (r10 == 0) goto L87
+        L85:
+            r10 = r4
+            goto La9
+        L87:
+            if (r11 == 0) goto L8c
+            java.util.List r10 = r1.f126222g
+            goto L8e
+        L8c:
+            java.util.List r10 = r1.f126223h
+        L8e:
+            boolean r11 = r10.isEmpty()
+            if (r11 != 0) goto La8
+            java.util.Iterator r10 = r10.iterator()
+            boolean r11 = r10.hasNext()
+            if (r11 != 0) goto L9f
+            goto La8
+        L9f:
+            java.lang.Object r10 = r10.next()
+            p001xcca8366f.p003x91727fcf.v4.p009x62f6fe4.f.a(r10)
+            r10 = 0
+            throw r10
+        La8:
+            r10 = r3
+        La9:
+            if (r10 != 0) goto Lac
+            r3 = r4
+        Lac:
+            return r3
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.p176xb6135e39.p280x308fcb.p281x21ffc6bd.p282x2e243d.C2767x51f16110.b(java.lang.reflect.Field, boolean):boolean");
+    }
+}

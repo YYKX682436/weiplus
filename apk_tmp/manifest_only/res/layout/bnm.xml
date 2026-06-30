@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/o" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/o" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/od4" android:background="@drawable/o" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="match_parent" android:layout_height="72.0dp">
+            <TextView android:textSize="15.0dp" android:textColor="@color/fa" android:id="@id/htn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/g_n" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/g_n" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/aa_" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginBottom="14.0dp" android:src="@raw/icons_outlined_close" android:layout_alignParentBottom="true" android:contentDescription="@string/b9a" app:fs="@color/FG_0" />
+        </RelativeLayout>
+        <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="24.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hto" android:background="@drawable/p" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gaj" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:gravity="left" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/gan" />
+            </LinearLayout>
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/htp" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_done" app:fs="@color/m" />
+        </LinearLayout>
+        <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/htq" android:background="@drawable/p" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gak" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:gravity="left" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/gao" />
+            </LinearLayout>
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/htr" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_done" app:fs="@color/m" />
+        </LinearLayout>
+        <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hts" android:background="@drawable/p" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gal" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:gravity="left" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/gap" />
+            </LinearLayout>
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/htu" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_done" app:fs="@color/m" />
+        </LinearLayout>
+        <View android:id="@id/htt" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="64.0dp" />
+    </LinearLayout>
+</LinearLayout>

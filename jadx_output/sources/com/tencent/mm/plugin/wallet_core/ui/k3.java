@@ -1,0 +1,12 @@
+package com.tencent.mm.plugin.wallet_core.ui;
+
+/* loaded from: classes9.dex */
+public class k3 implements java.util.Comparator {
+    public k3(com.tencent.mm.plugin.wallet_core.ui.WalletCardSelectUI walletCardSelectUI) {
+    }
+
+    @Override // java.util.Comparator
+    public int compare(java.lang.Object obj, java.lang.Object obj2) {
+        return ((com.tencent.mm.plugin.wallet_core.model.ElementQuery) obj2).I - ((com.tencent.mm.plugin.wallet_core.model.ElementQuery) obj).I;
+    }
+}

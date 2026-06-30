@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/evf" android:layout_width="wrap_content" android:layout_height="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="14.0dp" android:textColor="@color/aaz" android:layout_gravity="center_vertical" android:id="@id/nhb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hj9" android:layout_marginEnd="@dimen/bl" />
+    <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="10.0dp" android:textColor="@color/aaz" android:layout_gravity="center_vertical" android:id="@id/nha" android:background="@drawable/a5v" android:paddingLeft="@dimen/bn" android:paddingRight="@dimen/bn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/bl" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/qrq" android:background="@drawable/a5t" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginEnd="@dimen/bl">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/icons_filled_video_off" app:fs="@color/aaz" />
+    </FrameLayout>
+    <com.tencent.mm.view.MMPAGView android:layout_gravity="center_vertical" android:id="@id/evd" android:visibility="invisible" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginEnd="@dimen/bl" />
+    <FrameLayout android:id="@id/fag" android:background="@drawable/a5t" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/icons_filled_mic_off" app:fs="@color/aaz" />
+    </FrameLayout>
+</LinearLayout>

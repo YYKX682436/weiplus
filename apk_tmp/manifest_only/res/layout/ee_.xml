@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android1:orientation="vertical" android1:background="@color/a" android1:layout_width="match_parent" android1:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android1:orientation="vertical" android1:id="@id/raw" android1:background="@drawable/azm" android1:visibility="visible" android1:layout_width="match_parent" android1:layout_height="wrap_content">
+        <LinearLayout android1:orientation="vertical" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginTop="@dimen/c9" android1:layout_marginRight="@dimen/cn" android1:layout_marginBottom="@dimen/c9" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/rav" app:layout_constraintTop_toTopOf="0">
+            <TextView android1:textSize="17.0dp" android1:textColor="@color/abw" android1:ellipsize="end" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginLeft="@dimen/cn" android1:text="@string/mas" android1:maxLines="1" android1:singleLine="true" />
+            <TextView android1:textSize="14.0dp" android1:textColor="@color/a84" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginLeft="@dimen/cn" android1:layout_marginTop="@dimen/bl" android1:layout_marginRight="@dimen/cn" android1:text="@string/mar" />
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.MMSwitchBtn android1:id="@id/rav" android1:layout_width="@dimen/jh" android1:layout_height="@dimen/je" android1:layout_marginRight="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android1:orientation="vertical" android1:id="@id/v2z" android1:background="@drawable/azm" android1:paddingTop="@dimen/cn" android1:paddingBottom="@dimen/cn" android1:visibility="visible" android1:layout_width="match_parent" android1:layout_height="wrap_content" android1:layout_marginTop="@dimen/dv" android1:paddingVertical="@dimen/cn">
+        <TextView android1:textSize="17.0dp" android1:textColor="@color/abw" android1:ellipsize="end" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginLeft="@dimen/cn" android1:text="@string/mae" android1:maxLines="1" android1:singleLine="true" app:layout_constraintLeft_toLeftOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

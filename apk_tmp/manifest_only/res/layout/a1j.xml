@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:ellipsize="end" android:id="@id/e8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/a1g" />
+    <TextView android:textColor="@color/LinkFinder_100" android:id="@id/amv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    <TextView android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/amy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    <TextView android:textSize="@dimen/aju" android:textColor="@color/adg" android:ellipsize="end" android:id="@id/by" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    <TextView android:textSize="@dimen/aju" android:textColor="@color/LinkFinder_100" android:id="@id/amw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    <TextView android:textSize="@dimen/aju" android:textColor="@color/LinkFinder_100" android:id="@id/sji" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+</LinearLayout>

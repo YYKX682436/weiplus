@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.TouchableLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/ceg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/dft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cf" style="@style/s4" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/oai" android:background="@color/a9e" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cf" android:indeterminateDrawable="@drawable/avj" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/oav" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cf" android:text="@string/el4" style="@style/s4" />
+</com.tencent.mm.view.TouchableLayout>

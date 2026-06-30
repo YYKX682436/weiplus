@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/rvc" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/rva" android:background="@drawable/cv3" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/c8" android:layout_marginRight="@dimen/c8" android:rotation="180.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rvb" android:background="@drawable/cv4" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/finder_live_task_icon" app:fs="@color/ao" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_100_Alpha_0_8" android:ellipsize="end" android:id="@id/rvd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:lines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/rv_" android:background="@drawable/cv3" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/c8" android:layout_marginRight="@dimen/c8" />
+    </LinearLayout>
+</FrameLayout>

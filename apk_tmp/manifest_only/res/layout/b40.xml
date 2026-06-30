@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/hhj" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginBottom="@dimen/dv" style="@style/ja"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/a_4" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/aa4" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="@string/epr" android:singleLine="true" android:layout_weight="1.0" android:layout_toRightOf="@id/a_4" android:layout_centerVertical="true" style="@style/fe" />
+    <TextView android:ellipsize="end" android:id="@id/jue" android:layout_marginRight="@dimen/cn" android:minWidth="@dimen/c9" android:minHeight="@dimen/c9" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:layout_constraintCircleAngle="45" app:layout_constraintCircleRadius="@dimen/cn" style="@style/rv" />
+</RelativeLayout>

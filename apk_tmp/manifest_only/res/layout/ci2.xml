@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/m_d" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/m_n" android:background="#99000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_gravity="center" android:text="@string/i_o" style="@style/pa" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.scanner.ui.widget.ScanScrollTabView android:layout_gravity="bottom" android:id="@id/ma1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center" android:id="@id/m_l" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/an" android:id="@id/m_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_m" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j3" android:text="@string/i95" android:layout_below="@id/m_m" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.scanner.ui.widget.ScanInfoMaskView android:id="@id/m_g" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.scanner.ui.component.ScanUITopOpButtonComponent android:id="@id/ofe" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.tencent.mm.plugin.scanner.ui.widget.ScanOpenCameraFailView android:id="@id/qoz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/a9e" />
+</FrameLayout>

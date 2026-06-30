@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_auto_mul_terminal_sync" android:title="@string/ips" />
+    <PreferenceFooterCategory android:key="settings_auto_mul_terminal_sync_tip" android:title="@string/ipt" />
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_take_photo_auto_save_photo" android:title="@string/izr" />
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_take_photo_auto_save_video" android:title="@string/izt" />
+    <PreferenceFooterCategory android:key="settings_take_photo_auto_save_tip" android:title="@string/izs" />
+    <CheckBoxPreference android:defaultValue="false" android:key="setting_c2c_gallery_query" android:title="@string/iq0" />
+    <PreferenceFooterCategory android:key="setting_c2c_gallery_query_tips" android:title="@string/iq1" />
+    <CheckBoxPreference android:defaultValue="true" android:key="setting_c2c_media_clear" android:title="@string/oh1" />
+    <PreferenceFooterCategory android:key="setting_c2c_media_clear_tips" android:title="@string/oh2" />
+    <CheckBoxPreference android:defaultValue="true" android:key="settings_sns_auto_play_switch" android:title="@string/iyc" />
+    <PreferenceFooterCategory android:key="settings_sns_auto_play_tip" android:title="@string/iyd" />
+    <CheckBoxPreference android:defaultValue="true" android:key="settings_voip_audio_switch_mobile_net" android:title="@string/j17" />
+    <PreferenceFooterCategory android:key="settings_voip_audio_switch_mobile_net_tip" android:title="@string/j18" />
+</PreferenceScreen>

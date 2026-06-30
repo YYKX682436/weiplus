@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b8p" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ril" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cs" android:layout_marginBottom="@dimen/cs" android:src="@drawable/bu9" android:tint="@color/FG_0" android:layout_marginVertical="@dimen/cs" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:minHeight="@dimen/d_" android:layout_marginHorizontal="@dimen/dv">
+        <TextView android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/FG_0" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/mfr" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <View android:background="@drawable/icon_solid_dot_fg0" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/bn" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/abw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ndp" android:layout_marginStart="@dimen/cn" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <View android:background="@drawable/icon_solid_dot_fg0" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/bn" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/abw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ndo" android:layout_marginStart="@dimen/cn" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <View android:background="@drawable/icon_solid_dot_fg0" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/bn" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/abw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mfl" android:layout_marginStart="@dimen/cn" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/adg" android:id="@id/sa2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/mfm" android:layout_marginStart="@dimen/cn" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+            <View android:background="@drawable/icon_solid_dot_fg0" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/bn" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/abw" android:id="@id/rrz" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mfj" android:layout_marginStart="@dimen/cn" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/adg" android:id="@id/s8u" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/mfk" android:layout_marginStart="@dimen/cn" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/Link_100" android:id="@id/s7n" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/mfo" android:layout_marginStart="@dimen/cn" />
+    </LinearLayout>
+</LinearLayout>

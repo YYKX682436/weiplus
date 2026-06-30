@@ -1,0 +1,26 @@
+package a22;
+
+/* loaded from: classes6.dex */
+public class p implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f841d = 0;
+
+    public p(a22.q qVar, a22.o oVar) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f841d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f841d;
+        this.f841d = i17 + 1;
+        if (i17 == 0) {
+            return a22.g.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

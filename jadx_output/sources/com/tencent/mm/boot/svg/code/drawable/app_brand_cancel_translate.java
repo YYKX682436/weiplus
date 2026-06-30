@@ -1,0 +1,136 @@
+package com.tencent.mm.boot.svg.code.drawable;
+
+/* loaded from: classes16.dex */
+public class app_brand_cancel_translate extends l95.c {
+    private final int width = 32;
+    private final int height = 32;
+
+    @Override // l95.c
+    public int doCommand(int i17, java.lang.Object... objArr) {
+        if (i17 == 0 || i17 == 1) {
+            return 32;
+        }
+        if (i17 != 2) {
+            return 0;
+        }
+        android.graphics.Canvas canvas = (android.graphics.Canvas) objArr[0];
+        android.os.Looper looper = (android.os.Looper) objArr[1];
+        l95.c.instanceMatrix(looper);
+        l95.c.instanceMatrixArray(looper);
+        android.graphics.Paint instancePaint = l95.c.instancePaint(looper);
+        instancePaint.setFlags(385);
+        instancePaint.setStyle(android.graphics.Paint.Style.FILL);
+        android.graphics.Paint instancePaint2 = l95.c.instancePaint(looper);
+        instancePaint2.setFlags(385);
+        instancePaint2.setStyle(android.graphics.Paint.Style.STROKE);
+        instancePaint.setColor(-16777216);
+        instancePaint2.setStrokeWidth(1.0f);
+        instancePaint2.setStrokeCap(android.graphics.Paint.Cap.BUTT);
+        instancePaint2.setStrokeJoin(android.graphics.Paint.Join.MITER);
+        instancePaint2.setStrokeMiter(4.0f);
+        instancePaint2.setPathEffect(null);
+        canvas.save();
+        android.graphics.Paint instancePaint3 = l95.c.instancePaint(instancePaint, looper);
+        instancePaint3.setColor(-436207616);
+        android.graphics.Path instancePath = l95.c.instancePath(looper);
+        instancePath.moveTo(18.667f, 19.7882f);
+        instancePath.lineTo(18.667f, 27.9968f);
+        instancePath.cubicTo(18.667f, 28.7257f, 18.0686f, 29.3334f, 17.3304f, 29.3334f);
+        instancePath.lineTo(4.00362f, 29.3334f);
+        instancePath.cubicTo(3.27467f, 29.3334f, 2.66699f, 28.735f, 2.66699f, 27.9968f);
+        instancePath.lineTo(2.66699f, 14.67f);
+        instancePath.cubicTo(2.66699f, 13.9411f, 3.26542f, 13.3334f, 4.00362f, 13.3334f);
+        instancePath.lineTo(12.2122f, 13.3334f);
+        instancePath.lineTo(13.8122f, 14.9334f);
+        instancePath.lineTo(4.26699f, 14.9334f);
+        instancePath.lineTo(4.26699f, 27.7334f);
+        instancePath.lineTo(17.067f, 27.7334f);
+        instancePath.lineTo(17.067f, 18.1882f);
+        instancePath.lineTo(18.667f, 19.7882f);
+        instancePath.close();
+        com.tencent.mm.svg.WeChatSVGRenderC2Java.setFillType(instancePath, 1);
+        canvas.drawPath(instancePath, instancePaint3);
+        canvas.restore();
+        canvas.save();
+        android.graphics.Paint instancePaint4 = l95.c.instancePaint(instancePaint, looper);
+        instancePaint4.setColor(-436207616);
+        android.graphics.Path instancePath2 = l95.c.instancePath(looper);
+        instancePath2.moveTo(29.1023f, 28.1023f);
+        instancePath2.lineTo(30.163f, 27.0417f);
+        instancePath2.lineTo(21.7881f, 18.6667f);
+        instancePath2.lineTo(27.997f, 18.6667f);
+        instancePath2.cubicTo(28.7352f, 18.6667f, 29.3337f, 18.0591f, 29.3337f, 17.3301f);
+        instancePath2.lineTo(29.3337f, 4.00338f);
+        instancePath2.cubicTo(29.3337f, 3.26518f, 28.726f, 2.66675f, 27.997f, 2.66675f);
+        instancePath2.lineTo(14.6703f, 2.66675f);
+        instancePath2.cubicTo(13.9321f, 2.66675f, 13.3337f, 3.27443f, 13.3337f, 4.00338f);
+        instancePath2.lineTo(13.3337f, 10.2123f);
+        instancePath2.lineTo(6.12142f, 3.00008f);
+        instancePath2.lineTo(5.06082f, 4.06068f);
+        instancePath2.lineTo(29.1023f, 28.1023f);
+        instancePath2.close();
+        instancePath2.moveTo(14.9337f, 11.8123f);
+        instancePath2.lineTo(16.4548f, 13.3334f);
+        instancePath2.lineTo(17.3304f, 13.3334f);
+        instancePath2.cubicTo(17.6537f, 13.3334f, 17.9532f, 13.4512f, 18.1863f, 13.6466f);
+        instancePath2.lineTo(20.6097f, 6.66675f);
+        instancePath2.lineTo(22.4587f, 6.66675f);
+        instancePath2.lineTo(25.0732f, 14.1824f);
+        instancePath2.lineTo(23.4014f, 14.1824f);
+        instancePath2.lineTo(22.8285f, 12.3595f);
+        instancePath2.lineTo(20.1878f, 12.3595f);
+        instancePath2.lineTo(19.6149f, 14.1824f);
+        instancePath2.lineTo(18.5741f, 14.1824f);
+        instancePath2.cubicTo(18.634f, 14.3335f, 18.667f, 14.498f, 18.667f, 14.67f);
+        instancePath2.lineTo(18.667f, 15.5457f);
+        instancePath2.lineTo(20.1881f, 17.0667f);
+        instancePath2.lineTo(27.7337f, 17.0667f);
+        instancePath2.lineTo(27.7337f, 4.26675f);
+        instancePath2.lineTo(14.9337f, 4.26675f);
+        instancePath2.lineTo(14.9337f, 11.8123f);
+        instancePath2.close();
+        instancePath2.moveTo(21.4899f, 8.10425f);
+        instancePath2.lineTo(20.5264f, 11.1824f);
+        instancePath2.lineTo(22.4899f, 11.1824f);
+        instancePath2.lineTo(21.5264f, 8.10425f);
+        instancePath2.lineTo(21.4899f, 8.10425f);
+        instancePath2.close();
+        com.tencent.mm.svg.WeChatSVGRenderC2Java.setFillType(instancePath2, 2);
+        canvas.drawPath(instancePath2, instancePaint4);
+        canvas.restore();
+        canvas.save();
+        android.graphics.Paint instancePaint5 = l95.c.instancePaint(instancePaint, looper);
+        instancePaint5.setColor(-436207616);
+        android.graphics.Path instancePath3 = l95.c.instancePath(looper);
+        instancePath3.moveTo(13.5099f, 19.5959f);
+        instancePath3.lineTo(14.9673f, 19.5959f);
+        instancePath3.lineTo(14.9673f, 18.2254f);
+        instancePath3.lineTo(10.9135f, 18.2254f);
+        instancePath3.lineTo(11.6953f, 17.9841f);
+        instancePath3.cubicTo(11.5988f, 17.5787f, 11.3286f, 16.9706f, 11.0873f, 16.517f);
+        instancePath3.lineTo(9.58158f, 16.961f);
+        instancePath3.cubicTo(9.76496f, 17.347f, 9.9387f, 17.8393f, 10.0352f, 18.2254f);
+        instancePath3.lineTo(6.05865f, 18.2254f);
+        instancePath3.lineTo(6.05865f, 19.5959f);
+        instancePath3.lineTo(7.58365f, 19.5959f);
+        instancePath3.cubicTo(8.08554f, 20.8989f, 8.70326f, 22.0089f, 9.50436f, 22.9355f);
+        instancePath3.cubicTo(8.52953f, 23.6497f, 7.32305f, 24.1516f, 5.84631f, 24.4798f);
+        instancePath3.cubicTo(6.11657f, 24.8079f, 6.54125f, 25.4642f, 6.69568f, 25.8021f);
+        instancePath3.cubicTo(8.22067f, 25.3774f, 9.49471f, 24.7693f, 10.5468f, 23.9393f);
+        instancePath3.cubicTo(11.5409f, 24.7404f, 12.7474f, 25.3388f, 14.2338f, 25.7248f);
+        instancePath3.cubicTo(14.4461f, 25.3388f, 14.8611f, 24.7211f, 15.1796f, 24.4122f);
+        instancePath3.cubicTo(13.7801f, 24.1033f, 12.6123f, 23.5918f, 11.6471f, 22.8969f);
+        instancePath3.cubicTo(12.4385f, 21.9992f, 13.0562f, 20.9086f, 13.5099f, 19.5959f);
+        instancePath3.close();
+        instancePath3.moveTo(9.0411f, 19.5959f);
+        instancePath3.lineTo(11.927f, 19.5959f);
+        instancePath3.cubicTo(11.5988f, 20.5225f, 11.1452f, 21.3043f, 10.5757f, 21.9606f);
+        instancePath3.cubicTo(9.92907f, 21.2753f, 9.41752f, 20.4839f, 9.0411f, 19.5959f);
+        instancePath3.close();
+        com.tencent.mm.svg.WeChatSVGRenderC2Java.setFillType(instancePath3, 2);
+        canvas.drawPath(instancePath3, instancePaint5);
+        canvas.restore();
+        l95.c.done(looper);
+        return 0;
+    }
+}

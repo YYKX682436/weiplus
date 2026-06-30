@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.FinderPostFooter android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/eat" android:background="@color/b" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tca" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/LinkFinder_100" android:id="@id/ura" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/cz" android:text="@string/ex_" android:layout_marginStart="@dimen/cz" />
+            <TextView android:textSize="@dimen/k" android:textColor="@color/LinkFinder_100" android:id="@id/ur_" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/cz" android:text="@string/euz" android:layout_toRightOf="@id/ura" android:layout_marginStart="@dimen/d7" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ogr" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/finder_outlined_tag" android:layout_marginStart="@dimen/cz" app:fs="@color/FG_0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a5h" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/finder_outline_at" android:layout_toRightOf="@id/ogr" android:layout_marginStart="@dimen/cn" app:fs="@color/FG_0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/n0r" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_emoji" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/cz" app:fs="@color/FG_0" />
+        </RelativeLayout>
+    </com.tencent.mm.plugin.finder.view.FinderPostFooter>
+</merge>

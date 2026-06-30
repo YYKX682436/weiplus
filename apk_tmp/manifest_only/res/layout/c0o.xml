@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="58.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ge6" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="3.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <View android:background="@drawable/adf" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <com.tencent.mm.plugin.finder.feed.RoundLinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ge5" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+        </com.tencent.mm.plugin.finder.feed.RoundLinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ge8" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="17.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <View android:background="@drawable/adf" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <com.tencent.mm.plugin.finder.feed.RoundLinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ge7" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+        </com.tencent.mm.plugin.finder.feed.RoundLinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ge_" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="33.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <View android:background="@drawable/adf" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <com.tencent.mm.plugin.finder.feed.RoundLinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ge9" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+        </com.tencent.mm.plugin.finder.feed.RoundLinearLayout>
+    </FrameLayout>
+    <ImageView android:gravity="center" android:id="@id/m47" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dp" android:layout_marginRight="-3.0dp" android:src="@drawable/b8i" android:layout_alignTop="@id/ge6" android:layout_alignRight="@id/ge6" />
+</RelativeLayout>

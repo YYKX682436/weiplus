@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ch8" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/me7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/cn" android:layout_alignParentTop="true" layout="@layout/bmd" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/c_" android:gravity="center" android:id="@id/mf6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/i6" />
+    <FrameLayout android:id="@id/eh8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0.0dp" android:layout_below="@id/me7" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/bm" android:gravity="left|center" android:id="@id/rq" android:background="@color/t_" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/j_" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/j_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/me7" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/jqp" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/j2" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/oio" android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/j2" android:src="@drawable/atm" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/dth" android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/j2" android:src="@drawable/atj" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/crz" android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/j2" android:src="@drawable/atk" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/m9n" android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/j2" android:src="@drawable/atl" android:scaleType="center" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

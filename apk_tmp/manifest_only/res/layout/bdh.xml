@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/ali" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?ih">
+        <ImageView android:id="@id/hmq" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ah2" android:contentDescription="logo" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/oq5" android:layout_width="40.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="NULL" android:layout_toRightOf="@id/hmq" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:gravity="right" android:id="@id/ony" android:layout_width="40.0dp" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:text="NULL" android:layout_toRightOf="@id/oq5" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hyl" android:visibility="visible" android:layout_width="250.0dp" android:layout_height="wrap_content">
+        <include layout="@layout/b2t" />
+    </RelativeLayout>
+</RelativeLayout>

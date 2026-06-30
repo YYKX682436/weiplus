@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/qls" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/d0v" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="@dimen/xc" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/qlr" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="" android:maxLines="1" android:paddingStart="@dimen/cq" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/d0v" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/qks" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/qlr" />
+</androidx.constraintlayout.widget.ConstraintLayout>

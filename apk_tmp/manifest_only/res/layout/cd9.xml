@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.media.widget.camerarecordview.preview.CameraPreviewGLSurfaceView android:layout_gravity="center" android:id="@id/l4h" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.mmsight.ui.CameraFrontSightView android:id="@id/b6q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.tencent.mm.ui.widget.InsectRelativeLayout android:id="@id/lpn" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.plugin.mmsight.ui.MMSightCaptureTouchView android:id="@id/b6u" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lp4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:layout_alignParentBottom="true">
+            <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/bzo" android:background="@null" android:padding="@dimen/dv" android:focusable="true" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/icons_filled_recordback" android:contentDescription="@string/ht2" android:rotation="270.0" />
+            </FrameLayout>
+            <com.tencent.mm.plugin.mmsight.ui.MMSightRecordButton android:id="@id/lok" android:background="@null" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/a5z" android:minHeight="@dimen/a5z" android:contentDescription="@string/h1" />
+            <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/nkd" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/loj" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@raw/icons_filled_cutie" app:fs="@color/BW_100" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:id="@id/b6r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:text="@string/gw4" android:layout_above="@id/lp4" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:id="@id/b6t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="30.0dp" android:layout_above="@id/lp4" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ht7" android:includeFontPadding="false" />
+            <ImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/dv" android:src="@drawable/c71" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="56.0dp" android:layout_above="@id/lp4">
+            <ImageView android:id="@id/loy" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="16.0dp" android:src="@raw/icons_filled_filters" />
+        </LinearLayout>
+        <ImageView android:id="@id/ntp" android:focusable="true" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="40.0dp" android:layout_marginRight="24.0dp" android:src="@raw/mmsight_camera_navbar_icon_switch" android:layout_alignParentRight="true" android:contentDescription="@string/hue" />
+        <LinearLayout android:orientation="vertical" android:id="@id/b5_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginStart="24.0dp" android:layout_alignParentStart="true">
+            <Switch android:id="@id/doz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="faceBeauty" />
+            <Switch android:id="@id/cu1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Denoisy" />
+            <Switch android:id="@id/gxk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HDR Checker" />
+            <Switch android:id="@id/gxj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HDR" />
+            <Switch android:id="@id/d_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EIS" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.InsectRelativeLayout>
+    <Button android:id="@id/afr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hq" android:layout_marginRight="@dimen/hq" android:text="@string/afh" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/ks" />
+</merge>

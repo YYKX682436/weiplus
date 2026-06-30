@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.base.CustomScrollView android:layout_gravity="top" android:id="@id/uq9" android:focusable="true" android:scrollbars="none" android:clickable="true" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@id/uq8" android:paddingLeft="@dimen/db" android:paddingTop="68.0dp" android:paddingRight="@dimen/db" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="top" android:id="@id/vk8" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitStart" />
+        </LinearLayout>
+    </com.tencent.mm.ui.base.CustomScrollView>
+    <FrameLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/jhc" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

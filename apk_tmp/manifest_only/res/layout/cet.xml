@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/dgt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="enter_flutter_emoji" android:layout_centerInParent="true" android:textAllCaps="false" />
+    <Button android:id="@id/crg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="decrypt_big_emoji" android:layout_above="@id/dgt" android:textAllCaps="false" android:layout_alignStart="@id/dgt" />
+</RelativeLayout>

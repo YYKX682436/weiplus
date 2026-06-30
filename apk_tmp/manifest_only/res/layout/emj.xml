@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.base.FlowLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rt2" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="添加位置状态浮窗" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rmc" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="添加蓝牙状态浮窗" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rt1" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="添加下载状态浮窗" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rt9" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="添加音乐状态浮窗" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rma" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="添加小程序VOIP状态浮窗" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/ssy" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="重置内容浮窗菜单红点与教育页" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/st0" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="清除浮窗全部数据" style="@style/kq" />
+            </FrameLayout>
+        </com.tencent.mm.ui.base.FlowLayout>
+    </ScrollView>
+</LinearLayout>

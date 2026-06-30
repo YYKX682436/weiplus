@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/de5" android:focusable="true" android:clickable="true" android:layout_width="330.0dp" android:layout_height="176.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.gif.MMAnimateView android:id="@id/d_q" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:layout_gravity="bottom" android:background="@drawable/emoji_store_v3_banner_item_gradient" android:layout_width="match_parent" android:layout_height="84.0dp" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c9" android:layout_marginStart="@dimen/c9">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/an" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/d_o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="12.0dp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/d_p" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="合辑" android:includeFontPadding="false" android:lineSpacingMultiplier="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/k_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bhw" android:scaleType="centerInside" />
+</FrameLayout>

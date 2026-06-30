@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:gravity="center_horizontal" android:id="@id/ili" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/el1" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ilg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_marginBottom="@dimen/db">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bdv" android:layout_width="@dimen/dq" android:layout_height="@dimen/cn" android:src="@raw/music_page_rest_darkmode" app:fs="@color/FG_1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

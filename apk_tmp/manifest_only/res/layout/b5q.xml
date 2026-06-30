@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/je9" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ds="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/o78" android:visibility="visible" android:layout_width="120.0dp" android:layout_height="120.0dp" android:scaleType="fitCenter" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/lzf" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/dv" android:src="@raw/finder_feed_retransmission" app:fs="@color/an" />
+    <View android:id="@id/gyw" android:background="@drawable/ab8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dd" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/h9m" android:background="@drawable/ab7" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.sns.ui.view.ImageIndicatorView android:id="@id/h9l" android:paddingTop="@dimen/bl" android:visibility="visible" android:layout_width="120.0dp" android:layout_height="@dimen/dv" />
+    </LinearLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/cx_" style="@style/fh" />
+    <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginHorizontal="@dimen/cn" app:enableAutoLoadMore="true" app:enableFooterFollowWhenNoMoreData="true" app:enableFooterMoveContent="true" app:enableLoadMore="true" app:enableOverScrollBounce="false" app:enableOverScrollDrag="false" app:enableRefresh="false">
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:headerLayout="@layout/cdm" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cb" android:layout_marginRight="@dimen/cb" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/cb" />
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs9" />
+    </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+    <FrameLayout android:id="@id/imf" android:background="@color/c" android:paddingTop="@dimen/bo" android:paddingBottom="@dimen/bu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/zz">
+        <TextView android:textSize="@dimen/or" android:layout_gravity="center_horizontal" android:id="@id/oao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mrh" style="@style/s4" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/oav" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/el4" style="@style/s4" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/oai" android:background="@color/a9e" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:indeterminateDrawable="@drawable/avj" />
+    </FrameLayout>
+</FrameLayout>

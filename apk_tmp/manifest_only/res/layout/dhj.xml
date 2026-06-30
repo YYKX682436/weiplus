@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.recordvideo.ui.editor.view.CustomAccessibilityViewTypeLayout android:id="@id/qgo" android:padding="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_back" />
+        </com.tencent.mm.plugin.recordvideo.ui.editor.view.CustomAccessibilityViewTypeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/nma" android:background="@drawable/cjp" android:layout_width="wrap_content" android:layout_height="@dimen/d9" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_toEndOf="@id/qgo">
+            <ImageView android:id="@id/nm_" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bl" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/nm9" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@drawable/ayf" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/c9" android:layout_alignParentEnd="true" />
+            <com.tencent.mm.ui.widget.cedit.edit.EditTextCompatHeight android:textSize="@dimen/k" android:textColor="@color/FG_0" android:textColorHint="@color/tk" android:ellipsize="end" android:id="@id/nm8" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/jm8" android:singleLine="true" android:layout_centerVertical="true" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/b40" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/nm9" android:layout_toEndOf="@id/nm_" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/nmi" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/k" android:textColor="@color/FG_2" android:id="@id/nmf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dp" android:text="@string/jm9" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/nme" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dp" android:layout_centerHorizontal="true">
+            <ProgressBar android:id="@id/noh" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/hq" style="@style/w9" />
+            <TextView android:textSize="@dimen/k" android:textColor="@color/FG_2" android:id="@id/nmd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vx" />
+        </LinearLayout>
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/nmh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/uix" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:paddingStart="@dimen/dv">
+                <com.google.android.material.tabs.TabLayout android:id="@id/uiy" android:layout_width="wrap_content" android:layout_height="@dimen/db" app:jd="bdp" app:jf="@drawable/ck9" app:jh="@color/a0c" app:ji="true" app:jk="2.0dp" app:tabMinWidth="@dimen/dd" app:jm="mcp" app:jn="0.0dp" app:jo="0.0dp" app:jq="@color/a0c" app:jt="@color/jj" />
+            </FrameLayout>
+            <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/uiz" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

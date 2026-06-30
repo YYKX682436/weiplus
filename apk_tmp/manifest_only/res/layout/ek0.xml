@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:id="@id/sl0" android:clickable="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.tencent.mm.ui.widget.button.WeButton android:textColor="@color/aaz" android:gravity="center" android:layout_gravity="left|bottom" android:id="@id/ntc" android:background="@drawable/d6y" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="测试" android:layout_above="@id/sl0" />
+    <com.tencent.mm.zoomimage.ZoomImageView android:id="@id/h_z" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:layout_above="@id/sl0" android:elevation="-1.0dp" />
+</RelativeLayout>

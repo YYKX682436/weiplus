@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout android:id="@id/f1h" android:background="@color/w5" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/f16" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/f1_" android:importantForAccessibility="no" />
+    <com.tencent.mm.plugin.finder.live.widget.FinderLiveViewBottomSheetPanel android:orientation="vertical" android:id="@id/f1_" android:background="@drawable/aji" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/f19" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+            <RelativeLayout android:id="@id/f1f" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+                <RelativeLayout android:id="@id/f1b" android:background="@drawable/a81" android:focusable="true" android:clickable="true" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/f1a" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@raw/icons_outlined_arrow" android:layout_centerInParent="true" android:rotation="90.0" app:fs="@color/BW_100_Alpha_0_8" />
+                </RelativeLayout>
+                <include android:id="@id/f1e" layout="@layout/ars" />
+                <RelativeLayout android:id="@id/f1l" android:paddingTop="@dimen/bi" android:paddingBottom="@dimen/bi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/f1m" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/wecoin_balance_icons" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dv" app:fs="@color/ae" />
+                    <TextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/f1o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/bl" android:layout_toEndOf="@id/f1m" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/f1k" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:layout_toEndOf="@id/f1o" app:fs="@color/BW_100_Alpha_0_3" />
+                    <ProgressBar android:id="@id/f1n" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_centerInParent="true" style="@style/w_" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/f3t" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/f1f">
+                <com.tencent.mm.plugin.finder.live.plugin.view.gift.FinderLiveGiftTagView android:id="@id/f3d" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+                <androidx.viewpager.widget.ViewPager android:id="@id/f3s" android:paddingBottom="@dimen/dh" android:layout_width="match_parent" android:layout_height="312.0dp" android:layout_marginTop="@dimen/bl" android:layout_below="@id/f3d" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/u03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/f3s">
+                    <View android:id="@id/grk" android:background="@drawable/a3v" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d7" />
+                    <com.tencent.mm.plugin.finder.live.plugin.view.gift.FinderLiveLevelProgressView android:id="@id/f32" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ProgressBar android:id="@id/f1c" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:layout_centerHorizontal="true" style="@style/w9" />
+            <TextView android:textColor="@color/ab0" android:id="@id/f1d" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:text="@string/gdm" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </com.tencent.mm.plugin.finder.live.widget.FinderLiveViewBottomSheetPanel>
+</com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/g61" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textColor="@color/g4" android:layout_gravity="left" android:id="@id/g60" android:background="@drawable/b5u" android:padding="16.0dp" android:text="@string/ig" style="@style/kn" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/g4" android:id="@id/g62" android:background="@drawable/b5u" android:padding="16.0dp" android:text="@string/koh" android:layout_alignParentRight="true" style="@style/kn" />
+    <View android:id="@id/ojl" android:background="@color/a9e" android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/g5z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/p" android:src="@drawable/c5n" android:layout_above="@id/ojl" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="center" android:id="@id/g65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j" android:layout_marginTop="18.0dp" android:layout_marginRight="@dimen/j" android:text="@string/knz" android:layout_below="@id/ojl" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/j9" android:textColor="@color/vr" android:id="@id/kr7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dp" android:text="@string/koh" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

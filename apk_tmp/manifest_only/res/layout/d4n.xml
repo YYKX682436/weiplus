@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sa4" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.view.InterceptTouchFrameLayout android:id="@id/iho" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <FrameLayout android:id="@id/hyr" android:background="@drawable/cua" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" android:paddingHorizontal="@dimen/dv" android:paddingVertical="@dimen/bl" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/iho">
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/UN_BW_100_Alpha_0_8" android:gravity="center" android:id="@id/i57" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d9" app:layout_constraintTop_toBottomOf="@id/hyr" layout="@layout/e76" />
+    <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="15.0dp" android:textColor="@color/u6" android:ellipsize="end" android:id="@id/t8z" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:maxLines="2" android:importantForAccessibility="no" android:layout_marginStart="@dimen/cn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/lkf" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <EditText android:id="@id/hdi" android:layout_width="100.0dp" android:layout_marginRight="10.0dp" android:hint="exptId" android:inputType="number" style="@style/ir" />
+        <Button android:id="@id/c9z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="confirm" />
+        <Button android:id="@id/lzl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Req Btn" />
+        <Button android:id="@id/sb4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="try hit" style="@style/ks" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="false" android:id="@id/sas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:checked="false" style="@style/im" />
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="step one:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/sar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="false" android:id="@id/saw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:checked="false" style="@style/im" />
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="step_two:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/sav" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="false" android:id="@id/sau" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:checked="false" style="@style/im" />
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="step_three:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/sat" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ScrollView android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:id="@id/dko" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

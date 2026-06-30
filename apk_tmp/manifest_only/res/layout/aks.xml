@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mgg" android:background="@drawable/azm" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:id="@id/mgu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{title}" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/mgs" android:background="@drawable/zl" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginRight="@dimen/dv" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" app:fs="@color/BW_70" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:background="@color/BW_100" android:paddingLeft="@dimen/d9" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/d9" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/mgg">
+        <include android:id="@id/mgk" android:layout_width="@dimen/bo" android:layout_height="wrap_content" android:layout_alignParentLeft="true" layout="@layout/aku" />
+        <include android:id="@id/mgl" android:layout_width="@dimen/bo" android:layout_height="wrap_content" android:layout_centerHorizontal="true" layout="@layout/aku" />
+        <include android:id="@id/mgm" android:layout_width="@dimen/bo" android:layout_height="wrap_content" android:layout_alignParentRight="true" layout="@layout/aku" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

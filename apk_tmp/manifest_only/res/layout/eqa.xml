@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/v54" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pjs" android:paddingStart="@dimen/d7" android:paddingEnd="@dimen/cn" style="@style/ym" />
+        <com.tencent.mm.ui.base.MMLimitedClearEditText android:id="@id/v55" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/pjr" android:maxLines="10" android:minLines="2" android:inputType="textMultiLine" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" app:hintToText="false" app:showClearButton="false" />
+        <TextView android:id="@id/v58" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pk3" android:paddingStart="@dimen/d7" android:paddingEnd="@dimen/cn" style="@style/ym" />
+        <com.tencent.mm.ui.base.MMLimitedClearEditText android:id="@id/v57" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/pk2" android:maxLines="3" android:minLines="1" android:inputType="textMultiLine" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" app:hintToText="false" app:showClearButton="false" />
+        <View android:id="@id/v56" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    </LinearLayout>
+</ScrollView>

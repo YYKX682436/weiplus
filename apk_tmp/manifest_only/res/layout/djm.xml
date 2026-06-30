@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/b5j" android:visibility="gone" android:layout_width="74.0dp" android:layout_height="74.0dp" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/cn" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@id/lok" />
+    <View android:id="@id/lok" android:layout_width="104.0dp" android:layout_height="104.0dp" android:layout_marginTop="@dimen/dv" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/acv" android:id="@id/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/h7" app:layout_constraintBottom_toTopOf="@id/b5j" app:layout_constraintEnd_toEndOf="@id/b5j" app:layout_constraintStart_toStartOf="@id/b5j" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/ac_" android:id="@id/bhh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bp" android:text="@string/h8" app:layout_constraintEnd_toEndOf="@id/lok" app:layout_constraintStart_toStartOf="@id/lok" app:layout_constraintTop_toTopOf="@id/lok" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/a22" android:id="@id/aa3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh" app:layout_constraintEnd_toEndOf="@id/bhh" app:layout_constraintStart_toStartOf="@id/bhh" app:layout_constraintTop_toBottomOf="@id/bhh" />
+</merge>

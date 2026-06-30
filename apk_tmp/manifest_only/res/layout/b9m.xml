@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/g3d" android:paddingTop="@dimen/cs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/g3c" android:background="@drawable/d0h" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bn" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/c9" android:paddingVertical="@dimen/bn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g3a" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_play" android:alpha="0.1" app:fs="@color/an" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g3b" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_play" android:alpha="0.1" android:layout_marginStart="-4.0dp" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/an" android:id="@id/g3_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f5t" android:layout_marginStart="@dimen/dv" />
+    </LinearLayout>
+</FrameLayout>

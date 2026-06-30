@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/a_n" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gxy" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/gy1" android:background="@drawable/a0p" android:clipChildren="false" android:layout_width="@dimen/db" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/cn" android:layout_centerHorizontal="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/gxz" android:layout_width="wrap_content" android:layout_height="14.0dp" android:src="@raw/icons_filled_arrow" android:alpha="0.0" android:rotation="90.0" app:fs="@color/FG_2" />
+        </FrameLayout>
+    </RelativeLayout>
+    <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:id="@id/lr1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/gxy">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lq8" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+</RelativeLayout>

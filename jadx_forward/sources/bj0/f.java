@@ -1,0 +1,46 @@
+package bj0;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: classes8.dex */
+public final class f {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final bj0.f f102637d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final bj0.f f102638e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final bj0.f f102639f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public static final /* synthetic */ bj0.f[] f102640g;
+
+    static {
+        bj0.f fVar = new bj0.f("Unknown", 0);
+        bj0.f fVar2 = new bj0.f("PostDelayed", 1);
+        bj0.f fVar3 = new bj0.f("OnSurfaceTextureUpdated", 2);
+        f102637d = fVar3;
+        bj0.f fVar4 = new bj0.f("OnNextFrameDisplayed", 3);
+        f102638e = fVar4;
+        bj0.f fVar5 = new bj0.f("onSurfaceChanged", 4);
+        f102639f = fVar5;
+        bj0.f[] fVarArr = {fVar, fVar2, fVar3, fVar4, fVar5};
+        f102640g = fVarArr;
+        rz5.b.a(fVarArr);
+    }
+
+    public f(java.lang.String str, int i17) {
+    }
+
+    /* renamed from: valueOf */
+    public static bj0.f m10650xdce0328(java.lang.String str) {
+        return (bj0.f) java.lang.Enum.valueOf(bj0.f.class, str);
+    }
+
+    /* renamed from: values */
+    public static bj0.f[] m10651xcee59d22() {
+        return (bj0.f[]) f102640g.clone();
+    }
+}

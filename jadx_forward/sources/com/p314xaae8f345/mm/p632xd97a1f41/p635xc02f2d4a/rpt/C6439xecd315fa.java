@@ -1,0 +1,58 @@
+package com.p314xaae8f345.mm.p632xd97a1f41.p635xc02f2d4a.rpt;
+
+/* renamed from: com.tencent.mm.autogen.mmdata.rpt.FavCdnDownloadQualityStruct */
+/* loaded from: classes12.dex */
+public final class C6439xecd315fa extends jx3.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public long f137777d = 0;
+
+    /* renamed from: e, reason: collision with root package name */
+    public java.lang.String f137778e = "";
+
+    /* renamed from: f, reason: collision with root package name */
+    public long f137779f = 0;
+
+    /* renamed from: g, reason: collision with root package name */
+    public int f137780g = 0;
+
+    /* renamed from: h, reason: collision with root package name */
+    public int f137781h = 0;
+
+    @Override // jx3.a
+    public int g() {
+        return 31650;
+    }
+
+    @Override // jx3.a
+    public java.lang.String m() {
+        java.lang.StringBuffer stringBuffer = new java.lang.StringBuffer();
+        stringBuffer.append(this.f137777d);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f137778e);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f137779f);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f137780g);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f137781h);
+        java.lang.String stringBuffer2 = stringBuffer.toString();
+        a(stringBuffer2);
+        return stringBuffer2;
+    }
+
+    @Override // jx3.a
+    public java.lang.String n() {
+        java.lang.StringBuffer stringBuffer = new java.lang.StringBuffer("dataType:");
+        stringBuffer.append(this.f137777d);
+        stringBuffer.append("\r\ndataId:");
+        stringBuffer.append(this.f137778e);
+        stringBuffer.append("\r\nisThumb:");
+        stringBuffer.append(this.f137779f);
+        stringBuffer.append("\r\ndownloadRet:");
+        stringBuffer.append(this.f137780g);
+        stringBuffer.append("\r\nretryCount:");
+        stringBuffer.append(this.f137781h);
+        return stringBuffer.toString();
+    }
+}

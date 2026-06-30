@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:background="@drawable/d4e" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/sn3" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cs" android:src="@raw/xmark_regular" android:contentDescription="@string/b9a" android:layout_marginStart="@dimen/cn" app:fs="@color/abw" />
+        <TextView android:textSize="@dimen/gz" android:textStyle="bold" android:textColor="@color/abw" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ol7" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/vd2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_marginHorizontal="@dimen/cz">
+        <View android:background="@drawable/d4f" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/c8" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/abw" android:orientation="horizontal" android:id="@id/vd1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ola" android:layout_marginStart="@dimen/dv" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/vd0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/cz" android:layout_marginHorizontal="@dimen/cz">
+        <View android:background="@drawable/d4f" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/c8" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/abw" android:orientation="horizontal" android:id="@id/vcz" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ol_" android:layout_marginStart="@dimen/dv" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/r" android:textStyle="bold" android:textColor="@color/an" android:layout_gravity="center_horizontal" android:id="@id/sn4" android:background="@drawable/jk" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/ao_" android:text="@string/f7u" />
+</LinearLayout>

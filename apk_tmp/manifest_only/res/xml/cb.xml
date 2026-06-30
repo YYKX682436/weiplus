@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_music_recommend" android:title="@string/lfr" />
+    <PreferenceFooterCategory android:key="settings_music_recommend_tips" android:title="@string/lfq" />
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_music_quality" android:title="@string/n1_" />
+    <PreferenceFooterCategory android:key="settings_music_quality_desc" android:title="@string/n19" />
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_music_taskbar" android:title="@string/lfs" />
+    <PreferenceSmallCategory android:key="audio_config" />
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_music_audio_push" android:title="@string/mcd" />
+    <PreferenceSmallCategory android:key="audio_config" />
+    <Preference android:key="settings_music_ai_cover_model" android:gc="@layout/byv" android:title="@string/phs" />
+    <Preference android:key="settings_music_ai_create_model" android:gc="@layout/byv" android:title="@string/phu" />
+</PreferenceScreen>

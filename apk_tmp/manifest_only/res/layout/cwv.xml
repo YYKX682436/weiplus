@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/nom" android:background="@drawable/g6" android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/noq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/non" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginEnd="8.0dp" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/a77" android:ellipsize="end" android:gravity="center" android:id="@id/nop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.recordvideo.ui.editor.MusicLrcView android:textSize="@dimen/k" android:textColor="@color/a77" android:ellipsize="none" android:id="@id/noo" android:fadingEdge="horizontal" android:fadingEdgeLength="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="暂无歌词" android:singleLine="true" android:layout_below="@id/noq" android:layout_centerHorizontal="true" android:requiresFadingEdge="horizontal" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/a" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/mc5" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@id/snr" app:layout_constraintHeight_default="2" app:layout_constraintHeight_percent="0.8" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:minHeight="40.0dp" style="@style/yp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/vdw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="groupkey" android:layout_marginEnd="8.0dp" />
+                <EditText android:id="@id/u0e" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="40.0dp" android:hint="输入0-65535" android:maxLines="1" android:layout_weight="1.0" android:imeOptions="actionNext" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/snr" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+        <Button android:textSize="16.0sp" android:id="@id/slo" android:layout_width="0.0dp" android:layout_height="48.0dp" android:minHeight="40.0dp" android:text="保存" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:id="@id/sln" android:layout_width="0.0dp" android:layout_height="48.0dp" android:minHeight="40.0dp" android:text="清空" android:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

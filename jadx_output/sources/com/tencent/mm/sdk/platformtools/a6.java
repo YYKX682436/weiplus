@@ -1,0 +1,28 @@
+package com.tencent.mm.sdk.platformtools;
+
+/* loaded from: classes13.dex */
+public final class a6 implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.thumbplayer.api.ITPPlayer f192459d;
+
+    public a6(com.tencent.thumbplayer.api.ITPPlayer iTPPlayer) {
+        this.f192459d = iTPPlayer;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        com.tencent.thumbplayer.api.ITPPlayer iTPPlayer = this.f192459d;
+        if (iTPPlayer != null) {
+            try {
+                iTPPlayer.stopAsync();
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.PlaySoundNew", e17, "onError release player error", new java.lang.Object[0]);
+                return;
+            }
+        }
+        if (iTPPlayer != null) {
+            iTPPlayer.release();
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/otv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/em">
+        <TextView android:layout_gravity="end" android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ui2" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/hx">
+                <ImageView android:id="@id/br0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avb" />
+                <ImageView android:id="@id/bkq" android:background="@drawable/b3i" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.tencent.mm.ui.widget.MMPinProgressBtn android:layout_gravity="center" android:id="@id/bku" android:layout_width="22.0dp" android:layout_height="22.0dp" app:innerSize="22.0dp" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/oy_" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingVideoMvvmView android:layout_gravity="end" android:id="@id/srv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:id="@id/brh" android:background="@drawable/o8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hq">
+                    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hq" android:layout_marginRight="@dimen/hq" layout="@layout/xj" />
+                </LinearLayout>
+                <include layout="@layout/e26" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.tencent.mm.ui.chatting.view.ChattingAvatarImageView android:id="@id/bk1" android:focusable="false" android:visibility="gone" style="@style/ej" />
+</LinearLayout>

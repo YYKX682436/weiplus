@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.ThreeDotsLoadingView android:id="@id/imn" android:padding="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/gcd" android:paddingTop="@dimen/db" android:paddingBottom="@dimen/db" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/FG_3" android:layout_width="@dimen/cz" android:layout_height="@dimen/bh" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:gravity="center" android:id="@id/gbo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/dv" />
+        <View android:background="@color/FG_3" android:layout_width="@dimen/cz" android:layout_height="@dimen/bh" />
+    </LinearLayout>
+</FrameLayout>

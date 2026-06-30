@@ -1,0 +1,22 @@
+package com.tencent.mm.plugin.fts.ui.widget;
+
+/* loaded from: classes12.dex */
+public final class m extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.fts.ui.widget.v f138293d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public m(com.tencent.mm.plugin.fts.ui.widget.v vVar) {
+        super(0);
+        this.f138293d = vVar;
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        boolean pullUpKeyboardWhenStartup;
+        com.tencent.mm.plugin.fts.ui.widget.v vVar = this.f138293d;
+        pullUpKeyboardWhenStartup = vVar.getPullUpKeyboardWhenStartup();
+        return java.lang.Boolean.valueOf(pullUpKeyboardWhenStartup || com.tencent.mm.plugin.fts.ui.widget.v.o(vVar));
+    }
+}

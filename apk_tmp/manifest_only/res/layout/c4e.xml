@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.music.ui.MusicItemLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/jz7" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/of" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/oe" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="1.0dp" android:scaleType="centerCrop" />
+        <View android:id="@id/og" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <View android:id="@id/oh" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@color/ab0" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/jzj" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{music_name_tv}" android:textIsSelectable="true" />
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/ab0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/jzz" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="{music_name_tv}" />
+    <com.tencent.mm.plugin.music.ui.LyricView android:id="@id/j7q" android:layout_width="match_parent" android:layout_height="26.0dp" android:layout_marginTop="23.0dp" />
+    <View android:layout_width="match_parent" android:layout_height="240.0dp" />
+</com.tencent.mm.plugin.music.ui.MusicItemLayout>

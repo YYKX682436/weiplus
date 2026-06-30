@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/kj">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" style="@style/ij">
+            <ImageView android:id="@id/ai2" android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginBottom="20.0dp" android:src="@drawable/bgj" />
+            <TextView android:textColor="@color/a0c" android:gravity="center" android:id="@id/ai0" android:layout_marginBottom="10.0dp" android:text="@string/agw" style="@style/m8" />
+            <TextView android:gravity="center" android:id="@id/ahz" android:layout_marginBottom="20.0dp" android:text="@string/agv" style="@style/ik" />
+            <Button android:textSize="20.0dp" android:id="@id/ai1" android:text="@string/ah0" style="@style/kq" />
+            <RelativeLayout android:id="@id/ahw" android:background="@drawable/gd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:minHeight="42.0dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ir6" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ik" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/aio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:src="@raw/checkbox_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/ahx" android:background="@drawable/ge" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="42.0dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bgg" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ik" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/ain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:src="@raw/checkbox_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

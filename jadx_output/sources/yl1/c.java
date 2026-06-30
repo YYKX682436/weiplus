@@ -1,0 +1,66 @@
+package yl1;
+
+/* loaded from: classes5.dex */
+public final class c extends android.text.style.ReplacementSpan {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final java.lang.String f462960d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final float f462961e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final int f462962f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final int f462963g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final int f462964h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public final int f462965i;
+
+    /* renamed from: m, reason: collision with root package name */
+    public final int f462966m;
+
+    public c(java.lang.String str, int i17, int i18, int i19, int i27, int i28, int i29) {
+        this.f462961e = i19;
+        this.f462960d = str;
+        this.f462962f = i27;
+        this.f462963g = i28;
+        this.f462964h = i29;
+        this.f462965i = i17;
+        this.f462966m = i18;
+    }
+
+    @Override // android.text.style.ReplacementSpan
+    public void draw(android.graphics.Canvas canvas, java.lang.CharSequence charSequence, int i17, int i18, float f17, int i19, int i27, int i28, android.graphics.Paint paint) {
+        paint.setTextSize(this.f462961e);
+        paint.setAntiAlias(true);
+        android.graphics.RectF rectF = new android.graphics.RectF();
+        rectF.left = ((int) f17) + this.f462965i;
+        android.graphics.Paint.FontMetricsInt fontMetricsInt = paint.getFontMetricsInt();
+        int i29 = (((i28 - i19) - fontMetricsInt.descent) + fontMetricsInt.top) / 2;
+        int i37 = this.f462964h;
+        int max = java.lang.Math.max(0, i29 - i37);
+        rectF.top = i19 + max;
+        rectF.bottom = i28 - max;
+        float f18 = rectF.left;
+        java.lang.String str = this.f462960d;
+        rectF.right = f18 + ((int) paint.measureText(str)) + (i37 * 2);
+        paint.setColor(this.f462963g);
+        canvas.drawRoundRect(rectF, i37, i37, paint);
+        paint.setColor(this.f462962f);
+        canvas.drawText(str, rectF.left + i37, (rectF.top + i37) - fontMetricsInt.top, paint);
+    }
+
+    @Override // android.text.style.ReplacementSpan
+    public int getSize(android.graphics.Paint paint, java.lang.CharSequence charSequence, int i17, int i18, android.graphics.Paint.FontMetricsInt fontMetricsInt) {
+        if (paint == null) {
+            paint = new android.graphics.Paint();
+        }
+        paint.setTextSize(this.f462961e);
+        return ((int) paint.measureText(this.f462960d)) + this.f462965i + this.f462966m + (this.f462964h * 2);
+    }
+}

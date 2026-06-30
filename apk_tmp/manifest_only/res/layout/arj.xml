@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout android:background="@color/w5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/df3" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.ui.widget.LiveBottomSheetPanel android:orientation="vertical" android:id="@id/f3b" android:background="@drawable/aji" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ljs" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+                <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_8" android:gravity="center_vertical" android:id="@id/egu" android:layout_width="58.0dp" android:layout_height="match_parent" android:text="@string/e91" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/b9a" />
+                <TextView android:enabled="false" android:textSize="@dimen/gz" android:textColor="@color/og" android:gravity="center" android:id="@id/egt" android:background="@drawable/a2c" android:layout_width="58.0dp" android:layout_height="@dimen/d7" android:text="@string/e92" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="@dimen/db">
+                <com.tencent.mm.view.MMPAGView android:id="@id/ko7" android:layout_width="@dimen/ch" android:layout_height="@dimen/ch" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bj" android:text="@string/dji" android:includeFontPadding="false" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c8" android:layout_height="@dimen/c8" android:layout_marginRight="@dimen/bj" android:src="@raw/coin_icon" app:fs="@color/BW_100_Alpha_0_5" />
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/kye" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bj" android:text="@string/djh" android:includeFontPadding="false" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c8" android:layout_height="@dimen/c8" android:layout_marginRight="@dimen/bj" android:src="@raw/coin_icon" app:fs="@color/BW_100_Alpha_0_5" />
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/ky8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/cph" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_3" android:id="@id/ob1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:includeFontPadding="false" android:layout_below="@id/cph" android:layout_alignLeft="@id/cph" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/vo" android:id="@id/b5l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.LiveBottomSheetPanel>
+    <com.tencent.mm.plugin.finder.view.FakeEditText android:id="@id/dq5" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="1.0px" android:layout_height="wrap_content" android:maxLength="1" android:inputType="text" />
+</com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout>

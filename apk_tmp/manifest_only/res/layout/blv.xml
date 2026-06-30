@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/zy" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/hgi" android:padding="10.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ba" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="54.0dp" android:layout_marginRight="54.0dp">
+        <RelativeLayout android:id="@id/hgn" android:layout_width="wrap_content" android:layout_height="@dimen/a2w">
+            <TextView android:textSize="30.0dp" android:textColor="@color/a0c" android:gravity="center" android:id="@id/hgo" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/a2w" android:maxLines="3" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:fontFamily="sans-serif-light" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/hgj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/hgn">
+            <TextView android:textSize="16.0dp" android:textColor="@color/a0c" android:gravity="center" android:id="@id/hgk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:layout_gravity="center" android:id="@id/hgm" android:layout_width="140.0dp" android:layout_height="140.0dp" android:layout_marginTop="@dimen/a2x" android:layout_below="@id/hgj" android:layout_centerHorizontal="true" />
+        <Button android:gravity="center" android:id="@id/hgl" android:layout_marginBottom="@dimen/a2v" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/mm" />
+    </RelativeLayout>
+</RelativeLayout>

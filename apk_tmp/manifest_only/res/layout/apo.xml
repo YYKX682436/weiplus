@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/p3l" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/b0g" />
+    <include android:id="@id/ckc" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_weight="1.0" layout="@layout/app" />
+</LinearLayout>

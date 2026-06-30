@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.base.FlowLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/umx" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="旧手机号注册页" />
+            <Button android:id="@id/von" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="语音验证码页" />
+            <Button android:id="@id/uq2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="手机验证码页" />
+            <Button android:id="@id/uq1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="手机验证码：改密" />
+            <Button android:id="@id/v3h" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="设置密码页" />
+            <Button android:id="@id/uh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="注册页" />
+            <Button android:id="@id/vls" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="上行短信页" />
+            <Button android:id="@id/u08" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="h5:进入后，可手动调试jsapi" />
+            <Button android:id="@id/bdw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录注册相关 UI组件" />
+            <Button android:id="@id/vlj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二次验证-原生验证密码页" />
+            <Button android:id="@id/v5m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网关取号掩码" />
+            <Button android:id="@id/v5n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网关取号明码" />
+            <Button android:id="@id/si5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bindphone" />
+        </com.tencent.mm.ui.base.FlowLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.TouchMediaPreviewLayout android:orientation="vertical" android:id="@id/ohx" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/dg3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cf" android:text="@string/ezj" style="@style/s4" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/ci6" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.plugin.finder.event.recyclerview.FinderRecyclerView android:id="@id/la3" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.tencent.mm.view.RefreshLoadMoreLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.tencent.mm.ui.widget.TouchMediaPreviewLayout>

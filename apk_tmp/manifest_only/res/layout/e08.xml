@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ag_" android:paddingTop="40.0dp" android:paddingBottom="48.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24.0dp" android:paddingEnd="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textStyle="bold" android:gravity="start" android:id="@id/odb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="@string/o9x" style="@style/s5" />
+    <TextView android:gravity="start" android:id="@id/cus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:text="@string/o9q" android:lineSpacingExtra="4.0dp" style="@style/s3" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp">
+        <com.tencent.mm.ui.MMImageView android:id="@id/u3c" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitCenter" app:layout_constraintDimensionRatio="286:141" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.tencent.mm.ui.widget.button.WeButton android:layout_gravity="center" android:id="@id/u88" android:text="@string/o9r" style="@style/xl" />
+</LinearLayout>

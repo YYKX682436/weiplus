@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge style="@style/z2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.chatting.view.AlphaGradientTextView android:textStyle="bold" android:id="@id/rte" style="@style/z3" />
+    <View android:id="@id/vlu" android:background="@color/tk" android:layout_width="1.0px" android:layout_height="10.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:layout_marginHorizontal="8.0dp" />
+    <com.tencent.mm.ui.chatting.view.AlphaGradientTextView android:ellipsize="end" android:id="@id/uhf" android:maxLines="1" style="@style/z3" />
+    <com.tencent.mm.ui.chatting.view.AlphaGradientTextView android:id="@id/ui4" android:visibility="gone" android:text="@string/oax" style="@style/z3" />
+</merge>

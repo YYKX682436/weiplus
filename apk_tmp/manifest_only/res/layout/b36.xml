@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fsv" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/xh"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/l9m" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMoreWhenContentNotFull="true" app:enableRefresh="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/lqa" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

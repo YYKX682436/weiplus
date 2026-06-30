@@ -1,0 +1,41 @@
+package com.tencent.mm.plugin.appbrand.jsruntime;
+
+/* loaded from: classes7.dex */
+public final class q1 implements yz5.p {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ int f84034d;
+
+    public q1(int i17) {
+        this.f84034d = i17;
+    }
+
+    @Override // yz5.p
+    /* renamed from: a, reason: merged with bridge method [inline-methods] */
+    public java.lang.Integer invoke(java.lang.String rootDir, com.tencent.mm.vfs.x1 dir) {
+        int i17;
+        kotlin.jvm.internal.o.g(rootDir, "rootDir");
+        kotlin.jvm.internal.o.g(dir, "dir");
+        java.lang.Iterable<com.tencent.mm.vfs.x1> d17 = dir.d();
+        int i18 = 0;
+        if (d17 != null) {
+            for (com.tencent.mm.vfs.x1 x1Var : d17) {
+                try {
+                    java.lang.String name = x1Var.f213232b;
+                    kotlin.jvm.internal.o.f(name, "name");
+                    java.lang.String substring = name.substring(1);
+                    kotlin.jvm.internal.o.f(substring, "substring(...)");
+                    r26.a.a(10);
+                    i17 = java.lang.Integer.parseInt(substring, 10);
+                } catch (java.lang.NumberFormatException unused) {
+                    i17 = -1;
+                }
+                if (i17 == this.f84034d) {
+                    x1Var.a();
+                    i18++;
+                }
+            }
+        }
+        return java.lang.Integer.valueOf(i18);
+    }
+}

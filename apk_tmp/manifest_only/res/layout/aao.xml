@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/aun" android:paddingTop="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ie" android:layout_marginRight="@dimen/ie" android:minWidth="@dimen/hz"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/e1e" android:background="@drawable/tg" android:paddingTop="24.0dp" android:paddingBottom="16.0dp" android:layout_width="136.0dp" android:layout_height="136.0dp" android:layout_marginBottom="4.0dp">
+        <com.tencent.mm.plugin.fingerprint.faceid.auth.FrameAnimatorImageView android:layout_gravity="center_horizontal" android:id="@id/e1a" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@drawable/c2g" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:layout_gravity="center_horizontal" android:id="@id/e1d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/c8r" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/e1_" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <View style="@style/fh" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="center" android:id="@id/e1b" android:background="@null" android:layout_width="100.0dp" android:layout_height="match_parent" android:text="@string/sg" android:layout_weight="1.0" style="@style/l1" />
+            <View style="@style/s1" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a5" android:gravity="center" android:id="@id/e1c" android:background="@null" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="match_parent" android:text="" android:layout_weight="1.0" style="@style/l1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

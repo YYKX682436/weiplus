@@ -1,0 +1,38 @@
+package xw;
+
+/* loaded from: classes.dex */
+public final class t implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ android.widget.TextView f457559d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f457560e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ yz5.a f457561f;
+
+    public t(android.widget.TextView textView, java.lang.String str, yz5.a aVar) {
+        this.f457559d = textView;
+        this.f457560e = str;
+        this.f457561f = aVar;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/feature/brandservice/extension/BizTextExtKt$setExpandableText$1$onGlobalLayout$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        java.lang.String str = this.f457560e;
+        android.widget.TextView textView = this.f457559d;
+        textView.setText(str);
+        textView.setOnClickListener(null);
+        yz5.a aVar = this.f457561f;
+        if (aVar != null) {
+            aVar.invoke();
+        }
+        yj0.a.h(this, "com/tencent/mm/feature/brandservice/extension/BizTextExtKt$setExpandableText$1$onGlobalLayout$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

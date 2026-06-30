@@ -1,0 +1,44 @@
+package com.tencent.mm.plugin.magicbrush.jsapi.launch;
+
+@kotlin.Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002"}, d2 = {"com/tencent/mm/plugin/magicbrush/jsapi/launch/MBJsApiHandleEcsAction$AllocTempFileResult", "Landroid/os/Parcelable;", "mb-jsapi_release"}, k = 1, mv = {1, 9, 0})
+/* loaded from: classes.dex */
+public final /* data */ class MBJsApiHandleEcsAction$AllocTempFileResult implements android.os.Parcelable {
+    public static final android.os.Parcelable.Creator<com.tencent.mm.plugin.magicbrush.jsapi.launch.MBJsApiHandleEcsAction$AllocTempFileResult> CREATOR = new md3.e();
+
+    /* renamed from: d, reason: collision with root package name */
+    public final java.lang.String f148053d;
+
+    public MBJsApiHandleEcsAction$AllocTempFileResult(java.lang.String str) {
+        this.f148053d = str;
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(java.lang.Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof com.tencent.mm.plugin.magicbrush.jsapi.launch.MBJsApiHandleEcsAction$AllocTempFileResult) && kotlin.jvm.internal.o.b(this.f148053d, ((com.tencent.mm.plugin.magicbrush.jsapi.launch.MBJsApiHandleEcsAction$AllocTempFileResult) obj).f148053d);
+    }
+
+    public int hashCode() {
+        java.lang.String str = this.f148053d;
+        if (str == null) {
+            return 0;
+        }
+        return str.hashCode();
+    }
+
+    public java.lang.String toString() {
+        return "AllocTempFileResult(absolutePath=" + this.f148053d + ')';
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel out, int i17) {
+        kotlin.jvm.internal.o.g(out, "out");
+        out.writeString(this.f148053d);
+    }
+}

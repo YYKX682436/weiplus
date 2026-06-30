@@ -1,0 +1,12 @@
+package com.p314xaae8f345.mm.ui.p2650x55bb7a46.p2655xf44c7752;
+
+/* loaded from: classes.dex */
+public class s0 implements java.lang.Iterable {
+    public s0(com.p314xaae8f345.mm.ui.p2650x55bb7a46.p2655xf44c7752.q0 q0Var) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new com.p314xaae8f345.mm.ui.p2650x55bb7a46.p2655xf44c7752.r0(this, null);
+    }
+}

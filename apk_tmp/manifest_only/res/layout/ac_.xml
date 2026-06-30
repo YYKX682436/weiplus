@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowlayout="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n6">
+        <include android:visibility="gone" layout="@layout/ac4" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:importantForAccessibility="no">
+            <LinearLayout android:orientation="horizontal" android:id="@id/dvc" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="@dimen/ca" android:paddingEnd="@dimen/ca">
+                <LinearLayout android:orientation="horizontal" android:id="@id/dww" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <RelativeLayout android:id="@id/du4" android:background="@drawable/tj" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/bl">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:paddingTop="@dimen/bj" android:layout_width="@dimen/c8" android:layout_height="@dimen/c8" android:src="@raw/arrow_down" android:layout_centerInParent="true" app:fs="@color/FG_1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/du9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/dvc" />
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/t_3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/du9">
+                <com.google.android.material.appbar.AppBarLayout android:id="@id/t9z" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:eg="0.0dp" app:expanded="false">
+                    <include android:id="@id/t_e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x11" layout="@layout/e56" />
+                </com.google.android.material.appbar.AppBarLayout>
+                <com.tencent.mm.plugin.fav.ui.widget.NestedScrollingListView android:id="@id/dxw" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/ap3" android:scrollingCache="false" android:divider="@color/lz" android:dividerHeight="@dimen/ey" android:overScrollMode="never" app:layout_behavior="@string/zz" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <ListView android:id="@id/dxy" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/ap3" android:scrollingCache="false" android:divider="@color/lz" android:dividerHeight="@dimen/ey" android:layout_below="@id/dvc" android:overScrollMode="never" />
+            <FrameLayout android:id="@id/dxs" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/dvc" android:importantForAccessibility="no" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/a8w" android:gravity="center_horizontal" android:id="@id/dxx" android:background="@color/jf" android:paddingTop="@dimen/c4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cbo" android:layout_below="@id/dvc" />
+            <include android:id="@id/dvb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/dvc" layout="@layout/abo" />
+            <ViewStub android:id="@id/dfm" android:layout="@layout/a8w" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/dwv" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no">
+                <View android:id="@id/dtf" android:background="@color/lu" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6" />
+                <com.tencent.mm.plugin.fav.ui.MaxHeightFrameLayout android:id="@id/duj" android:background="@drawable/u8" android:paddingTop="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/dvt" android:background="@drawable/u8" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+                </com.tencent.mm.plugin.fav.ui.MaxHeightFrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:id="@id/dtg" layout="@layout/ab0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dg4" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/t84" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/cc" android:src="@raw/favorites_regular" app:fs="@color/a84" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/a84" android:gravity="center" android:id="@id/dfd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/ca7" />
+    </LinearLayout>
+</FrameLayout>

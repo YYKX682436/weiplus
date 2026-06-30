@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/q7m" android:background="@drawable/bc8" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="@dimen/j3" android:layout_marginRight="8.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/hjo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <com.tencent.mm.ui.base.EllipsizeTextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{title}" android:singleLine="true" android:layout_weight="1.0" style="@style/j3" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/tk" android:id="@id/nrm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="4.0dp" android:text="{subtitle}" />
+        <LinearLayout android:orientation="vertical" android:id="@id/i2b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/hhp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:layout_gravity="center_vertical" android:id="@id/a_4" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/bhm" android:layout_marginEnd="6.0dp" />
+            <com.tencent.mm.ui.base.EllipsizeTextView android:textSize="@dimen/b3" android:textColor="@color/FG_2" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/kbq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{nickname}" android:singleLine="true" style="@style/j3" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_2" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/gxw" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="@dimen/j3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

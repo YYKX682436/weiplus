@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bjy" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingAskShareMvvmView android:id="@id/spw" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

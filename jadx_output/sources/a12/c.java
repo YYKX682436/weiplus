@@ -1,0 +1,26 @@
+package a12;
+
+/* loaded from: classes6.dex */
+public class c implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f509d = 0;
+
+    public c(a12.d dVar, a12.b bVar) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f509d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f509d;
+        this.f509d = i17 + 1;
+        if (i17 == 0) {
+            return a12.t.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

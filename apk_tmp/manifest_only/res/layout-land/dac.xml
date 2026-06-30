@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:layout_width="@dimen/cc" android:layout_height="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.LazyPlayPAGView android:id="@id/o7r" android:visibility="gone" android:layout_width="@dimen/cc" android:layout_height="@dimen/dn" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/bf4" android:background="@drawable/a1g" android:layout_width="@dimen/c4" android:layout_height="@dimen/df">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/bf7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bf5" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/wecoin_balance_icons" app:fs="@color/an" />
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/an" android:id="@id/bf6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bj" android:includeFontPadding="false" />
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/an" android:id="@id/bf8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bj" android:maxLines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/jj" android:textColor="@color/BW_100_Alpha_0_8" android:gravity="center" android:id="@id/ge3" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/gy" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rgn" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <ImageView android:id="@id/rgo" android:layout_width="0.0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        <View android:layout_width="4.0dp" android:layout_height="match_parent" />
+        <ImageView android:id="@id/rgp" android:layout_width="0.0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        <View android:layout_width="4.0dp" android:layout_height="match_parent" />
+        <ImageView android:id="@id/rgq" android:layout_width="0.0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rkj" android:background="@drawable/av2" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_constraintBottom_toBottomOf="@id/rgn" app:layout_constraintEnd_toEndOf="@id/rgn" app:layout_constraintStart_toStartOf="@id/rgn">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dyf" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/dyh" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:shadowColor="@color/BW_0_Alpha_0_3" android:shadowDy="0.5" android:shadowRadius="2.0" app:layout_constraintBottom_toTopOf="@id/dyd" app:layout_constraintEnd_toStartOf="@id/dyb" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            <TextView android:textColor="#b3ffffff" android:ellipsize="end" android:id="@id/dyd" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="8.0dp" android:maxLines="1" android:layout_marginEnd="12.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/dyb" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/dyh" />
+            <include android:id="@id/dyb" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" layout="@layout/a10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dye" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/dyg" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:maxLines="2" android:shadowColor="@color/BW_0_Alpha_0_3" android:shadowDy="0.5" android:shadowRadius="2.0" android:layout_marginEnd="8.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/dya" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            <include android:id="@id/dya" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" layout="@layout/a10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@drawable/he" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <View android:id="@id/uo2" android:background="@color/adi" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/a48" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/nt1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ay">
+            <TextView android:textSize="16.0dp" android:textColor="@color/ff" android:id="@id/nt3" android:background="@drawable/b5u" android:layout_height="match_parent" android:text="@string/ig" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/kn" />
+            <TextView android:textSize="16.0dp" android:textColor="@color/ff" android:id="@id/nt5" android:background="@drawable/b5u" android:layout_height="match_parent" android:text="@string/w0" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/kn" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/nt8" android:background="@raw/wechat_gray_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/nt_" android:layout_width="match_parent" android:layout_height="160.0dp">
+            <TextView android:id="@id/nt6" android:layout_width="120.0dp" android:layout_marginTop="@dimen/ie" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/iq" />
+            <TextView android:textSize="@dimen/h2" android:ellipsize="end" android:id="@id/nt4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hx" android:text="@string/iz1" android:maxLines="2" android:layout_above="@id/nt6" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="27.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center" android:id="@id/nt9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ie" android:layout_marginRight="@dimen/ie" android:text="@string/iz5" android:maxLines="2" android:layout_above="@id/nt4" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.tencent.mm.plugin.setting.ui.widget.SwitchAccountGridView android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/nt7" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/ie" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/duw" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowlayout="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/f0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gj">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/dv5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/fav_music_bold" android:layout_marginEnd="@dimen/dv" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ls" android:id="@id/dwz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/c_4" android:layout_centerVertical="true" android:layout_toEndOf="@id/dv5" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/dv4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/icons_outlined_arrow" android:layout_alignParentEnd="true" flowlayout:fs="@color/ac4" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

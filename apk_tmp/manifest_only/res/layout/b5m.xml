@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dr">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/cyz" android:layout_width="@dimen/df" android:layout_height="@dimen/df">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="start|center" android:id="@id/cyy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/actionbar_icon_dark_close" android:layout_marginStart="@dimen/cn" app:fs="@color/FG_0" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:layout_gravity="center" android:id="@id/czu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exe" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/mv3" android:background="@drawable/ayr" android:paddingLeft="@dimen/cs" android:paddingRight="@dimen/cs" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:paddingHorizontal="@dimen/cs">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exc" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exd" />
+    </LinearLayout>
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/cs" android:layout_marginRight="@dimen/cs" android:layout_marginHorizontal="@dimen/cs" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ipx" android:background="@drawable/ayr" android:paddingLeft="@dimen/cs" android:paddingRight="@dimen/cs" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:paddingHorizontal="@dimen/cs">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exb" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/el_" />
+    </LinearLayout>
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/cs" android:layout_marginRight="@dimen/cs" android:layout_marginBottom="98.0dp" android:layout_marginHorizontal="@dimen/cs" />
+</LinearLayout>

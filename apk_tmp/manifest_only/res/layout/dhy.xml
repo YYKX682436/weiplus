@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/qgw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gcv" app:layout_constraintBottom_toTopOf="@id/qga" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.0" app:layout_constraintVertical_chainStyle="2" />
+    <com.tencent.mm.plugin.ting.widget.MusicView android:id="@id/qga" android:layout_width="match_parent" android:layout_height="@dimen/br" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/cs" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/dj" android:layout_marginHorizontal="@dimen/d7" app:layout_constraintBottom_toTopOf="@id/qg2" app:layout_constraintTop_toBottomOf="@id/qgw" app:layout_goneMarginBottom="@dimen/dn" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/qg2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/cs" android:layout_marginBottom="@dimen/cz" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/qga">
+        <ImageView android:id="@id/fd2" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@drawable/bqp" android:layout_marginEnd="@dimen/xh" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:id="@id/fd1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dz_" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c8" android:layout_height="@dimen/cs" android:src="@raw/finder_live_music_info_arrow_right" android:layout_marginStart="@dimen/bj" app:fs="@color/FG_1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

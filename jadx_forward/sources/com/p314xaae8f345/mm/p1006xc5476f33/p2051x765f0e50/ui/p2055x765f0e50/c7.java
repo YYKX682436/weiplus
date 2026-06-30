@@ -1,0 +1,9 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2055x765f0e50;
+
+/* loaded from: classes8.dex */
+public interface c7 {
+    void a(int i17, int i18, java.lang.String str);
+
+    /* renamed from: onSuccess */
+    void mo69005xe05b4124();
+}

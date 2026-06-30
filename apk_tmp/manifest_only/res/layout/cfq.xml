@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/d" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/che" android:background="@drawable/azm" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/df">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="middle" android:id="@id/odf" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="{title}" android:maxLines="2" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:ellipsize="middle" android:id="@id/own" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:maxWidth="@dimen/cc" android:text="{value}" android:maxLines="2" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:src="@raw/icons_outlined_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/FG_2" />
+    </LinearLayout>
+    <View android:id="@id/aun" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" />
+</LinearLayout>

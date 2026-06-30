@@ -1,0 +1,55 @@
+package rt2;
+
+/* loaded from: classes10.dex */
+public final class d extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ rt2.g f481036d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(rt2.g gVar) {
+        super(1);
+        this.f481036d = gVar;
+    }
+
+    @Override // yz5.l
+    /* renamed from: invoke */
+    public java.lang.Object mo146xb9724478(java.lang.Object obj) {
+        android.content.Intent intent = (android.content.Intent) obj;
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(intent, "intent");
+        this.f481036d.getClass();
+        java.lang.String stringExtra = intent.getStringExtra("action");
+        boolean z17 = false;
+        int intExtra = intent.getIntExtra("count", 0);
+        int intExtra2 = intent.getIntExtra("enable", 0);
+        if (stringExtra != null) {
+            int hashCode = stringExtra.hashCode();
+            if (hashCode != -2120794458) {
+                if (hashCode != -536639554) {
+                    if (hashCode == 1474284576 && stringExtra.equals("dropFrameIncrease")) {
+                        java.util.concurrent.ConcurrentHashMap concurrentHashMap = or2.u.f429214a;
+                        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("Finder.PerformanceConfig", "configDropFramesIncreaseCount count:" + intExtra);
+                        or2.u.f429215b = 0;
+                        or2.u.f429216c = intExtra;
+                        or2.u.f429217d = intExtra;
+                    }
+                } else if (stringExtra.equals("dropFrame")) {
+                    java.util.concurrent.ConcurrentHashMap concurrentHashMap2 = or2.u.f429214a;
+                    com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("Finder.PerformanceConfig", "configDropFramesCount count:" + intExtra);
+                    or2.u.f429216c = 0;
+                    or2.u.f429215b = intExtra;
+                }
+            } else if (stringExtra.equals("enableLocalScrollFpsMonitor")) {
+                java.util.concurrent.ConcurrentHashMap concurrentHashMap3 = or2.u.f429214a;
+                java.lang.String str = com.p314xaae8f345.mm.sdk.p2603x2137b148.z.f274638a;
+                boolean z18 = o45.wf.f424565j || z65.c.a();
+                com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("Finder.PerformanceConfig", "configEnableLocalScrollFpsMonitor enable:" + intExtra2 + " isDebug:" + z18);
+                if (intExtra2 > 0 && z18) {
+                    z17 = true;
+                }
+                or2.u.f429218e = z17;
+            }
+        }
+        return jz5.f0.f384359a;
+    }
+}

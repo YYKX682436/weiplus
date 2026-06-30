@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/jc5" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/or9" android:paddingBottom="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+        <TextView android:textSize="@dimen/a_p" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/ora" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/a_m" android:textColor="#7fffffff" android:ellipsize="end" android:id="@id/or8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" />
+        <TextView android:textSize="@dimen/a_o" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/or_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:singleLine="true" android:drawableRight="@drawable/bro" android:drawablePadding="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/hax" android:paddingBottom="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+        <ImageView android:id="@id/haw" android:layout_width="120.0dp" android:layout_height="90.0dp" />
+        <TextView android:textSize="@dimen/a_n" android:textColor="#7fffffff" android:ellipsize="end" android:id="@id/hav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:singleLine="true" />
+        <TextView android:textSize="@dimen/a_o" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/hay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:singleLine="true" android:drawableRight="@drawable/bro" android:drawablePadding="4.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/cl6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

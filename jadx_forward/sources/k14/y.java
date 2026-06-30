@@ -1,0 +1,59 @@
+package k14;
+
+/* loaded from: classes4.dex */
+public class y extends com.p314xaae8f345.mm.p944x882e457a.m1 implements com.p314xaae8f345.mm.p971x6de15a2e.l0 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public com.p314xaae8f345.mm.p944x882e457a.u0 f384949d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final com.p314xaae8f345.mm.p944x882e457a.o f384950e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final java.lang.String f384951f;
+
+    public y(int i17, java.lang.String str, java.util.Map map) {
+        com.p314xaae8f345.mm.p944x882e457a.l lVar = new com.p314xaae8f345.mm.p944x882e457a.l();
+        lVar.f152197a = new r45.b83();
+        lVar.f152198b = new r45.c83();
+        lVar.f152199c = "/cgi-bin/micromsg-bin/generalset";
+        lVar.f152200d = 177;
+        lVar.f152201e = 0;
+        lVar.f152202f = 0;
+        com.p314xaae8f345.mm.p944x882e457a.o a17 = lVar.a();
+        this.f384950e = a17;
+        this.f384951f = str;
+        r45.b83 b83Var = (r45.b83) a17.f152243a.f152217a;
+        b83Var.f452160d = i17;
+        b83Var.f452161e = str;
+        if (map != null) {
+            b83Var.f452162f = map.size();
+            b83Var.f452163g = new java.util.LinkedList();
+            for (java.lang.Integer num : map.keySet()) {
+                r45.d83 d83Var = new r45.d83();
+                d83Var.f453754d = num.intValue();
+                d83Var.f453755e = (java.lang.String) map.get(num);
+                b83Var.f452163g.add(d83Var);
+            }
+        }
+    }
+
+    @Override // com.p314xaae8f345.mm.p944x882e457a.m1
+    /* renamed from: doScene */
+    public int mo807x6c193ac1(com.p314xaae8f345.mm.p971x6de15a2e.s sVar, com.p314xaae8f345.mm.p944x882e457a.u0 u0Var) {
+        this.f384949d = u0Var;
+        return mo9409x10f9447a(sVar, this.f384950e, this);
+    }
+
+    @Override // com.p314xaae8f345.mm.p944x882e457a.m1
+    /* renamed from: getType */
+    public int mo808xfb85f7b0() {
+        return 177;
+    }
+
+    @Override // com.p314xaae8f345.mm.p971x6de15a2e.l0
+    /* renamed from: onGYNetEnd */
+    public void mo804x5f9cdc6f(int i17, int i18, int i19, java.lang.String str, com.p314xaae8f345.mm.p971x6de15a2e.v0 v0Var, byte[] bArr) {
+        this.f384949d.mo815x76e0bfae(i18, i19, str, this);
+    }
+}

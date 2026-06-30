@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.music.ui.MusicViewPager android:id="@id/p1t" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/k00" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginBottom="32.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/jz_" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="14.0dp" android:src="@raw/music_logo_default" android:scaleType="fitCenter" />
+        <TextView android:textSize="16.0dp" android:ellipsize="end" android:id="@id/gd4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="40.0dp" android:maxLines="1" />
+        <ImageView android:id="@id/gd3" android:layout_width="12.0dp" android:layout_height="24.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/bwa" android:scaleType="center" />
+    </LinearLayout>
+    <CheckBox android:gravity="center" android:id="@id/jzr" android:background="@drawable/as7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="45.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.plugin.appbrand.widget.music.MusicSeekBar android:id="@id/jzw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/jzr" />
+    <ImageButton android:id="@id/aa8" android:background="@raw/actionbar_icon_light_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:onClick="onClickBack" />
+    <ImageButton android:id="@id/mlf" android:background="@raw/actionbar_icon_light_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_alignParentRight="true" android:onClick="onClickSend" />
+</RelativeLayout>

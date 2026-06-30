@@ -1,0 +1,38 @@
+package nx1;
+
+/* loaded from: classes12.dex */
+public class g implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ nx1.j f341290d;
+
+    public g(nx1.j jVar) {
+        this.f341290d = jVar;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/component/editor/model/nativenote/manager/EditorOperateMenu$3", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        nx1.j jVar = this.f341290d;
+        jVar.f341292a.dismiss();
+        android.view.View view2 = jVar.f341293b;
+        java.util.ArrayList arrayList2 = new java.util.ArrayList();
+        java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+        arrayList2.add(8);
+        java.util.Collections.reverse(arrayList2);
+        yj0.a.d(view2, arrayList2.toArray(), "com/tencent/mm/plugin/component/editor/model/nativenote/manager/EditorOperateMenu$3", "onClick", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        view2.setVisibility(((java.lang.Integer) arrayList2.get(0)).intValue());
+        yj0.a.f(view2, "com/tencent/mm/plugin/component/editor/model/nativenote/manager/EditorOperateMenu$3", "onClick", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        nx1.i iVar = jVar.f341294c;
+        if (iVar != null) {
+            com.tencent.mm.plugin.component.editor.EditorUI editorUI = (com.tencent.mm.plugin.component.editor.EditorUI) iVar;
+            nx1.b.e(editorUI.getContext(), nx1.d.q().m());
+            editorUI.Z6();
+        }
+        yj0.a.h(this, "com/tencent/mm/plugin/component/editor/model/nativenote/manager/EditorOperateMenu$3", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

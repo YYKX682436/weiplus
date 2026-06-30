@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/bte" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="查看当前XLog文件夹" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/by2" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="清空当前Xlog" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/js5" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="从Cache里转移Xlog" style="@style/kq" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

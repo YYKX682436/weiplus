@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/acz" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/jp9" android:animateLayoutChanges="true">
+        <com.tencent.mm.view.shadow.layout.WxShadowLinearLayout android:layout_gravity="center_vertical" android:id="@id/cpn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:blurRadius="@dimen/a0s" app:blurRadiusFactor="1.2" app:layoutShadowColor="@color/amu" app:layoutShadowRadius="@dimen/a0p">
+            <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:layout_gravity="center_vertical" android:id="@id/ad3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:i8="@dimen/a0p">
+                <View android:id="@id/ptz" android:background="@color/e" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <FrameLayout android:id="@id/co9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:layout_gravity="start|center" android:orientation="horizontal" android:id="@id/ad2" android:visibility="gone" android:layout_width="@dimen/a05" android:layout_height="match_parent">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ad1" android:layout_width="@dimen/a04" android:layout_height="@dimen/a03" android:src="@raw/icons_filled_arrow" app:fs="@color/an" />
+                </LinearLayout>
+            </com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout>
+        </com.tencent.mm.view.shadow.layout.WxShadowLinearLayout>
+        <View android:id="@id/d1a" android:layout_width="match_parent" android:layout_height="@dimen/a0n" />
+        <com.tencent.mm.view.shadow.layout.WxShadowLinearLayout android:id="@id/kmw" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="-20.0dp" app:blurRadius="@dimen/a0s" app:blurRadiusFactor="1.5" app:layoutShadowColor="@color/amu" app:layoutShadowRadius="18.0dp">
+            <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:id="@id/kmu" android:background="@drawable/el" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:layout_gravity="center_vertical" android:id="@id/acy" android:layout_width="@dimen/a06" android:layout_height="@dimen/a06" android:layout_margin="@dimen/bl" app:roundCorner="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/ad4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ad0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <com.tencent.mm.plugin.ball.view.CircleAnimateView android:id="@id/of7" android:layout_width="@dimen/a0l" android:layout_height="@dimen/a0l" />
+                    <com.tencent.mm.plugin.ball.view.CircleAnimateView android:id="@id/atd" android:layout_width="@dimen/a0l" android:layout_height="@dimen/a0l" />
+                    <com.tencent.mm.plugin.ball.view.CircleAnimateView android:id="@id/o60" android:visibility="gone" android:layout_width="@dimen/a0l" android:layout_height="@dimen/a0l" />
+                    <com.tencent.mm.plugin.ball.view.CircleAnimateView android:id="@id/gd7" android:visibility="gone" android:layout_width="@dimen/a0l" android:layout_height="@dimen/a0l" />
+                </FrameLayout>
+            </com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout>
+        </com.tencent.mm.view.shadow.layout.WxShadowLinearLayout>
+    </LinearLayout>
+</merge>

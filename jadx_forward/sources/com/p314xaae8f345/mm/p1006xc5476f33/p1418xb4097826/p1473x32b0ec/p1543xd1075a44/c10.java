@@ -1,0 +1,39 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44;
+
+/* loaded from: classes3.dex */
+public final class c10 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.m10 f199469d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ int f199470e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ r45.fr1 f199471f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ r45.xq1 f199472g;
+
+    public c10(com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.m10 m10Var, int i17, r45.fr1 fr1Var, r45.xq1 xq1Var) {
+        this.f199469d = m10Var;
+        this.f199470e = i17;
+        this.f199471f = fr1Var;
+        this.f199472g = xq1Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/finder/live/widget/FinderLiveVisitorGameTeamWidget$setupBottomSheetForNormalGameTeam$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        r45.fr1 fr1Var = this.f199471f;
+        r45.xq1 xq1Var = this.f199472g;
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.m10 m10Var = this.f199469d;
+        m10Var.b(new com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.b10(m10Var, this.f199470e, fr1Var, xq1Var));
+        m10Var.r();
+        yj0.a.h(this, "com/tencent/mm/plugin/finder/live/widget/FinderLiveVisitorGameTeamWidget$setupBottomSheetForNormalGameTeam$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

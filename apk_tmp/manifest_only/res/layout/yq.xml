@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/agv" android:layout_width="match_parent" android:layout_height="@dimen/ajt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/ah5" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/adg" android:gravity="end" android:id="@id/ctb" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/d7_" android:maxLines="2" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/aii" android:layout_toStartOf="@id/sls" android:layout_toEndOf="@id/vkg" />
+    <View android:id="@id/saq" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/aih" android:layout_toStartOf="@id/sls" android:layout_toEndOf="@id/vkg" />
+    <FrameLayout android:id="@id/sls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aih" android:layout_marginRight="@dimen/aih" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="@dimen/aih">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/crz" android:visibility="gone" android:text="@string/bod" style="@style/yj" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/d2_" android:visibility="gone" android:text="@string/x1" style="@style/xm" />
+    </FrameLayout>
+    <Button android:textSize="@dimen/ia" android:textColor="@color/vs" android:id="@id/mi1" android:background="@drawable/c2" android:layout_width="wrap_content" android:text="@string/hu" android:layout_centerVertical="true" android:layout_marginStart="@dimen/aih" android:layout_alignParentStart="true" style="@style/kn" />
+    <Button android:textSize="@dimen/ia" android:textColor="@color/vs" android:id="@id/vkg" android:background="@drawable/c2" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/aih" android:layout_marginRight="@dimen/aih" android:text="@string/on7" android:layout_centerVertical="true" android:layout_toEndOf="@id/mi1" android:layout_marginHorizontal="@dimen/aih" style="@style/kn" />
+</RelativeLayout>

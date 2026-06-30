@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/qua" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pym" android:background="@drawable/ckr" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/zx" android:id="@id/pyo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="8.0dp" android:text="@string/lhc" android:importantForAccessibility="no" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="8.0dp" android:layout_height="6.0dp" android:layout_marginRight="12.0dp" android:src="@raw/wallet_down_arrow" android:importantForAccessibility="no" app:fs="@color/FG_0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="left" android:id="@id/q2t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/qxv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/qua" android:overScrollMode="never" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include layout="@layout/de4" />
+    </FrameLayout>
+</RelativeLayout>

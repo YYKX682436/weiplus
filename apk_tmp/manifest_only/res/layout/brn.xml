@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/m7o" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ifq" android:background="@drawable/b74" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dd">
+        <FrameLayout android:id="@id/ifr" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9">
+                <ListView android:id="@id/ifl" android:background="@color/a07" android:paddingBottom="@dimen/dn" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxHeight="312.0dp" android:divider="@color/a07" android:dividerHeight="@dimen/dv" />
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:background="?gr" android:layout_width="match_parent" android:layout_height="@dimen/dr">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center|bottom" android:id="@id/ifk" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="@dimen/bo" android:layout_height="@dimen/dj" android:layout_marginBottom="@dimen/bl" android:src="@raw/icons_tipsbar_unfold" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/a07" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:id="@id/ifj" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/ifh" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/tk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sl" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ifg" android:background="@drawable/b7a" android:paddingLeft="@dimen/cn" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/dv" android:layout_centerHorizontal="true">
+                <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:layout_gravity="center_vertical" android:id="@id/ifn" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginEnd="@dimen/bl" app:logo_height="@dimen/cn" app:logo_mode="5" app:logo_width="@dimen/cn" />
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_0_5" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/ifo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在直播" android:singleLine="true" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4f" android:layout_width="@dimen/dv" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginRight="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:scaleType="fitCenter" android:contentDescription="@null" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_gravity="bottom" android:id="@id/aun" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</FrameLayout>

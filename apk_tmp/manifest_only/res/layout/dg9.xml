@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/q99" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/cgz" android:background="@color/ad7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/dfz" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MJSlidingTabLayout android:id="@id/q8z" android:background="@android:color/transparent" android:layout_width="0.0dp" android:layout_height="@dimen/dc" android:layout_weight="1.0" app:mj_indicator_color="@color/ac_" app:mj_indicator_height="2.0dp" app:mj_indicator_width_equal_title="true" app:mj_tab_margin_start="@dimen/c9" app:mj_tab_padding="@dimen/dv" app:mj_textSelectColor="@color/ac_" app:mj_textSize="14.0sp" app:mj_textUnselectColor="@color/ac9" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/ac_" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/qb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ln4" android:layout_marginEnd="@dimen/cn" />
+        </LinearLayout>
+        <View android:background="@color/acz" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <com.tencent.mm.mj_publisher.finder.widgets.NoScrollViewPager android:id="@id/q90" android:layout_width="match_parent" android:layout_height="@dimen/agn" />
+    </LinearLayout>
+</LinearLayout>

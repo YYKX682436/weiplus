@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.patmsg.ui.AvatarPatTipImageView android:gravity="center_horizontal" android:id="@id/m7e" android:src="@drawable/bhn" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:importantForAccessibility="no" style="@style/ou" />
+    <ImageView android:gravity="center" android:id="@id/m6x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eb" android:layout_alignLeft="@id/m7e" android:layout_alignTop="@id/m7e" />
+    <ImageView android:id="@id/m6z" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_alignRight="@id/m7e" android:layout_alignBottom="@id/m7e" />
+    <ImageView android:id="@id/m6y" android:visibility="gone" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/bmm" android:layout_alignRight="@id/m7e" android:layout_alignBottom="@id/m7e" />
+    <RelativeLayout android:id="@id/m7c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/m7e" android:layout_centerHorizontal="true">
+        <TextView android:id="@id/m7a" android:visibility="gone" android:layout_centerHorizontal="true" style="@style/ov" />
+        <TextView android:id="@id/m7b" android:paddingTop="@dimen/f" android:visibility="gone" android:layout_centerHorizontal="true" style="@style/ov" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/a7" android:id="@id/m7d" android:visibility="gone" android:layout_below="@id/m7c" android:layout_centerHorizontal="true" style="@style/ov" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/spk" android:visibility="gone" android:layout_width="18.659973dp" android:layout_height="14.0dp" android:layout_marginTop="@dimen/ais" android:src="@drawable/db6" android:layout_below="@id/m7c" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/ais" app:fs="@color/a9e" />
+</RelativeLayout>

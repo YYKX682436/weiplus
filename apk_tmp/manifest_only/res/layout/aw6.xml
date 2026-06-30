@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ihu" android:background="@drawable/a6g" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="52.0dp" android:minHeight="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ij0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hof" android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:src="@raw/wecoin_balance_icons" android:layout_centerVertical="true" android:layout_marginEnd="2.0dp" app:fs="@color/m" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/a1t" android:gravity="right" android:id="@id/op4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ii4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ho4" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="4.0dp" android:src="@raw/icons_filled_done" app:fs="@color/a1t" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/akp" android:gravity="center" android:id="@id/ol5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="10.0dp" android:textColor="@color/a1t" android:id="@id/opw" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

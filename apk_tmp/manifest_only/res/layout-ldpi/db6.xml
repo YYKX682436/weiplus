@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ae2" android:textColor="@color/a0c" android:gravity="center" android:id="@id/p6i" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="{title}" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/ae0" android:textColor="@color/a0c" android:gravity="center" android:id="@id/p6k" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j3" android:text="{title_tip}" android:layout_below="@id/p6i" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/a2y" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/p6j" android:padding="3.0dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="{error_tip}" android:layout_below="@id/p6k" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes5.dex */
+public class v52 extends com.tencent.mm.protobuf.e {
+    public v52() {
+        super(com.tencent.mm.protobuf.i.n(1, "live_id"), com.tencent.mm.protobuf.i.i(2, "width"), com.tencent.mm.protobuf.i.i(3, "height"), com.tencent.mm.protobuf.i.i(4, "video_fps"), com.tencent.mm.protobuf.i.i(5, "video_gop"), com.tencent.mm.protobuf.i.i(6, "video_bitrate"), com.tencent.mm.protobuf.i.i(7, "audio_bitrate"), com.tencent.mm.protobuf.i.i(8, "net_speed"), com.tencent.mm.protobuf.i.i(9, "video_cache"), com.tencent.mm.protobuf.i.i(10, "audio_cache"), com.tencent.mm.protobuf.i.i(11, "video_sum_cache_size"), com.tencent.mm.protobuf.i.i(12, "audio_video_play_interval"), com.tencent.mm.protobuf.i.i(13, "audio_video_recv_interval"), com.tencent.mm.protobuf.i.i(14, "audio_cache_threshold"), com.tencent.mm.protobuf.i.i(15, "net_jitter"), com.tencent.mm.protobuf.i.i(16, "quality_level"), com.tencent.mm.protobuf.i.i(17, "total_play_time_ms"), com.tencent.mm.protobuf.i.i(18, "total_wait_time_ms"), com.tencent.mm.protobuf.i.s(19, "wait_details", r45.ne2.class), com.tencent.mm.protobuf.i.i(20, "live_start_play_time_sec"), com.tencent.mm.protobuf.i.i(21, "first_frame_time_ms"), com.tencent.mm.protobuf.i.i(22, "connect_ms"), com.tencent.mm.protobuf.i.i(23, "rtt_ms"), com.tencent.mm.protobuf.i.i(24, "network_id"), com.tencent.mm.protobuf.i.u(25, "cdn_svr_ip"), com.tencent.mm.protobuf.i.i(26, "cdn_svr_port"), com.tencent.mm.protobuf.i.g(27, "cpu_usage_process"), com.tencent.mm.protobuf.i.g(28, "cpu_usage_device"), com.tencent.mm.protobuf.i.g(29, "trtc_up_loss"), com.tencent.mm.protobuf.i.g(30, "trtc_down_loss"), com.tencent.mm.protobuf.i.a(31, "ext_buf"), com.tencent.mm.protobuf.i.u(32, "tag_name"), com.tencent.mm.protobuf.i.i(33, "video_tag_type"));
+        this.__printBytes = true;
+    }
+}

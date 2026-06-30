@@ -1,0 +1,21 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd;
+
+/* loaded from: classes2.dex */
+public final class tu extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd.C15468xd6e8b5a4 f217593d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public tu(com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd.C15468xd6e8b5a4 c15468xd6e8b5a4) {
+        super(0);
+        this.f217593d = c15468xd6e8b5a4;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd.C15468xd6e8b5a4.P6(this.f217593d);
+        return jz5.f0.f384359a;
+    }
+}

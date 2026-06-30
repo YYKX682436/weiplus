@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_gravity="center|bottom" android:id="@id/fg5" android:layout_width="@dimen/dl" android:layout_height="@dimen/bo" app:ds="@dimen/bn">
+        <ImageView android:id="@id/ewg" android:background="@color/BW_97" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/f9" android:textColor="#e6ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/ti0" android:background="#66000000" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/e54" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <FrameLayout android:id="@id/fga" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d1">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0sp" android:textColor="#ffffff" android:textColorHint="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/icr" android:background="@null" android:padding="0.0dp" android:focusable="false" android:focusableInTouchMode="false" android:fadingEdgeLength="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/noj" android:cursorVisible="false" android:lines="1" android:inputType="none" android:textCursorDrawable="@drawable/a2d" android:requiresFadingEdge="vertical" />
+            <TextView android:textSize="14.0sp" android:textColor="#ccd2de" android:textColorHint="#ccd2de" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/ubf" android:background="@null" android:padding="0.0dp" android:focusable="false" android:focusableInTouchMode="false" android:fadingEdgeLength="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:hint="@string/op4" android:cursorVisible="false" android:lines="1" android:inputType="none" android:textCursorDrawable="@drawable/a2d" android:requiresFadingEdge="vertical" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

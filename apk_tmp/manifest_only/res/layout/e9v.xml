@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="true" android:clipToPadding="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveEmojiView android:id="@id/ua_" android:visibility="visible" android:layout_width="@dimen/bu" android:layout_height="@dimen/bu" android:foreground="@drawable/auo" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/uaa" android:background="@color/b" android:visibility="gone" android:layout_width="@dimen/bu" android:layout_height="@dimen/bu">
+        <ProgressBar android:layout_gravity="center" android:id="@id/ual" android:visibility="visible" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" style="@style/w9" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uaj" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/smile_filled" app:fs="@color/FG_3" />
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/FG_4" android:id="@id/uak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/npi" />
+    </LinearLayout>
+</FrameLayout>

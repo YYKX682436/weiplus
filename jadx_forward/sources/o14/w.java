@@ -1,0 +1,42 @@
+package o14;
+
+/* loaded from: classes9.dex */
+public class w implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2053xe98282e6.ActivityC17364x9169f957 f423856d;
+
+    public w(com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2053xe98282e6.ActivityC17364x9169f957 activityC17364x9169f957) {
+        this.f423856d = activityC17364x9169f957;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/setting/ui/fixtools/FixToolsUplogUI$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        java.lang.String str = com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2053xe98282e6.ActivityC17364x9169f957.f241609s;
+        com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2053xe98282e6.ActivityC17364x9169f957 activityC17364x9169f957 = this.f423856d;
+        activityC17364x9169f957.getClass();
+        java.util.Calendar calendar = java.util.Calendar.getInstance();
+        java.util.Calendar calendar2 = java.util.Calendar.getInstance();
+        boolean z17 = com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.f274522a;
+        long currentTimeMillis = ((java.lang.System.currentTimeMillis() / 86400000) * 86400000) + 57600000;
+        long j17 = currentTimeMillis - 1;
+        long j18 = currentTimeMillis - 691200000;
+        if (j18 <= 0) {
+            j18 = 0;
+        }
+        calendar.setTimeInMillis(j18);
+        calendar2.setTimeInMillis(j17);
+        com.p314xaae8f345.mm.ui.p2747xd1075a44.p2763xc515088e.o oVar = new com.p314xaae8f345.mm.ui.p2747xd1075a44.p2763xc515088e.o(activityC17364x9169f957.mo55332x76847179());
+        oVar.f293840n = new o14.a0(activityC17364x9169f957, j17);
+        oVar.d(calendar2.get(1), calendar2.get(2) + 1, calendar2.get(5));
+        oVar.f(calendar.get(1), calendar.get(2) + 1, calendar.get(5));
+        oVar.e(calendar2.get(1), calendar2.get(2) + 1, calendar2.get(5));
+        oVar.h();
+        yj0.a.h(this, "com/tencent/mm/plugin/setting/ui/fixtools/FixToolsUplogUI$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

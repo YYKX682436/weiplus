@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/jlw" android:background="@color/aay" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/jlv" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="center" android:id="@id/obp" android:paddingTop="@dimen/dj" android:paddingBottom="@dimen/db" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ijs" />
+        <TextView android:textSize="@dimen/hv" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="left|center" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ijr" />
+        <RelativeLayout android:id="@id/l2z" android:background="#fa9d3b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/l2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/ab0" android:ellipsize="end" android:gravity="left" android:id="@id/l2y" android:paddingLeft="@dimen/i_" android:paddingTop="@dimen/i_" android:paddingRight="4.0dp" android:paddingBottom="@dimen/i_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/l2x" />
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.listview.PullDownListView android:id="@android:id/list" android:background="@color/aay" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:layout_alignParentTop="true" android:overScrollMode="never" style="@style/js" />
+        <FrameLayout android:id="@id/l2v" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/BW_0_Alpha_0_3" android:id="@id/ktd" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/io6" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center|bottom" android:id="@id/g68" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/d7" android:text="@string/ww" style="@style/kr" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/BW_0_Alpha_0_3" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/ijq" />
+    </LinearLayout>
+</RelativeLayout>

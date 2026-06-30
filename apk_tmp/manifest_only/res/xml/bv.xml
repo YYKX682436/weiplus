@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <PreferenceTitleCategory android:key="settings_find_me_title" android:title="@string/iq4" />
+    <CheckBoxPreference android:key="settings_find_me_by_weixin" android:title="@string/zs" />
+    <CheckBoxPreference android:key="settings_find_me_by_mobile" android:title="@string/w7" />
+    <CheckBoxPreference android:key="settings_find_me_by_QQ" android:title="@string/xs" />
+    <CheckBoxPreference android:key="settings_find_me_by_google" android:title="@string/vh" />
+    <PreferenceTitleCategory android:key="settings_friend_verify" android:title="@string/iq3" />
+    <CheckBoxPreference android:key="settings_add_me_by_chatroom" android:title="@string/ip7" />
+    <CheckBoxPreference android:key="settings_add_me_by_qrcode" android:title="@string/ip9" />
+    <CheckBoxPreference android:key="settings_add_me_by_namecard" android:title="@string/ip8" />
+    <CheckBoxPreference android:key="settings_add_me_by_others" android:title="@string/p9o" />
+</PreferenceScreen>

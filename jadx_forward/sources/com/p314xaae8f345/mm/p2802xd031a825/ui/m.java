@@ -1,0 +1,7 @@
+package com.p314xaae8f345.mm.p2802xd031a825.ui;
+
+/* loaded from: classes9.dex */
+public interface m {
+    /* renamed from: onVisibleStateChange */
+    void mo26891xca4e600e(boolean z17);
+}

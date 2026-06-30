@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/cs" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/cs" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cs">
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/k0q" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/ezd" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/qk" android:id="@id/k0n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq1" />
+    </LinearLayout>
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/k0p" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cs" />
+</LinearLayout>

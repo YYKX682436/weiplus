@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/obv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:scaleType="centerCrop" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oc0" android:paddingLeft="16.0dp" android:paddingTop="12.0dp" android:paddingRight="16.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="15.0dp" android:textColor="@color/a84" android:ellipsize="end" android:id="@id/odf" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" style="@style/j3" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout android:orientation="vertical" android:id="@id/u2z" android:paddingBottom="4.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/oc0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

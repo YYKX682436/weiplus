@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nmj" android:background="@drawable/ft" android:layout_width="match_parent" android:layout_height="520.0dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/nmm" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/a9z" android:gravity="start|center" android:id="@id/nm7" android:layout_width="wrap_content" android:layout_height="@dimen/dj" android:minWidth="@dimen/dj" android:text="@string/sg" android:layout_centerVertical="true" android:paddingStart="@dimen/hf" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/k" android:textColor="@color/a9z" android:id="@id/nml" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j" android:text="@string/jma" android:layout_centerInParent="true" />
+            <Button android:textStyle="bold" android:textColor="@color/a73" android:id="@id/nmb" android:background="@drawable/jo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j" android:text="@string/v5" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginEnd="@dimen/hf" android:layout_alignParentEnd="true" style="@style/ks" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/nma" android:background="@drawable/fw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_marginStart="@dimen/hf" android:layout_marginEnd="@dimen/hf">
+            <ImageView android:id="@id/nm_" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/nm9" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ayf" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_alignParentEnd="true" />
+            <EditText android:textSize="@dimen/k" android:textColor="@color/a9z" android:textColorHint="@color/a7o" android:id="@id/nm8" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="8.0dp" android:hint="@string/jm8" android:singleLine="true" android:layout_centerVertical="true" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/b40" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/nm9" android:layout_toEndOf="@id/nm_" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/nmk" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/nmi" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/ab0" android:id="@id/nmf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dp" android:text="@string/jm9" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/nme" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dp" android:layout_centerHorizontal="true">
+                <ProgressBar android:id="@id/noh" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/hq" style="@style/wa" />
+                <TextView android:textSize="@dimen/k" android:textColor="@color/ab0" android:id="@id/nmd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jmb" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/nmh" android:paddingTop="@dimen/hf" android:paddingBottom="@dimen/hf" android:visibility="gone" android:fadingEdge="vertical" android:fadingEdgeLength="50.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:requiresFadingEdge="vertical" android:layout_marginStart="@dimen/hf" android:layout_marginEnd="@dimen/hf" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/nm6" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/nmj" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/f86" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/f83" android:visibility="gone" android:layout_width="@dimen/d_" android:layout_height="@dimen/d_" />
+    <RelativeLayout android:id="@id/b98" android:background="@color/UN_BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/b6y" android:background="@drawable/icon_live_lottery_card_bg" android:clickable="true" android:layout_width="320.0dp" android:layout_height="424.0dp" android:layout_centerInParent="true">
+            <include android:id="@id/m8k" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/am4" />
+            <include android:id="@id/kcz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/am3" />
+            <include android:id="@id/pmt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dv" android:layout_above="@id/au7" layout="@layout/atq" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/oy" android:gravity="center" android:id="@id/au7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/cz" android:text="@string/drs" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/cn" android:src="@raw/icons_outlined_close2" android:layout_toRightOf="@id/b6y" android:layout_alignTop="@id/b6y" app:fs="@color/an" />
+    </RelativeLayout>
+</FrameLayout>

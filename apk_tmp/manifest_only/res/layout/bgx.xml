@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.FoursquareRelativeLayout android:id="@id/root_view" android:background="@color/a0y" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/je6" android:background="@color/a0y" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" />
+    <ImageView android:id="@id/jec" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/ozf" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/ozg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f8" android:src="@raw/video_icon_in_gird" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/ab0" android:id="@id/ozh" android:paddingTop="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="--:--" android:maxLines="1" android:layout_toRightOf="@id/ozg" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/d6i" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f8" android:layout_marginBottom="@dimen/f8" android:src="@raw/photo_edit_mark" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/je0" android:background="@color/uj" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/jdi" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <CheckBox android:id="@id/jdh" android:background="@drawable/ahu" android:focusable="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" android:layout_marginTop="@dimen/hq" android:layout_marginRight="@dimen/hq" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</com.tencent.mm.ui.widget.FoursquareRelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/j2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/ag3" android:paddingTop="@dimen/j3" android:paddingBottom="@dimen/j3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/i_" android:layout_marginRight="@dimen/i_" android:minHeight="@dimen/j2">
+        <TextView android:textColor="@color/a9i" android:id="@android:id/title" android:paddingLeft="@dimen/hx" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxEms="6" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ix" />
+        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/j_" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/o6u" android:visibility="gone" android:scaleType="centerCrop" style="@style/py" />
+            <ImageView android:id="@id/o6v" android:visibility="gone" android:scaleType="centerCrop" style="@style/py" />
+            <ImageView android:id="@id/o6w" android:visibility="gone" android:scaleType="centerCrop" style="@style/py" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@drawable/b88" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/i_" android:layout_marginRight="@dimen/i_" />
+</LinearLayout>

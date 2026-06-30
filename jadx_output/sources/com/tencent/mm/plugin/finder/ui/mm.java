@@ -1,0 +1,47 @@
+package com.tencent.mm.plugin.finder.ui;
+
+/* loaded from: classes2.dex */
+public final class mm implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.ui.qm f129529d;
+
+    public mm(com.tencent.mm.plugin.finder.ui.qm qmVar) {
+        this.f129529d = qmVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        com.tencent.mm.view.RefreshLoadMoreLayout o17;
+        android.view.View f213435x;
+        com.tencent.mm.view.RefreshLoadMoreLayout o18;
+        android.view.View f213435x2;
+        com.tencent.mm.plugin.finder.ui.qm qmVar = this.f129529d;
+        com.tencent.mm.plugin.finder.feed.i0 i0Var = qmVar.f106424g;
+        android.view.View view = null;
+        android.view.View findViewById = (i0Var == null || (o18 = i0Var.o()) == null || (f213435x2 = o18.getF213435x()) == null) ? null : f213435x2.findViewById(com.tencent.mm.R.id.m6l);
+        if (findViewById != null) {
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+            arrayList.add(8);
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(findViewById, arrayList.toArray(), "com/tencent/mm/plugin/finder/ui/ShareRelPresenter$onLoadMoreEnd$3", "run", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            findViewById.setVisibility(((java.lang.Integer) arrayList.get(0)).intValue());
+            yj0.a.f(findViewById, "com/tencent/mm/plugin/finder/ui/ShareRelPresenter$onLoadMoreEnd$3", "run", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        }
+        com.tencent.mm.plugin.finder.feed.i0 i0Var2 = qmVar.f106424g;
+        if (i0Var2 != null && (o17 = i0Var2.o()) != null && (f213435x = o17.getF213435x()) != null) {
+            view = f213435x.findViewById(com.tencent.mm.R.id.ile);
+        }
+        if (view == null) {
+            return;
+        }
+        java.util.ArrayList arrayList2 = new java.util.ArrayList();
+        java.lang.ThreadLocal threadLocal2 = zj0.c.f473285a;
+        arrayList2.add(0);
+        java.util.Collections.reverse(arrayList2);
+        yj0.a.d(view, arrayList2.toArray(), "com/tencent/mm/plugin/finder/ui/ShareRelPresenter$onLoadMoreEnd$3", "run", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        view.setVisibility(((java.lang.Integer) arrayList2.get(0)).intValue());
+        yj0.a.f(view, "com/tencent/mm/plugin/finder/ui/ShareRelPresenter$onLoadMoreEnd$3", "run", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+    }
+}

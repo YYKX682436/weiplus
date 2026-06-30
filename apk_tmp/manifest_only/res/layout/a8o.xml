@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/BW_100" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.emoji.ui.v3.EmojiStoreV3SingleProductRecyclerView android:id="@id/mzg" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" />
+    <include android:id="@id/ilp" android:visibility="gone" layout="@layout/a8d" />
+</LinearLayout>

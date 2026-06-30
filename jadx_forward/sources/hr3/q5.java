@@ -1,0 +1,32 @@
+package hr3;
+
+/* loaded from: classes8.dex */
+public final class q5 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1954xed8e89a9.ui.ActivityC16846x5788f028 f365443d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ yz5.p f365444e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ pr3.c f365445f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public q5(com.p314xaae8f345.mm.p1006xc5476f33.p1954xed8e89a9.ui.ActivityC16846x5788f028 activityC16846x5788f028, yz5.p pVar, pr3.c cVar) {
+        super(0);
+        this.f365443d = activityC16846x5788f028;
+        this.f365444e = pVar;
+        this.f365445f = cVar;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        com.p314xaae8f345.mm.p670x38b72420.o oVar = this.f365443d.f235230f;
+        if (oVar != null) {
+            this.f365444e.mo149xb9724478(this.f365445f, oVar);
+        }
+        return jz5.f0.f384359a;
+    }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hrb" android:background="@color/YellowK" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.kidswatch.ui.login.KidsWatchHeadComponent android:id="@id/gxl" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/mc5" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@id/gxl">
+        <com.tencent.mm.ui.widget.InputPanelLinearLayout android:orientation="vertical" android:id="@id/hdb" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b75" android:background="@drawable/ai_" android:padding="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/df" android:layout_marginRight="@dimen/cz">
+                <TextView android:textSize="@dimen/h3" android:textColor="@color/a0d" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/g8a" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+                    <RelativeLayout android:id="@id/bu4" android:layout_width="@dimen/dr" android:layout_height="@dimen/dr">
+                        <ImageView android:id="@id/l7" android:visibility="visible" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bqt" android:layout_centerInParent="true" />
+                        <com.tencent.mm.ui.widget.RoundCornerImageView android:gravity="center_vertical" android:id="@id/a9n" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bhm" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+                        <LinearLayout android:background="@drawable/ai5" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    </RelativeLayout>
+                    <com.tencent.mm.ui.base.MMClearEditText android:textSize="@dimen/r" android:textColor="@color/a0d" android:textColorHint="@color/BW_0_Alpha_0_3_k" android:layout_gravity="bottom" android:id="@id/kb6" android:background="@drawable/bqc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dj" android:hint="@string/g8_" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/cn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+                    <com.tencent.mm.ui.base.MMClearEditText android:textSize="@dimen/r" android:textColor="@color/a0d" android:textColorHint="@color/BW_0_Alpha_0_3_k" android:id="@id/jmp" android:background="@drawable/bqc" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj" android:hint="@string/g89" android:inputType="phone" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:id="@id/had" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_marginEnd="@dimen/dv">
+                <ImageView android:layout_width="226.0dp" android:layout_height="121.0dp" android:src="@drawable/brc" />
+            </LinearLayout>
+            <View android:id="@id/auy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/atb" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/bu">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hum" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <CheckBox android:gravity="top" android:layout_gravity="top" android:id="@id/huk" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="0.55" android:scaleY="0.55" style="@style/hs" />
+                    <TextView android:textSize="@dimen/b3" android:textColor="@color/a0d" android:gravity="center" android:id="@id/hul" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="儿童微信使用条款" />
+                </LinearLayout>
+                <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/lrf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/g8b" style="@style/hq" />
+            </LinearLayout>
+        </com.tencent.mm.ui.widget.InputPanelLinearLayout>
+    </ScrollView>
+</RelativeLayout>

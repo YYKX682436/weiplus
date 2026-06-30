@@ -1,0 +1,44 @@
+package df5;
+
+/* loaded from: classes11.dex */
+public final class d0 extends df5.j0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final v11.k f232070a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final int f232071b;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d0(v11.k block, int i17, int i18, kotlin.jvm.internal.i iVar) {
+        super(null);
+        i17 = (i18 & 2) != 0 ? block.hashCode() : i17;
+        kotlin.jvm.internal.o.g(block, "block");
+        this.f232070a = block;
+        this.f232071b = i17;
+    }
+
+    @Override // df5.j0
+    public int a() {
+        return this.f232071b;
+    }
+
+    public boolean equals(java.lang.Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof df5.d0)) {
+            return false;
+        }
+        df5.d0 d0Var = (df5.d0) obj;
+        return kotlin.jvm.internal.o.b(this.f232070a, d0Var.f232070a) && this.f232071b == d0Var.f232071b;
+    }
+
+    public int hashCode() {
+        return (this.f232070a.hashCode() * 31) + java.lang.Integer.hashCode(this.f232071b);
+    }
+
+    public java.lang.String toString() {
+        return "CodeBlock(block=" + this.f232070a + ", contentHash=" + this.f232071b + ')';
+    }
+}

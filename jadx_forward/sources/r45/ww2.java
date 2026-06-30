@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes2.dex */
+public class ww2 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public ww2() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(1, "layoutId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(2, "titleWording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(3, "linkWording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(4, "linkAction"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.s(5, "object", com.p314xaae8f345.mm.p2496xc50a8ce6.p2497xc50a8b8b.C19792x256d2725.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.l(6, "objectAction"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.a(7, "cardBuffer"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(8, "layoutType"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(9, "withoutLink"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(10, "getRelatedListScene"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(11, "continueAtTheEnd"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(12, "endWording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(13, "endAction"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(14, "sub_title_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(15, dm.i4.f66865x76d1ec5a), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(16, "sessionBuffer"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(17, "inner_stream_end_txt_card", r45.rx2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(18, "link_action_info", r45.xw2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.s(19, "object_action_info", r45.xw2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(20, "end_action_info", r45.xw2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(21, "fetch_content_action_info", r45.xw2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(22, "refresh_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(23, "refresh_action_info", r45.xw2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(24, "continue_at_the_end_action_info", r45.xw2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(25, "total_object_count"));
+        this.f38874x227b759e = true;
+    }
+}

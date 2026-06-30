@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/joh" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/jog" android:layout_width="54.0dp" android:layout_height="54.0dp" android:layout_marginTop="48.0dp" android:src="@raw/icons_outlined_cellphone" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="22.0dp" android:id="@id/jol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/adl" android:layout_below="@id/jog" android:layout_centerHorizontal="true" style="@style/l5" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/jof" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginTop="48.0dp" android:layout_marginRight="32.0dp" android:layout_below="@id/jol">
+        <RelativeLayout android:layout_width="24.0dp" android:layout_height="24.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/wallet_phone_remittance_welcome_dot" android:layout_centerInParent="true" app:fs="@color/FG_0" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:id="@id/joj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ib" android:text="@string/gxj" android:includeFontPadding="false" android:lineSpacingExtra="8.0dp" style="@style/l5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/joi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="32.0dp" android:layout_below="@id/jof">
+        <RelativeLayout android:layout_width="24.0dp" android:layout_height="24.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/wallet_phone_remittance_welcome_dot" android:layout_centerInParent="true" app:fs="@color/FG_0" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:id="@id/jok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ib" android:text="@string/gxk" android:includeFontPadding="false" style="@style/l5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|bottom" android:layout_gravity="center_horizontal" android:id="@id/auj" android:paddingBottom="96.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="17.0dp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/joe" android:visibility="visible" android:layout_width="184.0dp" android:layout_height="40.0dp" android:text="@string/gxi" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kq" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/cw5" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h5n" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/clock_outlined" android:layout_marginEnd="@dimen/bl" app:fs="@color/FG_2" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/ci2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/e25" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/e25" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="4.0dp" app:fs="@color/FG_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/ci2" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="end|center" android:id="@id/cs5" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="@dimen/bl" android:src="@raw/close_cross" app:fs="@color/FG_2" />
+</LinearLayout>

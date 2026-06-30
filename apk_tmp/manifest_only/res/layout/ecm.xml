@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ugu" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.HardTouchableLayout android:layout_gravity="left" android:id="@id/ugv" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/c9" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bo" android:layout_marginEnd="@dimen/bo" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:tabBackground="@color/a9e">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="left" android:id="@id/ugw" android:layout_width="wrap_content" android:layout_height="match_parent" app:tabBackground="@color/a9e" app:jd="bdp" app:jk="0.0dp" app:jm="g7g" app:jn="@dimen/bl" app:jo="@dimen/bl" app:jp="@color/a9e" app:jq="@color/a0c" app:jt="@color/jj" />
+    </com.tencent.mm.view.HardTouchableLayout>
+    <com.tencent.mm.plugin.finder.view.FinderViewPager android:id="@id/ugx" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/ugv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/ths" android:background="@color/ah8" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.widget.PassThroughNestedScrollView android:id="@id/sui" android:scrollbars="none" android:fadingEdgeLength="@dimen/cz" android:layout_width="match_parent" android:layout_height="0.0dp" android:requiresFadingEdge="vertical" app:layout_constraintBottom_toTopOf="@id/su3" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/db" android:paddingBottom="@dimen/amf" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/suf" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:gravity="center" android:id="@id/suj" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/onx" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/suh" android:layout_width="@dimen/ci" android:layout_height="@dimen/ci" android:layout_marginTop="@dimen/cz" android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/su6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/su7" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/bl" android:src="@raw/checkmark_circle_regular" app:fs="@color/Brand_100" />
+                <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:gravity="center" android:id="@id/su8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" />
+            </LinearLayout>
+            <TextView android:textSize="15.0dp" android:textColor="@color/adg" android:gravity="center" android:id="@id/su4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" />
+            <View android:background="@color/k7" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/df" android:layout_marginRight="@dimen/d7" android:layout_marginHorizontal="@dimen/d7" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.finder.live.widget.PassThroughNestedScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/su3" android:layout_width="match_parent" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/aia" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Link_100" android:gravity="center" android:id="@id/su5" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/omb" />
+        <View android:layout_gravity="center_vertical" android:background="@color/BW_0_Alpha_0_2" android:layout_width="@dimen/bh" android:layout_height="@dimen/c9" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/c9" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Link_100" android:gravity="center" android:id="@id/sug" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/onr" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

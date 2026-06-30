@@ -1,0 +1,23 @@
+package com.tencent.mm.ui.chatting.presenter;
+
+/* loaded from: classes9.dex */
+public final class f5 implements db5.t4 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.ui.chatting.presenter.m5 f202213d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.ui.chatting.adapter.f0 f202214e;
+
+    public f5(com.tencent.mm.ui.chatting.presenter.m5 m5Var, com.tencent.mm.ui.chatting.adapter.f0 f0Var) {
+        this.f202213d = m5Var;
+        this.f202214e = f0Var;
+    }
+
+    @Override // db5.t4
+    public final void onMMMenuItemSelected(android.view.MenuItem menuItem, int i17) {
+        pt0.e0 e0Var = pt0.f0.f358209b1;
+        com.tencent.mm.ui.chatting.presenter.m5 m5Var = this.f202213d;
+        m5Var.m(menuItem.getItemId(), e0Var.n(m5Var.f202542e, this.f202214e.f198411d), 8);
+    }
+}

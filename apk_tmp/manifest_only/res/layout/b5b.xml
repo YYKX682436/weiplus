@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/iig" android:background="@drawable/aat" android:layout_width="match_parent" android:layout_height="@dimen/d7" android:layout_marginTop="@dimen/xu" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_add" android:layout_marginStart="@dimen/dv" app:fs="@color/FG_2" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/etx" android:layout_marginStart="@dimen/dv" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/r" android:textColor="@color/FG_1" android:id="@id/oow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/eum" android:layout_below="@id/iig" android:layout_alignStart="@id/iig" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pnr" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/d1" android:src="@raw/icons_outlined_info" android:layout_below="@id/iig" android:layout_marginStart="@dimen/bl" android:layout_toEndOf="@id/oow" app:fs="@color/FG_1" />
+    <View android:id="@id/ow8" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="@dimen/xc" android:layout_marginTop="@dimen/dv" android:layout_below="@id/oow" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" />
+</RelativeLayout>

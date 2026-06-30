@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_width="match_parent" android:layout_height="120.0dp" android:layout_marginTop="40.0dp" android:src="@raw/fix_tools_recover" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ngx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+            <TextView android:textSize="18.0dp" android:textColor="@color/a0c" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" android:text="@string/f_x" />
+            <Button android:id="@id/ngc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bf" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/bf" android:text="@string/f_y" style="@style/kq" />
+            <Button android:id="@id/gt6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bf" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/bf" android:text="@string/f_w" style="@style/kq" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/d2d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+            <TextView android:textSize="18.0dp" android:textColor="@color/a0c" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" android:text="@string/fa0" />
+            <Button android:id="@id/gt_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bf" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/bf" android:text="@string/f_z" style="@style/kq" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

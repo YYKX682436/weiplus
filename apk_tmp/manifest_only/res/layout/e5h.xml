@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/t8i" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/vm_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/oyx" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/icons_outlined_error" android:layout_centerHorizontal="true" app:fs="@color/adh" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/adh" android:id="@id/oyz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_below="@id/oyx" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/h2" android:textColor="#7d90a9" android:id="@id/vml" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_below="@id/oyz" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.media.live.LivePlayButton android:id="@id/smh" android:background="@drawable/d5_" android:layout_width="wrap_content" android:layout_height="@dimen/apc" android:layout_marginBottom="@dimen/f" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/f" android:layout_alignParentStart="true" />
+    <com.tencent.mm.ui.media.bizphoto.BizMediaDownloadText android:id="@id/smo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/apc" android:layout_marginBottom="@dimen/f" android:layout_alignParentBottom="true" android:layout_marginStart="12.0dp" android:layout_toEndOf="@id/smh" />
+</RelativeLayout>

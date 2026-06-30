@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/j8p" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/l9m" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/ag7">
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/la3" android:paddingTop="@dimen/dv" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.tencent.mm.view.RefreshLoadMoreLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/l9h" android:background="@color/c" android:paddingTop="132.0dp" android:paddingBottom="@dimen/bu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="52.0dp" android:layout_centerInParent="true">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/oao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lw8" style="@style/s4" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/oav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/el4" style="@style/s4" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/oai" android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:indeterminateDrawable="@drawable/avj" />
+    </FrameLayout>
+</FrameLayout>

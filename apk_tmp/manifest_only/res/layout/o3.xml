@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/awv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:layout_marginVertical="4.0dp" style="@style/x4" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/awu" android:paddingLeft="@dimen/f" android:paddingRight="@dimen/f" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="@dimen/hf" android:layout_marginBottom="@dimen/hf">
+        <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="24.0dp" android:layout_height="0.30000007dp" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/BW_0_Alpha_0_3" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/an6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ov" android:layout_marginRight="@dimen/ov" android:text="@string/anb" />
+        <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="24.0dp" android:layout_height="0.30000007dp" />
+    </LinearLayout>
+</LinearLayout>

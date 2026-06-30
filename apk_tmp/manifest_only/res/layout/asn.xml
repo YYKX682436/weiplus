@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:id="@id/lr1" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMore="true" app:enableRefresh="true">
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLiveSquareRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lq8" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/asm" />
+    </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

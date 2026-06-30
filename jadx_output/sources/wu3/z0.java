@@ -1,0 +1,36 @@
+package wu3;
+
+/* loaded from: classes10.dex */
+public final class z0 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.recordvideo.ui.editor.EditorInputView f449834d;
+
+    public z0(com.tencent.mm.plugin.recordvideo.ui.editor.EditorInputView editorInputView) {
+        this.f449834d = editorInputView;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.lang.String r17;
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/recordvideo/ui/editor/EditorInputView$9", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        com.tencent.mm.plugin.recordvideo.ui.editor.EditorInputView editorInputView = this.f449834d;
+        editorInputView.f156003r.setActivated(!r0.isActivated());
+        editorInputView.setHasBackground(editorInputView.f156003r.isActivated());
+        editorInputView.g();
+        android.widget.ImageView imageView = editorInputView.f156003r;
+        if (editorInputView.getHasBackground()) {
+            r17 = i65.a.r(editorInputView.getContext(), com.tencent.mm.R.string.f489953gi);
+            kotlin.jvm.internal.o.d(r17);
+        } else {
+            r17 = i65.a.r(editorInputView.getContext(), com.tencent.mm.R.string.f489956gl);
+            kotlin.jvm.internal.o.d(r17);
+        }
+        imageView.setContentDescription(r17);
+        yj0.a.h(this, "com/tencent/mm/plugin/recordvideo/ui/editor/EditorInputView$9", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

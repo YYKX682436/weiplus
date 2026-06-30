@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.brandservice.ui.widget.BizMaxSizeLinearLayout android:orientation="vertical" android:id="@id/sj0" android:background="@drawable/cy6" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/sif" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dp" android:textColor="@color/abw" android:id="@id/sik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginBottom="@dimen/bl" android:text="@string/yg" />
+            <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/sil" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/dv" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/abw" android:id="@id/sig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/bl" android:text="@string/w0" />
+            <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/sih" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/dv" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/abw" android:id="@id/sii" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/bl" android:text="浏览" />
+            <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/sij" android:paddingBottom="@dimen/cz" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/dv" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.tencent.mm.plugin.brandservice.ui.widget.BizMaxSizeLinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/f" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/mcm" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.ui.base.MMLimitedClearEditTextWithPhoto android:id="@id/m9y" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:maxLines="7" android:inputType="textMultiLine" app:hintToText="true" app:isFilterWhenExceed="true" app:showClearButton="false" app:textLimitLength="@integer/z" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/vo" android:id="@id/mnm" android:paddingLeft="@dimen/cn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/hnv" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/v3c" android:layout_marginTop="@dimen/dn" android:layout_marginBottom="@dimen/dn" android:text="@string/ya" style="@style/kr" />
+            <LinearLayout android:orientation="vertical" android:id="@id/dfl" android:background="@color/f" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

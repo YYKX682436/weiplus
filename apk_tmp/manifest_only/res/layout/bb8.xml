@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cgi" android:background="@color/aay" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@raw/force_notify_show_ui_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bu" />
+    <TextView android:textSize="@dimen/o" android:textStyle="bold" android:textColor="@color/fa" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37.0dp" android:text="@string/fek" />
+    <TextView android:textSize="@dimen/q" android:textColor="@color/fa" android:gravity="center" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:background="@color/a9e" android:paddingBottom="@dimen/bu" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <Button android:textColor="@color/aay" android:id="@id/bn" android:background="@drawable/ahr" android:layout_width="@dimen/cc" android:layout_height="@dimen/db" android:text="@string/fei" style="@style/kr" />
+        <Button android:id="@id/b5d" android:layout_width="@dimen/cc" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/cn" android:text="@string/fem" style="@style/kz" />
+    </LinearLayout>
+</LinearLayout>

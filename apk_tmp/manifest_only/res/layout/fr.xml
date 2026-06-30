@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/hy"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:form="http://schemas.android.com/apk/res-auto">
+    <ImageView style="@style/fh" />
+    <com.tencent.mm.plugin.appbrand.phonenumber.widget.MMFormVerifyCodeInputView android:id="@id/yv" android:focusableInTouchMode="false" android:layout_height="60.0dp" form:form_btn_title="@string/a3n" form:form_hint="@string/a3m" form:form_layout="@layout/c9l" form:form_title="@string/a3o" style="@style/j8" />
+    <com.tencent.mm.ui.base.MMFormInputView android:id="@id/yx" android:focusableInTouchMode="false" form:form_hint="@string/a3t" form:form_layout="@layout/c9k" form:form_title="@string/a3v" style="@style/j8" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60.0dp">
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/a0c" android:gravity="center" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/a3d" />
+        <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/yw" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView style="@style/fh" />
+    <Button android:enabled="false" android:layout_gravity="center" android:id="@id/yu" android:layout_marginTop="40.0dp" android:text="@string/a3k" style="@style/kr" />
+</LinearLayout>

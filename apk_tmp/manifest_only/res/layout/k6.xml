@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/kj">
+        <LinearLayout android:gravity="center_vertical" style="@style/ij">
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ai5" android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginBottom="10.0dp" android:src="@drawable/bgk" />
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal" android:id="@id/ai_" android:text="@string/agu" style="@style/jr" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" style="@style/ij">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/cjz" android:background="@drawable/aoq" android:layout_width="wrap_content" android:layout_height="50.0dp">
+                    <TextView android:textSize="15.0dp" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/cjw" android:layout_width="48.0dp" android:layout_height="wrap_content" android:text="@string/blj" android:singleLine="true" />
+                    <TextView android:textSize="8.0dp" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/ck1" android:layout_width="48.0dp" android:layout_height="wrap_content" android:text="@string/blk" android:singleLine="true" />
+                </LinearLayout>
+                <EditText android:id="@id/ai6" android:layout_height="50.0dp" android:layout_marginLeft="10.0dp" android:hint="@string/ahz" android:inputType="phone" style="@style/jq" />
+            </LinearLayout>
+            <Button android:textSize="20.0dp" android:id="@id/ahu" android:text="@string/afv" style="@style/kq" />
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/ai9" android:layout_marginLeft="6.0dp" android:layout_marginTop="12.0dp" style="@style/jo">
+                <CheckBox android:textSize="13.0dp" android:textColor="@color/a0c" android:id="@id/ai3" android:paddingLeft="25.0dp" android:checked="false" android:text="@string/agm" style="@style/di" />
+                <CheckBox android:textSize="13.0dp" android:textColor="@color/a0c" android:id="@id/ai4" android:paddingLeft="25.0dp" android:layout_marginTop="10.0dp" android:checked="false" android:text="@string/bgg" style="@style/di" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dp" android:id="@id/ahv" android:background="@drawable/cd0" android:padding="6.0dp" android:layout_marginTop="16.0dp" android:text="@string/afw" style="@style/ik" />
+            <Button android:id="@id/aif" android:visibility="gone" android:text="@string/ahs" style="@style/kx" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/ai7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agl" style="@style/hp" />
+    </LinearLayout>
+</LinearLayout>

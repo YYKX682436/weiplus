@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/db" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dp" android:textColor="@color/fa" android:id="@id/rqc" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:longClickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/p0f" style="@style/ho" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/fa" android:id="@id/tzx" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:longClickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/p0i" style="@style/ym" />
+    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/rqa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj">
+        <CheckBox android:id="@id/rq_" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/akd" android:layout_marginEnd="@dimen/bl" style="@style/im" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/fa" android:gravity="center_vertical" android:id="@id/rqb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msn" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

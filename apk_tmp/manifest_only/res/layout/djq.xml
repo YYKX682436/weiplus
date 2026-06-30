@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/q99" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/oq" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/ajd" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/e4u" android:layout_width="match_parent" android:layout_height="@dimen/bw" android:layout_marginBottom="@dimen/dq" app:layout_constraintBottom_toTopOf="@id/oq" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+    <FrameLayout android:id="@id/q3i" android:visibility="gone" android:layout_width="@dimen/c5" android:layout_height="@dimen/d7" app:layout_constraintBottom_toBottomOf="@id/oq" app:layout_constraintEnd_toEndOf="0">
+        <TextView android:textSize="@dimen/ja" android:id="@id/q2" android:text="@string/cg" android:drawableStart="@drawable/c1" style="@style/xq" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/hmo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/clo" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

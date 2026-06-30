@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/n8j" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/cks" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/n8n" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/d" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:id="@id/n8m" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/shortvideo_play_btn" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/s_h" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/rp8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/w_" />
+        <include layout="@layout/t5" />
+    </RelativeLayout>
+</FrameLayout>

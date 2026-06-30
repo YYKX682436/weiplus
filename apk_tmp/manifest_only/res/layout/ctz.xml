@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/n22" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/n45" android:layout_width="233.0dp" android:layout_height="132.0dp">
+        <FrameLayout android:id="@id/n44" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/n43" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/n64" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/n4i" android:visibility="gone" android:layout="@layout/cp7" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:layout_gravity="start|top" android:id="@id/ke" android:visibility="gone" android:layout="@layout/d1" android:layout_width="wrap_content" android:layout_height="21.0dp" android:layout_marginTop="6.0dp" android:layout_marginStart="6.0dp" />
+        <ViewStub android:id="@id/k6" android:layout="@layout/cz" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/n1q" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" android:src="@drawable/bpt" />
+        <ImageView android:id="@id/nhn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/ab0" android:gravity="center" android:id="@id/dhd" android:paddingBottom="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.8" />
+    </RelativeLayout>
+    <include android:id="@id/n3q" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginTop="136.0dp" layout="@layout/cop" />
+    <include android:id="@id/n3r" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginLeft="79.0dp" android:layout_marginTop="136.0dp" layout="@layout/cop" />
+    <include android:id="@id/n3s" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginLeft="158.0dp" android:layout_marginTop="136.0dp" layout="@layout/cop" />
+</RelativeLayout>

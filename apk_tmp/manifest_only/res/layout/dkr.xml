@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/qrp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/qxp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pod" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/qxp">
+        <include android:id="@id/qxr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" layout="@layout/dlg" />
+        <include android:id="@id/tmi" android:visibility="gone" layout="@layout/eap" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/qro" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/pod">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/cl_" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <com.tencent.mm.view.ratio.RatioLayout android:id="@id/f_s" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <include android:id="@id/qxs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="@id/f_s" layout="@layout/dkg" />
+        <ImageView android:id="@id/qv3" android:visibility="gone" android:layout_width="210.0dp" android:layout_height="86.0dp" android:src="@raw/icons_filled_new_start_pk" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <include android:id="@id/ewf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/ao6" />
+        <FrameLayout android:id="@id/ewe" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintWidth_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

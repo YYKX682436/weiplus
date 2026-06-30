@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ofx" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/bfv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:src="@raw/actionbar_quit_webview_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/b9a" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/BW_100_Alpha_0_8" android:ellipsize="end" android:id="@id/bga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="16" android:singleLine="true" style="@style/ie" />
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/BW_100_Alpha_0_5" android:layout_gravity="center_horizontal" android:id="@id/bg_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/bfw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/cn" android:src="@raw/actionbar_icon_light_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/w_" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/j8e" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ofx">
+        <com.tencent.mm.ui.KeyboardLinearLayout android:orientation="vertical" android:id="@id/bfn" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <com.tencent.mm.plugin.game.chatroom.view.ChatRoomStateView android:orientation="vertical" android:id="@id/bg9" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.tencent.mm.plugin.game.chatroom.channel.ChatChannelPage android:id="@id/bew" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/bg9" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bft" android:background="@drawable/m5" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_below="@id/bg9">
+                    <ImageView android:id="@id/kfw" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="12.0dp" android:scaleType="fitXY" />
+                    <TextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/kft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/kg5" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:scaleType="fitXY" />
+                </LinearLayout>
+                <View android:id="@id/keyboard_bg_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/auj" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/m7" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:textColorHint="@color/BW_100_Alpha_0_5" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/c6l" android:layout_width="wrap_content" android:layout_height="match_parent" android:hint="@string/flk" android:layout_weight="1.0" />
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/d_r" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/icons_filled_sticker" app:fs="@color/an" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:minWidth="48.0dp" android:minHeight="62.0dp">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/kol" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                            <ImageView android:layout_gravity="center_horizontal" android:id="@id/kom" android:background="@drawable/aug" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/chat_room_panel_icon" android:scaleType="fitCenter" />
+                            <TextView android:textSize="10.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/kon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/m3k" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/aug" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/game_play" android:scaleType="fitCenter" />
+                            <TextView android:textSize="10.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/m3l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/blm" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.tencent.mm.plugin.game.chatroom.view.GameChatCommentFooter android:id="@id/c76" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </com.tencent.mm.ui.KeyboardLinearLayout>
+        <com.tencent.mm.plugin.game.chatroom.view.JoinConfirmView android:orientation="vertical" android:id="@id/hop" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

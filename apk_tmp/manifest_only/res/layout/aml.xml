@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fd8" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/jzv" android:layout_width="match_parent" android:layout_height="0.0dp" android:nestedScrollingEnabled="true" app:layout_constraintBottom_toTopOf="@id/jz1" app:layout_constraintTop_toTopOf="0" />
+    <include android:id="@id/jz1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" layout="@layout/ami" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:layout_gravity="center_vertical" android:id="@id/qgx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cc" android:text="@string/lqn" android:layout_marginStart="@dimen/dv" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.MMProcessBar android:id="@id/s13" android:background="@drawable/akq" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/cc" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

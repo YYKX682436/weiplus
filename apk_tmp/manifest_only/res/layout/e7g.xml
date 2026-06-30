@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ta6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajw"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/gxy" android:background="@color/f" android:layout_width="match_parent" android:layout_height="@dimen/d1">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/gy1" android:background="@color/ah9" android:clipChildren="false" android:layout_width="@dimen/db" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/c9" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/tvd" android:background="@color/ah8" android:paddingLeft="16.0dp" android:paddingTop="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="always">
+        <TextView android:textSize="@dimen/r" android:textStyle="bold" android:textColor="@color/FG_0" android:id="@id/tvi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/o2d" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:id="@id/tvj" android:paddingTop="4.0dp" android:paddingBottom="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/o2e" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/tvg" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/f" android:layout_width="match_parent" android:layout_height="@dimen/dl" />
+</LinearLayout>

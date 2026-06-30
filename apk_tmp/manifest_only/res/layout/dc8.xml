@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerConstraintLayout android:background="@drawable/ck5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ds="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/n00" android:visibility="gone" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/q1h" android:background="#b3ffffff" android:visibility="gone" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:i8="@dimen/bi">
+        <TextView android:textSize="@dimen/c8" android:textColor="@color/an" android:background="@drawable/ck7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="缺货" android:layout_centerInParent="true" android:paddingStart="@dimen/bi" android:paddingEnd="@dimen/bi" />
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+    <RelativeLayout android:gravity="center" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/n00">
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/t" android:ellipsize="end" android:gravity="center" android:id="@id/q1b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/db" android:maxLines="2" android:paddingStart="@dimen/bn" android:paddingEnd="@dimen/bn" />
+    </RelativeLayout>
+</com.tencent.mm.ui.widget.RoundCornerConstraintLayout>

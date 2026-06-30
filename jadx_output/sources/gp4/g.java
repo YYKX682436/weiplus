@@ -1,0 +1,28 @@
+package gp4;
+
+/* loaded from: classes5.dex */
+public final class g extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ ju3.d0 f274408d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public g(ju3.d0 d0Var) {
+        super(1);
+        this.f274408d = d0Var;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        boolean booleanValue = ((java.lang.Boolean) obj).booleanValue();
+        ju3.d0 d0Var = this.f274408d;
+        if (booleanValue) {
+            ju3.d0.k(d0Var, ju3.c0.f301895p1, null, 2, null);
+            ju3.d0.k(d0Var, ju3.c0.B2, null, 2, null);
+        } else {
+            ju3.d0.k(d0Var, ju3.c0.f301913x1, null, 2, null);
+            ju3.d0.k(d0Var, ju3.c0.C2, null, 2, null);
+        }
+        return jz5.f0.f302826a;
+    }
+}

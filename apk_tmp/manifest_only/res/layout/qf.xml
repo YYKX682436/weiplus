@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/b99" android:background="@drawable/l0" android:layout_width="match_parent" android:layout_height="@dimen/qk" android:layout_marginTop="@dimen/hq">
+        <com.tencent.mm.plugin.card.widget.MemberCardTopCropImageView android:id="@id/b85" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/qk" />
+        <ImageView android:id="@id/b87" android:background="@drawable/bys" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/qk" />
+        <ImageView android:id="@id/b86" android:background="@drawable/byr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" android:scaleType="fitXY" android:layout_alignBottom="@id/pm9" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center" android:id="@id/b_y" android:background="@drawable/lc" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginLeft="@dimen/ql" android:layout_centerVertical="true">
+            <ImageView android:id="@id/b_w" android:layout_width="@dimen/qr" android:layout_height="@dimen/qr" android:src="@drawable/cbt" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/bcn" android:background="@drawable/lh" android:visibility="gone" android:layout_width="@dimen/qr" android:layout_height="@dimen/qr" android:layout_marginLeft="@dimen/ql" android:layout_centerVertical="true">
+            <ImageView android:id="@id/bcm" android:background="@drawable/la" android:layout_width="@dimen/qr" android:layout_height="@dimen/qr" android:src="@drawable/bz6" android:scaleType="fitCenter" android:maxWidth="@dimen/qr" android:maxHeight="@dimen/qr" android:layout_centerInParent="true" />
+            <View android:background="@drawable/la" android:layout_width="@dimen/qr" android:layout_height="@dimen/qr" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/qm" android:layout_marginRight="@dimen/f" android:layout_toRightOf="@id/b_y" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/j9" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/b8b" android:layout_marginBottom="@dimen/j8" android:singleLine="true" style="@style/dy" />
+            <TextView android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/bb0" android:layout_marginTop="@dimen/j8" android:singleLine="true" style="@style/dy" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/bb" android:ellipsize="end" android:gravity="center" android:id="@id/bb1" android:layout_marginLeft="@dimen/i_" android:layout_marginRight="@dimen/hf" android:maxLines="2" android:layout_centerInParent="true" style="@style/dy" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bbr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginRight="@dimen/hx" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:background="@drawable/l5" android:layout_width="match_parent" android:layout_height="@dimen/qk" />
+        <ImageView android:id="@id/b7p" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hi" android:src="@drawable/km" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/h1" android:textColor="@color/FG_0" android:id="@id/eni" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dnh" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:gravity="center_horizontal" android:id="@id/enh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/dng" android:layout_below="@id/eni" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ene" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bu" android:layout_marginBottom="@dimen/cn" android:layout_below="@id/enh" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz">
+        <CheckBox android:id="@id/enc" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="2.0dp" style="@style/im" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_0" android:id="@id/enf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" />
+    </LinearLayout>
+    <TextView android:id="@id/eng" android:layout_marginBottom="@dimen/df" android:text="@string/x1" android:layout_below="@id/ene" android:layout_centerHorizontal="true" style="@style/kr" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/a0m" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gy6" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:id="@id/aa8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aq7" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择可见范围" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/ca" android:id="@id/c9z" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:text="@string/v5" android:layout_alignParentEnd="true" style="@style/ks" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fcu" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/fcv" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_done" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:fs="@color/m" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部粉丝可见" android:layout_toRightOf="@id/fcv" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" />
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_toRightOf="@id/fcv" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/cn" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/qpq" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/qpr" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qps" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_done" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:fs="@color/m" />
+            <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="超级粉丝和指定等级可见" android:layout_toRightOf="@id/qps" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qpp" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_arrow" android:layout_centerVertical="true" android:rotation="-90.0" android:layout_alignParentEnd="true" app:fs="@color/FG_1" />
+            <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_toRightOf="@id/qps" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/cn" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/qp5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/db">
+            <TextView android:textSize="@dimen/cb" android:textColor="@color/Link_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="选择等级" android:layout_marginStart="@dimen/cz" />
+            <TextView android:textSize="@dimen/cb" android:textColor="@color/m" android:id="@id/qp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginStart="@dimen/cz" />
+            <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/cn" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/qq4" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qq5" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_done" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:fs="@color/m" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仅超级粉丝可见" android:layout_toRightOf="@id/qq5" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" />
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_toRightOf="@id/qq5" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/cn" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/vm1" android:layout_width="match_parent" android:layout_height="@dimen/ajs"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.blur.mask.BlurMaskView android:layout_gravity="start|center" android:id="@id/vm2" android:background="@drawable/d09" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginStart="@dimen/bl" />
+    <FrameLayout android:id="@id/vlz" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.blur.mask.BlurMaskView android:id="@id/vlx" android:background="@drawable/d09" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/df">
+            <com.tencent.mm.pluginsdk.ui.seekbar.SuspendableHeroSeekBarView android:id="@id/vmg" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:importantForAccessibility="no" />
+            <View android:id="@id/vm0" android:background="#4d000000" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginStart="7.5dp" android:layout_alignParentEnd="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.tencent.mm.ui.base.MMImageButton android:layout_gravity="right|center" android:id="@id/v1v" android:padding="12.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:contentDescription="@string/nf6" />
+</FrameLayout>

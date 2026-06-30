@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/s7o" android:background="@drawable/afn" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bn" android:paddingRight="@dimen/dv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.feed.RoundLinearLayout android:gravity="center_vertical" android:background="@drawable/cy4" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn" android:paddingVertical="@dimen/c9" app:corner="@dimen/dv">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/siw" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_info" app:fs="@color/FG_1" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/siv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:lines="1" />
+        <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/sis" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/cs2" app:fs="@color/a84" />
+    </com.tencent.mm.plugin.finder.feed.RoundLinearLayout>
+</FrameLayout>

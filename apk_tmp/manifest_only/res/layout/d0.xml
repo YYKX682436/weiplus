@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.sns.ad.widget.living.LivingDescBarLayout android:background="#4c000000" android:layout_width="match_parent" android:layout_height="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ka" android:layout_width="16.0dp" android:layout_height="16.0dp" android:scaleType="centerInside" android:layout_centerVertical="true" android:contentDescription="speaker icon" android:layout_marginStart="8.0dp" android:layout_marginEnd="6.0dp" />
+    <FrameLayout android:id="@id/k_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/ka">
+        <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="13.0dp" android:textColor="#e5ffffff" android:gravity="center_vertical" android:id="@id/k8" android:layout_width="match_parent" android:layout_height="17.0dp" android:maxLines="1" app:aq="12.0dp" app:ar="1.0dp" app:as="os_" />
+        <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="13.0dp" android:textColor="#e5ffffff" android:gravity="center_vertical" android:id="@id/k9" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="17.0dp" android:maxLines="1" app:aq="12.0dp" app:ar="1.0dp" app:as="os_" />
+    </FrameLayout>
+</com.tencent.mm.plugin.sns.ad.widget.living.LivingDescBarLayout>

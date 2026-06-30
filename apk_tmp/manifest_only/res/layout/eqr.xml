@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/c9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/adg" android:gravity="center" android:id="@id/u_i" android:background="@drawable/d_t" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" />
+            <TextView android:textSize="@dimen/r" android:textColor="@color/ahl" android:id="@id/u_k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/Link_100" android:id="@id/u_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nts" android:layout_marginStart="@dimen/d0" android:textFontWeight="500" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/r" android:textColor="@color/Orange_100" android:id="@id/u_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ntp" android:textFontWeight="500" />
+</LinearLayout>

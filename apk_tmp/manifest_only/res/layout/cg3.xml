@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="ConfigStorage" />
+        <com.tencent.mm.ui.anim.content.AnimSizeFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.MMEditText android:id="@id/imw" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/dn" android:hint="local_key" />
+        </com.tencent.mm.ui.anim.content.AnimSizeFrameLayout>
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/imz" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="local_value" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/imy" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:text="查询" android:layout_weight="1.0" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/imx" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:text="修改" android:layout_weight="1.0" style="@style/kq" />
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bo" android:layout_marginBottom="@dimen/cn" android:text="DynamicConfig" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/d5c" android:layout_width="match_parent" android:layout_height="@dimen/df" android:hint="dynamic_key" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/d5f" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="dynamic_value" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/d5e" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:text="查询" android:layout_weight="1.0" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/d5d" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:text="修改" android:layout_weight="1.0" style="@style/kq" />
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bo" android:layout_marginBottom="@dimen/cn" android:text="MMKV-setting" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/jmf" android:layout_width="match_parent" android:layout_height="@dimen/df" android:hint="mmkv_key" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/jmh" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="mmkv_value" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/jmi" android:layout_width="match_parent" android:layout_height="@dimen/bu" android:layout_marginTop="@dimen/cn" android:hint="values类型，1-int, 2,long, 3, string, 4,bool, 5,float, " />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/jmg" android:layout_width="120.0dp" android:layout_height="40.0dp" android:layout_marginTop="@dimen/cn" android:text="@string/x1" style="@style/kq" />
+    </LinearLayout>
+</ScrollView>

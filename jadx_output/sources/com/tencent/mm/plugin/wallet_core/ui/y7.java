@@ -1,0 +1,33 @@
+package com.tencent.mm.plugin.wallet_core.ui;
+
+/* loaded from: classes.dex */
+public class y7 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.wallet_core.ui.n8 f180814d;
+
+    public y7(com.tencent.mm.plugin.wallet_core.ui.n8 n8Var) {
+        this.f180814d = n8Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/wallet_core/ui/WalletPwdDialog$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        com.tencent.mm.plugin.wallet_core.ui.n8 n8Var = this.f180814d;
+        if (!n8Var.f180524g.isShown()) {
+            android.view.View view2 = n8Var.f180524g;
+            java.util.ArrayList arrayList2 = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+            arrayList2.add(0);
+            java.util.Collections.reverse(arrayList2);
+            yj0.a.d(view2, arrayList2.toArray(), "com/tencent/mm/plugin/wallet_core/ui/WalletPwdDialog$2", "onClick", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view2.setVisibility(((java.lang.Integer) arrayList2.get(0)).intValue());
+            yj0.a.f(view2, "com/tencent/mm/plugin/wallet_core/ui/WalletPwdDialog$2", "onClick", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        }
+        yj0.a.h(this, "com/tencent/mm/plugin/wallet_core/ui/WalletPwdDialog$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

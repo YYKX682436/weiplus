@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/t" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.recordvideo.plugin.parent.CameraKitRecordViewLayout android:id="@id/qzy" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/qzz" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+    <com.tencent.mm.plugin.palm.ui.PalmPrintVerifyMask android:id="@id/r01" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/r05" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_centerInParent="true" android:alpha="0.0">
+        <RelativeLayout android:id="@id/r04" android:focusable="false" android:clickable="false" android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_centerHorizontal="true" android:importantForAccessibility="no">
+            <com.tencent.mm.view.MMPAGView android:id="@id/r06" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+            <ImageView android:id="@id/r03" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cxa" android:importantForAccessibility="no" />
+            <ProgressBar android:id="@id/r00" android:padding="0.0dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="100.0dp" android:layout_height="100.0dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/cr0" android:layout_centerInParent="true" android:importantForAccessibility="no" />
+        </RelativeLayout>
+        <TextView android:textSize="22.0dp" android:textColor="#ccffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/r02" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginTop="0.0dp" android:layout_marginRight="32.0dp" android:minHeight="64.0dp" android:text="@string/m4n" android:layout_below="@id/r04" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/r0a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:importantForAccessibility="no">
+        <com.tencent.mm.view.MMPAGView android:id="@id/r0_" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:importantForAccessibility="no" />
+    </RelativeLayout>
+</RelativeLayout>

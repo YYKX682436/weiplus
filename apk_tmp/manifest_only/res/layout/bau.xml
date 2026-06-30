@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/q2" android:paddingLeft="@dimen/j" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="@dimen/i9" style="@style/ja"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/hhr" android:padding="@dimen/j8" android:layout_width="@dimen/h" android:layout_height="@dimen/h" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/hhc" android:paddingLeft="@dimen/hx" android:paddingRight="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/hje" android:layout_toRightOf="@id/hhr" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/ha" android:ellipsize="middle" android:id="@id/hjn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="我是很很很很长很长很长很长很长的名字" style="@style/j3" />
+        <TextView android:id="@id/hjf" android:paddingRight="@dimen/i_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/hjn" android:layout_alignParentLeft="true" style="@style/j2" />
+        <TextView android:id="@id/hjl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/hjf" android:layout_below="@id/hjn" style="@style/j2" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/hje" android:layout_width="@dimen/i9" android:layout_height="@dimen/i9" android:layout_alignParentRight="true">
+        <View android:layout_gravity="center_vertical" android:layout_width="1.0dp" android:layout_height="32.0dp" style="@style/fh" />
+        <CheckBox android:layout_gravity="center" android:id="@id/hjd" android:focusable="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" style="@style/im" />
+    </FrameLayout>
+</RelativeLayout>

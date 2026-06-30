@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/nqi" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="1:1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <ImageView android:id="@id/nqh" android:background="@color/ta" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/nqi" app:layout_constraintLeft_toLeftOf="@id/nqi" app:layout_constraintRight_toRightOf="@id/nqi" app:layout_constraintTop_toTopOf="@id/nqi" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/nqg" android:background="#5051aa38" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/nqi" app:layout_constraintLeft_toLeftOf="@id/nqi" app:layout_constraintRight_toRightOf="@id/nqi" app:layout_constraintTop_toTopOf="@id/nqi" />
+    <ImageView android:id="@id/nqj" android:background="@raw/shortvideo_play_btn" android:layout_width="@dimen/d2" android:layout_height="@dimen/d2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

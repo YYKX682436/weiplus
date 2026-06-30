@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.card.ui.v3.CardRefreshLoadMoreLayout android:orientation="vertical" android:id="@id/bw8" android:layout_width="match_parent" android:layout_height="match_parent" app:loadMoreLayout="@layout/bs5" app:refreshLayout="@layout/d0y">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/bw_" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.tencent.mm.plugin.card.ui.v3.CardRefreshLoadMoreLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bw6" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="96.0dp" android:src="@raw/icon_vip_empty" app:fs="@color/FG_2" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/at2" />
+    </LinearLayout>
+</FrameLayout>

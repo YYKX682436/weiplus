@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/an" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="EcsRichTextLabelView 测试页面" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+        <Button android:id="@id/smr" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="随机宽度" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+        <Button android:id="@id/smv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="重置宽度" android:layout_weight="1.0" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:id="@id/vie" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="当前宽度: match_parent" />
+    <TextView android:textSize="14.0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="选择测试数据:" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+        <Button android:id="@id/sn6" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="基础测试" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+        <Button android:id="@id/sna" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="优先折叠" android:layout_weight="1.0" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+        <Button android:id="@id/sn9" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="多行测试" android:layout_weight="1.0" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+        <Button android:id="@id/sn8" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="中英文混搭" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+        <Button android:id="@id/sn_" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Padding测试" android:layout_weight="1.0" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+        <Button android:id="@id/sn7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="行间距测试" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="测试区域:" />
+        <LinearLayout android:orientation="vertical" android:id="@id/szk" android:background="#f5f5f5" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="200.0dp" />
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="测试说明:" />
+        <TextView android:textSize="12.0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. 基础测试: 测试三个子文本的基本显示\n2. 优先折叠: 测试中间文本设置优先级后的折叠效果\n3. 多行测试: 测试多行文本的显示效果\n4. 中英文混搭: 测试中英文混合文本的折叠效果\n5. Padding测试: 测试在文本前后和中间添加不同宽度的padding\n6. 行间距测试: 测试不同行间距对多行文本显示的影响\n7. 随机宽度: 测试不同宽度下的显示效果" android:lineSpacingExtra="4.0dp" />
+    </LinearLayout>
+</LinearLayout>

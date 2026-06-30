@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|top" android:orientation="horizontal" android:id="@id/j35" android:background="@color/aaw" android:paddingLeft="@dimen/a4m" android:paddingTop="@dimen/hx" android:paddingRight="@dimen/a4m" android:paddingBottom="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/j_" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/j37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/j34" android:paddingBottom="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:src="@drawable/c_h" android:layout_toRightOf="@id/j37" android:layout_alignBottom="@id/j37" android:importantForAccessibility="no" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/x6" android:ellipsize="end" android:id="@id/j38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:singleLine="true" android:includeFontPadding="false" android:layout_below="@id/j37" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="right" android:id="@id/j31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/x6" android:ellipsize="end" android:gravity="right" android:id="@id/j32" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

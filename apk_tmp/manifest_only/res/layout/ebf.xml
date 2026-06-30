@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/usw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/ubi" android:clickable="true" android:layout_width="320.0dp" android:layout_height="512.0dp" app:ds="8.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/eb8" />
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/eb7" />
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/eb9" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/d7" android:src="@raw/icons_outlined_close2" app:fs="@color/BW_F_Alpha_0_5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/ubi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

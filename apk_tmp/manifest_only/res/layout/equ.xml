@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/u13" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/abw" android:gravity="center" android:id="@id/qbn" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bx" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/u0o" android:layout_marginTop="@dimen/dn" style="@style/xk" />
+    </LinearLayout>
+    <com.tencent.mm.wedrop.ui.view.PermissionAreaView android:layout_gravity="center" android:id="@id/upn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginHorizontal="@dimen/d7" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/ilw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/lf2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_marginBottom="@dimen/db">
+        <FrameLayout android:background="@drawable/d_u" android:padding="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/uvr" android:layout_width="@dimen/ci" android:layout_height="@dimen/ci" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/a84" android:gravity="center" android:id="@id/uvp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/d7" android:text="@string/ntd" android:layout_marginHorizontal="@dimen/d7" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/t9m" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:layout_marginHorizontal="@dimen/cz">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/exclamation_mark_circle_regular" app:fs="@color/a84" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/a84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nmv" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@raw/icons_outlined_refresh" android:layout_marginStart="@dimen/bl" app:fs="@color/Link_100" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/u82" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u83" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/dn" android:src="@raw/info_circle_regular" app:fs="@color/a84" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/abw" android:id="@id/u84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_marginBottom="@dimen/bl" android:text="@string/nms" android:layout_marginHorizontal="@dimen/cz" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/u81" android:layout_marginTop="@dimen/df" android:text="@string/nmr" style="@style/xl" />
+    </LinearLayout>
+</FrameLayout>

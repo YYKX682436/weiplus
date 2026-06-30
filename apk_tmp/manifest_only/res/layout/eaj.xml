@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerLinearLayout android:id="@id/tm3" android:background="@color/c" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="18.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:id="@id/tm5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dm8" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/tm4" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_more" app:fs="@color/FG_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.ui.widget.RoundCornerLinearLayout>

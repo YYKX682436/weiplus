@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center|bottom" android:id="@id/mbv" android:background="@drawable/ahh" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:minWidth="@dimen/c2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/mby" android:background="@drawable/aya" android:layout_width="@dimen/d7" android:layout_height="@dimen/d1" android:layout_marginStart="2.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/mbx" android:layout_width="10.0dp" android:layout_height="@dimen/cs" />
+    </FrameLayout>
+    <TextView android:textSize="15.0dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/mbu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="end|center" android:id="@id/mc0" android:background="@drawable/aya" android:layout_width="@dimen/d7" android:layout_height="@dimen/d1" android:layout_marginEnd="2.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/mbz" android:layout_width="10.0dp" android:layout_height="@dimen/cs" />
+    </FrameLayout>
+</FrameLayout>

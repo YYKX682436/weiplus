@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9">
+        <View android:layout_gravity="center_horizontal" android:id="@id/efp" android:background="@drawable/yb" android:visibility="visible" android:layout_width="188.0dp" android:layout_height="@dimen/dj" android:alpha="0.0" />
+        <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="20.0dp" android:textColor="@color/an" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/exc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dcm" />
+    </FrameLayout>
+    <com.tencent.mm.view.MMPAGView android:layout_gravity="center_horizontal" android:id="@id/rjr" android:visibility="gone" android:layout_width="@dimen/c0" android:layout_height="@dimen/c0" android:layout_marginTop="@dimen/d1" />
+</FrameLayout>

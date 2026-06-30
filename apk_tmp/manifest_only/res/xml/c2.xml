@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:newtip="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.base.preference.PluginTextPreference newtip:key="settings_about_vusertitle" />
+    <com.tencent.mm.plugin.setting.ui.setting.SelfVuserPreference newtip:key="settings_about_vuserinfo" />
+    <Preference newtip:key="settings_about_vuser_about" newtip:gc="@layout/byv" newtip:title="@string/bjc" />
+    <Preference newtip:key="settings_independent_password" newtip:gc="@layout/byv" newtip:title="@string/irf" />
+    <com.tencent.mm.ui.base.preference.SummaryTextPreference newtip:key="settings_no_pwd_title" newtip:title="@string/p_1" />
+    <com.tencent.mm.ui.base.preference.SummaryTextPreference newtip:key="settings_fingerprint_title" newtip:gc="@layout/byv" newtip:title="@string/p9g" />
+    <com.tencent.mm.ui.base.preference.IconPreference newtip:key="settings_voiceprint_title" newtip:gc="@layout/byv" newtip:title="@string/j0s" />
+    <com.tencent.mm.ui.base.preference.IconPreference newtip:key="settings_facedect_title" newtip:gc="@layout/byv" newtip:title="@string/c6y" />
+    <PreferenceSmallCategory />
+    <Preference newtip:key="settings_trust_friend" newtip:gc="@layout/byv" newtip:title="@string/j04" />
+    <Preference newtip:key="settings_manage_login_device" newtip:gc="@layout/byv" newtip:title="@string/isk" />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference newtip:key="settings_more_safe" newtip:path="more_sec_setting" newtip:title="@string/iti" />
+    <PreferenceSmallCategory />
+    <Preference newtip:key="settings_security_center" newtip:title="@string/ixx" />
+    <com.tencent.mm.ui.base.preference.TextPreference newtip:key="settings_security_center_tip" newtip:title="@string/ixy" />
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/vat" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/vas" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/vau" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="92.0dp">
+        <ImageView android:layout_gravity="end|top" android:id="@id/vaw" android:layout_width="163.0dp" android:layout_height="95.0dp" android:layout_marginTop="12.0dp" android:src="@drawable/db3" android:scaleType="fitCenter" android:layout_marginEnd="-76.0dp" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/vav" android:layout_width="38.0dp" android:layout_height="31.0dp" android:layout_marginTop="31.0dp" android:src="@drawable/db2" android:scaleType="fitCenter" android:layout_marginEnd="5.0dp" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/var" android:layout_width="63.0dp" android:layout_height="48.0dp" android:layout_marginTop="-8.0dp" android:src="@drawable/db1" android:scaleType="fitCenter" android:layout_marginEnd="3.0dp" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/vb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dp">
+            <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/vax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="14.0dp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/vb0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:layout_gravity="start|center" android:id="@id/vaz" android:layout_width="@dimen/yy" android:layout_height="@dimen/yy" android:layout_marginStart="@dimen/dv" app:ds="@dimen/bl">
+        <ImageView android:id="@id/vay" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+</merge>

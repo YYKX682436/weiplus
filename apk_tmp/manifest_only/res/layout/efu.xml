@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajw" android:paddingStart="@dimen/p" android:paddingEnd="@dimen/p"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/gxy" android:background="@drawable/cw5" android:paddingTop="@dimen/akd" android:paddingBottom="@dimen/akd" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/akd" android:paddingEnd="@dimen/akd">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_2" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/d15" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:src="@raw/arrow_regular_right" app:fs="@color/a84" app:layout_constraintBottom_toBottomOf="@id/obc" app:layout_constraintLeft_toRightOf="@id/obc" app:layout_constraintTop_toTopOf="@id/obc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

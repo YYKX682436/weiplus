@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ss8" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/e2g" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/chw" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="start|top" android:id="@id/bz2" android:paddingLeft="16.0dp" android:paddingTop="25.0dp" android:paddingRight="16.0dp" android:paddingBottom="41.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/bdf" app:fs="#ccffffff" />
+    </RelativeLayout>
+</FrameLayout>

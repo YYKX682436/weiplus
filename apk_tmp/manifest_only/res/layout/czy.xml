@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/hw9" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" layout="@layout/czw" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/m91" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/u9i" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="24.0dp" android:layout_height="24.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.3" style="@style/w_" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ij3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="@dimen/bo" android:layout_centerInParent="true">
+        <TextView android:textSize="15.0dp" android:textColor="@color/a0c" android:layout_gravity="center_horizontal" android:id="@id/omu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jxi" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/iis" android:background="@drawable/bto" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:paddingStart="@dimen/cs" android:paddingEnd="@dimen/cz">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_add" app:fs="@color/m" />
+            <TextView android:textSize="17.0dp" android:textColor="@color/m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jwv" android:layout_marginStart="@dimen/bl" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:background="@color/jg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/knz" android:background="@color/jg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/a9w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/n0c" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/n0b" android:background="@color/jg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/knz" android:layout_marginEnd="@dimen/cn" />
+    </FrameLayout>
+    <ListView android:id="@id/mil" android:background="@color/jg" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/a9e" android:dividerHeight="0.0px" android:layout_below="@id/n0c" />
+    <com.tencent.mm.pluginsdk.ui.MultiSelectContactView android:id="@id/cek" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/n0c" app:viewStyle="1" />
+    <ImageView android:id="@id/mqg" android:background="@drawable/c1d" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/cek" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/kcl" android:background="@color/jg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/cek">
+        <TextView android:textColor="@color/ab0" android:id="@id/kcj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/gqw" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a09" android:gravity="center_vertical" android:id="@id/mij" android:background="#f2ebebeb" android:padding="@dimen/i_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ayf" android:drawablePadding="@dimen/i_" android:layout_below="@id/cek" />
+</RelativeLayout>

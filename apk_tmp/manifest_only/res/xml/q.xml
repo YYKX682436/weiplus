@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.profile.ui.HelperHeaderPreference android:key="contact_info_header_helper" android:gc="@layout/a20" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_plugin_view" android:gc="@layout/byv" android:title="@string/bdu" />
+    <Preference android:key="contact_info_plugin_outsize" android:gc="@layout/byv" android:title="@string/bdm" />
+    <Preference android:key="contact_info_plugin_black" android:gc="@layout/byv" android:title="@string/bdl" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_plugin_install" android:gc="@layout/bl_" android:title="@string/iwn" />
+    <Preference android:key="contact_info_plugin_uninstall" android:gc="@layout/bt3" android:title="@string/iwr" />
+    <PreferenceCategory />
+</PreferenceScreen>

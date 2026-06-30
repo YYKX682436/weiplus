@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/q2" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/o7j" android:background="@color/a" android:paddingLeft="@dimen/bf" android:paddingRight="@dimen/d" android:layout_width="match_parent" android:text="@string/fbo" style="@style/jt" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dr" android:paddingStart="@dimen/cn">
+        <ImageView android:id="@id/a9o" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@drawable/bhm" android:layout_centerVertical="true" />
+        <TextView android:ellipsize="end" android:id="@id/o_5" android:visibility="gone" android:layout_marginTop="-3.0dp" android:layout_marginRight="-3.0dp" android:singleLine="true" android:layout_alignTop="@id/a9o" android:layout_alignEnd="@id/a9o" style="@style/ry" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/fa" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/civ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cs" android:minWidth="@dimen/df" android:maxLines="1" android:singleLine="true" android:layout_alignTop="@id/a9o" android:layout_marginStart="@dimen/c9" android:layout_toStartOf="@id/azj" android:layout_toEndOf="@id/a9o" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/tk" android:ellipsize="end" android:id="@id/cua" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:maxWidth="280.0dp" android:maxLines="1" android:singleLine="true" android:layout_below="@id/civ" android:paddingEnd="@dimen/cn" android:layout_toStartOf="@id/azj" android:layout_alignStart="@id/civ" />
+        <Button android:id="@id/azj" android:maxWidth="@dimen/bu" android:text="@string/jvx" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" style="@style/mn" />
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dl" />
+    </RelativeLayout>
+</LinearLayout>

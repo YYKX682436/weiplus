@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/o92" android:background="@color/f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_0" android:id="@id/o8z" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f08" android:paddingStart="@dimen/cs" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/qk" android:id="@id/o90" android:paddingTop="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f0_" android:paddingStart="@dimen/cs" android:paddingEnd="@dimen/cs" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/o91" android:paddingLeft="@dimen/cb" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/o8z" />
+</androidx.constraintlayout.widget.ConstraintLayout>

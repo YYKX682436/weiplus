@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/duw" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/abd" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/f0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gj">
+        <include android:visibility="gone" layout="@layout/e4z" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/dv6" android:src="@drawable/bi6" android:layout_alignParentEnd="true" style="@style/gh" />
+                <TextView android:id="@id/dwp" android:text="{title}" android:layout_marginEnd="@dimen/ev" android:layout_toStartOf="@id/dv6" android:layout_alignParentStart="true" style="@style/go" />
+            </RelativeLayout>
+            <include layout="@layout/abg" />
+            <include layout="@layout/abf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="center" android:id="@id/mmq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/j3" android:text="@string/iio" android:singleLine="false" />
+    <FrameLayout android:id="@id/d9b" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.base.MMLimitedClearEditText android:id="@id/mmp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:inputType="textMultiLine" app:hintToText="true" app:isFilterWhenExceed="true" app:showClearButton="false" app:textLimitLength="@integer/a0" />
+    </FrameLayout>
+</LinearLayout>

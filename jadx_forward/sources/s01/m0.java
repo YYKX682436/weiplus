@@ -1,0 +1,57 @@
+package s01;
+
+/* loaded from: classes4.dex */
+public class m0 extends com.p314xaae8f345.mm.p944x882e457a.m1 implements com.p314xaae8f345.mm.p971x6de15a2e.l0 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public com.p314xaae8f345.mm.p944x882e457a.u0 f483435d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final com.p314xaae8f345.mm.p944x882e457a.o f483436e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public java.lang.String f483437f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final java.lang.Object f483438g;
+
+    public m0(java.lang.String str, java.lang.String str2, java.util.LinkedList linkedList, java.lang.Object obj) {
+        com.p314xaae8f345.mm.p944x882e457a.l lVar = new com.p314xaae8f345.mm.p944x882e457a.l();
+        lVar.f152197a = new r45.tz3();
+        lVar.f152198b = new r45.uz3();
+        lVar.f152199c = "/cgi-bin/mmocbiz-bin/initiatebizchat";
+        lVar.f152200d = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1059x60b7c31.p1095x62f6fe4.k2.f34491x366c91de;
+        lVar.f152201e = 0;
+        lVar.f152202f = 0;
+        com.p314xaae8f345.mm.p944x882e457a.o a17 = lVar.a();
+        this.f483436e = a17;
+        r45.tz3 tz3Var = (r45.tz3) a17.f152243a.f152217a;
+        tz3Var.f468412d = str;
+        tz3Var.f468413e = str2 == null ? "" : str2;
+        tz3Var.f468414f = linkedList;
+        this.f483438g = obj;
+    }
+
+    @Override // com.p314xaae8f345.mm.p944x882e457a.m1
+    /* renamed from: doScene */
+    public int mo807x6c193ac1(com.p314xaae8f345.mm.p971x6de15a2e.s sVar, com.p314xaae8f345.mm.p944x882e457a.u0 u0Var) {
+        this.f483435d = u0Var;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.NetSceneInitiateBizChat", "do scene");
+        return mo9409x10f9447a(sVar, this.f483436e, this);
+    }
+
+    @Override // com.p314xaae8f345.mm.p944x882e457a.m1
+    /* renamed from: getType */
+    public int mo808xfb85f7b0() {
+        return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1059x60b7c31.p1095x62f6fe4.k2.f34491x366c91de;
+    }
+
+    @Override // com.p314xaae8f345.mm.p971x6de15a2e.l0
+    /* renamed from: onGYNetEnd */
+    public void mo804x5f9cdc6f(int i17, int i18, int i19, java.lang.String str, com.p314xaae8f345.mm.p971x6de15a2e.v0 v0Var, byte[] bArr) {
+        com.p314xaae8f345.mm.p944x882e457a.u0 u0Var = this.f483435d;
+        if (u0Var != null) {
+            u0Var.mo815x76e0bfae(i18, i19, str, this);
+        }
+    }
+}

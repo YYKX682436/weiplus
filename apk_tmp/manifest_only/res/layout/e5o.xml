@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="62.0dp" android:layout_height="wrap_content" android:layout_marginEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/l74" android:layout_width="62.0dp" android:layout_height="62.0dp" android:scaleType="centerCrop" app:i8="@dimen/bn" />
+    <TextView android:textSize="@dimen/c9" android:textColor="#e5000000" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/l7a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:maxLines="1" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l51" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dp" android:textColor="#e5000000" android:id="@id/v35" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/UN_BW_0_Alpha_0_3" android:ellipsize="end" android:id="@id/uf7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="2.0dp" />
+    </LinearLayout>
+</LinearLayout>

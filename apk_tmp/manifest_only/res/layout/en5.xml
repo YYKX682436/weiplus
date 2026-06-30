@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="64.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/vi8" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_marginTop="12.0dp" android:text="@string/h8h" android:layout_weight="1.0" android:layout_marginStart="24.0dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hi" android:layout_marginTop="38.0dp" android:layout_marginRight="@dimen/hi">
+                        <ImageView android:id="@id/hk8" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="8.0dp" android:src="@raw/login_app_default_avatar" />
+                        <TextView android:textSize="15.0dp" android:textColor="@color/aaj" android:layout_gravity="center" android:id="@id/u6u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:maxLines="2" />
+                        <TextView android:textSize="15.0dp" android:textColor="@color/aaj" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/h8f" />
+                    </LinearLayout>
+                    <TextView android:textSize="22.0dp" android:textColor="@color/a0c" android:layout_gravity="start" android:id="@id/olw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hi" android:layout_marginTop="18.0dp" android:layout_marginRight="@dimen/hi" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/uc0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hi" android:layout_marginTop="4.0dp">
+                        <include layout="@layout/cik" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:id="@id/aur" android:background="@drawable/j0" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="96.0dp">
+        <Button android:id="@id/slq" android:text="@string/h84" style="@style/kr" />
+        <Button android:id="@id/sm6" android:layout_marginTop="@dimen/cn" android:text="@string/h8_" style="@style/kz" />
+    </LinearLayout>
+</LinearLayout>

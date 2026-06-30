@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/d9" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/BW_0_Alpha_0_3" android:ellipsize="end" android:gravity="center" android:id="@id/dj3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="999+" android:singleLine="true" style="@style/kd" />
+        <ImageView android:id="@id/dj2" android:scaleType="center" android:layout_below="@id/dj3" style="@style/fw" />
+        <ProgressBar android:id="@id/dj6" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:indeterminateDrawable="@drawable/avm" android:layout_centerInParent="true" style="@style/fw" />
+    </RelativeLayout>
+</merge>

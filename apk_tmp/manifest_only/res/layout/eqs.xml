@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/a9e" android:clipChildren="false" android:clipToPadding="false" android:layout_width="277.0dp" android:layout_height="@dimen/d4" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:layout_marginHorizontal="@dimen/dv" android:clipToOutline="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.shadow.layout.WxShadowLinearLayout android:layout_gravity="center_horizontal" android:background="@color/a9e" android:layout_width="@dimen/an2" android:layout_height="@dimen/cx" app:blurRadius="32.0dp" app:blurRadiusFactor="1.5" app:layoutShadowColor="#30000000" app:layoutShadowRadius="12.0dp" />
+    <FrameLayout android:layout_gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="-6.5dp" android:translationY="-26.0dp">
+        <ImageView android:layout_gravity="left" android:id="@id/ut9" android:visibility="gone" android:layout_width="277.0dp" android:layout_height="314.0dp" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/cpv" android:background="@drawable/d9o" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/ut8" android:layout_width="@dimen/ci" android:layout_height="@dimen/akr" android:foreground="@drawable/d9p" android:scaleType="centerCrop" app:i8="@dimen/c9" />
+        <com.tencent.mm.ui.MMImageView android:layout_gravity="center_horizontal" android:id="@id/ut7" android:visibility="gone" android:layout_width="@dimen/bo" android:layout_height="@dimen/bo" android:layout_marginTop="@dimen/dm" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/abw" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ut1" android:visibility="gone" android:layout_width="@dimen/amm" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cs" android:layout_marginTop="@dimen/akq" android:layout_marginRight="@dimen/cs" android:maxLines="2" android:layout_marginHorizontal="@dimen/cs" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/a84" android:gravity="center" android:layout_gravity="center|top" android:id="@id/ut6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/ajz" android:layout_marginRight="@dimen/cn" android:layout_marginHorizontal="@dimen/cn" />
+</FrameLayout>

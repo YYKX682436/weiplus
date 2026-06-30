@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/p0l" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/h88" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="@dimen/k" android:textColor="#ccf2f2f2" android:id="@id/oyr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.tencent.mm.ui.widget.MMPinProgressBtn android:id="@id/p01" android:visibility="gone" android:layout_width="@dimen/a7m" android:layout_height="@dimen/a7m" android:layout_centerInParent="true" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/ozc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/w_" />
+    <TextView android:textColor="@color/a2y" android:id="@id/p0r" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/aay" />
+    <ImageView android:id="@id/oy5" android:visibility="gone" android:layout_width="@dimen/a2m" android:layout_height="@dimen/a2l" android:layout_marginLeft="12.0dp" android:layout_marginTop="22.0dp" android:layout_marginBottom="22.0dp" android:src="@raw/media_preview_btn_close" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/cna" android:paddingBottom="@dimen/d7" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/a2k" android:layout_alignParentBottom="true">
+        <include android:id="@id/oz2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_alignParentBottom="true" layout="@layout/bk9" />
+    </RelativeLayout>
+</RelativeLayout>

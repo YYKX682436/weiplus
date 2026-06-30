@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/frg" android:background="@drawable/a_o" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/i0_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/pn5" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+        <ImageView android:id="@id/u5e" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+        <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="12.0dp" android:textColor="@color/aaz" android:id="@id/pn6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="12.0dp" android:textColor="@color/aaz" android:id="@id/pna" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="" android:singleLine="true" android:layout_toRightOf="@id/i0_" android:layout_centerVertical="true" />
+    <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="12.0dp" android:textColor="@color/q4" android:id="@id/pnb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toRightOf="@id/pna" android:layout_centerVertical="true" />
+    <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="12.0dp" android:textColor="@color/q4" android:id="@id/vpc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="" android:singleLine="true" android:layout_toRightOf="@id/pnb" android:layout_centerVertical="true" />
+    <HorizontalScrollView android:id="@id/pn_" android:focusable="false" android:visibility="gone" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/bj" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/i0_" android:layout_centerVertical="true" android:overScrollMode="never" android:requiresFadingEdge="horizontal">
+        <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="12.0dp" android:textColor="@color/aaz" android:id="@id/pn9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    </HorizontalScrollView>
+</RelativeLayout>

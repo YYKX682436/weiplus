@@ -1,0 +1,246 @@
+package ds2;
+
+/* loaded from: classes2.dex */
+public class b0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final yr2.k f242853a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final java.util.concurrent.locks.ReentrantLock f242854b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final java.util.HashMap f242855c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final java.util.LinkedList f242856d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final java.lang.String f242857e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final java.util.concurrent.ConcurrentLinkedQueue f242858f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final java.lang.String f242859g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final java.util.concurrent.atomic.AtomicBoolean f242860h;
+
+    public b0(yr2.k model, java.lang.String sceneTag) {
+        kotlin.jvm.internal.o.g(model, "model");
+        kotlin.jvm.internal.o.g(sceneTag, "sceneTag");
+        this.f242853a = model;
+        this.f242854b = new java.util.concurrent.locks.ReentrantLock();
+        this.f242855c = new java.util.HashMap();
+        this.f242856d = new java.util.LinkedList();
+        this.f242857e = "";
+        com.tencent.mm.plugin.finder.storage.t70.f127590a.X2();
+        java.util.concurrent.ConcurrentLinkedQueue concurrentLinkedQueue = new java.util.concurrent.ConcurrentLinkedQueue();
+        this.f242858f = concurrentLinkedQueue;
+        this.f242859g = "FVPW1_" + sceneTag + '_' + hashCode();
+        concurrentLinkedQueue.add(new ds2.i(this));
+        this.f242860h = new java.util.concurrent.atomic.AtomicBoolean(false);
+    }
+
+    public final cs2.p a(java.lang.String str, boolean z17, java.lang.String str2) {
+        return (cs2.p) f("cancel", new ds2.s(this, str, z17, str2));
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r17v0 */
+    /* JADX WARN: Type inference failed for: r17v1, types: [java.util.concurrent.locks.ReentrantLock] */
+    /* JADX WARN: Type inference failed for: r17v2, types: [mn2.g4] */
+    public final int b(cs2.p pVar) {
+        ?? r17;
+        java.lang.String str;
+        java.util.concurrent.locks.ReentrantLock reentrantLock = this.f242854b;
+        reentrantLock.lock();
+        try {
+            java.lang.String string = pVar.f222088e2.f330002e.getString(9);
+            if (string == null) {
+                string = "";
+            }
+            boolean o17 = r26.i0.o(this.f242857e, string, false, 2, null);
+            java.util.concurrent.ConcurrentLinkedQueue concurrentLinkedQueue = this.f242858f;
+            java.lang.String str2 = this.f242859g;
+            mn2.g4 g4Var = pVar.f222088e2;
+            if (o17) {
+                com.tencent.mars.xlog.Log.i(str2, "[enqueue] is focused task " + pVar + " just return.");
+                java.util.Iterator it = concurrentLinkedQueue.iterator();
+                while (it.hasNext()) {
+                    vr2.i iVar = (vr2.i) it.next();
+                    java.lang.String string2 = g4Var.f330002e.getString(9);
+                    if (string2 == null) {
+                        string2 = "";
+                    }
+                    iVar.h(string2, pVar);
+                }
+                reentrantLock.unlock();
+                return -1;
+            }
+            so2.i3 c17 = cu2.x.c(cu2.x.f222449a, pVar.f222092i2, false, false, false, 14, null);
+            java.util.Iterator it6 = concurrentLinkedQueue.iterator();
+            while (it6.hasNext()) {
+                vr2.i iVar2 = (vr2.i) it6.next();
+                java.lang.String field_mediaId = c17.field_mediaId;
+                kotlin.jvm.internal.o.f(field_mediaId, "field_mediaId");
+                iVar2.g(field_mediaId, c17.w0(), pVar.V1, pVar.k(), pVar.field_requestVideoFormat == 1 ? "H264" : "H265", pVar);
+                c17 = c17;
+            }
+            so2.i3 i3Var = c17;
+            long[] jArr = new long[3];
+            ((com.tencent.mars.cdn.CdnManager) com.tencent.mars.MarsContext.getManager(com.tencent.mars.cdn.CdnManager.class)).queryDownloadedSize(i3Var.field_mediaId, jArr);
+            long j17 = jArr[0];
+            boolean D0 = i3Var.D0();
+            java.util.HashMap hashMap = this.f242855c;
+            java.util.LinkedList linkedList = this.f242856d;
+            r17 = g4Var;
+            int i17 = 100;
+            if (D0 && com.tencent.mm.vfs.w6.j(i3Var.u0())) {
+                com.tencent.mars.xlog.Log.i(str2, "[enqueue] " + pVar + " has complete file(" + i3Var.w0() + "%)! just return.");
+                java.util.Iterator it7 = concurrentLinkedQueue.iterator();
+                while (it7.hasNext()) {
+                    java.util.LinkedList linkedList2 = linkedList;
+                    java.util.HashMap hashMap2 = hashMap;
+                    ((vr2.i) it7.next()).d(pVar.f222092i2, i3Var.w0() >= i17, i3Var.w0(), pVar, i3Var.field_totalSize, hashMap.size(), linkedList.size());
+                    hashMap = hashMap2;
+                    linkedList = linkedList2;
+                    i17 = 100;
+                }
+                reentrantLock.unlock();
+                return 1;
+            }
+            if (i3Var.w0() >= pVar.V1) {
+                str = "[enqueue] ";
+                if (i3Var.field_cacheSize >= pVar.f241805x && com.tencent.mm.vfs.w6.j(i3Var.u0()) && j17 > 0) {
+                    com.tencent.mars.xlog.Log.i(str2, str + pVar + " has finish preload(" + i3Var.w0() + "%)! received:" + j17 + " just return.");
+                    java.util.Iterator it8 = concurrentLinkedQueue.iterator();
+                    while (it8.hasNext()) {
+                        ((vr2.i) it8.next()).d(pVar.f222092i2, i3Var.w0() >= 100, i3Var.w0(), pVar, i3Var.field_cacheSize, hashMap.size(), linkedList.size());
+                    }
+                    reentrantLock.unlock();
+                    return 1;
+                }
+            } else {
+                str = "[enqueue] ";
+            }
+            int size = hashMap.size();
+            int i18 = this.f242853a.f464689f;
+            java.util.concurrent.atomic.AtomicBoolean atomicBoolean = this.f242860h;
+            try {
+                if (i18 > size && !atomicBoolean.get()) {
+                    pVar.f222090g2 = cs2.o.f222083d;
+                    cu2.x xVar = cu2.x.f222449a;
+                    long j18 = pVar.f222089f2;
+                    java.lang.String str3 = pVar.f222092i2;
+                    java.lang.String str4 = pVar.f222093j2;
+                    java.lang.String url = r17.getUrl();
+                    r45.mb4 mb4Var = r17.f330002e;
+                    int i19 = pVar.field_requestVideoFormat;
+                    java.lang.String k17 = pVar.k();
+                    int i27 = r17.f330006i;
+                    long j19 = i3Var.field_cacheSize;
+                    long j27 = i3Var.field_totalSize;
+                    if (((c61.l7) i95.n0.c(c61.l7.class)).ek().I != 0) {
+                    }
+                    cu2.x.h(xVar, j18, str3, str4, url, i19, k17, i27, j19, j27, 1, mb4Var.getInteger(3), mb4Var.getString(18), mb4Var.getString(17), false, pVar.f241799r, 8192, null);
+                    hashMap.put(pVar.f222092i2, pVar);
+                    mn2.u0 u0Var = new mn2.u0(r17.f330002e, com.tencent.mm.plugin.finder.storage.y90.f128356f, null, 4, null);
+                    mn2.g1 g1Var = mn2.g1.f329975a;
+                    g1Var.e().b(u0Var, g1Var.h(mn2.f1.f329953d)).a();
+                    if (((cf0.z) ((df0.s) i95.n0.c(df0.s.class))).Ni()) {
+                        ((cf0.z) ((df0.s) i95.n0.c(df0.s.class))).Di().g(pVar, new ds2.x(this, pVar, i3Var));
+                    } else {
+                        ((rx.l) ((sx.e0) i95.n0.c(sx.e0.class))).Ai(pVar);
+                    }
+                    com.tencent.mars.xlog.Log.i(str2, "[enqueue] begin to preloadVideo... " + pVar);
+                    reentrantLock.unlock();
+                    return 1;
+                }
+                kz5.h0.B(linkedList, new ds2.v(pVar));
+                linkedList.add(pVar);
+                pVar.f222090g2 = cs2.o.f222085f;
+                com.tencent.mars.xlog.Log.i(str2, str + pVar + " wait to preLoad, just return. isStop=" + atomicBoolean + " preLoadingCount=" + size + " waitingSize=" + linkedList.size());
+                reentrantLock.unlock();
+                return 1;
+            } catch (java.lang.Throwable th6) {
+                th = th6;
+                r17.unlock();
+                throw th;
+            }
+        } catch (java.lang.Throwable th7) {
+            th = th7;
+            r17 = reentrantLock;
+        }
+    }
+
+    public java.util.LinkedList c(java.util.LinkedList preloadList) {
+        kotlin.jvm.internal.o.g(preloadList, "preloadList");
+        java.util.List V0 = kz5.n0.V0(preloadList);
+        java.util.LinkedList linkedList = new java.util.LinkedList();
+        java.util.LinkedList<cs2.p> linkedList2 = (java.util.LinkedList) f("cancelWaitingTask", new ds2.u(this, null));
+        f("mergePreload", new ds2.y(preloadList, this, V0, linkedList, linkedList2));
+        boolean isEmpty = preloadList.isEmpty();
+        java.lang.String str = this.f242859g;
+        if (isEmpty) {
+            com.tencent.mars.xlog.Log.i(str, "[mergePreload] preloadList is empty!");
+        } else {
+            java.lang.StringBuilder sb6 = new java.lang.StringBuilder("[mergePreload] -> \n");
+            for (cs2.p pVar : linkedList2) {
+                sb6.append("(-) ");
+                sb6.append(pVar);
+                sb6.append("\n");
+            }
+            java.util.Iterator it = ((java.util.ArrayList) V0).iterator();
+            while (it.hasNext()) {
+                cs2.p pVar2 = (cs2.p) it.next();
+                if (preloadList.contains(pVar2)) {
+                    sb6.append("(+) ");
+                    sb6.append(pVar2);
+                    sb6.append("\n");
+                } else {
+                    sb6.append("(~) ");
+                    sb6.append(pVar2);
+                    sb6.append("\n");
+                }
+            }
+            com.tencent.mars.xlog.Log.i(str, sb6.toString());
+        }
+        return preloadList;
+    }
+
+    public final void d() {
+        f("pollWaiting", new ds2.a0(this));
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:31:0x0179  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x017c A[SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.util.LinkedList e(ek4.b r45, com.tencent.mm.plugin.finder.storage.FeedData r46, java.util.List r47, int r48) {
+        /*
+            Method dump skipped, instructions count: 1092
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ds2.b0.e(ek4.b, com.tencent.mm.plugin.finder.storage.FeedData, java.util.List, int):java.util.LinkedList");
+    }
+
+    public final java.lang.Object f(java.lang.String str, yz5.a aVar) {
+        java.lang.String str2 = this.f242859g;
+        long uptimeMillis = android.os.SystemClock.uptimeMillis();
+        java.util.concurrent.locks.ReentrantLock reentrantLock = this.f242854b;
+        reentrantLock.lock();
+        try {
+            return aVar.invoke();
+        } finally {
+            reentrantLock.unlock();
+            long uptimeMillis2 = android.os.SystemClock.uptimeMillis() - uptimeMillis;
+            if (uptimeMillis2 > 100) {
+                com.tencent.mars.xlog.Log.w(str2, "[syncLock] tag=" + str + " so slow! cost=" + uptimeMillis2 + "ms");
+            }
+        }
+    }
+}

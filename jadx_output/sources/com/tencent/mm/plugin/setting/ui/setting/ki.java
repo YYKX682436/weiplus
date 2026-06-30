@@ -1,0 +1,25 @@
+package com.tencent.mm.plugin.setting.ui.setting;
+
+/* loaded from: classes5.dex */
+public class ki implements android.text.TextWatcher {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.setting.ui.setting.SettingsModifyNameUI f161240d;
+
+    public ki(com.tencent.mm.plugin.setting.ui.setting.SettingsModifyNameUI settingsModifyNameUI) {
+        this.f161240d = settingsModifyNameUI;
+    }
+
+    @Override // android.text.TextWatcher
+    public void afterTextChanged(android.text.Editable editable) {
+    }
+
+    @Override // android.text.TextWatcher
+    public void beforeTextChanged(java.lang.CharSequence charSequence, int i17, int i18, int i19) {
+    }
+
+    @Override // android.text.TextWatcher
+    public void onTextChanged(java.lang.CharSequence charSequence, int i17, int i18, int i19) {
+        this.f161240d.enableOptionMenu(true);
+    }
+}

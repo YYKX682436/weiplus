@@ -1,0 +1,30 @@
+package sc2;
+
+/* loaded from: classes2.dex */
+public final class s7 extends sc2.u7 {
+    public s7() {
+        super(7);
+    }
+
+    @Override // sc2.u7, ad2.j
+    public android.view.ViewGroup a(android.view.View view) {
+        kotlin.jvm.internal.o.g(view, "view");
+        android.widget.LinearLayout linearLayout = (android.widget.LinearLayout) super.a(view);
+        int dimensionPixelSize = view.getContext().getResources().getDimensionPixelSize(com.tencent.mm.R.dimen.f479648bn);
+        int dimensionPixelSize2 = view.getContext().getResources().getDimensionPixelSize(com.tencent.mm.R.dimen.f479673ca);
+        if (linearLayout != null) {
+            linearLayout.setPadding(0, dimensionPixelSize, 0, dimensionPixelSize2);
+        }
+        android.view.View findViewById = view.findViewById(com.tencent.mm.R.id.eak);
+        if (findViewById != null) {
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+            arrayList.add(0);
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(findViewById, arrayList.toArray(), "com/tencent/mm/plugin/finder/feed/component/FinderFeedJumperUIC$CommentBottomObserver", "getContainLayout", "(Landroid/view/View;)Landroid/widget/LinearLayout;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            findViewById.setVisibility(((java.lang.Integer) arrayList.get(0)).intValue());
+            yj0.a.f(findViewById, "com/tencent/mm/plugin/finder/feed/component/FinderFeedJumperUIC$CommentBottomObserver", "getContainLayout", "(Landroid/view/View;)Landroid/widget/LinearLayout;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        }
+        return linearLayout;
+    }
+}

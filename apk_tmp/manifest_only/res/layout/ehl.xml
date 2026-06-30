@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/avb" android:background="@drawable/b8p" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/h5n" android:background="@drawable/cy_" android:padding="@dimen/aih" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="56.0dp" android:layout_marginBottom="16.0dp" android:src="@raw/official_accounts_filled" app:tint="@color/an" />
+        <TextView android:textSize="@dimen/r" android:textStyle="bold" android:textColor="@color/a0b" android:layout_gravity="center" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/nap" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/BW_0_Alpha_0_5" android:gravity="center" android:layout_gravity="center" android:id="@id/t3f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/na8" android:lineHeight="@dimen/cz" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="80.0dp" android:paddingBottom="64.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/b02" android:background="@drawable/cy8" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginEnd="16.0dp">
+                <TextView android:textSize="@dimen/ani" android:textStyle="bold" android:textColor="@color/fa" android:id="@id/sm0" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/na7" android:lineHeight="@dimen/cz" android:textFontWeight="500" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+                <View android:background="@drawable/cy7" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/b0h" android:background="@drawable/cy9" android:layout_width="120.0dp" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/ani" android:textStyle="bold" android:textColor="@color/ab0" android:id="@id/sm9" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nae" android:lineHeight="@dimen/cz" android:textFontWeight="500" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+                <View android:background="@drawable/cy7" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

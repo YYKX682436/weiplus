@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?eo" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/dd3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="right" android:id="@id/dd0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/dd2" android:layout_marginEnd="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ry" />
+            <ImageView android:id="@id/dd1" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginEnd="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@id/dd2" app:layout_constraintTop_toTopOf="0" />
+            <TextView android:textColor="?eo" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/dcz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/lr7" app:layout_constraintStart_toEndOf="@id/dd1" app:layout_constraintTop_toTopOf="0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/lr7" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/icons_filled_channel" android:layout_marginStart="2.0dp" app:fs="@color/a7" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/lo9" app:layout_constraintStart_toEndOf="@id/dcz" app:layout_constraintTop_toTopOf="0" />
+            <ImageView android:id="@id/lo9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bre" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/plm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/j4" android:textColor="#576b95" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/plo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:maxLines="1" />
+            <View android:layout_gravity="center_vertical" android:id="@id/pln" android:visibility="gone" android:layout_marginLeft="8.0dp" style="@style/ry" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:src="@drawable/bre" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

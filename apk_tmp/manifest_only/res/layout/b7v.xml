@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ld3" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/coc" android:layout_width="match_parent" android:layout_height="@dimen/dd">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/cod" android:background="@drawable/b9" android:padding="@dimen/j3" android:layout_width="@dimen/aw" android:layout_height="@dimen/aw" android:src="@drawable/b5" android:scaleType="center" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dd" android:layout_weight="1.0">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center" android:id="@id/nup" android:layout_width="wrap_content" android:layout_height="@dimen/d7" app:tabBackground="@color/a9e" app:jd="bdp" app:jh="@color/FG_0" app:ji="false" app:jk="2.0dp" app:jl="@dimen/bu" app:tabMinWidth="@dimen/d7" app:jm="mcp" app:jn="0.0dp" app:jo="0.0dp" app:jp="@color/a9e" app:jq="@color/a0c" app:jt="@color/jj" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.tencent.mm.plugin.finder.view.FinderViewPager android:id="@id/p16" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layout_behavior="@string/zz" />
+</LinearLayout>

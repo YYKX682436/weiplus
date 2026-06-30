@@ -1,0 +1,18 @@
+package kd2;
+
+/* loaded from: classes10.dex */
+public final class t0 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final kd2.t0 f388365d = new kd2.t0();
+
+    public t0() {
+        super(0);
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        return new kd2.b0(kd2.p1.N.a());
+    }
+}

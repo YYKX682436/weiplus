@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/adq" android:background="@drawable/f2" android:paddingLeft="112.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ax9" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/az2" android:background="@color/a9e" android:layout_width="40.0dp" android:layout_height="40.0dp" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="@color/a09" android:id="@id/az4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/a09" android:id="@id/az3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/ax9" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ev_" android:layout_width="wrap_content" android:layout_height="@dimen/db"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/ltj" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/lti" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/qcw" android:background="@drawable/a1k" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/d1" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+                <com.tencent.mm.plugin.finder.view.DanmakuStrokeTextView android:textSize="@dimen/r" android:textColor="@color/BW_100_Alpha_0_8" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/i8m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:shadowColor="@color/UN_BW_0_Alpha_0_3" android:shadowRadius="1.0" app:finderStrokeColor="@color/UN_BW_0_Alpha_0_3" app:finderStrokeWidth="1.0" />
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_gravity="center_vertical" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" layout="@layout/e_3" />
+    </FrameLayout>
+    <include android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="@dimen/dd" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/dv" layout="@layout/apc" />
+</LinearLayout>

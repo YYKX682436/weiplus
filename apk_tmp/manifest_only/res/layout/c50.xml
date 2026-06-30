@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/i4a" android:background="@color/UN_BW_0_Alpha_0_3" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/mx1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/c5_" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.mv.ui.view.LyricFadeLayout android:id="@id/j7l" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/j7r" android:scrollbars="none" android:fadingEdge="vertical" android:fadingEdgeLength="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:requiresFadingEdge="vertical" />
+    </com.tencent.mm.plugin.mv.ui.view.LyricFadeLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/aae" android:paddingTop="@dimen/d7" android:paddingBottom="@dimen/dj" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center" android:background="@drawable/arm" android:layout_width="@dimen/df" android:layout_height="@dimen/cz" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/df" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_arrow" android:rotation="270.0" app:fs="@color/an" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+package zm1;
+
+/* loaded from: classes3.dex */
+public final class b extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final zm1.b f474131d = new zm1.b();
+
+    public b() {
+        super(0);
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        java.lang.Boolean valueOf = java.lang.Boolean.valueOf(((ef0.c3) ((qk.q8) i95.n0.c(qk.q8.class))).wi());
+        com.tencent.mars.xlog.Log.i("MicroMsg.BizAudioFloatBallAnimationUIC", "tingConfig disableTingFloatBallAnimation: " + valueOf.booleanValue());
+        return valueOf;
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/b_m" android:background="@drawable/l4" android:paddingLeft="@dimen/qh" android:paddingRight="12.699982dp" android:layout_width="match_parent" android:layout_height="@dimen/qk" android:layout_marginBottom="@dimen/ib">
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/b_p" android:layout_width="22.0dp" android:layout_height="16.299988dp" android:src="@drawable/byv" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingRight="4.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0dp" android:textColor="@color/h1" android:ellipsize="end" android:gravity="start" android:id="@id/b_o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0">
+                <TextView android:textSize="@dimen/ja" android:textColor="#6a6a6a" android:ellipsize="end" android:gravity="end" android:layout_gravity="end|center" android:id="@id/b_n" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="right" android:id="@id/b_i" android:paddingLeft="6.669983dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/b_j" android:visibility="invisible" android:layout_width="@dimen/i0" android:layout_height="@dimen/i0" android:src="@drawable/cbt" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/b_k" android:visibility="invisible" android:layout_width="@dimen/i0" android:layout_height="@dimen/i0" android:layout_marginLeft="18.0dp" android:src="@drawable/cbt" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/b_l" android:visibility="invisible" android:layout_width="@dimen/i0" android:layout_height="@dimen/i0" android:layout_marginLeft="38.0dp" android:src="@drawable/cbt" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/bbo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dp" android:src="@drawable/b8i" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

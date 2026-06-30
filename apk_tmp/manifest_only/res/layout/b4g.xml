@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/k6_" android:background="@color/BW_100" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/i_d" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <View android:id="@id/i_c" android:background="@drawable/asr" android:layout_width="@dimen/xf" android:layout_height="@dimen/xt" app:layout_constraintHorizontal_bias="0.0" />
+        <ImageView android:id="@id/ho8" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/k6b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/h6n" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toRightOf="@id/i_d" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

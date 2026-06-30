@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/aaw" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.ball.view.FloatBallRoundGradientFrameLayout android:id="@id/tx_" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="center" android:id="@id/t0p" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/sgt" android:layout_width="65.0dp" android:layout_height="65.0dp">
+            <FrameLayout android:layout_gravity="center" android:id="@id/t0n" android:background="@drawable/d4l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/t0o" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="centerCrop" />
+        </FrameLayout>
+    </com.tencent.mm.plugin.ball.view.FloatBallRoundGradientFrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/um8" android:padding="@dimen/bn" android:layout_width="@dimen/a02" android:layout_height="@dimen/a02" android:src="@raw/float_ball_icon_close_regular" android:layout_alignParentBottom="false" android:layout_alignParentEnd="false" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/um9" android:padding="@dimen/bn" android:layout_width="@dimen/a02" android:layout_height="@dimen/a02" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

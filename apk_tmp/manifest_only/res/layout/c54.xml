@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/cbr" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/aaq" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/aap" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:background="@drawable/as0" android:layout_width="match_parent" android:layout_height="@dimen/cu" android:layout_alignParentTop="true" />
+    <View android:background="@drawable/arx" android:layout_width="match_parent" android:layout_height="@dimen/cu" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/c8v" android:background="@drawable/jk" android:layout_width="@dimen/cf" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/bo" android:text="@string/v5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kq" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/byj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/df" android:layout_above="@id/c8v" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/aa8" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dd" android:layout_marginRight="@dimen/cn" android:src="@raw/actionbar_icon_light_back" app:fs="@color/an" />
+    <com.tencent.mm.plugin.music.ui.LyricView android:ellipsize="end" android:id="@id/j7q" android:fadingEdge="vertical" android:fadingEdgeLength="10.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:requiresFadingEdge="vertical" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" />
+</RelativeLayout>

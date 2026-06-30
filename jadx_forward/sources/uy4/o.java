@@ -1,0 +1,12 @@
+package uy4;
+
+/* loaded from: classes6.dex */
+public class o implements java.lang.Iterable {
+    public o(uy4.m mVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new uy4.n(this, null);
+    }
+}

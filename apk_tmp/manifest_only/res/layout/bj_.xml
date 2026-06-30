@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/close_icon" android:padding="20.0dp" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@raw/close" app:fs="@color/FG_0_5" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginRight="28.0dp">
+        <com.tencent.mm.ui.widget.RoundCornerImageView android:id="@id/a9m" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginRight="20.0dp" app:roundHeight="24.0dp" app:roundWidth="24.0dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/kbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:singleLine="true" android:lineSpacingExtra="0.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/olb" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:id="@id/gb0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:id="@id/dzz" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/gac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_marginBottom="56.0dp" android:text="关注视频号" android:layout_below="@id/cgi" style="@style/kr" />
+</LinearLayout>

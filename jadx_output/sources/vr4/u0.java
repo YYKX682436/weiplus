@@ -1,0 +1,74 @@
+package vr4;
+
+/* loaded from: classes9.dex */
+public class u0 extends com.tencent.mm.protobuf.f {
+
+    /* renamed from: d, reason: collision with root package name */
+    public java.lang.String f439803d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public int f439804e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public java.lang.String f439805f;
+
+    @Override // com.tencent.mm.protobuf.f
+    public boolean compareContent(com.tencent.mm.protobuf.f fVar) {
+        if (fVar == null || !(fVar instanceof vr4.u0)) {
+            return false;
+        }
+        vr4.u0 u0Var = (vr4.u0) fVar;
+        return n51.f.a(this.f439803d, u0Var.f439803d) && n51.f.a(java.lang.Integer.valueOf(this.f439804e), java.lang.Integer.valueOf(u0Var.f439804e)) && n51.f.a(this.f439805f, u0Var.f439805f);
+    }
+
+    @Override // com.tencent.mm.protobuf.f
+    public final int op(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            g36.f fVar = (g36.f) objArr[0];
+            java.lang.String str = this.f439803d;
+            if (str != null) {
+                fVar.j(1, str);
+            }
+            fVar.e(2, this.f439804e);
+            java.lang.String str2 = this.f439805f;
+            if (str2 != null) {
+                fVar.j(3, str2);
+            }
+            return 0;
+        }
+        if (i17 == 1) {
+            java.lang.String str3 = this.f439803d;
+            int j17 = (str3 != null ? 0 + b36.f.j(1, str3) : 0) + b36.f.e(2, this.f439804e);
+            java.lang.String str4 = this.f439805f;
+            return str4 != null ? j17 + b36.f.j(3, str4) : j17;
+        }
+        if (i17 == 2) {
+            c36.a aVar = new c36.a((byte[]) objArr[0], com.tencent.mm.protobuf.f.unknownTagHandler);
+            for (int nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar); nextFieldNumber > 0; nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar)) {
+                if (!super.populateBuilderWithField(aVar, this, nextFieldNumber)) {
+                    aVar.b();
+                }
+            }
+            return 0;
+        }
+        if (i17 != 3) {
+            return -1;
+        }
+        c36.a aVar2 = (c36.a) objArr[0];
+        vr4.u0 u0Var = (vr4.u0) objArr[1];
+        int intValue = ((java.lang.Integer) objArr[2]).intValue();
+        if (intValue == 1) {
+            u0Var.f439803d = aVar2.k(intValue);
+            return 0;
+        }
+        if (intValue == 2) {
+            u0Var.f439804e = aVar2.g(intValue);
+            return 0;
+        }
+        if (intValue != 3) {
+            return -1;
+        }
+        u0Var.f439805f = aVar2.k(intValue);
+        return 0;
+    }
+}

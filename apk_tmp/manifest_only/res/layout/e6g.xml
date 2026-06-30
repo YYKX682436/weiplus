@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.TouchableLayout android:orientation="vertical" android:background="@color/a" android:paddingTop="@dimen/aw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" app:enableAutoLoadMore="true" app:enableFooterFollowWhenNoMoreData="true" app:enableFooterMoveContent="true" app:enableLoadMore="true" app:enableOverScrollBounce="false" app:enableOverScrollDrag="false" app:enableRefresh="false">
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+    </RelativeLayout>
+</com.tencent.mm.view.TouchableLayout>

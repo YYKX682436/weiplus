@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.video.FinderVideoLayout android:gravity="center" android:id="@id/e_k" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/o77" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/m2_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/c9" android:src="@raw/icons_outlined_refresh" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f9s" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="right|top" android:id="@id/ghk" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="18.0dp" android:layout_marginRight="18.0dp" android:src="@raw/icons_filled_max_window" app:fs="@color/an" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/oz4" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="22.0dp" android:layout_marginRight="22.0dp" android:src="@drawable/ada" />
+    <ProgressBar android:layout_gravity="end|top" android:id="@id/imm" android:visibility="gone" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginTop="@dimen/cz" android:indeterminateDrawable="@drawable/adb" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/cz" style="@style/wa" />
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/ozj" android:background="@drawable/w0" android:padding="@dimen/bl" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginBottom="20.0dp" android:src="@raw/video_mute_btn_off" android:layout_marginEnd="20.0dp" />
+    <com.tencent.mm.ui.widget.cropview.VideoTimeView android:textSize="@dimen/b3" android:layout_gravity="end|top" android:id="@id/oyr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginEnd="20.0dp" />
+</com.tencent.mm.plugin.finder.video.FinderVideoLayout>

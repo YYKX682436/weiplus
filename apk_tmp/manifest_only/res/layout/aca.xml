@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/oy7" android:background="@color/lq" android:paddingLeft="@dimen/es" android:paddingRight="@dimen/es" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/p12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    <com.tencent.mm.ui.MMImageView android:id="@id/h6y" android:layout_width="@dimen/hh" android:layout_height="@dimen/hh" android:layout_marginTop="@dimen/h6" android:src="@drawable/bi8" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/ic" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/r2l" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hi" android:layout_below="@id/h6y">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/k3s" android:background="@drawable/tr" android:layout_width="match_parent" android:layout_marginLeft="@dimen/f" android:layout_marginRight="@dimen/f" android:text="{name}" android:maxLines="2" android:layout_centerHorizontal="true" style="@style/l5" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/mzv" android:background="@drawable/tr" android:visibility="gone" android:layout_width="match_parent" android:layout_marginLeft="@dimen/f" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/f" android:text="@string/dt6" android:maxLines="2" android:layout_below="@id/k3s" android:layout_centerHorizontal="true" style="@style/ik" />
+    </LinearLayout>
+    <ImageView android:id="@id/due" android:visibility="gone" android:layout_width="@dimen/hd" android:layout_height="@dimen/hd" android:layout_marginTop="@dimen/h6" android:src="@drawable/b3i" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/duf" android:visibility="gone" android:layout_width="match_parent" android:layout_marginLeft="@dimen/f" android:layout_marginTop="@dimen/hi" android:layout_marginRight="@dimen/f" android:text="{name}" android:maxLines="2" android:layout_below="@id/due" android:layout_centerHorizontal="true" style="@style/l5" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/d3v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/r2l">
+        <TextView android:id="@id/d3x" android:layout_width="wrap_content" android:layout_marginTop="@dimen/hq" style="@style/ik" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hj">
+            <ProgressBar android:id="@id/d3t" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+            <ImageView android:id="@id/d40" android:background="@drawable/avb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/a8o" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/l3u" android:layout_width="match_parent" android:layout_marginTop="@dimen/hj" android:text="@string/cb9" android:layout_below="@id/r2l" android:layout_centerHorizontal="true" style="@style/kq" />
+    <Button android:id="@id/kio" android:layout_width="match_parent" android:layout_marginTop="@dimen/j" android:text="@string/cb8" android:layout_below="@id/l3u" android:layout_centerHorizontal="true" style="@style/kq" />
+    <TextView android:id="@id/ob5" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginTop="@dimen/j" android:text="@string/cb6" android:layout_below="@id/kio" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ik" />
+    <Button android:id="@id/d31" android:layout_width="match_parent" android:layout_marginTop="@dimen/hj" android:text="@string/dt0" android:layout_below="@id/r2l" android:layout_centerHorizontal="true" style="@style/kq" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c4" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/jj" android:id="@id/r2i" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt5" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/jj" android:gravity="center" android:id="@id/r20" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/db" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/db" android:text="@string/dt4" android:layout_marginHorizontal="@dimen/db" />
+    </LinearLayout>
+    <include layout="@layout/cno" />
+</RelativeLayout>

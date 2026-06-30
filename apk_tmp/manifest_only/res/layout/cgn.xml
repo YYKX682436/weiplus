@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:background="@color/fe" android:layout_width="250.0dp" android:layout_height="250.0dp" android:layout_margin="50.0dp" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/pqu" android:background="@color/aaq" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b30" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="触发自定义事件" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b31" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="kotlin示例" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b35" android:background="@color/a5t" android:text="测试layout" android:layout_weight="1.0" style="@style/kn" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/pqv" android:background="@color/aaq" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b32" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="ScrollView示例" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b33" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="ListView示例" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b34" android:background="@color/a5t" android:text="RecycleView示例" android:layout_weight="1.0" style="@style/kn" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/vph" android:background="@color/aaq" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/snq" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="Cgi上报测试" android:layout_weight="1.0" style="@style/kn" />
+    </LinearLayout>
+</LinearLayout>

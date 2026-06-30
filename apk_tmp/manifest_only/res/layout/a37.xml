@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/f3" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/t0s" android:layout_width="match_parent" android:layout_height="@dimen/dd" android:layout_marginTop="@dimen/dd" android:layout_marginBottom="@dimen/c9">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ckq" android:padding="@dimen/c8" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd" android:src="@raw/actionbar_icon_light_back" app:fs="@color/BW_F_Alpha_0_8" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/BW_F_Alpha_0_8" android:ellipsize="end" android:gravity="center" android:id="@id/t0r" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/iyf" android:singleLine="true" android:layout_marginEnd="@dimen/dd" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/ckr" android:layout_width="match_parent" android:layout_height="@dimen/dd" android:layout_marginTop="@dimen/d9" android:layout_marginBottom="@dimen/df" android:layout_alignParentBottom="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/n7i" android:padding="@dimen/bl" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/icons_filled_crop" android:layout_marginStart="@dimen/cz" app:fs="@color/an" />
+        <Button android:textStyle="bold" android:id="@id/cl0" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apm" android:layout_centerVertical="true" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="@dimen/uq" android:layout_alignParentEnd="true" style="@style/ks" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.recordvideo.plugin.cropvideo.EditVideoSeekBarView android:id="@id/ckv" android:background="@color/a9e" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="110.0dp" android:layout_marginBottom="@dimen/df" android:layout_alignParentBottom="true" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_above="@id/ckr" android:layout_below="@id/t0s">
+        <com.tencent.mm.plugin.thumbplayer.view.MMTPEffectVideoLayout android:layout_gravity="center" android:id="@id/clc" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="9:16" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <ImageView android:id="@id/cl3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-3.0dp" android:layout_marginBottom="-3.0dp" android:src="@drawable/c12" android:layout_marginStart="-3.0dp" android:layout_marginEnd="-3.0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

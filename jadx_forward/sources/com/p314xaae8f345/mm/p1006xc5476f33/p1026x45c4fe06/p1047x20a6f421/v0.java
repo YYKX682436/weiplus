@@ -1,0 +1,8 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1047x20a6f421;
+
+/* loaded from: classes7.dex */
+public interface v0 {
+    void B(java.lang.String str);
+
+    java.lang.String L();
+}

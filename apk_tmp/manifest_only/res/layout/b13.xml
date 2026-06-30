@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/a0o" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mzh" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dn">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/b5w" android:padding="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dpd" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/an" android:gravity="center" android:id="@id/c_x" android:background="@drawable/a52" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginRight="18.0dp" android:text="@string/v5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@color/UN_BW_97" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/cz" android:layout_marginBottom="@dimen/df" app:corner="@dimen/bl">
+        <EditText android:textSize="@dimen/r" android:textColor="@color/UN_BW_0_Alpha_0_9" android:textColorHint="@color/UN_BW_0_Alpha_0_3" android:gravity="left|top" android:layout_gravity="center_vertical" android:id="@id/bx0" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/cn" android:textCursorDrawable="@drawable/afr" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/UN_BW_0_Alpha_0_3" android:layout_gravity="right|bottom" android:id="@id/hdg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/dv" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+</LinearLayout>

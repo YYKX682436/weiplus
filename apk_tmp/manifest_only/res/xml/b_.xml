@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:key="contact_is_mute" android:title="@string/i5i" />
+    <CheckBoxPreference android:key="contact_info_subscribe_bizinfo" android:gc="@layout/byv" android:persistent="false" android:title="@string/biv" />
+    <Preference android:key="contact_info_desc" android:gc="@layout/a28" android:title="@string/bcq" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="contact_info_block_like" android:gc="@layout/byv" android:persistent="false" android:title="@string/oa4" />
+    <CheckBoxPreference android:key="contact_info_block_finder" android:gc="@layout/byv" android:persistent="false" android:title="@string/oa0" />
+    <CheckBoxPreference android:key="contact_info_locate" android:gc="@layout/byv" android:persistent="false" android:title="@string/bev" />
+    <Preference android:key="contact_info_template_recv" android:gc="@layout/byv" android:title="@string/bix" />
+    <Preference android:key="contact_info_add_shortcut_btn" android:gc="@layout/byv" android:title="@string/bbi" />
+    <Preference android:key="contact_info_clear_msg" android:gc="@layout/byv" android:title="@string/bbv" />
+    <PreferenceSmallCategory />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_subscribe_msg" android:gc="@layout/byv" android:title="@string/biw" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/kox" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/azw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:src="@raw/icons_outlined_add" android:tint="@color/an" android:layout_marginEnd="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.InputPanelLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ppp" android:paddingLeft="32.0dp" android:paddingRight="32.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="@color/f_" android:id="@id/ppq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dp" android:text="@string/l46" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:divider="@drawable/b_h" android:showDividers="beginning|middle|end">
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/ppr" android:background="@color/f" android:paddingLeft="8.0dp" android:paddingRight="0.0dp" wallet:contentHint="@string/l4_" wallet:dh="@color/f9" wallet:dp="@color/f_" wallet:infoIvColorRes="@color/FG_2" wallet:g0="@raw/icons_filled_arrow" wallet:g1="p3p" wallet:gd="@layout/d99" wallet:gs="@layout/d99" wallet:titleText="@string/l4a" wallet:titleWidth="@dimen/aeb" style="@style/f0" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:gravity="right|center" android:id="@id/ppn" android:paddingLeft="8.0dp" android:clickable="false" wallet:de="false" wallet:contentHint="@string/l45" wallet:dh="@color/f9" wallet:dp="@color/f_" wallet:gd="@layout/d99" wallet:gs="@layout/d99" wallet:titleText="@string/l47" wallet:titleWidth="@dimen/aeb" style="@style/oh" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:id="@id/ppo" android:layout_marginBottom="96.0dp" android:text="@string/x1" style="@style/kr" />
+    </com.tencent.mm.ui.widget.InputPanelLinearLayout>
+</ScrollView>

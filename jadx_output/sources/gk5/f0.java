@@ -1,0 +1,27 @@
+package gk5;
+
+/* loaded from: classes9.dex */
+public final class f0 extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ yz5.l f272649d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ oc0.c f272650e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f0(yz5.l lVar, oc0.c cVar) {
+        super(0);
+        this.f272649d = lVar;
+        this.f272650e = cVar;
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        yz5.l lVar = this.f272649d;
+        if (lVar != null) {
+            lVar.invoke(this.f272650e.f344132b);
+        }
+        return jz5.f0.f302826a;
+    }
+}

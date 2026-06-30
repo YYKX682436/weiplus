@@ -1,0 +1,141 @@
+package hh3;
+
+/* loaded from: classes4.dex */
+public class a extends tg3.a {
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ android.os.Bundle f281455e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ java.util.Map f281456f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f281457g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final /* synthetic */ java.lang.ref.WeakReference f281458h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public final /* synthetic */ java.lang.ref.WeakReference f281459i;
+
+    /* renamed from: m, reason: collision with root package name */
+    public final /* synthetic */ hh3.d f281460m;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(hh3.d dVar, int i17, r35.m3 m3Var, android.os.Bundle bundle, java.util.Map map, java.lang.String str, java.lang.ref.WeakReference weakReference, java.lang.String str2, java.lang.ref.WeakReference weakReference2) {
+        super(i17, m3Var);
+        this.f281460m = dVar;
+        this.f281455e = bundle;
+        this.f281456f = map;
+        this.f281457g = str;
+        this.f281458h = weakReference;
+        this.f281459i = weakReference2;
+    }
+
+    @Override // tg3.a
+    public void a(android.view.View view) {
+        java.lang.String str;
+        long j17 = this.f281455e.getLong("msg_id");
+        hh3.d dVar = this.f281460m;
+        dVar.f281466h = j17;
+        java.util.Map map = this.f281456f;
+        java.lang.String str2 = this.f281457g;
+        dVar.getClass();
+        java.lang.ref.WeakReference weakReference = this.f281458h;
+        if (weakReference != null) {
+            try {
+                if (weakReference.get() != null) {
+                    dVar.f281465g = weakReference;
+                    if ("new_tmpl_type_succeed_contact_window".equals((java.lang.String) map.get(str2 + ".window_template.$type"))) {
+                        java.lang.String str3 = (java.lang.String) map.get(str2 + ".window_template.title");
+                        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+                        if (str3 == null) {
+                            str3 = "";
+                        }
+                        dVar.f281467i = str3;
+                        java.lang.String str4 = (java.lang.String) map.get(str2 + ".window_template.cancel_wording");
+                        if (str4 == null) {
+                            str4 = "";
+                        }
+                        dVar.f281468m = str4;
+                        java.lang.String str5 = (java.lang.String) map.get(str2 + ".window_template.confirm_wording");
+                        if (str5 == null) {
+                            str5 = "";
+                        }
+                        dVar.f281469n = str5;
+                        java.lang.String str6 = (java.lang.String) map.get(str2 + ".origin_username");
+                        if (str6 == null) {
+                            str6 = "";
+                        }
+                        dVar.f281470o = str6;
+                        java.lang.String str7 = (java.lang.String) map.get(str2 + ".heir_username");
+                        if (str7 == null) {
+                            str7 = "";
+                        }
+                        dVar.f281471p = str7;
+                        java.lang.String str8 = (java.lang.String) map.get(str2 + ".succeed_ticket");
+                        if (str8 == null) {
+                            str8 = "";
+                        }
+                        dVar.f281472q = str8;
+                        java.util.ArrayList a17 = ih3.p.a(dVar.f281467i);
+                        if (a17 != null && a17.size() > 0) {
+                            java.util.ArrayList arrayList = new java.util.ArrayList();
+                            java.util.Iterator it = a17.iterator();
+                            while (true) {
+                                int i17 = 0;
+                                if (!it.hasNext()) {
+                                    break;
+                                }
+                                ih3.o oVar = (ih3.o) it.next();
+                                if (oVar != null && (str = oVar.f291597b) != null) {
+                                    int i18 = oVar.f291596a;
+                                    if (i18 == 0) {
+                                        le0.x xVar = (le0.x) i95.n0.c(le0.x.class);
+                                        android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+                                        ((ke0.e) xVar).getClass();
+                                        arrayList.add(new android.text.SpannableString(com.tencent.mm.pluginsdk.ui.span.c0.i(context, str)));
+                                    } else if (i18 == 1) {
+                                        while (true) {
+                                            java.lang.String str9 = str2 + ".window_template.link_list.link";
+                                            if (i17 != 0) {
+                                                str9 = str9 + i17;
+                                            }
+                                            if (com.tencent.mm.sdk.platformtools.t8.K0((java.lang.String) map.get(str9))) {
+                                                break;
+                                            }
+                                            java.lang.String str10 = (java.lang.String) map.get(str9 + ".$name");
+                                            java.lang.String str11 = (java.lang.String) map.get(str9 + ".$type");
+                                            if (str.equals(str10) && "link_plain".equals(str11)) {
+                                                java.lang.String str12 = (java.lang.String) map.get(str9 + ".plain");
+                                                if (str12 == null) {
+                                                    str12 = "";
+                                                }
+                                                arrayList.add(str12);
+                                            }
+                                            i17++;
+                                        }
+                                    }
+                                }
+                            }
+                            java.lang.CharSequence spannableString = new android.text.SpannableString("");
+                            java.util.Iterator it6 = arrayList.iterator();
+                            while (it6.hasNext()) {
+                                spannableString = android.text.TextUtils.concat(spannableString, (java.lang.CharSequence) it6.next());
+                            }
+                            dVar.f281467i = spannableString.toString();
+                        }
+                        dVar.e((android.content.Context) weakReference.get());
+                        dVar.f281464f = new fh3.a(dVar.f281470o, dVar.f281471p, dVar.f281472q, 1);
+                        gm0.j1.d().g(dVar.f281464f);
+                    }
+                }
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.sysmsg.SysMsgHandlerNewLinkSucceedContact", "Exception:%s %s", e17.getClass().getSimpleName(), e17.getMessage());
+            }
+        }
+        tg3.k1 k1Var = (tg3.k1) i95.n0.c(tg3.k1.class);
+        dVar.getClass();
+        ((ih3.e) k1Var).Di("new_link_succeed_contact", this.f281456f, this.f281455e, this.f281458h, this.f281459i);
+    }
+}

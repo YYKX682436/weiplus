@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fgs" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/h1" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/e_q" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:text="@string/e_p" android:layout_below="@id/obc" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <CheckBox android:id="@id/i11" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" style="@style/im" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/a5" android:id="@id/i12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d4l" />
+    </LinearLayout>
+</RelativeLayout>

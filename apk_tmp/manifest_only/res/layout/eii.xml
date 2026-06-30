@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/aal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/che" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/cqc" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ceg" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/ma4" android:text="@string/ian" android:singleLine="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/pc" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_100_Alpha_0_9" android:id="@id/ma6" android:background="@drawable/ay9" android:paddingLeft="@dimen/cs" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cs" android:paddingBottom="@dimen/c9" android:visibility="gone" android:text="@string/i90" android:singleLine="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/pc" />
+        <com.tencent.mm.plugin.scanner.ui.ScannerFlashSwitcher android:id="@id/mac" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mj5" android:background="@drawable/d8a" android:layout_width="@dimen/dh" android:layout_height="@dimen/dh" android:layout_marginLeft="@dimen/cs" android:layout_marginRight="@dimen/cs" android:layout_marginBottom="@dimen/cs" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/i8n">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hnn" android:padding="@dimen/ca" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/icons_filled_album" app:fs="@color/BW_100_Alpha_0_9" />
+        </LinearLayout>
+        <TextView android:textSize="28.0dp" android:textColor="@color/an" android:id="@id/ma5" android:paddingBottom="@dimen/a9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i9a" android:includeFontPadding="false" android:shadowColor="@color/UN_BW_0_Alpha_0_2" android:shadowRadius="10.0" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

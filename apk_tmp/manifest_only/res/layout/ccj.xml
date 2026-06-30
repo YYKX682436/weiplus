@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="@dimen/dr" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/cn">
+        <RelativeLayout android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/cn">
+            <ImageView android:id="@id/a9o" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_centerInParent="true" />
+            <CheckBox android:id="@id/mht" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/bl" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/bl" android:layout_alignParentEnd="true" style="@style/io" />
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/v21" android:visibility="gone" android:text="@string/v5" android:layout_centerInParent="true" style="@style/y4" />
+            <ImageView android:id="@id/sg8" android:visibility="gone" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:src="@drawable/cui" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:gravity="center|top" android:id="@id/ou7" android:layout_width="@dimen/dj" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxLines="2" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center" android:id="@id/spk" android:visibility="gone" android:layout_width="14.659973dp" android:layout_height="11.0dp" android:layout_marginTop="@dimen/ais" android:src="@drawable/db6" app:fs="@color/a9e" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/v22" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginTop="-2.0dp" android:layout_alignParentTop="true" android:layout_marginEnd="-2.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/checkbox_selected_remove" android:scaleType="fitXY" />
+    </FrameLayout>
+</RelativeLayout>

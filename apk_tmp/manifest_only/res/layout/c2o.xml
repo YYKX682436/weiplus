@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.webview.ui.tools.WebViewKeyboardLinearLayout android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/jst" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="635.0dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jsf" android:background="?d_" android:paddingLeft="@dimen/a5t" android:paddingTop="@dimen/a5t" android:paddingRight="@dimen/a5t" android:paddingBottom="@dimen/a5t" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jsg" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:src="@raw/actionbar_icon_dark_close" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/hv" android:textColor="?d9" android:id="@id/jsk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/ans" android:layout_centerHorizontal="true" />
+            <Button android:textSize="@dimen/iy" android:id="@id/jsi" android:text="@string/ank" android:layout_alignParentRight="true" style="?cy" />
+        </RelativeLayout>
+        <ScrollView android:id="@id/jss" android:background="@color/BW_97" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/jsf">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/aaw" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_3" android:ellipsize="end" android:gravity="left" android:id="@id/asj" android:background="@color/jz" android:paddingLeft="8.0dp" android:paddingTop="8.0dp" android:paddingRight="8.0dp" android:paddingBottom="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:singleLine="false" />
+                </LinearLayout>
+                <com.tencent.mm.ui.widget.MMEditText android:textSize="@dimen/ia" android:textColor="?d8" android:textColorHint="?d5" android:gravity="left|top" android:id="@id/jsh" android:background="@color/aaw" android:paddingLeft="@dimen/a5t" android:paddingRight="@dimen/a5t" android:paddingBottom="@dimen/a5t" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/anu" android:maxLines="5" android:minLines="5" android:imeOptions="actionDone" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/asi" android:paddingLeft="@dimen/a5t" android:paddingTop="20.0dp" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ann" />
+                <com.tencent.mm.ui.base.MaxListView android:id="@id/ash" android:paddingLeft="@dimen/a5t" android:paddingRight="@dimen/a5t" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/ir" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.tencent.mm.plugin.webview.ui.tools.widget.MPSmileyFooter android:id="@id/jsc" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.tencent.mm.plugin.webview.ui.tools.WebViewKeyboardLinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dn3" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.facedetect.views.FaceDetectView android:id="@id/dni" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/dnz" android:background="@drawable/t5" android:layout_width="match_parent" android:layout_height="@dimen/wx" android:layout_alignParentTop="true" />
+    <RelativeLayout android:background="@drawable/t1" android:layout_width="match_parent" android:layout_height="@dimen/wx" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/i05" style="@style/gc" />
+    <com.tencent.mm.plugin.facedetect.views.FaceScanRect android:id="@id/dnj" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="50.0dp" android:layout_marginTop="-63.0dp" android:layout_marginRight="50.0dp" android:layout_marginBottom="99.0dp" android:layout_below="@id/dnz" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/lh" android:id="@id/dhc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="164.0dp" android:layout_centerHorizontal="true" />
+</RelativeLayout>

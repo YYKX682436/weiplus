@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.TouchableLayout android:id="@id/m7g" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/gwv" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/gwr" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" app:loadMoreLayout="@layout/bs5">
+                <com.tencent.mm.plugin.finder.event.recyclerview.FinderRecyclerView android:id="@id/la3" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.tencent.mm.view.RefreshLoadMoreLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/gwh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/ack" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/gwj" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:indeterminateDrawable="@drawable/avj" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/m2d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m2c" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_refresh" app:layout_constraintBottom_toTopOf="@id/m2g" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/f5" android:gravity="center" android:id="@id/m2g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/f8x" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/m2c" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/aj9" />
+</com.tencent.mm.view.TouchableLayout>

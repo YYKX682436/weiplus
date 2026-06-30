@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/q3l" android:padding="@dimen/c8" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd" android:src="@drawable/cn3" android:layout_marginStart="@dimen/dv" app:fs="@color/ac_" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/ac_" android:gravity="center" android:layout_gravity="center" android:id="@id/qar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MJSlidingTabLayout android:layout_gravity="center" android:id="@id/q9b" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="@dimen/dd" app:mj_indicator_color="@color/ac_" app:mj_indicator_height="2.0dp" app:mj_indicator_width_equal_title="true" app:mj_tab_padding="@dimen/dv" app:mj_textSelectColor="@color/ac_" app:mj_textSize="15.0sp" app:mj_textUnselectColor="@color/ac9" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="end|center" android:id="@id/q3m" android:padding="@dimen/c8" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd" android:src="@drawable/cn4" android:layout_marginEnd="@dimen/dv" app:fs="@color/ac_" />
+</FrameLayout>

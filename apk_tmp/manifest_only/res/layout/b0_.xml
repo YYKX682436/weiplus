@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fnu" android:paddingLeft="@dimen/dp" android:paddingRight="@dimen/dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/vgb" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.finder.live.view.FinderLiveInterceptTouchRelativeLayout android:layout_gravity="center_horizontal" android:id="@id/fnp" android:background="@drawable/a1m" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp">
+            <TextView android:textSize="@dimen/cb" android:textColor="@color/f3" android:ellipsize="end" android:id="@id/fns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+            <ScrollView android:id="@id/fnr" android:fadingEdge="vertical" android:fadingEdgeLength="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_below="@id/fns" android:requiresFadingEdge="vertical">
+                <TextView android:textSize="@dimen/co" android:textColor="#e6000000" android:ellipsize="none" android:id="@id/fnq" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </ScrollView>
+        </com.tencent.mm.plugin.finder.live.view.FinderLiveInterceptTouchRelativeLayout>
+    </FrameLayout>
+</FrameLayout>

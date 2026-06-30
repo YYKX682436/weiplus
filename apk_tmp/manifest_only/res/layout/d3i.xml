@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/b66" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/b6_" android:background="@drawable/fa" android:padding="@dimen/cn" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bo" android:layout_marginRight="@dimen/bo">
+        <TextView android:textSize="@dimen/k" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/b6a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/b69" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b63" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.tencent.mm.plugin.recordvideo.ui.editor.PhotoTextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/an" android:gravity="center" android:id="@id/b6d" android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/cz" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="#e6000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="2.0dp" />
+    </LinearLayout>
+</RelativeLayout>

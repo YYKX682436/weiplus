@@ -1,0 +1,69 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1309x2e7b10.ui.v2;
+
+@p3321xbce91901.InterfaceC29042xe907df4f(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B\u0019\b\u0016\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eB!\b\u0016\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\f\u001a\u00020\u000b\u0012\u0006\u0010\u000f\u001a\u00020\u0002¢\u0006\u0004\b\r\u0010\u0010J\u000e\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u000e\u0010\b\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006¨\u0006\u0011"}, d2 = {"Lcom/tencent/mm/plugin/card/ui/v2/CardLabelTextView;", "Landroid/widget/TextView;", "", "color", "Ljz5/f0;", "setFillColor", "", "radius", "setRadius", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "defStyleAttr", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "plugin-card_release"}, k = 1, mv = {1, 9, 0})
+/* renamed from: com.tencent.mm.plugin.card.ui.v2.CardLabelTextView */
+/* loaded from: classes4.dex */
+public final class C13066x41b5b336 extends android.widget.TextView {
+
+    /* renamed from: d, reason: collision with root package name */
+    public float f176742d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final android.graphics.Paint f176743e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public int f176744f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C13066x41b5b336(android.content.Context context) {
+        super(context);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+        this.f176742d = i65.a.b(getContext(), 1);
+        this.f176743e = new android.graphics.Paint();
+    }
+
+    @Override // android.widget.TextView, android.view.View
+    public void onDraw(android.graphics.Canvas canvas) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(canvas, "canvas");
+        android.graphics.RectF rectF = new android.graphics.RectF();
+        rectF.left = 0.0f;
+        rectF.right = getWidth();
+        rectF.top = 0.0f;
+        rectF.bottom = getHeight();
+        android.graphics.Paint paint = this.f176743e;
+        paint.setAntiAlias(true);
+        paint.setColor(this.f176744f);
+        paint.setStyle(android.graphics.Paint.Style.FILL);
+        float f17 = this.f176742d;
+        canvas.drawRoundRect(rectF, f17, f17, paint);
+        super.onDraw(canvas);
+    }
+
+    /* renamed from: setFillColor */
+    public final void m54464x17b1755e(int i17) {
+        this.f176744f = i17;
+    }
+
+    /* renamed from: setRadius */
+    public final void m54465x205ac394(float f17) {
+        this.f176742d = f17;
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C13066x41b5b336(android.content.Context context, android.util.AttributeSet attrs) {
+        super(context, attrs);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(attrs, "attrs");
+        this.f176742d = i65.a.b(getContext(), 1);
+        this.f176743e = new android.graphics.Paint();
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C13066x41b5b336(android.content.Context context, android.util.AttributeSet attrs, int i17) {
+        super(context, attrs, i17);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(attrs, "attrs");
+        this.f176742d = i65.a.b(getContext(), 1);
+        this.f176743e = new android.graphics.Paint();
+    }
+}

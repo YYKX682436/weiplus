@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.feature.chatbot.brand.ui.view.CBTBrandLiveQueryListView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/gzh" android:visibility="gone" android:layout_alignParentTop="true" layout="@layout/e06" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.feature.chatbot.brand.ui.view.FadeEdgeLayout android:id="@id/t9l" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintVertical_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/lq8" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="30.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="20.0dp" />
+        </com.tencent.mm.feature.chatbot.brand.ui.view.FadeEdgeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/txl" android:background="@drawable/cxs" android:visibility="gone" android:layout_width="121.0dp" android:layout_height="36.0dp" android:layout_marginBottom="20.0dp" android:layout_alignBottom="@id/t9l" android:layout_centerHorizontal="true" android:elevation="2.0dp">
+            <TextView android:textColor="@color/abw" android:gravity="center" android:id="@id/uky" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/cpm" android:rotation="180.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.tencent.mm.feature.chatbot.brand.ui.view.CBTBrandLiveQueryListView>

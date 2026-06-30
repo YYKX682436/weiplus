@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ilg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/db" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_3" android:id="@id/d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:text="@string/ctm" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <View android:id="@id/i0a" android:background="@color/BW_0_Alpha_0_1" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginRight="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/d4d" app:layout_constraintRight_toLeftOf="@id/d4d" app:layout_constraintTop_toTopOf="@id/d4d" />
+        <View android:id="@id/m3v" android:background="@color/BW_0_Alpha_0_1" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/d4d" app:layout_constraintLeft_toRightOf="@id/d4d" app:layout_constraintTop_toTopOf="@id/d4d" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

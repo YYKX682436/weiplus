@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tkz" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/tkr" android:background="@color/ak0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@id/tkq" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/tkw" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/an9" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.plugin.finder.live.controller.lyrics.FinderLiveNormalRoomLyricsRenderView android:id="@id/tkx" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/aaw" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tky" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/tkv" android:layout_width="@dimen/d7" android:layout_height="@dimen/amt" android:layout_marginStart="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@id/tkw" app:layout_constraintTop_toTopOf="0">
+            <View android:layout_gravity="center|bottom" android:id="@id/tko" android:visibility="invisible" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" />
+            <FrameLayout android:id="@id/tkt" android:background="@drawable/d30" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tku" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:id="@id/ueu" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uet" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/pause_filled" app:fs="@color/adh" />
+                    </FrameLayout>
+                    <Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    <FrameLayout android:id="@id/uew" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uev" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/finder_live_icon_skip_song_filled" app:fs="@color/adh" />
+                    </FrameLayout>
+                    <Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    <FrameLayout android:id="@id/ues" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/uer" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/finder_live_lyrics_off" />
+                    </FrameLayout>
+                    <Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    <FrameLayout android:id="@id/uey" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uex" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/dot_3_circle_filled" android:scaleType="centerInside" app:fs="@color/adh" />
+                    </FrameLayout>
+                    <Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    <FrameLayout android:id="@id/ueq" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uep" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/shrink_filled" app:fs="@color/q5" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <com.tencent.mm.view.MMPAGView android:id="@id/tkn" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/d1" app:layout_constraintBottom_toBottomOf="@id/tkl" app:layout_constraintEnd_toEndOf="@id/tkl" app:layout_constraintStart_toStartOf="@id/tkl" />
+        <FrameLayout android:id="@id/tkl" android:background="@drawable/d2x" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" app:layout_constraintBottom_toBottomOf="@id/tkv" app:layout_constraintEnd_toEndOf="@id/tkv" app:layout_constraintStart_toStartOf="@id/tkv">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/tkm" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/finder_live_lyrics_icon" app:fs="@color/adh" />
+        </FrameLayout>
+        <com.tencent.mm.view.MMPAGView android:id="@id/tks" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/agv" android:layout_height="@dimen/bv" app:layout_constraintBottom_toBottomOf="@id/tkw" app:layout_constraintEnd_toEndOf="@id/tkw" app:layout_constraintStart_toStartOf="@id/tkw" app:layout_constraintTop_toTopOf="@id/tkw" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

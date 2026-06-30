@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/gj" android:background="@drawable/b9" android:padding="@dimen/j3" android:layout_width="@dimen/aw" android:layout_height="@dimen/aw" android:src="@drawable/b5" android:scaleType="center" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/a0c" android:gravity="center" android:layout_gravity="center" android:id="@id/l5h" android:paddingTop="56.0dp" android:paddingBottom="48.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/a3c" />
+            <TextView android:textSize="@dimen/k" android:textColor="@color/BW_0_Alpha_0_9" android:layout_gravity="start|center" android:id="@id/l5g" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

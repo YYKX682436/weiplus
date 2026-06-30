@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.base.CustomViewPager android:id="@id/p1t" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nts" android:background="@drawable/b4n" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginBottom="50.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/chatroom_logo_white" app:fs="@color/BW_100_Alpha_0_8" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/fla" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="10.0dp" android:layout_height="20.0dp" android:layout_marginLeft="4.0dp" android:src="@raw/chat_room_right_arrow" app:fs="@color/BW_100_Alpha_0_8" />
+    </LinearLayout>
+</RelativeLayout>

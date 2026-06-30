@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/bcj" android:layout_width="match_parent" android:layout_height="@dimen/xw" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/nev" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5.0" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/nep" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/f1x" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/neu" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/f21" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/ner" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/f1y" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/nes" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/f1z" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/net" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/f20" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/h03" android:background="@drawable/auh" android:layout_width="@dimen/db" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/df" android:layout_below="@id/nev" android:layout_centerHorizontal="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/an" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

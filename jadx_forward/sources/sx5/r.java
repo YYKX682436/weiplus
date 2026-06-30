@@ -1,0 +1,20 @@
+package sx5;
+
+/* loaded from: classes13.dex */
+public class r implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ sx5.a1 f495286d;
+
+    public r(sx5.a1 a1Var) {
+        this.f495286d = a1Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(android.view.View view) {
+        sx5.a1 a1Var = this.f495286d;
+        a1Var.getClass();
+        by5.c4.f("XWebNativeInterface", "xwebToJS, videoExitFullscreen");
+        a1Var.f495205f.mo14660x738236e6("xwebVideoBridge.xwebToJS_Video_ExitFullscreen();", new sx5.t(a1Var));
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/djv" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveFeedExptCommentRecyclerView android:id="@id/dju" android:fadingEdge="vertical" android:fadingEdgeLength="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" android:requiresFadingEdge="vertical" app:layout_constraintBottom_toTopOf="@id/djx" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" />
+    <RelativeLayout android:id="@id/djx" android:background="@drawable/ajo" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/bl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0">
+        <TextView android:textSize="14.0dp" android:textColor="@color/u6" android:id="@id/djw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:text="aaa" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/icons_outlined_double_arrow_down" android:layout_toRightOf="@id/djw" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/c9" app:fs="@color/u6" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

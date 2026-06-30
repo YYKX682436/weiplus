@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/lr_" android:background="@color/aaw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lra" android:paddingTop="@dimen/h" android:paddingBottom="@dimen/bu" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/pis" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginBottom="@dimen/d7" android:src="@raw/icons_info_circle" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/ia" android:id="@id/pit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:text="@string/l76" android:layout_below="@id/pis" android:layout_centerHorizontal="true" android:layout_marginHorizontal="@dimen/d7" style="@style/mh" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/BW_0_Alpha_0_7" android:gravity="center" android:id="@id/pir" android:paddingLeft="75.0dp" android:paddingRight="75.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:text="@string/y3" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingHorizontal="75.0dp" style="@style/kz" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+package a0;
+
+/* loaded from: classes14.dex */
+public final class a3 implements e1.a1 {
+    @Override // e1.a1
+    public e1.m0 a(long j17, p2.s layoutDirection, p2.f density) {
+        kotlin.jvm.internal.o.g(layoutDirection, "layoutDirection");
+        kotlin.jvm.internal.o.g(density, "density");
+        float G = density.G(a0.i3.f178a);
+        return new e1.k0(new d1.g(-G, 0.0f, d1.k.d(j17) + G, d1.k.b(j17)));
+    }
+}

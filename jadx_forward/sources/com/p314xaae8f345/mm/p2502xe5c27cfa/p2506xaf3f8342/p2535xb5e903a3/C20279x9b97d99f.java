@@ -1,0 +1,48 @@
+package com.p314xaae8f345.mm.p2502xe5c27cfa.p2506xaf3f8342.p2535xb5e903a3;
+
+@p3321xbce91901.InterfaceC29042xe907df4f(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/tencent/mm/repairer/config/global/RepairerConfigGlobalStorageForceShowCleanBtn;", "Lq55/f;", "<init>", "()V", "libcompatible_release"}, k = 1, mv = {1, 9, 0})
+/* renamed from: com.tencent.mm.repairer.config.global.RepairerConfigGlobalStorageForceShowCleanBtn */
+/* loaded from: classes11.dex */
+public final class C20279x9b97d99f extends q55.f {
+    public static final boolean n() {
+        if (j62.e.g().c(new com.p314xaae8f345.mm.p2502xe5c27cfa.p2506xaf3f8342.p2535xb5e903a3.C20282xb127cf56()) > 0) {
+            return j62.e.g().c(new com.p314xaae8f345.mm.p2502xe5c27cfa.p2506xaf3f8342.p2535xb5e903a3.C20279x9b97d99f()) > 0;
+        }
+        return false;
+    }
+
+    @Override // q55.h
+    public java.lang.String b() {
+        return "RepairerConfig_GlobalStorageForceShowCleanBt_Int";
+    }
+
+    @Override // q55.h
+    public java.lang.String c() {
+        return "强制显示清理按钮(方便测试, 开启: >=1)";
+    }
+
+    @Override // q55.h
+    public int d() {
+        return 5;
+    }
+
+    @Override // q55.h
+    public java.lang.Class e() {
+        return com.p314xaae8f345.mm.p2502xe5c27cfa.p2587x5e0f67f.C20923x4649c536.class;
+    }
+
+    @Override // q55.f, q55.e
+    public java.lang.String h() {
+        return "Int";
+    }
+
+    @Override // q55.e
+    public java.lang.Object i() {
+        return 0;
+    }
+
+    @Override // q55.e
+    public java.lang.String k() {
+        return "clicfg_clean_force_show_clean_btn";
+    }
+}

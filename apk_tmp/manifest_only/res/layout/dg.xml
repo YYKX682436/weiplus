@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.NoDrawingCacheLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/cfw" android:background="?gp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/cfx" android:background="@null" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/d" android:layout_width="wrap_content" android:layout_alignParentStart="true" style="@style/jt" />
+        <com.tencent.mm.ui.contact.CategoryTipView android:id="@id/cfy" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/azm" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+        <RelativeLayout android:id="@id/cg5" android:layout_width="match_parent" android:layout_height="@dimen/ho">
+            <TextView android:id="@id/cg6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="signature" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/f_" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/bi" android:id="@id/cft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/i_" android:text="@string/dn" android:layout_toLeftOf="@id/cg6" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/kjo" android:background="@drawable/bfj" android:paddingRight="36.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxEms="4" android:singleLine="true" android:layout_toLeftOf="@id/cft" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/kjo">
+                <com.tencent.mm.ui.chatting.view.AvatarImageView android:id="@id/mt" android:layout_marginRight="10.0dp" android:importantForAccessibility="no" style="@style/ef" />
+                <com.tencent.mm.ui.base.NoMeasuredTextView android:id="@id/k3e" android:background="@drawable/bfj" android:paddingRight="@dimen/d" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="yes" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.tencent.mm.ui.NoDrawingCacheLinearLayout>

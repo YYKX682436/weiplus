@@ -1,0 +1,21 @@
+package zc4;
+
+/* loaded from: classes4.dex */
+public abstract /* synthetic */ class d {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final /* synthetic */ int[] f552968a;
+
+    static {
+        int[] iArr = new int[p012xc85e97e9.p093xedfae76a.m.m7816xcee59d22().length];
+        try {
+            iArr[p012xc85e97e9.p093xedfae76a.m.ON_CREATE.ordinal()] = 1;
+        } catch (java.lang.NoSuchFieldError unused) {
+        }
+        try {
+            iArr[p012xc85e97e9.p093xedfae76a.m.ON_DESTROY.ordinal()] = 2;
+        } catch (java.lang.NoSuchFieldError unused2) {
+        }
+        f552968a = iArr;
+    }
+}

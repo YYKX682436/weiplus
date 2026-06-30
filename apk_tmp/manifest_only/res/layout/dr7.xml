@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rk0" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/rk1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/t8x" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/djp">
+            <TextView android:textSize="10.0dp" android:textColor="@color/UN_BW_100_Alpha_0_8" android:gravity="center" android:id="@id/t8w" android:background="@drawable/cua" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="18.0dp" android:text="@string/li9" android:paddingHorizontal="6.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp">
+                <TextView android:textSize="15.0dp" android:textColor="@color/UN_BW_100_Alpha_0_8" android:ellipsize="end" android:id="@id/t8v" android:layout_width="0.0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:gravity="center" android:id="@id/t8y" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="4.0dp" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="15.0dp" android:textColor="@color/u6" android:ellipsize="end" android:id="@id/rjz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:maxLines="2" android:importantForAccessibility="no" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/rk1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+package zy2;
+
+/* loaded from: classes3.dex */
+public final class q implements android.view.View.OnAttachStateChangeListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ android.widget.TextView f559064d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ android.view.ViewTreeObserver f559065e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ zy2.r f559066f;
+
+    public q(android.widget.TextView textView, android.view.ViewTreeObserver viewTreeObserver, zy2.r rVar) {
+        this.f559064d = textView;
+        this.f559065e = viewTreeObserver;
+        this.f559066f = rVar;
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewAttachedToWindow(android.view.View v17) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(v17, "v");
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewDetachedFromWindow(android.view.View v17) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(v17, "v");
+        android.widget.TextView textView = this.f559064d;
+        textView.removeOnAttachStateChangeListener(this);
+        android.view.ViewTreeObserver viewTreeObserver = textView.getViewTreeObserver().isAlive() ? textView.getViewTreeObserver() : this.f559065e;
+        if (viewTreeObserver.isAlive()) {
+            viewTreeObserver.removeOnPreDrawListener(this.f559066f);
+        }
+        textView.setTag(com.p314xaae8f345.mm.R.id.sut, null);
+    }
+}

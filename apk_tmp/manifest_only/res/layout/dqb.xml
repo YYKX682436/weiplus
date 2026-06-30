@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="40.0dp" android:layout_width="match_parent" android:layout_height="332.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h5n" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="40.0dp" android:src="@raw/microphone_note_regular" app:fs="@color/m" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/chx" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/mj9" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/h5n" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/b0r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" app:layout_constraintBottom_toTopOf="@id/sa3" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/s7e" android:layout_width="120.0dp" android:text="@string/mi0" style="@style/xl" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/bz2" android:layout_width="120.0dp" android:layout_marginLeft="@dimen/cn" android:text="@string/d2r" style="@style/xk" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dp" android:textColor="@color/a5" android:id="@id/sa3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mjx" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

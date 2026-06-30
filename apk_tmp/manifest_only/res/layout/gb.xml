@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderLiveInterceptRelativeLayout android:id="@id/a4w" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/a4v" android:background="@drawable/a0m" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/a3n" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_marginBottom="@dimen/dv" android:layout_alignParentTop="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left|center" android:id="@id/zs" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:src="@raw/arrow_left_regular" app:fs="@color/ah_" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/ahc" android:ellipsize="end" android:layout_gravity="center" android:id="@id/a4y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/zu" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/a3n" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.finder.live.view.FinderLiveInterceptRelativeLayout>

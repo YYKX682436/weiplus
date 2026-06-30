@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/kwj" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/j" android:src="@raw/media_player_btn_cur_status_off" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/a8s" android:id="@id/kwl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j3" android:text="00:00" android:layout_toRightOf="@id/kwj" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/a8s" android:id="@id/kxa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/kxa" android:layout_toRightOf="@id/kwl" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="left|center" android:id="@id/kxi" android:background="@color/a1y" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginLeft="@dimen/hf" android:layout_marginRight="@dimen/hf" />
+        <ImageView android:layout_gravity="left|center" android:id="@id/kxj" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginLeft="@dimen/hf" android:layout_marginRight="@dimen/hf" />
+        <ImageView android:id="@id/kxm" android:paddingLeft="@dimen/j" android:paddingTop="@dimen/j" android:paddingRight="@dimen/j" android:paddingBottom="@dimen/j" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/j3" android:src="@raw/media_player_control_btn" />
+    </FrameLayout>
+</RelativeLayout>

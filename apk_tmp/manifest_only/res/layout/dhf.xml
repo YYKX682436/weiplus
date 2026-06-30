@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ex7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/ex8" android:background="@drawable/a2f" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/bn" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/ex5" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/ex6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:layout_marginBottom="1.0dp" android:text="@string/dci" android:maxLines="2" android:layout_centerInParent="true" android:layout_marginStart="1.0dp" android:layout_marginEnd="1.0dp" />
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/i9v" android:background="@drawable/a2e" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_margin="4.0dp" android:src="@raw/icons_filled_download2" android:layout_alignRight="@id/ex8" android:layout_alignBottom="@id/ex8" app:fs="#ffffff" />
+        <com.tencent.mm.ui.widget.progress.RoundProgressBtn android:id="@id/i9w" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_margin="4.0dp" android:layout_alignRight="@id/ex8" android:layout_alignBottom="@id/ex8" app:hasPause="false" app:progress="30" app:l8="#ffffff" />
+        <View android:id="@id/ex9" android:background="@drawable/a2g" android:layout_width="@dimen/dp" android:layout_height="@dimen/dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/ex_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:maxLines="2" android:layout_below="@id/ex9" android:layout_centerHorizontal="true" android:layout_marginStart="1.0dp" android:layout_marginEnd="1.0dp" />
+    </RelativeLayout>
+</RelativeLayout>

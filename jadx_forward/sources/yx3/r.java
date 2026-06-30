@@ -1,0 +1,60 @@
+package yx3;
+
+/* loaded from: classes10.dex */
+public final class r extends qz5.l implements yz5.p {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f549454d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f549455e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ yx3.v f549456f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ boolean f549457g;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public r(java.lang.String str, yx3.v vVar, boolean z17, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        super(2, interfaceC29045xdcb5ca57);
+        this.f549455e = str;
+        this.f549456f = vVar;
+        this.f549457g = z17;
+    }
+
+    @Override // qz5.a
+    /* renamed from: create */
+    public final p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 mo148xaf65a0fc(java.lang.Object obj, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        return new yx3.r(this.f549455e, this.f549456f, this.f549457g, interfaceC29045xdcb5ca57);
+    }
+
+    @Override // yz5.p
+    /* renamed from: invoke */
+    public java.lang.Object mo149xb9724478(java.lang.Object obj, java.lang.Object obj2) {
+        return ((yx3.r) mo148xaf65a0fc((p3325xe03a0797.p3326xc267989b.y0) obj, (p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57) obj2)).mo150x989b7ca4(jz5.f0.f384359a);
+    }
+
+    @Override // qz5.a
+    /* renamed from: invokeSuspend */
+    public final java.lang.Object mo150x989b7ca4(java.lang.Object obj) {
+        pz5.a aVar = pz5.a.f440719d;
+        int i17 = this.f549454d;
+        if (i17 == 0) {
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+            vx3.c cVar = this.f549456f.f549478e;
+            this.f549454d = 1;
+            mx3.f0 f0Var = mx3.f0.f414081a;
+            obj = p3325xe03a0797.p3326xc267989b.l.g(p3325xe03a0797.p3326xc267989b.q1.f392103c, new mx3.d0(cVar, this.f549455e, this.f549457g, null), this);
+            if (obj == aVar) {
+                return aVar;
+            }
+        } else {
+            if (i17 != 1) {
+                throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+        }
+        return obj;
+    }
+}

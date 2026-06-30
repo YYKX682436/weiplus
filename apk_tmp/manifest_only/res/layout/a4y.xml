@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pbn" android:background="@color/zy" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/pf3" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/pax" android:paddingTop="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/s9">
+            <TextView android:id="@id/pb5" android:text="@string/kh_" style="@style/sk" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pbk" wallet:contentHint="@string/kle" wallet:titleText="@string/khc" style="@style/f0" />
+            <Button android:id="@id/kao" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp" android:layout_marginTop="30.0dp" android:layout_marginRight="@dimen/hp" android:text="@string/ww" style="@style/su" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/cye" />
+</LinearLayout>

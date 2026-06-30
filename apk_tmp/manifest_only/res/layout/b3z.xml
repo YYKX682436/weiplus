@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/dt" android:layout_height="@dimen/db"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/jj" android:ellipsize="end" android:gravity="center" android:id="@id/nuw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dv" />
+    <View android:id="@id/g3w" android:background="@color/f3" android:visibility="invisible" android:layout_width="0.100000024dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dv" android:layout_toEndOf="@id/nuw" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/qf" android:ellipsize="end" android:gravity="center" android:id="@id/nuu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bi" android:layout_toEndOf="@id/nuw" />
+    <ImageView android:id="@id/kd7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:src="@drawable/a_z" android:layout_toEndOf="@id/nuw" />
+</RelativeLayout>

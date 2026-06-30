@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:newtip="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference newtip:key="room_access_by_qrcode_key" newtip:gc="@layout/byv" newtip:persistent="false" newtip:title="@string/p67" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference newtip:key="allow_by_identity_key" newtip:gc="@layout/byv" newtip:persistent="false" newtip:title="@string/p66" />
+    <com.tencent.mm.ui.base.preference.SubPreference newtip:key="room_access_verify_application_key" newtip:gc="@layout/byv" newtip:title="@string/p6d" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference newtip:key="room_topic_mod_only_admin_key" newtip:gc="@layout/byv" newtip:persistent="false" newtip:title="@string/i6m" />
+    <PreferenceSmallCategory />
+    <Preference newtip:key="room_transfer_room_owner_key" newtip:gc="@layout/byv" newtip:title="@string/i6p" />
+    <Preference newtip:key="room_manager_key" newtip:gc="@layout/byv" newtip:title="@string/i58" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.plugin.newtips.NewTipPreference newtip:key="use_wework_manager_room_key" newtip:gc="@layout/byv" newtip:path="useww" newtip:title="@string/k4z" />
+    <PreferenceSmallCategory />
+    <Preference newtip:key="room_bind_app_info_key" newtip:gc="@layout/byv" newtip:title="@string/ay7" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference newtip:btn_title="@string/bqd" newtip:key="dismiss_chatroom_quit_key" newtip:gc="@layout/c_e" newtip:title_color="@color/ac" />
+</PreferenceScreen>

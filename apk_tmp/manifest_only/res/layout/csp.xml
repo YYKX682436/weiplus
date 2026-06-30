@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/jdl" android:background="@drawable/b26" android:padding="@dimen/f" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="42.0dp">
+        <com.tencent.mm.plugin.sns.ui.CornerMaskImageView android:layout_gravity="center_vertical" android:id="@id/h9t" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:scaleType="centerCrop" android:maxHeight="350.0dp" android:contentDescription="@string/jar" app:i8="1.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/nh7" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:maxHeight="350.0dp" android:importantForAccessibility="no" />
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/chh" android:background="@color/a" android:visibility="gone" android:layout_width="42.0dp" android:layout_height="42.0dp" android:maxLines="3" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/aj3">
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/odj" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{{abccd}}" android:singleLine="false" />
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/ia" android:textColor="@color/adg" android:id="@id/m4o" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{{line2}}" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

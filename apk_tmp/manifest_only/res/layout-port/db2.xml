@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fqd" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/a40"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/fm9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/db" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/azw" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fqc" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/fm9" app:layout_goneMarginTop="@dimen/db">
+        <include android:id="@id/ig1" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/bn" android:layout_marginEnd="@dimen/bl" layout="@layout/b09" />
+        <ViewStub android:id="@id/fpy" android:visibility="gone" android:layout="@layout/b18" android:layout_width="@dimen/db" android:layout_height="@dimen/df" />
+        <include android:id="@id/fbg" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" layout="@layout/avl" />
+        <include android:id="@id/ihj" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" layout="@layout/b16" />
+        <include android:id="@id/ih2" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_marginEnd="@dimen/dv" layout="@layout/b0q" />
+    </LinearLayout>
+    <ViewStub android:id="@id/i95" android:layout="@layout/dae" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/fqc" />
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveShadeView android:id="@id/fl0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/fl4" android:layout="@layout/az2" android:inflatedId="@id/fl3" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

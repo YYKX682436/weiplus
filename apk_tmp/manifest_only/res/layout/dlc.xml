@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/eop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.MMPAGView android:id="@id/eoi" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveGiftTextView android:textColor="@color/ab0" android:gravity="center" android:id="@id/eog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="-14.0dp" android:layout_toEndOf="@id/eoi" />
+</RelativeLayout>

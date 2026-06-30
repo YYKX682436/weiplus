@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a08" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:form="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/hf" android:paddingTop="@dimen/ie" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ht4" android:layout_width="@dimen/hg" android:layout_height="@dimen/hg" android:src="@drawable/b0i" />
+        <TextView android:textSize="@dimen/hs" android:textColor="@color/fa" android:gravity="center" android:id="@id/iod" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" />
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/ej0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/p6b" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/ipg" android:layout_width="match_parent" style="@style/kr">
+                    <ImageView android:id="@id/p5d" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bts" android:scaleType="fitXY" />
+                    <TextView android:id="@id/p5m" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/db" android:text="@string/gia" style="@style/kq" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/iox" android:layout_width="match_parent" android:layout_marginTop="@dimen/cn" android:text="@string/ghq" style="@style/kz" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/ia" android:textColor="@color/vr" android:layout_gravity="center|bottom" android:id="@id/iog" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hi" android:maxWidth="@dimen/d_" android:text="@string/gh_" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dr" android:layout_marginBottom="@dimen/cz">
+        <Button android:id="@id/ip3" android:text="@string/hv3" style="@style/yt" />
+        <ImageView android:background="@color/br" android:layout_width="@dimen/bd" android:layout_height="@dimen/hi" android:layout_marginLeft="@dimen/j" android:layout_marginRight="@dimen/j" />
+        <RelativeLayout android:id="@id/ugl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/ud3" android:text="@string/ock" android:layout_centerVertical="true" style="@style/yt" />
+            <ImageView android:background="@color/br" android:layout_width="@dimen/bd" android:layout_height="@dimen/hi" android:layout_marginLeft="@dimen/j" android:layout_marginRight="@dimen/j" android:layout_toRightOf="@id/ud3" />
+        </RelativeLayout>
+        <Button android:id="@id/ip9" android:text="@string/lrm" style="@style/yt" />
+    </LinearLayout>
+</LinearLayout>

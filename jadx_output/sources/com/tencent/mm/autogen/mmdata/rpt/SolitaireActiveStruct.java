@@ -1,0 +1,85 @@
+package com.tencent.mm.autogen.mmdata.rpt;
+
+/* loaded from: classes5.dex */
+public final class SolitaireActiveStruct extends jx3.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public java.lang.String f60821d = "";
+
+    /* renamed from: e, reason: collision with root package name */
+    public java.lang.String f60822e = "";
+
+    /* renamed from: f, reason: collision with root package name */
+    public java.lang.String f60823f = "";
+
+    /* renamed from: g, reason: collision with root package name */
+    public long f60824g = 0;
+
+    /* renamed from: h, reason: collision with root package name */
+    public long f60825h = 0;
+
+    /* renamed from: i, reason: collision with root package name */
+    public long f60826i = 0;
+
+    /* renamed from: j, reason: collision with root package name */
+    public long f60827j = 0;
+
+    /* renamed from: k, reason: collision with root package name */
+    public long f60828k = 0;
+
+    /* renamed from: l, reason: collision with root package name */
+    public java.lang.String f60829l = "";
+
+    @Override // jx3.a
+    public int g() {
+        return 18244;
+    }
+
+    @Override // jx3.a
+    public java.lang.String m() {
+        java.lang.StringBuffer stringBuffer = new java.lang.StringBuffer();
+        stringBuffer.append(this.f60821d);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60822e);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60823f);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60824g);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60825h);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60826i);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60827j);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60828k);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f60829l);
+        java.lang.String stringBuffer2 = stringBuffer.toString();
+        a(stringBuffer2);
+        return stringBuffer2;
+    }
+
+    @Override // jx3.a
+    public java.lang.String n() {
+        java.lang.StringBuffer stringBuffer = new java.lang.StringBuffer("ChatName:");
+        stringBuffer.append(this.f60821d);
+        stringBuffer.append("\r\nLaunchUserName:");
+        stringBuffer.append(this.f60822e);
+        stringBuffer.append("\r\nMsgUserName:");
+        stringBuffer.append(this.f60823f);
+        stringBuffer.append("\r\nSessionSvrId:");
+        stringBuffer.append(this.f60824g);
+        stringBuffer.append("\r\nHasHeader:");
+        stringBuffer.append(this.f60825h);
+        stringBuffer.append("\r\nHasTail:");
+        stringBuffer.append(this.f60826i);
+        stringBuffer.append("\r\nHasExample:");
+        stringBuffer.append(this.f60827j);
+        stringBuffer.append("\r\nActiveScene:");
+        stringBuffer.append(this.f60828k);
+        stringBuffer.append("\r\nIdentifier:");
+        stringBuffer.append(this.f60829l);
+        return stringBuffer.toString();
+    }
+}

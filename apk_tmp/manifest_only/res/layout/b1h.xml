@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/a03" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <FrameLayout android:id="@id/mxw" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_centerVertical="true" android:layout_marginHorizontal="@dimen/dv">
+            <com.tencent.mm.view.MMPAGView android:gravity="center" android:layout_gravity="center" android:id="@id/my3" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/q4" android:gravity="center" android:layout_gravity="center" android:id="@id/my1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/d7" android:layout_centerVertical="true" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/mx_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:layout_toLeftOf="@id/mxo" android:layout_toRightOf="@id/mxw" android:layout_centerVertical="true">
+            <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/my0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="歌曲名字" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/ta" android:ellipsize="end" android:id="@id/mya" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="想听的人" android:singleLine="true" android:layout_below="@id/my0" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mxo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/mxs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:text="-" />
+            <RelativeLayout android:id="@id/mxp" android:background="@drawable/a6z" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/mxq" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/finder_icons_filled_gift" android:layout_centerInParent="true" app:fs="@color/BW_100_Alpha_0_8" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/BW_100_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/mxw" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mxv" android:paddingBottom="@dimen/bo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bdv" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/d9" android:src="@raw/finder_live_sing_song_end_icon" app:fs="@color/BW_100_Alpha_0_5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <View android:id="@id/i0a" android:background="@color/BW_100_Alpha_0_1_5" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginRight="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/bdv" app:layout_constraintRight_toLeftOf="@id/bdv" app:layout_constraintTop_toTopOf="@id/bdv" />
+        <View android:id="@id/m3v" android:background="@color/BW_100_Alpha_0_1_5" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/bdv" app:layout_constraintLeft_toRightOf="@id/bdv" app:layout_constraintTop_toTopOf="@id/bdv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

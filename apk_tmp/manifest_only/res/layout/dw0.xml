@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/cw0" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:id="@id/ri5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rhw" android:visibility="gone" android:layout_width="7.0dp" android:layout_height="13.0dp" android:src="@drawable/bre" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/FG_2" />
+    <View android:id="@id/ri2" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16.0dp" android:layout_below="@id/ri5" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rhx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/ri2">
+        <LinearLayout android:orientation="vertical" android:id="@id/ri4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ri3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:id="@id/rhy" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:id="@id/ri0" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ri6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:id="@id/rhz" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:id="@id/ri1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rhv" android:layout_width="7.0dp" android:layout_height="13.0dp" android:src="@drawable/bre" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/FG_2" />
+    </RelativeLayout>
+</RelativeLayout>

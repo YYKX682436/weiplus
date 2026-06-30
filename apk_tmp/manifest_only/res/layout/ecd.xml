@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/tqu" android:background="@color/w5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/fq_" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/fpu" app:layout_constraintHeight_percent="0.25" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.plugin.finder.live.widget.FinderLiveViewBottomSheetPanel android:orientation="vertical" android:id="@id/fpu" android:background="@drawable/aje" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHeight_percent="0.75" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+        <com.tencent.mm.plugin.finder.live.view.FinderLiveSingSongListContainer android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/v61" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/cz" android:layout_marginVertical="@dimen/cz">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/v60" android:background="@drawable/d3n" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/v5z" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@raw/icons_outlined_arrow" android:rotation="90.0" app:fs="@color/ahb" />
+                </FrameLayout>
+                <TextView android:textColor="@color/ahc" android:layout_gravity="center" android:id="@id/tqt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eiv" />
+            </FrameLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/v5v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/v61">
+                <FrameLayout android:orientation="horizontal" android:id="@id/v63" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn">
+                    <TextView android:textSize="15.0dp" android:textColor="@color/adg" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ouf" />
+                    <TextView android:textSize="15.0dp" android:textColor="@color/adg" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efc" />
+                </FrameLayout>
+                <com.tencent.mm.view.recyclerview.WxRecyclerView android:orientation="vertical" android:id="@id/v64" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/v63" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/v62" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cc" android:layout_below="@id/v61" android:layout_centerHorizontal="true">
+                <TextView android:textSize="15.0dp" android:textColor="@color/BW_100_Alpha_0_5_5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eff" />
+            </FrameLayout>
+            <ProgressBar android:id="@id/v5w" android:visibility="gone" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginTop="@dimen/c2" android:layout_below="@id/v61" android:layout_centerHorizontal="true" style="@style/x4" />
+        </com.tencent.mm.plugin.finder.live.view.FinderLiveSingSongListContainer>
+    </com.tencent.mm.plugin.finder.live.widget.FinderLiveViewBottomSheetPanel>
+</androidx.constraintlayout.widget.ConstraintLayout>

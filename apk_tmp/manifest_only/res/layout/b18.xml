@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fpx" android:layout_width="@dimen/db" android:layout_height="@dimen/df"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/d16" android:background="@drawable/co1" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qfa" android:visibility="gone" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@raw/finder_ting_music_filled" app:fs="@color/adt" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <ImageView android:id="@id/qf_" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bqo" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

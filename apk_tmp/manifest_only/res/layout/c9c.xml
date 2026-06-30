@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/m82" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="bottom" android:id="@id/agc" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@drawable/au2" android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/d7" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ktf" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/icons_filled_location" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/r" android:textColor="@color/f5" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_below="@id/ktf" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/f5" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_below="@id/obc" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/b0r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_below="@id/cu2" android:layout_centerHorizontal="true">
+                <Button android:id="@id/b5i" android:minWidth="120.0dp" android:text="@string/sg" style="@style/kz" />
+                <Button android:id="@id/khs" android:layout_marginLeft="@dimen/cn" android:minWidth="120.0dp" android:text="@string/iw2" style="@style/kr" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/a5" android:id="@id/h1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_marginBottom="@dimen/d7" android:text="@string/ivx" android:layout_below="@id/b0r" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

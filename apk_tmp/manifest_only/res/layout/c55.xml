@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/k1s" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/k1w" android:layout_width="320.0dp" android:layout_height="0.0dp" android:layout_marginTop="@dimen/br" android:layout_weight="1.0" app:ds="12.0dp">
+        <FrameLayout android:layout_gravity="center" android:id="@id/k1t" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/k1g" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:id="@id/k1v" android:background="@drawable/as5" android:paddingTop="@dimen/cs" android:layout_width="match_parent" android:layout_height="160.0dp" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/an" android:id="@id/k1u" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <TextView android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/k1r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/h4b" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cz">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/k1h" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/db" android:paddingEnd="@dimen/db" />
+        <com.tencent.mm.plugin.mv.ui.view.MusicMvSliderSeekBar android:id="@id/k1i" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_marginBottom="@dimen/d7">
+        <LinearLayout android:gravity="center" android:id="@id/k1e" android:background="@drawable/ars" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_close" app:fs="@color/an" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/k1f" android:background="@drawable/art" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginStart="@dimen/dr">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_done" app:fs="@color/an" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

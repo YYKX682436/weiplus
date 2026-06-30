@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sdu" android:background="@drawable/d25" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cz">
+            <ImageView android:id="@id/twf" android:layout_width="@dimen/d7" android:layout_height="36.0dp" android:layout_marginTop="9.0dp" android:src="@raw/finder_live_cart_edu_finger" android:scaleType="fitXY" android:layout_marginStart="@dimen/dv" />
+            <ImageView android:id="@id/uo1" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_live_cart_edu_circle" android:layout_marginStart="7.0dp" />
+            <ImageView android:id="@id/u4r" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="3.899994dp" android:src="@raw/finder_live_cart_edu_circle" android:layout_marginStart="10.899994dp" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/ca" android:textColor="#fffffd" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="长按可加入购物车" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionGroup="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.base.WxImageView android:gravity="center" android:id="@id/h_l" android:layout_width="match_parent" android:layout_height="match_parent" app:tileBackgroundColor="@color/an" />
+    <include android:id="@id/h_g" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bkj" />
+</FrameLayout>

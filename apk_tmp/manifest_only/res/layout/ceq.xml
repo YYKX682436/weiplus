@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.MMEditText android:id="@id/h7y" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="sql:" />
+    <ScrollView android:scrollbars="none" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="20.0dp" style="@style/kj">
+        <LinearLayout android:gravity="center_horizontal" style="@style/ij">
+            <TextView android:id="@id/m1x" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:minHeight="@dimen/cu" android:hint="Result:" style="@style/ik" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/cjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:hint="Cost:" style="@style/ik" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/khs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="Run" style="@style/kr" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/dkj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="Export" style="@style/kr" />
+</LinearLayout>

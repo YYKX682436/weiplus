@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="@color/BW_BG_100" android:gravity="center" android:id="@id/b60" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/sg" android:layout_marginStart="@dimen/abg" />
+        <Button android:textSize="17.0sp" android:id="@id/b6e" android:background="@drawable/jv" android:text="@string/v5" android:layout_marginEnd="@dimen/abg" android:layout_alignParentEnd="true" style="@style/ks" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/b67" android:fadingEdge="vertical" android:fadingEdgeLength="@dimen/cz" android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/cz" />
+</merge>

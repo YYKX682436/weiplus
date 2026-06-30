@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes.dex */
+public class m31 extends com.tencent.mm.protobuf.e {
+    public m31() {
+        super(com.tencent.mm.protobuf.i.i(1, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), com.tencent.mm.protobuf.i.i(2, "hot"), com.tencent.mm.protobuf.i.i(3, "pullType"), com.tencent.mm.protobuf.i.i(4, "finishScene"), com.tencent.mm.protobuf.i.i(5, "globalInitMs"), com.tencent.mm.protobuf.i.i(6, "pullCgiMs"), com.tencent.mm.protobuf.i.i(7, "showUiMs"), com.tencent.mm.protobuf.i.i(8, "downloadToDecodeMs"), com.tencent.mm.protobuf.i.i(9, "decodeToFirstFrameMs"), com.tencent.mm.protobuf.i.i(10, "db_oper_ms"), com.tencent.mm.protobuf.i.a(11, "debug_message"), com.tencent.mm.protobuf.i.i(12, "comment_scene"), com.tencent.mm.protobuf.i.i(13, "status"), com.tencent.mm.protobuf.i.i(14, "cgi_type"), com.tencent.mm.protobuf.i.i(15, "total_time_ms"), com.tencent.mm.protobuf.i.i(16, "loading_time_ms"), com.tencent.mm.protobuf.i.n(17, "start_time"), com.tencent.mm.protobuf.i.n(18, "start_connect_time"), com.tencent.mm.protobuf.i.n(19, "connect_successful_time"), com.tencent.mm.protobuf.i.n(20, "start_tls_handshake_time"), com.tencent.mm.protobuf.i.n(21, "tls_handshake_successful_time"), com.tencent.mm.protobuf.i.n(22, "start_send_packet_time"), com.tencent.mm.protobuf.i.n(23, "start_read_packet_time"), com.tencent.mm.protobuf.i.n(24, "read_packet_finished_time"), com.tencent.mm.protobuf.i.i(25, "ui_refresh_end_cost_ms"), com.tencent.mm.protobuf.i.u(26, "first_feed_session_buffer"), com.tencent.mm.protobuf.i.n(27, "click_discovery_time_ms"), com.tencent.mm.protobuf.i.n(28, "click_finder_time_ms"), com.tencent.mm.protobuf.i.i(29, "preload_status"), com.tencent.mm.protobuf.i.i(30, "switch_comment_scene"));
+        this.__printBytes = true;
+    }
+}

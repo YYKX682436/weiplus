@@ -1,0 +1,81 @@
+package p012xc85e97e9.p087x9da2e250.app;
+
+/* loaded from: classes13.dex */
+public enum l3 {
+    REMOVED,
+    VISIBLE,
+    GONE,
+    INVISIBLE;
+
+    public static p012xc85e97e9.p087x9da2e250.app.l3 b(int i17) {
+        if (i17 == 0) {
+            return VISIBLE;
+        }
+        if (i17 == 4) {
+            return INVISIBLE;
+        }
+        if (i17 == 8) {
+            return GONE;
+        }
+        throw new java.lang.IllegalArgumentException("Unknown visibility " + i17);
+    }
+
+    public static p012xc85e97e9.p087x9da2e250.app.l3 d(android.view.View view) {
+        return (view.getAlpha() == 0.0f && view.getVisibility() == 0) ? INVISIBLE : b(view.getVisibility());
+    }
+
+    public void a(android.view.View view) {
+        int ordinal = ordinal();
+        if (ordinal == 0) {
+            android.view.ViewGroup viewGroup = (android.view.ViewGroup) view.getParent();
+            if (viewGroup != null) {
+                if (p012xc85e97e9.p087x9da2e250.app.AbstractC1104xc1ad431d.m7619x11f226ac(2)) {
+                    view.toString();
+                    viewGroup.toString();
+                }
+                viewGroup.removeView(view);
+                return;
+            }
+            return;
+        }
+        if (ordinal == 1) {
+            if (p012xc85e97e9.p087x9da2e250.app.AbstractC1104xc1ad431d.m7619x11f226ac(2)) {
+                java.util.Objects.toString(view);
+            }
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f554818a;
+            arrayList.add(0);
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(view, arrayList.toArray(), "androidx/fragment/app/SpecialEffectsController$Operation$State", "applyState", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view.setVisibility(((java.lang.Integer) arrayList.get(0)).intValue());
+            yj0.a.f(view, "androidx/fragment/app/SpecialEffectsController$Operation$State", "applyState", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            return;
+        }
+        if (ordinal == 2) {
+            if (p012xc85e97e9.p087x9da2e250.app.AbstractC1104xc1ad431d.m7619x11f226ac(2)) {
+                java.util.Objects.toString(view);
+            }
+            java.util.ArrayList arrayList2 = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal2 = zj0.c.f554818a;
+            arrayList2.add(8);
+            java.util.Collections.reverse(arrayList2);
+            yj0.a.d(view, arrayList2.toArray(), "androidx/fragment/app/SpecialEffectsController$Operation$State", "applyState", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view.setVisibility(((java.lang.Integer) arrayList2.get(0)).intValue());
+            yj0.a.f(view, "androidx/fragment/app/SpecialEffectsController$Operation$State", "applyState", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            return;
+        }
+        if (ordinal != 3) {
+            return;
+        }
+        if (p012xc85e97e9.p087x9da2e250.app.AbstractC1104xc1ad431d.m7619x11f226ac(2)) {
+            java.util.Objects.toString(view);
+        }
+        java.util.ArrayList arrayList3 = new java.util.ArrayList();
+        java.lang.ThreadLocal threadLocal3 = zj0.c.f554818a;
+        arrayList3.add(4);
+        java.util.Collections.reverse(arrayList3);
+        yj0.a.d(view, arrayList3.toArray(), "androidx/fragment/app/SpecialEffectsController$Operation$State", "applyState", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        view.setVisibility(((java.lang.Integer) arrayList3.get(0)).intValue());
+        yj0.a.f(view, "androidx/fragment/app/SpecialEffectsController$Operation$State", "applyState", "(Landroid/view/View;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+    }
+}

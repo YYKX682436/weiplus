@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.gallery.picker.view.TouchCoordinatorLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/a25" android:background="@color/BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/zy">
+        <com.tencent.mm.plugin.gallery.picker.view.MMMediaCropLayout android:layout_gravity="center" android:id="@id/l3x" android:background="@color/BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="450.0dp" android:minHeight="120.0dp" android:elevation="8.0dp" app:layout_scrollFlags="0x13">
+            <ImageView android:layout_gravity="end|bottom" android:id="@id/jv2" android:background="@drawable/b03" android:padding="7.0dp" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginBottom="@dimen/c9" android:src="@raw/multi_selected_item" android:layout_marginEnd="@dimen/c9" />
+        </com.tencent.mm.plugin.gallery.picker.view.MMMediaCropLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ga6" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="@dimen/df" android:elevation="8.0dp">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/fa" android:gravity="center" android:id="@id/ga3" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fia" />
+            <ImageView android:id="@id/a4t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/arrow_down" android:layout_marginStart="@dimen/c9" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/gig" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/zz" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/g_x" android:background="@color/zy" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/zz" />
+</com.tencent.mm.plugin.gallery.picker.view.TouchCoordinatorLayout>

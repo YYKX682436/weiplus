@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.gridviewheaders.GridHeadersGridView android:scrollbarStyle="outsideOverlay" android:id="@id/te" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/df" android:horizontalSpacing="1.0dp" android:verticalSpacing="1.0dp" android:stretchMode="columnWidth" android:columnWidth="100.0dp" android:numColumns="auto_fit" android:animateLayoutChanges="true" />
+    <RelativeLayout android:background="@color/b" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/a32" android:id="@id/crz" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:text="@string/bod" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/l1" />
+        <Button android:textColor="@color/vr" android:id="@id/mi1" android:background="@drawable/c2" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:text="@string/hu" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/kn" />
+        <TextView android:textColor="@color/tk" android:gravity="end|center" android:id="@id/ctb" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:layout_toStartOf="@id/crz" android:layout_toEndOf="@id/mi1" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/a4s" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/oul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" android:layout_toStartOf="@id/idu" android:layout_alignParentStart="true">
+                <TextView android:textSize="16.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/idv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+                <ImageView android:id="@id/mqa" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="6.0dp" android:layout_toRightOf="@id/idv" android:layout_centerVertical="true" />
+                <TextView android:gravity="center_vertical" android:id="@id/gsc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dv" android:layout_toRightOf="@id/mqa" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/idu" android:layout_width="90.0dp" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn">
+                <com.tencent.mm.plugin.finder.view.FinderTagFlowLayout android:id="@id/idt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/ib2" android:background="@color/BW_100_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dv" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/cn" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

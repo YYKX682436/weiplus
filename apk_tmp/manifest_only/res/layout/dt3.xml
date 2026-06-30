@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/UN_BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/cn" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn" android:paddingVertical="@dimen/cn">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/l74" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:i8="@dimen/bl" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/an" android:gravity="center" android:id="@id/l7n" android:background="@drawable/a8q" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/cn" app:layout_constraintLeft_toLeftOf="@id/l74" app:layout_constraintTop_toTopOf="@id/l74" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/UN_BW_0_Alpha_0_9" android:ellipsize="end" android:id="@id/l7a" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/ca" app:layout_constraintEnd_toStartOf="@id/l58" app:layout_constraintStart_toEndOf="@id/l74" app:layout_constraintTop_toTopOf="@id/l74" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/UN_BW_0_Alpha_0_5" android:id="@id/rfn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mp1" app:layout_constraintBottom_toBottomOf="@id/l74" app:layout_constraintStart_toStartOf="@id/l7a" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="right" android:id="@id/l58" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

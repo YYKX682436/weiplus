@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/aj1" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/aix" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cz" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/iwy" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="8.0dp" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/ix8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:text="{test}" android:singleLine="false" android:layout_weight="1.0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_arrow" app:fs="@color/UN_BW_0_Alpha_0_3" />
+    </LinearLayout>
+</FrameLayout>

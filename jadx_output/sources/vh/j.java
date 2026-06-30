@@ -1,0 +1,72 @@
+package vh;
+
+/* loaded from: classes12.dex */
+public class j extends vh.s {
+
+    /* renamed from: f, reason: collision with root package name */
+    public final android.widget.TextView f436788f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final android.widget.ImageView f436789g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final android.widget.TextView f436790h;
+
+    public j(android.view.View view) {
+        super(view);
+        this.f436788f = (android.widget.TextView) view.findViewById(com.tencent.mm.R.id.oqb);
+        this.f436789g = (android.widget.ImageView) view.findViewById(com.tencent.mm.R.id.hlt);
+        this.f436790h = (android.widget.TextView) view.findViewById(com.tencent.mm.R.id.oqh);
+    }
+
+    @Override // vh.s
+    public void i(vh.h hVar) {
+        com.tencent.matrix.batterycanary.stats.ui.BatteryStatsAdapter$Item$EventBatteryItem batteryStatsAdapter$Item$EventBatteryItem = (com.tencent.matrix.batterycanary.stats.ui.BatteryStatsAdapter$Item$EventBatteryItem) hVar;
+        this.f436818d = batteryStatsAdapter$Item$EventBatteryItem;
+        this.f436788f.setText(((java.text.DateFormat) vh.s.f436817e.b()).format(new java.util.Date(batteryStatsAdapter$Item$EventBatteryItem.f52600e)));
+        java.lang.String str = batteryStatsAdapter$Item$EventBatteryItem.f52604g;
+        android.widget.TextView textView = this.f436790h;
+        textView.setText(str);
+        android.widget.ImageView imageView = this.f436789g;
+        imageView.setImageLevel(1);
+        com.tencent.matrix.batterycanary.stats.BatteryRecord.EventStatRecord eventStatRecord = batteryStatsAdapter$Item$EventBatteryItem.f52625i;
+        java.lang.String str2 = "";
+        if (eventStatRecord.f52605h.containsKey("battery-low")) {
+            boolean b17 = eventStatRecord.b("battery-low", false);
+            imageView.setImageLevel(b17 ? 4 : 2);
+            long c17 = eventStatRecord.c("battery-pct", -1L);
+            java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
+            sb6.append(b17 ? "电量低" : "电量恢复");
+            if (c17 > 0) {
+                str2 = " (" + c17 + "%)";
+            }
+            sb6.append(str2);
+            textView.setText(sb6.toString());
+            return;
+        }
+        if (!eventStatRecord.f52605h.containsKey("battery-temp")) {
+            if (eventStatRecord.f52605h.containsKey("battery-pct")) {
+                long c18 = eventStatRecord.c("battery-pct", -1L);
+                java.lang.StringBuilder sb7 = new java.lang.StringBuilder("电量变化: ");
+                sb7.append(c18 > 0 ? java.lang.Long.valueOf(c18) : "/");
+                sb7.append("%");
+                textView.setText(sb7.toString());
+                return;
+            }
+            return;
+        }
+        long c19 = eventStatRecord.c("battery-temp", -1L);
+        if (c19 != -1) {
+            imageView.setImageLevel(3);
+        }
+        long c27 = eventStatRecord.c("battery-pct", -1L);
+        java.lang.StringBuilder sb8 = new java.lang.StringBuilder("电池温度: ");
+        sb8.append(c19 > 0 ? java.lang.Float.valueOf(((float) c19) / 10.0f) : "/");
+        sb8.append("°C");
+        if (c27 > 0) {
+            str2 = " (" + c27 + "%)";
+        }
+        sb8.append(str2);
+        textView.setText(sb8.toString());
+    }
+}

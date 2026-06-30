@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/pwo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/pwp" android:background="@color/m" android:layout_width="match_parent" android:layout_height="200.0dp" android:layout_marginTop="100.0dp">
+        <TextView android:textSize="@dimen/b" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center" android:id="@id/pww" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试测试测试" android:maxLines="1" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/b" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center" android:id="@id/pwy" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="轻触立即玩" android:maxLines="1" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/pww" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

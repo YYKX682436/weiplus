@@ -1,0 +1,11 @@
+package ir;
+
+/* loaded from: classes10.dex */
+public final class c0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final android.util.SparseArray f293820a = new android.util.SparseArray();
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final java.util.HashMap f293821b = new java.util.HashMap();
+}

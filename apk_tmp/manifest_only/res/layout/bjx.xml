@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/h5a" android:background="@drawable/agr" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h55" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginRight="16.0dp" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/r" android:textColor="@drawable/ago" android:id="@id/h57" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@drawable/agv" android:id="@id/h56" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="" />
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h54" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/arrow_right" android:importantForAccessibility="no" app:fs="@color/eb" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/h5b" android:layout_width="26.0dp" android:layout_height="14.0dp" android:importantForAccessibility="no" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/t8" android:id="@id/h5c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="" android:includeFontPadding="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

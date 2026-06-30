@@ -1,0 +1,6 @@
+package z46;
+
+/* loaded from: classes12.dex */
+public interface c {
+    void a(java.lang.Throwable th6);
+}

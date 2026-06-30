@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tiq" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/agx" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/by4" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/v5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.MMPAGView android:id="@id/vc" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionName="pag_anim" />
+    </FrameLayout>
+    <TextView android:textSize="13.0dp" android:textColor="#522b23" android:gravity="center" android:id="@id/odf" android:background="@drawable/d24" android:layout_width="@dimen/db" android:layout_height="@dimen/cq" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

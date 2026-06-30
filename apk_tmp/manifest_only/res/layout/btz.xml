@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/a56" android:baselineAligned="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/hi2" android:layout_width="@dimen/a58" android:layout_height="@dimen/a56">
+        <ImageView android:id="@id/o4m" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cby" />
+        <com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyAutoScrollItem android:scrollbarStyle="@null" android:id="@id/sq" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/su" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginBottom="3.0dp" android:src="@drawable/cbx" />
+    <RelativeLayout android:id="@id/hi3" android:layout_width="@dimen/a58" android:layout_height="@dimen/a56" android:layout_marginLeft="3.0dp">
+        <ImageView android:id="@id/o4n" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cby" />
+        <com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyAutoScrollItem android:scrollbarStyle="@null" android:id="@id/sr" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/sw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hi4" android:layout_width="@dimen/a58" android:layout_height="@dimen/a56" android:layout_marginLeft="@dimen/f">
+        <ImageView android:id="@id/o4o" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cby" />
+        <com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyAutoScrollItem android:scrollbarStyle="@null" android:id="@id/ss" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/sx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

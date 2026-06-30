@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/i3x" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|top" android:orientation="vertical" android:id="@id/n9x" android:layout_width="@dimen/dp" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="@dimen/dp" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="@dimen/aj2" android:textStyle="bold" android:textColor="@color/a0c" android:layout_gravity="top" android:id="@id/n7u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:importantForAccessibility="no" />
+            <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="@dimen/aj1" android:textStyle="bold" android:textColor="@color/a0c" android:layout_gravity="bottom" android:id="@id/n_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="" android:singleLine="true" android:importantForAccessibility="no" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/md" android:layout_width="@dimen/dl" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="" android:maxLines="3" />
+    </LinearLayout>
+</LinearLayout>

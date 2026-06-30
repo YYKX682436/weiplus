@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="horizontal" android:id="@id/backBtn" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:focusable="true" android:clickable="true" android:layout_width="@dimen/db" android:layout_height="@dimen/db" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b5" android:contentDescription="@string/cd" />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_toEndOf="@id/backBtn">
+            <com.tencent.mm.plugin.finder.view.tabcomp.FinderTabLayout android:id="@id/nup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:layout_marginBottom="@dimen/bn" android:layout_centerInParent="true" android:layout_marginVertical="@dimen/bn" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:tabBackground="@color/a9e" app:jd="bdp" app:jh="@color/a0c" app:jk="2.0dp" app:jm="g7g" app:jn="@dimen/dv" app:jo="@dimen/dv" app:jp="@color/a9e" app:jq="@color/a0c" app:jt="@color/jj" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.tencent.mm.plugin.finder.view.FinderViewPager android:id="@id/p16" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

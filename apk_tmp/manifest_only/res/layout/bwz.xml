@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.tencent.mm.ui.base.MMPullDownView android:id="@id/jcg" android:background="@color/hy" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.plugin.masssend.ui.MassSendHistoryListView android:id="@id/jcf" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" style="@style/js" />
+        </com.tencent.mm.ui.base.MMPullDownView>
+        <ScrollView android:id="@id/jce" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/hh" android:layout_height="@dimen/hh" android:layout_marginTop="@dimen/h6" android:src="@raw/mass_send_icon" app:fs="@color/m" />
+                <TextView android:gravity="center" android:layout_marginLeft="@dimen/it" android:layout_marginTop="@dimen/hi" android:layout_marginRight="@dimen/it" android:text="@string/gt_" android:lineSpacingExtra="4.0dp" style="@style/ik" />
+                <Button android:id="@id/jcx" android:layout_marginLeft="@dimen/it" android:layout_marginTop="@dimen/hj" android:layout_marginRight="@dimen/it" android:text="@string/gt4" style="@style/kq" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/jcw" android:background="@drawable/bcd" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ajt">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/a5" android:id="@id/jcv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt4" />
+    </LinearLayout>
+</LinearLayout>

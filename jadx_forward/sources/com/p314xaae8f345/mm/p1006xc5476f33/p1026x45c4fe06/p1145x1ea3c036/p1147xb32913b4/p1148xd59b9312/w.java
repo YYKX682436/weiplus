@@ -1,0 +1,10 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1145x1ea3c036.p1147xb32913b4.p1148xd59b9312;
+
+/* loaded from: classes7.dex */
+public interface w {
+    void a(java.lang.String str);
+
+    void b(com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1145x1ea3c036.p1147xb32913b4.p1148xd59b9312.x xVar, int i17, java.lang.String str);
+
+    void c(com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1145x1ea3c036.p1147xb32913b4.p1148xd59b9312.x xVar, int i17, java.lang.String str);
+}

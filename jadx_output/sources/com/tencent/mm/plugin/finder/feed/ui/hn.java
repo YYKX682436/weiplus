@@ -1,0 +1,12 @@
+package com.tencent.mm.plugin.finder.feed.ui;
+
+/* loaded from: classes2.dex */
+public final class hn implements com.tencent.mm.ui.widget.dialog.c1 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final com.tencent.mm.plugin.finder.feed.ui.hn f110128d = new com.tencent.mm.plugin.finder.feed.ui.hn();
+
+    @Override // com.tencent.mm.ui.widget.dialog.c1
+    public final void onDismiss() {
+    }
+}

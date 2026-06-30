@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bta" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/raf" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/u9v" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@raw/sns_ad_scratch_card_decor_icon" android:layout_marginEnd="6.0dp" />
+        <TextView android:textSize="14.0dp" android:textStyle="normal" android:textColor="@color/amk" android:id="@id/t0q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刮一刮 获得优惠" android:textFontWeight="500" />
+        <ImageView android:id="@id/uzb" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@raw/sns_ad_scratch_card_decor_icon" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+</FrameLayout>

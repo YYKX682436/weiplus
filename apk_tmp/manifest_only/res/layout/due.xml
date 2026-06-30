@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/czt" android:background="@drawable/b8p" android:paddingTop="@dimen/d7" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/msg" />
+    <TextView android:textSize="10.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msf" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" />
+    <TextView android:enabled="false" android:textSize="17.0dp" android:textColor="@color/BW_0_Alpha_0_1_5" android:gravity="center" android:id="@id/c9z" android:background="@drawable/cu4" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="184.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:text="@string/msd" android:paddingVertical="@dimen/c9" />
+</LinearLayout>

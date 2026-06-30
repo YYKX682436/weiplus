@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" android:layout_marginHorizontal="16.0dp" layout="@layout/a1f" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="20.0dp" android:layout_marginHorizontal="20.0dp" layout="@layout/a1j" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="20.0dp" layout="@layout/a1i" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="20.0dp" layout="@layout/e3f" />
+    <include layout="@layout/a1m" />
+    <com.tencent.mm.plugin.profile.ui.tab.view.BizProfileFollowMoreView android:id="@id/cc7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/cca" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="4.0dp" android:overScrollMode="never" android:layout_marginHorizontal="20.0dp" />
+    <include android:id="@id/cc9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="20.0dp" layout="@layout/a1n" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/jcs" style="@style/w7" />
+    <com.tencent.mm.plugin.masssend.ui.MassMaskAnimLinearLayout android:orientation="vertical" android:id="@id/jci" android:background="@drawable/nr" android:paddingLeft="@dimen/aii" android:paddingTop="@dimen/aii" android:paddingRight="@dimen/aii" android:paddingBottom="@dimen/aii" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j3" android:layout_marginBottom="@dimen/j3">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/r2y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/aii" />
+        <View style="@style/w6" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aii">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/jcj" style="@style/w5" />
+                <TextView android:id="@id/jcm" style="@style/w5" />
+            </LinearLayout>
+            <com.tencent.mm.ui.widget.button.WeButton android:layout_gravity="center_vertical" android:id="@id/jch" android:layout_marginLeft="@dimen/aii" android:text="@string/gt5" style="@style/y4" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.masssend.ui.MassMaskAnimLinearLayout>
+</LinearLayout>

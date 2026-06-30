@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/gj" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/ajf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:text="@string/aj5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/fk" />
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:gravity="center" android:id="@id/aje" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/aj4" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/ajf" />
+    <FrameLayout android:id="@id/aj7" android:layout_width="204.0dp" android:layout_height="126.0dp" android:layout_marginTop="35.0dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/aje">
+        <LinearLayout android:layout_gravity="left|bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginBottom="2.0dp">
+            <FrameLayout android:layout_width="32.0dp" android:layout_height="32.0dp">
+                <ImageView android:layout_gravity="left|bottom" android:id="@id/aj_" android:background="@drawable/hf" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+                <ImageView android:layout_gravity="right|top" android:background="@drawable/b8e" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="8.0dp">
+                <ImageView android:layout_gravity="left|bottom" android:id="@id/aja" android:background="@drawable/hf" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+                <ImageView android:layout_gravity="right|top" android:background="@drawable/b8e" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="8.0dp">
+                <ImageView android:layout_gravity="left|bottom" android:id="@id/ajb" android:background="@drawable/hf" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+                <ImageView android:layout_gravity="right|top" android:background="@drawable/b8e" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="8.0dp">
+                <ImageView android:layout_gravity="left|bottom" android:id="@id/ajc" android:background="@drawable/hf" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+                <ImageView android:layout_gravity="right|top" android:background="@drawable/b8e" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="8.0dp">
+                <ImageView android:layout_gravity="left|bottom" android:id="@id/ajd" android:background="@drawable/hf" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+                <ImageView android:layout_gravity="right|top" android:background="@drawable/b8e" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="left|bottom" android:background="@drawable/gi" android:layout_width="120.0dp" android:layout_height="120.0dp">
+            <FrameLayout android:layout_gravity="center" android:id="@id/aj6" android:layout_width="114.0dp" android:layout_height="114.0dp">
+                <ImageView android:layout_gravity="left|bottom" android:id="@id/aj5" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginLeft="3.0dp" android:layout_marginBottom="3.0dp" />
+                <FrameLayout android:layout_gravity="left|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="52.0dp" android:layout_marginBottom="52.0dp">
+                    <ImageView android:id="@id/aj9" android:background="@drawable/b8e" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+                    <TextView android:textSize="@dimen/jd" android:textColor="@color/an" android:gravity="center" android:layout_gravity="center" android:id="@id/o_u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/cn" android:gravity="center" android:id="@id/aj8" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/dp" android:text="@string/h0v" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/aj7" style="@style/kz" />
+</androidx.constraintlayout.widget.ConstraintLayout>

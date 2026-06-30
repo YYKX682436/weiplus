@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fq4" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/c9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left|center" android:id="@id/fq6" android:background="@drawable/a7a" android:layout_width="wrap_content" android:layout_height="@dimen/db" android:minWidth="@dimen/bu">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:ellipsize="end" android:gravity="left|center" android:id="@id/fq3" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dae" android:maxLines="1" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/tqr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c8">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/dbh" android:layout_width="@dimen/d0" android:layout_height="@dimen/d0" android:layout_marginLeft="@dimen/c9" android:src="@raw/icons_filled_sticker" android:layout_centerVertical="true" app:fs="@color/BW_F_Alpha_0_5" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

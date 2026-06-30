@@ -1,0 +1,89 @@
+package ev2;
+
+/* loaded from: classes10.dex */
+public final class g implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ ev2.h f256909d;
+
+    public g(ev2.h hVar) {
+        this.f256909d = hVar;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0072  */
+    /* JADX WARN: Removed duplicated region for block: B:13:? A[RETURN, SYNTHETIC] */
+    @Override // java.lang.Runnable
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final void run() {
+        /*
+            r7 = this;
+            ev2.h r0 = r7.f256909d
+            r0.getClass()
+            jv2.g r1 = jv2.h.f302217f
+            jv2.h r1 = r1.a()
+            pm0.c r2 = new pm0.c
+            java.lang.String r3 = "getRecentAction"
+            r2.<init>(r3)
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>()
+            java.lang.String r4 = r1.f302222e
+            r3.append(r4)
+            java.lang.String r4 = " WHERE actionType = 1 and state == 1 ORDER BY postTime DESC limit 1"
+            r3.append(r4)
+            java.lang.String r3 = r3.toString()
+            l75.k0 r1 = r1.f302221d
+            r4 = 0
+            r5 = 2
+            android.database.Cursor r1 = r1.f(r3, r4, r5)
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            java.lang.String r6 = "getRecentAction "
+            r5.<init>(r6)
+            r5.append(r2)
+            r2 = 32
+            r5.append(r2)
+            r5.append(r3)
+            java.lang.String r2 = r5.toString()
+            java.lang.String r3 = "MicroMsg.MusicUni.UniActionStorage"
+            com.tencent.mars.xlog.Log.i(r3, r2)
+            boolean r2 = r1.moveToFirst()     // Catch: java.lang.Throwable -> L84
+            if (r2 == 0) goto L5d
+        L4e:
+            jv2.c r2 = new jv2.c     // Catch: java.lang.Throwable -> L84
+            r2.<init>()     // Catch: java.lang.Throwable -> L84
+            r2.convertFrom(r1)     // Catch: java.lang.Throwable -> L84
+            boolean r5 = r1.moveToNext()     // Catch: java.lang.Throwable -> L84
+            if (r5 != 0) goto L4e
+            goto L5e
+        L5d:
+            r2 = r4
+        L5e:
+            vz5.b.a(r1, r4)
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>(r6)
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            com.tencent.mars.xlog.Log.i(r3, r1)
+            if (r2 == 0) goto L83
+            ev2.i r1 = new ev2.i
+            iv2.b r3 = r2.P
+            r1.<init>(r2, r3)
+            ev2.f r2 = new ev2.f
+            r2.<init>(r0)
+            fp0.o r0 = r0.f256911a
+            r0.b(r1, r2)
+        L83:
+            return
+        L84:
+            r0 = move-exception
+            throw r0     // Catch: java.lang.Throwable -> L86
+        L86:
+            r2 = move-exception
+            vz5.b.a(r1, r0)
+            throw r2
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ev2.g.run():void");
+    }
+}

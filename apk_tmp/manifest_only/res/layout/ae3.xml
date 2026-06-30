@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.webview.ad.CenterScrollFrameLayout android:orientation="vertical" android:background="@color/aay" android:layout_width="match_parent" android:layout_height="@dimen/y6" app:ds="@dimen/c9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.webview.RelativeInterceptScrollLayout android:id="@id/pi0" android:background="@color/f" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/y6" />
+    <com.tencent.mm.ui.widget.MMProcessBar android:layout_gravity="center_horizontal" android:id="@id/g53" android:background="@drawable/avm" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/ch" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/g54" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g55" android:clickable="false" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_refresh" app:fs="@color/FG_2" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/g56" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="@string/ckf" style="@style/s4" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_gravity="center_horizontal" android:id="@id/bzg" android:layout_width="@dimen/db" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/cs" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/du5" app:ds="@dimen/dv">
+        <ImageView android:id="@id/bz0" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/bzj" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/a9e" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/tv" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <com.tencent.mm.plugin.scanner.MultiCodeMaskView android:id="@id/jun" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.tencent.mm.plugin.finder.webview.ad.CenterScrollFrameLayout>

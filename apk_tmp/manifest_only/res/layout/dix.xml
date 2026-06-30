@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:orientation="vertical" android:background="@drawable/cof" android:paddingTop="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/cn" app:ds="@dimen/c9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qin" android:layout_width="@dimen/c4" android:layout_height="@dimen/c4" android:layout_marginBottom="-24.0dp" android:src="@raw/icons_filled_fans" android:layout_alignParentBottom="true" android:layout_marginEnd="-48.0dp" android:layout_alignParentEnd="true" app:fs="#0d7a7a7a" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/qit" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qim" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_fans" app:fs="#ffc300" />
+        <TextView android:textSize="@dimen/co" android:textColor="@drawable/cog" android:id="@id/dqw" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝团" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/qip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_below="@id/qit">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/qiq" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/coin_icon" app:fs="@color/BW_100_Alpha_0_5" />
+        <TextView android:textSize="@dimen/d7" android:textColor="@drawable/cog" android:id="@id/qir" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_marginStart="@dimen/bi" />
+        <TextView android:textSize="@dimen/co" android:textColor="@drawable/cog" android:id="@id/qil" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/永久" android:layout_marginStart="@dimen/bi" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/c9" android:textColor="@drawable/cog" android:id="@id/qis" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/bl" android:text="@string/k_n" android:layout_below="@id/qip" android:lineSpacingExtra="@dimen/dv" android:lineSpacingMultiplier="1.0" />
+</com.tencent.mm.ui.widget.RoundCornerRelativeLayout>

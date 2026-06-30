@@ -1,0 +1,25 @@
+package com.tencent.mm.plugin.webview.ui.tools.widget;
+
+/* loaded from: classes8.dex */
+public class l2 implements android.content.DialogInterface.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.xweb.z f187375d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.webview.ui.tools.widget.p2 f187376e;
+
+    public l2(com.tencent.mm.plugin.webview.ui.tools.widget.p2 p2Var, com.tencent.xweb.z zVar) {
+        this.f187376e = p2Var;
+        this.f187375d = zVar;
+    }
+
+    @Override // android.content.DialogInterface.OnClickListener
+    public void onClick(android.content.DialogInterface dialogInterface, int i17) {
+        this.f187375d.a();
+        if (dialogInterface != null) {
+            dialogInterface.dismiss();
+        }
+        this.f187376e.s();
+    }
+}

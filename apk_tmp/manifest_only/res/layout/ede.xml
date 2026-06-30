@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/d48" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/e6j" />
+    <TextView android:textSize="@dimen/or" android:textColor="@color/abw" android:layout_gravity="center_horizontal" android:id="@id/tsm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dh" android:text="@string/ojy" />
+    <com.tencent.mm.plugin.finder.feed.RoundLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/d47" android:layout_width="@dimen/amr" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_marginBottom="@dimen/amf" app:corner="@dimen/dv">
+        <ImageView android:id="@id/tsp" android:background="@color/f3" android:layout_width="@dimen/amr" android:layout_height="@dimen/amx" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/a9x" android:textColor="@color/abw" android:ellipsize="end" android:id="@id/tsq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:text="@string/ok8" android:maxLines="2" android:layout_marginStart="@dimen/bn" android:layout_marginEnd="@dimen/bn" android:layout_marginVertical="@dimen/dv" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:layout_marginStart="@dimen/bn">
+            <ImageView android:id="@id/tso" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/a0c" android:id="@id/tsn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.finder.feed.RoundLinearLayout>
+</LinearLayout>

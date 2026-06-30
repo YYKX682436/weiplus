@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/i_" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aj3" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/dbh" android:paddingLeft="@dimen/i_" android:paddingTop="@dimen/i_" android:paddingRight="@dimen/hq" android:paddingBottom="@dimen/i_" android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/icon" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/hq" android:paddingTop="@dimen/i_" android:paddingRight="@dimen/i_" android:paddingBottom="@dimen/i_" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/b" android:layout_gravity="left" android:id="@id/deq" android:paddingTop="@dimen/j3" android:paddingBottom="@dimen/j3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{小崽子ss剧场}" style="@style/j3" />
+            <TextView android:layout_gravity="left" android:id="@id/deu" android:paddingBottom="@dimen/j3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{小崽子ss剧场}" style="@style/j2" />
+            <FrameLayout android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginTop="@dimen/j3">
+                <Button android:id="@id/db6" android:layout_width="wrap_content" android:layout_height="32.0dp" android:maxWidth="100.0dp" android:text="@string/byn" style="@style/ks" />
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/db7" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="wrap_content" style="@style/is" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

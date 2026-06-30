@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.sns.ad.widget.adsocial.AdSocialAttitudeView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/cgi" android:layout_width="wrap_content" android:layout_height="40.0dp">
+        <LinearLayout android:gravity="center" android:id="@id/btv" android:background="@color/d" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/h68" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dp">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/r4f" android:visibility="invisible" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/friendactivity_likeicon" android:scaleType="fitCenter" app:fs="@color/a9e" />
+                    <com.tencent.mm.view.MMPAGView android:layout_gravity="center_vertical" android:id="@id/r4v" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/r4e" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/cqv" android:scaleType="fitCenter" app:fs="@color/a9e" />
+                </FrameLayout>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="15.0dp" android:textColor="@color/a5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/btw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="喝彩" android:maxLines="1" android:includeFontPadding="false" app:aq="15.0dp" app:ar="1.0dp" app:autoSizeStepGranularity="1.0px" app:as="kd5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/c6o" android:background="@color/d" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/btv">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/c78" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/cxb" android:scaleType="fitCenter" android:layout_marginEnd="4.0dp" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="15.0dp" android:textColor="@color/a5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/c86" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:aq="15.0dp" app:ar="1.0dp" app:autoSizeStepGranularity="1.0px" app:as="kd5" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.tencent.mm.plugin.sns.ad.widget.adsocial.AdSocialAttitudeView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/f85" android:visibility="gone" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:translationY="-8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/agx" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/v5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/l75" android:visibility="gone" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:i8="@dimen/dv" />
+    <FrameLayout android:id="@id/f84" android:layout_width="match_parent" android:layout_height="@dimen/dg" android:layout_alignBottom="@id/v5" />
+    <TextView android:textSize="10.0dp" android:textColor="@color/oy" android:gravity="center" android:id="@id/cjn" android:background="@drawable/a53" android:visibility="visible" android:layout_width="@dimen/db" android:layout_height="@dimen/cq" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

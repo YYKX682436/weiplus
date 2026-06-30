@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7r" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/nqo" android:paddingBottom="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.tencent.mm.plugin.finder.nearby.newlivesquare.vertical.FinderFixedRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/nqo" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMoreWhenContentNotFull="true" app:enableRefresh="false">
+        <com.tencent.mm.plugin.finder.nest.FinderChildRecyclerView android:id="@id/lqa" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:id="@id/auj" android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs7" />
+    </com.tencent.mm.plugin.finder.nearby.newlivesquare.vertical.FinderFixedRefreshLayout>
+    <com.tencent.mm.ui.widget.MMProcessBar android:layout_gravity="center" android:id="@id/lr5" android:background="@drawable/akq" android:visibility="gone" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:layout_centerInParent="true" />
+</RelativeLayout>

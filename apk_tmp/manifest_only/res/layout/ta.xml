@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.chatting.ChatFooterCustom android:orientation="horizontal" android:id="@id/k53" android:background="@drawable/c7z" android:layout_width="match_parent" android:layout_height="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/blq" android:background="@color/b" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/blp" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:src="@raw/icons_outlined_keyboard" android:scaleType="fitXY" android:contentDescription="@string/axi" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bll" android:background="@color/b" android:layout_width="0.0px" android:layout_height="match_parent" android:weightSum="3.0" android:layout_weight="1.0">
+        <include layout="@layout/t_" />
+        <include layout="@layout/t_" />
+        <include layout="@layout/t_" />
+        <include layout="@layout/t_" />
+        <include layout="@layout/t_" />
+        <include layout="@layout/t_" />
+    </LinearLayout>
+    <ImageView android:id="@id/blk" android:background="@color/b" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ap9" />
+</com.tencent.mm.ui.chatting.ChatFooterCustom>

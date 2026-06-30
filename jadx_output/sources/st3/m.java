@@ -1,0 +1,23 @@
+package st3;
+
+/* loaded from: classes10.dex */
+public final class m implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final st3.m f412554d = new st3.m();
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        java.util.Map e17 = wo.w0.e();
+        st3.n nVar = st3.n.f412555a;
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) e17).get("hardware");
+        if (str == null) {
+            str = "";
+        }
+        st3.n.f412556b = str;
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("get cpu name:");
+        st3.n nVar2 = st3.n.f412555a;
+        sb6.append(st3.n.f412556b);
+        com.tencent.mars.xlog.Log.i("MicroMsg.HevcEncodeChecker", sb6.toString());
+    }
+}

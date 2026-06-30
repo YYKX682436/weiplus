@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/cgi" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@id/jbp" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <RelativeLayout android:id="@id/oa0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ujf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dh" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/c9">
+                    <com.tencent.mm.plugin.location.ui.impl.CustomIndoorPicker android:id="@id/cov" android:background="@drawable/qt" android:padding="@dimen/bl" android:visibility="gone" android:clipToPadding="false" android:layout_width="@dimen/dd" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" />
+                    <include layout="@layout/bsk" />
+                </LinearLayout>
+                <View android:id="@id/jbo" android:background="@color/y2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <RelativeLayout android:id="@id/p89" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.tencent.mm.plugin.location.ui.VolumeMeter android:id="@id/p8_" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/db" android:layout_alignParentBottom="true" layout="@layout/d2a" />
+                <com.tencent.mm.plugin.location.ui.TipSayingWidget android:id="@id/m_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <include layout="@layout/bxo" />
+    <com.tencent.mm.plugin.location.ui.ShareHeader android:id="@id/msv" android:background="@drawable/bjn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

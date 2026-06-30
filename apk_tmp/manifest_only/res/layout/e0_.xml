@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ow1" android:background="@android:color/black" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+    <com.tencent.mm.ui.halfscreen.custom.CircleToSearchDraggableLayout android:layout_gravity="center_horizontal" android:id="@id/u19" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/u1d">
+        <FrameLayout android:id="@id/gwe" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.ui.halfscreen.custom.CircleToSearchDraggableLayout>
+    <View android:id="@id/u1d" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

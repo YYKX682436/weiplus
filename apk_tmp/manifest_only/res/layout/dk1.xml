@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/m7g" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.wepicker.WePicker android:id="@id/qrh" android:layout_width="match_parent" android:layout_height="300.0dp" app:picker_show_size="5" app:picker_text_color="@color/a2y" app:picker_text_side_color="@color/FG_1" app:picker_text_size="@dimen/ha" />
+    <TextView android:id="@id/qn2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/cu" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv">
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_gravity="center" android:id="@id/jbx" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="@dimen/dj" app:ds="@dimen/dv" />
+        <com.tencent.mm.wepicker.RemindTimePicker android:layout_gravity="center" android:id="@id/qoj" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/cx" app:picker_show_size="5" app:picker_side_offset="@dimen/cz" app:picker_text_color="@color/f5" app:picker_text_side_color="@color/FG_1" app:picker_text_size="@dimen/ha" />
+    </FrameLayout>
+</LinearLayout>

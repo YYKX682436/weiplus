@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/ahl">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/qd4" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_alignParentTop="true">
+            <FrameLayout android:id="@id/qcx" android:background="@drawable/a80" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cb" android:layout_alignParentLeft="true">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/f6b" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/FG_0" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:id="@id/qd3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:enabled="false" android:textSize="@dimen/r" android:id="@id/qcy" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/dn" android:minWidth="@dimen/cf" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kr" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/qd2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/qcy" android:layout_below="@id/qd4" />
+    </RelativeLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

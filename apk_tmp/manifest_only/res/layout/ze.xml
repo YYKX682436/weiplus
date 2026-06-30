@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/c43" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/c5j" android:background="@color/a9e" android:layout_width="414.0dp" android:layout_height="wrap_content" android:minWidth="414.0dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/pq" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="465.0dp">
+                <ImageView android:id="@id/c42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dp" android:layout_marginBottom="23.0dp" android:src="@drawable/c0y" android:scaleType="centerInside" />
+                <LinearLayout android:orientation="vertical" android:background="@color/an" android:layout_width="236.0dp" android:layout_height="wrap_content" android:minHeight="236.0dp">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/c3x" android:visibility="visible" android:layout_width="236.0dp" android:layout_height="wrap_content" android:layout_marginTop="9.0dp">
+                        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="24.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/c3w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" wallet:walletTypeFace="0" />
+                            <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="24.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/c3u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:layout_toLeftOf="@id/c3w" wallet:walletTypeFace="0" />
+                        </RelativeLayout>
+                        <TextView android:textSize="13.0dp" android:textColor="@color/UN_BW_0_Alpha_0_5" android:layout_gravity="center_horizontal" android:id="@id/c3v" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="236.0dp" android:layout_height="236.0dp">
+                        <ImageView android:id="@id/c3y" android:layout_width="236.0dp" android:layout_height="236.0dp" android:scaleType="fitXY" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView android:textSize="28.0dp" android:textColor="@color/ab0" android:id="@id/c40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:text="" />
+                <TextView android:textSize="21.0dp" android:textColor="@color/ab0" android:id="@id/c41" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="25.0dp" android:text="" android:includeFontPadding="false" />
+            </LinearLayout>
+            <RelativeLayout android:background="@color/an" android:layout_width="match_parent" android:layout_height="103.0dp">
+                <ImageView android:id="@id/c3t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_marginBottom="28.0dp" android:src="@drawable/c0q" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>

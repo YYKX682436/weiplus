@@ -1,0 +1,161 @@
+package or0;
+
+/* loaded from: classes8.dex */
+public final class c {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static android.widget.TextView f347431c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public static xr0.d f347432d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public static boolean f347433e;
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final or0.c f347429a = new or0.c();
+
+    /* renamed from: b, reason: collision with root package name */
+    public static long f347430b = java.lang.System.currentTimeMillis();
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final or0.e f347434f = new or0.e();
+
+    /* renamed from: g, reason: collision with root package name */
+    public static java.lang.String f347435g = "";
+
+    /* renamed from: h, reason: collision with root package name */
+    public static java.lang.String f347436h = "";
+
+    /* renamed from: i, reason: collision with root package name */
+    public static java.lang.String f347437i = "";
+
+    /* renamed from: j, reason: collision with root package name */
+    public static long f347438j = -1;
+
+    /* renamed from: k, reason: collision with root package name */
+    public static long f347439k = -1;
+
+    /* renamed from: l, reason: collision with root package name */
+    public static long f347440l = -1;
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0035  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object a(yz5.l r7, kotlin.coroutines.Continuation r8) {
+        /*
+            r6 = this;
+            boolean r0 = r8 instanceof or0.a
+            if (r0 == 0) goto L13
+            r0 = r8
+            or0.a r0 = (or0.a) r0
+            int r1 = r0.f347427h
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f347427h = r1
+            goto L18
+        L13:
+            or0.a r0 = new or0.a
+            r0.<init>(r6, r8)
+        L18:
+            java.lang.Object r8 = r0.f347425f
+            pz5.a r1 = pz5.a.f359186d
+            int r2 = r0.f347427h
+            r3 = 1
+            if (r2 == 0) goto L35
+            if (r2 != r3) goto L2d
+            long r1 = r0.f347424e
+            java.lang.Object r7 = r0.f347423d
+            or0.c r7 = (or0.c) r7
+            kotlin.ResultKt.throwOnFailure(r8)
+            goto L4a
+        L2d:
+            java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
+            java.lang.String r8 = "call to 'resume' before 'invoke' with coroutine"
+            r7.<init>(r8)
+            throw r7
+        L35:
+            kotlin.ResultKt.throwOnFailure(r8)
+            long r4 = java.lang.System.currentTimeMillis()
+            r0.f347423d = r6
+            r0.f347424e = r4
+            r0.f347427h = r3
+            java.lang.Object r8 = r7.invoke(r0)
+            if (r8 != r1) goto L49
+            return r1
+        L49:
+            r1 = r4
+        L4a:
+            long r3 = java.lang.System.currentTimeMillis()
+            long r3 = r3 - r1
+            or0.c.f347438j = r3
+            long r0 = java.lang.System.currentTimeMillis()
+            or0.c.f347439k = r0
+            r0 = -1
+            or0.c.f347440l = r0
+            return r8
+        */
+        throw new UnsupportedOperationException("Method not decompiled: or0.c.a(yz5.l, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    public final void b() {
+        xr0.k kVar;
+        xr0.k kVar2;
+        xr0.k kVar3;
+        if (f347433e) {
+            if (f347440l <= 0) {
+                f347440l = java.lang.System.currentTimeMillis() - f347439k;
+                com.tencent.mars.xlog.Log.i("MicroMsg.CameraAnalyse", "firstFrameTimeCostMs:" + f347440l);
+            }
+            or0.e eVar = f347434f;
+            eVar.getClass();
+            long currentTimeMillis = java.lang.System.currentTimeMillis() - eVar.f347445a;
+            eVar.f347445a = java.lang.System.currentTimeMillis();
+            if (currentTimeMillis > 0) {
+                eVar.f347447c = 1000 / currentTimeMillis;
+            }
+            or0.d dVar = eVar.f347446b;
+            dVar.f347442b++;
+            if (java.lang.System.currentTimeMillis() - dVar.f347441a > 1000) {
+                dVar.f347441a = java.lang.System.currentTimeMillis();
+                dVar.f347444d = (dVar.f347442b * 1000) / 1000;
+                dVar.f347441a = java.lang.System.currentTimeMillis();
+                dVar.f347442b = 0L;
+            }
+            if (java.lang.System.currentTimeMillis() - f347430b > 100) {
+                f347430b = java.lang.System.currentTimeMillis();
+                java.lang.StringBuilder sb6 = new java.lang.StringBuilder("实例:");
+                sb6.append(f347437i);
+                sb6.append("\n耗时:打开");
+                sb6.append(f347438j);
+                sb6.append("ms 首帧:");
+                sb6.append(f347440l);
+                sb6.append("ms\n预览方式:");
+                sb6.append(f347435g);
+                sb6.append("\n拍照方式:");
+                sb6.append(f347436h);
+                sb6.append("\n分辨率:");
+                xr0.d dVar2 = f347432d;
+                sb6.append((dVar2 == null || (kVar3 = dVar2.f456160b) == null) ? null : kVar3.f456176b);
+                sb6.append("\n纹理裁剪:");
+                xr0.d dVar3 = f347432d;
+                sb6.append((dVar3 == null || (kVar2 = dVar3.f456160b) == null) ? null : kVar2.f456177c);
+                sb6.append("\nView尺寸:");
+                xr0.d dVar4 = f347432d;
+                sb6.append((dVar4 == null || (kVar = dVar4.f456160b) == null) ? null : kVar.f456175a);
+                sb6.append("\n顺时针旋转:");
+                xr0.d dVar5 = f347432d;
+                sb6.append(dVar5 != null ? java.lang.Integer.valueOf(dVar5.f456163e) : null);
+                sb6.append("°\n设置帧率:");
+                xr0.d dVar6 = f347432d;
+                sb6.append(dVar6 != null ? java.lang.Integer.valueOf(dVar6.f456165g) : null);
+                ((ku5.t0) ku5.t0.f312615d).B(new or0.b(sb6.toString()));
+            }
+        }
+    }
+}

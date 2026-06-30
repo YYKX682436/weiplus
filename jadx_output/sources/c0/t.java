@@ -1,0 +1,32 @@
+package c0;
+
+/* loaded from: classes14.dex */
+public final class t implements kotlinx.coroutines.flow.k {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ java.util.List f36945d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ n0.v2 f36946e;
+
+    public t(java.util.List list, n0.v2 v2Var) {
+        this.f36945d = list;
+        this.f36946e = v2Var;
+    }
+
+    @Override // kotlinx.coroutines.flow.k
+    public java.lang.Object emit(java.lang.Object obj, kotlin.coroutines.Continuation continuation) {
+        c0.m mVar = (c0.m) obj;
+        boolean z17 = mVar instanceof c0.r;
+        java.util.List list = this.f36945d;
+        if (z17) {
+            list.add(mVar);
+        } else if (mVar instanceof c0.s) {
+            list.remove(((c0.s) mVar).f36944a);
+        } else if (mVar instanceof c0.q) {
+            list.remove(((c0.q) mVar).f36942a);
+        }
+        this.f36946e.setValue(java.lang.Boolean.valueOf(!list.isEmpty()));
+        return jz5.f0.f302826a;
+    }
+}

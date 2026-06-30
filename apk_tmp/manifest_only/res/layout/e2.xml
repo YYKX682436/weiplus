@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:id="@id/m7g" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="@dimen/lv"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.appbrand.widget.actionbar.AppBrandActionBarNavButtonContainerLayout android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/gx" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/m0">
+        <ViewStub android:id="@id/em8" android:layout="@layout/a4c" android:layout_width="wrap_content" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/dwr" android:layout="@layout/a4c" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    </com.tencent.mm.plugin.appbrand.widget.actionbar.AppBrandActionBarNavButtonContainerLayout>
+    <FrameLayout android:layout_gravity="end|center" android:id="@id/em9" android:layout_width="wrap_content" android:layout_height="@dimen/lv">
+        <com.tencent.mm.plugin.appbrand.page.capsulebar.AppBrandCapsuleBarPlaceHolderView android:layout_gravity="end|center" android:id="@id/gl" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/m9" android:layout_height="@dimen/m8" android:layout_marginLeft="@dimen/ls" android:layout_marginRight="@dimen/ls" />
+        <ViewStub android:layout_gravity="end|center" android:id="@id/cp1" android:layout="@layout/e4" android:layout_width="@dimen/m1" android:layout_height="@dimen/m1" android:layout_marginEnd="16.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/b" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/hc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:accessibilityHeading="true" />
+    <ViewStub android:layout_gravity="end|center" android:id="@id/gv" android:padding="3.0dp" android:visibility="gone" android:layout="@layout/e5" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+</merge>

@@ -1,0 +1,19 @@
+package com.tencent.mm.plugin.finder.extension.reddot;
+
+/* loaded from: classes8.dex */
+public final class m0 extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final com.tencent.mm.plugin.finder.extension.reddot.m0 f105698d = new com.tencent.mm.plugin.finder.extension.reddot.m0();
+
+    public m0() {
+        super(1);
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        r45.f03 it = (r45.f03) obj;
+        kotlin.jvm.internal.o.g(it, "it");
+        return java.lang.Boolean.valueOf(kotlin.jvm.internal.o.b(it.f373892i, "finder_private_msg_entrance"));
+    }
+}

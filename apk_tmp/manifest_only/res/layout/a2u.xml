@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/cio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/db" android:layout_marginTop="@dimen/db" android:layout_marginRight="@dimen/db" android:text="@string/bl1" android:layout_centerHorizontal="true" style="@style/s5" />
+    <com.tencent.mm.view.MMPAGView android:id="@id/cin" android:background="@color/aaw" android:layout_width="@dimen/ci" android:layout_height="360.0dp" android:layout_marginTop="@dimen/db" android:layout_below="@id/cio" android:layout_centerHorizontal="true" />
+    <Button android:gravity="center" android:id="@id/cil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:text="@string/bky" android:layout_below="@id/cin" android:layout_centerHorizontal="true" style="@style/kz" />
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/Link_100" android:gravity="center" android:id="@id/cim" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/db" android:text="@string/bl2" android:layout_below="@id/cil" android:layout_centerHorizontal="true" android:paddingHorizontal="@dimen/cn" android:paddingVertical="@dimen/c9" />
+</RelativeLayout>

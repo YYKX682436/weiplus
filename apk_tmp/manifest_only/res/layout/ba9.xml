@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/hpv" android:background="@drawable/azm" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bfj" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center_vertical" android:text="@string/f_5" android:layout_weight="1.0" style="@style/ix" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:src="@raw/arrow_right" android:tint="@color/BW_50" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/hpf" android:background="@drawable/azm" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bfj" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center_vertical" android:id="@id/fuy" android:text="@string/d1t" android:layout_weight="1.0" style="@style/ix" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:src="@raw/arrow_right" android:tint="@color/BW_50" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

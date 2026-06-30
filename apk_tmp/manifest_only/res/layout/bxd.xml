@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/n6h" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/hb"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.base.CustomViewPager android:id="@id/n6k" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/g71" />
+    <FrameLayout android:id="@id/oi" android:background="@color/rn" android:layout_width="match_parent" android:layout_height="@dimen/aa6" android:layout_above="@id/g71">
+        <com.google.android.material.tabs.TabLayout android:id="@id/n6i" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" app:jd="bdp" app:jk="0.0dp" app:jl="@dimen/d_" app:tabMinWidth="34.0dp" app:jm="g7g" app:jn="@dimen/dv" app:jo="@dimen/dv" app:jp="@color/a9e" app:jt="@color/BW_100_Alpha_0_5" />
+        <FrameLayout android:id="@id/n65" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <View android:id="@id/g71" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+package xc2;
+
+/* loaded from: classes2.dex */
+public final class q implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ xc2.r f534804d;
+
+    public q(xc2.r rVar) {
+        this.f534804d = rVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        this.f534804d.w();
+    }
+}

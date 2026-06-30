@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:background="?gp" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dh"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/FG_2" android:layout_width="@dimen/dv" android:layout_height="1.0dp" style="@style/fh" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ofv" android:singleLine="true" android:layout_marginStart="@dimen/dv" style="@style/ix" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/h2" android:textColor="@color/ahm" android:id="@id/va8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cn" />
+    </LinearLayout>
+</LinearLayout>

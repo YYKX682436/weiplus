@@ -1,0 +1,69 @@
+package ty1;
+
+/* loaded from: classes13.dex */
+public class a {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static volatile ty1.a f423043c;
+
+    /* renamed from: a, reason: collision with root package name */
+    public final java.util.Map f423044a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public java.util.List f423045b;
+
+    /* JADX WARN: Removed duplicated region for block: B:51:0x012c  */
+    /* JADX WARN: Removed duplicated region for block: B:62:? A[ADDED_TO_REGION, RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public a() {
+        /*
+            Method dump skipped, instructions count: 333
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ty1.a.<init>():void");
+    }
+
+    public static ty1.a a() {
+        if (f423043c == null) {
+            synchronized (ty1.a.class) {
+                if (f423043c == null) {
+                    f423043c = new ty1.a();
+                }
+            }
+        }
+        return f423043c;
+    }
+
+    public final void b() {
+        this.f423045b = new java.util.ArrayList();
+        java.lang.String Zi = h62.d.vj().Zi(e42.d0.clicfg_data_report_filter_page_config, "sFinderMultiTaskRouterUI|ccom.tencent.mm.ui.LauncherUI|ccom.tencent.mm.ui.vas.VASCommonActivity|sAPMidasDistributeActivity|ccom.tencent.mm.ui.chatting.ChattingUI|sLiveEntranceFragment|sFinderLiveVisitorFragment|sWalletOfflineEntranceUI|sPermissionActivity|sGalleryEntryUI|sOccupyFinderUI2|sGameCenterUI|sAppBrandLaunchProxyUI|sAppBrandLauncherUI|sAlertActivity|sFinderHomeAnimUI|sEmptyActivity", true);
+        if (u46.l.e(Zi)) {
+            return;
+        }
+        for (java.lang.String str : Zi.split("\\|")) {
+            if (!this.f423045b.contains(str)) {
+                this.f423045b.add(str);
+            }
+        }
+    }
+
+    public boolean c(hz1.a aVar) {
+        if (aVar == null) {
+            return false;
+        }
+        if (this.f423045b == null) {
+            b();
+        }
+        java.lang.String str = "s" + aVar.f286289c;
+        java.lang.String str2 = "c" + aVar.f286290d;
+        for (java.lang.String str3 : this.f423045b) {
+            if (u46.l.c(str3, str) || u46.l.c(str3, str2)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}

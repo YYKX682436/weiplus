@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/eiz" android:background="@drawable/zv" android:layout_width="wrap_content" android:layout_height="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/eiw" android:paddingLeft="8.0dp" android:paddingTop="3.5dp" android:paddingRight="8.0dp" android:paddingBottom="3.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:singleLine="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/eiy" android:paddingLeft="@dimen/c9" android:paddingTop="3.5dp" android:paddingRight="@dimen/c9" android:paddingBottom="3.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ProgressBar android:id="@id/eix" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:max="100" android:progress="60" android:progressDrawable="@drawable/zw" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_8" android:paddingLeft="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d2t" android:singleLine="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ndi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bo" android:layout_marginBottom="@dimen/cs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="center" android:id="@id/cl7" android:layout_width="@dimen/d5" android:layout_height="@dimen/d5" android:scaleType="centerCrop" app:i8="10.0dp" />
+    <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/an" android:ellipsize="end" android:gravity="left|center" android:id="@id/ndp" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/dv" android:maxLines="1" android:requiresFadingEdge="horizontal" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/an" android:ellipsize="end" android:gravity="left|center" android:id="@id/mye" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:requiresFadingEdge="horizontal" />
+</LinearLayout>

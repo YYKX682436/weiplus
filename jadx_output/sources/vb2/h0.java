@@ -1,0 +1,17 @@
+package vb2;
+
+/* loaded from: classes2.dex */
+public final class h0 implements x4.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final android.widget.FrameLayout f434623a;
+
+    public h0(android.widget.FrameLayout frameLayout, com.tencent.mm.ui.widget.imageview.WeImageView weImageView, android.widget.TextView textView, android.widget.ImageView imageView, android.widget.ImageView imageView2, android.widget.LinearLayout linearLayout, android.widget.RelativeLayout relativeLayout, android.widget.TextView textView2, android.widget.LinearLayout linearLayout2, android.widget.TextView textView3, android.widget.LinearLayout linearLayout3) {
+        this.f434623a = frameLayout;
+    }
+
+    @Override // x4.a
+    public android.view.View h() {
+        return this.f434623a;
+    }
+}

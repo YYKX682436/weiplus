@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ji_" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/gj" android:background="@drawable/b9" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/gi" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b5" android:contentDescription="@string/cd" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/h4" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h3" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/cn" android:src="@raw/actionbar_icon_dark_more" android:contentDescription="@string/w_" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/r" android:textColor="@color/bx" android:ellipsize="end" android:gravity="center" android:id="@id/h9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/h8" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <com.tencent.mm.plugin.game.ui.message.TabItemView android:id="@id/nvr" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="2.0dp" app:tab_name="@string/fnx" />
+            <com.tencent.mm.plugin.game.ui.message.TabItemView android:id="@id/nvs" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" app:tab_name="@string/fny" />
+        </LinearLayout>
+        <View android:background="@color/BW_0_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.tencent.mm.ui.base.CustomViewPager android:id="@id/jia" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ji_" />
+</RelativeLayout>

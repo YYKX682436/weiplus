@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/iqu" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.sns.ad.timeline.item.lookbookcard.OverScrollRecyclerView android:id="@id/iqv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/rw0" android:visibility="gone" android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginLeft="78.0dp" android:layout_marginTop="128.0dp" />
+        <ViewStub android:id="@id/v_f" android:layout="@layout/epg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ViewStub android:id="@id/qlu" android:layout="@layout/dk7" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/iqw" android:visibility="gone" android:layout_width="63.0dp" android:layout_height="match_parent" />
+</FrameLayout>

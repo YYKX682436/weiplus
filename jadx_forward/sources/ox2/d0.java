@@ -1,0 +1,24 @@
+package ox2;
+
+/* loaded from: classes9.dex */
+public final class d0 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ ox2.h0 f431184d;
+
+    public d0(ox2.h0 h0Var) {
+        this.f431184d = h0Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/finder/view/interactioneasteregg/CenterInteractionEasterEggPreviewHalfScreen$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        ox2.h0 h0Var = this.f431184d;
+        h0Var.f431195a.mo146xb9724478(h0Var.f431197c);
+        yj0.a.h(this, "com/tencent/mm/plugin/finder/view/interactioneasteregg/CenterInteractionEasterEggPreviewHalfScreen$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

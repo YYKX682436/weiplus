@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/mcm" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <com.tencent.mm.ui.widget.InputPanelLinearLayout android:orientation="vertical" android:id="@id/hdf" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:text="@string/jro" style="@style/ho" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/jrb" style="@style/rm" />
+            <LinearLayout android:orientation="vertical" android:id="@id/aiu" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:minHeight="@dimen/b1" android:layout_below="@id/og2">
+                <View android:layout_height="0.5dp" android:layout_alignParentBottom="true" style="@style/fh" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/gvg" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_margin="@dimen/dv" android:src="@drawable/c14" />
+                    <TextView android:gravity="center_vertical" android:id="@id/gvj" android:text="" android:layout_weight="1.0" android:layout_marginStart="@dimen/c9" style="@style/ix" />
+                    <Button android:id="@id/orx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" android:text="@string/jre" style="@style/l1" />
+                    <Button android:id="@id/bel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" android:text="@string/jr4" style="@style/l1" />
+                </LinearLayout>
+                <View android:layout_height="0.5dp" android:layout_alignParentBottom="true" style="@style/fh" />
+            </LinearLayout>
+            <View android:id="@id/auy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/ahl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bu" android:text="@string/jr2" style="@style/kr" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/vr" android:ellipsize="end" android:layout_gravity="center" android:id="@id/o3_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dn" android:layout_marginBottom="@dimen/bu" android:text="测试发送授权消息" android:singleLine="true" />
+        </com.tencent.mm.ui.widget.InputPanelLinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:gravity="center" android:id="@id/dhj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" style="@style/ku" />
+</FrameLayout>

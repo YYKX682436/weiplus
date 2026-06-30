@@ -1,0 +1,56 @@
+package com.p314xaae8f345.p347x615374d.gen;
+
+/* renamed from: com.tencent.kinda.gen.KListViewOnScrollCallback */
+/* loaded from: classes9.dex */
+public abstract class AbstractC3479x95b0a7df {
+
+    /* renamed from: com.tencent.kinda.gen.KListViewOnScrollCallback$CppProxy */
+    /* loaded from: classes9.dex */
+    public static final class CppProxy extends com.p314xaae8f345.p347x615374d.gen.AbstractC3479x95b0a7df {
+
+        /* renamed from: $assertionsDisabled */
+        static final /* synthetic */ boolean f13629x7118e671 = false;
+
+        /* renamed from: destroyed */
+        private final java.util.concurrent.atomic.AtomicBoolean f13630x766b9619 = new java.util.concurrent.atomic.AtomicBoolean(false);
+
+        /* renamed from: nativeRef */
+        private final long f13631xc3e764fc;
+
+        private CppProxy(long j17) {
+            if (j17 == 0) {
+                throw new java.lang.RuntimeException("nativeRef is zero");
+            }
+            this.f13631xc3e764fc = j17;
+        }
+
+        /* renamed from: nativeDestroy */
+        private native void m28035x23caefe3(long j17);
+
+        /* renamed from: native_onScroll */
+        private native void m28036xcd30c8b4(long j17, float f17, float f18);
+
+        /* renamed from: destroy */
+        public void m28037x5cd39ffa() {
+            if (this.f13630x766b9619.getAndSet(true)) {
+                return;
+            }
+            m28035x23caefe3(this.f13631xc3e764fc);
+        }
+
+        /* renamed from: finalize */
+        public void m28038xd764dc1e() {
+            m28037x5cd39ffa();
+            super.finalize();
+        }
+
+        @Override // com.p314xaae8f345.p347x615374d.gen.AbstractC3479x95b0a7df
+        /* renamed from: onScroll */
+        public void mo28034x58dabd8c(float f17, float f18) {
+            m28036xcd30c8b4(this.f13631xc3e764fc, f17, f18);
+        }
+    }
+
+    /* renamed from: onScroll */
+    public abstract void mo28034x58dabd8c(float f17, float f18);
+}

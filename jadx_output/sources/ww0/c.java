@@ -1,0 +1,27 @@
+package ww0;
+
+/* loaded from: classes5.dex */
+public final class c implements yv0.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.mj_publisher.finder.movie_composing.panel.text.timeline.CaptionTimelineView f450076a;
+
+    public c(com.tencent.mm.mj_publisher.finder.movie_composing.panel.text.timeline.CaptionTimelineView captionTimelineView) {
+        this.f450076a = captionTimelineView;
+    }
+
+    @Override // yv0.a
+    public void a(com.tencent.maas.model.time.MJTime targetTime) {
+        kotlin.jvm.internal.o.g(targetTime, "targetTime");
+        com.tencent.mm.mj_publisher.finder.widgets.timelineview.BaseTimelineView.l(this.f450076a, targetTime, false, 2, null);
+    }
+
+    @Override // yv0.a
+    public void b(double d17, boolean z17) {
+        int i17 = com.tencent.mm.mj_publisher.finder.movie_composing.panel.text.timeline.CaptionTimelineView.E;
+        fy0.r scrollHelper = this.f450076a.getScrollHelper();
+        if (scrollHelper != null) {
+            scrollHelper.d(d17, z17);
+        }
+    }
+}

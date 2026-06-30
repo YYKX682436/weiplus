@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.shadow.layout.WxShadowLinearLayout android:orientation="horizontal" android:id="@id/txd" android:background="@color/a9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/txc" android:layout_alignBottom="@id/txc" android:layout_alignStart="@id/txc" android:layout_alignEnd="@id/txc" app:blurRadius="@dimen/a0s" app:blurRadiusFactor="1.5" app:layoutShadowColor="@color/qt" app:layoutShadowRadius="@dimen/bl" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="21.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/txc" android:layout_alignBottom="@id/txc" android:layout_alignStart="@id/txc" android:layout_alignEnd="@id/txc">
+        <View android:background="@drawable/d4m" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/txc" android:padding="21.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/adg" android:id="@id/txe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dv" android:maxWidth="250.0dp" android:includeFontPadding="false" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/txb" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:src="@raw/xmark_regular" android:layout_marginHorizontal="@dimen/dv" app:fs="@color/a84" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/txa" android:layout_width="14.0dp" android:layout_height="5.0dp" android:layout_marginLeft="25.0dp" android:layout_marginTop="16.5dp" android:src="@raw/float_ball_edu_arrow_up" android:layout_marginEnd="21.0dp" android:layout_alignEnd="@id/txc" app:fs="@color/c" />
+</RelativeLayout>

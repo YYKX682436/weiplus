@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/qaa" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="28.0dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:gravity="center" android:layout_gravity="bottom" android:id="@id/qad" android:layout_width="wrap_content" android:layout_height="22.0dp" android:maxLines="1" android:includeFontPadding="false" app:aq="14.0dp" app:ar="1.0dp" app:autoSizeStepGranularity="1.0px" app:as="os_" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/qab" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="28.0dp" android:baselineAligned="true">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="#ff6146" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/qa9" android:layout_width="wrap_content" android:layout_height="22.0dp" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" app:aq="14.0dp" app:ar="1.0dp" app:autoSizeStepGranularity="1.0px" app:as="os_" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="24.0dp" android:textStyle="bold|italic" android:textColor="@color/ac" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/qa8" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginLeft="4.0dp" android:minWidth="50.0dp" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/qa_" android:background="@drawable/b1h" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="22.0dp" android:layout_marginTop="6.0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/qa6" android:layout_width="16.0dp" android:layout_height="16.0dp" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="@color/Link_100" android:gravity="center" android:layout_gravity="center" android:id="@id/qa7" android:layout_width="wrap_content" android:layout_height="22.0dp" android:layout_marginLeft="4.0dp" android:maxLines="1" android:includeFontPadding="false" app:aq="14.0dp" app:ar="1.0dp" app:autoSizeStepGranularity="1.0px" app:as="os_" />
+    </LinearLayout>
+</FrameLayout>

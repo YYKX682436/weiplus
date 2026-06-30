@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lzo" android:background="@color/aaw" android:paddingLeft="@dimen/hi" android:paddingRight="@dimen/hi" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/m00" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp">
+        <ImageView android:id="@id/lzs" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginEnd="@dimen/dv" />
+        <com.tencent.mm.ui.widget.EllipsizeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="20.0dp">
+            <TextView android:textSize="@dimen/gz" android:textStyle="bold" android:textColor="@color/fa" android:ellipsize="end" android:id="@id/lzw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/a0c" android:id="@id/lzm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a3g" android:maxLines="1" android:layout_centerVertical="true" />
+        </com.tencent.mm.ui.widget.EllipsizeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/a0c" android:id="@id/lzq" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/a3y" android:maxLines="2" />
+    <FrameLayout android:orientation="vertical" android:id="@id/lzp" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/cn">
+        <ImageView android:layout_gravity="top" android:layout_width="match_parent" style="@style/fh" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/kuq" android:layout_width="match_parent" android:layout_height="@dimen/df">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:id="@id/kuo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/tk" android:id="@id/kup" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/a3x" android:layout_weight="1.0" android:layout_marginEnd="@dimen/cn" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" style="@style/fh" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/b3v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oj" android:layout_marginBottom="@dimen/oh">
+            <Button android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/a0c" android:id="@id/lzn" android:layout_width="120.0dp" android:layout_height="40.0dp" android:text="@string/a4j" android:layout_weight="1.0" style="@style/kz" />
+            <View android:layout_width="18.0dp" android:layout_height="match_parent" />
+            <Button android:textSize="@dimen/k" android:id="@id/lzx" android:layout_width="120.0dp" android:layout_height="40.0dp" android:text="@string/a4f" android:layout_weight="1.0" style="@style/kr" />
+        </LinearLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/b3w" android:visibility="gone" android:layout_marginTop="@dimen/oj" android:layout_marginBottom="@dimen/oh" android:text="@string/vj" style="@style/kz" />
+    </FrameLayout>
+</LinearLayout>

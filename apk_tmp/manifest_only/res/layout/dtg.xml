@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rnz" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_5" android:id="@id/ro0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bo" android:text="@string/mp_" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/h1" android:textColor="#ffc300" android:ellipsize="end" android:gravity="center" android:id="@id/rny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bo" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/bo" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/ro0" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/bo" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dv" android:src="@raw/finder_live_task_reward_left" android:layout_below="@id/ro0" app:fs="@color/a9e" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/bo" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dv" android:src="@raw/finder_live_task_reward_right" android:layout_below="@id/ro0" android:layout_alignParentRight="true" app:fs="@color/a9e" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/df" android:layout_alignParentBottom="true">
+        <TextView android:layout_gravity="center" android:id="@id/rn3" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:text="@string/mpv" style="@style/y8" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/rn4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/UN_BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaaaaa" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_arrow" app:fs="@color/UN_BW_0_Alpha_0_5" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

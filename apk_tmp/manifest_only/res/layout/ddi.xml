@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/b" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:id="@id/q1e" android:layout_width="36.0dp" android:layout_height="36.0dp" android:scaleType="centerCrop" />
+        <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/q1g" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8.0dp" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/san" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" />
+        <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#07c160" android:gravity="center_vertical" android:id="@id/q1d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_weight="0.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/jcb" android:background="@drawable/ct9" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

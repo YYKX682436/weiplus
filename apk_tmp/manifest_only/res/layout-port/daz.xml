@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout android:id="@id/f86" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/f83" android:visibility="gone" android:layout_width="@dimen/d_" android:layout_height="@dimen/d_" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/b98" android:background="@color/UN_BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/b6y" android:background="@drawable/icon_live_lottery_card_bg" android:clickable="true" android:layout_width="320.0dp" android:layout_height="480.0dp" android:layout_centerInParent="true">
+            <include android:id="@id/m8k" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/b14" />
+            <include android:id="@id/pmt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dv" android:layout_above="@id/ish" layout="@layout/atq" />
+            <include android:id="@id/ish" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/b12" />
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:padding="@dimen/c9" android:layout_width="@dimen/dr" android:layout_height="@dimen/dr" android:layout_marginTop="@dimen/cs" android:src="@raw/icons_outlined_close2" android:layout_below="@id/b6y" android:layout_centerHorizontal="true" app:fs="@color/p9" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout>

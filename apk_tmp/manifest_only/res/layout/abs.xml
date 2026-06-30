@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gyb" android:background="@drawable/ty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="@dimen/k" android:textColor="@color/tk" android:gravity="left" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="12.0dp" android:text="@string/c_0" />
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.MMWebView android:id="@id/phz" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

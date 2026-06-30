@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:key="contact_info_mini_shop_helper_header_helper" android:gc="@layout/c9y" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_mini_shop_helper_go_to" android:gc="@layout/byv" android:title="@string/bf3" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="contact_info_mini_shop_helper_top" android:gc="@layout/byv" android:persistent="false" android:title="@string/bf7" />
+    <CheckBoxPreference android:key="contact_info_mini_shop_helper_not_disturb" android:gc="@layout/byv" android:persistent="false" android:title="@string/bf5" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_mini_shop_helper_help" android:gc="@layout/byv" android:title="@string/bf4" />
+    <Preference android:key="contact_info_mini_shop_helper_clear_data" android:gc="@layout/byv" android:title="@string/bcu" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwn" android:key="contact_info_mini_shop_helper_install" android:title_color="@color/su" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwr" android:key="contact_info_mini_shop_helper_uninstall" android:gc="@layout/bt3" android:title_color="@color/a31" />
+    <PreferenceCategory />
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderMaxSizeLayout android:id="@id/s5t" android:paddingLeft="@dimen/c9" android:paddingBottom="@dimen/cn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:layout_gravity="bottom" android:id="@id/s5u" android:fadingEdge="vertical" android:fadingEdgeLength="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:requiresFadingEdge="vertical" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/s5r" android:background="@drawable/ak5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginEnd="@dimen/df">
+        <TextView android:textSize="14.0dp" android:textColor="@color/f3" android:id="@id/s5s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:text="aaa" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_double_arrow_down" android:layout_toRightOf="@id/s5s" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" app:fs="#000000" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.finder.live.view.FinderMaxSizeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/kj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/tht" android:paddingTop="@dimen/db" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cz" android:paddingEnd="@dimen/cz">
+        <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:gravity="center" android:id="@id/sun" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/onn" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/abw" android:gravity="center" android:id="@id/sum" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:lineSpacingMultiplier="1.4" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7">
+            <View android:background="@color/k7" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/sup" android:background="?ih" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:paddingStart="@dimen/amq" android:paddingEnd="@dimen/amq">
+                <TextView android:textSize="17.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/suq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/op6" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/adg" android:id="@id/sur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dv" android:text="@string/ooa" android:layout_toLeftOf="@id/suo" android:layout_centerVertical="true" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/suo" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/arrow_right_regular" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/ahn" />
+            </RelativeLayout>
+            <View android:background="@color/k7" android:layout_width="match_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/amf">
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/suk" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="取消" style="@style/xl" />
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/sul" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="下一步" android:layout_marginStart="@dimen/cn" style="@style/xk" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

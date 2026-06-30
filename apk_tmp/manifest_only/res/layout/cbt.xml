@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.radar.ui.RadarMemberView android:id="@id/lh8" android:background="#e0000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/lh3" android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/lh3">
+        <TextView android:textSize="19.0sp" android:textColor="@color/jj" android:gravity="center" android:layout_gravity="center" android:id="@id/lhl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="@string/hqy" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/jj" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/lh5" android:background="@drawable/bmb" android:visibility="gone" android:layout_width="240.0dp" android:layout_height="48.0dp" android:layout_marginTop="40.0dp" android:shadowColor="#007e0b" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <Button android:textSize="18.0dp" android:textColor="@color/ab3" android:layout_gravity="center_horizontal" android:id="@id/lh4" android:background="@drawable/jk" android:visibility="gone" android:layout_width="240.0dp" android:layout_height="48.0dp" android:layout_marginTop="40.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/lh3">
+        <View android:layout_gravity="center_horizontal" android:id="@id/lhf" android:layout_width="130.0dp" android:layout_height="130.0dp" android:layout_marginBottom="8.0dp" />
+        <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/lh_" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/a21" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/lh9" android:background="@drawable/bm9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:minWidth="120.0dp" android:text="@string/hr1" android:singleLine="true" style="@style/kn" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/lh0" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="75.0dp">
+        <ImageView android:id="@id/lh1" android:layout_width="68.0dp" android:layout_height="68.0dp" android:layout_marginTop="3.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_marginTop="3.0dp" android:src="@raw/radar_member_big_bg" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/k" android:textColor="#ff225a8f" android:ellipsize="end" android:id="@id/dkn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dp" android:text="@string/bdb" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</com.tencent.mm.plugin.radar.ui.RadarMemberView>

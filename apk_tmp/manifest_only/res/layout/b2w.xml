@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/che" android:background="@color/c" android:paddingTop="@dimen/ct" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:background="@drawable/awr" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/zz" app:loadMoreLayout="@layout/bsd">
+            <androidx.recyclerview.widget.RecyclerView android:background="@color/a9e" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.view.RefreshLoadMoreLayout>
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/a25" android:background="@color/c" android:paddingBottom="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content" app:eg="0.0dp" app:expanded="true">
+            <RelativeLayout android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/jfo" android:layout_alignParentLeft="true" android:paddingHorizontal="@dimen/c9">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/k" android:textColor="@color/f5" android:gravity="start" android:id="@id/jfn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/k" android:textColor="@color/f5" android:gravity="start" android:id="@id/qg3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button android:textSize="@dimen/j4" android:id="@id/jfo" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:text="@string/elr" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ks" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/dg3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/lbi" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/c6" android:indeterminateDrawable="@drawable/avj" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/m2g" android:paddingTop="@dimen/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cuw" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:layout_gravity="center_horizontal" android:id="@id/dft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:text="@string/era" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/oah" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/ack" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ri" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mdo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/mdn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <View android:background="@color/BW_BG_95" android:layout_width="match_parent" android:layout_height="8.0dp" />
+            <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/q6" android:layout_below="@id/mdn" style="@style/g6">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/eo" android:layout_height="@dimen/eo" android:layout_marginRight="@dimen/is" android:src="@raw/search_add_icon_green" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/mdq" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="{tip}" android:layout_weight="1.0" style="@style/j3" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

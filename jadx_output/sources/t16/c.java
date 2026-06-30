@@ -1,0 +1,21 @@
+package t16;
+
+/* loaded from: classes15.dex */
+public final class c extends t16.g {
+    public c(boolean z17) {
+        super(java.lang.Boolean.valueOf(z17));
+    }
+
+    @Override // t16.g
+    public f26.o0 a(o06.v0 module) {
+        kotlin.jvm.internal.o.g(module, "module");
+        l06.o h17 = module.h();
+        h17.getClass();
+        f26.z0 t17 = h17.t(l06.r.f314896i);
+        if (t17 != null) {
+            return t17;
+        }
+        l06.o.a(64);
+        throw null;
+    }
+}

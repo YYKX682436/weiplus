@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/h0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/hfi" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentBottom="true">
+        <View android:id="@id/i22" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/jj" android:gravity="center_vertical" android:id="@id/hff" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:text="@string/atd" android:layout_below="@id/i22" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/a5" android:gravity="center_vertical" android:id="@id/hfz" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:text="@string/ath" android:layout_toRightOf="@id/hff" android:layout_below="@id/i22" />
+        <TextView android:textSize="13.0dp" android:textColor="@color/ab0" android:gravity="center" android:id="@id/hfu" android:background="@drawable/jk" android:layout_width="60.0dp" android:layout_height="30.0dp" android:layout_marginRight="12.0dp" android:text="@string/atf" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cho" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/hf" android:id="@id/kby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auq" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/bae" android:background="@color/jf" android:visibility="visible" android:layout_height="match_parent" android:transcriptMode="disabled" android:layout_above="@id/hfi" style="@style/e0" />
+</RelativeLayout>

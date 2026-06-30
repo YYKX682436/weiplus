@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fb9" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.view.mini.FinderMiniWindowFloatLayout android:id="@id/fbo" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/dli" />
+    <include android:id="@id/rt3" layout="@layout/drl" />
+    <FrameLayout android:id="@id/kif" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/kie" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.tencent.mm.plugin.finder.live.plugin.view.audio.FinderLiveAudioWaveRootView android:layout_gravity="center" android:id="@id/kig" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:id="@id/fbb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fb_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/fba" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_error" android:layout_centerHorizontal="true" app:fs="@color/an" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/ab0" android:gravity="center" android:id="@id/fbc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/fba" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <View android:background="@drawable/cqg" android:layout_width="match_parent" android:layout_height="@dimen/d1" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qu0" android:paddingTop="@dimen/bn" android:paddingBottom="@dimen/dv" android:visibility="gone" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@raw/icons_filled_mini_win_ear" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/bn" android:layout_alignParentEnd="true" app:fs="@color/aby" />
+</RelativeLayout>

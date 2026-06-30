@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ilw" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:id="@id/v_x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/imd" android:padding="@dimen/j3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+        <Space android:layout_width="@dimen/aih" android:layout_height="@dimen/aih" />
+        <TextView android:textSize="@dimen/aju" android:textColor="@color/adg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jo2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nht" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/uxt" android:padding="@dimen/j3" android:visibility="invisible" android:layout_width="@dimen/ajw" android:layout_height="@dimen/ajw" android:src="@raw/refresh_regular" />
+        <Space android:layout_width="@dimen/aih" android:layout_height="@dimen/aih" />
+        <TextView android:textSize="@dimen/aju" android:textColor="@color/adg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paf" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.0" />
+</LinearLayout>

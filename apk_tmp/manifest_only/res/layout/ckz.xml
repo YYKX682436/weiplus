@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/o2s" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" />
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl">
+        <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/o2r" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" />
+        <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/o2q" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/h1s" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" style="@style/ik" />
+    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/a_w" android:background="@drawable/cnr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" style="@style/ik" />
+    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/a22" android:background="@drawable/cnr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" style="@style/ik" />
+    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/o2p" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" />
+    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/cj8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/su" style="@style/ik" />
+</LinearLayout>

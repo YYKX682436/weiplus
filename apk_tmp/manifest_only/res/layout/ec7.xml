@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/tpd" android:background="@drawable/azo" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/bu"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/dl" android:layout_height="@dimen/bo" app:ds="@dimen/bl">
+        <ImageView android:id="@id/tpj" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <View android:id="@id/tpl" android:background="@color/md" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/aby" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tpp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/owc" android:maxLines="2" android:fontFamily="sans-serif-medium" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tph" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/tpi" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:max="100" android:progress="40" android:progressDrawable="@drawable/d2s" style="?android:progressBarStyleHorizontal" />
+            <TextView android:textSize="10.0dp" android:textColor="@color/aby" android:ellipsize="end" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/ow9" android:maxLines="2" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <TextView android:textSize="10.0dp" android:textColor="@color/aby" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tpe" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/out" android:maxLines="2" android:fontFamily="sans-serif-medium" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/tpf" android:background="@drawable/cyf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d7">
+            <TextView android:textSize="10.0dp" android:textColor="@color/aby" android:ellipsize="end" android:layout_gravity="right|bottom" android:id="@id/tpg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:text="00:00" android:maxLines="1" android:fontFamily="sans-serif" />
+        </FrameLayout>
+    </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/cn">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/tpo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" android:maxLines="2" android:fontFamily="sans-serif" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl">
+                <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/tpm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/owa" android:maxLines="1" android:fontFamily="sans-serif" />
+                <View android:layout_gravity="center_vertical" android:id="@id/tpn" android:background="@color/kj" android:layout_width="@dimen/bg" android:layout_height="@dimen/c_" android:layout_marginLeft="@dimen/dv" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/tpk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="@string/ow_" android:maxLines="1" android:fontFamily="sans-serif" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="@color/kj" android:layout_width="match_parent" android:layout_height="@dimen/bg" />
+    </FrameLayout>
+</LinearLayout>

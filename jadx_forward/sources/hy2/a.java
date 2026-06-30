@@ -1,0 +1,14 @@
+package hy2;
+
+/* loaded from: classes3.dex */
+public final class a implements uh4.d {
+    @Override // uh4.d
+    public boolean b(long j17, long j18) {
+        return !com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.T0(j17, j18);
+    }
+
+    @Override // uh4.d
+    public boolean c(long j17, long j18) {
+        return !com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.T0(j17, j18);
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pya" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pyl" android:background="@drawable/ckr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/zx" android:id="@id/pyn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" android:text="@string/lhc" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="8.0dp" android:layout_height="6.0dp" android:layout_marginRight="12.0dp" android:src="@raw/wallet_down_arrow" app:fs="@color/FG_0" />
+    </LinearLayout>
+    <View style="@style/fh" />
+    <include layout="@layout/de1" />
+</LinearLayout>

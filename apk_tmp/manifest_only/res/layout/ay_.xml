@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fkb" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/lz1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/lyn" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_filled_pause" android:layout_marginEnd="@dimen/c9" app:fs="@color/BW_100_Alpha_0_8" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/u5" android:gravity="start" android:id="@id/lyo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/df" android:includeFontPadding="false" />
+        <com.tencent.mm.plugin.finder.replay.widget.FinderLiveReplaySeekbar android:id="@id/lym" android:background="@null" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="0.0dp" android:layout_height="@dimen/d7" android:maxHeight="2.0dp" android:max="500" android:progress="500" android:progressDrawable="@drawable/axc" android:thumb="@drawable/b92" android:layout_weight="1.0" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" android:splitTrack="false" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/u5" android:gravity="end" android:id="@id/lyp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/df" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

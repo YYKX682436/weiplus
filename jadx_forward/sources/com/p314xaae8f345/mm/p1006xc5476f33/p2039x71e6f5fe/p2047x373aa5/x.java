@@ -1,0 +1,118 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p2039x71e6f5fe.p2047x373aa5;
+
+/* loaded from: classes14.dex */
+public final class x implements android.animation.Animator.AnimatorListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public java.lang.String f241538d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ android.widget.TextView f241539e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p2039x71e6f5fe.p2047x373aa5.t0 f241540f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p2039x71e6f5fe.p2047x373aa5.t f241541g;
+
+    public x(android.widget.TextView textView, com.p314xaae8f345.mm.p1006xc5476f33.p2039x71e6f5fe.p2047x373aa5.t0 t0Var, com.p314xaae8f345.mm.p1006xc5476f33.p2039x71e6f5fe.p2047x373aa5.t tVar) {
+        this.f241539e = textView;
+        this.f241540f = t0Var;
+        this.f241541g = tVar;
+    }
+
+    @Override // android.animation.Animator.AnimatorListener
+    public void onAnimationCancel(android.animation.Animator animation) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(animation, "animation");
+    }
+
+    @Override // android.animation.Animator.AnimatorListener
+    public void onAnimationEnd(android.animation.Animator animation) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(animation, "animation");
+        android.widget.TextView textView = this.f241539e;
+        if (textView != null) {
+            textView.setText(this.f241538d);
+        }
+        java.lang.String str = this.f241538d;
+        com.p314xaae8f345.mm.p1006xc5476f33.p2039x71e6f5fe.p2047x373aa5.t0 t0Var = this.f241540f;
+        java.util.Map map = t0Var.f241521r;
+        java.lang.String str2 = map != null ? (java.lang.String) map.get("personal_passport") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str2)) {
+            str2 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.n3a);
+        }
+        java.util.Map map2 = t0Var.f241521r;
+        java.lang.String str3 = map2 != null ? (java.lang.String) map2.get("center_of_screen") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str3)) {
+            str3 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.f575191n36);
+        }
+        java.util.Map map3 = t0Var.f241521r;
+        java.lang.String str4 = map3 != null ? (java.lang.String) map3.get("stay_stable") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str4)) {
+            str4 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.n3b);
+        }
+        java.util.Map map4 = t0Var.f241521r;
+        java.lang.String str5 = map4 != null ? (java.lang.String) map4.get("finger_occluded") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str5)) {
+            str5 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.f575189n34);
+        }
+        java.util.Map map5 = t0Var.f241521r;
+        java.lang.String str6 = map5 != null ? (java.lang.String) map5.get("get_closer") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str6)) {
+            str6 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.f575190n35);
+        }
+        java.util.Map map6 = t0Var.f241521r;
+        java.lang.String str7 = map6 != null ? (java.lang.String) map6.get("smooth_display") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str7)) {
+            str7 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.n3_);
+        }
+        java.util.Map map7 = t0Var.f241521r;
+        java.lang.String str8 = map7 != null ? (java.lang.String) map7.get("exist_reflection") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str8)) {
+            str8 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.n39);
+        }
+        java.util.Map map8 = t0Var.f241521r;
+        java.lang.String str9 = map8 != null ? (java.lang.String) map8.get("blurry_photo") : null;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str9)) {
+            str9 = t0Var.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.f575187n32);
+        }
+        if (!p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str2)) {
+            if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str3)) {
+                t0Var.x(2);
+            } else if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str4)) {
+                t0Var.x(12);
+            } else if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str5)) {
+                t0Var.x(3);
+            } else if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str6)) {
+                t0Var.x(4);
+            } else if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str7)) {
+                t0Var.x(5);
+            } else if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str8)) {
+                t0Var.x(17);
+            } else if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, str9)) {
+                t0Var.x(18);
+            }
+        }
+        if (textView != null) {
+            textView.announceForAccessibility(this.f241538d);
+        }
+        float[] fArr = new float[2];
+        fArr[0] = textView != null ? textView.getAlpha() : 0.0f;
+        fArr[1] = 1.0f;
+        android.animation.ObjectAnimator ofFloat = android.animation.ObjectAnimator.ofFloat(textView, "alpha", fArr);
+        ofFloat.setDuration(500L);
+        android.animation.AnimatorSet animatorSet = new android.animation.AnimatorSet();
+        animatorSet.playTogether(ofFloat);
+        animatorSet.addListener(new com.p314xaae8f345.mm.p1006xc5476f33.p2039x71e6f5fe.p2047x373aa5.w(this.f241541g, textView, t0Var));
+        animatorSet.start();
+    }
+
+    @Override // android.animation.Animator.AnimatorListener
+    public void onAnimationRepeat(android.animation.Animator animation) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(animation, "animation");
+    }
+
+    @Override // android.animation.Animator.AnimatorListener
+    public void onAnimationStart(android.animation.Animator animation) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(animation, "animation");
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/d" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/tk" android:gravity="center_horizontal" android:id="@id/kch" android:background="@color/a" android:paddingTop="@dimen/hm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ti" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:layout_gravity="top" android:id="@id/m5d" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

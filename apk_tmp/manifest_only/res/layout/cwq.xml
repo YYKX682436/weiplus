@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/nbd" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:id="@id/nbf" android:background="@drawable/b48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginEnd="20.0dp" android:layout_toEndOf="@id/nbd">
+        <TextView android:textSize="16.0dp" android:textColor="@color/a7w" android:gravity="center" android:id="@id/nbe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:text="@string/jli" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+    </LinearLayout>
+</merge>

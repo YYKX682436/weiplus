@@ -1,0 +1,18 @@
+package ae2;
+
+/* loaded from: classes.dex */
+public final class rm extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final ae2.rm f4156d = new ae2.rm();
+
+    public rm() {
+        super(1);
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        gm0.j1.u().c().x(com.tencent.mm.storage.u3.USERINFO_MY_FINDER_LIVE_TASK_REDDOT_FLAG_INT_SYNC, 0);
+        return jz5.f0.f302826a;
+    }
+}

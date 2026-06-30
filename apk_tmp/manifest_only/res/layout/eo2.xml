@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c9">
+        <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:background="@color/aby" android:layout_width="@dimen/df" android:layout_height="@dimen/df" app:ds="@dimen/c9">
+            <ImageView android:layout_gravity="center" android:id="@id/a17" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" />
+        </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/abw" android:id="@id/a1p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cn" android:textFontWeight="500" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:orientation="vertical" android:background="@color/f" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" app:ds="@dimen/dv">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/h0" android:textColor="@color/ahl" android:id="@id/ug5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/Link_100" android:id="@id/cwk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zl" android:layout_marginStart="@dimen/cn" />
+        </LinearLayout>
+        <View android:background="@color/vt" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:layout_marginVertical="@dimen/c9" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/a84" android:id="@id/ty9" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/oln" />
+    </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+</LinearLayout>

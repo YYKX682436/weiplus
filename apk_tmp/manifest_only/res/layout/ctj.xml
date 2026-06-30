@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chq" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ght" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/oy7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a09" android:gravity="right" android:id="@id/o7o" android:padding="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/oy7" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/mwk" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/ab0" android:gravity="center" android:id="@id/ob5" android:padding="@dimen/hf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/hj" android:text="@string/j4g" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/p12" android:background="@color/j8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <com.tencent.mm.ui.widget.MMPinProgressBtn android:id="@id/mwj" android:visibility="gone" android:layout_width="@dimen/a7m" android:layout_height="@dimen/a7m" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/p11" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/brm" android:scaleType="center" android:layout_centerInParent="true" />
+        <include layout="@layout/cnp" />
+    </RelativeLayout>
+</LinearLayout>

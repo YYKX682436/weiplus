@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:layout_gravity="center|top" android:id="@id/sl9" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/sl8" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+    <com.tencent.mm.plugin.sns.ad.widget.adbrandtopic.OverScrollDoubleSideRecyclerView android:id="@id/sl_" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/ufd" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/ufe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

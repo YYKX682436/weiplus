@@ -1,0 +1,21 @@
+package vr3;
+
+/* loaded from: classes11.dex */
+public final class k extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final vr3.k f521168d = new vr3.k();
+
+    public k() {
+        super(1);
+    }
+
+    @Override // yz5.l
+    /* renamed from: invoke */
+    public java.lang.Object mo146xb9724478(java.lang.Object obj) {
+        r45.wl it = (r45.wl) obj;
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(it, "it");
+        qr3.c0.f447615a.e(it.f470768f);
+        return jz5.f0.f384359a;
+    }
+}

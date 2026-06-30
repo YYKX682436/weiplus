@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/oy1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" app:bh="8.0dp" app:layout_constraintBottom_toTopOf="@id/i2n" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="0" app:layout_constraintWidth_percent="0.52">
+        <com.tencent.mm.plugin.appbrand.ui.record.WAGameRecordPreviewVideoView android:id="@id/c8t" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/i2n" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c9" app:layout_constraintBottom_toTopOf="@id/mth">
+        <Button android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/BW_100_Alpha_0_8" android:gravity="center" android:id="@id/nh4" android:background="@drawable/j8" android:layout_width="@dimen/c7" android:layout_height="@dimen/db" android:text="@string/a20" android:maxLines="1" android:layout_marginEnd="@dimen/dv" style="@style/l1" />
+        <Button android:textSize="@dimen/ia" android:textStyle="bold" android:gravity="center" android:id="@id/msi" android:layout_width="@dimen/c7" android:layout_height="@dimen/db" android:text="@string/a1w" android:maxLines="1" android:layout_marginStart="@dimen/dv" style="@style/ks" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:gravity="center" android:id="@id/mth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/a1z" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

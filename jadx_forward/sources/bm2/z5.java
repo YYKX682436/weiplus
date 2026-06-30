@@ -1,0 +1,27 @@
+package bm2;
+
+/* loaded from: classes3.dex */
+public final class z5 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ bm2.c6 f104016d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ el2.v2 f104017e;
+
+    public z5(bm2.c6 c6Var, el2.v2 v2Var) {
+        this.f104016d = c6Var;
+        this.f104017e = v2Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/finder/live/view/adapter/FinderLivePromoteSubListAdapter$onBindViewHolder$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        this.f104016d.f103350d.mo146xb9724478(this.f104017e);
+        yj0.a.h(this, "com/tencent/mm/plugin/finder/live/view/adapter/FinderLivePromoteSubListAdapter$onBindViewHolder$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

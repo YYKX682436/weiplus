@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sfl" android:background="@drawable/cs3" android:layout_width="match_parent" android:layout_height="match_parent"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.tencent.mm.view.VoiceAnimImageView android:id="@id/sfk" android:layout_width="@dimen/ds" android:layout_height="@dimen/ds" app:layout_constraintBottom_toTopOf="@id/a76" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" />
+        <TextView android:textColor="@color/adg" android:id="@id/a76" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAlignment="center" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/sfk" app:layout_constraintVertical_chainStyle="2" style="@style/ho" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/u0b" android:background="@drawable/cs4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

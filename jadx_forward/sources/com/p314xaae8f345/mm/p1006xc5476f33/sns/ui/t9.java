@@ -1,0 +1,25 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.sns.ui;
+
+/* loaded from: classes.dex */
+public class t9 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ android.widget.Button f252035d;
+
+    public t9(com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.pa paVar, android.widget.Button button) {
+        this.f252035d = button;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(android.view.View view) {
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("onClick", "com.tencent.mm.plugin.sns.ui.SnsAdCardActionBtnCtrl$2");
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/sns/ui/SnsAdCardActionBtnCtrl$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        this.f252035d.performClick();
+        yj0.a.h(this, "com/tencent/mm/plugin/sns/ui/SnsAdCardActionBtnCtrl$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("onClick", "com.tencent.mm.plugin.sns.ui.SnsAdCardActionBtnCtrl$2");
+    }
+}

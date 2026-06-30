@@ -1,0 +1,32 @@
+package bm2;
+
+/* loaded from: classes3.dex */
+public final class r7 implements android.view.View.OnLongClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ bm2.u7 f22277d;
+
+    public r7(bm2.u7 u7Var) {
+        this.f22277d = u7Var;
+    }
+
+    @Override // android.view.View.OnLongClickListener
+    public final boolean onLongClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/finder/live/view/adapter/FinderLiveSensitiveWordAdapter$WordItemViewHolder$2", "android/view/View$OnLongClickListener", "onLongClick", "(Landroid/view/View;)Z", this, array);
+        java.lang.Object tag = view.getTag(com.tencent.mm.R.id.ohu);
+        kotlin.jvm.internal.o.e(tag, "null cannot be cast to non-null type kotlin.FloatArray");
+        float[] fArr = (float[]) tag;
+        int i17 = (int) fArr[0];
+        int i18 = (int) fArr[1];
+        bm2.u7 u7Var = this.f22277d;
+        bm2.w7 w7Var = u7Var.f22356g;
+        ((rl5.r) ((jz5.n) w7Var.f22418f).getValue()).a();
+        ((rl5.r) ((jz5.n) w7Var.f22418f).getValue()).h(u7Var.itemView, new bm2.s7(u7Var), new bm2.t7(w7Var, u7Var), i17, i18);
+        yj0.a.i(true, this, "com/tencent/mm/plugin/finder/live/view/adapter/FinderLiveSensitiveWordAdapter$WordItemViewHolder$2", "android/view/View$OnLongClickListener", "onLongClick", "(Landroid/view/View;)Z");
+        return true;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/pvh" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cz">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/pvi" android:layout_width="@dimen/afk" android:layout_height="@dimen/afk" android:src="@raw/icons_filled_edit_photo_eraser" app:fs="@color/ac5" />
+    </FrameLayout>
+    <View android:id="@id/pvg" android:background="@color/BW_100_Alpha_0_3" android:layout_width="1.0dp" android:layout_height="@dimen/cs" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" android:layout_toEndOf="@id/pvh" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/px9" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:requiresFadingEdge="horizontal" android:layout_marginEnd="@dimen/cz" android:layout_toEndOf="@id/pvg" />
+</RelativeLayout>

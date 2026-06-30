@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/lx_" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/ac" android:ellipsize="end" android:id="@id/lxb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="4.0dp" android:text="" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/lx_" android:layout_centerVertical="true" />
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/lxa" android:layout_width="8.0dp" android:layout_height="16.0dp" android:layout_marginRight="8.0dp" android:scaleType="centerCrop" android:layout_toRightOf="@id/lxb" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/lx9" android:background="@drawable/ax5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

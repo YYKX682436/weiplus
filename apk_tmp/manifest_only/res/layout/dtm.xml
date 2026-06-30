@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderLiveFloatContainer android:gravity="center" android:id="@id/rmw" android:background="@drawable/a4x" android:layout_width="@dimen/yh" android:layout_height="@dimen/bp" app:focus_background="@drawable/a4v" app:unfocus_left_background="@drawable/a4w" app:unfocus_right_background="@drawable/a4x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/s93" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/kqr" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" app:fs="@color/aaz" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/imn" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" style="@style/w_" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:textColor="@color/aaz" android:ellipsize="end" android:id="@id/rzs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:singleLine="true" android:layout_below="@id/s93" android:layout_centerHorizontal="true" />
+</com.tencent.mm.plugin.finder.live.view.FinderLiveFloatContainer>

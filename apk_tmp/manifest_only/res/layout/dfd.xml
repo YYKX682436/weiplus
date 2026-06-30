@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cgi" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/iln" android:paddingTop="15.0dp" android:paddingBottom="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/bm" android:gravity="left|center" android:id="@id/cqn" android:background="@color/a9e" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/j_" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/j_" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pv3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dp">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/m2" android:id="@id/pz1" android:background="@color/a9e" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/j_" android:paddingRight="@dimen/f" android:paddingBottom="@dimen/j_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lf4" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="5.0dp" android:layout_height="9.0dp" android:layout_marginRight="@dimen/j3" android:src="@raw/arrow_right" app:fs="@color/FG_0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

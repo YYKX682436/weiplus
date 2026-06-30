@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:gravity="center_horizontal" android:id="@id/ili" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/el1" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ilg" android:paddingBottom="@dimen/bo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/bdv" android:background="@drawable/yp" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/d9" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <View android:id="@id/i0a" android:background="@color/BW_0_Alpha_0_1" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginRight="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/bdv" app:layout_constraintRight_toLeftOf="@id/bdv" app:layout_constraintTop_toTopOf="@id/bdv" />
+        <View android:id="@id/m3v" android:background="@color/BW_0_Alpha_0_1" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/bdv" app:layout_constraintLeft_toRightOf="@id/bdv" app:layout_constraintTop_toTopOf="@id/bdv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

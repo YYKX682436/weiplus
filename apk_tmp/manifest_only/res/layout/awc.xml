@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/o2z" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/fn9" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+        <TextView android:gravity="center" android:id="@id/fn_" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="aaa" />
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="下面是直播广场的的人数测试：" />
+        <TextView android:gravity="center" android:id="@id/fna" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="123" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/rob" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/roa" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+        <TextView android:textColor="@color/an" android:gravity="center" android:id="@id/rqh" android:background="@color/a2" android:layout_width="match_parent" android:layout_height="30.0dp" android:text="getA8Key" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/by7" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/c6n" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/ev5" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="间隔多少毫秒取评论（当前200）" android:inputType="number" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/ev6" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="每次取几条评论（默认2条）" android:inputType="number" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/ev7" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="评论滑动速度（越大越慢）" android:inputType="number" />
+        <TextView android:gravity="center" android:id="@id/ev4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="确认" style="@style/mm" />
+    </LinearLayout>
+</LinearLayout>

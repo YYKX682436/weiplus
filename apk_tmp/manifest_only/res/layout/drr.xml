@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/a" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginBottom="@dimen/dv" android:text="@string/mk7" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/apn" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/bl" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:id="@id/rsz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mk4" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <SeekBar android:id="@id/rsy" android:layout_width="match_parent" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cn" android:maxHeight="4.0dp" android:max="150" android:progressDrawable="@drawable/cul" android:minHeight="4.0dp" android:thumb="@drawable/cum" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/rsz" android:splitTrack="false" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/bl" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:id="@id/rsn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mjz" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <SeekBar android:id="@id/rsm" android:layout_width="match_parent" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cn" android:maxHeight="4.0dp" android:max="150" android:progressDrawable="@drawable/cul" android:minHeight="4.0dp" android:thumb="@drawable/cum" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/rsn" android:splitTrack="false" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/bl" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:id="@id/rsq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mk2" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rsp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/rss" android:background="@color/BW_0_Alpha_0_0_3" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_centerVertical="true" app:ds="@dimen/cn">
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/rst" android:layout_width="8.0dp" android:layout_height="8.0dp" android:src="@raw/icons_outlined_minus2" app:fs="@color/FG_2" />
+                    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+                    <TextView android:textColor="@color/FG_0" android:gravity="center" android:orientation="horizontal" android:id="@id/rsl" android:layout_width="52.0dp" android:layout_height="wrap_content" android:text="0" />
+                    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/rsu" android:background="@color/BW_0_Alpha_0_0_3" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_centerVertical="true" app:ds="@dimen/cn">
+                        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/rsv" android:layout_width="8.0dp" android:layout_height="8.0dp" android:src="@raw/icons_outlined_add3" app:fs="@color/FG_2" />
+                    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/apn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+            <RelativeLayout android:background="@drawable/apn" android:padding="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mk3" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/rsr" />
+                <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/rsr" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/vu" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" />
+            <RelativeLayout android:background="@drawable/apn" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/rso">
+                    <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mk0" android:includeFontPadding="false" />
+                    <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mk1" android:lines="1" android:includeFontPadding="false" />
+                </LinearLayout>
+                <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/rso" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/dv" android:text="@string/mk6" />
+        <FrameLayout android:orientation="vertical" android:id="@id/rt6" android:background="@drawable/apn" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn">
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/rt5" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

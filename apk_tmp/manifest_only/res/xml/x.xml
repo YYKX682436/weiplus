@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:key="contact_info_header_helper" android:gc="@layout/c9y" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_qqmailhelper_account" android:gc="@layout/byv" android:title="@string/bft" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_qqmailhelper_view" android:gc="@layout/byv" android:title="@string/bg4" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_qqmailhelper_compose" android:gc="@layout/byv" android:title="@string/bfu" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="contact_info_qqmailhelper_top" android:gc="@layout/byv" android:persistent="false" android:title="@string/bg3" />
+    <CheckBoxPreference android:key="contact_info_qqmailhelper_mute" android:gc="@layout/byv" android:persistent="false" android:title="@string/bg1" />
+    <CheckBoxPreference android:key="contact_info_qqmailhelper_recv_remind" android:gc="@layout/byv" android:persistent="false" android:title="@string/bfy" />
+    <PreferenceFooterCategory android:key="contact_info_qqmailhelper_remind_footer" android:title="@string/bfz" />
+    <Preference android:key="contact_info_qqmailhelper_download_mgr_view" android:gc="@layout/byv" android:title="@string/bfv" />
+    <Preference android:key="contact_info_qqmailhelper_clear_data" android:gc="@layout/byv" android:title="@string/bcu" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwn" android:key="contact_info_qqmailhelper_install" android:gc="@layout/c_e" android:title_color="@color/m" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwr" android:key="contact_info_qqmailhelper_uninstall" android:gc="@layout/c_e" android:title_color="@color/ac" />
+    <PreferenceCategory />
+</PreferenceScreen>

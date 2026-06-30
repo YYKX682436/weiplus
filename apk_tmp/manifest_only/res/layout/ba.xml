@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cob" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_up_indicator" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4p" android:background="@null" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/bl" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@raw/arrow_left_regular" android:contentDescription="@string/ig" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/a0c" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/osp" android:background="@drawable/co8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:minWidth="@dimen/cs" android:minHeight="@dimen/cs" />
+            <TextView android:textSize="@dimen/r" android:textColor="@color/a0e" android:gravity="center" android:id="@id/fv" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="send" />
+        </LinearLayout>
+        <ImageView android:id="@id/ocr" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginEnd="@dimen/dv" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/gp" android:paddingLeft="@dimen/op" android:paddingRight="@dimen/op" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/obq" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/obp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/r" android:textColor="@color/bx" android:ellipsize="middle" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/obn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/vfy" android:visibility="gone" android:layout_width="18.659973dp" android:layout_height="14.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/db6" app:fs="@color/a9e" />
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/bx" android:ellipsize="middle" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/obr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:layout_marginStart="4.0dp" />
+            </LinearLayout>
+            <ImageView android:id="@id/ova" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/obo" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/gck" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f" android:src="@raw/chat_force_notify_icon" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/nxp" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/f" android:src="@raw/icons_outlined_talk" app:fs="@color/eb" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/k10" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/j_" android:src="@raw/icons_outlined_bellring_off" app:fs="@color/eb" />
+            <ImageView android:id="@id/ku4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f" android:src="@raw/chat_phone_notify_title_icon" />
+            <ImageView android:id="@id/ld9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f" android:src="@raw/qq" />
+            <ImageView android:id="@id/lst" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f" android:src="@raw/chat_reject_icon" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/nqu" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/nqs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/nqt" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="16.0dp" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/coz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/coy" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

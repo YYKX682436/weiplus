@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/dj" android:layout_height="@dimen/bo"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="@dimen/dj" android:layout_height="@dimen/dj">
+        <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MCRoundCornerAnimateView android:id="@id/h5w" android:layout_width="match_parent" android:layout_height="match_parent" app:animate_radius="@dimen/dv" />
+        <View android:id="@id/qa0" android:background="@drawable/cme" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <View android:layout_gravity="center" android:id="@id/qv5" android:background="@drawable/icon_mc_disable_24x24" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+        <View android:id="@id/q4i" android:background="@color/acn" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/d3u" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:indeterminateDrawable="@drawable/a0v" />
+        <View android:id="@id/hrm" android:background="@color/acn" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/ac8" android:layout_gravity="center" android:id="@id/qol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lwl" android:drawableStart="@drawable/icon_mc_retry_16x16" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/aka" android:textColor="@color/ac_" android:layout_gravity="center|bottom" android:id="@id/q8t" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

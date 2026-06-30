@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:background="@color/c" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/cgc" android:background="@color/c" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/jb_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/d7" android:text="@string/ayw" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/jb5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/dv" android:text="@string/ayx" android:includeFontPadding="false" android:lineSpacingMultiplier="1.4" />
+        <LinearLayout android:orientation="vertical" android:id="@id/jb8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/jj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:text="@string/ayz" android:lineSpacingMultiplier="1.4" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/jb9" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:overScrollMode="never" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jb6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/jj" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:text="@string/ayy" android:lineSpacingMultiplier="1.4" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/jb7" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

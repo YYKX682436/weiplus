@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rql" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dp" android:layout_marginRight="55.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/icons_outlined_error" app:fs="#fa5151" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="17.0dp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/mob" />
+        <TextView android:textSize="14.0dp" android:textColor="#ccffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/moc" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/reg" android:background="#4dffffff" android:layout_marginTop="32.0dp" android:minWidth="@dimen/cf" android:minHeight="@dimen/db" android:text="@string/mod" style="@style/y7" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dp" android:layout_marginRight="55.0dp">
+        <com.tencent.mm.view.MMPAGView android:id="@id/roh" android:layout_width="@dimen/db" android:layout_height="@dimen/db" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="14.0dp" android:textColor="#f9f9f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/moe" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/rel" android:background="#4dffffff" android:layout_marginTop="32.0dp" android:minHeight="@dimen/db" android:text="@string/moh" android:width="@dimen/cf" style="@style/y7" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/a33" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/ax2" android:paddingLeft="15.0dp" android:paddingTop="20.0dp" android:paddingRight="15.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="center_horizontal" android:id="@id/a9m" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/bhn" />
+            <TextView android:textSize="16.0dp" android:textColor="@color/a0c" android:id="@id/kbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="nickname" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0dp" android:textColor="@color/a0c" android:id="@id/o8y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:00" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dp" android:text="title" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

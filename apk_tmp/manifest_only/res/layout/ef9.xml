@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/aai" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/tyn" android:paddingTop="@dimen/ali" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/v37" android:layout_width="match_parent" android:layout_height="264.0dp" android:layout_alignParentBottom="true">
+            <View android:layout_gravity="center_horizontal" android:id="@id/v36" android:background="@drawable/d57" android:layout_width="1100.0dp" android:layout_height="1100.0dp" />
+            <com.tencent.mm.transvoice.ui.SoundWaveView android:layout_gravity="center_horizontal" android:id="@id/v9q" android:layout_width="87.0dp" android:layout_height="24.0dp" android:layout_marginTop="32.0dp" app:waveColor="@color/a84" />
+        </FrameLayout>
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/gz" android:textStyle="bold" android:textColor="@color/a84" android:id="@id/o_z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ajw" android:text="@string/ozy" android:layout_above="@id/v37" android:layout_centerHorizontal="true" />
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/h3" android:textColor="@color/abw" android:textColorHint="@color/FG_2" android:gravity="top" android:id="@id/ux5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="14.0dp" android:hint="@string/p08" android:layout_above="@id/o_z" android:layout_alignParentTop="true" android:paddingStart="@dimen/ajw" android:paddingEnd="@dimen/ajw" />
+        <View android:id="@id/ve4" android:background="@drawable/d_a" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ajr" android:layout_alignTop="@id/ux5" />
+    </RelativeLayout>
+</RelativeLayout>

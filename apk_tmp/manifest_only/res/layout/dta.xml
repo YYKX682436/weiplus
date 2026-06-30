@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/cv5" android:scrollbars="none" android:fadingEdge="vertical" android:fadingEdgeLength="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" android:fillViewport="true" android:requiresFadingEdge="vertical" style="@style/kj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/dtg" />
+        <LinearLayout android:orientation="vertical" android:id="@id/rnm" android:paddingLeft="@dimen/d7" android:paddingTop="@dimen/db" android:paddingRight="@dimen/d7" android:paddingBottom="@dimen/d7" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mq1" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/h1" android:textColor="#ffc300" android:ellipsize="end" android:id="@id/rnx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxLines="2" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_3" android:ellipsize="end" android:id="@id/rnl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:lines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/mpa" android:includeFontPadding="false" />
+            <LinearLayout android:orientation="vertical" android:id="@id/rno" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ahz" android:paddingLeft="24.0dp" android:paddingTop="24.0dp" android:paddingRight="24.0dp" android:paddingBottom="74.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/hor" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/hp1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fl1" />
+                <LinearLayout android:orientation="vertical" android:id="@id/hoz" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/hor">
+                <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/hp6" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="fitXY" app:i8="12.0dp" />
+                <TextView android:textSize="17.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/hoq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0dp" android:gravity="center" android:id="@id/hon" android:background="@drawable/ahy" android:layout_width="52.0dp" android:layout_height="32.0dp" android:text="@string/g6q" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

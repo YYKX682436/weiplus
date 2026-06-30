@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/j8p" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/g09" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/bo" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/icons_outlined_music_new" app:fs="@color/FG_2" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/t_" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ezl" />
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/qk" android:layout_gravity="center_vertical" android:id="@id/fyt" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eyx" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/mcm" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/g0_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/cs" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/j4" android:textColor="@color/qk" android:id="@id/g00" android:paddingTop="4.0dp" android:paddingRight="@dimen/cn" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ezu" />
+                    <TextView android:textSize="@dimen/j4" android:textColor="@color/qk" android:id="@id/fzc" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ez6" />
+                </LinearLayout>
+            </FrameLayout>
+            <include layout="@layout/b7m" />
+            <include layout="@layout/b7g" />
+            <include layout="@layout/d12" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

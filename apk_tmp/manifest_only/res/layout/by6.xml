@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/nvt" android:background="@drawable/c7z" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/h5y" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.TabIconView android:id="@id/h6y" android:layout_width="34.0dp" android:layout_height="34.0dp" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            <TextView android:id="@id/osw" android:visibility="invisible" android:layout_marginLeft="-12.0dp" android:includeFontPadding="false" android:layout_toRightOf="@id/h6y" android:layout_alignTop="@id/h6y" style="@style/rv" />
+            <ImageView android:id="@id/d2h" android:visibility="invisible" android:layout_marginTop="1.0dp" android:layout_marginRight="-1.0dp" android:layout_alignTop="@id/h6y" android:layout_alignRight="@id/h6y" style="@style/ry" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/a1" android:textColor="@color/ab0" android:gravity="center" android:id="@id/icon_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gpw" />
+    </LinearLayout>
+</RelativeLayout>

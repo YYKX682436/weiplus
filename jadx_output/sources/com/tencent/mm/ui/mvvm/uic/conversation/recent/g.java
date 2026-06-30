@@ -1,0 +1,24 @@
+package com.tencent.mm.ui.mvvm.uic.conversation.recent;
+
+/* loaded from: classes.dex */
+public final class g extends zm3.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final jz5.g f209325d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public g(androidx.appcompat.app.AppCompatActivity activity) {
+        super(activity);
+        kotlin.jvm.internal.o.g(activity, "activity");
+        this.f209325d = jz5.h.b(new com.tencent.mm.ui.mvvm.uic.conversation.recent.f(activity, this));
+    }
+
+    @Override // zm3.a
+    public ym3.f T6() {
+        return (qi5.q) ((jz5.n) this.f209325d).getValue();
+    }
+
+    @Override // com.tencent.mm.ui.component.UIComponent
+    public void onCreate(android.os.Bundle bundle) {
+    }
+}

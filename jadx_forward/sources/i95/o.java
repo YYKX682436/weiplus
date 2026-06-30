@@ -1,0 +1,42 @@
+package i95;
+
+/* loaded from: classes12.dex */
+public class o implements java.util.concurrent.Callable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ i95.y f371369d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ java.lang.Class f371370e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ java.lang.Throwable f371371f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ boolean f371372g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final /* synthetic */ i95.w f371373h;
+
+    public o(i95.w wVar, i95.y yVar, java.lang.Class cls, java.lang.Throwable th6, boolean z17) {
+        this.f371373h = wVar;
+        this.f371369d = yVar;
+        this.f371370e = cls;
+        this.f371371f = th6;
+        this.f371372g = z17;
+    }
+
+    @Override // java.util.concurrent.Callable
+    public java.lang.Object call() {
+        java.lang.Class cls = this.f371370e;
+        try {
+            i95.w wVar = (i95.w) this.f371369d.a(cls);
+            wVar.m134978xc7df9085(this.f371371f);
+            i95.n0.j(this.f371373h, wVar, i95.r.INITIALIZED, false, this.f371372g, true);
+            return null;
+        } catch (com.p314xaae8f345.mm.p2624x91727fcf.p2625x1d1e926c.C21321xc9bd728b e17) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.m40542x58ef3d35("MicroMsg.FeatureService", e17, "Depended service '%s' of '%s' was not registered on current process: '%s'.", cls.getName(), this.f371373h.getClass().getName(), bm5.f1.a());
+            return null;
+        }
+    }
+}

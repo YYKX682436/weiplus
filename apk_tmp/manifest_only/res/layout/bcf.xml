@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tyv" android:background="@color/rh" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/pi0" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ListView android:id="@id/mfg" android:background="@color/al0" android:paddingBottom="@dimen/ajf" android:focusable="false" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:transcriptMode="disabled" style="@style/js" />
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/ggg" android:visibility="gone" android:layout_marginBottom="@dimen/cs" android:text="@string/muo" android:layout_alignParentBottom="true" android:layout_centerInParent="true" app:iconName="@raw/icons_outlined_mike_medium" style="@style/y4" />
+</RelativeLayout>

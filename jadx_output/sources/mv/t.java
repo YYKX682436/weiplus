@@ -1,0 +1,12 @@
+package mv;
+
+/* loaded from: classes6.dex */
+public class t implements java.lang.Iterable {
+    public t(mv.r rVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new mv.s(this, null);
+    }
+}

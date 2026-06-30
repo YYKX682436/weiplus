@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:form="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/h1" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dn8" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:text="@string/ic1" android:paddingStart="@dimen/d7" />
+        <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/r" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/dn9" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/ic4" android:paddingStart="@dimen/d7" />
+        <View android:background="@drawable/c7b" android:layout_width="match_parent" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/d7" />
+        <com.tencent.mm.ui.base.MMFormInputView android:id="@id/dn5" android:focusableInTouchMode="false" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" form:form_layout="@layout/byh" form:form_title="@string/ic2" style="@style/j8" />
+        <com.tencent.mm.ui.base.MMFormInputView android:id="@id/dn4" android:focusableInTouchMode="false" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" form:form_layout="@layout/byh" form:form_title="@string/ic5" style="@style/j8" />
+        <View android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/ngn" android:paddingRight="@dimen/d7" android:layout_marginTop="@dimen/d7" android:text="@string/ic1" android:paddingStart="@dimen/d7" style="@style/kr" />
+        <RelativeLayout android:gravity="bottom" android:id="@id/dmw" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/d7" android:paddingStart="@dimen/d7">
+            <CheckBox android:layout_gravity="center" android:id="@id/dmv" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="4.0dp" android:button="@null" android:layout_alignTop="@id/dmx" style="@style/im" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/tk" android:id="@id/dmx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginTop="3.0dp" android:includeFontPadding="false" android:layout_toRightOf="@id/dmv" android:layout_alignParentTop="true" android:lineSpacingMultiplier="1.25" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

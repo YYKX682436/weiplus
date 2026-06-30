@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/s7u" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="360.0dp">
+        <View android:layout_marginTop="@dimen/cn" style="@style/fh" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_marginBottom="@dimen/dv" android:minHeight="@dimen/ce">
+            <ImageView android:id="@id/s7y" android:layout_width="@dimen/cd" android:layout_height="@dimen/dr" android:layout_marginBottom="@dimen/cn" />
+            <ImageView android:id="@id/s7z" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/cz" android:src="@raw/spinner_48_outer_holo" />
+            <com.tencent.mm.ui.widget.loading.MMProgressLoading android:id="@id/s81" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/cz" app:loadProgressColor="@color/FG_0" app:loadprogress="0" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/abw" android:gravity="center" android:id="@id/s84" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/n0h" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/adg" android:gravity="center" android:id="@id/s7x" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" />
+            <ProgressBar android:id="@id/s82" android:visibility="gone" android:layout_width="224.0dp" android:layout_height="4.0dp" android:layout_marginTop="@dimen/dv" style="@style/kf" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/adg" android:gravity="center" android:id="@id/s83" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textStyle="bold" android:id="@id/s7v" android:visibility="gone" android:layout_marginTop="@dimen/dv" android:text="@string/mwo" style="@style/kr" />
+            <Button android:textStyle="bold" android:id="@id/s7w" android:visibility="gone" android:layout_marginTop="@dimen/dv" android:text="@string/aby" style="@style/kz" />
+            <Button android:id="@id/s80" android:visibility="gone" android:layout_marginTop="@dimen/dv" android:text="@string/mvh" style="@style/jx" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.tencent.mm.plugin.backup.roambackup.ui.component.StatusWithIconView android:id="@id/s85" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/d1" />
+</FrameLayout>

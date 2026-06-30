@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/cmu" android:background="@color/a0c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.gallery.picker.view.WxMediaCropLayout android:id="@id/m81" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/cmw" android:layout_width="match_parent" android:layout_height="@dimen/bo">
+        <Button android:textSize="@dimen/k" android:textColor="@color/bw" android:id="@id/cmt" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apj" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cn1" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@raw/icons_filled_undo" android:layout_weight="1.0" app:fs="@color/aaw" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/cmz" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@raw/icons_filled_rotate" android:layout_weight="1.0" app:fs="@color/aaw" />
+        <Button android:id="@id/cmv" android:background="@drawable/xe" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apu" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="@dimen/uq" style="@style/ks" />
+    </LinearLayout>
+</FrameLayout>

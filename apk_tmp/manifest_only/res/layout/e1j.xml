@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/br1" style="@style/er" />
+    <LinearLayout style="@style/ek">
+        <include layout="@layout/tx" />
+        <LinearLayout android:orientation="vertical" android:id="@id/sru" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/el">
+            <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+            <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingEmojiMvvmView android:id="@id/bkm" android:layout_marginLeft="@dimen/vg" android:layout_marginRight="@dimen/vg" style="@style/fm" />
+            <FrameLayout android:id="@id/bky" android:paddingLeft="@dimen/vg" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/vg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="start" android:orientation="horizontal" android:id="@id/sq9" android:background="@drawable/e2" android:paddingLeft="@dimen/bk" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bk" android:paddingBottom="@dimen/bj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bk" android:paddingVertical="@dimen/bj">
+                    <ImageView android:id="@id/bkz" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@raw/emoticonstore_capture_icon" android:layout_marginEnd="3.0dp" />
+                    <TextView android:textSize="@dimen/c9" android:textColor="@color/Link_100" android:gravity="center" android:id="@id/sq_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aqk" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

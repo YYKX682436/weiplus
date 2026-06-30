@@ -1,0 +1,26 @@
+package o72;
+
+/* loaded from: classes6.dex */
+public class w0 implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f425039d = 0;
+
+    public w0(o72.x0 x0Var, o72.v0 v0Var) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f425039d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f425039d;
+        this.f425039d = i17 + 1;
+        if (i17 == 0) {
+            return x82.n0.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

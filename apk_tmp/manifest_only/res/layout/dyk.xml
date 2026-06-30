@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/a9e" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dl" style="@style/ju"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/a0c" android:id="@id/vln" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/vlm" android:background="@drawable/bcc" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.base.MaskLayout android:layout_gravity="top" android:id="@id/vlk" android:layout_width="@dimen/ail" android:layout_height="@dimen/ail" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/c8" android:layout_marginRight="@dimen/dv" android:contentDescription="@null" android:importantForAccessibility="no">
+            <ImageView android:id="@id/vll" android:layout_width="@dimen/ail" android:layout_height="@dimen/ail" android:layout_centerInParent="true" android:contentDescription="@null" android:importantForAccessibility="no" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/g_2" android:background="@drawable/bfj" android:paddingRight="@dimen/cn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dl" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/vlp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{nickname}" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/j3" />
+                    <TextView android:textSize="@dimen/h2" android:textColor="@color/v8" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/kjp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_marginStart="@dimen/bl" />
+                </TableRow>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/g9z" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <TextView android:id="@id/vlo" android:layout_width="0.0dp" android:text="{digest}" android:singleLine="true" android:layout_weight="1.0" style="@style/j2" />
+                    <TextView android:textSize="@dimen/b3" android:textColor="@color/vo" android:id="@id/t40" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/c5x" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:layout_gravity="top" android:id="@id/g_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:minWidth="@dimen/bp">
+                <com.tencent.mm.ui.widget.button.WeButton android:id="@id/g9u" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:text="@string/fbc" style="@style/y4" />
+                <com.tencent.mm.ui.widget.button.WeButton android:id="@id/vlq" android:focusable="false" android:focusableInTouchMode="false" android:text="@string/fbr" style="@style/y4" />
+                <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/hgx" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/bl" />
+                    <TextView android:textSize="@dimen/b3" android:id="@id/g_6" android:visibility="gone" android:text="@string/f1" style="@style/j2" />
+                    <TextView android:textSize="@dimen/b3" android:id="@id/g9w" android:background="@null" android:visibility="gone" android:text="@string/ey" style="@style/f_" />
+                    <TextView android:textSize="@dimen/b3" android:id="@id/g_1" android:background="@null" android:visibility="gone" android:text="@string/f0" style="@style/f_" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

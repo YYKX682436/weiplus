@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.widget.record.EdgeTransparentView android:layout_width="match_parent" android:layout_height="wrap_content" app:edge_position="0x4" app:edge_width="50.0dp">
+        <com.tencent.mm.plugin.game.chatroom.view.ChatMemberListView android:id="@id/bgb" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="12.0dp" android:overScrollMode="never" />
+    </com.tencent.mm.plugin.finder.widget.record.EdgeTransparentView>
+    <com.google.android.material.tabs.TabLayout android:id="@id/nv8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" app:tabBackground="@color/a9e" app:jd="bdp" app:jk="0.0dp" app:jl="200.0dp" app:tabMinWidth="20.0dp" app:jm="mcp" app:jn="@dimen/dv" app:jo="@dimen/dv" app:jp="@color/a9e" app:jq="@color/BW_100_Alpha_0_8" app:js="@style/hj" app:jt="@color/BW_100_Alpha_0_5" />
+</LinearLayout>

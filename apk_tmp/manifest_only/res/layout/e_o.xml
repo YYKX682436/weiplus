@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/che" android:background="@color/e" android:layout_width="wrap_content" android:layout_height="@dimen/d9" app:ds="@dimen/dv">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+            <TextView android:textSize="14.0sp" android:textColor="@color/agl" android:id="@id/vj0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/osf" />
+            <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/u77" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginStart="@dimen/bl" app:i8="@dimen/cn" />
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/adh" android:ellipsize="end" android:id="@id/vii" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dp" android:singleLine="true" android:layout_marginStart="@dimen/bl" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u7i" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_channel" android:layout_marginStart="@dimen/bl" app:fs="@color/Orange_100" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/agl" android:id="@id/vjc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/osg" android:layout_marginStart="@dimen/bl" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4f" android:layout_width="14.0dp" android:layout_height="6.0dp" android:src="@raw/icons_pop_arrow" android:layout_below="@id/che" app:fs="@color/e" />
+</RelativeLayout>

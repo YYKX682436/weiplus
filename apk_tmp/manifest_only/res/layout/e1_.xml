@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tx" />
+    <com.tencent.mm.view.StretchFrameLayout android:id="@id/sq4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <FrameLayout android:orientation="vertical" android:id="@id/bkg" android:background="@drawable/cyy" android:paddingLeft="0.0dp" android:paddingTop="0.0dp" android:paddingRight="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/brc">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="fill_vertical|right" android:id="@id/sqv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitEnd" android:importantForAccessibility="no" />
+                <ImageView android:layout_gravity="fill_vertical|right" android:id="@id/sqw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:importantForAccessibility="no" />
+                <ImageView android:layout_gravity="fill_vertical|right" android:id="@id/sqx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/d01" android:scaleType="fitXY" android:importantForAccessibility="no" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="fill_vertical|right" android:id="@id/bma" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+            <ImageView android:id="@id/squ" android:background="@drawable/daw" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hq" />
+            <ImageView android:id="@id/sev" android:layout_width="44.0dp" android:layout_height="80.0dp" android:layout_marginLeft="18.0dp" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingLeft="@dimen/f" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginRight="@dimen/hx">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/sf0" android:layout_width="40.0dp" android:layout_height="40.0dp" android:importantForAccessibility="no" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j" android:layout_centerVertical="true">
+                        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/ajf" android:ellipsize="end" android:id="@id/sez" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/j_" android:singleLine="true" />
+                        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/b3" android:ellipsize="end" android:id="@id/set" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ViewStub android:id="@id/v_3" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/bs4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:importantForAccessibility="no" android:layout_marginEnd="4.0dp" android:layout_alignEnd="@id/bkg" />
+    </com.tencent.mm.view.StretchFrameLayout>
+</LinearLayout>

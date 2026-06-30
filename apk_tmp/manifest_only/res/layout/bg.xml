@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/el" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="?m"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_up_indicator" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/actionbar_up_indicator_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b5" android:contentDescription="@string/cd" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" android:layout_toRightOf="@id/actionbar_up_indicator">
+        <EditText android:textSize="@dimen/r" android:id="@id/mdy" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="搜索" />
+    </LinearLayout>
+    <ImageButton android:id="@id/bxn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:src="@drawable/bu8" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

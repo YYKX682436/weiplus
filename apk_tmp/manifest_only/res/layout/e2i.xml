@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/ahk" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/anu"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/bxf" android:background="@drawable/aoe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" android:layout_margin="@dimen/aii" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/obn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/bxc" android:layout_toEndOf="@id/bxf">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/ahl" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="缓存名称" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bxc" android:layout_width="wrap_content" android:layout_height="@dimen/anu" android:layout_centerVertical="true" android:paddingStart="@dimen/aih" android:paddingEnd="@dimen/aii" android:layout_alignParentEnd="true">
+        <TextView android:textColor="@color/abw" android:id="@id/mzv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="551.9 MB" android:singleLine="true" style="@style/j3" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/t3j" android:visibility="gone" android:layout_width="@dimen/yd" android:layout_height="@dimen/ajw" android:src="@raw/arrow_right_regular" android:contentDescription="@string/b8j" android:layout_marginStart="@dimen/aih" app:fs="@color/ahn" />
+    </LinearLayout>
+    <View android:id="@id/ofy" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignStart="@id/obn" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:orientation="horizontal" android:id="@id/e9w" android:background="@drawable/xz" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/cz" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" app:ds="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/e9u" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/u6" android:ellipsize="end" android:layout_gravity="center" android:id="@id/e9v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ck4" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/bl" />
+    </LinearLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

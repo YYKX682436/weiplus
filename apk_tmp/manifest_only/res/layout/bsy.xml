@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/aao" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/aao" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ip0" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:fadeScrollbars="true" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/jj" android:id="@id/mz9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/ghw" android:layout_below="@id/ip0" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/df" android:layout_marginEnd="@dimen/df" />
+    </RelativeLayout>
+</ScrollView>

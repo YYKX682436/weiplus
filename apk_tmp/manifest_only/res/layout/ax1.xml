@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/d7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/ffq" android:background="@drawable/a3k" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ffo" android:layout_width="@dimen/dj" android:layout_height="@dimen/d7" android:src="@raw/finder_pk_crit_annouce_left" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/ffp" android:layout_width="@dimen/dj" android:layout_height="@dimen/d7" android:src="@raw/finder_pk_crit_annouce_right" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ffr" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/ffm" android:background="@drawable/a3k" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <HorizontalScrollView android:id="@id/ffl" android:focusable="false" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/dv" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:requiresFadingEdge="horizontal">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ffn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </FrameLayout>
+</FrameLayout>

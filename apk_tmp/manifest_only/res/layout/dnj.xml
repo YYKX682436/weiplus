@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/rfg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rf8" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rfc" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/rf7">
+            <LinearLayout android:orientation="horizontal" android:id="@id/rf9" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                <ImageView android:id="@id/rf_" android:background="@drawable/cig" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                <View android:layout_width="4.0dp" android:layout_height="match_parent" />
+                <ImageView android:id="@id/rfa" android:background="@drawable/gr" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                <View android:layout_width="4.0dp" android:layout_height="match_parent" />
+                <ImageView android:id="@id/rfb" android:background="@drawable/cih" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/av2" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_constraintBottom_toBottomOf="@id/rf9" app:layout_constraintEnd_toEndOf="@id/rf9">
+                <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/s2" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/s8g" android:paddingBottom="8.0dp" android:focusable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="@dimen/j_" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/s8f" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+                <include android:id="@id/s8f" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/a10" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rfe" android:paddingTop="12.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/rfc">
+            <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/s2" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/rfd" android:focusable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="@dimen/j_" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="14.0dp" android:textColor="@color/FG_2" android:ellipsize="end" android:id="@id/rff" android:focusable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" android:lineSpacingExtra="@dimen/j_" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/rfd" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/dy9" android:background="@color/FG_3" android:layout_width="0.0dp" android:layout_height="0.5dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+    <ImageView android:id="@id/l3k" android:background="@drawable/o4" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/te5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="bottom" android:id="@id/t01" android:background="@drawable/afv" android:layout_width="match_parent" android:layout_height="@dimen/bd" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/t04" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/info_circle_regular" app:fs="@color/FG_1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:id="@id/t05" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintLeft_toRightOf="@id/t04" app:layout_constraintRight_toLeftOf="@id/t03" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/a84" android:id="@id/t03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintLeft_toRightOf="@id/t05" app:layout_constraintRight_toLeftOf="@id/t02" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/t02" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:src="@raw/arrow_right_regular" app:fs="@color/FG_1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

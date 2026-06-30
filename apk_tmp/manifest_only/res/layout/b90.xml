@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/g2c" android:layout_width="match_parent" android:layout_height="@dimen/ch"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/gvv" android:layout_width="match_parent" android:layout_height="122.0dp" android:layout_marginTop="@dimen/cz" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" app:ds="@dimen/bl">
+        <ImageView android:id="@id/age" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/agq" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/a9e" />
+        <TextView android:textSize="15.0dp" android:textColor="#a3ffffff" android:id="@id/gvz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/f4i" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/c9" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/gvt" android:layout_width="19.0dp" android:layout_height="19.0dp" android:layout_marginTop="@dimen/cn" android:src="@raw/icons_filled_close" android:layout_marginEnd="@dimen/c9" android:layout_alignParentEnd="true" app:fs="#a3ffffff" />
+        <View android:id="@id/gvu" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_alignParentEnd="true" />
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="@dimen/db" android:layout_height="50.0dp" android:layout_marginTop="@dimen/c9" android:layout_below="@id/gvz" android:layout_marginStart="@dimen/c9" app:ds="@dimen/bi">
+            <ImageView android:id="@id/gvx" android:layout_width="@dimen/db" android:layout_height="50.0dp" android:scaleType="centerCrop" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+        <TextView android:textSize="15.0dp" android:textColor="#ccffffff" android:ellipsize="end" android:id="@id/gvw" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="@dimen/c9" android:maxLines="2" android:layout_below="@id/gvz" android:layout_marginStart="@dimen/dl" android:layout_marginEnd="@dimen/c9" />
+        <ProgressBar android:id="@id/gvy" android:layout_width="match_parent" android:layout_height="@dimen/bi" android:progress="30" android:layout_weight="1.0" android:layout_alignParentBottom="true" style="@style/h1" />
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.interactioneasteregg.CenterInteractionEasterEgg android:id="@id/tfm" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout android:id="@id/vaf" android:layout_width="match_parent" android:layout_height="wrap_content" app:heightWeight="1.0" app:relatedToWidth="true" app:widthWeight="1.0">
+        <com.tencent.mm.view.MMPAGView android:layout_gravity="center" android:id="@id/vae" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/soy" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/t7y" android:layout_width="@dimen/bw" android:layout_height="@dimen/bw">
+            <com.tencent.mm.plugin.finder.view.FinderEmojiView android:layout_gravity="center" android:id="@id/det" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/aby" android:gravity="center_horizontal" android:id="@id/oqh" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxLines="1" android:includeFontPadding="false" android:paddingHorizontal="@dimen/cz" />
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.view.interactioneasteregg.CenterInteractionEasterEgg>

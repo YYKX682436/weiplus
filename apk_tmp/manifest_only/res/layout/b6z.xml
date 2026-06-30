@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/qgv" android:background="@color/a" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabBackground="@color/a9e" app:jh="@color/a0c" app:ji="false" app:jk="2.0dp" app:jm="mcp" app:jn="@dimen/aih" app:jo="@dimen/aih" app:jp="@color/a9e" app:jq="@color/a0c" app:jt="@color/jj">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d7g" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d7a" />
+    </com.google.android.material.tabs.TabLayout>
+    <com.tencent.mm.ui.base.CustomViewPager android:id="@id/kod" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

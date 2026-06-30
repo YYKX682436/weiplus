@@ -1,0 +1,14 @@
+package cw1;
+
+/* loaded from: classes12.dex */
+public class n3 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public int f223178a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public android.widget.TextView f223179b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public android.widget.CheckBox f223180c;
+}

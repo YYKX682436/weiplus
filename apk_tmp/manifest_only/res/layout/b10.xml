@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/i1k" android:layout_width="wrap_content" android:layout_height="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:gravity="center" android:id="@id/f6i" android:visibility="visible" android:layout_width="@dimen/db" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" android:maxLines="1" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:aq="12.0dp" app:ar="5.0dp" app:autoSizeStepGranularity="1.0dp" app:as="os_" />
+    <com.tencent.mm.plugin.finder.live.cheer.CheerCountDownView android:id="@id/euv" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/aok" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:scaleX="1.2" android:scaleY="1.2" />
+    <FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/f6f" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/f6e" android:background="@drawable/a6z" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/aok">
+            <ImageView android:id="@id/eus" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/f6g" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerInParent="true" app:fs="@color/BW_100_Alpha_0_8" />
+            <com.tencent.mm.view.MMPAGView android:id="@id/f6h" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

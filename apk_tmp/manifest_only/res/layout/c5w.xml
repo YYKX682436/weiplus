@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="none" android:gravity="center" android:id="@id/k5b" android:padding="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/h5o" android:singleLine="false" style="@style/ix" />
+    <ScrollView android:id="@id/k61" android:visibility="gone" android:scrollbars="none" style="@style/kj">
+        <LinearLayout android:gravity="center_horizontal" style="@style/ij">
+            <ImageView android:paddingBottom="33.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/h5o" style="@style/ik" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

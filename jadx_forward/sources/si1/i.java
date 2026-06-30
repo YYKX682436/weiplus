@@ -1,0 +1,41 @@
+package si1;
+
+/* loaded from: classes7.dex */
+public class i implements ui1.r {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ si1.k f489797a;
+
+    public i(si1.g gVar, si1.k kVar) {
+        this.f489797a = kVar;
+    }
+
+    @Override // ui1.r
+    public void a() {
+        si1.k kVar = this.f489797a;
+        if (kVar != null) {
+            kVar.a(si1.j.f489802g);
+        }
+    }
+
+    @Override // ui1.r
+    public void c(int i17, java.lang.String str) {
+        si1.k kVar = this.f489797a;
+        if (kVar != null) {
+            if (android.text.TextUtils.isEmpty(str)) {
+                kVar.a(new si1.j(-1, "fail:auth denied", new jc1.d(i17, null)));
+                return;
+            }
+            kVar.a(new si1.j(-1, "fail " + str, new jc1.d(i17, null)));
+        }
+    }
+
+    @Override // ui1.r
+    /* renamed from: onCancel */
+    public void mo32123x3d6f0539() {
+        si1.k kVar = this.f489797a;
+        if (kVar != null) {
+            kVar.a(si1.j.f489799d);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/a9x" android:textColor="@color/FG_0_5" android:id="@id/lia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/qiv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/lia" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/or" android:textColor="@color/FG_0_5" android:ellipsize="end" android:id="@id/kbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/e5a" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_finder_icon" app:fs="@color/BW_0_Alpha_0_5" />
+            <TextView android:textSize="@dimen/or" android:id="@id/dsm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_1" android:id="@id/qic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/or" android:textColor="@color/FG_0_5" android:id="@id/bzt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <View android:background="@color/FG_3" android:layout_width="0.0dp" android:layout_height="1.0px" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="@id/qiv" app:layout_constraintRight_toRightOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+package yw2;
+
+/* loaded from: classes2.dex */
+public final class d extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ yw2.f f466630d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(yw2.f fVar) {
+        super(0);
+        this.f466630d = fVar;
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        return ((com.tencent.mm.plugin.finder.feed.f8) this.f466630d.f466632d).f106723t;
+    }
+}

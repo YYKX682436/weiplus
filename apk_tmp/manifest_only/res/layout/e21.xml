@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.StretchFrameLayout android:orientation="horizontal" android:id="@id/root_view" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/lx"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.finder.feed.RoundLinearLayout android:orientation="vertical" android:id="@id/bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner="4.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/bn" android:paddingTop="@dimen/bn" android:paddingRight="@dimen/bn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.chatting.widget.RoundClipFrameLayout android:id="@id/vee" android:layout_width="wrap_content" android:layout_height="wrap_content" app:clipRadius="4.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <com.tencent.mm.view.StretchFrameLayout android:id="@id/vem" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/o70" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                    <FrameLayout android:id="@id/veg" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </com.tencent.mm.view.StretchFrameLayout>
+            </com.tencent.mm.chatting.widget.RoundClipFrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ve1" android:paddingLeft="@dimen/bl" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/bl" android:paddingBottom="@dimen/dv" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/vee" app:layout_constraintStart_toStartOf="@id/vee" app:layout_constraintTop_toBottomOf="@id/vee">
+                <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/odf" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/b3" android:textColor="@color/jj" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cut" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:maxLines="2" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ViewStub android:id="@id/v_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" />
+    </com.tencent.mm.plugin.finder.feed.RoundLinearLayout>
+</com.tencent.mm.view.StretchFrameLayout>

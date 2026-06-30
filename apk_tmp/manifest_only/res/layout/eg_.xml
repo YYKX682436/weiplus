@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/u20" android:background="@drawable/cw5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_2" android:id="@id/rr2" android:text="@string/o3s" style="@style/j3" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/rr1" android:layout_width="16.0dp" android:layout_height="8.0dp" android:src="@raw/arrow_down_regular" app:fs="@color/FG_2" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:layout_gravity="center_vertical" android:id="@id/u1z" android:background="@color/FG_3" android:layout_width="1.0dp" android:layout_height="@dimen/c9" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/rqw" android:background="@drawable/cw5" android:padding="2.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/trashcan" app:fs="@color/FG_2" />
+</LinearLayout>

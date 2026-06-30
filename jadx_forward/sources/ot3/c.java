@@ -1,0 +1,12 @@
+package ot3;
+
+/* loaded from: classes6.dex */
+public class c implements java.lang.Iterable {
+    public c(ot3.a aVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new ot3.b(this, null);
+    }
+}

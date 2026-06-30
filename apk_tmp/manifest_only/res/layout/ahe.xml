@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="start" android:id="@id/eg5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/eg3" android:background="@drawable/y9" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginTop="@dimen/cn" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eg2" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/finder_icon_video_playlist_fill" app:fs="@color/a7" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_F_Alpha_0_8" android:ellipsize="end" android:id="@id/eg4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/dv" />
+        <TextView android:textSize="@dimen/f9" android:textColor="@color/u_" android:ellipsize="end" android:id="@id/eg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/dv" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dp" android:textColor="@color/a09" android:gravity="center_horizontal" android:id="@id/ll7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/i0v" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lwb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+            <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/lut" android:background="@color/a9e" android:focusable="false" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/bhm" android:scaleType="centerCrop" android:contentDescription="@string/a6x" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="15.0dp">
+            <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/lj2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{¥100}" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

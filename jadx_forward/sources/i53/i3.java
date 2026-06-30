@@ -1,0 +1,17 @@
+package i53;
+
+/* loaded from: classes9.dex */
+public class i3 implements android.content.DialogInterface.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ i53.m3 f370136d;
+
+    public i3(i53.m3 m3Var) {
+        this.f370136d = m3Var;
+    }
+
+    @Override // android.content.DialogInterface.OnClickListener
+    public void onClick(android.content.DialogInterface dialogInterface, int i17) {
+        this.f370136d.a();
+    }
+}

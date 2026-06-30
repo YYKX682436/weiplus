@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.sns.ui.SnsLivePlayButton android:id="@id/skj" android:background="@drawable/d5_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ajr" android:layout_alignBottom="@id/skh" android:layout_alignParentStart="true" />
+    <ViewStub android:id="@id/skl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ais" android:layout_alignParentBottom="true" android:layout_marginStart="-12.0dp" android:layout_toStartOf="@id/skh" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/skh" android:background="@drawable/d5_" android:paddingTop="@dimen/aih" android:paddingBottom="@dimen/aih" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/ajr" android:layout_marginBottom="20.0dp" android:layout_alignParentBottom="true" android:paddingStart="16.0dp" android:paddingEnd="12.0dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/ja" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@id/sm5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jag" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/all" android:layout_height="@dimen/aij" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="@dimen/ais" app:fs="@color/adi" />
+    </LinearLayout>
+</RelativeLayout>

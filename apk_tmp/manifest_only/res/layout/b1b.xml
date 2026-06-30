@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dr">
+        <FrameLayout android:id="@id/p3x" android:background="@drawable/cu6" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/c9" android:layout_centerVertical="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_add" app:fs="@color/FG_2" />
+        </FrameLayout>
+        <TextView android:textSize="17.0dp" android:textColor="@color/BW_0_Alpha_0_3" android:ellipsize="end" android:id="@id/p3y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:text="@string/eid" android:singleLine="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/p3x" />
+        <View android:layout_gravity="bottom" android:id="@id/nf0" android:background="@color/BW_0_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="68.0dp" />
+    </RelativeLayout>
+</FrameLayout>

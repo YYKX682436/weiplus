@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ccj" android:visibility="gone" style="@style/fh" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cch" android:paddingBottom="1.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="fitXY" android:paddingEnd="1.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:id="@id/ccg" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="24.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/cci" app:layout_constraintStart_toEndOf="@id/cch" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:id="@id/cci" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bbz" android:maxLines="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView android:id="@id/ccf" android:visibility="visible" android:importantForAccessibility="no" style="@style/fh" />
+</LinearLayout>

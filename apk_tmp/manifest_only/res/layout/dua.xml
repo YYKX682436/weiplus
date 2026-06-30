@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.feed.tips.TrackTipsFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/rp5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:transformPivotX="0.0dp" android:transformPivotY="46.0dp">
+        <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:orientation="horizontal" android:id="@id/s5d" android:background="#757575" android:paddingLeft="@dimen/cn" android:paddingTop="10.0dp" android:paddingRight="@dimen/cn" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn" app:ds="4.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="@color/an" android:id="@id/oqc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/s5c" android:layout_width="14.0dp" android:layout_height="6.0dp" android:layout_marginLeft="7.0dp" android:src="@raw/icons_pop_arrow" android:layout_below="@id/s5d" app:fs="#757575" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.finder.feed.tips.TrackTipsFrameLayout>

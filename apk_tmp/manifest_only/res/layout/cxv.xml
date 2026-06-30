@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/a0i" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/ma" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="vertical" android:id="@id/wn" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/ay">
+                <TextView android:textSize="@dimen/r" android:textColor="#e6ffffff" android:gravity="center" android:id="@id/wp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/rw" android:layout_centerHorizontal="true" />
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/md5" android:background="@drawable/bak" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/c8" android:paddingBottom="@dimen/bj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cz" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/l">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h7h" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_search" app:fs="@color/BW_100_Alpha_0_5" />
+                    <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/ri" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:importantForAccessibility="no">
+                <com.tencent.mm.plugin.taskbar.ui.TaskBarView android:id="@id/wq" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <com.tencent.mm.plugin.taskbar.api.GyroView android:id="@id/gw5" android:layout_width="@dimen/a29" android:layout_height="@dimen/a28" android:layout_marginBottom="@dimen/ay" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.plugin.appbrand.widget.desktop.AppBrandDesktopContainerView android:id="@id/cvn" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/wk" android:layout_width="match_parent" android:layout_height="@dimen/ma" android:layout_alignParentBottom="true" />
+</RelativeLayout>

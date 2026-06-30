@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/em">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bqx" android:layout_marginRight="6.0dp" style="@style/es" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/br_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" style="@style/x4" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp">
+                <FrameLayout android:id="@id/bkg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@id/bkm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/bko" android:background="@drawable/lx" android:layout_width="@dimen/a3" android:layout_height="@dimen/a3" />
+                    <ImageView android:layout_gravity="center" android:id="@id/bqy" android:background="@null" android:layout_width="@dimen/a8" android:layout_height="@dimen/a8" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@id/bjp" android:layout_marginLeft="0.0dp" android:singleLine="true" style="@style/eb" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.tencent.mm.ui.chatting.view.ChattingAvatarImageView android:id="@id/bk1" android:focusable="false" android:visibility="gone" style="@style/ej" />
+</LinearLayout>

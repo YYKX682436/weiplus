@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cgz" android:background="#757575" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ds="4.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/an" android:id="@id/kln" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="轻触可暂停/取消下载" android:layout_marginStart="@dimen/bl" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g2a" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/c5u" android:layout_marginStart="5.0dp" app:fs="@color/aaz" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4z" android:layout_width="14.0dp" android:layout_height="6.0dp" android:src="@raw/icons_pop_arrow" app:fs="#757575" />
+</LinearLayout>

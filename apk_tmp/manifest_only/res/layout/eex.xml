@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.shadow.layout.WxShadowLinearLayout android:id="@id/sh2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:blurRadius="@dimen/ap5" app:blurRadiusFactor="1.2" app:layoutShadowColor="@color/qt" app:layoutShadowRadius="@dimen/cn">
+        <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:id="@id/ad3" android:layout_width="match_parent" android:layout_height="match_parent" app:i8="@dimen/ap4">
+            <FrameLayout android:id="@id/acy" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <View android:id="@id/sh1" android:background="@color/BW_0" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+        </com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout>
+    </com.tencent.mm.view.shadow.layout.WxShadowLinearLayout>
+    <RelativeLayout android:id="@id/ad2" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/sgz" android:background="@color/akt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:ds="@dimen/dv" />
+        <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:id="@id/sh0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:ds="@dimen/dv" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ad1" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/float_ball_content_collapse_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/bj" android:layout_alignEnd="@id/sgz" app:fs="@color/an" />
+    </RelativeLayout>
+</RelativeLayout>

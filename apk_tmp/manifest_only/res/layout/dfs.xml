@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/q99" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/q7k" android:layout_width="0.0dp" android:layout_height="@dimen/d7" android:layout_marginStart="@dimen/dc" android:layout_marginEnd="@dimen/dc" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.AdjustSeekBar android:id="@id/q7j" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dv" style="@style/xs" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/ac_" android:gravity="center" android:id="@id/q7l" android:layout_width="@dimen/d8" android:layout_height="match_parent" android:text="0" />
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout android:id="@id/q4x" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dc" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/q7k" app:jd="e2n" app:jh="@color/ac_" app:ji="false" app:jk="0.0dp" app:tabMinWidth="@dimen/cz" app:jm="mcp" app:jn="20.0dp" app:jo="20.0dp" app:jp="@android:color/transparent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/e4u" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/bn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/q4x" />
+    <FrameLayout android:id="@id/q3i" android:layout_width="@dimen/c0" android:layout_height="@dimen/d7" android:layout_marginBottom="@dimen/d7" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0">
+        <TextView style="@style/xq" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/hmo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/clo" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

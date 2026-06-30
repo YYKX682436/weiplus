@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@id/q4u" android:background="@drawable/a7q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerConstraintLayout android:id="@id/q_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:layout_marginVertical="@dimen/dv" app:ds="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@id/l78" android:layout_width="@dimen/df" android:layout_height="@dimen/df" />
+        <View android:id="@id/q_8" android:background="@drawable/cm_" android:layout_width="0.0dp" android:layout_height="24.0dp" app:layout_constraintBottom_toBottomOf="@id/l78" app:layout_constraintLeft_toLeftOf="@id/l78" app:layout_constraintRight_toRightOf="@id/l78" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:gravity="center" android:id="@id/q_9" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" app:layout_constraintBottom_toBottomOf="@id/l78" app:layout_constraintLeft_toLeftOf="@id/l78" app:layout_constraintRight_toRightOf="@id/l78" />
+    </com.tencent.mm.ui.widget.RoundCornerConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/hct" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toRightOf="@id/q_7" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="15.0dp" android:textColor="@color/u6" android:ellipsize="end" android:id="@id/l7s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/u4" android:id="@id/l7i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

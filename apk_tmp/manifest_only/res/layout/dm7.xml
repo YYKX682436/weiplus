@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/fbk" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cgz" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9" app:ds="@dimen/dv">
+            <TextView android:textSize="@dimen/ca" android:id="@id/oqc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/c4" android:includeFontPadding="false" android:layout_centerVertical="true" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hkr" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/xmark_medium" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_toEndOf="@id/oqc" />
+        </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/hk9" android:layout_width="@dimen/ct" android:layout_height="@dimen/dv" android:src="@raw/icons_pop_arrow" />
+    </LinearLayout>
+</FrameLayout>

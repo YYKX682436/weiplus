@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/a48" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/a80" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/l8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/a80">
+            <ImageView android:id="@id/a_4" android:layout_width="@dimen/a7z" android:layout_height="@dimen/a7z" android:layout_marginLeft="@dimen/a7y" android:src="@drawable/c7l" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/a8i" android:textColor="@color/a0c" android:id="@id/nun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/a8l" android:layout_marginTop="5.0dp" android:layout_toRightOf="@id/a_4" />
+            <TextView android:textSize="@dimen/a8n" android:textColor="@color/a1w" android:id="@id/pju" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/a8l" android:layout_marginTop="@dimen/a8m" android:text="tsubasa_2011" android:layout_toRightOf="@id/a_4" android:layout_below="@id/nun" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/a8c" android:textColor="@color/a1v" android:id="@id/lpt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/a81" android:layout_marginTop="@dimen/a8d" android:text="@string/g4j" />
+        <LinearLayout android:orientation="vertical" android:id="@id/la0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/a8_" />
+        <LinearLayout android:orientation="vertical" android:id="@id/l_f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/a86" />
+        <TextView android:textSize="@dimen/a82" android:textColor="@color/vo" android:gravity="left|center" android:id="@id/l_b" android:background="@drawable/av7" android:paddingLeft="@dimen/a81" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/j2" android:layout_marginTop="@dimen/a83" android:text="@string/g45" />
+        <TextView android:textSize="@dimen/a82" android:textColor="@color/vo" android:gravity="left|center" android:id="@id/l_c" android:background="@drawable/av7" android:paddingLeft="@dimen/a81" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/j2" android:text="@string/g46" />
+        <TextView android:textSize="@dimen/a82" android:textColor="@color/vo" android:gravity="left|center" android:id="@id/l_d" android:background="@drawable/av7" android:paddingLeft="@dimen/a81" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/j2" android:text="@string/g48" />
+        <Button android:layout_gravity="center" android:id="@id/l94" android:layout_marginLeft="@dimen/a8j" android:layout_marginTop="@dimen/a8k" android:layout_marginRight="@dimen/a8j" android:text="@string/g47" style="@style/kq" />
+        <TextView android:textSize="@dimen/a8c" android:textColor="@color/a1v" android:id="@id/hez" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/a81" android:layout_marginTop="@dimen/a8d" android:layout_marginRight="@dimen/a81" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="16.0dp">
+        <View android:layout_gravity="center_vertical" android:id="@id/ho7" android:background="@drawable/acy" android:layout_width="3.0dp" android:layout_height="16.0dp" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ho8" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <TextView android:textSize="17.0dp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@id/ho6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/lr8" android:layout_width="match_parent" android:layout_height="wrap_content" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMore="true">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:layout_width="wrap_content" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs5" />
+    </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+package p5;
+
+/* loaded from: classes16.dex */
+public final class k implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ p5.n f351977d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ p5.h f351978e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ p5.m f351979f;
+
+    public k(p5.g gVar, p5.n nVar, p5.h hVar, p5.m mVar) {
+        this.f351977d = nVar;
+        this.f351978e = hVar;
+        this.f351979f = mVar;
+    }
+
+    @Override // java.lang.Runnable
+    public void run() {
+        boolean z17;
+        p5.n nVar = this.f351977d;
+        try {
+            if (nVar.f351990a.c(this.f351978e.a(this.f351979f))) {
+            } else {
+                throw new java.lang.IllegalStateException("Cannot set the result of a completed task.");
+            }
+        } catch (java.util.concurrent.CancellationException unused) {
+            p5.m mVar = nVar.f351990a;
+            synchronized (mVar.f351985a) {
+                if (mVar.f351986b) {
+                    z17 = false;
+                } else {
+                    mVar.f351986b = true;
+                    mVar.f351985a.notifyAll();
+                    mVar.b();
+                    z17 = true;
+                }
+                if (!z17) {
+                    throw new java.lang.IllegalStateException("Cannot cancel a completed task.");
+                }
+            }
+        } catch (java.lang.Exception e17) {
+            nVar.a(e17);
+        }
+    }
+}

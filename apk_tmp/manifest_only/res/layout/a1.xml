@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/guw" android:background="@drawable/n" android:paddingLeft="16.0dp" android:paddingTop="20.0dp" android:paddingRight="16.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:id="@id/gv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="32.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gux" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:layout_below="@id/gv1">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_1" android:id="@id/guy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <View android:id="@id/d1z" android:background="@color/FG_3" android:layout_width="1.0dp" android:layout_height="12.0dp" android:layout_marginStart="8.0dp" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_1" android:id="@id/gv0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="8.0dp" />
+        <View android:id="@id/d20" android:background="@color/FG_3" android:layout_width="1.0dp" android:layout_height="12.0dp" android:layout_marginStart="8.0dp" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a5" android:id="@id/guz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ga3" android:singleLine="true" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true" wallet:fs="@color/FG_2" />
+</RelativeLayout>

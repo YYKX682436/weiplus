@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="24.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/yi" android:textColor="@color/ml" android:gravity="center" android:id="@id/esb" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/du3" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/xt" android:textColor="@color/u1" android:id="@id/es4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/dtx" android:layout_below="@id/esb" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/erp" android:layout_width="52.0dp" android:layout_height="30.0dp" android:layout_centerHorizontal="true" android:alpha="0.0">
+        <View android:id="@id/erq" android:background="@drawable/a1b" android:layout_width="15.0dp" android:layout_height="2.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ern" android:layout_width="52.0dp" android:layout_height="30.0dp" android:layout_toLeftOf="@id/erp" android:alpha="0.0">
+        <View android:id="@id/ero" android:background="@drawable/a1b" android:layout_width="15.0dp" android:layout_height="2.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/err" android:layout_width="52.0dp" android:layout_height="30.0dp" android:layout_toRightOf="@id/erp" android:alpha="0.0">
+        <View android:id="@id/ers" android:background="@drawable/a1b" android:layout_width="15.0dp" android:layout_height="2.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/erm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/erz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_below="@id/esb" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/es1" android:background="@drawable/ayx" android:layout_width="64.0dp" android:layout_height="64.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ert" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginTop="14.0dp" android:layout_below="@id/erz">
+                <TextView android:textSize="14.0dp" android:textColor="@color/u6" android:id="@id/eru" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d7h" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" app:fs="@color/u6" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dp" android:layout_marginRight="55.0dp">
+            <View android:id="@id/es2" android:background="@drawable/ayx" android:layout_width="64.0dp" android:layout_height="64.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/erv" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginTop="14.0dp" android:layout_below="@id/erz">
+                <TextView android:textSize="14.0dp" android:textColor="@color/u6" android:id="@id/erw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d7h" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" app:fs="@color/u6" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/es3" android:background="@drawable/ayx" android:layout_width="64.0dp" android:layout_height="64.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/erx" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginTop="14.0dp" android:layout_below="@id/erz">
+                <TextView android:textSize="14.0dp" android:textColor="@color/u6" android:id="@id/ery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d7h" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" app:fs="@color/u6" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="24.0dp" android:gravity="center" android:id="@id/es5" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="95.0dp" android:layout_marginRight="78.0dp" android:text="@string/e24" android:layout_toLeftOf="@id/erp" android:layout_alignTop="@id/erp" />
+    <TextView android:textSize="24.0dp" android:gravity="center" android:id="@id/es6" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="95.0dp" android:text="@string/e26" android:layout_alignTop="@id/erp" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0dp" android:gravity="center" android:id="@id/es7" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="78.0dp" android:layout_marginTop="95.0dp" android:text="@string/e28" android:layout_toRightOf="@id/erp" android:layout_alignTop="@id/erp" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+package com.tencent.mm.plugin.sight.base;
+
+/* loaded from: classes12.dex */
+public class ABAPrams {
+    public int SkipReadQP;
+    public int abaPreset;
+    public int addStickers;
+    public int averageMV;
+    public int averageQP;
+    public int bitrateAdaptiveDown;
+    public int bitrateAdaptiveUP;
+    public int codecID;
+    public int compAudioBitrate;
+    public int compAudioChannel;
+    public int consumingtime;
+    public int crf;
+    public int duration;
+    public int enableABA;
+    public int enableSWHEVCTrans;
+    public int inputFps;
+    public int inputHeight;
+    public int inputKbps;
+    public int inputWidth;
+    public int interMode;
+    public int intraMode;
+    public int isEnableHEVC;
+    public int oriAudioBitrate;
+    public int oriAudioChannel;
+    public int outputHeight;
+    public int outputKbps;
+    public int outputWidth;
+    public int platform;
+    public int qualityLevel;
+    public int ratiosBitrateQP;
+    public int resolutionAdjust;
+    public int sceneCase;
+    public int skipMode;
+    public int skipVideoCompress;
+    public int startTime;
+    public int textureComplexity;
+    public int transcosingKbps;
+    public int vbvBufferSize;
+    public int vcodec2Preset;
+
+    public java.util.List<java.lang.Integer> transToList() {
+        java.util.LinkedList linkedList = new java.util.LinkedList();
+        linkedList.add(java.lang.Integer.valueOf(this.outputKbps));
+        linkedList.add(java.lang.Integer.valueOf(this.outputWidth));
+        linkedList.add(java.lang.Integer.valueOf(this.outputHeight));
+        linkedList.add(java.lang.Integer.valueOf(this.bitrateAdaptiveUP));
+        linkedList.add(java.lang.Integer.valueOf(this.bitrateAdaptiveDown));
+        linkedList.add(java.lang.Integer.valueOf(this.resolutionAdjust));
+        linkedList.add(java.lang.Integer.valueOf(this.sceneCase));
+        linkedList.add(java.lang.Integer.valueOf(this.inputKbps));
+        linkedList.add(java.lang.Integer.valueOf(this.inputWidth));
+        linkedList.add(java.lang.Integer.valueOf(this.inputHeight));
+        linkedList.add(java.lang.Integer.valueOf(this.inputFps));
+        linkedList.add(java.lang.Integer.valueOf(this.averageQP));
+        linkedList.add(java.lang.Integer.valueOf(this.averageMV));
+        linkedList.add(java.lang.Integer.valueOf(this.skipMode));
+        linkedList.add(java.lang.Integer.valueOf(this.intraMode));
+        linkedList.add(java.lang.Integer.valueOf(this.interMode));
+        linkedList.add(java.lang.Integer.valueOf(this.SkipReadQP));
+        linkedList.add(java.lang.Integer.valueOf(this.consumingtime));
+        linkedList.add(java.lang.Integer.valueOf(this.codecID));
+        linkedList.add(java.lang.Integer.valueOf(this.transcosingKbps));
+        linkedList.add(java.lang.Integer.valueOf(this.isEnableHEVC));
+        linkedList.add(java.lang.Integer.valueOf(this.enableABA));
+        linkedList.add(java.lang.Integer.valueOf(this.abaPreset));
+        linkedList.add(java.lang.Integer.valueOf(this.startTime));
+        linkedList.add(java.lang.Integer.valueOf(this.duration));
+        linkedList.add(java.lang.Integer.valueOf(this.ratiosBitrateQP));
+        linkedList.add(java.lang.Integer.valueOf(this.textureComplexity));
+        linkedList.add(java.lang.Integer.valueOf(this.qualityLevel));
+        linkedList.add(java.lang.Integer.valueOf(this.platform));
+        linkedList.add(java.lang.Integer.valueOf(this.oriAudioBitrate));
+        linkedList.add(java.lang.Integer.valueOf(this.oriAudioChannel));
+        linkedList.add(java.lang.Integer.valueOf(this.compAudioBitrate));
+        linkedList.add(java.lang.Integer.valueOf(this.compAudioChannel));
+        linkedList.add(java.lang.Integer.valueOf(this.addStickers));
+        linkedList.add(java.lang.Integer.valueOf(this.enableSWHEVCTrans));
+        linkedList.add(java.lang.Integer.valueOf(this.skipVideoCompress));
+        linkedList.add(java.lang.Integer.valueOf(this.vcodec2Preset));
+        linkedList.add(java.lang.Integer.valueOf(this.crf));
+        linkedList.add(java.lang.Integer.valueOf(this.vbvBufferSize));
+        return linkedList;
+    }
+}

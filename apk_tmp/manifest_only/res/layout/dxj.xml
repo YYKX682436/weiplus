@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c" android:paddingBottom="@dimen/dr" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rz7" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/trash_off_regular" />
+        <TextView android:textSize="@dimen/h3" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/rz8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/mxg" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/abw" android:gravity="center" android:id="@id/rz5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/mxe" />
+    </LinearLayout>
+    <Button android:id="@id/rz4" android:text="@string/mvs" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kv" />
+</RelativeLayout>

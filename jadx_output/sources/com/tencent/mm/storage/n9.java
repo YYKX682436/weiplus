@@ -1,0 +1,17 @@
+package com.tencent.mm.storage;
+
+/* loaded from: classes3.dex */
+public final class n9 extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final com.tencent.mm.storage.n9 f195186d = new com.tencent.mm.storage.n9();
+
+    public n9() {
+        super(0);
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        return 0;
+    }
+}

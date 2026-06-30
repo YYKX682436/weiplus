@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:paddingBottom="4.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/imc" android:visibility="visible" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" style="@style/w9" />
+        <LinearLayout android:orientation="vertical" android:id="@id/che" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:layout_gravity="center_horizontal" android:id="@id/gz9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="离开后，可前往直播广场看更多直播" />
+            <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/cgi" android:background="@color/b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="20.0dp" android:layout_marginRight="@dimen/cz" app:ds="@dimen/dv">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/ra1" android:layout_width="match_parent" android:layout_height="48.0dp">
+                    <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/dv" android:text="去看更多直播" android:layout_centerVertical="true" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4f" android:layout_width="12.0dp" android:layout_height="@dimen/cz" android:layout_marginRight="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/FG_2" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ihm" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:layout_below="@id/ra1">
+                    <com.tencent.mm.plugin.finder.live.view.GuideSquareLivingCardView android:id="@id/icl" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="133.0dp" android:layout_weight="1.0" />
+                    <com.tencent.mm.plugin.finder.live.view.GuideSquareLivingCardView android:id="@id/ig2" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="133.0dp" android:layout_marginLeft="@dimen/dv" android:layout_weight="1.0" />
+                    <com.tencent.mm.plugin.finder.live.view.GuideSquareLivingCardView android:id="@id/ifc" android:layout_width="0.0dp" android:layout_height="133.0dp" android:layout_marginLeft="@dimen/dv" android:layout_weight="1.0" />
+                </LinearLayout>
+            </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+            <com.tencent.mm.ui.widget.button.WeButton android:layout_gravity="center_horizontal" android:id="@id/ra6" android:layout_marginTop="@dimen/dj" android:text="离开直播" style="@style/xk" />
+            <TextView android:textSize="14.0dp" android:textColor="#576b95" android:layout_gravity="center_horizontal" android:id="@id/r_7" android:padding="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/f_2" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

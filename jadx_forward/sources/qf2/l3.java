@@ -1,0 +1,20 @@
+package qf2;
+
+/* loaded from: classes3.dex */
+public final class l3 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ qf2.q3 f444005d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public l3(qf2.q3 q3Var) {
+        super(0);
+        this.f444005d = q3Var;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        return new qf2.t3(this.f444005d);
+    }
+}

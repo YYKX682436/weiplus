@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ms_" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/a4g" android:layout_width="0.0dp" android:layout_height="@dimen/bd" android:layout_weight="1.0" />
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="16.0dp" android:textColor="@color/tk" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:text="@string/j3n" android:singleLine="true" android:includeFontPadding="false" />
+        <View android:background="@color/a4g" android:layout_width="0.0dp" android:layout_height="@dimen/bd" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp">
+        <LinearLayout android:gravity="center" android:id="@id/mrz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/mry" android:layout_width="@dimen/a9t" android:layout_height="@dimen/a9t" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ms1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ms0" android:layout_width="@dimen/a9t" android:layout_height="@dimen/a9t" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ms3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ms2" android:layout_width="@dimen/a9t" android:layout_height="@dimen/a9t" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ms5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ms4" android:layout_width="@dimen/a9t" android:layout_height="@dimen/a9t" android:src="@drawable/azy" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/a4g" android:layout_width="match_parent" android:layout_height="@dimen/bd" />
+</LinearLayout>

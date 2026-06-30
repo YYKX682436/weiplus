@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:visibility="gone" android:layout_width="162.0dp" android:layout_height="@dimen/dh" android:layout_alignParentLeft="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/eoa" android:background="@drawable/a69" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/aaz" android:id="@id/eof" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d70" android:layout_marginEnd="@dimen/bl" app:layout_constraintBottom_toTopOf="@id/eoe" app:layout_constraintRight_toLeftOf="@id/eoc" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" />
+    <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="@color/aaz" android:id="@id/eoc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/cn" app:layout_constraintBottom_toBottomOf="@id/eof" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/eof" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/q4" android:id="@id/eoe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginEnd="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/eof" />
+</androidx.constraintlayout.widget.ConstraintLayout>

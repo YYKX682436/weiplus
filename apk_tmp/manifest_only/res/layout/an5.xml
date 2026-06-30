@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/mxi" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/emt" />
+    <include android:id="@id/emt" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_alignParentBottom="true" layout="@layout/an6" />
+    <ProgressBar android:id="@id/mxh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/w9" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ql_" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_centerVertical="true" android:layout_marginVertical="8.0dp" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/qla" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_toRightOf="@id/ql_" android:layout_centerVertical="true" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qlb" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="32.0dp" android:src="@raw/icons_filled_done" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/Brand_100" />
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="24.0dp" android:layout_alignLeft="@id/qla" android:layout_alignParentBottom="true" />
+</RelativeLayout>

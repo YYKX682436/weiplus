@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/a7j" layout="@layout/bl6" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/o8w" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.picker.base.view.WheelView android:id="@id/pta" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.tencent.mm.picker.base.view.WheelView android:id="@id/jqd" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.tencent.mm.picker.base.view.WheelView android:id="@id/cqu" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.tencent.mm.picker.base.view.WheelView android:id="@id/h1w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.tencent.mm.picker.base.view.WheelView android:id="@id/jk7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.tencent.mm.picker.base.view.WheelView android:id="@id/mfv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

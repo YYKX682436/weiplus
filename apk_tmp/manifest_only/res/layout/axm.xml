@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fin" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/fip" android:scrollbars="none" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/fio" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/a15" android:showDividers="middle" />
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fil" android:background="@drawable/a8s" android:paddingLeft="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dr" android:layout_marginBottom="@dimen/cn" android:layout_marginEnd="@dimen/yu">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_done" app:fs="@color/BW_0" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_0" android:id="@id/fim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="@string/e8y" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/qya" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

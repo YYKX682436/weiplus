@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/oct" android:background="@drawable/bfj" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hq" android:minWidth="@dimen/f7" android:minHeight="@dimen/b1">
+        <TextView android:layout_gravity="left|center" android:id="@id/obc" android:singleLine="true" style="@style/ix" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/nsc" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ns_" android:background="@drawable/bfj" android:paddingRight="@dimen/bf" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1">
+            <TextView android:id="@id/nsg" android:paddingTop="@dimen/j3" android:paddingRight="@dimen/i1" android:paddingBottom="@dimen/j3" android:layout_width="0.0dp" android:singleLine="true" android:layout_weight="1.0" style="@style/j0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:src="@raw/icons_outlined_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/FG_2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nsa" android:paddingRight="@dimen/bf" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1">
+            <TextView android:id="@id/nsh" android:paddingTop="@dimen/j3" android:paddingRight="@dimen/i1" android:paddingBottom="@dimen/j3" android:layout_width="0.0dp" android:singleLine="true" android:layout_weight="1.0" style="@style/j0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m3_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:src="@raw/icons_outlined_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/FG_2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

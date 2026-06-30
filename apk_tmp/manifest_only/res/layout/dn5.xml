@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/i34" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.emoji.RTChattingEmojiView android:id="@id/r1j" android:layout_marginLeft="@dimen/vg" android:layout_marginRight="@dimen/vg" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/fm" />
+    <LinearLayout android:gravity="center" android:layout_gravity="start" android:orientation="horizontal" android:id="@id/qzb" android:background="@drawable/a2t" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginRight="@dimen/vg" app:layout_constraintLeft_toLeftOf="@id/r1j" app:layout_constraintTop_toBottomOf="@id/r1j">
+        <ImageView android:id="@id/qz3" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@raw/emoticonstore_capture_regular" android:layout_marginEnd="3.0dp" />
+        <TextView android:textSize="@dimen/jj" android:textColor="@color/ab0" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aqk" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/imd" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:indeterminateDrawable="@drawable/avj" />
+    <LinearLayout android:orientation="vertical" android:id="@id/g20" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/c9" android:paddingVertical="@dimen/cn">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/dv">
+            <TextView android:textSize="@dimen/gz" android:gravity="center_vertical" android:id="@id/e80" android:text="@string/equ" android:layout_marginStart="@dimen/dv" style="@style/iz" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/e7x" android:paddingTop="@dimen/bh" android:paddingBottom="@dimen/bh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/bl" android:paddingEnd="@dimen/bn" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/bn">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:clickable="false" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/bj" android:layout_marginBottom="@dimen/bj" android:src="@raw/icons_outlined_transfer" app:fs="@color/Link_100" />
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/Link_100" android:id="@id/e7z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f65" android:layout_marginStart="@dimen/bj" />
+                <TextView android:ellipsize="end" android:id="@id/e7y" android:visibility="gone" android:singleLine="true" android:layout_marginStart="@dimen/bl" style="@style/ry" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/b8z" />
+        <LinearLayout android:gravity="center" android:id="@id/aki" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginStart="@dimen/dv">
+            <TextView android:textSize="@dimen/b3" android:gravity="center_vertical" android:text="@string/f3w" android:layout_marginEnd="@dimen/bl" style="@style/iz" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_error" android:alpha="0.5" app:fs="@color/f5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/e7o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/db" android:layout_marginStart="@dimen/dv">
+            <TextView android:textSize="@dimen/gz" android:gravity="center_vertical" android:text="@string/chb" android:layout_marginEnd="@dimen/bl" style="@style/iz" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_error" android:alpha="0.5" app:fs="@color/f5" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

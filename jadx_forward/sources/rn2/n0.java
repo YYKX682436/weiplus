@@ -1,0 +1,99 @@
+package rn2;
+
+/* loaded from: classes3.dex */
+public final class n0 extends qz5.l implements yz5.p {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f479334d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public /* synthetic */ java.lang.Object f479335e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ rn2.c1 f479336f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public n0(rn2.c1 c1Var, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        super(2, interfaceC29045xdcb5ca57);
+        this.f479336f = c1Var;
+    }
+
+    @Override // qz5.a
+    /* renamed from: create */
+    public final p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 mo148xaf65a0fc(java.lang.Object obj, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        rn2.n0 n0Var = new rn2.n0(this.f479336f, interfaceC29045xdcb5ca57);
+        n0Var.f479335e = obj;
+        return n0Var;
+    }
+
+    @Override // yz5.p
+    /* renamed from: invoke */
+    public java.lang.Object mo149xb9724478(java.lang.Object obj, java.lang.Object obj2) {
+        return ((rn2.n0) mo148xaf65a0fc((p3325xe03a0797.p3326xc267989b.y0) obj, (p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57) obj2)).mo150x989b7ca4(jz5.f0.f384359a);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:8:0x004b  */
+    @Override // qz5.a
+    /* renamed from: invokeSuspend */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object mo150x989b7ca4(java.lang.Object r6) {
+        /*
+            r5 = this;
+            pz5.a r0 = pz5.a.f440719d
+            int r1 = r5.f479334d
+            r2 = 1
+            if (r1 == 0) goto L19
+            if (r1 != r2) goto L11
+            java.lang.Object r0 = r5.f479335e
+            kotlinx.coroutines.y0 r0 = (p3325xe03a0797.p3326xc267989b.y0) r0
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(r6)
+            goto L39
+        L11:
+            java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
+            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+            r6.<init>(r0)
+            throw r6
+        L19:
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(r6)
+            java.lang.Object r6 = r5.f479335e
+            kotlinx.coroutines.y0 r6 = (p3325xe03a0797.p3326xc267989b.y0) r6
+            gk2.e r1 = gk2.e.f354004n
+            if (r1 == 0) goto L3c
+            java.lang.Class<on2.z2> r3 = on2.z2.class
+            androidx.lifecycle.c1 r1 = r1.a(r3)
+            on2.z2 r1 = (on2.z2) r1
+            r5.f479335e = r6
+            r5.f479334d = r2
+            java.lang.Object r1 = r1.Y6(r2, r5)
+            if (r1 != r0) goto L37
+            return r0
+        L37:
+            r0 = r6
+            r6 = r1
+        L39:
+            java.lang.Boolean r6 = (java.lang.Boolean) r6
+            goto L40
+        L3c:
+            r0 = 0
+            r4 = r0
+            r0 = r6
+            r6 = r4
+        L40:
+            p3325xe03a0797.p3326xc267989b.z0.g(r0)
+            java.lang.Boolean r0 = java.lang.Boolean.TRUE
+            boolean r6 = p3321xbce91901.jvm.p3324x21ffc6bd.o.b(r6, r0)
+            if (r6 == 0) goto L55
+            rn2.m0 r6 = new rn2.m0
+            rn2.c1 r0 = r5.f479336f
+            r6.<init>(r0)
+            pm0.v.X(r6)
+        L55:
+            jz5.f0 r6 = jz5.f0.f384359a
+            return r6
+        */
+        throw new UnsupportedOperationException("Method not decompiled: rn2.n0.mo150x989b7ca4(java.lang.Object):java.lang.Object");
+    }
+}

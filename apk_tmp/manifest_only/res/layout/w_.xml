@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="end" android:id="@id/bkj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:orientation="vertical" android:id="@id/bkg" android:background="@drawable/k8" android:paddingLeft="0.0dp" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="@dimen/rq" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="fill_vertical|right" android:id="@id/bn_" android:padding="0.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitEnd" android:importantForAccessibility="no" />
+                <com.tencent.mm.ui.chatting.view.BubbleCornorLayout android:layout_gravity="fill_vertical|right" android:id="@id/bnd" android:background="@color/a9e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:bubbleCornerRadius="4.5dp" app:bubbleOffset="20.0dp" app:bubbleOrientation="right" app:bubbleRadius="5.0dp">
+                    <com.tencent.mm.chatting.component.ListScrollPAGView android:id="@id/bnc" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" android:layout_alignParentEnd="true" />
+                </com.tencent.mm.ui.chatting.view.BubbleCornorLayout>
+                <ImageView android:layout_gravity="fill_vertical|right" android:id="@id/bnb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitEnd" android:importantForAccessibility="no" />
+                <ImageView android:layout_gravity="fill_vertical|right" android:id="@id/bna" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/an1" android:scaleType="fitXY" android:importantForAccessibility="no" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/all" android:paddingTop="@dimen/all" android:paddingRight="@dimen/aii" android:paddingBottom="@dimen/aih" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/a3o" android:layout_width="44.0dp" android:layout_height="44.0dp" android:importantForAccessibility="no" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+                        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/aby" android:ellipsize="end" android:id="@id/a3u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/j_" android:text="" android:singleLine="true" />
+                        <com.tencent.mm.ui.widget.MMTextView android:textSize="14.0dp" android:textColor="@color/aby" android:ellipsize="end" android:id="@id/a3m" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aih">
+                    <TextView android:textSize="12.0dp" android:textColor="@color/adh" android:id="@id/a3y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="12.0dp" android:textColor="@color/adh" android:ellipsize="end" android:id="@id/a3x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+                        <ImageView android:id="@id/a3w" android:layout_width="16.0dp" android:layout_height="16.0dp" android:importantForAccessibility="no" />
+                        <TextView android:textSize="12.0dp" android:textColor="@color/adh" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/a3v" android:background="@drawable/an0" android:paddingLeft="4.0dp" android:paddingTop="0.8000001dp" android:paddingRight="4.0dp" android:paddingBottom="0.8000001dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/gkn" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/bs4" android:visibility="gone" android:layout_width="@dimen/rq" android:layout_height="wrap_content" android:scaleType="fitXY" android:importantForAccessibility="no" android:layout_marginEnd="4.0dp" android:layout_alignEnd="@id/bkg" />
+        <FrameLayout android:id="@id/jla" android:background="@color/a9e" android:visibility="gone" android:layout_width="@dimen/rq" android:layout_height="1.0dp" android:layout_alignTop="@id/bkg" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignEnd="@id/bkg">
+            <FrameLayout android:layout_gravity="end|center" android:id="@id/i3r" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" android:layout_marginEnd="-6.0dp">
+                <com.tencent.mm.chatting.component.ListScrollPAGView android:id="@id/hxt" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <include layout="@layout/tz" />
+</LinearLayout>

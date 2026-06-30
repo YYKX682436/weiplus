@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bk4" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/bk4" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.MMNeat7extView android:id="@id/bkl" android:background="@drawable/mh" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_" style="@style/eu" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl">
+                <TextView android:textSize="12.0dp" android:textColor="@color/Link_100" android:id="@id/bjp" android:paddingLeft="@dimen/bk" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bk" android:paddingBottom="@dimen/bj" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="{source}" android:includeFontPadding="false" android:paddingHorizontal="@dimen/bk" android:paddingVertical="@dimen/bj" style="@style/eb" />
+                <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <TextView android:id="@id/bix" android:layout_marginRight="50.0dp" android:text="@string/b1f" style="@style/eb" />
+            </LinearLayout>
+            <ViewStub android:id="@id/ojd" android:layout="@layout/xi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="@dimen/ais" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

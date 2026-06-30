@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/c42" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0dp" android:textColor="@color/afu" android:layout_gravity="center_horizontal" android:id="@id/rdm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/n1g" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rd5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/mce" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/rd8" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:background="@drawable/b8o" android:padding="@dimen/c9" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:src="@drawable/cju" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/mce" style="@style/s0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rd8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/n1t" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/rd7" app:layout_constraintStart_toEndOf="@id/rd5" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:background="@drawable/b8o" android:padding="@dimen/c9" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:src="@drawable/ctm" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/n1t" style="@style/s0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rd7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/mcj" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/rd6" app:layout_constraintStart_toEndOf="@id/rd8" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:background="@drawable/b8o" android:padding="@dimen/c9" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:src="@drawable/cjw" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/mcj" style="@style/s0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rd6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/n1n" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/rd7" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:background="@drawable/b8o" android:padding="@dimen/c9" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:src="@drawable/cwk" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/n1n" style="@style/s0" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

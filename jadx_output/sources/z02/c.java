@@ -1,0 +1,12 @@
+package z02;
+
+/* loaded from: classes6.dex */
+public class c implements java.lang.Iterable {
+    public c(z02.a aVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new z02.b(this, null);
+    }
+}

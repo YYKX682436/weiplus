@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/m82" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/aji" android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/db" android:paddingRight="@dimen/cz" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/BW_100_Alpha_0_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:text="@string/dyn" />
+        <com.tencent.mm.view.MaxHeightScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/dl">
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/fbn" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.view.MaxHeightScrollView>
+        <TextView android:textSize="@dimen/r" android:textColor="@color/BW_100_Alpha_0_8" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/fbm" android:background="@drawable/a60" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dj" android:text="@string/dym" />
+    </LinearLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:id="@id/d17" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/adp" android:paddingTop="@dimen/ahx" android:paddingBottom="@dimen/ahx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/aie" android:minHeight="@dimen/aie" app:ds="@dimen/ahq" app:layout_constraintWidth_max="@dimen/aid">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/oe2" android:layout_width="@dimen/anx" android:layout_height="@dimen/anw" android:src="@raw/check_mark_regular" app:fs="@color/adq" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/qgu" android:visibility="gone" android:layout_width="@dimen/anx" android:layout_height="@dimen/anw" style="@style/wa" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/adq" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/oe3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/any" android:layout_marginTop="@dimen/anv" android:layout_marginRight="@dimen/any" />
+    </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

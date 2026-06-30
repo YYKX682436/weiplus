@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mxr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <include android:id="@id/fm6" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerVertical="true" android:layout_alignParentStart="true" layout="@layout/awu" />
+        <LinearLayout android:orientation="vertical" android:id="@id/emq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xq" android:layout_marginBottom="@dimen/dv" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:layout_gravity="center_horizontal" android:id="@id/emp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eiv" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:ellipsize="end" android:id="@id/v5y" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxWidth="190.0dp" android:text="@string/d5m" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jg_" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_live_music_menu" app:fs="@color/FG_0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/l9" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:src="@raw/finder_live_music_add" app:fs="@color/FG_0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:orientation="horizontal" android:id="@id/if7" android:background="@drawable/a8t" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/cz" android:layout_below="@id/mxr" android:layout_marginHorizontal="@dimen/dv" android:paddingVertical="@dimen/cn">
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:layout_gravity="center_vertical" android:id="@id/v5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eet" />
+        <com.tencent.mm.ui.widget.MMSwitchBtn android:layout_gravity="end|center" android:id="@id/if5" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" />
+        <TextView android:layout_gravity="end|center" android:id="@id/if6" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.flash.FaceFlashPreviewLayout android:id="@id/g80" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.flash.FaceFlashProcessLayout android:id="@id/g81" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g7w" android:padding="@dimen/dv" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/icons_filled_close" android:contentDescription="@string/sg" app:fs="@color/BW_0" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:defaultValue="true" android:key="checkbox_preference_like" android:title="@string/enx" />
+    <CheckBoxPreference android:defaultValue="true" android:key="checkbox_preference_comment" android:title="@string/enn" />
+    <CheckBoxPreference android:defaultValue="true" android:key="checkbox_preference_follow" android:title="@string/ens" />
+    <CheckBoxPreference android:defaultValue="true" android:key="checkbox_preference_wx_like" android:title="@string/enx" />
+    <CheckBoxPreference android:defaultValue="true" android:key="checkbox_preference_wx_comment" android:title="@string/enn" />
+    <PreferenceFooterCategory android:title="@string/ent" />
+    <PreferenceFooterCategory android:title="@string/mqu" />
+    <com.tencent.mm.plugin.finder.widget.pref.FinderInteractPreference android:defaultValue="true" android:key="settings_recommend_info" android:title="@string/lw7" />
+    <com.tencent.mm.plugin.finder.widget.pref.FinderInteractPreference android:defaultValue="true" android:key="checkbox_preference_send_comment_and_bullet" android:title="@string/mrd" />
+    <SummaryBelowPreference android:key="settings_blacklist" android:title="@string/cmg" />
+</PreferenceScreen>

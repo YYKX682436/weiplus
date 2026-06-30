@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ikk" android:layout_width="117.0dp" android:layout_height="194.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ij9" android:background="@drawable/amp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="26.0dp" android:layout_height="26.0dp" android:src="@raw/icons_filled_red_envelope" android:importantForAccessibility="no" app:fs="@color/Red_170" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/t_" android:gravity="center" android:id="@id/ikn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gka" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="8.0dp" android:layout_height="16.0dp" android:layout_marginLeft="2.0dp" android:src="@raw/icons_outlined_arrow" android:importantForAccessibility="no" app:fs="@color/t_" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

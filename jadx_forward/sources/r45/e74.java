@@ -1,0 +1,104 @@
+package r45;
+
+/* loaded from: classes4.dex */
+public class e74 extends r45.mr5 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f454606d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public java.util.LinkedList f454607e = new java.util.LinkedList();
+
+    /* renamed from: f, reason: collision with root package name */
+    public int f454608f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public int f454609g;
+
+    @Override // com.p314xaae8f345.mm.p2495xc50a8b8b.f
+    /* renamed from: compareContent */
+    public boolean mo516x5c5a33d4(com.p314xaae8f345.mm.p2495xc50a8b8b.f fVar) {
+        if (fVar == null || !(fVar instanceof r45.e74)) {
+            return false;
+        }
+        r45.e74 e74Var = (r45.e74) fVar;
+        return n51.f.a(this.f76494x2de60e5e, e74Var.f76494x2de60e5e) && n51.f.a(java.lang.Integer.valueOf(this.f454606d), java.lang.Integer.valueOf(e74Var.f454606d)) && n51.f.a(this.f454607e, e74Var.f454607e) && n51.f.a(java.lang.Integer.valueOf(this.f454608f), java.lang.Integer.valueOf(e74Var.f454608f)) && n51.f.a(java.lang.Integer.valueOf(this.f454609g), java.lang.Integer.valueOf(e74Var.f454609g));
+    }
+
+    @Override // com.p314xaae8f345.mm.p2495xc50a8b8b.f
+    public final int op(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            g36.f fVar = (g36.f) objArr[0];
+            r45.he heVar = this.f76494x2de60e5e;
+            if (heVar != null) {
+                fVar.i(1, heVar.mo75928xcd1e8d8());
+                this.f76494x2de60e5e.mo75956x3d5d1f78(fVar);
+            }
+            fVar.e(2, this.f454606d);
+            fVar.g(3, 8, this.f454607e);
+            fVar.e(4, this.f454608f);
+            fVar.e(5, this.f454609g);
+            return 0;
+        }
+        if (i17 == 1) {
+            r45.he heVar2 = this.f76494x2de60e5e;
+            return (heVar2 != null ? 0 + b36.f.i(1, heVar2.mo75928xcd1e8d8()) : 0) + b36.f.e(2, this.f454606d) + b36.f.g(3, 8, this.f454607e) + b36.f.e(4, this.f454608f) + b36.f.e(5, this.f454609g);
+        }
+        if (i17 == 2) {
+            byte[] bArr = (byte[]) objArr[0];
+            this.f454607e.clear();
+            c36.a aVar = new c36.a(bArr, com.p314xaae8f345.mm.p2495xc50a8b8b.f.f38879xd1e823a);
+            for (int m75958x5767edba = com.p314xaae8f345.mm.p2495xc50a8b8b.f.m75958x5767edba(aVar); m75958x5767edba > 0; m75958x5767edba = com.p314xaae8f345.mm.p2495xc50a8b8b.f.m75958x5767edba(aVar)) {
+                if (!super.mo75949x4476b383(aVar, this, m75958x5767edba)) {
+                    aVar.b();
+                }
+            }
+            return 0;
+        }
+        if (i17 != 3) {
+            return -1;
+        }
+        c36.a aVar2 = (c36.a) objArr[0];
+        r45.e74 e74Var = (r45.e74) objArr[1];
+        int intValue = ((java.lang.Integer) objArr[2]).intValue();
+        if (intValue == 1) {
+            java.util.LinkedList j17 = aVar2.j(intValue);
+            int size = j17.size();
+            for (int i18 = 0; i18 < size; i18++) {
+                byte[] bArr2 = (byte[]) j17.get(i18);
+                r45.he heVar3 = new r45.he();
+                if (bArr2 != null && bArr2.length > 0) {
+                    heVar3.mo11468x92b714fd(bArr2);
+                }
+                e74Var.f76494x2de60e5e = heVar3;
+            }
+            return 0;
+        }
+        if (intValue == 2) {
+            e74Var.f454606d = aVar2.g(intValue);
+            return 0;
+        }
+        if (intValue != 3) {
+            if (intValue == 4) {
+                e74Var.f454608f = aVar2.g(intValue);
+                return 0;
+            }
+            if (intValue != 5) {
+                return -1;
+            }
+            e74Var.f454609g = aVar2.g(intValue);
+            return 0;
+        }
+        java.util.LinkedList j18 = aVar2.j(intValue);
+        int size2 = j18.size();
+        for (int i19 = 0; i19 < size2; i19++) {
+            byte[] bArr3 = (byte[]) j18.get(i19);
+            r45.yt3 yt3Var = new r45.yt3();
+            if (bArr3 != null && bArr3.length > 0) {
+                yt3Var.mo11468x92b714fd(bArr3);
+            }
+            e74Var.f454607e.add(yt3Var);
+        }
+        return 0;
+    }
+}

@@ -1,0 +1,29 @@
+package b26;
+
+/* loaded from: classes16.dex */
+public final class u implements b26.j {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final o06.e1 f17524a;
+
+    public u(o06.e1 packageFragmentProvider) {
+        kotlin.jvm.internal.o.g(packageFragmentProvider, "packageFragmentProvider");
+        this.f17524a = packageFragmentProvider;
+    }
+
+    @Override // b26.j
+    public b26.i a(n16.b classId) {
+        b26.i a17;
+        kotlin.jvm.internal.o.g(classId, "classId");
+        n16.c h17 = classId.h();
+        kotlin.jvm.internal.o.f(h17, "getPackageFqName(...)");
+        java.util.Iterator it = ((java.util.ArrayList) o06.i1.c(this.f17524a, h17)).iterator();
+        while (it.hasNext()) {
+            o06.d1 d1Var = (o06.d1) it.next();
+            if ((d1Var instanceof b26.v) && (a17 = ((b26.y) ((b26.v) d1Var)).f17543p.a(classId)) != null) {
+                return a17;
+            }
+        }
+        return null;
+    }
+}

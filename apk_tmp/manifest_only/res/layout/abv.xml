@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.fav.ui.widget.FavSearchActionView android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowlayout="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bbw" android:layout_width="0.0dp" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:layout_weight="1.0">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bl" android:src="@raw/icons_outlined_search" flowlayout:fs="@color/BW_70" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="0.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ScrollView android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:overScrollMode="never">
+                <com.tencent.mm.plugin.fav.ui.widget.FavTagPanel android:id="@id/dwl" android:layout_width="match_parent" android:layout_height="wrap_content" flowlayout:horizontalSpacing="@dimen/j" flowlayout:verticalSpacing="@dimen/j" />
+            </ScrollView>
+            <com.tencent.mm.ui.widget.imageview.WeImageButton android:id="@id/mdl" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:src="@drawable/ayf" android:contentDescription="@string/b91" flowlayout:fs="@color/eb" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/fs" android:id="@id/b5i" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sg" />
+</com.tencent.mm.plugin.fav.ui.widget.FavSearchActionView>

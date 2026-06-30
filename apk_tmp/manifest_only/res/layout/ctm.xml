@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cgi" android:background="@color/c" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.EndMaskView android:id="@id/gf5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/i26" android:layout_width="match_parent" android:layout_height="@dimen/aiz" />
+    <LinearLayout android:id="@id/i27" android:layout_width="match_parent" android:layout_height="@dimen/aj0">
+        <ImageView android:background="@drawable/bl9" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66.0dp" />
+        <ImageView android:id="@id/io4" android:background="@color/a60" android:visibility="invisible" android:layout_width="4.0dp" android:layout_height="match_parent" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" layout="@layout/cut" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/i3x" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn">
+        <include layout="@layout/cus" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hf">
+            <com.tencent.mm.plugin.sns.ui.MaskLinearLayout android:orientation="horizontal" android:id="@id/n9w" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.tencent.mm.plugin.sns.ui.CornerMaskImageView android:id="@id/haa" android:layout_width="74.0dp" android:layout_height="74.0dp" android:scaleType="fitXY" app:i8="1.0dp" />
+                        <TextView android:textSize="16.0dp" android:textColor="@color/a6q" android:gravity="center" android:id="@id/okc" android:visibility="gone" android:layout_width="74.0dp" android:layout_height="74.0dp" />
+                    </FrameLayout>
+                    <include android:layout_gravity="end|bottom" android:id="@id/nax" android:visibility="gone" android:layout_width="@dimen/dj" android:layout_height="@dimen/db" layout="@layout/cuv" />
+                    <ImageView android:layout_gravity="center" android:id="@id/nas" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/shortvideo_play_btn" />
+                </FrameLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/cuh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/aj3">
+                    <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/ia" android:textColor="@color/a41" android:ellipsize="end" android:gravity="left|top" android:id="@id/cu2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" android:maxLines="3" android:singleLine="false" android:includeFontPadding="false" android:lineSpacingExtra="-1.0dp" />
+                </RelativeLayout>
+            </com.tencent.mm.plugin.sns.ui.MaskLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

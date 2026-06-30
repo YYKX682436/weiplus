@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tlb" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/tk0" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/tjy" android:background="@android:color/transparent" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/adp" android:paddingTop="35.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/aie" android:minHeight="@dimen/aie" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:ds="@dimen/dv">
+            <com.tencent.mm.plugin.finder.live.widget.FinderLiveKTVReplayCircleProgressView android:id="@id/tjx" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/tjz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:fontFamily="sans-serif-medium" />
+        </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+    </FrameLayout>
+</FrameLayout>

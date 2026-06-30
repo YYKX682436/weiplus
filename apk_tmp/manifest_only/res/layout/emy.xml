@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/t2r" android:paddingTop="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/sz" android:id="@id/v0b" android:paddingLeft="@dimen/cn" android:paddingBottom="@dimen/bl" style="@style/ik" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cd7" android:background="@drawable/qo" android:paddingLeft="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/t3b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dv" app:fs="@color/a84" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:textColorHint="@color/Link_100" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/v0a" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dj" android:lines="1" android:layout_weight="1.0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/cn" android:src="@raw/icons_outlined_arrow" app:fs="@color/a84" />
+    </LinearLayout>
+    <com.tencent.mm.ui.base.FlowLayout android:id="@id/v09" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aih" android:paddingHorizontal="@dimen/dv" app:horizontalSpacing="@dimen/dv" app:verticalSpacing="@dimen/aih" />
+</LinearLayout>

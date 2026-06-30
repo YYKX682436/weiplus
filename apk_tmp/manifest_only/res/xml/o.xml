@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:key="contact_info_header_helper" android:gc="@layout/c9y" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_go_to_downloader" android:gc="@layout/byv" android:title="@string/bsb" />
+    <Preference android:key="contact_info_downloader_manager" android:gc="@layout/byv" android:title="@string/bs_" />
+    <Preference android:key="contact_info_common_problem" android:gc="@layout/byv" android:title="@string/bs9" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="contact_info_top_downloader" android:gc="@layout/byv" android:persistent="false" android:title="@string/bsd" />
+    <CheckBoxPreference android:key="contact_info_not_disturb" android:gc="@layout/byv" android:persistent="false" android:title="@string/bsc" />
+    <Preference android:key="contact_info_clear_data" android:gc="@layout/byv" android:title="@string/bcu" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_downloader_install" android:gc="@layout/bl_" android:title="@string/iwn" />
+    <Preference android:key="contact_info_downloader_uninstall" android:gc="@layout/bt3" android:title="@string/iwr" />
+    <PreferenceCategory />
+</PreferenceScreen>

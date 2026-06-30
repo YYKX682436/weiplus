@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/m7j" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.appbrand.widget.recyclerview.LoadMoreRecyclerView android:id="@id/mp9" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:listSelector="@android:color/transparent" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/cn" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_below="@id/mp9" android:layout_marginHorizontal="@dimen/d7">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/mp_" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_refresh" app:fs="@color/BW_0_Alpha_0_3" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_0_Alpha_0_3" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/mox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/ipl" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/mp8" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_below="@id/mp9" android:layout_centerHorizontal="true" style="@style/x4" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_0_Alpha_0_3" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/mpa" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ipj" android:layout_below="@id/mp9" android:layout_centerHorizontal="true" />
+</RelativeLayout>

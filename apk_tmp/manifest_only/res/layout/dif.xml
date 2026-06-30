@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.sns.ui.MaskImageView android:id="@id/hc1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/d" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/hbz" android:background="@raw/shortvideo_play_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveVideoFrameLayout android:id="@id/hc0" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

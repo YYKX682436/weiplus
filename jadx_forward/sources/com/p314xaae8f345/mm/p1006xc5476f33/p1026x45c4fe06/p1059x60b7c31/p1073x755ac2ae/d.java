@@ -1,0 +1,7 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1059x60b7c31.p1073x755ac2ae;
+
+/* loaded from: classes7.dex */
+public interface d {
+    /* renamed from: onBluetoothStateChange */
+    void mo50721xc065fc92(boolean z17);
+}

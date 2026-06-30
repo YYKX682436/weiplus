@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:background="#ededed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" app:ds="@dimen/c9" app:layout_constraintTop_toTopOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/up5" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+                <com.tencent.mm.plugin.finder.live.widget.FinderLiveFixClickIssueRecyclerView android:id="@id/uor" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/an" android:layout_width="match_parent" android:layout_height="@dimen/dp" app:layout_constraintTop_toBottomOf="@id/up5">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/uou" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                    <TextView android:textSize="17.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:ellipsize="end" android:id="@id/uow" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                    <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_3" android:id="@id/vgj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共3件" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/uou" android:background="@drawable/a8d" android:layout_width="@dimen/bo" android:layout_height="@dimen/d7" android:layout_marginEnd="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+                    <TextView android:textSize="15.0dp" android:textColor="@color/an" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ntx" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

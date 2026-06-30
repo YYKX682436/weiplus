@@ -1,0 +1,31 @@
+package ud3;
+
+/* loaded from: classes7.dex */
+public final class h extends lc3.b0 {
+
+    /* renamed from: f, reason: collision with root package name */
+    public final ud3.b f508202f = new ud3.b();
+
+    @Override // lc3.c0
+    public java.lang.String f() {
+        return "getLocalDataAllKeys";
+    }
+
+    @Override // lc3.b0
+    public void t(lc3.a0 data) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(data, "data");
+        java.util.HashMap a17 = this.f508202f.a(data, e().f425864a);
+        java.lang.Object obj = a17.get("error");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.e(obj, "null cannot be cast to non-null type com.tencent.mm.plugin.magicbrush.base.MBErrorInfo");
+        lc3.z zVar = (lc3.z) obj;
+        if (!p3321xbce91901.jvm.p3324x21ffc6bd.o.b(zVar, lc3.x.f399467a)) {
+            s().mo146xb9724478(h(zVar.f399477a, zVar.f399478b));
+            return;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        java.lang.Object obj2 = a17.get("keys");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.e(obj2, "null cannot be cast to non-null type java.util.ArrayList<kotlin.String>{ kotlin.collections.TypeAliasesKt.ArrayList<kotlin.String> }");
+        hashMap.put("keys", (java.util.ArrayList) obj2);
+        s().mo146xb9724478(l(hashMap));
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/a7f" android:paddingBottom="@dimen/d7" android:layout_width="match_parent" android:layout_height="625.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="20.0dp" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@id/aa8" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true" layout="@layout/awu" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mp4" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/UN_BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/ca" android:textColor="#ff576b95" android:id="@id/rcc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:text="@string/mp3" android:layout_marginStart="@dimen/cn" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/s1_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/ilp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" style="@style/x4" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/faj" android:background="@drawable/a01" android:layout_width="wrap_content" android:layout_height="@dimen/cs" android:paddingStart="4.0dp" android:paddingEnd="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.MMPAGView android:id="@id/ezw" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_centerVertical="true" />
+    <com.tencent.mm.plugin.finder.live.gift.widget.FinderRandomAnimTextView android:id="@id/ezq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginLeft="2.0dp" android:layout_centerVertical="true" android:layout_toEndOf="@id/ezw" />
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveGiftTextView android:textSize="12.0dp" android:textColor="@color/ab0" android:id="@id/ezr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/ezw" android:layout_centerVertical="true" />
+</RelativeLayout>

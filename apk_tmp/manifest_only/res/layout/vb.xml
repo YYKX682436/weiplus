@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/bkg" android:background="@drawable/mh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left|center" android:id="@id/ins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:src="@raw/icons_outlined_location" />
+            <com.tencent.mm.ui.widget.MMTextView android:id="@id/inr" android:layout_marginRight="5.0dp" android:maxWidth="180.0dp" style="@style/eu" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

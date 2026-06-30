@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/nyz" android:background="@null" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/cs" android:includeFontPadding="false" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/im4" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="6.0dp" android:src="@raw/appbrand_taskbar_load_progress" app:fs="@color/BW_100_Alpha_0_5" app:layout_constraintBottom_toBottomOf="@id/obc" app:layout_constraintLeft_toRightOf="@id/obc" app:layout_constraintTop_toTopOf="@id/obc" />
+    <RelativeLayout android:id="@id/jqf" android:layout_width="@dimen/bu" android:layout_height="@dimen/dj" android:layout_marginRight="@dimen/cz" android:minWidth="@dimen/bu" app:layout_constraintBottom_toBottomOf="@id/obc" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/obc">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4f" android:layout_width="10.0dp" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/BW_100_Alpha_0_5" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/jrt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:text="@string/re" android:includeFontPadding="false" android:layout_toLeftOf="@id/a4f" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/jr6" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/dv" android:scaleType="centerCrop" android:layout_toLeftOf="@id/jrt" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/cg7" android:clipChildren="false" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/obc">
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/ng6" android:background="@drawable/dq" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="-8.0dp" app:ds="@dimen/c9">
+            <RelativeLayout android:id="@id/ng7" android:background="@color/dt" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.9">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ng8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_filled_add" app:fs="@color/an" />
+                    <TextView android:textSize="@dimen/j4" android:textColor="@color/an" android:gravity="center" android:id="@id/nga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/ra" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

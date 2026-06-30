@@ -1,0 +1,7 @@
+package pk;
+
+@java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
+/* loaded from: classes14.dex */
+public @interface b {
+    pk.a value() default pk.a.NONE;
+}

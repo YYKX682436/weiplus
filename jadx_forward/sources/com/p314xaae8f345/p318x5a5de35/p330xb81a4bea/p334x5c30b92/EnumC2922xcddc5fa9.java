@@ -1,0 +1,30 @@
+package com.p314xaae8f345.p318x5a5de35.p330xb81a4bea.p334x5c30b92;
+
+/* renamed from: com.tencent.cloud.huiyan.enums.AuthState */
+/* loaded from: classes14.dex */
+public enum EnumC2922xcddc5fa9 {
+    PREPARE,
+    AUTH_ACTION,
+    START_GET_LIVE_TYPE,
+    ON_WS_NEXT_STEP,
+    START_CAMERA_PREVIEW,
+    ON_FIRST_FOUND_FACE,
+    ON_ENTRY_OTHER_ACTION,
+    ON_ENTRY_BOT,
+    ON_EXIT_BOT,
+    ON_MASK_CHANGE,
+    ON_DIS_CHANGE_OVER,
+    ALL_ACTION_DONE,
+    COUNT_DOWN_TIME,
+    ON_WS_END_LIVE,
+    ON_PUBLIC_WS_END_LIVE,
+    AUTH_END,
+    ON_START_LOADING_ANIM,
+    AUTH_FAIL,
+    AUTH_ERROR_DIALOG,
+    ON_LOCAL_RETRY,
+    START_REFLECT,
+    CAMERA_PARAMS_CHANGED,
+    CAMERA_PARAMS_STATE_CHANGED,
+    CAMERA_RESOLUTION
+}

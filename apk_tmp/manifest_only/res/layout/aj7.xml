@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.TouchMediaPreviewLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/la3" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.tencent.mm.view.RefreshLoadMoreLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include android:id="@id/im7" layout="@layout/cdl" />
+    <FrameLayout android:id="@id/dg3" android:background="@color/BW_93" android:paddingTop="170.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hq0" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:id="@id/i1j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f16" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/a5" android:id="@id/df8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f18" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/df7" android:layout_width="10.0dp" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_arrow" app:fs="@color/a5" />
+        </LinearLayout>
+    </FrameLayout>
+</com.tencent.mm.ui.widget.TouchMediaPreviewLayout>

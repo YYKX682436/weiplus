@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/pqy" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@id/m9h" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/aay" android:dividerHeight="0.5dp" />
+        <com.tencent.mm.ui.base.CustomScrollView android:id="@id/m9k" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/m9i" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bkg" android:background="@drawable/ob" android:layout_width="@dimen/rq" android:layout_height="wrap_content" style="@style/em">
+        <LinearLayout android:orientation="vertical" android:id="@id/a40" android:paddingLeft="@dimen/all" android:paddingTop="@dimen/all" android:paddingRight="@dimen/aii" android:paddingBottom="@dimen/aih" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.MMImageView android:layout_gravity="center_vertical" android:id="@id/a42" android:layout_width="44.0dp" android:layout_height="44.0dp" android:scaleType="centerCrop" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aih">
+                    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/r" android:textColor="@color/abw" android:ellipsize="end" android:id="@id/a43" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/b3" android:textColor="@color/adg" android:ellipsize="end" android:id="@id/a41" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j8" android:singleLine="true" android:layout_below="@id/a43" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aih">
+                <com.tencent.mm.ui.widget.MMTextView android:textSize="12.0dp" android:textColor="@color/adg" android:ellipsize="end" android:id="@id/a3z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b3b" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/bko" android:background="@drawable/me" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <include layout="@layout/tz" />
+</LinearLayout>

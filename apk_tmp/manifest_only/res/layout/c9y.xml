@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/lal" android:background="@drawable/bfj" android:paddingLeft="@dimen/cn" android:paddingTop="60.0dp" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/a_4" android:layout_width="@dimen/g" android:layout_height="@dimen/g" />
+        <View android:layout_width="@dimen/hf" style="@style/l3" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/h3" android:textColor="@color/fa" android:id="@id/kbq" android:text="{nick name}" style="@style/ix" />
+            <View style="@style/l3" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/jj" android:id="@id/ni2" android:text="{installed|uninstalled|hide}" style="@style/ix" />
+                <View android:layout_width="match_parent" android:layout_weight="1.0" style="@style/l3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/a8v" android:layout_width="match_parent" android:layout_height="@dimen/dv" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1">
+        <TextView android:gravity="left|center" android:id="@id/dy6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:maxWidth="@dimen/f6" android:singleLine="true" style="@style/ix" />
+        <TextView android:ellipsize="end" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/h0h" android:layout_width="match_parent" android:singleLine="false" style="@style/j0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+package pk2;
+
+/* loaded from: classes3.dex */
+public final class t3 extends qk2.d {
+
+    /* renamed from: i, reason: collision with root package name */
+    public final java.lang.String f356262i;
+
+    /* renamed from: j, reason: collision with root package name */
+    public final java.util.List f356263j;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public t3(pk2.o9 helper, int i17) {
+        super(helper, i17);
+        kotlin.jvm.internal.o.g(helper, "helper");
+        this.f356262i = "";
+        this.f356263j = kz5.c0.k(new pk2.q3(helper, i17));
+    }
+
+    @Override // qk2.f
+    public java.util.List g() {
+        return this.f356263j;
+    }
+
+    @Override // qk2.f
+    public java.lang.String i() {
+        return this.f356262i;
+    }
+
+    @Override // qk2.d, qk2.f
+    public boolean o() {
+        return true;
+    }
+
+    @Override // qk2.d
+    public void t(pk2.o9 o9Var, com.tencent.mm.plugin.finder.view.e3 bottomSheet, java.lang.Integer num) {
+        jz5.f0 f0Var;
+        kotlin.jvm.internal.o.g(o9Var, "<this>");
+        kotlin.jvm.internal.o.g(bottomSheet, "bottomSheet");
+        android.view.View findViewById = bottomSheet.f131959f.findViewById(com.tencent.mm.R.id.qli);
+        if (findViewById != null) {
+            findViewById.setOnClickListener(new pk2.s3(o9Var, this));
+            f0Var = jz5.f0.f302826a;
+        } else {
+            f0Var = null;
+        }
+        if (f0Var == null) {
+            com.tencent.mars.xlog.Log.e("AnchorRecommendSettingsOption", "addItem: click recommend setting fail, view is null");
+        }
+    }
+}

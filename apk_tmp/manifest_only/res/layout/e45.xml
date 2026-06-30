@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/b8m" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cz"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/abw" android:gravity="center" android:layout_gravity="center" android:id="@id/t3x" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_marginBottom="@dimen/cz" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/abw" android:gravity="center" android:id="@id/t3w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dj" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dn">
+        <Button android:id="@id/t3u" android:layout_width="@dimen/kb" android:text="@string/mvh" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/xu" />
+        <Button android:id="@id/t3v" android:layout_width="@dimen/kb" android:text="@string/mvr" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/kv" />
+    </RelativeLayout>
+</LinearLayout>

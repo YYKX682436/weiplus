@@ -1,0 +1,23 @@
+package vi1;
+
+/* loaded from: classes7.dex */
+public final class e3 implements android.content.DialogInterface.OnDismissListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ vi1.k3 f518832d;
+
+    public e3(vi1.k3 k3Var) {
+        this.f518832d = k3Var;
+    }
+
+    @Override // android.content.DialogInterface.OnDismissListener
+    public final void onDismiss(android.content.DialogInterface dialogInterface) {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.PhoneNumberVerifyCodeDialog", "cancel to verify sms");
+        vi1.k3 k3Var = this.f518832d;
+        k3Var.g();
+        android.view.View view = k3Var.f518922f;
+        if (view != null) {
+            view.post(new vi1.b3(k3Var));
+        }
+    }
+}

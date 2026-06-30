@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/j_"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ged" android:padding="3.0dp" android:layout_width="@dimen/i3" android:layout_height="@dimen/i3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/jn1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ix" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dp" android:textColor="@color/jj" android:id="@id/jn2" android:paddingTop="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cgn" style="@style/ix" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/fp" android:id="@id/jn5" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cgv" style="@style/ix" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <Button android:id="@id/jmv" android:layout_width="70.0dp" android:text="@string/ffa" style="@style/l1" />
+        <Button android:id="@id/jmx" android:layout_width="70.0dp" android:text="@string/ffc" style="@style/l1" />
+        <TextView android:id="@id/jmu" android:background="@drawable/bnb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dp" />
+    </LinearLayout>
+</LinearLayout>

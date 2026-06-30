@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/f6t" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/f6w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/f6x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="82.0dp">
+                <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/f6y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" />
+                <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/f71" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:ellipsize="end" android:id="@id/f6u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginRight="82.0dp" android:singleLine="true" android:layout_below="@id/f6x" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/qwb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h5n" android:visibility="invisible" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_done" android:layout_centerVertical="true" app:fs="@color/FG_2" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="@string/lyx" android:layout_toRightOf="@id/h5n" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/qwa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ProgressBar android:id="@id/f6z" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/cn" style="@style/x4" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/f6s" android:background="@drawable/cq7" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmv" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

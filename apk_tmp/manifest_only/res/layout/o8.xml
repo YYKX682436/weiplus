@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b8k" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pk9" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:src="@raw/icons_outlined_back" android:layout_centerVertical="true" android:contentDescription="@string/b9a" app:fs="@color/FG_0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/fa" android:gravity="center" android:id="@id/b4m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l92" android:singleLine="false" />
+            <TextView android:textSize="10.0dp" android:textColor="@color/jj" android:gravity="center" android:id="@id/gyf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/isy" android:singleLine="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/cz" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="right|center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/m3i" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dl">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center_vertical" android:id="@id/pkr" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/wecoin_balance_icons" android:layout_centerVertical="true" app:fs="@color/ae" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/fa" android:gravity="right|center" android:id="@id/ln5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.5dp" android:text=" " android:layout_toRightOf="@id/pkm" android:layout_centerVertical="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/avb" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/avc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+        <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/avg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+        <Space android:layout_width="match_parent" android:layout_height="24.0dp" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/lmc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/lma" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz">
+                <CheckBox android:id="@id/lmb" android:background="@drawable/aon" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:gravity="center" android:layout_gravity="center" android:id="@id/lmd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l9x" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

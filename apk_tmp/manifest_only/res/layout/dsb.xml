@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dl" android:layout_height="@dimen/dl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.mic.voiceroom.wave.RipperAnimateView android:id="@id/rtz" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:ci="@color/af1" app:initRadius="20.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:strokeWidth="4.0dp" />
+    <ImageView android:id="@id/rtw" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.RoundCornerConstraintLayout android:id="@id/rtv" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:translationX="@dimen/bl" android:translationY="@dimen/bl" app:ds="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/rtw" app:layout_constraintRight_toRightOf="@id/rtw">
+        <View android:id="@id/rtt" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@color/BW_100_Alpha_0_1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rtu" android:layout_width="@dimen/c8" android:layout_height="@dimen/c8" android:src="@raw/video_filled" app:fs="@color/BW_100_Alpha_0_8" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </com.tencent.mm.ui.widget.RoundCornerConstraintLayout>
+    <FrameLayout android:id="@id/rtx" android:background="@drawable/cuv" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_add" app:fs="@color/BW_100_Alpha_0_8" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

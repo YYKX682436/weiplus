@@ -1,0 +1,50 @@
+package r73;
+
+/* loaded from: classes9.dex */
+public class l extends com.tencent.mm.wallet_core.model.y0 {
+
+    /* renamed from: r, reason: collision with root package name */
+    public r45.rg5 f393177r;
+
+    public l(java.lang.String str) {
+        com.tencent.mm.modelbase.l lVar = new com.tencent.mm.modelbase.l();
+        lVar.f70664a = new r45.qg5();
+        lVar.f70665b = new r45.rg5();
+        lVar.f70667d = 2876;
+        lVar.f70666c = "/cgi-bin/mmpay-bin/qryhppayerdetail";
+        lVar.f70668e = 0;
+        lVar.f70669f = 0;
+        com.tencent.mm.modelbase.o a17 = lVar.a();
+        this.f214033n = a17;
+        ((r45.qg5) a17.f70710a.f70684a).f383976d = str;
+        com.tencent.mars.xlog.Log.i("MicroMsg.NetSceneQryHoneyPayerDetail", "card no: %s", str);
+    }
+
+    @Override // com.tencent.mm.wallet_core.model.y0
+    public void H(int i17, int i18, int i19, java.lang.String str, com.tencent.mm.network.v0 v0Var, byte[] bArr) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.NetSceneQryHoneyPayerDetail", "errType: %s, errCode: %s, errMsg: %s", java.lang.Integer.valueOf(i18), java.lang.Integer.valueOf(i19), str);
+        r45.rg5 rg5Var = (r45.rg5) ((com.tencent.mm.modelbase.o) v0Var).f70711b.f70700a;
+        this.f393177r = rg5Var;
+        com.tencent.mars.xlog.Log.i("MicroMsg.NetSceneQryHoneyPayerDetail", "retcode: %s, retmsg: %s", java.lang.Integer.valueOf(rg5Var.f384842d), this.f393177r.f384843e);
+        r45.bs bsVar = this.f393177r.f384849n;
+        if (bsVar != null) {
+            u73.h.k(bsVar.f371018f, bsVar.f371016d, bsVar.f371017e, null);
+        }
+        com.tencent.mm.modelbase.u0 u0Var = this.f214034o;
+        if (u0Var != null) {
+            u0Var.onSceneEnd(i18, i19, str, this);
+        }
+    }
+
+    @Override // com.tencent.mm.wallet_core.model.y0
+    public void I(com.tencent.mm.network.v0 v0Var) {
+        r45.rg5 rg5Var = (r45.rg5) ((com.tencent.mm.modelbase.o) v0Var).f70711b.f70700a;
+        this.f214028f = rg5Var.f384842d;
+        this.f214030h = rg5Var.f384843e;
+    }
+
+    @Override // com.tencent.mm.modelbase.m1
+    public int getType() {
+        return 2876;
+    }
+}

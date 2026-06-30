@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:calendar="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/vgl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/uh8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cs" android:layout_marginTop="@dimen/aih" android:layout_marginBottom="@dimen/dv" android:text="TextView" />
+        <ImageView android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:layout_marginLeft="@dimen/bl" android:src="@drawable/cr3" android:layout_toRightOf="@id/uh8" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/je" android:paddingLeft="28.0dp" android:paddingRight="28.0dp" android:layout_width="match_parent" android:layout_height="32.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="@color/jd" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bnh" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/jd" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bnf" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/jd" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bnj" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/jd" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bnk" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/jd" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bni" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/jd" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bne" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/jd" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bng" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/c_" android:gravity="center" android:id="@id/mf6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/i6" />
+    <com.tencent.mm.chatroom.ui.DayPickerView android:id="@id/kvr" android:layout_width="match_parent" android:layout_height="match_parent" calendar:colorSelectedDayBackground="@color/m" calendar:drawRoundRect="false" />
+</LinearLayout>

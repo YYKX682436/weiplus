@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/ael"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bd" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bc" android:background="@null" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@raw/actionbar_icon_dark_back" android:contentDescription="@string/ig" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <EditText android:textSize="@dimen/ia" android:textColor="@color/a0b" android:textColorHint="@color/tk" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/d98" android:paddingRight="@dimen/i8" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="1024.0dp" android:minHeight="@dimen/i8" android:hint="@string/y8" android:singleLine="true" android:includeFontPadding="false" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/afr" />
+        <com.tencent.mm.ui.widget.imageview.WeImageButton android:id="@id/nhn" android:background="@null" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/xmark_circle_filled" android:layout_alignParentRight="true" app:btnIconColor="@color/a84" />
+    </RelativeLayout>
+    <Button android:layout_gravity="center_vertical" android:id="@id/b2z" android:layout_marginLeft="@dimen/j3" android:layout_marginRight="@dimen/j3" android:text="@string/y8" style="@style/ks" />
+</LinearLayout>

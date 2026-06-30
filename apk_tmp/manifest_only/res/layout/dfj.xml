@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/df" android:layout_height="@dimen/df"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MCRoundCornerImageView android:id="@id/h5w" android:layout_width="match_parent" android:layout_height="match_parent" app:i8="@dimen/dv" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/ac8" android:layout_gravity="center" android:id="@id/q8t" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/qa0" android:background="@drawable/cme" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/q4i" android:background="@color/acn" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/d3u" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:indeterminateDrawable="@drawable/a0v" />
+</FrameLayout>

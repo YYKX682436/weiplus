@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/aju" android:textStyle="normal" android:textColor="@color/ai9" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/aih" android:text="@string/mky" />
+    <com.tencent.mm.plugin.appbrand.widget.recent.AppBrandTaskRecyclerView android:id="@id/sdx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/im7" android:visibility="visible" android:layout_width="match_parent" android:layout_height="156.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/im4" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/app_brand_task_load_progress" app:fs="#606060" />
+    </FrameLayout>
+</LinearLayout>

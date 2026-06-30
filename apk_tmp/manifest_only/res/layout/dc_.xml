@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cs" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/cs" android:layout_marginHorizontal="@dimen/cs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mkt" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" />
+        <TextView android:textColor="@color/t_" android:id="@id/q15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_marginHorizontal="@dimen/dv" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/q0c" android:background="@color/ut" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" app:ds="@dimen/bl">
+        <TextView android:textColor="@color/BW_70" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:layout_marginBottom="@dimen/c8" android:text="@string/lep" android:layout_marginVertical="@dimen/c8" android:paddingHorizontal="@dimen/dv" />
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+</LinearLayout>

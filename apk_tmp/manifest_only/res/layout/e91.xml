@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0dp" android:textColor="@color/aby" android:gravity="center" android:id="@id/vlf" android:layout_width="80.0dp" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" app:layout_constraintBottom_toTopOf="@id/vlg" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" />
+    <com.tencent.mm.ui.widget.seekbar.BothSidesSeekBar android:id="@id/vlg" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:focusable="true" android:layout_width="0.0dp" android:layout_height="16.0dp" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:layout_marginBottom="24.0dp" android:thumb="@drawable/a0d" android:importantForAccessibility="yes" android:splitTrack="false" android:layout_marginHorizontal="32.0dp" android:paddingHorizontal="8.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/vle" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintGuide_begin="36.0dp" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/vlc" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintGuide_end="36.0dp" />
+    <ImageView android:id="@id/vld" android:layout_width="8.0dp" android:layout_height="8.0dp" android:src="@drawable/a0d" app:layout_constraintBottom_toBottomOf="@id/vlg" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="@id/vle" app:layout_constraintRight_toRightOf="@id/vlc" app:layout_constraintTop_toTopOf="@id/vlg" />
+</merge>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <Preference android:key="wallet_realname_verify" android:gc="@layout/byv" android:title="@string/kuo" />
+    <PreferenceSmallCategory />
+    <Preference android:key="wallet_modify_password" android:gc="@layout/byv" android:title="@string/kuk" />
+    <Preference android:key="wallet_forget_password" android:gc="@layout/byv" android:title="@string/kug" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.RightBelowPreference android:key="wallet_biometric_pay" android:gc="@layout/c11" android:title="" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="mobile_remit_switch" android:persistent="false" />
+    <PreferenceSmallCategory />
+    <IconPreference android:key="wallet_open_auto_pay" android:gc="@layout/byv" android:title="@string/ku7" />
+    <Preference android:key="wallet_delay_transfer_date" android:gc="@layout/byv" android:title="@string/ktl" />
+    <Preference android:key="wallet_universal_pay_order" android:gc="@layout/byv" android:title="@string/kux" />
+    <IconPreference android:key="wallet_lucky_money_refund_way" android:gc="@layout/byv" android:title="@string/ku5" />
+    <PreferenceSmallCategory />
+    <Preference android:key="wallet_function_settings" android:gc="@layout/byv" android:title="@string/kmy" />
+    <Preference android:key="wallet_switch_currency" android:gc="@layout/byv" android:title="@string/kmz" />
+    <Preference android:key="wallet_im_mch" android:gc="@layout/byv" android:title="" />
+    <PreferenceSmallCategory android:key="wallet_switch_category" />
+    <Preference android:key="wallet_digitalcert" android:gc="@layout/byv" android:title="@string/ktm" />
+    <Preference android:key="wallet_password_setting_un_reg" android:gc="@layout/byv" android:title="@string/kuw" />
+</PreferenceScreen>

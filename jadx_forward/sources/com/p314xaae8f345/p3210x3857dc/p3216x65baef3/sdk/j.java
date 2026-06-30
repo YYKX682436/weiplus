@@ -1,0 +1,51 @@
+package com.p314xaae8f345.p3210x3857dc.p3216x65baef3.sdk;
+
+/* loaded from: classes13.dex */
+public class j implements com.p314xaae8f345.p3210x3857dc.p3216x65baef3.sdk.i {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final java.lang.Object f301978a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public by5.i0 f301979b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public by5.i0 f301980c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public by5.i0 f301981d;
+
+    public j(java.lang.Object obj) {
+        this.f301978a = obj;
+    }
+
+    public void a() {
+        by5.i0 i0Var;
+        try {
+            synchronized (this) {
+                i0Var = this.f301979b;
+                if (i0Var == null) {
+                    i0Var = new by5.i0(this.f301978a, "cancel", new java.lang.Class[0]);
+                    this.f301979b = i0Var;
+                }
+            }
+            i0Var.b(new java.lang.Object[0]);
+        } catch (java.lang.UnsupportedOperationException unused) {
+        }
+    }
+
+    public void b() {
+        by5.i0 i0Var;
+        try {
+            synchronized (this) {
+                i0Var = this.f301980c;
+                if (i0Var == null) {
+                    i0Var = new by5.i0(this.f301978a, "confirm", new java.lang.Class[0]);
+                    this.f301980c = i0Var;
+                }
+            }
+            i0Var.b(new java.lang.Object[0]);
+        } catch (java.lang.UnsupportedOperationException unused) {
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/oh9" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/q0r" android:background="#f5f5f5" android:paddingLeft="@dimen/cs" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/cs" android:paddingBottom="@dimen/dv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cs" android:paddingVertical="@dimen/dv">
+            <TextView android:textSize="@dimen/gz" android:gravity="start|center" android:background="@drawable/bce" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="match_parent" android:layout_height="@dimen/db" android:text="@string/lep" android:paddingHorizontal="@dimen/c9" />
+        </FrameLayout>
+        <com.tencent.mm.view.HardTouchableLayout android:id="@id/q0p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dv">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center" android:id="@id/q0o" android:layout_width="match_parent" android:layout_height="@dimen/d7" app:tabBackground="@color/a9e" app:jd="bdp" app:jh="#ffffff" app:ji="false" app:jk="0.0dp" app:tabMinWidth="@dimen/d7" app:jm="mcp" app:jn="0.0dp" app:jo="0.0dp" app:jp="@color/a9e" app:jq="@color/a0c" app:jt="@color/jj" />
+        </com.tencent.mm.view.HardTouchableLayout>
+        <com.tencent.mm.plugin.finder.view.FinderViewPager android:id="@id/q0q" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/zz" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/dg3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/lbi" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/c6" android:indeterminateDrawable="@drawable/avj" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/m2g" android:paddingTop="@dimen/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cuw" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:layout_gravity="center_horizontal" android:id="@id/dft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:text="@string/era" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/oah" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/ack" />
+    </FrameLayout>
+</FrameLayout>

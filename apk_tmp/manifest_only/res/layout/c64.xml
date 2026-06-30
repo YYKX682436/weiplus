@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RCLinearLayout android:id="@id/k69" android:layout_width="match_parent" android:layout_height="wrap_content" app:rcLinearRadius="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#242424" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/j8k" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/aa_" android:showDividers="middle" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/i96" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:ds="@dimen/dv" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:id="@id/o70" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                <FrameLayout android:id="@id/icp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/id6" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/aa_" android:layout_weight="2.0" android:showDividers="middle">
+                <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:ds="@dimen/dv">
+                    <ImageView android:id="@id/lt1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+                <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:ds="@dimen/dv">
+                    <ImageView android:id="@id/lt2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+                <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:ds="@dimen/dv">
+                    <ImageView android:id="@id/lt3" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/azt" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fs4" android:background="@drawable/a36" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="@dimen/bw" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0">
+            <LinearLayout android:orientation="vertical" android:id="@id/ffb" android:paddingTop="1.0dp" android:paddingRight="6.0dp" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" app:layout_constraintBottom_toTopOf="@id/e_e" app:layout_constraintLeft_toLeftOf="@id/e_e">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/uww" android:background="@drawable/acz" android:paddingLeft="6.0dp" android:paddingTop="2.0dp" android:paddingRight="6.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/uwv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/uws" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/bl" />
+                        <ImageView android:id="@id/uwt" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/bl" />
+                        <ImageView android:id="@id/uwu" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/bl" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/c9" android:textColor="@color/an" android:ellipsize="end" android:id="@id/ll9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/an" android:ellipsize="end" android:id="@id/ebv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/e_e" android:background="@drawable/ajp" android:padding="@dimen/xc" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginRight="@dimen/bl" app:layout_constraintBottom_toBottomOf="@id/e_e" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toRightOf="@id/e_e" app:layout_constraintRight_toLeftOf="@id/pg0" app:layout_constraintTop_toTopOf="@id/e_e">
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/an" android:ellipsize="end" android:id="@id/fuv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/a85" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="1" />
+                <ImageView android:id="@id/a85" android:layout_width="@dimen/xt" android:layout_height="@dimen/xt" android:layout_marginLeft="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/fuv" app:layout_constraintRight_toRightOf="@id/awq" app:layout_constraintTop_toTopOf="0" />
+                <TextView android:textSize="9.0dp" android:textStyle="bold" android:textColor="@color/f7" android:id="@id/awq" android:background="@drawable/a6b" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/efp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toRightOf="@id/a85" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_9" android:id="@id/pg0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/e_e" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/e_e" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:id="@id/f98" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:logo_mode="4" app:logo_style="3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.ui.widget.RCLinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/kva" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/s3s" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48.0dp" android:layout_marginBottom="94.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="96.0dp">
+            <ScrollView android:id="@id/s3u" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/s3t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" />
+            </ScrollView>
+        </FrameLayout>
+    </FrameLayout>
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorInputView android:id="@id/bet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/cia" layout="@layout/dxs" />
+    <com.tencent.mm.ui.widget.InsectRelativeLayout android:id="@id/mwf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/a5z" android:layout_marginBottom="@dimen/cz" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/mwg" android:background="@drawable/apa" android:visibility="visible" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginLeft="@dimen/a60" android:src="@raw/mmsight_camera_preview_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/mwh" android:background="@drawable/apb" android:visibility="visible" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginRight="@dimen/a60" android:src="@raw/mmsight_camera_preview_icon_done" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.tencent.mm.ui.widget.InsectRelativeLayout>
+</merge>

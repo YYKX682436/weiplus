@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/u_y" android:clipChildren="false" android:layout_width="@dimen/bw" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:gravity="center" android:id="@id/ua8" android:background="@drawable/d34" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bl" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/cz">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ua7" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/bl" android:src="@raw/light_bulb_filled" app:fs="@color/an" />
+            <com.tencent.mm.plugin.finder.live.view.FinderLiveMarqueeTextView android:textSize="12.0dp" android:textColor="@color/aaz" android:ellipsize="end" android:id="@id/ua0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no0" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <com.tencent.mm.plugin.finder.live.view.SiriBubbleView android:gravity="top" android:id="@id/u_z" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/dv" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dp" android:layout_marginRight="-10.0dp" android:layout_marginHorizontal="-10.0dp" app:siriInteriorBackgroundColor="@color/UN_BW_0_Alpha_0_2">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/ua3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="10.0dp" android:textColor="@color/adi" android:id="@id/ua6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no0" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:layout_constraintLeft_toLeftOf="0" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="end" android:id="@id/ua5" android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:src="@raw/arrow_2_inward" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/adi" app:layout_constraintRight_toRightOf="0" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/ua4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="17.0dp" android:textColor="@color/aby" android:ellipsize="end" android:id="@id/ua2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:text="@string/no0" android:maxLines="3" android:includeFontPadding="false" android:layout_toLeftOf="@id/ua1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0dp" android:textColor="@color/agc" android:gravity="center" android:id="@id/ua1" android:background="@drawable/d1s" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bn" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nkj" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingHorizontal="@dimen/c9" android:paddingVertical="@dimen/bn" app:layout_constraintRight_toRightOf="0" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.tencent.mm.plugin.finder.live.view.SiriBubbleView>
+    </LinearLayout>
+</FrameLayout>

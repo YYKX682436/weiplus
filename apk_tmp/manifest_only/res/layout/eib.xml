@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/d8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="64.0dp" android:paddingBottom="32.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24.0dp" android:paddingEnd="24.0dp">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/fa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/nmd" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="23.0dp">
+            <TextView android:textSize="15.0sp" android:textColor="@color/tk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp" android:text="@string/nma" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/tk" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nmc" />
+        </LinearLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="76.0dp" android:src="@drawable/d5i" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/smy" android:layout_width="184.0dp" android:layout_height="48.0dp" android:layout_marginBottom="18.0dp" android:text="@string/nm_" style="@style/kz" />
+    </LinearLayout>
+</ScrollView>

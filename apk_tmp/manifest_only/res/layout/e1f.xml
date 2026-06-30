@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bjy" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <FrameLayout android:orientation="horizontal" android:id="@id/a1l" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingRecordMvvmView android:id="@id/sri" android:background="@drawable/mi" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/lu" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

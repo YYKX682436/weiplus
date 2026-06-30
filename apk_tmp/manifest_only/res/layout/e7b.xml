@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:id="@id/efi" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tp2" android:background="@drawable/d0p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:minHeight="48.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/finder_live_logo" android:layout_marginStart="12.0dp" app:fs="@color/pv" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/an" android:layout_gravity="center_vertical" android:id="@id/tp3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nkn" android:layout_marginStart="8.0dp" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/tp0" android:background="@drawable/d4i" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bn" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="10.0dp" android:paddingHorizontal="@dimen/c9" android:paddingVertical="@dimen/bn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/tp1" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="4.0dp" android:src="@raw/icons_filled_done" app:fs="@color/UN_BW_0_Alpha_0_9" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="center" android:id="@id/toz" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nkj" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

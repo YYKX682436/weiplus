@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:padding="@dimen/c9" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/hc5" android:layout_width="0.0dp" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:text="@string/fga" android:layout_weight="1.0" style="@style/ml" />
+                <View android:layout_width="@dimen/cn" android:layout_height="wrap_content" />
+                <Button android:id="@id/l5c" android:layout_width="0.0dp" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:text="@string/fgb" android:layout_weight="1.0" style="@style/ml" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/l5e" android:layout_width="0.0dp" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:text="@string/fgd" android:layout_weight="1.0" style="@style/ml" />
+                <View android:layout_width="@dimen/cn" android:layout_height="wrap_content" />
+                <Button android:id="@id/l5d" android:layout_width="0.0dp" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:text="@string/fgc" android:layout_weight="1.0" style="@style/ml" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:id="@id/hcv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

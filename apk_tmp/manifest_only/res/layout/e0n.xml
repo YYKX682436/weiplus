@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.patmsg.ui.AvatarPatTipImageView android:gravity="center_horizontal" android:id="@id/m7e" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@drawable/bhn" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/vo" android:id="@id/q_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lnp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/cem" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@id/q_b" android:layout_toRightOf="@id/m7e" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/dv" />
+</RelativeLayout>

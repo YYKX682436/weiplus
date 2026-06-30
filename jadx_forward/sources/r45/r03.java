@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes2.dex */
+public class r03 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public r03() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(1, "topic"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(2, "topicId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(3, "feedCount"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(4, "topicNonceId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(5, "topicType"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(6, "followFlag"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(7, "coverUrl"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(8, "friendFollowCount"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(9, "displayId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(10, "canFollow"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(11, "music_info", r45.zi2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(12, "onlineViewed"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(13, "followFeedInfo", r45.o03.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(14, "feed_follow_permission_flag"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(15, "tmpl_info", r45.oz2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(16, "disabledFlag"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(17, "event", r45.e21.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(18, "read_count"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(19, "head_url"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(20, "music_topic", r45.hj2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(21, "hash_tag_info", r45.q03.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(22, "music_mv_topic", r45.bj2.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(23, "words_topic_ext", r45.z23.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(24, "video_template_info", r45.r23.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(27, "collection_info", r45.vx0.class));
+        this.f38874x227b759e = true;
+    }
+}

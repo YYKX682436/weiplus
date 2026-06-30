@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MJTextSeekBar android:id="@id/qby" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_marginHorizontal="@dimen/cz" app:MJTextSeekBar_First_Space_Margin="0.0dp" app:MJTextSeekBar_Value_Size="14.0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.3393" />
+    <FrameLayout android:id="@id/q3i" android:layout_width="@dimen/c0" android:layout_height="@dimen/d7" android:layout_marginBottom="@dimen/d7" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0">
+        <TextView style="@style/xq" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

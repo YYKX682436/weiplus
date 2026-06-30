@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/m82" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/eb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dc" android:layout_marginTop="@dimen/d1" android:layout_marginRight="@dimen/dc" android:text="@string/lr3" android:layout_marginHorizontal="@dimen/dc" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/dn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/eb4">
+            <TextView android:id="@id/b5i" android:minWidth="120.0dp" android:text="@string/ljn" style="@style/kz" />
+            <LinearLayout android:gravity="center" android:id="@id/khs" android:layout_marginLeft="@dimen/cn" android:minWidth="120.0dp" style="@style/kr">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@raw/wecoin_balance_icons" app:fs="@color/an" />
+                <TextView android:textSize="@dimen/hv" android:textColor="@color/BW_100_Alpha_0_9" android:id="@id/f2w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                <TextView android:textSize="@dimen/hv" android:textColor="@color/io" android:id="@id/q56" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/ljo" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

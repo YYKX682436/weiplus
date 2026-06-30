@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/lbu" android:background="@color/ae2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ofg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp">
+        <TextView android:textSize="22.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:maxLines="1" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_1" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="center_horizontal" android:id="@id/rsi" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="80.0dp" android:scaleType="fitCenter" app:i8="8.0dp" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/rsj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:maxLines="1" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/a7" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/rsk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/au4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/rsh" android:background="@drawable/cw4" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="20.0dp" />
+        <FrameLayout android:background="@color/ae2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="17.0dp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rsd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="96.0dp" app:aq="17.0dp" app:ar="1.0dp" app:as="os_" style="@style/kr" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

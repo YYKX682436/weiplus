@@ -1,0 +1,60 @@
+package dd5;
+
+/* loaded from: classes9.dex */
+public final class d0 extends uc5.p {
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final dd5.d0 f229110b = new dd5.d0();
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final ad5.l0[] f229111c = {ad5.f.f3249a, ad5.q.f3294a, ad5.d.f3242a};
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final java.lang.Class f229112d = dd5.b0.class;
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final uc5.n f229113e = dd5.a0.f229082p;
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final java.util.Set f229114f = kz5.o1.c(47);
+
+    @Override // uc5.p
+    public java.util.Set b() {
+        return f229114f;
+    }
+
+    @Override // uc5.p
+    public java.lang.Class c() {
+        return f229112d;
+    }
+
+    @Override // uc5.p
+    public uc5.n d() {
+        return f229113e;
+    }
+
+    @Override // uc5.p
+    public boolean e(oi3.g simpleMsgInfo) {
+        kotlin.jvm.internal.o.g(simpleMsgInfo, "simpleMsgInfo");
+        if (simpleMsgInfo.getInteger(simpleMsgInfo.f345617d + 4) != 47) {
+            return false;
+        }
+        java.lang.String j17 = ((ez.e) ((pt.j0) i95.n0.c(pt.j0.class))).pj((oi3.e) simpleMsgInfo).j();
+        if (j17 == null) {
+            return false;
+        }
+        java.util.List f07 = r26.n0.f0(j17, new java.lang.String[]{":"}, false, 0, 6, null);
+        if (f07.size() <= 3) {
+            return false;
+        }
+        return ((com.tencent.mm.feature.emoji.q0) ((com.tencent.mm.feature.emoji.api.z5) i95.n0.c(com.tencent.mm.feature.emoji.api.z5.class))).Di((java.lang.String) f07.get(3)) != null;
+    }
+
+    @Override // uc5.p
+    public java.lang.Boolean f(int i17, int i18) {
+        if (i17 != 47) {
+            return java.lang.Boolean.FALSE;
+        }
+        return null;
+    }
+}

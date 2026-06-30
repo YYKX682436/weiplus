@@ -1,0 +1,26 @@
+package com.tencent.mm.plugin.recordvideo.ui.editor.music.finder.fragment;
+
+/* loaded from: classes5.dex */
+public final class e implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.recordvideo.ui.editor.music.finder.fragment.FinderMusicPickerLikeFragment f156365d;
+
+    public e(com.tencent.mm.plugin.recordvideo.ui.editor.music.finder.fragment.FinderMusicPickerLikeFragment finderMusicPickerLikeFragment) {
+        this.f156365d = finderMusicPickerLikeFragment;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        com.tencent.mm.view.recyclerview.WxRecyclerView wxRecyclerView = this.f156365d.f156382f;
+        if (wxRecyclerView != null) {
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+            arrayList.add(0);
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(wxRecyclerView, arrayList.toArray(), "com/tencent/mm/plugin/recordvideo/ui/editor/music/finder/fragment/FinderMusicPickerLikeFragment$scrollToTop$1", "run", "()V", "Undefined", "smoothScrollToPosition", "(I)V");
+            wxRecyclerView.c1(((java.lang.Integer) arrayList.get(0)).intValue());
+            yj0.a.f(wxRecyclerView, "com/tencent/mm/plugin/recordvideo/ui/editor/music/finder/fragment/FinderMusicPickerLikeFragment$scrollToTop$1", "run", "()V", "Undefined", "smoothScrollToPosition", "(I)V");
+        }
+    }
+}

@@ -1,0 +1,57 @@
+package f26;
+
+/* loaded from: classes16.dex */
+public abstract class d1 {
+    public static final f26.c3 a(f26.c3 c3Var, boolean z17) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(c3Var, "<this>");
+        f26.v a17 = f26.u.a(f26.v.f340760g, c3Var, z17, false, 4, null);
+        if (a17 != null) {
+            return a17;
+        }
+        f26.z0 b17 = b(c3Var);
+        return b17 != null ? b17 : c3Var.A0(false);
+    }
+
+    public static final f26.z0 b(f26.o0 o0Var) {
+        f26.n0 n0Var;
+        f26.c2 w07 = o0Var.w0();
+        f26.n0 n0Var2 = w07 instanceof f26.n0 ? (f26.n0) w07 : null;
+        if (n0Var2 == null) {
+            return null;
+        }
+        java.util.LinkedHashSet<f26.o0> linkedHashSet = n0Var2.f340731b;
+        java.util.ArrayList arrayList = new java.util.ArrayList(kz5.d0.q(linkedHashSet, 10));
+        boolean z17 = false;
+        for (f26.o0 o0Var2 : linkedHashSet) {
+            if (f26.z2.f(o0Var2)) {
+                o0Var2 = a(o0Var2.z0(), false);
+                z17 = true;
+            }
+            arrayList.add(o0Var2);
+        }
+        if (z17) {
+            f26.o0 o0Var3 = n0Var2.f340730a;
+            if (o0Var3 == null) {
+                o0Var3 = null;
+            } else if (f26.z2.f(o0Var3)) {
+                o0Var3 = a(o0Var3.z0(), false);
+            }
+            arrayList.isEmpty();
+            java.util.LinkedHashSet linkedHashSet2 = new java.util.LinkedHashSet(arrayList);
+            linkedHashSet2.hashCode();
+            n0Var = new f26.n0(linkedHashSet2, o0Var3);
+        } else {
+            n0Var = null;
+        }
+        if (n0Var == null) {
+            return null;
+        }
+        return n0Var.b();
+    }
+
+    public static final f26.z0 c(f26.z0 z0Var, f26.z0 abbreviatedType) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(z0Var, "<this>");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(abbreviatedType, "abbreviatedType");
+        return f26.s0.a(z0Var) ? z0Var : new f26.a(z0Var, abbreviatedType);
+    }
+}

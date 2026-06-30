@@ -1,0 +1,21 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1938xa3b20de3.ui;
+
+/* loaded from: classes9.dex */
+public class m2 extends com.p314xaae8f345.mm.p2802xd031a825.ui.z1 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1938xa3b20de3.ui.ActivityC16764xd1ab6b38 f234207d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public m2(com.p314xaae8f345.mm.p1006xc5476f33.p1938xa3b20de3.ui.ActivityC16764xd1ab6b38 activityC16764xd1ab6b38) {
+        super(false);
+        this.f234207d = activityC16764xd1ab6b38;
+    }
+
+    @Override // com.p314xaae8f345.mm.p2802xd031a825.ui.z1
+    /* renamed from: onRealClick */
+    public void mo27114xc7e50b6b(android.view.View view) {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1938xa3b20de3.ui.ActivityC16764xd1ab6b38 activityC16764xd1ab6b38 = this.f234207d;
+        yo3.m.y(activityC16764xd1ab6b38, "create", activityC16764xd1ab6b38.getString(com.p314xaae8f345.mm.R.C30867xcad56011.l1o), 0, activityC16764xd1ab6b38.f234043h);
+    }
+}

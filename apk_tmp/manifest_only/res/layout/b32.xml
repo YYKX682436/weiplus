@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a48" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dd">
+        <LinearLayout android:orientation="horizontal" android:id="@id/backBtn" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b5" android:contentDescription="@string/cd" />
+        </LinearLayout>
+        <TextView android:textSize="17.0dp" android:textColor="@color/f5" android:id="@id/qll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lw1" android:layout_centerInParent="true" />
+        <com.tencent.mm.view.HardTouchableLayout android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_centerVertical="true" android:layout_toEndOf="@id/backBtn">
+            <FrameLayout android:layout_gravity="end|bottom" android:id="@id/nzs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/i1" android:paddingEnd="@dimen/cn">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="start|center" android:id="@id/nzt" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_umbrella" app:fs="@color/FG_0" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="end|bottom" android:id="@id/fss" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/jzr" android:paddingStart="@dimen/i1" android:paddingEnd="@dimen/cn">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="start|center" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_search" />
+            </FrameLayout>
+        </com.tencent.mm.view.HardTouchableLayout>
+    </RelativeLayout>
+    <include layout="@layout/eck" />
+</LinearLayout>

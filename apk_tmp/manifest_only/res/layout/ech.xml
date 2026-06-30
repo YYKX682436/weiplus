@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.image.FinderLivePhotoLayout android:gravity="center" android:layout_gravity="center" android:id="@id/tbn" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/e_j" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="start|bottom" android:orientation="horizontal" android:id="@id/ubs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_marginStart="@dimen/cn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/uba" android:layout_width="@dimen/aij" android:layout_height="@dimen/aij" android:src="@raw/livephoto_on_filled" app:fs="@color/BW_100_Alpha_0_8" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_8" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bj" android:text="@string/mp6" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.finder.view.image.FinderLivePhotoLayout>
+</FrameLayout>

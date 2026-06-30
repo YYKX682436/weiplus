@@ -1,0 +1,105 @@
+package com.p314xaae8f345.mm.p632xd97a1f41.p634xbddafb2a;
+
+/* renamed from: com.tencent.mm.autogen.layout.BootX2CFactory */
+/* loaded from: classes13.dex */
+public class C6290xb45498b3 extends xn5.i {
+    public C6290xb45498b3() {
+        java.lang.System.currentTimeMillis();
+        this.f537212a = new java.util.HashMap(24);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.f570716bl5, new bm.l());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.csl, new bm.p());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.crn, new bm.m());
+        bm.a aVar = new bm.a();
+        java.lang.Integer valueOf = java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dba);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dba, aVar);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.bkp, new bm.k());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.crq, new bm.n());
+        bm.i iVar = new bm.i();
+        java.lang.Integer valueOf2 = java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbo);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbo, iVar);
+        bm.j jVar = new bm.j();
+        java.lang.Integer valueOf3 = java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbp);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbp, jVar);
+        bm.g gVar = new bm.g();
+        java.lang.Integer valueOf4 = java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbj);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbj, gVar);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbc, new bm.c());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.e1h, new bm.f());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.ct6, new bm.u());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbb, new bm.b());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.csr, new bm.r());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.f571051ct4, new bm.t());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.ctb, new bm.v());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.epn, new bm.x());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.cs7, new bm.o());
+        bm.e eVar = new bm.e();
+        java.lang.Integer valueOf5 = java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbe);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbe, eVar);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.csy, new bm.s());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.e1w, new bm.h());
+        bm.d dVar = new bm.d();
+        java.lang.Integer valueOf6 = java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbd);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbd, dVar);
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.cul, new bm.w());
+        g(com.p314xaae8f345.mm.R.C30864xbddafb2a.dif, new bm.q());
+        java.util.HashMap hashMap = this.f537212a;
+        if (hashMap != null) {
+            hashMap.size();
+        }
+        java.lang.System.currentTimeMillis();
+        java.util.HashSet hashSet = new java.util.HashSet();
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.a2l));
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.byv));
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f571098d01));
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f570899cb1));
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.c0n));
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.bz_));
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.cyl));
+        hashSet.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.c2p));
+        java.util.HashMap hashMap2 = this.f537213b;
+        hashMap2.put("ContactInfoUI", hashSet);
+        java.util.HashSet hashSet2 = new java.util.HashSet();
+        hashSet2.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.crn));
+        hashSet2.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.crp));
+        hashSet2.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.csy));
+        hashSet2.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.csl));
+        hashSet2.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.cs7));
+        hashSet2.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f571051ct4));
+        hashSet2.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.ct6));
+        hashMap2.put("SnsTimeLineUI", hashSet2);
+        java.util.HashSet hashSet3 = new java.util.HashSet();
+        hashSet3.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.bbw));
+        hashSet3.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.bbp));
+        hashSet3.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.bc_));
+        hashSet3.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f570650bc2));
+        hashSet3.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f569451bk));
+        hashMap2.put("FTSDetailUI", hashSet3);
+        java.util.HashSet hashSet4 = new java.util.HashSet();
+        hashSet4.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.e1w));
+        hashSet4.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.e1h));
+        hashSet4.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbb));
+        hashSet4.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.dbc));
+        hashSet4.add(valueOf5);
+        hashSet4.add(valueOf6);
+        hashSet4.add(valueOf4);
+        hashSet4.add(valueOf2);
+        hashSet4.add(valueOf3);
+        hashSet4.add(valueOf);
+        hashMap2.put("ChattingFragment", hashSet4);
+        java.util.HashSet hashSet5 = new java.util.HashSet();
+        hashSet5.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f570807by5));
+        hashSet5.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.bvp));
+        hashSet5.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f569452bl));
+        hashSet5.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f569445be));
+        hashSet5.add(java.lang.Integer.valueOf(com.p314xaae8f345.mm.R.C30864xbddafb2a.f569446bf));
+        hashMap2.put("LauncherUI", hashSet5);
+        java.util.HashMap hashMap3 = new java.util.HashMap();
+        hashMap3.put(valueOf4, 10);
+        hashMap3.put(valueOf, 12);
+        hashMap3.put(valueOf2, 10);
+        hashMap3.put(valueOf5, 12);
+        hashMap3.put(valueOf6, 12);
+        hashMap3.put(valueOf3, 12);
+        this.f537214c.put("ChattingFragment", hashMap3);
+    }
+}

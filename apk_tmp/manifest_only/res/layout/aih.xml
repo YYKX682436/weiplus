@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/eg9" android:background="@color/w" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/d1y" android:background="@color/u" android:layout_width="match_parent" android:layout_height="@dimen/dv" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/BW_0_Alpha_0_9_Night_Mode" android:gravity="center_vertical" android:id="@id/cut" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:layout_marginLeft="16.0dp" android:text="@string/f2s" android:layout_weight="1.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/d1y" />
+    <View android:background="@drawable/aws" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dv" android:layout_marginTop="@dimen/df" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

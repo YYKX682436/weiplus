@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/m7j" android:layout_width="match_parent" android:layout_height="@dimen/br" app:ds="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/asz" android:background="@color/a8u" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jyc" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="@dimen/bl">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/bpn" android:layout_width="@dimen/br" android:layout_height="match_parent" android:src="@raw/ting_image_empty_lightmode" android:scaleType="centerCrop" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv">
+            <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_9" android:ellipsize="end" android:id="@id/bpr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bj" android:maxLines="5" android:singleLine="false" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:id="@id/bpq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bpo" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="@dimen/d1" android:layout_height="@dimen/d9" android:src="@raw/icons_filled_specialplay" android:scaleType="fitCenter" android:paddingEnd="@dimen/dv" android:paddingVertical="@dimen/dv" app:fs="@color/an" />
+    </LinearLayout>
+</com.tencent.mm.ui.widget.RoundCornerRelativeLayout>

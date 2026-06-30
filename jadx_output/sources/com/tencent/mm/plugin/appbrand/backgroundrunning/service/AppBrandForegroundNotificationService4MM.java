@@ -1,0 +1,5 @@
+package com.tencent.mm.plugin.appbrand.backgroundrunning.service;
+
+/* loaded from: classes7.dex */
+public class AppBrandForegroundNotificationService4MM extends com.tencent.mm.plugin.appbrand.backgroundrunning.service.AppBrandForegroundNotificationService {
+}

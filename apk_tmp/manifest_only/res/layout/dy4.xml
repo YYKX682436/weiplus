@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/d4p" android:padding="12.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="8.0dp" android:layout_weight="1.0" android:elevation="4.0dp" android:layout_marginHorizontal="16.0dp" android:layout_marginVertical="8.0dp">
+        <com.tencent.mm.open_voice_control.debug.A2AVolumeBarView android:id="@id/sfa" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="6.0dp" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp" android:layout_marginVertical="3.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/FG_0" android:ellipsize="start" android:id="@id/sfb" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/sfa" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginEnd="16.0dp" />
+</LinearLayout>

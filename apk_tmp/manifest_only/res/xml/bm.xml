@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <Preference android:key="detail_device_name" android:gc="@layout/byv" android:title="@string/i7m" />
+    <Preference android:key="detail_device_type" android:gc="@layout/byv" android:title="@string/i7o" />
+    <CheckBoxPreference android:defaultValue="false" android:key="detail_device_autologin_switch" android:title="@string/phc" />
+    <PreferenceSmallCategory android:key="small_divider" />
+    <Preference android:key="detail_device_last_active_time" android:gc="@layout/byv" android:title="@string/i7l" />
+    <Preference android:key="my_safe_device_detail_tip" android:gc="@layout/c0h" android:title="@string/i7n" />
+    <PreferenceSmallCategory android:key="small_divider2" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:key="my_safe_device_detail_delete" android:gc="@layout/c_e" />
+</PreferenceScreen>

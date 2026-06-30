@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center_horizontal" android:id="@id/b0n" android:visibility="gone" android:layout_marginTop="@dimen/df" android:layout_marginBottom="@dimen/dn" android:text="@string/vi" style="@style/kz" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/av3" android:background="@drawable/afk" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/b5t" android:background="@color/b" android:layout_width="match_parent" android:layout_height="@dimen/dv" />
+        <TextView android:textSize="@dimen/pl" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/b5u" android:background="@drawable/bcc" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:text="@string/apj" />
+    </LinearLayout>
+</LinearLayout>

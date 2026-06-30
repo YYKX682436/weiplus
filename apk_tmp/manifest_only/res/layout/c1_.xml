@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/adp" android:paddingTop="@dimen/ahx" android:paddingBottom="@dimen/ahx" android:layout_width="@dimen/aie" android:layout_height="wrap_content" android:minHeight="@dimen/aie" app:ds="@dimen/ahq">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/jm_" android:layout_width="@dimen/anx" android:layout_height="@dimen/anw" style="@style/wa" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/ab0" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/jma" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/any" android:layout_marginTop="@dimen/anv" android:layout_marginRight="@dimen/any" />
+    </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+</LinearLayout>

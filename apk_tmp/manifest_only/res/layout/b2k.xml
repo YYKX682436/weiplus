@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ufx" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ufw" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_marginStart="@dimen/df" layout="@layout/b30" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:layout_marginEnd="@dimen/dn">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/u4" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/uqi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/kx3" android:layout_width="@dimen/d1" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_channels_play_quickly_1" android:layout_marginStart="@dimen/c9" app:fs="@color/u4" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/u4" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/kx4" android:padding="@dimen/bl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guf" android:layout_marginStart="@dimen/c9" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/tvk" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_subtitle_icon" android:layout_marginStart="@dimen/c9" app:fs="@color/u4" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/b1x" android:visibility="visible" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/bullet_screen_regular" android:layout_marginStart="@dimen/c9" app:fs="@color/u4" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/ufv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dn" android:layout_marginRight="@dimen/dn" android:layout_marginBottom="@dimen/bl" android:layout_marginHorizontal="@dimen/dn">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/u6" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/h15" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ufu" android:paddingLeft="@dimen/dh" android:paddingRight="@dimen/dh" android:paddingBottom="@dimen/d2" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dh">
+        <com.tencent.mm.plugin.finder.video.FinderHorizontalLongVideoPlayerSeekBar android:id="@id/p08" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hur" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/aur" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+            <Button android:id="@id/azl" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="54.0dp" android:text="@string/g5n" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/mm" />
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:layout_toLeftOf="@id/azl" android:layout_toRightOf="@id/azl" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_toStartOf="@id/azl">
+                <LinearLayout android:id="@id/ihq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                    <TextView android:textSize="36.0dp" android:textColor="@color/a0c" android:id="@id/okn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0dp" android:textColor="@color/a0c" android:id="@id/okl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="12.0dp" android:textColor="@color/tk" android:id="@id/okj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/aaq" android:id="@id/okk" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:layout_width="match_parent" android:layout_height="20.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+package ps3;
+
+/* loaded from: classes11.dex */
+public final class l implements ps3.d {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f439632a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ ps3.m f439633b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ long f439634c;
+
+    public l(java.lang.String str, ps3.m mVar, long j17) {
+        this.f439632a = str;
+        this.f439633b = mVar;
+        this.f439634c = j17;
+    }
+
+    @Override // ps3.d
+    public void a(boolean z17, boolean z18, java.lang.String str, java.lang.String str2) {
+        ps3.m mVar = this.f439633b;
+        if (z17) {
+            com.p314xaae8f345.mm.p2621x8fb0427b.z3 n17 = ((com.p314xaae8f345.mm.p1006xc5476f33.p1863xaa66bb13.p1864x83f804b3.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).Bi().n(str, true);
+            if (n17 == null || ((int) n17.E2) == 0) {
+                com.p314xaae8f345.mm.p2621x8fb0427b.z3 a17 = ps3.m.a(mVar, com.p314xaae8f345.mm.p2621x8fb0427b.e9.f(this.f439632a));
+                if (!(((com.p314xaae8f345.mm.p1006xc5476f33.p1863xaa66bb13.p1864x83f804b3.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).Bi().i0(a17) > 0)) {
+                    com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.RadarAddContact", "canAddContact fail, insert fail");
+                    z17 = false;
+                }
+                n17 = ((com.p314xaae8f345.mm.p1006xc5476f33.p1863xaa66bb13.p1864x83f804b3.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).Bi().n(a17.d1(), true);
+            }
+            c01.e2.m0(n17);
+            ps3.m.b(mVar, str, 1);
+        }
+        mVar.f439641m.mo50293x3498a0(new ps3.k(mVar, z17, str2, str, this.f439634c));
+    }
+}

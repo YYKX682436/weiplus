@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/g9o" android:layout_width="match_parent" android:text="Flutter开关入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/g9j" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="Flutter功能入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/kw5" android:layout_width="match_parent" android:text="代码包入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/c68" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="大秒开入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/piv" android:layout_width="match_parent" android:text="Web入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/jm" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="广告入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/ju" android:layout_width="match_parent" android:text="直播入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/dt9" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="公众号秒开" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/lkw" android:layout_width="match_parent" android:text="推荐入口" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/las" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="Profile测试" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/apm" android:layout_width="match_parent" android:text="公众号" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/phh" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="WebView模式" android:layout_weight="1.0" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/phi" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="WebView打开进程" android:layout_weight="1.0" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/ajg" android:layout_width="match_parent" android:text="视频号直播" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/am6" android:layout_width="match_parent" android:layout_marginLeft="16.0dp" android:text="个人中心" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <ImageView android:id="@id/ha5" android:background="@color/a2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_margin="@dimen/cn" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/as8" android:layout_width="match_parent" android:text="TL视频自动播放" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/s2d" android:layout_width="match_parent" android:text="服务号盒子数据迁移重置" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/akm" android:padding="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="14.0dp" android:id="@id/ajh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="清空直播查询缓存" />
+            <Button android:textSize="14.0dp" android:id="@id/aji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="清空直播查询KV" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/alq" android:padding="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="如插入视频号卡片，请先关注号[乱翻书] [广西综艺旅游频道]" />
+            <com.tencent.mm.ui.base.FlowLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:horizontalSpacing="8.0dp" app:verticalSpacing="8.0dp">
+                <Button android:id="@id/alt" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="大卡：竖图" android:onClick="onClick" android:layout_marginStart="16.0dp" style="@style/hl" />
+                <Button android:id="@id/als" android:paddingLeft="16.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="大卡：接近16:9图" android:onClick="onClick" style="@style/hl" />
+                <Button android:id="@id/alr" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="大卡：很扁横图" android:onClick="onClick" android:layout_marginStart="10.0dp" style="@style/hl" />
+                <Button android:id="@id/alu" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="横滑列表" android:onClick="onClick" android:layout_marginStart="10.0dp" style="@style/hl" />
+            </com.tencent.mm.ui.base.FlowLayout>
+            <com.tencent.mm.ui.base.FlowLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:horizontalSpacing="8.0dp" app:verticalSpacing="8.0dp">
+                <TextView android:textSize="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="插入错过的订阅卡片，请关注[落英行者roywalker][差评]" />
+                <Button android:id="@id/al9" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="错过的订阅-单卡" android:onClick="onClick" android:layout_marginStart="10.0dp" style="@style/hl" />
+                <Button android:id="@id/al_" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="错过的订阅-一带多" android:onClick="onClick" android:layout_marginStart="10.0dp" style="@style/hl" />
+            </com.tencent.mm.ui.base.FlowLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

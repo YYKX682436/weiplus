@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bmz" android:background="@drawable/nr" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/s0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/s2" android:textColor="@color/a0c" android:ellipsize="end" android:layout_gravity="left" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" android:maxLines="2" />
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/tk" android:layout_gravity="left" android:id="@id/o7z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hq" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/kwr" android:padding="2.0dp" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginRight="@dimen/hf" android:layout_marginStart="@dimen/i_">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/gg" />
+            <ImageView android:layout_gravity="center" android:id="@id/kwm" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/biz_voice_playing_icon_inner3" android:scaleType="centerCrop" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

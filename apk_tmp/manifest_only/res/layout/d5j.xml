@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" style="@style/s9">
+        <TextView android:id="@id/hdt" android:text="@string/knb" style="@style/sk" />
+        <LinearLayout style="@style/sy">
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:gravity="right|center" android:id="@id/k3n" android:visibility="gone" android:clickable="false" wallet:dc="false" wallet:dd="false" wallet:de="false" wallet:dp="@color/tk" wallet:titleText="@string/kn8" style="@style/sz" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/bb3" android:minHeight="45.0dp" wallet:contentHint="@string/kn9" wallet:titleText="@string/kn_" style="@style/s8" />
+        </LinearLayout>
+        <Button android:id="@id/kao" android:layout_width="match_parent" android:layout_marginTop="16.0dp" android:text="@string/ww" style="@style/su" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a_w" android:layout_gravity="center_horizontal" android:id="@id/pba" android:paddingBottom="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hf" android:text="@string/kjb" style="@style/se" />
+        <TextView android:layout_gravity="bottom" android:id="@id/pf2" android:layout_height="match_parent" style="@style/t3" />
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/cye" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1386x782d98c9.ui;
+
+/* loaded from: classes3.dex */
+public class r3 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1386x782d98c9.ui.C13472xa1fc2044 f181173d;
+
+    public r3(com.p314xaae8f345.mm.p1006xc5476f33.p1386x782d98c9.ui.C13472xa1fc2044 c13472xa1fc2044) {
+        this.f181173d = c13472xa1fc2044;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/exdevice/ui/ExdeviceProfileAffectedUserView$3", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        this.f181173d.f180831e.performClick();
+        yj0.a.h(this, "com/tencent/mm/plugin/exdevice/ui/ExdeviceProfileAffectedUserView$3", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

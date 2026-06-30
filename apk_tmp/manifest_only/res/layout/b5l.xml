@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/aj5" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/fw1" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginRight="@dimen/dv" android:checked="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/im" />
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f41" android:layout_alignTop="@id/fw1" android:layout_toEndOf="@id/fw1" />
+    <TextView android:textSize="@dimen/f9" android:textColor="@color/FG_2" android:id="@id/fw9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/f42" android:maxLines="2" android:layout_below="@id/obc" android:layout_alignStart="@id/obc" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fm5" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hhj" android:background="@drawable/a8s" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dn" android:layout_marginEnd="@dimen/yu">
+        <ImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@drawable/cil" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_9" android:ellipsize="end" android:id="@id/fr8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/e_6" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="center" android:id="@id/fr7" android:background="@drawable/a6d" android:layout_width="@dimen/dj" android:layout_height="@dimen/d7" android:text="@string/e_5" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eqy" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/yw" android:src="@raw/icons_outlined_close2" android:layout_alignParentEnd="true" app:fs="@color/an" />
+</RelativeLayout>

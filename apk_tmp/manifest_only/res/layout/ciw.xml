@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/me4" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="@dimen/a35" android:textColor="@color/v2" android:id="@id/h0j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bso" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/a35" android:textColor="@color/v2" android:id="@id/h0i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bsf" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/me8" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+        <ImageView android:id="@id/me6" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/brg" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/mdv" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/brf" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/a38" android:textColor="@color/a0c" android:id="@id/men" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_toLeftOf="@id/mdv" android:layout_toRightOf="@id/me6" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mfe" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/a15" android:layout_width="@dimen/a37" android:layout_height="@dimen/a37" android:layout_marginLeft="@dimen/a39" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/dz" android:layout_alignParentLeft="true" />
+            <Button android:textStyle="bold" android:id="@id/hh9" android:layout_marginLeft="5.0dp" android:layout_marginTop="22.0dp" android:layout_marginRight="16.0dp" android:text="下载" android:layout_alignParentRight="true" style="@style/ks" />
+            <LinearLayout android:orientation="vertical" android:id="@id/mei" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/a39" android:layout_marginBottom="8.0dp" android:layout_toLeftOf="@id/hh9" android:layout_toRightOf="@id/a15">
+                <TextView android:textSize="@dimen/a38" android:textColor="@color/v2" android:id="@id/a1p" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/a21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/a6v" android:id="@id/a1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="8.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:id="@id/gkx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:id="@id/go0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:id="@id/gpg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_marginLeft="2.0dp" android:src="@raw/download_right_arrow" app:fs="@color/FG_2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:id="@id/l5k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hls" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_marginLeft="2.0dp" android:src="@raw/download_right_arrow" app:fs="@color/FG_2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp">
+                    <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:id="@id/l5w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hlu" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_marginLeft="2.0dp" android:src="@raw/download_right_arrow" app:fs="@color/FG_2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp">
+                    <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:id="@id/qeu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lpw" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_marginLeft="2.0dp" android:src="@raw/download_right_arrow" app:fs="@color/FG_2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

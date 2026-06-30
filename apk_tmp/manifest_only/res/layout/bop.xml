@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/l3r" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/l44" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/m_h" android:layout_width="match_parent" android:layout_height="48.0dp" android:src="@drawable/ceh" android:layout_centerHorizontal="true" />
+    <include layout="@layout/ei9" />
+    <ImageView android:id="@id/gdq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/juk" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="@dimen/gz" android:textColor="#b3ffffff" android:id="@id/juo" android:visibility="invisible" android:text="@string/i_i" android:singleLine="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/pc" />
+    <ImageView android:id="@id/ma3" android:padding="@dimen/i_" android:visibility="gone" android:layout_width="@dimen/a9g" android:layout_height="@dimen/a9g" android:src="@raw/scan_success_mark_dot" android:contentDescription="@string/h0f" />
+</merge>

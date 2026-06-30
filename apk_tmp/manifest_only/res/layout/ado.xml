@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/oh9" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/l9m" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:background="@drawable/awr" android:layout_width="match_parent" android:layout_height="match_parent" app:loadMoreLayout="@layout/bs5">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/oh8" android:background="@color/a9e" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.view.RefreshLoadMoreLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/dg3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/lbi" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/c6" android:indeterminateDrawable="@drawable/avj" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/m2g" android:paddingTop="@dimen/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cuw" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:layout_gravity="center_horizontal" android:id="@id/dft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:text="@string/era" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/oah" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/ack" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/m7g" android:background="@color/ac1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pz5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/pz6">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pza" android:background="@drawable/cjp" android:layout_width="match_parent" android:layout_height="@dimen/d9" android:layout_marginTop="@dimen/c8" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/actionbar_icon_light_search" android:layout_marginStart="@dimen/bl" app:fs="@color/FG_2" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_2" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jm8" android:singleLine="true" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/bl" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/nvf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:paddingStart="@dimen/dv">
+            <com.google.android.material.tabs.TabLayout android:id="@id/nup" android:layout_width="wrap_content" android:layout_height="@dimen/db" app:jd="bdp" app:jf="@drawable/ck9" app:jh="@color/a0c" app:ji="true" app:jk="2.0dp" app:tabMinWidth="@dimen/dd" app:jm="mcp" app:jn="0.0dp" app:jo="0.0dp" app:jq="@color/a0c" app:jt="@color/jj" />
+        </FrameLayout>
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <FrameLayout android:id="@id/pz9" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <include android:id="@id/pz7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/pz6" layout="@layout/dhj" />
+    <include android:id="@id/pz6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/dia" />
+</RelativeLayout>

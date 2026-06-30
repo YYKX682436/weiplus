@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/d7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/i9c" android:layout_width="match_parent" android:layout_height="@dimen/d7">
+        <FrameLayout android:background="@drawable/a3j" android:layout_width="match_parent" android:layout_height="match_parent">
+            <SeekBar android:id="@id/cmp" android:padding="0.0dp" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/d7" android:maxHeight="@dimen/d7" android:progressDrawable="@drawable/a3l" android:minHeight="@dimen/d7" android:thumb="@drawable/bdd" />
+        </FrameLayout>
+        <ScrollView android:id="@id/cms" android:focusable="false" android:scrollbars="none" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:id="@id/i9_" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/i9a" android:paddingLeft="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/d7" />
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/i9b" android:paddingLeft="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/d7" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/cn" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0dp" android:textColor="@color/an" android:id="@id/cmq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/cmr" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="20.0dp" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_arrow" app:fs="@color/BW_100_Alpha_0_5" />
+        </LinearLayout>
+        <View android:id="@id/byc" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</FrameLayout>

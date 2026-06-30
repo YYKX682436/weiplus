@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/zz" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="43.0dp" android:paddingTop="33.0dp" android:paddingRight="43.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="center" android:id="@id/lz9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bkk" />
+            <TextView android:id="@id/lzb" android:text="@string/k47" style="@style/wl" />
+            <TextView android:id="@id/lza" android:visibility="gone" android:text="@string/jxo" style="@style/wm" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lz7" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/p1l" android:visibility="gone" android:layout_marginTop="20.0dp" android:text="@string/k8q" style="@style/kq" />
+                <TextView android:id="@id/lz_" android:visibility="gone" android:layout_marginTop="5.0dp" android:text="@string/i1y" style="@style/wm" />
+                <Button android:id="@id/mly" android:visibility="gone" android:layout_marginTop="20.0dp" android:text="@string/iie" style="@style/kq" />
+                <TextView android:id="@id/mlp" android:visibility="gone" android:layout_marginTop="5.0dp" android:layout_marginBottom="20.0dp" android:text="@string/iif" style="@style/wm" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

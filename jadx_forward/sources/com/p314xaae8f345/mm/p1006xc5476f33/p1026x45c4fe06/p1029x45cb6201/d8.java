@@ -1,0 +1,14 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201;
+
+/* loaded from: classes7.dex */
+public class d8 implements android.os.Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public java.lang.Object createFromParcel(android.os.Parcel parcel) {
+        return new com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.C11660xa0d206d((com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.C11667xc7e59dd6) parcel.readParcelable(com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.C11667xc7e59dd6.class.getClassLoader()));
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public java.lang.Object[] newArray(int i17) {
+        return new com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.C11660xa0d206d[i17];
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <PreferenceTitleCategory android:title="@string/ien" />
+    <CheckPreference android:key="settings_half_year_not_chat" android:gc="@layout/byv" android:title="@string/irc" />
+    <CheckPreference android:key="settings_has_not_same_chatroom" android:gc="@layout/byv" android:title="@string/ire" />
+    <CheckPreference android:key="settings_half_year_not_response" android:gc="@layout/byv" android:title="@string/ird" />
+    <PreferenceCategory />
+    <PreferenceCategory />
+    <TextButtonPreference android:key="settings_next_step" android:title="@string/j0j" />
+</PreferenceScreen>

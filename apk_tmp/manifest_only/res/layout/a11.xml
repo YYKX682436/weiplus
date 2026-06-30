@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/e4r" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:layout_gravity="center_vertical" android:id="@id/e4q" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/d7" />
+        <FrameLayout android:layout_gravity="end|center" android:id="@id/e4c" android:background="@drawable/h8" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:importantForAccessibility="noHideDescendants" android:layout_marginEnd="@dimen/c8">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/e4b" android:layout_width="10.0dp" android:layout_height="5.0dp" android:src="@raw/unfold_down_arrow" app:fs="@color/a1p" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/e4s" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="10.0dp" android:layout_below="@id/e4r" android:layout_marginEnd="@dimen/d7" />
+</RelativeLayout>

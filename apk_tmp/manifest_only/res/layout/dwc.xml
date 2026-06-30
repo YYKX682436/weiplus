@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/nhy" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp">
+        <TextView android:textSize="20.0dp" android:textColor="@color/a2y" android:gravity="center" android:id="@id/ri8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dp" android:text="仅DEBUG展示信息用" />
+        <TextView android:textSize="20.0dp" android:textColor="@color/a2y" android:gravity="center" android:id="@id/ri9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:text="仅DEBUG展示信息用" />
+        <TextView android:textSize="22.0dp" android:textColor="@color/an" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ni2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dp" android:text="@string/i8v" />
+        <TextView android:textSize="22.0dp" android:textColor="@color/an" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/r_o" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dp" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/q45" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp">
+        <ImageView android:id="@id/ra9" android:layout_width="46.0dp" android:layout_height="46.0dp" android:src="@drawable/b6m" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/sab" android:layout_width="46.0dp" android:layout_height="46.0dp" android:src="@drawable/b6m" android:layout_alignParentTop="true" android:rotation="90.0" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/r_q" android:layout_width="46.0dp" android:layout_height="46.0dp" android:src="@drawable/b6m" android:layout_alignParentBottom="true" android:rotation="270.0" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/saa" android:layout_width="46.0dp" android:layout_height="46.0dp" android:src="@drawable/b6m" android:layout_alignParentBottom="true" android:rotation="180.0" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/sb6" android:layout_width="91.0dp" android:layout_height="86.0dp" android:layout_marginTop="48.0dp" android:src="@drawable/b6u" android:layout_marginStart="20.0dp" />
+    </RelativeLayout>
+</RelativeLayout>

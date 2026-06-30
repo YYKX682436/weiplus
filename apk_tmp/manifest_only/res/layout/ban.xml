@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@id/g7_" android:layout_width="match_parent" android:layout_height="110.0dp" android:layout_marginTop="40.0dp" />
+        <TextView android:gravity="center" android:id="@id/g7b" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" style="@style/j0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ngw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+            <TextView android:textSize="18.0dp" android:textColor="@color/a0c" android:gravity="center" android:id="@id/g7e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" />
+            <ProgressBar android:id="@id/g7a" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" style="@style/kf" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:gravity="center" android:id="@id/g7c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="25.0dp" />
+            <Button android:id="@id/g79" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bf" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/bf" android:text="@string/fa1" style="@style/kq" />
+            <Button android:id="@id/g75" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bf" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/bf" android:text="@string/aq7" style="@style/kv" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

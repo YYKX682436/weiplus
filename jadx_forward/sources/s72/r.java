@@ -1,0 +1,65 @@
+package s72;
+
+/* loaded from: classes12.dex */
+public final class r extends qz5.l implements yz5.p {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f485671d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ s72.j0 f485672e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ java.util.List f485673f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f485674g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final /* synthetic */ yz5.a f485675h;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public r(s72.j0 j0Var, java.util.List list, java.lang.String str, yz5.a aVar, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        super(2, interfaceC29045xdcb5ca57);
+        this.f485672e = j0Var;
+        this.f485673f = list;
+        this.f485674g = str;
+        this.f485675h = aVar;
+    }
+
+    @Override // qz5.a
+    /* renamed from: create */
+    public final p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 mo148xaf65a0fc(java.lang.Object obj, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        return new s72.r(this.f485672e, this.f485673f, this.f485674g, this.f485675h, interfaceC29045xdcb5ca57);
+    }
+
+    @Override // yz5.p
+    /* renamed from: invoke */
+    public java.lang.Object mo149xb9724478(java.lang.Object obj, java.lang.Object obj2) {
+        return ((s72.r) mo148xaf65a0fc((p3325xe03a0797.p3326xc267989b.y0) obj, (p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57) obj2)).mo150x989b7ca4(jz5.f0.f384359a);
+    }
+
+    @Override // qz5.a
+    /* renamed from: invokeSuspend */
+    public final java.lang.Object mo150x989b7ca4(java.lang.Object obj) {
+        pz5.a aVar = pz5.a.f440719d;
+        int i17 = this.f485671d;
+        if (i17 == 0) {
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+            this.f485671d = 1;
+            java.util.HashSet hashSet = s72.j0.f485602i;
+            s72.j0 j0Var = this.f485672e;
+            j0Var.getClass();
+            if (((p3325xe03a0797.p3326xc267989b.g1) s72.x0.f485704a.a("handleBatchGetXml", new s72.q(this.f485673f, this.f485674g, j0Var, null))).k(this) == aVar) {
+                return aVar;
+            }
+        } else {
+            if (i17 != 1) {
+                throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+        }
+        this.f485675h.mo152xb9724478();
+        return jz5.f0.f384359a;
+    }
+}

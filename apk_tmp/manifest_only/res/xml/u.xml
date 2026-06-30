@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:key="contact_info_masssend_header_helper" android:gc="@layout/c9y" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_masssend_view" android:gc="@layout/byv" android:title="@string/bey" />
+    <Preference android:key="contact_info_masssend_clear_data" android:gc="@layout/byv" android:title="@string/bcu" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwn" android:key="contact_info_masssend_install" android:gc="@layout/c_e" android:title_color="@color/aaq" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwr" android:key="contact_info_masssend_uninstall" android:gc="@layout/c_e" android:title_color="@color/ac" />
+    <PreferenceCategory />
+</PreferenceScreen>

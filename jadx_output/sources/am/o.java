@@ -1,0 +1,20 @@
+package am;
+
+/* loaded from: classes8.dex */
+public final class o {
+
+    /* renamed from: a, reason: collision with root package name */
+    public int f7493a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public android.content.Context f7494b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public java.lang.String f7495c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public boolean f7496d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public boolean f7497e;
+}

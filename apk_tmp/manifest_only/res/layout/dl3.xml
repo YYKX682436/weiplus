@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center_horizontal" android:id="@id/qtz" android:layout_width="83.0dp" android:layout_height="83.0dp" layout="@layout/dl4" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/qub" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn">
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_marginLeft="@dimen/dv" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_marginLeft="@dimen/dv" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_marginLeft="@dimen/dv" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/quc" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dv">
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_marginLeft="@dimen/dv" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_marginLeft="@dimen/dv" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+        <include android:layout_width="83.0dp" android:layout_height="83.0dp" android:layout_marginLeft="@dimen/dv" android:layout_centerHorizontal="true" layout="@layout/dl4" />
+    </LinearLayout>
+</LinearLayout>

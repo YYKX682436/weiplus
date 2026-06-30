@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/rpd" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+    <com.tencent.mm.plugin.sns.ui.improve.view.flexible.FlexibleVideoView android:id="@id/rpo" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/rpe" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="bottom" android:id="@id/gzz" android:background="@drawable/c6l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/u4v" android:layout_alignParentBottom="true" />
+        <com.tencent.mm.ui.widget.InsectLinearLayout android:gravity="center|bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/u4v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/eh3" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rpk" android:background="@drawable/d9c" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/cz" android:layout_marginBottom="@dimen/aih" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/c9" android:textColor="@color/an" android:layout_gravity="center" android:id="@id/onp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/c9" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/c9" app:fs="@color/an" />
+            </LinearLayout>
+            <ViewStub android:gravity="center" android:id="@id/v9a" android:paddingBottom="@dimen/ajw" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.ui.widget.InsectLinearLayout>
+        <Button android:id="@id/gne" android:visibility="gone" style="@style/vz" />
+    </RelativeLayout>
+</FrameLayout>

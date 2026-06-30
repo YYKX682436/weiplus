@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/q2" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/a0c" android:id="@id/kjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UI: xxxx Activity" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/a0c" android:id="@id/kjn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Type: Texture" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/a0c" android:id="@id/kjk" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="ID: 1234" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/a0c" android:id="@id/kjh" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="EGLContext: 123456" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/a0c" android:id="@id/kjl" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="ThreadId: 123456" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView android:textSize="8.0sp" android:textColor="@color/a0c" android:id="@id/kji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JavaStack: at xxx\nat xxxx" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/a0c" android:id="@id/kjj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NativeStack: xxxx\nxxxx\nxxxx" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+    <View android:background="@color/k0" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dp" />
+</LinearLayout>

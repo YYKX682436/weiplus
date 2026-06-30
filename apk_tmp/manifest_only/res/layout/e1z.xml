@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/otv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/em">
+        <TextView android:layout_gravity="right" android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ui2" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bqx" android:visibility="gone" style="@style/es" />
+            <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingImgMvvmView android:id="@id/sqi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.tencent.mm.chatting.mvvmview.widget.ChattingMsgSourceView android:id="@id/srn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/tz" />
+</LinearLayout>

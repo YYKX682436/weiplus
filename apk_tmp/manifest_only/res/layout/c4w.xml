@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/cbr" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/aaq" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/aap" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:background="@drawable/as0" android:layout_width="match_parent" android:layout_height="@dimen/cu" android:layout_alignParentTop="true" />
+    <View android:background="@drawable/arx" android:layout_width="match_parent" android:layout_height="@dimen/cu" android:layout_alignParentBottom="true" />
+    <com.tencent.mm.plugin.mv.ui.widget.MvTracksEditView android:id="@id/cn0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="132.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:indicatorDrawable="@drawable/ar2" app:thumbHeight="@dimen/df" app:thumbWidth="@dimen/df" />
+    <Button android:id="@id/c8v" android:background="@drawable/jk" android:layout_width="@dimen/cf" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/dj" android:text="@string/v5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kq" />
+    <LinearLayout android:id="@id/mid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/b5r" android:background="@drawable/are" android:padding="20.0dp" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/icons_outlined_close" app:fs="@color/an" />
+        <FrameLayout android:id="@id/c8w" android:background="@drawable/arf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dr">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:padding="20.0dp" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/icons_outlined_done" app:fs="@color/an" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ctc" android:background="@color/ac" android:visibility="gone" android:layout_width="match_parent" android:layout_height="98.0dp" android:layout_alignParentBottom="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/cta" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginTop="@dimen/dv" android:src="@raw/icons_filled_delete" android:layout_centerHorizontal="true" app:fs="@color/aaw" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/aaw" android:id="@id/ctm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/h5d" android:layout_below="@id/cta" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.music.ui.LyricView android:ellipsize="end" android:id="@id/j7q" android:fadingEdge="vertical" android:fadingEdgeLength="10.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:requiresFadingEdge="vertical" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" />
+</RelativeLayout>

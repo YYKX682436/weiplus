@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="start|center" android:id="@id/imc" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/dv" style="@style/w9" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/an" android:layout_gravity="right|center" android:id="@id/imj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/k6e" android:layout_marginStart="@dimen/d7" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/aft" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_margin="6.0dp" android:src="@raw/icons_filled_cutie" />
+</merge>

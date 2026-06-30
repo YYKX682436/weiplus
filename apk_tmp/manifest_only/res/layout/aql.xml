@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/qjx" android:background="@drawable/coi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/c2" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn">
+        <RelativeLayout android:id="@id/qjy" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/exp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/dd7" android:layout_marginStart="@dimen/cn" />
+            <TextView android:textSize="@dimen/r" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/exg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="" android:lines="3" android:layout_below="@id/exp" android:layout_alignStart="@id/exp" />
+            <ImageView android:id="@id/exi" android:layout_width="72.0dp" android:layout_height="72.0dp" android:layout_marginLeft="@dimen/cz" android:scaleType="centerCrop" android:layout_alignTop="@id/exg" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/qjp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_100_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/dd7" android:layout_marginStart="@dimen/cn" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_lock" app:fs="@color/BW_100_Alpha_0_5" />
+                <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/fpv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/qjm" android:background="@drawable/coi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/by" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/cn">
+        <RelativeLayout android:id="@id/qjn" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/qjo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/ltw" android:layout_marginStart="@dimen/cn" />
+            <com.tencent.mm.ui.widget.RoundCornerImageView android:id="@id/tm" android:layout_width="@dimen/d9" android:layout_height="@dimen/d9" android:layout_marginTop="@dimen/cs" android:layout_below="@id/qjo" android:layout_marginStart="@dimen/cn" app:i8="@dimen/bl" />
+            <TextView android:textSize="@dimen/xt" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/fd3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tm" android:layout_alignTop="@id/tm" android:layout_marginStart="@dimen/c9" />
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/fd7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:layout_below="@id/fd3" android:layout_alignStart="@id/fd3" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/an" android:gravity="center" android:id="@id/qhw" android:background="@drawable/a2n" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:text="复制微信号" android:layout_alignTop="@id/fd3" android:paddingStart="@dimen/ca" android:paddingEnd="@dimen/ca" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/qjl" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_100_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/ltw" android:layout_marginStart="@dimen/cn" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_lock" app:fs="@color/BW_100_Alpha_0_5" />
+                <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成为年付费超级粉丝可见" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/qqa" android:background="@drawable/coi" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/qqb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="超粉专享" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/qq_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:weightSum="4.0" android:layout_below="@id/qqb" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dsc" android:background="@drawable/coi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/cn">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cs" android:text="@string/lu5" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/m3y" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/cz" />
+    </LinearLayout>
+</LinearLayout>

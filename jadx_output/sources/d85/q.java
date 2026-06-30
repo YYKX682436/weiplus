@@ -1,0 +1,26 @@
+package d85;
+
+/* loaded from: classes6.dex */
+public class q implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f227237d = 0;
+
+    public q(d85.r rVar, d85.p pVar) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f227237d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f227237d;
+        this.f227237d = i17 + 1;
+        if (i17 == 0) {
+            return d85.f1.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

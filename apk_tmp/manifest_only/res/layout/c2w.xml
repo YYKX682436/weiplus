@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/c2u" />
+    <FrameLayout android:id="@id/d8b" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_gravity="top" android:background="@drawable/s9" android:layout_width="match_parent" android:layout_height="@dimen/bw" />
+        <View android:layout_gravity="bottom" android:background="@drawable/rs" android:layout_width="match_parent" android:layout_height="@dimen/cu" />
+    </FrameLayout>
+    <include android:id="@id/jvr" layout="@layout/c2v" />
+    <include android:id="@id/k03" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_centerHorizontal="true" layout="@layout/dbv" />
+    <include android:id="@id/o1b" layout="@layout/c2s" />
+    <TextView android:id="@id/h99" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ci" android:text="@string/fz4" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ks" />
+    <RelativeLayout android:id="@id/l41" android:background="@drawable/b95" android:visibility="gone" android:layout_width="@dimen/d9" android:layout_height="@dimen/d9" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorPanelHolder android:id="@id/d91" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorPanelHolder android:id="@id/d90" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorPanelHolder android:id="@id/d7u" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorPanelHolder android:id="@id/d7t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorPanelHolder android:id="@id/d8k" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorPanelHolder android:id="@id/d8l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/pvl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorPanelHolder android:id="@id/d8c" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textColor="@color/a2y" android:id="@id/oyh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</merge>

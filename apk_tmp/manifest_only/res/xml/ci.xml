@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:newtip="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <PreferenceTitleCategory newtip:title="@string/lxs" />
+    <IconPreference newtip:key="settings_dark" newtip:gc="@layout/byv" newtip:title="@string/iqf" />
+    <CheckBoxPreference newtip:defaultValue="false" newtip:key="settings_landscape_mode" newtip:title="@string/iro" />
+    <CheckBoxPreference newtip:defaultValue="false" newtip:key="settings_nfc_switch" newtip:title="@string/iub" />
+    <Preference newtip:key="settings_silence_update_mode" newtip:gc="@layout/byv" newtip:title="@string/iy9" />
+    <Preference newtip:key="settings_language" newtip:gc="@layout/byv" newtip:title="@string/irp" />
+    <Preference newtip:key="settings_translate_language_introduce" newtip:gc="@layout/byv" newtip:title="@string/lxz" />
+    <PreferenceTitleCategory newtip:title="@string/lxt" />
+    <Preference newtip:key="settngs_clean" newtip:gc="@layout/byv" newtip:title="@string/iu2" />
+    <Preference newtip:key="settings_text_size" newtip:gc="@layout/byv" newtip:title="@string/izv" />
+    <Preference newtip:key="settings_take_photo" newtip:gc="@layout/byv" newtip:title="@string/iwf" />
+    <Preference newtip:key="settings_music_and_audio" newtip:gc="@layout/byv" newtip:title="@string/lfp" />
+    <Preference newtip:key="settings_manage_findmoreui" newtip:gc="@layout/byv" newtip:title="@string/is_" />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference newtip:key="settings_plugins" newtip:path="wechattools" newtip:title="@string/iwi" />
+    <Preference newtip:key="settings_traffic_statistic" newtip:gc="@layout/byv" newtip:title="@string/j00" />
+    <Preference newtip:key="settngs_matrix_trace" newtip:gc="@layout/byv" newtip:title="@string/isp" />
+    <PreferenceCategory />
+</PreferenceScreen>

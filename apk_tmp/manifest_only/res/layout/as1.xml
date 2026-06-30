@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="350.0dp" android:layout_height="@dimen/by" app:ds="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/f3j" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/h1" android:textColor="@color/an" android:id="@id/f3n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:text="@string/dj6" android:includeFontPadding="false" />
+        <ImageView android:id="@id/f3l" android:layout_width="@dimen/d8" android:layout_height="@dimen/d8" />
+        <TextView android:textSize="@dimen/l" android:textColor="@color/an" android:id="@id/f3i" android:layout_width="@dimen/df" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/bl" android:includeFontPadding="false" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/f3k" android:visibility="invisible" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_pencil" app:fs="@color/an" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/f3m" android:layout_width="@dimen/bw" android:layout_height="@dimen/bw" android:layout_marginLeft="-24.0dp" android:alpha="0.1" />
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

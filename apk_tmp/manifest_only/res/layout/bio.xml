@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/va" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/gu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:text="@string/fsm" android:layout_alignParentRight="true" />
+    <View android:id="@id/guu" android:background="@color/BW_90" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/kuq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cz">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/a0c" android:id="@id/ku_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13456545676" android:layout_marginEnd="@dimen/cz" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/tk" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/fss" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="right" android:id="@id/kum" android:layout_width="25.0dp" android:layout_height="20.0dp" android:src="@raw/phone_number_check_icon" />
+    </LinearLayout>
+    <View android:background="@color/BW_90" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d1">
+        <Button android:textSize="@dimen/j4" android:id="@id/b5i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dp" android:minHeight="@dimen/db" android:text="@string/fsz" style="@style/kz" />
+        <Button android:textSize="@dimen/j4" android:id="@id/khs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:minWidth="120.0dp" android:minHeight="@dimen/db" android:text="@string/ft0" style="@style/kr" />
+    </LinearLayout>
+</LinearLayout>

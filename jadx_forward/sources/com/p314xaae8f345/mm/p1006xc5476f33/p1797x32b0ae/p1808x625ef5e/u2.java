@@ -1,0 +1,42 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1797x32b0ae.p1808x625ef5e;
+
+/* loaded from: classes15.dex */
+public class u2 implements vg3.q4 {
+    @Override // vg3.q4
+    public com.p314xaae8f345.mm.p944x882e457a.q0 k7(java.lang.String str, java.util.Map map, com.p314xaae8f345.mm.p944x882e457a.p0 p0Var) {
+        if (!gm0.j1.a()) {
+            return null;
+        }
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.LiteAppNewXmlConsumer", "liteapp consumeNewXml subtype: %s values: %s", str, map.toString());
+        if (!map.containsKey(".sysmsg.mmlite.pkg_cdn_url") || !map.containsKey(".sysmsg.mmlite.app_id") || !map.containsKey(".sysmsg.mmlite.pkg_ecsda_pubkey") || !map.containsKey(".sysmsg.mmlite.pkg_md5")) {
+            return null;
+        }
+        if (((java.lang.String) map.get(".sysmsg.mmlite.app_id")).equals(com.p314xaae8f345.mm.p1006xc5476f33.p1797x32b0ae.AbstractC16186x8412d8a8.f37141xc474b466)) {
+            oq1.q qVar = new oq1.q();
+            qVar.f428879a = (java.lang.String) map.get(".sysmsg.mmlite.app_id");
+            qVar.f428882d = (java.lang.String) map.get(".sysmsg.mmlite.pkg_cdn_url");
+            qVar.f428883e = (java.lang.String) map.get(".sysmsg.mmlite.pkg_md5");
+            qVar.f428885g = (java.lang.String) map.get(".sysmsg.mmlite.pkg_ecsda_pubkey");
+            com.p314xaae8f345.mm.p1006xc5476f33.p1797x32b0ae.p1808x625ef5e.c1.INSTANCE.d(qVar, "debug", null, null, new com.p314xaae8f345.mm.p1006xc5476f33.p1797x32b0ae.p1808x625ef5e.t2(this));
+        } else {
+            oq1.q qVar2 = new oq1.q();
+            qVar2.f428879a = (java.lang.String) map.get(".sysmsg.mmlite.app_id");
+            qVar2.f428882d = (java.lang.String) map.get(".sysmsg.mmlite.pkg_cdn_url");
+            qVar2.f428883e = (java.lang.String) map.get(".sysmsg.mmlite.pkg_md5");
+            qVar2.f428885g = (java.lang.String) map.get(".sysmsg.mmlite.pkg_ecsda_pubkey");
+            java.lang.String[] strArr = new java.lang.String[2];
+            int i17 = 0;
+            if (map.containsKey(".sysmsg.mmlite.entry") && !((java.lang.String) map.get(".sysmsg.mmlite.entry")).isEmpty()) {
+                com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.LiteAppNewXmlConsumer", "liteapp consumeNewXml entry:" + ((java.lang.String) map.get(".sysmsg.mmlite.entry")));
+                strArr = ra3.h0.e((java.lang.String) map.get(".sysmsg.mmlite.entry"), false);
+            }
+            java.lang.String[] strArr2 = strArr;
+            if (map.containsKey(".sysmsg.mmlite.is_half_screen") && !((java.lang.String) map.get(".sysmsg.mmlite.is_half_screen")).isEmpty()) {
+                i17 = java.lang.Integer.parseInt((java.lang.String) map.get(".sysmsg.mmlite.is_half_screen"));
+            }
+            int i18 = i17;
+            com.p314xaae8f345.mm.p1006xc5476f33.p1797x32b0ae.p1808x625ef5e.c1.INSTANCE.b(qVar2, "debug", null, null, new com.p314xaae8f345.mm.p1006xc5476f33.p1797x32b0ae.p1808x625ef5e.s2(this, strArr2, i18, (1 == i18 && map.containsKey(".sysmsg.mmlite.height_percent") && !((java.lang.String) map.get(".sysmsg.mmlite.height_percent")).isEmpty()) ? java.lang.Integer.parseInt((java.lang.String) map.get(".sysmsg.mmlite.height_percent")) / 100.0f : 0.0d));
+        }
+        return null;
+    }
+}

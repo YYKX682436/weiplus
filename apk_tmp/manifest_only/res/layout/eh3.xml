@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/u2d" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/q" android:textColor="@color/adh" android:id="@id/u2b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#33000000" android:shadowDx="3.0" android:shadowDy="3.0" android:shadowRadius="1.0" />
+    <FrameLayout android:layout_width="30.0dp" android:layout_height="24.0dp" android:layout_centerVertical="true" android:layout_toEndOf="@id/kwl">
+        <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/video_time_separator" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/q" android:textColor="@color/abx" android:id="@id/u2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#33000000" android:shadowDx="3.0" android:shadowDy="3.0" android:shadowRadius="1.0" android:paddingStart="0.0dp" android:paddingEnd="1.0dp" />
+</LinearLayout>

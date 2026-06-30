@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.profile.ui.NormalProfileHeaderPreference android:key="contact_profile_header_normal" android:gc="@layout/a2l" />
+    <PreferenceSmallCategory />
+    <KeyValuePreference android:key="contact_info_chatbot_intro" android:title="@string/be6" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="contact_info_chatbot_top" android:gc="@layout/byv" android:persistent="false" android:title="@string/bf7" />
+    <CheckBoxPreference android:key="contact_info_chatbot_not_disturb" android:gc="@layout/byv" android:persistent="false" android:title="@string/bf5" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/bgx" android:key="contact_info_chatbot_send_msg" android:gc="@layout/byw" android:title_color="@color/a5" />
+</PreferenceScreen>

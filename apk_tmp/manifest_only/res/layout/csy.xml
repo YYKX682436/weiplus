@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/jdl" android:background="@drawable/b26" android:padding="@dimen/f" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="42.0dp">
+        <com.tencent.mm.plugin.sns.ui.TagImageView android:layout_gravity="center_vertical" android:id="@id/h9t" android:layout_width="42.0dp" android:layout_height="42.0dp" android:scaleType="centerCrop" android:maxHeight="350.0dp" android:contentDescription="@string/jar" />
+        <ImageView android:layout_gravity="center" android:id="@id/nh7" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:maxHeight="350.0dp" android:importantForAccessibility="no" />
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/chh" android:background="@color/a" android:visibility="gone" android:layout_width="42.0dp" android:layout_height="42.0dp" android:maxLines="3" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/j3">
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/odj" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false" />
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="12.0dp" android:textColor="@color/a6q" android:id="@id/m4o" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

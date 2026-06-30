@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/coi" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dp" android:text="@string/e13" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/nqq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/e17" />
+    <EditText android:textSize="15.0dp" android:id="@id/d98" android:background="@drawable/at_" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_marginTop="32.0dp" android:minHeight="44.0dp" android:hint="@string/e15" android:singleLine="false" style="@style/ir" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Red_100" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/dhl" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/cs" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/c9" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="64.0dp">
+        <Button android:textSize="17.0dp" android:textColor="@color/g5" android:layout_gravity="center_horizontal" android:id="@id/d23" android:background="@drawable/ata" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginRight="16.0dp" android:minWidth="120.0dp" android:text="@string/e16" />
+        <Button android:textSize="17.0dp" android:textColor="@color/io" android:layout_gravity="center_horizontal" android:id="@id/kao" android:background="@drawable/jk" android:layout_width="wrap_content" android:layout_height="48.0dp" android:minWidth="120.0dp" android:text="@string/e14" />
+    </LinearLayout>
+</LinearLayout>

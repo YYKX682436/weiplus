@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/bqz" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/chatting_status_tick" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/bqx" android:src="@drawable/b3i" style="@style/es" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bjy" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/em">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/bkg" android:layout_width="@dimen/ac2" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/bn" app:ds="@dimen/bl">
+            <com.tencent.mm.plugin.ting.widget.TingChatRoomView android:id="@id/srq" android:layout_width="@dimen/ac2" android:layout_height="match_parent" />
+            <ImageView android:id="@id/bko" android:background="@drawable/mf" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    </LinearLayout>
+    <include layout="@layout/tz" style="@style/eh" />
+</LinearLayout>

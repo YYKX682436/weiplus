@@ -1,0 +1,115 @@
+package e04;
+
+/* loaded from: classes12.dex */
+public class w2 {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final java.util.concurrent.ExecutorService f327681c = ((ku5.t0) ku5.t0.f394148d).p("ScanTranslationRender");
+
+    /* renamed from: a, reason: collision with root package name */
+    public volatile int f327682a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public volatile e04.v2 f327683b;
+
+    public static android.graphics.Bitmap a(e04.w2 w2Var, android.graphics.Bitmap bitmap, android.graphics.Rect rect) {
+        w2Var.getClass();
+        int height = (int) (rect.height() * 0.1f);
+        int width = ((int) (rect.width() * 0.1f)) / 2;
+        int i17 = rect.left - width;
+        if (i17 < 0) {
+            i17 = 0;
+        }
+        rect.left = i17;
+        int i18 = height / 2;
+        int i19 = rect.top - i18;
+        if (i19 < 0) {
+            i19 = 0;
+        }
+        rect.top = i19;
+        rect.right = rect.right + width > bitmap.getWidth() ? bitmap.getWidth() : width + rect.right;
+        rect.bottom = rect.bottom + i18 > bitmap.getHeight() ? bitmap.getHeight() : rect.bottom + i18;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.ScanTranslationRender", "get bg area rect %s", rect);
+        int i27 = rect.left;
+        int i28 = rect.top;
+        int width2 = rect.width();
+        int height2 = rect.height();
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        java.lang.ThreadLocal threadLocal = zj0.c.f554818a;
+        arrayList.add(java.lang.Integer.valueOf(height2));
+        arrayList.add(java.lang.Integer.valueOf(width2));
+        arrayList.add(java.lang.Integer.valueOf(i28));
+        arrayList.add(java.lang.Integer.valueOf(i27));
+        arrayList.add(bitmap);
+        java.lang.Object obj = new java.lang.Object();
+        java.util.Collections.reverse(arrayList);
+        yj0.a.d(obj, arrayList.toArray(), "com/tencent/mm/plugin/scanner/util/ScanTranslationRender", "getBgAreaBitmap", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;)Landroid/graphics/Bitmap;", "android/graphics/Bitmap_EXEC_", "createBitmap", "(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;");
+        android.graphics.Bitmap createBitmap = android.graphics.Bitmap.createBitmap((android.graphics.Bitmap) arrayList.get(0), ((java.lang.Integer) arrayList.get(1)).intValue(), ((java.lang.Integer) arrayList.get(2)).intValue(), ((java.lang.Integer) arrayList.get(3)).intValue(), ((java.lang.Integer) arrayList.get(4)).intValue());
+        yj0.a.e(obj, createBitmap, "com/tencent/mm/plugin/scanner/util/ScanTranslationRender", "getBgAreaBitmap", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;)Landroid/graphics/Bitmap;", "android/graphics/Bitmap_EXEC_", "createBitmap", "(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;");
+        return createBitmap;
+    }
+
+    public static int[] b(e04.w2 w2Var, android.graphics.Bitmap bitmap) {
+        w2Var.getClass();
+        i4.i iVar = new i4.f(bitmap).b().f369892d;
+        if (iVar == null) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.ScanTranslationRender", "can not find suitable swatch");
+            return com.p314xaae8f345.mm.ui.bk.c(bitmap, bitmap.getWidth(), bitmap.getHeight());
+        }
+        iVar.a();
+        return new int[]{iVar.f369882d, iVar.f369886h};
+    }
+
+    public static float c(e04.w2 w2Var, r45.eq6 eq6Var) {
+        w2Var.getClass();
+        android.text.TextPaint textPaint = new android.text.TextPaint();
+        textPaint.setStyle(android.graphics.Paint.Style.FILL);
+        textPaint.setTextSize(16.0f);
+        android.text.DynamicLayout dynamicLayout = new android.text.DynamicLayout(eq6Var.f455216i, textPaint, eq6Var.f455213f, android.text.Layout.Alignment.ALIGN_NORMAL, 1.5f, 0.0f, true);
+        while (dynamicLayout.getLineBottom(dynamicLayout.getLineCount() - 1) < eq6Var.f455214g) {
+            textPaint.setTextSize(textPaint.getTextSize() + 0.5f);
+            textPaint.getTextSize();
+            dynamicLayout = new android.text.DynamicLayout(eq6Var.f455216i, textPaint, eq6Var.f455213f, android.text.Layout.Alignment.ALIGN_NORMAL, 1.5f, 0.0f, true);
+        }
+        while (dynamicLayout.getLineBottom(dynamicLayout.getLineCount() - 1) > eq6Var.f455214g && textPaint.getTextSize() > 1.0f) {
+            textPaint.setTextSize(textPaint.getTextSize() - 0.5f);
+            textPaint.getTextSize();
+            dynamicLayout = new android.text.DynamicLayout(eq6Var.f455216i, textPaint, eq6Var.f455213f, android.text.Layout.Alignment.ALIGN_NORMAL, 1.5f, 0.0f, true);
+        }
+        return textPaint.getTextSize();
+    }
+
+    public static void d(e04.w2 w2Var, float f17, int i17, r45.eq6 eq6Var, android.graphics.Canvas canvas) {
+        w2Var.getClass();
+        android.text.TextPaint textPaint = new android.text.TextPaint();
+        textPaint.setStyle(android.graphics.Paint.Style.FILL);
+        textPaint.setColor(i17);
+        textPaint.setTextSize(f17);
+        textPaint.setAntiAlias(true);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.ScanTranslationRender", "alignment %d", java.lang.Integer.valueOf(eq6Var.f455219o));
+        android.text.DynamicLayout dynamicLayout = new android.text.DynamicLayout(eq6Var.f455216i, textPaint, eq6Var.f455213f, eq6Var.f455219o == 2 ? android.text.Layout.Alignment.ALIGN_CENTER : android.text.Layout.Alignment.ALIGN_NORMAL, 1.5f, 0.0f, true);
+        canvas.save();
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.ScanTranslationRender", "translate %d, %d, textHeight %d, rect Height %d", java.lang.Integer.valueOf(eq6Var.f455211d), java.lang.Integer.valueOf(eq6Var.f455212e), java.lang.Integer.valueOf(dynamicLayout.getHeight()), java.lang.Integer.valueOf(eq6Var.f455214g));
+        if (dynamicLayout.getHeight() < eq6Var.f455214g) {
+            canvas.translate(eq6Var.f455211d, eq6Var.f455212e + ((r0 - dynamicLayout.getHeight()) / 2));
+        } else {
+            canvas.translate(eq6Var.f455211d, eq6Var.f455212e);
+        }
+        dynamicLayout.draw(canvas);
+        canvas.restore();
+    }
+
+    public void e(int i17, java.util.List list, float f17, android.graphics.Bitmap bitmap, e04.v2 v2Var) {
+        if (i17 == 0 || list == null || list.size() <= 0 || v2Var == null) {
+            return;
+        }
+        if (this.f327682a != 0 && i17 != this.f327682a) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.ScanTranslationRender", "stop current session %d, start new session %d", java.lang.Integer.valueOf(this.f327682a), java.lang.Integer.valueOf(i17));
+            this.f327682a = 0;
+            this.f327683b = null;
+        }
+        this.f327682a = i17;
+        this.f327683b = v2Var;
+        new e04.u2(this, i17, list, f17, bitmap).f(new java.lang.Void[0]);
+    }
+}

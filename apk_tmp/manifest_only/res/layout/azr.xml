@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fm7" android:background="@drawable/a0a" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/c9" android:paddingVertical="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mxu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.tencent.mm.view.MMPAGView android:id="@id/my3" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/mxt" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icon_song_filled" android:layout_centerVertical="true" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_toRightOf="@id/mxu">
+        <com.tencent.mm.plugin.finder.live.view.FinderMarqueeTextView android:textSize="12.0dp" android:textColor="@color/aaz" android:ellipsize="marquee" android:id="@id/my4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eiv" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+</RelativeLayout>

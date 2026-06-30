@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center_horizontal" android:id="@id/cqi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="第一种DataSource" style="@style/kr" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/cqj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="第二种DataSource" style="@style/kr" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/cqk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="第三种DataSource" style="@style/kr" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn" />
+</LinearLayout>

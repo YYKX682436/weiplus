@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mc9" android:background="@color/a48" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="@color/BW_0_Alpha_0_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xu" android:text="@string/d35" android:layout_marginStart="@dimen/cn" />
+    <com.tencent.mm.ui.widget.MMEditText android:textSize="17.0dp" android:id="@id/pny" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/dv" android:maxLines="1" android:paddingStart="17.0dp" />
+    <TextView android:textSize="@dimen/xs" android:textColor="@color/BW_0_Alpha_0_3" android:id="@id/m4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginStart="@dimen/cn" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/pnz" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dv" />
+</LinearLayout>

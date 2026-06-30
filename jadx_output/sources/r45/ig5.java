@@ -1,0 +1,84 @@
+package r45;
+
+/* loaded from: classes4.dex */
+public class ig5 extends r45.mr5 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public long f377037d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public long f377038e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public long f377039f;
+
+    @Override // com.tencent.mm.protobuf.f
+    public boolean compareContent(com.tencent.mm.protobuf.f fVar) {
+        if (fVar == null || !(fVar instanceof r45.ig5)) {
+            return false;
+        }
+        r45.ig5 ig5Var = (r45.ig5) fVar;
+        return n51.f.a(this.BaseRequest, ig5Var.BaseRequest) && n51.f.a(java.lang.Long.valueOf(this.f377037d), java.lang.Long.valueOf(ig5Var.f377037d)) && n51.f.a(java.lang.Long.valueOf(this.f377038e), java.lang.Long.valueOf(ig5Var.f377038e)) && n51.f.a(java.lang.Long.valueOf(this.f377039f), java.lang.Long.valueOf(ig5Var.f377039f));
+    }
+
+    @Override // com.tencent.mm.protobuf.f
+    public final int op(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            g36.f fVar = (g36.f) objArr[0];
+            r45.he heVar = this.BaseRequest;
+            if (heVar != null) {
+                fVar.i(1, heVar.computeSize());
+                this.BaseRequest.writeFields(fVar);
+            }
+            fVar.h(2, this.f377037d);
+            fVar.h(3, this.f377038e);
+            fVar.h(4, this.f377039f);
+            return 0;
+        }
+        if (i17 == 1) {
+            r45.he heVar2 = this.BaseRequest;
+            return (heVar2 != null ? 0 + b36.f.i(1, heVar2.computeSize()) : 0) + b36.f.h(2, this.f377037d) + b36.f.h(3, this.f377038e) + b36.f.h(4, this.f377039f);
+        }
+        if (i17 == 2) {
+            c36.a aVar = new c36.a((byte[]) objArr[0], com.tencent.mm.protobuf.f.unknownTagHandler);
+            for (int nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar); nextFieldNumber > 0; nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar)) {
+                if (!super.populateBuilderWithField(aVar, this, nextFieldNumber)) {
+                    aVar.b();
+                }
+            }
+            return 0;
+        }
+        if (i17 != 3) {
+            return -1;
+        }
+        c36.a aVar2 = (c36.a) objArr[0];
+        r45.ig5 ig5Var = (r45.ig5) objArr[1];
+        int intValue = ((java.lang.Integer) objArr[2]).intValue();
+        if (intValue != 1) {
+            if (intValue == 2) {
+                ig5Var.f377037d = aVar2.i(intValue);
+                return 0;
+            }
+            if (intValue == 3) {
+                ig5Var.f377038e = aVar2.i(intValue);
+                return 0;
+            }
+            if (intValue != 4) {
+                return -1;
+            }
+            ig5Var.f377039f = aVar2.i(intValue);
+            return 0;
+        }
+        java.util.LinkedList j17 = aVar2.j(intValue);
+        int size = j17.size();
+        for (int i18 = 0; i18 < size; i18++) {
+            byte[] bArr = (byte[]) j17.get(i18);
+            r45.he heVar3 = new r45.he();
+            if (bArr != null && bArr.length > 0) {
+                heVar3.parseFrom(bArr);
+            }
+            ig5Var.BaseRequest = heVar3;
+        }
+        return 0;
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/bs" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/adg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/os_" android:layout_marginStart="@dimen/cz" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/uen" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/du" android:layout_marginTop="@dimen/dv" android:paddingHorizontal="@dimen/cz" />
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/adg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/os8" android:layout_marginStart="@dimen/d7" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/uek" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/dv" android:paddingHorizontal="@dimen/cz" />
+</LinearLayout>

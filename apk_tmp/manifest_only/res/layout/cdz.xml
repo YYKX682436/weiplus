@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mcr" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/mz5" android:background="@drawable/ax8" android:layout_width="match_parent" android:layout_height="2.0dp" android:layerType="software" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="@color/a09" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i0v" android:includeFontPadding="false" />
+            <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:layout_gravity="center_vertical" android:id="@id/lut" android:background="@color/a9e" android:focusable="false" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="5.0dp" android:scaleType="centerCrop" android:contentDescription="@string/a6x" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/lj2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{¥100}" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="15.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="@color/a09" android:gravity="center_vertical" android:id="@id/hxf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i0u" android:includeFontPadding="false" />
+            <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:gravity="center_vertical" android:id="@id/lj1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

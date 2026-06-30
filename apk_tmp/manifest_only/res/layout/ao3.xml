@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderLiveScrollView android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/cn" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:requiresFadingEdge="horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/eo1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.finder.live.view.FinderLiveGameWelfareTaskProgressView android:id="@id/ezi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_centerVertical="true" />
+        <include android:id="@id/fb3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" layout="@layout/avf" />
+        <include android:id="@id/frg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" layout="@layout/b24" />
+        <include android:id="@id/fm7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" layout="@layout/azs" />
+        <include android:id="@id/tn3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" layout="@layout/azs" />
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.live.view.FinderLiveScrollView>

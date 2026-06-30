@@ -1,0 +1,5 @@
+package a06;
+
+/* loaded from: classes4.dex */
+public abstract class b extends a06.d {
+}

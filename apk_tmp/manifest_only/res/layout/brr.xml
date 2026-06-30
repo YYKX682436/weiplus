@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bce" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ifh" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_tipsbar_close" android:layout_centerVertical="true" app:fs="@color/a8w" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ifg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/ifh">
+        <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:layout_gravity="center_vertical" android:id="@id/ifn" android:layout_width="@dimen/ac7" android:layout_height="@dimen/ac7" android:layout_marginLeft="@dimen/c9" app:logo_height="@dimen/ac7" app:logo_mode="5" app:logo_width="@dimen/ac7" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/cz">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/ife" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/ifm" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

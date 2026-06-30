@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hw8" android:background="#333333" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b03" android:background="@drawable/bth" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bo" android:layout_alignParentTop="true" android:contentDescription="@string/jp2" android:layout_marginEnd="@dimen/d7" android:layout_alignParentEnd="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_close" app:fs="@color/an" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/hyh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/jvy">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_info" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/cb" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jvy" android:layout_marginStart="@dimen/bn" />
+    </LinearLayout>
+</RelativeLayout>

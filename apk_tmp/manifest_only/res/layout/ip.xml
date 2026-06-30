@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hh0" android:background="@drawable/q2" android:paddingLeft="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bfj" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.base.MaskLayout android:id="@id/a5f" android:layout_width="@dimen/df" android:layout_height="@dimen/df">
+                <ImageView android:id="@id/cgi" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/icons_filled_blue_chatroom" android:layout_centerVertical="true" />
+            </com.tencent.mm.ui.base.MaskLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/cn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dj" android:layout_weight="1.0">
+                <com.tencent.mm.ui.base.EllipsizeTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/a5g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j8" android:text="@string/azy" android:singleLine="true" style="@style/j3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/v2a" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/mjc">
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:background="@color/a" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/dv" android:maxHeight="@dimen/dv" android:minHeight="@dimen/dv" android:contentDescription="@null" />
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </LinearLayout>
+</LinearLayout>

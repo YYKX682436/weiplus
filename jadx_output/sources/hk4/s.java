@@ -1,0 +1,20 @@
+package hk4;
+
+/* loaded from: classes10.dex */
+public final class s extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ hk4.x f281978d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public s(hk4.x xVar) {
+        super(1);
+        this.f281978d = xVar;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        hk4.x.p(this.f281978d);
+        return jz5.f0.f302826a;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sz2" android:background="@drawable/d60" android:paddingLeft="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cq" android:layout_marginRight="@dimen/cz">
+        <com.tencent.mm.ui.base.MMClearEditText android:textSize="@dimen/ia" android:textColor="@color/a0c" android:textColorHint="@color/tj" android:gravity="center_vertical" android:id="@id/sz1" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/h7" android:hint="@string/o71" android:singleLine="true" android:maxLength="36" android:layout_weight="1.0" android:layout_marginStart="@dimen/f" />
+    </LinearLayout>
+    <TextView android:textColor="@color/Red_100" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/dhl" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/cz" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/sz0" android:layout_marginTop="97.0dp" android:text="@string/x1" style="@style/kr" />
+</LinearLayout>

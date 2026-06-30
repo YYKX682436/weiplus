@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/cn5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.tools.CropImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cn6" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:scaleType="fitCenter" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/cn4">
+        <View android:id="@id/cn_" android:visibility="invisible" android:layout_width="312.0dp" android:layout_height="312.0dp" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cne" android:background="@drawable/bjx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" android:layout_above="@id/cn4" />
+    <com.tencent.mm.ui.base.MMHorList android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/cn3" android:background="@drawable/bgp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:spacing="0.0dp" android:layout_above="@id/cn4" />
+</RelativeLayout>

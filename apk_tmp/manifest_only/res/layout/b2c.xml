@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/fru" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.video.FinderVideoGreenSeekBar android:layout_gravity="center" android:id="@id/frt" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center" android:layout_gravity="center" android:id="@id/iqj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_channels_play_quickly_1" app:fs="@color/u6" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g4n" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/db" android:src="@raw/bullet_screen_regular" android:contentDescription="@string/el9" android:paddingStart="@dimen/dv" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/bl" android:paddingVertical="@dimen/dv" app:fs="@color/u6" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/iqi" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="@dimen/d7" android:layout_height="@dimen/db" android:src="@raw/icons_outlined_channels_turn" android:contentDescription="@string/egx" android:paddingStart="@dimen/dv" android:paddingVertical="@dimen/dv" app:fs="@color/u6" />
+</LinearLayout>

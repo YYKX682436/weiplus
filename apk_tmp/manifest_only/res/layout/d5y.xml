@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7j" android:background="@color/aaw" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="22.0dp" android:textColor="@color/a0c" android:id="@id/pbm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="57.0dp" android:text="@string/ku1" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:gravity="center" android:id="@id/hdt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/hf" android:layout_marginRight="@dimen/hf" android:text="@string/ktx" android:layout_below="@id/pbm" android:layout_centerHorizontal="true" />
+    <View android:id="@id/aup" android:layout_marginLeft="32.0dp" android:layout_marginTop="48.0dp" android:layout_marginRight="32.0dp" android:layout_below="@id/hdt" android:layout_centerHorizontal="true" style="@style/fh" />
+    <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/h83" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:layout_below="@id/aup" android:layout_centerHorizontal="true" android:imeOptions="actionNext" wallet:contentHint="@string/kic" wallet:titleText="@string/kif" style="@style/sp" />
+    <View android:id="@id/auo" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:layout_below="@id/h83" android:layout_centerHorizontal="true" style="@style/fh" />
+    <TextView android:id="@id/pbe" android:visibility="visible" android:text="@string/kie" android:layout_below="@id/auo" android:layout_centerHorizontal="true" style="@style/sn" />
+    <Button android:id="@id/he1" android:layout_marginBottom="96.0dp" android:text="@string/ku3" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kr" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/rr" />
+</RelativeLayout>

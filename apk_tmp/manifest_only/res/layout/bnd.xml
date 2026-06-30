@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/ohv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/v6" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/v6" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/lj7" android:background="@drawable/r9" android:layout_width="match_parent" android:layout_height="@dimen/acp" android:layout_alignParentBottom="true" app:az="0.0dp" app:layout_behavior="@string/gw0">
+            <RelativeLayout android:id="@id/lj9" android:layout_width="match_parent" android:layout_height="@dimen/acz">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bzn" android:layout_width="@dimen/ad1" android:layout_height="@dimen/ad1" android:src="@raw/close_arrow" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ad0" android:layout_alignParentStart="true" app:fs="@color/FG_0" />
+                <TextView android:textSize="@dimen/a3l" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/h0_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g9z" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:id="@id/hsu" android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="@dimen/u4" android:layout_below="@id/lj9" android:layout_marginStart="@dimen/a3k" android:layout_marginEnd="@dimen/a3k" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/hst" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/hsu" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

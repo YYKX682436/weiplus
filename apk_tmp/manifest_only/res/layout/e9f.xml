@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/apo" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/abw" android:gravity="left|center" android:id="@id/odb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/db" android:layout_marginRight="@dimen/cz" android:layout_marginBottom="@dimen/cn" android:text="@string/opr" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/bu" android:layout_marginStart="16.0dp" android:layout_marginEnd="@dimen/cn">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/b5j" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="@string/opo" android:layout_marginEnd="8.0dp" style="@style/xl" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/c_3" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="@string/opp" android:layout_marginStart="8.0dp" style="@style/xk" />
+    </LinearLayout>
+</LinearLayout>

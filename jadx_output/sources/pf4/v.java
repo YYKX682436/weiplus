@@ -1,0 +1,42 @@
+package pf4;
+
+/* loaded from: classes4.dex */
+public final class v extends androidx.recyclerview.widget.b0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ pf4.w f353899a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ java.util.List f353900b;
+
+    public v(pf4.w wVar, java.util.List list) {
+        this.f353899a = wVar;
+        this.f353900b = list;
+    }
+
+    @Override // androidx.recyclerview.widget.b0
+    public boolean a(int i17, int i18) {
+        pf4.w wVar = this.f353899a;
+        boolean z17 = ((gf4.a) wVar.f353901d.get(i17)).f271335f;
+        java.util.List list = this.f353900b;
+        return z17 == ((gf4.a) list.get(i18)).f271335f && com.tencent.mm.sdk.platformtools.t8.D0(((gf4.a) wVar.f353901d.get(i17)).f271331b, ((gf4.a) list.get(i18)).f271331b);
+    }
+
+    @Override // androidx.recyclerview.widget.b0
+    public boolean b(int i17, int i18) {
+        pf4.w wVar = this.f353899a;
+        long j17 = ((gf4.a) wVar.f353901d.get(i17)).f271333d;
+        java.util.List list = this.f353900b;
+        return j17 == ((gf4.a) list.get(i18)).f271333d && ((gf4.a) wVar.f353901d.get(i17)).f271334e == ((gf4.a) list.get(i18)).f271334e;
+    }
+
+    @Override // androidx.recyclerview.widget.b0
+    public int d() {
+        return this.f353900b.size();
+    }
+
+    @Override // androidx.recyclerview.widget.b0
+    public int e() {
+        return this.f353899a.f353901d.size();
+    }
+}

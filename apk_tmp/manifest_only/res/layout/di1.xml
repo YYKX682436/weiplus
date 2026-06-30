@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:id="@id/kqj" android:background="@color/BW_93" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/qfb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cs" android:layout_toLeftOf="@id/kqi" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.tencent.mm.plugin.finder.view.FinderTagFlowLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/kqr" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/wecoin_balance_icons" app:fs="@color/m" />
+                <TextView android:textSize="@dimen/cs" android:textColor="@color/f5" android:gravity="center" android:layout_gravity="center" android:id="@id/kr6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="" android:includeFontPadding="false" android:layout_toRightOf="@id/kqr" android:layout_alignBaseline="@id/kqr" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/co" android:textColor="@color/f5" android:gravity="left|center" android:layout_gravity="center" android:id="@id/kqh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.5dp" android:text="@string/elq" android:includeFontPadding="false" android:layout_alignBaseline="@id/kr6" />
+            <TextView android:textSize="@dimen/co" android:textColor="@color/f5" android:gravity="center" android:layout_gravity="center" android:id="@id/kqw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/emr" android:includeFontPadding="false" android:layout_alignBaseline="@id/kr6" />
+        </com.tencent.mm.plugin.finder.view.FinderTagFlowLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/UN_BW_0_Alpha_0_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/elk" android:layout_below="@id/qfb" />
+    <Button android:id="@id/kqi" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:layout_margin="@dimen/cs" android:minWidth="0.0dp" android:minHeight="0.0dp" android:text="@string/elr" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingStart="@dimen/cb" android:paddingEnd="@dimen/cb" style="@style/kr" />
+</RelativeLayout>

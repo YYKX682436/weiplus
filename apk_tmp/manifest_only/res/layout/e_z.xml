@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/f9i" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/f9m" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bo" android:layout_marginBottom="@dimen/dn">
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:id="@id/f9l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dto" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/a5" android:id="@id/f9k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dtp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/f9j" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="true" />
+        </FrameLayout>
+        <ProgressBar android:id="@id/f9q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:layout_centerHorizontal="true" style="@style/w9" />
+        <TextView android:textColor="@color/FG_2" android:id="@id/f9r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:text="@string/gdm" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

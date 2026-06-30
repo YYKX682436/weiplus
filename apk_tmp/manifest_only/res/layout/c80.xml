@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.downloader_app.ui.NoTaskLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ha_" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="181.0dp" android:src="@raw/download_non_task" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/jj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/h_7" android:layout_below="@id/ha_" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.plugin.downloader_app.ui.BottomEntranceView android:id="@id/aua" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/cz" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0dp" android:textColor="@color/a5" android:id="@id/dh8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="看看好友在玩什么" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/dh6" android:layout_width="5.0dp" android:layout_height="9.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/bqb" android:layout_toRightOf="@id/dh8" android:layout_centerVertical="true" />
+    </com.tencent.mm.plugin.downloader_app.ui.BottomEntranceView>
+</com.tencent.mm.plugin.downloader_app.ui.NoTaskLayout>

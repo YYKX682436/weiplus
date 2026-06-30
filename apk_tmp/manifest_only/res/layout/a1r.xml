@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="32.0dp" android:paddingEnd="32.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/cce" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@id/ccb" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/bhm" android:importantForAccessibility="no" />
+            <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:id="@id/cck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="22.0dp" android:textColor="@color/a0c" android:id="@id/ccd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/bby" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/cce" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/ccl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/ccd" />
+        <Button android:id="@id/ccc" android:layout_marginTop="246.0dp" android:layout_marginBottom="12.0dp" android:text="@string/g93" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/ccl" style="@style/kz" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+package iw1;
+
+/* loaded from: classes14.dex */
+public final class k implements java.io.Closeable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final hw1.c f376752d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final iw1.n f376753e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final u26.w f376754f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final p3325xe03a0797.p3326xc267989b.y0 f376755g;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public k(hw1.c mtrTask) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(mtrTask, "mtrTask");
+        this.f376752d = mtrTask;
+        iw1.n nVar = new iw1.n();
+        this.f376753e = nVar;
+        u26.w a17 = u26.z.a(Integer.MAX_VALUE, null, null, 6, null);
+        ((u26.o) a17).n(new iw1.g(this));
+        this.f376754f = a17;
+        this.f376755g = p3325xe03a0797.p3326xc267989b.z0.a(nVar.mo7096x348d9a(p3325xe03a0797.p3326xc267989b.t3.a(null, 1, null)));
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        java.lang.Object m143895xf1229813;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.MTR.MTRExecutor", "executor stopped");
+        try {
+            p3321xbce91901.C29043x91b2b43d.Companion companion = p3321xbce91901.C29043x91b2b43d.INSTANCE;
+            m143895xf1229813 = p3321xbce91901.C29043x91b2b43d.m143895xf1229813(java.lang.Boolean.valueOf(u26.x0.a(this.f376754f, null, 1, null)));
+        } catch (java.lang.Throwable th6) {
+            p3321xbce91901.C29043x91b2b43d.Companion companion2 = p3321xbce91901.C29043x91b2b43d.INSTANCE;
+            m143895xf1229813 = p3321xbce91901.C29043x91b2b43d.m143895xf1229813(p3321xbce91901.C29044xefd6a286.m143914x452354ee(th6));
+        }
+        p3321xbce91901.C29043x91b2b43d.m143902xc481aacd(m143895xf1229813);
+    }
+}

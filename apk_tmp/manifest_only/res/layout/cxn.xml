@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ohz" android:background="#ff1d1e1d" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@drawable/bnz" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="43.0dp">
+        <Button android:id="@id/hck" android:background="@drawable/b52" android:visibility="invisible" android:layout_width="39.0dp" android:layout_height="39.0dp" android:contentDescription="@string/jpz" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/tk" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#222222" style="@style/xb" />
+        </LinearLayout>
+        <Button android:id="@id/osz" android:background="@drawable/b53" android:layout_width="39.0dp" android:layout_height="39.0dp" android:contentDescription="@string/jq0" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="114.0dp">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bnm" android:paddingLeft="3.0dp" android:paddingTop="6.0dp" android:paddingRight="3.0dp" android:paddingBottom="6.0dp" android:layout_width="290.0dp" android:layout_height="103.0dp" android:layout_marginTop="5.0dp">
+            <com.tencent.mm.plugin.talkroom.ui.TalkRoomAvatarsFrame android:layout_gravity="center_horizontal" android:id="@id/a9z" android:layout_width="290.0dp" android:layout_height="58.0dp" android:layout_marginTop="6.0dp" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="27.0dp">
+                <ImageView android:id="@id/h5m" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/bny" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <TextView android:textSize="13.0sp" android:id="@id/cjm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_toRightOf="@id/h5m" android:layout_centerVertical="true" style="@style/xb" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/a8d" android:id="@id/jj3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jon" android:singleLine="true" android:shadowColor="#222222" android:layout_centerInParent="true" style="@style/xb" />
+                <Chronometer android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/m" android:id="@id/bwf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:layout_gravity="center_horizontal" android:background="@drawable/bnn" android:layout_width="320.0dp" android:layout_height="114.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="58.0dp">
+        <com.tencent.mm.plugin.talkroom.ui.TalkRoomVolumeMeter android:layout_gravity="center" android:id="@id/p8_" android:layout_width="320.0dp" android:layout_height="58.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:layout_width="245.0dp" android:layout_height="252.0dp">
+            <ImageView android:layout_gravity="right|top" android:id="@id/hzw" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/bnq" android:scaleType="fitXY" android:contentDescription="@null" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="center" android:id="@id/jit" android:background="@null" android:layout_width="245.0dp" android:layout_height="252.0dp" android:scaleType="fitXY" android:contentDescription="@string/jq3" />
+    </FrameLayout>
+</LinearLayout>

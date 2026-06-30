@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/p0w" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ght" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ProgressBar android:id="@id/imm" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:indeterminateDrawable="@drawable/adb" android:layout_centerInParent="true" style="@style/wa" />
+        <FrameLayout android:id="@id/p0y" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/gzz" android:background="@drawable/c6l" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="120.0dp" />
+    <com.tencent.mm.pluginsdk.ui.seekbar.FinderHeroSeekBarView android:gravity="center" android:layout_gravity="bottom" android:id="@id/p08" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/d9" android:layout_marginBottom="@dimen/dg" />
+</FrameLayout>

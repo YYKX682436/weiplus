@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" app:ds="@dimen/dv"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.tencent.mm.ui.widget.RoundCornerImageView android:id="@id/a9m" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/bl" android:layout_toLeftOf="@id/qgi" android:layout_toRightOf="@id/a9m" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_2" android:ellipsize="end" android:id="@id/dke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:maxLines="1" />
+        </LinearLayout>
+        <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/qgi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/d15" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/d15" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/cn" android:src="@raw/arrow_right" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+</FrameLayout>

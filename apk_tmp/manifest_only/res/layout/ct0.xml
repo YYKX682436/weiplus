@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cgi" android:background="@color/c" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.EndMaskView android:id="@id/gf5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/i26" android:layout_width="match_parent" android:layout_height="@dimen/aiz" />
+    <LinearLayout android:id="@id/i27" android:layout_width="match_parent" android:layout_height="@dimen/aj0">
+        <ImageView android:background="@drawable/bl9" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66.0dp" />
+        <ImageView android:id="@id/io4" android:background="@color/a60" android:visibility="invisible" android:layout_width="4.0dp" android:layout_height="match_parent" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" layout="@layout/cut" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/i3x" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn">
+        <include layout="@layout/cus" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/chj" android:background="@drawable/cpc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hf">
+            <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cut" android:paddingTop="@dimen/aj3" android:paddingBottom="@dimen/aj3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="18.0dp" android:singleLine="true" android:paddingStart="@dimen/aj3" android:paddingEnd="@dimen/aj3" android:layout_toStartOf="@id/nh_" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/cut" android:layout_toStartOf="@id/nh_">
+                <include layout="@layout/csp" />
+            </LinearLayout>
+            <include android:id="@id/nh_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/aj3" android:layout_alignParentEnd="true" layout="@layout/cuu" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

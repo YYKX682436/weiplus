@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/hy6" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.appbrand.widget.recyclerview.MRecyclerView android:id="@id/m8x" android:background="@color/a" android:paddingBottom="20.0dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/hw2" android:background="@color/b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收起小组" />
+            <ImageView android:id="@id/hkx" android:layout_width="12.0dp" android:layout_height="8.0dp" android:scaleType="fitXY" android:layout_marginStart="2.0dp" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </LinearLayout>
+</FrameLayout>

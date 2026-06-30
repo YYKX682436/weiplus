@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/b57" android:paddingLeft="@dimen/cs" android:paddingRight="@dimen/cs" android:visibility="invisible" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <include android:id="@id/cjp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_centerVertical="true" android:layout_marginStart="@dimen/d1" android:layout_marginEnd="@dimen/d1" layout="@layout/cap" />
+    <include android:id="@id/afs" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_centerVertical="true" android:layout_marginStart="@dimen/d1" android:layout_marginEnd="@dimen/d1" layout="@layout/cap" />
+    <include android:id="@id/lif" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_centerVertical="true" android:layout_marginStart="@dimen/d1" android:layout_marginEnd="@dimen/d1" layout="@layout/cap" />
+    <include android:id="@id/e4e" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_centerVertical="true" android:layout_marginStart="@dimen/d1" layout="@layout/caq" />
+</RelativeLayout>

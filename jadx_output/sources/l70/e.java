@@ -1,0 +1,16 @@
+package l70;
+
+/* loaded from: classes12.dex */
+public final class e {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final l70.f f316818a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public int f316819b;
+
+    public e(l70.f resultType) {
+        kotlin.jvm.internal.o.g(resultType, "resultType");
+        this.f316818a = resultType;
+    }
+}

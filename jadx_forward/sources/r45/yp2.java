@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes2.dex */
+public class yp2 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public yp2() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(1, "skip_template"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.l(2, "skip_enter_scene"));
+        this.f38874x227b759e = true;
+    }
+}

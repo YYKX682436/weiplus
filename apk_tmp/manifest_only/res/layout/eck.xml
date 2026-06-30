@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ugs" android:background="@color/a48" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.tabcomp.FinderTabLayout android:layout_gravity="left" android:id="@id/ugr" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:layout_marginVertical="@dimen/dv" app:tabBackground="@color/a9e" app:jd="bdp" app:jh="@color/a0c" app:jk="2.0dp" app:jm="g7g" app:jn="@dimen/c9" app:jo="@dimen/c9" app:jp="@color/a9e" app:jq="@color/a0c" app:jt="@color/jj" />
+    <com.tencent.mm.plugin.finder.view.FinderViewPager android:id="@id/ugt" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

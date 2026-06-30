@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/swg" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" app:enableAutoLoadMore="false" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMoreWhenContentNotFull="true" app:enableOverScrollBounce="false">
+        <com.tencent.mm.plugin.sns.ui.PassThroughRecyclerView android:id="@id/v8f" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.sns.ui.SnsCommentImageLoadMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+    <com.tencent.mm.plugin.sns.ui.SnsCommentFooter android:layout_gravity="bottom" android:id="@id/c76" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/chw" />
+    <com.tencent.mm.plugin.scanner.MultiCodeMaskView android:id="@id/jun" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

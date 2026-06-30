@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.CheckBoxTextLayout android:layout_gravity="center_horizontal" android:id="@id/sbu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/sbt" android:background="@drawable/aoe" android:focusable="false" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:checked="false" android:button="@null" />
+    <TextView android:textSize="@dimen/ca" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/p2w" android:layout_toRightOf="@id/sbt" />
+</com.tencent.mm.ui.widget.CheckBoxTextLayout>

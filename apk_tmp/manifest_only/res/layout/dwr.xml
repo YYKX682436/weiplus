@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/s6o" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/s6p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/s6k" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/by4" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/b1h" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/s6m" android:layout_width="16.0dp" android:layout_height="16.0dp" android:scaleType="fitCenter" app:fs="@color/a9e" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/Link_100" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/s6n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:includeFontPadding="false" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/s6l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

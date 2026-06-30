@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="20.0dp">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/n3x" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/icon" android:scaleType="centerCrop" app:i8="12.0dp" />
+        <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="15.0dp" android:textColor="@color/fa" android:id="@id/n3y" android:layout_width="match_parent" android:layout_height="21.0dp" android:layout_marginLeft="8.0dp" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="17.0dp" android:textColor="@color/fa" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="24.0dp" android:text="@string/j7i" />
+    <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="16.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="130.0dp">
+        <include android:id="@id/n3z" android:layout_width="match_parent" android:layout_height="65.0dp" layout="@layout/cp1" />
+        <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="36.0dp" />
+        <include android:id="@id/n40" android:layout_width="match_parent" android:layout_height="65.0dp" layout="@layout/cp1" />
+    </LinearLayout>
+    <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</LinearLayout>

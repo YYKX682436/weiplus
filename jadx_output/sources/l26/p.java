@@ -1,0 +1,18 @@
+package l26;
+
+/* loaded from: classes10.dex */
+public final class p extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final l26.p f315262d = new l26.p();
+
+    public p() {
+        super(1);
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        kotlin.jvm.internal.o.g((o06.n0) obj, "$this$null");
+        return null;
+    }
+}

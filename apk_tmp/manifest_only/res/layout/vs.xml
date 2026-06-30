@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bjy" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bkg" android:layout_width="@dimen/rq" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/mi" android:paddingLeft="@dimen/hf" android:paddingTop="@dimen/i_" android:paddingRight="@dimen/i_" android:paddingBottom="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_">
+                <com.tencent.mm.ui.widget.MMNeat7extView android:layout_gravity="left" android:id="@id/mt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:singleLine="false" style="@style/j3" />
+                <com.tencent.mm.ui.widget.MMTextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:layout_gravity="left" android:id="@id/mt5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j3" android:text="@string/i44" />
+                <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/i_" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl">
+                    <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:id="@id/mt6" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" app:logo_anim_auto_paly="true" app:logo_height="@dimen/cn" app:logo_mode="5" app:logo_style="1" app:logo_width="@dimen/cn" />
+                    <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:id="@id/mt7" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" app:logo_height="@dimen/cn" app:logo_mode="5" app:logo_style="3" app:logo_width="@dimen/cn" />
+                    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/ja" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/f" android:text="@string/i51" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1289x8f4dc54e.ui.p1299x8438d441;
+
+/* loaded from: classes.dex */
+public final class o0 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.sdk.p2603x2137b148.o4 f175703d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.brandservice.ui.timeline.BizTestUI f175704e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public o0(com.p314xaae8f345.mm.sdk.p2603x2137b148.o4 o4Var, com.tencent.mm.plugin.brandservice.ui.timeline.BizTestUI bizTestUI) {
+        super(0);
+        this.f175703d = o4Var;
+        this.f175704e = bizTestUI;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        this.f175703d.putBoolean("preload_tmpl_always_check_tmpl_ver", true);
+        db5.e1.T(this.f175704e, "enable tmpl always check");
+        ((yq1.z) ((zq1.a0) gm0.j1.s(zq1.a0.class))).u(90);
+        return jz5.f0.f384359a;
+    }
+}

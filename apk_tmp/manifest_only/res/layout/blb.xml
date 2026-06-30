@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/kj">
+        <RelativeLayout android:id="@id/cfr" style="@style/ij">
+            <ImageView android:id="@id/heq" android:layout_width="@dimen/g" android:layout_height="@dimen/g" android:layout_marginRight="@dimen/hf" android:src="@drawable/bhm" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/a6x" />
+            <TextView android:id="@id/hev" android:layout_toRightOf="@id/heq" style="@style/ix" />
+            <TextView android:id="@id/hex" android:layout_toRightOf="@id/heq" android:layout_below="@id/hev" style="@style/iz" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/jj" android:gravity="center" android:id="@id/hew" android:background="@drawable/c6q" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j3" android:layout_below="@id/heq" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:minHeight="@dimen/i6" android:layout_below="@id/hew">
+                <Button android:id="@id/het" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/g1o" android:layout_weight="1.0" style="@style/kq" />
+                <View android:id="@id/heu" android:layout_width="@dimen/j3" android:layout_height="match_parent" />
+                <Button android:id="@id/hey" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/g1r" android:layout_weight="1.0" style="@style/kx" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

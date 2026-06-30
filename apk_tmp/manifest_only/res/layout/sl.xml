@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/i" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/gyx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn">
+                <ImageView android:id="@id/kfd" android:layout_width="@dimen/ht" android:layout_height="@dimen/ht" android:src="@drawable/bhm" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j">
+                    <TextView android:textSize="@dimen/co" android:textColor="@color/a0c" android:id="@id/kfe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/ca" android:textColor="@color/a0i" android:id="@id/kfj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/BW_0_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/cn" />
+        </LinearLayout>
+        <include layout="@layout/a5v" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/m76" android:background="@color/a9e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_marginBottom="@dimen/db">
+            <View android:background="#e1e1e1" android:layout_width="55.0dp" android:layout_height="1.0dp" />
+            <TextView android:textSize="@dimen/ca" android:textColor="@color/a0i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginRight="13.0dp" android:text="@string/i5q" />
+            <View android:background="#e1e1e1" android:layout_width="55.0dp" android:layout_height="1.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

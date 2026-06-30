@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/l74" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:i8="@dimen/bl" />
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:id="@id/mu5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignTop="@id/l74" android:layout_marginStart="@dimen/c9" android:layout_toEndOf="@id/l74" />
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/an" android:ellipsize="end" android:id="@id/l7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="1" android:layout_below="@id/mu5" android:layout_alignStart="@id/mu5" />
+</RelativeLayout>

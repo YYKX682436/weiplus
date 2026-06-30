@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/qcd" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dn" android:layout_centerVertical="true" android:paddingVertical="@dimen/dv">
+        <ImageView android:id="@id/a9m" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="@dimen/c9" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/oy" android:ellipsize="end" android:gravity="left|center" android:id="@id/kbf" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/c0" android:text="nickname" android:maxLines="1" android:layout_toRightOf="@id/a9m" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/c9" android:layout_toStartOf="@id/q6w" />
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/q6w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <include android:id="@id/q6y" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/det" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/q39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_best_luck" app:fs="#f8d44d" />
+                <TextView android:textSize="@dimen/c9" android:textColor="#f4b54d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lif" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/UN_BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:minHeight="1.0px" android:layout_below="@id/qcd" android:layout_marginStart="@dimen/d7" />
+</RelativeLayout>

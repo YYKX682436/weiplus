@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.ktv.view.AttachLinearLayout android:gravity="center" android:id="@id/t29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" app:layout_constraintBottom_toTopOf="@id/t2_" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <ImageView android:id="@id/s_4" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/adh" android:gravity="center" android:id="@id/rp9" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dv" android:text="@string/mja" />
+    </com.tencent.mm.plugin.finder.live.ktv.view.AttachLinearLayout>
+    <com.tencent.mm.plugin.finder.live.ktv.view.AttachLinearLayout android:gravity="center" android:id="@id/t2_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bw" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <TextView android:textSize="@dimen/d7" android:textColor="@color/c" android:gravity="center" android:id="@id/s97" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="26.0dp" android:textColor="@color/c" android:gravity="center" android:id="@id/s98" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/mjm" />
+        <TextView android:textSize="@dimen/d7" android:textColor="@color/c" android:gravity="center" android:id="@id/rto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" />
+        <TextView android:textSize="26.0dp" android:textColor="@color/c" android:gravity="center" android:id="@id/rtp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/mji" />
+    </com.tencent.mm.plugin.finder.live.ktv.view.AttachLinearLayout>
+    <com.tencent.mm.plugin.finder.live.ktv.view.AttachLinearLayout android:gravity="center" android:id="@id/ulg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/df" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <TextView android:textSize="17.0dp" android:textColor="@color/agl" android:gravity="center" android:id="@id/uli" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/orf" />
+        <ImageView android:id="@id/ulj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/bn" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/agl" android:gravity="center" android:id="@id/ulh" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bn" android:text="@string/ore" />
+    </com.tencent.mm.plugin.finder.live.ktv.view.AttachLinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gzh" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <FrameLayout android:layout_gravity="start|center" android:id="@id/bz8" android:background="@drawable/afy" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/c9" android:importantForAccessibility="noHideDescendants" android:layout_marginStart="@dimen/c9">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/bz2" android:layout_width="10.0dp" android:layout_height="20.0dp" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/FG_0" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/a0c" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/n9i" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dv" android:layout_below="@id/gzh" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" />
+    <ProgressBar android:id="@id/n9j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/x4" />
+</RelativeLayout>

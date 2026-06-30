@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ep9" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/epa" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/ep_" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1.0dp">
+            <FrameLayout android:id="@id/epd" android:background="@drawable/a0c" android:layout_width="match_parent" android:layout_height="@dimen/cn" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dv">
+                <com.tencent.mm.plugin.finder.view.crit.PKCritBuffStageBackground android:id="@id/qq0" android:background="@drawable/a76" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+            <View android:id="@id/epc" android:background="@drawable/a0b" android:layout_width="match_parent" android:layout_height="@dimen/cn" android:layout_centerVertical="true" android:layout_marginStart="184.0dp" />
+            <com.tencent.mm.view.MMPAGView android:id="@id/epb" android:layout_width="@dimen/dd" android:layout_height="@dimen/cn" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ep6" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/cn" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn">
+                <TextView android:textSize="12.0dp" android:textColor="@color/ab0" android:gravity="center_vertical" android:id="@id/ep8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:importantForAccessibility="no" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ep3" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/cn" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true">
+                <TextView android:textSize="12.0dp" android:textColor="@color/ab0" android:gravity="center_vertical" android:id="@id/ep5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/epe" android:background="@drawable/cik" android:visibility="gone" android:layout_width="@dimen/bu" android:layout_height="@dimen/cs" android:layout_below="@id/ep_" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ep2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+                <ProgressBar android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" style="@style/x6" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/ta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d71" android:layout_marginStart="@dimen/bl" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/epf" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/q9p" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="2.0dp" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qva" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_pk" app:fs="#ffc300" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dp" android:textColor="@color/ab0" android:id="@id/epg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

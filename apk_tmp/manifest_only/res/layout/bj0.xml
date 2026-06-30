@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj" android:paddingVertical="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:id="@id/rt" android:paddingRight="@dimen/hq" android:layout_width="@dimen/f7" android:layout_height="wrap_content" android:singleLine="true" style="@style/ix" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/qlq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dv" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/a4f" app:layout_constraintTop_toTopOf="0">
+                    <TextView android:textSize="14.0dp" android:textColor="@color/abw" android:ellipsize="end" android:id="@id/fuv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:maxLines="1" android:singleLine="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/e_c" app:layout_constraintTop_toTopOf="0" style="@style/ix" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/e_c" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4f" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" app:fs="@color/FG_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView android:textSize="@dimen/aks" android:textColor="@color/m" android:ellipsize="end" android:id="@id/rgl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:layout_marginEnd="@dimen/cn" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/h9p" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:scaleType="centerCrop" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv">
+                    <ImageView android:id="@id/h9q" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:scaleType="centerCrop" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv">
+                    <ImageView android:id="@id/h9r" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:scaleType="centerCrop" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv">
+                    <ImageView android:id="@id/h9s" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:scaleType="centerCrop" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ght" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:id="@id/hw8" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/cgi" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/chw" />
+    <Button android:id="@id/gne" android:visibility="gone" style="@style/vz" />
+    <com.tencent.mm.plugin.scanner.MultiCodeMaskView android:id="@id/jun" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/gce" android:layout="@layout/csh" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="end|bottom" android:orientation="horizontal" android:id="@id/hau" android:background="@drawable/b2j" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginRight="@dimen/cs" android:layout_marginBottom="@dimen/dr" android:elevation="10.0dp">
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g06" android:layout_marginStart="@dimen/c9" android:lineHeight="@dimen/co" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/dv" app:fs="@color/UN_BW_0_Alpha_0_9" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,131 @@
+package qx5;
+
+/* loaded from: classes13.dex */
+public class w implements zx5.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final android.content.Context f367529a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final boolean f367530b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public android.app.ProgressDialog f367531c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public boolean f367532d = false;
+
+    /* renamed from: e, reason: collision with root package name */
+    public boolean f367533e = false;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final java.util.List f367534f = new java.util.ArrayList();
+
+    public w(android.content.Context context, boolean z17) {
+        this.f367529a = context;
+        this.f367530b = context instanceof android.app.Activity ? z17 : false;
+        h("· 开始检查更新 (点空白区域取消)");
+    }
+
+    @Override // zx5.a
+    public void a(boolean z17, int i17, int i18, java.util.HashMap hashMap) {
+        h("· 音频助听参数更新完成");
+    }
+
+    @Override // zx5.a
+    public void b(int i17) {
+        try {
+            if (!this.f367533e) {
+                h("· 内核更新中");
+                this.f367533e = true;
+            }
+            android.app.ProgressDialog progressDialog = this.f367531c;
+            if (progressDialog != null) {
+                progressDialog.setCancelable(false);
+                this.f367531c.setProgress(i17);
+            }
+        } catch (java.lang.Exception e17) {
+            by5.c4.f("XWebDebugRuntimeHelper", "onUpdateProgressed error:" + e17);
+        }
+    }
+
+    @Override // zx5.a
+    public void c() {
+        h("· 主配置更新完成");
+    }
+
+    @Override // zx5.a
+    public void d(int i17) {
+        this.f367533e = false;
+        if (i17 == 0) {
+            h("· 开始更新内核");
+        } else {
+            h("· 开始更新内核(predown)");
+        }
+    }
+
+    @Override // zx5.a
+    public void e() {
+        h("· 插件配置更新完成");
+    }
+
+    @Override // zx5.a
+    public void f(int i17, int i18) {
+        try {
+            if (i17 == 0) {
+                h("· 更新完成，点击重启生效");
+                this.f367532d = true;
+                android.app.ProgressDialog progressDialog = this.f367531c;
+                if (progressDialog != null) {
+                    progressDialog.setCancelable(true);
+                    this.f367531c.setCanceledOnTouchOutside(true);
+                    this.f367531c.setProgress(100);
+                }
+            } else if (i17 == -2) {
+                h("· 更新取消(可能无新内核)");
+                android.app.ProgressDialog progressDialog2 = this.f367531c;
+                if (progressDialog2 != null) {
+                    progressDialog2.setCancelable(true);
+                    this.f367531c.setCanceledOnTouchOutside(true);
+                }
+            } else {
+                h("· 更新失败，错误码:" + i18);
+                android.app.ProgressDialog progressDialog3 = this.f367531c;
+                if (progressDialog3 != null) {
+                    progressDialog3.setCancelable(true);
+                    this.f367531c.setCanceledOnTouchOutside(true);
+                }
+            }
+        } catch (java.lang.Exception e17) {
+            by5.c4.f("XWebDebugRuntimeHelper", "onUpdateFinished error:" + e17);
+        }
+    }
+
+    @Override // zx5.a
+    public void g(boolean z17) {
+        h("· 多Profile开关更新完成:" + z17);
+    }
+
+    public final void h(java.lang.String str) {
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("showMessage, shouldAlert:");
+        boolean z17 = this.f367530b;
+        sb6.append(z17);
+        sb6.append(", message:");
+        sb6.append(str);
+        by5.c4.f("XWebDebugRuntimeHelper", sb6.toString());
+        if (z17) {
+            if (this.f367531c == null) {
+                android.app.ProgressDialog progressDialog = new android.app.ProgressDialog(this.f367529a);
+                this.f367531c = progressDialog;
+                progressDialog.setProgressStyle(1);
+                this.f367531c.setMessage(str);
+                this.f367531c.setOnCancelListener(new qx5.v(this));
+                this.f367531c.setCancelable(true);
+                this.f367531c.show();
+            }
+            java.util.List list = this.f367534f;
+            list.add(str);
+            this.f367531c.setMessage(android.text.TextUtils.join("\n", list));
+        }
+    }
+}

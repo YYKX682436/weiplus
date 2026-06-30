@@ -1,0 +1,12 @@
+package uy4;
+
+/* loaded from: classes6.dex */
+public class k implements java.lang.Iterable {
+    public k(uy4.i iVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new uy4.j(this, null);
+    }
+}

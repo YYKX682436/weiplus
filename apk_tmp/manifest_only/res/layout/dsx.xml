@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@raw/live_ec_coupon_card_background" android:layout_width="302.0dp" android:layout_height="400.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="#e5522b23" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" tool:text="平台新客券" />
+    <TextView android:textSize="40.0dp" android:textColor="@color/OrangeRed_100" android:id="@id/owj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_below="@id/obc" android:layout_centerHorizontal="true" tool:text="¥5" />
+    <TextView android:textSize="15.0dp" android:textColor="#8c522b23" android:id="@id/vap" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/vaq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_below="@id/owj" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/an" android:gravity="center" android:id="@id/b2z" android:background="@drawable/d20" android:layout_width="184.0dp" android:layout_height="48.0dp" android:layout_marginBottom="@dimen/dn" android:text="@string/nqr" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" tool:text="去使用" />
+</RelativeLayout>

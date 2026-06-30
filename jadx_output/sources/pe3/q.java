@@ -1,0 +1,25 @@
+package pe3;
+
+/* loaded from: classes3.dex */
+public final class q extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ java.util.List f353672d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public q(yz5.p pVar, java.util.List list) {
+        super(1);
+        this.f353672d = list;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        int intValue = ((java.lang.Number) obj).intValue();
+        java.lang.Integer valueOf = java.lang.Integer.valueOf(intValue);
+        java.lang.Object obj2 = this.f353672d.get(intValue);
+        valueOf.intValue();
+        se3.d it = (se3.d) obj2;
+        kotlin.jvm.internal.o.g(it, "it");
+        return java.lang.Integer.valueOf(it.hashCode());
+    }
+}

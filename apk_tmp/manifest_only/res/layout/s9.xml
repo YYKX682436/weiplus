@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/h7u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:id="@id/cfx" android:paddingLeft="@dimen/bf" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="A" style="@style/jt" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ja">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cg0" android:background="@drawable/q2" android:layout_width="match_parent" android:layout_height="@dimen/ao">
+            <com.tencent.mm.ui.base.MaskLayout android:id="@id/cfu" android:layout_width="@dimen/an" android:layout_height="@dimen/an" android:contentDescription="@null" android:importantForAccessibility="no">
+                <ImageView android:id="@id/cgi" android:layout_width="@dimen/am" android:layout_height="@dimen/am" android:src="@raw/default_avatar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" android:importantForAccessibility="no" />
+            </com.tencent.mm.ui.base.MaskLayout>
+            <com.tencent.mm.ui.base.EllipsizeTextView android:id="@id/cg1" android:background="?gp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/cn" android:text="{nick}" android:singleLine="true" android:layout_weight="1.0" style="@style/j3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

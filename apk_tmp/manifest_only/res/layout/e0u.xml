@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u37" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/df" android:src="@raw/info_circle_filled" app:fs="@color/Blue_100" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="@dimen/ct" android:textColor="@color/abw" android:id="@id/odi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/n69" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/u37" />
+    <Button android:id="@id/khs" android:layout_width="@dimen/cf" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bu" android:text="@string/vi" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="@style/xu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

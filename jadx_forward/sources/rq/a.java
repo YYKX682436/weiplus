@@ -1,0 +1,29 @@
+package rq;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: classes3.dex */
+public final class a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final /* synthetic */ rq.a[] f480244d;
+
+    static {
+        rq.a[] aVarArr = {new rq.a("START", 0), new rq.a("STEP", 1), new rq.a("SUCCESS", 2), new rq.a("FAIL", 3)};
+        f480244d = aVarArr;
+        rz5.b.a(aVarArr);
+    }
+
+    public a(java.lang.String str, int i17) {
+    }
+
+    /* renamed from: valueOf */
+    public static rq.a m162859xdce0328(java.lang.String str) {
+        return (rq.a) java.lang.Enum.valueOf(rq.a.class, str);
+    }
+
+    /* renamed from: values */
+    public static rq.a[] m162860xcee59d22() {
+        return (rq.a[]) f480244d.clone();
+    }
+}

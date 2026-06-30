@@ -1,0 +1,14 @@
+package com.tencent.mm.ui.mmfb.sdk;
+
+/* loaded from: classes13.dex */
+public class v implements android.os.Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public java.lang.Object createFromParcel(android.os.Parcel parcel) {
+        return new com.tencent.mm.ui.mmfb.sdk.LoginClient(parcel);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public java.lang.Object[] newArray(int i17) {
+        return new com.tencent.mm.ui.mmfb.sdk.LoginClient[i17];
+    }
+}

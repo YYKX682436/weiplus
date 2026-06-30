@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m7g" android:paddingLeft="@dimen/hx" android:paddingRight="@dimen/j3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:orientation="horizontal" android:background="@color/f3" android:layout_height="wrap_content" android:minHeight="50.0dp" style="@style/j4">
+        <ImageButton android:id="@id/p9" android:background="@null" android:layout_width="@dimen/i8" android:layout_height="@dimen/i8" android:src="@raw/sight_icon_emoji" android:minWidth="0.0dp" android:layout_centerVertical="true" android:contentDescription="@string/axk" style="@style/kn" />
+        <com.tencent.mm.plugin.sns.ui.SightLocationWidget android:id="@id/io1" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_toRightOf="@id/p9" />
+        <com.tencent.mm.plugin.sns.ui.SightRangeWidget android:id="@id/li_" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

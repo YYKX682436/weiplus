@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/fkw" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:id="@id/jsv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:text="@string/fkt" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.game.ui.chat_tab.GameHotMsgView android:id="@id/glk" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:overScrollMode="always" />
+    <TextView android:textSize="13.0dp" android:textColor="@color/FG_2" android:gravity="center" android:id="@id/glj" android:visibility="gone" android:clipToPadding="false" android:layout_width="343.0dp" android:layout_height="73.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="暂无私信" android:overScrollMode="always" />
+    <View android:layout_width="match_parent" android:layout_height="8.0dp" />
+</LinearLayout>

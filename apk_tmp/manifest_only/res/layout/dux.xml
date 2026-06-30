@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/mjc" android:background="@drawable/q2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:minHeight="@dimen/bp" android:layout_marginHorizontal="@dimen/cn">
+        <FrameLayout android:id="@id/rtd" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/aij" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/aij" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn" android:paddingVertical="@dimen/aij">
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/mie" android:background="@drawable/aoe" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/hhb" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/a_4" android:layout_width="@dimen/am" android:layout_height="@dimen/am" android:layout_marginTop="@dimen/c9" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/czt" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/a_4" android:layout_marginStart="@dimen/cn" android:paddingVertical="@dimen/c9">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingHorizontal="@dimen/cn">
+                    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/kbq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="yes" />
+                    <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/rmd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:importantForAccessibility="yes" />
+                    <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/u8u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="yes" />
+                </LinearLayout>
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/m38" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@raw/icons_outlined_arrow" android:layout_marginEnd="@dimen/cn" app:fs="@color/FG_2" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/r_u" android:visibility="visible" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/arrow_right" android:layout_marginEnd="@dimen/cn" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/d0v" android:background="@color/vt" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dj" android:layout_marginEnd="@dimen/d7" />
+</RelativeLayout>

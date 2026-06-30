@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/m7o" android:background="@color/a6x" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/ngq" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintGuide_percent="0.125" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/dgh" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintGuide_percent="0.875" />
+    <ImageView android:id="@id/d_7" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="750:224" app:layout_constraintTop_toTopOf="0" />
+    <ImageView android:id="@id/d_6" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="750:464" />
+    <com.tencent.mm.plugin.gif.MMAnimateView android:id="@id/ixy" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/ixx" app:layout_constraintEnd_toEndOf="@id/ixx" app:layout_constraintStart_toStartOf="@id/ixx" app:layout_constraintTop_toTopOf="@id/ixx" />
+    <com.tencent.mm.plugin.gif.MMAnimateView android:id="@id/ixx" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginBottom="72.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="@id/dgh" app:layout_constraintStart_toStartOf="@id/ngq" app:layout_constraintTop_toBottomOf="@id/d_7" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

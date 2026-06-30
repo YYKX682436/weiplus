@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/db"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/cxt" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u7d" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/music_filled" app:fs="@color/ac8" />
+        <FrameLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/bl">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/ac8" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/viv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/ajo" android:minWidth="@dimen/dj" android:text="@string/lng" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:importantForAccessibility="no" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/hw1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/mcb">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@drawable/cyn" android:layout_marginStart="@dimen/c8" app:fs="@color/ac8" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

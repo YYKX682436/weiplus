@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chq" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hi" android:layout_marginRight="@dimen/hi"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/khm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/h7n" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@raw/icons_outlined_error" app:fs="@color/aa2" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="center" android:layout_gravity="center" android:id="@id/s7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/heb" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="24.0dp" android:weightSum="123.0" android:layout_weight="1.0" android:layout_below="@id/o_f" android:layout_alignParentBottom="true">
+        <View android:id="@id/p21" android:layout_width="match_parent" android:layout_height="0.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/kiq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="24.0dp">
+            <CheckBox android:gravity="center" android:layout_gravity="center" android:id="@id/kip" android:background="@drawable/atg" android:focusable="false" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginRight="4.0dp" android:checked="false" android:includeFontPadding="false" style="@style/im" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_5" android:gravity="center" android:id="@id/kir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" />
+        </LinearLayout>
+        <Button android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/h5h" android:background="@drawable/jk" android:text="@string/he_" style="@style/kr" />
+        <View android:id="@id/p22" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="12.0dp" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="@dimen/hi">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/m9c" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m9b" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/pay_safe" app:fs="@color/UN_BW_0_Alpha_0_3" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_3" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/m9d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" android:text="@string/kru" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m9a" android:layout_width="8.0dp" android:layout_height="16.0dp" android:src="@raw/icons_outlined_arrow" app:fs="@color/UN_BW_0_Alpha_0_3" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

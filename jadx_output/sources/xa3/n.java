@@ -1,0 +1,26 @@
+package xa3;
+
+/* loaded from: classes6.dex */
+public class n implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f452803d = 0;
+
+    public n(xa3.o oVar, xa3.m mVar) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f452803d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f452803d;
+        this.f452803d = i17 + 1;
+        if (i17 == 0) {
+            return xa3.h0.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

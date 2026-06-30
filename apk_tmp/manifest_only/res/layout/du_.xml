@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/r4b" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/azo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+            <ImageView android:id="@id/eii" android:layout_width="@dimen/am" android:layout_height="@dimen/am" android:layout_marginStart="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+            <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/rh0" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/eii" app:layout_constraintTop_toTopOf="0">
+                <com.google.android.flexbox.FlexboxLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" app:alignItems="2" app:flexDirection="0" app:justifyContent="0">
+                    <TextView android:ellipsize="end" android:gravity="start" android:id="@id/ein" android:singleLine="true" app:layout_flexShrink="1.0" style="@style/r7" />
+                    <com.tencent.mm.plugin.finder.view.FinderInteractionLabelGroupView android:gravity="center" android:orientation="horizontal" android:id="@id/e5y" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" app:layout_flexShrink="0.0" />
+                    <TextView android:textSize="@dimen/c9" android:textColor="@color/FG_2" android:id="@id/o7z" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" app:layout_flexShrink="0.0" />
+                </com.google.android.flexbox.FlexboxLayout>
+                <com.tencent.mm.plugin.finder.view.FinderInteractionLabelGroupView android:gravity="center" android:orientation="horizontal" android:id="@id/rdn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" />
+            </LinearLayout>
+            <View android:background="@drawable/afv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" />
+            <View android:id="@id/i1e" android:background="@color/m9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

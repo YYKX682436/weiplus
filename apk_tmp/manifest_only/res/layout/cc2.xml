@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/p" android:paddingRight="@dimen/p" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/pl0" android:visibility="visible" android:layout_marginTop="@dimen/i1" android:layout_marginBottom="@dimen/i_" style="@style/er" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pky" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/i_">
+        <LinearLayout android:orientation="horizontal" android:id="@id/pkx" android:background="@drawable/nl" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/i_" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/i_" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="30.0dp">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/a_4" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/bgo" android:scaleType="centerCrop" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/vo" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/kbb" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j3" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/pl1" android:background="@drawable/nh" android:paddingLeft="@dimen/j3" android:paddingTop="0.0px" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/j3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="150.0dp">
+            <FrameLayout android:id="@id/ckt" android:paddingRight="@dimen/f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/cc3" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/cku" android:paddingLeft="@dimen/f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/cc3" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/j8_" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/h96" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?android:progressBarStyleHorizontal" />
+    <ImageView android:id="@id/j89" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/h8p" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/j89">
+        <TextView android:textSize="@dimen/k" android:textColor="@color/ab0" android:gravity="center" android:id="@id/h97" android:background="@color/f3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/ab0" android:id="@id/h97" android:background="@color/f3" android:layout_width="80.0dp" android:layout_height="wrap_content" android:layout_marginRight="50.0dp" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/ab0" android:id="@id/h98" android:background="@color/f3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/ab0" android:id="@id/h95" android:background="@color/f3" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

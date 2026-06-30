@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:layout_gravity="right" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bjy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dp" style="@style/em">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="30.0dp" android:layout_height="match_parent" android:layout_marginBottom="@dimen/i_">
+            <ImageView android:gravity="center_vertical" android:layout_gravity="right|center" android:id="@id/bqz" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@raw/chatting_status_tick" />
+            <ImageView android:id="@id/bqx" android:visibility="gone" android:layout_centerVertical="true" style="@style/es" />
+            <ProgressBar android:layout_gravity="right|center" android:id="@id/ott" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c9" style="@style/x4" />
+        </LinearLayout>
+        <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingAskShareMvvmView android:id="@id/spw" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/tz" />
+</LinearLayout>

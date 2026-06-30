@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/hsn" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowlayout="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.base.MMTagPanelScrollView android:id="@id/hsj" android:background="@drawable/bfk" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="true">
+        <com.tencent.mm.plugin.label.ui.widget.MMLabelPanel android:id="@id/hsh" android:paddingTop="@dimen/j" android:paddingBottom="@dimen/j" android:layout_width="match_parent" android:layout_height="wrap_content" flowlayout:horizontalSpacing="@dimen/j3" flowlayout:verticalSpacing="@dimen/j3" />
+    </com.tencent.mm.ui.base.MMTagPanelScrollView>
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/a2y" android:gravity="center" android:id="@id/hsl" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/g9g" />
+    <ScrollView android:id="@id/hso" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/hsg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/hse" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@id/hsf" layout="@layout/a2_" />
+                <com.tencent.mm.plugin.label.ui.widget.MMLabelPanel android:id="@id/hsd" android:paddingTop="@dimen/j3" android:paddingBottom="@dimen/j3" android:layout_width="match_parent" android:layout_height="wrap_content" flowlayout:horizontalSpacing="@dimen/j3" flowlayout:verticalSpacing="@dimen/j3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ListView android:id="@id/hsk" android:background="@color/aaw" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/js" />
+</LinearLayout>

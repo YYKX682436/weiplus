@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/oiv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/db" android:layout_above="@id/esh" />
+    <RelativeLayout android:id="@id/esh" android:background="@drawable/ayv" android:layout_width="@dimen/dj" android:layout_height="@dimen/d9" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/dv" android:src="@raw/icons_filled_down_arrow" android:layout_centerInParent="true" app:fs="@color/BW_100_Alpha_0_3" />
+    </RelativeLayout>
+</RelativeLayout>

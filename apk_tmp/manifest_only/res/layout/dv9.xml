@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dj" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/rrg" android:background="@drawable/cvq" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MCRoundCornerImageView android:id="@id/h5w" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" app:layout_constraintBottom_toBottomOf="@id/rrg" app:layout_constraintEnd_toEndOf="@id/rrg" app:layout_constraintStart_toStartOf="@id/rrg" app:layout_constraintTop_toTopOf="@id/rrg" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/ac_" android:layout_gravity="center" android:id="@id/q8t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aih" app:layout_constraintEnd_toEndOf="@id/rrg" app:layout_constraintStart_toStartOf="@id/rrg" app:layout_constraintTop_toBottomOf="@id/rrg" />
+    <View android:id="@id/qa0" android:background="@drawable/cme" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/rrg" app:layout_constraintEnd_toEndOf="@id/rrg" app:layout_constraintStart_toStartOf="@id/rrg" app:layout_constraintTop_toTopOf="@id/rrg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/n_5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/qgn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/cnm" />
+        <ImageView android:id="@id/o71" android:background="@color/f3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/ncu" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/n4i" android:visibility="gone" android:layout="@layout/cp7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:layout_gravity="start|top" android:id="@id/ke" android:layout="@layout/d1" android:layout_width="wrap_content" android:layout_height="21.0dp" android:layout_marginTop="6.0dp" android:layout_marginStart="6.0dp" />
+        <ImageView android:id="@id/nar" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/kwm" android:background="@raw/shortvideo_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

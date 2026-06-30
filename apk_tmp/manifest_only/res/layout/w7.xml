@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_below="@id/br1" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.tencent.mm.ui.base.AnimImageView android:id="@id/bqu" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/bl" />
+    <ProgressBar android:layout_gravity="top" android:id="@id/neo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/dv" style="@style/x4" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/em">
+        <TextView android:layout_gravity="right" android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bqx" style="@style/es" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/ott" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c9" style="@style/x4" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bqz" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/chatting_status_tick" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.MMNeat7extView android:textColor="@color/i_" android:gravity="center_vertical" android:id="@id/bkl" android:background="@drawable/o_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_" style="@style/eu" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/Link_100" android:id="@id/bjp" android:paddingLeft="@dimen/bk" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bk" android:paddingBottom="@dimen/bj" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp" android:layout_marginTop="@dimen/bl" android:includeFontPadding="false" android:paddingHorizontal="@dimen/bk" android:paddingVertical="@dimen/bj" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/bjv" android:background="@drawable/mr" android:paddingLeft="@dimen/bk" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bk" android:paddingBottom="@dimen/bj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:paddingHorizontal="@dimen/bk" android:paddingVertical="@dimen/bj">
+                    <TextView android:textSize="@dimen/ja" android:textColor="@color/BW_100_Alpha_0_8" android:layout_gravity="center" android:id="@id/bjw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ft9" android:singleLine="true" android:includeFontPadding="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ViewStub android:layout_gravity="right" android:id="@id/ojd" android:layout="@layout/xi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hq" android:layout_marginRight="5.0dp" />
+    </LinearLayout>
+    <include layout="@layout/tz" />
+</LinearLayout>

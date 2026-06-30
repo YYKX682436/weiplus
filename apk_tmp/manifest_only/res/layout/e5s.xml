@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.finder.view.FinderDraggableIndicator android:id="@id/tcu" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/cb" android:textColor="@color/abw" android:id="@id/oqh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d9" android:text="@string/om4" />
+    <TextView android:textSize="@dimen/cb" android:textColor="@color/abw" android:id="@id/om7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="@string/om4" />
+    <include android:id="@id/t2o" android:layout_width="@dimen/cu" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" layout="@layout/e5q" />
+    <Space android:id="@id/sl2" android:layout_width="wrap_content" android:layout_height="@dimen/bo" />
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/smf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_marginBottom="@dimen/dn" android:text="@string/om6" style="@style/xl" />
+</LinearLayout>

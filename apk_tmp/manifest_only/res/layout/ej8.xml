@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:layout_marginBottom="@dimen/cq">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/v9s" android:layout_width="@dimen/dj" android:layout_height="@dimen/dd" android:src="@drawable/cyl" android:scaleType="center" android:layout_alignParentStart="true" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/o8q" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sbs" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="@dimen/ds" android:layout_marginTop="@dimen/co" android:paddingHorizontal="@dimen/cz">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sbo" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/sbq" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="1">
+            <TextView android:textSize="15.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/sbp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/o8o" />
+            <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MJTextSeekBar android:id="@id/shv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/d2" app:MJTextSeekBar_Hide_Icon="true" app:MJTextSeekBar_Progress="@drawable/d8h" app:MJTextSeekBar_Thumb="@drawable/dbh" app:MJTextSeekBar_Value_Color="@color/BW_0_Alpha_0_9" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sbq" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/sbo">
+            <TextView android:textSize="15.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/sbr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/o8p" />
+            <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MJTextSeekBar android:id="@id/unq" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/d2" app:MJTextSeekBar_Hide_Icon="true" app:MJTextSeekBar_Progress="@drawable/d8h" app:MJTextSeekBar_Thumb="@drawable/dbh" app:MJTextSeekBar_Value_Color="@color/BW_0_Alpha_0_9" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

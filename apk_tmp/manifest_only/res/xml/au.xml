@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:af="true" app:ah="true" app:fv="false" app:key="pref_category_plugin_debug" app:title="常用的调试功能">
+        <com.tencent.xweb.debug.XWebDebugListPreference app:af="true" app:ah="true" app:debug_key="check_plugin_update" app:defaultValue="all" app:entries="@array/at" app:entryValues="@array/au" app:fv="false" app:key="check_plugin_update" app:persistent="false" app:summary="check_plugin_update" app:title="检查插件更新" />
+        <com.tencent.xweb.debug.XWebDebugPreference app:af="true" app:ah="true" app:debug_key="clear_all_plugin" app:fv="false" app:key="clear_all_plugin" app:persistent="false" app:summary="clear_all_plugin" app:title="清理所有插件" />
+        <com.tencent.xweb.debug.XWebDebugPreference app:af="true" app:ah="true" app:debug_key="install_embed_plugin" app:fv="false" app:key="install_embed_plugin" app:persistent="false" app:summary="install_embed_plugin" app:title="安装内置插件" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="switch_plugin_config_url" app:persistent="false" app:title="快速切换插件配置链接" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="show_file_reader_info" app:persistent="false" app:title="显示File Reader Type" />
+        <com.tencent.xweb.debug.XWebDebugSwitchPreference app:af="true" app:ah="true" app:debug_key="disable_file_reader_cache" app:defaultValue="false" app:fv="false" app:key="disable_file_reader_cache" app:persistent="false" app:summary="disable_file_reader_cache" app:title="禁用缓存" />
+        <com.tencent.xweb.debug.XWebDebugSwitchPreference app:af="true" app:ah="true" app:debug_key="disable_file_reader_crash_detect" app:defaultValue="false" app:fv="false" app:key="disable_file_reader_crash_detect" app:persistent="false" app:summary="disable_file_reader_crash_detect" app:title="禁用crash检测" />
+    </PreferenceCategory>
+    <PreferenceCategory app:af="true" app:ah="true" app:fv="false" app:key="pref_category_plugin" app:title="插件调试功能专区">
+        <ListPreference app:af="true" app:ah="true" app:defaultValue="XFilesOfficeReader" app:entries="@array/av" app:entryValues="@array/av" app:fv="false" app:key="plugin_name" app:persistent="false" app:summary="XFilesOfficeReader" app:title="选择插件" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="update_plugin" app:persistent="false" app:title="显式更新插件" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="clear_plugin" app:persistent="false" app:title="清理插件版本" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="install_plugin_32" app:persistent="false" app:title="安装本地32位插件" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="install_plugin_64" app:persistent="false" app:title="安装本地64位插件" />
+    </PreferenceCategory>
+    <PreferenceCategory app:af="true" app:ah="true" app:fv="false" app:key="pref_category_file_reader" app:title="OfficeReader格式设置">
+        <EditTextPreference app:af="true" app:ah="true" app:fv="false" app:key="office_reader_format" app:persistent="false" app:summary="all" app:title="填入OfficeReader的格式，不填则全部设置" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="use_office_reader_force_yes" app:persistent="false" app:title="强制启用OfficeReader" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="use_office_reader_force_no" app:persistent="false" app:title="强制禁用OfficeReader" />
+        <Preference app:af="true" app:ah="true" app:fv="false" app:key="use_office_reader_force_none" app:persistent="false" app:title="设置为自动模式" />
+    </PreferenceCategory>
+    <PreferenceCategory app:af="true" app:ah="true" app:fv="false" app:initialExpandedChildrenCount="3" app:key="pref_category_plugin_actions" app:title="调试类功能操作">
+        <com.tencent.xweb.debug.XWebDebugEditTextPreference app:af="true" app:ah="true" app:debug_key="set_plugin_config_url" app:fv="false" app:key="set_plugin_config_url" app:persistent="false" app:summary="set_plugin_config_url" app:title="设置插件配置链接" />
+    </PreferenceCategory>
+</PreferenceScreen>

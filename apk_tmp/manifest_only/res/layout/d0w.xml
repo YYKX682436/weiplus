@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/p4d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/db">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/p4e" android:background="@drawable/b9_" android:padding="@dimen/bl" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/dv" android:src="@raw/icons_filled_pause" app:fs="@color/an" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.plugin.vlog.ui.widget.VLogThumbView android:id="@id/p4k" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

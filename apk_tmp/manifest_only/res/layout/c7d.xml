@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/k5q" style="@style/js" />
+    <TextView android:ellipsize="none" android:gravity="center" android:id="@id/k5s" android:padding="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/h63" android:singleLine="false" style="@style/ix" />
+    <ScrollView android:id="@id/k5p" android:visibility="gone" android:scrollbars="none" style="@style/kj">
+        <LinearLayout android:gravity="center_horizontal" style="@style/ij">
+            <ImageView android:paddingBottom="33.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bj_" />
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/h68" style="@style/ik" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/hzf" android:paddingTop="@dimen/ce" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/db" android:layout_marginRight="@dimen/db">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_location" app:fs="@color/BW_70" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_70" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/d17" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/a5" android:id="@id/hzg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d18" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

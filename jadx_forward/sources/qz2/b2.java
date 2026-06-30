@@ -1,0 +1,17 @@
+package qz2;
+
+/* loaded from: classes9.dex */
+public final class b2 implements android.content.DialogInterface.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ qz2.i2 f449378d;
+
+    public b2(qz2.i2 i2Var) {
+        this.f449378d = i2Var;
+    }
+
+    @Override // android.content.DialogInterface.OnClickListener
+    public final void onClick(android.content.DialogInterface dialogInterface, int i17) {
+        this.f449378d.P6(new qz2.q1(-1));
+    }
+}

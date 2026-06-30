@@ -1,0 +1,22 @@
+package jt3;
+
+/* loaded from: classes10.dex */
+public final class e implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ jt3.h f301622d;
+
+    public e(jt3.h hVar) {
+        this.f301622d = hVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        java.util.Map map = this.f301622d.f301634f;
+        kotlin.jvm.internal.o.f(map, "access$getViewMap$p(...)");
+        java.util.Iterator it = map.entrySet().iterator();
+        while (it.hasNext()) {
+            ((com.tencent.mm.plugin.recordvideo.plugin.parent.BasePluginLayout) ((java.util.Map.Entry) it.next()).getValue()).release();
+        }
+    }
+}

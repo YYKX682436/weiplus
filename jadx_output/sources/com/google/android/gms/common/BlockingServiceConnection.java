@@ -1,0 +1,40 @@
+package com.google.android.gms.common;
+
+/* loaded from: classes13.dex */
+public class BlockingServiceConnection implements android.content.ServiceConnection {
+    boolean zza = false;
+    private final java.util.concurrent.BlockingQueue zzb = new java.util.concurrent.LinkedBlockingQueue();
+
+    @com.google.errorprone.annotations.ResultIgnorabilityUnspecified
+    public android.os.IBinder getService() {
+        com.google.android.gms.common.internal.Preconditions.checkNotMainThread("BlockingServiceConnection.getService() called on main thread");
+        if (this.zza) {
+            throw new java.lang.IllegalStateException("Cannot call get on this connection more than once");
+        }
+        this.zza = true;
+        return (android.os.IBinder) this.zzb.take();
+    }
+
+    @com.google.errorprone.annotations.ResultIgnorabilityUnspecified
+    public android.os.IBinder getServiceWithTimeout(long j17, java.util.concurrent.TimeUnit timeUnit) {
+        com.google.android.gms.common.internal.Preconditions.checkNotMainThread("BlockingServiceConnection.getServiceWithTimeout() called on main thread");
+        if (this.zza) {
+            throw new java.lang.IllegalStateException("Cannot call get on this connection more than once");
+        }
+        this.zza = true;
+        android.os.IBinder iBinder = (android.os.IBinder) this.zzb.poll(j17, timeUnit);
+        if (iBinder != null) {
+            return iBinder;
+        }
+        throw new java.util.concurrent.TimeoutException("Timed out waiting for the service connection");
+    }
+
+    @Override // android.content.ServiceConnection
+    public final void onServiceConnected(android.content.ComponentName componentName, android.os.IBinder iBinder) {
+        this.zzb.add(iBinder);
+    }
+
+    @Override // android.content.ServiceConnection
+    public final void onServiceDisconnected(android.content.ComponentName componentName) {
+    }
+}

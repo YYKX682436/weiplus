@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.image.FinderRoundedBorderImageView android:id="@id/uv5" android:visibility="gone" android:layout_width="@dimen/ap1" android:layout_height="@dimen/ap0" android:layout_marginBottom="@dimen/c9" android:scaleType="centerCrop" app:borderColor="@color/an" app:b1="@dimen/aoz" app:ds="@dimen/aih" app:layout_constraintBottom_toTopOf="@id/qp4" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/qp4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/uv5">
+        <com.tencent.mm.plugin.finder.view.FinderStrokeShadowTextView android:textSize="@dimen/q" android:textColor="@color/u6" android:id="@id/co4" android:layout_width="wrap_content" android:layout_height="match_parent" app:finderShadowColor="@color/BW_0_Alpha_0_3" app:finderShadowRadius="3.0" />
+        <com.tencent.mm.plugin.finder.view.FinderStrokeShadowTextView android:textSize="@dimen/ja" android:textColor="@color/u4" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:text="/" android:layout_marginHorizontal="@dimen/dv" app:finderShadowColor="@color/BW_0_Alpha_0_3" app:finderShadowRadius="3.0" />
+        <com.tencent.mm.plugin.finder.view.FinderStrokeShadowTextView android:textSize="@dimen/q" android:textColor="@color/u4" android:id="@id/ohr" android:layout_width="wrap_content" android:layout_height="wrap_content" app:finderShadowColor="@color/BW_0_Alpha_0_3" app:finderShadowRadius="3.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

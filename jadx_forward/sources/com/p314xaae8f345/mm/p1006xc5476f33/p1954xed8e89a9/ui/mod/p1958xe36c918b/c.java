@@ -1,0 +1,41 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1954xed8e89a9.ui.mod.p1958xe36c918b;
+
+/* loaded from: classes11.dex */
+public final class c implements lr3.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1954xed8e89a9.ui.mod.p1958xe36c918b.g f235565a;
+
+    public c(com.p314xaae8f345.mm.p1006xc5476f33.p1954xed8e89a9.ui.mod.p1958xe36c918b.g gVar) {
+        this.f235565a = gVar;
+    }
+
+    @Override // lr3.a
+    public void a() {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1954xed8e89a9.ui.mod.p1958xe36c918b.g gVar = this.f235565a;
+        com.p314xaae8f345.mm.ui.p2642x2e06d1.C21503x6e5a020a c21503x6e5a020a = (com.p314xaae8f345.mm.ui.p2642x2e06d1.C21503x6e5a020a) gVar.f393013h;
+        if (c21503x6e5a020a == null) {
+            return;
+        }
+        java.lang.String str = gVar.f235592r;
+        if (str == null || r26.n0.N(str)) {
+            com.p314xaae8f345.mm.ui.p2642x2e06d1.C21525x1d56253b editText = c21503x6e5a020a.getEditText();
+            editText.requestFocus();
+            android.text.Editable text = editText.getText();
+            editText.setSelection(text != null ? text.length() : 0);
+            java.lang.Object systemService = gVar.m158354x19263085().getSystemService("input_method");
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.e(systemService, "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager");
+            ((android.view.inputmethod.InputMethodManager) systemService).showSoftInput(editText, 0);
+        }
+    }
+
+    @Override // lr3.a
+    public void b() {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1954xed8e89a9.ui.mod.p1958xe36c918b.g gVar = this.f235565a;
+        float h17 = i65.a.h(gVar.m158354x19263085(), com.p314xaae8f345.mm.R.C30860x5b28f31.f561271dv);
+        com.p314xaae8f345.mm.ui.p2642x2e06d1.C21503x6e5a020a c21503x6e5a020a = (com.p314xaae8f345.mm.ui.p2642x2e06d1.C21503x6e5a020a) gVar.f393013h;
+        if (c21503x6e5a020a != null) {
+            sa5.d.e(c21503x6e5a020a, h17, (r14 & 2) != 0 ? 1 : 0, (r14 & 4) != 0 ? 1000L : 0L, (r14 & 8) != 0 ? 300L : 0L, (r14 & 16) != 0 ? null : null);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/m7g" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mqh" android:background="@drawable/be" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="12.0dp" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/cgi" android:paddingLeft="30.0dp" android:paddingRight="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="13.0dp">
+        <TextView android:textSize="17.0dp" android:textColor="#cda337" android:ellipsize="end" android:id="@id/gzm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" android:singleLine="true" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mm_" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp">
+            <ImageView android:id="@id/mm9" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_weight="0.0" />
+            <TextView android:textSize="17.0dp" android:textColor="#808080" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/mma" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <TextView android:textSize="17.0dp" android:textColor="#808080" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/mmb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/j7d" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="0.0" />
+        </LinearLayout>
+        <TextView android:textSize="20.0dp" android:textColor="#000000" android:ellipsize="end" android:id="@id/odh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:singleLine="true" />
+        <FrameLayout android:id="@id/gxd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52.0dp">
+            <ImageView android:layout_gravity="center|bottom" android:id="@id/gxc" android:visibility="gone" android:layout_width="110.0dp" android:layout_height="185.0dp" android:scaleType="fitCenter" />
+            <FrameLayout android:layout_gravity="center|bottom" android:id="@id/gxf" android:visibility="gone" android:layout_width="150.0dp" android:layout_height="185.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/crf" android:background="@drawable/buo" android:layout_width="118.0dp" android:layout_height="27.0dp" android:singleLine="true" android:includeFontPadding="false" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/b0r" android:layout_width="184.0dp" android:layout_height="40.0dp" android:layout_marginTop="28.0dp">
+            <TextView android:textSize="17.0dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/azj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        </FrameLayout>
+        <TextView android:textSize="14.0dp" android:textColor="#808080" android:ellipsize="end" android:id="@id/cuv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

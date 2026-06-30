@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/um2" android:background="@color/c" android:paddingLeft="32.0dp" android:paddingRight="32.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="32.0dp">
+        <ImageView android:id="@id/ulx" android:background="@raw/no_pwd_icon" android:layout_width="@dimen/apn" android:layout_height="@dimen/apn" android:layout_marginTop="@dimen/apo" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/ct" android:textColor="@color/FG_0" android:id="@id/um7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/p2t" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/ulx" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/abw" android:layout_gravity="center" android:id="@id/ulw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/p2u" android:breakStrategy="simple" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/um7" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/uly" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aii" app:layout_constraintTop_toBottomOf="@id/ulw">
+            <ImageView android:layout_width="4.0dp" android:layout_height="4.0dp" android:layout_margin="10.0dp" android:src="@drawable/d5w" app:tint="@color/FG_1" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_1" android:gravity="start" android:id="@id/um0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/p55" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ulz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aih" app:layout_constraintTop_toBottomOf="@id/uly">
+            <ImageView android:layout_width="4.0dp" android:layout_height="4.0dp" android:layout_margin="10.0dp" android:src="@drawable/d5w" app:tint="@color/FG_1" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_1" android:gravity="start" android:id="@id/um1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/p56" />
+        </LinearLayout>
+        <View android:id="@id/um4" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/ail" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/ulz" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:id="@id/um6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aii" android:text="@string/p2v" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/um4" />
+        <com.tencent.mm.ui.widget.WeSwitch android:id="@id/um3" app:checked="false" app:layout_constraintBottom_toTopOf="@id/um5" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@id/um4" style="@style/z6" />
+        <View android:id="@id/um5" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/aii" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/um6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

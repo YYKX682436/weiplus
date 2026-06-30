@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/agn" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/a75" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/a6o" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginBottom="@dimen/bl" />
+        <TextView android:textSize="8.0dp" android:textColor="@color/an" android:ellipsize="end" android:id="@id/a76" android:layout_width="@dimen/d1" android:layout_height="wrap_content" android:layout_marginBottom="3.0dp" android:maxLines="1" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ozb" android:paddingRight="2.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/oxw" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="2.0dp" android:layout_marginBottom="2.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" />
+        <TextView android:textSize="8.0dp" android:textColor="@color/an" android:ellipsize="end" android:id="@id/ozl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:text="{nickname}" android:maxLines="1" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="@id/oxw" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="@id/oxw" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

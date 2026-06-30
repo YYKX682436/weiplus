@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.sns.ui.widget.ad.AdRoundedCornerFrameLayout android:id="@id/ggo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.sns.ui.MaskImageView android:layout_gravity="left" android:id="@id/ggp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <include android:layout_gravity="left" android:id="@id/ggs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/cnn" />
+    <FrameLayout android:id="@id/ggq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/gff" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+    <ImageView android:id="@id/dge" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+    <ViewStub android:id="@id/n4i" android:visibility="gone" android:layout="@layout/cp7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/cu3" />
+    <ViewStub android:layout_gravity="left" android:id="@id/v88" android:layout="@layout/dyg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:layout_gravity="left" android:id="@id/ncb" android:layout="@layout/cl" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/n86" android:layout="@layout/ck" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:gravity="center" android:id="@id/nca" android:visibility="gone" android:layout="@layout/cn" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:gravity="center" android:id="@id/naq" android:visibility="gone" android:layout="@layout/cm" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/ggr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="start|top" android:id="@id/ke" android:layout="@layout/d1" android:layout_width="wrap_content" android:layout_height="21.0dp" android:layout_marginTop="8.0dp" android:layout_marginStart="8.0dp" />
+    <ViewStub android:id="@id/k6" android:layout="@layout/cz" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/kf" android:layout="@layout/d2" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/n5s" android:layout="@layout/cp8" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/n1p" android:layout="@layout/com" android:layout_width="match_parent" android:layout_height="44.0dp" />
+</com.tencent.mm.plugin.sns.ui.widget.ad.AdRoundedCornerFrameLayout>

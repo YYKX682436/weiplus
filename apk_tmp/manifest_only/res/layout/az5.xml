@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerConstraintLayout android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent" app:ds="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/l74" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/au4" android:layout_width="match_parent" android:layout_height="@dimen/d9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0">
+        <FrameLayout android:id="@id/lcd" android:background="@drawable/a8o" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0">
+            <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:layout_gravity="center" android:id="@id/lcc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:animation_file="finder_live_shopping_promoting.pag" app:desc_color="@color/an" app:desc_margin_left="2.0dp" app:desc_text="@string/een" app:desc_text_size="@dimen/f9" app:logo_color="@color/an" app:logo_height="@dimen/cn" app:logo_style="1" app:logo_width="@dimen/cn" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.ui.widget.RoundCornerConstraintLayout>

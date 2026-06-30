@@ -1,0 +1,19 @@
+package qn4;
+
+/* loaded from: classes5.dex */
+public final class b implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final qn4.b f446771d = new qn4.b();
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/translate/speech/SpeechIndicatorHelper$ensureWrapperCreated$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        qn4.y.d(3);
+        yj0.a.h(this, "com/tencent/mm/plugin/translate/speech/SpeechIndicatorHelper$ensureWrapperCreated$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

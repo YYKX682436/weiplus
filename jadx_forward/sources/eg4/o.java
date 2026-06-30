@@ -1,0 +1,31 @@
+package eg4;
+
+/* loaded from: classes3.dex */
+public final class o implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ android.widget.TextView f334300d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ android.widget.TextView f334301e;
+
+    public o(android.widget.TextView textView, android.widget.TextView textView2) {
+        this.f334300d = textView;
+        this.f334301e = textView2;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/subapp/ui/friend/AddFriendVerifyRecordFMessageItemConvert$onBindViewHolder$4", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        this.f334300d.setVisibility(8);
+        android.widget.TextView textView = this.f334301e;
+        if (textView != null) {
+            textView.setSingleLine(false);
+        }
+        yj0.a.h(this, "com/tencent/mm/plugin/subapp/ui/friend/AddFriendVerifyRecordFMessageItemConvert$onBindViewHolder$4", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

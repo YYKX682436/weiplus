@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pzo" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/c3" android:layout_height="@dimen/c0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dp" android:textColor="@color/a7" android:gravity="center" android:id="@id/pzn" android:background="@drawable/ckt" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20.0dp" android:text="@string/lhk" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_0" android:id="@id/pzp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/q0x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/pzp" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/wecoin_balance_icons" app:fs="@color/m" />
+        <TextView android:textSize="@dimen/d7" android:textColor="@color/FG_0" android:id="@id/q0w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bj" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/pzi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/q0x" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pzj" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/wecoin_balance_icons" android:layout_centerVertical="true" app:fs="@color/acg" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/acg" android:id="@id/kme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/pzj" />
+        <View android:id="@id/q1m" android:background="@color/acg" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_alignLeft="@id/pzj" android:layout_alignRight="@id/kme" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

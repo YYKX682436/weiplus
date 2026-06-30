@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.InsectRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/o1c" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d7" android:layout_marginBottom="@dimen/cz" android:layout_above="@id/kdf" app:tabBackground="@color/a9e" app:jd="bdp" app:jf="@drawable/b5a" app:jh="@color/aaw" app:jk="1.0dp" app:jm="g7g" app:tabPadding="0.0dp" app:jp="@color/a9e" app:jq="@color/aaw" app:js="@style/s2" app:jt="#4cffffff">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/k6t" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/k6y" />
+    </com.google.android.material.tabs.TabLayout>
+    <RelativeLayout android:id="@id/o19" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/c6" android:layout_marginBottom="@dimen/cn" android:layout_alignParentBottom="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/o15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/kdf" android:layout_width="match_parent" android:layout_height="208.0dp" android:layout_marginBottom="@dimen/cn" android:layout_alignParentBottom="true">
+        <include android:id="@id/d6j" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginLeft="@dimen/df" android:layout_marginRight="@dimen/df" android:layout_marginBottom="@dimen/bl" android:layout_alignParentBottom="true" layout="@layout/d46" />
+        <ViewStub android:id="@id/jvq" android:layout="@layout/c2q" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/dv" android:layout_alignParentBottom="true" />
+        <ViewStub android:id="@id/jvp" android:layout="@layout/c2r" android:layout_width="match_parent" android:layout_height="@dimen/d7" android:layout_marginBottom="46.0dp" android:layout_alignParentBottom="true" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/p4d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:layout_above="@id/d6j">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/p4e" android:background="@drawable/b9_" android:padding="@dimen/bl" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/dv" android:src="@raw/icons_filled_pause" app:fs="@color/an" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            <com.tencent.mm.plugin.vlog.ui.widget.VLogThumbView android:id="@id/p4k" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/a9z" android:id="@id/o83" android:background="@drawable/c3y" android:paddingLeft="@dimen/cs" android:paddingTop="9.0dp" android:paddingRight="@dimen/cs" android:paddingBottom="13.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginBottom="90.0dp" android:text="@string/ctq" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/kdc" android:layout_width="match_parent" android:layout_height="224.0dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/d69" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:layout_marginBottom="@dimen/df" android:layout_above="@id/gc0" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/bo" android:layout_marginEnd="@dimen/bo">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h8k" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_bgm_gif_first_page" app:fs="@color/a9z" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/a9z" android:ellipsize="end" android:id="@id/h8m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/cc" android:text="@string/bti" android:singleLine="true" android:layout_marginStart="6.0dp" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h8l" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_back" android:rotation="180.0" android:layout_marginStart="@dimen/dv" app:fs="@color/a9z" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/gc0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_marginBottom="@dimen/c4" android:layout_alignParentBottom="true" />
+        <com.tencent.mm.plugin.recordvideo.plugin.doodle.PhotoDoodlePlugin android:id="@id/d27" android:background="@drawable/rv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.tencent.mm.ui.widget.InsectRelativeLayout>

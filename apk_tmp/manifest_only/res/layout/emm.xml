@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/anh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="当前type：" />
+    <TextView android:textSize="@dimen/aju" android:textColor="@color/tk" android:id="@id/t2a" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/anh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="输入新的type：" />
+    <EditText android:id="@id/vk2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:hint="请输入type值" android:inputType="number" />
+    <Button android:id="@id/uh6" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="修改type" style="@style/kq" />
+</LinearLayout>

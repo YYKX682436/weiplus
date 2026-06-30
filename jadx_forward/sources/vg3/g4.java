@@ -1,0 +1,5 @@
+package vg3;
+
+/* loaded from: classes5.dex */
+public interface g4 extends i95.m {
+}

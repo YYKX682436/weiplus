@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/bw" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ro1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/ro2" android:background="@drawable/cv8" android:layout_width="0.0dp" android:layout_height="2.0dp" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/ro4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv">
+            <View android:id="@id/ro6" android:background="@drawable/cv9" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ro7" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_done2" app:fs="@color/an" />
+        </FrameLayout>
+        <View android:id="@id/ro3" android:background="@drawable/cv8" android:layout_width="0.0dp" android:layout_height="2.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/an" android:gravity="center" android:id="@id/ro8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="aaaaa" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/f9" android:textColor="@color/an" android:gravity="center" android:id="@id/ro5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="aaaaaaaa" android:includeFontPadding="false" />
+</LinearLayout>

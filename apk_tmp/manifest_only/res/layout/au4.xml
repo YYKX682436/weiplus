@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/f8q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/agx" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" />
+    <com.tencent.mm.view.MMPAGView android:id="@id/iy7" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:transitionName="pag_anim" />
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveGiftTextView android:textSize="22.0dp" android:textColor="@color/ab0" android:id="@id/c03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginStart="-12.0dp" android:layout_toEndOf="@id/iy7" />
+</RelativeLayout>

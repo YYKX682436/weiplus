@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/nb8" android:background="@drawable/q2" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/dv">
+        <View android:id="@id/nbk" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <RelativeLayout android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/nb5" android:padding="2.0dp" android:layout_width="16.0dp" android:layout_height="32.0dp" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="-2.0px" android:layout_alignParentEnd="true" app:fs="@color/FG_2" />
+            <TextView android:textSize="@dimen/r" android:textColor="#e6000000" android:id="@id/nb9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:minHeight="24.0dp" android:layout_centerVertical="true" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_toStartOf="@id/nb5" />
+            <com.tencent.mm.ui.widget.StoryAvatarDotsView android:id="@id/nb6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/nb9" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/nb6">
+                <TextView android:textSize="@dimen/r" android:textColor="@color/a0c" android:id="@id/nbj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:minHeight="24.0dp" />
+                <TextView android:id="@id/nb_" android:background="@drawable/b2r" android:visibility="gone" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" style="@style/rv" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</merge>

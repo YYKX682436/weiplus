@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/kiz" android:background="@color/f3" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/db"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/kiy" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_finder_icon" app:fs="@color/Orange_100" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/kj0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db">
+        <TextView android:textSize="15.0dp" android:textColor="#ffffff" android:id="@id/kj1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cuy" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/kis" android:layout_width="@dimen/c9" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="@dimen/bl" app:fs="#ffffff" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dn" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/db" android:src="@raw/finder_share_entrance_ending" app:fs="@color/a_d" />
+</LinearLayout>

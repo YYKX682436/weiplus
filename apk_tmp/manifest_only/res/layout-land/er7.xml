@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fgb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/vgc" android:background="@drawable/d3w" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_percent="0.382" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <View android:id="@id/skq" android:background="@drawable/d1w" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_percent="0.5" app:layout_constraintStart_toStartOf="0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fg3" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/fgw" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/qjw" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@id/tv9" layout="@layout/eeg" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.finder.live.view.FinderLiveLocationView android:id="@id/l0q" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_columnWeight="1.0" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/fg4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@id/fgw" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/tn7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <FrameLayout android:orientation="vertical" android:id="@id/tn9" android:paddingTop="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/tn_" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include android:id="@id/tvc" layout="@layout/er6" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/tn8" android:paddingBottom="@dimen/cz" android:layout_width="252.0dp" android:layout_height="wrap_content">
+                        <include android:id="@id/eqg" layout="@layout/e93" />
+                        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginHorizontal="@dimen/d7">
+                            <include android:id="@id/qrz" layout="@layout/eel" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+            <RelativeLayout android:layout_gravity="right|bottom" android:orientation="horizontal" android:id="@id/eqb" android:layout_width="184.0dp" android:layout_height="@dimen/dj" android:layout_marginRight="@dimen/cz" android:layout_marginBottom="@dimen/db">
+                <include android:id="@id/tvb" layout="@layout/eem" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/eju" android:layout="@layout/alx" android:inflatedId="@id/ejt" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/pho" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="@dimen/j2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@color/BW_97" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageButton android:id="@id/phk" android:background="@drawable/b9" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:src="@drawable/bay" android:rotation="180.0" app:fs="@color/f3" />
+        <com.tencent.mm.ui.widget.imageview.WeImageButton android:id="@id/phn" android:background="@drawable/b9" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:src="@drawable/bay" app:fs="@color/f3" />
+    </LinearLayout>
+</RelativeLayout>

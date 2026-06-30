@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mq" android:layout_width="@dimen/rk" android:layout_height="wrap_content" android:minHeight="@dimen/rj" android:paddingStart="@dimen/rh"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ri">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/fa" android:id="@id/bi6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b0y" android:layout_centerVertical="true" android:layout_toStartOf="@id/bi7" android:layout_alignParentStart="true" />
+        <Button android:textSize="@dimen/iy" android:textColor="@android:color/white" android:id="@id/bi7" android:text="@string/b0x" android:layout_centerVertical="true" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginEnd="@dimen/rh" android:layout_alignParentEnd="true" style="@style/ks" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/b0z" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bi0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" />
+    <View android:background="@color/k0" android:layout_width="match_parent" android:layout_height="@dimen/bd" android:layout_marginTop="@dimen/cn" />
+    <TextView android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/bhx" android:background="@drawable/mn" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b0n" style="@style/s3" />
+    <View android:background="@color/k0" android:layout_width="match_parent" android:layout_height="@dimen/bd" />
+    <TextView android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/bhy" android:background="@drawable/mn" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b0o" android:layout_marginEnd="@dimen/f" style="@style/s3" />
+</LinearLayout>

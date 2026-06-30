@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/oum" android:background="@color/c" android:fadingEdge="vertical" android:fadingEdgeLength="@dimen/ajf" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/hb" />
+</LinearLayout>

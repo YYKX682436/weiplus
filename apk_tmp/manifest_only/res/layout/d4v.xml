@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lxc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/b_8">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/lxd" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.voip.video.render.VoIPRenderTextureView android:id="@id/khr" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.voip.video.render.VoIPRenderTextureView android:id="@id/khq" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/imt" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/bl" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/bl" android:layout_alignParentEnd="true" app:i8="@dimen/bl" />
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/lxe" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:scaleType="centerCrop" android:layout_centerInParent="true" app:i8="@dimen/bl" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/p7z" android:background="@drawable/b_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/p7x" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@id/p7y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/kc_" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@id/o7z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:textAlignment="center" />
+    <TextView android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@id/o_q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:textAlignment="center" />
+</RelativeLayout>

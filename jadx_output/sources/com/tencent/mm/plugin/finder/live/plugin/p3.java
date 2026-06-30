@@ -1,0 +1,30 @@
+package com.tencent.mm.plugin.finder.live.plugin;
+
+/* loaded from: classes3.dex */
+public final class p3 extends qz5.d {
+
+    /* renamed from: d, reason: collision with root package name */
+    public java.lang.Object f113822d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public /* synthetic */ java.lang.Object f113823e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.live.plugin.v3 f113824f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public int f113825g;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public p3(com.tencent.mm.plugin.finder.live.plugin.v3 v3Var, kotlin.coroutines.Continuation continuation) {
+        super(continuation);
+        this.f113824f = v3Var;
+    }
+
+    @Override // qz5.a
+    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+        this.f113823e = obj;
+        this.f113825g |= Integer.MIN_VALUE;
+        return com.tencent.mm.plugin.finder.live.plugin.v3.w1(this.f113824f, null, this);
+    }
+}

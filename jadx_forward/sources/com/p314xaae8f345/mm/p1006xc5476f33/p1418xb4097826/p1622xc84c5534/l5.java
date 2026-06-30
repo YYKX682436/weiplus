@@ -1,0 +1,6 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1622xc84c5534;
+
+/* loaded from: classes10.dex */
+public interface l5 {
+    void a();
+}

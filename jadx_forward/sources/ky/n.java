@@ -1,0 +1,68 @@
+package ky;
+
+/* loaded from: classes14.dex */
+public final class n extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ z.e f394929d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ float f394930e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ long f394931f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ boolean f394932g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final /* synthetic */ float f394933h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public final /* synthetic */ float f394934i;
+
+    /* renamed from: m, reason: collision with root package name */
+    public final /* synthetic */ z.e f394935m;
+
+    /* renamed from: n, reason: collision with root package name */
+    public final /* synthetic */ n0.v2 f394936n;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public n(z.e eVar, float f17, long j17, boolean z17, float f18, float f19, z.e eVar2, n0.v2 v2Var) {
+        super(1);
+        this.f394929d = eVar;
+        this.f394930e = f17;
+        this.f394931f = j17;
+        this.f394932g = z17;
+        this.f394933h = f18;
+        this.f394934i = f19;
+        this.f394935m = eVar2;
+        this.f394936n = v2Var;
+    }
+
+    @Override // yz5.l
+    /* renamed from: invoke */
+    public java.lang.Object mo146xb9724478(java.lang.Object obj) {
+        float f17;
+        g1.f drawWithContent = (g1.f) obj;
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(drawWithContent, "$this$drawWithContent");
+        ((u1.o0) drawWithContent).b();
+        d1.g a17 = d1.h.a(d1.e.f307156b, ((d1.k) this.f394936n.mo128745x754a37bb()).f307177a);
+        z.e eVar = this.f394929d;
+        float floatValue = ((java.lang.Number) eVar.d()).floatValue();
+        long j17 = this.f394931f;
+        float f18 = this.f394930e;
+        if (floatValue <= 0.0f || !eVar.e()) {
+            f17 = f18;
+        } else {
+            f17 = f18;
+            ky.p.b(drawWithContent, this.f394932g, this.f394931f, a17, floatValue * f18, (1 - floatValue) * e1.y.d(j17), this.f394933h, this.f394934i);
+        }
+        z.e eVar2 = this.f394935m;
+        float floatValue2 = ((java.lang.Number) eVar2.d()).floatValue();
+        if (floatValue2 > 0.0f && eVar2.e()) {
+            ky.p.b(drawWithContent, this.f394932g, this.f394931f, a17, floatValue2 * f17, (1 - floatValue2) * e1.y.d(j17), this.f394933h, this.f394934i);
+        }
+        return jz5.f0.f384359a;
+    }
+}

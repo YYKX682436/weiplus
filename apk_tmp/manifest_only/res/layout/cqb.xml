@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:background="@drawable/b84" android:layout_width="match_parent" android:layout_height="match_parent" app:ds="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/n5i" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/n5m" android:layout_width="274.0dp" android:layout_height="206.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="6.0dp" app:ds="8.0dp">
+        <ImageView android:id="@id/n5l" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <FrameLayout android:id="@id/n5n" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:layout_gravity="bottom" android:id="@id/n1u" android:layout_width="match_parent" android:layout_height="68.0dp" layout="@layout/cqa" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <ImageView android:id="@id/n5k" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

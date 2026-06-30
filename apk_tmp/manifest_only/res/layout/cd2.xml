@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ok"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView style="@style/ol" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ccy" />
+        <TextView android:id="@id/lp8" android:paddingRight="@dimen/f2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gs" />
+        <TextView android:id="@id/lpe" android:paddingRight="@dimen/f2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hq" style="@style/gs" />
+        <ProgressBar android:gravity="center" android:layout_gravity="left|center" android:id="@id/lpf" android:padding="@dimen/hx" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/x4" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lpb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j8">
+            <ImageView android:id="@id/lpc" android:paddingRight="@dimen/hq" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/b9s" />
+            <TextView android:textSize="11.0dp" android:textColor="@color/vk" android:gravity="center_vertical" android:id="@id/lpd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k_l" android:includeFontPadding="false" />
+        </LinearLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="1.0px" style="@style/on" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/lf2" android:background="@color/a07" android:scrollbars="none" android:persistentDrawingCache="all" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/khw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bu" android:hint="老包:" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/kq3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bu" android:layout_marginTop="@dimen/cn" android:hint="patch包:" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/kag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bu" android:layout_marginTop="@dimen/cn" android:hint="新包:" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/khs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="本地校验：old.apk + patch" style="@style/kr" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/lj_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="校验文件格式" style="@style/kr" />
+        <TextView android:textSize="@dimen/cs" android:textColor="@color/a2z" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="合成结果\n1.花费时间\n2.平均内存\n3.CPU情况\n4.patch包大小\n5.newAPk:MD5值" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/a96" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="自动更新下载和合成" style="@style/kr" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/a97" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="自动更新-弹窗" style="@style/kr" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/d24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="手动更新" style="@style/kr" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/bxn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="清空缓存" style="@style/kr" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/o2u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:text="" />
+    </LinearLayout>
+</ScrollView>

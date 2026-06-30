@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/auo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cg7" android:layout_width="@dimen/dj" android:layout_height="wrap_content" android:minHeight="@dimen/dr">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h5n" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/cn" app:fs="@color/a18" />
+        <TextView android:textSize="@dimen/f9" android:textColor="@color/a18" android:gravity="center_horizontal" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:maxLines="2" android:hyphenationFrequency="full" />
+        <TextView android:textSize="@dimen/ant" android:textColor="@color/BW_F_Alpha_0_5" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/nrk" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:maxLines="1" />
+        <Space android:layout_width="wrap_content" android:layout_height="@dimen/cn" />
+    </LinearLayout>
+</LinearLayout>

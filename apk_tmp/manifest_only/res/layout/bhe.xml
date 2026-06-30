@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/jsy" android:background="@drawable/azm" android:padding="@dimen/gf" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/h6y" android:layout_width="@dimen/gj" android:layout_height="@dimen/gj" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/jt2" android:paddingLeft="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/s4" android:ellipsize="end" android:id="@id/kbq" android:background="@drawable/azm" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/jsz" android:background="@drawable/aey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+                <com.tencent.mm.plugin.game.commlib.view.FixAspectRatioImageView android:id="@id/bbg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:fix_ratio="0.4237" app:left_top_radius="4.0dp" app:right_top_radius="4.0dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp">
+                    <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/bcj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                    <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/b9f" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="5" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="13.0dp" android:textColor="@color/tk" android:id="@id/o7z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/gnm" android:background="@color/vt" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/gf" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/k9p" android:background="@color/a" android:visibility="gone" android:layout_width="match_parent" android:layout_height="62.0dp">
+        <View android:layout_gravity="center_vertical" android:background="@color/vt" android:layout_width="40.0dp" android:layout_height="1.0px" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/tk" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:text="@string/foj" />
+        <View android:layout_gravity="center_vertical" android:background="@color/vt" android:layout_width="40.0dp" android:layout_height="1.0px" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dp" android:textColor="@color/tk" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ilo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dp" android:text="@string/fo6" />
+</LinearLayout>

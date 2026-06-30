@@ -1,0 +1,5 @@
+package du2;
+
+/* loaded from: classes2.dex */
+public interface w {
+}

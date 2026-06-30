@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cg7" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="48.0dp" android:src="@raw/checkmark_circle_filled" app:fs="@color/m" />
+        <TextView android:textSize="22.0dp" android:textColor="@color/abw" android:id="@id/rbw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/otd" android:fontWeight="500" />
+    </LinearLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/abu" android:gravity="center" android:id="@id/b2z" android:layout_width="184.0dp" android:layout_height="48.0dp" android:layout_marginBottom="96.0dp" android:text="@string/vi" android:fontWeight="500" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

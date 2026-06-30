@@ -1,0 +1,43 @@
+package cy5;
+
+/* loaded from: classes13.dex */
+public class f extends cy5.y {
+    @Override // cy5.y
+    public java.lang.String B() {
+        return "com.tencent.xweb.xfiles.pdf.PDFReaderEnvironment";
+    }
+
+    @Override // cy5.y
+    public int C(int i17) {
+        if (i17 == 1) {
+            return 250;
+        }
+        if (i17 == 2) {
+            return 282;
+        }
+        if (i17 == 3) {
+            return uc1.g0.CTRL_INDEX;
+        }
+        return 100;
+    }
+
+    @Override // cy5.y
+    public java.lang.String D() {
+        return "com.tencent.xweb.xfiles.pdf.PDFReader";
+    }
+
+    @Override // cy5.h
+    public java.lang.String m() {
+        return com.tencent.xwebsdk.BuildConfig.PLUGIN_NAME_PDF;
+    }
+
+    @Override // cy5.h
+    public boolean p() {
+        return true;
+    }
+
+    @Override // cy5.y
+    public java.lang.String y(int i17) {
+        return i(i17, "pdfreader.apk");
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/c" android:layout_width="match_parent" android:layout_height="@dimen/df">
+        <TextView android:id="@id/jeg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" style="@style/rm" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_arrow" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/jeg" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/jv1" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_marginRight="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dv" android:text="@string/cyh" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toLeftOf="@id/jv1" app:layout_constraintTop_toTopOf="0" style="@style/dl" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <GridView android:id="@id/jds" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/che" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dg3" android:background="@color/BW_93" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/ilt" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="-80.0dp" android:indeterminateDrawable="@drawable/avj" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:layout_gravity="center" android:id="@id/m2g" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-80.0dp" android:text="@string/cuw" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:layout_gravity="center" android:id="@id/dft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-80.0dp" android:text="@string/era" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/lr8" android:background="@color/BW_93" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/e7w" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs7" />
+    </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+</FrameLayout>

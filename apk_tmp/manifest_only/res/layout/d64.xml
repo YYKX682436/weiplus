@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cgr" android:background="@drawable/b8k" android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/h5n" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="8.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/fa" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/fa" android:id="@id/cgi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/o2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df">
+        <CheckBox android:id="@id/btf" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/bk" style="@style/im" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:id="@id/lci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/bl" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="98.0dp">
+        <Button android:id="@id/b5j" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:minWidth="@dimen/c0" android:text="@string/m2n" android:singleLine="true" style="@style/l1" />
+        <Button android:id="@id/c_3" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cn" android:minWidth="@dimen/c0" android:text="@string/m2o" android:singleLine="true" style="@style/ks" />
+    </LinearLayout>
+</LinearLayout>

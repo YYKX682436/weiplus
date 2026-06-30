@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/exe" android:background="@color/w5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ecg" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <com.tencent.mm.ui.widget.LiveBottomSheetPanel android:orientation="vertical" android:id="@id/eci" android:background="@drawable/aji" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dp" android:textColor="@color/ab0" android:id="@id/eck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:text="@string/ek_" android:layout_marginStart="@dimen/cz" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/ab0" android:id="@id/ecj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/ek9" android:layout_below="@id/eck" android:layout_marginStart="@dimen/cz" />
+                <TextView android:textColor="@color/ab0" android:id="@id/ech" android:layout_marginTop="@dimen/dr" android:layout_marginBottom="@dimen/d7" android:text="@string/vi" android:layout_below="@id/ecj" android:layout_centerHorizontal="true" style="@style/kz" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.tencent.mm.ui.widget.LiveBottomSheetPanel>
+</LinearLayout>

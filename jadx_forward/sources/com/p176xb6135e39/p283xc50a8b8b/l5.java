@@ -1,0 +1,12 @@
+package com.p176xb6135e39.p283xc50a8b8b;
+
+/* loaded from: classes16.dex */
+public enum l5 {
+    GET_MEMOIZED_IS_INITIALIZED,
+    SET_MEMOIZED_IS_INITIALIZED,
+    BUILD_MESSAGE_INFO,
+    NEW_MUTABLE_INSTANCE,
+    NEW_BUILDER,
+    GET_DEFAULT_INSTANCE,
+    GET_PARSER
+}

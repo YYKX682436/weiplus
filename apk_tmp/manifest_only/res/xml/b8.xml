@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.profile.ui.NormalProfileHeaderPreference android:key="contact_profile_header_normal" android:gc="@layout/a2l" />
+    <PreferenceSmallCategory android:key="contact_profile_set_des_category" />
+    <KeyValuePreference android:key="contact_profile_setting_desc" android:gc="@layout/byv" />
+    <com.tencent.mm.plugin.profile.ui.FriendProfilePreference android:key="contact_profile_info_profile" android:gc="@layout/byv" />
+    <KeyValuePreference android:key="contact_profile_setting_permission" android:gc="@layout/byv" />
+    <PreferenceSmallCategory android:key="contact_info_category_1" />
+    <KeyValuePreference android:key="contact_info_signature" android:gc="@layout/byv" android:title="@string/bhc" />
+    <com.tencent.mm.pluginsdk.ui.preference.SnsPreference android:key="contact_profile_sns" android:gc="@layout/byv" android:title="@string/bhd" />
+    <PreferenceSmallCategory android:key="contact_info_category_1_openim" />
+    <com.tencent.mm.pluginsdk.ui.preference.FinderPreference android:key="contact_profile_finder" android:gc="@layout/byv" android:title="@string/cfj" />
+    <com.tencent.mm.pluginsdk.ui.preference.FinderRecentLikePreference android:key="contact_profile_finder_recent_like" android:gc="@layout/byv" android:title="@string/cg3" />
+    <KeyValuePreference android:key="contact_profile_source" android:gc="@layout/byv" android:title="@string/biq" />
+    <KeyValuePreference android:key="contact_info_invite_source" android:gc="@layout/byv" android:title="@string/be5" />
+    <PreferenceSmallCategory android:key="line1" />
+    <KeyValuePreference android:key="contact_profile_info_from" android:gc="@layout/byv" android:title="@string/m_x" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_icon="@raw/profile_chat_icon" android:btn_title="@string/hnh" android:icon_color="@color/fp" android:key="contact_profile_send" android:gc="@layout/byv" android:title_color="@color/fp" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/bgv" android:key="contact_profile_say_hi" android:gc="@layout/byv" android:title_color="@color/fp" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_icon="@raw/phone_video_regular" android:btn_title="@string/ho3" android:icon_color="@color/fp" android:key="contact_profile_voip" android:gc="@layout/byv" android:title_color="@color/fp" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/bbh" android:key="contact_profile_add_contact" android:gc="@layout/byv" android:title_color="@color/fp" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/bj7" android:key="contact_profile_accept_contact" android:gc="@layout/byv" android:title_color="@color/fp" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/bj8" android:key="contact_profile_accept_contact_by_wework" android:gc="@layout/byv" android:title_color="@color/fp" />
+    <PreferenceSmallCategory android:key="line6" />
+    <PreferenceSmallCategory android:key="line7" />
+    <com.tencent.mm.ui.base.preference.TextPreference android:key="contact_profile_has_forward_hint" />
+    <PreferenceSmallCategory android:key="line2" />
+    <PreferenceSmallCategory android:key="line4" />
+    <com.tencent.mm.ui.base.preference.TextPreference android:key="contact_profile_hint" />
+    <com.tencent.mm.ui.base.preference.PreferenceCategory android:key="line3" />
+    <com.tencent.mm.plugin.profile.ui.MultiButtonPreference android:key="contact_profile_multi_button" />
+    <com.tencent.mm.ui.base.preference.PreferenceCategory android:key="line5" />
+    <com.tencent.mm.ui.base.preference.TextPreference android:key="contact_profile_wechat_info" />
+</PreferenceScreen>

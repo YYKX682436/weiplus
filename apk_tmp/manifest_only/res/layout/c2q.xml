@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/d7y" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center" android:id="@id/d7b" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/zk" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/d7_" android:padding="2.0dp" android:layout_width="@dimen/zk" android:layout_height="@dimen/zk" android:contentDescription="@string/apr" />
+            <ImageView android:id="@id/d7a" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_alignBottom="@id/d7_" android:layout_alignEnd="@id/d7_" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/d7f" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/zk" android:layout_weight="1.0" android:contentDescription="@string/apq" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/d7p" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/zk" android:layout_weight="1.0" android:contentDescription="@string/apt" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/d7o" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/zk" android:layout_weight="1.0" android:contentDescription="@string/aps" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/d81" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/zk" android:layout_weight="1.0" android:contentDescription="@string/app" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/d7m" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/zk" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="center" android:id="@id/d7d" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/zk" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/d7c" android:layout_width="@dimen/zk" android:layout_height="@dimen/zk" />
+            <ImageView android:id="@id/d7e" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_alignBottom="@id/d7c" android:layout_alignEnd="@id/d7c" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

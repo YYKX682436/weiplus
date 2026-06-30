@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/kva" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorInputView android:id="@id/bet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/cia" layout="@layout/d3c" />
+    <com.tencent.mm.ui.widget.InsectRelativeLayout android:id="@id/mwf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginBottom="@dimen/cz" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/k" android:textColor="@color/bw" android:gravity="center" android:id="@id/mwg" android:background="@android:color/transparent" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sg" android:layout_marginStart="32.0dp" />
+            <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/k" android:textColor="@color/aay" android:gravity="center" android:id="@id/mwh" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/v5" android:layout_marginEnd="32.0dp" style="@style/ks" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.InsectRelativeLayout>
+</merge>

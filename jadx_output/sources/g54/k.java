@@ -1,0 +1,25 @@
+package g54;
+
+/* loaded from: classes4.dex */
+public final class k extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final g54.k f268936d = new g54.k();
+
+    public k() {
+        super(1);
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("invoke", "com.tencent.mm.plugin.sns.ad.landingpage.component.view.AdThumbPlayerVideoView$PlayerListeners$onInfo$2");
+        ok4.d report = (ok4.d) obj;
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("invoke", "com.tencent.mm.plugin.sns.ad.landingpage.component.view.AdThumbPlayerVideoView$PlayerListeners$onInfo$2");
+        kotlin.jvm.internal.o.g(report, "$this$report");
+        report.e();
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("invoke", "com.tencent.mm.plugin.sns.ad.landingpage.component.view.AdThumbPlayerVideoView$PlayerListeners$onInfo$2");
+        jz5.f0 f0Var = jz5.f0.f302826a;
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("invoke", "com.tencent.mm.plugin.sns.ad.landingpage.component.view.AdThumbPlayerVideoView$PlayerListeners$onInfo$2");
+        return f0Var;
+    }
+}

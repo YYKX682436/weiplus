@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/q2r" android:background="@drawable/b_s" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View style="@style/fh" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/q2s" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/pyg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:id="@id/pyh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:id="@id/pye" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:includeFontPadding="false" app:walletTypeFace="0" />
+    </LinearLayout>
+    <View android:id="@id/pyf" android:visibility="gone" style="@style/fh" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingRight="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l51" android:paddingLeft="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dp">
+        <TextView android:textSize="17.0dp" android:textColor="@color/pz" android:layout_gravity="center_vertical" android:id="@id/l7g" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/pz" android:layout_gravity="center_vertical" android:id="@id/l7h" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eeg" android:layout_marginStart="@dimen/bi" android:layout_marginEnd="@dimen/bi" />
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/pz" android:layout_gravity="center_vertical" android:id="@id/dio" android:paddingBottom="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edy" android:layout_marginStart="@dimen/bi" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/UN_BW_0_Alpha_0_3" android:gravity="center_vertical" android:id="@id/kme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/pz" android:gravity="center_vertical" android:id="@id/qw6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" />
+</LinearLayout>

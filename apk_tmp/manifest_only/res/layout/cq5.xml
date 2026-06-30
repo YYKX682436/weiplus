@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/m7g" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ght" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.sns.ad.landingpage.halfscreen.AdLandingPageHalfScreenContainer android:id="@id/gw6" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/r0y" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/cgz" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/p2a" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.tencent.mm.plugin.sns.storage.AdLandingPagesStorage.AdLandingPageComponent.component.widget.verticalviewpager.AdlandingDummyViewPager android:id="@id/oxo" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ViewStub android:layout_gravity="bottom" android:id="@id/g8u" android:layout="@layout/cq" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <ViewStub android:id="@id/g7i" android:layout="@layout/cp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/v3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="1.0dp" android:layout_marginBottom="1.0dp" android:scaleType="centerCrop" />
+        <ViewStub android:id="@id/or2" android:layout="@layout/cw" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/qz0" android:layout="@layout/dm6" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/txr" android:layout="@layout/dyh" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/mql" android:layout="@layout/cv" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/iqt" android:layout="@layout/cs" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:layout_gravity="top" android:id="@id/jgd" android:background="@raw/sns_ad_native_landing_page_navigation" android:paddingTop="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="47.0dp">
+            <ImageView android:id="@id/n4m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/bu5" />
+            <TextView android:textSize="17.0dp" android:textColor="@color/gj" android:gravity="center_vertical" android:layout_gravity="left|center" android:id="@id/n51" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/j6d" android:drawableLeft="@drawable/bub" />
+            <ImageView android:layout_gravity="right" android:id="@id/n5_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:src="@raw/icon_volume_off" />
+            <ImageView android:layout_gravity="right" android:id="@id/n52" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:src="@drawable/buf" />
+            <TextView android:textColor="@color/a0c" android:layout_gravity="right|center" android:id="@id/n53" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" />
+        </FrameLayout>
+        <ViewStub android:id="@id/kj8" android:layout="@layout/d3" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="47.0dp" />
+        <ImageView android:layout_gravity="center|top" android:id="@id/gwf" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="16.0dp" android:layout_marginTop="20.0dp" />
+        <ViewStub android:layout_gravity="left|top" android:id="@id/gwo" android:layout="@layout/cr" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="20.0dp" />
+        <ViewStub android:id="@id/imh" android:layout="@layout/cu" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.tencent.mm.plugin.sns.ad.landingpage.halfscreen.AdLandingPageHalfScreenContainer>
+</FrameLayout>

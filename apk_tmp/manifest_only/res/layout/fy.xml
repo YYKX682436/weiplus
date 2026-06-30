@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="200.0dp" android:layout_height="123.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/z6" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/z5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="12.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/z7" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/z4" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+            <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="4.0dp" android:src="@drawable/bvk" android:layout_alignParentTop="true" android:layout_marginEnd="4.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/z_" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/d4" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/za" android:background="@drawable/d5" android:layout_width="match_parent" android:layout_height="8.0dp" android:layout_alignParentBottom="true">
+            <View android:id="@id/zb" android:background="#b2ffffff" android:layout_width="115.0dp" android:layout_height="1.0dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

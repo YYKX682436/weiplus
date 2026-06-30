@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" style="@style/hb"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/pn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/j2" android:layout_alignParentBottom="true">
+        <TextView android:enabled="false" android:textSize="@dimen/ia" android:textColor="@color/an" android:id="@id/je8" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dp" android:text="@string/j9_" android:layout_centerVertical="true" />
+        <Button android:enabled="false" android:id="@id/kap" android:visibility="visible" android:text="@string/ww" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/bf" android:layout_alignParentEnd="true" style="@style/pt" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/jdy" android:paddingTop="@dimen/ib" android:paddingBottom="@dimen/ib" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/pn" android:layout_marginStart="3.0dp" android:layout_marginEnd="3.0dp" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/a5m" android:gravity="center" android:id="@id/nhd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="198.0dp" android:text="@string/j96" />
+</RelativeLayout>

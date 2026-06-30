@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:form="http://schemas.android.com/apk/res-auto">
+    <TextView android:textStyle="bold" android:id="@id/ipf" android:paddingTop="@dimen/dj" android:text="@string/o7t" style="@style/ho" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cs" android:layout_marginTop="@dimen/df" android:layout_marginRight="@dimen/cs" android:layout_marginHorizontal="@dimen/cs">
+        <View android:background="@color/ah6" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <com.tencent.mm.ui.base.MMFormInputView android:id="@id/ip_" android:background="@null" form:form_hint="@string/on8" form:form_layout="@layout/byj" form:form_title="@string/gie" style="@style/j8" />
+        <View android:background="@color/ah6" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,7 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p2403x48fb3bf9.ui.p2417x696c9db.p2435xd1075a44;
+
+/* loaded from: classes8.dex */
+public interface x1 {
+    /* renamed from: callback */
+    boolean mo70210xf5bc2045(int i17, android.os.Bundle bundle);
+}

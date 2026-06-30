@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/bx" android:ellipsize="end" android:gravity="center" android:id="@android:id/text1" android:visibility="invisible" android:layout_width="160.0dp" android:layout_height="wrap_content" android:text="01234567890" android:singleLine="true" android:layout_centerVertical="true" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="bottom" android:id="@id/h0y" android:paddingLeft="@dimen/j3" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="23.0dp" android:src="@raw/icons_outlined_umbrella" app:fs="@color/f9" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@android:id/text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/id" />
+    </LinearLayout>
+</RelativeLayout>

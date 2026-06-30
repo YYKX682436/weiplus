@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="80.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ogj" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="15.0dp" />
+    <RelativeLayout android:id="@id/lh0" android:layout_width="100.0dp" android:layout_height="75.0dp" android:layout_below="@id/ogj" android:layout_centerHorizontal="true">
+        <com.tencent.mm.plugin.radar.ui.RadarStateView android:gravity="right|center" android:id="@id/lhb" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="29.0dp" android:layout_marginBottom="3.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/lhh" android:background="@drawable/az6" android:padding="2.0dp" android:layout_width="68.0dp" android:layout_height="68.0dp" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/lhi" android:layout_width="70.0dp" android:layout_height="70.0dp" android:src="@drawable/az6" android:scaleType="fitXY" android:layout_centerInParent="true" android:alpha="1.0" />
+        <com.tencent.mm.plugin.radar.ui.RadarStateChooseView android:gravity="right|center" android:id="@id/lha" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="4.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#d1d1d1" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/lhj" android:layout_width="100.0dp" android:layout_height="wrap_content" android:minHeight="40.0dp" android:lines="2" android:layout_below="@id/lh0" android:layout_centerHorizontal="true" />
+    <View android:id="@id/avn" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="15.0dp" android:layout_below="@id/lhj" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ka"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/nui" android:background="@drawable/emoji_mine_sync_header_bg" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:layout_gravity="center_vertical" android:id="@id/nuh" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/c09" android:layout_weight="1.0" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/db" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/dc6" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <Button android:id="@id/dc7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/c06" android:layout_marginEnd="@dimen/c9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/l2" />
+        <ProgressBar android:id="@id/dc8" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginEnd="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/x5" />
+        <androidx.constraintlayout.widget.Barrier android:id="@id/dc6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="0" app:constraint_referenced_ids="emoji_mine_sync_btn,emoji_mine_sync_progress" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dc5" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

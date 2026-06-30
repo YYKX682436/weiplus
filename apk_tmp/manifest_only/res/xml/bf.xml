@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.profile.ui.AvatarSettingPreference android:key="avatar_setting" android:gc="@layout/ek8" android:title="" />
+    <Preference android:key="setting_remark" android:gc="@layout/byv" android:title="" />
+    <Preference android:key="setting_permission" android:gc="@layout/byv" android:title="" />
+    <PreferenceSmallCategory />
+    <Preference android:key="shortcut_command" android:gc="@layout/byv" android:title="@string/pk1" />
+    <PreferenceSmallCategory />
+    <Preference android:key="setting_send_card" android:gc="@layout/byv" android:title="" />
+    <Preference android:key="setting_send_card_by_card" android:gc="@layout/byv" android:title="@string/nd8" />
+    <Preference android:key="setting_shortcut" android:gc="@layout/byv" android:title="@string/bbi" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="setting_star" android:gc="@layout/byv" android:persistent="false" android:title="@string/bdj" />
+    <Preference android:key="clear_chatbot_msg" android:gc="@layout/byv" android:title="@string/o_5" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="setting_blacklist" android:gc="@layout/byv" android:persistent="false" android:title="@string/bfc" />
+    <Preference android:key="setting_report" android:gc="@layout/byv" android:title="@string/ak6" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/ag2" android:key="setting_delete" android:gc="@layout/c_e" android:title_color="@color/ac" />
+    <PreferenceCategory />
+</PreferenceScreen>

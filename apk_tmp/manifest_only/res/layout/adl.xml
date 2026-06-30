@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/e9_" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/e8z" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/FG_4" android:gravity="center" android:id="@id/hk" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cje" android:singleLine="true" android:lineSpacingMultiplier="1.4" android:alpha="0.9" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_4" android:gravity="center_horizontal" android:id="@id/hj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/cik" android:layout_below="@id/hk" android:alpha="0.9" />
+        </RelativeLayout>
+        <ImageView android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/e9a" android:background="@drawable/vj" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cjm" android:singleLine="true" />
+        <ImageView android:background="@color/BW_97" android:layout_width="match_parent" android:layout_height="8.0dp" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:gravity="center_horizontal" android:id="@id/e95" android:background="@drawable/vj" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cj8" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

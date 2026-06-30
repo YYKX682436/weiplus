@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.SimpleTouchableLayout android:id="@id/jdk" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.FinderMediaLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="200.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/g99" android:visibility="gone" android:layout_width="@dimen/br" android:layout_height="@dimen/br" android:src="@raw/icons_filled_play" app:iconAlpha="0.5" app:fs="@color/an" />
+    </com.tencent.mm.plugin.finder.view.FinderMediaLayout>
+    <View android:id="@id/g4y" android:background="#8c000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/i1m" android:visibility="gone" android:layout_width="@dimen/dh" android:layout_height="@dimen/dh" android:src="@raw/icon_filled_awesome" app:fs="@color/Red_90" />
+</com.tencent.mm.plugin.finder.view.SimpleTouchableLayout>

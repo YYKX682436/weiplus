@@ -1,0 +1,5 @@
+package com.tencent.mm.plugin.webview.core;
+
+/* loaded from: classes8.dex */
+public abstract class j3 {
+}

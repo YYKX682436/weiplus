@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes.dex */
+public class gy2 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public gy2() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(1, "cur_finder_username"));
+        this.f38874x227b759e = true;
+    }
+}

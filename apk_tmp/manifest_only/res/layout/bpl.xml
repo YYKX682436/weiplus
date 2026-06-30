@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b8k" android:layout_width="match_parent" android:layout_height="500.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="64.0dp">
+        <FrameLayout android:layout_gravity="left|center" android:id="@id/hkt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/hks" android:background="@drawable/ayr" android:padding="12.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="center" android:layout_gravity="center" android:id="@id/oqh" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/awn" />
+        <FrameLayout android:layout_gravity="right|center" android:id="@id/ong" android:background="@drawable/ayr" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/ff" android:gravity="center" android:layout_gravity="center" android:id="@id/onf" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aws" />
+        </FrameLayout>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/avc" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always" />
+</LinearLayout>

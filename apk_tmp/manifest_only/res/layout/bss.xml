@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/in5" android:background="@drawable/b30" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/inc" android:layout_width="@dimen/j7" android:layout_height="@dimen/j7" android:src="@raw/album_location_icon_normal" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:minHeight="@dimen/b1" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="left|center" android:id="@id/inx" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/jce" android:maxLines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:gravity="left|center" android:id="@id/inm" android:paddingLeft="@dimen/hf" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/m38" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/arrow_right" android:scaleType="center" android:layout_marginStart="@dimen/cn" app:fs="@color/a6o" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/mat" android:background="@drawable/b30" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/hx" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/mau" android:paddingTop="@dimen/f" android:paddingBottom="@dimen/f" android:visibility="invisible" android:layout_width="@dimen/j1" android:layout_height="@dimen/i8" android:src="@raw/sns_shoot_star_normal" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="left|center" android:id="@id/mb1" android:layout_width="wrap_content" android:layout_height="@dimen/i8" android:layout_marginLeft="@dimen/j3" android:layout_marginRight="@dimen/j3" android:text="@string/je5" android:singleLine="true" android:layout_toRightOf="@id/mau" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/mav" android:paddingTop="@dimen/f" android:paddingBottom="@dimen/f" android:layout_width="@dimen/j1" android:layout_height="@dimen/i8" android:src="@raw/sns_shoot_location_pressed" android:scaleType="fitCenter" />
+            <ImageView android:id="@id/maw" android:paddingTop="@dimen/f" android:paddingBottom="@dimen/f" android:layout_width="@dimen/j1" android:layout_height="@dimen/i8" android:src="@raw/sns_shoot_location_normal" android:scaleType="fitCenter" />
+            <ImageView android:id="@id/max" android:paddingTop="@dimen/f" android:paddingBottom="@dimen/f" android:layout_width="27.0dp" android:layout_height="@dimen/i8" android:src="@raw/sns_shoot_location_normal" android:scaleType="fitCenter" />
+            <ImageView android:id="@id/maz" android:paddingTop="@dimen/f" android:paddingBottom="@dimen/f" android:layout_width="@dimen/j1" android:layout_height="@dimen/i8" android:src="@raw/sns_shoot_location_normal" android:scaleType="fitCenter" />
+            <ImageView android:id="@id/mb0" android:paddingTop="@dimen/f" android:paddingBottom="@dimen/f" android:layout_width="@dimen/j1" android:layout_height="@dimen/i8" android:src="@raw/sns_shoot_location_normal" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

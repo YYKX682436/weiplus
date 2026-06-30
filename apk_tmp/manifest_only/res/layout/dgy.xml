@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left" android:id="@id/bz2" android:layout_width="23.0dp" android:layout_height="23.0dp" android:layout_marginLeft="@dimen/ca" android:src="@raw/icons_filled_close" android:layout_centerInParent="true" app:fs="@color/FG_0" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/cl7" android:layout_width="@dimen/cu" android:layout_height="@dimen/cu" android:layout_marginTop="@dimen/cz" android:scaleType="centerCrop" />
+    <TextView android:textSize="22.0dp" android:textColor="@color/FG_0" android:layout_gravity="center_horizontal" android:id="@id/obc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:src="@raw/finder_live_logo" app:fs="@color/pv" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:layout_gravity="center_vertical" android:id="@id/cqs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.finder.view.notice.BigGreenNoticeStatusView android:layout_gravity="center_horizontal" android:id="@id/fsh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/br" android:layout_marginBottom="@dimen/cn" />
+</LinearLayout>

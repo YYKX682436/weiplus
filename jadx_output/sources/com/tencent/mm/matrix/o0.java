@@ -1,0 +1,29 @@
+package com.tencent.mm.matrix;
+
+/* loaded from: classes12.dex */
+public final class o0 implements jr5.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final com.tencent.mm.sdk.platformtools.o4 f68840a = com.tencent.mm.sdk.platformtools.o4.L();
+
+    public int a(java.lang.String str, int i17) {
+        int i18;
+        if (!str.equals("clicfg_matrix_trace_evil_method_threshold") || (i18 = this.f68840a.getInt("clicfg_matrix_trace_evil_method_threshold", -1)) == -1) {
+            java.lang.String b17 = b(str, "");
+            return com.tencent.mm.sdk.platformtools.t8.K0(b17) ? i17 : com.tencent.mm.sdk.platformtools.t8.P(b17, i17);
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.XDynamicConfig", "[get] local! key=%s value=%s", str, java.lang.Integer.valueOf(i18));
+        return i18;
+    }
+
+    public java.lang.String b(java.lang.String str, java.lang.String str2) {
+        if ("clicfg_matrix_resource_detect_interval_millis".equals(str) || "clicfg_matrix_resource_detect_interval_millis_bg".equals(str)) {
+            java.lang.String str3 = com.tencent.mm.sdk.platformtools.z.f193105a;
+            if (z65.c.a()) {
+                return java.lang.String.valueOf(java.util.concurrent.TimeUnit.SECONDS.toMillis(10L));
+            }
+        }
+        java.lang.String str4 = com.tencent.mm.sdk.platformtools.z.f193105a;
+        return (z65.c.a() && "clicfg_matrix_resource_max_detect_times".equals(str)) ? java.lang.String.valueOf(10) : j62.e.g().a(str, str2, false, false);
+    }
+}

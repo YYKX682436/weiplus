@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/aw" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/amc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="28.0dp" layout="@layout/a1h" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/apl" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/am8" android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content" app:eg="0.0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x3" app:titleEnabled="false">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/akh" layout="@layout/a1l" />
+                </FrameLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.tencent.mm.plugin.profile.ui.tab.view.BizProfileTabLayout android:id="@id/anj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0dp" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.tencent.mm.plugin.profile.ui.tab.view.BizProfileViewPager android:id="@id/c67" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/zz" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

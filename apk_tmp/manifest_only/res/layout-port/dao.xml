@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iap" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/fh8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/enr" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ao1" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/ezp" android:layout="@layout/dai" android:inflatedId="@id/ezo" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ati" />
+    <include android:id="@id/lyu" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/aya" />
+    <include android:id="@id/fkc" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ayf" />
+    <include layout="@layout/dap" />
+    <ViewStub android:id="@id/fod" android:visibility="gone" android:layout="@layout/b0i" android:inflatedId="@id/fob" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

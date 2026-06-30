@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a48" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@color/t7" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MemoryHook" android:textAllCaps="false" />
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Confirm" android:textAllCaps="false" android:layout_marginStart="10.0dp" />
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Report" android:textAllCaps="false" android:layout_marginStart="10.0dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="enable" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MemoryHook 开关，重启生效" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stacktrace" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否获取堆栈,注意⚠️开启可能导致进程卡死，建议只针对单个 so 开启，对于分配特别频繁的 so，建议设置 min/max/sampling" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mm" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="apprand" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxk" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tools/mp" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="all" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="extreme" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否Hook默认ignore的系统so,开启会严重影响性能⚠️" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mmap hook" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否 hook️ mmap/munmap" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hookRegex" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cxu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=".*com.tencent.mm.*.so$" android:maxLines="3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ignoreRegex" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cxv" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="nullable" android:maxLines="3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="duration(hours)" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cxt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1" android:maxLines="3" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="StackLogThreshold(def 50M)" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cxz" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="52428800" android:maxLines="3" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="min(取堆栈的最小size,>=0,0表示不限制)" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cxx" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:maxLines="3" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="max(取堆栈的最大size,0(不限制)或>minSize)" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cxw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:maxLines="3" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sampling(取样率,(0,1])" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cxy" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1" android:maxLines="3" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/t7" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PthreadHook" android:textAllCaps="false" />
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Confirm" android:textAllCaps="false" android:layout_marginStart="10.0dp" />
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Report" android:textAllCaps="false" android:layout_marginStart="10.0dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="enable" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PthreadHook 开关，重启生效" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mm" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="apprand" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tools/mp" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxs" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="all" />
+                <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cxp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hookSoRegex" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cy1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=".*.so$" android:maxLines="3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ignoreRegex" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cy3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="nullable" android:maxLines="3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hookThreadRegex" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cy2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=".*" android:maxLines="3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="duration(hours)" />
+                <EditText android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/cy0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1" android:maxLines="3" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/t7" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="openGLHook" android:textAllCaps="false" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/cxd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="commit hook" android:textAllCaps="false" />
+                <TextView android:textSize="15.0sp" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="提交后便hook,无需重启,若需要关闭hook,重启就可以" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

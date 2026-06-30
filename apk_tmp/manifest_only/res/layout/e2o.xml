@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/abw" android:id="@id/ssr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajw" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sso" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajw">
+        <ProgressBar android:layout_gravity="center" android:id="@id/ssp" android:visibility="gone" android:layout_width="@dimen/j4" android:layout_height="@dimen/j4" android:layout_marginEnd="@dimen/bn" style="@style/x4" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/abw" android:id="@id/ssn" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/adg" android:id="@id/ssq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajw" />
+    <View android:id="@id/ssw" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/ajs" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <PreferenceTitleCategory android:key="wallet_lock_title" android:title="@string/ko9" />
+    <IconPreference android:key="wallet_lock_fingerprint" android:gc="@layout/byv" android:title="@string/knv" />
+    <IconPreference android:key="wallet_lock_faceid" android:gc="@layout/byv" android:title="@string/knp" />
+    <IconPreference android:key="wallet_lock_gesture" android:gc="@layout/byv" android:title="@string/ko2" />
+    <IconPreference android:key="wallet_lock_close" android:gc="@layout/byv" android:title="@string/knn" />
+    <PreferenceSmallCategory />
+    <Preference android:key="wallet_lock_modify_gesture" android:gc="@layout/byv" android:title="@string/frp" />
+</PreferenceScreen>

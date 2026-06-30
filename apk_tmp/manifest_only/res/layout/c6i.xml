@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/m7r" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.nearby.newlivesquare.vertical.FinderSquareRefreshLayout android:orientation="vertical" android:id="@id/k9h" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMoreWhenContentNotFull="true">
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLiveSquareRefreshHeader android:id="@id/q10" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.tencent.mm.plugin.finder.nearby.newlivesquare.vertical.LiveVerticalParentRecyclerView android:id="@id/k9g" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:id="@id/auj" android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs7" />
+    </com.tencent.mm.plugin.finder.nearby.newlivesquare.vertical.FinderSquareRefreshLayout>
+    <include android:id="@id/kar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dl" layout="@layout/b84" />
+</androidx.constraintlayout.widget.ConstraintLayout>

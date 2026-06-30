@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/f1q" android:padding="@dimen/c9" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/icons_outlined_back" app:fs="@color/FG_0" />
+    <RelativeLayout android:id="@id/f2q" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dh" android:layout_marginBottom="@dimen/d7" android:layout_below="@id/f2o" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dj7" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/a5" android:id="@id/f2i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dj3" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/f2n" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/f2q">
+        <com.tencent.mm.view.recyclerview.MaxHeightWxRecyclerView android:id="@id/f2k" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" android:overScrollMode="never" />
+        <View android:layout_gravity="bottom" android:id="@id/f2m" android:background="@drawable/a3z" android:layout_width="match_parent" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/f2l" android:visibility="visible" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:maxWidth="@dimen/d7" android:maxHeight="@dimen/d7" android:minWidth="@dimen/d7" android:minHeight="@dimen/d7" android:layout_centerInParent="true" style="@style/w9" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/f2z" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:layout_above="@id/f1r" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/coin_icon" android:layout_marginEnd="@dimen/dv" app:fs="@color/aaq" />
+        <TextView android:textSize="@dimen/db" android:textColor="@color/FG_0" android:layout_gravity="center_vertical" android:id="@id/f30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="@dimen/r" android:textColor="@color/an" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/f1r" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/dj" android:text="@string/die" android:includeFontPadding="false" android:layout_above="@id/f1y" android:layout_centerHorizontal="true" style="@style/kr" />
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_2" android:id="@id/f1y" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:text="@string/diu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <View android:id="@id/fft" android:background="@color/UN_BW_0_Alpha_0_7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/f2o" android:layout_width="match_parent" android:layout_height="@dimen/by" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_below="@id/f1q" android:layout_centerHorizontal="true" layout="@layout/as1" />
+    <include layout="@layout/ay0" />
+</RelativeLayout>

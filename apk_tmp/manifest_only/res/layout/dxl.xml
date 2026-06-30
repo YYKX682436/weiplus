@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/c" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/icons_outlined_usb" />
+    <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/abw" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/myp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cn">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/icon_solid_dot_fg0" android:layout_width="@dimen/bn" android:layout_height="@dimen/bn" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/c8" android:layout_marginRight="@dimen/dv" android:layout_marginHorizontal="@dimen/dv" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/abw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/myn" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+            <View android:background="@drawable/icon_solid_dot_fg0" android:layout_width="@dimen/bn" android:layout_height="@dimen/bn" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/c8" android:layout_marginRight="@dimen/dv" android:layout_marginHorizontal="@dimen/dv" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/abw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/myo" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="3.0" />
+    <Button android:textStyle="bold" android:id="@id/rzu" android:text="@string/mff" style="@style/kr" />
+    <View android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+package x63;
+
+/* loaded from: classes5.dex */
+public class e implements java.util.Comparator {
+    @Override // java.util.Comparator
+    public int compare(java.lang.Object obj, java.lang.Object obj2) {
+        return java.lang.Long.compare(((y63.b) obj).f541188d, ((y63.b) obj2).f541188d);
+    }
+}

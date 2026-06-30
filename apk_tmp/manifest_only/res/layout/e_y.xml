@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/d2r" android:layout_width="@dimen/db" android:layout_height="@dimen/db">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/vh0" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/slippery_course_medium" app:fs="@color/aaz" />
+    </FrameLayout>
+    <FrameLayout android:background="@drawable/d2r" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginStart="@dimen/cs">
+        <ImageView android:layout_gravity="center" android:id="@id/unp" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_live_lyrics_off" />
+    </FrameLayout>
+    <FrameLayout android:background="@drawable/d2r" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginStart="@dimen/cs">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/upb" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/pause_filled" app:fs="@color/aaz" />
+    </FrameLayout>
+    <FrameLayout android:background="@drawable/d2r" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginStart="@dimen/cs">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/twj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_live_icon_skip_song_filled" app:fs="@color/aaz" />
+    </FrameLayout>
+</LinearLayout>

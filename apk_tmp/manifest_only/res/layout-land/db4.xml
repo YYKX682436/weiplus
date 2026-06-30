@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout android:id="@id/fqh" android:background="@color/UN_BW_0_Alpha_0_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/p8m" android:layout_width="350.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cu" android:layout_marginRight="@dimen/cu" android:layout_centerInParent="true" android:layout_marginHorizontal="@dimen/cu">
+        <com.tencent.mm.plugin.finder.view.UnchangeTextView android:textSize="22.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:layout_gravity="center_horizontal" android:id="@id/p8k" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cs" android:text="@string/ej5" />
+        <com.tencent.mm.ui.widget.FlowTextMixView android:id="@id/p8p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv">
+            <com.tencent.mm.plugin.finder.view.UnchangeTextView android:textSize="22.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:layout_gravity="left|top" android:id="@id/p8q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" app:itemSpace="@dimen/dv" app:lineSpace="@dimen/bl" />
+            <LinearLayout android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dv" android:paddingVertical="@dimen/bj">
+                <com.tencent.mm.plugin.finder.view.UnchangeTextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/p8i" android:background="@drawable/a_a" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ej9" android:paddingHorizontal="@dimen/dv" android:paddingVertical="@dimen/bj" />
+            </LinearLayout>
+        </com.tencent.mm.ui.widget.FlowTextMixView>
+        <com.tencent.mm.plugin.finder.view.UnchangeTextView android:textSize="15.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:layout_gravity="left" android:id="@id/p8o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:layout_gravity="center_horizontal" android:id="@id/p8j" android:layout_width="match_parent" android:layout_height="@dimen/ci" android:requiresFadingEdge="vertical" app:spanCount="3" />
+        <com.tencent.mm.plugin.finder.view.UnchangeTextView android:textColor="@color/BW_100_Alpha_0_5" android:layout_gravity="center_horizontal" android:id="@id/p8h" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/p8l" android:background="@drawable/az4" android:layout_width="@dimen/dg" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cz">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_arrow" android:layout_centerInParent="true" android:rotation="90.0" app:fs="@color/BW_100_Alpha_0_9" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/p8n" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginBottom="@dimen/cn" style="@style/w_" />
+        <TextView android:textColor="@color/BW_100_Alpha_0_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ej7" />
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout>

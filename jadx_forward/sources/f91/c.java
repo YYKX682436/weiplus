@@ -1,0 +1,83 @@
+package f91;
+
+/* loaded from: classes13.dex */
+public class c implements f91.a {
+    @Override // f91.a
+    public boolean a(android.graphics.Path path, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1040xae7a7558.p1041xab2f7e36.arg.p1042x346425.C11791x6a1daa2a c11791x6a1daa2a) {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1040xae7a7558.p1041xab2f7e36.arg.p1042x346425.C11795x88b1a9f8 c11795x88b1a9f8 = (com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1040xae7a7558.p1041xab2f7e36.arg.p1042x346425.C11795x88b1a9f8) c11791x6a1daa2a;
+        if (c11795x88b1a9f8 == null) {
+            return false;
+        }
+        c(path, c11795x88b1a9f8.f158673e, c11795x88b1a9f8.f158674f, c11795x88b1a9f8.f158675g, c11795x88b1a9f8.f158676h, c11795x88b1a9f8.f158677i, c11795x88b1a9f8.f158678m);
+        return true;
+    }
+
+    @Override // f91.a
+    public boolean b(android.graphics.Path path, org.json.JSONArray jSONArray) {
+        if (jSONArray.length() < 6) {
+            return false;
+        }
+        c(path, ik1.w.g(jSONArray, 0), ik1.w.g(jSONArray, 1), ik1.w.g(jSONArray, 2), (float) jSONArray.optDouble(3), (float) jSONArray.optDouble(4), jSONArray.optBoolean(5));
+        return true;
+    }
+
+    public final boolean c(android.graphics.Path path, float f17, float f18, float f19, float f27, float f28, boolean z17) {
+        float f29;
+        float f37;
+        float f38;
+        float f39 = f17 - f19;
+        float f47 = f18 - f19;
+        float f48 = f17 + f19;
+        float f49 = f18 + f19;
+        float degrees = (float) java.lang.Math.toDegrees(f27);
+        float degrees2 = (float) java.lang.Math.toDegrees(f28);
+        float f57 = (float) (360.0d / (f19 * 6.283185307179586d));
+        if (z17) {
+            if (degrees - degrees2 >= 360.0f) {
+                f38 = -360.0f;
+            } else {
+                f29 = degrees % 360.0f;
+                f37 = degrees2 % 360.0f;
+                if (f29 < 0.0f) {
+                    f29 += 360.0f;
+                }
+                if (f37 < 0.0f) {
+                    f37 += 360.0f;
+                }
+                if (f37 >= f29) {
+                    f38 = (f37 - f29) - 360.0f;
+                }
+                f38 = f37 - f29;
+            }
+        } else if (degrees2 - degrees >= 360.0f) {
+            f38 = 360.0f;
+        } else {
+            f29 = degrees % 360.0f;
+            f37 = degrees2 % 360.0f;
+            if (f29 < 0.0f) {
+                f29 += 360.0f;
+            }
+            if (f37 < 0.0f) {
+                f37 += 360.0f;
+            }
+            if (f37 < f29) {
+                f37 += 360.0f;
+            }
+            f38 = f37 - f29;
+        }
+        float f58 = f38 % 360.0f;
+        if (f58 > f57 || f58 < (-f57)) {
+            path.arcTo(new android.graphics.RectF(f39, f47, f48, f49), degrees, f38, false);
+            return true;
+        }
+        path.arcTo(new android.graphics.RectF(f39, f47, f48, f49), degrees, f38, false);
+        path.addArc(new android.graphics.RectF(f39, f47, f48, f49), degrees, f38);
+        return true;
+    }
+
+    @Override // f91.a
+    /* renamed from: getMethod */
+    public java.lang.String mo129197x24dcf3d7() {
+        return "arcTo";
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/b9x" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <ImageView android:id="@id/dfa" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cn" android:src="@drawable/ar7" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/cl4" android:visibility="invisible" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="200.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_toRightOf="@id/cl4" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/ca" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/ndn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:maxLines="1" />
+            <TextView android:textSize="@dimen/c9" android:textColor="#4dffffff" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/myd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:maxLines="1" />
+        </LinearLayout>
+        <com.tencent.mm.plugin.mv.ui.WeCheckBox android:id="@id/kwj" android:padding="1.0dp" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginRight="@dimen/cn" android:src="@raw/icons_outlined_playbtn_white" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/an" />
+        <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

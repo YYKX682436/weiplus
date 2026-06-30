@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.videocomposition.play.VideoCompositionPlayView android:id="@id/oy6" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/d0r" />
+    <com.tencent.mm.ui.widget.InsectRelativeLayout android:id="@id/kxs" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/o87" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/df" layout="@layout/d0t" />
+        <include android:id="@id/k03" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_centerHorizontal="true" layout="@layout/dbv" />
+        <include android:id="@id/d6j" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginLeft="@dimen/df" android:layout_marginRight="@dimen/df" android:layout_marginBottom="@dimen/cs" android:layout_alignParentBottom="true" layout="@layout/d46" />
+        <include android:id="@id/o85" android:layout_width="match_parent" android:layout_height="@dimen/dd" android:layout_marginBottom="46.0dp" android:layout_alignParentBottom="true" layout="@layout/d0q" />
+        <include android:id="@id/o88" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/o85" layout="@layout/d0w" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/a9z" android:id="@id/o83" android:background="@drawable/c3y" android:paddingLeft="@dimen/cs" android:paddingTop="9.0dp" android:paddingRight="@dimen/cs" android:paddingBottom="13.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:text="@string/ctq" android:layout_above="@id/o85" />
+        <RelativeLayout android:id="@id/l41" android:background="@drawable/b95" android:visibility="gone" android:layout_width="@dimen/d9" android:layout_height="@dimen/d9" />
+    </com.tencent.mm.ui.widget.InsectRelativeLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/d0v" />
+</merge>

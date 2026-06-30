@@ -1,0 +1,153 @@
+package com.tencent.mm.boot.svg.code.drawable;
+
+/* loaded from: classes16.dex */
+public class text_state_default_image_3_filled_colorful extends l95.c {
+    private final int width = 400;
+    private final int height = 640;
+
+    @Override // l95.c
+    public int doCommand(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            return 400;
+        }
+        if (i17 == 1) {
+            return 640;
+        }
+        if (i17 != 2) {
+            return 0;
+        }
+        android.graphics.Canvas canvas = (android.graphics.Canvas) objArr[0];
+        android.os.Looper looper = (android.os.Looper) objArr[1];
+        android.graphics.Matrix instanceMatrix = l95.c.instanceMatrix(looper);
+        float[] instanceMatrixArray = l95.c.instanceMatrixArray(looper);
+        android.graphics.Paint instancePaint = l95.c.instancePaint(looper);
+        instancePaint.setFlags(385);
+        instancePaint.setStyle(android.graphics.Paint.Style.FILL);
+        android.graphics.Paint instancePaint2 = l95.c.instancePaint(looper);
+        instancePaint2.setFlags(385);
+        instancePaint2.setStyle(android.graphics.Paint.Style.STROKE);
+        instancePaint.setColor(-16777216);
+        instancePaint2.setStrokeWidth(1.0f);
+        instancePaint2.setStrokeCap(android.graphics.Paint.Cap.BUTT);
+        instancePaint2.setStrokeJoin(android.graphics.Paint.Join.MITER);
+        instancePaint2.setStrokeMiter(4.0f);
+        instancePaint2.setPathEffect(null);
+        canvas.save();
+        android.graphics.Paint instancePaint3 = l95.c.instancePaint(looper);
+        instancePaint3.setFlags(385);
+        instancePaint3.setStyle(android.graphics.Paint.Style.FILL);
+        android.graphics.Paint instancePaint4 = l95.c.instancePaint(looper);
+        instancePaint4.setFlags(385);
+        instancePaint4.setStyle(android.graphics.Paint.Style.STROKE);
+        instancePaint3.setColor(-16777216);
+        instancePaint4.setStrokeWidth(1.0f);
+        instancePaint4.setStrokeCap(android.graphics.Paint.Cap.BUTT);
+        instancePaint4.setStrokeJoin(android.graphics.Paint.Join.MITER);
+        instancePaint4.setStrokeMiter(4.0f);
+        instancePaint4.setPathEffect(null);
+        android.graphics.Path instancePath = l95.c.instancePath(looper);
+        l95.c.instancePaint(instancePaint3, looper).setColor(-1);
+        android.graphics.Path instancePath2 = l95.c.instancePath(looper);
+        instancePath2.moveTo(0.0f, 0.0f);
+        instancePath2.lineTo(400.0f, 0.0f);
+        instancePath2.lineTo(400.0f, 640.0f);
+        instancePath2.lineTo(0.0f, 640.0f);
+        instancePath2.lineTo(0.0f, 0.0f);
+        instancePath2.close();
+        float[] matrixFloatArray = l95.c.setMatrixFloatArray(instanceMatrixArray, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
+        instanceMatrix.reset();
+        instanceMatrix.setValues(matrixFloatArray);
+        com.tencent.mm.svg.WeChatSVGRenderC2Java.addPath(instancePath, instanceMatrix, instancePath2, true);
+        canvas.clipPath(instancePath);
+        canvas.restore();
+        canvas.save();
+        android.graphics.Paint instancePaint5 = l95.c.instancePaint(instancePaint, looper);
+        instancePaint5.setColor(-1);
+        android.graphics.Path instancePath3 = l95.c.instancePath(looper);
+        instancePath3.moveTo(0.0f, 0.0f);
+        instancePath3.lineTo(400.0f, 0.0f);
+        instancePath3.lineTo(400.0f, 640.0f);
+        instancePath3.lineTo(0.0f, 640.0f);
+        instancePath3.lineTo(0.0f, 0.0f);
+        instancePath3.close();
+        canvas.drawPath(instancePath3, instancePaint5);
+        canvas.restore();
+        canvas.save();
+        android.graphics.Paint instancePaint6 = l95.c.instancePaint(instancePaint, looper);
+        android.graphics.Path instancePath4 = l95.c.instancePath(looper);
+        instancePath4.moveTo(0.0f, 0.0f);
+        instancePath4.lineTo(400.0f, 0.0f);
+        instancePath4.lineTo(400.0f, 640.0f);
+        instancePath4.lineTo(0.0f, 640.0f);
+        instancePath4.lineTo(0.0f, 0.0f);
+        instancePath4.close();
+        android.graphics.Paint instancePaint7 = l95.c.instancePaint(looper);
+        instancePaint7.setFlags(385);
+        instancePaint7.setStyle(android.graphics.Paint.Style.FILL);
+        android.graphics.Paint instancePaint8 = l95.c.instancePaint(looper);
+        instancePaint8.setFlags(385);
+        instancePaint8.setStyle(android.graphics.Paint.Style.STROKE);
+        instancePaint7.setColor(-16777216);
+        instancePaint8.setStrokeWidth(1.0f);
+        instancePaint8.setStrokeCap(android.graphics.Paint.Cap.BUTT);
+        instancePaint8.setStrokeJoin(android.graphics.Paint.Join.MITER);
+        instancePaint8.setStrokeMiter(4.0f);
+        instancePaint8.setPathEffect(null);
+        float[] matrixFloatArray2 = l95.c.setMatrixFloatArray(matrixFloatArray, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
+        instanceMatrix.reset();
+        instanceMatrix.setValues(matrixFloatArray2);
+        com.tencent.mm.svg.WeChatSVGRenderC2Java.setLinearGradient(instancePaint6, 200.0f, -320.0f, -375.281f, 39.5506f, new int[]{-7358004, -3364445}, new float[]{0.0f, 1.0f}, instanceMatrix, 0);
+        canvas.drawPath(instancePath4, instancePaint6);
+        canvas.restore();
+        canvas.save();
+        android.graphics.Paint instancePaint9 = l95.c.instancePaint(instancePaint, looper);
+        android.graphics.Paint instancePaint10 = l95.c.instancePaint(instancePaint2, looper);
+        instancePaint9.setColor(100663295);
+        instancePaint10.setColor(436207615);
+        instancePaint10.setStrokeWidth(0.5f);
+        android.graphics.Path instancePath5 = l95.c.instancePath(looper);
+        instancePath5.moveTo(200.0f, 17.181f);
+        instancePath5.cubicTo(367.47925f, 17.181f, 503.248f, 152.94974f, 503.248f, 320.429f);
+        instancePath5.cubicTo(503.248f, 487.90823f, 367.47925f, 623.677f, 200.0f, 623.677f);
+        instancePath5.cubicTo(32.520752f, 623.677f, -103.247986f, 487.90823f, -103.247986f, 320.429f);
+        instancePath5.cubicTo(-103.247986f, 152.94974f, 32.520752f, 17.181f, 200.0f, 17.181f);
+        instancePath5.close();
+        canvas.drawPath(instancePath5, instancePaint9);
+        canvas.drawPath(instancePath5, instancePaint10);
+        canvas.restore();
+        canvas.save();
+        android.graphics.Paint instancePaint11 = l95.c.instancePaint(instancePaint, looper);
+        android.graphics.Paint instancePaint12 = l95.c.instancePaint(instancePaint2, looper);
+        instancePaint11.setColor(134217727);
+        instancePaint12.setColor(436207615);
+        instancePaint12.setStrokeWidth(0.5f);
+        android.graphics.Path instancePath6 = l95.c.instancePath(looper);
+        instancePath6.moveTo(200.0f, 121.42299f);
+        instancePath6.cubicTo(309.90854f, 121.42299f, 399.00702f, 210.52145f, 399.00702f, 320.43f);
+        instancePath6.cubicTo(399.00702f, 430.33853f, 309.90854f, 519.437f, 200.0f, 519.437f);
+        instancePath6.cubicTo(90.09146f, 519.437f, 0.9929962f, 430.33853f, 0.9929962f, 320.43f);
+        instancePath6.cubicTo(0.9929962f, 210.52145f, 90.09146f, 121.42299f, 200.0f, 121.42299f);
+        instancePath6.close();
+        canvas.drawPath(instancePath6, instancePaint11);
+        canvas.drawPath(instancePath6, instancePaint12);
+        canvas.restore();
+        canvas.save();
+        android.graphics.Paint instancePaint13 = l95.c.instancePaint(instancePaint, looper);
+        android.graphics.Paint instancePaint14 = l95.c.instancePaint(instancePaint2, looper);
+        instancePaint13.setColor(134217727);
+        instancePaint14.setColor(436207615);
+        instancePaint14.setStrokeWidth(0.5f);
+        android.graphics.Path instancePath7 = l95.c.instancePath(looper);
+        instancePath7.moveTo(200.0f, 206.71199f);
+        instancePath7.cubicTo(262.80472f, 206.71199f, 313.71802f, 257.62527f, 313.71802f, 320.43f);
+        instancePath7.cubicTo(313.71802f, 383.2347f, 262.80472f, 434.148f, 200.0f, 434.148f);
+        instancePath7.cubicTo(137.19528f, 434.148f, 86.282f, 383.2347f, 86.282f, 320.43f);
+        instancePath7.cubicTo(86.282f, 257.62527f, 137.19528f, 206.71199f, 200.0f, 206.71199f);
+        instancePath7.close();
+        canvas.drawPath(instancePath7, instancePaint13);
+        canvas.drawPath(instancePath7, instancePaint14);
+        canvas.restore();
+        l95.c.done(looper);
+        return 0;
+    }
+}

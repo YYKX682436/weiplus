@@ -1,0 +1,21 @@
+package em;
+
+/* loaded from: classes.dex */
+public class v2 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final android.view.View f336401a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public android.widget.Button f336402b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public android.widget.Button f336403c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public android.widget.Button f336404d;
+
+    public v2(android.view.View view) {
+        this.f336401a = view;
+    }
+}

@@ -1,0 +1,6 @@
+package com.p314xaae8f345.mm.app;
+
+/* loaded from: classes12.dex */
+public interface b {
+    void a(java.lang.Object obj, java.lang.StringBuilder sb6, java.lang.String str);
+}

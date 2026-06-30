@@ -1,0 +1,5 @@
+package rp1;
+
+/* loaded from: classes3.dex */
+public interface i2 {
+}

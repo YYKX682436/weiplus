@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m7g" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" android:background="@color/a4m" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/gbm" android:background="@color/b" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/df" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageButton android:id="@id/p9" android:background="@null" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_emoji" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/j_i" android:layout_alignParentStart="true" />
+        <com.tencent.mm.plugin.sns.ui.widget.SnsUploadEditTipsWidget android:textSize="@dimen/c9" android:gravity="end" android:id="@id/pd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

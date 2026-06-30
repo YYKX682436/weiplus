@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff333333" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignBottom="@id/ol1" android:layout_alignParentTop="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hk_" android:layout_width="80.0dp" android:layout_height="80.0dp" android:src="@raw/icons_filled_activity_music2" android:layout_centerInParent="true" app:fs="#6f6f6f" />
+    </RelativeLayout>
+    <TextView android:textSize="22.0dp" android:textColor="#ffffffff" android:id="@id/ol1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginRight="40.0dp" android:layout_marginBottom="256.0dp" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.xwebutil.XWebAudioPlayerProgress android:id="@id/p18" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="160.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" android:layout_alignParentStart="true" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hka" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginBottom="64.0dp" android:src="@raw/icons_filled_play" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:fs="@color/aaz" />
+</RelativeLayout>

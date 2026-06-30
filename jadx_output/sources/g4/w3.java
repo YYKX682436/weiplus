@@ -1,0 +1,18 @@
+package g4;
+
+/* loaded from: classes5.dex */
+public final class w3 extends g4.x3 {
+
+    /* renamed from: b, reason: collision with root package name */
+    public final java.lang.Object f268601b;
+
+    public w3(java.lang.Object obj, int i17, boolean z17) {
+        super(i17, z17, null);
+        this.f268601b = obj;
+    }
+
+    @Override // g4.x3
+    public java.lang.Object a() {
+        return this.f268601b;
+    }
+}

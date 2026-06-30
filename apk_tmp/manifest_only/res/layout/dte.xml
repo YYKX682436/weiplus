@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/cv6" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/rns" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cs" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rnr" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_close" app:fs="@color/BW_100_Alpha_0_8" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_8" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/rnw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:lines="1" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rnu" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_more" app:fs="@color/BW_100_Alpha_0_8" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/rnt" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/dn" android:layout_below="@id/rns" android:layout_centerHorizontal="true" app:loadprogress="20" style="@style/w_" />
+        <com.tencent.mm.ui.widget.pulldown.HorizontalNestedBounceView android:id="@id/rnq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_below="@id/rns" android:layout_centerHorizontal="true">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rnp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.ui.widget.pulldown.HorizontalNestedBounceView>
+        <com.tencent.mm.ui.widget.pulldown.HorizontalNestedBounceView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/d7" android:layout_marginRight="@dimen/c9" android:layout_marginBottom="@dimen/dh" android:layout_below="@id/rnq">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rnv" android:layout_width="match_parent" android:layout_height="@dimen/do" />
+        </com.tencent.mm.ui.widget.pulldown.HorizontalNestedBounceView>
+    </RelativeLayout>
+</ScrollView>

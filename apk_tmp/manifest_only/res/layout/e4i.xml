@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/g2j" android:background="@drawable/d06" android:layout_width="wrap_content" android:layout_height="@dimen/d7">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/finder_live_logo" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/bl" app:fs="@color/pv" />
+        <TextView android:textSize="14.0dp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播中 · 进入观看" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:src="@raw/icons_filled_arrow" android:layout_marginHorizontal="@dimen/dv" app:fs="@color/adi" />
+    </LinearLayout>
+</FrameLayout>

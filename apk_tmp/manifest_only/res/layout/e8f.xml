@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/uyy" android:layout_width="match_parent" android:layout_height="@dimen/d1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <View android:layout_gravity="center" android:background="@drawable/abt" android:layout_width="@dimen/db" android:layout_height="@dimen/bl" />
+    </FrameLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:gravity="center_horizontal" android:id="@id/uyz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dd" android:text="@string/nv9" android:fontFamily="sans-serif-medium" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/uyy" />
+    <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:gravity="center_horizontal" android:id="@id/uyx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/dh7" android:fontFamily="sans-serif" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/uyz" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/Link_100" android:gravity="center_horizontal" android:id="@id/uys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dr" android:text="@string/nv5" android:fontFamily="sans-serif" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/uyx" />
+</androidx.constraintlayout.widget.ConstraintLayout>

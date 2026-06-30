@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ef" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="@dimen/ay">
+        <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_up_indicator" android:background="@drawable/b9" android:paddingLeft="@dimen/dv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/actionbar_up_indicator_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b5" android:contentDescription="@string/cd" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ha" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@id/actionbar_up_indicator">
+            <TextView android:textSize="@dimen/b" android:textColor="@color/bx" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/hc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:accessibilityHeading="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/cgi" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

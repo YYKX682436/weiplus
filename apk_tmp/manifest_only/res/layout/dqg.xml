@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/cu0" android:paddingLeft="@dimen/bn" android:paddingTop="@dimen/bk" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bj" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center_vertical" android:id="@id/jxx" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/finder_living_tag" app:fs="@color/aby" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="11.0dp" android:textColor="@color/aby" android:gravity="center_vertical" android:id="@id/lbv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lsw" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="@dimen/bl" app:layout_constraintStart_toEndOf="@id/jxx" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

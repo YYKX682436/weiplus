@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.webview.ui.tools.WebViewKeyboardLinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/pj1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.pulldown.NestedBounceView android:id="@id/pj0" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/p26" android:layout="@layout/bny" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ProgressBar android:id="@id/pj2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/w9" />
+        <include layout="@layout/bpp" />
+        <com.tencent.mm.plugin.scanner.MultiCodeMaskView android:id="@id/jun" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.webview.ui.tools.WebViewKeyboardLinearLayout>

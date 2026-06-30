@@ -1,0 +1,48 @@
+package wd1;
+
+/* loaded from: classes7.dex */
+public final class k implements wd1.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final com.tencent.mm.plugin.appbrand.o6 f444822d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public com.tencent.mm.plugin.appbrand.skyline.nativeview.l f444823e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public wl1.h f444824f;
+
+    public k(com.tencent.mm.plugin.appbrand.o6 runtime) {
+        kotlin.jvm.internal.o.g(runtime, "runtime");
+        this.f444822d = runtime;
+    }
+
+    public final int a(int i17, int i18) {
+        if (i17 == i18) {
+            return 0;
+        }
+        if (i17 < i18) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.SnapshotWebViewService", "scrollContentTo warning, currentY:" + i17 + " scrollToY:" + i18);
+            return i18 - i17;
+        }
+        com.tencent.mars.xlog.Log.w("MicroMsg.SnapshotWebViewService", "scrollContentTo error, currentY:" + i17 + " scrollToY:" + i18);
+        return -1;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:13:0x0135 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:55:0x00fc A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:56:0x00fd  */
+    /* JADX WARN: Removed duplicated region for block: B:57:0x0077  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0030  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.Object b(int r27, int r28, int r29, int r30, int r31, int r32, long r33, kotlin.coroutines.Continuation r35) {
+        /*
+            Method dump skipped, instructions count: 803
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: wd1.k.b(int, int, int, int, int, int, long, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+}

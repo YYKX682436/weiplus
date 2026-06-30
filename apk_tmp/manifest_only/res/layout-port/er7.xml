@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fgb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/fg3" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@raw/live_anchor_top_shadow" android:layout_width="match_parent" android:layout_height="@dimen/ce" />
+        <RelativeLayout android:id="@id/fgw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@id/qjw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <include android:id="@id/tv9" layout="@layout/eeg" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/fg0" android:background="@raw/live_anchor_bottom_shadow" android:layout_width="match_parent" android:layout_height="350.0dp" android:layout_alignParentBottom="true" />
+        <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.finder.live.view.FinderLiveLocationView android:id="@id/l0q" android:paddingTop="@dimen/c8" android:paddingBottom="@dimen/c8" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_columnWeight="1.0" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fg4" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" android:layout_below="@id/fgw" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/tn7" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <FrameLayout android:orientation="vertical" android:id="@id/tn9" android:paddingTop="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/tn_" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include android:id="@id/tvc" layout="@layout/er6" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/tn8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include android:id="@id/eqg" layout="@layout/e93" />
+                        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dj" android:layout_marginRight="@dimen/dj" android:layout_marginHorizontal="@dimen/dj">
+                            <include android:id="@id/qrz" layout="@layout/eel" />
+                            <include android:id="@id/tv_" layout="@layout/eei" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dj" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dj" android:layout_marginHorizontal="@dimen/dj">
+                            <include android:id="@id/thv" layout="@layout/eeh" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/eqb" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginBottom="@dimen/cn" android:layout_marginStart="@dimen/dj" android:layout_marginEnd="@dimen/dj">
+                <include android:id="@id/tvb" layout="@layout/eem" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/eju" android:layout="@layout/alx" android:inflatedId="@id/ejt" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

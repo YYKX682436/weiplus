@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/f1g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/djj" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ihz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl">
+        <ImageView android:id="@id/f17" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_3" android:id="@id/f18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/bl" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/zn" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:rotation="90.0" app:fs="@color/BW_100_Alpha_0_3" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ij1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl">
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_3" android:ellipsize="end" android:id="@id/q5e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/cc" android:singleLine="true" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="2.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/hx1" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/hkd" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd" android:layout_marginLeft="@dimen/cn" android:layout_marginBottom="@dimen/df" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/hkd" app:layout_constraintLeft_toRightOf="@id/hkd" app:layout_constraintRight_toLeftOf="@id/b0z" app:layout_constraintTop_toTopOf="@id/hkd">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/an" android:ellipsize="end" android:id="@id/ol2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:alpha="0.8" />
+        <ImageView android:id="@id/hkb" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@drawable/c14" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:textSize="17.0dp" android:textColor="@color/a8p" android:id="@id/b0z" android:background="@drawable/b6j" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.0dp" android:text="@string/x1" android:layout_marginEnd="@dimen/cz" app:layout_constraintBottom_toBottomOf="@id/hkd" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/hkd" />
+</androidx.constraintlayout.widget.ConstraintLayout>

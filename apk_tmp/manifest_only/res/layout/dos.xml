@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:clipChildren="false" android:layout_width="@dimen/c0" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingVertical="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.view.MMPAGView android:id="@id/r_f" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+    <TextView android:textSize="@dimen/yd" android:textColor="@color/an" android:id="@id/cut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dp" />
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveGiftTextView android:textSize="@dimen/yd" android:textColor="@color/an" android:id="@id/cjm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dp" />
+</LinearLayout>

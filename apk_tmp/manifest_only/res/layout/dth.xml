@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rv3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/ruy" android:background="@color/ao" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:layout_margin="@dimen/bl" android:layout_marginRight="@dimen/dv" app:i8="4.0dp" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/rv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/cn" android:text="奖励100成长点" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/r" android:textColor="#ffc300" android:id="@id/rv0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rv1" android:paddingLeft="@dimen/d1" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rv3" />
+    <View android:id="@id/ruz" android:background="@color/ao" android:layout_width="1.0dp" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/dv" android:layout_below="@id/rv3" android:layout_alignBottom="@id/rv1" android:layout_alignParentLeft="true" />
+</RelativeLayout>

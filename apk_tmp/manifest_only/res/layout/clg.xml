@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/hz" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hi">
+            <View android:layout_width="0.0dp" android:layout_height="@dimen/a_" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.MMNeat7extView android:textColor="@color/i_" android:id="@id/mpo" android:background="@drawable/o_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_" android:text="@string/hl6" style="@style/eu" />
+            <ImageView android:id="@id/bk3" android:layout_marginRight="@dimen/j3" style="@style/ei" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hi">
+            <ImageView android:id="@id/a_5" android:layout_marginLeft="@dimen/j3" android:src="@drawable/icon" style="@style/ee" />
+            <com.tencent.mm.ui.widget.MMNeat7extView android:id="@id/mpm" android:background="@drawable/mh" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_" android:text="@string/inl" style="@style/eu" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hi">
+            <ImageView android:id="@id/a_6" android:layout_marginLeft="@dimen/j3" android:src="@drawable/icon" style="@style/ee" />
+            <com.tencent.mm.ui.widget.MMNeat7extView android:id="@id/mpn" android:background="@drawable/mh" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_" android:text="@string/inj" style="@style/eu" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.tencent.mm.plugin.setting.ui.widget.FontSelectorView android:id="@id/gbg" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

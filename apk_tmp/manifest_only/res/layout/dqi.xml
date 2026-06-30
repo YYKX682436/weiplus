@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:layout_gravity="center_horizontal" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dl" android:text="@string/mh9" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/abw" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/mh8" />
+    <com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d9" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/d9" android:layout_marginHorizontal="@dimen/d9" app:heightWeight="189.0" app:widthWeight="318.0">
+        <ImageView android:id="@id/rqs" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout>
+    <Button android:textSize="17.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:layout_gravity="center_horizontal" android:id="@id/b0z" android:background="@drawable/jr" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/dn" android:text="@string/f7u" />
+</LinearLayout>

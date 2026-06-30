@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ssl" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/shr" android:background="@drawable/d7p" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="12.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:i8="8.0dp" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/u6t" android:layout_width="32.0dp" android:layout_height="32.0dp" app:layout_constraintBottom_toBottomOf="@id/shr" app:layout_constraintEnd_toEndOf="@id/shr" app:layout_constraintStart_toStartOf="@id/shr" app:layout_constraintTop_toTopOf="@id/shr" app:i8="8.0dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" app:layout_constraintBottom_toBottomOf="@id/u6t" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/u6t" app:layout_constraintTop_toTopOf="@id/u6t">
+            <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/vhp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/a84" android:id="@id/vhq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:textFontWeight="500" app:layout_constraintBottom_toBottomOf="@id/vhp" app:layout_constraintStart_toEndOf="@id/vhp" app:layout_constraintTop_toTopOf="@id/vhp" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/ahm" android:id="@id/vho" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/vhp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/d0v" android:background="@color/FG_3" android:layout_width="0.0dp" android:layout_height="0.5dp" android:layout_marginLeft="60.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

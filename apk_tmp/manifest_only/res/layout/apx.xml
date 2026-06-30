@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cpj" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_3" android:layout_gravity="center" android:id="@id/cpf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cpi" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/a9x" android:textColor="@color/BW_100_Alpha_0_3" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/cpk" android:background="@drawable/a_g" android:paddingLeft="@dimen/c9" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cz" android:maxLines="1" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/d6m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d9" android:layout_marginTop="@dimen/dv">
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bj" android:text="+" android:includeFontPadding="false" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:layout_marginRight="@dimen/bj" android:src="@raw/coin_icon" app:fs="@color/BW_100_Alpha_0_3" />
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_3" android:id="@id/d6n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

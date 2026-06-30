@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mxf" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/mxa" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d4s" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:gravity="center" android:layout_gravity="center" android:id="@id/mxj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d5k" />
+        <TextView android:textSize="15.0dp" android:gravity="center" android:layout_gravity="right|center" android:id="@id/mxe" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:text="@string/d4u" style="@style/kq" />
+    </FrameLayout>
+    <FrameLayout android:orientation="horizontal" android:id="@id/mxg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/df" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/cn" android:layout_below="@id/mxf">
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:layout_gravity="left|center" android:id="@id/v5q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efd" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:layout_gravity="right|center" android:id="@id/v5p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efc" />
+    </FrameLayout>
+</RelativeLayout>

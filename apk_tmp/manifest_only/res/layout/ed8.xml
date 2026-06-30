@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:background="@color/f" android:layout_width="match_parent" android:layout_height="@dimen/dd"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/adg" android:ellipsize="end" android:id="@id/tfw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nyj" android:singleLine="true" android:layout_marginStart="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <FrameLayout android:id="@id/tft" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginStart="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@id/tfw" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/tfu" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:rotation="90.0" app:fs="@color/adg" />
+        <com.tencent.mm.ui.widget.MMProcessBar android:layout_gravity="center" android:id="@id/tfv" android:background="@drawable/x9" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+    </FrameLayout>
+    <View android:id="@id/f3x" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/dv" android:layout_marginStart="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/puy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/q13" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_edit_photo_rotate" android:scaleType="centerCrop" app:fs="@color/ac5" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/ac6" android:gravity="center" android:id="@id/q14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lf2" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/pv1" android:background="@color/BW_100_Alpha_0_1" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/cz" android:layout_below="@id/puy" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/puz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/pv1" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/px5" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_close" android:scaleType="centerCrop" app:fs="@color/ac5" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/px6" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_done" android:scaleType="centerCrop" android:layout_alignParentEnd="true" app:fs="@color/ac5" />
+    </RelativeLayout>
+</RelativeLayout>

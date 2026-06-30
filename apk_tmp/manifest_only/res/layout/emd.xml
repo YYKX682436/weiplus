@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/dv" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginHorizontal="@dimen/cn">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/v_p" android:layout_width="wrap_content" android:layout_height="48.0dp" android:text="开始检测" style="@style/kq" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/t8c" android:layout_width="wrap_content" android:layout_height="48.0dp" android:text="停止检测" android:layout_marginStart="@dimen/dv" style="@style/kq" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginHorizontal="@dimen/cn">
+        <EditText android:layout_gravity="center_horizontal" android:id="@id/vec" android:layout_width="wrap_content" android:layout_height="48.0dp" android:minWidth="200.0dp" android:hint="方法执行阈值(32)" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/ved" android:layout_width="wrap_content" android:layout_height="48.0dp" android:text="设置" android:layout_marginStart="@dimen/dv" style="@style/kq" />
+    </LinearLayout>
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginHorizontal="@dimen/cn" />
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/qlw" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/v_k" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/v_j" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/v_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/upi" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <FrameLayout android:id="@id/b98" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/by4" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/ulv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/u_b" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ufg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/ufh" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/ufd" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/ufe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/uff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:id="@id/b6z" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/u4_" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+                <View android:id="@id/sla" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+            <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:id="@id/b70" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/u4a" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+                <View android:id="@id/slb" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+            <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:id="@id/b71" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/u4b" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+                <View android:id="@id/slc" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+            <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:id="@id/so2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/u4c" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+                <View android:id="@id/sld" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+            <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:id="@id/so3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/u4d" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+                <View android:id="@id/sle" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+            </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/t4n" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/rag" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/o43" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/u5s" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/u5t" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <Space android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/cu2" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/v2u" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/t4o" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    </FrameLayout>
+</LinearLayout>

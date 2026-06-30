@@ -1,0 +1,111 @@
+package mm2;
+
+/* loaded from: classes10.dex */
+public abstract class w4 {
+    public static final void a(r45.f02 f02Var, java.lang.String tag, java.lang.String prefix) {
+        java.util.LinkedList<r45.l30> linkedList;
+        java.util.LinkedList linkedList2;
+        r45.dd5 dd5Var;
+        com.tencent.mm.protobuf.g gVar;
+        r45.dd5 dd5Var2;
+        r45.dd5 dd5Var3;
+        kotlin.jvm.internal.o.g(f02Var, "<this>");
+        kotlin.jvm.internal.o.g(tag, "tag");
+        kotlin.jvm.internal.o.g(prefix, "prefix");
+        com.tencent.mars.xlog.Log.i(tag, "FinderLiveMilestoneLotteryInfo logInfo " + prefix + " id:" + f02Var.f373878d + ", ext_flag:" + f02Var.f373881g);
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
+        sb6.append(prefix);
+        sb6.append(" id:");
+        sb6.append(f02Var.f373878d);
+        sb6.append(", base_info, begin_time:");
+        r45.tl4 tl4Var = f02Var.f373879e;
+        sb6.append(tl4Var != null ? java.lang.Integer.valueOf(tl4Var.f386545d) : null);
+        sb6.append(", end_time:");
+        r45.tl4 tl4Var2 = f02Var.f373879e;
+        sb6.append(tl4Var2 != null ? java.lang.Integer.valueOf(tl4Var2.f386546e) : null);
+        sb6.append(", remain_time:");
+        r45.tl4 tl4Var3 = f02Var.f373879e;
+        sb6.append(tl4Var3 != null ? java.lang.Integer.valueOf(tl4Var3.f386547f) : null);
+        sb6.append(", status:");
+        r45.tl4 tl4Var4 = f02Var.f373879e;
+        sb6.append(tl4Var4 != null ? java.lang.Integer.valueOf(tl4Var4.f386548g) : null);
+        sb6.append(", attend_type:");
+        r45.tl4 tl4Var5 = f02Var.f373879e;
+        sb6.append(tl4Var5 != null ? java.lang.Integer.valueOf(tl4Var5.f386549h) : null);
+        sb6.append(",participate_count:");
+        r45.tl4 tl4Var6 = f02Var.f373879e;
+        sb6.append(tl4Var6 != null ? java.lang.Integer.valueOf(tl4Var6.f386550i) : null);
+        sb6.append(",show_count:");
+        r45.tl4 tl4Var7 = f02Var.f373879e;
+        sb6.append(tl4Var7 != null ? java.lang.Integer.valueOf(tl4Var7.f386551m) : null);
+        com.tencent.mars.xlog.Log.i(tag, sb6.toString());
+        java.lang.StringBuilder sb7 = new java.lang.StringBuilder();
+        sb7.append(prefix);
+        sb7.append(" id:");
+        sb7.append(f02Var.f373878d);
+        sb7.append(", prize_info, count:");
+        r45.fm4 fm4Var = f02Var.f373880f;
+        sb7.append(fm4Var != null ? java.lang.Integer.valueOf(fm4Var.f374447f) : null);
+        sb7.append(", prize_type:");
+        r45.fm4 fm4Var2 = f02Var.f373880f;
+        sb7.append(fm4Var2 != null ? java.lang.Integer.valueOf(fm4Var2.f374448g) : null);
+        sb7.append(", wording:");
+        r45.fm4 fm4Var3 = f02Var.f373880f;
+        sb7.append(fm4Var3 != null ? fm4Var3.f374446e : null);
+        sb7.append(", img_url:");
+        r45.fm4 fm4Var4 = f02Var.f373880f;
+        sb7.append(fm4Var4 != null ? fm4Var4.f374445d : null);
+        com.tencent.mars.xlog.Log.i(tag, sb7.toString());
+        java.lang.StringBuilder sb8 = new java.lang.StringBuilder();
+        sb8.append(prefix);
+        sb8.append(" id:");
+        sb8.append(f02Var.f373878d);
+        sb8.append(", prize_info, product_jump_info:coupon_id: ");
+        r45.fm4 fm4Var5 = f02Var.f373880f;
+        sb8.append((fm4Var5 == null || (dd5Var3 = fm4Var5.f374449h) == null) ? null : dd5Var3.f372326d);
+        sb8.append(",related_product_id: ");
+        r45.fm4 fm4Var6 = f02Var.f373880f;
+        sb8.append((fm4Var6 == null || (dd5Var2 = fm4Var6.f374449h) == null) ? null : dd5Var2.f372327e);
+        sb8.append(",jump_info: ");
+        r45.fm4 fm4Var7 = f02Var.f373880f;
+        sb8.append((fm4Var7 == null || (dd5Var = fm4Var7.f374449h) == null || (gVar = dd5Var.f372328f) == null) ? null : java.lang.Integer.valueOf(gVar.f192156a.length));
+        com.tencent.mars.xlog.Log.i(tag, sb8.toString());
+        java.lang.StringBuilder sb9 = new java.lang.StringBuilder();
+        sb9.append(prefix);
+        sb9.append(" id:");
+        sb9.append(f02Var.f373878d);
+        sb9.append(", attend_info:choiceSize:");
+        r45.sl4 sl4Var = f02Var.f373882h;
+        sb9.append((sl4Var == null || (linkedList2 = sl4Var.f385833f) == null) ? null : java.lang.Integer.valueOf(linkedList2.size()));
+        sb9.append(",voting_id: ");
+        r45.sl4 sl4Var2 = f02Var.f373882h;
+        sb9.append(sl4Var2 != null ? sl4Var2.f385832e : null);
+        sb9.append(",voting_wording: ");
+        r45.sl4 sl4Var3 = f02Var.f373882h;
+        sb9.append(sl4Var3 != null ? sl4Var3.f385834g : null);
+        sb9.append(",voting_tips:");
+        r45.sl4 sl4Var4 = f02Var.f373882h;
+        sb9.append(sl4Var4 != null ? sl4Var4.f385835h : null);
+        sb9.append(",comment_wording: ");
+        r45.sl4 sl4Var5 = f02Var.f373882h;
+        sb9.append(sl4Var5 != null ? sl4Var5.f385831d : null);
+        com.tencent.mars.xlog.Log.i(tag, sb9.toString());
+        r45.sl4 sl4Var6 = f02Var.f373882h;
+        if (sl4Var6 != null && (linkedList = sl4Var6.f385833f) != null) {
+            for (r45.l30 l30Var : linkedList) {
+                com.tencent.mars.xlog.Log.i(tag, prefix + " choiceList, choice_id:" + l30Var.getInteger(0) + ", self_voted:" + l30Var.getInteger(2) + ", select_count:" + l30Var.getInteger(3) + ", choice_str_id:" + l30Var.getString(4) + ", wording:" + l30Var.getString(1));
+            }
+        }
+        java.lang.StringBuilder sb10 = new java.lang.StringBuilder();
+        sb10.append(prefix);
+        sb10.append(" id:");
+        sb10.append(f02Var.f373878d);
+        sb10.append(", result_info:support_voting_result: ");
+        r45.km4 km4Var = f02Var.f373883i;
+        sb10.append(km4Var != null ? java.lang.Integer.valueOf(km4Var.f378823f) : null);
+        sb10.append("voting_correct: ");
+        r45.km4 km4Var2 = f02Var.f373883i;
+        sb10.append(km4Var2 != null ? java.lang.Integer.valueOf(km4Var2.f378824g) : null);
+        com.tencent.mars.xlog.Log.i(tag, sb10.toString());
+    }
+}

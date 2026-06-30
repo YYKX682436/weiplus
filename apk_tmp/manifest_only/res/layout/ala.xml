@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/by" android:layout_height="@dimen/c5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/cl6" android:background="#2c2c2c" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:i8="@dimen/bl" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c9" android:layout_alignParentBottom="true" android:paddingStart="@dimen/bl" android:paddingEnd="@dimen/bl" android:layout_marginEnd="@dimen/c9" android:layout_alignParentEnd="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/l9_" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/icons_outlined_awesome_bold" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/c8" android:textColor="@color/an" android:id="@id/i1g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/c8b" android:background="@drawable/b1o" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/n7d" android:background="@drawable/d93" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginStart="50.0dp" android:layout_marginEnd="@dimen/ca" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/n7c" android:layout_width="@dimen/aq7" android:layout_height="@dimen/aq7" android:layout_marginLeft="@dimen/aq6" android:layout_marginTop="5.0dp" android:layout_marginRight="@dimen/aq6" android:src="@raw/friendactivity_writeicon" android:scaleType="centerInside" android:layout_marginHorizontal="@dimen/aq6" app:fs="@color/vo" />
+        <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ca">
+            <com.tencent.mm.plugin.sns.ui.widget.SnsAvatarImageView android:id="@id/oy" android:focusable="false" android:contentDescription="@string/a6x" style="@style/pw" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/p_" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/scg" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <TextView android:textSize="15.0dp" android:textColor="@color/a0m" android:ellipsize="end" android:id="@id/scg" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/pc" app:layout_constraintStart_toEndOf="@id/p_" app:layout_constraintTop_toTopOf="0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/amq" android:id="@id/pc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <FrameLayout android:id="@id/p1" android:background="@drawable/b1h" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                    <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="15.0dp" android:textColor="@color/FG_0_5" android:layout_gravity="center_vertical" android:id="@id/p2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.tencent.mm.plugin.sns.ui.SnsTranslateResultView android:id="@id/nc8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

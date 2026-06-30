@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oxp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/i0" android:layout_height="@dimen/i0" android:src="@raw/chatting_fast_entrance_video" android:contentDescription="@string/wp" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j_" android:text="@string/um" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a6n" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j_">
+        <ImageView android:layout_width="@dimen/i0" android:layout_height="@dimen/i0" android:src="@raw/chatting_fast_entrance_voice" android:contentDescription="@string/wp" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j_" android:text="@string/uo" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/toc" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/t89" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="118.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="@color/a84" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ou8" android:lines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:id="@id/lr1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/gxy">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lq8" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|bottom" android:orientation="horizontal" android:id="@id/ouj" android:background="@drawable/b2t" android:paddingBottom="@dimen/bl" android:layout_width="@dimen/dj" android:layout_height="@dimen/db" android:paddingEnd="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/s6z" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_live_photo" app:fs="@color/an" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ng4" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/sns_icons_filled_top" android:layout_marginStart="6.0dp" app:fs="@color/an" />
+    <com.tencent.mm.plugin.sns.ui.widget.SnsAlbumThumbStateIconView android:id="@id/gu8" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginStart="6.0dp" />
+</LinearLayout>

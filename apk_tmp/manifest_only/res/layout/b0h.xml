@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/BW_0_Alpha_0_8" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/foj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/dj" android:layout_marginRight="@dimen/cn" android:src="@raw/icons_outlined_close" app:fs="@color/BW_100_Alpha_0_8" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/fof" android:background="@drawable/a_4" android:padding="1.0dp" android:layout_width="@dimen/dg" android:layout_height="@dimen/dg" android:layout_marginTop="180.0dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" app:layout_constraintTop_toBottomOf="@id/fof">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/an" android:id="@id/fol" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/fon" android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:layout_marginLeft="@dimen/bl" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/h1" android:textColor="@color/an" android:gravity="center" android:id="@id/fok" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/eh3" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/fom" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fog" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginBottom="@dimen/bz" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" style="@style/hl">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/foi" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/wecoin_balance_icons" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/an" android:ellipsize="end" android:gravity="center" android:id="@id/foh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eh1" android:lines="1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

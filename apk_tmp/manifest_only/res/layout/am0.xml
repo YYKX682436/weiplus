@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/el2" android:background="@color/w5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/ekc" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.ui.widget.LiveBottomSheetPanel android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/eke" android:background="@drawable/aja" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ekm" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/el0" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_marginBottom="@dimen/cn" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+                    <include android:id="@id/ekd" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerVertical="true" android:layout_alignParentStart="true" layout="@layout/awu" />
+                    <com.tencent.mm.plugin.finder.live.view.FinderLiveTextIndicator android:textSize="15.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/el1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/cs" android:layout_marginEnd="@dimen/cs" />
+                    <include android:id="@id/tg8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/eb1" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/ekv" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.tencent.mm.ui.widget.LiveBottomSheetPanel>
+    <include android:layout_gravity="bottom" android:id="@id/f5b" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/at1" />
+    <include android:layout_gravity="bottom" android:id="@id/fkv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/ayu" />
+</FrameLayout>

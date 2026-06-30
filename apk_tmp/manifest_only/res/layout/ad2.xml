@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/hf" android:paddingTop="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ja"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/hhs" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_toRightOf="@id/hje">
+        <ImageView android:id="@id/hhr" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/hhc" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/jrb" android:layout_toRightOf="@id/hhs">
+        <TextView android:textSize="@dimen/cb" android:ellipsize="middle" android:id="@id/hjn" android:layout_height="wrap_content" android:singleLine="true" style="@style/j3" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_2" android:id="@id/hjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:layout_below="@id/hjn" android:layout_alignParentLeft="true" style="@style/j2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:layout_marginBottom="@dimen/c_">
+            <TableLayout android:id="@id/k3l" android:layout_width="match_parent" android:layout_height="wrap_content" android:shrinkColumns="0">
+                <TableRow>
+                    <TextView android:textSize="@dimen/ca" android:id="@id/hhn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/j1" />
+                    <TextView android:textSize="@dimen/ca" android:ellipsize="none" android:id="@id/hjl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv" style="@style/j1" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/hje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_alignParentStart="true">
+        <CheckBox android:layout_gravity="right|center" android:id="@id/hjd" android:background="@drawable/aoe" android:focusable="false" android:clickable="false" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" style="@style/im" />
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/jrb" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_more2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" app:fs="@color/FG_2" />
+    <View android:id="@id/hi_" android:layout_height="0.5dp" android:layout_alignParentBottom="true" style="@style/fh" />
+</RelativeLayout>

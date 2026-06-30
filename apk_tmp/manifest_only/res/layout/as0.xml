@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="@dimen/cs" android:paddingRight="@dimen/cs" android:layout_width="match_parent" android:layout_height="@dimen/br">
+        <CheckBox android:id="@id/f20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/im" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/f28" android:background="@color/BW_0_Alpha_0_0_3" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cs" android:layout_centerVertical="true" android:layout_toEndOf="@id/f20" app:i8="4.0dp" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/f26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:lines="1" android:layout_alignTop="@id/f28" android:layout_toEndOf="@id/f28" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/f21" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:layout_marginLeft="@dimen/cn" android:src="@raw/coin_icon" android:layout_alignBottom="@id/f28" android:layout_toEndOf="@id/f28" app:fs="@color/FG_2" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:id="@id/f27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginBottom="-3.5dp" android:includeFontPadding="false" android:layout_alignBottom="@id/f28" android:layout_toEndOf="@id/f21" />
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/f22" android:background="@color/BW_0_Alpha_0_0_3" android:padding="4.0dp" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:ds="@dimen/cn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/icons_outlined_add3" app:fs="@color/FG_2" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+        <com.tencent.mm.ui.widget.MMEditText android:textSize="@dimen/b3" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/f25" android:background="@null" android:layout_width="@dimen/db" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:text="0" android:layout_toLeftOf="@id/f22" android:layout_centerVertical="true" android:inputType="number" android:textCursorDrawable="@drawable/afr" />
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/f23" android:background="@color/BW_0_Alpha_0_0_3" android:padding="4.0dp" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_toLeftOf="@id/f25" android:layout_centerVertical="true" app:ds="@dimen/cn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/f24" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/icons_outlined_minus2" app:fs="@color/FG_2" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+        <View android:id="@id/f1z" android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dd" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

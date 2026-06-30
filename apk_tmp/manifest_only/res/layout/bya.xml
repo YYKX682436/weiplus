@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/avb" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="bottom" android:id="@id/av6" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/av5" android:background="@drawable/b8k" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/avd" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/av3" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/b5t" android:background="@color/b" android:layout_width="match_parent" android:layout_height="@dimen/dv" />
+        <TextView android:textSize="@dimen/pl" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/b5u" android:background="@drawable/bcc" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:text="@string/apj" />
+    </LinearLayout>
+</LinearLayout>

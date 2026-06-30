@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ghh" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ghi" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_error" app:fs="@color/u6" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/u6" android:id="@id/ghj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="危险动作，请勿模仿" android:layout_marginStart="@dimen/bl" />
+</LinearLayout>

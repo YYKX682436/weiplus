@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/o8a" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/n7_" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a6q" android:id="@id/cgx" android:background="@color/a5s" android:padding="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/na6" android:background="@drawable/b72" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:minHeight="@dimen/ac4" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/kh5" android:layout_width="@dimen/ac5" android:layout_height="@dimen/ac5" android:layout_marginLeft="16.0dp" android:src="@raw/tipsbar_icon_warning" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/l0_" android:paddingLeft="@dimen/hq" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/jdo" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/h2" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/na7" android:layout_marginTop="@dimen/j3" android:layout_marginRight="@dimen/i_" android:layout_marginBottom="@dimen/j3" android:text="@string/jdn" style="@style/l1" />
+            <Button android:textColor="@color/vo" android:id="@id/na5" android:background="@drawable/c2" android:visibility="gone" android:layout_marginTop="@dimen/j3" android:layout_marginRight="@dimen/i_" android:layout_marginBottom="@dimen/j3" android:text="@string/je3" style="@style/kn" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/vo" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/n87" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/cn" />
+        </LinearLayout>
+        <ListView android:id="@id/p7" android:background="@null" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/aoc" android:cacheColorHint="#00000000" android:divider="@null" android:layout_weight="1.0" />
+        <com.tencent.mm.plugin.sns.ui.SnsCommentFooter android:id="@id/c76" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ViewStub android:id="@id/jv" android:layout="@layout/cj" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/gce" android:layout="@layout/cr1" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

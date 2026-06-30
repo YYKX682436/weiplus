@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b8p" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/q2c" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/q2e" android:background="@drawable/ckn" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/dk1" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:id="@id/q2f" android:background="@drawable/ckn" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/dmh" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/q2b" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/cqo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.wallet_core.ui.view.WalletMaxHeightLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/q2d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/q27" android:paddingBottom="64.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/gu" android:id="@id/b5i" android:layout_width="@dimen/c0" android:text="@string/apj" style="@style/kz" />
+        <Button android:id="@id/khs" android:layout_width="@dimen/c0" android:layout_marginLeft="@dimen/cn" android:text="@string/apu" style="@style/kr" />
+        <Button android:id="@id/b1e" android:visibility="gone" android:layout_width="@dimen/cf" android:layout_height="@dimen/db" android:text="@string/apu" style="@style/kr" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/ond" android:paddingTop="16.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的精彩视频" android:paddingStart="8.0dp" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/p16" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="250.0dp" android:layout_marginTop="8.0dp" android:paddingEnd="32.0dp" android:layout_marginStart="8.0dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/ond" />
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/ona" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="全部视频" android:paddingStart="8.0dp" />
+</LinearLayout>

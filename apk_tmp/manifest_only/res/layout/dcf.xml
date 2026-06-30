@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/pyw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/pyv" android:background="@color/BW_97" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:scaleType="centerCrop" android:layout_marginHorizontal="@dimen/cn" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/icons_outlined_play2" android:scaleType="fitXY" app:fs="@color/an" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.finder.view.FinderMultiPhotoLayout android:id="@id/pyu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cs" android:layout_marginRight="@dimen/cs" android:layout_marginHorizontal="@dimen/cs" />
+</FrameLayout>

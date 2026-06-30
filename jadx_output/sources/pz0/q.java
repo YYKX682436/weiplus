@@ -1,0 +1,32 @@
+package pz0;
+
+/* loaded from: classes10.dex */
+public final class q implements io.flutter.plugin.common.PluginRegistry.ActivityResultListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ yz5.l f359158d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ pz0.r f359159e;
+
+    public q(yz5.l lVar, pz0.r rVar) {
+        this.f359158d = lVar;
+        this.f359159e = rVar;
+    }
+
+    @Override // io.flutter.plugin.common.PluginRegistry.ActivityResultListener
+    public final boolean onActivityResult(int i17, int i18, android.content.Intent intent) {
+        yz5.l lVar = this.f359158d;
+        if (i17 == 1 && i18 == -1) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MJTemplateApiFlutterPlugin", "requestMusicPost square finished");
+            kotlin.Result.Companion companion = kotlin.Result.INSTANCE;
+            lVar.invoke(kotlin.Result.m520boximpl(kotlin.Result.m521constructorimpl(java.lang.Boolean.TRUE)));
+        } else {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MJTemplateApiFlutterPlugin", "requestMusicPost square not finished ");
+            kotlin.Result.Companion companion2 = kotlin.Result.INSTANCE;
+            lVar.invoke(kotlin.Result.m520boximpl(kotlin.Result.m521constructorimpl(java.lang.Boolean.FALSE)));
+        }
+        this.f359159e.f359163g = null;
+        return true;
+    }
+}

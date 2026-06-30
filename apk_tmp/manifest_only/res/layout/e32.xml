@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/rl3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/s1h" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/s1l" app:layout_constraintTop_toTopOf="0" layout="@layout/eh2" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/s1l" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toRightOf="@id/s1h" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toRightOf="@id/s1h" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/s1f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/aju" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/s1g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bk" android:maxLines="2" android:includeFontPadding="false" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

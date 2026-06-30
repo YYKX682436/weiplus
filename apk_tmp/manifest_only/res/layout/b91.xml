@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.ui.slideprofile.FinderPagerView android:id="@id/u2u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.TouchableLayout android:id="@id/m7g" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/mto" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/mta" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" app:loadMoreLayout="@layout/bs5">
+                    <com.tencent.mm.plugin.finder.event.recyclerview.FinderRecyclerView android:id="@id/la3" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </com.tencent.mm.view.RefreshLoadMoreLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <ViewStub android:layout_gravity="center|bottom" android:id="@id/jrp" android:layout="@layout/b3f" android:layout_width="match_parent" android:layout_height="@dimen/by" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/msf" android:background="@color/a9e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/ght" android:background="@color/aaw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/mss" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/ack" />
+        </FrameLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/mst" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:indeterminateDrawable="@drawable/avr" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/m2d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m2c" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_refresh" app:fs="@color/aaz" app:layout_constraintBottom_toTopOf="@id/m2g" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/aaz" android:gravity="center" android:id="@id/m2g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/f8x" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/m2c" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@id/g2i" layout="@layout/b85" />
+    </com.tencent.mm.view.TouchableLayout>
+    <FrameLayout android:id="@id/l8l" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.tencent.mm.plugin.finder.ui.slideprofile.FinderPagerView>

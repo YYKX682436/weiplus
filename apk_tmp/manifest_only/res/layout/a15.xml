@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/u09" android:background="@drawable/q8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/aii" android:text="按文件大小排序" android:layout_alignParentStart="true" style="@style/j3" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/ajw" android:layout_height="@dimen/ajw" android:layout_margin="@dimen/aii" android:src="@raw/arrow_right_regular" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/a84" />
+    </RelativeLayout>
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/aii" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/u07" android:background="@drawable/q8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/aii" android:text="按聊天大小排序" android:layout_alignParentStart="true" style="@style/j3" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/ajw" android:layout_height="@dimen/ajw" android:layout_margin="@dimen/aii" android:src="@raw/arrow_right_regular" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/a84" />
+    </RelativeLayout>
+</LinearLayout>

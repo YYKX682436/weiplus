@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fqd" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/a40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fkx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_alignParentTop="true">
+        <include android:id="@id/ig1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/bn" android:layout_marginEnd="@dimen/cn" layout="@layout/b09" />
+        <include android:id="@id/fo5" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/dj" layout="@layout/b0e" />
+        <include android:id="@id/fbg" android:layout_width="@dimen/df" android:layout_height="@dimen/dj" layout="@layout/avl" />
+        <include android:id="@id/ra8" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/dj" android:layout_centerVertical="true" layout="@layout/b16" />
+        <include android:id="@id/i6_" android:layout_width="@dimen/df" android:layout_height="@dimen/dj" android:layout_marginEnd="@dimen/dv" layout="@layout/b0q" />
+    </LinearLayout>
+    <include android:id="@id/i95" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/fkx" layout="@layout/dae" />
+    <include android:id="@id/fph" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/i95" layout="@layout/b0z" />
+</RelativeLayout>

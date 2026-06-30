@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/a8g" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/ulm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bn" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/b3" android:textColor="@color/aju" android:ellipsize="end" android:id="@id/kbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bj" android:maxLines="1" android:singleLine="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/ehp" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/bj" android:src="@raw/icons_outlined_finder_icon" android:layout_toRightOf="@id/kbf" app:fs="@color/a6" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/a85" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@drawable/c14" android:layout_toRightOf="@id/ehp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/a8h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ulm" android:layout_centerVertical="true">
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/b3" android:textColor="@color/m" android:gravity="center" android:id="@id/a8r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bn" android:text="@string/cpv" />
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/b3" android:textColor="@color/aju" android:ellipsize="end" android:gravity="left|center" android:id="@id/hgh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bn" android:maxLines="1" />
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/b3" android:textColor="@color/aju" android:ellipsize="end" android:id="@id/cgp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/a8q" android:paddingLeft="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/b3" android:textColor="@color/aju" android:gravity="center" android:layout_gravity="center" android:id="@id/klx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/esz" android:maxLines="1" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/kls" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:src="@raw/arrow_regular_right" app:fs="@color/aju" />
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/f9" android:textColor="@color/aju" android:layout_gravity="center" android:id="@id/ipr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ez4" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jrb" android:paddingTop="@dimen/xe" android:paddingBottom="@dimen/xe" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@raw/icons_outlined_more" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/cn" android:layout_marginEnd="-12.0dp" app:fs="@color/BW_50" />
+    </LinearLayout>
+</RelativeLayout>

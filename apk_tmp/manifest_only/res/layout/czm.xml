@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0dp" android:textColor="@color/fa" android:id="@id/oqw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:background="@drawable/b6o" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/oqw">
+        <TextView android:textSize="22.0dp" android:textColor="@color/fa" android:id="@id/oo5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/tk" android:ellipsize="end" android:id="@id/oo_" android:visibility="invisible" android:layout_width="@dimen/bu" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_below="@id/oo5" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/m8t" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_toRightOf="@id/oo_" android:overScrollMode="never" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="5" />
+    </RelativeLayout>
+</RelativeLayout>

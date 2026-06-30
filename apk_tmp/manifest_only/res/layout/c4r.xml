@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/i4a" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/i4b" android:scrollbars="none" android:fadingEdge="vertical" android:fadingEdgeLength="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:requiresFadingEdge="vertical" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/k71" android:background="@drawable/aqw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginEnd="@dimen/df">
+        <TextView android:textSize="14.0dp" android:textColor="@color/f3" android:id="@id/k72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/icons_outlined_double_arrow_down" android:layout_toRightOf="@id/k72" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" app:fs="#000000" />
+    </RelativeLayout>
+</FrameLayout>

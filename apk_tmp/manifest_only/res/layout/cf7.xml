@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMProcessBar android:id="@id/im4" android:background="@drawable/akw" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4s" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/sight_icon_location_selected" app:fs="#666666" />
+    <TextView android:textSize="15.0sp" android:textColor="#666666" android:id="@id/crr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上拉加载更多" android:maxLines="1" android:layout_marginStart="@dimen/bl" />
+</LinearLayout>

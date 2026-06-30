@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/a84" android:gravity="center" android:id="@id/uv4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/cn" android:text="@string/nzg" android:layout_marginHorizontal="@dimen/d7" />
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/utl" android:visibility="gone" android:layout_marginBottom="@dimen/cn" android:text="@string/ntv" style="@style/xk" />
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/v1n" android:visibility="gone" android:layout_marginBottom="@dimen/cn" android:text="@string/nsl" style="@style/xl" />
+    <com.tencent.mm.ui.widget.progress.RoundCornerProgressBar android:id="@id/vgw" android:visibility="gone" android:layout_width="@dimen/cf" android:layout_height="@dimen/dv" android:layout_marginBottom="@dimen/d9" app:barProgress="0" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/Link_100" android:gravity="center" android:id="@id/va9" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nys" android:paddingHorizontal="@dimen/cn" android:paddingVertical="@dimen/c9" android:textFontWeight="500" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:id="@id/u_d" android:background="@color/ahk" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dr" app:ds="@dimen/dv">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/yd">
+                <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/e1s" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" />
+                <ImageView android:layout_gravity="right|bottom" android:id="@id/tad" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/or" android:textColor="@color/abw" android:ellipsize="end" android:gravity="left" android:id="@id/e1t" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/aii" android:maxLines="1" android:layout_marginStart="@dimen/cn" />
+                <TextView android:textSize="@dimen/a9x" android:textColor="@color/a84" android:ellipsize="end" android:gravity="left" android:id="@id/ta_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/cn" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|top" android:orientation="vertical" android:id="@id/m73" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/akd" android:layout_marginRight="@dimen/akd" android:minWidth="@dimen/ail" android:minHeight="@dimen/ail" />
+    </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+</LinearLayout>

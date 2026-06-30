@@ -1,0 +1,19 @@
+package com.tencent.mm.plugin.appbrand.screenshot;
+
+/* loaded from: classes7.dex */
+public final class d extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.appbrand.screenshot.e f88470d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(com.tencent.mm.plugin.appbrand.screenshot.e eVar) {
+        super(0);
+        this.f88470d = eVar;
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        return "MicroMsg.AppBrandForegroundScreenshotFileObserver#" + this.f88470d.f88474a.f74803n;
+    }
+}

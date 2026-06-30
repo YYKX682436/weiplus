@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/d" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_2" android:id="@id/qxd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dn" android:text="@string/dcu" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dn" />
+    <FrameLayout android:id="@id/qwj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/taj" android:background="@color/d" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/d0i" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/bo">
+                <LinearLayout android:orientation="vertical" android:id="@id/hhc" android:paddingRight="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/jrb" android:layout_toRightOf="@id/hje">
+                    <TextView android:textSize="@dimen/cb" android:ellipsize="middle" android:id="@id/hjn" android:layout_height="wrap_content" android:text="@string/nh2" android:singleLine="true" style="@style/j3" />
+                    <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_2" android:id="@id/hjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:text="@string/nh0" android:layout_below="@id/hjn" android:layout_alignParentLeft="true" style="@style/j2" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/hje" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c9" android:layout_alignParentStart="true">
+                    <CheckBox android:layout_gravity="right|center" android:id="@id/vfh" android:background="@drawable/aoe" android:focusable="false" android:clickable="true" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cz" android:checked="true" style="@style/im" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

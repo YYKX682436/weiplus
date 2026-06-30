@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eb1" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cs" android:src="@raw/icons_outlined_close" app:fs="@color/abw" />
+    <TextView android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/FG_0" android:id="@id/ebe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/d1" android:layout_marginRight="@dimen/dv" android:text="@string/ev7" android:layout_marginHorizontal="@dimen/dv" />
+    <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/dv" android:layout_marginHorizontal="@dimen/dv" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_marginHorizontal="@dimen/dv">
+        <ImageView android:id="@id/eay" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@drawable/bhp" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/FG_0" android:id="@id/eb2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/Link_100" android:id="@id/eb0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/te" />
+    </LinearLayout>
+    <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_marginHorizontal="@dimen/dv" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/g4c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/dj" android:layout_marginRight="@dimen/dv" android:layout_marginHorizontal="@dimen/dv">
+        <FrameLayout android:id="@id/g4a" android:layout_width="20.0dp" android:layout_height="20.0dp" android:contentDescription="@string/db">
+            <CheckBox android:layout_gravity="center" android:id="@id/g4b" android:padding="@dimen/bl" android:clickable="false" android:layout_width="12.0dp" android:layout_height="12.0dp" android:importantForAccessibility="no" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/jj" android:id="@id/g4d" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:layout_gravity="center_horizontal" android:id="@id/eaz" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/dn" android:text="@string/crp" android:layout_marginHorizontal="@dimen/dv" style="@style/kr" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/i_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/i__" android:layout_width="wrap_content" android:layout_height="@dimen/cz" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0dp" android:textColor="#bdd9ff" android:id="@id/i_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deu" android:layout_centerVertical="true" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uap" android:visibility="visible" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="2.0dp" android:layout_marginRight="4.0dp" android:src="@raw/arrow_up_left_filled" android:layout_toRightOf="@id/i_9" android:layout_centerVertical="true" app:fs="@color/adi" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+package hq5;
+
+/* loaded from: classes5.dex */
+public final class e0 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ hq5.k0 f364758d;
+
+    public e0(hq5.k0 k0Var) {
+        this.f364758d = k0Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/wedrop/ui/uic/ui/WeDropProgressUIC$onCreateAfter$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        hq5.k0 k0Var = this.f364758d;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(k0Var.f364772d, "click stop tv");
+        k0Var.T6();
+        yj0.a.h(this, "com/tencent/mm/wedrop/ui/uic/ui/WeDropProgressUIC$onCreateAfter$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

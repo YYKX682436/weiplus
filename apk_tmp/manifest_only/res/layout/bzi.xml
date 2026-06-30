@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left" android:id="@id/jlx" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/b1" android:layout_weight="1.0">
+        <com.tencent.mm.ui.MMImageView android:layout_gravity="center_vertical" android:id="@id/h9o" android:background="@null" android:layout_width="@dimen/b0" android:layout_height="@dimen/b0" android:layout_marginRight="@dimen/cn" />
+        <LinearLayout android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/oct" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/b1" android:paddingEnd="24.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@android:id/title" android:layout_marginRight="@dimen/j3" android:text="游戏" style="@style/s5" />
+                    <TextView android:textSize="@dimen/r" android:textColor="@color/tk" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/h7p" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                    <TextView android:id="@id/o58" android:background="@null" android:visibility="gone" android:text="@string/wv" style="@style/wn" />
+                    <ImageView android:id="@id/o4r" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/b8i" />
+                </LinearLayout>
+                <TextView android:gravity="left" android:id="@id/cu2" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginTop="@dimen/bl" style="@style/ik" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/b3" android:ellipsize="end" android:gravity="right|center" android:layout_gravity="right" android:id="@id/o5_" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:singleLine="true" android:maxLength="11" style="@style/n7" />
+            </FrameLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/m4_" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/iv" android:layout_marginLeft="2.0dp" android:minWidth="@dimen/iv">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/i0" android:layout_marginEnd="2.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                    <ImageView android:id="@id/h_s" android:visibility="gone" android:layout_width="@dimen/i0" android:layout_height="@dimen/i0" android:src="@raw/default_avatar" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <ImageView android:gravity="center" android:id="@id/m47" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/b8i" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView android:gravity="center" android:id="@id/m3q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/b8i" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/b3" android:ellipsize="end" android:id="@id/o59" android:background="@null" android:visibility="gone" android:maxWidth="130.0dp" android:singleLine="true" style="@style/n7" />
+            <TextView android:id="@android:id/summary" android:paddingTop="@dimen/j3" android:paddingRight="@dimen/i1" android:paddingBottom="@dimen/j3" android:singleLine="true" style="@style/j0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/nvq" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.plugin.finder.gallery.FinderGalleryTabView android:id="@id/nvp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.finder.view.FinderViewPager android:id="@id/p16" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/nvq" />
+</androidx.constraintlayout.widget.ConstraintLayout>

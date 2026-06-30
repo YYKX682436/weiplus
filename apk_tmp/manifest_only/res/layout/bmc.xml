@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/db" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/BW_100_Alpha_0_9" android:id="@id/czv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gtx" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:gravity="center" android:id="@id/cza" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/gtu" android:maxLines="3" android:layout_below="@id/czv" android:layout_marginStart="@dimen/ca" android:layout_marginEnd="@dimen/ca" />
+    <ImageView android:id="@id/czg" android:layout_width="220.0dp" android:layout_height="138.0dp" android:layout_marginTop="@dimen/db" android:src="@drawable/ao3" android:layout_below="@id/cza" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cz4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_below="@id/czg" android:layout_centerHorizontal="true">
+        <Button android:textSize="@dimen/ia" android:textColor="#ff07c160" android:id="@id/czi" android:background="@drawable/j8" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:text="@string/gtv" />
+        <Button android:textSize="@dimen/ia" android:textColor="@color/an" android:id="@id/czr" android:background="@drawable/jg" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:text="@string/gtw" android:layout_marginStart="@dimen/cn" />
+        <Button android:textSize="@dimen/ia" android:textColor="@color/aax" android:id="@id/gfr" android:background="@drawable/jy" android:visibility="gone" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:text="@string/gtv" />
+        <Button android:textSize="@dimen/ia" android:textColor="@color/io" android:id="@id/gfs" android:background="@drawable/jo" android:visibility="gone" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:text="@string/gtw" android:layout_marginStart="@dimen/cn" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_below="@id/cz4" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/j4" android:textColor="#ff7d90a9" android:id="@id/cz2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gtq" />
+        <View android:id="@id/cz1" android:background="@color/BW_100_Alpha_0_1" android:layout_width="1.0dp" android:layout_height="@dimen/c9" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_toEndOf="@id/cz2" />
+        <TextView android:textSize="@dimen/j4" android:textColor="#ff7d90a9" android:id="@id/cz3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gtr" android:layout_marginStart="@dimen/c9" android:layout_toEndOf="@id/cz1" />
+    </RelativeLayout>
+</RelativeLayout>

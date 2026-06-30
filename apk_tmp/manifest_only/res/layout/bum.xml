@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/xd" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/j2d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="43.0dp" android:src="@drawable/c_q" android:scaleType="fitCenter" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/j29" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <Button android:textSize="@dimen/a4v" android:textColor="#3b3b3b" android:id="@id/j2_" android:background="@drawable/an3" android:layout_width="@dimen/a4w" android:layout_height="@dimen/a4u" android:text="@string/gl_" />
+        <Button android:textSize="@dimen/a4v" android:textColor="#3b3b3b" android:id="@id/j2b" android:background="@drawable/an4" android:layout_width="@dimen/a4w" android:layout_height="@dimen/a4u" android:layout_marginTop="30.0dp" android:text="@string/gm9" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:src="@drawable/c_o" android:scaleType="fitCenter" android:layout_below="@id/j29" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/j2a" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="39.0dp" android:layout_above="@id/j29" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/j2c" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:layout_alignParentBottom="true" />
+    <LinearLayout android:id="@id/j28" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

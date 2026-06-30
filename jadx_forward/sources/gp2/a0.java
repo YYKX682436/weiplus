@@ -1,0 +1,65 @@
+package gp2;
+
+/* loaded from: classes3.dex */
+public final class a0 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ ws5.f f355731d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ mn0.b0 f355732e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ gp2.l0 f355733f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ r45.q84 f355734g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final /* synthetic */ p3321xbce91901.jvm.p3324x21ffc6bd.h0 f355735h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public final /* synthetic */ so2.h1 f355736i;
+
+    /* renamed from: m, reason: collision with root package name */
+    public final /* synthetic */ int f355737m;
+
+    /* renamed from: n, reason: collision with root package name */
+    public final /* synthetic */ android.view.View f355738n;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a0(ws5.f fVar, mn0.b0 b0Var, gp2.l0 l0Var, r45.q84 q84Var, p3321xbce91901.jvm.p3324x21ffc6bd.h0 h0Var, so2.h1 h1Var, int i17, android.view.View view) {
+        super(0);
+        this.f355731d = fVar;
+        this.f355732e = b0Var;
+        this.f355733f = l0Var;
+        this.f355734g = q84Var;
+        this.f355735h = h0Var;
+        this.f355736i = h1Var;
+        this.f355737m = i17;
+        this.f355738n = view;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        gp2.l0 l0Var = this.f355733f;
+        so2.h1 h1Var = this.f355736i;
+        int i17 = this.f355737m;
+        android.view.View view = this.f355738n;
+        ws5.f fVar = this.f355731d;
+        gp2.z zVar = new gp2.z(l0Var, h1Var, i17, view, fVar);
+        fVar.mo58394x764d819b(true);
+        ws5.f.j(this.f355731d, zVar, null, null, null, null, null, 62, null);
+        gp2.l0 l0Var2 = this.f355733f;
+        ((mn0.y) this.f355732e).K(l0Var2.f355784j, l0Var2.f355785k);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(l0Var2.t(), "checkCustomAutoPlay view:" + this.f355731d + ",previewTimeLimit:" + this.f355734g.m75939xb282bd08(2));
+        ne2.k kVar = (ne2.k) this.f355735h.f391656d;
+        if (kVar != null) {
+            r45.nw1 m76794xd0557130 = this.f355736i.getFeedObject().getFeedObject().m76794xd0557130();
+            kVar.c(m76794xd0557130 != null ? (r45.td2) m76794xd0557130.m75936x14adae67(27) : null);
+        }
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(l0Var2.t(), "checkCustomAutoPlay pos:" + this.f355737m + " startCountDown!");
+        return jz5.f0.f384359a;
+    }
+}

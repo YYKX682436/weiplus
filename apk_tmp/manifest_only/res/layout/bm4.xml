@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/aur" android:paddingLeft="20.0dp" android:paddingTop="16.0dp" android:paddingRight="20.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/kno" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.tencent.mm.plugin.ipcall.ui.IPCallRoundUrlHeadImage android:id="@id/knp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0dp" android:textColor="@color/a0c" android:id="@id/knt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dp" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/knv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/kno" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/knm" android:background="#b2b2b2" android:layout_width="@dimen/be" android:layout_height="38.0dp" android:layout_marginRight="16.0dp" />
+            <Button android:enabled="false" android:textColor="@drawable/ahq" android:id="@id/knj" android:background="@drawable/ahp" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="58.0dp" android:minHeight="29.0dp" android:text="@string/g5n" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/knr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="8.0dp" android:layout_toLeftOf="@id/knv" android:layout_below="@id/kno" android:layout_alignLeft="@id/kno">
+            <TextView android:textSize="38.0dp" android:textColor="@color/a0c" android:id="@id/knu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/tk" android:id="@id/knl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/tk" android:id="@id/knk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

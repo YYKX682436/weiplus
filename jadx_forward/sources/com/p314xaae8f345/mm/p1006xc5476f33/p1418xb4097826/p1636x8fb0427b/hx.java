@@ -1,0 +1,20 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1636x8fb0427b;
+
+/* loaded from: classes5.dex */
+public final class hx extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1636x8fb0427b.hx f208446d = new com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1636x8fb0427b.hx();
+
+    public hx() {
+        super(0);
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        ob2.a aVar = new ob2.a(0, "视频号点返回出听一听入口判断是否在入睡时段", null, null, 12, null);
+        aVar.a("FINDER_TING_ENTRY_GUIDE_SLEEP_TIME", kz5.c0.i(1, 0), kz5.c0.i("关闭", "打开"));
+        return aVar;
+    }
+}

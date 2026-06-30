@@ -1,0 +1,19 @@
+package dk2;
+
+/* loaded from: classes10.dex */
+public abstract class cb {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final java.lang.Class f314827a;
+
+    public cb(java.lang.Class resultClass) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(resultClass, "resultClass");
+        this.f314827a = resultClass;
+    }
+
+    public void a(int i17, java.lang.String errMsg) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(errMsg, "errMsg");
+    }
+
+    public abstract void b(com.p314xaae8f345.mm.p2495xc50a8b8b.f fVar);
+}

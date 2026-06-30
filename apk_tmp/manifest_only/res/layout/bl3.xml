@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/BW_20" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.sns.ui.improve.view.ImproveOverScrollView android:id="@id/mce" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/aax">
+        <com.tencent.mm.plugin.sns.ui.improve.view.ImproveRecyclerView android:id="@id/hbs" android:background="@color/BW_100" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        <com.tencent.mm.ui.widget.QFadeImageView android:gravity="center" android:id="@id/nak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/a2t" android:scaleType="matrix" android:layout_marginStart="35.0dp" />
+        <com.tencent.mm.plugin.sns.ui.SnsCommentFooter android:id="@id/c76" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </com.tencent.mm.plugin.sns.ui.improve.view.ImproveOverScrollView>
+    <View android:id="@id/v8m" android:background="@color/amm" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+</RelativeLayout>

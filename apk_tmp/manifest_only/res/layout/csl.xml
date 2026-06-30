@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/m7z" android:layout_width="268.0dp" android:layout_height="@dimen/bo">
+        <View android:id="@id/asz" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jyc" android:background="@drawable/b29" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/bpn" android:layout_width="@dimen/bo" android:layout_height="@dimen/bo" android:src="@drawable/ar7" android:scaleType="centerCrop" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dv">
+                    <TextView android:textSize="@dimen/gz" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/bpr" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/ja" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/bpq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="BTS防弹少年团BTS防弹少年团" android:maxLines="1" />
+                    <View android:id="@id/knz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/w" android:textColor="@color/tk" android:ellipsize="middle" android:id="@id/bpp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:singleLine="true" />
+                </LinearLayout>
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bpo" android:padding="1.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" android:src="@raw/icons_outlined_play2" android:scaleType="fitCenter" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+</LinearLayout>

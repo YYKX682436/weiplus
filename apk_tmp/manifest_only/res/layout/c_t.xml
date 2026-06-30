@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/zy" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/of9" android:layout_width="match_parent" android:layout_height="@dimen/ay">
+            <TextView android:textColor="@color/a0c" android:id="@id/b5i" android:background="@drawable/b5u" android:paddingLeft="0.0dp" android:layout_height="match_parent" android:text="@string/sg" android:layout_alignParentLeft="true" style="@style/pk" />
+        </RelativeLayout>
+        <ImageView android:id="@id/a_4" android:layout_width="@dimen/i" android:layout_height="@dimen/i" android:layout_marginTop="@dimen/dj" />
+        <TextView android:ellipsize="end" android:id="@id/prd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:maxLines="1" style="@style/rm" />
+        <TextView android:textColor="@color/jj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/hkt" style="@style/rm" />
+        <Button android:textColor="@color/io" android:id="@id/ais" android:background="@drawable/je" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/d7" android:layout_marginRight="@dimen/cn" android:text="@string/x1" style="@style/jn" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@color/vr" android:id="@id/aij" android:layout_marginBottom="@dimen/d7" android:text="@string/hkn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/fe" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

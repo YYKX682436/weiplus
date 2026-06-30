@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/kj">
+        <LinearLayout style="@style/ij">
+            <TextView android:text="@string/h6f" style="@style/jr" />
+            <com.tencent.mm.ui.widget.MMEditText android:id="@id/m9y" android:maxLength="10" android:imeOptions="actionSend" style="@style/jq" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

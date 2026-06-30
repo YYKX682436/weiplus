@@ -1,0 +1,63 @@
+package o45;
+
+/* loaded from: classes12.dex */
+public class pi {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final java.lang.String f342997a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final java.lang.String f342998b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final int f342999c;
+
+    public pi(java.lang.String str, java.lang.String str2, int i17) {
+        this.f342997a = str;
+        this.f342998b = str2;
+        this.f342999c = i17;
+    }
+
+    public static o45.pi a() {
+        new java.lang.StringBuilder("ADA9_").append("ADA9E573417691226521F9FF1B3732DF83EDA19BA60870A357E430135298469E68EF31E9E2109CA5E0CA661F769FCB2FE33A3021B9A790D5DFCA6720A439BEF69E138FAB1B05475228FD33BB11D07321A6DB4DB2689CA850C483630855DB7EDDD8B4505349DA863677E3EB78A46B5912FAE11BDE92BE9D98E3E2F2A47E03777E8795A51D67D7CC4B86EDEBD3D8968AAC51A58FFDBAA068750E4771BD364911B22420F96F8B0D7730455CC8CE1933B406C38675A9540E51C11C9872F692E2EC693448913781D1A8DD61A1FCC97B8B078CA06DDE9EBC35A1A22A697831879588F52BD6A108E1EE6519C518EDC887F65587D7F769C22E81131940085E6FAED67FCF".substring(507, 511));
+        return new o45.pi("010001", "ADA9E573417691226521F9FF1B3732DF83EDA19BA60870A357E430135298469E68EF31E9E2109CA5E0CA661F769FCB2FE33A3021B9A790D5DFCA6720A439BEF69E138FAB1B05475228FD33BB11D07321A6DB4DB2689CA850C483630855DB7EDDD8B4505349DA863677E3EB78A46B5912FAE11BDE92BE9D98E3E2F2A47E03777E8795A51D67D7CC4B86EDEBD3D8968AAC51A58FFDBAA068750E4771BD364911B22420F96F8B0D7730455CC8CE1933B406C38675A9540E51C11C9872F692E2EC693448913781D1A8DD61A1FCC97B8B078CA06DDE9EBC35A1A22A697831879588F52BD6A108E1EE6519C518EDC887F65587D7F769C22E81131940085E6FAED67FCF", 199);
+    }
+
+    public static o45.pi d() {
+        android.content.SharedPreferences sharedPreferences = com.tencent.mm.sdk.platformtools.x2.f193071a.getSharedPreferences("rsa_public_key_prefs", 4);
+        o45.pi piVar = new o45.pi(sharedPreferences.getString("keye", ""), sharedPreferences.getString("keyn", ""), sharedPreferences.getInt("version", 0));
+        int i17 = sharedPreferences.getInt("client_version", 0);
+        if (!piVar.e()) {
+            if (i17 > 637665843) {
+                return piVar;
+            }
+            boolean commit = sharedPreferences.edit().clear().commit();
+            jx3.f.INSTANCE.idkeyStat(148L, 38L, 1L, false);
+            com.tencent.mars.xlog.Log.i("MicroMsg.RsaInfo", "summercert clear old rsa lastClientVer[%d] nowVer[%d], commit[%b]", java.lang.Integer.valueOf(i17), java.lang.Integer.valueOf(o45.wf.f343029g), java.lang.Boolean.valueOf(commit));
+        }
+        jx3.f.INSTANCE.idkeyStat(148L, 39L, 1L, false);
+        new java.lang.StringBuilder("9357_").append("9357B6A18EE981DDA2C3CBBF39F5D308FC21656F30CF2EE7D75F6E9CB12928B972364B1AC57E2FB1F4ECC113A4060B9E97EEEF868FBD2623DDEFF77C3A048507F65DF9200CE4B2321E8D39B414C0663A8A10F6278543D28B2939BC8BD5CC7BE9A95F868C4F3C4F758C6A78ADD98BDE33D56E58377B10DD7F225426B5B27F4038302BE2DCA9332B8EC57B5E29C90B7A7DE6417D7378CB1D8B51E68BE1E99B2EB5EB49E613DCFF3FAED6F8C4875F6425F1AF6AEF3358403E4B0A92E456E1D5BE84999907A1246F2BECE05683959614312026492BDC302F82F38AD2EE99FDDB8675736274989B2389E95E80F8B597E69FD6A2CCB279226A578465EF9D50D29AE5ED".substring(507, 511));
+        return new o45.pi("010001", "9357B6A18EE981DDA2C3CBBF39F5D308FC21656F30CF2EE7D75F6E9CB12928B972364B1AC57E2FB1F4ECC113A4060B9E97EEEF868FBD2623DDEFF77C3A048507F65DF9200CE4B2321E8D39B414C0663A8A10F6278543D28B2939BC8BD5CC7BE9A95F868C4F3C4F758C6A78ADD98BDE33D56E58377B10DD7F225426B5B27F4038302BE2DCA9332B8EC57B5E29C90B7A7DE6417D7378CB1D8B51E68BE1E99B2EB5EB49E613DCFF3FAED6F8C4875F6425F1AF6AEF3358403E4B0A92E456E1D5BE84999907A1246F2BECE05683959614312026492BDC302F82F38AD2EE99FDDB8675736274989B2389E95E80F8B597E69FD6A2CCB279226A578465EF9D50D29AE5ED", 200);
+    }
+
+    public static void f(java.lang.String str, java.lang.String str2, int i17) {
+        android.content.SharedPreferences.Editor edit = com.tencent.mm.sdk.platformtools.x2.f193071a.getSharedPreferences("rsa_public_key_prefs", 4).edit();
+        edit.putString("keye", str);
+        edit.putString("keyn", str2);
+        edit.putInt("version", i17);
+        edit.putInt("client_version", o45.wf.f343029g);
+        edit.commit();
+    }
+
+    public java.lang.String b() {
+        return this.f342997a;
+    }
+
+    public java.lang.String c() {
+        return this.f342998b;
+    }
+
+    public boolean e() {
+        return this.f342999c == 0 || com.tencent.mm.sdk.platformtools.t8.K0(this.f342997a) || com.tencent.mm.sdk.platformtools.t8.K0(this.f342998b);
+    }
+}

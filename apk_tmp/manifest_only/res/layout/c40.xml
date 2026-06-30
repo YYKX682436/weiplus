@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="@dimen/dr" android:layout_height="@dimen/dr" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="top" android:id="@id/pm8" android:background="@drawable/b_6" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:layout_gravity="top" android:id="@id/jw7" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.tencent.mm.plugin.multitalk.mt_render.mt_render_impl.render.VideoView android:id="@id/jx7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/a9z" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/jx6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" />
+            <RelativeLayout android:id="@id/a_l" android:background="@drawable/icon_shadow_multitalk_avatar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:layout_alignParentBottom="true">
+                <TextView android:textSize="10.0dp" android:textColor="@color/an" android:ellipsize="end" android:id="@id/jxc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/p7z" android:background="@drawable/b_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/jwk" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginTop="@dimen/c8" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:id="@id/jwl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/kc_" android:layout_below="@id/jwk" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

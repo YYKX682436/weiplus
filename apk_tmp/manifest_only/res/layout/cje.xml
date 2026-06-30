@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/gdu" android:layout_width="match_parent" android:layout_height="@dimen/ad8" />
+    <TextView android:textSize="@dimen/ai5" android:textColor="@color/aby" android:gravity="center" android:id="@id/gdn" android:background="@color/po" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/gdu" android:layout_alignBottom="@id/gdu" android:textAlignment="center" />
+    <com.tencent.mm.plugin.mmsight.segment.SegmentClipWindow android:id="@id/gdl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/gdu" android:layout_alignBottom="@id/gdu" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/aaz" android:id="@id/gdm" android:background="@drawable/ayl" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/bl" android:paddingEnd="@dimen/bn" />
+    <com.tencent.mm.plugin.mmsight.segment.SegmentClipTimeCursorView android:id="@id/gdi" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/gdu" />
+</RelativeLayout>

@@ -1,0 +1,118 @@
+package com.google.android.gms.internal.measurement;
+
+/* loaded from: classes13.dex */
+final class zzaan {
+    public static java.lang.String zza(com.google.android.gms.internal.measurement.zzaal zzaalVar, java.lang.String str) {
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
+        sb6.append("# ");
+        sb6.append(str);
+        zza(zzaalVar, sb6, 0);
+        return sb6.toString();
+    }
+
+    public static final void zzb(java.lang.StringBuilder sb6, int i17, java.lang.String str, java.lang.Object obj) {
+        if (obj instanceof java.util.List) {
+            java.util.Iterator it = ((java.util.List) obj).iterator();
+            while (it.hasNext()) {
+                zzb(sb6, i17, str, it.next());
+            }
+            return;
+        }
+        if (obj instanceof java.util.Map) {
+            java.util.Iterator it6 = ((java.util.Map) obj).entrySet().iterator();
+            while (it6.hasNext()) {
+                zzb(sb6, i17, str, (java.util.Map.Entry) it6.next());
+            }
+            return;
+        }
+        sb6.append('\n');
+        int i18 = 0;
+        for (int i19 = 0; i19 < i17; i19++) {
+            sb6.append(' ');
+        }
+        sb6.append(str);
+        if (obj instanceof java.lang.String) {
+            sb6.append(": \"");
+            sb6.append(com.google.android.gms.internal.measurement.zzabg.zza(com.google.android.gms.internal.measurement.zzyw.zzfi((java.lang.String) obj)));
+            sb6.append('\"');
+            return;
+        }
+        if (obj instanceof com.google.android.gms.internal.measurement.zzyw) {
+            sb6.append(": \"");
+            sb6.append(com.google.android.gms.internal.measurement.zzabg.zza((com.google.android.gms.internal.measurement.zzyw) obj));
+            sb6.append('\"');
+            return;
+        }
+        if (obj instanceof com.google.android.gms.internal.measurement.zzzq) {
+            sb6.append(" {");
+            zza((com.google.android.gms.internal.measurement.zzzq) obj, sb6, i17 + 2);
+            sb6.append("\n");
+            while (i18 < i17) {
+                sb6.append(' ');
+                i18++;
+            }
+            sb6.append("}");
+            return;
+        }
+        if (!(obj instanceof java.util.Map.Entry)) {
+            sb6.append(": ");
+            sb6.append(obj.toString());
+            return;
+        }
+        sb6.append(" {");
+        java.util.Map.Entry entry = (java.util.Map.Entry) obj;
+        int i27 = i17 + 2;
+        zzb(sb6, i27, "key", entry.getKey());
+        zzb(sb6, i27, "value", entry.getValue());
+        sb6.append("\n");
+        while (i18 < i17) {
+            sb6.append(' ');
+            i18++;
+        }
+        sb6.append("}");
+    }
+
+    private static final java.lang.String zzfk(java.lang.String str) {
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
+        for (int i17 = 0; i17 < str.length(); i17++) {
+            char charAt = str.charAt(i17);
+            if (java.lang.Character.isUpperCase(charAt)) {
+                sb6.append("_");
+            }
+            sb6.append(java.lang.Character.toLowerCase(charAt));
+        }
+        return sb6.toString();
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:100:0x021a, code lost:
+    
+        if (((java.lang.Double) r11).doubleValue() == 0.0d) goto L80;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:78:0x01e5, code lost:
+    
+        if (((java.lang.Boolean) r11).booleanValue() == false) goto L80;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:79:0x01e7, code lost:
+    
+        r7 = true;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:92:0x01f7, code lost:
+    
+        if (((java.lang.Integer) r11).intValue() == 0) goto L80;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:96:0x0208, code lost:
+    
+        if (((java.lang.Float) r11).floatValue() == 0.0f) goto L80;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static void zza(com.google.android.gms.internal.measurement.zzaal r18, java.lang.StringBuilder r19, int r20) {
+        /*
+            Method dump skipped, instructions count: 651
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.measurement.zzaan.zza(com.google.android.gms.internal.measurement.zzaal, java.lang.StringBuilder, int):void");
+    }
+}

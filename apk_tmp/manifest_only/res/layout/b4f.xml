@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/k6_" android:background="@drawable/ass" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/k6b" android:paddingTop="@dimen/xt" android:paddingBottom="@dimen/xt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/h6q" android:singleLine="true" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/i_c" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/FG_1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/k6b" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

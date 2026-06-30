@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/ap_" android:layout_height="@dimen/ap6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/qq" android:background="@color/c" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" app:ds="@dimen/aju">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="start|center" android:paddingTop="@dimen/ap9" android:paddingBottom="@dimen/ap9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ap7" android:paddingEnd="@dimen/ap8">
+                <com.tencent.mm.plugin.ball.view.CircleAnimateView android:layout_gravity="center" android:id="@id/h5s" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+                <com.tencent.mm.plugin.ball.view.CircleImageView android:layout_gravity="center" android:id="@id/h5v" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/jgf" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.tencent.mm.ui.widget.EllipsizeLayout android:ellipsize="end" android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/k3g" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/jp">
+                    <TextView android:textSize="15.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/k3j" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                    <TextView android:textSize="10.0dp" android:textColor="@color/ab0" android:layout_gravity="center_vertical" android:id="@id/k3i" android:background="@drawable/eo" android:paddingTop="1.5dp" android:paddingBottom="1.5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="8.0dp" />
+                </com.tencent.mm.ui.widget.EllipsizeLayout>
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="end|center" android:id="@id/a4n" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="16.0dp" android:src="@raw/icons_filled_pause" app:fs="@color/adg" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jgh" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/j3" />
+            <FrameLayout android:layout_gravity="end|center" android:id="@id/lxf" android:padding="@dimen/a1i" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/jp1">
+                <ImageView android:layout_gravity="center" android:id="@id/lxg" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@raw/float_ball_icon_close_regular" app:fs="@color/adg" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vo3" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+</FrameLayout>

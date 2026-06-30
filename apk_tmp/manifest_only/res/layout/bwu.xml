@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:background="@drawable/aj7" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/k2j" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp" wallet:alignContent="0" wallet:alignItems="2" wallet:flexWrap="0">
+        <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" wallet:alignContent="0" wallet:alignItems="2" wallet:flexWrap="0" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0">
+            <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/k2i" android:background="@color/a9e" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="16.0dp" />
+            <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:id="@id/k2s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </com.google.android.flexbox.FlexboxLayout>
+        <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" wallet:alignContent="0" wallet:alignItems="2" wallet:flexWrap="0" wallet:layout_flexGrow="2.0" wallet:layout_flexShrink="1.0">
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" wallet:alignContent="0" wallet:alignItems="2" wallet:flexWrap="0" wallet:layout_flexGrow="1.0" wallet:layout_flexShrink="8.0">
+                <TextView android:textSize="@dimen/ja" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/k2h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="" android:lines="1" wallet:layout_flexShrink="8.0" />
+                <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" wallet:alignContent="0" wallet:alignItems="2" wallet:flexWrap="0" wallet:layout_flexGrow="1.0" wallet:layout_flexShrink="0.0">
+                    <ImageView android:id="@id/k2m" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/b8i" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0" />
+                    <TextView android:textSize="9.0dp" android:textColor="@color/ab0" android:gravity="center" android:id="@id/k2k" android:background="@drawable/b8d" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="18.0dp" android:layout_marginLeft="8.0dp" android:text="New" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0" />
+                    <TextView android:id="@id/k2l" android:visibility="gone" android:layout_marginLeft="8.0dp" android:text="" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0" style="@style/rv" />
+                </com.google.android.flexbox.FlexboxLayout>
+                <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" wallet:alignContent="0" wallet:alignItems="1" wallet:flexDirection="2" wallet:flexWrap="0" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0">
+                    <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" wallet:alignContent="0" wallet:alignItems="2" wallet:flexWrap="0" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0">
+                        <ProgressBar android:id="@id/pcr" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="4.0dp" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0" style="@style/w1" />
+                        <com.tencent.mm.plugin.wallet_core.ui.view.WcPayMoneyLoadingView android:textSize="17.0dp" android:textColor="@color/a0c" android:id="@id/k2e" android:layout_width="wrap_content" android:layout_height="wrap_content" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0" wallet:progressBarType="1" wallet:walletTypeFace="4" />
+                    </com.google.android.flexbox.FlexboxLayout>
+                    <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/k2f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" />
+                    <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="14.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/k2r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" />
+                </com.google.android.flexbox.FlexboxLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+            <ImageView android:id="@id/k2p" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/b8i" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0" />
+            <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/k2q" android:layout_width="12.0dp" android:layout_height="24.0dp" android:layout_marginLeft="8.0dp" android:src="@raw/icons_outlined_arrow" wallet:layout_flexGrow="0.0" wallet:layout_flexShrink="0.0" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+    <View android:id="@id/k2g" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/k2r" android:layout_alignParentBottom="true" />
+</merge>

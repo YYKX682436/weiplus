@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/iwd" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="96.0dp" android:src="@raw/icons_filled_time" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:fs="@color/g" />
+    <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="@color/a0c" android:id="@id/iwf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="" android:layout_below="@id/iwd" android:layout_centerHorizontal="true" />
+    <View android:id="@id/iwe" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="40.0dp" android:layout_marginRight="24.0dp" android:layout_below="@id/iwf" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/iwc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="24.0dp" android:layout_below="@id/iwe" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/iwb" android:layout_width="184.0dp" android:layout_height="40.0dp" android:layout_marginBottom="130.0dp" android:text="@string/adv" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ml" />
+</RelativeLayout>

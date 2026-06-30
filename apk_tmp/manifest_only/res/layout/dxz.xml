@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/aco" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/grq" android:layout_width="0.0dp" android:layout_height="0.0dp" android:contentDescription="@string/is4" app:layout_constraintBottom_toTopOf="@id/g2s" app:layout_constraintDimensionRatio="9:16" app:layout_constraintEnd_toEndOf="@id/grp" app:layout_constraintStart_toStartOf="@id/grp" app:layout_constraintTop_toTopOf="@id/grp" />
+    <com.tencent.mm.mj_publisher.finder.shoot_composing.crop.CropDrawView android:id="@id/grp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/g2s" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/df">
+            <ImageButton android:id="@id/cmz" android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bln" android:contentDescription="@string/jnw" android:layout_marginStart="@dimen/d2" android:layout_alignParentStart="true" />
+            <ImageButton android:id="@id/grr" android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bhd" android:contentDescription="@string/iu6" android:layout_marginStart="@dimen/du" android:layout_alignParentStart="true" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/ac8" android:id="@id/hh2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k7v" android:layout_marginEnd="@dimen/d2" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dg">
+            <ImageButton android:id="@id/cmt" android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/b9r" android:contentDescription="@string/ir8" android:layout_marginStart="@dimen/d2" android:layout_alignParentStart="true" />
+            <ImageButton android:id="@id/hh1" android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bhe" android:contentDescription="@string/ixq" android:layout_marginEnd="@dimen/d2" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

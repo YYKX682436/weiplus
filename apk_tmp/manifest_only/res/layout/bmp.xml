@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/ilh" android:background="@color/a9e" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:indeterminateDrawable="@drawable/avg" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/hpy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/c0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oas" android:padding="@dimen/c9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/a5" android:gravity="center" android:layout_gravity="center" android:id="@id/oat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f3h" style="@style/s4" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:layout_marginStart="@dimen/bl" app:fs="@color/a5" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

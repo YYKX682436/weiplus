@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.emoji.view.EmojiStatusView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/czc" android:layout_width="@dimen/wm" android:layout_height="@dimen/wm" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/dbk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxLines="1" />
+</LinearLayout>

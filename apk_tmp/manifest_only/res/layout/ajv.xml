@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/goo" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" layout="@layout/ar_" />
+    <FrameLayout android:id="@id/pni" android:background="@drawable/cq2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_below="@id/eyt" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+        <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="wrap_content" app:enableFooterFollowWhenNoMoreData="false" app:enableLoadMore="true" app:enableLoadMoreWhenContentNotFull="true" app:enableRefresh="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/eyw" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/iim" android:background="@drawable/cq2" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cr" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_below="@id/eyt" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/dgz" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/llz" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/eyv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/w9" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_3" android:id="@id/eyr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dgy" android:layout_centerInParent="true" />
+</RelativeLayout>

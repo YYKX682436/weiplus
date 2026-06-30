@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/f" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/f9" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cb" android:layout_marginBottom="@dimen/cb" android:text="@string/pdh" android:layout_marginVertical="@dimen/cb" />
+    <View android:background="@color/ah6" android:layout_width="match_parent" android:layout_height="@dimen/bg" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hu8" android:background="@drawable/bcc" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="0.0">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/a0b" android:paddingLeft="@dimen/aij" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdg" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/aij" android:layout_height="@dimen/aij" android:layout_marginTop="@dimen/bh" android:src="@raw/launch_regular" app:fs="@color/FG_1" />
+    </LinearLayout>
+    <View android:background="@color/ah6" android:layout_width="match_parent" android:layout_height="@dimen/bg" />
+    <View android:background="@color/d" android:layout_width="match_parent" android:layout_height="@dimen/dv" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/a0b" android:gravity="center" android:orientation="horizontal" android:id="@id/b5i" android:background="@drawable/bcc" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/aq7" />
+</LinearLayout>

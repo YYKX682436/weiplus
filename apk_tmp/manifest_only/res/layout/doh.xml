@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/yd" android:id="@id/ngb" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="start" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/j2h" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="bindView" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/nja" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="stop" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/cki" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="cover" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/r8o" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="simple" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/yd" android:id="@id/rdq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bindViewWithJsApi" android:backgroundTint="#98ca00" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/r5k" android:background="@android:color/holo_red_light" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

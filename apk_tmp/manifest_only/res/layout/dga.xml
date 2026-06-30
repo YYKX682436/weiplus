@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MJSlidingTabLayout android:id="@id/q9_" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/bn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:mj_indicator_color="@color/ac_" app:mj_indicator_height="2.0dp" app:mj_indicator_width_equal_title="true" app:mj_tab_margin_start="@dimen/c9" app:mj_tab_padding="@dimen/dv" app:mj_textSelectColor="@color/ac_" app:mj_textSize="14.0sp" app:mj_textUnselectColor="@color/ac9" />
+    <com.tencent.mm.mj_publisher.finder.widgets.NoScrollViewPager android:id="@id/q9a" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/he" app:layout_constraintTop_toBottomOf="@id/q9_" />
+    <FrameLayout android:id="@id/he" android:layout_width="match_parent" android:layout_height="@dimen/dm" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/hf" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/py" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

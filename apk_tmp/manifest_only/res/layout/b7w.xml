@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/gb6" android:layout_width="@dimen/xj" android:layout_height="@dimen/xj" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/cz" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@id/egn" android:background="@color/fy" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/c3z" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center" android:id="@id/gb8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/gb9" android:padding="1.0dp" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_play2" android:scaleType="fitCenter" app:fs="@color/aaw" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/aaw" android:ellipsize="end" android:id="@id/gb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="00: 21" android:singleLine="true" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xh" android:layout_marginStart="@dimen/c9" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toEndOf="@id/gb6" app:layout_constraintTop_toTopOf="@id/gb6">
+        <TextView android:textSize="@dimen/jd" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/gb_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有理想的人不伤心没有理想的人不伤心没有理想的人不伤心" android:maxLines="2" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/gb7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="新裤子乐队" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/gb2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" app:layout_constraintTop_toBottomOf="@id/gb6">
+        <TextView android:textSize="@dimen/a7" android:layout_gravity="center_vertical" android:id="@id/gb1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="2个动态" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gb4" android:background="@drawable/abz" android:paddingTop="@dimen/xh" android:paddingBottom="@dimen/xh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_camera" app:fs="@color/aaw" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/aaw" android:id="@id/gb5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cxy" android:layout_marginStart="@dimen/xh" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+package p06;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: classes5.dex */
+public final class t {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final p06.t f350777d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final p06.t f350778e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final p06.t f350779f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public static final /* synthetic */ p06.t[] f350780g;
+
+    static {
+        p06.t tVar = new p06.t("RUNTIME", 0);
+        f350777d = tVar;
+        p06.t tVar2 = new p06.t("BINARY", 1);
+        f350778e = tVar2;
+        p06.t tVar3 = new p06.t("SOURCE", 2);
+        f350779f = tVar3;
+        p06.t[] tVarArr = {tVar, tVar2, tVar3};
+        f350780g = tVarArr;
+        rz5.b.a(tVarArr);
+    }
+
+    public t(java.lang.String str, int i17) {
+    }
+
+    public static p06.t valueOf(java.lang.String str) {
+        return (p06.t) java.lang.Enum.valueOf(p06.t.class, str);
+    }
+
+    public static p06.t[] values() {
+        return (p06.t[]) f350780g.clone();
+    }
+}

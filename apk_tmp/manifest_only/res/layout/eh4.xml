@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/an" android:gravity="end" android:id="@id/gzx" android:padding="5.0dp" android:visibility="invisible" android:layout_width="56.0dp" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="#50000000" android:shadowRadius="12.0" />
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/gzy" android:background="@color/a9e" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxHeight="3.0dp" android:indeterminateOnly="false" android:progressDrawable="@drawable/d1h" android:minHeight="3.0dp" android:thumb="@drawable/d1j" android:layout_weight="1.0" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" android:splitTrack="false" />
+    <TextView android:textColor="@color/an" android:gravity="start" android:id="@id/h00" android:padding="5.0dp" android:visibility="invisible" android:layout_width="56.0dp" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="#50000000" android:shadowRadius="12.0" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/aju" android:textStyle="normal" android:textColor="@color/ai9" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/aii" android:text="@string/ml0" />
+    <com.tencent.mm.plugin.appbrand.widget.recent.AppBrandRecentTaskRecyclerView android:id="@id/se4" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.tencent.mm.plugin.appbrand.widget.recent.AppBrandTaskRecyclerView android:id="@id/se3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

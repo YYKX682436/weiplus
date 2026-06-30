@@ -1,0 +1,25 @@
+package ac2;
+
+/* loaded from: classes2.dex */
+public final class a0 extends com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1452x2fe59e.p1459x633fb29.p1460x21ffc6bd.C13924x37151faa {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final boolean f84537a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final long f84538b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final java.lang.String f84539c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final java.lang.String f84540d;
+
+    public a0(int i17, int i18, java.lang.String str, boolean z17, long j17, java.lang.String str2, java.lang.String str3) {
+        super(i17, i18, str);
+        this.f84537a = z17;
+        this.f84538b = j17;
+        this.f84539c = str2;
+        this.f84540d = str3;
+    }
+}

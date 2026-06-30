@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/d7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/i9g" android:background="@drawable/a3j" android:layout_width="match_parent" android:layout_height="@dimen/d7">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/x6" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/i9h" android:background="@drawable/a3m" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d7">
+        <TextView android:textSize="14.0dp" android:textColor="@color/an" android:id="@id/i9j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/i9i" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="20.0dp" android:layout_marginLeft="@dimen/bl" android:layout_marginBottom="1.0dp" android:src="@raw/icons_outlined_arrow" android:layout_toRightOf="@id/i9j" android:layout_centerVertical="true" app:fs="@color/BW_100_Alpha_0_5_5" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/i9f" android:background="@drawable/a3j" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d7">
+        <TextView android:textSize="14.0dp" android:textColor="@color/an" android:id="@id/i9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/i9d" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="20.0dp" android:layout_marginLeft="@dimen/bl" android:layout_marginBottom="1.0dp" android:src="@raw/icons_outlined_arrow" android:layout_toRightOf="@id/i9e" android:layout_centerVertical="true" app:fs="@color/BW_100_Alpha_0_5_5" />
+    </RelativeLayout>
+</FrameLayout>

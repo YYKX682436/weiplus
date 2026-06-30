@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.game.ui.GameFeedVideoView android:orientation="vertical" android:padding="@dimen/g4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.game.ui.GameFeedTitleDescView android:id="@id/gl7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gc" />
+        <FrameLayout android:id="@id/oze" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gc">
+            <com.tencent.mm.plugin.game.ui.GameRoundImageView android:id="@id/oye" android:layout_width="match_parent" android:layout_height="@dimen/g0" />
+            <ImageView android:layout_gravity="center" android:id="@id/ozp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/bj1" />
+            <LinearLayout android:layout_gravity="right|bottom" android:orientation="horizontal" android:id="@id/oyj" android:background="@drawable/aep" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gc" android:layout_marginBottom="@dimen/gc">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/p04" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aek" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/ab0" android:layout_gravity="center_vertical" android:id="@id/oyk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.tencent.mm.plugin.game.ui.GameFeedSubscriptView android:id="@id/nrj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gc" />
+    </com.tencent.mm.plugin.game.ui.GameFeedVideoView>
+</FrameLayout>

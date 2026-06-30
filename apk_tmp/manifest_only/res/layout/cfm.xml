@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:text="模拟第三方设置状态" android:lineSpacingMultiplier="1.3" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/b1d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/db" android:text="@string/jwz" style="@style/kr" />
+    <EditText android:layout_gravity="center_horizontal" android:id="@id/d9i" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/db" android:text="https://www.dasouji.com/wp-content/uploads/2019/08/@93kumi93-5.jpg" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/b0h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/db" android:text="下载" style="@style/kr" />
+</LinearLayout>

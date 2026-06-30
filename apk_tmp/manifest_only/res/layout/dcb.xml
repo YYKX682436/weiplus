@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.TouchableLayout android:orientation="vertical" android:id="@id/qny" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dg3" android:paddingTop="@dimen/bo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/lbi" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/c6" android:indeterminateDrawable="@drawable/avj" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/m2g" android:paddingTop="@dimen/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cuw" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/BW_0_Alpha_0_3" android:layout_gravity="center_horizontal" android:id="@id/dft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:text="@string/lem" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/q0u" android:layout_width="match_parent" android:layout_height="match_parent" app:enableAutoLoadMore="true" app:enableFooterFollowWhenNoMoreData="true" app:enableFooterMoveContent="true" app:enableLoadMore="true" app:enableOverScrollBounce="false" app:enableOverScrollDrag="false" app:enableRefresh="false" app:layout_behavior="@string/zz">
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:headerLayout="@layout/cdm" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/q0t" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/cx" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs5" />
+    </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+</com.tencent.mm.view.TouchableLayout>

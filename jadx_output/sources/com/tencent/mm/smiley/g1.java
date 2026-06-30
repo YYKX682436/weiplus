@@ -1,0 +1,73 @@
+package com.tencent.mm.smiley;
+
+/* loaded from: classes9.dex */
+public class g1 extends com.tencent.mm.protobuf.f {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f193259d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public int f193260e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public int f193261f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public int f193262g;
+
+    @Override // com.tencent.mm.protobuf.f
+    public boolean compareContent(com.tencent.mm.protobuf.f fVar) {
+        if (fVar == null || !(fVar instanceof com.tencent.mm.smiley.g1)) {
+            return false;
+        }
+        com.tencent.mm.smiley.g1 g1Var = (com.tencent.mm.smiley.g1) fVar;
+        return n51.f.a(java.lang.Integer.valueOf(this.f193259d), java.lang.Integer.valueOf(g1Var.f193259d)) && n51.f.a(java.lang.Integer.valueOf(this.f193260e), java.lang.Integer.valueOf(g1Var.f193260e)) && n51.f.a(java.lang.Integer.valueOf(this.f193261f), java.lang.Integer.valueOf(g1Var.f193261f)) && n51.f.a(java.lang.Integer.valueOf(this.f193262g), java.lang.Integer.valueOf(g1Var.f193262g));
+    }
+
+    @Override // com.tencent.mm.protobuf.f
+    public final int op(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            g36.f fVar = (g36.f) objArr[0];
+            fVar.e(1, this.f193259d);
+            fVar.e(2, this.f193260e);
+            fVar.e(3, this.f193261f);
+            fVar.e(4, this.f193262g);
+            return 0;
+        }
+        if (i17 == 1) {
+            return b36.f.e(1, this.f193259d) + 0 + b36.f.e(2, this.f193260e) + b36.f.e(3, this.f193261f) + b36.f.e(4, this.f193262g);
+        }
+        if (i17 == 2) {
+            c36.a aVar = new c36.a((byte[]) objArr[0], com.tencent.mm.protobuf.f.unknownTagHandler);
+            for (int nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar); nextFieldNumber > 0; nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar)) {
+                if (!super.populateBuilderWithField(aVar, this, nextFieldNumber)) {
+                    aVar.b();
+                }
+            }
+            return 0;
+        }
+        if (i17 != 3) {
+            return -1;
+        }
+        c36.a aVar2 = (c36.a) objArr[0];
+        com.tencent.mm.smiley.g1 g1Var = (com.tencent.mm.smiley.g1) objArr[1];
+        int intValue = ((java.lang.Integer) objArr[2]).intValue();
+        if (intValue == 1) {
+            g1Var.f193259d = aVar2.g(intValue);
+            return 0;
+        }
+        if (intValue == 2) {
+            g1Var.f193260e = aVar2.g(intValue);
+            return 0;
+        }
+        if (intValue == 3) {
+            g1Var.f193261f = aVar2.g(intValue);
+            return 0;
+        }
+        if (intValue != 4) {
+            return -1;
+        }
+        g1Var.f193262g = aVar2.g(intValue);
+        return 0;
+    }
+}

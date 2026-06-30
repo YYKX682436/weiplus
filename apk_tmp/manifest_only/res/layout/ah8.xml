@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/dzm" android:paddingBottom="2.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/yi" android:textColor="@color/a0c" android:id="@id/dzl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:text="{nickname}" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dzk" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/x7" android:showDividers="middle" android:dividerPadding="@dimen/dv" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+package r45;
+
+/* loaded from: classes9.dex */
+public class bx6 extends com.tencent.mm.protobuf.f {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f371138d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public java.lang.String f371139e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public java.lang.String f371140f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public java.lang.String f371141g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public int f371142h;
+
+    @Override // com.tencent.mm.protobuf.f
+    public boolean compareContent(com.tencent.mm.protobuf.f fVar) {
+        if (fVar == null || !(fVar instanceof r45.bx6)) {
+            return false;
+        }
+        r45.bx6 bx6Var = (r45.bx6) fVar;
+        return n51.f.a(java.lang.Integer.valueOf(this.f371138d), java.lang.Integer.valueOf(bx6Var.f371138d)) && n51.f.a(this.f371139e, bx6Var.f371139e) && n51.f.a(this.f371140f, bx6Var.f371140f) && n51.f.a(this.f371141g, bx6Var.f371141g) && n51.f.a(java.lang.Integer.valueOf(this.f371142h), java.lang.Integer.valueOf(bx6Var.f371142h));
+    }
+
+    @Override // com.tencent.mm.protobuf.f
+    public final int op(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            g36.f fVar = (g36.f) objArr[0];
+            fVar.e(1, this.f371138d);
+            java.lang.String str = this.f371139e;
+            if (str != null) {
+                fVar.j(2, str);
+            }
+            java.lang.String str2 = this.f371140f;
+            if (str2 != null) {
+                fVar.j(3, str2);
+            }
+            java.lang.String str3 = this.f371141g;
+            if (str3 != null) {
+                fVar.j(4, str3);
+            }
+            fVar.e(5, this.f371142h);
+            return 0;
+        }
+        if (i17 == 1) {
+            int e17 = b36.f.e(1, this.f371138d) + 0;
+            java.lang.String str4 = this.f371139e;
+            if (str4 != null) {
+                e17 += b36.f.j(2, str4);
+            }
+            java.lang.String str5 = this.f371140f;
+            if (str5 != null) {
+                e17 += b36.f.j(3, str5);
+            }
+            java.lang.String str6 = this.f371141g;
+            if (str6 != null) {
+                e17 += b36.f.j(4, str6);
+            }
+            return e17 + b36.f.e(5, this.f371142h);
+        }
+        if (i17 == 2) {
+            c36.a aVar = new c36.a((byte[]) objArr[0], com.tencent.mm.protobuf.f.unknownTagHandler);
+            for (int nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar); nextFieldNumber > 0; nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar)) {
+                if (!super.populateBuilderWithField(aVar, this, nextFieldNumber)) {
+                    aVar.b();
+                }
+            }
+            return 0;
+        }
+        if (i17 != 3) {
+            return -1;
+        }
+        c36.a aVar2 = (c36.a) objArr[0];
+        r45.bx6 bx6Var = (r45.bx6) objArr[1];
+        int intValue = ((java.lang.Integer) objArr[2]).intValue();
+        if (intValue == 1) {
+            bx6Var.f371138d = aVar2.g(intValue);
+            return 0;
+        }
+        if (intValue == 2) {
+            bx6Var.f371139e = aVar2.k(intValue);
+            return 0;
+        }
+        if (intValue == 3) {
+            bx6Var.f371140f = aVar2.k(intValue);
+            return 0;
+        }
+        if (intValue == 4) {
+            bx6Var.f371141g = aVar2.k(intValue);
+            return 0;
+        }
+        if (intValue != 5) {
+            return -1;
+        }
+        bx6Var.f371142h = aVar2.g(intValue);
+        return 0;
+    }
+}

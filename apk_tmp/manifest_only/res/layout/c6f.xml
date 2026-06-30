@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ba7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" app:layout_constraintBottom_toTopOf="@id/bab" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/c6h" />
+    <include android:id="@id/bab" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" app:layout_constraintBottom_toTopOf="@id/baa" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/ba7" layout="@layout/c6h" />
+    <include android:id="@id/baa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/bab" layout="@layout/c6h" />
+</androidx.constraintlayout.widget.ConstraintLayout>

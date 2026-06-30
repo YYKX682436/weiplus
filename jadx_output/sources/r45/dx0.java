@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes10.dex */
+public class dx0 extends com.tencent.mm.protobuf.e {
+    public dx0() {
+        super(com.tencent.mm.protobuf.i.i(1, com.tencent.tmassistantsdk.downloadservice.DownloadInfo.NETTYPE), com.tencent.mm.protobuf.i.u(2, "netName"), com.tencent.mm.protobuf.i.i(3, "bandwidthKbps"), com.tencent.mm.protobuf.i.s(4, "lastVideosDownloadInfo", r45.m11.class), com.tencent.mm.protobuf.i.u(5, "deviceModel"), com.tencent.mm.protobuf.i.u(6, "deviceBrand"), com.tencent.mm.protobuf.i.u(7, "osName"), com.tencent.mm.protobuf.i.u(8, "osVersion"), com.tencent.mm.protobuf.i.w(9, "supportedFileFormat"), com.tencent.mm.protobuf.i.s(10, "finderFluencyInfo", r45.m31.class), com.tencent.mm.protobuf.i.i(11, "device_type_id"), com.tencent.mm.protobuf.i.i(12, "client_version"), com.tencent.mm.protobuf.i.u(13, "client_ip"), com.tencent.mm.protobuf.i.s(14, "recent_finder_download_speed", r45.sf0.class), com.tencent.mm.protobuf.i.s(15, "recent_wechat_download_speed", r45.sf0.class), com.tencent.mm.protobuf.i.s(16, "last_preload_download_info", r45.m11.class), com.tencent.mm.protobuf.i.s(17, "recent_nonfinder_quic_download_speed", r45.sf0.class), com.tencent.mm.protobuf.i.s(18, "recent_nonfinder_nonquic_download_speed", r45.sf0.class), com.tencent.mm.protobuf.i.s(19, "next_videos_download_info", r45.m11.class), com.tencent.mm.protobuf.i.r(20, "client_performance", r45.cx0.class), com.tencent.mm.protobuf.i.i(21, "is_dawang_nettype"), com.tencent.mm.protobuf.i.r(22, "brightness", r45.xw0.class), com.tencent.mm.protobuf.i.l(23, "supported_hdr_type"), com.tencent.mm.protobuf.i.s(24, "recent_cdn_conn_record", r45.yw0.class), com.tencent.mm.protobuf.i.s(25, "recent_cgi_conn_record", r45.yw0.class), com.tencent.mm.protobuf.i.r(27, "client_audio", r45.ww0.class), com.tencent.mm.protobuf.i.i(28, "screen_orientation"), com.tencent.mm.protobuf.i.i(29, "is_vpn_connected"));
+        this.__printBytes = true;
+    }
+}

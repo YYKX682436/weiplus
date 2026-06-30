@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/a84" android:id="@id/hc6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/yd" style="@style/fl" />
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/aii" android:paddingBottom="@dimen/aii" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/aii">
+            <ImageView android:id="@id/a_4" android:layout_width="@dimen/ail" android:layout_height="@dimen/ail" android:layout_marginRight="@dimen/yd" android:src="@drawable/bhm" />
+            <com.tencent.mm.ui.widget.MMTextView android:textColor="@color/abw" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/k3s" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/rm" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@id/t4l" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/alq" />
+        <View android:layout_gravity="bottom" android:id="@id/t4k" android:background="@color/FG_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </FrameLayout>
+</LinearLayout>

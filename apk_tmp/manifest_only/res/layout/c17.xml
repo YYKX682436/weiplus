@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/oct" android:background="@null" android:paddingLeft="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/j2" style="@style/ja"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/cgi" android:paddingTop="@dimen/i_" android:paddingBottom="@dimen/i_" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/j2">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:paddingLeft="@dimen/i1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="@dimen/hn" android:layout_height="@dimen/hn" android:layout_marginRight="@dimen/j" android:scaleType="fitCenter" />
+            <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" style="@style/ix" />
+                <TextView android:textSize="@dimen/ja" android:textColor="@color/ab0" android:gravity="center" android:id="@id/o_v" android:background="@drawable/b8d" android:padding="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j" android:minWidth="40.0dp" android:singleLine="true" style="@style/iz" />
+            </LinearLayout>
+            <CheckBox android:id="@id/lhx" android:background="@drawable/axu" android:focusable="false" android:clickable="false" android:layout_height="20.0dp" android:singleLine="true" style="@style/j0" />
+        </LinearLayout>
+        <TextView android:gravity="left" android:id="@android:id/summary" android:paddingLeft="@dimen/i1" android:paddingRight="@dimen/i1" android:layout_marginTop="@dimen/j3" style="@style/ik" />
+    </LinearLayout>
+</LinearLayout>

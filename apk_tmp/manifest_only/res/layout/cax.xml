@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/kud" android:background="@color/a9e" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="@dimen/dj" style="@style/jq"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/csb" android:layout_width="@dimen/df" android:layout_height="@dimen/dj">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/csa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/icons_outlined_minus" app:fs="@color/ac" />
+    </LinearLayout>
+    <com.tencent.mm.pluginsdk.ui.MMPhoneNumberEditText android:textColor="@color/BW_0_Alpha_0_9" android:textColorHint="@color/rf" android:layout_gravity="bottom" android:id="@id/kuc" android:paddingLeft="0.0dp" android:paddingTop="0.0dp" android:paddingRight="0.0dp" android:paddingBottom="0.0dp" android:layout_marginLeft="@dimen/df" android:layout_marginRight="@dimen/cn" android:minHeight="@dimen/dj" android:text="@string/gxt" android:hint="@string/d3" android:maxLength="40" android:inputType="phone" style="@style/jq" />
+    <View android:id="@id/i22" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/df" android:minHeight="1.0px" android:layout_alignBottom="@id/kuc" />
+</RelativeLayout>

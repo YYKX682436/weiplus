@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/a03" android:paddingLeft="@dimen/dv" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <FrameLayout android:id="@id/mxw" android:visibility="visible" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_centerVertical="true">
+            <com.tencent.mm.view.MMPAGView android:gravity="center" android:layout_gravity="center" android:id="@id/my3" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:gravity="center" android:layout_gravity="center" android:id="@id/my1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/d7" android:layout_centerVertical="true" />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mx_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/cn" android:layout_toLeftOf="@id/mxo" android:layout_toRightOf="@id/mxw" android:layout_centerVertical="true">
+            <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/my0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:id="@id/mya" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/my0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@id/mxo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:layout_gravity="right|center" android:id="@id/mxs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/an" android:id="@id/mx8" android:background="@drawable/a06" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ef2" android:paddingHorizontal="@dimen/c9" android:paddingVertical="@dimen/bl" app:fs="@color/BW_100" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:layout_gravity="right|center" android:id="@id/rb3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/cn" android:layout_toRightOf="@id/mxw" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mxv" android:paddingBottom="@dimen/bo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bdv" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/d9" android:src="@raw/finder_live_sing_song_end_icon" app:fs="@color/BW_100_Alpha_0_5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <View android:id="@id/i0a" android:background="@color/BW_100_Alpha_0_1_5" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginRight="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/bdv" app:layout_constraintRight_toLeftOf="@id/bdv" app:layout_constraintTop_toTopOf="@id/bdv" />
+        <View android:id="@id/m3v" android:background="@color/BW_100_Alpha_0_1_5" android:layout_width="@dimen/cz" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/bdv" app:layout_constraintLeft_toRightOf="@id/bdv" app:layout_constraintTop_toTopOf="@id/bdv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

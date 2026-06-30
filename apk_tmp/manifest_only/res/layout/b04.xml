@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fmz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:layout_marginBottom="@dimen/cs" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/fn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sg" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/fn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eg2" android:layout_centerInParent="true" />
+        <TextView android:enabled="false" android:textSize="17.0dp" android:textColor="@drawable/a91" android:id="@id/fn0" android:background="@drawable/a90" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f6o" android:layout_centerVertical="true" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/fmy" android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/fmz" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/aaw" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/kh0" android:layout_width="match_parent" android:layout_height="176.0dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cyw" android:paddingLeft="@dimen/u1" android:paddingRight="@dimen/u1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="34.0dp">
+            <TextView android:textSize="@dimen/tz" android:textColor="@color/jw" android:gravity="center" android:layout_gravity="center" android:id="@id/ck0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <EditText android:textSize="@dimen/tz" android:textColor="@color/a0c" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/kuz" android:background="@color/a9e" android:paddingLeft="@dimen/u0" android:paddingRight="@dimen/u0" android:layout_width="0.0dp" android:layout_height="wrap_content" android:cursorVisible="false" android:maxLines="1" android:singleLine="true" android:editable="false" android:layout_weight="0.6" android:inputType="phone" />
+            <LinearLayout android:gravity="center" android:id="@id/kuy" android:clickable="true" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="35.0dp">
+                <Button android:layout_gravity="center" android:background="@drawable/au7" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/cjy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/u1" android:layout_below="@id/cyw">
+            <TextView android:textSize="12.0dp" android:textColor="@color/jw" android:gravity="center" android:layout_gravity="center" android:id="@id/ck2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/u2" android:textColor="@color/jy" android:id="@id/cyx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" android:layout_below="@id/cyw" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0dp" android:textColor="@color/jj" android:id="@id/cyg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/g6i" android:layout_below="@id/cyx" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cq3" android:background="@color/BW_97" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/kh0" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/d1v" android:background="@color/jx" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <ImageButton android:id="@id/cyd" android:background="@null" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginBottom="14.0dp" android:src="@drawable/r6" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <com.tencent.mm.plugin.ipcall.ui.DialPad android:id="@id/cyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/cyd" android:layout_below="@id/d1v" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

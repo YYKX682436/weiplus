@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/uie" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/uih" android:layout_width="match_parent" android:layout_height="@dimen/dd" android:layout_marginBottom="@dimen/db" android:text="@string/ped" android:includeFontPadding="false" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/d7">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_1" android:id="@id/uif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pec" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:id="@id/uig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:includeFontPadding="false" android:layout_marginStart="@dimen/dv" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_1" android:id="@id/uib" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/peb" android:includeFontPadding="false" android:layout_marginStart="@dimen/cz" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:id="@id/uic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:includeFontPadding="false" android:layout_marginStart="@dimen/dv" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.recordvideo.ui.editor.music.component.MusicClipRangeBarView android:id="@id/uid" android:layout_width="match_parent" android:layout_height="@dimen/dn" />
+</LinearLayout>

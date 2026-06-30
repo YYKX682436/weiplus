@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.StretchFrameLayout android:id="@id/sq2" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/c8" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ca7" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginRight="@dimen/c8" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMTextView android:ellipsize="end" android:id="@id/sza" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/s5" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/sxu" android:visibility="gone" android:layout_width="18.659973dp" android:layout_height="14.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/db6" app:fs="@color/a9e" />
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMTextView android:ellipsize="end" android:id="@id/cal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/sxt" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="1" style="@style/fe" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/sxt" android:visibility="gone" android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:layout_marginLeft="@dimen/bl" app:fs="@color/a9e" app:layout_constraintBottom_toBottomOf="@id/cal" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/cal" app:layout_constraintTop_toTopOf="@id/cal" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ViewStub android:id="@id/szi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c8" android:layout_marginRight="@dimen/c8" android:layout_marginHorizontal="@dimen/c8" />
+    </LinearLayout>
+</com.tencent.mm.view.StretchFrameLayout>

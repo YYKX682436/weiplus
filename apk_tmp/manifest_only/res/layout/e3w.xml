@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/hhb" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/m7j" android:background="@color/c" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn">
+        <TextView android:id="@id/hjn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/ais" />
+        <LinearLayout android:id="@id/uy8" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.tencent.mm.ui.base.FlowLayout android:id="@id/uy9" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aih" android:paddingHorizontal="@dimen/dv" app:horizontalSpacing="@dimen/dv" app:verticalSpacing="@dimen/aih" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/tk" android:id="@id/uy_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" />
+    </LinearLayout>
+</LinearLayout>

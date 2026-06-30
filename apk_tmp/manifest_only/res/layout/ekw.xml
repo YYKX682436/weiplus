@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.media.view.ShrinkParentLayout android:gravity="bottom" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.media.view.ShrinkNestedLayout android:id="@id/u9w" android:paddingTop="@dimen/ajr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" app:flexDirection="0" app:justifyContent="0">
+        <com.tencent.mm.plugin.media.view.download.MediaDownloadText android:id="@id/smd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_alignParentBottom="true" app:labelText="@string/k8n" app:labelTextShort="@string/k8p" />
+    </com.tencent.mm.plugin.media.view.ShrinkNestedLayout>
+    <com.tencent.mm.plugin.media.view.ShrinkNestedLayout android:id="@id/uzd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:flexDirection="0" app:justifyContent="1">
+        <com.tencent.mm.plugin.media.view.ShrinkBox android:id="@id/sn0" android:background="@drawable/d8_" android:layout_width="@dimen/apc" android:layout_height="@dimen/apc" android:layout_marginLeft="@dimen/yd">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="21.0dp" android:layout_height="23.0dp" android:src="@raw/icons_filled_share" android:layout_centerInParent="true" android:contentDescription="@string/w_" app:fs="@color/an" />
+        </com.tencent.mm.plugin.media.view.ShrinkBox>
+        <com.tencent.mm.plugin.media.view.ShrinkBox android:id="@id/smw" android:background="@drawable/d8_" android:layout_width="@dimen/apc" android:layout_height="@dimen/apc" android:layout_marginLeft="@dimen/yd">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_download3" android:layout_centerInParent="true" android:contentDescription="@string/bqh" android:elevation="@dimen/ad7" app:fs="@color/an" />
+        </com.tencent.mm.plugin.media.view.ShrinkBox>
+        <com.tencent.mm.plugin.media.view.ShrinkBox android:id="@id/smk" android:background="@drawable/d8_" android:layout_width="@dimen/apc" android:layout_height="@dimen/apc" android:layout_marginLeft="@dimen/yd">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_locate_to_chat_filled" android:layout_centerInParent="true" android:elevation="@dimen/ad7" app:fs="@color/an" />
+        </com.tencent.mm.plugin.media.view.ShrinkBox>
+        <com.tencent.mm.plugin.media.view.ShrinkBox android:id="@id/smc" android:background="@drawable/d8_" android:layout_width="@dimen/apc" android:layout_height="@dimen/apc" android:layout_marginLeft="@dimen/yd">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_photowall_solid" android:layout_centerInParent="true" android:elevation="@dimen/ad7" app:fs="@color/an" />
+        </com.tencent.mm.plugin.media.view.ShrinkBox>
+        <com.tencent.mm.plugin.media.view.ShrinkBox android:id="@id/b0y" android:background="@drawable/d8_" android:layout_width="@dimen/apc" android:layout_height="@dimen/apc" android:layout_marginLeft="@dimen/yd">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_more" android:layout_centerInParent="true" android:contentDescription="@string/w_" app:fs="@color/an" />
+        </com.tencent.mm.plugin.media.view.ShrinkBox>
+    </com.tencent.mm.plugin.media.view.ShrinkNestedLayout>
+</com.tencent.mm.plugin.media.view.ShrinkParentLayout>

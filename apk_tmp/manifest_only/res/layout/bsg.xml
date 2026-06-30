@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/imc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp">
+        <ProgressBar android:layout_gravity="center" android:id="@id/qn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+        <TextView android:textSize="14.0dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/vx" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/im1" android:paddingTop="5.0dp" android:paddingBottom="25.0dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bl6" />
+    <TextView android:textSize="14.0dp" android:gravity="center" android:layout_gravity="center" android:id="@id/imi" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:text="@string/ap3" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:id="@id/tl1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/bl" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tl3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/bl" android:layout_alignParentEnd="true">
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:gravity="right" android:id="@id/tl4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaaaa" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/tl2" android:visibility="gone" android:layout_width="@dimen/c8" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_arrow" android:rotation="90.0" android:layout_marginStart="@dimen/bl" app:fs="@color/FG_2" />
+    </LinearLayout>
+</RelativeLayout>

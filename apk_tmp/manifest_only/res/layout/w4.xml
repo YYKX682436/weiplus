@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:paddingBottom="@dimen/j3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.chatting.view.ServiceNotifyHeaderView android:id="@id/vna" android:background="@drawable/czi" android:visibility="gone" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" style="@style/z2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bkg" android:background="@drawable/nr" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/hf" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:focusable="false" android:layout_width="27.0dp" android:layout_height="27.0dp" android:src="@raw/scan_regular" app:fs="@color/Indigo_100" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:paddingLeft="@dimen/hq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/he7" android:maxLines="1" android:singleLine="false" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/hf" android:paddingTop="@dimen/hf" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/ha" android:textStyle="bold" android:textColor="@color/a0c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/he9" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/a0c" android:id="@id/khj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="30.0dp" android:text="@string/he6" />
+            </LinearLayout>
+            <TextView android:background="@color/i2" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/khi" android:layout_width="match_parent" android:layout_height="44.0dp">
+                <TextView android:textSize="15.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/he8" android:singleLine="true" android:layout_alignParentLeft="true" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@raw/arrow_right" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

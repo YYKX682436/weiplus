@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/otm" android:background="@drawable/bh7" android:paddingTop="20.0dp" android:paddingBottom="26.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center_horizontal" android:id="@id/otl" android:layout_width="65.0dp" android:layout_height="65.0dp" android:src="@drawable/bhm" />
+        <TextView android:textSize="@dimen/k" android:textColor="#000000" android:ellipsize="end" android:gravity="center" android:id="@id/otn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="尤达" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ja" android:textColor="#9f9e9f" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/i72" />
+        <TextView android:textSize="@dimen/ja" android:textColor="#9f9e9f" android:gravity="center" android:id="@id/oto" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/i73" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/k" android:textColor="#000000" android:gravity="center" android:id="@id/otj" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:text="{当前群最多可容纳100人}" android:layout_below="@id/otm" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/oti" android:visibility="gone" android:layout_marginLeft="10.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="10.0dp" android:layout_below="@id/otj" android:layout_centerHorizontal="true" style="@style/e_" />
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/ja" android:textColor="#848386" android:gravity="center" android:id="@id/otk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="{你还可增加x个群聊的最大人数}" android:lineSpacingExtra="0.0dp" />
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/yj" android:gravity="center" android:id="@id/h1y" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="14.0dp" android:text="@string/i6x" android:lineSpacingExtra="0.0dp" />
+    </LinearLayout>
+</RelativeLayout>

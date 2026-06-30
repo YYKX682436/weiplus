@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/bp" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_marginHorizontal="@dimen/cz"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/t49" android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/vnn" android:layout_width="match_parent" android:layout_height="@dimen/dp" android:layout_marginTop="@dimen/cn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/t49">
+        <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/vnp" android:layout_width="@dimen/dn" android:layout_height="wrap_content" android:text="@string/lte" android:singleLine="true" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/vno" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/imc" android:visibility="invisible" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" app:layout_constraintBottom_toBottomOf="@id/vnn" app:layout_constraintEnd_toEndOf="@id/vnn" app:layout_constraintStart_toStartOf="@id/vnn" app:layout_constraintTop_toTopOf="@id/vnn" style="@style/w9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

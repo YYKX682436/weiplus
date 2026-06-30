@@ -1,0 +1,21 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1894xb81dc63e;
+
+/* loaded from: classes8.dex */
+public final class o1 implements com.p314xaae8f345.mm.p794xb0fa9b5e.r {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1894xb81dc63e.p1 f232011d;
+
+    public o1(com.p314xaae8f345.mm.p1006xc5476f33.p1894xb81dc63e.p1 p1Var) {
+        this.f232011d = p1Var;
+    }
+
+    @Override // com.p314xaae8f345.mm.p794xb0fa9b5e.r
+    public void a(java.lang.Object obj) {
+        android.os.Bundle bundle = (android.os.Bundle) obj;
+        java.lang.String str = this.f232011d.f232012d;
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("hideMultiTaskUIC invoker callback result:");
+        sb6.append(bundle != null ? bundle.getBoolean("result") : false);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(str, sb6.toString());
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.TouchableLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/fk0" android:background="@color/w5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <View android:id="@id/fjy" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/fjz" app:layout_constraintHeight_percent="0.25" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.LiveBottomSheetPanel android:orientation="vertical" android:id="@id/fjz" android:background="@drawable/ajq" android:clickable="true" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHeight_percent="0.75" app:layout_constraintLeft_toLeftOf="0">
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/arz" />
+        </com.tencent.mm.ui.widget.LiveBottomSheetPanel>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.view.TouchableLayout>

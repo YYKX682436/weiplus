@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/aaw" android:id="@id/dzs" android:background="@drawable/aad" android:padding="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cw_" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/h3" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:id="@id/oh6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cw_" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="@dimen/dv" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+            <TextView android:textSize="@dimen/zd" android:textColor="@color/qe" android:gravity="center" android:id="@id/oh3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5个动态" android:includeFontPadding="false" android:layout_centerInParent="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dv" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/oh4" android:background="@drawable/aaj" android:paddingTop="@dimen/xh" android:paddingBottom="@dimen/xh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_marginBottom="@dimen/df" android:paddingStart="@dimen/d1" android:paddingEnd="@dimen/d1">
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/aaw" android:gravity="center" android:id="@id/oh5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f6c" android:includeFontPadding="false" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

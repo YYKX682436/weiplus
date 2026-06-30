@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/a1o" android:layout_height="@dimen/a17"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="start|center" android:padding="@dimen/a1n" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.ball.view.CircleAnimateView android:layout_gravity="center" android:id="@id/h5s" android:layout_width="@dimen/a19" android:layout_height="@dimen/a19" />
+            <com.tencent.mm.plugin.ball.view.CircleImageView android:layout_gravity="center" android:id="@id/h5v" android:layout_width="@dimen/a19" android:layout_height="@dimen/a19" />
+        </FrameLayout>
+        <com.tencent.mm.ui.widget.EllipsizeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/k3g" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/j">
+            <TextView android:textSize="15.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/k3j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="10.0dp" android:textColor="@color/ab0" android:layout_gravity="center_vertical" android:id="@id/k3i" android:background="@drawable/eo" android:paddingTop="1.5dp" android:paddingBottom="1.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="8.0dp" />
+        </com.tencent.mm.ui.widget.EllipsizeLayout>
+        <FrameLayout android:layout_gravity="end|center" android:id="@id/lxf" android:padding="@dimen/a1i" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/jp1">
+            <ImageView android:layout_gravity="center" android:id="@id/lxg" android:layout_width="@dimen/a1j" android:layout_height="@dimen/a1j" android:src="@raw/icons_filled_close" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

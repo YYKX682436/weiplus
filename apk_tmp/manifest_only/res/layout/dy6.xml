@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/jcb" android:background="@color/po" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/cgz" android:background="@drawable/d7k" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginRight="@dimen/aii" android:layout_marginHorizontal="@dimen/aii">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ajw" android:layout_marginTop="@dimen/ajw" android:layout_marginRight="@dimen/ajw" android:layout_marginBottom="@dimen/ajw" android:layout_marginHorizontal="@dimen/ajw">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bz2" android:layout_width="@dimen/ajw" android:layout_height="@dimen/ajw" android:src="@raw/xmark_regular" app:fs="@color/abw" />
+            <TextView android:textColor="@color/abw" android:layout_gravity="center" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pgg" style="@style/fl" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:id="@id/sz9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ajw" android:layout_marginRight="@dimen/ajw" android:text="@string/pgf" android:layout_marginHorizontal="@dimen/ajw" />
+        <com.tencent.mm.view.MaxHeightFrameLayout android:id="@id/o8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ajw" android:layout_marginRight="@dimen/ajw" android:layout_marginHorizontal="@dimen/ajw">
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/ceg" android:paddingBottom="@dimen/ajw" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+        </com.tencent.mm.view.MaxHeightFrameLayout>
+    </LinearLayout>
+</FrameLayout>

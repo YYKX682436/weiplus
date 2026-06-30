@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/cxj" android:layout_width="match_parent" android:layout_height="@dimen/ob" android:layout_marginBottom="@dimen/aih"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.MMImageView android:layout_gravity="center_vertical" android:id="@id/h5n" android:layout_width="@dimen/ht" android:layout_height="@dimen/ht" android:layout_margin="@dimen/cn" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/aii">
+        <TextView android:textSize="17.0sp" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ais" android:maxLines="1" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/jj" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/a84" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/vlt" android:background="@drawable/cvy" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="2.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

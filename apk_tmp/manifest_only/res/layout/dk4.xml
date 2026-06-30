@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/aix" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp" android:layout_height="@dimen/dp" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:layout_marginVertical="@dimen/bl">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="center" android:id="@id/o14" android:background="@raw/icons_filled_template_loading" android:layout_width="@dimen/aiv" android:layout_height="@dimen/aiu" android:scaleType="centerCrop" app:i8="@dimen/c9" />
+        <View android:layout_gravity="center" android:id="@id/q4i" android:background="@drawable/cnw" android:visibility="gone" android:layout_width="@dimen/aiv" android:layout_height="@dimen/aiu" android:scaleType="centerCrop" app:i8="@dimen/c9" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/d3u" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:indeterminateDrawable="@drawable/a0v" />
+        <View android:id="@id/o1h" android:background="@drawable/cpb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:gravity="center|top" android:layout_gravity="center_horizontal" android:id="@id/o1a" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/d7" android:maxLines="2" android:lineSpacingExtra="-1.0dp" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.MMEditText android:id="@id/owl" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="step" android:digits="0123456789" android:inputType="numberDecimal" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/khs" android:layout_width="180.0dp" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="@string/x1" style="@style/kq" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/kio" android:layout_width="180.0dp" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="打开鹅厂运动" style="@style/kq" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/gr5" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="ExtApiGetSportConfig" style="@style/kq" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/kps" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="ExtApiPassiveUpdate" style="@style/kq" />
+</LinearLayout>

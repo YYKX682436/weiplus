@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/mcm" android:background="@drawable/b4j" android:paddingTop="40.0dp" android:paddingBottom="64.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="17.0dp" android:textColor="@color/a0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a5p" android:lines="1" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/a0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/a5o" android:lines="1" />
+        <ImageView android:id="@id/agv" android:layout_width="286.0dp" android:layout_height="136.0dp" android:layout_marginTop="40.0dp" />
+        <Button android:textSize="17.0dp" android:textStyle="bold" android:id="@id/khs" android:layout_width="184.0dp" android:layout_height="40.0dp" android:layout_marginTop="56.0dp" android:text="@string/jng" style="@style/kz" />
+    </LinearLayout>
+</ScrollView>

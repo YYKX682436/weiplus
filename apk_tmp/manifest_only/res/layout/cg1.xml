@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/bxt" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="清除开通指纹弹框次数" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/o2x" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="测试跳转DCEP" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/bxr" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="重置零钱通解脱弹窗限制" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/pup" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="清除群账本数据库" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/rbe" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="打开原生Demo" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/rbd" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="打开KindaDemo" style="@style/kq" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/rbc" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="打开FlutterDemo" style="@style/kq" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

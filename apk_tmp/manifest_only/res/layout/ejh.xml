@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionGroup="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/u1k" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.plugin.media.view.SampleHDImageView android:id="@id/v07" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.media.view.gesture.PreviewGestureContainer android:gravity="center" android:id="@id/sx_" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+        <com.tencent.mm.plugin.media.live.LiveSwitchableContainer android:id="@id/ubo" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.plugin.media.image.SwitchableImageContainer android:id="@id/vbr" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.tencent.mm.ui.base.MultiTouchImageView android:gravity="center" android:id="@id/um_" android:layout_width="match_parent" android:layout_height="match_parent" app:imageBackgroundColor="@color/an" />
+            </com.tencent.mm.plugin.media.image.SwitchableImageContainer>
+        </com.tencent.mm.plugin.media.live.LiveSwitchableContainer>
+    </com.tencent.mm.plugin.media.view.gesture.PreviewGestureContainer>
+    <ViewStub android:id="@id/h9d" android:layout="@layout/ejg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/h9c" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/w_" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/cs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="left|center" android:id="@id/kxi" android:background="@drawable/d_c" android:layout_width="match_parent" android:layout_height="4.0dp" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" android:elevation="@dimen/ad7" />
+        <ImageView android:layout_gravity="left|center" android:id="@id/kxk" android:background="@drawable/d_c" android:layout_width="match_parent" android:layout_height="4.0dp" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" />
+        <ImageView android:layout_gravity="left|center" android:id="@id/kxj" android:background="@drawable/d_e" android:layout_width="0.0dp" android:layout_height="4.0dp" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" />
+        <ImageView android:id="@id/kxm" android:paddingLeft="@dimen/bn" android:paddingTop="@dimen/bn" android:paddingRight="@dimen/bn" android:paddingBottom="@dimen/bn" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/bl" android:src="@raw/media_player_control_btn" android:elevation="@dimen/ad7" />
+    </FrameLayout>
+</RelativeLayout>

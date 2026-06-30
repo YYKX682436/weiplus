@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.measurement;
+
+/* loaded from: classes16.dex */
+final class zzhc implements java.lang.Runnable {
+    private final /* synthetic */ com.google.android.gms.internal.measurement.zzdz zzane;
+    private final /* synthetic */ com.google.android.gms.internal.measurement.zzgn zzanf;
+    private final /* synthetic */ com.google.android.gms.internal.measurement.zzjx zzanl;
+
+    public zzhc(com.google.android.gms.internal.measurement.zzgn zzgnVar, com.google.android.gms.internal.measurement.zzjx zzjxVar, com.google.android.gms.internal.measurement.zzdz zzdzVar) {
+        this.zzanf = zzgnVar;
+        this.zzanl = zzjxVar;
+        this.zzane = zzdzVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        com.google.android.gms.internal.measurement.zzjr zzjrVar;
+        com.google.android.gms.internal.measurement.zzjr zzjrVar2;
+        zzjrVar = this.zzanf.zzajp;
+        zzjrVar.zzkx();
+        zzjrVar2 = this.zzanf.zzajp;
+        zzjrVar2.zzb(this.zzanl, this.zzane);
+    }
+}

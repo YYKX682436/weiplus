@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/xo" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_gravity="center_vertical" android:background="@color/BW_0_Alpha_0_0_3" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginStart="@dimen/cn" app:ds="10.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:padding="@dimen/bj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/outlined_arrow_down" app:fs="@color/FG_0" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:layout_gravity="center" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.RefreshLoadMoreLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" app:loadMoreLayout="@layout/bs5">
+            <androidx.recyclerview.widget.RecyclerView android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.view.RefreshLoadMoreLayout>
+        <FrameLayout android:id="@id/im7" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.ui.widget.MMProcessBar android:layout_gravity="center_horizontal" android:background="@drawable/akq" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginTop="64.0dp" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

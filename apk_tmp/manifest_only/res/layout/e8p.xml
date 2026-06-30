@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mxr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <TextView android:textSize="15.0dp" android:textColor="@color/ah_" android:gravity="left|center" android:id="@id/emp" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="@dimen/dd" android:text="@string/eiv" android:singleLine="true" app:layout_constraintEnd_toStartOf="@id/mx2" app:layout_constraintStart_toStartOf="0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ug0" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_live_outlined_music_loop_list" app:fs="@color/FG_0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jg_" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:src="@raw/finder_live_music_menu" app:fs="@color/abw" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/l9" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:src="@raw/finder_live_music_add" app:fs="@color/FG_0" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dh" />
+</RelativeLayout>

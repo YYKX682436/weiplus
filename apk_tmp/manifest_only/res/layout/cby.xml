@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/li5" android:background="@drawable/q2" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/li0" android:layout_width="@dimen/j7" android:layout_height="@dimen/j7" android:src="@drawable/bx" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/li3" android:background="@drawable/bfj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/b1" android:layout_weight="1.0" android:layout_marginStart="@dimen/cn">
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:id="@id/i0l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jg1" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/jj" android:ellipsize="end" android:gravity="right" android:id="@id/nbu" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="@string/jbq" android:singleLine="true" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/m38" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/arrow_right" android:scaleType="center" android:layout_marginStart="@dimen/cn" app:fs="@color/a6o" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/nbs" android:background="@drawable/q2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1">
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/ff" android:ellipsize="end" android:id="@id/nbr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jbq" android:singleLine="true" android:layout_marginStart="@dimen/db" />
+    </LinearLayout>
+</LinearLayout>

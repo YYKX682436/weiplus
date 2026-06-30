@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.AddFriendSearchPreference android:key="find_friends_by_input" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.AddFriendItemPreference android:fr="@raw/scan_regular" android:fs="@color/Indigo_100" android:key="find_friends_by_qrcode" android:summary="@string/cft" android:title="@string/cfs" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.AddFriendItemPreference android:fr="@raw/phone_rectangle_regular" android:fs="@color/Brand_100" android:key="find_friends_by_other_way" android:summary="@string/cfr" android:title="@string/cfq" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.AddFriendItemPreference android:fr="@raw/radar_regular" android:fs="@color/Purple_100" android:key="find_friends_by_radar" android:summary="@string/cfv" android:title="@string/cfu" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.AddFriendItemPreference android:fr="@raw/email_regular" android:fs="@color/Indigo_100" android:key="find_friends_by_invite" android:summary="@string/cfn" android:title="@string/cfm" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.AddFriendItemPreference android:fr="@raw/enterprisewechat_filled_colorful" android:key="find_friends_by_ww" android:summary="@string/cs" android:title="@string/ct" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.AddFriendItemPreference android:fr="@raw/person_2_regular" android:fs="@color/Brand_100" android:key="find_friends_create_pwdgroup" android:summary="@string/cfy" android:title="@string/cfx" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.BottomAddFriendItemPreference android:fr="@raw/official_accounts_new_regular" android:fs="@color/Indigo_100" android:key="find_friends_by_web" android:summary="@string/cfw" android:title="@string/c5z" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.BottomAddFriendItemPreference android:fr="@raw/icon_add_more_friends_brand_service" android:key="find_friends_by_brand_service" android:summary="@string/nhu" android:title="@string/nht" />
+    <com.tencent.mm.plugin.subapp.ui.pluginapp.QRCodeFooterPreference android:key="find_friends_bottom_qr_code_info" />
+</PreferenceScreen>

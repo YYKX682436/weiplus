@@ -1,0 +1,27 @@
+package mi1;
+
+/* loaded from: classes7.dex */
+public final class l1 extends android.animation.AnimatorListenerAdapter {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ mi1.q1 f326612d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ kotlinx.coroutines.q f326613e;
+
+    public l1(mi1.q1 q1Var, kotlinx.coroutines.q qVar) {
+        this.f326612d = q1Var;
+        this.f326613e = qVar;
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationEnd(android.animation.Animator animation) {
+        kotlin.jvm.internal.o.g(animation, "animation");
+        this.f326612d.f326665f.f326567a = 0;
+        kotlinx.coroutines.q qVar = this.f326613e;
+        if (((kotlinx.coroutines.r) qVar).n()) {
+            kotlin.Result.Companion companion = kotlin.Result.INSTANCE;
+            qVar.resumeWith(kotlin.Result.m521constructorimpl(jz5.f0.f302826a));
+        }
+    }
+}

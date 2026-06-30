@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#4dffffff" android:id="@id/psy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/psw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp">
+        <View android:background="#4dffffff" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_centerVertical="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" android:layout_alignParentStart="true" />
+        <com.tencent.mm.xwebutil.XWebAudioPlayerProgressBall android:id="@id/psx" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#4dffffff" android:id="@id/psz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

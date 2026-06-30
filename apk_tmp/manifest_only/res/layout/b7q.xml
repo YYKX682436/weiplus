@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.HardTouchableLayout android:id="@id/cgk" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/fxp" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fxo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/fxq" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="1:1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <View android:id="@id/fxr" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/fxq" app:layout_constraintDimensionRatio="w,1:2" app:layout_constraintStart_toStartOf="@id/fxq" />
+        <View android:id="@id/fxs" android:background="@color/BW_0_Alpha_0_4" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cj5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/a24" android:background="@color/f" android:layout_width="match_parent" android:layout_height="wrap_content" app:eg="10.0dp" app:expanded="true">
+            <FrameLayout android:layout_gravity="start|center" android:id="@id/gy0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:minHeight="0.0dp" app:layout_scrollFlags="0x3" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/zz">
+            <FrameLayout android:id="@id/nur" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_scrollFlags="0x3">
+                <com.tencent.mm.view.HardTouchableLayout android:id="@id/nuq" android:background="@drawable/av3" android:paddingBottom="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ca" android:paddingEnd="@dimen/i1">
+                    <com.google.android.material.tabs.TabLayout android:layout_gravity="start" android:id="@id/nup" android:layout_width="wrap_content" android:layout_height="@dimen/d9" app:tabBackground="@color/a9e" app:jd="bdp" app:jf="@drawable/abj" app:jh="@color/a0c" app:ji="false" app:jk="2.0dp" app:tabMinWidth="0.0dp" app:jm="mcp" app:jn="@dimen/bn" app:jo="@dimen/bn" app:jp="@color/a9e" app:jq="@color/ac" app:jt="@color/jj" />
+                </com.tencent.mm.view.HardTouchableLayout>
+                <View android:layout_gravity="bottom" android:id="@id/nv9" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" />
+            </FrameLayout>
+            <com.tencent.mm.plugin.finder.view.FinderViewPager android:id="@id/p16" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/nur" />
+            <FrameLayout android:id="@id/oaj" android:background="@color/f" android:paddingTop="@dimen/c3" android:paddingBottom="@dimen/bu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/gcg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/gch" android:clickable="false" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/finder_icons_filled_lock" app:fs="@color/FG_2" />
+                    <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_2" android:id="@id/gci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:text="@string/ezv" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/oao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ezm" style="@style/s4" />
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/oav" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/el4" style="@style/s4" />
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/oaq" android:padding="@dimen/c9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/f3h">
+                    <TextView android:textSize="@dimen/b3" android:textColor="@color/a5" android:gravity="center" android:id="@id/oat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f3h" style="@style/s4" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/oar" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bl" android:layout_toEndOf="@id/oat" app:fs="@color/a5" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/oa1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/oa2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/s4" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="@dimen/bl" app:fs="@color/BW_0_Alpha_0_5" />
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/oai" android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:indeterminateDrawable="@drawable/avg" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include android:id="@id/l9i" android:visibility="gone" layout="@layout/ada" />
+    <include layout="@layout/b6_" />
+    <com.tencent.mm.plugin.finder.view.FinderJumpAnchorView android:gravity="center_vertical" android:layout_gravity="end|bottom" android:id="@id/fz8" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dn" app:anchorTitle="@string/ez3" />
+</com.tencent.mm.view.HardTouchableLayout>

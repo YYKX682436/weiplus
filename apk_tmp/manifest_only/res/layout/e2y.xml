@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/atj" android:paddingTop="@dimen/aii" android:paddingBottom="@dimen/aii" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ozx" android:background="@drawable/axt" android:layout_width="@dimen/ajr" android:layout_height="@dimen/ajr" android:contentDescription="@string/w_" android:layout_marginEnd="@dimen/aij" android:layout_alignParentEnd="true" android:elevation="@dimen/ad7">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/aij" android:layout_height="@dimen/aij" android:src="@raw/icons_filled_more" app:fs="@color/an" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/d2y" android:background="@drawable/axt" android:layout_width="@dimen/ajr" android:layout_height="@dimen/ajr" android:contentDescription="@string/bqh" android:layout_marginEnd="@dimen/aii" android:layout_toStartOf="@id/ozx" android:elevation="@dimen/ad7">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/aij" android:layout_height="@dimen/aij" android:src="@raw/icons_filled_download" app:fs="@color/an" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/aij" android:layout_marginEnd="@dimen/ajw" android:layout_toStartOf="@id/d2y">
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/aby" android:ellipsize="end" android:gravity="center" android:layout_gravity="start|center" android:id="@id/u7v" android:background="@drawable/ah8" android:paddingLeft="@dimen/aih" android:paddingRight="@dimen/aih" android:layout_width="wrap_content" android:layout_height="@dimen/ajr" android:minWidth="@dimen/aki" android:text="来自“xxx”" android:maxLines="1" android:paddingHorizontal="@dimen/aih" />
+    </FrameLayout>
+</RelativeLayout>

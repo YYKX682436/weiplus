@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/tsu" android:background="@drawable/d49" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:gravity="center" android:id="@id/tsw" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/dn" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tsx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/d1">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dn">
+                <FrameLayout android:id="@id/tsy" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_centerVertical="true" android:contentDescription="@string/b9a" android:layout_marginStart="@dimen/dv">
+                    <TextView android:textSize="@dimen/a9x" android:textColor="@color/a0c" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sg" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </FrameLayout>
+                <com.tencent.mm.ui.widget.button.WeButton android:gravity="center" android:id="@id/tsz" android:layout_width="@dimen/dh" android:layout_height="@dimen/d7" android:text="@string/n3o" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" style="@style/xm" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/tt2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:maxLines="1" android:layout_marginStart="@dimen/d1" android:layout_marginEnd="@dimen/d1" />
+            <RelativeLayout android:background="@drawable/xv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+                <com.tencent.mm.ui.widget.MMEditText android:textSize="@dimen/b3" android:textColor="@color/FG_0" android:textColorHint="@color/FG_2" android:gravity="center_vertical" android:id="@id/tt1" android:background="@drawable/xv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/db" android:textCursorDrawable="@drawable/afr" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9" android:layout_toStartOf="@id/tt0">
+                    <requestFocus />
+                </com.tencent.mm.ui.widget.MMEditText>
+                <TextView android:textSize="@dimen/f9" android:textColor="@color/FG_2" android:gravity="center_vertical" android:id="@id/tt0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:paddingEnd="@dimen/c9" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:layout_gravity="center_vertical" android:id="@id/tsv" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ca" android:layout_marginBottom="@dimen/d1" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" />
+    </RelativeLayout>
+</RelativeLayout>

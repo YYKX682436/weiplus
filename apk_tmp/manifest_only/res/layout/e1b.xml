@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bjy" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/a1l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingFileMvvmView android:id="@id/sqb" android:background="@drawable/mi" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/lu" />
+                <include layout="@layout/e26" />
+                <com.tencent.mm.chatting.mvvmview.widget.ChattingMsgSourceView android:id="@id/sro" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

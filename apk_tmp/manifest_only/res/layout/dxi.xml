@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/c" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/d7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <ProgressBar android:id="@id/imb" android:visibility="gone" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" style="@style/w1" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ria" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/icons_pc" />
+    <ImageView android:id="@id/rrp" android:visibility="gone" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:src="@drawable/co9" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/adg" android:gravity="center" android:id="@id/ric" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" />
+    <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/fa" android:gravity="center" android:id="@id/odf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/fa" android:gravity="center" android:id="@id/h0h" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" />
+    <View android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="3.0" />
+    <Button android:textStyle="bold" android:id="@id/rqq" android:text="@string/acg" style="@style/kr" />
+    <Button android:textStyle="bold" android:id="@id/rqr" android:visibility="gone" android:text="@string/a_b" style="@style/kz" />
+    <View android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+</LinearLayout>

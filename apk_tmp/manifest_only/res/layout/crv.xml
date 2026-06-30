@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/tzo" android:background="@color/f3" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ght" android:background="@color/f3" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/hw8" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/cgi" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/chw" />
+    <com.tencent.mm.plugin.scanner.MultiCodeMaskView android:id="@id/jun" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

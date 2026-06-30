@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/eib" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:ds="@dimen/dv">
+        <com.tencent.mm.plugin.finder.view.UnLimitedRecyclerView android:id="@id/eic" android:layout_width="wrap_content" android:layout_height="@dimen/bo" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sog" android:background="@drawable/d6s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/d7" android:paddingStart="@dimen/c8" android:paddingEnd="@dimen/bn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/soh" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/gift_effect_on_filled" app:fs="@color/a6" />
+        <TextView android:textSize="@dimen/aju" android:textColor="@color/BW_F_Alpha_0_8" android:ellipsize="end" android:gravity="center" android:id="@id/soi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/dv" />
+        <TextView android:textSize="@dimen/aks" android:textStyle="bold" android:textColor="@color/acs" android:ellipsize="end" android:gravity="center" android:id="@id/sof" android:background="@drawable/d6t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ct" android:text="@string/pax" android:maxLines="1" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/dv" android:layout_marginStart="@dimen/dv" />
+    </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+</FrameLayout>

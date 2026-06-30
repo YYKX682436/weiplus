@@ -1,0 +1,20 @@
+package po0;
+
+/* loaded from: classes8.dex */
+public final class c implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ yz5.l f357284d;
+
+    public c(yz5.l lVar) {
+        this.f357284d = lVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        yz5.l lVar = this.f357284d;
+        if (lVar != null) {
+            lVar.invoke(null);
+        }
+    }
+}

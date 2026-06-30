@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/eva" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/er1" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dj4" />
+    </FrameLayout>
+    <com.tencent.mm.plugin.finder.live.view.FinderMaxSizeLayout android:id="@id/ev2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/shy" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/ev9" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.0" app:layout_constraintVertical_chainStyle="2">
+                <include android:id="@id/f4w" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/asw" />
+                <include android:id="@id/uag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/apg" />
+            </LinearLayout>
+            <com.tencent.mm.plugin.finder.live.view.FinderLiveOverScrollRecyclerView android:id="@id/ev9" android:fadingEdge="vertical" android:fadingEdgeLength="16.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:requiresFadingEdge="vertical" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/rdu" app:layout_constraintTop_toBottomOf="@id/shy" />
+            <FrameLayout android:id="@id/rdu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/ev9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/i8o" android:background="@drawable/ak5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginEnd="@dimen/df">
+            <TextView android:textSize="14.0dp" android:textColor="@color/f3" android:id="@id/i8p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:text="aaa" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_double_arrow_down" android:layout_toRightOf="@id/i8p" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" app:fs="#000000" />
+        </RelativeLayout>
+        <include android:id="@id/i8j" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/apg" />
+    </com.tencent.mm.plugin.finder.live.view.FinderMaxSizeLayout>
+</LinearLayout>

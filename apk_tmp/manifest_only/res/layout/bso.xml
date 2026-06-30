@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <com.tencent.mm.ui.MMImageView android:layout_gravity="center_vertical" android:id="@id/bys" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bdf" android:layout_marginStart="@dimen/cn" />
+    </FrameLayout>
+    <com.tencent.mm.ui.MMImageView android:id="@id/h5n" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dv" android:src="@drawable/c8m" />
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/jud" android:textAlignment="center" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" />
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/cb" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/jub" android:alpha="0.5" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" />
+    <Button android:id="@id/c9x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/dj" android:text="@string/olp" style="@style/kz" />
+</LinearLayout>

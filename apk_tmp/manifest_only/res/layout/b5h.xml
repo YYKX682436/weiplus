@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/e1j" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cq" android:layout_marginBottom="@dimen/cq"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hq" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/finder_outlined_activity" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:fs="@color/FG_0" />
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/kzu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cjn" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dv" android:layout_toStartOf="@id/m3b" android:layout_toEndOf="@id/hq" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m3b" android:layout_width="@dimen/c8" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/BW_70" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingVertical="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/rs9" android:layout_width="@dimen/d0" android:layout_height="@dimen/d0" android:scaleType="centerCrop" app:i8="@dimen/cn" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/an" android:layout_gravity="center_horizontal" android:id="@id/vd3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bk" android:text="@string/n26" android:singleLine="true" android:shadowColor="@color/acq" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:importantForAccessibility="no" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/an" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/s87" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bh" android:maxWidth="@dimen/dj" android:maxLines="2" android:shadowColor="@color/acq" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rej" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ca">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rs_" android:layout_width="@dimen/d2" android:layout_height="@dimen/d2" android:src="@drawable/cwm" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/an" android:layout_gravity="center_horizontal" android:id="@id/s88" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/n28" android:singleLine="true" android:shadowColor="@color/acq" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:importantForAccessibility="no" />
+    </LinearLayout>
+</LinearLayout>

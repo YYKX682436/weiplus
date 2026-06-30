@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes9.dex */
+public class kv2 extends com.tencent.mm.protobuf.e {
+    public kv2() {
+        super(com.tencent.mm.protobuf.i.u(1, "objectId"), com.tencent.mm.protobuf.i.u(2, dm.i4.COL_USERNAME), com.tencent.mm.protobuf.i.u(3, "nickname"), com.tencent.mm.protobuf.i.u(4, "avatar"), com.tencent.mm.protobuf.i.u(5, "desc"), com.tencent.mm.protobuf.i.i(6, "feedType"), com.tencent.mm.protobuf.i.i(7, "mediaCount"), com.tencent.mm.protobuf.i.s(8, "mediaList", r45.iv2.class), com.tencent.mm.protobuf.i.u(9, "objectNonceId"), com.tencent.mm.protobuf.i.n(10, dm.i4.COL_LOCALID), com.tencent.mm.protobuf.i.u(11, "megaVideoId"), com.tencent.mm.protobuf.i.u(12, "megaVideoObjectNonceId"), com.tencent.mm.protobuf.i.u(13, "bizUsername"), com.tencent.mm.protobuf.i.i(14, "authIconType"), com.tencent.mm.protobuf.i.u(15, "authIconUrl"), com.tencent.mm.protobuf.i.u(16, "bizNickname"), com.tencent.mm.protobuf.i.u(17, "bizAvatar"), com.tencent.mm.protobuf.i.u(18, "bizUsernameV2"), com.tencent.mm.protobuf.i.i(19, "bizAuthIconType"), com.tencent.mm.protobuf.i.u(20, "bizAuthIconUrl"), com.tencent.mm.protobuf.i.i(21, "coverEffectType"), com.tencent.mm.protobuf.i.u(22, "coverEffectText"), com.tencent.mm.protobuf.i.u(23, "finderForwardSource"), com.tencent.mm.protobuf.i.u(24, "contactJumpInfoStr"), com.tencent.mm.protobuf.i.u(25, "ecSource"), com.tencent.mm.protobuf.i.i(26, "natureFlag"), com.tencent.mm.protobuf.i.a(27, "shareBypData"), com.tencent.mm.protobuf.i.u(28, "lastGMsgID"), com.tencent.mm.protobuf.i.r(29, "newlifeShareExtInfo", r45.mv4.class), com.tencent.mm.protobuf.i.i(30, "sourceCommentScene"), com.tencent.mm.protobuf.i.r(31, "finderShareExtInfo", r45.gv2.class), com.tencent.mm.protobuf.i.i(32, com.tencent.tmassistantsdk.downloadservice.DownloadInfo.CONTENTTYPE));
+        this.__printBytes = true;
+    }
+}

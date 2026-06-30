@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:mm="http://schemas.android.com/apk/res-auto">
+    <PreferenceTitleCategory mm:key="settings_netstat_info" />
+    <Preference mm:key="settings_netstat_mobile" mm:gc="@layout/byv" mm:title="@string/itv" />
+    <com.tencent.mm.plugin.setting.ui.setting.NetStatPreference mm:key="settings_netstat_mobile_detail" mm:gc="@layout/byv" mm:srcType="0" />
+    <PreferenceCategory />
+    <Preference mm:key="settings_netstat_wifi" mm:gc="@layout/byv" mm:title="@string/itz" />
+    <com.tencent.mm.plugin.setting.ui.setting.NetStatPreference mm:key="settings_netstat_wifi_detail" mm:gc="@layout/byv" mm:srcType="1" />
+    <Preference mm:key="settings_netstat_tip" mm:gc="@layout/c0d" mm:title="@string/izz" />
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/hzu" android:layout_width="match_parent" android:layout_height="53.0dp" style="@style/ja"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="1.0dp">
+        <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/c8j" android:background="@drawable/aoe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/aj" android:layout_height="@dimen/aj" android:layout_marginEnd="@dimen/j" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/hs6" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.MMTextView android:textSize="17.0dp" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/hs8" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxWidth="240.0dp" android:text="打火机" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/ca" android:textColor="@color/BW_0_Alpha_0_3" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/hs7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="（0）" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/c8h" android:layout_width="@dimen/aag" android:layout_height="@dimen/aad" android:layout_marginLeft="@dimen/aae" android:layout_marginRight="@dimen/aaf" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:id="@id/a5s" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/t5a" android:layout_width="@dimen/amh" android:layout_height="@dimen/amm" android:scaleType="centerCrop" app:i8="@dimen/bl" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/abw" android:id="@id/t5b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxLines="1" android:singleLine="true" android:layout_below="@id/t5a" android:layout_alignRight="@id/t5a" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/adg" android:id="@id/t5c" android:paddingRight="@dimen/bl" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:maxLines="1" android:singleLine="true" android:layout_below="@id/t5b" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/adg" android:id="@id/t5_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/t5c" android:layout_below="@id/t5b" android:layout_alignRight="@id/t5a" />
+</RelativeLayout>

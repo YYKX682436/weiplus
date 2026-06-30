@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fw0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l20" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.tencent.mm.view.RingProgressView android:id="@id/l1z" android:layout_width="@dimen/d2" android:layout_height="@dimen/d2" app:circleStrokeWidth="@dimen/bk" app:foreColor="@color/Brand_100" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv">
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/adh" android:id="@id/l1t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ez2" />
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/adi" android:ellipsize="end" android:id="@id/r8f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/o0m" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l0b" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_error" app:fs="@color/ac" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv">
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/adh" android:ellipsize="end" android:id="@id/dph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nn6" android:maxLines="1" />
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/adi" android:ellipsize="end" android:id="@id/t9n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/nn7" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/l06" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_delete" app:fs="@color/adh" />
+        <TextView android:textSize="@dimen/f9" android:textColor="@color/adh" android:id="@id/l08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/csz" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l1l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/l1k" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_refresh" app:fs="@color/adh" />
+        <TextView android:textSize="@dimen/f9" android:textColor="@color/adh" android:id="@id/l1m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/y3" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/bo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/kfq" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@drawable/c7u" android:layout_centerInParent="true" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" android:layout_alignParentStart="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_toStartOf="@id/pjk" android:layout_toEndOf="@id/kfq">
+        <TextView android:textSize="22.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/kg0" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="name" android:maxLines="1" android:lines="1" android:layout_alignParentTop="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/kg0">
+            <ImageView android:layout_gravity="start|center" android:id="@id/kfv" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@drawable/c7u" android:layout_marginEnd="4.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/kg7" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="20.0dp" android:maxWidth="200.0dp" android:text="action" android:maxLines="1" android:lines="1" android:layout_alignBottom="@id/kg0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/pjk" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cn" android:src="@drawable/c7u" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" />
+</RelativeLayout>

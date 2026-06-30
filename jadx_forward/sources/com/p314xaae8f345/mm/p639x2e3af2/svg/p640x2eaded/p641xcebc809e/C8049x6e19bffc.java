@@ -1,0 +1,88 @@
+package com.p314xaae8f345.mm.p639x2e3af2.svg.p640x2eaded.p641xcebc809e;
+
+/* renamed from: com.tencent.mm.boot.svg.code.drawable.finder_live_anchor_icon_talk_on */
+/* loaded from: classes16.dex */
+public class C8049x6e19bffc extends l95.c {
+
+    /* renamed from: width */
+    private final int f23297x6be2dc6 = 72;
+
+    /* renamed from: height */
+    private final int f23296xb7389127 = 72;
+
+    @Override // l95.c
+    /* renamed from: doCommand */
+    public int mo43368x913c4840(int i17, java.lang.Object... objArr) {
+        if (i17 == 0 || i17 == 1) {
+            return 72;
+        }
+        if (i17 == 2) {
+            android.graphics.Canvas canvas = (android.graphics.Canvas) objArr[0];
+            android.os.Looper looper = (android.os.Looper) objArr[1];
+            l95.c.m145412xe5ca94b6(looper);
+            l95.c.m145413xf00d6f43(looper);
+            android.graphics.Paint m145415xacbd08c9 = l95.c.m145415xacbd08c9(looper);
+            m145415xacbd08c9.setFlags(385);
+            m145415xacbd08c9.setStyle(android.graphics.Paint.Style.FILL);
+            android.graphics.Paint m145415xacbd08c92 = l95.c.m145415xacbd08c9(looper);
+            m145415xacbd08c92.setFlags(385);
+            m145415xacbd08c92.setStyle(android.graphics.Paint.Style.STROKE);
+            m145415xacbd08c9.setColor(-16777216);
+            m145415xacbd08c92.setStrokeWidth(1.0f);
+            m145415xacbd08c92.setStrokeCap(android.graphics.Paint.Cap.BUTT);
+            m145415xacbd08c92.setStrokeJoin(android.graphics.Paint.Join.MITER);
+            m145415xacbd08c92.setStrokeMiter(4.0f);
+            m145415xacbd08c92.setPathEffect(null);
+            canvas.save();
+            android.graphics.Paint m145414xacbd08c9 = l95.c.m145414xacbd08c9(m145415xacbd08c9, looper);
+            android.graphics.Path m145417xd4061a5a = l95.c.m145417xd4061a5a(looper);
+            m145417xd4061a5a.moveTo(29.148438f, 14.0f);
+            m145417xd4061a5a.cubicTo(29.128906f, 13.949219f, 29.105469f, 13.898438f, 29.082031f, 13.851562f);
+            m145417xd4061a5a.cubicTo(28.488281f, 12.664062f, 27.046875f, 12.183594f, 25.859375f, 12.777344f);
+            m145417xd4061a5a.lineTo(15.601562f, 17.90625f);
+            m145417xd4061a5a.lineTo(15.601562f, 52.308594f);
+            m145417xd4061a5a.lineTo(27.394531f, 57.36328f);
+            m145417xd4061a5a.cubicTo(27.570312f, 57.4375f, 27.753906f, 57.492188f, 27.945312f, 57.523438f);
+            m145417xd4061a5a.cubicTo(29.25f, 57.742188f, 30.488281f, 56.859375f, 30.707031f, 55.55078f);
+            m145417xd4061a5a.lineTo(32.804688f, 42.953125f);
+            m145417xd4061a5a.lineTo(40.1875f, 40.492188f);
+            m145417xd4061a5a.close();
+            m145417xd4061a5a.moveTo(41.9375f, 43.703125f);
+            m145417xd4061a5a.lineTo(36.0f, 45.683594f);
+            m145417xd4061a5a.lineTo(34.257812f, 56.14453f);
+            m145417xd4061a5a.cubicTo(33.710938f, 59.410156f, 30.621094f, 61.621094f, 27.351562f, 61.07422f);
+            m145417xd4061a5a.cubicTo(26.878906f, 60.996094f, 26.414062f, 60.859375f, 25.976562f, 60.671875f);
+            m145417xd4061a5a.lineTo(13.816406f, 55.460938f);
+            m145417xd4061a5a.cubicTo(12.714844f, 54.98828f, 12.0f, 53.90625f, 12.0f, 52.703125f);
+            m145417xd4061a5a.lineTo(12.0f, 17.535156f);
+            m145417xd4061a5a.cubicTo(12.0f, 16.402344f, 12.640625f, 15.363281f, 13.660156f, 14.855469f);
+            m145417xd4061a5a.lineTo(24.25f, 9.558594f);
+            m145417xd4061a5a.cubicTo(27.214844f, 8.074219f, 30.820312f, 9.277344f, 32.30078f, 12.242188f);
+            m145417xd4061a5a.cubicTo(32.36328f, 12.363281f, 32.41797f, 12.488281f, 32.472656f, 12.617188f);
+            m145417xd4061a5a.lineTo(43.757812f, 39.703125f);
+            m145417xd4061a5a.cubicTo(44.39453f, 41.234375f, 43.671875f, 42.98828f, 42.14453f, 43.625f);
+            m145417xd4061a5a.cubicTo(42.07422f, 43.65625f, 42.007812f, 43.679688f, 41.9375f, 43.703125f);
+            m145417xd4061a5a.close();
+            m145417xd4061a5a.moveTo(55.96875f, 22.03125f);
+            m145417xd4061a5a.cubicTo(60.3125f, 26.371094f, 63.0f, 32.371094f, 63.0f, 39.0f);
+            m145417xd4061a5a.cubicTo(63.0f, 45.628906f, 60.3125f, 51.628906f, 55.96875f, 55.96875f);
+            m145417xd4061a5a.lineTo(53.42578f, 53.42578f);
+            m145417xd4061a5a.cubicTo(57.226562f, 49.621094f, 59.398438f, 44.48828f, 59.398438f, 39.0f);
+            m145417xd4061a5a.cubicTo(59.398438f, 33.51172f, 57.226562f, 28.378906f, 53.42578f, 24.574219f);
+            m145417xd4061a5a.close();
+            m145417xd4061a5a.moveTo(50.03125f, 27.96875f);
+            m145417xd4061a5a.cubicTo(52.85547f, 30.792969f, 54.601562f, 34.691406f, 54.601562f, 39.0f);
+            m145417xd4061a5a.cubicTo(54.601562f, 43.308594f, 52.85547f, 47.20703f, 50.03125f, 50.03125f);
+            m145417xd4061a5a.lineTo(47.484375f, 47.484375f);
+            m145417xd4061a5a.cubicTo(49.722656f, 45.246094f, 51.0f, 42.23047f, 51.0f, 39.0f);
+            m145417xd4061a5a.cubicTo(51.0f, 35.76953f, 49.722656f, 32.753906f, 47.484375f, 30.515625f);
+            m145417xd4061a5a.close();
+            m145417xd4061a5a.moveTo(50.03125f, 27.96875f);
+            com.p314xaae8f345.mm.svg.C21323x60230c65.m78192x4b1e1ddf(m145417xd4061a5a, 1);
+            canvas.drawPath(m145417xd4061a5a, m145414xacbd08c9);
+            canvas.restore();
+            l95.c.m145409x2f2382(looper);
+        }
+        return 0;
+    }
+}

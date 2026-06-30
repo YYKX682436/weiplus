@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ctu" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.backup.roambackup.ui.component.DialogActionBar android:id="@id/r4w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/r53" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/cn" android:src="@raw/info_circle_regular" android:layout_below="@id/r4w" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/abw" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cz" android:text="@string/mvo" android:layout_below="@id/r53" />
+    <Button android:id="@id/r4x" android:layout_marginBottom="@dimen/bo" android:text="@string/mvz" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kr" />
+</RelativeLayout>

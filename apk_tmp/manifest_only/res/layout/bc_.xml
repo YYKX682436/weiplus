@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ri" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mem" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="16.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="middle" android:id="@id/gzf" android:paddingBottom="@dimen/j3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{header}" android:singleLine="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/Link_100" android:gravity="center|bottom" android:id="@id/gyu" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/j3" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/w0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/knz" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <View android:background="@color/a" android:layout_width="match_parent" android:layout_height="8.0dp" />
+        <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/ei" android:layout_alignParentBottom="true" />
+</RelativeLayout>

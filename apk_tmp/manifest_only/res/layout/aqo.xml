@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c9">
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/an" android:id="@id/dqy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/ddo" />
+        <TextView android:textSize="@dimen/ca" android:textColor="#cfb177" android:id="@id/qiu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lu1" android:layout_toRightOf="@id/dqy" android:layout_alignBaseline="@id/dqy" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/dsn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/cn" android:text="@string/dei" android:layout_below="@id/dqy" />
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/dqz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/dsn" android:layout_marginStart="@dimen/xu" android:layout_marginEnd="@dimen/dv" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/drc" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

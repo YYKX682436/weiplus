@@ -1,0 +1,279 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a;
+
+/* loaded from: classes7.dex */
+public class n3 extends com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.y8 f157815d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final java.util.Map f157816e = new java.util.HashMap();
+
+    public n3(com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.y8 y8Var) {
+        this.f157815d = y8Var;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: accept */
+    public boolean mo49299xab27b508(java.lang.String str) {
+        return true;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: access */
+    public com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 mo49300xab27b564(java.lang.String str) {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 b17 = b(str);
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 j1Var = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.RET_NOT_EXISTS;
+        if (b17 != j1Var) {
+            return b17;
+        }
+        if (str.length() == 0) {
+            return j1Var;
+        }
+        java.lang.String b18 = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.l1.b(str, true);
+        if (!b18.substring(b18.length() - 1).equals("/")) {
+            b18 = b18.concat("/");
+        }
+        java.util.Iterator it = this.f157815d.j().iterator();
+        while (it.hasNext()) {
+            if (((com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.C11663x8e8dee46) it.next()).f156922e.startsWith(b18)) {
+                return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.OK;
+            }
+        }
+        return b17;
+    }
+
+    public final com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 b(java.lang.String str) {
+        java.io.InputStream c17 = this.f157815d.c(str);
+        if (c17 == null) {
+            return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.RET_NOT_EXISTS;
+        }
+        com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.v1(c17);
+        return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.OK;
+    }
+
+    public final void c(java.lang.String str) {
+        if (!str.startsWith("/")) {
+            str = "/".concat(str);
+        }
+        if (str.contains("\\") || str.trim().isEmpty()) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.WxaPkgFileSystem", "updateDirAccessTimeRecord: path = [%s] is illegal", str);
+            return;
+        }
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        while (true) {
+            if (!str.equals("")) {
+                if (str.endsWith("/")) {
+                    com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.WxaPkgFileSystem", "updateDirAccessTimeRecord: file = [%s] is illegal", str);
+                    break;
+                }
+                str = str.substring(0, str.lastIndexOf("/"));
+                if (str.equals("")) {
+                    arrayList.add("/");
+                } else {
+                    arrayList.add(str.concat("/"));
+                }
+            } else {
+                break;
+            }
+        }
+        java.util.Iterator it = arrayList.iterator();
+        while (it.hasNext()) {
+            java.lang.String str2 = (java.lang.String) it.next();
+            ((java.util.HashMap) this.f157816e).put(str2, java.lang.Long.valueOf(java.lang.System.currentTimeMillis() / 1000));
+        }
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: getAbsoluteFile */
+    public com.p314xaae8f345.mm.vfs.r6 mo49301x1d537609(java.lang.String str, boolean z17) {
+        if (!z17) {
+            if (mo49303x5fd6f23(str) == com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.OK) {
+                return null;
+            }
+        }
+        java.lang.String a17 = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.y5.a(this.f157815d, str);
+        if (android.text.TextUtils.isEmpty(a17)) {
+            return null;
+        }
+        return new com.p314xaae8f345.mm.vfs.r6(a17);
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: initialize */
+    public void mo49302x33ebcb90() {
+        this.f157815d.a();
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: isdir */
+    public com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 mo49303x5fd6f23(java.lang.String str) {
+        return mo49305x40654317(str, new ik1.b0());
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: readDir */
+    public com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 mo49305x40654317(java.lang.String str, ik1.b0 b0Var) {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 b17 = b(str);
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 j1Var = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.OK;
+        if (b17 == j1Var) {
+            return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.ERR_IS_FILE;
+        }
+        java.lang.String b18 = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.l1.b(str, true);
+        java.util.List<com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.C11663x8e8dee46> j17 = this.f157815d.j();
+        java.lang.String quote = java.util.regex.Pattern.quote(b18);
+        for (com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.C11663x8e8dee46 c11663x8e8dee46 : j17) {
+            if (c11663x8e8dee46.f156922e.startsWith(b18)) {
+                java.lang.String replaceFirst = c11663x8e8dee46.f156922e.replaceFirst(quote, "");
+                if (replaceFirst.split("/").length <= 1) {
+                    com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.h1 h1Var = new com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.h1();
+                    h1Var.f157726a = replaceFirst;
+                    b0Var.f373357a = b0Var.f373357a == null ? new java.util.LinkedList() : (java.util.List) b0Var.f373357a;
+                    ((java.util.List) b0Var.f373357a).add(h1Var);
+                }
+            }
+        }
+        return b0Var.f373357a == null ? com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.RET_NOT_EXISTS : j1Var;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: readFile */
+    public com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 mo49306xcc440832(java.lang.String str, long j17, long j18, ik1.b0 b0Var) {
+        long available;
+        java.nio.ByteBuffer byteBuffer;
+        java.io.InputStream c17 = this.f157815d.c(str);
+        if (c17 == null) {
+            return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.RET_NOT_EXISTS;
+        }
+        try {
+            if (j18 == com.p314xaae8f345.p3121x37984a.p3125x2eaf9f.C26918x6e83759b.f58001x610e5697) {
+                try {
+                    available = c17.available() - j17;
+                } catch (java.lang.Exception e17) {
+                    com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.m40542x58ef3d35("MicroMsg.WxaPkgFileSystem", e17, "readFile", new java.lang.Object[0]);
+                    com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.v1(c17);
+                    return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.ERR_OP_FAIL;
+                }
+            } else {
+                available = j18;
+            }
+            com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 a17 = a(j17, available, c17.available());
+            com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 j1Var = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.OK;
+            if (a17 != j1Var) {
+                return a17;
+            }
+            if ((j17 == 0 && available == ((long) c17.available())) && (c17 instanceof nf.a)) {
+                byteBuffer = java.nio.ByteBuffer.allocateDirect(c17.available());
+                byteBuffer.put(((nf.a) c17).f418105d);
+            } else {
+                byte[] c18 = ik1.f.c(c17, j17, available);
+                java.nio.ByteBuffer allocateDirect = java.nio.ByteBuffer.allocateDirect(c18.length);
+                allocateDirect.put(java.nio.ByteBuffer.wrap(c18));
+                byteBuffer = allocateDirect;
+            }
+            byteBuffer.rewind();
+            b0Var.f373357a = byteBuffer;
+            c(str);
+            return j1Var;
+        } finally {
+            com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.v1(c17);
+        }
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: release */
+    public void mo49309x41012807() {
+        this.f157815d.close();
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: stat */
+    public com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 mo49310x360654(java.lang.String str, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.C11700x155a0685 c11700x155a0685) {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.y8 y8Var = this.f157815d;
+        java.io.InputStream c17 = y8Var.c(str);
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 j1Var = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.OK;
+        if (c17 != null) {
+            y8Var.q().m49607x15990000(c11700x155a0685);
+            try {
+                c11700x155a0685.f33490x8ecf5f1f = c17.available();
+                com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.v1(c17);
+            } catch (java.lang.Exception unused) {
+                com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.WxaPkgFileSystem", "stat(), %s stream.available fail", str);
+            }
+            return j1Var;
+        }
+        if (!str.endsWith("/")) {
+            str = str.concat("/");
+        }
+        if (!str.startsWith("/")) {
+            str = "/".concat(str);
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 b17 = b(str);
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 j1Var2 = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.RET_NOT_EXISTS;
+        if (b17 != j1Var2 || mo49300xab27b564(str) != j1Var) {
+            return j1Var2;
+        }
+        y8Var.q().m49607x15990000(c11700x155a0685);
+        c11700x155a0685.m49610xc97826ca();
+        c11700x155a0685.f33490x8ecf5f1f = 0L;
+        java.lang.Long l17 = (java.lang.Long) ((java.util.HashMap) this.f157816e).get(str);
+        if (l17 == null) {
+            return j1Var;
+        }
+        c11700x155a0685.f33486x4a239f50 = l17.longValue();
+        return j1Var;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: statDir */
+    public com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 mo49311x8eeb7599(java.lang.String str, java.util.List list) {
+        if (!str.endsWith("/")) {
+            str = str.concat("/");
+        }
+        if (!str.startsWith("/")) {
+            str = "/".concat(str);
+        }
+        if (str.contains("\\") || str.trim().isEmpty()) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.WxaPkgFileSystem", "statDir: path = [%s] is illegal", str);
+            return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.ERR_PERMISSION_DENIED;
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1029x45cb6201.y8 y8Var = this.f157815d;
+        y8Var.getClass();
+        for (java.lang.String str2 : new java.util.LinkedList(y8Var.f157605h.keySet())) {
+            if (str2.startsWith(str)) {
+                com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.h2 h2Var = new com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.h2(str2);
+                java.lang.String name = mo49310x360654(str2, h2Var).name();
+                if (name.equals("OK")) {
+                    list.add(h2Var);
+                } else {
+                    com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.w("MicroMsg.WxaPkgFileSystem", "statDir: stat [%s] fail:[%s]", str2, name);
+                }
+            }
+        }
+        return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.OK;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.y0, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.u1, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.InterfaceC11703x529c030f
+    /* renamed from: readFile */
+    public com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 mo49307xcc440832(java.lang.String str, ik1.b0 b0Var) {
+        java.io.InputStream c17 = this.f157815d.c(str);
+        if (c17 == null) {
+            return com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.RET_NOT_EXISTS;
+        }
+        try {
+            try {
+                int available = c17.available();
+                com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.v1(c17);
+                return mo49306xcc440832(str, 0L, available, b0Var);
+            } catch (java.io.IOException e17) {
+                com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.m40542x58ef3d35("MicroMsg.WxaPkgFileSystem", e17, "readFile", new java.lang.Object[0]);
+                com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1 j1Var = com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1033x6ff8513a.j1.ERR_OP_FAIL;
+                com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.v1(c17);
+                return j1Var;
+            }
+        } catch (java.lang.Throwable th6) {
+            com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.v1(c17);
+            throw th6;
+        }
+    }
+}

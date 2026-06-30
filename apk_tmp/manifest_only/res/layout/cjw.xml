@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/hh0" android:paddingLeft="@dimen/j3" android:layout_height="wrap_content" android:minHeight="@dimen/hr" style="@style/ju"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/b17" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/b16" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ak" android:src="@drawable/oo" />
+    </LinearLayout>
+    <com.tencent.mm.ui.base.MaskLayout android:id="@id/mjo" android:layout_width="@dimen/iw" android:layout_height="@dimen/iw" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv">
+        <ImageView android:id="@id/cgi" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@raw/default_avatar" android:layout_centerVertical="true" />
+    </com.tencent.mm.ui.base.MaskLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bfj" android:paddingRight="@dimen/cn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.tencent.mm.ui.base.EllipsizeTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/mjq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j8" android:text="{nick}" android:singleLine="true" style="@style/j3" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a3b" android:ellipsize="end" android:gravity="left|center" android:id="@id/mjp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j8" android:singleLine="true" style="@style/j3" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:background="@drawable/bfj" android:layout_width="56.0dp" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/smq" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="@dimen/cn" android:src="@raw/info_circle_regular" app:fs="@color/aaq" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="40.0dp" android:src="@raw/collect_main_savecode_success_icon" app:fs="@color/m" />
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/nrq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/nrr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="24.0dp">
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/nrp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/b0u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dp" android:layout_marginBottom="64.0dp">
+        <Button android:textSize="17.0dp" android:id="@id/b0e" android:layout_width="156.0dp" android:layout_height="@dimen/df" style="@style/kz" />
+        <Button android:textSize="17.0dp" android:id="@id/b0f" android:layout_width="156.0dp" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cn" style="@style/kr" />
+        <Button android:id="@id/b1e" android:visibility="gone" android:layout_width="@dimen/cf" android:layout_height="@dimen/db" style="@style/kr" />
+    </LinearLayout>
+</LinearLayout>

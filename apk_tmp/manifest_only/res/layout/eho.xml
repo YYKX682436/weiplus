@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/d4q" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="@dimen/amc" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv">
+            <TextView android:ellipsize="end" android:id="@id/tw0" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/rm" />
+            <TextView android:id="@id/tc4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/tw0" style="@style/fe" />
+            <ImageView android:id="@id/tco" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/bl" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@id/tw0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/bl" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bn2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/tf9" android:layout_width="13.0dp" android:layout_height="13.0dp" android:src="@raw/icons_outlined_finder_icon" app:fs="@color/a7" />
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/FG_1" android:id="@id/tf_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/njl" android:layout_marginStart="@dimen/bl" style="@style/fe" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

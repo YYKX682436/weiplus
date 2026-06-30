@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/rtg" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" layout="@layout/dsp" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/s92" android:layout_width="wrap_content" android:layout_height="@dimen/d9" android:layout_marginTop="@dimen/bl" android:layout_marginStart="@dimen/bl" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/rtg" app:jh="@color/FG_0" app:ji="false" app:jk="@dimen/bj" app:tabMinWidth="@dimen/yt" app:jm="mcp" app:jn="@dimen/c9" app:jo="@dimen/c9" app:jq="@color/FG_0" app:jt="@color/FG_1" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/s_x" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/s92" />
+    <include android:id="@id/ssm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bu" app:layout_constraintTop_toBottomOf="@id/s92" layout="@layout/dsj" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/FG_2" android:id="@id/vj4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:text="@string/gdm" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/s92" />
+</androidx.constraintlayout.widget.ConstraintLayout>

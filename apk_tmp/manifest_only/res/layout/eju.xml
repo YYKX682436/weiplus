@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/an" android:paddingLeft="@dimen/ann" android:paddingRight="@dimen/ann" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24.0dp" android:textColor="@color/fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dp" android:text="MMAgreementCheckBox" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="复选框，按照设计规范目前只提供两种尺寸（smallCheckBox和 mediumCheckBox），对应尺寸设置标准颜色和字体不开放修改" />
+        <com.tencent.mm.ui.base.WeAgreementCheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" app:link_text="@string/gb8" app:mmAgCheckBoxStyle="0" app:normal_text="同时存在普通文本和协议文本" />
+        <com.tencent.mm.ui.base.WeAgreementCheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" app:mmAgCheckBoxStyle="0" app:normal_text="只有普通文本" />
+        <com.tencent.mm.ui.base.WeAgreementCheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" app:link_text="只有协议文本" app:mmAgCheckBoxStyle="0" />
+        <com.tencent.mm.ui.base.WeAgreementCheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" app:link_text="@string/gb8" app:mmAgCheckBoxStyle="0" app:normal_text="测试一下多行文本哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈测试一下多行文本哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" />
+    </LinearLayout>
+</LinearLayout>

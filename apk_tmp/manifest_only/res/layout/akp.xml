@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/a9x" android:textStyle="bold" android:textColor="@color/FG_0" android:id="@id/bfi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:text="@string/d55" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/iix" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/cz" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/bfi" />
+    <LinearLayout android:id="@id/bfb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/dn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/iix">
+        <Button android:textSize="17.0dp" android:textColor="@color/py" android:id="@id/bfc" android:background="@drawable/a4q" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:text="@string/d9e" />
+        <Button android:textSize="17.0dp" android:textColor="@color/an" android:id="@id/bfd" android:background="@drawable/a0r" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cn" android:text="@string/d9f" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

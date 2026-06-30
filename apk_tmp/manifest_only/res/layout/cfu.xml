@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.MMEditText android:id="@id/jmk" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="MMKV - Name" />
+    <com.tencent.mm.ui.widget.MMEditText android:id="@id/jmj" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="MMKV - Key" />
+    <com.tencent.mm.ui.widget.MMEditText android:id="@id/jmm" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:hint="MMKV - Value" />
+    <com.tencent.mm.ui.widget.MMEditText android:id="@id/jml" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:text="String" android:hint="MMKV - Type" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/khs" android:layout_width="180.0dp" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="@string/x1" style="@style/kq" />
+</LinearLayout>

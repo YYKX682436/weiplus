@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_gravity="center" android:id="@id/bkg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.ting.widget.TingChatRoomView android:id="@id/srq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+</FrameLayout>

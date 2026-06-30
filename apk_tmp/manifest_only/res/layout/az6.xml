@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_gravity="center|bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/cq" android:layout_marginBottom="@dimen/bl" layout="@layout/axg" />
+    <FrameLayout android:layout_gravity="center|bottom" android:id="@id/lcd" android:background="@drawable/a8o" android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl">
+        <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:layout_gravity="center_horizontal" android:id="@id/lcc" android:layout_width="wrap_content" android:layout_height="@dimen/cp" app:animation_file="finder_live_shopping_promoting.pag" app:desc_color="@color/an" app:desc_margin_left="@dimen/bj" app:desc_text="@string/een" app:desc_text_bold="true" app:desc_text_size="@dimen/c8" app:logo_color="@color/an" app:logo_height="@dimen/c9" app:logo_style="1" app:logo_width="@dimen/c9" />
+    </FrameLayout>
+</FrameLayout>

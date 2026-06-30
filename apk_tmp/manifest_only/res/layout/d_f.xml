@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c" android:paddingLeft="@dimen/d7" android:paddingTop="@dimen/ax" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h5n" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/bu" android:src="@raw/icons_filled_done2" android:scaleType="fitXY" android:layout_centerHorizontal="true" app:fs="@color/m" />
+    <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/ci1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/k53" android:layout_below="@id/h5n" />
+    <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/ch1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_below="@id/ci1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gu5" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dr" android:layout_below="@id/ci1">
+        <ImageView android:id="@id/cx_" style="@style/fh" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/a5b" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center|bottom" android:id="@id/auq" android:paddingBottom="96.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:id="@id/g6_" android:visibility="gone" android:layout_width="@dimen/cf" android:layout_height="@dimen/db" android:text="@string/k50" style="@style/kr" />
+        <Button android:gravity="center" android:id="@id/gsu" android:layout_width="@dimen/cf" android:layout_height="@dimen/db" android:text="@string/k51" style="@style/kz" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fph" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/id5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/ay4" />
+    <Space android:id="@id/egj" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <include android:id="@id/ubk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/db" app:ds="@dimen/c9" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/egj" app:layout_goneMarginTop="0.0dp" layout="@layout/e7x" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/uv9" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/ubk">
+        <include android:id="@id/fj9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/cn" layout="@layout/axr" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/uuv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/uv9">
+        <com.tencent.mm.plugin.finder.live.view.FinderLiveProductSizeAssistPanelView android:id="@id/ra_" android:paddingTop="@dimen/dv" android:visibility="gone" android:layout_width="124.0dp" android:layout_height="@dimen/d7" android:layout_marginEnd="@dimen/db" app:ds="@dimen/dv" app:layout_goneMarginTop="0.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/u4p" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/ubk">
+        <com.tencent.mm.plugin.finder.live.widget.FinderLiveInfiniteLoopView android:id="@id/ubl" android:visibility="gone" android:layout_width="@dimen/bw" android:layout_height="@dimen/cz" android:layout_marginEnd="@dimen/db" app:ds="@dimen/c9" />
+    </FrameLayout>
+    <include android:id="@id/eo0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" app:layout_constrainedWidth="true" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" layout="@layout/ao3" />
+    <include android:id="@id/eiz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/eo0" layout="@layout/al8" />
+    <FrameLayout android:id="@id/fnx" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/eiz">
+        <include android:id="@id/fnw" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/b0a" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

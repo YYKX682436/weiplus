@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/l48" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pnv" android:background="@drawable/bcj" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f24" android:layout_marginStart="@dimen/dj" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/pnu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginStart="@dimen/dj" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/h03" android:background="@drawable/auh" android:layout_width="@dimen/db" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/d7">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/an" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

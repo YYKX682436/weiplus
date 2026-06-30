@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/b1c" android:paddingTop="8.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="start|bottom" android:id="@id/cum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:layout_weight="1.0" android:layout_marginEnd="8.0dp">
+        <LinearLayout android:id="@id/h75" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/n41" android:layout_width="12.0dp" android:layout_height="12.0dp" android:scaleType="centerCrop" android:layout_marginEnd="5.0dp" />
+            <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="10.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:gravity="center_vertical" android:id="@id/n42" android:layout_width="wrap_content" android:layout_height="14.0dp" android:text="this is a sns_ad_icon_desc" app:aq="10.0dp" app:ar="1.0dp" app:as="os_" />
+        </LinearLayout>
+        <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:gravity="center_vertical" android:id="@id/cu2" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="this is a desc" android:maxLines="1" android:shadowColor="@color/BW_0_Alpha_0_8" android:shadowDx="0.0" android:shadowDy="1.0" android:layout_above="@id/h75" app:aq="14.0dp" app:ar="1.0dp" app:as="os_" />
+        <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:gravity="center_vertical" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="this is a title" android:maxLines="1" android:shadowColor="@color/BW_0_Alpha_0_8" android:shadowDx="0.0" android:shadowDy="1.0" android:layout_above="@id/cu2" app:aq="14.0dp" app:ar="1.0dp" app:as="os_" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="end|bottom" android:id="@id/b0r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <RelativeLayout android:layout_gravity="center" android:background="@drawable/b1b" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/b0p" android:visibility="gone" android:layout_width="11.0dp" android:layout_height="11.0dp" android:layout_centerVertical="true" android:layout_marginEnd="4.0dp" />
+            <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="12.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:gravity="center_vertical" android:id="@id/b1m" android:layout_width="wrap_content" android:layout_height="20.0dp" android:maxWidth="164.0dp" android:text="this is btn tv" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_toEndOf="@id/b0p" app:aq="12.0dp" app:ar="1.0dp" app:as="os_" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

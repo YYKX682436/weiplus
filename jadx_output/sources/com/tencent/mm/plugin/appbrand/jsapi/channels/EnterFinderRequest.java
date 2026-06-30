@@ -1,0 +1,73 @@
+package com.tencent.mm.plugin.appbrand.jsapi.channels;
+
+@kotlin.Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u000b\b\u0002\u0018\u0000 \u001b2\u00020\u0001:\u0001\u001cB\u0017\u0012\u0006\u0010\u0011\u001a\u00020\f\u0012\u0006\u0010\u0017\u001a\u00020\u0012¢\u0006\u0004\b\u0018\u0010\u0019B\u0011\b\u0016\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0004\b\u0018\u0010\u001aJ\u000e\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002H\u0014J\u0018\u0010\n\u001a\u00020\t2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0016J\b\u0010\u000b\u001a\u00020\u0007H\u0016R\u0017\u0010\u0011\u001a\u00020\f8\u0006¢\u0006\f\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000f\u0010\u0010R\u0017\u0010\u0017\u001a\u00020\u00128\u0006¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\u0016¨\u0006\u001d"}, d2 = {"Lcom/tencent/mm/plugin/appbrand/jsapi/channels/EnterFinderRequest;", "Lcom/tencent/mm/plugin/appbrand/ipc/AppBrandProxyUIProcessTask$ProcessRequest;", "Ljava/lang/Class;", "Lcom/tencent/mm/plugin/appbrand/jsapi/channels/e;", "getTaskClass", "Landroid/os/Parcel;", "parcel", "", "flags", "Ljz5/f0;", "writeToParcel", "describeContents", "", "d", "Ljava/lang/String;", "a", "()Ljava/lang/String;", "extInfoWrapper", "", "e", "Z", "b", "()Z", "usePrivateFinderApi", "<init>", "(Ljava/lang/String;Z)V", "(Landroid/os/Parcel;)V", "CREATOR", "com/tencent/mm/plugin/appbrand/jsapi/channels/a", "plugin-appbrand-integration_release"}, k = 1, mv = {1, 9, 0})
+/* loaded from: classes7.dex */
+final class EnterFinderRequest extends com.tencent.mm.plugin.appbrand.ipc.AppBrandProxyUIProcessTask$ProcessRequest {
+    public static final com.tencent.mm.plugin.appbrand.jsapi.channels.a CREATOR = new com.tencent.mm.plugin.appbrand.jsapi.channels.a(null);
+
+    /* renamed from: d, reason: collision with root package name and from kotlin metadata */
+    private final java.lang.String extInfoWrapper;
+
+    /* renamed from: e, reason: collision with root package name and from kotlin metadata */
+    private final boolean usePrivateFinderApi;
+
+    public EnterFinderRequest(java.lang.String extInfoWrapper, boolean z17) {
+        kotlin.jvm.internal.o.g(extInfoWrapper, "extInfoWrapper");
+        this.extInfoWrapper = extInfoWrapper;
+        this.usePrivateFinderApi = z17;
+    }
+
+    /* renamed from: a, reason: from getter */
+    public final java.lang.String getExtInfoWrapper() {
+        return this.extInfoWrapper;
+    }
+
+    /* renamed from: b, reason: from getter */
+    public final boolean getUsePrivateFinderApi() {
+        return this.usePrivateFinderApi;
+    }
+
+    @Override // com.tencent.mm.plugin.appbrand.ipc.AppBrandProxyUIProcessTask$ProcessRequest, android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override // com.tencent.mm.plugin.appbrand.ipc.AppBrandProxyUIProcessTask$ProcessRequest
+    public java.lang.Class<com.tencent.mm.plugin.appbrand.jsapi.channels.e> getTaskClass() {
+        return com.tencent.mm.plugin.appbrand.jsapi.channels.e.class;
+    }
+
+    @Override // com.tencent.mm.plugin.appbrand.ipc.AppBrandProxyUIProcessTask$ProcessRequest, android.os.Parcelable
+    public void writeToParcel(android.os.Parcel parcel, int i17) {
+        kotlin.jvm.internal.o.g(parcel, "parcel");
+        parcel.writeString(this.extInfoWrapper);
+        parcel.writeInt(this.usePrivateFinderApi ? 1 : 0);
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public EnterFinderRequest(android.os.Parcel r3) {
+        /*
+            r2 = this;
+            java.lang.String r0 = "parcel"
+            kotlin.jvm.internal.o.g(r3, r0)
+            java.lang.String r0 = r3.readString()
+            if (r0 != 0) goto Ld
+            java.lang.String r0 = ""
+        Ld:
+            int r3 = r3.readInt()
+            r1 = 1
+            if (r1 != r3) goto L15
+            goto L16
+        L15:
+            r1 = 0
+        L16:
+            r2.<init>(r0, r1)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.appbrand.jsapi.channels.EnterFinderRequest.<init>(android.os.Parcel):void");
+    }
+}

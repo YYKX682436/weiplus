@@ -1,0 +1,76 @@
+package ks1;
+
+/* loaded from: classes16.dex */
+public final class h extends ks1.g {
+
+    /* renamed from: b, reason: collision with root package name */
+    public final int f393127b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final java.lang.String f393128c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final int f393129d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public h(int i17, java.lang.String cgiUrl, int i18, js1.c tokenManager) {
+        super(tokenManager);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(cgiUrl, "cgiUrl");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(tokenManager, "tokenManager");
+        this.f393127b = i17;
+        this.f393128c = cgiUrl;
+        this.f393129d = i18;
+    }
+
+    @Override // ks1.g
+    public com.p314xaae8f345.mm.p944x882e457a.o c(com.p314xaae8f345.mm.p1006xc5476f33.p1289x8f4dc54e.api.C12965xc9712d2 transferRequestInfo) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(transferRequestInfo, "transferRequestInfo");
+        r45.ou3 ou3Var = new r45.ou3();
+        ou3Var.f464055g = transferRequestInfo.f175447e;
+        ou3Var.f464053e = transferRequestInfo.f175449g;
+        ou3Var.f464057i = transferRequestInfo.f175448f;
+        ou3Var.f464054f = transferRequestInfo.f175452m;
+        ou3Var.f464056h = 400;
+        r45.y24 y24Var = transferRequestInfo.f175450h;
+        if (y24Var == null) {
+            y24Var = new r45.y24();
+        }
+        ou3Var.f464052d = y24Var;
+        ou3Var.f464058m = transferRequestInfo.f175455p;
+        ou3Var.f464059n = transferRequestInfo.f175454o;
+        ou3Var.f464060o = this.f393129d;
+        java.lang.String str = transferRequestInfo.f175458s;
+        if (!(str == null || str.length() == 0)) {
+            ou3Var.f464061p = transferRequestInfo.f175458s;
+        }
+        com.p314xaae8f345.mm.p944x882e457a.l lVar = new com.p314xaae8f345.mm.p944x882e457a.l();
+        lVar.f152197a = ou3Var;
+        lVar.f152198b = new r45.su3();
+        lVar.f152199c = this.f393128c;
+        int i17 = this.f393127b;
+        lVar.f152200d = i17;
+        lVar.f152201e = i17;
+        lVar.f152202f = 0;
+        return lVar.a();
+    }
+
+    @Override // ks1.g
+    public java.lang.String d() {
+        return this.f393128c;
+    }
+
+    @Override // ks1.g
+    public r45.z24 e(com.p314xaae8f345.mm.p944x882e457a.o oVar) {
+        com.p314xaae8f345.mm.p2495xc50a8b8b.f fVar = oVar != null ? oVar.f152244b.f152233a : null;
+        r45.su3 su3Var = fVar instanceof r45.su3 ? (r45.su3) fVar : null;
+        if (su3Var != null) {
+            return su3Var.f467508d;
+        }
+        return null;
+    }
+
+    @Override // ks1.g
+    public java.lang.String f() {
+        return "DynamicRoutingTransferRequester";
+    }
+}

@@ -1,0 +1,31 @@
+package mz2;
+
+/* loaded from: classes3.dex */
+public class i2 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ android.widget.CheckBox f333139d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.ui.widget.dialog.k2 f333140e;
+
+    public i2(mz2.j2 j2Var, android.widget.CheckBox checkBox, com.tencent.mm.ui.widget.dialog.k2 k2Var) {
+        this.f333139d = checkBox;
+        this.f333140e = k2Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/fingerprint/mgr/WalletSoterServiceImpl$5", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        com.tencent.mars.xlog.Log.i("MicroMsg.WalletSoterService", "click cancel btn");
+        if (this.f333139d.isChecked()) {
+            gm0.j1.u().c().x(com.tencent.mm.storage.u3.USERINFO_FINGER_PRINT_SHOW_OPEN_GUIDE_IN_TRANSPARENT_NEW_BOOLEAN_SYNC, java.lang.Boolean.TRUE);
+        }
+        this.f333140e.dismiss();
+        yj0.a.h(this, "com/tencent/mm/plugin/fingerprint/mgr/WalletSoterServiceImpl$5", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

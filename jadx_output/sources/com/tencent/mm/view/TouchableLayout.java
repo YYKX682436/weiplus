@@ -1,0 +1,40 @@
+package com.tencent.mm.view;
+
+@kotlin.Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\b\u0016\u0018\u00002\u00020\u0001B\u001b\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0006\u0010\u0007B#\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\u0006\u0010\t\u001a\u00020\b¢\u0006\u0004\b\u0006\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/tencent/mm/view/TouchableLayout;", "Landroid/widget/FrameLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "defStyleAttr", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "libmmui_release"}, k = 1, mv = {1, 9, 0})
+/* loaded from: classes2.dex */
+public class TouchableLayout extends android.widget.FrameLayout {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static int f213511d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public static int f213512e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TouchableLayout(android.content.Context context) {
+        super(context);
+        kotlin.jvm.internal.o.g(context, "context");
+    }
+
+    @Override // android.view.ViewGroup, android.view.View
+    public boolean dispatchTouchEvent(android.view.MotionEvent ev6) {
+        kotlin.jvm.internal.o.g(ev6, "ev");
+        if (ev6.getAction() == 0) {
+            f213511d = (int) ev6.getRawX();
+            f213512e = (int) ev6.getRawY();
+        }
+        return super.dispatchTouchEvent(ev6);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TouchableLayout(android.content.Context context, android.util.AttributeSet attributeSet) {
+        super(context, attributeSet);
+        kotlin.jvm.internal.o.g(context, "context");
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TouchableLayout(android.content.Context context, android.util.AttributeSet attributeSet, int i17) {
+        super(context, attributeSet, i17);
+        kotlin.jvm.internal.o.g(context, "context");
+    }
+}

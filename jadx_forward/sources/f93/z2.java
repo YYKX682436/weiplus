@@ -1,0 +1,30 @@
+package f93;
+
+/* loaded from: classes3.dex */
+public class z2 implements android.view.View.OnTouchListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1790x61f7ef4.ui.ViewOnCreateContextMenuListenerC16171x51fc9384 f342061d;
+
+    public z2(com.p314xaae8f345.mm.p1006xc5476f33.p1790x61f7ef4.ui.ViewOnCreateContextMenuListenerC16171x51fc9384 viewOnCreateContextMenuListenerC16171x51fc9384) {
+        this.f342061d = viewOnCreateContextMenuListenerC16171x51fc9384;
+    }
+
+    @Override // android.view.View.OnTouchListener
+    public boolean onTouch(android.view.View view, android.view.MotionEvent motionEvent) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        arrayList.add(motionEvent);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/label/ui/ContactLabelSelectUI$10", "android/view/View$OnTouchListener", "onTouch", "(Landroid/view/View;Landroid/view/MotionEvent;)Z", this, array);
+        if (motionEvent.getAction() == 0) {
+            int rawX = (int) motionEvent.getRawX();
+            com.p314xaae8f345.mm.p1006xc5476f33.p1790x61f7ef4.ui.ViewOnCreateContextMenuListenerC16171x51fc9384 viewOnCreateContextMenuListenerC16171x51fc9384 = this.f342061d;
+            viewOnCreateContextMenuListenerC16171x51fc9384.V = rawX;
+            viewOnCreateContextMenuListenerC16171x51fc9384.W = (int) motionEvent.getRawY();
+        }
+        yj0.a.i(false, this, "com/tencent/mm/plugin/label/ui/ContactLabelSelectUI$10", "android/view/View$OnTouchListener", "onTouch", "(Landroid/view/View;Landroid/view/MotionEvent;)Z");
+        return false;
+    }
+}

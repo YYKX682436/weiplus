@@ -1,0 +1,21 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1008xb9d38a2d.ui;
+
+/* loaded from: classes5.dex */
+public class rh implements android.widget.TextView.OnEditorActionListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1008xb9d38a2d.ui.ActivityC11466x7d774b0 f155707d;
+
+    public rh(com.p314xaae8f345.mm.p1006xc5476f33.p1008xb9d38a2d.ui.ActivityC11466x7d774b0 activityC11466x7d774b0) {
+        this.f155707d = activityC11466x7d774b0;
+    }
+
+    @Override // android.widget.TextView.OnEditorActionListener
+    public boolean onEditorAction(android.widget.TextView textView, int i17, android.view.KeyEvent keyEvent) {
+        if (i17 != 6 && i17 != 5) {
+            return false;
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.p1008xb9d38a2d.ui.ActivityC11466x7d774b0.T6(this.f155707d);
+        return true;
+    }
+}

@@ -1,0 +1,148 @@
+package com.p314xaae8f345.mm.p639x2e3af2.svg.p640x2eaded.p641xcebc809e;
+
+/* renamed from: com.tencent.mm.boot.svg.code.drawable.thankful_flower_heavy */
+/* loaded from: classes16.dex */
+public class C10020x9330204f extends l95.c {
+
+    /* renamed from: width */
+    private final int f27243x6be2dc6 = 24;
+
+    /* renamed from: height */
+    private final int f27242xb7389127 = 24;
+
+    @Override // l95.c
+    /* renamed from: doCommand */
+    public int mo43368x913c4840(int i17, java.lang.Object... objArr) {
+        int i18 = 24;
+        if (i17 != 0 && i17 != 1) {
+            i18 = 0;
+            if (i17 == 2) {
+                android.graphics.Canvas canvas = (android.graphics.Canvas) objArr[0];
+                android.os.Looper looper = (android.os.Looper) objArr[1];
+                l95.c.m145412xe5ca94b6(looper);
+                l95.c.m145413xf00d6f43(looper);
+                android.graphics.Paint m145415xacbd08c9 = l95.c.m145415xacbd08c9(looper);
+                m145415xacbd08c9.setFlags(385);
+                m145415xacbd08c9.setStyle(android.graphics.Paint.Style.FILL);
+                android.graphics.Paint m145415xacbd08c92 = l95.c.m145415xacbd08c9(looper);
+                m145415xacbd08c92.setFlags(385);
+                m145415xacbd08c92.setStyle(android.graphics.Paint.Style.STROKE);
+                m145415xacbd08c9.setColor(-16777216);
+                m145415xacbd08c92.setStrokeWidth(1.0f);
+                m145415xacbd08c92.setStrokeCap(android.graphics.Paint.Cap.BUTT);
+                m145415xacbd08c92.setStrokeJoin(android.graphics.Paint.Join.MITER);
+                m145415xacbd08c92.setStrokeMiter(4.0f);
+                m145415xacbd08c92.setPathEffect(null);
+                canvas.save();
+                android.graphics.Paint m145414xacbd08c9 = l95.c.m145414xacbd08c9(m145415xacbd08c9, looper);
+                m145414xacbd08c9.setColor(-16777216);
+                android.graphics.Path m145417xd4061a5a = l95.c.m145417xd4061a5a(looper);
+                m145417xd4061a5a.moveTo(9.15211f, 4.77372f);
+                m145417xd4061a5a.cubicTo(9.57175f, 3.999f, 10.3875f, 2.75f, 12.0002f, 2.75f);
+                m145417xd4061a5a.cubicTo(13.6128f, 2.75f, 14.4286f, 3.999f, 14.8482f, 4.77372f);
+                m145417xd4061a5a.cubicTo(14.9555f, 4.9719f, 15.052f, 5.16817f, 15.134f, 5.33489f);
+                m145417xd4061a5a.lineTo(15.1461f, 5.35956f);
+                m145417xd4061a5a.cubicTo(15.2066f, 5.48259f, 15.2571f, 5.58467f, 15.3028f, 5.67177f);
+                m145417xd4061a5a.cubicTo(15.4185f, 5.62778f, 15.5678f, 5.56282f, 15.7619f, 5.47102f);
+                m145417xd4061a5a.cubicTo(15.785f, 5.46005f, 15.8091f, 5.44861f, 15.8339f, 5.43681f);
+                m145417xd4061a5a.cubicTo(16.0016f, 5.35712f, 16.2035f, 5.26119f, 16.3952f, 5.1861f);
+                m145417xd4061a5a.cubicTo(16.6059f, 5.10352f, 16.9138f, 5.0f, 17.2502f, 5.0f);
+                m145417xd4061a5a.cubicTo(17.8367f, 5.0f, 18.3603f, 5.1786f, 18.775f, 5.54072f);
+                m145417xd4061a5a.cubicTo(19.1706f, 5.88609f, 19.3894f, 6.33046f, 19.5164f, 6.7333f);
+                m145417xd4061a5a.cubicTo(19.7509f, 7.47727f, 19.7505f, 8.3578f, 19.7502f, 8.93937f);
+                m145417xd4061a5a.cubicTo(19.7502f, 8.95996f, 19.7502f, 8.98018f, 19.7502f, 9.0f);
+                m145417xd4061a5a.cubicTo(19.7502f, 11.8165f, 18.9387f, 13.8283f, 17.4273f, 15.1071f);
+                m145417xd4061a5a.cubicTo(16.1984f, 16.147f, 14.6319f, 16.5932f, 13.0002f, 16.7143f);
+                m145417xd4061a5a.lineTo(13.0002f, 21.0013f);
+                m145417xd4061a5a.cubicTo(13.0002f, 21.5536f, 12.5524f, 22.0013f, 12.0002f, 22.0013f);
+                m145417xd4061a5a.cubicTo(11.4479f, 22.0013f, 11.0002f, 21.5536f, 11.0002f, 21.0013f);
+                m145417xd4061a5a.lineTo(11.0002f, 16.7143f);
+                m145417xd4061a5a.cubicTo(9.36843f, 16.5932f, 7.80187f, 16.147f, 6.57296f, 15.1071f);
+                m145417xd4061a5a.cubicTo(5.06159f, 13.8283f, 4.25015f, 11.8165f, 4.25015f, 9.0f);
+                m145417xd4061a5a.cubicTo(4.25015f, 8.98018f, 4.25014f, 8.95996f, 4.25013f, 8.93937f);
+                m145417xd4061a5a.cubicTo(4.24982f, 8.3578f, 4.24936f, 7.47727f, 4.48393f, 6.7333f);
+                m145417xd4061a5a.cubicTo(4.61095f, 6.33046f, 4.82969f, 5.88609f, 5.22527f, 5.54072f);
+                m145417xd4061a5a.cubicTo(5.64002f, 5.1786f, 6.16365f, 5.0f, 6.75015f, 5.0f);
+                m145417xd4061a5a.cubicTo(7.08646f, 5.0f, 7.39436f, 5.10352f, 7.60514f, 5.1861f);
+                m145417xd4061a5a.cubicTo(7.7968f, 5.26119f, 7.99866f, 5.35712f, 8.16635f, 5.43681f);
+                m145417xd4061a5a.cubicTo(8.19118f, 5.44861f, 8.21526f, 5.46005f, 8.23845f, 5.47102f);
+                m145417xd4061a5a.cubicTo(8.43255f, 5.56282f, 8.5818f, 5.62778f, 8.69748f, 5.67178f);
+                m145417xd4061a5a.cubicTo(8.74319f, 5.58467f, 8.79373f, 5.48259f, 8.85422f, 5.35956f);
+                m145417xd4061a5a.cubicTo(8.85822f, 5.35141f, 8.86227f, 5.34319f, 8.86635f, 5.33489f);
+                m145417xd4061a5a.cubicTo(8.94829f, 5.16817f, 9.04476f, 4.9719f, 9.15211f, 4.77372f);
+                m145417xd4061a5a.close();
+                m145417xd4061a5a.moveTo(9.96736f, 7.3303f);
+                m145417xd4061a5a.cubicTo(9.78273f, 7.51384f, 9.45792f, 7.75f, 9.00015f, 7.75f);
+                m145417xd4061a5a.cubicTo(8.37773f, 7.75f, 7.76827f, 7.46132f, 7.4128f, 7.29295f);
+                m145417xd4061a5a.cubicTo(7.40277f, 7.28819f, 7.39294f, 7.28354f, 7.38332f, 7.27898f);
+                m145417xd4061a5a.cubicTo(7.35589f, 7.26602f, 7.32951f, 7.2535f, 7.30405f, 7.24143f);
+                m145417xd4061a5a.cubicTo(7.12836f, 7.15814f, 6.99687f, 7.09581f, 6.87556f, 7.04828f);
+                m145417xd4061a5a.cubicTo(6.78577f, 7.0131f, 6.74149f, 7.00283f, 6.73099f, 7.0002f);
+                m145417xd4061a5a.cubicTo(6.58942f, 7.00313f, 6.55053f, 7.03836f, 6.54161f, 7.04643f);
+                m145417xd4061a5a.lineTo(6.54065f, 7.04729f);
+                m145417xd4061a5a.cubicTo(6.51436f, 7.07025f, 6.45185f, 7.14289f, 6.39137f, 7.33472f);
+                m145417xd4061a5a.cubicTo(6.25925f, 7.75375f, 6.25015f, 8.33703f, 6.25015f, 9.0f);
+                m145417xd4061a5a.cubicTo(6.25015f, 11.4335f, 6.93871f, 12.7967f, 7.86484f, 13.5804f);
+                m145417xd4061a5a.cubicTo(8.82384f, 14.3918f, 10.2316f, 14.75f, 12.0002f, 14.75f);
+                m145417xd4061a5a.cubicTo(13.7687f, 14.75f, 15.1765f, 14.3918f, 16.1355f, 13.5804f);
+                m145417xd4061a5a.cubicTo(17.0616f, 12.7967f, 17.7502f, 11.4335f, 17.7502f, 9.0f);
+                m145417xd4061a5a.cubicTo(17.7502f, 8.33703f, 17.7411f, 7.75375f, 17.6089f, 7.33472f);
+                m145417xd4061a5a.cubicTo(17.5485f, 7.14289f, 17.4859f, 7.07025f, 17.4596f, 7.04729f);
+                m145417xd4061a5a.lineTo(17.4587f, 7.04643f);
+                m145417xd4061a5a.cubicTo(17.4498f, 7.03835f, 17.4109f, 7.00313f, 17.2693f, 7.0002f);
+                m145417xd4061a5a.cubicTo(17.2588f, 7.00283f, 17.2145f, 7.0131f, 17.1247f, 7.04828f);
+                m145417xd4061a5a.cubicTo(17.0034f, 7.09581f, 16.872f, 7.15814f, 16.6963f, 7.24143f);
+                m145417xd4061a5a.cubicTo(16.6708f, 7.2535f, 16.6444f, 7.26601f, 16.617f, 7.27898f);
+                m145417xd4061a5a.cubicTo(16.6074f, 7.28354f, 16.5975f, 7.28819f, 16.5875f, 7.29295f);
+                m145417xd4061a5a.cubicTo(16.232f, 7.46132f, 15.6226f, 7.75f, 15.0002f, 7.75f);
+                m145417xd4061a5a.cubicTo(14.5424f, 7.75f, 14.2176f, 7.51384f, 14.0329f, 7.3303f);
+                m145417xd4061a5a.cubicTo(13.8531f, 7.15152f, 13.7207f, 6.94012f, 13.6273f, 6.77609f);
+                m145417xd4061a5a.cubicTo(13.5295f, 6.60433f, 13.4349f, 6.41209f, 13.3513f, 6.242f);
+                m145417xd4061a5a.lineTo(13.3443f, 6.22787f);
+                m145417xd4061a5a.cubicTo(13.2586f, 6.05342f, 13.1777f, 5.88885f, 13.0896f, 5.72628f);
+                m145417xd4061a5a.cubicTo(12.6967f, 5.001f, 12.3875f, 4.75f, 12.0002f, 4.75f);
+                m145417xd4061a5a.cubicTo(11.6128f, 4.75f, 11.3036f, 5.001f, 10.9107f, 5.72628f);
+                m145417xd4061a5a.cubicTo(10.8226f, 5.88884f, 10.7417f, 6.05341f, 10.656f, 6.22785f);
+                m145417xd4061a5a.lineTo(10.649f, 6.242f);
+                m145417xd4061a5a.cubicTo(10.5654f, 6.41209f, 10.4708f, 6.60433f, 10.373f, 6.77609f);
+                m145417xd4061a5a.cubicTo(10.2796f, 6.94012f, 10.1472f, 7.15152f, 9.96736f, 7.3303f);
+                m145417xd4061a5a.close();
+                com.p314xaae8f345.mm.svg.C21323x60230c65.m78192x4b1e1ddf(m145417xd4061a5a, 2);
+                canvas.drawPath(m145417xd4061a5a, m145414xacbd08c9);
+                canvas.restore();
+                canvas.save();
+                android.graphics.Paint m145414xacbd08c92 = l95.c.m145414xacbd08c9(m145415xacbd08c9, looper);
+                m145414xacbd08c92.setColor(-16777216);
+                android.graphics.Path m145417xd4061a5a2 = l95.c.m145417xd4061a5a(looper);
+                m145417xd4061a5a2.moveTo(4.39266f, 16.7368f);
+                m145417xd4061a5a2.cubicTo(4.67681f, 16.2632f, 5.29107f, 16.1096f, 5.76465f, 16.3938f);
+                m145417xd4061a5a2.lineTo(9.51465f, 18.6438f);
+                m145417xd4061a5a2.cubicTo(9.98823f, 18.9279f, 10.1418f, 19.5422f, 9.85764f, 20.0158f);
+                m145417xd4061a5a2.cubicTo(9.5735f, 20.4894f, 8.95924f, 20.6429f, 8.48566f, 20.3588f);
+                m145417xd4061a5a2.lineTo(4.73566f, 18.1088f);
+                m145417xd4061a5a2.cubicTo(4.26208f, 17.8246f, 4.10851f, 17.2104f, 4.39266f, 16.7368f);
+                m145417xd4061a5a2.close();
+                com.p314xaae8f345.mm.svg.C21323x60230c65.m78192x4b1e1ddf(m145417xd4061a5a2, 1);
+                canvas.drawPath(m145417xd4061a5a2, m145414xacbd08c92);
+                canvas.restore();
+                canvas.save();
+                android.graphics.Paint m145414xacbd08c93 = l95.c.m145414xacbd08c9(m145415xacbd08c9, looper);
+                m145414xacbd08c93.setColor(-16777216);
+                android.graphics.Path m145417xd4061a5a3 = l95.c.m145417xd4061a5a(looper);
+                m145417xd4061a5a3.moveTo(19.6076f, 16.7368f);
+                m145417xd4061a5a3.cubicTo(19.8918f, 17.2104f, 19.7382f, 17.8246f, 19.2646f, 18.1088f);
+                m145417xd4061a5a3.lineTo(15.5146f, 20.3588f);
+                m145417xd4061a5a3.cubicTo(15.0411f, 20.6429f, 14.4268f, 20.4894f, 14.1427f, 20.0158f);
+                m145417xd4061a5a3.cubicTo(13.8585f, 19.5422f, 14.0121f, 18.9279f, 14.4857f, 18.6438f);
+                m145417xd4061a5a3.lineTo(18.2357f, 16.3938f);
+                m145417xd4061a5a3.cubicTo(18.7092f, 16.1096f, 19.3235f, 16.2632f, 19.6076f, 16.7368f);
+                m145417xd4061a5a3.close();
+                com.p314xaae8f345.mm.svg.C21323x60230c65.m78192x4b1e1ddf(m145417xd4061a5a3, 1);
+                canvas.drawPath(m145417xd4061a5a3, m145414xacbd08c93);
+                canvas.restore();
+                l95.c.m145409x2f2382(looper);
+            }
+        }
+        return i18;
+    }
+}

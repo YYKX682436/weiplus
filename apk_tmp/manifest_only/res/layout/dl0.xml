@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:gravity="center_horizontal" android:id="@id/gz9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/d7" android:layout_marginRight="@dimen/cz" android:text="@string/m0w" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:gravity="center_horizontal" android:id="@id/sae" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:text="@string/gyp" />
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="64.0dp">
+        <Button android:id="@id/b5i" android:layout_width="@dimen/c0" android:text="@string/d40" style="@style/kz" />
+        <Button android:id="@id/c9z" android:layout_width="@dimen/c0" android:layout_marginLeft="@dimen/cn" android:text="@string/m07" style="@style/kr" />
+    </LinearLayout>
+</LinearLayout>

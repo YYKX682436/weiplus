@@ -1,0 +1,83 @@
+package gx0;
+
+/* loaded from: classes5.dex */
+public final class r2 implements jx0.h0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ gx0.u2 f276906a;
+
+    public r2(gx0.u2 u2Var) {
+        this.f276906a = u2Var;
+    }
+
+    @Override // jx0.h0
+    public void a(com.tencent.maas.model.time.MJTime seekTime) {
+        kotlin.jvm.internal.o.g(seekTime, "seekTime");
+        this.f276906a.p7().X6(seekTime);
+    }
+
+    @Override // jx0.h0
+    public java.lang.Object b(kotlin.coroutines.Continuation continuation) {
+        java.lang.Object d76 = gx0.hf.d7(this.f276906a.p7(), false, continuation, 1, null);
+        return d76 == pz5.a.f359186d ? d76 : jz5.f0.f302826a;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x002f  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
+    @Override // jx0.h0
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.Object c(boolean r5, com.tencent.maas.model.time.MJTime r6, kotlin.coroutines.Continuation r7) {
+        /*
+            r4 = this;
+            boolean r0 = r7 instanceof gx0.q2
+            if (r0 == 0) goto L13
+            r0 = r7
+            gx0.q2 r0 = (gx0.q2) r0
+            int r1 = r0.f276864f
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f276864f = r1
+            goto L18
+        L13:
+            gx0.q2 r0 = new gx0.q2
+            r0.<init>(r4, r7)
+        L18:
+            java.lang.Object r7 = r0.f276862d
+            pz5.a r1 = pz5.a.f359186d
+            int r2 = r0.f276864f
+            r3 = 1
+            if (r2 == 0) goto L2f
+            if (r2 != r3) goto L27
+            kotlin.ResultKt.throwOnFailure(r7)
+            goto L4c
+        L27:
+            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+            java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+            r5.<init>(r6)
+            throw r5
+        L2f:
+            kotlin.ResultKt.throwOnFailure(r7)
+            gx0.u2 r7 = r4.f276906a
+            if (r5 == 0) goto L45
+            gx0.hf r5 = r7.p7()
+            r0.f276864f = r3
+            r6 = 0
+            r7 = 0
+            java.lang.Object r5 = gx0.hf.d7(r5, r6, r0, r3, r7)
+            if (r5 != r1) goto L4c
+            return r1
+        L45:
+            gx0.hf r5 = r7.p7()
+            r5.X6(r6)
+        L4c:
+            java.lang.Boolean r5 = java.lang.Boolean.FALSE
+            return r5
+        */
+        throw new UnsupportedOperationException("Method not decompiled: gx0.r2.c(boolean, com.tencent.maas.model.time.MJTime, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+}

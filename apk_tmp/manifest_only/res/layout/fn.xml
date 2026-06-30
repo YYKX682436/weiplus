@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/p" android:paddingTop="@dimen/hp" android:paddingRight="@dimen/p" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/kj_" android:layout_width="@dimen/g" android:layout_height="@dimen/g" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_weight="1.0">
+            <TextView android:id="@id/kja" android:text="{nick name}" style="@style/iy" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j3">
+                <TextView android:id="@id/kjc" android:text="{installed|uninstalled|hide}" style="@style/iz" />
+                <View android:layout_width="match_parent" android:layout_weight="1.0" style="@style/l3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/p" android:paddingRight="@dimen/p" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_marginTop="@dimen/hp" style="@style/fh" />
+        <TextView android:id="@id/kje" android:layout_marginTop="@dimen/hf" android:text="@string/o5" android:singleLine="false" style="@style/l5" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:id="@id/kjd" android:paddingTop="@dimen/p" android:paddingBottom="@dimen/j3" android:text="@string/o4" android:singleLine="false" style="@style/l5" />
+        <TextView android:id="@id/kjb" android:layout_marginTop="@dimen/hj" android:layout_marginBottom="@dimen/j3" style="@style/kq" />
+    </LinearLayout>
+</LinearLayout>

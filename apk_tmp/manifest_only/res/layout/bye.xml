@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/m7p" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/aai" android:background="@color/y4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+    <LinearLayout android:orientation="vertical" android:id="@id/czs" android:background="@drawable/bc6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/koq" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dj" android:overScrollMode="always" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/af9" android:background="@color/a" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/tas" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="@dimen/ho" android:paddingHorizontal="@dimen/cn" android:paddingVertical="@dimen/dv" />
+        <View android:layout_gravity="bottom" android:id="@id/aun" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</FrameLayout>

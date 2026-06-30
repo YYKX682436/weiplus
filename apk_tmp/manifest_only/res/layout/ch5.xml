@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/tk" android:gravity="center_horizontal" android:id="@id/kch" android:background="@color/a" android:paddingTop="@dimen/hm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ti" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/im7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="46.0dp">
+        <ProgressBar android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginEnd="@dimen/hq" style="@style/x4" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/tk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jmb" />
+    </LinearLayout>
+    <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMore="true" app:enableLoadMoreWhenContentNotFull="true" app:enableOverScrollBounce="true" app:enableOverScrollDrag="true" app:enableRefresh="false">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/m5w" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.ringtone.widget.RingtoneLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+</LinearLayout>

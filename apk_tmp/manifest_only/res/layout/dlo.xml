@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/qvx" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/cqa" android:layout_width="match_parent" android:layout_height="@dimen/d9" android:layout_marginLeft="@dimen/aii" android:layout_marginTop="@dimen/c8" android:layout_marginRight="@dimen/aii" android:layout_marginBottom="@dimen/c8">
+        <LinearLayout android:gravity="center" android:id="@id/qvr" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a84" android:id="@id/f8s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/yd" android:text="附近" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/yd" android:src="@raw/ad_tag_arrow_right" android:rotation="90.0" app:fs="@color/a84" />
+            <View android:background="@color/FG_3" android:layout_width="@dimen/bh" android:layout_height="match_parent" android:layout_marginTop="@dimen/bn" android:layout_marginBottom="@dimen/bn" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/qvw" android:background="@drawable/cqa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@id/qvr">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/actionbar_icon_light_search" android:layout_centerVertical="true" android:layout_marginStart="14.0dp" app:fs="@color/a84" />
+            <EditText android:textSize="@dimen/ia" android:textColor="@color/a0c" android:textColorHint="@color/a84" android:ellipsize="end" android:id="@id/qvu" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/m13" android:singleLine="true" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/afr" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/d7" android:layout_toEndOf="@id/qvv" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qvy" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bu8" android:layout_centerVertical="true" android:contentDescription="@string/b91" android:layout_marginEnd="@dimen/dv" android:layout_alignParentEnd="true" app:fs="@color/BW_0_Alpha_0_5" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

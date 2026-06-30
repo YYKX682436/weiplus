@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.MMProcessBar android:layout_gravity="center" android:id="@id/ilh" android:background="@drawable/avi" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ilg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:id="@id/i0a" android:background="@color/ajv" android:layout_width="@dimen/cz" android:layout_height="@dimen/bh" android:layout_marginRight="@dimen/dv" />
+        <View android:layout_gravity="center_vertical" android:id="@id/bdv" android:background="@drawable/d17" android:layout_width="@dimen/bl" android:layout_height="@dimen/bl" />
+        <View android:layout_gravity="center_vertical" android:id="@id/m3v" android:background="@color/ajv" android:layout_width="@dimen/cz" android:layout_height="@dimen/bh" android:layout_marginLeft="@dimen/dv" />
+    </LinearLayout>
+</FrameLayout>

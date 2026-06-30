@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/gat" android:layout_width="@dimen/ca" android:layout_height="@dimen/bn" android:src="@raw/icons_pop_arrow" android:rotation="180.0" android:layout_marginStart="@dimen/bx" app:fs="@color/BW_0_Alpha_0_0_5" />
+    <LinearLayout android:orientation="vertical" android:background="@color/BW_0_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:paddingStart="@dimen/cs" android:paddingEnd="@dimen/cs">
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cht" />
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/a5" android:layout_gravity="end" android:id="@id/gaz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f0j" />
+        </FrameLayout>
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/gay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cz" android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

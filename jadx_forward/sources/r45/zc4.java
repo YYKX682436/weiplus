@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes9.dex */
+public class zc4 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public zc4() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(1, "appId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(2, "productId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(3, "realProductId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(4, "shareDirectly"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(5, "ecSource"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(6, "token"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(7, "finderUsername"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(8, "gmsgId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(9, "promoterKey"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(10, "showQRCodeEntrance"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(11, "showCopyLinkEntrance"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(12, "showComplaintEntrance"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(13, "complaintliteAppId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(14, "complaintliteQuery"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(15, "quickShareUsername"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(16, "shopWindowInfo"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(17, "copyLinkContent"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(18, "shopWindowQuery"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(19, "shareType"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(20, "useShopWindowCardV2"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(21, "enableGiveGiftEntrance"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(22, "hideGiveGiftEntrance"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(23, "cpsProductId"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(24, "shareDirectlyWithoutConfirmDialog"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(25, "showSuccessTips"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(26, "showShareTimeline"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(27, "enableShareTimeline"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(28, "passBuffer"));
+        this.f38874x227b759e = true;
+    }
+}

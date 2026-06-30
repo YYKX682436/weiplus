@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bf_" android:padding="16.0dp" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@raw/icons_filled_back" app:fs="@color/FG_0_5" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ij2" android:paddingLeft="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/wecoin_balance_icons" android:layout_centerVertical="true" android:layout_marginEnd="2.0dp" app:fs="@color/m" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/ol4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="10.0dp" android:layout_height="20.0dp" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_arrow" app:fs="@color/FG_2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/oqh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="24.0dp" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/d2" android:layout_height="@dimen/d2" android:src="@raw/wecoin_balance_icons" app:fs="@color/m" />
+        <TextView android:textSize="40.0dp" android:textColor="@color/FG_0" android:gravity="right" android:id="@id/op4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:gravity="right" android:layout_gravity="center" android:id="@id/op5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:layout_gravity="center_horizontal" android:id="@id/oph" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    <Button android:textSize="17.0dp" android:textColor="@color/an" android:layout_gravity="center_horizontal" android:id="@id/bfa" android:background="@drawable/a0r" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginTop="56.0dp" android:layout_marginBottom="@dimen/dn" android:text="@string/e3w" />
+</LinearLayout>

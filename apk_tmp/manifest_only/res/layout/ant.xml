@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/apo" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/jro" android:layout_width="0.0dp" android:layout_height="@dimen/dn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@id/jrn" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/awu" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dwo" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dn" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="@dimen/dv">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/apn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/hw3" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+                    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/c86" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <com.tencent.mm.plugin.finder.view.LoadingSwitchBtn android:id="@id/nte" android:layout_width="51.0dp" android:layout_height="31.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:on_color="@color/oq" />
+                    <ImageView android:id="@id/c7r" android:visibility="gone" android:layout_marginLeft="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/c86" app:layout_constraintLeft_toRightOf="@id/c86" app:layout_constraintTop_toTopOf="@id/c86" style="@style/ry" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/u9f" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+                    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintTop_toTopOf="0" />
+                    <View android:background="@color/FG_2" android:layout_width="@dimen/dv" android:layout_height="1.0px" android:layout_marginLeft="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/t7f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cs" android:text="@string/npd" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                        <com.tencent.mm.plugin.finder.view.LoadingSwitchBtn android:id="@id/t7u" android:layout_width="51.0dp" android:layout_height="31.0dp" app:on_color="@color/oq" />
+                        <View android:id="@id/t7v" android:visibility="gone" android:layout_width="51.0dp" android:layout_height="31.0dp" />
+                    </FrameLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/apn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/hwz" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+                    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/dt7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/des" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_arrow" app:fs="@color/FG_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <ImageView android:id="@id/dt3" android:visibility="gone" android:layout_marginLeft="@dimen/dv" app:layout_constraintBottom_toBottomOf="@id/dt7" app:layout_constraintLeft_toRightOf="@id/dt7" app:layout_constraintTop_toTopOf="@id/dt7" style="@style/ry" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rtb" android:background="@drawable/apn" android:padding="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/d1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/s7k" app:layout_constraintTop_toTopOf="0">
+                    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/rcb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m72" />
+                    <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:id="@id/rca" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m70" />
+                </LinearLayout>
+                <com.tencent.mm.plugin.finder.view.LoadingSwitchBtn android:id="@id/s7k" android:layout_width="51.0dp" android:layout_height="31.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:on_color="@color/oq" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

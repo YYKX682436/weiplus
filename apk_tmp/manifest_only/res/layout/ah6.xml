@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/msy" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/azm" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="wrap_content" android:layout_height="@dimen/dr" android:layout_centerInParent="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/msz" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="@dimen/dv" android:src="@raw/icons_outlined_finder_icon" app:fs="@color/a7" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f4m" style="@style/rm" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/dv" android:src="@raw/icons_filled_arrow" />
+        </LinearLayout>
+        <View android:background="@color/k7" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</FrameLayout>

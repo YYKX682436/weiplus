@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/aaw" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dp">
+            <ImageView android:id="@id/hh8" android:layout_width="@dimen/i4" android:layout_height="@dimen/i4" android:src="@raw/room_manager_icon" />
+            <TextView android:textSize="@dimen/jd" android:textColor="@color/a0c" android:layout_width="wrap_content" android:layout_marginTop="@dimen/hx" android:text="@string/i58" android:layout_below="@id/hh8" android:layout_centerHorizontal="true" style="@style/ov" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:gravity="left" android:id="@id/jbk" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hx" android:layout_marginTop="@dimen/hi" android:text="@string/i57" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:gravity="left" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hx" android:layout_marginTop="@dimen/hx" android:text="@string/i53" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:gravity="left" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hx" android:layout_marginTop="@dimen/hx" android:text="@string/i54" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:gravity="left" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hx" android:layout_marginTop="@dimen/hx" android:text="@string/i55" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:gravity="left" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hx" android:layout_marginTop="@dimen/hx" android:text="@string/i56" />
+        <View android:background="#d8d8d8" android:paddingLeft="@dimen/b" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/hi" android:layout_marginBottom="@dimen/hi" />
+        <GridView android:gravity="center" android:id="@id/jbi" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:verticalSpacing="@dimen/j" android:numColumns="4" />
+    </LinearLayout>
+</ScrollView>

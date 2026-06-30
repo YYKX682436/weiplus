@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="234.0dp" android:layout_marginTop="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+    <LinearLayout android:id="@id/oz_" android:background="@drawable/a7b" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/oz4" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="4.0dp" android:src="@raw/icons_filled_video_call" app:fs="@color/FG_0" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/dxk" />
+    </LinearLayout>
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+    <LinearLayout android:id="@id/a71" android:background="@drawable/a7b" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/a6v" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="4.0dp" android:src="@raw/icons_filled_call" app:fs="@color/FG_0" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/dxj" />
+    </LinearLayout>
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+</LinearLayout>

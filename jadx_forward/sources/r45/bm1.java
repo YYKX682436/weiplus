@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes10.dex */
+public class bm1 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public bm1() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(1, dm.i4.f66865x76d1ec5a), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(2, "need_preload"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(3, "background_source"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(4, "background_color"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(5, com.p314xaae8f345.mm.p987xb4b579b0.p989xe6d4914f.InterfaceC11224x4860a6b.WXWebPage.f32847x4430964b), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(6, "dynamic_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(7, "wording_color"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(8, "button_color"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(9, "disable_share"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(10, "background_gradient_color"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(11, "preload_interval"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(12, "report_new_cgi"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(13, "report_switch"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.s(14, "sub_title_list", r45.td.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(15, "sub_icon_url"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(16, "need_cache"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(17, "preload_delay_ms"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(18, "display_interval_ms"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(19, "is_show_sub_icon_pag"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(20, "version"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.c(21, "need_reload_preload_cache"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(22, "jump_navlive_buffer_encode"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(23, "side_bar_related_live_prepare_info", r45.fw2.class));
+        this.f38874x227b759e = true;
+    }
+}

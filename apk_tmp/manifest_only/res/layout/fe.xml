@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/a9c" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="11.0dp" android:layout_marginBottom="11.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/tk" android:id="@id/cgi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/bys" android:background="@drawable/b4g" android:clickable="true" android:layout_width="52.0dp" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:clickable="false" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/bva" android:scaleType="fitXY" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/d0v" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="15.0dp" />
+</LinearLayout>

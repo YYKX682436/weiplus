@@ -1,0 +1,19 @@
+package hy0;
+
+/* loaded from: classes.dex */
+public final class c extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ android.content.Context f285800d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public c(android.content.Context context) {
+        super(0);
+        this.f285800d = context;
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        return j65.q.a(this.f285800d).getString(com.tencent.mm.R.string.lkh);
+    }
+}

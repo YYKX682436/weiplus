@@ -1,0 +1,119 @@
+package av4;
+
+/* loaded from: classes15.dex */
+public final class q0 extends qw4.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final av4.q0 f14328d = new av4.q0();
+
+    @Override // nw4.q2
+    public boolean a(nw4.k env, nw4.y2 msg) {
+        kotlin.jvm.internal.o.g(env, "env");
+        kotlin.jvm.internal.o.g(msg, "msg");
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.StartAdQRScanJSApi", "handleMsg params: " + msg.f340790a);
+        java.util.Map map = msg.f340790a;
+        int netType = com.tencent.mars.comm.NetStatusUtil.getNetType(com.tencent.mm.sdk.platformtools.x2.f193071a);
+        nw4.g gVar = env.f340863d;
+        if (netType == -1) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.StartAdQRScanJSApi", "network status is non_network");
+            gVar.e(msg.f341013c, "startAdQRScan:failed. Unreachable", null);
+            return true;
+        }
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "scanUrl");
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(map, "uxInfo");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(f17)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.StartAdQRScanJSApi", "scanUrl is isNullOrNil");
+            ((ee0.l) ((fe0.r3) i95.n0.c(fe0.r3.class))).wi(f18, 3, f17, 0);
+            gVar.e(msg.f341013c, "startAdQRScan:failed. Params error", null);
+            return true;
+        }
+        kotlin.jvm.internal.o.d(f17);
+        if (!r26.i0.y(f17, "http", false) && !r26.i0.y(f17, "https", false)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.StartAdQRScanJSApi", "scanUrl not start with http or https");
+            ((ee0.l) ((fe0.r3) i95.n0.c(fe0.r3.class))).wi(f18, 3, f17, 0);
+            gVar.e(msg.f341013c, "startAdQRScan:failed.", null);
+            return true;
+        }
+        ((ee0.l) ((fe0.r3) i95.n0.c(fe0.r3.class))).getClass();
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("getAdImgFilePath", "com.tencent.mm.feature.sns.AdQRScanService");
+        java.lang.String str = za4.t0.g() + za4.t0.j("adId", f17);
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("getAdImgFilePath", "com.tencent.mm.feature.sns.AdQRScanService");
+        try {
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str) || !com.tencent.mm.vfs.w6.j(str)) {
+                o11.f fVar = new o11.f();
+                fVar.f342077a = true;
+                fVar.f342078b = true;
+                fVar.f342082f = str;
+                o11.g a17 = fVar.a();
+                n11.a b17 = n11.a.b();
+                kotlin.jvm.internal.o.d(str);
+                kotlin.jvm.internal.o.d(f18);
+                b17.d(f17, a17, new av4.o0(env, msg, str, f17, f18));
+            } else {
+                com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.StartAdQRScanJSApi", "filePath not null and file is exist");
+                kotlin.jvm.internal.o.d(str);
+                kotlin.jvm.internal.o.d(f18);
+                e(env, msg, str, f17, f18);
+            }
+        } catch (java.lang.Throwable th6) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.WebSearch.StartAdQRScanJSApi", "exp is " + th6);
+        }
+        return true;
+    }
+
+    @Override // nw4.q2
+    public int b() {
+        return 10000;
+    }
+
+    @Override // nw4.q2
+    public java.lang.String c() {
+        return "startAdQRScan";
+    }
+
+    public final void e(nw4.k kVar, nw4.y2 y2Var, java.lang.String str, java.lang.String str2, java.lang.String str3) {
+        fe0.r3 r3Var = (fe0.r3) i95.n0.c(fe0.r3.class);
+        android.content.Context context = kVar.f340860a;
+        av4.p0 p0Var = new av4.p0(kVar, y2Var, str3, str2);
+        ee0.l lVar = (ee0.l) r3Var;
+        lVar.getClass();
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("onClickDirect", "com.tencent.mm.feature.sns.AdQRScanService");
+        ca4.b0 b0Var = new ca4.b0(context, str3);
+        ee0.k kVar2 = new ee0.k(lVar, p0Var);
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("onClickDirectForSearchJsapi", "com.tencent.mm.plugin.sns.data.SnsAdQRHelper");
+        if (b0Var.f39842p == null) {
+            b0Var.f39842p = new android.os.Bundle();
+        }
+        b0Var.f39842p.putInt("qr_url_type_key", b0Var.f39833g);
+        java.lang.ref.WeakReference weakReference = b0Var.f39841o;
+        if (weakReference == null) {
+            kVar2.a(str2, false, "contextRef is null", b0Var.f39842p);
+            b0Var.m();
+            com.tencent.mars.xlog.Log.w("SnsAdQRHelper", "onClickDirectForSearchJsapi, contextRef is null");
+            com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("onClickDirectForSearchJsapi", "com.tencent.mm.plugin.sns.data.SnsAdQRHelper");
+        } else {
+            android.content.Context context2 = (android.content.Context) weakReference.get();
+            if (context2 == null) {
+                kVar2.a(str2, false, "context is null", b0Var.f39842p);
+                b0Var.m();
+                com.tencent.mars.xlog.Log.w("SnsAdQRHelper", "onClickDirectForSearchJsapi, contextRef get is null");
+                com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("onClickDirectForSearchJsapi", "com.tencent.mm.plugin.sns.data.SnsAdQRHelper");
+            } else {
+                b0Var.f39834h = str;
+                b0Var.f39835i = str2;
+                com.tencent.mars.xlog.Log.i("SnsAdQRHelper", "onClickDirectForSearchJsapi, filePath is " + b0Var.f39834h);
+                if (android.text.TextUtils.isEmpty(b0Var.f39834h)) {
+                    kVar2.a(str2, false, "imgPath is empty", b0Var.f39842p);
+                    b0Var.m();
+                    com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("onClickDirectForSearchJsapi", "com.tencent.mm.plugin.sns.data.SnsAdQRHelper");
+                } else {
+                    long currentTimeMillis = java.lang.System.currentTimeMillis();
+                    ((jd0.u1) ((kd0.h2) i95.n0.c(kd0.h2.class))).getClass();
+                    zs5.u0.f475485h.a(context2, currentTimeMillis, b0Var.f39834h, new ca4.z(b0Var, kVar2, str2));
+                    com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("onClickDirectForSearchJsapi", "com.tencent.mm.plugin.sns.data.SnsAdQRHelper");
+                }
+            }
+        }
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("onClickDirect", "com.tencent.mm.feature.sns.AdQRScanService");
+    }
+}

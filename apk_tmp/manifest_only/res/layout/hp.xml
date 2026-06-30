@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pmg" android:background="@drawable/cz" android:padding="@dimen/ng" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fq" />
+    <GridView android:layout_gravity="center" android:id="@id/pmb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nc" android:listSelector="@android:color/transparent" android:numColumns="4" />
+    <include layout="@layout/fp" />
+</LinearLayout>

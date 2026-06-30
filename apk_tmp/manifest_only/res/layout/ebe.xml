@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tiq" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/by4" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/agx" android:background="@drawable/d23" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/v5" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="2.0dp" android:layout_centerHorizontal="true">
+        <com.tencent.mm.view.MMPAGView android:id="@id/vc" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/odl" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/finder_live_product_gift" android:transitionName="pag_anim" app:fs="@color/a9e" />
+    </FrameLayout>
+    <TextView android:textSize="10.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:gravity="center" android:id="@id/odf" android:visibility="visible" android:layout_width="@dimen/db" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/v5" android:layout_centerHorizontal="true" />
+</RelativeLayout>

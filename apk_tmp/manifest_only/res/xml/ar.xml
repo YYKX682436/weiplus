@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory />
+    <com.tencent.mm.plugin.setting.ui.setting.SettingsAboutMMHeaderPreference android:key="fix_tools_micromsg_header" android:gc="@layout/cl1" />
+    <PreferenceCategory />
+    <PreferenceTitleCategory android:key="fix_tools_wording" android:title="@string/fam" />
+    <Preference android:key="fix_tools_uplog" android:gc="@layout/byv" android:title="@string/fa9" />
+    <Preference android:key="fix_tools_db_recover" android:gc="@layout/byv" android:title="@string/f_u" />
+    <Preference android:key="fix_tools_contact_recover" android:gc="@layout/byv" android:title="@string/o37" />
+    <Preference android:key="fix_tools_add_friend_verify_record" android:gc="@layout/byv" android:title="@string/p5w" />
+    <Preference android:key="fix_tools_chat_msg_time" android:gc="@layout/byv" android:title="@string/msh" />
+    <Preference android:key="fix_tools_conversation_flag" android:gc="@layout/byv" android:title="@string/p5x" />
+    <Preference android:key="fix_tools_filehelper" android:gc="@layout/byv" android:title="@string/o38" />
+    <Preference android:key="fix_tools_search" android:gc="@layout/byv" android:title="@string/fa6" />
+    <Preference android:key="fix_tools_matrix" android:gc="@layout/byv" android:title="@string/fa5" />
+    <Preference android:key="fix_tools_file_analyse" android:gc="@layout/byv" android:title="@string/f_v" />
+    <Preference android:key="fix_force_update" android:gc="@layout/byv" android:title="@string/f_q" />
+    <IconPreference android:key="fix_tools_aggressive_clean" android:gc="@layout/byv" android:title="@string/f_s" />
+    <PreferenceCategory />
+</PreferenceScreen>

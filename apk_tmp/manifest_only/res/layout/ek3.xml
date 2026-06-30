@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/taw" android:layout_width="@dimen/ch" android:layout_height="@dimen/ch" android:layout_marginTop="@dimen/dj">
+        <FrameLayout android:id="@id/tay" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/tav" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cyj" />
+            <ImageView android:layout_gravity="center" android:id="@id/tb1" android:layout_width="@dimen/cc" android:layout_height="@dimen/cc" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/tb0" android:layout_width="@dimen/anx" android:layout_height="@dimen/anw" style="@style/wa" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/co" android:textColor="@color/abw" android:gravity="center" android:id="@id/taz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ajw" android:layout_marginTop="@dimen/ajr" android:layout_marginRight="@dimen/ajw" android:layout_marginBottom="@dimen/ajt" android:text="" />
+</LinearLayout>

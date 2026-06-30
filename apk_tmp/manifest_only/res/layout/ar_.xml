@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/eyt" android:layout_width="match_parent" android:layout_height="@dimen/db"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="#7186b0" android:gravity="center" android:id="@id/eyo" android:paddingLeft="@dimen/cn" android:layout_width="wrap_content" android:layout_height="@dimen/db" android:text="@string/sg" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:id="@id/eys" android:background="@drawable/cq2" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_toStartOf="@id/eyo">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eyu" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/bl" android:src="@raw/icons_filled_search" android:layout_centerVertical="true" app:fs="@color/FG_2" />
+            <EditText android:textSize="17.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:textColorHint="@color/BW_0_Alpha_0_3" android:id="@id/eyq" android:background="@color/a9e" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/dgx" android:maxLines="1" android:singleLine="true" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/afr" android:layout_toEndOf="@id/eyu" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

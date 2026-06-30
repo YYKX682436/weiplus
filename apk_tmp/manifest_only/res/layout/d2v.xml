@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.sandbox.updater.Updater android:gravity="center" android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gr8" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="70.0dp">
+        <ProgressBar android:id="@id/oth" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+        <View style="@style/l3" />
+        <TextView android:textColor="@color/a0c" android:gravity="center_vertical" android:autoLink="web" android:id="@id/jma" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k39" />
+    </LinearLayout>
+</com.tencent.mm.sandbox.updater.Updater>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.webview.ad.CenterScrollFrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/l0u" android:background="@drawable/v6" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/f5" android:layout_gravity="start" android:id="@id/l0v" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:text="@string/ew6" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <FrameLayout android:id="@id/l0z" android:layout_width="match_parent" android:layout_height="@dimen/y3" android:layout_marginTop="@dimen/db" android:layout_below="@id/l0v">
+            <include layout="@layout/ae4" />
+        </FrameLayout>
+        <View android:background="@drawable/ab0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:layout_alignBottom="@id/l0z" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/l0w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_below="@id/l0z">
+            <Button android:id="@id/l0x" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="@string/sg" app:layout_constraintEnd_toStartOf="@id/l0y" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/kz" />
+            <Button android:id="@id/l0y" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="@string/etd" android:layout_marginStart="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/l0x" style="@style/kr" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</com.tencent.mm.plugin.finder.webview.ad.CenterScrollFrameLayout>

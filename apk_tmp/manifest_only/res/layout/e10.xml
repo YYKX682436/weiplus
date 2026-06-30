@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/hq" android:paddingBottom="@dimen/hq" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bk4" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/tx" />
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/bk4">
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:id="@id/spr" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hq" />
+        <TextView android:ellipsize="end" android:id="@id/sq8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30.0dp" android:maxLines="1" />
+    </FrameLayout>
+</RelativeLayout>

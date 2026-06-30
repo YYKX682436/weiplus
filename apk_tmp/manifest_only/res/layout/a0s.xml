@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cb1" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/t_s" android:background="@drawable/b84" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="14.0dp" android:textColor="@color/abw" android:id="@id/t_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/o_w" android:layout_marginStart="12.0dp" android:textFontWeight="500" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/t_g" android:background="@drawable/gy" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/t_s">
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:id="@id/t_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:text="@string/o_x" android:alpha="0.3" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/biz_item_more_icon" android:layout_marginEnd="16.0dp" app:fs="@color/FG_0" app:layout_constraintBottom_toBottomOf="@id/t_m" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@id/t_m" />
+        <View android:background="@drawable/he" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

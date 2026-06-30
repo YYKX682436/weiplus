@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/i2a" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="8.0dp" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_1" android:gravity="left|center" android:id="@id/j9i" android:background="@drawable/anl" android:paddingLeft="16.0dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="39.0dp" />
+    <View android:id="@id/d0v" android:background="@color/a08" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/j9j" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/jay" android:background="@drawable/ane" android:layout_width="match_parent" android:layout_height="39.0dp">
+        <TextView android:textColor="@color/vo" android:id="@id/jaz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gr4" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jax" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/icons_outlined_arrow" app:fs="@color/vo" />
+        <View android:id="@id/jr3" android:background="@drawable/b8i" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="5.0dp" />
+    </LinearLayout>
+    <View android:id="@id/auc" android:background="@color/xr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8.0dp" />
+</LinearLayout>

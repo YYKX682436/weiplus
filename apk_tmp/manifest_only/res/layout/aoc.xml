@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/epn" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="28.0dp" android:layout_marginRight="20.0dp" android:src="@raw/icons_filled_refresh" android:layout_alignParentRight="true" app:fs="@color/BW_100_Alpha_0_5" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/epp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="84.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d1" android:layout_below="@id/epp">
+        <TextView android:textSize="14.0dp" android:textColor="@color/q6" android:id="@id/eps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/d7" />
+        <com.tencent.mm.ui.widget.seekbar.BothSidesSeekBar android:id="@id/epq" android:background="@null" android:focusable="true" android:layout_width="match_parent" android:layout_height="64.0dp" android:maxHeight="@dimen/bl" android:max="200" android:thumb="@drawable/a0d" android:layout_centerHorizontal="true" android:importantForAccessibility="yes" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/dv" android:layout_marginStart="@dimen/db" android:layout_marginEnd="@dimen/db" android:splitTrack="false" />
+        <ImageView android:id="@id/epr" android:layout_width="@dimen/dv" android:layout_height="64.0dp" android:src="@drawable/a0d" android:layout_alignLeft="@id/epq" />
+    </RelativeLayout>
+</RelativeLayout>

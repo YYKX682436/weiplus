@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fqd" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/a40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fqb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_alignParentTop="true" android:paddingStart="@dimen/c9">
+        <ViewStub android:id="@id/i95" android:visibility="gone" android:layout="@layout/dae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="186.0dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bl" android:layout_toEndOf="@id/ig1" />
+        <ViewStub android:id="@id/fpy" android:visibility="gone" android:layout="@layout/b18" android:layout_width="@dimen/db" android:layout_height="@dimen/df" android:layout_toLeftOf="@id/fp9" />
+        <include android:id="@id/ig1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/bl" layout="@layout/b09" />
+        <include android:id="@id/fp7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:layout_toLeftOf="@id/fq8" android:layout_centerVertical="true" layout="@layout/b0t" />
+        <include android:id="@id/fq8" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_toLeftOf="@id/fbg" android:layout_centerVertical="true" layout="@layout/b1g" />
+        <include android:id="@id/fbg" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_toLeftOf="@id/ihj" android:layout_centerVertical="true" layout="@layout/avl" />
+        <include android:id="@id/ihj" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_toLeftOf="@id/ih2" android:layout_centerVertical="true" layout="@layout/b16" />
+        <include android:id="@id/ih2" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dv" layout="@layout/b0q" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/fph" android:visibility="gone" android:layout="@layout/b0z" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/fqb" />
+    <ViewStub android:id="@id/fl4" android:layout="@layout/az2" android:inflatedId="@id/fl3" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

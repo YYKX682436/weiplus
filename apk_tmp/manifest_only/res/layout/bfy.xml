@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.game.ui.GameFeedMoreGameEntranceView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="45.0dp">
+        <TextView android:textSize="@dimen/fm" android:textColor="@color/si" android:id="@id/jr5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g4" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_marginRight="@dimen/g4" android:src="@drawable/bir" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/rs" android:layout_width="match_parent" android:layout_height="1.0px" />
+    </com.tencent.mm.plugin.game.ui.GameFeedMoreGameEntranceView>
+</FrameLayout>

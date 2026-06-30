@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="77.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/d2p" android:layout_width="16.0dp" android:layout_height="8.0dp" android:src="@raw/top_story_popupwindow_down" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/c6p" android:background="@drawable/b7k" android:layout_width="336.0dp" android:layout_height="61.0dp" android:layout_below="@id/d2p" android:layout_centerHorizontal="true">
+        <CheckBox android:textColor="#949494" android:id="@id/bso" android:padding="0.0dp" android:focusable="false" android:clickable="false" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="32.0dp" android:checked="true" android:drawablePadding="0.0dp" android:layout_centerVertical="true" style="@style/im" />
+        <TextView android:textSize="15.0dp" android:textColor="#aeaeae" android:id="@id/o_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/k1g" android:layout_toRightOf="@id/bso" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/by4" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@id/o_2">
+            <TextView android:textSize="15.0dp" android:textColor="@color/ab0" android:id="@id/o_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/k1h" />
+            <ImageView android:layout_width="7.0dp" android:layout_height="13.0dp" android:layout_marginLeft="9.0dp" android:src="@raw/top_story_arrow_right_white" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ot0" android:layout_width="16.0dp" android:layout_height="8.0dp" android:src="@raw/top_story_popupwindow_up" android:layout_below="@id/c6p" />
+</RelativeLayout>

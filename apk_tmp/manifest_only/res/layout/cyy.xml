@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/o4x" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/d7">
+        <ImageView android:id="@id/a9o" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@drawable/bhm" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/c9">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/fa" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/civ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cs" android:minWidth="@dimen/df" android:maxLines="1" android:singleLine="true" android:layout_alignTop="@id/a9o" android:layout_toStartOf="@id/azj" android:layout_toEndOf="@id/a9o" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/tk" android:ellipsize="end" android:id="@id/cua" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:maxWidth="280.0dp" android:maxLines="1" android:singleLine="true" android:layout_below="@id/civ" android:paddingEnd="@dimen/cn" android:layout_alignStart="@id/civ" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/tk" android:ellipsize="end" android:id="@id/opu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:maxWidth="280.0dp" android:maxLines="1" android:singleLine="true" android:layout_below="@id/civ" android:paddingEnd="@dimen/cn" android:layout_alignStart="@id/civ" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="center_horizontal" android:id="@id/b0l" android:layout_width="@dimen/cf" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dj" android:text="@string/jvv" style="@style/kq" />
+</LinearLayout>

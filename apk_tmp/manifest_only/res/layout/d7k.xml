@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/pf3" android:background="@color/vj" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/pdz" android:background="@color/vj" android:padding="@dimen/hf" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bb" android:textColor="#228b22" android:gravity="left|center" android:id="@id/pdy" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/kst" android:drawableLeft="@drawable/ccn" android:drawablePadding="5.0dp" />
+        </LinearLayout>
+        <com.tencent.mm.ui.base.MaxListView android:id="@id/pd_" android:background="@color/vj" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#d4d4d4" android:dividerHeight="1.0px" />
+        <TextView android:textColor="@color/vo" android:id="@id/pdr" android:paddingTop="@dimen/j3" android:visibility="gone" android:layout_height="wrap_content" android:layout_margin="0.0dp" style="@style/t3" />
+        <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/zx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/hf" android:text="@string/l8o" android:drawableLeft="@drawable/ch8" android:drawablePadding="@dimen/j3" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

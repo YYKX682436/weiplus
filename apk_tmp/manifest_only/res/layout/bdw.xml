@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="13.0dp" android:layout_marginEnd="13.0dp">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/a_7" android:layout_width="40.0dp" android:layout_height="40.0dp">
+            <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/a63" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/bhm" android:scaleType="fitXY" app:i8="20.0dp" />
+            <ImageView android:id="@id/a5w" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@raw/game_at_select_someone_box_dark" android:scaleType="fitXY" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center" android:id="@id/a64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxEms="4" android:singleLine="true" android:layout_below="@id/a_7" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/FG_2" android:ellipsize="end" android:gravity="center" android:id="@id/a65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="6" android:singleLine="true" android:layout_below="@id/a_7" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <View android:id="@id/a62" android:background="@color/FG_3" android:visibility="gone" android:layout_width="1.0px" android:layout_height="64.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" />
+</LinearLayout>

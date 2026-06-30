@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/yd" android:id="@id/usn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="preload" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/ngb" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="start" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/v5g" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="show" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/nja" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="stop" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/p1c" android:background="@android:color/holo_red_light" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

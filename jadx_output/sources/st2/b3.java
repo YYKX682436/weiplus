@@ -1,0 +1,27 @@
+package st2;
+
+/* loaded from: classes3.dex */
+public final class b3 extends qz5.d {
+
+    /* renamed from: d, reason: collision with root package name */
+    public /* synthetic */ java.lang.Object f412233d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ st2.g3 f412234e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public int f412235f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b3(st2.g3 g3Var, kotlin.coroutines.Continuation continuation) {
+        super(continuation);
+        this.f412234e = g3Var;
+    }
+
+    @Override // qz5.a
+    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+        this.f412233d = obj;
+        this.f412235f |= Integer.MIN_VALUE;
+        return this.f412234e.q(0L, 0L, 0, null, this);
+    }
+}

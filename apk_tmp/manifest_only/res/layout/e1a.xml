@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tx" />
+    <FrameLayout android:background="@drawable/mh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a2" android:layout_weight="1.0" style="@style/el">
+        <include layout="@layout/uc" />
+        <com.tencent.mm.ui.chatting.view.FoldableCellLayout android:id="@id/bn5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

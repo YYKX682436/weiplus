@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/a9e" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cgi" android:background="@drawable/ado" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dr" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/c9">
+        <ViewStub android:id="@id/kdo" android:layout="@layout/bbe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/jkp" android:layout="@layout/bbf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:id="@id/o7u" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:maxWidth="130.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/m06" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="14.0dp" android:textColor="@color/ac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:maxWidth="@dimen/bu" android:text="重新设置" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/lqy" android:background="@raw/refresh" android:layout_width="17.0dp" android:layout_height="17.0dp" app:fs="@color/a31" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

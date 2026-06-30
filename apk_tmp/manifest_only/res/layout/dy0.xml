@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/mcg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/dm" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.mj_publisher.finder.shoot_composing.sidebar.SideBarItemView android:id="@id/jt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c_" app:itemImageSrc="@drawable/ckv" app:itemText="@string/mcy" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/jfh" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <com.tencent.mm.ui.MMImageView android:id="@id/mlv" android:layout_width="@dimen/dh" android:layout_height="@dimen/dh" android:src="@drawable/cpa" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+        <FrameLayout android:id="@id/k09" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:contentDescription="@string/mcl" app:layout_constraintBottom_toBottomOf="@id/mlv" app:layout_constraintEnd_toStartOf="@id/mlv" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@id/mlv">
+            <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MCRoundCornerImageView android:layout_gravity="start|top" android:id="@id/mls" android:layout_width="@dimen/d0" android:layout_height="@dimen/d0" android:foreground="@drawable/h7" android:src="@drawable/cqp" android:scaleType="centerCrop" app:i8="@dimen/dv" />
+            <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MCRoundCornerImageView android:layout_gravity="end|bottom" android:background="@color/ac8" android:padding="@dimen/afe" android:layout_width="@dimen/d0" android:layout_height="@dimen/d0" android:src="@drawable/cqo" android:scaleType="centerCrop" app:i8="@dimen/dv" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

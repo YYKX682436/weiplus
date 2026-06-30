@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/fwk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+            <FrameLayout android:id="@id/uqs" android:visibility="gone" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="start|center" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/arrow_left_regular" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/ahw" android:id="@id/qvz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sg" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/abw" android:ellipsize="end" android:gravity="center" android:id="@id/qw1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dn" android:layout_marginRight="@dimen/dn" android:text="@string/m14" android:layout_centerInParent="true" android:layout_marginHorizontal="@dimen/dn" />
+            <com.tencent.mm.ui.widget.button.WeButton android:enabled="false" android:gravity="center_vertical" android:id="@id/qw0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m15" android:layout_alignParentEnd="true" style="@style/xm" />
+        </RelativeLayout>
+        <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" app:enableLoadMore="true">
+            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include layout="@layout/dlo" />
+                    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/qvs" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs5" />
+        </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

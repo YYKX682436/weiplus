@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/n56" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="@dimen/j" android:src="@raw/icon_volume_off" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/n55" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="@dimen/j3" android:layout_marginRight="@dimen/j3" android:src="@raw/icon_video_full_screen" android:scaleType="centerCrop" android:layout_toLeftOf="@id/n56" android:layout_centerVertical="true" />
+    <com.tencent.mm.plugin.sns.ad.widget.advideo.AdLandingVideoPlayerSeekBar android:id="@id/jz" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/n55" android:layout_centerVertical="true" />
+</RelativeLayout>

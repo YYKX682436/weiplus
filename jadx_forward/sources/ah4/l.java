@@ -1,0 +1,90 @@
+package ah4;
+
+/* loaded from: classes13.dex */
+public class l implements ah4.n {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final android.os.IBinder f86536d;
+
+    public l(android.os.IBinder iBinder) {
+        this.f86536d = iBinder;
+    }
+
+    @Override // ah4.n
+    public void a1() {
+        android.os.Parcel obtain = android.os.Parcel.obtain();
+        android.os.Parcel obtain2 = android.os.Parcel.obtain();
+        try {
+            obtain.writeInterfaceToken("com.tencent.mm.plugin.talkroom.component.ITalkRoomPlayer_AIDL");
+            this.f86536d.transact(1, obtain, obtain2, 0);
+            obtain2.readException();
+        } finally {
+            obtain2.recycle();
+            obtain.recycle();
+        }
+    }
+
+    @Override // android.os.IInterface
+    public android.os.IBinder asBinder() {
+        return this.f86536d;
+    }
+
+    @Override // ah4.n
+    public int o1() {
+        android.os.Parcel obtain = android.os.Parcel.obtain();
+        android.os.Parcel obtain2 = android.os.Parcel.obtain();
+        try {
+            obtain.writeInterfaceToken("com.tencent.mm.plugin.talkroom.component.ITalkRoomPlayer_AIDL");
+            this.f86536d.transact(4, obtain, obtain2, 0);
+            obtain2.readException();
+            return obtain2.readInt();
+        } finally {
+            obtain2.recycle();
+            obtain.recycle();
+        }
+    }
+
+    @Override // ah4.n
+    /* renamed from: release */
+    public void mo2059x41012807() {
+        android.os.Parcel obtain = android.os.Parcel.obtain();
+        android.os.Parcel obtain2 = android.os.Parcel.obtain();
+        try {
+            obtain.writeInterfaceToken("com.tencent.mm.plugin.talkroom.component.ITalkRoomPlayer_AIDL");
+            this.f86536d.transact(3, obtain, obtain2, 0);
+            obtain2.readException();
+        } finally {
+            obtain2.recycle();
+            obtain.recycle();
+        }
+    }
+
+    @Override // ah4.n
+    /* renamed from: start */
+    public void mo2060x68ac462() {
+        android.os.Parcel obtain = android.os.Parcel.obtain();
+        android.os.Parcel obtain2 = android.os.Parcel.obtain();
+        try {
+            obtain.writeInterfaceToken("com.tencent.mm.plugin.talkroom.component.ITalkRoomPlayer_AIDL");
+            this.f86536d.transact(5, obtain, obtain2, 0);
+            obtain2.readException();
+        } finally {
+            obtain2.recycle();
+            obtain.recycle();
+        }
+    }
+
+    @Override // ah4.n
+    public void u() {
+        android.os.Parcel obtain = android.os.Parcel.obtain();
+        android.os.Parcel obtain2 = android.os.Parcel.obtain();
+        try {
+            obtain.writeInterfaceToken("com.tencent.mm.plugin.talkroom.component.ITalkRoomPlayer_AIDL");
+            this.f86536d.transact(2, obtain, obtain2, 0);
+            obtain2.readException();
+        } finally {
+            obtain2.recycle();
+            obtain.recycle();
+        }
+    }
+}

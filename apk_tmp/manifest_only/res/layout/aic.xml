@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/e0b" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/jdg" layout="@layout/aib" />
+            <include android:id="@id/jdg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/ai_" />
+        </LinearLayout>
+        <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:id="@id/ffc" android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="@dimen/bl" android:layout_marginTop="@dimen/bl" app:logo_mode="1" app:logo_style="3" />
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/cjy" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+</FrameLayout>

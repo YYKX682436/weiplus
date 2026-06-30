@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <PreferenceSmallCategory android:key="unlike_empty" />
+    <IconPreference android:key="unlike" android:title="@string/j9e" />
+    <Preference android:key="unlike_desc" android:gc="@layout/c0d" android:title="@string/k0y" />
+    <PreferenceSmallCategory android:key="black_empty" />
+    <IconPreference android:key="black" android:title="@string/jd_" />
+    <Preference android:key="not_be_seen_desc" android:gc="@layout/c0d" android:title="@string/k0n" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="settings_top_story_setting_recommend" android:gc="@layout/byv" android:title="@string/k0u" />
+    <PreferenceSmallCategory android:key="settings_top_story_setting_recommend_small_category" />
+    <IconPreference android:key="feedback" android:title="@string/k0p" />
+</PreferenceScreen>

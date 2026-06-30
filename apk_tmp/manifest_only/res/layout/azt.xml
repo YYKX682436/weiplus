@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/a7s" android:background="@drawable/a37" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bw" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/i02" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/i03" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/c9" android:src="@raw/finder_live_audio_tips" app:fs="@color/an" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/xt" android:textColor="@color/an" android:id="@id/i04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efn" app:layout_constraintBottom_toBottomOf="@id/i03" app:layout_constraintLeft_toRightOf="@id/i03" app:layout_constraintTop_toTopOf="@id/i03" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/m3f" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m3g" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/c9" android:src="@raw/finder_live_audio_tips" app:fs="@color/an" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/xt" android:textColor="@color/an" android:id="@id/m3h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efn" app:layout_constraintBottom_toBottomOf="@id/m3g" app:layout_constraintRight_toLeftOf="@id/m3g" app:layout_constraintTop_toTopOf="@id/m3g" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

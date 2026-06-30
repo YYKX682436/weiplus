@@ -1,0 +1,35 @@
+package ku3;
+
+/* loaded from: classes3.dex */
+public final class u5 implements androidx.lifecycle.k0 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ ku3.c6 f312426d;
+
+    public u5(ku3.c6 c6Var) {
+        this.f312426d = c6Var;
+    }
+
+    @Override // androidx.lifecycle.k0
+    public void onChanged(java.lang.Object obj) {
+        zt3.c cVar = (zt3.c) obj;
+        com.tencent.mars.xlog.Log.i("MicroMsg.RecordTopOutsideMenuPlugin", "MENU_LIGHT >> " + cVar.f475588b);
+        boolean z17 = cVar.f475588b;
+        ku3.c6 c6Var = this.f312426d;
+        if (z17) {
+            c6Var.a().setVisibility(0);
+            return;
+        }
+        c6Var.a().setVisibility(8);
+        java.lang.Object value = ((jz5.n) c6Var.f312187h).getValue();
+        kotlin.jvm.internal.o.f(value, "getValue(...)");
+        android.view.View view = (android.view.View) value;
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+        arrayList.add(8);
+        java.util.Collections.reverse(arrayList);
+        yj0.a.d(view, arrayList.toArray(), "com/tencent/mm/plugin/recordvideo/plugin/professional/RecordTopOutsideMenuPlugin$initLogic$1$1", "onChanged", "(Lcom/tencent/mm/plugin/recordvideo/plugin/context/MenuInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        view.setVisibility(((java.lang.Integer) arrayList.get(0)).intValue());
+        yj0.a.f(view, "com/tencent/mm/plugin/recordvideo/plugin/professional/RecordTopOutsideMenuPlugin$initLogic$1$1", "onChanged", "(Lcom/tencent/mm/plugin/recordvideo/plugin/context/MenuInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+    }
+}

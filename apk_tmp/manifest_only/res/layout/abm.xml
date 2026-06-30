@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/duw" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/abd" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dux" android:padding="@dimen/f0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gj">
+        <include android:visibility="gone" layout="@layout/e4z" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/dxb" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/lp3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/dvl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ev" android:layout_alignParentEnd="true">
+                        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/dvj" style="@style/gh" />
+                        <ImageView android:layout_gravity="center" android:id="@id/dut" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@drawable/as8" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/dvl">
+                        <TextView android:id="@id/dvr" android:text="{title}" style="@style/go" />
+                        <TextView android:id="@id/dvk" android:layout_marginTop="@dimen/f4" android:text="{desc}" android:maxLines="2" style="@style/gl" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/p5l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/vy" android:src="@drawable/bi6" android:contentDescription="@string/ha8" android:layout_alignParentEnd="true" style="@style/gh" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/dx8" android:text="{title}" android:layout_marginEnd="@dimen/ev" android:layout_toStartOf="@id/vy" android:layout_alignParentStart="true" style="@style/go" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/bs6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/vz" android:src="@raw/voice_default_light" android:contentDescription="@string/ha4" android:layout_alignParentEnd="true" style="@style/gh" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/dtp" android:text="{title}" android:layout_marginEnd="@dimen/ev" android:layout_toStartOf="@id/vz" android:layout_alignParentStart="true" style="@style/go" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/c8d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/dtv" android:layout_alignParentEnd="true" style="@style/gh" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ev" android:layout_toStartOf="@id/dtv" android:layout_alignParentStart="true">
+                        <TextView android:id="@id/dtn" android:text="{title}" style="@style/go" />
+                        <TextView android:id="@id/dtm" android:layout_marginTop="@dimen/f4" android:text="{desc}" style="@style/gl" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/dxa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@id/dw3" layout="@layout/abp" />
+                <include android:id="@id/dw4" layout="@layout/abp" />
+                <include android:id="@id/dw5" layout="@layout/abp" />
+            </LinearLayout>
+            <include layout="@layout/abg" />
+            <include layout="@layout/abf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

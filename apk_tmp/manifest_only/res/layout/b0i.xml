@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/foc" android:background="#4c4c4c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginRight="@dimen/c9" android:layout_marginBottom="@dimen/dv" app:ds="4.0dp" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/xt" android:paddingBottom="@dimen/xt" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/vip_filled_new" android:layout_toLeftOf="@id/foe" android:layout_centerVertical="true" app:fs="#ffecb2" />
+            <TextView android:textSize="@dimen/b3" android:textColor="#ffecb2" android:id="@id/foe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/eh0" android:includeFontPadding="false" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+package j62;
+
+/* loaded from: classes15.dex */
+public abstract class g {
+    public static final j62.f a(j62.a aVar, j62.c cVar) {
+        boolean z17 = aVar != null && aVar.f379412d > 0 && aVar.c();
+        boolean z18 = cVar != null && cVar.f66062xf8fc5057 > 0 && cVar.y0();
+        if (!z17 && !z18) {
+            return null;
+        }
+        if (z17 && !z18) {
+            return aVar;
+        }
+        if (!z17 && z18) {
+            return cVar;
+        }
+        if (z17 && z18) {
+            return aVar.f379415g == 0 ? aVar : cVar;
+        }
+        return null;
+    }
+}

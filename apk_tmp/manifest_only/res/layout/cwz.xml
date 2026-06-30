@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nkt" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/j9" android:textColor="#e6b2b2b2" android:id="@id/nku" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jlr" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/a7y" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+            <RelativeLayout android:id="@id/nkx" android:background="@drawable/b4b" android:padding="4.0dp" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" android:layout_marginEnd="12.0dp">
+                    <com.tencent.mm.ui.widget.MMEditText android:textSize="14.0sp" android:textColor="@color/a7z" android:textColorHint="@color/a7z" android:id="@id/nkq" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/db" android:inputType="text" android:imeOptions="actionSend" />
+                    <com.tencent.mm.ui.widget.MMTextView android:layout_gravity="end" android:id="@id/nkv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/nkn" android:layout_width="@dimen/abk" android:layout_height="@dimen/abk" android:layout_marginStart="16.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/nko" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

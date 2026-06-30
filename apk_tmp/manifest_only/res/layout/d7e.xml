@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ofx" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h7o" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="44.0dp" android:src="@raw/icons_filled_error" android:importantForAccessibility="no" app:fs="@color/ac" />
+        <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="center" android:layout_gravity="center" android:id="@id/j97" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="center" android:layout_gravity="center" android:id="@id/nqv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|bottom" android:paddingBottom="64.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ofx" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/b_" android:textStyle="bold" android:textColor="@color/a9n" android:id="@id/h5h" android:background="@drawable/b8a" android:text="@string/vj" style="@style/l0" />
+    </LinearLayout>
+</RelativeLayout>

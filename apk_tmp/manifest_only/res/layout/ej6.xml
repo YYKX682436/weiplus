@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.chatting.TapToDismissFrameLayout android:id="@id/uf3" android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.base.CustomScrollView android:layout_gravity="center_vertical" android:id="@id/uf5" android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/cz" android:paddingRight="@dimen/cz" android:paddingBottom="@dimen/cz" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cz" android:paddingVertical="@dimen/cz">
+        <FrameLayout android:id="@id/uf4" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.ui.base.CustomScrollView>
+</com.tencent.mm.ui.chatting.TapToDismissFrameLayout>

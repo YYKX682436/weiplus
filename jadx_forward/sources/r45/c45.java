@@ -1,0 +1,214 @@
+package r45;
+
+/* loaded from: classes15.dex */
+public class c45 extends com.p314xaae8f345.mm.p2495xc50a8b8b.f {
+
+    /* renamed from: d, reason: collision with root package name */
+    public java.lang.String f452803d;
+
+    /* renamed from: g, reason: collision with root package name */
+    public java.lang.String f452806g;
+
+    /* renamed from: n, reason: collision with root package name */
+    public r45.x35 f452810n;
+
+    /* renamed from: e, reason: collision with root package name */
+    public long f452804e = 0;
+
+    /* renamed from: f, reason: collision with root package name */
+    public int f452805f = 0;
+
+    /* renamed from: h, reason: collision with root package name */
+    public int f452807h = -1;
+
+    /* renamed from: i, reason: collision with root package name */
+    public long f452808i = 0;
+
+    /* renamed from: m, reason: collision with root package name */
+    public long f452809m = 0;
+
+    /* renamed from: o, reason: collision with root package name */
+    public java.lang.String f452811o = "";
+
+    /* renamed from: p, reason: collision with root package name */
+    public boolean f452812p = false;
+
+    /* renamed from: q, reason: collision with root package name */
+    public java.lang.String f452813q = "";
+
+    /* renamed from: r, reason: collision with root package name */
+    public java.lang.String f452814r = "";
+
+    /* renamed from: s, reason: collision with root package name */
+    public int f452815s = -1;
+
+    /* renamed from: t, reason: collision with root package name */
+    public boolean f452816t = false;
+
+    /* renamed from: u, reason: collision with root package name */
+    public int f452817u = 0;
+
+    /* renamed from: v, reason: collision with root package name */
+    public java.lang.String f452818v = "";
+
+    @Override // com.p314xaae8f345.mm.p2495xc50a8b8b.f
+    /* renamed from: compareContent */
+    public boolean mo516x5c5a33d4(com.p314xaae8f345.mm.p2495xc50a8b8b.f fVar) {
+        if (fVar == null || !(fVar instanceof r45.c45)) {
+            return false;
+        }
+        r45.c45 c45Var = (r45.c45) fVar;
+        return n51.f.a(this.f452803d, c45Var.f452803d) && n51.f.a(java.lang.Long.valueOf(this.f452804e), java.lang.Long.valueOf(c45Var.f452804e)) && n51.f.a(java.lang.Integer.valueOf(this.f452805f), java.lang.Integer.valueOf(c45Var.f452805f)) && n51.f.a(this.f452806g, c45Var.f452806g) && n51.f.a(java.lang.Integer.valueOf(this.f452807h), java.lang.Integer.valueOf(c45Var.f452807h)) && n51.f.a(java.lang.Long.valueOf(this.f452808i), java.lang.Long.valueOf(c45Var.f452808i)) && n51.f.a(java.lang.Long.valueOf(this.f452809m), java.lang.Long.valueOf(c45Var.f452809m)) && n51.f.a(this.f452810n, c45Var.f452810n) && n51.f.a(this.f452811o, c45Var.f452811o) && n51.f.a(java.lang.Boolean.valueOf(this.f452812p), java.lang.Boolean.valueOf(c45Var.f452812p)) && n51.f.a(this.f452813q, c45Var.f452813q) && n51.f.a(this.f452814r, c45Var.f452814r) && n51.f.a(java.lang.Integer.valueOf(this.f452815s), java.lang.Integer.valueOf(c45Var.f452815s)) && n51.f.a(java.lang.Boolean.valueOf(this.f452816t), java.lang.Boolean.valueOf(c45Var.f452816t)) && n51.f.a(java.lang.Integer.valueOf(this.f452817u), java.lang.Integer.valueOf(c45Var.f452817u)) && n51.f.a(this.f452818v, c45Var.f452818v);
+    }
+
+    @Override // com.p314xaae8f345.mm.p2495xc50a8b8b.f
+    public final int op(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            g36.f fVar = (g36.f) objArr[0];
+            java.lang.String str = this.f452803d;
+            if (str != null) {
+                fVar.j(1, str);
+            }
+            fVar.h(2, this.f452804e);
+            fVar.e(3, this.f452805f);
+            java.lang.String str2 = this.f452806g;
+            if (str2 != null) {
+                fVar.j(4, str2);
+            }
+            fVar.e(5, this.f452807h);
+            fVar.h(6, this.f452808i);
+            fVar.h(7, this.f452809m);
+            r45.x35 x35Var = this.f452810n;
+            if (x35Var != null) {
+                fVar.i(8, x35Var.mo75928xcd1e8d8());
+                this.f452810n.mo75956x3d5d1f78(fVar);
+            }
+            java.lang.String str3 = this.f452811o;
+            if (str3 != null) {
+                fVar.j(9, str3);
+            }
+            fVar.a(10, this.f452812p);
+            java.lang.String str4 = this.f452813q;
+            if (str4 != null) {
+                fVar.j(11, str4);
+            }
+            java.lang.String str5 = this.f452814r;
+            if (str5 != null) {
+                fVar.j(12, str5);
+            }
+            fVar.e(13, this.f452815s);
+            fVar.a(14, this.f452816t);
+            fVar.e(15, this.f452817u);
+            java.lang.String str6 = this.f452818v;
+            if (str6 != null) {
+                fVar.j(16, str6);
+            }
+            return 0;
+        }
+        if (i17 == 1) {
+            java.lang.String str7 = this.f452803d;
+            int j17 = (str7 != null ? b36.f.j(1, str7) + 0 : 0) + b36.f.h(2, this.f452804e) + b36.f.e(3, this.f452805f);
+            java.lang.String str8 = this.f452806g;
+            if (str8 != null) {
+                j17 += b36.f.j(4, str8);
+            }
+            int e17 = j17 + b36.f.e(5, this.f452807h) + b36.f.h(6, this.f452808i) + b36.f.h(7, this.f452809m);
+            r45.x35 x35Var2 = this.f452810n;
+            if (x35Var2 != null) {
+                e17 += b36.f.i(8, x35Var2.mo75928xcd1e8d8());
+            }
+            java.lang.String str9 = this.f452811o;
+            if (str9 != null) {
+                e17 += b36.f.j(9, str9);
+            }
+            int a17 = e17 + b36.f.a(10, this.f452812p);
+            java.lang.String str10 = this.f452813q;
+            if (str10 != null) {
+                a17 += b36.f.j(11, str10);
+            }
+            java.lang.String str11 = this.f452814r;
+            if (str11 != null) {
+                a17 += b36.f.j(12, str11);
+            }
+            int e18 = a17 + b36.f.e(13, this.f452815s) + b36.f.a(14, this.f452816t) + b36.f.e(15, this.f452817u);
+            java.lang.String str12 = this.f452818v;
+            return str12 != null ? e18 + b36.f.j(16, str12) : e18;
+        }
+        if (i17 == 2) {
+            c36.a aVar = new c36.a((byte[]) objArr[0], com.p314xaae8f345.mm.p2495xc50a8b8b.f.f38879xd1e823a);
+            for (int m75958x5767edba = com.p314xaae8f345.mm.p2495xc50a8b8b.f.m75958x5767edba(aVar); m75958x5767edba > 0; m75958x5767edba = com.p314xaae8f345.mm.p2495xc50a8b8b.f.m75958x5767edba(aVar)) {
+                if (!super.mo75949x4476b383(aVar, this, m75958x5767edba)) {
+                    aVar.b();
+                }
+            }
+            return 0;
+        }
+        if (i17 != 3) {
+            return -1;
+        }
+        c36.a aVar2 = (c36.a) objArr[0];
+        r45.c45 c45Var = (r45.c45) objArr[1];
+        int intValue = ((java.lang.Integer) objArr[2]).intValue();
+        switch (intValue) {
+            case 1:
+                c45Var.f452803d = aVar2.k(intValue);
+                return 0;
+            case 2:
+                c45Var.f452804e = aVar2.i(intValue);
+                return 0;
+            case 3:
+                c45Var.f452805f = aVar2.g(intValue);
+                return 0;
+            case 4:
+                c45Var.f452806g = aVar2.k(intValue);
+                return 0;
+            case 5:
+                c45Var.f452807h = aVar2.g(intValue);
+                return 0;
+            case 6:
+                c45Var.f452808i = aVar2.i(intValue);
+                return 0;
+            case 7:
+                c45Var.f452809m = aVar2.i(intValue);
+                return 0;
+            case 8:
+                java.util.LinkedList j18 = aVar2.j(intValue);
+                int size = j18.size();
+                for (int i18 = 0; i18 < size; i18++) {
+                    byte[] bArr = (byte[]) j18.get(i18);
+                    r45.x35 x35Var3 = new r45.x35();
+                    if (bArr != null && bArr.length > 0) {
+                        x35Var3.mo11468x92b714fd(bArr);
+                    }
+                    c45Var.f452810n = x35Var3;
+                }
+                return 0;
+            case 9:
+                c45Var.f452811o = aVar2.k(intValue);
+                return 0;
+            case 10:
+                c45Var.f452812p = aVar2.c(intValue);
+                return 0;
+            case 11:
+                c45Var.f452813q = aVar2.k(intValue);
+                return 0;
+            case 12:
+                c45Var.f452814r = aVar2.k(intValue);
+                return 0;
+            case 13:
+                c45Var.f452815s = aVar2.g(intValue);
+                return 0;
+            case 14:
+                c45Var.f452816t = aVar2.c(intValue);
+                return 0;
+            case 15:
+                c45Var.f452817u = aVar2.g(intValue);
+                return 0;
+            case 16:
+                c45Var.f452818v = aVar2.k(intValue);
+                return 0;
+            default:
+                return -1;
+        }
+    }
+}

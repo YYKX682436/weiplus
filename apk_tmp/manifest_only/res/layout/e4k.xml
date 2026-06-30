@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/aid" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/mdy" android:background="@drawable/d08" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="搜索设置项" android:maxLines="1" android:layout_weight="1.0" android:inputType="text" android:layout_marginEnd="8.0dp" />
+        <Button android:id="@id/rfz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/v3x" android:background="@color/aid" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dg3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/an0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有找到匹配的设置项" />
+    </LinearLayout>
+</LinearLayout>

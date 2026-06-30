@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cob" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/j">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4p" android:background="@null" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@raw/actionbar_icon_dark_back" android:contentDescription="@string/ig" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/d0v" android:background="@color/br" android:layout_width="@dimen/bd" android:layout_height="@dimen/hi" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <TextView android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/obn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wp" android:singleLine="true" style="@style/ie" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/nqs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wp" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/b9" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/j">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/jgr" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:contentDescription="@string/w_" app:fs="@color/BW_70" />
+    </LinearLayout>
+</LinearLayout>

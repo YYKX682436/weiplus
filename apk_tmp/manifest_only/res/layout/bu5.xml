@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ij_" android:focusable="true" android:layout_width="117.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/ija" android:background="@drawable/amp" android:layout_width="117.0dp" android:layout_height="194.0dp" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ijb" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4.0dp" android:src="@drawable/c9q" android:scaleType="fitXY" android:importantForAccessibility="no" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/ijc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:src="@drawable/c9r" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ijg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/ijc" android:layout_centerHorizontal="true">
+                <TextView android:textSize="12.0dp" android:textColor="@color/x2" android:gravity="center" android:id="@id/ije" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" android:layout_centerInParent="true" android:layout_marginStart="23.0dp" android:layout_marginEnd="23.0dp" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ijf" android:layout_width="6.0dp" android:layout_height="12.0dp" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="2.0dp" android:layout_marginEnd="14.0dp" android:layout_alignParentEnd="true" app:fs="#ba9c6a" />
+            </RelativeLayout>
+            <TextView android:textSize="10.0dp" android:textColor="@color/x2" android:id="@id/ijd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="" android:includeFontPadding="false" android:layout_below="@id/ijg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

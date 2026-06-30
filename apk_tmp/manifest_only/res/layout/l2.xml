@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/a48" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nrh" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/b1">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/iiv" android:background="@drawable/b4k" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="@dimen/b1">
+                <TextView android:textSize="@dimen/ia" android:textColor="@color/BW_0_Alpha_0_9" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/aki" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <include android:id="@id/nrd" layout="@layout/bz2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/nrf" android:paddingTop="@dimen/ix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:text="@string/akh" />
+        <com.tencent.mm.msgsubscription.ui.MaxRecyclerView android:id="@id/nra" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</ScrollView>

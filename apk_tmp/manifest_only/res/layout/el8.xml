@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerConstraintLayout android:id="@id/k69" android:background="#0dffffff" android:layout_width="match_parent" android:layout_height="match_parent" app:ds="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u5_" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginStart="@dimen/c8" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/c9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@id/u5_" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="14.0sp" android:textColor="#e6ffffff" android:id="@id/u5b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="center" android:layout_marginEnd="@dimen/dv" android:textFontWeight="500" app:layout_constraintBottom_toTopOf="@id/u5a" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.5" app:layout_constraintVertical_chainStyle="2" />
+        <TextView android:textSize="12.0sp" android:textColor="#80ffffff" android:id="@id/u5a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" android:textAlignment="center" android:layout_marginEnd="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@id/u5b" app:layout_constraintVertical_chainStyle="2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.ui.widget.RoundCornerConstraintLayout>

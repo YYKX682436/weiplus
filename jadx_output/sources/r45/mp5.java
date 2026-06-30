@@ -1,0 +1,118 @@
+package r45;
+
+/* loaded from: classes4.dex */
+public class mp5 extends r45.mr5 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public com.tencent.mm.protobuf.g f380730d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public int f380731e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public r45.cu5 f380732f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public long f380733g;
+
+    @Override // com.tencent.mm.protobuf.f
+    public boolean compareContent(com.tencent.mm.protobuf.f fVar) {
+        if (fVar == null || !(fVar instanceof r45.mp5)) {
+            return false;
+        }
+        r45.mp5 mp5Var = (r45.mp5) fVar;
+        return n51.f.a(this.BaseRequest, mp5Var.BaseRequest) && n51.f.a(this.f380730d, mp5Var.f380730d) && n51.f.a(java.lang.Integer.valueOf(this.f380731e), java.lang.Integer.valueOf(mp5Var.f380731e)) && n51.f.a(this.f380732f, mp5Var.f380732f) && n51.f.a(java.lang.Long.valueOf(this.f380733g), java.lang.Long.valueOf(mp5Var.f380733g));
+    }
+
+    @Override // com.tencent.mm.protobuf.f
+    public final int op(int i17, java.lang.Object... objArr) {
+        if (i17 == 0) {
+            g36.f fVar = (g36.f) objArr[0];
+            r45.he heVar = this.BaseRequest;
+            if (heVar != null) {
+                fVar.i(1, heVar.computeSize());
+                this.BaseRequest.writeFields(fVar);
+            }
+            com.tencent.mm.protobuf.g gVar = this.f380730d;
+            if (gVar != null) {
+                fVar.b(2, gVar);
+            }
+            fVar.e(3, this.f380731e);
+            r45.cu5 cu5Var = this.f380732f;
+            if (cu5Var != null) {
+                fVar.i(4, cu5Var.computeSize());
+                this.f380732f.writeFields(fVar);
+            }
+            fVar.h(5, this.f380733g);
+            return 0;
+        }
+        if (i17 == 1) {
+            r45.he heVar2 = this.BaseRequest;
+            int i18 = heVar2 != null ? 0 + b36.f.i(1, heVar2.computeSize()) : 0;
+            com.tencent.mm.protobuf.g gVar2 = this.f380730d;
+            if (gVar2 != null) {
+                i18 += b36.f.b(2, gVar2);
+            }
+            int e17 = i18 + b36.f.e(3, this.f380731e);
+            r45.cu5 cu5Var2 = this.f380732f;
+            if (cu5Var2 != null) {
+                e17 += b36.f.i(4, cu5Var2.computeSize());
+            }
+            return e17 + b36.f.h(5, this.f380733g);
+        }
+        if (i17 == 2) {
+            c36.a aVar = new c36.a((byte[]) objArr[0], com.tencent.mm.protobuf.f.unknownTagHandler);
+            for (int nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar); nextFieldNumber > 0; nextFieldNumber = com.tencent.mm.protobuf.f.getNextFieldNumber(aVar)) {
+                if (!super.populateBuilderWithField(aVar, this, nextFieldNumber)) {
+                    aVar.b();
+                }
+            }
+            return 0;
+        }
+        if (i17 != 3) {
+            return -1;
+        }
+        c36.a aVar2 = (c36.a) objArr[0];
+        r45.mp5 mp5Var = (r45.mp5) objArr[1];
+        int intValue = ((java.lang.Integer) objArr[2]).intValue();
+        if (intValue == 1) {
+            java.util.LinkedList j17 = aVar2.j(intValue);
+            int size = j17.size();
+            for (int i19 = 0; i19 < size; i19++) {
+                byte[] bArr = (byte[]) j17.get(i19);
+                r45.he heVar3 = new r45.he();
+                if (bArr != null && bArr.length > 0) {
+                    heVar3.parseFrom(bArr);
+                }
+                mp5Var.BaseRequest = heVar3;
+            }
+            return 0;
+        }
+        if (intValue == 2) {
+            mp5Var.f380730d = aVar2.d(intValue);
+            return 0;
+        }
+        if (intValue == 3) {
+            mp5Var.f380731e = aVar2.g(intValue);
+            return 0;
+        }
+        if (intValue != 4) {
+            if (intValue != 5) {
+                return -1;
+            }
+            mp5Var.f380733g = aVar2.i(intValue);
+            return 0;
+        }
+        java.util.LinkedList j18 = aVar2.j(intValue);
+        int size2 = j18.size();
+        for (int i27 = 0; i27 < size2; i27++) {
+            byte[] bArr2 = (byte[]) j18.get(i27);
+            r45.cu5 cu5Var3 = new r45.cu5();
+            if (bArr2 != null && bArr2.length > 0) {
+                cu5Var3.b(bArr2);
+            }
+            mp5Var.f380732f = cu5Var3;
+        }
+        return 0;
+    }
+}

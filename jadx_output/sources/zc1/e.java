@@ -1,0 +1,30 @@
+package zc1;
+
+/* loaded from: classes7.dex */
+public class e extends yc1.c {
+    public static final int CTRL_INDEX = 269;
+    public static final java.lang.String NAME = "createDownloadTaskAsync";
+
+    /* renamed from: h, reason: collision with root package name */
+    public final zc1.c f471403h;
+
+    public e(uh1.e eVar) {
+        this.f471403h = new zc1.c(eVar, this.f460776g);
+    }
+
+    @Override // gb1.m
+    public java.lang.String a() {
+        this.f471403h.getClass();
+        return "downloadTaskId";
+    }
+
+    @Override // gb1.m
+    public void d(com.tencent.mm.plugin.appbrand.jsapi.l lVar, org.json.JSONObject jSONObject, java.lang.String str) {
+        this.f471403h.d(lVar, jSONObject, str);
+    }
+
+    @Override // gb1.m
+    public java.lang.String getTaskId() {
+        return this.f471403h.getTaskId();
+    }
+}

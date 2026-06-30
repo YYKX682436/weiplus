@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.appbrand.widget.dialog.AppBrandDialogContentView android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/a0q" android:background="@drawable/e_" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="360.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a0p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:src="@raw/actionbar_icon_dark_back" android:layout_centerVertical="true" android:contentDescription="@string/ig" android:layout_alignParentStart="true" app:fs="@color/f_" />
+                <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/a0c" android:layout_gravity="center_horizontal" android:id="@id/a0t" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s4" android:layout_centerInParent="true" android:importantForAccessibility="yes" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp">
+                <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:id="@id/a0s" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:text="已发送至188****2496" android:layout_alignParentLeft="true" android:importantForAccessibility="yes" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:gravity="left|center" android:layout_gravity="center_horizontal" android:id="@id/a0r" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dp" android:text="重发验证码" android:layout_alignParentRight="true" android:importantForAccessibility="yes" />
+            </RelativeLayout>
+            <com.tencent.mm.plugin.appbrand.widget.sms.EditVerifyCodeViewNew android:id="@id/a0u" android:layout_width="match_parent" android:layout_height="@dimen/ad6" android:layout_margin="10.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</com.tencent.mm.plugin.appbrand.widget.dialog.AppBrandDialogContentView>

@@ -1,0 +1,74 @@
+package com.p314xaae8f345.mm.p639x2e3af2.svg.p640x2eaded.p641xcebc809e;
+
+/* renamed from: com.tencent.mm.boot.svg.code.drawable.icons_filled_previous2 */
+/* loaded from: classes16.dex */
+public class C8713x62f9e003 extends l95.c {
+
+    /* renamed from: width */
+    private final int f24625x6be2dc6 = 72;
+
+    /* renamed from: height */
+    private final int f24624xb7389127 = 72;
+
+    @Override // l95.c
+    /* renamed from: doCommand */
+    public int mo43368x913c4840(int i17, java.lang.Object... objArr) {
+        if (i17 == 0 || i17 == 1) {
+            return 72;
+        }
+        if (i17 != 2) {
+            return 0;
+        }
+        android.graphics.Canvas canvas = (android.graphics.Canvas) objArr[0];
+        android.os.Looper looper = (android.os.Looper) objArr[1];
+        l95.c.m145412xe5ca94b6(looper);
+        l95.c.m145413xf00d6f43(looper);
+        android.graphics.Paint m145415xacbd08c9 = l95.c.m145415xacbd08c9(looper);
+        m145415xacbd08c9.setFlags(385);
+        m145415xacbd08c9.setStyle(android.graphics.Paint.Style.FILL);
+        android.graphics.Paint m145415xacbd08c92 = l95.c.m145415xacbd08c9(looper);
+        m145415xacbd08c92.setFlags(385);
+        m145415xacbd08c92.setStyle(android.graphics.Paint.Style.STROKE);
+        m145415xacbd08c9.setColor(-16777216);
+        m145415xacbd08c92.setStrokeWidth(1.0f);
+        m145415xacbd08c92.setStrokeCap(android.graphics.Paint.Cap.BUTT);
+        m145415xacbd08c92.setStrokeJoin(android.graphics.Paint.Join.MITER);
+        m145415xacbd08c92.setStrokeMiter(4.0f);
+        m145415xacbd08c92.setPathEffect(null);
+        l95.c.m145414xacbd08c9(m145415xacbd08c92, looper).setStrokeWidth(1.0f);
+        android.graphics.Paint m145414xacbd08c9 = l95.c.m145414xacbd08c9(m145415xacbd08c9, looper);
+        m145414xacbd08c9.setColor(-16777216);
+        canvas.save();
+        android.graphics.Paint m145414xacbd08c92 = l95.c.m145414xacbd08c9(m145414xacbd08c9, looper);
+        android.graphics.Path m145417xd4061a5a = l95.c.m145417xd4061a5a(looper);
+        m145417xd4061a5a.moveTo(36.0f, 66.0f);
+        m145417xd4061a5a.cubicTo(19.431458f, 66.0f, 6.0f, 52.568542f, 6.0f, 36.0f);
+        m145417xd4061a5a.cubicTo(6.0f, 19.431458f, 19.431458f, 6.0f, 36.0f, 6.0f);
+        m145417xd4061a5a.cubicTo(52.568542f, 6.0f, 66.0f, 19.431458f, 66.0f, 36.0f);
+        m145417xd4061a5a.cubicTo(66.0f, 52.568542f, 52.568542f, 66.0f, 36.0f, 66.0f);
+        m145417xd4061a5a.close();
+        m145417xd4061a5a.moveTo(27.805887f, 33.6f);
+        m145417xd4061a5a.lineTo(42.0f, 33.6f);
+        m145417xd4061a5a.cubicTo(44.982338f, 33.6f, 47.4f, 36.017662f, 47.4f, 39.0f);
+        m145417xd4061a5a.cubicTo(47.4f, 41.982338f, 44.982338f, 44.4f, 42.0f, 44.4f);
+        m145417xd4061a5a.lineTo(36.0f, 44.4f);
+        m145417xd4061a5a.lineTo(36.0f, 48.0f);
+        m145417xd4061a5a.lineTo(42.0f, 48.0f);
+        m145417xd4061a5a.cubicTo(46.970562f, 48.0f, 51.0f, 43.970562f, 51.0f, 39.0f);
+        m145417xd4061a5a.cubicTo(51.0f, 34.029438f, 46.970562f, 30.0f, 42.0f, 30.0f);
+        m145417xd4061a5a.lineTo(27.976452f, 30.0f);
+        m145417xd4061a5a.lineTo(32.030865f, 25.945585f);
+        m145417xd4061a5a.lineTo(29.485281f, 23.400002f);
+        m145417xd4061a5a.lineTo(22.06066f, 30.824621f);
+        m145417xd4061a5a.cubicTo(21.474874f, 31.410408f, 21.474874f, 32.360157f, 22.06066f, 32.945942f);
+        m145417xd4061a5a.lineTo(29.485281f, 40.370564f);
+        m145417xd4061a5a.lineTo(32.030865f, 37.824978f);
+        m145417xd4061a5a.lineTo(27.805887f, 33.6f);
+        m145417xd4061a5a.close();
+        com.p314xaae8f345.mm.svg.C21323x60230c65.m78192x4b1e1ddf(m145417xd4061a5a, 1);
+        canvas.drawPath(m145417xd4061a5a, m145414xacbd08c92);
+        canvas.restore();
+        l95.c.m145409x2f2382(looper);
+        return 0;
+    }
+}

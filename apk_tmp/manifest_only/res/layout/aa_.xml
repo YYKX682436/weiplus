@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/lqx" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/dnx" android:layout_width="match_parent" android:layout_height="@dimen/c0" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/dnp" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_centerInParent="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/dnr" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_centerInParent="true" app:fs="@color/aaw" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/f5" android:gravity="center" android:id="@id/dnt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/dnx" android:paddingStart="@dimen/d7" android:paddingEnd="@dimen/d7" />
+    <TextView android:textSize="@dimen/hv" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_5" android:gravity="center" android:id="@id/dnq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_below="@id/dnt" android:paddingStart="@dimen/d7" android:paddingEnd="@dimen/d7" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/a5" android:id="@id/dnl" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/c6t" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <Button android:textStyle="bold" android:id="@id/dnm" android:layout_marginBottom="@dimen/bu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kz" />
+</RelativeLayout>

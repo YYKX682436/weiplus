@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sqa" android:padding="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/una" android:background="@drawable/czl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/o43" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/bl" android:layout_marginRight="@dimen/c9" android:layout_marginBottom="@dimen/bl" android:layout_marginHorizontal="@dimen/c9" android:layout_marginVertical="@dimen/bl">
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/adg" android:gravity="center_vertical" android:id="@id/unb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/adg" android:gravity="center_vertical" android:id="@id/cjm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" />
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/t9q" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_margin="@dimen/bl" android:src="@raw/exclamation_mark_circle_filled" app:fs="@color/Red_100" />
+    </LinearLayout>
+</FrameLayout>

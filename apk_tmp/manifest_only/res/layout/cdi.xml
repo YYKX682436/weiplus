@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/kwe" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.tencent.mm.view.TouchableLayout android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/i3p" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.tencent.mm.view.RefreshLoadMoreLayout android:gravity="top" android:orientation="vertical" android:id="@id/lr9" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent" android:layout_height="match_parent" />
+                </com.tencent.mm.view.RefreshLoadMoreLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <FrameLayout android:id="@id/kwf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/kwd" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.tencent.mm.view.TouchableLayout>
+</merge>

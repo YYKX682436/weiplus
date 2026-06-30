@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/a31" android:gravity="center" android:id="@id/hzq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="该 Activity 已发生多次泄漏，请提 tapd 给对应 Owner！\n点击下方「不在弹窗」将以通知形式提醒此泄漏\n其他首次出现的泄漏仍将弹窗" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/a0c" android:id="@id/hzr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/jj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Leak Activity: (长按复制)" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/a0c" android:id="@id/hzo" android:background="@drawable/q2" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:textSize="15.0dp" android:textColor="@color/jj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hprof path: (长按复制)" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/a0c" android:id="@id/h53" android:background="@drawable/q2" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="null" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dp" android:textColor="@color/jj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="Reference 泄漏路径: (长按复制)" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/lbi" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" style="@style/w9" />
+            <TextView android:textSize="10.0dp" android:textColor="@color/a0c" android:id="@id/hzp" android:background="@drawable/q2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+        </LinearLayout>
+        <Button android:textSize="16.0dp" android:textColor="@android:color/white" android:background="@color/aaq" android:layout_width="match_parent" android:layout_height="66.0dp" android:layout_marginTop="20.0dp" android:text="@string/gtj" android:onClick="share" />
+        <Button android:textSize="16.0dp" android:textColor="@android:color/white" android:id="@id/hzn" android:background="@color/aaq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="66.0dp" android:layout_marginTop="20.0dp" android:text="【长按】今天不再弹窗提醒该 Activity\n请留意泄漏通知，防止有其他路径的泄漏被忽略" android:textAllCaps="false" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:gravity="center" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="如果 Reference 结果为空, 可以 pull hprof 文件进行分析\n如有任何问题, 请联系 yvesluo\n系统泄漏请联系 yvesluo 加白" />
+    </LinearLayout>
+</ScrollView>

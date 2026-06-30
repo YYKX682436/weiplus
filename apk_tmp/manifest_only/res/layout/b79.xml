@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout android:id="@id/fy9" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:heightWeight="4.0" app:relatedToWidth="true" app:widthWeight="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/l9n" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/lyh" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_toEndOf="@id/ei6" layout="@layout/eds" />
+            <View android:id="@id/aw2" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+            <View android:id="@id/l9f" android:background="@drawable/abs" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bn" android:layout_marginRight="@dimen/bn" android:layout_marginBottom="@dimen/bn" android:layout_above="@id/aw2">
+                <TextView android:textSize="12.0dp" android:textColor="@color/an" android:ellipsize="end" android:id="@id/l8n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dv" android:text="123" android:lines="1" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/ipq" app:layout_constraintTop_toTopOf="0" />
+                <FrameLayout android:id="@id/ipq" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/laj" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/i0b" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/l9b" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/icon_filled_awesome" app:fs="@color/an" />
+                            <TextView android:textSize="12.0dp" android:textColor="@color/an" android:id="@id/lak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xe" android:text="123" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/m3w" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <View android:id="@id/l_i" android:background="@color/an" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bl" android:layout_marginRight="@dimen/bl" />
+                            <ImageView android:id="@id/l91" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/finder_icons_filled_lock" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <include layout="@layout/edp" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout>

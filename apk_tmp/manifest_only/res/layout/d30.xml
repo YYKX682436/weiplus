@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ots" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.sight.decode.ui.SightPlayImageView android:id="@id/o70" android:layout_width="100.0dp" android:layout_height="100.0dp" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/nhn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/shortvideo_play_btn" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:id="@id/otr" android:visibility="gone" layout="@layout/d31" />
+</LinearLayout>

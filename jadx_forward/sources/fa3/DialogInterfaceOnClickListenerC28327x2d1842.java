@@ -1,0 +1,10 @@
+package fa3;
+
+/* renamed from: fa3.b$$d */
+/* loaded from: classes.dex */
+public final /* synthetic */ class DialogInterfaceOnClickListenerC28327x2d1842 implements android.content.DialogInterface.OnClickListener {
+    @Override // android.content.DialogInterface.OnClickListener
+    public final void onClick(android.content.DialogInterface dialogInterface, int i17) {
+        dialogInterface.dismiss();
+    }
+}

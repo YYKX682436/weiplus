@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="22.0dp" android:textColor="@color/fa" android:gravity="center" android:id="@id/rqf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/rqd" android:layout_marginBottom="@dimen/cn" android:text="@string/x1" app:layout_constraintBottom_toTopOf="@id/rqe" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="@style/xk" />
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/rqe" android:layout_marginBottom="@dimen/bu" android:text="@string/msu" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="@style/xl" />
+</androidx.constraintlayout.widget.ConstraintLayout>

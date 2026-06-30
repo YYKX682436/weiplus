@@ -1,0 +1,30 @@
+package lo2;
+
+/* loaded from: classes2.dex */
+public final class h extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.modelbase.f f320126d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.member.ui.FinderMemberFanListUI f320127e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public h(com.tencent.mm.modelbase.f fVar, com.tencent.mm.plugin.finder.member.ui.FinderMemberFanListUI finderMemberFanListUI) {
+        super(1);
+        this.f320126d = fVar;
+        this.f320127e = finderMemberFanListUI;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        java.util.LinkedList linkedList = ((r45.bs0) this.f320126d.f70618d).f371019d;
+        if (linkedList == null) {
+            return null;
+        }
+        com.tencent.mm.plugin.finder.member.ui.FinderMemberFanListUI finderMemberFanListUI = this.f320127e;
+        finderMemberFanListUI.f121391u.a();
+        finderMemberFanListUI.f121391u.c(linkedList);
+        return jz5.f0.f302826a;
+    }
+}

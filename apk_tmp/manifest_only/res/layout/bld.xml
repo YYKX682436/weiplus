@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/aou" android:paddingRight="2.0dp" style="@style/ju"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/hfd" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/j3" />
+        </LinearLayout>
+        <TextView android:id="@id/hfb" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/j2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:id="@id/hf0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iri" style="@style/iz" />
+    </LinearLayout>
+    <CheckBox android:layout_gravity="right|center" android:id="@id/hfe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

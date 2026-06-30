@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/c_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/db" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/db">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/d9" android:src="@raw/icons_outlined_search" app:fs="@color/d3" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/d3" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/wo" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/mf" android:layout_marginLeft="@dimen/bl" android:text="@string/l4" android:contentDescription="@string/l" android:textCursorDrawable="@drawable/afr" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.webview.ad.CenterScrollFrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/l0u" android:background="@drawable/v6" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/r" android:textStyle="bold" android:textColor="@color/f5" android:layout_gravity="center_horizontal" android:id="@id/e9q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dl" android:text="@string/ck0" android:singleLine="true" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/f5" android:gravity="center_horizontal" android:id="@id/e9p" android:paddingLeft="@dimen/db" android:paddingRight="@dimen/db" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:text="@string/cjx" android:includeFontPadding="false" android:layout_below="@id/e9q" android:paddingHorizontal="@dimen/db" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/e9n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d9" android:layout_marginTop="@dimen/bo" android:layout_marginRight="@dimen/d9" android:layout_below="@id/e9p">
+            <FrameLayout android:id="@id/e9m" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/bl" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj">
+                <CheckBox android:id="@id/e9l" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:checked="false" style="@style/im" />
+            </FrameLayout>
+            <com.tencent.neattextview.textview.view.NeatTextView android:textSize="@dimen/j4" android:textColor="@color/f5" android:gravity="center" android:id="@id/e9o" android:paddingTop="5.0dp" android:paddingBottom="@dimen/bn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:enabled="false" android:id="@id/e9j" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/d7" android:text="@string/cjt" android:layout_below="@id/e9n" android:layout_centerHorizontal="true" style="@style/kr" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/Link_100" android:id="@id/e9k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/dl" android:text="@string/cju" android:layout_below="@id/e9j" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.tencent.mm.plugin.finder.webview.ad.CenterScrollFrameLayout>

@@ -1,0 +1,85 @@
+package q01;
+
+/* loaded from: classes12.dex */
+public final class e0 {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static jz5.l f440805c;
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final q01.e0 f440803a = new q01.e0();
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final jz5.g f440804b = jz5.h.a(jz5.i.f384362d, q01.d0.f440802d);
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final jz5.g f440806d = jz5.h.b(q01.a0.f440791d);
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final jz5.g f440807e = jz5.h.b(q01.c0.f440798d);
+
+    public final java.util.Vector a() {
+        if (!e()) {
+            return new java.util.Vector();
+        }
+        q01.c1 c1Var = new q01.c1();
+        q01.b0 observer = (q01.b0) ((jz5.n) f440807e).mo141623x754a37bb();
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(observer, "observer");
+        java.util.ArrayList arrayList = (java.util.ArrayList) c1Var.f440799d;
+        if (arrayList.contains(observer)) {
+            return c1Var;
+        }
+        arrayList.add(observer);
+        return c1Var;
+    }
+
+    public final void b() {
+        c(((hr0.k0) ((q01.q0) i95.n0.c(q01.q0.class))).Bi().size(), ((hr0.k0) ((q01.q0) i95.n0.c(q01.q0.class))).Di().size());
+    }
+
+    public final void c(int i17, int i18) {
+        long longValue;
+        boolean z17 = i17 >= gm0.j1.d().f152299f && i18 > 0;
+        jz5.l lVar = f440805c;
+        if (lVar == null || ((java.lang.Boolean) lVar.f384366d).booleanValue() != z17) {
+            synchronized (this) {
+                jz5.l lVar2 = f440805c;
+                if (lVar2 == null || ((java.lang.Boolean) lVar2.f384366d).booleanValue() != z17) {
+                    java.lang.Boolean valueOf = java.lang.Boolean.valueOf(z17);
+                    java.lang.Long valueOf2 = java.lang.Long.valueOf(java.lang.System.currentTimeMillis());
+                    jz5.l lVar3 = new jz5.l(valueOf, valueOf2);
+                    if (f440805c == null) {
+                        longValue = -1;
+                    } else {
+                        long longValue2 = valueOf2.longValue();
+                        jz5.l lVar4 = f440805c;
+                        p3321xbce91901.jvm.p3324x21ffc6bd.o.d(lVar4);
+                        longValue = longValue2 - ((java.lang.Number) lVar4.f384367e).longValue();
+                    }
+                    long j17 = longValue;
+                    f440805c = lVar3;
+                    if (j17 <= 0) {
+                        return;
+                    }
+                    com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.w("MicroMsg.NetSceneQueueTracker", "dispatchWaitingChanged: jam=" + z17 + ", durationMs=" + j17);
+                    if (j17 <= com.p314xaae8f345.tav.p2959x5befac44.C25764x27f5008f.f48024x857b539d) {
+                        return;
+                    }
+                    java.lang.Throwable th6 = new java.lang.Throwable();
+                    com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.w("MicroMsg.NetSceneQueueTracker", "NetSceneInspect jam report task - clear & post");
+                    ((ku5.t0) ku5.t0.f394148d).A("MicroMsg.NetSceneQueueTracker.Jamming");
+                    ((ku5.t0) ku5.t0.f394148d).A("MicroMsg.NetSceneQueueTracker.JammingRestore");
+                    ((ku5.t0) ku5.t0.f394148d).l(new q01.z(z17, j17, th6, i17, i18), z17 ? 5000L : 0L, "MicroMsg.NetSceneQueueTracker.Jamming");
+                }
+            }
+        }
+    }
+
+    public final java.util.Set d() {
+        return (java.util.Set) ((jz5.n) f440806d).mo141623x754a37bb();
+    }
+
+    public final boolean e() {
+        return ((java.lang.Boolean) f440804b.mo141623x754a37bb()).booleanValue();
+    }
+}

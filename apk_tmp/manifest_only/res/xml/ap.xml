@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:defaultValue="true" android:key="settings_allow_recommend_video" android:title="@string/cl9" />
+    <CheckBoxPreference android:defaultValue="true" android:key="settings_allow_recommend_live" android:title="@string/cl7" />
+    <Preference android:key="settings_allow_recommend_category" android:title="@string/o0w" />
+    <PreferenceSmallCategory />
+    <Preference android:key="settings_block_poster" android:gc="@layout/byv" android:title="@string/cha" />
+</PreferenceScreen>

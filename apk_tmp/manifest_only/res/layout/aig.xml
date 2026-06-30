@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/eg9" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/d1y" android:background="@color/a" android:layout_width="match_parent" android:layout_height="@dimen/dv" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="center_vertical" android:id="@id/cut" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:minHeight="@dimen/df" android:text="@string/f2r" android:layout_weight="1.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/d1y" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/atr" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="tabLayoutContainer,desc_tv" />
+    <View android:background="@drawable/awr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dv" android:layout_marginTop="@dimen/df" app:layout_constraintTop_toTopOf="0" />
+    <View android:id="@id/au9" android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/atr" />
+</androidx.constraintlayout.widget.ConstraintLayout>

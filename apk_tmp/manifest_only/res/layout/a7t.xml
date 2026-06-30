@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m7g" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cvd" android:background="@drawable/emoji_store_v2_single_bar" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:layout_width="match_parent" android:layout_height="@dimen/j2" android:layout_marginTop="@dimen/hp" android:layout_marginBottom="@dimen/hp" style="@style/n6">
+        <TextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bz4" android:singleLine="true" style="@style/j3" />
+        <TextView android:textColor="@color/ab0" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/k_3" android:background="@drawable/b8i" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="@dimen/hq" android:layout_marginRight="@dimen/hq" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dap" android:background="@color/aaw" android:paddingLeft="@dimen/i_" android:paddingTop="@dimen/hx" android:paddingRight="@dimen/i_" android:paddingBottom="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n6">
+        <TextView android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/dbg" android:layout_width="0.0dp" android:text="@string/bwg" android:layout_weight="1.0" style="@style/j3" />
+        <TextView android:gravity="right|center" android:layout_gravity="right|center" android:id="@id/dc9" android:layout_width="0.0dp" android:text="@string/bz0" android:drawableRight="@raw/emoji_arrow" android:layout_weight="1.0" style="@style/j2" />
+    </LinearLayout>
+</LinearLayout>

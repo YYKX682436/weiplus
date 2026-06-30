@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/d6p" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="40.0dp" android:layout_alignParentTop="true" android:layout_marginEnd="24.0dp" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/lot" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:src="@drawable/ap2" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lou" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/ghn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/d8n" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/bth" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="@dimen/up" android:layout_marginEnd="@dimen/uq" android:layout_alignParentEnd="true" style="@style/ks" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/d7y" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4.0" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_toStartOf="@id/d8n">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/d7o" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/d7f" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/d7p" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/d8r" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq" />
+                <RelativeLayout android:gravity="center" android:id="@id/d7b" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/d7_" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" />
+                    <ImageView android:id="@id/d7a" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_alignBottom="@id/d7_" android:layout_alignEnd="@id/d7_" />
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/d81" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/d7i" android:visibility="gone" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq" />
+                <RelativeLayout android:id="@id/d7l" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/uq" android:layout_marginEnd="@dimen/uq">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/d7j" android:layout_width="@dimen/a90" android:layout_height="@dimen/a90" />
+                    <ImageView android:id="@id/d7k" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_alignBottom="@id/d7j" android:layout_alignEnd="@id/d7j" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cmw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/bw" android:id="@id/cmt" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apj" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" android:layout_alignParentEnd="true" />
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cn1" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_weight="1.0" android:contentDescription="@string/k6w" />
+            <ImageView android:layout_gravity="center" android:id="@id/cmz" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_weight="1.0" android:contentDescription="@string/k6x" />
+            <Button android:textStyle="bold" android:id="@id/cmv" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apu" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="@dimen/uq" android:layout_alignParentEnd="true" style="@style/ks" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/d28" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/ab0" android:id="@id/dl2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="32.0dp" android:layout_alignParentBottom="true" android:textAlignment="gravity" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/d7q" android:background="@drawable/b42" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="44.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp">
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/v6" android:textColor="@color/ab0" android:id="@id/d7r" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:layout_marginBottom="13.0dp" android:text="@string/jm0" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

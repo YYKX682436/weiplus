@@ -1,0 +1,23 @@
+package bn1;
+
+/* loaded from: classes14.dex */
+public final class o extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ bn1.v f22814d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public o(bn1.v vVar) {
+        super(1);
+        this.f22814d = vVar;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        cn1.g it = (cn1.g) obj;
+        kotlin.jvm.internal.o.g(it, "it");
+        bn1.v layout = this.f22814d;
+        kotlin.jvm.internal.o.g(layout, "layout");
+        return jz5.f0.f302826a;
+    }
+}

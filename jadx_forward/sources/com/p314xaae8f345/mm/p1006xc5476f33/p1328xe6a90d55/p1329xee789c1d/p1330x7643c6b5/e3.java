@@ -1,0 +1,14 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1328xe6a90d55.p1329xee789c1d.p1330x7643c6b5;
+
+/* loaded from: classes14.dex */
+public class e3 implements android.os.Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public java.lang.Object createFromParcel(android.os.Parcel parcel) {
+        return new com.p314xaae8f345.mm.p1006xc5476f33.p1328xe6a90d55.p1329xee789c1d.p1330x7643c6b5.C13126xf20dbd9a(parcel);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public java.lang.Object[] newArray(int i17) {
+        return new com.p314xaae8f345.mm.p1006xc5476f33.p1328xe6a90d55.p1329xee789c1d.p1330x7643c6b5.C13126xf20dbd9a[i17];
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/e4x" android:background="@drawable/b3r" android:visibility="invisible" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/e4g" android:background="@drawable/fl" android:layout_width="@dimen/df" android:layout_height="@dimen/df">
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_5" android:layout_gravity="center" android:id="@id/e4n" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

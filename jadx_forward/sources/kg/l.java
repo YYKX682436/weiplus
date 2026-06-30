@@ -1,0 +1,29 @@
+package kg;
+
+/* loaded from: classes15.dex */
+public enum l implements com.p176xb6135e39.p283xc50a8b8b.p6 {
+    CanvasOriginTypeTopLeft(0),
+    CanvasOriginTypeBottomLeft(1),
+    UNRECOGNIZED(-1);
+
+
+    /* renamed from: d, reason: collision with root package name */
+    public final int f389108d;
+
+    static {
+        m142929xcee59d22();
+    }
+
+    l(int i17) {
+        this.f389108d = i17;
+    }
+
+    @Override // com.p176xb6135e39.p283xc50a8b8b.p6
+    /* renamed from: getNumber */
+    public final int mo20656x276ffe3f() {
+        if (this != UNRECOGNIZED) {
+            return this.f389108d;
+        }
+        throw new java.lang.IllegalArgumentException("Can't get the number of an unknown enum value.");
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/qs0" android:background="@drawable/cq3" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/ca" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/ca" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_display" app:fs="@color/BW_0_Alpha_0_5" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="@string/l5k" android:lines="1" android:layout_weight="1.0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_arrow" app:fs="@color/BW_0_Alpha_0_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/cu7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="8.0dp" android:layout_marginRight="@dimen/cn" android:layout_below="@id/qs0">
+        <com.google.android.material.tabs.TabLayout android:id="@id/nv8" android:layout_width="match_parent" android:layout_height="26.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="16.0dp" app:jh="@color/f5" app:ji="false" app:jk="2.0dp" app:jm="mcp" app:jp="@null" app:jq="@color/f5" app:js="@style/y9" app:jt="@color/BW_0_Alpha_0_5" />
+        <View android:id="@id/qt5" android:background="@color/BW_0_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/gln" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/p1t" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

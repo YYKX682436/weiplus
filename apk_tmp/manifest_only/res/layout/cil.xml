@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bp5" />
+    <ViewStub android:id="@id/p23" android:layout="@layout/bp4" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/vnb" android:layout="@layout/eid" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

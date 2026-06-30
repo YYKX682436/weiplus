@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MJSlidingTabLayout android:id="@id/q96" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_marginTop="@dimen/bn" app:mj_indicator_color="@color/ac_" app:mj_indicator_height="2.0dp" app:mj_indicator_width_equal_title="true" app:mj_tab_margin_start="@dimen/c9" app:mj_tab_padding="@dimen/dv" app:mj_textSelectColor="@color/ac_" app:mj_textSize="14.0sp" app:mj_textUnselectColor="@color/ac9" />
+    <com.tencent.mm.mj_publisher.finder.widgets.NoScrollViewPager android:id="@id/q97" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

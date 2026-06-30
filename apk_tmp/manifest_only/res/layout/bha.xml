@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/jsu" android:background="@drawable/bfj" android:padding="@dimen/p" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/h6y" android:layout_width="@dimen/gj" android:layout_height="@dimen/gj" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/jt2" android:paddingLeft="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gw" android:textColor="@color/s4" android:ellipsize="end" android:id="@id/kbq" android:background="@drawable/azm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <ImageView android:id="@id/abs" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" />
+                <TextView android:textSize="@dimen/gw" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/ob5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/gw" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/jt8" android:paddingTop="@dimen/hx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <com.tencent.mm.plugin.game.ui.GameMessageListContainerView android:orientation="vertical" android:id="@id/juf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hx" />
+            <LinearLayout android:id="@id/ju3" android:background="@drawable/aem" android:visibility="gone" android:layout_width="match_parent" android:layout_height="47.0dp" android:layout_marginTop="@dimen/hx">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/ju4" android:visibility="gone" android:layout_width="@dimen/fe" android:layout_height="@dimen/fe" android:layout_marginLeft="@dimen/f" />
+                <TextView android:enabled="true" android:textSize="@dimen/gw" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ju5" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/p" android:layout_marginRight="@dimen/p" android:maxLines="2" />
+            </LinearLayout>
+            <ImageView android:id="@id/jtb" android:background="@drawable/azm" android:visibility="gone" android:layout_width="245.0dp" android:layout_height="90.0dp" android:layout_marginTop="@dimen/hx" android:scaleType="fitXY" />
+            <LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hx">
+                <TextView android:id="@id/jub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/p" style="@style/jj" />
+                <TextView android:id="@id/ju8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ji" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/jt7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/for" style="@style/jk" />
+        <ImageView android:layout_width="match_parent" android:layout_height="1.0px" android:src="@color/sk" />
+    </LinearLayout>
+</LinearLayout>

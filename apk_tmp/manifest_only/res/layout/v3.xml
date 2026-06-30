@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bjy" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bkg" android:background="@drawable/mi" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/c9" android:layout_width="260.0dp" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bn3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9">
+                <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/ia" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="center_vertical" android:id="@id/bnw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/c9">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bnt" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constrainedWidth="true" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/bns" app:layout_constraintTop_toTopOf="0">
+                    <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/bnu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:text="" android:maxLines="1" app:layout_constrainedWidth="true" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/bnr" app:layout_constraintTop_toTopOf="0" />
+                    <View android:id="@id/bnr" android:background="@color/FG_4" android:layout_width="1.0dp" android:layout_height="8.0dp" android:layout_marginRight="@dimen/bl" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toLeftOf="@id/bnv" app:layout_constraintTop_toTopOf="0" />
+                    <TextView android:textSize="@dimen/b3" android:id="@id/bnv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dv" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView android:id="@id/bns" android:background="@color/BW_90" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View android:background="@color/hn" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/bl" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bn2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl">
+                <TextView android:textSize="@dimen/ja" android:textColor="@color/FG_1" android:id="@id/bnm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e2m" style="@style/fe" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

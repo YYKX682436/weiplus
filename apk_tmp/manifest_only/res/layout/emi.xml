@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.tencent.mm.ui.base.FlowLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/upa" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="消息路径" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/t98" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="消息过期" style="@style/kq" />
+            </FrameLayout>
+        </com.tencent.mm.ui.base.FlowLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/t8s" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200.0dp" android:layout_marginTop="@dimen/dv">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dv" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:text="EXIF信息" />
+            <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:id="@id/t8t" android:background="@color/c" android:padding="@dimen/dv" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+            </ScrollView>
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/ssx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:text="删除Original" android:layout_marginEnd="@dimen/dv" style="@style/xm" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

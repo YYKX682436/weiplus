@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.LiveBottomSheetPanel android:id="@id/enn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/gzh" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_below="@id/df2">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bz2" android:padding="@dimen/c9" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@raw/icons_outlined_arrow" android:rotation="90.0" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d62" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mdb" android:background="@drawable/ag6" android:layout_width="match_parent" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/meb" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_margin="@dimen/bl" android:src="@raw/icons_outlined_search" app:fs="@color/BW_70" />
+            <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.tencent.mm.ui.search.FTSEditTextViewNightMode android:id="@id/gfm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:textCursorDrawable="@drawable/afr" />
+                <com.tencent.mm.ui.search.FTSEditTextView android:id="@id/gfl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:textCursorDrawable="@drawable/afr" />
+            </FrameLayout>
+        </LinearLayout>
+        <View android:background="@color/vt" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/cn" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/bh0" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.tencent.mm.ui.base.AlphabetScrollBar android:id="@id/sj" android:layout_width="@dimen/d" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.tencent.mm.ui.widget.LiveBottomSheetPanel>

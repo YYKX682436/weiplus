@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/pxc" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/q16" android:background="@drawable/fg" android:layout_width="match_parent" android:layout_height="200.0dp" android:layout_alignParentBottom="true" />
+    <View android:id="@id/q17" android:background="@drawable/fg" android:layout_width="match_parent" android:layout_height="92.0dp" android:rotation="180.0" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.EditorInputView android:id="@id/pxb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/pvk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_alignParentTop="true" layout="@layout/dcs" />
+    <include android:id="@id/pvj" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:layout_alignParentBottom="true" layout="@layout/dcr" />
+    <include android:id="@id/pv8" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:layout_above="@id/pv7" layout="@layout/dcm" />
+    <include android:id="@id/t6t" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:layout_above="@id/pv7" android:layout_marginStart="@dimen/cz" layout="@layout/eh_" />
+    <include android:id="@id/pvf" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:layout_above="@id/pv7" layout="@layout/dcp" />
+    <include android:id="@id/pv7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/d7" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" layout="@layout/dcn" />
+    <View android:id="@id/pvw" android:background="@drawable/cjr" android:visibility="invisible" android:layout_width="@dimen/df" android:layout_height="@dimen/df" />
+</RelativeLayout>

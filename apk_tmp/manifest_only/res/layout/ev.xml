@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/di_" android:background="@drawable/cg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="64.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="start|center" android:id="@id/di3" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/app_brand_game_evaluate_dialog_close" android:layout_marginStart="16.0dp" app:fs="@color/eb" />
+        <TextView android:textSize="@dimen/gz" android:textStyle="bold" android:textColor="@color/a0c" android:layout_gravity="center" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/r" android:textStyle="bold" android:textColor="@color/a0c" android:ellipsize="middle" android:layout_gravity="center" android:id="@id/di6" android:paddingTop="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/o68" android:visibility="gone" android:layout_width="104.0dp" android:layout_height="104.0dp" android:layout_marginTop="36.0dp" android:src="@drawable/bvc" />
+    <TextView android:textSize="@dimen/r" android:textStyle="bold" android:textColor="@color/a0c" android:gravity="top" android:layout_gravity="center_horizontal" android:id="@id/o69" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="12.0dp" android:minHeight="20.0dp" />
+    <View android:id="@id/ned" android:visibility="gone" android:layout_width="match_parent" android:layout_height="94.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/kkb" android:layout_width="match_parent" android:layout_height="144.0dp" android:layout_marginTop="24.0dp" android:layout_marginBottom="66.0dp">
+        <com.tencent.mm.plugin.appbrand.widget.dialog.AppBrandGameEvaluateOptionView android:id="@id/kjw" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" />
+        <com.tencent.mm.plugin.appbrand.widget.dialog.AppBrandGameEvaluateOptionView android:id="@id/kjx" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="32.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="32.0dp" />
+        <com.tencent.mm.plugin.appbrand.widget.dialog.AppBrandGameEvaluateOptionView android:id="@id/kjy" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="32.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="32.0dp" />
+    </LinearLayout>
+</LinearLayout>

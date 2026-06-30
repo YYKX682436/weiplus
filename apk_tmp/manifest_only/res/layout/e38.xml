@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:importantForAccessibility="noHideDescendants">
+        <HorizontalScrollView android:id="@id/quz" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Space android:layout_width="@dimen/c8" android:layout_height="@dimen/dl" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/q3e" android:layout_width="@dimen/db" android:layout_height="@dimen/dl">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u71" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@drawable/clj" />
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/aby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:text="@string/o8d" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/qh_" android:layout_width="@dimen/db" android:layout_height="@dimen/dl" android:layout_marginStart="@dimen/c9">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u6z" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@drawable/cpk" />
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/aby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:text="@string/o8b" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/q3d" android:layout_width="@dimen/db" android:layout_height="@dimen/dl" android:layout_marginStart="@dimen/c9">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u70" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@drawable/cmq" />
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/aby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:text="@string/o8c" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/q3f" android:layout_width="@dimen/db" android:layout_height="@dimen/dl" android:layout_marginStart="@dimen/c9">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u72" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@drawable/cmr" />
+                    <TextView android:textSize="@dimen/f9" android:textColor="@color/aby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:text="@string/o8e" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View android:layout_gravity="end" android:id="@id/qw_" android:background="@drawable/cqe" android:layout_width="@dimen/dl" android:layout_height="@dimen/dl" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/yt">
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/io" android:gravity="center" android:layout_gravity="center" android:id="@id/q3k" android:background="@drawable/jo" android:layout_width="@dimen/dn" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:text="@string/m20" android:layout_marginHorizontal="@dimen/cn" />
+    </FrameLayout>
+</merge>

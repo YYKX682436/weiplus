@@ -1,0 +1,5 @@
+package qk;
+
+/* loaded from: classes12.dex */
+public interface w6 {
+}

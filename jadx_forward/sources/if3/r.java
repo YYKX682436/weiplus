@@ -1,0 +1,26 @@
+package if3;
+
+/* loaded from: classes6.dex */
+public class r implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f372734d = 0;
+
+    public r(if3.s sVar, if3.q qVar) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f372734d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f372734d;
+        this.f372734d = i17 + 1;
+        if (i17 == 0) {
+            return if3.q0.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/BW_95" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.downloader_app.search.DownloadSearchListView android:id="@id/mfc" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/mf_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/w9" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a6v" android:layout_gravity="center_horizontal" android:id="@id/kch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" />
+</FrameLayout>

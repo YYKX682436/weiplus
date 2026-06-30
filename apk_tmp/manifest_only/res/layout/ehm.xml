@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/a7p" android:layout_width="@dimen/dn" android:layout_height="wrap_content" android:contentDescription="@string/jyz">
+        <ImageView android:id="@id/a7o" android:background="@drawable/ej" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/audio_panel_taskbar_icon_music_new" android:layout_centerHorizontal="true" android:contentDescription="@string/jyz" android:importantForAccessibility="no" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/ed" android:gravity="center" android:id="@id/sfq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/hj_" android:singleLine="true" android:layout_below="@id/a7o" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/a7c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/df" android:layout_toEndOf="@id/a7p" android:layout_alignParentEnd="true">
+        <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/a7_" android:background="@color/BW_100_Alpha_0_0_5" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" app:ds="@dimen/cz">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/a77" android:layout_width="@dimen/df" android:layout_height="match_parent">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a79" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@raw/icons_filled_specialplay" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ca" app:fs="@color/BW_100_Alpha_0_5" />
+                <ProgressBar android:id="@id/a78" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="@dimen/cn" style="@style/x5" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/df" android:layout_marginEnd="@dimen/cn">
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_8" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/a7d" android:fadingEdgeLength="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="1" android:requiresFadingEdge="horizontal" />
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+        </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/ed" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:text="@string/hjb" android:singleLine="true" android:layout_below="@id/a7_" android:layout_centerInParent="true" android:layout_marginStart="@dimen/df" />
+    </RelativeLayout>
+</RelativeLayout>

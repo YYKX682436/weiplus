@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rge" android:paddingTop="90.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMProcessBar android:layout_gravity="center_horizontal" android:id="@id/c7i" android:background="@drawable/akq" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:layout_gravity="center_horizontal" android:id="@id/kc0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cpx" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/m2a" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_refresh" app:fs="@color/FG_2" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="@string/f9s" />
+    </LinearLayout>
+</FrameLayout>

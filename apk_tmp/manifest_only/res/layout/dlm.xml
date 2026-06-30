@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/f" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/du" android:minHeight="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/qvo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginTop="@dimen/aih" android:layout_toLeftOf="@id/qvk" android:layout_centerVertical="true">
+        <FrameLayout android:id="@id/qvl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:layout_gravity="center_vertical" android:id="@id/qvm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dbe" android:layout_centerVertical="true" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/co" android:textColor="@color/abw" android:id="@id/qvp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="花集地 韩料食堂(正佳广场店)" android:maxLines="1" />
+        <TextView android:textSize="@dimen/yd" android:textColor="@color/adg" android:id="@id/qvn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100米" android:layout_below="@id/qvp" android:layout_marginEnd="@dimen/dv" />
+        <TextView android:textSize="@dimen/yd" android:textColor="@color/adg" android:ellipsize="end" android:id="@id/qvj" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="天河路正佳广场B1层" android:maxLines="1" android:layout_below="@id/qvp" android:layout_marginEnd="@dimen/cn" android:layout_toEndOf="@id/qvn" />
+        <LinearLayout android:id="@id/qvq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_below="@id/qvj">
+            <TextView android:textColor="@color/adg" android:id="@id/d51" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="团购分享" />
+            <TextView android:textColor="@color/OrangeRed_100" android:id="@id/el3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="返佣" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/qvk" android:visibility="invisible" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="@dimen/aii" android:src="@raw/icons_outlined_pay_check_mark" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/Brand_100" />
+    <View android:id="@id/f3x" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dv" android:layout_below="@id/qvo" />
+</RelativeLayout>

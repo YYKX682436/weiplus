@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/Brand_BG_110" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/h3" android:textColor="@color/aby" android:gravity="center_horizontal" android:id="@id/sfr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/dj" android:layout_marginRight="@dimen/d7" android:text="@string/o5j" android:maxLines="2" android:autoSizeTextType="uniform" android:layout_marginHorizontal="@dimen/d7" android:textFontWeight="500" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ho" />
+    <com.tencent.mm.plugin.setting.ui.setting.SettingsHearingAidAudioCardView android:id="@id/sfn" android:background="@drawable/cs6" android:layout_width="match_parent" android:layout_height="@dimen/cm" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/df" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/amn" android:layout_marginHorizontal="@dimen/d7" app:layout_constraintTop_toBottomOf="@id/sfr" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/snt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bu" app:layout_constraintBottom_toBottomOf="0">
+        <FrameLayout android:id="@id/ukj" android:layout_width="@dimen/by" android:layout_height="@dimen/by" android:layout_marginRight="@dimen/aia">
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/uki" android:background="@drawable/d8q" android:clickable="false" android:layout_width="@dimen/by" android:layout_height="@dimen/by" android:scaleType="centerCrop" android:contentDescription="@string/o5z" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/ukk" android:layout_width="@dimen/d9" android:layout_height="@dimen/d9" android:src="@raw/xmark_filled" app:fs="@color/aby" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/uqz" android:layout_width="@dimen/by" android:layout_height="@dimen/by">
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/uqy" android:background="@drawable/d8r" android:clickable="false" android:layout_width="@dimen/by" android:layout_height="@dimen/by" android:scaleType="centerCrop" android:contentDescription="@string/o5g" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/ur0" android:layout_width="@dimen/d9" android:layout_height="@dimen/d9" android:src="@raw/check_mark_filled" app:fs="@color/abw" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

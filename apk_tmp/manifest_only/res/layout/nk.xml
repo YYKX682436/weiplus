@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:key="biz_msg_rec_pref" android:gc="@layout/byv" android:persistent="false" android:summary="@string/ajz" android:title="@string/ajy" />
+    <CheckBoxPreference android:key="biz_msg_finder_rec_pref" android:gc="@layout/byv" android:persistent="false" android:title="@string/b2i" />
+    <CheckBoxPreference android:key="biz_msg_pay_for_head_pref" android:gc="@layout/byv" android:persistent="false" android:title="@string/aju" />
+    <PreferenceTitleCategory android:key="biz_msg_my_my_biz_setting_title" android:title="@string/ajt" />
+    <CheckBoxPreference android:key="biz_msg_read_dot_switch" android:gc="@layout/byv" android:persistent="false" android:summary="@string/ajw" android:title="@string/ajv" />
+    <com.tencent.mm.plugin.brandservice.ui.timeline.BizTimelineSettingLoadingPreference android:key="biz_msg_rec_loading_pref" android:gc="@layout/byv" android:persistent="false" />
+</PreferenceScreen>

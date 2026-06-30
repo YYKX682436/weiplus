@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tvt" android:background="#804c4c4c" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dv" app:ds="@dimen/bn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_8" android:ellipsize="end" android:gravity="center" android:id="@id/tvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/c6" android:text="@string/nmq" android:maxLines="1" android:textAlignment="center" />
+    <View android:id="@id/tvu" android:background="@color/BW_100_Alpha_0_3" android:layout_width="1.0dp" android:layout_height="@dimen/ca" android:layout_marginStart="@dimen/bn" />
+    <com.tencent.mm.plugin.finder.thanksbutton.FinderThanksButton android:id="@id/tvx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-12.0dp" />
+</com.tencent.mm.ui.widget.RoundCornerLinearLayout>

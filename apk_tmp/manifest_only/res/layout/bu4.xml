@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ij_" android:focusable="true" android:layout_width="286.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/ija" android:background="@drawable/amm" android:layout_width="280.0dp" android:layout_height="496.0dp" android:minHeight="496.0dp">
+        <ImageView android:id="@id/ijb" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/c9q" android:scaleType="fitXY" android:importantForAccessibility="no" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/ijc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="112.0dp" android:src="@drawable/c9r" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ijg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_below="@id/ijc" android:layout_centerHorizontal="true">
+                <TextView android:textSize="17.0dp" android:textColor="@color/x2" android:id="@id/ije" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ijf" android:layout_width="12.0dp" android:layout_height="24.0dp" android:layout_marginLeft="4.0dp" android:src="@raw/icons_outlined_arrow" android:importantForAccessibility="no" app:fs="#ba9c6a" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dp" android:textColor="@color/x2" android:id="@id/ijd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="" android:layout_below="@id/ijg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

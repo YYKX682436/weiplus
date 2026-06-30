@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/cjs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_alignTop="@id/fwr" android:layout_marginEnd="@dimen/cz" android:layout_alignEnd="@id/fwr">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/cjr" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@raw/icons_filled_effects" android:layout_centerHorizontal="true" app:fs="@color/an" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bsn" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/popvideo_post_selected_origin" android:layout_alignBottom="@id/cjr" android:layout_alignEnd="@id/cjr" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hsz" android:layout_below="@id/cjr" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/cjo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/fwr" android:layout_alignBottom="@id/fwr" android:layout_alignStart="@id/fwr" android:layout_alignEnd="@id/fwr">
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/xd" android:layout_width="@dimen/c0" android:layout_height="@dimen/c0">
+            <TextView android:textSize="64.0sp" android:textColor="@color/ab0" android:layout_gravity="center" android:id="@id/cju" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</merge>

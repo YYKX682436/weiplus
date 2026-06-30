@@ -1,0 +1,81 @@
+package p3325xe03a0797.p3326xc267989b.p3328x30012e;
+
+/* loaded from: classes14.dex */
+public final class r0 implements p3325xe03a0797.p3326xc267989b.p3328x30012e.k {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ p3321xbce91901.jvm.p3324x21ffc6bd.f0 f391914d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ int f391915e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ p3325xe03a0797.p3326xc267989b.p3328x30012e.k f391916f;
+
+    public r0(p3321xbce91901.jvm.p3324x21ffc6bd.f0 f0Var, int i17, p3325xe03a0797.p3326xc267989b.p3328x30012e.k kVar) {
+        this.f391914d = f0Var;
+        this.f391915e = i17;
+        this.f391916f = kVar;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0031  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0023  */
+    @Override // p3325xe03a0797.p3326xc267989b.p3328x30012e.k
+    /* renamed from: emit */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object mo771x2f8fd3(java.lang.Object r7, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 r8) {
+        /*
+            r6 = this;
+            boolean r0 = r8 instanceof p3325xe03a0797.p3326xc267989b.p3328x30012e.q0
+            if (r0 == 0) goto L13
+            r0 = r8
+            kotlinx.coroutines.flow.q0 r0 = (p3325xe03a0797.p3326xc267989b.p3328x30012e.q0) r0
+            int r1 = r0.f391903f
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f391903f = r1
+            goto L18
+        L13:
+            kotlinx.coroutines.flow.q0 r0 = new kotlinx.coroutines.flow.q0
+            r0.<init>(r6, r8)
+        L18:
+            java.lang.Object r8 = r0.f391901d
+            pz5.a r1 = pz5.a.f440719d
+            int r2 = r0.f391903f
+            jz5.f0 r3 = jz5.f0.f384359a
+            r4 = 1
+            if (r2 == 0) goto L31
+            if (r2 != r4) goto L29
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(r8)
+            goto L47
+        L29:
+            java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
+            java.lang.String r8 = "call to 'resume' before 'invoke' with coroutine"
+            r7.<init>(r8)
+            throw r7
+        L31:
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(r8)
+            kotlin.jvm.internal.f0 r8 = r6.f391914d
+            int r2 = r8.f391649d
+            int r5 = r6.f391915e
+            if (r2 < r5) goto L48
+            r0.f391903f = r4
+            kotlinx.coroutines.flow.k r8 = r6.f391916f
+            java.lang.Object r7 = r8.mo771x2f8fd3(r7, r0)
+            if (r7 != r1) goto L47
+            return r1
+        L47:
+            return r3
+        L48:
+            int r2 = r2 + r4
+            r8.f391649d = r2
+            return r3
+        */
+        throw new UnsupportedOperationException("Method not decompiled: p3325xe03a0797.p3326xc267989b.p3328x30012e.r0.mo771x2f8fd3(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+}

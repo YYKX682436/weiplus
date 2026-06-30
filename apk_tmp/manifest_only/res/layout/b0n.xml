@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/i9"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/a_4" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/aii" android:layout_marginRight="@dimen/aii" android:layout_centerVertical="true" android:layout_marginHorizontal="@dimen/aii" />
+    <View android:id="@id/ofy" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_toEndOf="@id/a_4" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ugj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/a_4">
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/odf" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="UserName" android:singleLine="true" android:layout_weight="1.0" style="@style/j3" />
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/vl" android:gravity="end" android:id="@id/otg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/aq" android:text="晚上6:00" android:layout_marginEnd="@dimen/aii" />
+        </LinearLayout>
+        <TextView android:id="@id/cut" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="{desc}" android:singleLine="true" android:layout_marginEnd="@dimen/aii" style="@style/j2" />
+    </LinearLayout>
+</RelativeLayout>

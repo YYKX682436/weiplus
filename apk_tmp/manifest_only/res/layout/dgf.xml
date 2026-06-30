@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/h5n" android:layout_width="@dimen/aga" android:layout_height="@dimen/ag_" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/qbd" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <SeekBar android:id="@id/qbd" android:layout_width="0.0dp" android:layout_height="@dimen/ag9" android:max="100" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/qbh" app:layout_constraintStart_toEndOf="@id/h5n" app:layout_constraintTop_toTopOf="0" style="@style/xr" />
+    <TextView android:textSize="@dimen/agb" android:textColor="@color/ac_" android:gravity="end" android:id="@id/qbh" android:layout_width="@dimen/agc" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/qbd" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

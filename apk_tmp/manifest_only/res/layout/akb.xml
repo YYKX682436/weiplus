@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/a9e" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nvk" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="1.0" android:paddingStart="@dimen/c9">
+        <LinearLayout android:orientation="horizontal" android:id="@id/s7p" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.finder.view.FinderLoadBar android:layout_gravity="center_vertical" android:id="@id/s7q" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" />
+            <TextView android:textSize="@dimen/gz" android:textStyle="bold" android:textColor="@color/jj" android:ellipsize="end" android:gravity="center" android:id="@id/nuw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_toRightOf="@id/s7q" />
+        </LinearLayout>
+        <ImageView android:id="@id/nut" android:visibility="invisible" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:layout_marginTop="-4.0dp" android:layout_alignTop="@id/s7p" android:layout_toEndOf="@id/s7p" style="@style/ry" />
+        <ImageView android:id="@id/ah0" android:visibility="visible" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:layout_marginTop="-5.5dp" android:layout_alignTop="@id/s7p" android:layout_marginStart="1.0dp" android:layout_toEndOf="@id/s7p" />
+        <FrameLayout android:id="@id/nuy" android:background="@drawable/a7w" android:visibility="invisible" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="-10.0dp" android:layout_alignTop="@id/s7p" android:layout_marginStart="-6.0dp" android:layout_toEndOf="@id/s7p">
+            <ImageView android:id="@id/nux" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/finder_icon_live_onlive" />
+        </FrameLayout>
+        <TextView android:textSize="9.0dp" android:textColor="@color/an" android:id="@id/nv1" android:background="@drawable/ac5" android:paddingLeft="4.0dp" android:paddingTop="0.0dp" android:paddingRight="4.0dp" android:paddingBottom="0.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="13.0dp" android:layout_marginTop="-9.0dp" android:layout_alignTop="@id/s7p" android:layout_alignRight="@id/ul" />
+        <View android:id="@id/ul" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="1.0dp" android:layout_alignTop="@id/s7p" android:layout_toEndOf="@id/s7p" />
+    </RelativeLayout>
+</LinearLayout>

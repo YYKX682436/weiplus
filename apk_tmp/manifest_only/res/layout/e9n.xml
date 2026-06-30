@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/thq" android:background="@color/b" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.finder.live.widget.PassThroughScrollView android:id="@id/str" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/dr" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/adg" android:id="@id/sts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ono" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/stq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.finder.live.widget.PassThroughScrollView>
+</LinearLayout>

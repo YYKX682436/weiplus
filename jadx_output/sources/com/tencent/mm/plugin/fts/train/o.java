@@ -1,0 +1,254 @@
+package com.tencent.mm.plugin.fts.train;
+
+/* loaded from: classes12.dex */
+public final class o {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final java.util.regex.Pattern f137861c = java.util.regex.Pattern.compile("version\\s*=\\s*(.*)$");
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final java.util.regex.Pattern f137862d = java.util.regex.Pattern.compile("^booster");
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final java.util.regex.Pattern f137863e = java.util.regex.Pattern.compile("(\\d+):(\\[([^_]*)_?([^_]*)?_?([<>=]+)(.*)\\]\\s+yes=(.*),no=(.*),missing=([^,]*))");
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final java.util.regex.Pattern f137864f = java.util.regex.Pattern.compile("(\\d+):leaf=([^,]*)");
+
+    /* renamed from: a, reason: collision with root package name */
+    public volatile java.util.List f137865a = java.util.Collections.emptyList();
+
+    /* renamed from: b, reason: collision with root package name */
+    public volatile int f137866b = 0;
+
+    public static double b(int i17) {
+        if (i17 == 0) {
+            return Double.MAX_VALUE;
+        }
+        return ((java.lang.System.currentTimeMillis() / 1000) - (i17 & io.flutter.embedding.android.KeyboardMap.kValueMask)) / 3600.0d;
+    }
+
+    public boolean a(java.lang.String str) {
+        com.tencent.mm.plugin.fts.train.o oVar;
+        java.lang.Throwable th6;
+        long j17;
+        int i17;
+        boolean z17;
+        int i18 = 0;
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.FTS.GroupTrainModel", "loadFromString: empty content");
+            this.f137865a = java.util.Collections.emptyList();
+            this.f137866b = 0;
+            return false;
+        }
+        long currentTimeMillis = java.lang.System.currentTimeMillis();
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        try {
+            java.io.BufferedReader bufferedReader = new java.io.BufferedReader(new java.io.StringReader(str));
+            int i19 = -1;
+            com.tencent.mm.plugin.fts.train.o oVar2 = this;
+            int i27 = 0;
+            int i28 = 0;
+            int i29 = 0;
+            boolean z18 = false;
+            while (true) {
+                try {
+                    java.lang.String readLine = bufferedReader.readLine();
+                    if (readLine == null) {
+                        break;
+                    }
+                    i19++;
+                    try {
+                        if (readLine.length() != 0) {
+                            if (!z18) {
+                                java.util.regex.Matcher matcher = f137861c.matcher(readLine);
+                                if (matcher.find()) {
+                                    java.lang.String group = matcher.group(1);
+                                    if (!com.tencent.mm.sdk.platformtools.t8.K0(group)) {
+                                        try {
+                                            i27 = java.lang.Integer.parseInt(group.trim());
+                                        } catch (java.lang.NumberFormatException unused) {
+                                            i27 = i18;
+                                        }
+                                        z18 = true;
+                                    }
+                                    i27 = i18;
+                                    z18 = true;
+                                } else {
+                                    z18 = true;
+                                }
+                            }
+                            if (f137862d.matcher(readLine).find()) {
+                                arrayList.add(new com.tencent.mm.plugin.fts.train.k());
+                                i29++;
+                            } else {
+                                java.util.regex.Matcher matcher2 = f137863e.matcher(readLine);
+                                double d17 = 0.0d;
+                                if (matcher2.find()) {
+                                    if (arrayList.isEmpty()) {
+                                        java.lang.Object[] objArr = new java.lang.Object[1];
+                                        objArr[i18] = java.lang.Integer.valueOf(i19);
+                                        com.tencent.mars.xlog.Log.e("MicroMsg.FTS.GroupTrainModel", "cond before booster, line=%d", objArr);
+                                        i28++;
+                                        j17 = currentTimeMillis;
+                                        i17 = i27;
+                                        z17 = z18;
+                                    } else {
+                                        com.tencent.mm.plugin.fts.train.k kVar = (com.tencent.mm.plugin.fts.train.k) arrayList.get(arrayList.size() - 1);
+                                        java.lang.String group2 = matcher2.group(1);
+                                        java.lang.String group3 = matcher2.group(3);
+                                        z17 = z18;
+                                        java.lang.String group4 = matcher2.group(4);
+                                        com.tencent.mm.plugin.fts.train.o oVar3 = oVar2;
+                                        java.lang.String group5 = matcher2.group(5);
+                                        j17 = currentTimeMillis;
+                                        java.lang.String group6 = matcher2.group(6);
+                                        java.lang.String group7 = matcher2.group(7);
+                                        i17 = i27;
+                                        java.lang.String group8 = matcher2.group(8);
+                                        if (com.tencent.mm.sdk.platformtools.t8.K0(group2)) {
+                                            i28++;
+                                            oVar2 = oVar3;
+                                        } else {
+                                            com.tencent.mm.plugin.fts.train.n nVar = new com.tencent.mm.plugin.fts.train.n();
+                                            nVar.f137853a = group2;
+                                            nVar.a(group3, group4);
+                                            nVar.f137857e = "<".equals(group5) ? com.tencent.mm.plugin.fts.train.m.LessThan : ">".equals(group5) ? com.tencent.mm.plugin.fts.train.m.MoreThan : "<=".equals(group5) ? com.tencent.mm.plugin.fts.train.m.NoMoreThan : ">=".equals(group5) ? com.tencent.mm.plugin.fts.train.m.NoLessThan : com.tencent.mm.plugin.fts.train.m.Equal;
+                                            if (!com.tencent.mm.sdk.platformtools.t8.K0(group6)) {
+                                                try {
+                                                    d17 = java.lang.Double.parseDouble(group6.trim());
+                                                } catch (java.lang.NumberFormatException unused2) {
+                                                }
+                                            }
+                                            nVar.f137858f = d17;
+                                            nVar.f137859g = group7;
+                                            nVar.f137860h = group8;
+                                            if (kVar.f137825a == null) {
+                                                kVar.f137825a = nVar;
+                                            } else {
+                                                ((java.util.HashMap) kVar.f137826b).put(group2, nVar);
+                                            }
+                                        }
+                                    }
+                                    z18 = z17;
+                                    currentTimeMillis = j17;
+                                    i27 = i17;
+                                    i18 = 0;
+                                } else {
+                                    j17 = currentTimeMillis;
+                                    i17 = i27;
+                                    z17 = z18;
+                                    java.util.regex.Matcher matcher3 = f137864f.matcher(readLine);
+                                    if (!matcher3.find()) {
+                                        com.tencent.mars.xlog.Log.w("MicroMsg.FTS.GroupTrainModel", "unmatched line[%d]: %s", java.lang.Integer.valueOf(i19), readLine);
+                                    } else if (arrayList.isEmpty()) {
+                                        com.tencent.mars.xlog.Log.e("MicroMsg.FTS.GroupTrainModel", "leaf before booster, line=%d", java.lang.Integer.valueOf(i19));
+                                    } else {
+                                        com.tencent.mm.plugin.fts.train.k kVar2 = (com.tencent.mm.plugin.fts.train.k) arrayList.get(arrayList.size() - 1);
+                                        java.lang.String group9 = matcher3.group(1);
+                                        java.lang.String group10 = matcher3.group(2);
+                                        if (!com.tencent.mm.sdk.platformtools.t8.K0(group9)) {
+                                            com.tencent.mm.plugin.fts.train.n nVar2 = new com.tencent.mm.plugin.fts.train.n();
+                                            nVar2.f137853a = group9;
+                                            nVar2.f137854b = true;
+                                            if (!com.tencent.mm.sdk.platformtools.t8.K0(group10)) {
+                                                try {
+                                                    d17 = java.lang.Double.parseDouble(group10.trim());
+                                                } catch (java.lang.NumberFormatException unused3) {
+                                                }
+                                            }
+                                            nVar2.f137858f = d17;
+                                            ((java.util.HashMap) kVar2.f137826b).put(group9, nVar2);
+                                        }
+                                    }
+                                    i28++;
+                                    oVar2 = this;
+                                    z18 = z17;
+                                    currentTimeMillis = j17;
+                                    i27 = i17;
+                                    i18 = 0;
+                                }
+                                i29++;
+                                oVar2 = this;
+                                z18 = z17;
+                                currentTimeMillis = j17;
+                                i27 = i17;
+                                i18 = 0;
+                            }
+                        }
+                    } catch (java.lang.Throwable th7) {
+                        th6 = th7;
+                        oVar = this;
+                        try {
+                            try {
+                                bufferedReader.close();
+                                throw th6;
+                            } catch (java.lang.Throwable th8) {
+                                th6.addSuppressed(th8);
+                                throw th6;
+                            }
+                        } catch (java.io.IOException e17) {
+                            e = e17;
+                            com.tencent.mars.xlog.Log.e("MicroMsg.FTS.GroupTrainModel", "loadFromString IO failed: %s", e.getMessage());
+                            oVar.f137865a = java.util.Collections.emptyList();
+                            return false;
+                        }
+                    }
+                } catch (java.lang.Throwable th9) {
+                    th6 = th9;
+                    oVar = oVar2;
+                }
+            }
+            long j18 = currentTimeMillis;
+            int i37 = i27;
+            bufferedReader.close();
+            if (i28 > 10) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.FTS.GroupTrainModel", "too many error lines=%d, drop model", java.lang.Integer.valueOf(i28));
+                this.f137865a = java.util.Collections.emptyList();
+                this.f137866b = i37;
+                return false;
+            }
+            this.f137865a = java.util.Collections.unmodifiableList(arrayList);
+            this.f137866b = i37;
+            com.tencent.mars.xlog.Log.i("MicroMsg.FTS.GroupTrainModel", "loadFromString: version=%d, boosters=%d, handle=%d, err=%d, cost=%dms", java.lang.Integer.valueOf(i37), java.lang.Integer.valueOf(arrayList.size()), java.lang.Integer.valueOf(i29), java.lang.Integer.valueOf(i28), java.lang.Long.valueOf(java.lang.System.currentTimeMillis() - j18));
+            return !arrayList.isEmpty();
+        } catch (java.io.IOException e18) {
+            e = e18;
+            oVar = this;
+        }
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:71:0x00af, code lost:
+    
+        if (r0.f137800g != 0) goto L75;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:73:0x00f2, code lost:
+    
+        r5 = 1.0d;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:92:0x00e6, code lost:
+    
+        if (r0.f137810q == 0) goto L75;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:94:0x00eb, code lost:
+    
+        if (r0.f137810q != 0) goto L75;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:96:0x00f0, code lost:
+    
+        if (r0.f137809p != 0) goto L75;
+     */
+    /* JADX WARN: Failed to find 'out' block for switch in B:23:0x007f. Please report as an issue. */
+    /* JADX WARN: Multi-variable type inference failed */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public double c(com.tencent.mm.plugin.fts.train.b r18, java.util.List r19) {
+        /*
+            Method dump skipped, instructions count: 408
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.fts.train.o.c(com.tencent.mm.plugin.fts.train.b, java.util.List):double");
+    }
+}

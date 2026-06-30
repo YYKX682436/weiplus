@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ri" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/mem" style="@style/kk">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:padding="@dimen/bn" android:layout_width="@dimen/eo" android:layout_height="@dimen/eo" android:layout_marginRight="@dimen/cn" android:src="@raw/bubble_plus_circle_regular" app:fs="@color/a84" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bfj" android:paddingLeft="@dimen/j8" android:paddingRight="@dimen/cn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ifd" style="@style/j3" />
+            <TextView android:textColor="@color/jj" android:id="@id/cut" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="{desc}" android:singleLine="true" style="@style/j2" />
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/m38" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/arrow_right_regular" android:layout_marginEnd="@dimen/cn" app:fs="@color/a84" />
+    </LinearLayout>
+</RelativeLayout>

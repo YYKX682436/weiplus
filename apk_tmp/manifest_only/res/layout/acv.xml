@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b8p" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/di"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/cb" android:textColor="@color/fa" android:gravity="center" android:layout_gravity="center" android:id="@id/e1p" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:text="@string/yw" />
+    <View android:background="@color/gb" android:layout_width="match_parent" android:layout_height="@dimen/bh" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" />
+    <com.tencent.mm.view.MaxHeightScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/d4">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/e1o" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.view.MaxHeightScrollView>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/cd">
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj">
+            <Button android:textSize="@dimen/ia" android:id="@id/e1m" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="@string/sg" style="@style/kz" />
+            <Button android:textSize="@dimen/ia" android:id="@id/e1n" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="@string/v5" android:layout_marginStart="@dimen/cn" style="@style/kr" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

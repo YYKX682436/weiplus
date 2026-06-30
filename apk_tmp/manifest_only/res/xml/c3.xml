@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android1:persistent="true" android:key="settings_active_silence_time" android:summary="@string/ip5" android:title="@string/ip4" />
+    <Preference android:key="settings_active_begin_time" android:gc="@layout/byv" android:title="@string/ip2" />
+    <Preference android:key="settings_active_end_time" android:gc="@layout/byv" android:title="@string/ip3" />
+</PreferenceScreen>

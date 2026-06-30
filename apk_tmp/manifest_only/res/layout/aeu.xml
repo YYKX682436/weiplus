@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/kk1" android:background="@drawable/afv" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dd" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/buj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerVertical="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/buh" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_shop" app:fs="@color/FG_0" />
+        <ImageView android:layout_gravity="center" android:id="@id/bui" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" android:layout_toEndOf="@id/buj">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/bul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cz" android:text="@string/eeq" android:maxLines="1" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/FG_2" android:ellipsize="end" android:id="@id/buk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/eeq" android:maxLines="1" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m3b" android:layout_width="@dimen/c8" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/BW_70" />
+</RelativeLayout>

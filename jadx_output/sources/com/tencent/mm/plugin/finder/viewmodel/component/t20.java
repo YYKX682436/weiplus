@@ -1,0 +1,44 @@
+package com.tencent.mm.plugin.finder.viewmodel.component;
+
+/* loaded from: classes2.dex */
+public final class t20 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.viewmodel.component.f50 f135967d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ android.widget.TextView f135968e;
+
+    public t20(com.tencent.mm.plugin.finder.viewmodel.component.f50 f50Var, android.widget.TextView textView) {
+        this.f135967d = f50Var;
+        this.f135968e = textView;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/finder/viewmodel/component/FinderSelfUIC$initMixCellView$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        com.tencent.mm.plugin.finder.viewmodel.component.f50 f50Var = this.f135967d;
+        f50Var.V6();
+        gm0.j1.u().c().x(com.tencent.mm.storage.u3.USERINFO_FINDER_MIX_CELL_TIPS_SHOWN_BOOLEAN, java.lang.Boolean.TRUE);
+        this.f135968e.setVisibility(8);
+        f50Var.getClass();
+        android.content.Intent intent = new android.content.Intent();
+        com.tencent.mm.plugin.finder.viewmodel.component.iy.d(com.tencent.mm.plugin.finder.viewmodel.component.ny.L1, f50Var.getActivity(), intent, 0L, null, 0, 0, false, 0, null, 508, null);
+        intent.setClass(f50Var.getActivity(), com.tencent.mm.plugin.finder.feed.ui.FinderMixCellUI.class);
+        androidx.appcompat.app.AppCompatActivity activity = f50Var.getActivity();
+        java.util.ArrayList arrayList2 = new java.util.ArrayList();
+        arrayList2.add(intent);
+        java.util.Collections.reverse(arrayList2);
+        yj0.a.d(activity, arrayList2.toArray(), "com/tencent/mm/plugin/finder/viewmodel/component/FinderSelfUIC", "jumpMixCell", "()V", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+        activity.startActivity((android.content.Intent) arrayList2.get(0));
+        yj0.a.f(activity, "com/tencent/mm/plugin/finder/viewmodel/component/FinderSelfUIC", "jumpMixCell", "()V", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+        i95.m c17 = i95.n0.c(com.tencent.mm.plugin.finder.report.o3.class);
+        kotlin.jvm.internal.o.f(c17, "getService(...)");
+        ((com.tencent.mm.plugin.finder.report.o3) c17).Jj(f50Var.getActivity(), f50Var.G, f50Var.E, 2L, 10L, (r30 & 32) != 0 ? false : false, (r30 & 64) != 0 ? 0L : 0L, (r30 & 128) != 0 ? "" : null, (r30 & 256) != 0 ? "" : null);
+        yj0.a.h(this, "com/tencent/mm/plugin/finder/viewmodel/component/FinderSelfUIC$initMixCellView$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

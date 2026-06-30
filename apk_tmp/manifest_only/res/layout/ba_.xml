@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:gravity="center_vertical" android:id="@id/ps8" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:text="@string/f__" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:id="@id/ps7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/f_8" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_marginBottom="@dimen/d7">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/m" android:gravity="center" android:id="@id/ps9" android:background="@drawable/wh" android:layout_width="120.0dp" android:layout_height="@dimen/db" android:text="@string/sg" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/aaw" android:gravity="center" android:id="@id/ps6" android:background="@drawable/w9" android:layout_width="120.0dp" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cn" android:text="@string/f_7" />
+    </LinearLayout>
+</LinearLayout>

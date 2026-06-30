@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.StretchFrameLayout android:id="@id/vad" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/cgi" android:paddingLeft="@dimen/bn" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/bn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bn">
+        <com.tencent.mm.ui.widget.EllipsizeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bl">
+            <ImageView android:id="@id/se1" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/ja" android:textColor="@color/adg" android:ellipsize="end" android:id="@id/se2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="@dimen/bl" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/ja" android:id="@id/se6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" />
+        </com.tencent.mm.ui.widget.EllipsizeLayout>
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/k" android:textColor="@color/abw" android:ellipsize="end" android:id="@id/se0" android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:maxLines="2" android:singleLine="false" android:paddingHorizontal="@dimen/bl" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv">
+            <ImageView android:id="@id/sdz" android:layout_width="match_parent" android:layout_height="0.0dp" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="240:192" />
+            <ImageView android:layout_gravity="center" android:id="@id/sea" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:minHeight="@dimen/cs" android:paddingHorizontal="@dimen/bl">
+            <ImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@drawable/clm" android:scaleType="centerCrop" android:tint="@color/FG_1" android:tintMode="src_in" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/ja" android:ellipsize="end" android:id="@id/nec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a00" android:lines="1" style="@style/ed" />
+        </LinearLayout>
+    </LinearLayout>
+</com.tencent.mm.view.StretchFrameLayout>

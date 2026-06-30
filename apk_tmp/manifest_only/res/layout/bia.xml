@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/j_"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gq6" android:background="@raw/default_avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/gq_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{PanChangpeng}" style="@style/ix" />
+            <TextView android:id="@id/gq7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{changpeng.pan@gmail.com}" style="@style/j0" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/gqa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/vu" android:minWidth="60.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="@color/vm" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/gqb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dp" android:minHeight="30.0dp" android:text="@string/ffc" />
+        <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/gq9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+    </FrameLayout>
+</LinearLayout>

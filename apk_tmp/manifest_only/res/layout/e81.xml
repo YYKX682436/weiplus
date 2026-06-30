@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/scu" android:background="@drawable/vq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="top" android:id="@id/sd0" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/scv" android:paddingLeft="@dimen/d1" android:paddingRight="@dimen/d1" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/d1" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+            <View android:background="#26ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginHorizontal="@dimen/cn" />
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/cn">
+                <TextView android:textSize="15.0dp" android:textColor="@color/agc" android:gravity="center" android:id="@id/sd1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:text="@string/no2" android:layout_weight="1.0" android:layout_marginVertical="@dimen/bl" android:textFontWeight="500" />
+                <View android:background="#26ffffff" android:layout_width="1.0dp" android:layout_height="match_parent" app:layout_constraintGuide_percent="0.5" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/agc" android:gravity="center" android:id="@id/sd2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:text="@string/no7" android:layout_weight="1.0" android:layout_marginVertical="@dimen/bl" android:textFontWeight="500" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

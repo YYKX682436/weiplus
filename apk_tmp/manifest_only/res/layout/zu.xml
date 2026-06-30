@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/bza" android:background="@drawable/b9" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/dv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/ay" android:layout_marginRight="@dimen/dv">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_back" android:contentDescription="@string/ig" app:fs="@color/FG_0" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:layout_gravity="center" android:id="@id/d4v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/bza" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ear" android:background="@drawable/b71" android:visibility="gone" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ac4">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eao" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/dv" android:src="@raw/icons_filled_error" app:fs="@color/a2y" />
+        <TextView android:textSize="@dimen/b3" android:ellipsize="end" android:gravity="center" android:id="@id/eap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cpd" android:singleLine="true" android:layout_weight="1.0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eaq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/cn" android:src="@raw/arrow_right" android:tint="@color/BW_50" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ggz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/azm" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/dr">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/gh1" android:layout_width="@dimen/df" android:layout_height="@dimen/df" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/gh2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{nickname}的动态" android:maxLines="1" />
+                <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/gh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{content desc}" android:maxLines="1" />
+            </LinearLayout>
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="10.0dp" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cz" android:src="@raw/icons_filled_arrow" app:fs="@color/BW_93" />
+        </LinearLayout>
+        <View android:id="@id/nfg" android:background="@color/BW_90" android:layout_width="match_parent" android:layout_height="2.0px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/ggd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fgz" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/gga" android:visibility="gone" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/icons_filled_done" android:layout_marginStart="@dimen/bl" app:fs="@color/BW_0_Alpha_0_9" />
+    <ProgressBar android:id="@id/ggb" android:visibility="gone" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:layout_marginStart="@dimen/bl" style="@style/x4" />
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/ggc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" />
+</LinearLayout>

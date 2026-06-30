@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/ex3" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ex1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/ex2" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveFloatContainer android:id="@id/ex4" android:layout_width="72.0dp" android:layout_height="98.0dp" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true">
+        <TextureView android:id="@id/ex0" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.tencent.mm.plugin.finder.live.view.FinderLiveFloatContainer>
+</com.tencent.mm.ui.widget.RoundCornerRelativeLayout>

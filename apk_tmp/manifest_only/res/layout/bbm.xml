@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:background="@color/BW_0_Alpha_0_0_3" android:layout_width="match_parent" android:layout_height="wrap_content" app:ds="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.game.media.FixAspectRatioRelativeLayout android:id="@id/lla" android:layout_width="match_parent" android:layout_height="wrap_content" app:fix_ratio="0.5625" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.plugin.game.media.preview.GameVideoView android:id="@id/ll_" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/hog" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <com.tencent.mm.plugin.game.chatroom.view.flow.FlowView android:id="@id/p0k" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+    </com.tencent.mm.plugin.game.media.FixAspectRatioRelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="73.0dp" android:layout_below="@id/lla">
+        <Button android:textSize="14.0dp" android:id="@id/azf" android:layout_height="38.0dp" android:text="去发表" android:layout_centerVertical="true" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" style="@style/ks" />
+        <TextView android:textSize="13.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:id="@id/om7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/azf" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/om4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="8.0dp" />
+    </RelativeLayout>
+</com.tencent.mm.ui.widget.RoundCornerRelativeLayout>

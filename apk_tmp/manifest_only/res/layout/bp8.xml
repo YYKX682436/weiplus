@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/aaw" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/d0v" android:background="@drawable/afv" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <ProgressBar android:id="@id/imd" android:padding="@dimen/bj" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/d7" android:layout_marginBottom="@dimen/d7" android:layout_centerInParent="true" android:layout_marginVertical="@dimen/d7" style="@style/x4" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ime" android:paddingTop="@dimen/d7" android:paddingBottom="@dimen/d7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingVertical="@dimen/d7">
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_0_Alpha_0_3" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/mox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ipm" android:includeFontPadding="false" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/mp_" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_refresh" android:layout_marginStart="@dimen/bl" app:fs="@color/BW_0_Alpha_0_3" />
+    </LinearLayout>
+</RelativeLayout>

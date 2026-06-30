@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lyc" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/a40"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/fk8" android:layout="@layout/ayn" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:layout_above="@id/fkb" />
+    <include android:id="@id/f_t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/auj" />
+    <include layout="@layout/brk" />
+    <include android:id="@id/g1g" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/cn" layout="@layout/ay9" />
+    <RelativeLayout android:id="@id/fqc" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ViewStub android:id="@id/g1i" android:visibility="visible" android:layout="@layout/b09" android:inflatedId="@id/g1j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginStart="@dimen/bl" android:layout_alignParentStart="true" />
+        <ViewStub android:id="@id/i95" android:layout="@layout/dae" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/g1j" android:layout_alignBottom="@id/g1j" android:layout_marginStart="@dimen/bl" android:layout_toEndOf="@id/g1j" />
+        <FrameLayout android:id="@id/fnx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/i95">
+            <include android:id="@id/fnw" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/b0a" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/c8f" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@id/eoj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/ao_" />
+            <FrameLayout android:id="@id/jji" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/eoj" />
+        </RelativeLayout>
+        <include android:id="@id/g1h" android:visibility="visible" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/bl" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/bl" android:layout_toStartOf="@id/g1m" layout="@layout/avl" />
+        <include android:id="@id/g1m" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/bl" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/bl" android:layout_toStartOf="@id/g1l" layout="@layout/b16" />
+        <include android:id="@id/g1l" android:visibility="visible" android:layout_width="@dimen/db" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/bl" android:layout_alignParentTop="true" android:layout_marginEnd="-8.0dp" android:layout_alignParentEnd="true" layout="@layout/b0q" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/ly_" android:visibility="gone" android:layout="@layout/apy" android:layout_width="match_parent" android:layout_height="@dimen/bu" android:layout_marginTop="@dimen/dj" />
+    <ViewStub android:id="@id/g1k" android:visibility="gone" android:layout="@layout/b0e" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <ViewStub android:id="@id/g1d" android:layout="@layout/dad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_above="@id/fkb" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true" />
+    <com.tencent.mm.plugin.finder.view.FinderLiveOnliveWidget android:id="@id/ly8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:alpha="0.5" android:layout_alignParentEnd="true" app:desc_text="@string/d_1" app:desc_text_size="@dimen/j4" app:logo_height="@dimen/cn" app:logo_mode="4" app:logo_style="3" app:logo_width="@dimen/cn" />
+    <ViewStub android:id="@id/g1e" android:visibility="gone" android:layout="@layout/dac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_above="@id/fkb" android:layout_alignParentRight="true" />
+    <include android:id="@id/fkb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_above="@id/fk7" layout="@layout/ay_" />
+    <include android:id="@id/fk7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/fk6" layout="@layout/ay6" />
+    <include android:id="@id/kx5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/daq" />
+    <include android:id="@id/ipu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bu" android:layout_alignParentTop="true" layout="@layout/dar" />
+    <FrameLayout android:id="@id/fk6" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveShadeView android:id="@id/fl0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

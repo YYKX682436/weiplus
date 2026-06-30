@@ -1,0 +1,49 @@
+package com.p314xaae8f345.mm.p648x55baa833.ui;
+
+/* loaded from: classes5.dex */
+public final class e7 implements gm5.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.u3 f145660a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ android.view.View f145661b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p648x55baa833.ui.m7 f145662c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ int f145663d;
+
+    public e7(com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.u3 u3Var, android.view.View view, com.p314xaae8f345.mm.p648x55baa833.ui.m7 m7Var, int i17) {
+        this.f145660a = u3Var;
+        this.f145661b = view;
+        this.f145662c = m7Var;
+        this.f145663d = i17;
+    }
+
+    @Override // gm5.a
+    /* renamed from: call */
+    public java.lang.Object mo1059x2e7a5e(java.lang.Object obj) {
+        com.p314xaae8f345.mm.p944x882e457a.f fVar = (com.p314xaae8f345.mm.p944x882e457a.f) obj;
+        com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.u3 u3Var = this.f145660a;
+        if (u3Var != null) {
+            u3Var.dismiss();
+        }
+        tm.a b17 = tm.a.b(fVar.f152150c);
+        android.view.View view = this.f145661b;
+        if (b17 != null) {
+            b17.c(view.getContext(), null, null);
+        } else if (fVar.f152148a == 0 && fVar.f152149b == 0) {
+            com.p314xaae8f345.mm.p648x55baa833.ui.m7 m7Var = this.f145662c;
+            java.util.List list = m7Var.f145897e;
+            int i17 = this.f145663d;
+            ((dm.w9) list.get(i17)).f69031x29d3a50c = 1;
+            ((dm.w9) m7Var.f145897e.get(i17)).m125665xee5c84a2(gm0.j1.u().f354686f, true);
+            com.p314xaae8f345.mm.p1006xc5476f33.p2029xc84c5534.p2031x7643c6b5.g0.INSTANCE.mo68477x336bdfd8(219L, 23L, 1L, true);
+        } else {
+            db5.e1.s(view.getContext(), view.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.f571328bw), view.getContext().getString(com.p314xaae8f345.mm.R.C30867xcad56011.f572106yv));
+        }
+        return jz5.f0.f384359a;
+    }
+}

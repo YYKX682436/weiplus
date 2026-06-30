@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/j6" android:textColor="@color/tk" android:gravity="center_horizontal" android:id="@id/kch" android:background="@color/a" android:paddingTop="@dimen/hm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/h_6" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/im7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dh">
+        <ProgressBar android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginEnd="@dimen/hq" style="@style/x4" />
+    </LinearLayout>
+    <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:id="@id/h0p" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMore="true" app:enableLoadMoreWhenContentNotFull="true" app:enableOverScrollBounce="true" app:enableOverScrollDrag="true" app:enableRefresh="true">
+        <com.tencent.mm.plugin.ringtone.widget.RingtoneRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/h0o" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.ringtone.widget.RingtoneLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+</LinearLayout>

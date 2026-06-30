@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.widget.singlist.common.FinderLiveSongInfoView android:id="@id/vny" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/vnz" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/vnz" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="14.0dp" android:textColor="@color/adg" android:id="@id/vnx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/c9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/vnv" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+        <RelativeLayout android:id="@id/vnv" android:background="@drawable/a80" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginEnd="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/vnw" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/finder_icons_filled_gift" android:layout_centerInParent="true" app:fs="@color/adg" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/bo" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

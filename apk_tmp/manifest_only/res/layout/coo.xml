@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chq" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lbg" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="20.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="10.0dp" android:textColor="@color/ab0" android:ellipsize="end" android:gravity="center" android:id="@id/lbh" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="@string/j6j" android:singleLine="true" android:layout_toRightOf="@id/lbg" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/a4s" android:background="@drawable/cff" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/cuv" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dp" android:text="点击查看更多" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="#33000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_toLeftOf="@id/a4s" android:layout_centerVertical="true" android:lineSpacingExtra="0.0dp" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/uk5" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:background="#2c2c2c" android:layout_width="match_parent" android:layout_height="wrap_content" app:ds="@dimen/dv">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/uk6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/aaz" android:ellipsize="end" android:id="@id/uk7" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl">
+                    <TextView android:textSize="@dimen/ja" android:textColor="@color/aaz" android:ellipsize="end" android:id="@id/uk8" android:paddingRight="@dimen/bn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/ja" android:textColor="@color/u4" android:ellipsize="end" android:id="@id/uk9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/f6k" android:layout_width="match_parent" android:layout_height="72.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/h75" android:background="@color/b" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cn" android:layout_centerVertical="true" app:ds="4.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@id/q6q" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_centerInParent="true" />
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/grl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" app:layout_constraintBottom_toTopOf="@id/q6z" app:layout_constraintLeft_toRightOf="@id/h75" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pk_" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="@dimen/cn" android:src="@raw/wecoin_balance_icons" app:fs="@color/FG_2" app:layout_constraintBottom_toBottomOf="@id/q6z" app:layout_constraintLeft_toRightOf="@id/h75" app:layout_constraintRight_toLeftOf="@id/q6z" app:layout_constraintTop_toTopOf="@id/q6z" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:id="@id/q6z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/pk_" app:layout_constraintTop_toBottomOf="@id/grl" />
+    <View android:id="@id/d0v" android:background="@color/a" android:layout_width="wrap_content" android:layout_height="0.5px" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="@id/pk_" />
+</androidx.constraintlayout.widget.ConstraintLayout>

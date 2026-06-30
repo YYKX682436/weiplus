@@ -1,0 +1,18 @@
+package mm;
+
+/* loaded from: classes12.dex */
+public final class e extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final mm.e f328477d = new mm.e();
+
+    public e() {
+        super(0);
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        mm.h hVar = mm.h.f328485a;
+        return new mm.d(100);
+    }
+}

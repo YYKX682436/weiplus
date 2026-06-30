@@ -1,0 +1,24 @@
+package mi2;
+
+/* loaded from: classes10.dex */
+public final class f implements ke2.f {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ mi2.h f326751a;
+
+    public f(mi2.h hVar) {
+        this.f326751a = hVar;
+    }
+
+    @Override // ke2.f
+    public void a(int i17, int i18, java.lang.String str, long j17, r45.cv2 cv2Var) {
+        com.tencent.mars.xlog.Log.i(this.f326751a.f326756m, "set mic setting fail, errType:" + i17 + " errCode:" + i18);
+    }
+
+    @Override // ke2.f
+    public void b(long j17, long j18, r45.cv2 cv2Var) {
+        mi2.h hVar = this.f326751a;
+        com.tencent.mars.xlog.Log.i(hVar.f326756m, "set mic setting success micSettingFlag:" + j18);
+        ((mm2.o4) hVar.f326753h.g().a(mm2.o4.class)).U.f377129d = j18;
+    }
+}

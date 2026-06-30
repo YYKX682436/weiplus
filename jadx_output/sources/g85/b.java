@@ -1,0 +1,40 @@
+package g85;
+
+/* loaded from: classes12.dex */
+public abstract class b implements g85.c {
+
+    /* renamed from: a, reason: collision with root package name */
+    public java.lang.Object f269553a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public long f269554b;
+
+    @Override // g85.c
+    public void a(java.lang.Object obj) {
+        this.f269553a = obj;
+        this.f269554b = java.lang.System.currentTimeMillis();
+    }
+
+    @Override // g85.c
+    public jz5.l value() {
+        boolean z17;
+        try {
+            java.util.List b17 = b();
+            if (b17 != null) {
+                java.util.Iterator it = b17.iterator();
+                while (it.hasNext()) {
+                    if (!((f85.e) it.next()).a()) {
+                        z17 = false;
+                        break;
+                    }
+                }
+            }
+            z17 = true;
+            return z17 ? new jz5.l(java.lang.Boolean.TRUE, null) : new jz5.l(java.lang.Boolean.FALSE, this.f269553a);
+        } catch (java.lang.Throwable unused) {
+            j85.g gVar = j85.g.f298251a;
+            pm0.v.M(j85.g.f298252b, false, new j85.c("seviceName.value crash:" + c(), "BaseMethodMethodCheck"), 2, null);
+            return new jz5.l(java.lang.Boolean.TRUE, null);
+        }
+    }
+}

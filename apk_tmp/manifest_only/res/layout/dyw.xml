@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sek" android:background="#f7f7f7" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundCornerFrameLayout android:id="@id/u7k" android:layout_width="match_parent" android:layout_height="wrap_content" app:ds="@dimen/dv" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/u7j" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    </com.tencent.mm.ui.widget.RoundCornerFrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/hn9" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="@dimen/c9" android:scaleType="fitCenter" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/u7k" />
+    <LinearLayout android:orientation="vertical" android:id="@id/o43" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" app:layout_constraintBottom_toBottomOf="@id/hn9" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/hn9" app:layout_constraintTop_toTopOf="@id/hn9">
+        <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#e6000000" android:id="@id/okx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="8.0dp" android:textColor="#7f7f7f" android:ellipsize="end" android:id="@id/vhn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

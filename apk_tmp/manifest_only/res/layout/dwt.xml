@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:background="@drawable/cw2" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.sns.ad.widget.adconsultbar.ConsultAlphaContainer android:layout_gravity="center_vertical" android:id="@id/s6f" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/c9">
+        <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="14.0dp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:singleLine="true" android:layout_marginVertical="@dimen/dv" />
+        <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="14.0dp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sam" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:singleLine="true" android:layout_marginVertical="@dimen/dv" />
+    </com.tencent.mm.plugin.sns.ad.widget.adconsultbar.ConsultAlphaContainer>
+    <com.tencent.mm.plugin.sns.ad.widget.adconsultbar.ConsultAlphaContainer android:layout_gravity="center_vertical" android:id="@id/s6b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv" app:layout_constraintEnd_toEndOf="0">
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/s6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/bl" />
+            <com.tencent.mm.plugin.sns.ui.improve.view.ImproveTextView android:textSize="14.0dp" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/s6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:singleLine="true" android:layout_marginEnd="@dimen/c9" android:layout_marginVertical="@dimen/dv" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.sns.ad.widget.adconsultbar.ConsultAlphaContainer>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginBottom="@dimen/hf" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/c_m" style="@style/f7" />
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/ia" android:ellipsize="end" android:id="@id/c_k" android:layout_marginTop="0.0dp" android:text="message" android:maxLines="3" style="@style/f5" />
+            </ScrollView>
+        </LinearLayout>
+        <TextView android:id="@id/c_f" android:layout_marginLeft="0.0dp" android:text="source" style="@style/f6" />
+        <com.tencent.mm.ui.widget.MMEditText android:id="@id/c_l" style="@style/f4" />
+    </LinearLayout>
+</LinearLayout>

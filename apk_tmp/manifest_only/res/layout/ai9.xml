@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/eg7" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/m4z" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@drawable/bhm" android:layout_marginEnd="@dimen/dv" />
+        <com.tencent.mm.plugin.ringtone.widget.RingtoneAuthorLayout android:id="@id/m4x" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textColor="@color/BW_100_Alpha_0_5" app:textSize="@dimen/gz" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d2" android:layout_marginEnd="@dimen/bs">
+        <TextView android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/BW_100_Alpha_0_9" android:id="@id/kmi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f27" />
+        <TextView android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/BW_100_Alpha_0_9" android:ellipsize="end" android:id="@id/m5x" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <TextView android:textSize="15.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/m61" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" />
+</LinearLayout>

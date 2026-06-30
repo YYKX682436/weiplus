@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/iwx" android:background="@drawable/aj1" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/aiy" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ix9" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/iwy" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="8.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/ix8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:singleLine="false" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="10.0dp" android:layout_height="20.0dp" android:src="@raw/icons_outlined_arrow" app:fs="@color/UN_BW_0_Alpha_0_3" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/bjr" android:layout_width="match_parent" android:layout_height="1.0dp">
+        <View android:background="@color/UN_BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ix1" android:background="@drawable/aiz" android:paddingLeft="16.0dp" android:paddingTop="12.0dp" android:paddingRight="16.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/ix2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_5" android:id="@id/ix0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="118.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="right" android:id="@id/ix4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/UN_BW_0_Alpha_0_5" android:gravity="right" android:id="@id/ix3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

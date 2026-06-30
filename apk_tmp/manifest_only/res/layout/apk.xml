@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.RCConstraintLayout android:id="@id/c9m" android:layout_width="350.0dp" android:layout_height="625.0dp" app:rcRadius="@dimen/cs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/c94" android:layout_width="350.0dp" android:layout_height="625.0dp" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <ImageView android:id="@id/c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:src="@drawable/c0z" android:scaleType="fitStart" android:transformPivotX="0.0dp" android:transformPivotY="0.0dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_marginBottom="@dimen/cz" android:layout_marginHorizontal="@dimen/cz" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+        <FrameLayout android:orientation="horizontal" android:id="@id/c9f" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" app:layout_constraintBottom_toTopOf="@id/c9d" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="22.0dp" android:layout_height="33.0dp" android:src="@raw/icon_double_quotes" app:fs="@color/BW_100_Alpha_0_5" />
+            <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:textColor="@color/ab0" android:layout_gravity="right|center" android:id="@id/c96" android:background="@drawable/a1o" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dam" android:paddingHorizontal="@dimen/c9" android:paddingVertical="@dimen/bl" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/c9d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" app:layout_constraintBottom_toTopOf="@id/c99" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+            <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:textSize="@dimen/cn" android:textColor="@color/ab0" android:layout_gravity="center_vertical" android:id="@id/c9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:alpha="0.5" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/c99" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/df" app:layout_constraintBottom_toTopOf="@id/c9_" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+            <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:textSize="22.0dp" android:textColor="@color/ab0" android:ellipsize="middle" android:id="@id/c9g" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:maxLines="2" android:alpha="0.9" />
+            <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:textColor="@color/ab0" android:id="@id/c9o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:alpha="0.9" />
+            <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:textColor="@color/ab0" android:id="@id/c9b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:alpha="0.9" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/c9_" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/c9p">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:background="@color/ab0" android:layout_width="match_parent" android:layout_height="1.0dp" android:alpha="0.3" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz">
+                        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/c9h" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginRight="@dimen/dv" android:src="@drawable/bhm" app:i8="@dimen/bj" />
+                        <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:textSize="15.0dp" android:textColor="@color/ab0" android:ellipsize="middle" android:id="@id/c9q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:alpha="0.9" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.tencent.mm.plugin.finder.view.ConcertTicketTextView android:textSize="12.0dp" android:textColor="@color/ab0" android:id="@id/c97" android:paddingLeft="@dimen/dv" android:paddingTop="2.0dp" android:paddingRight="@dimen/dv" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="@dimen/bl" android:layout_alignParentRight="true" android:paddingHorizontal="@dimen/dv" android:paddingVertical="2.0dp" />
+            </LinearLayout>
+            <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/c9p" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/c9" android:layout_alignParentRight="true" app:i8="@dimen/bl" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.view.RCConstraintLayout>

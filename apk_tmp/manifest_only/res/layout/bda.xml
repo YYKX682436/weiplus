@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.webview.fts.ui.FtsVideoWrapper android:id="@id/p0x" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/o__" android:background="#66000000" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/djo" android:background="@null" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/actionbar_icon_light_back" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cld" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/cko" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/c6d" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/ab0" android:paddingTop="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k7z" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/oa8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/oa9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="15.0dp" android:textColor="@color/ab0" android:gravity="center" android:id="@id/o_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dp" />
+                <Button android:textSize="15.0dp" android:textColor="@color/ab0" android:id="@id/o_b" android:background="@drawable/ae4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k6o" />
+                <TextView android:textSize="15.0dp" android:textColor="@color/ab0" android:id="@id/o_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/k6f" />
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@id/ozc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/w_" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/nc" android:background="@drawable/ae8" android:visibility="gone" android:layout_width="130.0dp" android:layout_height="130.0dp" android:layout_centerInParent="true">
+        <ImageView android:id="@id/nb" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="21.0dp" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/ab0" android:id="@id/n_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/fhc" />
+        <com.tencent.mm.plugin.websearch.widget.WebSearchDotPercentIndicator android:id="@id/nd" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/ab0" android:gravity="center" android:id="@id/lbi" android:background="@drawable/ae8" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/i_" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/i_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

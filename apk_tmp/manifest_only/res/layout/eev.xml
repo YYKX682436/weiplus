@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g5z" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/bo" android:src="@raw/icons_outlined_pay_fingerprint_android" app:fs="@color/a84" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="center" android:id="@id/twg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/d0" android:text="@string/ozp" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/Red_100" android:gravity="center" android:id="@id/twh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/d0" android:text="@string/ozq" />
+</LinearLayout>

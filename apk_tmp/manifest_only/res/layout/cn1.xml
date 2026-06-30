@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/bkg" android:background="@drawable/ab_" android:paddingTop="@dimen/c9" android:layout_width="@dimen/amc" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/em">
+        <ImageView android:id="@id/bm_" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:scaleType="centerCrop" android:layout_marginStart="@dimen/c9" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TableLayout android:id="@id/ocp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:shrinkColumns="0" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/xq" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/bm_" app:layout_constraintTop_toTopOf="0">
+            <TableRow android:gravity="center_vertical">
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <ImageView android:id="@id/awq" android:layout_width="wrap_content" android:layout_height="@dimen/c9" android:layout_marginStart="@dimen/xh" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dlo" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:layout_marginStart="@dimen/bn" android:layout_marginEnd="@dimen/dv" app:layout_constraintLeft_toRightOf="@id/bm_" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/ocp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lzh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f5c" />
+                <TextView android:textSize="@dimen/c8" android:id="@id/lzk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bi" />
+                <TextView android:textSize="@dimen/dv" android:id="@id/lzj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bi" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/c8" android:id="@id/kcm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f5b" />
+            <TextView android:textSize="@dimen/c8" android:textColor="@color/adg" android:id="@id/rgk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/lzi" android:background="@color/BW_0_Alpha_0_1" android:layout_width="1.0dp" android:layout_height="@dimen/bn" android:layout_marginStart="@dimen/bn" android:layout_marginEnd="5.0dp" />
+            <TextView android:textSize="@dimen/c8" android:textColor="@color/adg" android:ellipsize="end" android:id="@id/ohq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/l7w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/bn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/dlo">
+            <include android:id="@id/l7b" android:layout_width="@dimen/ds" android:layout_height="@dimen/ds" app:layout_constraintEnd_toStartOf="@id/l7u" app:layout_constraintStart_toStartOf="0" layout="@layout/b9a" />
+            <include android:id="@id/l7u" android:layout_width="@dimen/ds" android:layout_height="@dimen/ds" app:layout_constraintEnd_toStartOf="@id/l7r" app:layout_constraintStart_toEndOf="@id/l7b" layout="@layout/b9a" />
+            <include android:id="@id/l7r" android:layout_width="@dimen/ds" android:layout_height="@dimen/ds" app:layout_constraintEnd_toEndOf="0" layout="@layout/b9a" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/l7w">
+            <View android:id="@id/bok" android:background="@color/hn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/c8" android:layout_marginBottom="@dimen/bl" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/c9" />
+            <TextView android:textSize="@dimen/ja" android:textColor="@color/FG_1" android:id="@id/boj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:text="@string/f5d" android:includeFontPadding="false" android:layout_marginStart="@dimen/c9" style="@style/fe" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

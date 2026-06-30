@@ -1,0 +1,18 @@
+package j35;
+
+/* loaded from: classes5.dex */
+public class z implements android.content.DialogInterface.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p2470x93e71c27.p2476xe125c5cf.ActivityC19627x87d09a1e f379060d;
+
+    public z(com.p314xaae8f345.mm.p2470x93e71c27.p2476xe125c5cf.ActivityC19627x87d09a1e activityC19627x87d09a1e) {
+        this.f379060d = activityC19627x87d09a1e;
+    }
+
+    @Override // android.content.DialogInterface.OnClickListener
+    public void onClick(android.content.DialogInterface dialogInterface, int i17) {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.PermissionActivity", "onResume() goIgnoreBatteryOptimizations app_cancel");
+        this.f379060d.finish();
+    }
+}

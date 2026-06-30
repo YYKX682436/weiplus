@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/adw" android:paddingTop="@dimen/ais" android:paddingBottom="@dimen/ais" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginStart="@dimen/aih" android:layout_marginEnd="@dimen/aih">
+        <com.tencent.mm.ui.widget.progress.RoundProgressBtn android:id="@id/t99" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" app:hasPause="false" style="@style/x3" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/t9_" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/icons_outlined_done" app:fs="@color/m" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/adg" android:id="@id/t9a" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ojh" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+package com.tencent.mm.plugin.finder.live.plugin;
+
+/* loaded from: classes3.dex */
+public final class e30 implements androidx.lifecycle.k0 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.live.plugin.i30 f112365d;
+
+    public e30(com.tencent.mm.plugin.finder.live.plugin.i30 i30Var) {
+        this.f112365d = i30Var;
+    }
+
+    @Override // androidx.lifecycle.k0
+    public void onChanged(java.lang.Object obj) {
+        java.lang.Boolean bool = (java.lang.Boolean) obj;
+        kotlin.jvm.internal.o.d(bool);
+        boolean booleanValue = bool.booleanValue();
+        com.tencent.mm.plugin.finder.live.plugin.i30 i30Var = this.f112365d;
+        if (booleanValue) {
+            i30Var.K0(8);
+        } else {
+            i30Var.K0(i30Var.B);
+        }
+    }
+}

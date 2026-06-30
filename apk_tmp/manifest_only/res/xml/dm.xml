@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:defaultValue="true" android:key="material_poi_switch" android:summary="@string/mg_" android:title="@string/mga" />
+    <CheckBoxPreference android:defaultValue="true" android:key="new_life_pic_content" android:summary="@string/cqc" android:title="@string/cqa" />
+    <CheckBoxPreference android:defaultValue="true" android:key="save_edited_media_switch" android:title="@string/oyc" />
+    <com.tencent.mm.plugin.finder.widget.pref.FinderProtectHintPreference android:key="settings_protect_hint" android:selectable="false" android:title="@string/p5r" />
+    <CheckBoxPreference android:defaultValue="false" android:key="feed_reproduction" android:title="@string/ofz" />
+    <CheckBoxPreference android:defaultValue="true" android:key="finder_mini_app_reference" android:title="@string/p3g" />
+    <PreferenceFooterCategory android:key="settings_video_reference_desc" android:title="@string/p5u" />
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/aun" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/hz" android:minHeight="216.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ppc" android:layout_width="9.0dp" android:layout_height="17.0dp" android:src="@raw/arrow_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fs="@color/BW_70" />
+        <TextView android:textSize="@dimen/r" android:textStyle="bold" android:textColor="@color/vo" android:id="@id/ppd" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kwy" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/ppf" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="16.0dp" android:src="@raw/icons_outlined_pay_fingerprint_android" app:fs="@color/BW_70" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/t_" android:layout_gravity="center_horizontal" android:id="@id/ppe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="40.0dp" android:text="@string/kwq" />
+</LinearLayout>

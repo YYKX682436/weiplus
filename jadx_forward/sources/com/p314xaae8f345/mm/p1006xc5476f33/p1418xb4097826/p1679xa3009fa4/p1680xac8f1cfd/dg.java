@@ -1,0 +1,40 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd;
+
+/* loaded from: classes10.dex */
+public final class dg extends qn5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd.gg f215674d;
+
+    public dg(com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd.gg ggVar) {
+        this.f215674d = ggVar;
+    }
+
+    @Override // qn5.a
+    public void a(android.animation.Animator animator) {
+        super.a(animator);
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd.gg ggVar = this.f215674d;
+        ggVar.f216052u = false;
+        if (ggVar.f216049r && ggVar.f216038d && !ggVar.f216053v) {
+            ggVar.R6();
+        }
+    }
+
+    @Override // qn5.a, android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationEnd(android.animation.Animator animation) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(animation, "animation");
+        b(animation);
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1679xa3009fa4.p1680xac8f1cfd.gg ggVar = this.f215674d;
+        ggVar.f216052u = false;
+        if (ggVar.f216049r && ggVar.f216038d && !ggVar.f216053v) {
+            ggVar.R6();
+        }
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationStart(android.animation.Animator animation) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(animation, "animation");
+        super.onAnimationStart(animation);
+        this.f215674d.f216052u = true;
+    }
+}

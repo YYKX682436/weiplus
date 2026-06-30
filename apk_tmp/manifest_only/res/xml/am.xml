@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <HeadImgAndNamePreference android:key="settings_avatar" android:title="@string/exh" />
+    <IconPreference android:key="settings_qrcode" android:gc="@layout/byv" android:title="@string/j4h" />
+    <PreferenceSmallCategory />
+    <Preference android:key="settings_share_my_finder" android:gc="@layout/byv" android:title="@string/h92" />
+    <PreferenceSmallCategory />
+    <Preference android:key="settings_data" android:gc="@layout/byv" android:title="@string/csp" />
+    <PreferenceSmallCategory />
+    <Preference android:key="settings_privacy" android:gc="@layout/byv" android:title="@string/mra" />
+    <Preference android:key="settings_poi" android:gc="@layout/byv" android:title="@string/ett" />
+    <Preference android:key="account_management" android:gc="@layout/byv" android:title="@string/mg0" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.plugin.finder.widget.pref.FinderCreatorCenterPreference android:key="settings_creator_center" android:gc="@layout/byv" android:title="@string/exg" />
+    <IconPreference android:key="account_mile_stone" android:gc="@layout/byv" android:title="@string/m9p" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="settings_mp_identity_switch" android:summary="@string/eov" android:title="@string/eou" />
+    <CheckBoxPreference android:key="settings_qq_music_switch" android:summary="@string/f0u" android:title="@string/f0t" />
+</PreferenceScreen>

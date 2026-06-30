@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/a0k" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dn" android:src="@raw/icons_outlined_info" app:fs="#10aeff" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:layout_gravity="center_horizontal" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/ms3" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz">
+        <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_3" android:gravity="center" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:text=" · " />
+        <TextView android:textSize="15.0dp" android:textColor="@color/adg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bj" android:text="@string/ms1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_marginHorizontal="@dimen/cz">
+        <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_3" android:gravity="center" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:text=" · " />
+        <TextView android:textSize="15.0dp" android:textColor="@color/adg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bj" android:text="@string/ms2" />
+    </LinearLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/ab0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/azj" android:background="@drawable/a0r" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/bo" android:text="@string/mrz" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/Link_100" android:layout_gravity="center_horizontal" android:id="@id/re9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/cz" android:text="@string/ms0" />
+</LinearLayout>

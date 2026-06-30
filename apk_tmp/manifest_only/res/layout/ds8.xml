@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/cuu" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="41.0dp" android:paddingHorizontal="@dimen/dv" android:paddingVertical="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_9" android:ellipsize="end" android:id="@id/s0j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bj" android:maxLines="1" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/s0i" android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:foreground="@drawable/cut" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/a1" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:id="@id/s0k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/bj" />
+    </LinearLayout>
+</LinearLayout>

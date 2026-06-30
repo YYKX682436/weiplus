@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/a0k" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ava" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <FrameLayout android:id="@id/f6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dp">
+            <include android:id="@id/f6a" android:layout_width="24.0dp" android:layout_height="match_parent" layout="@layout/awu" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/tob" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" android:layout_toStartOf="@id/fki" android:layout_toEndOf="@id/f6c">
+            <com.google.android.material.tabs.TabLayout android:textSize="15.0dp" android:id="@id/vg1" android:layout_width="wrap_content" android:layout_height="37.0dp" app:jd="bdp" app:jh="@color/FG_0" app:ji="false" app:jk="2.0dp" app:jl="76.0dp" app:tabMinWidth="76.0dp" app:jm="mcp" app:jn="8.0dp" app:jo="8.0dp" app:jq="@color/FG_0" app:jt="@color/FG_1" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/fki" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:id="@id/fkk" android:visibility="invisible" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:text="" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/og5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/gy1" android:background="@drawable/a0p" android:clipChildren="false" android:layout_width="40.0dp" android:layout_height="4.0dp" android:layout_marginTop="16.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/gxz" android:layout_width="8.0dp" android:layout_height="16.0dp" android:src="@raw/icons_filled_arrow" android:alpha="0.0" android:rotation="90.0" app:fs="@color/FG_2" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/av_" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

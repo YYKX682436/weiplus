@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:mm="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.base.preference.HeadImgNewPreference mm:key="settings_change_avatar" mm:gc="@layout/byv" mm:title="@string/ipu" />
+    <Preference mm:key="settings_name" mm:gc="@layout/byv" mm:title="@string/itt" />
+    <Preference mm:key="settings_sex" mm:gc="@layout/byv" mm:title="@string/iy4" />
+    <Preference mm:key="settings_district" mm:gc="@layout/byv" mm:title="@string/iqg" />
+    <Preference mm:key="settings_mobile" mm:gc="@layout/byv" mm:title="@string/isz" />
+    <Preference mm:key="settings_username" mm:gc="@layout/byv" mm:title="@string/j0q" />
+    <Preference mm:key="settings_linkedin" mm:gc="@layout/byv" mm:title="@string/irt" />
+    <Preference mm:key="settings_qrcode" mm:gc="@layout/byv" mm:title="@string/its" mm:widgetLayout="@layout/c0_" />
+    <Preference mm:key="settings_pat" mm:gc="@layout/byv" mm:title="@string/hg2" />
+    <com.tencent.mm.chatroom.ui.preference.SignaturePreference mm:key="settings_signature" mm:gc="@layout/byv" mm:title="@string/oht" />
+    <Preference mm:key="settings_finder_recent_like" mm:gc="@layout/byv" mm:title="@string/ir9" />
+    <PreferenceSmallCategory />
+    <Preference mm:key="settings_notification_ringtone" mm:gc="@layout/byv" mm:title="@string/iua" />
+    <PreferenceSmallCategory />
+    <Preference mm:key="settings_address" mm:gc="@layout/byv" mm:title="@string/ipa" />
+    <Preference mm:key="settings_invoice" mm:gc="@layout/byv" mm:title="@string/irl" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.SummaryTextPreference mm:key="settings_wecoin" mm:gc="@layout/byv" mm:title="@string/isx" />
+</PreferenceScreen>

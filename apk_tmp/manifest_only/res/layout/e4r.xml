@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn">
+            <Button android:id="@id/ufj" android:layout_width="match_parent" android:text="MB-代码包" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+            <Button android:id="@id/ufi" android:layout_width="match_parent" android:layout_marginLeft="@dimen/cn" android:text="MB-插入卡片" android:layout_weight="1.0" android:onClick="onClick" style="@style/ks" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+package com.tencent.mapsdk.internal;
+
+/* loaded from: classes13.dex */
+public final class he extends com.tencent.mapsdk.internal.hh {
+
+    /* renamed from: a, reason: collision with root package name */
+    @com.tencent.map.tools.json.annotation.Json(name = "showCount")
+    public int f49739a;
+
+    public he() {
+        this.f49739a = 0;
+    }
+
+    private int a() {
+        int i17 = this.f49739a + 1;
+        this.f49739a = i17;
+        return i17;
+    }
+
+    public he(long j17) {
+        super(j17);
+        this.f49739a = 0;
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/j8c" android:background="@color/a07" android:paddingTop="50.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/d9c" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="9" android:layout_weight="1.0" />
+        <Button android:id="@id/azs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ok" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/m8n" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/m8p" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_marginLeft="250.0dp" android:layout_marginTop="250.0dp" android:transitionName="soontest" />
+</LinearLayout>

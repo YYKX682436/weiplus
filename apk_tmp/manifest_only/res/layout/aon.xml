@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/a0g" android:layout_width="match_parent" android:layout_height="106.0dp" android:layout_marginTop="10.0dp" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/a55" android:layout_width="74.0dp" android:layout_height="74.0dp" android:scaleType="centerCrop" android:layout_marginEnd="16.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:i8="2.0dp" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/f5" android:ellipsize="end" android:id="@id/a57" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintEnd_toStartOf="@id/a55" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@id/a55" />
+    <TextView android:textColor="@color/tk" android:id="@id/lcv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="@id/a57" app:layout_constraintTop_toBottomOf="@id/a57" />
+</androidx.constraintlayout.widget.ConstraintLayout>

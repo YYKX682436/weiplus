@@ -1,0 +1,256 @@
+package com.p314xaae8f345.mm.p653x55bb7a46.p658xd1075a44;
+
+@p3321xbce91901.InterfaceC29042xe907df4f(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B'\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\t\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/tencent/mm/chatting/widget/ChattingSourceLineViewNew;", "Lcom/tencent/mm/mvvm/MvvmView;", "La11/b;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "def", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "feature-chatting_release"}, k = 1, mv = {1, 9, 0})
+/* renamed from: com.tencent.mm.chatting.widget.ChattingSourceLineViewNew */
+/* loaded from: classes9.dex */
+public final class C10392xadef7146 extends com.p314xaae8f345.mm.p970x335620.AbstractC11172x705e5905<a11.b> {
+
+    /* renamed from: f, reason: collision with root package name */
+    public em.y f146275f;
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public C10392xadef7146(android.content.Context context, android.util.AttributeSet attributeSet) {
+        this(context, attributeSet, 0, 4, null);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+    }
+
+    @Override // com.p314xaae8f345.mm.p970x335620.AbstractC11172x705e5905
+    public android.view.View c(android.content.Context context) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+        android.view.View inflate = android.view.LayoutInflater.from(context).inflate(com.p314xaae8f345.mm.R.C30864xbddafb2a.e2_, (android.view.ViewGroup) this, false);
+        this.f146275f = new em.y(inflate);
+        return inflate;
+    }
+
+    @Override // com.p314xaae8f345.mm.p970x335620.AbstractC11172x705e5905
+    public void e(q31.p pVar, q31.p pVar2) {
+        android.graphics.drawable.Drawable mutate;
+        android.graphics.drawable.Drawable mutate2;
+        a11.b bVar = (a11.b) pVar2;
+        if (bVar == null) {
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f554818a;
+            arrayList.add(8);
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(this, arrayList.toArray(), "com/tencent/mm/kt/CommonKt", "gone", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            int intValue = ((java.lang.Integer) arrayList.get(0)).intValue();
+            java.util.ArrayList arrayList2 = new java.util.ArrayList();
+            arrayList2.add(java.lang.Integer.valueOf(intValue));
+            java.util.Collections.reverse(arrayList2);
+            yj0.a.d(this, arrayList2.toArray(), "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            setVisibility(((java.lang.Integer) arrayList2.get(0)).intValue());
+            yj0.a.f(this, "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            yj0.a.f(this, "com/tencent/mm/kt/CommonKt", "gone", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            return;
+        }
+        if (bVar.f82036g != null) {
+            java.util.ArrayList arrayList3 = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal2 = zj0.c.f554818a;
+            arrayList3.add(0);
+            java.util.Collections.reverse(arrayList3);
+            yj0.a.d(this, arrayList3.toArray(), "com/tencent/mm/kt/CommonKt", "visible", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            int intValue2 = ((java.lang.Integer) arrayList3.get(0)).intValue();
+            java.util.ArrayList arrayList4 = new java.util.ArrayList();
+            arrayList4.add(java.lang.Integer.valueOf(intValue2));
+            java.util.Collections.reverse(arrayList4);
+            yj0.a.d(this, arrayList4.toArray(), "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            setVisibility(((java.lang.Integer) arrayList4.get(0)).intValue());
+            yj0.a.f(this, "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            yj0.a.f(this, "com/tencent/mm/kt/CommonKt", "visible", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            yz5.l lVar = bVar.f82036g;
+            if (lVar != null) {
+                em.y yVar = this.f146275f;
+                if (yVar == null) {
+                    p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+                    throw null;
+                }
+                com.p314xaae8f345.mm.ui.p2747xd1075a44.p2760xcbb7be80.C22699x3dcdb352 a17 = yVar.a();
+                p3321xbce91901.jvm.p3324x21ffc6bd.o.f(a17, "getSourceIv(...)");
+                em.y yVar2 = this.f146275f;
+                if (yVar2 == null) {
+                    p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+                    throw null;
+                }
+                com.p314xaae8f345.mm.ui.p2747xd1075a44.C22632xdab56332 b17 = yVar2.b();
+                p3321xbce91901.jvm.p3324x21ffc6bd.o.f(b17, "getSourceTv(...)");
+                lVar.mo146xb9724478(new a11.c(this, a17, b17));
+            }
+            em.y yVar3 = this.f146275f;
+            if (yVar3 == null) {
+                p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+                throw null;
+            }
+            if (yVar3.a().m82035xab0057b4() != 0) {
+                em.y yVar4 = this.f146275f;
+                if (yVar4 != null) {
+                    yVar4.a().m82037xa10c26f6(true);
+                    return;
+                } else {
+                    p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+                    throw null;
+                }
+            }
+            em.y yVar5 = this.f146275f;
+            if (yVar5 == null) {
+                p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+                throw null;
+            }
+            yVar5.a().m82037xa10c26f6(false);
+            em.y yVar6 = this.f146275f;
+            if (yVar6 == null) {
+                p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+                throw null;
+            }
+            android.graphics.drawable.Drawable drawable = yVar6.a().getDrawable();
+            if (drawable != null && (mutate2 = drawable.mutate()) != null) {
+                mutate2.clearColorFilter();
+            }
+            em.y yVar7 = this.f146275f;
+            if (yVar7 == null) {
+                p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+                throw null;
+            }
+            android.graphics.drawable.Drawable drawable2 = yVar7.a().getDrawable();
+            if (drawable2 == null || (mutate = drawable2.mutate()) == null) {
+                return;
+            }
+            mutate.setAlpha(255);
+            return;
+        }
+        java.util.ArrayList arrayList5 = new java.util.ArrayList();
+        java.lang.ThreadLocal threadLocal3 = zj0.c.f554818a;
+        arrayList5.add(0);
+        java.util.Collections.reverse(arrayList5);
+        yj0.a.d(this, arrayList5.toArray(), "com/tencent/mm/kt/CommonKt", "visible", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        int intValue3 = ((java.lang.Integer) arrayList5.get(0)).intValue();
+        java.util.ArrayList arrayList6 = new java.util.ArrayList();
+        arrayList6.add(java.lang.Integer.valueOf(intValue3));
+        java.util.Collections.reverse(arrayList6);
+        yj0.a.d(this, arrayList6.toArray(), "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        setVisibility(((java.lang.Integer) arrayList6.get(0)).intValue());
+        yj0.a.f(this, "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        yj0.a.f(this, "com/tencent/mm/kt/CommonKt", "visible", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        if (!bVar.f82033d && r26.n0.N(bVar.f82034e)) {
+            java.util.ArrayList arrayList7 = new java.util.ArrayList();
+            arrayList7.add(8);
+            java.util.Collections.reverse(arrayList7);
+            yj0.a.d(this, arrayList7.toArray(), "com/tencent/mm/kt/CommonKt", "gone", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            int intValue4 = ((java.lang.Integer) arrayList7.get(0)).intValue();
+            java.util.ArrayList arrayList8 = new java.util.ArrayList();
+            arrayList8.add(java.lang.Integer.valueOf(intValue4));
+            java.util.Collections.reverse(arrayList8);
+            yj0.a.d(this, arrayList8.toArray(), "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            setVisibility(((java.lang.Integer) arrayList8.get(0)).intValue());
+            yj0.a.f(this, "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            yj0.a.f(this, "com/tencent/mm/kt/CommonKt", "gone", "(Landroid/view/View;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            return;
+        }
+        em.y yVar8 = this.f146275f;
+        if (yVar8 == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        com.p314xaae8f345.mm.ui.p2747xd1075a44.p2760xcbb7be80.C22699x3dcdb352 a18 = yVar8.a();
+        java.lang.Boolean valueOf = java.lang.Boolean.valueOf(bVar.f82033d);
+        java.util.ArrayList arrayList9 = new java.util.ArrayList();
+        arrayList9.add(0);
+        java.util.Collections.reverse(arrayList9);
+        yj0.a.d(a18, arrayList9.toArray(), "com/tencent/mm/kt/CommonKt", "visibleIf", "(Landroid/view/View;Ljava/lang/Boolean;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        int intValue5 = ((java.lang.Integer) arrayList9.get(0)).intValue();
+        java.util.ArrayList arrayList10 = new java.util.ArrayList();
+        arrayList10.add(java.lang.Integer.valueOf(intValue5));
+        java.util.Collections.reverse(arrayList10);
+        yj0.a.d(a18, arrayList10.toArray(), "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        a18.setVisibility(((java.lang.Integer) arrayList10.get(0)).intValue());
+        yj0.a.f(a18, "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        yj0.a.f(a18, "com/tencent/mm/kt/CommonKt", "visibleIf", "(Landroid/view/View;Ljava/lang/Boolean;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        if (((android.view.View) pm0.v.E(valueOf, a18)) == null) {
+            java.util.ArrayList arrayList11 = new java.util.ArrayList();
+            arrayList11.add(8);
+            java.util.Collections.reverse(arrayList11);
+            yj0.a.d(a18, arrayList11.toArray(), "com/tencent/mm/kt/CommonKt", "visibleIf", "(Landroid/view/View;Ljava/lang/Boolean;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            int intValue6 = ((java.lang.Integer) arrayList11.get(0)).intValue();
+            java.util.ArrayList arrayList12 = new java.util.ArrayList();
+            arrayList12.add(java.lang.Integer.valueOf(intValue6));
+            java.util.Collections.reverse(arrayList12);
+            yj0.a.d(a18, arrayList12.toArray(), "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            a18.setVisibility(((java.lang.Integer) arrayList12.get(0)).intValue());
+            yj0.a.f(a18, "com/tencent/mm/chatting/widget/ChattingSourceLineViewNew", "onUpdateViewModel", "(Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;Lcom/tencent/mm/modelchatting/basiswidget/SourceLineViewModel;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            yj0.a.f(a18, "com/tencent/mm/kt/CommonKt", "visibleIf", "(Landroid/view/View;Ljava/lang/Boolean;)Landroid/view/View;", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        }
+        em.y yVar9 = this.f146275f;
+        if (yVar9 == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        yVar9.b().setText(bVar.f82034e);
+        em.y yVar10 = this.f146275f;
+        if (yVar10 == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        com.p314xaae8f345.mm.ui.p2747xd1075a44.C22632xdab56332 b18 = yVar10.b();
+        java.lang.Integer valueOf2 = java.lang.Integer.valueOf(bVar.f82035f);
+        java.lang.Integer num = valueOf2.intValue() != 0 ? valueOf2 : null;
+        b18.setTextColor(num != null ? num.intValue() : getContext().getColor(com.p314xaae8f345.mm.R.C30859x5a72f63.adg));
+    }
+
+    @Override // com.p314xaae8f345.mm.p970x335620.AbstractC11172x705e5905
+    public void f() {
+        android.graphics.drawable.Drawable mutate;
+        android.graphics.drawable.Drawable mutate2;
+        em.y yVar = this.f146275f;
+        if (yVar == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        android.graphics.drawable.Drawable drawable = yVar.a().getDrawable();
+        if (drawable != null && (mutate2 = drawable.mutate()) != null) {
+            mutate2.clearColorFilter();
+        }
+        em.y yVar2 = this.f146275f;
+        if (yVar2 == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        android.graphics.drawable.Drawable drawable2 = yVar2.a().getDrawable();
+        if (drawable2 != null && (mutate = drawable2.mutate()) != null) {
+            mutate.setAlpha(255);
+        }
+        em.y yVar3 = this.f146275f;
+        if (yVar3 == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        yVar3.a().setImageDrawable(null);
+        em.y yVar4 = this.f146275f;
+        if (yVar4 == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        yVar4.a().m82040x7541828(0);
+        em.y yVar5 = this.f146275f;
+        if (yVar5 == null) {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+        yVar5.a().m82039x7369a23(1.0f);
+        em.y yVar6 = this.f146275f;
+        if (yVar6 != null) {
+            yVar6.a().m82037xa10c26f6(false);
+        } else {
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.o("holder");
+            throw null;
+        }
+    }
+
+    public /* synthetic */ C10392xadef7146(android.content.Context context, android.util.AttributeSet attributeSet, int i17, int i18, p3321xbce91901.jvm.p3324x21ffc6bd.i iVar) {
+        this(context, (i18 & 2) != 0 ? null : attributeSet, (i18 & 4) != 0 ? 0 : i17);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C10392xadef7146(android.content.Context context, android.util.AttributeSet attributeSet, int i17) {
+        super(context, attributeSet, i17);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+    }
+}

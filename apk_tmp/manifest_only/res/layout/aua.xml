@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cs7" android:paddingLeft="@dimen/j3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/b17" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/jbg" android:background="@drawable/aoe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" />
+    </LinearLayout>
+    <com.tencent.mm.ui.base.MaskLayout android:layout_width="@dimen/db" android:layout_height="@dimen/dn" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/c9">
+        <ImageView android:id="@id/jbf" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@raw/default_avatar" android:layout_centerVertical="true" />
+    </com.tencent.mm.ui.base.MaskLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bfj" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.base.EllipsizeTextView android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="left|center" android:id="@id/jbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j8" android:maxWidth="220.0dp" android:singleLine="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" style="@style/j3" />
+        <View android:layout_gravity="bottom" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_constraintBottom_toBottomOf="0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jbj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="@dimen/cn" android:src="@raw/icons_outlined_info" app:fs="@color/FG_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

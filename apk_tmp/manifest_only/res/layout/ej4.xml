@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/yd" android:id="@id/t9b" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Expose" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/t9c" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="ExposeAsync" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_orange_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/bys" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Close" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/ta2" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="FeedBack" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/ty5" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="ForcePull" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/usn" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Preload" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_orange_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/ty4" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="ForceClean" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/yd" android:id="@id/sp5" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="ChangeTimeout" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_green_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/vda" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="装了元宝→拦截" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_blue_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/vd_" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="没装元宝→拦截" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_blue_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/t5x" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="DumpAdsInfo" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_purple" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/ac" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/yd" android:id="@id/sxk" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="综合测试-Preload" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_orange_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/sxi" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="综合测试-Fallback" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_orange_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/sxl" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="综合测试-上报" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_orange_light" />
+            <Button android:textSize="@dimen/yd" android:id="@id/sxj" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="综合测试-拦截" android:layout_weight="1.0" android:backgroundTint="@android:color/holo_orange_light" />
+        </LinearLayout>
+    </LinearLayout>
+    <Spinner android:textSize="@dimen/yd" android:id="@id/uqx" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dialog" />
+    <FrameLayout android:id="@id/cg7" android:background="@android:color/holo_red_light" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

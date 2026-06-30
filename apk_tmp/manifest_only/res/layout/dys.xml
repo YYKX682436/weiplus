@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/fm" />
+    <ImageView android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" style="@style/fh" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dyu" />
+</LinearLayout>

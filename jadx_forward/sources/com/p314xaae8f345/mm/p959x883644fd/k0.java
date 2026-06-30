@@ -1,0 +1,251 @@
+package com.p314xaae8f345.mm.p959x883644fd;
+
+/* loaded from: classes4.dex */
+public abstract class k0 {
+    public static void a(java.lang.String str, m21.x xVar) {
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("appendSourceAndSnsStat", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        if (xVar == null) {
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("appendSourceAndSnsStat", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        } else {
+            b(str, xVar);
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("appendSourceAndSnsStat", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        }
+    }
+
+    public static void b(java.lang.String str, m21.x xVar) {
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("appendSourceAndSnsStatWithExt", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str) || xVar == null) {
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("appendSourceAndSnsStatWithExt", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return;
+        }
+        r45.ud6 h17 = h(str);
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
+        sb6.append(h17 == null ? -1 : h17.f468803g);
+        sb6.append(",");
+        xVar.a("Source", sb6.toString());
+        xVar.a("SnsStatExt", g(h17));
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("appendSourceAndSnsStatWithExt", "com.tencent.mm.modelstat.SnsStatExtUtil");
+    }
+
+    public static java.lang.String c(r45.ht0 ht0Var) {
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("composeTopicTitle", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        java.lang.String m75945x2fec8307 = (android.text.TextUtils.isEmpty(ht0Var.m75945x2fec8307(2)) || (ht0Var.m75942xfb822ef2(4) & 1) == 1) ? ht0Var.m75945x2fec8307(1) : com.p314xaae8f345.mm.sdk.p2603x2137b148.x2.f274604a.getString(com.p314xaae8f345.mm.R.C30867xcad56011.jel, ht0Var.m75945x2fec8307(2), ht0Var.m75945x2fec8307(1));
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("composeTopicTitle", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        return m75945x2fec8307;
+    }
+
+    public static int d(java.lang.String str) {
+        int i17;
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("getAdCanvasType", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        int i18 = 0;
+        try {
+            if (!android.text.TextUtils.isEmpty(str)) {
+                java.lang.String T6 = com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.ActivityC18004x5463467d.T6(str, dm.n.f67493x36901555, ".adxml.canvasShareInfo.canvasDynamicExtInfo");
+                com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.SnsStatExtUtil", "canvasDynamicExtInfo is " + T6 + ", adCanvasInfo is " + str);
+                if (android.text.TextUtils.isEmpty(T6) || !T6.contains("ad_canvas_type")) {
+                    com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("isShareGiveHBCanvas", "com.tencent.mm.plugin.sns.ad.helper.hbcovercard.ShareGiveHBCardInfo");
+                    boolean z17 = str != null && str.contains("<giveHBCardInfo>");
+                    com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("isShareGiveHBCanvas", "com.tencent.mm.plugin.sns.ad.helper.hbcovercard.ShareGiveHBCardInfo");
+                    if (z17) {
+                        i17 = 2;
+                    } else if (str.contains("isInteractiveCanvas")) {
+                        i18 = 1;
+                    }
+                } else {
+                    i17 = new cl0.g(T6).optInt("ad_canvas_type");
+                }
+                i18 = i17;
+            }
+        } catch (java.lang.Exception e17) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "getAdCanvasType exp=" + e17.toString());
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getAdCanvasType", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        return i18;
+    }
+
+    public static java.lang.String e(java.lang.String str) {
+        java.lang.StringBuilder sb6;
+        com.p314xaae8f345.mm.p959x883644fd.j0 j0Var;
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("getChatScene", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        if (str.endsWith("@chatroom")) {
+            sb6 = new java.lang.StringBuilder("");
+            j0Var = com.p314xaae8f345.mm.p959x883644fd.j0.TalkChat;
+        } else {
+            sb6 = new java.lang.StringBuilder("");
+            j0Var = com.p314xaae8f345.mm.p959x883644fd.j0.Chat;
+        }
+        sb6.append(j0Var.f153062d);
+        java.lang.String sb7 = sb6.toString();
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getChatScene", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        return sb7;
+    }
+
+    public static java.lang.String f(com.p314xaae8f345.mm.p2621x8fb0427b.f9 f9Var) {
+        java.lang.String str;
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("getExtStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        if (f9Var == null) {
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getExtStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return "";
+        }
+        if (f9Var.k2()) {
+            ot0.q v17 = ot0.q.v(f9Var.j());
+            if (v17 == null || com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(v17.Y1)) {
+                com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getExtStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+                return "";
+            }
+            str = v17.Y1;
+        } else {
+            str = null;
+        }
+        if (f9Var.Y2()) {
+            t21.v2 h17 = t21.d3.h(f9Var.z0());
+            if (h17 == null || com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(h17.F)) {
+                com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getExtStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+                return "";
+            }
+            str = h17.F;
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getExtStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        return str;
+    }
+
+    public static java.lang.String g(r45.ud6 ud6Var) {
+        java.lang.String[] split;
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("getSnsStatExt", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        if (ud6Var != null) {
+            java.lang.String str = ud6Var.f468802f;
+            try {
+                java.lang.String format = java.lang.String.format("expId=%d&adgroup_id=%s&snsId=%s", java.lang.Integer.valueOf(ud6Var.f468805i), java.net.URLEncoder.encode((com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str) || (split = str.split("\\|")) == null || split.length <= 0) ? "" : split[0], com.p314xaae8f345.p519xbf8bc95e.p532x21ffc6bd.rv.f132803c), ud6Var.f468801e);
+                com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getSnsStatExt", "com.tencent.mm.modelstat.SnsStatExtUtil");
+                return format;
+            } catch (java.io.UnsupportedEncodingException e17) {
+                com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "", e17);
+            }
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("getSnsStatExt", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        return "";
+    }
+
+    public static r45.ud6 h(java.lang.String str) {
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("parseStatSnsAdInfo", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str)) {
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("parseStatSnsAdInfo", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return null;
+        }
+        byte[] decode = android.util.Base64.decode(str, 0);
+        r45.td6 td6Var = new r45.td6();
+        try {
+            td6Var.mo11468x92b714fd(decode);
+        } catch (java.lang.Exception e17) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "", e17);
+        }
+        r45.ud6 ud6Var = td6Var.f467862d;
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("parseStatSnsAdInfo", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        return ud6Var;
+    }
+
+    public static r45.td6 i(java.lang.String str) {
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("parseStatisticsExtInfoFromEncodeStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str)) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "parseStatisticsExtInfoFromEncodeStr, statextstr empty");
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("parseStatisticsExtInfoFromEncodeStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return null;
+        }
+        r45.td6 td6Var = new r45.td6();
+        try {
+            td6Var.mo11468x92b714fd(android.util.Base64.decode(str, 0));
+            if (td6Var.f467862d == null) {
+                com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("parseStatisticsExtInfoFromEncodeStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+                return null;
+            }
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("parseStatisticsExtInfoFromEncodeStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return td6Var;
+        } catch (java.lang.Exception e17) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.m40542x58ef3d35("MicroMsg.SnsStatExtUtil", e17, "", new java.lang.Object[0]);
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("parseStatisticsExtInfoFromEncodeStr", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return null;
+        }
+    }
+
+    public static void j(com.p314xaae8f345.mm.p2621x8fb0427b.f9 f9Var) {
+        r45.td6 i17;
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("reportAdShareClickForChat", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        try {
+            i17 = i(f(f9Var));
+        } catch (java.lang.Throwable th6) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "reportAdShareClickForChat, exp=" + th6.toString());
+        }
+        if (i17 != null && i17.f467862d != null) {
+            java.lang.String e17 = e(f9Var.Q0());
+            int d17 = d(f9Var.j());
+            a54.f fVar = new a54.f();
+            r45.ud6 ud6Var = i17.f467862d;
+            fVar.f83129a = ud6Var.f468801e;
+            fVar.f83130b = ud6Var.f468802f;
+            fVar.f83131c = 2;
+            fVar.f83132d = com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.D1(e17, 0);
+            fVar.f83133e = d17;
+            a84.t0.a(fVar);
+            com.p314xaae8f345.mm.p1006xc5476f33.p2029xc84c5534.p2031x7643c6b5.g0.INSTANCE.A(1898, 1);
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("reportAdShareClickForChat", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return;
+        }
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "reportAdShareClickForChat, extInfo or extInfo.StatSnsAdInfo==null");
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("reportAdShareClickForChat", "com.tencent.mm.modelstat.SnsStatExtUtil");
+    }
+
+    public static void k(com.p314xaae8f345.mm.p959x883644fd.j0 j0Var, java.lang.String str, int i17, java.lang.String str2, com.p314xaae8f345.mm.p1006xc5476f33.sns.p2169x8fb0427b.C17933xe8d1b226 c17933xe8d1b226) {
+        r45.td6 i18;
+        int d17;
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71153x3a548b48("statisticsExtInfo", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        try {
+            i18 = i(str);
+        } catch (java.lang.Throwable th6) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "statisticsExtInfo for timeline, exp=" + th6.toString());
+        }
+        if (i18 == null || i18.f467862d == null) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.SnsStatExtUtil", "statisticsExtInfo for timeline, extInfo or extInfo.StatSnsAdInfo==null");
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("statisticsExtInfo", "com.tencent.mm.modelstat.SnsStatExtUtil");
+            return;
+        }
+        if (c17933xe8d1b226 != null) {
+            try {
+                d17 = d(c17933xe8d1b226.m70371x485d7().f39021x5732e226);
+            } catch (java.lang.Throwable unused) {
+            }
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.SnsStatExtUtil", "report adPageExposure(13235) for timeline: scene=" + j0Var.f153062d + ", adCanvasType=" + d17 + ", srcSnsId=" + i18.f467862d.f468801e + ", uxinfo=" + i18.f467862d.f468802f + ", statExtStr=" + str);
+            p94.f0 f0Var = (p94.f0) i95.n0.c(p94.f0.class);
+            java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
+            sb6.append(j0Var.f153062d);
+            sb6.append("");
+            r45.ud6 ud6Var = i18.f467862d;
+            ((p34.p) f0Var).Bi(13235, i17, sb6.toString(), ud6Var.f468801e, ud6Var.f468802f, "", str2, java.lang.Integer.valueOf(d17));
+            a54.f fVar = new a54.f();
+            r45.ud6 ud6Var2 = i18.f467862d;
+            fVar.f83129a = ud6Var2.f468801e;
+            fVar.f83130b = ud6Var2.f468802f;
+            fVar.f83131c = 1;
+            fVar.f83132d = 3;
+            fVar.f83133e = d17;
+            a84.t0.a(fVar);
+            com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("statisticsExtInfo", "com.tencent.mm.modelstat.SnsStatExtUtil");
+        }
+        d17 = 0;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.SnsStatExtUtil", "report adPageExposure(13235) for timeline: scene=" + j0Var.f153062d + ", adCanvasType=" + d17 + ", srcSnsId=" + i18.f467862d.f468801e + ", uxinfo=" + i18.f467862d.f468802f + ", statExtStr=" + str);
+        p94.f0 f0Var2 = (p94.f0) i95.n0.c(p94.f0.class);
+        java.lang.StringBuilder sb62 = new java.lang.StringBuilder();
+        sb62.append(j0Var.f153062d);
+        sb62.append("");
+        r45.ud6 ud6Var3 = i18.f467862d;
+        ((p34.p) f0Var2).Bi(13235, i17, sb62.toString(), ud6Var3.f468801e, ud6Var3.f468802f, "", str2, java.lang.Integer.valueOf(d17));
+        a54.f fVar2 = new a54.f();
+        r45.ud6 ud6Var22 = i18.f467862d;
+        fVar2.f83129a = ud6Var22.f468801e;
+        fVar2.f83130b = ud6Var22.f468802f;
+        fVar2.f83131c = 1;
+        fVar2.f83132d = 3;
+        fVar2.f83133e = d17;
+        a84.t0.a(fVar2);
+        com.p314xaae8f345.mm.p1006xc5476f33.sns.ui.p2214x49b0bd5a.C18371x36a2d70d.m71152xb91771c1("statisticsExtInfo", "com.tencent.mm.modelstat.SnsStatExtUtil");
+    }
+}

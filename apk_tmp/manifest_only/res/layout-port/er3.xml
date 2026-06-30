@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/tp7" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/c8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ug6" android:background="@drawable/d6g" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/a2q">
+        <RelativeLayout android:id="@id/ug_" android:background="@drawable/d6h" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginLeft="@dimen/cs" android:layout_centerVertical="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ug9" android:visibility="visible" android:layout_width="@dimen/cn" android:layout_height="@dimen/dv" android:layout_centerInParent="true" app:fs="@color/ga" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/uge" android:paddingTop="@dimen/cs" android:paddingBottom="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/cs" android:layout_toRightOf="@id/ug_" android:paddingVertical="@dimen/cs">
+            <RelativeLayout android:id="@id/ugd" android:background="@drawable/d6h" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ugc" android:layout_width="@dimen/ct" android:layout_height="@dimen/ct" android:src="@raw/mike_on_filled" android:layout_centerInParent="true" app:fs="@color/aaw" />
+            </RelativeLayout>
+            <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/ugg" android:background="@drawable/d6h" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ugf" android:layout_width="@dimen/ct" android:layout_height="@dimen/ct" android:src="@raw/icon_video_off" android:layout_centerInParent="true" app:fs="@color/aaw" />
+            </RelativeLayout>
+            <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/ug8" android:background="@drawable/d6h" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ug7" android:layout_width="@dimen/ct" android:layout_height="@dimen/ct" android:src="@raw/slippery_course_filled" android:layout_centerInParent="true" app:fs="@color/aaw" />
+            </RelativeLayout>
+            <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/ugb" android:background="@drawable/d6i" android:layout_width="@dimen/dd" android:layout_height="@dimen/dd">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uga" android:layout_width="@dimen/ct" android:layout_height="@dimen/ct" android:src="@raw/call_off_filled" android:layout_centerInParent="true" app:fs="@color/akj" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

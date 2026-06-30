@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h5n" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="52.0dp" android:src="@raw/icons_outlined_call" android:layout_centerHorizontal="true" app:fs="@color/FG_0" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/o3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/mlz" android:layout_below="@id/h5n" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hur" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginTop="@dimen/dj" android:layout_below="@id/o3b" android:layout_centerHorizontal="true">
+        <CheckBox android:id="@id/rti" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="4.0dp" android:checked="false" style="@style/im" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mlg" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/s2c" android:layout_marginTop="@dimen/cz" android:text="@string/mlk" android:layout_below="@id/hur" android:layout_centerHorizontal="true" style="@style/xk" />
+</RelativeLayout>

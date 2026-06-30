@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.media.widget.camerarecordview.preview.CameraPreviewGLSurfaceView android:id="@id/fwr" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="9:16" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <View android:background="@drawable/ac3" android:layout_width="match_parent" android:layout_height="@dimen/bw" android:layout_alignParentTop="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/fwr" />
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/fwr" app:layout_constraintEnd_toEndOf="@id/fwr" app:layout_constraintStart_toStartOf="@id/fwr" app:layout_constraintTop_toTopOf="@id/fwr">
+        <com.tencent.mm.plugin.mmsight.ui.CameraFrontSightView android:id="@id/b6q" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+        <com.tencent.mm.plugin.mmsight.ui.MMSightCaptureTouchView android:id="@id/b6u" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

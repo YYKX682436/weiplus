@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/llb" android:padding="9.0dp" android:layout_width="46.0dp" android:layout_height="46.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="17.0dp" android:layout_above="@id/c61" android:layout_alignParentRight="true" android:contentDescription="@string/k6w" />
+    <GridView android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/c61" android:layout_width="match_parent" android:layout_height="34.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:listSelector="@android:color/transparent" android:numColumns="9" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/coi" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="34.0dp">
+        <ImageView android:id="@id/d23" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ob2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g9h" android:layout_centerInParent="true" style="@style/rm" />
+    </RelativeLayout>
+    <com.tencent.mm.ui.base.MMClearEditText android:id="@id/d98" android:background="@drawable/q9" android:paddingLeft="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/d9" android:layout_marginRight="@dimen/dv" android:hint="@string/g9d" android:maxLength="36" android:layout_weight="1.0" android:imeOptions="actionDone" style="@style/j9" />
+    <TextView android:textColor="@color/Red_100" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/dhl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/dv" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/kao" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/dn" android:text="@string/x1" style="@style/kr" />
+</LinearLayout>

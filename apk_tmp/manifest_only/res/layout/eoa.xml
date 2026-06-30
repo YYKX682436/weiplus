@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:background="@color/d" android:layout_width="match_parent" android:layout_height="wrap_content" app:ds="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/o43" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp">
+                <TextView android:textSize="14.0dp" android:layout_gravity="center_vertical" android:id="@id/hrz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:includeFontPadding="false" />
+                <TextView android:textSize="14.0dp" android:layout_gravity="center_vertical" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dp" android:ellipsize="end" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/u1o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_toLeftOf="@id/a4f" android:layout_centerVertical="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4f" android:layout_width="10.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:src="@raw/sns_ad_slide_product_btn_arrow" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/FG_2" />
+    </RelativeLayout>
+    <View android:background="@drawable/d8y" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

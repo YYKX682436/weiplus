@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/ag2" android:paddingBottom="@dimen/db" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/d_" android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/cs" android:paddingBottom="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/cs">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bz2" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:src="@raw/icons_outlined_close" app:fs="@color/FG_0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:visibility="visible" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/icons_outlined_error" app:fs="@color/ao" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center" android:id="@id/i4m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/d1" android:layout_marginRight="@dimen/cz" android:text="@string/dkm" android:layout_centerHorizontal="true" android:layout_marginHorizontal="@dimen/cz" />
+    <RelativeLayout android:id="@id/fc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dr" android:layout_centerHorizontal="true">
+        <Button android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/i4l" android:background="@drawable/aaa" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="@string/dkk" />
+        <Button android:textSize="17.0dp" android:textColor="@color/an" android:id="@id/i4n" android:background="@drawable/a0t" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cn" android:text="@string/dkl" android:layout_toRightOf="@id/i4l" />
+    </RelativeLayout>
+</LinearLayout>

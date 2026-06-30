@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes5.dex */
+public class hw0 extends com.p314xaae8f345.mm.p2495xc50a8b8b.e {
+    public hw0() {
+        super(com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(1, com.p314xaae8f345.mm.p987xb4b579b0.p989xe6d4914f.InterfaceC11224x4860a6b.WXWebPage.f32847x4430964b), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(2, "list_id"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.w(3, "icon_url"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(4, "title_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(5, "comment_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(6, "expire_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(7, "progress_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(8, "img_url"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(9, "product_list", r45.lo.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(10, "product_info_wording"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(11, "join_button", r45.bd5.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(12, "invite_button", r45.bd5.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(13, "img_button_info", r45.x23.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(14, "replay_info", r45.hd5.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(15, "is_promoting"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(16, "bulk_buy_detail_page", r45.ce0.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(17, "activity_start_time"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.n(18, "activity_end_time"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(19, "shop_item", r45.x46.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(20, "view_button", r45.bd5.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.i(21, "activity_status"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.r(22, "ask_for_promote_info", r45.db.class), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(23, "extra_report_json"), com.p314xaae8f345.mm.p2495xc50a8b8b.i.u(24, "request_id"));
+        this.f38874x227b759e = true;
+    }
+}

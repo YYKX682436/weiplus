@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes8.dex */
+public class qs0 extends com.tencent.mm.protobuf.e {
+    public qs0() {
+        super(com.tencent.mm.protobuf.i.c(1, "ifAppAttachDownloadUI"), com.tencent.mm.protobuf.i.u(2, com.tencent.tmassistantsdk.openSDK.QQDownloader.AssistantStore.DownloadInfos.DownloadInfoColumns.FILEPATH), com.tencent.mm.protobuf.i.u(3, "fileExt"), com.tencent.mm.protobuf.i.u(4, "appId"), com.tencent.mm.protobuf.i.u(5, "processName"), com.tencent.mm.protobuf.i.i(6, "sence"), com.tencent.mm.protobuf.i.c(7, "showMenu"), com.tencent.mm.protobuf.i.n(8, "fileLen"), com.tencent.mm.protobuf.i.u(9, "app_type"), com.tencent.mm.protobuf.i.u(10, "app_media_id"), com.tencent.mm.protobuf.i.n(11, "app_msg_id"), com.tencent.mm.protobuf.i.c(12, "app_show_share"), com.tencent.mm.protobuf.i.i(13, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), com.tencent.mm.protobuf.i.u(14, "choose_way"), com.tencent.mm.protobuf.i.u(15, "msg_type"), com.tencent.mm.protobuf.i.u(16, "handoff_md5"), com.tencent.mm.protobuf.i.i(17, "handoff_source"), com.tencent.mm.protobuf.i.u(18, "handoff_svrId"), com.tencent.mm.protobuf.i.u(19, "handoff_extId"), com.tencent.mm.protobuf.i.u(20, "handoff_cdnUrl"), com.tencent.mm.protobuf.i.u(21, "handoff_aesKey"), com.tencent.mm.protobuf.i.u(22, "handoff_authKey"), com.tencent.mm.protobuf.i.i(23, "handoff_fileStatus"), com.tencent.mm.protobuf.i.u(24, "handoff_appId"), com.tencent.mm.protobuf.i.i(25, "handoff_sdkVersion"), com.tencent.mm.protobuf.i.u(26, "handoff_mediaId"), com.tencent.mm.protobuf.i.n(27, "handoff_uploadedSize"), com.tencent.mm.protobuf.i.u(28, "handoff_from"), com.tencent.mm.protobuf.i.u(29, "handoff_to"), com.tencent.mm.protobuf.i.n(30, "handoff_size"), com.tencent.mm.protobuf.i.u(31, "msg_talker"));
+        this.__printBytes = true;
+    }
+}

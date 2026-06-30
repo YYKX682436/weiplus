@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"> tools:viewBindingIgnore="false"> 
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/h2" android:textColor="@color/adg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/bl" android:text="@string/ogp" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/t8u" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/t1b" android:background="@drawable/d9z" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/d7">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cn" android:src="@raw/plus_regular" app:fs="@color/Link_100" />
+        <com.tencent.mm.ui.widget.MMTextView android:textColor="@color/Link_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/ogo" />
+    </LinearLayout>
+</LinearLayout>

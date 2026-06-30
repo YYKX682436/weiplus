@@ -1,0 +1,21 @@
+package com.tencent.mm.plugin.finder.extension.reddot;
+
+/* loaded from: classes8.dex */
+public final class f0 extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f105504d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f0(java.lang.String str) {
+        super(1);
+        this.f105504d = str;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        r45.f03 it = (r45.f03) obj;
+        kotlin.jvm.internal.o.g(it, "it");
+        return java.lang.Boolean.valueOf(kotlin.jvm.internal.o.b(it.f373906z, this.f105504d) && (kotlin.jvm.internal.o.b(it.f373892i, "NotificationCenterLike") || kotlin.jvm.internal.o.b(it.f373892i, "NotificationCenterComment") || kotlin.jvm.internal.o.b(it.f373892i, "NotificationCenterFollow") || kotlin.jvm.internal.o.b(it.f373892i, "AuthorProfileNotify")));
+    }
+}

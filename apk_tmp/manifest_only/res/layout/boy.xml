@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="96.0dp" android:paddingRight="96.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.scanner.ui.widget.ScanProductListLayout android:id="@id/m_u" android:background="#01000000" android:fadingEdge="vertical" android:fadingEdgeLength="28.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:requiresFadingEdge="vertical">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/m95" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:overScrollMode="never" />
+    </com.tencent.mm.plugin.scanner.ui.widget.ScanProductListLayout>
+</RelativeLayout>

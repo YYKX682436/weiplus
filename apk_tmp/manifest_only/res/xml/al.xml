@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.base.preference.HeadImgNewPreference android:key="settings_avatar" android:gc="@layout/byv" android:title="@string/cm3" />
+    <Preference android:key="settings_nickname" android:gc="@layout/byv" android:title="@string/eqv" />
+    <Preference android:key="settings_finder_id" android:gc="@layout/byv" android:title="@string/ewf" />
+    <PreferenceSmallCategory />
+    <Preference android:key="settings_sex" android:gc="@layout/byv" android:title="@string/iy4" />
+    <Preference android:key="settings_district" android:gc="@layout/byv" android:title="@string/cti" />
+    <PreferenceSmallCategory />
+    <Preference android:key="settings_signature" android:gc="@layout/byv" android:title="@string/f5h" />
+    <PreferenceSmallCategory />
+    <Preference android:key="settings_profile_cover" android:gc="@layout/byv" android:title="@string/f3e" />
+</PreferenceScreen>

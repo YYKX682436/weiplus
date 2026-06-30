@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hyk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="20.0dp" android:layout_marginRight="@dimen/cz" android:layout_marginBottom="4.0dp">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/FG_0" android:id="@id/m6w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cmc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn">
+            <ImageView android:id="@id/cmb" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="@string/blx" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/kth" android:background="@drawable/au5" android:paddingLeft="@dimen/cn" android:paddingTop="12.0dp" android:paddingRight="@dimen/cn" android:paddingBottom="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="4.0dp" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="4.0dp">
+        <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="14.0dp" android:textColor="@color/FG_1" android:id="@id/ktq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:singleLine="false" android:layout_weight="1.0" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ktb" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/icons_game_notice_close" app:fs="@color/FG_1" />
+    </LinearLayout>
+</LinearLayout>

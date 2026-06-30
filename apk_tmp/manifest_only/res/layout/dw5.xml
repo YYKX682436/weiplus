@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/dv" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.base.FlowLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/ri7" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="Data根目录" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/s3x" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="SDCard根目录" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rcp" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="头像" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rrk" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="图片消息" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/s_f" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="视频消息" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/s26" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="聊天记录消息" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/rhi" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="Crash目录" style="@style/kq" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/vo8" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_margin="@dimen/dv" android:text="语音转文字目录" style="@style/kq" />
+            </FrameLayout>
+        </com.tencent.mm.ui.base.FlowLayout>
+    </ScrollView>
+</LinearLayout>

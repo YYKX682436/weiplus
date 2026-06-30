@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/tk" android:id="@id/bpw" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:text="@string/b4v" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/ot2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/bqp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+        <View android:layout_gravity="center_vertical" android:background="@color/tk" android:layout_width="@dimen/d7" android:layout_height="1.0dp" />
+        <TextView android:id="@id/bqo" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" style="@style/et" />
+        <View android:layout_gravity="center_vertical" android:background="@color/tk" android:layout_width="@dimen/d7" android:layout_height="1.0dp" />
+    </LinearLayout>
+    <TextView android:id="@id/br1" android:layout_marginBottom="@dimen/i_" style="@style/er" />
+    <LinearLayout android:gravity="center" style="@style/ek">
+        <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/h2" android:textColor="@color/FG_2" android:gravity="center" android:id="@id/bkl" android:background="@drawable/mc" android:paddingLeft="@dimen/f" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/f" android:paddingBottom="@dimen/bj" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hi" android:layout_marginTop="6.0dp" android:layout_marginRight="@dimen/hi" android:layout_marginBottom="6.0dp" />
+    </LinearLayout>
+</LinearLayout>

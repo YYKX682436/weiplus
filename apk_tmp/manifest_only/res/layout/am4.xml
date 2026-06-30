@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m8k" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dp" android:textColor="@color/oy" android:id="@id/cwa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dr" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/hv" android:textColor="@color/p1" android:id="@id/cw1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_below="@id/cwa" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/q6w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_below="@id/cw1" android:layout_centerHorizontal="true">
+        <com.tencent.mm.plugin.finder.lottery.card.FinderLiveLotteryCardGiftWidget android:id="@id/q70" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/c9" android:textColor="#522b23" android:id="@id/q6j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" />
+    </LinearLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/p1" android:gravity="center_horizontal" android:id="@id/cu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/by" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/px" android:gravity="center" android:id="@id/tn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dr" android:minWidth="@dimen/cc" android:minHeight="@dimen/cz" android:text="@string/d88" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ds5" android:paddingTop="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ja">
+        <ImageView android:id="@id/a_4" android:layout_width="@dimen/am" android:layout_height="@dimen/am" android:src="@drawable/bhm" />
+        <TableLayout android:gravity="center_vertical" android:id="@id/hhc" android:layout_width="match_parent" android:layout_height="wrap_content" android:shrinkColumns="0" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/dv" android:layout_toEndOf="@id/a_4">
+            <TableRow android:gravity="center_vertical">
+                <TextView android:ellipsize="end" android:id="@id/kbq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" style="@style/r7" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/frp" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_finder_icon" android:scaleType="centerCrop" android:minWidth="@dimen/cs" android:layout_marginStart="@dimen/bl" app:fs="@color/a7" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/tbk" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginStart="@dimen/bl" />
+                <com.tencent.mm.plugin.finder.view.UserRelationshipTagTextView android:id="@id/qct" android:visibility="gone" android:layout_marginStart="@dimen/bn" style="@style/xv" />
+            </TableRow>
+        </TableLayout>
+        <ImageView android:background="@drawable/afv" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dl" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/BW_0_Alpha_0_3" android:gravity="center" android:id="@id/ag6" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:text="@string/cuf" />
+</LinearLayout>

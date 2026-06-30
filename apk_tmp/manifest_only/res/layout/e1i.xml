@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tx" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bjy" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" app:layout_constraintBottom_toTopOf="@id/ve7" app:layout_constraintStart_toStartOf="@id/a1l" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" style="@style/eq" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ve7" android:paddingLeft="@dimen/bn" android:paddingRight="@dimen/bn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bn" app:layout_constraintBottom_toTopOf="@id/a1l" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/brc" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ui2" android:layout_width="wrap_content" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/a1l" app:layout_constraintStart_toEndOf="@id/a1l" app:layout_constraintTop_toTopOf="@id/a1l" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ui5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="@id/a1l" app:layout_constraintTop_toBottomOf="@id/a1l" />
+        <FrameLayout android:id="@id/a1l" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/ui5" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/ve7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

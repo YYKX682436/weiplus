@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/upe" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp">
+            <com.tencent.mm.ui.widget.MMEditText android:textSize="@dimen/r" android:textColor="@color/a0c" android:textColorHint="@color/tk" android:layout_gravity="center_vertical" android:id="@id/upf" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:text="" android:maxLines="4" android:minLines="1" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/afr" android:layout_marginEnd="2.0dp" />
+        </LinearLayout>
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </LinearLayout>
+</ScrollView>

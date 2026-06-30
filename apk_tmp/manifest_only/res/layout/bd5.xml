@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/azm" android:layout_width="match_parent" android:layout_height="@dimen/dr" android:minHeight="@dimen/b1">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/a_4" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/c9" />
+        <com.tencent.mm.ui.base.EllipsizeTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/kbq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{title}" android:singleLine="true" android:layout_weight="1.0" style="@style/j3" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/jj" android:layout_gravity="center_vertical" android:id="@id/jt4" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dp" android:drawableEnd="@drawable/bre" android:paddingEnd="@dimen/cn" android:layout_marginStart="@dimen/j3" />
+    </LinearLayout>
+    <View android:id="@id/jt6" android:background="@color/vt" android:layout_width="match_parent" android:layout_height="@dimen/bd" android:layout_marginStart="76.0dp" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/jzk" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/cn" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/n9" android:ellipsize="end" android:id="@id/jzq" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" />
+        <TextView android:textAppearance="@style/n8" android:ellipsize="end" android:id="@id/jzm" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="@dimen/bf" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:id="@id/jzp" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="center" android:contentDescription="@string/h51" />
+        <ImageView android:id="@id/jzo" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bf" android:scaleType="center" />
+        <ImageView android:id="@id/jzn" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bf" android:scaleType="center" android:contentDescription="@string/h4y" />
+        <ImageView android:id="@id/jzl" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bf" android:layout_marginRight="@dimen/cn" android:scaleType="center" android:contentDescription="@string/h52" />
+    </LinearLayout>
+</LinearLayout>

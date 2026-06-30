@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/se7" android:background="@drawable/btg" android:layout_width="36.0dp" android:layout_height="36.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/icons_filled_close" app:fs="@color/ai6" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/se9" android:background="@drawable/cib" android:paddingLeft="12.0dp" android:paddingRight="@dimen/aii" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginLeft="@dimen/aii" android:minWidth="120.0dp" android:minHeight="36.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="19.0dp" android:layout_height="19.0dp" android:src="@raw/app_brand_task_home_btn" app:fs="@color/ai6" />
+            <TextView android:textSize="@dimen/aju" android:textColor="@color/ai6" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ais" android:text="@string/mkz" android:fontFamily="500" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dt8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dsu" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <com.tencent.mm.ui.widget.LiveBottomSheetPanel android:orientation="vertical" android:id="@id/dsw" android:background="@drawable/ajn" android:layout_width="match_parent" android:layout_height="560.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/dsx" android:background="@drawable/ajn" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/dt5" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+                <TextView android:textSize="17.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:layout_gravity="center_vertical" android:id="@id/dsv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d30" />
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/a9x" android:textStyle="bold" android:textColor="@color/BW_100_Alpha_0_9" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/des" android:layout_toEndOf="@id/dt6" />
+                    <TextView android:textSize="12.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:layout_gravity="center" android:id="@id/dt6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/det" />
+                </LinearLayout>
+                <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/ab0" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/dt1" android:background="@drawable/a2q" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/dt2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.LiveBottomSheetPanel>
+</LinearLayout>

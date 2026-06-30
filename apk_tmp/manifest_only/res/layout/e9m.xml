@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/stk" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/jf" android:src="@raw/exclamation_mark_circle_filled" app:fs="@color/Red_100" />
+        <TextView android:textSize="22.0dp" android:textColor="@color/abw" android:gravity="center_horizontal" android:id="@id/stj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_marginStart="@dimen/d7" android:layout_marginEnd="@dimen/d7" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jg">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/sth" android:visibility="gone" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" style="@style/xk" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/sti" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:text="@string/oni" style="@style/xl" />
+    </LinearLayout>
+</FrameLayout>

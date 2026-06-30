@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:layout_gravity="right" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bkg" android:background="@drawable/o_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTintMode="src_atop" style="@style/em">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/i_" android:id="@id/bs3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bl" android:includeFontPadding="false" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/bs2" android:background="@raw/voip_voicecall" style="@style/ew" />
+    </LinearLayout>
+    <include layout="@layout/tz" style="@style/eh" />
+</LinearLayout>

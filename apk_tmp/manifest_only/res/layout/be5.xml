@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/chn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/jvu" android:layout_width="375.0dp" android:layout_height="104.0dp" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/g4" android:layout_marginRight="140.0dp">
+        <TextView android:textSize="@dimen/gw" android:textStyle="bold" android:textColor="@color/si" android:id="@id/jvt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/gw" android:textStyle="bold" android:textColor="@color/si" android:ellipsize="end" android:id="@id/jvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gc" android:singleLine="true" android:layout_toRightOf="@id/jvt" />
+        <com.tencent.mm.plugin.game.widget.EllipsizingTextView android:textSize="@dimen/gw" android:textColor="@color/sf" android:id="@id/jvs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gc" android:layout_below="@id/jvt" />
+    </RelativeLayout>
+</FrameLayout>

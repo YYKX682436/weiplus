@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.cloud.huiyan.view.HuiYanReflectLayout android:id="@id/vjp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/aqv" android:textColor="@color/ana" android:id="@id/vjt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aqw" android:text="@string/piv" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/aqr" android:layout_alignParentStart="true" />
+    <TextView android:textSize="@dimen/aqv" android:textColor="@color/ana" android:id="@id/vjv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aqw" android:text="@string/piw" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/aqr" android:layout_alignParentEnd="true" />
+    <FrameLayout android:id="@id/vju" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aqp">
+        <com.tencent.cloud.huiyansdk.turing.view.CameraDateGatherView android:layout_gravity="center" android:id="@id/vjr" android:background="@android:color/transparent" android:layout_width="@dimen/aqj" android:layout_height="@dimen/aqm" />
+        <com.tencent.cloud.huiyan.view.CommonAuthBackView android:layout_gravity="center" android:id="@id/vjl" android:layout_width="@dimen/aqi" android:layout_height="@dimen/aqi" />
+        <ImageView android:layout_gravity="center" android:id="@id/vjs" android:layout_width="@dimen/aqm" android:layout_height="@dimen/aqm" android:src="@drawable/d_7" />
+        <com.tencent.cloud.huiyan.view.LoadingFrontAnimatorView android:layout_gravity="center" android:id="@id/vjq" android:visibility="gone" android:layout_width="@dimen/aqm" android:layout_height="@dimen/aqm" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/aqv" android:textColor="@color/ana" android:gravity="center_horizontal" android:id="@id/vjo" android:paddingLeft="@dimen/aqw" android:paddingRight="@dimen/aqw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/aqq" android:text="@string/piz" android:layout_below="@id/vjt" android:layout_centerHorizontal="true" android:paddingHorizontal="@dimen/aqw" />
+    <TextView android:textSize="@dimen/aqt" android:textColor="@color/ana" android:gravity="center_horizontal" android:id="@id/vjn" android:paddingLeft="@dimen/aqw" android:paddingRight="@dimen/aqw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/vjo" android:paddingHorizontal="@dimen/aqw" />
+</com.tencent.cloud.huiyan.view.HuiYanReflectLayout>

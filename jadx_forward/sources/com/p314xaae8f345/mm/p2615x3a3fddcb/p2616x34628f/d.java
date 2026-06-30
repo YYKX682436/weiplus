@@ -1,0 +1,31 @@
+package com.p314xaae8f345.mm.p2615x3a3fddcb.p2616x34628f;
+
+/* loaded from: classes5.dex */
+public final class d extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.q {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final com.p314xaae8f345.mm.p2615x3a3fddcb.p2616x34628f.d f274978d = new com.p314xaae8f345.mm.p2615x3a3fddcb.p2616x34628f.d();
+
+    public d() {
+        super(3);
+    }
+
+    @Override // yz5.q
+    /* renamed from: invoke */
+    public java.lang.Object mo147xb9724478(java.lang.Object obj, java.lang.Object obj2, java.lang.Object obj3) {
+        e0.g item = (e0.g) obj;
+        n0.o oVar = (n0.o) obj2;
+        int intValue = ((java.lang.Number) obj3).intValue();
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(item, "$this$item");
+        if ((intValue & 81) == 16) {
+            n0.y0 y0Var = (n0.y0) oVar;
+            if (y0Var.v()) {
+                y0Var.O();
+                return jz5.f0.f384359a;
+            }
+        }
+        java.lang.Object obj4 = n0.e1.f415025a;
+        com.p314xaae8f345.mm.p2615x3a3fddcb.p2616x34628f.j1.c(oVar, 0);
+        return jz5.f0.f384359a;
+    }
+}

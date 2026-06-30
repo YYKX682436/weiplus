@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/bhw" android:visibility="gone" android:layout_width="@dimen/rf" android:layout_height="@dimen/rf" android:layout_marginBottom="@dimen/re" android:src="@drawable/b7m" android:layout_marginEnd="@dimen/rd" />
+    <ViewStub android:id="@id/bi1" android:layout="@layout/t0" android:layout_width="@dimen/rk" android:layout_height="wrap_content" android:minHeight="@dimen/rj" />
+    <ViewStub android:id="@id/bi5" android:layout="@layout/t1" android:layout_width="@dimen/rn" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="end" android:id="@id/bhv" android:visibility="gone" android:layout_width="@dimen/rf" android:layout_height="@dimen/rf" android:layout_marginTop="@dimen/re" android:src="@drawable/b7n" android:layout_marginEnd="@dimen/rd" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/by" android:paddingHorizontal="@dimen/cz">
+        <ImageView android:id="@id/s7y" android:layout_width="192.0dp" android:layout_height="80.0dp" android:src="@raw/icons_outlined_move_to_computer" />
+        <ImageView android:id="@id/s7z" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/spinner_48_outer_holo" />
+        <com.tencent.mm.ui.widget.loading.MMProgressLoading android:id="@id/s81" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/df" app:loadProgressColor="@color/FG_0" app:loadprogress="0" />
+        <TextView android:textSize="@dimen/h3" android:textColor="@color/abw" android:gravity="center" android:id="@id/s84" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/n0h" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/adg" android:gravity="center" android:id="@id/s7x" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" />
+        <ProgressBar android:id="@id/s82" android:visibility="gone" android:layout_width="224.0dp" android:layout_height="4.0dp" android:layout_marginTop="@dimen/db" style="@style/kf" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/adg" android:gravity="center" android:id="@id/s83" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dj">
+        <Button android:textStyle="bold" android:id="@id/s7v" android:visibility="gone" android:text="@string/mwo" style="@style/kr" />
+        <Button android:textStyle="bold" android:id="@id/s7w" android:visibility="gone" android:layout_marginTop="@dimen/dv" android:text="@string/aby" style="@style/kz" />
+        <Button android:textSize="@dimen/h2" android:id="@id/s80" android:visibility="gone" android:layout_marginTop="@dimen/dv" android:text="@string/mvh" style="@style/jx" />
+    </LinearLayout>
+</LinearLayout>

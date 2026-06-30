@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="start|center" android:id="@id/ad2" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/sgz" android:background="@color/akt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:ds="@dimen/dv" />
+        <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:id="@id/sh0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:ds="@dimen/dv" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ad1" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/float_ball_content_collapse_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/bj" android:layout_alignStart="@id/sgz" app:fs="@color/an" />
+    </RelativeLayout>
+</merge>

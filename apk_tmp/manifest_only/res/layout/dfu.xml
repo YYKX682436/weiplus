@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="41.0dp" android:layout_height="41.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.mj_publisher.finder.movie_composing.widgets.MCRoundCornerImageView android:id="@id/q7n" android:background="@color/aco" android:padding="1.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:i8="@dimen/bn" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/ac8" android:layout_gravity="center" android:id="@id/qat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" />
+    <View android:id="@id/qa0" android:background="@drawable/cmg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/qb_" android:background="@drawable/cmh" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

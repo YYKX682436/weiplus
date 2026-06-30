@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/all" android:id="@id/onb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="模式: 后台监控" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/all" android:gravity="right" android:id="@id/onc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时长: 60min" android:layout_alignParentRight="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/all" android:ellipsize="end" android:id="@id/om7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="App 进入后台一段时间后，dump 还在活跃的线程 Stacktraces" android:maxLines="2" android:layout_below="@id/onb" android:layout_alignParentLeft="true" />
+    <View android:background="@color/ale" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="12.0dp" android:layout_below="@id/om7" />
+</RelativeLayout>

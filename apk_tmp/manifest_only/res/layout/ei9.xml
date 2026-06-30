@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/k3c" android:background="@drawable/d8a" android:layout_width="wrap_content" android:layout_height="@dimen/dh" android:layout_marginLeft="@dimen/cs" android:layout_marginRight="@dimen/jf" android:layout_marginBottom="@dimen/cs" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@string/i_k">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/hmx" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/ca" android:layout_marginRight="@dimen/dv" android:src="@raw/qr_code_filled" app:fs="@color/BW_100_Alpha_0_8" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ujh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cz">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/ujj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/cq" android:text="@string/i_l" android:singleLine="true" />
+                <TextView android:textSize="@dimen/f9" android:textColor="@color/an" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/uji" android:background="@drawable/d8c" android:paddingLeft="6.0dp" android:paddingTop="1.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/cq" android:layout_marginLeft="@dimen/bn" android:text="@string/nmi" android:singleLine="true" android:includeFontPadding="false" android:paddingHorizontal="6.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:id="@id/ujg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

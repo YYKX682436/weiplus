@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/h2l" android:background="@drawable/ags" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:minHeight="80.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_3" android:id="@id/h2k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="20.0dp" android:textColor="@color/a0c" android:id="@id/h2i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="" />
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="12.0dp" android:layout_height="24.0dp" android:layout_marginRight="20.0dp" android:src="@raw/icons_outlined_arrow" android:importantForAccessibility="no" app:fs="@color/FG_1" />
+    </LinearLayout>
+    <View android:id="@id/h2j" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dp" />
+</LinearLayout>

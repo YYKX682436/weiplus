@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/jgd" android:background="@drawable/q2" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="left|center" android:id="@id/d0v" android:background="@color/FG_3" android:layout_width="@dimen/bd" android:layout_height="@dimen/d7" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/jh7" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/rf6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/biz_menu_show_sub_menu_icon" android:scaleType="centerCrop" android:layout_marginStart="@dimen/j_" android:layout_marginEnd="@dimen/j_" app:fs="@color/a9e" />
+        <ViewStub android:layout_gravity="center" android:id="@id/sqg" android:visibility="gone" android:layout="@layout/e0y" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="@dimen/bl" />
+        <TextView android:layout_gravity="center" android:id="@id/bln" android:layout_width="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/j_" android:layout_marginEnd="@dimen/j_" style="@style/k1" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/blm" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@raw/biz_menu_regular" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_marginStart="@dimen/j_" android:layout_marginEnd="@dimen/j_" app:fs="@color/a9e" />
+    </LinearLayout>
+</FrameLayout>

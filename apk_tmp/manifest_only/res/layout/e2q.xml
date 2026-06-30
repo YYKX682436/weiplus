@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginRight="@dimen/aii" android:text="此图片来自以下 4 个聊天" android:layout_marginHorizontal="@dimen/aii" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/cu2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginTop="@dimen/ajw" android:layout_marginRight="@dimen/aii" android:layout_marginBottom="@dimen/aii" android:text="你可以点击以下聊天，查看此图片在聊天中的位置。" android:maxLines="5" android:layout_marginHorizontal="@dimen/aii" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/i3p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ajf" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" style="@style/js" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/cgi" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@id/jbp" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ucu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_alignBottom="@id/jbq" android:layout_marginStart="@dimen/c9">
+                        <com.tencent.mm.plugin.location.ui.impl.CustomIndoorPicker android:id="@id/cov" android:background="@drawable/qt" android:padding="@dimen/bl" android:visibility="gone" android:clipToPadding="false" android:layout_width="@dimen/dd" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" />
+                        <include layout="@layout/bsk" />
+                    </LinearLayout>
+                    <ViewStub android:id="@id/inb" android:layout="@layout/c7n" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/oa0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </LinearLayout>
+                <View android:id="@id/jbo" android:background="@color/y2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="center" android:id="@id/nq2" android:background="@drawable/aui" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="42.0dp" android:layout_marginLeft="@dimen/j" android:layout_marginBottom="@dimen/hi" android:text="@string/k8r" android:layout_toRightOf="@id/in2" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/a0c" android:id="@id/jr8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/gym" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout android:id="@id/d3i" android:background="@color/a9c" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dp" android:layout_centerInParent="true" style="@style/w1" />
+        </RelativeLayout>
+    </FrameLayout>
+    <include layout="@layout/bsj" />
+    <include layout="@layout/bxo" />
+</RelativeLayout>

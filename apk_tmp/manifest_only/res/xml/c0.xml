@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:newtip="http://schemas.android.com/apk/res-auto">
+    <Preference newtip:key="settings_personnal_info" newtip:title="@string/ohq" />
+    <com.tencent.mm.plugin.newtips.NewTipIconSwitchKeyValuePreference newtip:key="settings_account_info" newtip:path="account_safe" newtip:title="@string/ip1" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.IconSwitchKeyValuePreference newtip:key="settings_teen_mode" newtip:gc="@layout/byv" newtip:title="@string/izu" />
+    <Preference newtip:key="settings_care_mode" newtip:gc="@layout/byv" newtip:title="@string/iq2" />
+    <PreferenceSmallCategory />
+    <Preference newtip:key="settings_notification_preference" newtip:gc="@layout/byv" newtip:title="@string/iuc" />
+    <Preference newtip:key="settings_active_time" newtip:gc="@layout/byv" newtip:title="@string/ip4" />
+    <IconPreference newtip:key="settings_chatting" newtip:gc="@layout/byv" newtip:title="@string/iq6" />
+    <Preference newtip:key="settings_about_device" newtip:gc="@layout/byv" newtip:title="@string/ios" />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference newtip:key="settings_about_system" newtip:gc="@layout/byv" newtip:path="general" newtip:title="@string/ip0" />
+    <PreferenceTitleCategory newtip:title="@string/iwy" />
+    <IconPreference newtip:key="settings_about_privacy" newtip:gc="@layout/byv" newtip:title="@string/ioy" />
+    <Preference newtip:key="settings_permission_index" newtip:title="@string/ix0" />
+    <Preference newtip:key="settings_privacy_personal_list" newtip:title="@string/ix3" />
+    <Preference newtip:key="settings_privacy_third_party_list" newtip:title="@string/ix5" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPluginPreference newtip:key="settings_welab" newtip:gc="@layout/byv" newtip:path="plugin" newtip:title="@string/j1b" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference newtip:key="settings_about_micromsg" newtip:path="about" newtip:title="@string/iox" />
+    <Preference newtip:key="settings_feedback" newtip:gc="@layout/byv" newtip:title="@string/ir3" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference newtip:btn_title="@string/iyv" newtip:key="settings_switch_account" newtip:title_color="@color/FG_0" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference newtip:btn_title="@string/is0" newtip:key="settings_logout" newtip:gc="@layout/byv" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference newtip:btn_title="@string/git" newtip:key="settings_logout_new" newtip:gc="@layout/byv" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference newtip:btn_title="@string/gis" newtip:key="settings_close" newtip:gc="@layout/byv" />
+    <PreferenceCategory />
+</PreferenceScreen>

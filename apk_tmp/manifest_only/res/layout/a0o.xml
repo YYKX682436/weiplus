@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/dy9" android:background="@color/FG_3" android:layout_width="0.0dp" android:layout_height="0.5dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="93.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+    <View android:id="@id/rki" android:background="@color/FG_3" android:layout_width="0.0dp" android:layout_height="0.5dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dyu" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/dyt" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/dys" app:layout_constraintEnd_toStartOf="@id/dys" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@id/dys">
+            <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/dyv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textColor="@color/FG_2" android:ellipsize="end" android:id="@id/dyw" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/dys" android:layout_width="64.0dp" android:layout_height="64.0dp" android:scaleType="centerCrop" android:layout_marginStart="16.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/dyt" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@drawable/hd" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <View android:id="@id/uo2" android:background="@color/adi" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

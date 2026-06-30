@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:id="@id/obg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:layout_marginBottom="@dimen/cn" android:text="@string/f58" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:id="@id/obh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="13.0dp" android:text="@string/f58" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/d0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn">
+        <ImageView android:id="@id/a9m" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/bhm" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:id="@id/kbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" />
+        <FrameLayout android:id="@id/as3" android:background="@drawable/av8" android:paddingLeft="@dimen/bl" android:paddingTop="1.0dp" android:paddingRight="@dimen/bl" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bl" android:paddingHorizontal="@dimen/bl" android:paddingVertical="1.0dp">
+            <TextView android:textSize="@dimen/a1" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cmf" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@color/k7" android:layout_width="match_parent" android:layout_height="1.0px" />
+</LinearLayout>

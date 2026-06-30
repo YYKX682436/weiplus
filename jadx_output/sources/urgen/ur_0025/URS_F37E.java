@@ -1,0 +1,14 @@
+package urgen.ur_0025;
+
+@kotlin.Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\n\u0010\u0003\u001a\u0004\u0018\u00010\u0004H\u0007¨\u0006\u0005"}, d2 = {"Lurgen/ur_0025/URS_F37E;", "", "()V", "UR_7044", "Lcom/tencent/unit_rc/BaseObjectDef;", "plugin-ting_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public final class URS_F37E {
+    public static final urgen.ur_0025.URS_F37E INSTANCE = new urgen.ur_0025.URS_F37E();
+
+    private URS_F37E() {
+    }
+
+    public static final com.tencent.unit_rc.BaseObjectDef UR_7044() {
+        return new kl4.k();
+    }
+}

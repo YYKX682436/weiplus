@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ehc" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.FinderHotCommentLayout android:id="@id/ehd" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/aby" android:gravity="center_vertical" android:layout_gravity="left|top" android:id="@id/ehh" android:background="@drawable/z_" android:paddingLeft="@dimen/bn" android:paddingTop="@dimen/amd" android:paddingRight="@dimen/bn" android:paddingBottom="@dimen/amd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ct" android:text="@string/d0s" android:paddingHorizontal="@dimen/bn" android:paddingVertical="@dimen/amd" />
+        <com.tencent.mm.ui.widget.FlowTextMixView android:layout_width="match_parent" android:layout_height="wrap_content" app:ignoreLastLineSpace="true" app:itemSpace="@dimen/dv" app:lineSpace="@dimen/dv">
+            <com.tencent.mm.plugin.finder.view.HotCommentSpacingTextView android:textSize="15.0dp" android:textColor="@color/BW_F_Alpha_0_8" android:ellipsize="end" android:layout_gravity="left|top" android:id="@id/ehb" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.4" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ehf" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/ehg" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/finder_full_like" android:layout_marginEnd="@dimen/bj" app:fs="@color/BW_F_Alpha_0_8" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/BW_F_Alpha_0_5" android:layout_gravity="center_vertical" android:id="@id/ehe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1232" />
+            </LinearLayout>
+        </com.tencent.mm.ui.widget.FlowTextMixView>
+    </com.tencent.mm.plugin.finder.view.FinderHotCommentLayout>
+</FrameLayout>

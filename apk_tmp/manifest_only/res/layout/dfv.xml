@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.mj_publisher.finder.movie_composing.panel.clip.ClipStorylineSegmentTimelineView android:id="@id/s_8" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/qbv" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.mj_publisher.finder.movie_composing.panel.clip.ClipStorylineCursor android:id="@id/qbo" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/qbv" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/qbv" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginBottom="36.0dp" app:layout_constraintBottom_toBottomOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

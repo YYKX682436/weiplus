@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.FinderMaxSizeLinearLayout android:orientation="vertical" android:id="@id/el_" android:background="@drawable/apo" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/qsp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:visibility="gone" layout="@layout/b95" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_1" android:id="@id/qsu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/yg" />
+            <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/qsv" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:paddingBottom="@dimen/c9" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_1" android:id="@id/qsq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/w0" />
+            <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/qsr" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:paddingBottom="@dimen/c9" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_1" android:id="@id/qss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/m1n" />
+            <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/qst" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:paddingBottom="@dimen/cz" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.tencent.mm.plugin.finder.view.FinderMaxSizeLinearLayout>

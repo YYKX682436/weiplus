@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:padding="@dimen/ca" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:layout_gravity="start|center" android:id="@id/sgw" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/ptz" android:background="@color/e" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.tencent.mm.plugin.ball.view.FloatBallBlurView android:id="@id/sgx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    </com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="start|center" android:orientation="horizontal" android:id="@id/ad2" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/sgy" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/bj" android:layout_marginRight="@dimen/bj" android:src="@raw/line_semibold" android:layout_marginHorizontal="@dimen/bj" app:fs="@color/an" />
+    </LinearLayout>
+</merge>

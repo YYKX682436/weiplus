@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/l3s" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/l44" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/l3r" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/nro" android:visibility="gone" android:layout_width="@dimen/a9a" android:layout_height="@dimen/a9a" android:src="@drawable/cfv" />
+    <ImageView android:id="@id/cpd" android:visibility="gone" android:layout_width="@dimen/a9b" android:layout_height="@dimen/a9b" />
+    <ImageView android:id="@id/ma3" android:padding="@dimen/j_" android:visibility="gone" android:layout_width="@dimen/a9f" android:layout_height="@dimen/a9f" android:src="@raw/scan_success_mark_dot" />
+    <ImageView android:id="@id/cox" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="matrix" />
+    <com.tencent.mm.plugin.scanner.ui.scangoods.widget.ScanAnimationDotsView android:id="@id/m_a" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cp2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/cp4" android:background="@raw/scan_custom_tips_image_bg" android:visibility="gone" android:layout_width="88.0dp" android:layout_height="93.0dp">
+            <ImageView android:id="@id/cp3" android:layout_width="68.0dp" android:layout_height="68.0dp" android:layout_marginTop="@dimen/hx" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/an" android:id="@id/cp5" android:layout_marginTop="@dimen/hx" android:text="@string/ian" android:singleLine="false" style="@style/pc" />
+    </LinearLayout>
+    <View android:id="@id/jcb" android:background="@color/f3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

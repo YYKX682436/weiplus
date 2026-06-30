@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/j4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/gl2" android:background="@color/BW_97" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.luggage.game.widget.input.WAGamePanelInputEditText android:textColor="@color/a0c" android:id="@id/gl4" android:background="@drawable/bbw" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:layout_width="0.0dp" android:layout_marginBottom="@dimen/dv" android:maxHeight="84.0dp" android:minHeight="@dimen/db" android:hint="@null" android:singleLine="false" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/afr" style="@style/ir" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/b_9" android:showDividers="beginning|middle">
+            <com.tencent.mm.ui.widget.imageview.WeImageButton android:id="@id/n15" android:background="@null" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@drawable/o1" android:scaleType="fitXY" android:contentDescription="@string/axk" app:fs="@color/FG_0" />
+            <Button android:textColor="@color/a_h" android:id="@id/gl3" android:background="@drawable/b__" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:minWidth="@dimen/dl" style="@style/ks" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

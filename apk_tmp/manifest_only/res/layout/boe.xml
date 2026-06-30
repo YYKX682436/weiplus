@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/acz" android:clipChildren="false" android:layout_width="56.0dp" android:layout_height="56.0dp" android:contentDescription="@string/h0u" android:animateLayoutChanges="true">
+        <FrameLayout android:layout_gravity="center" android:id="@id/kmu" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/uns" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_multitask" android:scaleType="centerCrop" app:fs="@color/FG_0" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

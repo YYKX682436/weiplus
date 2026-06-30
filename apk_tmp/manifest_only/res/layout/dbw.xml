@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/emoji_half_dialog_header_indicator" android:layout_width="40.0dp" android:layout_height="4.0dp" android:layout_marginTop="12.0dp" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="right|center" android:id="@id/pzh" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="16.0dp" android:src="@raw/icons_outlined_more" app:fs="@color/FG_0" />
+</FrameLayout>

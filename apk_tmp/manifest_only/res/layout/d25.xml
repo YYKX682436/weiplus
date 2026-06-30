@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/rj" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/p03" android:background="@color/rj" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/gfj" android:background="@color/rj" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/gfi" android:background="#40000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="58.0dp" android:layout_height="58.0dp" android:src="@raw/top_story_scroll_tips" />
+                <TextView android:textSize="16.0dp" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/k0k" />
+                <Button android:id="@id/mcl" android:layout_marginTop="20.0dp" android:text="@string/vj" style="@style/kz" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/obv" android:clickable="false" android:layout_width="match_parent" android:layout_height="56.0dp" />
+        <RelativeLayout android:id="@id/oc0" android:clickable="false" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_alignParentTop="true">
+            <ImageButton android:id="@id/aa8" android:background="@null" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:layout_width="40.0dp" android:layout_height="56.0dp" android:src="@raw/actionbar_icon_dark_back" android:contentDescription="@string/ig" />
+            <ImageView android:id="@id/ne8" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="10.0dp" android:src="@color/rj" android:layout_toRightOf="@id/aa8" android:layout_centerVertical="true" />
+            <FrameLayout android:id="@id/k0z" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/k11" android:background="@raw/top_story_volume_on" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/jqy" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/jrb" android:background="@raw/actionbar_icon_light_more" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/ab0" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/odf" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginLeft="14.0dp" android:text="@string/hsn" android:singleLine="true" android:layout_toLeftOf="@id/k0z" android:layout_toRightOf="@id/ne8" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/czk" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/czl" layout="@layout/d1s" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/czd" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/cze" layout="@layout/d1t" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.topstory.ui.widget.TopStoryCommentFloatDialog android:id="@id/c72" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

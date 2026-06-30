@@ -1,0 +1,14 @@
+package df5;
+
+/* loaded from: classes5.dex */
+public final /* synthetic */ class q extends kotlin.jvm.internal.m implements yz5.a {
+    public q(java.lang.Object obj) {
+        super(0, obj, df5.t.class, "getDurationMs", "getDurationMs()I", 0);
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        ((df5.t) this.receiver).getClass();
+        return java.lang.Integer.valueOf(bm5.o1.f22719a.h(new com.tencent.mm.repairer.config.chatting.markdown.RepairerConfigMarkdownStreamFadeSentenceThreshold()));
+    }
+}

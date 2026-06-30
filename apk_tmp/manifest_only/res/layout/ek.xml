@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/wj" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/wn" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/ay">
+                <TextView android:textSize="@dimen/r" android:textColor="#e6ffffff" android:gravity="center" android:id="@id/wp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/l5" android:layout_centerInParent="true" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/actionbar_up_indicator_btn" android:background="@null" android:paddingLeft="@dimen/p" android:paddingRight="@dimen/hf" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@raw/icons_outlined_back" android:contentDescription="@string/ig" app:fs="@color/BW_100_Alpha_0_5" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.tencent.mm.plugin.appbrand.widget.desktop.AppBrandDesktopView android:id="@id/wq" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:key="contact_info_wxgame_header_helper" android:gc="@layout/c9y" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_wxgame_go_to" android:gc="@layout/byv" android:title="@string/bf3" />
+    <Preference android:key="contact_info_wxgame_invite_friend" android:gc="@layout/byv" android:title="@string/bjh" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="contact_info_wxgame_top" android:gc="@layout/byv" android:persistent="false" android:title="@string/bf7" />
+    <CheckBoxPreference android:key="contact_info_wxgame_not_disturb" android:gc="@layout/byv" android:persistent="false" android:title="@string/bf5" />
+    <Preference android:key="contact_info_wxgame_push_setting" android:gc="@layout/byv" android:title="@string/lek" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_wxgame_clear_data" android:gc="@layout/byv" android:title="@string/bcu" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwn" android:key="contact_info_wxgame_install" android:title_color="@color/su" />
+    <com.tencent.mm.ui.base.preference.ButtonPreference android:btn_title="@string/iwr" android:key="contact_info_wxgame_uninstall" android:gc="@layout/bt3" android:title_color="@color/a31" />
+    <PreferenceCategory />
+</PreferenceScreen>

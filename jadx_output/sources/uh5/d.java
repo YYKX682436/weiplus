@@ -1,0 +1,49 @@
+package uh5;
+
+/* loaded from: classes12.dex */
+public final class d implements sf3.d {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final sf3.c f428004a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final java.util.List f428005b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final com.tencent.mm.sdk.coroutines.LifecycleScope f428006c;
+
+    public d(androidx.appcompat.app.AppCompatActivity activity, sf3.c cacheManager) {
+        kotlin.jvm.internal.o.g(activity, "activity");
+        kotlin.jvm.internal.o.g(cacheManager, "cacheManager");
+        this.f428004a = cacheManager;
+        this.f428005b = new java.util.ArrayList();
+        this.f428006c = new com.tencent.mm.sdk.coroutines.LifecycleScope("ChatImageLoaderImpl", activity, 1);
+    }
+
+    @Override // sf3.d
+    public android.graphics.Bitmap a(sf3.g loadParam) {
+        kotlin.jvm.internal.o.g(loadParam, "loadParam");
+        loadParam.c();
+        android.graphics.Bitmap a17 = this.f428004a.a(loadParam);
+        if (a17 != null) {
+            return a17;
+        }
+        return null;
+    }
+
+    @Override // sf3.d
+    public void b(sf3.g loadParam, sf3.j callback) {
+        kotlin.jvm.internal.o.g(loadParam, "loadParam");
+        kotlin.jvm.internal.o.g(callback, "callback");
+        loadParam.c();
+        ((java.util.ArrayList) this.f428005b).add(v65.i.b(this.f428006c, null, new uh5.c(this, loadParam, callback, null), 1, null));
+    }
+
+    @Override // sf3.d
+    public void recycle() {
+        java.util.Iterator it = this.f428005b.iterator();
+        while (it.hasNext()) {
+            kotlinx.coroutines.p2.a((kotlinx.coroutines.r2) it.next(), null, 1, null);
+        }
+    }
+}

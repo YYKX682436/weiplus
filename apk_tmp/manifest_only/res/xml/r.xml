@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.profile.ui.HelperHeaderPreference android:key="contact_info_header_helper" android:gc="@layout/a20" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_view_message" android:gc="@layout/byv" android:title="@string/bjd" />
+    <CheckBoxPreference android:key="contact_info_recommend_qqfriends_to_me" android:title="@string/bgh" />
+    <CheckBoxPreference android:key="contact_info_recommend_mobilefriends_to_me" android:title="@string/bgg" />
+    <CheckBoxPreference android:key="contact_info_recommend_fbfriends_to_me" android:title="@string/bgf" />
+    <Preference android:key="contact_info_bind_mobile_entry" android:gc="@layout/byv" android:title="@string/ipx" />
+    <Preference android:key="contact_info_bind_mobile_entry_tip" android:gc="@layout/c0d" android:title="@string/bbl" />
+    <Preference android:key="contact_info_bind_qq_entry" android:gc="@layout/byv" android:title="@string/ai7" />
+    <Preference android:key="contact_info_bind_qq_entry_tip" android:gc="@layout/c0d" android:title="@string/bbm" />
+    <Preference android:key="contact_info_bind_fb_entry" android:gc="@layout/byv" android:title="@string/fu7" />
+    <Preference android:key="contact_info_bind_fb_entry_tip" android:gc="@layout/c0d" android:title="@string/bbk" />
+    <Preference android:key="contact_info_fmessage_clear_data" android:gc="@layout/byv" android:title="@string/bcu" />
+    <PreferenceCategory />
+</PreferenceScreen>

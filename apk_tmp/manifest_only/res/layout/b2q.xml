@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <com.tencent.mm.ui.MMImageView android:layout_gravity="center_vertical" android:id="@id/bys" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bdf" android:layout_marginStart="@dimen/cz" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/cgg" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/c9x" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="1">
+            <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="center_horizontal" android:id="@id/a9m" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/bw" app:i8="@dimen/d1" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/ct" android:textColor="@color/FG_0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:textAlignment="center" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/cb" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/o_w" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/enc" android:layout_below="@id/obc" android:alpha="0.5" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" />
+        </LinearLayout>
+        <Button android:id="@id/c9x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dn" android:text="@string/elz" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/cgg" app:layout_constraintVertical_chainStyle="1" style="@style/kz" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

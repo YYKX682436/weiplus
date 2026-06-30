@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes10.dex */
+public class m11 extends com.tencent.mm.protobuf.e {
+    public m11() {
+        super(com.tencent.mm.protobuf.i.n(1, "feedId"), com.tencent.mm.protobuf.i.i(2, "pageIndex"), com.tencent.mm.protobuf.i.i(3, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), com.tencent.mm.protobuf.i.i(4, "preloadBytes"), com.tencent.mm.protobuf.i.i(5, "downloadedBytes"), com.tencent.mm.protobuf.i.i(6, "fileBytes"), com.tencent.mm.protobuf.i.i(7, "duration"), com.tencent.mm.protobuf.i.i(8, "totalPlayTimeMs"), com.tencent.mm.protobuf.i.i(9, "totalWaitTimeMs"), com.tencent.mm.protobuf.i.i(10, "downloadSpeedKbps"), com.tencent.mm.protobuf.i.s(11, "waitDetails", r45.t23.class), com.tencent.mm.protobuf.i.i(12, "stopPlayTimestamp"), com.tencent.mm.protobuf.i.i(13, "playPosition"), com.tencent.mm.protobuf.i.i(14, "firstLoadTimeMs"), com.tencent.mm.protobuf.i.u(15, "codingFormat"), com.tencent.mm.protobuf.i.n(16, "preloadStrategyId"), com.tencent.mm.protobuf.i.i(17, "rttMs"), com.tencent.mm.protobuf.i.i(18, "networkId"), com.tencent.mm.protobuf.i.u(19, "svrIp"), com.tencent.mm.protobuf.i.i(20, "svrPort"), com.tencent.mm.protobuf.i.u(21, "fileFormat"), com.tencent.mm.protobuf.i.n(22, "mega_video_id"), com.tencent.mm.protobuf.i.i(23, "play_count"), com.tencent.mm.protobuf.i.r(24, "download_speed", r45.sf0.class), com.tencent.mm.protobuf.i.i(25, "preload_max_bit_rate"), com.tencent.mm.protobuf.i.u(26, "request_format"), com.tencent.mm.protobuf.i.n(27, "duration_ms"), com.tencent.mm.protobuf.i.i(28, "position"), com.tencent.mm.protobuf.i.n(29, "total_downloaded_bytes"), com.tencent.mm.protobuf.i.n(30, "buffer_length_ms"), com.tencent.mm.protobuf.i.i(31, com.tencent.live2.jsplugin.V2TXJSAdapterConstants.PUSHER_KEY_FPS), com.tencent.mm.protobuf.i.i(32, "player_fps"));
+        this.__printBytes = true;
+    }
+}

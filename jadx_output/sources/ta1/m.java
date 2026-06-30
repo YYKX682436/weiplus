@@ -1,0 +1,30 @@
+package ta1;
+
+/* loaded from: classes7.dex */
+public class m implements com.hilive.mediasdk.MediaSdk.MediaCallbacker {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ ta1.n f416641a;
+
+    public m(ta1.n nVar) {
+        this.f416641a = nVar;
+    }
+
+    @Override // com.hilive.mediasdk.MediaSdk.MediaCallbacker
+    public void onResult(byte[] bArr) {
+        ta1.n nVar = this.f416641a;
+        try {
+            org.json.JSONObject jSONObject = new org.json.JSONObject(new java.lang.String(bArr));
+            int optInt = jSONObject.optInt("errCode", 601);
+            if (optInt == 0) {
+                nVar.f416646e.a(0, 0, "ok", jSONObject);
+            } else {
+                nVar.f416646e.a(1, optInt, java.lang.String.format("editorCreateTrack failed!: errCode: %d", java.lang.Integer.valueOf(optInt)), jSONObject);
+            }
+        } catch (org.json.JSONException e17) {
+            nVar.f416646e.a(1, -1, "editorCreateTrack error: " + e17.getMessage(), null);
+        } catch (java.lang.Exception e18) {
+            nVar.f416646e.a(1, -1, "editorCreateTrack error: " + e18.getMessage(), null);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+package hm1;
+
+/* loaded from: classes.dex */
+public final class k extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final hm1.k f282201d = new hm1.k();
+
+    public k() {
+        super(0);
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        e42.e0 e0Var = (e42.e0) i95.n0.c(e42.e0.class);
+        boolean z17 = true;
+        if (e0Var != null) {
+            z17 = ((h62.d) e0Var).fj(e42.c0.clicfg_android_appbrand_livepusher_zoom_opt, true);
+        }
+        return java.lang.Boolean.valueOf(z17);
+    }
+}

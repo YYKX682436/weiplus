@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/d8v" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.emoji.editor.widgets.EmojiEditorPreviewLayout android:id="@id/l48" android:paddingLeft="40.0dp" android:paddingTop="44.0dp" android:paddingRight="40.0dp" android:paddingBottom="80.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.plugin.emoji.editor.widgets.EmojiEditorTextDecorationsContainer android:id="@id/o49" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/lxh" android:background="@drawable/emoji_editor_remove_text_area_selector" android:paddingLeft="29.0dp" android:paddingTop="16.0dp" android:paddingRight="29.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/lxi" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/icons_filled_delete" android:contentDescription="@null" app:fs="@color/an" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/an" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/lxj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/bw7" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.emoji.editor.widgets.EmojiEditorTextDecorationsContainer>
+    <FrameLayout android:id="@id/l3y" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left|top" android:id="@id/l3w" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="12.0dp" android:src="@raw/arrow_left_circle_filled" android:contentDescription="@string/aq7" android:layout_marginStart="24.0dp" app:fs="@color/an" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="end|top" android:id="@id/ut2" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="12.0dp" android:src="@raw/checkbox_select_filled" android:layout_marginEnd="26.0dp" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/l3t" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/t6c" android:layout_width="match_parent" android:layout_height="80.0dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/t6b" android:layout_width="match_parent" android:layout_height="80.0dp">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ly" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="24.0dp" android:src="@raw/icons_filled_text" app:fs="@android:color/white" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/byi" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="24.0dp" android:src="@raw/icons_filled_clip" app:fs="@android:color/white" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ojo" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="24.0dp" android:src="@raw/icons_filled_crop" app:fs="@android:color/white" />
+                    <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    <Button android:id="@id/g6_" android:text="@string/i6" android:layout_marginEnd="24.0dp" style="@style/ks" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/j4" android:textColor="#ccffffff" android:gravity="center_vertical" android:layout_gravity="left|center" android:id="@id/u01" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/obz" android:layout_marginStart="24.0dp" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/vet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginBottom="24.0dp">
+                <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/vep" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="24.0dp" android:paddingEnd="4.0dp" />
+                    <View android:layout_gravity="end" android:id="@id/ver" android:background="@drawable/emoji_editor_thumbnail_gradient" android:layout_width="24.0dp" android:layout_height="match_parent" />
+                </FrameLayout>
+                <Button android:id="@id/twi" android:visibility="gone" android:text="@string/i6" android:layout_marginStart="16.0dp" android:layout_marginEnd="24.0dp" style="@style/ks" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ojq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/j4" android:textColor="#ccffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/bw9" />
+        <com.tencent.mm.plugin.emoji.editor.widgets.EmojiEditorTrimView android:id="@id/ojp" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="80.0dp">
+            <TextView android:textSize="@dimen/ia" android:textColor="@android:color/white" android:layout_gravity="left|center" android:id="@id/ojm" android:paddingLeft="24.0dp" android:paddingTop="8.0dp" android:paddingRight="24.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aq7" />
+            <Button android:layout_gravity="end|center" android:id="@id/ojn" android:layout_marginRight="24.0dp" android:text="@string/v5" style="@style/ks" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/o4g" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_marginTop="10.0dp">
+            <TextView android:textSize="@dimen/ia" android:textColor="@android:color/white" android:layout_gravity="left|center" android:id="@id/lw" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aq7" />
+            <Button android:layout_gravity="end|center" android:id="@id/lx" android:layout_marginRight="24.0dp" android:text="@string/v5" style="@style/ks" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <com.tencent.mm.plugin.emoji.editor.widgets.EmojiEditorEditableText android:layout_gravity="center" android:id="@id/o4f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="1" android:textCursorDrawable="@drawable/afr" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginBottom="12.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/o53" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="16.0dp" android:src="@raw/icons_filled_text_style_stroke" android:contentDescription="@null" app:fs="@android:color/white" />
+            <View android:background="#ffffff" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:alpha="0.2" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/c64" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="24.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/byf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.plugin.emoji.editor.widgets.EmojiEditorClipView android:id="@id/byn" android:paddingLeft="24.0dp" android:paddingTop="24.0dp" android:paddingRight="24.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:background="#cc000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left" android:id="@id/byl" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="20.0dp" android:src="@raw/icons_filled_square" android:contentDescription="@null" app:fs="@color/an" />
+            <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="24.0dp" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="64.0dp">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left|center" android:id="@id/bye" android:padding="20.0dp" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@raw/icons_filled_close" android:contentDescription="@null" app:fs="@color/an" />
+                <TextView android:textSize="@dimen/ia" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/byk" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bw3" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="right|center" android:id="@id/byg" android:padding="20.0dp" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@raw/icons_filled_check_mark" android:contentDescription="@null" app:fs="@color/an" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/im7" android:layout_width="match_parent" android:layout_height="80.0dp">
+        <TextView android:textSize="@dimen/ia" android:textColor="@android:color/white" android:layout_gravity="left|center" android:id="@id/pys" android:paddingLeft="24.0dp" android:paddingTop="8.0dp" android:paddingRight="24.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aq7" />
+        <Button android:enabled="false" android:textColor="#26000000" android:layout_gravity="end|center" android:background="@drawable/emoji_editor_loading_disabled_button" android:layout_marginRight="24.0dp" android:text="@string/ww" style="@style/l1" />
+    </FrameLayout>
+</FrameLayout>

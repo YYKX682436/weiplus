@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+        <TextView android:gravity="center_vertical" android:id="@id/pso" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="@string/lc4" />
+        <SeekBar android:id="@id/psn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+        <TextView android:gravity="center_vertical" android:id="@id/psi" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="@string/lc1" />
+        <SeekBar android:id="@id/psh" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+        <TextView android:gravity="center_vertical" android:id="@id/psk" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="@string/lc2" />
+        <SeekBar android:id="@id/psj" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+        <TextView android:gravity="center_vertical" android:id="@id/psm" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="@string/lc3" />
+        <SeekBar android:id="@id/psl" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+        <TextView android:gravity="center_vertical" android:id="@id/psg" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="@string/lc0" />
+        <SeekBar android:id="@id/psf" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

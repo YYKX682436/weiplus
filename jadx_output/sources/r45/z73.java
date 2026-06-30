@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes5.dex */
+public class z73 extends com.tencent.mm.protobuf.e {
+    public z73() {
+        super(com.tencent.mm.protobuf.i.r(1, "live_notice_info", r45.h32.class), com.tencent.mm.protobuf.i.s(2, "visibility_file_list", r45.il1.class), com.tencent.mm.protobuf.i.i(3, "max_visible_chatroom_count"), com.tencent.mm.protobuf.i.i(4, "max_redpacket_chatroom_count"), com.tencent.mm.protobuf.i.i(5, "redpacket_chatroom_select_status"), com.tencent.mm.protobuf.i.i(6, "max_visible_user_count"), com.tencent.mm.protobuf.i.r(7, "bg_music_info", r45.xl1.class), com.tencent.mm.protobuf.i.r(8, "quest_entrance_info", r45.e62.class), com.tencent.mm.protobuf.i.i(9, "shopping_not_available"), com.tencent.mm.protobuf.i.n(10, "live_function_switch_flags"), com.tencent.mm.protobuf.i.r(11, "contact_live_info", r45.kz0.class), com.tencent.mm.protobuf.i.r(12, "fan_club_info", r45.eq1.class), com.tencent.mm.protobuf.i.r(13, "song_list_info", r45.dc6.class), com.tencent.mm.protobuf.i.c(14, "can_show_play_together_entrance"), com.tencent.mm.protobuf.i.r(15, "play_together_info", r45.yq1.class), com.tencent.mm.protobuf.i.i(16, "live_global_flag"), com.tencent.mm.protobuf.i.r(17, "creator_center_entrance", com.tencent.mm.protocal.protobuf.FinderJumpInfo.class), com.tencent.mm.protobuf.i.c(18, "show_three_dimensional_view_entrance"), com.tencent.mm.protobuf.i.r(19, "three_dimensional_view_entrance", com.tencent.mm.protocal.protobuf.FinderJumpInfo.class), com.tencent.mm.protobuf.i.r(20, "creator_center_entrance_v2", com.tencent.mm.protocal.protobuf.FinderJumpInfo.class), com.tencent.mm.protobuf.i.r(21, "play_together_info_jump_info", com.tencent.mm.protocal.protobuf.FinderJumpInfo.class), com.tencent.mm.protobuf.i.r(22, "new_song_list_info", r45.bw4.class));
+        this.__printBytes = true;
+    }
+}

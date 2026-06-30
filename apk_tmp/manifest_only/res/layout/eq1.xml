@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/vey" android:layout_width="@dimen/ac2" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/o97" android:layout_width="@dimen/ac2" android:layout_height="@dimen/ac2">
+        <ImageView android:id="@id/o96" android:visibility="gone" android:layout_width="@dimen/ac2" android:layout_height="@dimen/ac2" android:scaleType="centerCrop" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/vf0" android:visibility="gone" android:layout_width="@dimen/aqe" android:layout_height="@dimen/aqe" android:layout_marginLeft="@dimen/bl" android:layout_marginTop="@dimen/bl" android:layout_marginRight="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:i8="@dimen/aqd" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/vf1" android:visibility="gone" android:layout_width="@dimen/aqg" android:layout_height="@dimen/aqg" android:layout_marginTop="@dimen/cs" android:layout_marginBottom="@dimen/bl" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:i8="@dimen/aqf" />
+        <RelativeLayout android:id="@id/o9a" android:layout_width="@dimen/ac2" android:layout_height="@dimen/ac2">
+            <View android:id="@id/o9_" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.tencent.mm.view.MMPAGView android:id="@id/o99" android:layout_width="@dimen/ac2" android:layout_height="@dimen/ac2" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/an" android:ellipsize="end" android:id="@id/o9b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxLines="1" android:singleLine="true" android:layout_marginStart="11.0dp" android:layout_marginEnd="11.0dp" />
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/o94" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginBottom="11.0dp" android:src="@drawable/bhm" android:layout_alignParentBottom="true" android:layout_marginStart="11.0dp" android:layout_alignParentStart="true" app:i8="@dimen/c8" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/qxa" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginBottom="10.0dp" android:src="@raw/ting_topic_ugc_hash_logo" android:layout_alignParentBottom="true" android:layout_marginStart="13.0dp" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

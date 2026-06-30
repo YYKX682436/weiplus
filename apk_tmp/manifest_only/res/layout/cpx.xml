@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chq" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/n4y" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/n4r" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/kqc" android:background="@drawable/atw" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="35.0dp" android:layout_centerInParent="true">
+            <ImageView android:id="@id/kqd" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="10.0dp" android:src="@raw/pause_video_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/kqe" android:layout_width="40.0dp" android:layout_height="17.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="已暂停" android:includeFontPadding="false" android:layout_toRightOf="@id/kqd" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/ab0" android:gravity="center" android:id="@id/dhd" android:paddingBottom="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.8" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="13.0dp" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/n56" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@raw/icon_volume_off" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/n55" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@raw/icon_video_full_screen" android:scaleType="centerCrop" android:layout_toLeftOf="@id/n56" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/n4s" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/n4y" android:layout_centerHorizontal="true">
+        <Button android:textColor="@color/ab0" android:gravity="right|center" android:id="@id/n4t" android:background="@color/a9e" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="" android:maxLines="1" />
+        <View android:id="@id/n4u" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" />
+    </LinearLayout>
+</RelativeLayout>

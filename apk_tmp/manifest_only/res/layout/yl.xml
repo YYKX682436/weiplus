@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/c9" android:layout_width="match_parent" android:layout_height="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/bxf" android:background="@drawable/aoe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" android:layout_marginStart="@dimen/d9" android:layout_marginEnd="@dimen/c9" />
+    <com.tencent.mm.ui.widget.textview.MMAutoAdjustTextView android:id="@id/odf" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{title}" android:singleLine="true" android:layout_weight="1.0" style="@style/j3" />
+    <TextView android:gravity="end" android:id="@id/mzv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{desc}" android:singleLine="true" style="@style/j2" />
+</LinearLayout>

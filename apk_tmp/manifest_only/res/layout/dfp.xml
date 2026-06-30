@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/qbx" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/dr" />
+    <com.tencent.mm.mj_publisher.finder.movie_composing.panel.clip.timeline.ClipTimelineView android:id="@id/qbw" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/q4p" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <View android:id="@id/qbo" android:background="@drawable/cmm" android:layout_width="@dimen/bh" android:layout_height="@dimen/bt" android:layout_marginTop="@dimen/dd" android:elevation="@dimen/bl" app:layout_constraintEnd_toEndOf="@id/qbw" app:layout_constraintStart_toStartOf="@id/qbw" app:layout_constraintTop_toTopOf="@id/qbw" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/qbi" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@drawable/cnk" android:scaleType="center" app:layout_constraintBottom_toBottomOf="@id/qbx" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@id/qbx" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/q3p" android:layout_width="@dimen/dg" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_marginEnd="@dimen/db" app:layout_constraintBottom_toBottomOf="@id/qbx" app:layout_constraintEnd_toStartOf="@id/qbo" app:layout_constraintTop_toTopOf="@id/qbx">
+        <ImageView android:id="@id/q3q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cm8" android:scaleType="center" android:alpha="0.5" />
+        <TextView android:textSize="@dimen/ag8" android:textColor="@color/ac9" android:id="@id/q3r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bk" android:text="@string/lmw" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/q4p" android:layout_width="match_parent" android:layout_height="@dimen/dm" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start|center" android:orientation="horizontal" android:id="@id/qaj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" />
+        </HorizontalScrollView>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/q8s" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

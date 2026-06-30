@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bk4" android:layout_alignParentTop="true" android:layout_alignParentRight="true" layout="@layout/tz" style="@style/eh" />
+    <TextView android:id="@id/brc" android:visibility="gone" android:text="{user}" android:layout_toLeftOf="@id/bk4" style="@style/eq" />
+    <LinearLayout android:id="@id/bkj" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@id/bk4" style="@style/em">
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bqx" android:layout_marginRight="6.0dp" style="@style/es" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/ott" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c9" style="@style/x4" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.MMNeat7extView android:textColor="@color/i_" android:id="@id/bkl" android:background="@drawable/o_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_" style="@style/eu" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/Link_100" android:id="@id/bjp" android:paddingLeft="@dimen/bk" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bk" android:paddingBottom="@dimen/bj" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp" android:layout_marginTop="@dimen/bl" android:includeFontPadding="false" android:paddingHorizontal="@dimen/bk" android:paddingVertical="@dimen/bj" />
+                <ViewStub android:id="@id/ojd" android:layout="@layout/xi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="@dimen/ais" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

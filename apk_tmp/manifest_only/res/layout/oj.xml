@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/b6v" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cob" android:layout_width="match_parent" android:layout_height="@dimen/ael" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/r" android:textColor="@color/bx" android:gravity="center" android:layout_gravity="start|center" android:id="@id/b02" android:background="@drawable/b9" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/ael" android:text="@string/sg" android:contentDescription="@string/sg" />
+        <com.tencent.mm.ui.widget.imageview.WeImageButton android:id="@id/azy" android:background="@drawable/b9" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@raw/actionbar_icon_dark_back" android:scaleType="center" android:contentDescription="@string/ig" app:btnIconColor="@color/bx" />
+        <Button android:textColor="@color/io" android:layout_gravity="end|center" android:id="@id/b0k" android:background="@drawable/jo" android:text="@string/v5" android:layout_marginEnd="@dimen/bf" style="@style/ks" />
+    </FrameLayout>
+    <TextView android:textSize="22.0dp" android:textColor="@color/f5" android:id="@id/ome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c6" android:minHeight="30.0dp" android:text="@string/aqz" android:layout_below="@id/cob" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.plugin.car_license_plate.ui.MaxWidthLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hwg" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/df" android:divider="@drawable/kg" android:layout_below="@id/ome" android:layout_centerHorizontal="true" android:showDividers="beginning|middle|end">
+        <TextView android:id="@id/bey" style="@style/du" />
+        <TextView android:id="@id/bex" style="@style/du" />
+        <ImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@drawable/kj" android:scaleType="center" />
+    </com.tencent.mm.plugin.car_license_plate.ui.MaxWidthLinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/tk" android:gravity="center" android:id="@id/op6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_below="@id/hwg" android:lineSpacingExtra="0.0dp" />
+</RelativeLayout>

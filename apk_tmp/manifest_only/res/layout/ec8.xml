@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tpq" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/tpr" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/dv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn">
+        <TextView android:textSize="15.0dp" android:textColor="@color/adg" android:ellipsize="end" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/otx" android:maxLines="1" android:fontFamily="sans-serif" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/Link_100" android:ellipsize="end" android:layout_gravity="right" android:id="@id/tpv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ou9" android:maxLines="1" android:fontFamily="sans-serif" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tps" android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/cz" android:paddingBottom="@dimen/cz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cz">
+        <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ow7" android:maxLines="10" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/ow6" android:maxLines="10" android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tpt" android:paddingLeft="@dimen/cz" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/cz" android:paddingBottom="@dimen/cz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cz">
+        <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ow5" android:maxLines="10" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/ouu" android:maxLines="10" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

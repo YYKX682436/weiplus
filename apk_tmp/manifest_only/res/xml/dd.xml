@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:key="settings_show_my_finder" android:summary="@string/f5f" android:title="@string/f5e" />
+    <com.tencent.mm.plugin.finder.widget.pref.FinderInteractPreference android:defaultValue="true" android:key="settings_recommend_info" android:title="@string/lw7" />
+    <CheckBoxPreference android:defaultValue="true" android:key="checkbox_preference_one" android:summary="@string/exs" android:title="@string/exr" />
+    <com.tencent.mm.plugin.finder.widget.pref.FinderInteractPreference android:defaultValue="true" android:key="checkbox_preference_send_comment_and_bullet" android:title="@string/mrd" />
+    <com.tencent.mm.plugin.finder.widget.pref.FinderInteractPreference android:defaultValue="true" android:key="checkbox_preference_say_hi" android:title="@string/mrb" />
+    <CheckBoxPreference android:defaultValue="true" android:key="settings_not_recommend_friends" android:summary="@string/ero" android:title="@string/ern" />
+    <CheckBoxPreference android:defaultValue="false" android:key="settings_message_mute" android:title="@string/eo3" />
+    <PreferenceFooterCategory android:key="settings_message_mute_desc" android:title="@string/eo2" />
+    <Preference android:key="settings_data_permission" android:gc="@layout/byv" android:title="@string/of1" />
+    <com.tencent.mm.plugin.finder.widget.pref.PreferenceHeaderCategory android:title="@string/p4j" />
+    <SummaryBelowPreference android:key="settings_blacklist" android:title="@string/cmg" />
+    <Preference android:key="settings_protect" android:title="@string/o07" />
+    <PreferenceSmallCategory />
+    <Preference android:key="account_management" android:gc="@layout/byv" android:title="@string/mg0" />
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.widget.record.EdgeTransparentView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dv" app:edge_position="0x1" app:edge_width="30.0dp">
+        <ViewStub android:id="@id/p24" android:layout="@layout/bem" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:layout_marginRight="30.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/osu" android:background="@drawable/asv" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="72.0dp" android:layout_marginBottom="8.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/osv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ost" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" android:src="@raw/game_chat_tips_icon_down" app:fs="@color/UN_BW_0_Alpha_0_9" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|top" android:orientation="horizontal" android:id="@id/a5u" android:background="@drawable/ed" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginTop="100.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/a5v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fkm" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" android:src="@raw/game_chat_tips_icon_up" app:fs="@color/UN_BW_0_Alpha_0_9" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.finder.widget.record.EdgeTransparentView>
+</LinearLayout>

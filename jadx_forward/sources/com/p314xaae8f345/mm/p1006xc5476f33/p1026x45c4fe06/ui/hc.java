@@ -1,0 +1,26 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui;
+
+@p3321xbce91901.InterfaceC29042xe907df4f(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b&\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"Lcom/tencent/mm/plugin/appbrand/ui/hc;", "Lcom/tencent/mm/plugin/appbrand/ui/jc;", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "luggage-wxa-app_release"}, k = 1, mv = {1, 9, 0})
+/* loaded from: classes7.dex */
+public abstract class hc extends com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui.jc {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public hc(android.content.Context context) {
+        super(context);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+        s(false);
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui.jc, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui.vc
+    /* renamed from: setAppServiceType */
+    public /* bridge */ /* synthetic */ void mo52967xf31bdbb0(int i17) {
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui.jc, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui.vc
+    /* renamed from: setCanShowHideAnimation */
+    public /* bridge */ /* synthetic */ void mo52968x5fa745f7(boolean z17) {
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui.jc, com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.ui.vc
+    /* renamed from: setProgress */
+    public abstract /* synthetic */ void mo52970x3ae760af(int i17);
+}

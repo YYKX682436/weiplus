@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/qy" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/qx" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/ru" android:background="@color/t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="88.0dp">
+        <TextView android:textSize="17.0dp" android:textColor="@color/an" android:layout_gravity="right|top" android:id="@id/oo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="54.0dp" android:layout_marginRight="@dimen/hi" android:text="@string/sg" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/on" android:background="@color/t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="left|center" android:id="@id/gi6" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="68.0dp" android:src="@raw/icons_filled_share" android:scaleType="centerCrop" app:fs="@color/an" />
+        <View android:layout_gravity="left|center" android:id="@id/gi7" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginLeft="54.0dp" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/gi4" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_favorites" android:scaleType="centerCrop" app:fs="@color/an" />
+        <View android:layout_gravity="center" android:id="@id/gi5" android:layout_width="@dimen/df" android:layout_height="@dimen/df" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="right|center" android:id="@id/gi2" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginRight="68.0dp" android:src="@raw/icons_filled_download" android:scaleType="centerCrop" app:fs="@color/an" />
+        <View android:layout_gravity="right|center" android:id="@id/gi3" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginRight="54.0dp" />
+    </FrameLayout>
+</FrameLayout>

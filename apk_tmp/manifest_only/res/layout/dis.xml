@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/coh" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dj" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn">
+        <TextView android:textSize="@dimen/co" android:textColor="@color/UN_BW_0_Alpha_0_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="向超级粉丝展示名片" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/qp9" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fcx" android:paddingBottom="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn">
+        <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintTop_toTopOf="0" />
+        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/tm" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/cn" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:i8="@dimen/bl" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/fd3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs" android:maxLines="1" android:layout_marginStart="@dimen/c9" app:layout_constraintStart_toEndOf="@id/tm" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:id="@id/fd6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bk" android:maxLines="1" app:layout_constraintStart_toStartOf="@id/fd3" app:layout_constraintTop_toBottomOf="@id/fd3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

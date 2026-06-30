@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bvi" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp">
+        <com.tencent.mm.plugin.card.ui.v2.CardCdnImageView android:id="@id/bvk" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@raw/card_default_merchant_icon" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bvn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/a0c" android:id="@id/bvo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+                <com.tencent.mm.plugin.card.ui.v2.CardLabelTextView android:textSize="12.0dp" android:textColor="@color/ab0" android:gravity="center" android:id="@id/bvl" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="10.0dp" android:text="" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dp" android:textColor="#b2b2b2" android:id="@id/bve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/byh" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bvj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:minHeight="20.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bvd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginBottom="16.0dp" android:minHeight="25.0dp" android:dividerPadding="8.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bvg" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp">
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/t_" android:id="@id/bvh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaaa " />
+        <ImageView android:id="@id/bvf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:src="@drawable/bz0" />
+    </LinearLayout>
+</LinearLayout>

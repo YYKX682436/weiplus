@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/i97" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/i9o" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/i9k" android:background="@null" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="@dimen/cz" android:src="@drawable/bub" android:contentDescription="@string/cd" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+        <Button android:textSize="17.0dp" android:textColor="@color/bv" android:layout_gravity="end|center" android:id="@id/i9p" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apv" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="@dimen/uq" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/i9n" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/k" android:textColor="@color/bv" android:id="@id/i9l" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apn" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" android:layout_alignParentEnd="true" />
+        <Button android:textSize="@dimen/k" android:textColor="@color/bv" android:gravity="center" android:layout_gravity="center" android:id="@id/i9q" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="@string/apx" android:layout_weight="1.0" />
+        <Button android:id="@id/i9m" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apm" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginEnd="@dimen/uq" android:layout_alignParentEnd="true" style="@style/ks" />
+    </LinearLayout>
+</RelativeLayout>

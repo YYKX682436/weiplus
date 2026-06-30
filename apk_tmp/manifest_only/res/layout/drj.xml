@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/bl" android:layout_width="@dimen/dp" android:layout_height="@dimen/dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/rt8" android:background="@drawable/cuj" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="center" android:id="@id/rt4" android:background="@color/BW_0_Alpha_0_0_5" android:layout_width="52.0dp" android:layout_height="52.0dp" android:scaleType="centerCrop" app:i8="@dimen/dv" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/FG_0" android:gravity="center" android:layout_gravity="center" android:id="@id/rt7" android:layout_width="52.0dp" android:layout_height="52.0dp" android:text="@string/mk5" android:includeFontPadding="false" />
+</FrameLayout>

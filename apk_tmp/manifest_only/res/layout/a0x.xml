@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="gone" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/a0s" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cbi" android:background="@drawable/gy" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/cb1">
+        <include android:id="@id/cb6" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/a0z" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cc0" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/cb6">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cbw" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+                <ImageView android:id="@id/cbv" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                <ImageView android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/i1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/av2" android:paddingTop="18.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_constraintBottom_toBottomOf="@id/cbv" app:layout_constraintEnd_toEndOf="@id/cbv" app:layout_constraintStart_toStartOf="@id/cbv">
+                    <TextView android:textColor="#b3ffffff" android:ellipsize="end" android:id="@id/cbk" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="12.0dp" app:layout_constraintEnd_toStartOf="@id/cb5" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintStart_toStartOf="0" />
+                    <TextView android:textColor="#b3ffffff" android:id="@id/cb5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/cb4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cby" android:paddingTop="12.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_constraintTop_toBottomOf="@id/cbw">
+                <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/cbx" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:background="@drawable/hd" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/cb6" />
+        <View android:id="@id/uo2" android:background="@color/adi" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent" android:screenReaderFocusable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h6y" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/df" android:src="@raw/icons_outlined_pay_fingerprint_android" app:fs="@color/Brand_100" />
+    <TextView android:textSize="@dimen/h3" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/p9g" android:screenReaderFocusable="true" android:textFontWeight="500" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/cut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:text="@string/p95" android:layout_marginHorizontal="@dimen/cz" android:screenReaderFocusable="true" style="@style/ho" />
+    <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/kio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dh" android:text="@string/p9b" style="@style/kr" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/bz2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dh" android:text="@string/p93" style="@style/kz" />
+    <TextView android:textSize="@dimen/j4" android:id="@id/vki" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/p9i" style="@style/hp" />
+</LinearLayout>

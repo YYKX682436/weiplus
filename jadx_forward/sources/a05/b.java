@@ -1,0 +1,73 @@
+package a05;
+
+/* loaded from: classes8.dex */
+public class b extends java.io.InputStream {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final a05.a f82009d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final long f82010e;
+
+    public b(com.p314xaae8f345.mm.vfs.r6 r6Var, long j17, long j18) {
+        this.f82010e = j18;
+        this.f82009d = new a05.a(com.p314xaae8f345.mm.vfs.w6.C(r6Var));
+        long j19 = 0;
+        while (j19 < j17) {
+            long skip = this.f82009d.skip(j17 - j19);
+            if (skip <= 0) {
+                break;
+            } else {
+                j19 += skip;
+            }
+        }
+        if (j19 < j17) {
+            throw new java.io.IOException("could not seek pos " + j17);
+        }
+        a05.a aVar = this.f82009d;
+        synchronized (aVar) {
+            aVar.f82008d = 0;
+        }
+    }
+
+    @Override // java.io.InputStream
+    public int available() {
+        a05.a aVar = this.f82009d;
+        return (int) java.lang.Math.min(this.f82010e - aVar.f82008d, aVar.available());
+    }
+
+    @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f82009d.close();
+        super.close();
+    }
+
+    @Override // java.io.InputStream
+    public int read(byte[] bArr) {
+        return read(bArr, 0, bArr.length);
+    }
+
+    @Override // java.io.InputStream
+    public long skip(long j17) {
+        return this.f82009d.skip(java.lang.Math.min(this.f82010e - r0.f82008d, j17));
+    }
+
+    @Override // java.io.InputStream
+    public int read() {
+        a05.a aVar = this.f82009d;
+        if (this.f82010e - ((long) aVar.f82008d) <= 0) {
+            return -1;
+        }
+        return aVar.read();
+    }
+
+    @Override // java.io.InputStream
+    public int read(byte[] bArr, int i17, int i18) {
+        a05.a aVar = this.f82009d;
+        long min = java.lang.Math.min(this.f82010e - aVar.f82008d, i18);
+        if (min != 0 || i18 <= 0) {
+            return aVar.read(bArr, i17, (int) min);
+        }
+        return -1;
+    }
+}

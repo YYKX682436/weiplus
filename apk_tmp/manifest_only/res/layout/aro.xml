@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/lqa" android:background="@drawable/a3x" android:paddingLeft="@dimen/cz" android:paddingTop="18.0dp" android:paddingRight="@dimen/cz" android:paddingBottom="18.0dp" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:requiresFadingEdge="horizontal" />
+    <ImageView android:id="@id/a4f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/a8i" android:layout_below="@id/lqa" android:layout_marginEnd="@dimen/cz" />
+</RelativeLayout>

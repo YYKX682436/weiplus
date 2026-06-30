@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/em">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bqx" style="@style/es" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/ott" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c9" style="@style/x4" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bqz" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/chatting_status_tick" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/bki" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.tencent.mm.pluginsdk.ui.emoji.RTChattingEmojiViewTo android:layout_gravity="right" android:id="@id/bkm" android:background="@null" android:layout_marginLeft="@dimen/vg" android:layout_marginRight="@dimen/vg" style="@style/fm" />
+                    <ProgressBar android:id="@id/bku" android:visibility="gone" android:layout_width="@dimen/a7m" android:layout_height="@dimen/a7m" android:indeterminateDrawable="@drawable/avm" android:layout_centerInParent="true" />
+                    <TextView android:textSize="@dimen/jj" android:textColor="@color/ab0" android:gravity="right" android:id="@id/bqq" android:background="@drawable/emoji_app_msg_mask" android:padding="@dimen/j8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="@color/j8" android:layout_alignLeft="@id/bkm" android:layout_alignRight="@id/bkm" android:layout_alignBottom="@id/bkm" />
+                    <ImageView android:id="@id/bqy" android:background="@null" android:visibility="gone" android:layout_width="@dimen/a7m" android:layout_height="@dimen/a7m" android:src="@drawable/emoji_download_btn" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <include layout="@layout/e26" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/tz" />
+</LinearLayout>

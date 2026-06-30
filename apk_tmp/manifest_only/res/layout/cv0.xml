@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/nd2" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/nd0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wa" />
+    <com.tencent.mm.ui.KeyboardLinearLayout android:orientation="vertical" android:id="@id/nd1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@id/ncz" android:background="@color/a5r" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:scrollingCache="false" android:divider="@null" android:layout_weight="1.0" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.sns.ui.SnsCommentFooter android:id="@id/c76" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.ui.KeyboardLinearLayout>
+</FrameLayout>

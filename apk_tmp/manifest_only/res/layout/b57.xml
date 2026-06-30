@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/r" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/oov" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="阿婆牛杂(天河南二路)" android:layout_marginStart="@dimen/cz" />
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/oou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="3.5公里 | 天河区天河南二路与天祥街交叉路口东北…" android:maxLines="1" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/iif" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pmn" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/xd" android:src="@raw/icons_filled_time" android:layout_marginStart="@dimen/cz" app:fs="@color/g" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pmm" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/xd" android:src="@raw/icons_filled_error" android:layout_marginStart="@dimen/cz" app:fs="@color/Orange_100" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/oor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eu0" android:maxLines="1" android:layout_marginStart="@dimen/bl" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pml" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/xc" android:src="@raw/icons_outlined_arrow" android:layout_marginEnd="@dimen/cn" app:fs="@color/FG_1" />
+    </LinearLayout>
+    <View android:id="@id/ow8" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="@dimen/xc" android:layout_marginTop="@dimen/cn" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:layout_gravity="center" android:orientation="vertical" android:id="@id/o4b" android:background="#80000000" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/oyb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cn">
+        <Button android:textColor="@color/bw" android:id="@id/d6s" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sg" style="@style/ks" />
+        <Button android:id="@id/d6w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5" android:layout_alignParentEnd="true" style="@style/ks" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/auj" android:layout_below="@id/oyb">
+        <com.tencent.mm.view.PhotoEditText android:textSize="32.0dp" android:textColor="@color/aaw" android:gravity="center_vertical" android:id="@id/o4a" android:background="@null" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="1" android:maxLength="100" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:textCursorDrawable="@drawable/afr" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.tencent.mm.view.TextModeSelectView android:id="@id/agw" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" />
+        <View android:background="@color/BW_100_Alpha_0_2" android:layout_width="1.0dp" android:layout_height="32.0dp" />
+        <HorizontalScrollView android:gravity="top" android:fadingEdgeLength="@dimen/c9" android:layout_width="match_parent" android:layout_height="@dimen/sk" android:requiresFadingEdge="horizontal">
+            <com.tencent.mm.view.footer.SelectColorBar android:gravity="top" android:id="@id/mii" android:layout_width="wrap_content" android:layout_height="@dimen/sk" app:barColors="@array/ag" app:barScaleType="0x1" app:itemPadding="@dimen/cn" app:itemRadius="@dimen/c8" app:itemSelectStokeSize="@dimen/bh" app:itemStokeSize="@dimen/bj" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>

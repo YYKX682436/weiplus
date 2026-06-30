@@ -1,0 +1,24 @@
+package f93;
+
+/* loaded from: classes11.dex */
+public class h2 implements l75.q0 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p1006xc5476f33.p1790x61f7ef4.ui.ViewOnCreateContextMenuListenerC16169x37a19e8d f341881d;
+
+    public h2(com.p314xaae8f345.mm.p1006xc5476f33.p1790x61f7ef4.ui.ViewOnCreateContextMenuListenerC16169x37a19e8d viewOnCreateContextMenuListenerC16169x37a19e8d) {
+        this.f341881d = viewOnCreateContextMenuListenerC16169x37a19e8d;
+    }
+
+    @Override // l75.q0
+    /* renamed from: onNotifyChange */
+    public void mo735xb0dfc7d8(java.lang.String str, l75.w0 w0Var) {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1790x61f7ef4.ui.ViewOnCreateContextMenuListenerC16169x37a19e8d viewOnCreateContextMenuListenerC16169x37a19e8d;
+        com.p314xaae8f345.mm.sdk.p2603x2137b148.n3 n3Var;
+        if (com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.K0(str) || (n3Var = (viewOnCreateContextMenuListenerC16169x37a19e8d = this.f341881d).Q) == null) {
+            return;
+        }
+        n3Var.mo50303x856b99f0(com.p314xaae8f345.p3006xb8ff1437.api.C26186x39dabdc4.f50820x1cfb1f28);
+        viewOnCreateContextMenuListenerC16169x37a19e8d.Q.mo50307xb9e94560(com.p314xaae8f345.p3006xb8ff1437.api.C26186x39dabdc4.f50820x1cfb1f28, 400L);
+    }
+}

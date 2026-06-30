@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tyv" android:background="@color/a48" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/eni" />
+        <View android:layout_width="match_parent" android:layout_height="@dimen/aih" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/lqa" android:cacheColorHint="#00000000" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:overScrollMode="never" style="@style/js" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/imn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.MMImageView android:layout_width="@dimen/aii" android:layout_height="@dimen/aii" android:layout_marginTop="@dimen/ajw" android:src="@raw/bottom_sheet_loading_icon" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/a84" android:id="@id/uch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/p8y" android:layout_alignParentTop="true" android:alpha="0.3" />
+            </LinearLayout>
+            <TextView android:textColor="@color/adg" android:id="@id/t86" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ake" android:text="@string/p8z" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:alpha="0.55" style="" />
+            <View android:id="@id/aur" android:background="@drawable/j0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

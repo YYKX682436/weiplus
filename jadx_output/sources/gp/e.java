@@ -1,0 +1,57 @@
+package gp;
+
+/* loaded from: classes12.dex */
+public class e extends android.media.MediaRecorder {
+
+    /* renamed from: a, reason: collision with root package name */
+    public com.tencent.mm.vfs.r6 f274163a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public java.io.FileDescriptor f274164b;
+
+    @Override // android.media.MediaRecorder
+    public void prepare() {
+        java.io.FileDescriptor fileDescriptor = this.f274164b;
+        if (fileDescriptor != null) {
+            super.setOutputFile(fileDescriptor);
+            super.prepare();
+            return;
+        }
+        com.tencent.mm.vfs.r6 r6Var = this.f274163a;
+        if (r6Var == null) {
+            throw new java.io.IOException("No valid output file");
+        }
+        android.os.ParcelFileDescriptor z17 = com.tencent.mm.vfs.w6.z(r6Var.f213166d, r6Var.M(), "rw");
+        try {
+            super.setOutputFile(z17.getFileDescriptor());
+            super.prepare();
+            z17.close();
+        } catch (java.lang.Throwable th6) {
+            if (z17 != null) {
+                try {
+                    z17.close();
+                } catch (java.lang.Throwable th7) {
+                    th6.addSuppressed(th7);
+                }
+            }
+            throw th6;
+        }
+    }
+
+    @Override // android.media.MediaRecorder
+    public void setOutputFile(java.lang.String str) {
+        this.f274163a = str == null ? null : new com.tencent.mm.vfs.r6(com.tencent.mm.vfs.z7.a(str));
+        this.f274164b = null;
+    }
+
+    @Override // android.media.MediaRecorder
+    public void setOutputFile(java.io.File file) {
+        setOutputFile(file.getPath());
+    }
+
+    @Override // android.media.MediaRecorder
+    public void setOutputFile(java.io.FileDescriptor fileDescriptor) {
+        this.f274163a = null;
+        this.f274164b = fileDescriptor;
+    }
+}

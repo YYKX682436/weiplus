@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tyr" android:background="#8c000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/tys" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ef9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

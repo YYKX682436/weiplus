@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fqz" android:background="@color/w" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/fr6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/fr5" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_back" android:layout_centerVertical="true" app:fs="@color/an" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/fr4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eka" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fr1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_marginBottom="@dimen/db" android:layout_below="@id/fr6" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn">
+        <TextView android:textSize="16.0dp" android:textColor="@color/BW_100_Alpha_0_3" android:id="@id/fr3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:text="@string/ekb" android:layout_centerHorizontal="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/fr2" android:padding="@dimen/bl" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="-1.0dp" android:src="@raw/icons_outlined_help" android:layout_alignTop="@id/fr3" android:layout_toEndOf="@id/fr3" app:fs="@color/BW_100_Alpha_0_5" />
+        <TextView android:textSize="@dimen/db" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/fr0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/fr3" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/fqw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/fr1" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_3" android:id="@id/fqp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="224.0dp" android:text="@string/ek8" android:layout_below="@id/fr6" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/fqx" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="224.0dp" android:indeterminateDrawable="@drawable/avj" android:layout_below="@id/fr6" />
+    <include android:visibility="gone" layout="@layout/aue" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/db" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/t9y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pfz" android:fontFamily="sans-serif-medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+        <TextView android:textSize="17.0sp" android:textColor="@color/BW_0_Alpha_0_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="• " android:importantForAccessibility="no" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/t9w" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/pep" android:layout_weight="1.0" android:lineSpacingExtra="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn">
+        <TextView android:textSize="17.0sp" android:textColor="@color/BW_0_Alpha_0_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="• " android:importantForAccessibility="no" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/t9x" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/peq" android:layout_weight="1.0" android:lineSpacingExtra="4.0dp" />
+    </LinearLayout>
+</LinearLayout>

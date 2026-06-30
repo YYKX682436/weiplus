@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginBottom="@dimen/d7" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView android:id="@id/pxa" android:focusable="true" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:requiresFadingEdge="horizontal" android:layout_toStartOf="@id/d8n">
+        <LinearLayout android:orientation="horizontal" android:id="@id/pwl" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pzk" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_edit_photo_pencil" android:scaleType="centerCrop" app:fs="@color/ac5" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pvn" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_sticker" android:scaleType="centerCrop" android:layout_marginStart="@dimen/cs" app:fs="@color/ac5" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/q1s" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_text" android:scaleType="centerCrop" android:layout_marginStart="@dimen/cs" app:fs="@color/ac5" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pv0" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_photo_crop" android:scaleType="centerCrop" android:layout_marginStart="@dimen/cs" app:fs="@color/ac5" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pz0" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_edit_photo_mosaic" android:scaleType="centerCrop" android:layout_marginStart="@dimen/cs" app:fs="@color/ac5" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/sbz" android:visibility="gone" android:layout_width="@dimen/afn" android:layout_height="@dimen/afn" android:src="@raw/icons_filled_ai" android:scaleType="centerCrop" android:contentDescription="@string/pd9" android:layout_marginStart="@dimen/cs" app:fs="@color/ac5" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <Button android:id="@id/d8n" android:paddingLeft="@dimen/aii" android:paddingTop="@dimen/aih" android:paddingRight="@dimen/aii" android:paddingBottom="@dimen/aih" android:text="@string/bth" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/aii" android:paddingVertical="@dimen/aih" style="@style/ks" />
+</RelativeLayout>

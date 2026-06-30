@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/v6" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/db" android:src="@raw/info_circle_regular" app:fs="#e75e58" />
+    <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="17.0dp" android:textColor="@color/f5" android:gravity="center_horizontal" android:id="@id/odb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/mii" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ene" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj">
+        <CheckBox android:id="@id/enc" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="2.0dp" android:layout_centerVertical="true" style="@style/im" />
+        <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="@dimen/b3" android:textColor="@color/FG_0" android:id="@id/enf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_toRightOf="@id/enc" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/dn">
+        <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="17.0dp" android:id="@id/i05" android:layout_width="@dimen/c0" android:layout_height="wrap_content" android:text="@string/m93" style="@style/kz" />
+        <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="17.0dp" android:id="@id/m3m" android:layout_width="@dimen/c0" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/moa" style="@style/kr" />
+    </LinearLayout>
+</LinearLayout>

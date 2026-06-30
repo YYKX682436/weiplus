@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:padding="@dimen/f" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:textColorHint="@color/a0c" android:ellipsize="end" android:gravity="left|center" android:id="@id/inq" android:padding="@dimen/j3" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="[remark]" android:hint="@string/ccg" android:maxLines="2" android:drawableLeft="@raw/icons_outlined_pencil" android:drawableRight="@raw/fav_map_right_arrow" android:drawablePadding="@dimen/j3" />
+    <View android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/aaq" android:textColorHint="@color/a0c" android:ellipsize="end" android:gravity="left|center" android:id="@id/inv" android:padding="@dimen/j3" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="[tags]" android:hint="@string/ca8" android:maxLines="2" android:drawableLeft="@raw/fav_tags_icon" android:drawableRight="@raw/fav_map_right_arrow" android:drawablePadding="@dimen/j3" />
+</LinearLayout>

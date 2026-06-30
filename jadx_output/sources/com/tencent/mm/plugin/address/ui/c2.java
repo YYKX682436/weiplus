@@ -1,0 +1,14 @@
+package com.tencent.mm.plugin.address.ui;
+
+/* loaded from: classes15.dex */
+public final /* synthetic */ class c2 extends kotlin.jvm.internal.m implements yz5.q {
+    public c2(java.lang.Object obj) {
+        super(3, obj, com.tencent.mm.plugin.address.ui.WalletAddAddressUI.class, "doCgiCallback", "doCgiCallback(IILjava/lang/String;)V", 0);
+    }
+
+    @Override // yz5.q
+    public java.lang.Object invoke(java.lang.Object obj, java.lang.Object obj2, java.lang.Object obj3) {
+        com.tencent.mm.plugin.address.ui.WalletAddAddressUI.T6((com.tencent.mm.plugin.address.ui.WalletAddAddressUI) this.receiver, ((java.lang.Number) obj).intValue(), ((java.lang.Number) obj2).intValue(), (java.lang.String) obj3);
+        return jz5.f0.f302826a;
+    }
+}

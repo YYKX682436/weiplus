@@ -1,0 +1,40 @@
+package h61;
+
+/* loaded from: classes9.dex */
+public class m implements lm5.e {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ h61.n f360692a;
+
+    public m(h61.n nVar) {
+        this.f360692a = nVar;
+    }
+
+    @Override // lm5.e
+    public java.lang.String a() {
+        return "Vending.LOGIC";
+    }
+
+    @Override // gm5.a
+    /* renamed from: call */
+    public java.lang.Object mo1059x2e7a5e(java.lang.Object obj) {
+        nm5.f fVar = (nm5.f) obj;
+        h61.l lVar = this.f360692a.f360693a;
+        java.lang.String str = (java.lang.String) fVar.a(0);
+        long longValue = ((java.lang.Long) fVar.a(1)).longValue();
+        int intValue = ((java.lang.Integer) fVar.a(2)).intValue();
+        java.lang.String str2 = (java.lang.String) fVar.a(3);
+        java.lang.String str3 = (java.lang.String) fVar.a(4);
+        java.lang.String str4 = (java.lang.String) fVar.a(5);
+        if (lVar.f360691e) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.e("MicroMsg.AAPayLogic", "aaPay, isPaying!");
+            return null;
+        }
+        i61.j jVar = new i61.j(str, longValue, intValue, str2, str3, str4);
+        gm0.j1.i();
+        gm0.j1.n().f354821b.g(jVar);
+        lVar.f360690d = km5.u.c();
+        lVar.f360691e = true;
+        return null;
+    }
+}

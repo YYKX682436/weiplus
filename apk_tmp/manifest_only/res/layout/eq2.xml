@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/vf4" android:layout_width="146.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/vf3" android:layout_width="match_parent" android:layout_height="146.0dp" android:scaleType="centerCrop" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@raw/icons_filled_music_medium" android:layout_centerInParent="true" app:fs="@color/BW_100_Alpha_0_5" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/vf5" android:layout_width="match_parent" android:layout_height="146.0dp" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/vf6" android:background="@drawable/d79" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:layout_marginBottom="8.0dp" android:layout_alignLeft="@id/vf5" android:layout_alignBottom="@id/vf5" android:clipToOutline="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/vf_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="8.0dp" android:text="title" android:maxLines="2" android:textFontWeight="400" />
+        <View android:background="@color/kj" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="8.0dp" android:layout_marginRight="@dimen/dv" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/vf9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:text="desc" android:lines="1" android:layout_below="@id/vf_" android:textFontWeight="400" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/vf7" android:background="@drawable/d78" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aih" android:layout_marginTop="@dimen/aih" android:clipToOutline="true">
+            <TextView android:textSize="10.0dp" android:textColor="@color/aaz" android:layout_gravity="center" android:id="@id/vf8" android:paddingLeft="3.0pt" android:paddingRight="3.0pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="2.0dp" android:layout_marginBottom="1.0dp" android:text="点歌房" android:paddingHorizontal="3.0pt" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

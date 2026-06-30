@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c" android:paddingBottom="85.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:layout_gravity="center_vertical" android:background="@color/BW_0_Alpha_0_0_3" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginStart="@dimen/cn" app:ds="10.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:padding="@dimen/bj" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/outlined_arrow_down" app:fs="@color/FG_0" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+        <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/gz" android:textColor="@color/FG_0" android:layout_gravity="center" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ezo" />
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/j4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/eyz" android:layout_marginStart="@dimen/cz" />
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:id="@id/o4i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="@string/ezp" android:layout_marginStart="@dimen/cz" />
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/j4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:text="@string/eyy" android:layout_marginStart="@dimen/cz" />
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:id="@id/o5b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="@string/ezp" android:layout_marginStart="@dimen/cz" />
+</LinearLayout>

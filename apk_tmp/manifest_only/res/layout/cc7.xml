@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.gif.MMAnimateView android:gravity="center" android:layout_gravity="center" android:id="@id/h88" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.tencent.mm.ui.base.WxImageView android:id="@id/pr8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:tileBackgroundColor="@color/an" />
+    <com.tencent.mm.ui.base.MultiTouchImageView android:id="@id/jut" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:imageBackgroundColor="@color/an" />
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/cc_" />
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/o6t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/lc6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/w_" />
+    <com.tencent.mm.ui.widget.loading.MMProgressLoading android:id="@id/vm8" android:visibility="gone" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginRight="24.0dp" android:layout_centerInParent="true" app:loadMax="100" app:loadProgressColor="@color/a63" />
+    <Button android:textSize="@dimen/ja" android:textColor="@color/ab0" android:gravity="center" android:id="@id/vn3" android:background="@drawable/ah8" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:paddingBottom="0.5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/a2i" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/cz" android:minHeight="@dimen/a2i" android:text="@string/bm5" android:includeFontPadding="false" android:drawablePadding="@dimen/bl" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+package k0;
+
+/* loaded from: classes14.dex */
+public final class u0 extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ k0.y0 f302965d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public u0(k0.y0 y0Var) {
+        super(0);
+        this.f302965d = y0Var;
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        k0.y0 y0Var = this.f302965d;
+        y0Var.f();
+        y0Var.k();
+        return jz5.f0.f302826a;
+    }
+}

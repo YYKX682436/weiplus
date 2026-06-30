@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/a03" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/mxc" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cn" style="@style/gw" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/mx_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/df" android:layout_marginRight="@dimen/dr">
+            <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/my0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/mya" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/my0" />
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="right|center" android:id="@id/mxz" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginRight="@dimen/cn" android:src="@raw/finder_live_move_icon" app:fs="@color/pi" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:layout_gravity="right|center" android:id="@id/mxs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:layout_gravity="right|center" android:id="@id/rb3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" />
+        <View android:layout_gravity="bottom" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/df" />
+    </FrameLayout>
+</FrameLayout>

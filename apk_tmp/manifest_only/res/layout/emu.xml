@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/pqu" android:background="@color/aaq" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b30" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="上报10条数据" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b31" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="上报100条数据" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b32" android:background="@color/a5t" android:text="上报1000条数据" android:layout_weight="1.0" style="@style/kn" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/pqv" android:background="@color/aaq" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <Switch android:id="@id/vbd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="聚合" />
+    </LinearLayout>
+</LinearLayout>

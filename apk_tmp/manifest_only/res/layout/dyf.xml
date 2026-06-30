@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+                <Button android:id="@id/smb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ods" />
+                <ProgressBar android:id="@id/upg" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginStart="12.0dp" />
+            </LinearLayout>
+            <TextView android:id="@id/vin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/odz" />
+            <TextView android:textStyle="italic" android:id="@id/vim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="center" android:background="@color/k4" android:layout_width="200.0dp" android:layout_height="1.0dp" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" android:layout_marginVertical="24.0dp" />
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+                <Button android:id="@id/smx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ody" />
+                <ProgressBar android:id="@id/uph" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginStart="12.0dp" />
+            </LinearLayout>
+            <TextView android:id="@id/vj6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/oe0" />
+            <TextView android:textStyle="italic" android:id="@id/vj5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="center" android:background="@color/k4" android:layout_width="200.0dp" android:layout_height="1.0dp" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" android:layout_marginVertical="24.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

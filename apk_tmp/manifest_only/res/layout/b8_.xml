@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/g1p" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/m52" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_ringtone" app:fs="@color/a9e" />
+            <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_8" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/kmi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:lines="1" android:layout_marginStart="@dimen/bl" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/m59" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/mnk" android:background="@color/BW_100_Alpha_0_8" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bn" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9" android:layout_marginStart="@dimen/d7">
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/UN_BW_0_Alpha_0_9" android:id="@id/mnl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f4x" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+</LinearLayout>

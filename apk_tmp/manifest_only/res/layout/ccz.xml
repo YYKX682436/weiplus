@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ok"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView style="@style/ol" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ccy" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/lp8" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/lw" android:scaleType="centerInside" android:adjustViewBounds="true" android:contentDescription="@string/hta" style="@style/gs" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/imb" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" style="@style/w9" />
+        </FrameLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="1.0px" style="@style/on" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/lbj" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleHorizontal" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+package org.chromium.base.metrics;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: classes16.dex */
+public class StatisticsRecorderAndroidJni implements org.chromium.base.metrics.StatisticsRecorderAndroid.Natives {
+    public static final c56.a TEST_HOOKS = new c56.a() { // from class: org.chromium.base.metrics.StatisticsRecorderAndroidJni.1
+        public void setInstanceForTesting(org.chromium.base.metrics.StatisticsRecorderAndroid.Natives natives) {
+            if (org.jni_zero.GEN_JNI.TESTING_ENABLED) {
+                org.chromium.base.metrics.StatisticsRecorderAndroidJni.testInstance = natives;
+                return;
+            }
+            throw new java.lang.RuntimeException("Tried to set a JNI mock when mocks aren't enabled!");
+        }
+    };
+    private static org.chromium.base.metrics.StatisticsRecorderAndroid.Natives testInstance;
+
+    public static org.chromium.base.metrics.StatisticsRecorderAndroid.Natives get() {
+        if (org.jni_zero.GEN_JNI.TESTING_ENABLED) {
+            org.chromium.base.metrics.StatisticsRecorderAndroid.Natives natives = testInstance;
+            if (natives != null) {
+                return natives;
+            }
+            if (org.jni_zero.GEN_JNI.REQUIRE_MOCK) {
+                throw new java.lang.UnsupportedOperationException("No mock found for the native implementation of StatisticsRecorderAndroid.Natives. The current configuration requires implementations be mocked.");
+            }
+        }
+        return new org.chromium.base.metrics.StatisticsRecorderAndroidJni();
+    }
+
+    @Override // org.chromium.base.metrics.StatisticsRecorderAndroid.Natives
+    public java.lang.String toJson(int i17) {
+        return org.jni_zero.GEN_JNI.org_chromium_base_metrics_StatisticsRecorderAndroid_toJson(i17);
+    }
+}

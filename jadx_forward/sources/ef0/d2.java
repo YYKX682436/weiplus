@@ -1,0 +1,35 @@
+package ef0;
+
+/* loaded from: classes2.dex */
+public final class d2 implements com.p314xaae8f345.mm.ui.p2747xd1075a44.p2767x103fe905.g {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ qk.aa f333724a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ android.app.Activity f333725b;
+
+    public d2(qk.aa aaVar, android.app.Activity activity) {
+        this.f333724a = aaVar;
+        this.f333725b = activity;
+    }
+
+    @Override // com.p314xaae8f345.mm.ui.p2747xd1075a44.p2767x103fe905.g
+    public final void a() {
+        qk.aa aaVar = this.f333724a;
+        android.view.View.OnClickListener onClickListener = aaVar.f445549e;
+        if (onClickListener != null) {
+            onClickListener.onClick(null);
+        }
+        il4.e eVar = new il4.e(null, 0, aaVar.f445546b.f109266q, false, null, null, 0, 0, false, false, null, null, null, null, null, null, false, false, null, null, false, null, false, null, false, 33554427, null);
+        bw5.o50 o50Var = new bw5.o50();
+        o50Var.i("1010");
+        qk.f9 aj6 = ((rk4.z8) ((qk.g9) i95.n0.c(qk.g9.class))).aj();
+        android.app.Activity activity = this.f333725b;
+        bw5.ar0 i17 = bw5.ar0.i(aaVar.f445546b.f109266q);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.f(i17, "forNumber(...)");
+        qk.f9.c(aj6, activity, o50Var, i17, eVar, null, 16, null);
+        qk.a8 a8Var = (qk.a8) i95.n0.c(qk.a8.class);
+        ((ef0.q1) a8Var).Ai(this.f333725b, bw5.ar0.TingScene_FinderListenLaterSnakeBarJump);
+    }
+}

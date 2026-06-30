@@ -1,0 +1,24 @@
+package nx0;
+
+/* loaded from: classes5.dex */
+public final class d3 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.p878xeadc09da.p879xb4097826.p905xabf495af.p906x4f35b23f.C10983xbff22f6e f422628d;
+
+    public d3(com.p314xaae8f345.mm.p878xeadc09da.p879xb4097826.p905xabf495af.p906x4f35b23f.C10983xbff22f6e c10983xbff22f6e) {
+        this.f422628d = c10983xbff22f6e;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/mj_publisher/finder/shoot_composing/beautify/MakeupView$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        int i17 = com.p314xaae8f345.mm.p878xeadc09da.p879xb4097826.p905xabf495af.p906x4f35b23f.C10983xbff22f6e.f151140m;
+        this.f422628d.a();
+        yj0.a.h(this, "com/tencent/mm/mj_publisher/finder/shoot_composing/beautify/MakeupView$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="right|bottom" android:id="@id/vl6" android:focusable="true" android:clipChildren="false" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:contentDescription="@string/n6g">
+        <View android:layout_gravity="center" android:id="@id/vl7" android:background="@drawable/d__" android:visibility="gone" android:layout_width="@dimen/ajr" android:layout_height="@dimen/ajr" />
+        <View android:id="@id/vl4" android:background="@drawable/d_9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bl" />
+        <FrameLayout android:layout_gravity="right|bottom" android:id="@id/vl1" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/vl2" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_margin="@dimen/bn" android:src="@raw/mike_on_heavy" android:scaleType="fitCenter" android:layout_centerVertical="true" app:fs="@color/adg" />
+        </FrameLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/vl5" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_margin="@dimen/bn" android:src="@raw/mike_on_filled" android:scaleType="fitCenter" android:layout_centerVertical="true" app:fs="@color/aby" />
+    </FrameLayout>
+</FrameLayout>

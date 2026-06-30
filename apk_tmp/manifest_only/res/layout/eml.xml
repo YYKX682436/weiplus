@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.MMEditText android:id="@id/keyboard_edit_text" android:layout_width="match_parent" android:layout_height="@dimen/dd" android:layout_marginTop="@dimen/bo" android:hint="这是一个文本输入框" style="@style/jz" />
+    <com.tencent.mm.ui.widget.MMTextView android:textColor="@color/a84" android:id="@id/keyboard_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:layout_below="@id/keyboard_edit_text" android:layout_alignLeft="@id/keyboard_edit_text" />
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/keyboard_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dn" android:text="按钮" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/xk" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/abd" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/f0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gj">
+        <include android:visibility="gone" layout="@layout/e4z" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/lp3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/dvl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ev" android:layout_alignParentEnd="true">
+                        <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/dvj" style="@style/gh" />
+                        <ImageView android:layout_gravity="center" android:id="@id/ei5" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@null" />
+                        <ImageView android:layout_gravity="center" android:id="@id/dvq" android:background="@null" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/shortvideo_play_btn" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/dvl" android:layout_alignParentStart="true">
+                        <TextView android:id="@id/dvr" android:visibility="gone" android:text="{title}" android:maxLines="2" style="@style/go" />
+                        <TextView android:ellipsize="end" android:id="@id/dvk" android:text="{desc}" android:maxLines="2" style="@style/go" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/p5l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:src="@raw/app_attach_file_icon_sound" style="@style/gh" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/dx8" android:layout_marginLeft="@dimen/ev" android:text="{title}" style="@style/go" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/bs6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:src="@raw/voice_default_light" style="@style/gh" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/dtp" android:layout_marginLeft="@dimen/ev" android:text="{title}" style="@style/go" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/c8d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/dtv" style="@style/gh" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ev">
+                        <TextView android:id="@id/dtn" android:text="{title}" style="@style/go" />
+                        <TextView android:id="@id/dtm" android:layout_marginTop="@dimen/f4" android:text="{desc}" style="@style/gl" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <include layout="@layout/abg" />
+            <include layout="@layout/abf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

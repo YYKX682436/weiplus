@@ -1,0 +1,11 @@
+package o63;
+
+/* loaded from: classes15.dex */
+public final class h {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final java.util.Map f424733a = kz5.c1.k(new jz5.l("com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.FinderHomeUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.fragment.FinderFollowTabFragment", new o63.f(false, false, 3, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.fragment.FinderFriendTabFragment", new o63.f(false, false, 3, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.fragment.FinderMachineTabFragment", new o63.f(false, false, 3, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.fragment.FinderLbsSameCityTabFragment", new o63.f(false, false, 3, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.fragment.FinderNativeDramaTabFragment", new o63.f(false, false, 3, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.FinderShareFeedAffinityUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.FinderShareFeedRelUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.FinderProfileTimeLineUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.FinderNewStyleTimelineUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.ui.FinderConversationUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.BizProfileTimelineUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.FinderPoiTimelineUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.FinderProfileLongFeedTimelineUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.FinderProfileUI", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.OccupyFinderUI25", new o63.f(true, false, 2, null)), new jz5.l("com.tencent.mm.plugin.finder.feed.ui.FinderLongFeedDetailUI", new o63.f(true, false, 2, null)));
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final java.util.Set f424734b = kz5.o1.c("com.tencent.mm.pluginsdk.permission.RequestFloatWindowPermissionDialog");
+}

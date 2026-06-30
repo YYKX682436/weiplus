@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/qqi" android:background="@drawable/dbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-9.0dp" android:layout_marginStart="@dimen/yd" android:elevation="1.0dp" />
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/o_6" android:background="@drawable/dbk" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/cx">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/v90" android:layout_width="@dimen/aij" android:layout_height="@dimen/aij" android:src="@raw/icon_spring_2024_firecracker_outlined" app:fs="@color/af9" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/af9" android:layout_gravity="center_vertical" android:id="@id/kpx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oka" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/o_p" android:background="@drawable/dbl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dp" android:rotation="180.0" android:elevation="1.0dp" />
+</LinearLayout>

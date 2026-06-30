@@ -1,0 +1,23 @@
+package u41;
+
+/* loaded from: classes4.dex */
+public class d extends l75.n0 {
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final java.lang.String[] f424624e = {l75.n0.getCreateSQLs(u41.c.f424623x, "OpenIMAppIdInfo")};
+
+    /* renamed from: d, reason: collision with root package name */
+    public final l75.k0 f424625d;
+
+    public d(l75.k0 k0Var) {
+        super(k0Var, u41.c.f424623x, "OpenIMAppIdInfo", null);
+        this.f424625d = k0Var;
+    }
+
+    @Override // l75.n0
+    /* renamed from: y0, reason: merged with bridge method [inline-methods] */
+    public boolean replace(u41.c cVar) {
+        cVar.field_updateTime = com.tencent.mm.sdk.platformtools.t8.i1();
+        return super.replace(cVar);
+    }
+}

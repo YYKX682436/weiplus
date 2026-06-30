@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="17.0dp" android:paddingTop="13.0dp" android:paddingRight="13.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/owq" android:background="@drawable/bhn" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="2.0dp" />
+        <View android:layout_width="15.0dp" style="@style/l3" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="end" android:id="@id/owr" android:layout_weight="1.0" style="@style/iy" />
+            <TextView android:id="@id/ows" android:visibility="gone" style="@style/iz" />
+            <TextView android:id="@id/owu" android:visibility="gone" style="@style/iz" />
+            <TextView android:id="@id/owt" android:visibility="gone" style="@style/iz" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_height="10.0dp" style="@style/l3" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sr2" android:background="@drawable/czf" android:paddingLeft="@dimen/bk" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bk" android:paddingBottom="@dimen/bj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:paddingVertical="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/sr3" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@raw/icons_outlined_subscriptions" android:scaleType="centerCrop" app:fs="@color/Link_100" />
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="12.0dp" android:textColor="@color/Link_100" android:id="@id/sr4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="@string/g05" />
+</LinearLayout>

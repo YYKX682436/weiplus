@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritAnounceView android:id="@id/vk" android:layout_width="200.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritAnounceView android:id="@id/vh" android:layout_width="200.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritAnounceView android:id="@id/vi" android:layout_width="200.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritAnounceView android:id="@id/vj" android:layout_width="200.0dp" android:layout_height="32.0dp" android:layout_marginBottom="@dimen/cn" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritDoingView android:id="@id/nyl" android:layout_width="200.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritDoingView android:id="@id/nym" android:layout_width="200.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritDoingView android:id="@id/nyn" android:layout_width="200.0dp" android:layout_height="32.0dp" android:layout_marginBottom="@dimen/cn" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritDoneView android:id="@id/nyo" android:layout_width="200.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritDoneView android:id="@id/nyp" android:layout_width="200.0dp" android:layout_height="32.0dp" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritDoneView android:id="@id/nyq" android:layout_width="200.0dp" android:layout_height="32.0dp" android:layout_marginBottom="@dimen/cn" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritBuffView android:id="@id/nyu" android:layout_width="200.0dp" android:layout_height="wrap_content" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritBuffView android:id="@id/nyv" android:layout_width="200.0dp" android:layout_height="wrap_content" />
+    <com.tencent.mm.plugin.finder.view.crit.LivePkCritBuffView android:id="@id/nyw" android:layout_width="200.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.plugin.finder.view.crit.LiveCritBuffAnimView android:id="@id/b1s" android:layout_width="200.0dp" android:layout_height="match_parent" android:layout_above="@id/b1r" />
+        <Button android:id="@id/b1r" android:layout_width="100.0dp" android:layout_height="50.0dp" android:text="点我出buff" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+package uk2;
+
+/* loaded from: classes3.dex */
+public final class a implements in5.c {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final java.lang.String f428518d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final java.lang.String f428519e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final r45.ka4 f428520f;
+
+    public a(java.lang.String coverUrl, java.lang.String playUrl, r45.ka4 ka4Var) {
+        kotlin.jvm.internal.o.g(coverUrl, "coverUrl");
+        kotlin.jvm.internal.o.g(playUrl, "playUrl");
+        this.f428518d = coverUrl;
+        this.f428519e = playUrl;
+        this.f428520f = ka4Var;
+    }
+
+    @Override // in5.c
+    public long getItemId() {
+        return hashCode();
+    }
+
+    @Override // in5.c
+    public int h() {
+        return 0;
+    }
+}

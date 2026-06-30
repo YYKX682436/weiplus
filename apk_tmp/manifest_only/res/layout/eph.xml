@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/cs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.sns.ui.SnsLivePlayButton android:id="@id/skj" android:background="@drawable/d5_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ajr" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/skg" android:background="@drawable/d6d" android:padding="@dimen/aih" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/aij" android:layout_height="@dimen/aij" android:src="@raw/icons_filled_image_recognize_logo" app:fs="@color/an" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/vq1" android:background="@drawable/d9d" android:paddingTop="@dimen/aih" android:paddingBottom="@dimen/aih" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay" android:paddingStart="@dimen/yd" android:paddingEnd="@dimen/yd" android:layout_alignParentEnd="true" />
+</RelativeLayout>

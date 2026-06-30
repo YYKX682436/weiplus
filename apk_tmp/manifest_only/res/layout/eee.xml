@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/eqd" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ntl" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/eqc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eqe" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_marginBottom="@dimen/bl" app:fs="@color/aby" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/aby" android:id="@id/eqf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@id/lqe" android:visibility="gone" android:layout_alignRight="@id/eqc" android:layout_alignParentTop="true" style="@style/ry" />
+        <TextView android:id="@id/dsf" android:visibility="gone" android:layout_alignRight="@id/eqc" android:layout_alignParentTop="true" style="@style/ry" />
+    </RelativeLayout>
+</FrameLayout>

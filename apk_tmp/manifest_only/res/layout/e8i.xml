@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u6s" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:src="@raw/icons_outlined_search" android:layout_marginStart="@dimen/cz" android:layout_marginVertical="@dimen/cn" app:fs="@color/FG_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/abw" android:ellipsize="end" android:id="@id/vhk" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/bl" android:layout_marginEnd="@dimen/cn" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/u6s" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" />
+    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/dh" app:layout_constraintBottom_toBottomOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

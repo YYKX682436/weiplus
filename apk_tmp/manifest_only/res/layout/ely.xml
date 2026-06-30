@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/uw6" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/uw0" android:background="@drawable/d80" android:visibility="gone" android:layout_width="@dimen/apr" android:layout_height="@dimen/apr" android:layout_alignTop="@id/uw4" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/uw4" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/cc" android:layout_alignParentBottom="true">
+            <View android:layout_gravity="center_horizontal" android:id="@id/uw3" android:background="@drawable/d7y" android:visibility="gone" android:layout_width="@dimen/aps" android:layout_height="@dimen/aps" android:layout_marginTop="@dimen/dk" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/uw2" android:background="@drawable/d7x" android:clipChildren="true" android:clipToPadding="true" android:layout_width="@dimen/apq" android:layout_height="@dimen/apq" android:layout_marginTop="@dimen/dj" android:outlineProvider="background" android:clipToOutline="true">
+                <ImageView android:layout_gravity="center" android:id="@id/uw5" android:background="@drawable/cyk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <View android:layout_gravity="center_horizontal" android:id="@id/uvz" android:background="@drawable/d7z" android:visibility="gone" android:layout_width="@dimen/apq" android:layout_height="@dimen/apq" android:layout_marginTop="@dimen/dj" />
+            <FrameLayout android:layout_gravity="center|bottom" android:id="@id/uw1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cq">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/vl3" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/mike_on_heavy" android:scaleType="fitCenter" app:fs="@color/adg" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/vl8" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/mike_on_filled" android:scaleType="fitCenter" app:fs="@color/aby" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/jd" android:textColor="@color/alx" android:id="@id/uvy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dk" android:text="@string/nkt" android:layout_above="@id/uw4" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/jd" android:textColor="@color/alx" android:id="@id/uvx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dk" android:text="@string/nkr" android:layout_above="@id/uw4" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

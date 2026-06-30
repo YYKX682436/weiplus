@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/el" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="?m"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_up_indicator" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/actionbar_up_indicator_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b5" android:contentDescription="@string/cd" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/h1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.AlbumChooserView android:textSize="@dimen/r" android:textColor="@color/bx" android:gravity="center_vertical" android:id="@id/gg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/oct" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@id/ocr" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginEnd="@dimen/dv" />
+            <TextView android:textSize="@dimen/r" android:textColor="@color/bx" android:ellipsize="end" android:gravity="center_vertical" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="@dimen/c9" />
+            <android.widget.ProgressBar android:id="@id/lbl" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginStart="@dimen/dv" style="@style/w9" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@android:id/text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/id" />
+    </LinearLayout>
+</LinearLayout>

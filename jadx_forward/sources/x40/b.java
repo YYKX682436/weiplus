@@ -1,0 +1,83 @@
+package x40;
+
+/* loaded from: classes9.dex */
+public final class b extends qz5.l implements yz5.p {
+
+    /* renamed from: d, reason: collision with root package name */
+    public java.lang.Object f533267d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public int f533268e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ x40.h f533269f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ java.util.Map f533270g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final /* synthetic */ android.content.Context f533271h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public final /* synthetic */ byte[] f533272i;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(x40.h hVar, java.util.Map map, android.content.Context context, byte[] bArr, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        super(2, interfaceC29045xdcb5ca57);
+        this.f533269f = hVar;
+        this.f533270g = map;
+        this.f533271h = context;
+        this.f533272i = bArr;
+    }
+
+    @Override // qz5.a
+    /* renamed from: create */
+    public final p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 mo148xaf65a0fc(java.lang.Object obj, p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57 interfaceC29045xdcb5ca57) {
+        return new x40.b(this.f533269f, this.f533270g, this.f533271h, this.f533272i, interfaceC29045xdcb5ca57);
+    }
+
+    @Override // yz5.p
+    /* renamed from: invoke */
+    public java.lang.Object mo149xb9724478(java.lang.Object obj, java.lang.Object obj2) {
+        return ((x40.b) mo148xaf65a0fc((p3325xe03a0797.p3326xc267989b.y0) obj, (p3321xbce91901.p3322xc267989b.InterfaceC29045xdcb5ca57) obj2)).mo150x989b7ca4(jz5.f0.f384359a);
+    }
+
+    @Override // qz5.a
+    /* renamed from: invokeSuspend */
+    public final java.lang.Object mo150x989b7ca4(java.lang.Object obj) {
+        x40.h hVar;
+        pz5.a aVar = pz5.a.f440719d;
+        int i17 = this.f533268e;
+        if (i17 == 0) {
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+            java.util.Map map = this.f533270g;
+            byte[] bArr = this.f533272i;
+            if (bArr != null) {
+                map.put("categoryItem", bArr);
+            }
+            hVar = this.f533269f;
+            this.f533267d = hVar;
+            this.f533268e = 1;
+            obj = x40.h.a(hVar, "audio_author_category", map, this);
+            if (obj == aVar) {
+                return aVar;
+            }
+        } else {
+            if (i17 != 1) {
+                if (i17 != 2) {
+                    throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+                return jz5.f0.f384359a;
+            }
+            hVar = (x40.h) this.f533267d;
+            p3321xbce91901.C29044xefd6a286.m143926x4e770e65(obj);
+        }
+        this.f533267d = null;
+        this.f533268e = 2;
+        if (x40.h.b(hVar, (pi0.l1) obj, this.f533271h, this) == aVar) {
+            return aVar;
+        }
+        return jz5.f0.f384359a;
+    }
+}

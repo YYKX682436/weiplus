@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:form="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/a08" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="false">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/hf" android:paddingTop="@dimen/ie" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/ud0" android:layout_width="@dimen/hm" android:layout_height="@dimen/hm" android:src="@drawable/d5s" />
+            <TextView android:textSize="@dimen/h3" android:textColor="@color/fa" android:gravity="center" android:id="@id/ud2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:text="@string/paq" />
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dn" android:layout_marginBottom="@dimen/d7">
+            <Button android:id="@id/ud1" android:text="@string/pap" style="@style/yt" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

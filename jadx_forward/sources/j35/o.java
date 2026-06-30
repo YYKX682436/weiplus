@@ -1,0 +1,18 @@
+package j35;
+
+/* loaded from: classes13.dex */
+public class o implements j35.b0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ android.app.Activity f379050a;
+
+    public o(android.app.Activity activity) {
+        this.f379050a = activity;
+    }
+
+    @Override // j35.b0
+    /* renamed from: onRequestPermissionsResult */
+    public void mo2413x953457f1(int i17, java.lang.String[] strArr, int[] iArr) {
+        this.f379050a.onRequestPermissionsResult(i17, strArr, iArr);
+    }
+}

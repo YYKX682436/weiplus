@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/m82" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="bottom" android:id="@id/agc" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@drawable/au2" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/ocp" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="match_parent" android:layout_height="@dimen/dn">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/aa1" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/actionbar_icon_dark_back" app:fs="@color/BW_0_Alpha_0_9" />
+                <TextView android:textSize="@dimen/r" android:textColor="@color/f5" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ivx" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/f5" android:gravity="center" android:id="@id/cu2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_below="@id/ocp" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

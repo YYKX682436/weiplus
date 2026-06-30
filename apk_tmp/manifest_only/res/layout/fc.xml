@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dj">
+        <LinearLayout android:orientation="vertical" android:id="@id/xs" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/xp" android:layout_width="68.0dp" android:layout_height="68.0dp" android:layout_marginTop="50.0dp" android:layout_marginBottom="35.0dp" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:id="@id/xo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginRight="@dimen/hf" />
+            <View android:id="@id/xt" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/hx" android:layout_marginRight="@dimen/hf" android:layout_marginBottom="@dimen/hf" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/xu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginRight="@dimen/hf" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/a0c" android:id="@id/xl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/bf" android:layout_marginRight="@dimen/hf" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/hj" android:layout_marginRight="@dimen/hf">
+                <CheckBox android:textSize="@dimen/j4" android:id="@id/xm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/u5" style="@style/l4" />
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/vo" android:id="@id/a0_" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button android:id="@id/xn" android:layout_marginLeft="@dimen/hf" android:layout_marginRight="@dimen/hf" android:layout_below="@id/xl" style="@style/kq" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/xk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/vo" android:id="@id/xv" android:padding="@dimen/i_" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/xx" android:background="@color/vo" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/ib" android:layout_marginBottom="@dimen/ib" />
+        <TextView android:textColor="@color/vo" android:id="@id/xw" android:padding="@dimen/i_" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fnj" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/fne" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/FG_0" android:id="@id/fnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15dp" android:alpha="0.5" />
+            <View android:id="@id/fnf" android:background="@drawable/akb" android:visibility="invisible" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:layout_toEndOf="@id/fnd" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fnh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cz" android:layout_toEndOf="@id/fne">
+            <TextView android:textColor="@color/FG_0" android:id="@id/fng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15dp" android:alpha="0.5" />
+            <View android:id="@id/fni" android:background="@drawable/akb" android:visibility="invisible" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:layout_toEndOf="@id/fng" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/fnc" android:background="@color/FG_0" android:layout_width="1.0dp" android:layout_height="2.0dp" android:layout_marginTop="@dimen/dv" android:layout_below="@id/fnj" android:layout_alignStart="@id/fnj" />
+</RelativeLayout>

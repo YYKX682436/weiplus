@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/cn" android:layout_marginBottom="@dimen/d7">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" app:bh="8.0dp" app:bi="2.0dp">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/f3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="本机信息" />
+                    <TextView android:textColor="@color/f3" android:id="@id/t3m" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" app:bh="8.0dp" app:bi="2.0dp">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/f3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="视频基本信息" />
+                    <TextView android:textColor="@color/f3" android:id="@id/vmd" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" app:bh="8.0dp" app:bi="2.0dp">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/f3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="本地下载信息" />
+                    <androidx.core.widget.NestedScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/c9" android:fillViewport="true">
+                        <TextView android:textColor="@color/f3" android:id="@id/uci" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

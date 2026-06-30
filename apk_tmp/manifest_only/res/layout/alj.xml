@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.recyclerview.dragselect.GestureFoursquareRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.MMImageView android:id="@id/chd" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/saf" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <View android:id="@id/l3o" android:background="@drawable/ah9" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/mkj" android:background="#7f000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/aby" android:id="@id/mzv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ais" android:layout_marginTop="2.0dp" android:layout_marginRight="@dimen/ais" android:layout_marginBottom="@dimen/ais" android:text="256 KB" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/ais" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/aby" android:ellipsize="end" android:gravity="start|bottom" android:id="@id/cut" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ais" android:layout_marginRight="@dimen/ais" android:text="00:00" android:maxLines="2" android:layout_above="@id/mzv" android:layout_below="@id/oru" android:layout_alignParentStart="true" android:layout_marginHorizontal="@dimen/ais" />
+    <TextView android:textSize="@dimen/ja" android:textColor="@color/aby" android:id="@id/oru" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ais" android:text="文件" />
+    <CheckBox android:id="@id/mie" android:focusable="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" android:layout_marginTop="@dimen/dv" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/dv" android:layout_alignParentEnd="true" style="@style/io" />
+</com.tencent.mm.view.recyclerview.dragselect.GestureFoursquareRelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/avb" android:layout_width="wrap_content" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="right" android:layout_gravity="right" android:id="@id/av6" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="right" android:id="@id/av5" android:background="@drawable/v6" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintRight_toRightOf="0" />
+        <FrameLayout android:layout_gravity="right" android:id="@id/avd" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintRight_toRightOf="0" />
+        <FrameLayout android:id="@id/gxy" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/db" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/av5">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/gy1" android:background="@drawable/a0p" android:clipChildren="false" android:layout_width="@dimen/db" android:layout_height="@dimen/bl" android:layout_marginTop="@dimen/cn">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/gxz" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_arrow" android:alpha="0.0" android:rotation="90.0" app:fs="@color/FG_2" />
+            </FrameLayout>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/av3" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/b5t" android:background="@color/b" android:layout_width="match_parent" android:layout_height="@dimen/dv" />
+        <TextView android:textSize="@dimen/pl" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/b5u" android:background="@drawable/bcc" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:text="@string/apj" />
+    </LinearLayout>
+</LinearLayout>

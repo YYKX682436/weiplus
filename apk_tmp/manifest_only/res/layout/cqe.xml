@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/n5v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/n5w" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/n60" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/n5y" android:layout_width="@dimen/a_z" android:layout_height="@dimen/a_z" android:layout_marginRight="@dimen/a_y" android:scaleType="fitCenter" />
+        <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatTextView android:textSize="@dimen/aa0" android:gravity="center_vertical" android:id="@id/n5z" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" />
+    </LinearLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

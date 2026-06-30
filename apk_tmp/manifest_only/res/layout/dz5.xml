@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/b" android:paddingTop="@dimen/cq" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a9m" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" />
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/abw" android:id="@id/k3f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/co" android:textColor="@color/abw" android:id="@id/obc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d1" android:text="@string/ogu" />
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_1" android:id="@id/cu2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/cz" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/upy" android:background="@drawable/cxl" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/co" android:textColor="@color/abw" android:id="@id/upx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/a84" android:id="@id/uq0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/ogv" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/umd" android:background="@drawable/cxl" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9">
+        <TextView android:textSize="@dimen/co" android:textColor="@color/abw" android:id="@id/ume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ivr" />
+    </LinearLayout>
+</LinearLayout>

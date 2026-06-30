@@ -1,0 +1,31 @@
+package so2;
+
+/* loaded from: classes2.dex */
+public final class q4 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final so2.q4 f410551a = new so2.q4();
+
+    public final boolean a(r45.pb4 pb4Var) {
+        kotlin.jvm.internal.o.g(pb4Var, "<this>");
+        if (pb4Var.getInteger(1) > 0) {
+            zl2.q4 q4Var = zl2.q4.f473933a;
+            long j17 = pb4Var.getLong(0);
+            java.util.Calendar calendar = java.util.Calendar.getInstance();
+            calendar.setTimeInMillis(j17);
+            int i17 = calendar.get(1);
+            int i18 = calendar.get(2);
+            int i19 = calendar.get(5);
+            java.util.Calendar calendar2 = java.util.Calendar.getInstance();
+            int i27 = calendar2.get(1);
+            int i28 = calendar2.get(2);
+            if (i17 < i27 || (i17 == i27 && i18 < i28) || (i17 == i27 && i18 == i28 && i19 < calendar2.get(5))) {
+                pb4Var.set(1, 0);
+                pb4Var.set(2, 0L);
+                pb4Var.set(0, 0L);
+                return true;
+            }
+        }
+        return false;
+    }
+}

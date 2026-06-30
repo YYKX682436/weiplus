@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fnw" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/enp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dv" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/jk4" app:layout_constraintTop_toTopOf="0">
+        <include layout="@layout/alk" />
+    </RelativeLayout>
+    <Space android:id="@id/jk4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dp" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    <include android:id="@id/f6d" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/enp" layout="@layout/dal" />
+    <include android:id="@id/exy" android:visibility="gone" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" app:layout_constraintLeft_toRightOf="@id/f6d" app:layout_constraintTop_toBottomOf="@id/enp" layout="@layout/aqz" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/h93" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.gallery.picker.view.WxMediaCropLayout android:id="@id/h8y" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/h92" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:scaleType="matrix" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/h91" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bo">
+        <Button android:textSize="@dimen/k" android:textStyle="bold" android:textColor="@color/bw" android:id="@id/h8w" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apj" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="20.0dp" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center" android:layout_gravity="center" android:id="@id/h90" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@raw/icons_filled_undo" android:layout_weight="1.0" app:fs="@color/an" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/h8z" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@raw/icons_filled_rotate" android:layout_weight="1.0" app:fs="@color/an" />
+        <Button android:textStyle="bold" android:id="@id/h8x" android:layout_width="wrap_content" android:layout_height="32.0dp" android:text="@string/apu" android:layout_marginStart="20.0dp" android:layout_marginEnd="@dimen/uq" style="@style/ks" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="是否开启预载" android:key="pref_key_enable_preload" android:defaultValue="true" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="打开小程序时 强制使用体验版打开" android:key="pref_key_force_open_wxa_app_for_typed_demo" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="打开小程序时 强制使用开发版打开" android:key="pref_key_force_open_wxa_app_for_dev_demo" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="打开体验版小程序时 如果是[热启动]则不阻塞校验体验权限" android:key="pref_key_close_demo_info_for_wxa_app_warm_launch" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="打开体验版小程序时 如果是[冷启动]则不阻塞校验体验权限" android:key="pref_key_close_demo_info_for_wxa_app_cold_launch" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="打开小程序时 强制打开调试" android:key="pref_key_force_open_wxa_app_debug" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="优先使用内置的develop基础库" android:key="pref_key_prefer_packed_develop_lib" android:defaultValue="true" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="enable single task dispatch strategy" android:key="pref_key_enable_single_task_dispatch" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="仿原生小程序循环跳转时支持保留堆栈" android:key="pref_key_enable_save_stack_when_loop_jump" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="enable three process dispatch strategy" android:key="pref_key_enable_three_proc_tasks_dispatch" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="enable legacy process dispatch strategy" android:key="pref_key_enable_legacy_tasks_dispatch" android:defaultValue="true" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="主进程运行小程序 (ALL IN)" android:key="pref_key_appbrand_runtime_run_in_mm_process" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="主进程运行小程序 (部分场景未存在appbrand进程时兜底为主进程运行)" android:key="pref_key_appbrand_runtime_fallback_to_run_in_mm_process_if_no_appbrand_process" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="开启xweb多进程模型" android:key="pref_key_enable_xweb_multi_process" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="独立Render(默认)以及GPU" android:key="pref_key_enable_xweb_multi_process_render_gpu" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="block splash" android:key="pref_key_block_splash" android:defaultValue="false" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="小程序开启多任务栈" android:key="pref_key_appbrand_multi_system_task_enabled" android:defaultValue="true" />
+    <com.tencent.weui.base.preference.IconPreference android:title="页面切换 进入超时时间" android:key="pref_key_wxa_page_switch_enter_timeout" />
+    <com.tencent.weui.base.preference.IconPreference android:title="preload next normal wxa runtime" android:key="pref_key_preload_next_wxa" />
+    <com.tencent.weui.base.preference.IconPreference android:title="preload next plugin wxa runtime" android:key="pref_key_preload_next_plugin" />
+    <com.tencent.weui.base.preference.IconPreference android:title="kill all wxa process" android:key="pref_key_test_kill_all" />
+    <com.tencent.weui.base.preference.IconPreference android:title="preload_downgrade" android:key="pref_key_preload_downgrade" />
+    <com.tencent.weui.base.preference.IconPreference android:title="test_remote_process_status" android:key="pref_key_test_remote_process_status" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="强制居中显示" android:key="pref_key_force_center_inside" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="强制不居中显示" android:key="pref_key_force_not_center_inside" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="打开胶囊热区显示" android:key="pref_key_enable_capsule_hotspot" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="小程序启动流程debug提示" android:key="pref_key_enable_wxa_launch_process_debug_hint" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="开启AppService调试" android:key="pref_key_appbrand_service_debug_enabled" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="AppService调试waitForDebugger" android:key="pref_key_appbrand_service_debug_block_js" />
+    <com.tencent.weui.base.preference.IconPreference android:title="小程序Profiler(重启微信生效)" android:key="pref_key_enable_profiler" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="打开console输出面板" android:key="pref_key_enable_console_panel" />
+    <com.tencent.weui.base.preference.IconPreference android:title="分析所有进程的smaps" android:key="pref_key_analyze_smaps" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="小程序开启基础库snapshot" android:key="pref_key_v8_snapshot_app_enable" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="小游戏开启基础库snapshot" android:key="pref_key_v8_snapshot_game_enable" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="开启node snapshot" android:key="pref_key_v8_snapshot_node_enable" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="小程序基础库开启node snapshot" android:key="pref_key_v8_snapshot_node_app_enable" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="小游戏基础库开启node snapshot" android:key="pref_key_v8_snapshot_node_game_enable" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="绕过基础库snapshot异常检查" android:key="pref_key_v8_snapshot_disable_pre_conditions" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="snapshot未压缩基础库" android:key="pref_key_v8_snapshot_enable_not_compress_lib_snapshot" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="skyline仿原生profile" android:key="pref_key_enable_fake_native_profile_skyline" />
+    <com.tencent.weui.base.preference.IconPreference android:title="skyline渲染模式" android:key="pref_key_skyline_render_mode" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="强制所有小程序支持透明背景(仅影响contact字段)" android:key="pref_key_weapp_all_contact_transparent_background_enabled" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="Skyline 开启 Chromium Cronet" android:key="pref_key_enable_cronet_skyline" />
+    <com.tencent.weui.base.preference.IconPreference android:title="查看Skyline版本信息" android:key="pref_key_get_skyline_version_info" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="允许内嵌半屏展开" android:key="pref_key_enable_embed_half_screen_expand" />
+    <com.tencent.weui.base.preference.IconPreference android:title="CustomLoading启动测试" android:key="pref_key_custom_loading_test" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="每日清理逻辑测试" android:key="pref_key_force_auto_clean_task_and_dump" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="每次微信启动清空基础库" android:key="pref_key_clean_comm_lib_on_wechat_cold_launch" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="基础库下载模拟弱网" android:key="pref_key_enable_comm_lib_download_pkg_weaknet_mock" />
+    <com.tencent.weui.base.preference.CheckBoxPreference android:title="小程序冷启动下包模拟弱网" android:key="pref_key_enable_weapp_launch_download_pkg_weaknet_mock" />
+    <com.tencent.weui.base.preference.IconPreference android:title="小程序存储占用详情" android:key="pref_key_appbrand_storage_usage" />
+    <com.tencent.weui.base.preference.IconPreference android:title="断点续传测试" android:key="pref_key_appbrand_http_range_download" />
+</PreferenceScreen>

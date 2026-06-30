@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ej8" android:background="@color/UN_BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/b6y" android:clickable="true" android:layout_width="320.0dp" android:layout_height="424.0dp" android:layout_centerInParent="true">
+        <include android:id="@id/hwy" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ale" />
+        <include android:id="@id/hvh" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ald" />
+        <include android:id="@id/hyx" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/alf" />
+    </RelativeLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/d7" android:src="@raw/icons_outlined_close2" android:layout_below="@id/b6y" android:layout_centerHorizontal="true" app:fs="@color/p9" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/ali" android:layout_width="280.0dp" android:layout_height="290.0dp">
+        <ImageView android:id="@id/oaa" android:background="@drawable/cav" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ixz" android:background="@raw/sns_luckymoney_post_title" android:layout_width="210.0dp" android:layout_height="117.0dp" android:layout_marginTop="30.0dp" android:layout_centerHorizontal="true">
+            <TextView android:textSize="26.0dp" android:textColor="#ebcd9b" android:id="@id/j7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jcl" />
+            <TextView android:textSize="8.0dp" android:textColor="#ebcd9b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jcm" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ia" android:textColor="#ffe2b1" android:gravity="center" android:id="@id/oam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="30.0dp" android:text="@string/jci" android:layout_below="@id/ixz" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/k" android:textColor="#d84e43" android:gravity="center" android:id="@id/gso" android:background="@drawable/b23" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="30.0dp" android:text="@string/gj6" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

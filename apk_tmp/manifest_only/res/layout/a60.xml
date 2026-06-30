@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/bet" android:background="@color/hl" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/r" android:textColor="@color/ab3" android:gravity="center" android:id="@id/bep" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="48.0dp" android:text="@string/ax5" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/sx" android:gravity="center" android:id="@id/ber" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="48.0dp" android:text="@string/ax6" android:layout_alignParentEnd="true" />
+    <EditText android:textSize="30.0dp" android:textColor="@color/ab0" android:gravity="center_horizontal" android:id="@id/bes" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="248.0dp" android:minWidth="8.0dp" android:layout_below="@id/bep" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/cth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/delete_text_icon" android:layout_alignTop="@id/bes" android:layout_alignBottom="@id/bes" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_toEndOf="@id/bes" />
+    <com.tencent.mm.plugin.recordvideo.ui.editor.view.TextColorSelector android:id="@id/o42" android:paddingLeft="@dimen/un" android:paddingRight="@dimen/un" android:layout_width="match_parent" android:layout_height="@dimen/um" android:layout_marginBottom="@dimen/ul" android:layout_alignParentBottom="true" />
+</merge>

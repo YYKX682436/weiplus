@@ -1,0 +1,188 @@
+package c95;
+
+/* loaded from: classes12.dex */
+public final class d {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final c95.d f39747a = new c95.d();
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final jz5.g f39748b = jz5.h.b(c95.a.f39744d);
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final java.util.List f39749c = kz5.c0.i(new android.util.Pair("MsgGroupInfo", up5.k.f430004b), new android.util.Pair("MsgGroupExtInfo", up5.j.f429996b));
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final jz5.g f39750d = jz5.h.b(c95.c.f39746d);
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final jz5.g f39751e = jz5.h.b(c95.b.f39745d);
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public final up5.x a(java.lang.String str) {
+        if (str == null || str.length() == 0) {
+            return null;
+        }
+        try {
+            return (up5.x) c().getFirstObject(up5.j.f429997c.eq(str));
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgGroupDBProvider", "[getMsgGroupExtInfo] groupId=" + str + ", error: " + e17.getMessage());
+            return null;
+        }
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public final up5.x b(long j17, java.lang.String str) {
+        if (j17 != 0) {
+            if (!(str == null || str.length() == 0)) {
+                try {
+                    return (up5.x) c().getFirstObject(up5.j.f429999e.eq(j17).and(up5.j.f429998d.eq(str)));
+                } catch (java.lang.Exception e17) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgGroupDBProvider", "[getMsgGroupExtInfo] msgId:" + j17 + ", talker:" + str + " , error: " + e17.getMessage());
+                }
+            }
+        }
+        return null;
+    }
+
+    public final com.tencent.wcdb.core.Table c() {
+        return (com.tencent.wcdb.core.Table) ((jz5.n) f39751e).getValue();
+    }
+
+    public final java.util.List d(java.lang.String talker) {
+        kotlin.jvm.internal.o.g(talker, "talker");
+        try {
+            java.util.List<T> allObjects = c().getAllObjects(up5.j.f429998d.eq(talker).and(up5.j.f430002h.eq(0)), up5.j.f430000f.order(com.tencent.wcdb.winq.Order.Desc));
+            kotlin.jvm.internal.o.f(allObjects, "getAllObjects(...)");
+            return allObjects;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgGroupDBProvider", "[getMsgGroupInfosByTalker] talker=" + talker + ", error: " + e17.getMessage());
+            return kz5.p0.f313996d;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x001b A[Catch: Exception -> 0x0041, TryCatch #0 {Exception -> 0x0041, blocks: (B:3:0x0009, B:5:0x000f, B:10:0x001b, B:12:0x001f, B:16:0x0029, B:20:0x0031), top: B:2:0x0009 }] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final void e(up5.x r6) {
+        /*
+            r5 = this;
+            java.lang.String r0 = "MicroMsg.MsgGroupDBProvider"
+            java.lang.String r1 = "[insertOrUpdate] invalid ext info: "
+            java.lang.String r2 = "info"
+            kotlin.jvm.internal.o.g(r6, r2)
+            java.lang.String r2 = r6.f430115a     // Catch: java.lang.Exception -> L41
+            r3 = 0
+            r4 = 1
+            if (r2 == 0) goto L18
+            int r2 = r2.length()     // Catch: java.lang.Exception -> L41
+            if (r2 != 0) goto L16
+            goto L18
+        L16:
+            r2 = r3
+            goto L19
+        L18:
+            r2 = r4
+        L19:
+            if (r2 != 0) goto L31
+            java.lang.String r2 = r6.f430116b     // Catch: java.lang.Exception -> L41
+            if (r2 == 0) goto L25
+            int r2 = r2.length()     // Catch: java.lang.Exception -> L41
+            if (r2 != 0) goto L26
+        L25:
+            r3 = r4
+        L26:
+            if (r3 == 0) goto L29
+            goto L31
+        L29:
+            com.tencent.wcdb.core.Table r1 = r5.c()     // Catch: java.lang.Exception -> L41
+            r1.insertOrReplaceObject(r6)     // Catch: java.lang.Exception -> L41
+            goto L57
+        L31:
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Exception -> L41
+            r2.<init>(r1)     // Catch: java.lang.Exception -> L41
+            r2.append(r6)     // Catch: java.lang.Exception -> L41
+            java.lang.String r6 = r2.toString()     // Catch: java.lang.Exception -> L41
+            com.tencent.mars.xlog.Log.e(r0, r6)     // Catch: java.lang.Exception -> L41
+            return
+        L41:
+            r6 = move-exception
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            java.lang.String r2 = "[insertOrUpdate] ext error: "
+            r1.<init>(r2)
+            java.lang.String r6 = r6.getMessage()
+            r1.append(r6)
+            java.lang.String r6 = r1.toString()
+            com.tencent.mars.xlog.Log.e(r0, r6)
+        L57:
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: c95.d.e(up5.x):void");
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x001b A[Catch: Exception -> 0x0047, TryCatch #0 {Exception -> 0x0047, blocks: (B:3:0x0009, B:5:0x000f, B:10:0x001b, B:12:0x001f, B:16:0x0029, B:20:0x0037), top: B:2:0x0009 }] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final void f(up5.y r6) {
+        /*
+            r5 = this;
+            java.lang.String r0 = "MicroMsg.MsgGroupDBProvider"
+            java.lang.String r1 = "[insertOrUpdate] invalid info: "
+            java.lang.String r2 = "info"
+            kotlin.jvm.internal.o.g(r6, r2)
+            java.lang.String r2 = r6.f430121a     // Catch: java.lang.Exception -> L47
+            r3 = 0
+            r4 = 1
+            if (r2 == 0) goto L18
+            int r2 = r2.length()     // Catch: java.lang.Exception -> L47
+            if (r2 != 0) goto L16
+            goto L18
+        L16:
+            r2 = r3
+            goto L19
+        L18:
+            r2 = r4
+        L19:
+            if (r2 != 0) goto L37
+            java.lang.String r2 = r6.f430122b     // Catch: java.lang.Exception -> L47
+            if (r2 == 0) goto L25
+            int r2 = r2.length()     // Catch: java.lang.Exception -> L47
+            if (r2 != 0) goto L26
+        L25:
+            r3 = r4
+        L26:
+            if (r3 == 0) goto L29
+            goto L37
+        L29:
+            jz5.g r1 = c95.d.f39750d     // Catch: java.lang.Exception -> L47
+            jz5.n r1 = (jz5.n) r1     // Catch: java.lang.Exception -> L47
+            java.lang.Object r1 = r1.getValue()     // Catch: java.lang.Exception -> L47
+            com.tencent.wcdb.core.Table r1 = (com.tencent.wcdb.core.Table) r1     // Catch: java.lang.Exception -> L47
+            r1.insertOrReplaceObject(r6)     // Catch: java.lang.Exception -> L47
+            goto L5d
+        L37:
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Exception -> L47
+            r2.<init>(r1)     // Catch: java.lang.Exception -> L47
+            r2.append(r6)     // Catch: java.lang.Exception -> L47
+            java.lang.String r6 = r2.toString()     // Catch: java.lang.Exception -> L47
+            com.tencent.mars.xlog.Log.e(r0, r6)     // Catch: java.lang.Exception -> L47
+            return
+        L47:
+            r6 = move-exception
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            java.lang.String r2 = "[insertOrUpdate] error: "
+            r1.<init>(r2)
+            java.lang.String r6 = r6.getMessage()
+            r1.append(r6)
+            java.lang.String r6 = r1.toString()
+            com.tencent.mars.xlog.Log.e(r0, r6)
+        L5d:
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: c95.d.f(up5.y):void");
+    }
+}

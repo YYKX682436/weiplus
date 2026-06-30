@@ -1,0 +1,12 @@
+package a00;
+
+/* loaded from: classes6.dex */
+public class c implements java.lang.Iterable {
+    public c(a00.a aVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new a00.b(this, null);
+    }
+}

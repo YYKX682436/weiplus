@@ -1,0 +1,52 @@
+package vf2;
+
+/* loaded from: classes3.dex */
+public final class m implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ vf2.q f436348d;
+
+    public m(vf2.q qVar) {
+        this.f436348d = qVar;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/finder/live/controller/screencast/AnchorScreenCastLivingStatusController$onViewMount$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        ((ml2.j0) ((zy2.zb) i95.n0.c(zy2.zb.class))).Gj(7);
+        com.tencent.mars.xlog.Log.i("FinderLiveAnchorScreenCastLivingStatusController", "#enableBtn click ");
+        vf2.q qVar = this.f436348d;
+        qVar.getClass();
+        in0.q qVar2 = in0.q.f292769b2;
+        boolean z17 = false;
+        if (qVar2 != null) {
+            if (qVar2 == null) {
+                in0.q.f292769b2 = new in0.q(rn0.a.f397609a.a());
+            }
+            in0.q qVar3 = in0.q.f292769b2;
+            kotlin.jvm.internal.o.d(qVar3);
+            boolean z18 = un0.s.f429418b != null;
+            boolean h17 = qVar3.D.h();
+            boolean f76 = ((mm2.e1) qVar.business(mm2.e1.class)).f7();
+            com.tencent.mars.xlog.Log.i("FinderLiveAnchorScreenCastLivingStatusController", "#canExecuteScreenCast isScreenCastRunning=" + z18 + " isLiving=" + h17 + " isScreenCastGameMode=" + f76);
+            if (!z18 && h17 && f76) {
+                z17 = true;
+            }
+        } else {
+            com.tencent.mars.xlog.Log.i("FinderLiveAnchorScreenCastLivingStatusController", "#canExecuteScreenCast not instance");
+        }
+        if (z17) {
+            com.tencent.mm.plugin.finder.live.view.rc rcVar = new com.tencent.mm.plugin.finder.live.view.rc(qVar.O6(), null, 2, null);
+            rcVar.f116661m = vf2.g.f436338d;
+            rcVar.f116659h = vf2.h.f436339d;
+            rcVar.f116660i = new vf2.i(qVar);
+            rcVar.w();
+            ((ml2.j0) ((zy2.zb) i95.n0.c(zy2.zb.class))).Gj(1);
+        }
+        yj0.a.h(this, "com/tencent/mm/plugin/finder/live/controller/screencast/AnchorScreenCastLivingStatusController$onViewMount$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

@@ -1,0 +1,32 @@
+package ir1;
+
+/* loaded from: classes5.dex */
+public final class o0 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ ir1.i1 f294027d;
+
+    public o0(ir1.i1 i1Var) {
+        this.f294027d = i1Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/brandservice/conversation/ui/BizFansHalfScreenProfileView$bindUI$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        ir1.i1 i1Var = this.f294027d;
+        i1Var.f293984d.B();
+        android.content.Intent intent = new android.content.Intent();
+        hr1.a aVar = i1Var.P;
+        kotlin.jvm.internal.o.d(aVar);
+        intent.putExtra("Contact_User", aVar.field_identityName);
+        intent.putExtra("force_get_contact", true);
+        intent.putExtra("key_use_new_contact_profile", true);
+        intent.putExtra("Contact_Scene", com.tencent.mm.plugin.appbrand.jsapi.pe.CTRL_INDEX);
+        j45.l.j(i1Var.getContext(), com.google.android.gms.common.Scopes.PROFILE, ".ui.ContactInfoUI", intent, null);
+        yj0.a.h(this, "com/tencent/mm/plugin/brandservice/conversation/ui/BizFansHalfScreenProfileView$bindUI$2", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

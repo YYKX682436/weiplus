@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/vr" android:paddingBottom="@dimen/cn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dp">
+        <TextView android:textSize="17.0dp" android:textColor="@color/BW_100_Alpha_0_9" android:id="@id/loa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d3a" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true" />
+        <LinearLayout android:id="@id/hpg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true">
+            <TextView android:textSize="15.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:layout_gravity="center_vertical" android:id="@id/hph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ehi" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dv" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_arrow" app:fs="@color/BW_100_Alpha_0_5" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/bcw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:weightSum="3.0" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn">
+        <RelativeLayout android:gravity="left" android:id="@id/bb4" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="center" android:id="@id/bcl" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="right" android:id="@id/bca" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

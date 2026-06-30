@@ -1,0 +1,28 @@
+package com.tencent.mm.ui.contact;
+
+/* loaded from: classes11.dex */
+public abstract class o4 extends com.tencent.mm.ui.contact.p4 {
+
+    /* renamed from: i, reason: collision with root package name */
+    public com.tencent.mm.ui.contact.n4 f207051i;
+
+    public o4(com.tencent.mm.ui.contact.l4 l4Var, boolean z17, int i17) {
+        super(l4Var, z17, i17, false);
+    }
+
+    public abstract void r();
+
+    public abstract void s(java.lang.String str, int[] iArr, boolean z17);
+
+    public int t(java.lang.String str) {
+        return -1;
+    }
+
+    public void u(com.tencent.mm.ui.contact.n4 n4Var) {
+        this.f207051i = n4Var;
+    }
+
+    public boolean v() {
+        return false;
+    }
+}

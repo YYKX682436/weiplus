@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/gg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.fav.ui.FavChatVoiceView android:textSize="14.0sp" android:textColor="@color/a0c" android:gravity="left|center" android:id="@id/dto" android:background="@drawable/tk" android:paddingLeft="@dimen/hf" android:clickable="true" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="00:00" android:drawableLeft="@raw/chatfrom_voice_playing_new" android:drawablePadding="@dimen/j3" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/aaz" />
+</LinearLayout>

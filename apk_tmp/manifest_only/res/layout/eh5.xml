@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/u3u" android:visibility="gone" android:layout_width="@dimen/a2j" android:layout_height="@dimen/a2i"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textSize="@dimen/ja" android:textColor="@color/ab0" android:gravity="center" android:id="@id/p1o" android:background="@drawable/ah8" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:paddingBottom="0.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/a2i" android:text="@string/k8n" android:includeFontPadding="false" android:drawablePadding="@dimen/bl" android:onClick="onClick" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/vn5" android:background="@drawable/ah8" android:layout_width="match_parent" android:layout_height="match_parent" android:onClick="onClick" android:paddingStart="@dimen/cn">
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/ab0" android:id="@id/vn4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/xmark_filled" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dv" android:layout_alignParentEnd="true" app:fs="@color/aby" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/p1q" android:background="@drawable/ah8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/image_gallery_image_download_done_icon" app:fs="@color/aby" />
+    </LinearLayout>
+</FrameLayout>

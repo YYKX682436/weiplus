@@ -1,0 +1,25 @@
+package az0;
+
+/* loaded from: classes16.dex */
+public final class pb implements com.p314xaae8f345.p457x3304c6.p461x3a6d265.d0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ yz5.l f97348a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.p457x3304c6.p461x3a6d265.C4027x83c03a19 f97349b;
+
+    public pb(yz5.l lVar, com.p314xaae8f345.p457x3304c6.p461x3a6d265.C4027x83c03a19 c4027x83c03a19) {
+        this.f97348a = lVar;
+        this.f97349b = c4027x83c03a19;
+    }
+
+    @Override // com.p314xaae8f345.p457x3304c6.p461x3a6d265.d0
+    /* renamed from: onComplete */
+    public final void mo9325x815f5438(com.p314xaae8f345.p457x3304c6.p470x35bb6d35.p471x2e06d1.C4093x6b88526b c4093x6b88526b) {
+        this.f97348a.mo146xb9724478(c4093x6b88526b);
+        if (c4093x6b88526b == null) {
+            this.f97349b.t0();
+        }
+    }
+}

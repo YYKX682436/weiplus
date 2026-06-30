@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/l8t" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/i1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:orientation="vertical" android:id="@id/l8s" android:layout_width="@dimen/bo" android:layout_height="@dimen/bo" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:layout_marginEnd="@dimen/c9">
+        <ImageView android:id="@id/fz0" android:background="@color/fy" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/fyz" android:background="@color/fy" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_filled_copy" android:scaleType="centerCrop" app:fs="@color/FG_2" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/cn" android:layout_toEndOf="@id/l8s" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/l8w" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="没有理想的人不伤心（Remix）" android:maxLines="2" android:includeFontPadding="false" android:layout_alignTop="@id/l8s" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/FG_2" android:ellipsize="end" android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l8v" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:singleLine="true" android:includeFontPadding="false" />
+        <FrameLayout android:id="@id/l1q" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/l24" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.view.RingProgressView android:layout_gravity="center_vertical" android:id="@id/lb7" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" app:backColor="@color/BW_100_Alpha_0_1" app:circleStrokeWidth="@dimen/bj" app:foreColor="@color/Brand_100" />
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_2" android:layout_gravity="center_vertical" android:id="@id/uv2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/eys" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/usj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@raw/info_circle_regular" app:fs="@color/Blue_100" />
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_2" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bj" android:text="@string/nyy" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@id/l8r" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/l8s" android:layout_toEndOf="@id/l8s" />
+</RelativeLayout>

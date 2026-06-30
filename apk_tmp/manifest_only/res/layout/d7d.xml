@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bcq" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/chw" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="32.0dp" />
+    <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/cgw" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="32.0dp" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/ci2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="24.0dp" android:text="弹窗内容" />
+    <View android:background="@color/k0" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="27.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/fa" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/i05" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/kl_" android:layout_weight="1.0" />
+        <View android:background="@color/k0" android:layout_width="1.0dp" android:layout_height="match_parent" />
+        <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/ff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/m3m" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/klh" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

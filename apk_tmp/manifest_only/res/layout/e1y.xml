@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/br1" style="@style/er" />
+    <LinearLayout style="@style/ek">
+        <LinearLayout android:orientation="vertical" android:id="@id/sru" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/em">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/bqx" style="@style/es" />
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/ott" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c9" style="@style/x4" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/bqz" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/chatting_status_tick" />
+                <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingEmojiMvvmView android:id="@id/bkm" android:layout_marginLeft="@dimen/vg" android:layout_marginRight="@dimen/vg" style="@style/fm" />
+                    <FrameLayout android:id="@id/bky" android:paddingLeft="@dimen/vg" android:paddingTop="4.0dp" android:paddingRight="@dimen/vg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:layout_gravity="start" android:orientation="horizontal" android:id="@id/sq9" android:background="@drawable/e2" android:paddingLeft="@dimen/bk" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bk" android:paddingBottom="@dimen/bj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bk" android:paddingVertical="@dimen/bj">
+                            <ImageView android:id="@id/bkz" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@raw/emoticonstore_capture_icon" android:layout_marginEnd="3.0dp" />
+                            <TextView android:textSize="@dimen/c9" android:textColor="@color/Link_100" android:gravity="center" android:id="@id/sq_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aqk" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/tz" />
+    </LinearLayout>
+</LinearLayout>

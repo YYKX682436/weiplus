@@ -1,0 +1,24 @@
+package id2;
+
+/* loaded from: classes3.dex */
+public final class m2 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ id2.u3 f372198d;
+
+    public m2(id2.u3 u3Var) {
+        this.f372198d = u3Var;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/finder/feed/ui/uic/FinderLivePersonalCenterUIC$fakeInsertCreateLiveEntranceToList$3", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        id2.u3 u3Var = this.f372198d;
+        p3325xe03a0797.p3326xc267989b.l.d(v65.m.b(u3Var.m158354x19263085()), null, null, new id2.h2(u3Var, null), 3, null);
+        yj0.a.h(this, "com/tencent/mm/plugin/finder/feed/ui/uic/FinderLivePersonalCenterUIC$fakeInsertCreateLiveEntranceToList$3", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

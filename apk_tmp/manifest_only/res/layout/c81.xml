@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/jc8" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/p69" android:background="@raw/voice_icon_new" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/df" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/ct" android:textColor="@color/FG_0" android:id="@id/p6i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:text="@string/k_q" android:layout_below="@id/p69" android:layout_centerHorizontal="true" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hi" android:layout_below="@id/p6i" android:layout_centerHorizontal="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/kd2" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginEnd="@dimen/dv" style="@style/x4" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/kd1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="@string/k9x" />
+    </LinearLayout>
+    <Button android:id="@id/kd3" android:visibility="gone" android:layout_marginBottom="80.0dp" android:text="@string/y3" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/kz" />
+</RelativeLayout>

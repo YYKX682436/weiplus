@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/db" android:src="@raw/icons_outlined_error" app:fs="#00aaff" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" />
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/FG_1" android:id="@id/nrk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="仅支持添加可售商品" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:layout_marginBottom="@dimen/dn">
+        <TextView android:id="@id/c9z" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="@string/fz1" style="@style/xu" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/an" android:gravity="center" android:id="@id/m2_" android:background="@drawable/a8d" android:layout_width="@dimen/c0" android:layout_height="@dimen/df" android:text="@string/loq" android:layout_marginStart="@dimen/cn" />
+    </LinearLayout>
+</LinearLayout>

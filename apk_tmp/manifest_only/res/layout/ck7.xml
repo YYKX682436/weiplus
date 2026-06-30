@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/q2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/mjc" android:paddingLeft="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/i9">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/mie" android:background="@drawable/aoe" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" android:layout_marginRight="@dimen/cn" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/a_4" android:layout_width="@dimen/an" android:layout_height="@dimen/an" android:layout_marginRight="@dimen/cn" />
+        <RelativeLayout android:id="@id/d1g" android:background="@drawable/bfj" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m38" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" app:fs="@color/FG_2" />
+            <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_toLeftOf="@id/m38">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/j8" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.tencent.mm.ui.base.EllipsizeTextView android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{title}" android:singleLine="true" style="@style/j3" />
+                        <TextView android:id="@id/o_q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="{tip}" style="@style/j3" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/ja" android:textColor="@color/FG_2" android:id="@id/cut" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{desc}" android:singleLine="true" style="@style/j2" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/kjo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j3" android:layout_marginRight="@dimen/j3" android:maxEms="4" android:singleLine="true" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/mk7" android:background="@drawable/bri" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/j3" android:layout_marginRight="@dimen/hi" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/cd3" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/j3" android:layout_marginRight="@dimen/hi" android:src="@raw/icons_outlined_info" app:fs="@color/BW_100_Alpha_0_3" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

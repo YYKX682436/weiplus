@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/oz" android:background="@drawable/b1i" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/qd" android:background="@drawable/b1l" android:layout_width="wrap_content" android:layout_height="@dimen/aa8" android:minWidth="@dimen/bu" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/qc" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_like" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/qe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jc8" android:singleLine="true" android:layout_marginStart="@dimen/bl" />
+    </LinearLayout>
+    <ViewStub android:id="@id/r4r" android:layout="@layout/dni" android:layout_width="wrap_content" android:layout_height="@dimen/aa8" android:minWidth="@dimen/bu" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/d0v" android:background="@color/abx" android:layout_width="@dimen/bd" android:layout_height="@dimen/hi" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/pe" android:background="@drawable/b1m" android:layout_width="wrap_content" android:layout_height="@dimen/aa8" android:minWidth="@dimen/bu" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/p5" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_comment" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/pf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j9m" android:singleLine="true" android:layout_marginStart="@dimen/bl" />
+    </LinearLayout>
+</LinearLayout>

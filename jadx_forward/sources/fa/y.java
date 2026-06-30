@@ -1,0 +1,20 @@
+package fa;
+
+/* loaded from: classes15.dex */
+public class y extends android.animation.AnimatorListenerAdapter {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ fa.a0 f342184d;
+
+    public y(fa.a0 a0Var) {
+        this.f342184d = a0Var;
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationEnd(android.animation.Animator animator) {
+        fa.a0 a0Var = this.f342184d;
+        if (a0Var.f342109b == animator) {
+            a0Var.f342109b = null;
+        }
+    }
+}

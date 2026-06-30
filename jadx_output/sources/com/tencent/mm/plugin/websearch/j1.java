@@ -1,0 +1,37 @@
+package com.tencent.mm.plugin.websearch;
+
+/* loaded from: classes11.dex */
+public final class j1 implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ java.lang.ref.WeakReference f181546d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.pigeon.websearch.SearchResultTLPlayerInfo f181547e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f181548f;
+
+    public j1(java.lang.ref.WeakReference weakReference, com.tencent.pigeon.websearch.SearchResultTLPlayerInfo searchResultTLPlayerInfo, java.lang.String str) {
+        this.f181546d = weakReference;
+        this.f181547e = searchResultTLPlayerInfo;
+        this.f181548f = str;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        com.tencent.pigeon.websearch.SearchResultFinderVideoPlayersCallbackApi searchResultFinderVideoPlayersCallbackApi;
+        com.tencent.mm.plugin.websearch.FlutterSearchFinderVideoPlayerPlugin flutterSearchFinderVideoPlayerPlugin = (com.tencent.mm.plugin.websearch.FlutterSearchFinderVideoPlayerPlugin) this.f181546d.get();
+        if (flutterSearchFinderVideoPlayerPlugin == null || (searchResultFinderVideoPlayersCallbackApi = flutterSearchFinderVideoPlayerPlugin.f181415f) == null) {
+            return;
+        }
+        java.lang.Long playerId = this.f181547e.getPlayerId();
+        kotlin.jvm.internal.o.d(playerId);
+        long longValue = playerId.longValue();
+        java.lang.String str = this.f181548f;
+        if (str == null) {
+            str = "";
+        }
+        searchResultFinderVideoPlayersCallbackApi.onVideoEnded(longValue, str, com.tencent.mm.plugin.websearch.i1.f181540d);
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/v96" android:layout_width="@dimen/aij" android:layout_height="@dimen/aij" android:src="@raw/icon_spring_2024_firecracker_outlined" app:fs="@color/af9" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/af9" android:id="@id/v97" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oka" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/v94" android:paddingTop="@dimen/ais" android:paddingBottom="@dimen/ais" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="@dimen/aih" android:minWidth="64.0dp" android:paddingStart="@dimen/aih" android:paddingEnd="@dimen/aih">` 
+        <FrameLayout android:id="@id/v92" android:layout_width="@dimen/aij" android:layout_height="@dimen/aij">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/v93" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/icon_spring_2024_firecracker_outlined" app:fs="@color/af9" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/v91" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_spring_2024_firecracker_filled" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/af9" android:id="@id/v95" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/cg7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/of8" android:background="@drawable/sm" android:layout_width="@dimen/ib" android:layout_height="@dimen/jn" android:layout_marginLeft="@dimen/jm" />
+        <TextView android:textSize="@dimen/ja" android:textColor="@color/aaq" android:gravity="center" android:id="@id/ni9" android:background="@drawable/so" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j" android:layout_below="@id/of8" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <View android:id="@id/atf" android:background="@drawable/sm" android:layout_width="@dimen/ib" android:layout_height="@dimen/jn" android:layout_marginLeft="@dimen/jm" android:layout_below="@id/ni9" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="left" android:id="@id/cgo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j3" android:layout_toRightOf="@id/ni9" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

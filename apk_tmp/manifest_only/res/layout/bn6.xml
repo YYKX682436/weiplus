@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bcq" android:paddingTop="16.0dp" android:layout_width="272.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/fa" android:gravity="center_horizontal" android:id="@id/obg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="标题" />
+    <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/ch_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/a0c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/ci2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="24.0dp" android:text="弹窗内容" />
+    <View android:background="@color/vn" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="27.0dp" />
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/ff" android:gravity="center_horizontal" android:id="@id/azk" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="知道了" />
+</LinearLayout>

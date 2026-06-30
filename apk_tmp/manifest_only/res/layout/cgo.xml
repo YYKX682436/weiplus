@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/pqu" android:background="@color/aaq" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b3e" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="test anmiation" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b3d" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="test alpha" android:layout_weight="1.0" style="@style/kn" />
+        <Button android:textSize="10.0dp" android:textColor="@color/aay" android:id="@id/b4j" android:background="@color/a5t" android:layout_marginRight="10.0dp" android:text="test visiable" android:layout_weight="1.0" style="@style/kn" />
+    </LinearLayout>
+    <View android:layout_gravity="center_horizontal" android:id="@id/o3a" android:background="@color/fe" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginTop="250.0dp" />
+</FrameLayout>

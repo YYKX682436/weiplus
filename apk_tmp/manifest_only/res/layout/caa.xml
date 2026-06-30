@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/l73" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/l6x" android:layout_width="match_parent" android:layout_height="@dimen/a7w">
+        <ImageView android:id="@id/l6w" android:layout_width="match_parent" android:layout_height="@dimen/a7w" android:scaleType="centerCrop" />
+        <View android:id="@id/l71" android:background="@color/a3h" android:layout_width="match_parent" android:layout_height="@dimen/a7w" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l70" android:background="@null" android:paddingLeft="12.0dp" android:paddingTop="?m" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="@dimen/a7w">
+        <RelativeLayout android:id="@id/l6u" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/l6z" android:background="@raw/scan_product_movie_default_img" android:visibility="gone" android:layout_width="87.0dp" android:layout_height="113.0dp" android:layout_marginTop="14.0dp" android:layout_marginBottom="14.0dp" android:src="@raw/scan_product_movie_default_img" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/l72" android:background="@raw/scan_product_default_img" android:visibility="gone" android:layout_width="87.0dp" android:layout_height="87.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:src="@raw/scan_product_default_img" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/l6v" android:background="@drawable/ay4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/l6t" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hf">
+            <TextView android:textSize="18.0dp" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/l7s" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginRight="2.0dp" android:maxLines="2" android:includeFontPadding="false" android:layout_alignParentTop="true" android:lineSpacingExtra="0.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l6j" android:background="@drawable/uy" android:paddingLeft="2.0dp" android:paddingTop="2.0dp" android:paddingRight="3.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/l6k" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/cef" />
+                <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:id="@id/l6i" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/h2" android:textColor="@color/ta" android:layout_gravity="right|center" android:id="@id/l6r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iaa" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/l6y" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/a7w" />
+</RelativeLayout>

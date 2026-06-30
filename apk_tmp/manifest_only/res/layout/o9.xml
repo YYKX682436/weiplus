@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:background="@drawable/bb5" android:layout_width="@dimen/by" android:layout_height="@dimen/bo"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/d0b" android:background="@drawable/bb3" android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/bl" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="18.0dp" android:minWidth="@dimen/d7" android:layout_alignParentRight="true">
+        <TextView android:textSize="10.0dp" android:textColor="@color/a7" android:gravity="center" android:layout_gravity="center" android:id="@id/d0m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送128" />
+    </LinearLayout>
+    <com.google.android.flexbox.FlexboxLayout android:layout_width="match_parent" android:layout_height="match_parent" app:alignItems="2" app:flexDirection="2" app:justifyContent="2">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/of_" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/pkm" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="@dimen/bj" android:src="@raw/wecoin_balance_icons" android:layout_centerVertical="true" android:importantForAccessibility="no" app:fs="@color/ae" />
+            <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="@dimen/cz" android:textColor="@color/fa" android:id="@id/ln3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" android:layout_toRightOf="@id/pkm" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ln5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="50" android:maxLines="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dj" android:layout_weight="1.0">
+        <com.tencent.mm.plugin.finder.view.UnchangeTextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:gravity="center_vertical" android:id="@id/rt" android:layout_width="@dimen/f7" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hq" android:singleLine="true" style="@style/ix" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn">
+            <ImageView android:id="@id/h9p" android:layout_width="@dimen/df" android:layout_height="@dimen/dn" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn">
+            <ImageView android:id="@id/h9q" android:layout_width="@dimen/df" android:layout_height="@dimen/dn" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn">
+            <ImageView android:id="@id/h9r" android:layout_width="@dimen/df" android:layout_height="@dimen/dn" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn">
+            <ImageView android:id="@id/h9s" android:layout_width="@dimen/df" android:layout_height="@dimen/dn" android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_arrow" app:fs="@color/vn" />
+</LinearLayout>

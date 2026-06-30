@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a48" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bai" android:background="@drawable/l0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/bak" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16.699982dp" android:layout_marginTop="10.0dp" android:layout_marginRight="13.299988dp">
+            <LinearLayout android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0">
+                <TextView android:textSize="12.699982dp" android:textColor="@color/h1" android:gravity="start" android:id="@id/ban" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/atn" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.699982dp" android:textColor="@color/hh" android:gravity="end" android:id="@id/baj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/atk" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@drawable/qx" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="16.699982dp" android:layout_marginTop="10.0dp" android:layout_marginRight="13.299988dp" android:layerType="software" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/h1" android:id="@id/bal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.699982dp" android:layout_marginTop="10.0dp" android:text="@string/atl" />
+        <TextView android:textSize="12.699982dp" android:textColor="@color/hh" android:id="@id/bam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.699982dp" android:layout_marginTop="7.299988dp" android:layout_marginBottom="16.299988dp" android:text="@string/atm" />
+    </LinearLayout>
+</LinearLayout>

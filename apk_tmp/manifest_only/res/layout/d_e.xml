@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/bgs" android:background="@color/a9e" android:focusable="false" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@drawable/bhm" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/a6x" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn">
+        <TextView android:textSize="@dimen/k" android:textColor="@color/jj" android:id="@id/bhc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="@string/k56" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:shrinkColumns="0" android:layout_toLeftOf="@id/bhc" android:layout_centerVertical="true">
+            <TableRow>
+                <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bh4" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:gravity="center_vertical" android:id="@id/bh6" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dv" android:includeFontPadding="false" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

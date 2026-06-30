@@ -1,0 +1,45 @@
+package com.tencent.mm.ui.chatting.component;
+
+/* loaded from: classes8.dex */
+public class l5 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.ui.chatting.component.b5 f199398d;
+
+    public l5(com.tencent.mm.ui.chatting.component.b5 b5Var) {
+        this.f199398d = b5Var;
+    }
+
+    public static void a(com.tencent.mm.ui.chatting.component.l5 l5Var, java.util.List list) {
+        com.tencent.mm.ui.chatting.component.b5 b5Var = l5Var.f199398d;
+        b5Var.f198699m = false;
+        a14.g.a().f609a.f59342e = 1L;
+        if (com.tencent.mm.ui.chatting.h7.f201662a.a(b5Var.f198580d.g(), list, b5Var.f198697h.d1(), b5Var)) {
+            return;
+        }
+        a14.g.a().b();
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:12:0x007a  */
+    /* JADX WARN: Removed duplicated region for block: B:15:0x009d  */
+    /* JADX WARN: Removed duplicated region for block: B:49:0x0281  */
+    /* JADX WARN: Removed duplicated region for block: B:51:0x0287  */
+    /* JADX WARN: Removed duplicated region for block: B:54:0x0291  */
+    /* JADX WARN: Removed duplicated region for block: B:67:0x02ca  */
+    /* JADX WARN: Removed duplicated region for block: B:80:0x02e8 A[EDGE_INSN: B:80:0x02e8->B:81:0x02e8 BREAK  A[LOOP:1: B:65:0x02c3->B:74:0x02e0], SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:83:0x02ec  */
+    /* JADX WARN: Removed duplicated region for block: B:85:0x0301  */
+    /* JADX WARN: Removed duplicated region for block: B:91:0x0284  */
+    @Override // android.view.View.OnClickListener
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public void onClick(android.view.View r29) {
+        /*
+            Method dump skipped, instructions count: 928
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.ui.chatting.component.l5.onClick(android.view.View):void");
+    }
+}

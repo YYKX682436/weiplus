@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jf" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <Button android:id="@id/dkv" android:layout_marginRight="10.0dp" android:text="select log" style="@style/l1" />
+        <Button android:id="@id/lzl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Req expt" />
+        <Button android:id="@id/dkq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" />
+        <Button android:id="@id/dkr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Export" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <EditText android:id="@id/hdi" android:layout_width="100.0dp" android:layout_marginRight="10.0dp" android:hint="exptId" android:inputType="number" style="@style/ir" />
+        <Button android:id="@id/c9z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="confirm" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/hx">
+        <EditText android:id="@id/r6u" android:layout_width="250.0dp" android:layout_marginRight="10.0dp" android:hint="exptKey" style="@style/ir" />
+        <Button android:id="@id/g14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="confirm" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="exptId:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/dks" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="groupId:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/gu9" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="exptSeq:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/dkw" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="useFlag:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/t9d" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="exptTime:" />
+            <TextView android:textSize="@dimen/ia" android:id="@id/dkx" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:id="@id/dko" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dp">
+        <EditText android:id="@id/dky" android:layout_width="match_parent" android:layout_margin="10.0dp" android:hint="xml" style="@style/ir" />
+        <Button android:id="@id/dkz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="confirmXMl" />
+    </LinearLayout>
+    <Button android:id="@id/lz8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/y1" />
+</LinearLayout>

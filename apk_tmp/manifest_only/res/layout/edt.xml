@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout android:id="@id/ujl" android:layout_width="match_parent" android:layout_height="wrap_content" app:heightWeight="4.0" app:layout_constraintBottom_toTopOf="@id/ujo" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" app:widthWeight="3.0">
+        <ImageView android:id="@id/ujm" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.tencent.mm.plugin.finder.view.FinderFixedRatioLayout>
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/abw" android:id="@id/ujo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" app:layout_constraintBottom_toTopOf="@id/ujk" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/ujl" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/adg" android:id="@id/ujk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/ujo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

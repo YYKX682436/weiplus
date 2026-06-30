@@ -1,0 +1,23 @@
+package com.p314xaae8f345.mm.ui.p2650x55bb7a46;
+
+/* loaded from: classes11.dex */
+public final class ya implements android.animation.ValueAnimator.AnimatorUpdateListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.ui.p2650x55bb7a46.db f287798d;
+
+    public ya(com.p314xaae8f345.mm.ui.p2650x55bb7a46.db dbVar) {
+        this.f287798d = dbVar;
+    }
+
+    @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+    public final void onAnimationUpdate(android.animation.ValueAnimator it) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(it, "it");
+        java.lang.Object animatedValue = it.getAnimatedValue();
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        float floatValue = ((java.lang.Float) animatedValue).floatValue();
+        com.p314xaae8f345.mm.ui.p2650x55bb7a46.db dbVar = this.f287798d;
+        int i17 = dbVar.f281959f;
+        ((com.p314xaae8f345.mm.ui.p2650x55bb7a46.ta) dbVar.f281958e).b((int) (i17 * floatValue), i17);
+    }
+}

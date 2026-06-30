@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/jls" style="@style/kj">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:textColor="@color/jj" android:gravity="center_horizontal" android:id="@id/mns" android:paddingLeft="10.0dp" android:paddingTop="26.0dp" android:paddingRight="10.0dp" android:text="@string/hxt" style="@style/jr" />
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/mnq" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/mnp" android:background="@drawable/bfv" android:paddingLeft="4.0dp" android:paddingTop="5.0dp" android:paddingRight="6.0dp" android:paddingBottom="5.0dp" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/b0i" />
+                <ImageView android:id="@id/mnr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dp" android:layout_marginBottom="7.0dp" android:src="@drawable/bn9" android:layout_alignRight="@id/mnp" android:layout_alignBottom="@id/mnp" />
+            </RelativeLayout>
+            <FrameLayout android:background="@drawable/sd" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" style="@style/jq">
+                <EditText android:id="@id/lro" android:background="@null" android:paddingLeft="100.0dp" android:hint="@string/hxn" android:imeOptions="actionDone" style="@style/jq" />
+                <TextView android:textSize="16.0dp" android:textColor="@color/a0c" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@null" android:paddingLeft="10.0dp" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:text="@string/hxo" android:singleLine="false" style="@style/jq" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/kzb" android:layout_height="match_parent" android:layout_marginTop="20.0dp" style="@style/jo">
+                <FrameLayout android:id="@id/lsa" android:background="@drawable/sd" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@id/lrv" android:background="@null" android:paddingLeft="100.0dp" android:hint="@string/hxp" android:imeOptions="actionDone" style="@style/jq" />
+                    <TextView android:textSize="16.0dp" android:textColor="@color/a0c" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@null" android:paddingLeft="10.0dp" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:text="@string/hy0" android:singleLine="false" style="@style/jq" />
+                    <ImageView android:layout_gravity="right|center" android:id="@id/pjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:src="@drawable/bnb" />
+                    <ProgressBar android:layout_gravity="right|center" android:id="@id/lbj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" style="@style/x4" />
+                </FrameLayout>
+                <TextView android:textSize="14.0dp" android:textColor="@color/jj" android:gravity="center_horizontal" android:id="@id/s9" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="20.0dp" android:layout_marginTop="12.0dp" android:text="@string/hxy" style="@style/jr" />
+            </LinearLayout>
+            <Button android:id="@id/kao" android:layout_marginBottom="@dimen/hi" android:text="@string/hxq" style="@style/kq" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

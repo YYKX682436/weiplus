@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cz"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:id="@id/t4y" android:layout_width="wrap_content" android:layout_height="@dimen/d1">
+        <FrameLayout android:layout_gravity="center" android:id="@id/gy1" android:background="@drawable/d5d" android:clipChildren="false" android:layout_width="@dimen/db" android:layout_height="@dimen/bl" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/abw" android:id="@id/odf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/bl" android:textFontWeight="500" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/adg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/odc" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/Link_100" android:id="@id/cwk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zl" android:paddingStart="@dimen/c9" android:textFontWeight="500" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/dcq" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintGuide_begin="48.0dp" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0_5" android:id="@id/dck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:text="@string/bx3" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/dcq" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/dcp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/dck">
+        <ImageView android:id="@id/dcl" android:layout_width="36.0dp" android:layout_height="36.0dp" />
+        <ImageView android:id="@id/dcm" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginStart="16.0dp" />
+        <ImageView android:id="@id/dcn" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginStart="16.0dp" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/emoji_panel_set_intro_arrow" android:layout_marginStart="24.0dp" app:fs="@color/BW_0_Alpha_0_5" />
+        <ImageView android:id="@id/dco" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginStart="24.0dp" />
+    </LinearLayout>
+    <Button android:id="@id/dcj" android:layout_width="184.0dp" android:layout_height="wrap_content" android:layout_marginTop="56.0dp" android:layout_marginBottom="64.0dp" android:minHeight="48.0dp" android:text="@string/vi" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/dcp" style="@style/l1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

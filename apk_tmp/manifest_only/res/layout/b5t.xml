@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/je9" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ds="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.HardTouchableLayout android:id="@id/jdk" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.view.PhotoView android:id="@id/o78" android:background="@color/f3" android:layout_width="120.0dp" android:layout_height="120.0dp" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="center" android:id="@id/ozq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bog" />
+        <ImageView android:layout_gravity="right|top" android:id="@id/jur" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" android:src="@drawable/aam" />
+        <TextView android:textSize="@dimen/c9" android:textColor="@color/ab0" android:layout_gravity="right|top" android:id="@id/je3" android:background="@drawable/ahb" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/c9" android:paddingBottom="@dimen/bl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" />
+    </com.tencent.mm.view.HardTouchableLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/lzf" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/dv" android:src="@raw/finder_feed_retransmission" app:fs="@color/aaw" />
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

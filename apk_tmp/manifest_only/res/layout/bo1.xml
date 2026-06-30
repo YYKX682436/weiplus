@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/zy" android:layout_height="@dimen/zx"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/g8k" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+    <com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/bj" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/bj" android:layout_alignParentEnd="true" app:roundCorner="true">
+        <ImageView android:id="@id/g8h" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/a9e" android:importantForAccessibility="no" />
+        <ImageView android:id="@id/g8j" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/a9e" android:importantForAccessibility="no" />
+    </com.tencent.mm.plugin.ball.view.FloatBallRoundCornerFrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g8i" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/dv" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/float_ball_audio_panel_close" android:layout_alignParentTop="true" android:contentDescription="@string/so" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/bl" android:layout_alignParentEnd="true" app:fs="@color/BW_100_Alpha_0_8" />
+</RelativeLayout>

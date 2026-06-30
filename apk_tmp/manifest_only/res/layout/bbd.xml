@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/b98" android:background="@drawable/adp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:elevation="@dimen/cn">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/c9" android:layout_alignParentStart="true">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/h6y" android:padding="2.0dp" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/wechat_icon" app:fs="@color/r7" />
+                <TextView android:textSize="@dimen/b3" android:textColor="@color/r7" android:id="@id/bcj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feh" android:layout_marginStart="2.0dp" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/b03" android:background="@drawable/p3" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/dv" android:layout_alignParentTop="true" android:contentDescription="@string/so" android:layout_marginEnd="@dimen/bn" android:layout_alignParentEnd="true">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/b06" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_close" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/cgz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/cn" />
+    </LinearLayout>
+</LinearLayout>

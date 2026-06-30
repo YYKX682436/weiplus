@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:id="@id/o3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/mqh" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/che" android:background="@color/d" android:layout_width="match_parent" android:layout_height="180.0dp" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="40.0dp" android:layout_marginRight="@dimen/cz" android:layout_below="@id/o3b" app:ds="@dimen/c9">
+        <FrameLayout android:id="@id/uh" android:background="@drawable/cu8" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="32.0dp" android:layout_centerHorizontal="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_me" app:fs="@color/FG_4" />
+        </FrameLayout>
+        <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:gravity="center" android:id="@id/qrl" android:background="@color/f" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/cn" android:layout_marginTop="-8.0dp" android:layout_below="@id/uh" android:layout_centerHorizontal="true" app:ds="@dimen/dv">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/in7" android:layout_width="10.0dp" android:layout_height="15.0dp" android:src="@raw/icons_regular_location" app:fs="@color/FG_0" />
+            <TextView android:textSize="10.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/rvy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="@string/mqg" android:maxLines="1" android:maxEms="4" />
+        </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/d7" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <View android:background="@drawable/cu8" android:layout_width="@dimen/db" android:layout_height="@dimen/db" />
+            <View android:background="@drawable/cu8" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cz" />
+            <View android:background="@drawable/cu8" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cz" />
+            <View android:background="@drawable/cu8" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cz" />
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="56.0dp" android:layout_marginBottom="@dimen/dn" android:layout_below="@id/che">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/rix" android:layout_width="120.0dp" android:layout_height="48.0dp" android:text="@string/dju" style="@style/xl" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/mvb" android:layout_width="120.0dp" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/cn" android:text="@string/djv" style="@style/xk" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <PreferenceSmallCategory android:key="settings_tag_name_category" />
+    <Preference android:key="settings_tag_name" android:gc="@layout/byv" android:title="@string/jfl" />
+    <PreferenceTitleCategory android:key="outside" android:title="@string/jfo" />
+    <PreferenceTitleCategory android:key="black" android:title="@string/jfm" />
+    <PreferenceTitleCategory android:key="group" android:title="@string/jfi" />
+    <com.tencent.mm.pluginsdk.ui.applet.ContactListExpandPreference android:key="roominfo_contact_anchor" />
+    <PreferenceSmallCategory android:key="delete_tag_name_category" />
+    <Preference android:key="delete_tag_name" android:gc="@layout/bt3" android:title="@string/iiz" />
+    <PreferenceSmallCategory />
+</PreferenceScreen>

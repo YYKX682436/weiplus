@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ca" android:layout_marginBottom="@dimen/ca"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fwb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/fwa" android:layout_width="@dimen/dd" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_arrow" app:fs="@color/BW_70" />
+        <View android:id="@id/fwc" android:background="@color/a9e" android:layout_width="@dimen/dd" android:layout_height="@dimen/d7" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_toStartOf="@id/fwb">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uni" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_origin" android:layout_marginEnd="@dimen/dv" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_0_5" android:ellipsize="end" android:id="@id/l11" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ewa" android:singleLine="true" android:layout_toEndOf="@id/uni" style="@style/rm" />
+        <TextView android:textSize="@dimen/f9" android:textColor="@color/Brand_100" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/q9w" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignTop="@id/l11" android:layout_alignBottom="@id/l11" android:layout_marginStart="@dimen/dv" android:layout_toEndOf="@id/l11" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_2" android:id="@id/l10" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bi" android:text="@string/ew9" android:layout_below="@id/l11" android:layout_alignLeft="@id/l11" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/a0m" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gy6" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:id="@id/aa8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aq7" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑公告" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/ca" android:id="@id/c9z" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:text="@string/v5" android:layout_alignParentEnd="true" style="@style/ks" />
+    </RelativeLayout>
+    <com.tencent.mm.ui.widget.MMEditText android:textSize="@dimen/co" android:textColor="@color/FG_0" android:id="@id/hdd" android:background="@color/a9e" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:minHeight="@dimen/df" android:hint="填写公告内容" />
+    <RelativeLayout android:id="@id/oy3" android:layout_width="@dimen/c1" android:layout_height="@dimen/c1" android:layout_marginTop="@dimen/d7">
+        <RelativeLayout android:id="@id/qp6" android:background="@color/d" android:layout_width="@dimen/by" android:layout_height="@dimen/by" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_filled_add" android:layout_centerInParent="true" app:fs="@color/FG_2" />
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/myb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/mf4" android:layout_width="@dimen/by" android:layout_height="@dimen/by" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" />
+            <FrameLayout android:id="@id/qhz" android:background="@drawable/a80" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" app:layout_constraintBottom_toTopOf="@id/mf4" app:layout_constraintEnd_toEndOf="@id/mf4" app:layout_constraintStart_toEndOf="@id/mf4" app:layout_constraintTop_toTopOf="@id/mf4">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@raw/icons_filled_close" android:rotation="90.0" app:fs="@color/FG_0" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/qrc" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginTop="@dimen/db">
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可见范围" android:layout_centerVertical="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4f" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fs="@color/FG_2" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/FG_1" android:id="@id/p3o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/a4f" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dv" />
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

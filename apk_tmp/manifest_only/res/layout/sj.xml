@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/mie" android:background="@drawable/aoe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/ak" android:layout_height="@dimen/ah" />
+    <com.tencent.mm.pluginsdk.ui.applet.CdnImageView android:id="@id/bgs" android:background="@color/a9e" android:focusable="false" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginLeft="@dimen/cn" android:src="@drawable/bhm" android:scaleType="centerCrop" android:contentDescription="@string/a6x" />
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:shrinkColumns="0" android:layout_toLeftOf="@id/bhc" android:layout_centerVertical="true">
+        <TableRow>
+            <TextView android:textSize="@dimen/k" android:textColor="@color/a0c" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bh4" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:gravity="center_vertical" android:id="@id/bh6" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dv" android:includeFontPadding="false" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

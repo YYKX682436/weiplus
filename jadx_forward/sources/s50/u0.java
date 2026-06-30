@@ -1,0 +1,21 @@
+package s50;
+
+@j95.b
+/* loaded from: classes8.dex */
+public final class u0 extends i95.w implements u50.z {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final jz5.g f484656d = jz5.h.b(s50.t0.f484655d);
+
+    /* renamed from: e, reason: collision with root package name */
+    public final java.util.Set f484657e = kz5.z.D0(new java.lang.Integer[]{123, 1001, 1003, 1006, 1007, 1008, 1011, 1012, 1013, 1014, 1017, 1018, java.lang.Integer.valueOf(com.p314xaae8f345.p2926x359365.C25483x77a9a59f.f46404xa5f7fd74), 1026, 1027, 1028, 1029, 1031, java.lang.Integer.valueOf(v31.j.f77249x366c91de), 1401, java.lang.Integer.valueOf(v31.i.f77247x366c91de)});
+
+    public boolean Ai(int i17) {
+        ((k23.b3) ((jz5.n) this.f484656d).mo141623x754a37bb()).getClass();
+        return (j62.e.g().i("clicfg_fts_search_finder_camera_voice_search_android", 0, true, true) > 0) && Bi(i17);
+    }
+
+    public boolean Bi(int i17) {
+        return this.f484657e.contains(java.lang.Integer.valueOf(i17));
+    }
+}

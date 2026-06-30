@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/cz"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="#4dffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jwp" />
+    <com.tencent.mm.ui.widget.pulldown.HorizontalNestedBounceView android:id="@id/dcb" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/m92" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/dv" android:layout_width="match_parent" android:layout_height="@dimen/cz" android:fillViewport="true" android:requiresFadingEdge="horizontal" android:layout_marginStart="@dimen/dv" />
+    </com.tencent.mm.ui.widget.pulldown.HorizontalNestedBounceView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/a07" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/b78" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:layout_marginTop="@dimen/bl" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:minHeight="@dimen/ac4">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mgy" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/mgz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/c9" android:src="@raw/icons_filled_info" app:fs="@color/ac" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/bqk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:text="@string/b5x" android:maxLines="2" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/Link_100" android:id="@id/bqj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/c9" android:text="@string/b5w" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bqi" android:padding="4.0dp" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginRight="@dimen/c9" android:src="@raw/icons_outlined_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fs="@color/FG_1" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="1.0px" />
+</LinearLayout>

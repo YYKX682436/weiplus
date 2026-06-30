@@ -1,0 +1,12 @@
+package androidx.camera.extensions.internal.sessionprocessor;
+
+/* loaded from: classes14.dex */
+public abstract class MultiResolutionImageReaderOutputConfig implements androidx.camera.extensions.internal.sessionprocessor.Camera2OutputConfig {
+    public static androidx.camera.extensions.internal.sessionprocessor.MultiResolutionImageReaderOutputConfig create(int i17, int i18, java.lang.String str, java.util.List<androidx.camera.extensions.internal.sessionprocessor.Camera2OutputConfig> list, int i19, int i27) {
+        return new androidx.camera.extensions.internal.sessionprocessor.AutoValue_MultiResolutionImageReaderOutputConfig(i17, i18, str, list, i19, i27);
+    }
+
+    public abstract int getImageFormat();
+
+    public abstract int getMaxImages();
+}

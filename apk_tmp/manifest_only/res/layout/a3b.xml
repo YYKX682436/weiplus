@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cn9" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.tools.CropImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cnh" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:scaleType="matrix" />
+    <View android:gravity="center" android:layout_gravity="center" android:id="@id/cn_" android:layout_width="312.0dp" android:layout_height="312.0dp" />
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cne" android:background="@drawable/bjx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cng" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/cn2" android:paddingLeft="8.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/cni" style="@style/ow" />
+            <View android:layout_width="8.0dp" style="@style/l3" />
+            <Button android:id="@id/cnk" style="@style/vo" />
+            <Button android:id="@id/cnj" style="@style/vn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cna" android:background="@drawable/ccu" android:padding="@dimen/j3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_vertical" android:id="@id/cnb" android:minWidth="@dimen/i7" android:text="@string/bm5" style="@style/ks" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.tencent.mm.ui.tools.FilterImageView android:id="@id/cn7" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

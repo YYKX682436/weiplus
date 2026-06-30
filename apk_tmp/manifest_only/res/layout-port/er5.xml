@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/p5q" android:background="#2c2c2e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/vog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ct" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/p5p" android:background="@drawable/d3m" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:layout_centerVertical="true" android:contentDescription="@string/b9d">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/f6b" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/UN_BW_100_Alpha_0_8" />
+        </FrameLayout>
+        <TextView android:textColor="@color/an" android:id="@id/p5s" android:paddingLeft="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@raw/finder_live_pull_down_list_arrow" android:drawablePadding="5.0dp" android:layout_centerInParent="true" android:alpha="0.8" style="@style/s5" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/p5n" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_below="@id/vog" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/BW_100_Alpha_0_5" android:gravity="center" android:id="@id/p5o" android:padding="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sl" android:layout_alignTop="@id/p5x" android:layout_alignBottom="@id/p5x" style="@style/s5" />
+        <com.tencent.mm.plugin.finder.voice.FinderLiveVoiceInputLayoutImpl android:id="@id/p5x" android:layout_width="125.0dp" android:layout_height="125.0dp" android:layout_marginTop="@dimen/bu" android:layout_toEndOf="@id/p5o" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/aaq" android:gravity="center" android:id="@id/p5u" android:padding="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nwb" android:layout_toRightOf="@id/p5x" android:layout_alignTop="@id/p5x" android:layout_alignBottom="@id/p5x" />
+    </RelativeLayout>
+</RelativeLayout>

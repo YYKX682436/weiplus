@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="20.0dp" android:paddingBottom="20.0dp" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bmx" />
+    <TextView android:gravity="center" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ih6" android:lineSpacingExtra="4.0dp" style="@style/ik" />
+    <View style="@style/jm" />
+    <ListView android:id="@android:id/list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_weight="1.0" />
+</LinearLayout>

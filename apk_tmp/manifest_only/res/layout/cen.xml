@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lxt" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textAppearance="@style/qi" android:id="@id/lxl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="add" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_alignParentStart="true" />
+        <Button android:textAppearance="@style/qi" android:id="@id/lxw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="disfocus button" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_toEndOf="@id/lxl" />
+        <ImageView android:id="@id/ly0" android:background="@drawable/bkt" android:focusable="true" android:clickable="true" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginStart="@dimen/c9" android:layout_toEndOf="@id/lxw" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/lxy" android:padding="@dimen/cs" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/lxx" android:background="@color/Green_80" android:focusable="true" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:src="@drawable/e0" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textColor="@color/aaw" android:id="@id/lxz" android:background="@color/a2y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_toEndOf="@id/lxx" />
+        <Button android:textAppearance="@style/qi" android:id="@id/ly4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="warn" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_alignParentEnd="true" />
+        <TextView android:id="@id/ly5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Warn Text" android:layout_centerVertical="true" android:layout_toStartOf="@id/ly4" />
+        <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/ly3" android:focusable="true" android:clickable="true" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cs" android:layout_toEndOf="@id/lxx" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lxv" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/bkt" android:focusable="true" android:clickable="true" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        <Button android:textAppearance="@style/qi" android:id="@id/lxu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a button" />
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="根布局 disableChild" />
+    </LinearLayout>
+    <include layout="@layout/cem" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/lxs" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

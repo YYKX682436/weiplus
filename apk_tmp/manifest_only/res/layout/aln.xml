@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/qtt" android:background="@drawable/ah7" android:layout_width="match_parent" android:layout_height="41.0dp" android:layout_marginBottom="10.0dp" android:paddingStart="8.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/icons_outlined_exclamation_mark_circle" app:fs="@color/aeg" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/aeh" android:ellipsize="end" android:id="@id/qtu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="8.0dp" />
+    <FrameLayout android:id="@id/qts" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginEnd="6.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/qtr" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@raw/icons_filled_close_thin" app:fs="@color/aeg" />
+    </FrameLayout>
+</LinearLayout>

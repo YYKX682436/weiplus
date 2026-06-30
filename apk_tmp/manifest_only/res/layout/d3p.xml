@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/g17" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <View android:id="@id/bz3" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_alignEnd="@id/bzo" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bzo" android:padding="14.0dp" android:focusable="true" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" android:src="@raw/icons_filled_recordback" android:layout_centerInParent="true" android:contentDescription="@string/ht2" android:rotation="270.0" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.mmsight.ui.MMSightRecordButton android:layout_gravity="center|top" android:id="@id/lok" android:background="@android:color/transparent" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/a5z" android:minHeight="@dimen/a5z" android:contentDescription="@string/gw4" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ctg" android:visibility="gone" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@id/m3x" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/ctf" android:padding="@dimen/bl" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/finder_filled_delete_sub_video" app:fs="@color/a9z" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/m3x" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="@dimen/dj" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/ctg" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/cp8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/nb2" android:visibility="gone" android:layout_width="74.0dp" android:layout_height="74.0dp" android:scaleType="centerCrop" app:i8="1.0dp" />
+    <ImageView android:layout_gravity="center" android:id="@id/nb4" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/shortvideo_play_btn" />
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/a6q" android:ellipsize="end" android:gravity="center" android:id="@id/nb3" android:visibility="gone" android:layout_width="74.0dp" android:layout_height="74.0dp" android:maxLines="3" />
+    <FrameLayout android:id="@id/naz" android:visibility="gone" android:layout_width="74.0dp" android:layout_height="74.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/nb0" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+    </FrameLayout>
+    <include android:layout_gravity="end|bottom" android:id="@id/s6y" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginEnd="@dimen/ais" layout="@layout/dx1" />
+</FrameLayout>

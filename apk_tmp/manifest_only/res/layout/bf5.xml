@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="54.0dp" android:layout_height="26.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:layout_gravity="start|bottom" android:id="@id/bgc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" />
+    <TextView android:textSize="10.0dp" android:id="@id/nvo" android:background="@drawable/af2" android:visibility="gone" android:minWidth="14.0dp" android:minHeight="14.0dp" android:layout_marginStart="26.0dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/rv" />
+    <ImageView android:id="@id/nvn" android:visibility="gone" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:layout_marginTop="6.0dp" app:layout_constraintStart_toEndOf="@id/bgc" app:layout_constraintTop_toTopOf="0" style="@style/ry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

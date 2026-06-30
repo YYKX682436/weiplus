@@ -1,0 +1,28 @@
+package t21;
+
+/* loaded from: classes12.dex */
+public class j1 implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ t21.k1 f496331d;
+
+    public j1(t21.k1 k1Var) {
+        this.f496331d = k1Var;
+    }
+
+    @Override // java.lang.Runnable
+    public void run() {
+        t21.k1 k1Var = this.f496331d;
+        k1Var.f496346b.f496364a.f496574q = false;
+        t21.v2 v2Var = k1Var.f496345a;
+        v2Var.f496544i = 104;
+        v2Var.f496545j = com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.i1();
+        k1Var.f496345a.f496546k = com.p314xaae8f345.mm.sdk.p2603x2137b148.t8.i1();
+        t21.v2 v2Var2 = k1Var.f496345a;
+        v2Var2.f496539d = 0;
+        v2Var2.U = 1800;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.NetSceneUploadVideo", "%s summersafecdn MM_ERR_GET_AESKEY_FAILED doScene again enableHitcheck[%b], ret[%b] new createtime:%d", k1Var.f496346b.f496364a.N(), java.lang.Boolean.valueOf(k1Var.f496346b.f496364a.f496574q), java.lang.Boolean.valueOf(t21.d3.Q(v2Var2)), java.lang.Long.valueOf(k1Var.f496345a.f496545j));
+        t21.w0 w0Var = k1Var.f496346b.f496364a;
+        w0Var.mo807x6c193ac1(w0Var.m47995xb7ba1aa7(), k1Var.f496346b.f496364a.f496564d);
+    }
+}

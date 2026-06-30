@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/faz" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.live.mic.voiceroom.wave.RipperAnimateView android:id="@id/qxy" android:visibility="gone" android:layout_width="192.0dp" android:layout_height="192.0dp" app:ci="#e91e63" app:initRadius="68.0dp" app:layout_constraintBottom_toBottomOf="@id/qrn" app:layout_constraintLeft_toLeftOf="@id/qrn" app:layout_constraintRight_toRightOf="@id/qrn" app:layout_constraintTop_toTopOf="@id/qrn" app:strokeWidth="6.0dp" />
+    <ImageView android:id="@id/qrn" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

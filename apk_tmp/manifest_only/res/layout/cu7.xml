@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/hjb" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/jdk" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/cl6" android:background="@color/amb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <FrameLayout android:id="@id/oy7" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/p0h" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    <include layout="@layout/cu6" />
+</LinearLayout>

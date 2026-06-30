@@ -1,0 +1,203 @@
+package cw0;
+
+/* loaded from: classes5.dex */
+public final class y0 extends gv0.c {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final android.widget.TextView f222700d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final android.widget.ImageView f222701e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final android.view.View f222702f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final android.view.View f222703g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final android.view.View f222704h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public final android.view.View f222705i;
+
+    /* renamed from: m, reason: collision with root package name */
+    public final android.view.View f222706m;
+
+    /* renamed from: n, reason: collision with root package name */
+    public final /* synthetic */ cw0.b1 f222707n;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public y0(cw0.b1 b1Var, android.view.View itemView) {
+        super(itemView);
+        kotlin.jvm.internal.o.g(itemView, "itemView");
+        this.f222707n = b1Var;
+        android.view.View findViewById = itemView.findViewById(com.tencent.mm.R.id.q8t);
+        kotlin.jvm.internal.o.f(findViewById, "findViewById(...)");
+        this.f222700d = (android.widget.TextView) findViewById;
+        android.view.View findViewById2 = itemView.findViewById(com.tencent.mm.R.id.h5w);
+        kotlin.jvm.internal.o.f(findViewById2, "findViewById(...)");
+        this.f222701e = (android.widget.ImageView) findViewById2;
+        android.view.View findViewById3 = itemView.findViewById(com.tencent.mm.R.id.f486827qa0);
+        kotlin.jvm.internal.o.f(findViewById3, "findViewById(...)");
+        this.f222702f = findViewById3;
+        android.view.View findViewById4 = itemView.findViewById(com.tencent.mm.R.id.d3u);
+        kotlin.jvm.internal.o.f(findViewById4, "findViewById(...)");
+        this.f222703g = findViewById4;
+        android.view.View findViewById5 = itemView.findViewById(com.tencent.mm.R.id.q4i);
+        kotlin.jvm.internal.o.f(findViewById5, "findViewById(...)");
+        this.f222704h = findViewById5;
+        android.view.View findViewById6 = itemView.findViewById(com.tencent.mm.R.id.qhj);
+        kotlin.jvm.internal.o.f(findViewById6, "findViewById(...)");
+        this.f222705i = findViewById6;
+        android.view.View findViewById7 = itemView.findViewById(com.tencent.mm.R.id.qol);
+        kotlin.jvm.internal.o.f(findViewById7, "findViewById(...)");
+        this.f222706m = findViewById7;
+    }
+
+    @Override // gv0.c
+    public void i(java.lang.Object obj, int i17) {
+        dw0.c data = (dw0.c) obj;
+        kotlin.jvm.internal.o.g(data, "data");
+        com.tencent.maas.material.MJMaterialInfo mJMaterialInfo = data.f244086a;
+        java.lang.String str = mJMaterialInfo.f48224b;
+        zu0.i iVar = data.f244088c;
+        java.util.Objects.toString(iVar);
+        com.tencent.maas.material.MJMaterialInfo mJMaterialInfo2 = dw0.c.f244083e;
+        com.tencent.maas.material.g gVar = mJMaterialInfo.f48223a;
+        kotlin.jvm.internal.o.f(gVar, "getMaterialScene(...)");
+        boolean b17 = kotlin.jvm.internal.o.b(mJMaterialInfo, fv0.e.c(gVar) == fv0.d.f266963o ? dw0.c.f244083e : dw0.c.f244084f);
+        java.lang.String str2 = mJMaterialInfo.f48226d;
+        android.widget.TextView textView = this.f222700d;
+        android.widget.ImageView imageView = this.f222701e;
+        boolean z17 = data.f244089d;
+        if (b17) {
+            imageView.setImageDrawable(j65.q.a(this.itemView.getContext()).getDrawable(com.tencent.mm.R.drawable.cwo, null));
+            textView.setBackground(j65.q.a(this.itemView.getContext()).getDrawable(com.tencent.mm.R.color.acy, null));
+            textView.setText(str2);
+            imageView.setVisibility(0);
+            textView.setVisibility(0);
+            imageView.setPadding(0, 0, 0, 0);
+            android.view.View view = this.f222702f;
+            int i18 = z17 ? 0 : 8;
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+            arrayList.add(java.lang.Integer.valueOf(i18));
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(view, arrayList.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view.setVisibility(((java.lang.Integer) arrayList.get(0)).intValue());
+            yj0.a.f(view, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            textView.setSelected(z17);
+            android.view.View view2 = this.f222705i;
+            java.util.ArrayList arrayList2 = new java.util.ArrayList();
+            arrayList2.add(8);
+            java.util.Collections.reverse(arrayList2);
+            yj0.a.d(view2, arrayList2.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view2.setVisibility(((java.lang.Integer) arrayList2.get(0)).intValue());
+            yj0.a.f(view2, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            android.view.View view3 = this.f222706m;
+            java.util.ArrayList arrayList3 = new java.util.ArrayList();
+            arrayList3.add(8);
+            java.util.Collections.reverse(arrayList3);
+            yj0.a.d(view3, arrayList3.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view3.setVisibility(((java.lang.Integer) arrayList3.get(0)).intValue());
+            yj0.a.f(view3, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            android.view.View view4 = this.f222704h;
+            java.util.ArrayList arrayList4 = new java.util.ArrayList();
+            arrayList4.add(8);
+            java.util.Collections.reverse(arrayList4);
+            yj0.a.d(view4, arrayList4.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view4.setVisibility(((java.lang.Integer) arrayList4.get(0)).intValue());
+            yj0.a.f(view4, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            android.view.View view5 = this.f222703g;
+            java.util.ArrayList arrayList5 = new java.util.ArrayList();
+            arrayList5.add(8);
+            java.util.Collections.reverse(arrayList5);
+            yj0.a.d(view5, arrayList5.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view5.setVisibility(((java.lang.Integer) arrayList5.get(0)).intValue());
+            yj0.a.f(view5, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindOriginTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            return;
+        }
+        vo0.a aVar = vo0.e.f438468b;
+        java.lang.String str3 = mJMaterialInfo.f48227e;
+        kotlin.jvm.internal.o.f(str3, "getPreviewImageURL(...)");
+        aVar.c(str3, imageView, this.f222707n.f222615h);
+        textView.setVisibility(0);
+        textView.setText(str2);
+        textView.setBackground(j65.q.a(this.itemView.getContext()).getDrawable(com.tencent.mm.R.color.acy, null));
+        imageView.setPadding(0, 0, 0, 0);
+        if (iVar == zu0.i.f475677g) {
+            android.view.View view6 = this.f222705i;
+            java.util.ArrayList arrayList6 = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal2 = zj0.c.f473285a;
+            arrayList6.add(0);
+            java.util.Collections.reverse(arrayList6);
+            yj0.a.d(view6, arrayList6.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view6.setVisibility(((java.lang.Integer) arrayList6.get(0)).intValue());
+            yj0.a.f(view6, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            android.view.View view7 = this.f222706m;
+            java.util.ArrayList arrayList7 = new java.util.ArrayList();
+            arrayList7.add(0);
+            java.util.Collections.reverse(arrayList7);
+            yj0.a.d(view7, arrayList7.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view7.setVisibility(((java.lang.Integer) arrayList7.get(0)).intValue());
+            yj0.a.f(view7, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        } else {
+            android.view.View view8 = this.f222705i;
+            java.util.ArrayList arrayList8 = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal3 = zj0.c.f473285a;
+            arrayList8.add(8);
+            java.util.Collections.reverse(arrayList8);
+            yj0.a.d(view8, arrayList8.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view8.setVisibility(((java.lang.Integer) arrayList8.get(0)).intValue());
+            yj0.a.f(view8, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            android.view.View view9 = this.f222706m;
+            java.util.ArrayList arrayList9 = new java.util.ArrayList();
+            arrayList9.add(8);
+            java.util.Collections.reverse(arrayList9);
+            yj0.a.d(view9, arrayList9.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view9.setVisibility(((java.lang.Integer) arrayList9.get(0)).intValue());
+            yj0.a.f(view9, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        }
+        android.view.View view10 = this.f222702f;
+        int i19 = z17 ? 0 : 8;
+        java.util.ArrayList arrayList10 = new java.util.ArrayList();
+        arrayList10.add(java.lang.Integer.valueOf(i19));
+        java.util.Collections.reverse(arrayList10);
+        yj0.a.d(view10, arrayList10.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        view10.setVisibility(((java.lang.Integer) arrayList10.get(0)).intValue());
+        yj0.a.f(view10, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        textView.setSelected(z17);
+        if (iVar == zu0.i.f475675e) {
+            android.view.View view11 = this.f222703g;
+            java.util.ArrayList arrayList11 = new java.util.ArrayList();
+            arrayList11.add(0);
+            java.util.Collections.reverse(arrayList11);
+            yj0.a.d(view11, arrayList11.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view11.setVisibility(((java.lang.Integer) arrayList11.get(0)).intValue());
+            yj0.a.f(view11, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            android.view.View view12 = this.f222704h;
+            java.util.ArrayList arrayList12 = new java.util.ArrayList();
+            arrayList12.add(0);
+            java.util.Collections.reverse(arrayList12);
+            yj0.a.d(view12, arrayList12.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view12.setVisibility(((java.lang.Integer) arrayList12.get(0)).intValue());
+            yj0.a.f(view12, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            return;
+        }
+        android.view.View view13 = this.f222703g;
+        java.util.ArrayList arrayList13 = new java.util.ArrayList();
+        arrayList13.add(8);
+        java.util.Collections.reverse(arrayList13);
+        yj0.a.d(view13, arrayList13.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        view13.setVisibility(((java.lang.Integer) arrayList13.get(0)).intValue());
+        yj0.a.f(view13, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        android.view.View view14 = this.f222704h;
+        java.util.ArrayList arrayList14 = new java.util.ArrayList();
+        arrayList14.add(8);
+        java.util.Collections.reverse(arrayList14);
+        yj0.a.d(view14, arrayList14.toArray(), "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+        view14.setVisibility(((java.lang.Integer) arrayList14.get(0)).intValue());
+        yj0.a.f(view14, "com/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/TimbreAdapter$TimbreHolder", "bindMaterialTimbre", "(Lcom/tencent/mm/mj_publisher/finder/movie_composing/panel/narration/models/TimbreMaterialInfo;)V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+    }
+}

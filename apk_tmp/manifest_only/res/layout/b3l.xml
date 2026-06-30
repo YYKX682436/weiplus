@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/azm" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rya" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/hhj" android:paddingLeft="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:id="@id/a_4" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:src="@drawable/bhm" android:layout_marginVertical="@dimen/c9" />
+                <include android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:layout_marginVertical="@dimen/c9" layout="@layout/dtv" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:layout_weight="1.0">
+                    <com.tencent.mm.plugin.finder.view.FinderMentionTitleView android:orientation="vertical" android:id="@id/rx5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/c9" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <TextView android:textSize="15.0dp" android:ellipsize="end" android:id="@id/jt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/bn" android:singleLine="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/rx5" style="@style/r7" />
+                    <com.tencent.mm.plugin.finder.thanksbutton.FinderThanksButton android:id="@id/o5q" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginTop="@dimen/c8" android:layout_marginBottom="@dimen/bj" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/jt2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/rx4" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_bellring_off" app:fs="@color/FG_2" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dqf" />
+        <ImageView android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dr" android:layout_marginTop="@dimen/cn" android:src="@drawable/afv" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dtu" />
+</LinearLayout>

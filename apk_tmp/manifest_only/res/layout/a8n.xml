@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ca" android:textColor="@color/f5" android:id="@id/mzf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginStart="@dimen/cn" android:layout_alignStart="@id/mze" />
+    <com.tencent.mm.plugin.emoji.ui.v3.EmojiStoreV3SingleProductRecyclerView android:id="@id/mze" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_below="@id/mzf" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/mzd" android:layout_width="@dimen/c8" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_arrow" android:layout_alignBottom="@id/mzf" android:layout_marginEnd="@dimen/cn" android:layout_alignEnd="@id/mze" app:fs="@color/BW_0_Alpha_0_2" />
+</RelativeLayout>

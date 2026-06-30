@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:key="contact_info_header_helper" android:gc="@layout/c9y" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:key="contact_info_schedule_msg_sticky" android:gc="@layout/byv" android:persistent="false" android:title="@string/nlo" />
+    <PreferenceSmallCategory />
+    <Preference android:key="contact_info_schedule_msg_clear_data" android:gc="@layout/byv" android:title="@string/nlj" />
+    <PreferenceCategory />
+</PreferenceScreen>

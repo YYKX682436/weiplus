@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.StrokeTextView android:textSize="@dimen/gz" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/b25" android:paddingTop="1.5dp" android:paddingBottom="1.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="弹幕" android:maxLines="1" android:shadowColor="@color/BW_100_Alpha_0_3" android:shadowRadius="1.0" android:paddingVertical="1.5dp" app:finderStrokeWidth="6.0" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/snk" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/snm" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" app:fs="@color/BW_100_Alpha_0_8" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/BW_100_Alpha_0_8" android:layout_gravity="center_vertical" android:id="@id/snl" android:paddingLeft="@dimen/bi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+package ju1;
+
+/* loaded from: classes9.dex */
+public abstract class e {
+    public static final android.graphics.drawable.Drawable a(int i17) {
+        android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+        android.graphics.drawable.ColorDrawable colorDrawable = new android.graphics.drawable.ColorDrawable(i17);
+        android.graphics.drawable.ColorDrawable colorDrawable2 = new android.graphics.drawable.ColorDrawable(i65.a.d(context, com.tencent.mm.R.color.UN_BW_0_Alpha_0_1));
+        int i18 = i17 & 16777215;
+        android.graphics.drawable.GradientDrawable gradientDrawable = new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, new int[]{(-16777216) | i18, i18 | 436207616});
+        gradientDrawable.setGradientType(0);
+        return new android.graphics.drawable.LayerDrawable(new android.graphics.drawable.Drawable[]{colorDrawable, gradientDrawable, colorDrawable2});
+    }
+
+    public static final void b(android.widget.ImageView imageView, java.lang.String str, int i17, int i18) {
+        if (str == null || imageView == null) {
+            return;
+        }
+        ju1.c cVar = new ju1.c(str, imageView);
+        yo0.f fVar = new yo0.f();
+        java.lang.String m17 = xt1.q.m(str);
+        kotlin.jvm.internal.o.f(m17, "getPictureStoragePath(...)");
+        fVar.f464079c = m17;
+        fVar.f464078b = true;
+        fVar.f464087k = false;
+        fVar.f464081e = i17;
+        fVar.f464082f = i18;
+        fVar.f464077a = true;
+        vo0.e.f438468b.h(str, imageView, fVar.a(), cVar);
+    }
+}

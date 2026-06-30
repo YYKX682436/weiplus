@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:layout_marginBottom="@dimen/cq">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/v_0" android:layout_width="@dimen/dj" android:layout_height="@dimen/dd" android:src="@drawable/cym" android:scaleType="center" android:layout_alignParentStart="true" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/o8u" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cz">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v9r" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/v9x" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:background="@drawable/d6r" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@drawable/d5p" android:scaleType="center" />
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/o8q" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v9x" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/v9t" app:layout_constraintStart_toEndOf="@id/v9r" app:layout_constraintTop_toTopOf="0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/v9y" android:background="@drawable/d6r" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:src="@drawable/d5o" android:scaleType="center" />
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/v9z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/o8t" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/v9t" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" app:layout_constraintEnd_toStartOf="@id/v9u" app:layout_constraintStart_toEndOf="@id/v9x" app:layout_constraintTop_toTopOf="0" />
+        <LinearLayout android:id="@id/v9u" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@id/v9t" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

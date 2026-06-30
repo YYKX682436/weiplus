@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/alg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/hx8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp">
+        <ImageView android:id="@id/hmp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ah2" android:contentDescription="logo" />
+        <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="Matrix TOP" android:layout_toRightOf="@id/hmp" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/hw0" android:layout_width="70.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:foreground="?ih" android:layout_toLeftOf="@id/hxs" android:layout_centerVertical="true">
+            <CheckBox android:id="@id/bsw" android:clickable="false" android:layout_width="25.0dp" android:layout_height="20.0dp" android:layout_marginTop="2.0dp" android:checked="false" android:layout_alignParentLeft="true" android:scaleX="0.35" android:scaleY="0.35" />
+            <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dp" android:text="power" android:maxLines="1" android:layout_toRightOf="@id/bsw" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/hxs" android:background="@color/ala" android:layout_width="60.0dp" android:layout_height="20.0dp" android:foreground="?ih" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/hn8" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/bdz" android:layout_centerVertical="true" android:contentDescription="logo" android:rotation="90.0" />
+            <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/op7" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":main" android:maxLines="1" android:layout_toRightOf="@id/hn8" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/all" android:id="@id/onb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电池温度" android:layout_below="@id/hx8" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/all" android:gravity="right" android:id="@id/onc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进程负载" android:layout_below="@id/hx8" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/hwq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/onb">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <include layout="@layout/av0" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/p1f" android:background="@color/ale" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dp" android:layout_below="@id/hwq" />
+    <LinearLayout android:orientation="vertical" android:id="@id/hwn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/p1f">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <include layout="@layout/avv" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/p1g" android:background="@color/ale" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dp" android:layout_below="@id/hwn" />
+    <LinearLayout android:orientation="vertical" android:id="@id/hwp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/p1g">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <include layout="@layout/amx" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/hvp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/hwp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/all" android:id="@id/om0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PID" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/all" android:gravity="center" android:id="@id/oo4" android:layout_width="60.0dp" android:layout_height="20.0dp" android:foreground="?ih" android:text="MINIFY" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/hwe" android:background="@color/ala" android:layout_width="60.0dp" android:layout_height="20.0dp" android:foreground="?ih" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/b3k" android:layout_centerVertical="true" android:contentDescription="logo" />
+            <TextView android:textSize="12.0sp" android:gravity="right" android:layout_gravity="center_vertical" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="DUMP" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

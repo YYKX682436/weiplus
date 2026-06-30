@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a20" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/rg" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dpa" android:paddingLeft="@dimen/i_" android:paddingTop="102.0dp" android:paddingRight="@dimen/i_" android:paddingBottom="@dimen/hf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hqs" android:layout_centerHorizontal="true" />
+    <com.tencent.mm.plugin.pwdgroup.ui.widget.MMCallBackScrollView android:id="@id/dpf" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/dp6" android:layout_alignParentTop="true" android:importantForAccessibility="no">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:paddingTop="70.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/rg" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dp_" android:paddingLeft="@dimen/i_" android:paddingTop="32.0dp" android:paddingRight="@dimen/i_" android:paddingBottom="@dimen/hf" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hqs" />
+            <com.tencent.mm.plugin.pwdgroup.ui.widget.MMPwdInputView android:layout_gravity="center_horizontal" android:id="@id/dp9" android:paddingTop="@dimen/i_" android:paddingBottom="@dimen/i_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" />
+            <LinearLayout android:orientation="vertical" android:id="@id/dp2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/ia" android:textColor="@color/a8r" android:gravity="center_horizontal" android:id="@id/dp4" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:paddingBottom="@dimen/i_" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <View android:background="@color/a4m" android:paddingBottom="@dimen/hj" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/i_" android:layout_marginRight="@dimen/i_" />
+                <com.tencent.mm.ui.widget.MMScrollGridView android:id="@id/dp3" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/i_" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/i_" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/a9e" android:horizontalSpacing="@dimen/j3" android:verticalSpacing="@dimen/i_" android:numColumns="4" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.tencent.mm.plugin.pwdgroup.ui.widget.MMCallBackScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dpd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/dpf" android:layout_centerHorizontal="true">
+        <ProgressBar android:id="@id/dpc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a4l" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dpe" android:paddingLeft="@dimen/hi" android:paddingRight="@dimen/hi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.pwdgroup.ui.widget.MMKeyBoardView android:layout_gravity="center_horizontal" android:id="@id/dpb" android:layout_width="match_parent" android:layout_height="@dimen/a3h" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dp6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/dp7" android:background="@color/a4m" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <Button android:gravity="center" android:id="@id/dp5" android:layout_margin="@dimen/hf" android:layout_marginBottom="@dimen/hi" android:text="@string/c93" style="@style/kq" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:id="@id/ldv" android:background="@drawable/bfk" android:paddingLeft="@dimen/j3" android:paddingTop="@dimen/hf" android:paddingRight="@dimen/j3" android:paddingBottom="@dimen/j8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="A" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ldw" android:background="@drawable/aou" android:layout_width="match_parent" android:layout_height="@dimen/i9">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/j3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/ldx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/j3" />
+            <TextView android:id="@id/ldu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <CheckBox android:id="@id/ldy" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/j3" />
+    </LinearLayout>
+</LinearLayout>

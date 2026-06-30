@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="28.0dp" android:layout_width="match_parent" android:layout_height="266.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/s28" android:background="@drawable/cu5" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginRight="36.0dp" app:layout_constraintBottom_toBottomOf="@id/r34" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/sa1" app:layout_constraintTop_toTopOf="@id/r34">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/icons_outlined_minus2" app:fs="@color/FG_0" />
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/sa1" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/coin_icon" app:fs="@color/m" app:layout_constraintBottom_toBottomOf="@id/r34" app:layout_constraintLeft_toRightOf="@id/s28" app:layout_constraintRight_toLeftOf="@id/r34" app:layout_constraintTop_toTopOf="@id/r34" />
+    <TextView android:textSize="40.0dp" android:textColor="@color/FG_0" android:id="@id/r34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="@dimen/cz" app:layout_constraintLeft_toRightOf="@id/sa1" app:layout_constraintRight_toLeftOf="@id/mhh" app:layout_constraintTop_toTopOf="0" />
+    <FrameLayout android:id="@id/mhh" android:background="@drawable/cu5" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="36.0dp" app:layout_constraintBottom_toBottomOf="@id/r34" app:layout_constraintLeft_toRightOf="@id/r34" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@id/r34">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@raw/icons_outlined_add3" app:fs="@color/FG_0" />
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.button.WeButton android:id="@id/r2_" android:layout_width="184.0dp" android:layout_height="48.0dp" android:layout_marginBottom="36.0dp" android:text="@string/mmi" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" style="@style/xk" />
+</androidx.constraintlayout.widget.ConstraintLayout>

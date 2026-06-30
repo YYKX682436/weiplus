@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.emoji.ui.widget.SquareFrameLayout android:id="@id/hh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/emoji_custom_grid_item_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/h88" android:layout_width="@dimen/vz" android:layout_height="@dimen/vz" />
+        <CheckBox android:layout_gravity="right|top" android:id="@id/btq" android:background="@drawable/aon" android:focusable="false" android:clickable="false" android:layout_width="@dimen/aj" android:layout_height="@dimen/ai" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:scaleType="fitCenter" />
+        <View android:id="@id/mjg" android:background="@drawable/emoji_custom_grid_item_background" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+        <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="right|top" android:id="@id/mn1" android:background="@drawable/emoji_manage_selected_badge" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:minWidth="20.0dp" />
+    </FrameLayout>
+    <View android:id="@id/jbx" android:background="@drawable/emoji_custom_grid_item_background" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+</com.tencent.mm.plugin.emoji.ui.widget.SquareFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/df" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.loading.MMProgressLoading android:id="@id/lbl" android:layout_width="@dimen/df" android:layout_height="@dimen/df" app:loadProgressColor="@color/m" app:loadprogress="0" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u73" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/checkmark_circle_filled" app:fs="@color/Brand_100" />
+    <TextView android:textSize="@dimen/ia" android:textStyle="bold" android:textColor="@color/a0c" android:id="@id/oqh" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/b8o" android:maxLines="2" />
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/jj" android:id="@id/oqc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/all" android:layout_marginBottom="@dimen/d1" />
+    <Button android:textSize="@dimen/j4" android:textColor="@color/Link_100" android:id="@id/sn2" android:background="@color/a9e" android:visibility="visible" android:text="@string/b8d" android:maxLines="2" style="@style/kz" />
+    <Button android:id="@id/sm7" android:visibility="gone" android:text="@string/d1x" style="@style/kz" />
+</LinearLayout>

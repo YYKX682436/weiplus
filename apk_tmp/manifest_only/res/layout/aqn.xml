@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/coi" android:layout_width="match_parent" android:layout_height="@dimen/bo" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cz" android:layout_marginBottom="@dimen/c9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@id/hcm" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/or" android:textColor="@color/an" android:id="@id/nyy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/BW_100_Alpha_0_5" android:id="@id/nyk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/bl" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/nyy" />
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_3" android:id="@id/nys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_marginRight="@dimen/cn" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

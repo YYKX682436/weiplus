@@ -1,0 +1,23 @@
+package d5;
+
+/* loaded from: classes13.dex */
+public class e {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final java.lang.String f226478d = a5.a0.e("ConstraintsCmdHandler");
+
+    /* renamed from: a, reason: collision with root package name */
+    public final android.content.Context f226479a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final int f226480b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final f5.d f226481c;
+
+    public e(android.content.Context context, int i17, d5.k kVar) {
+        this.f226479a = context;
+        this.f226480b = i17;
+        this.f226481c = new f5.d(context, kVar.f226499e, null);
+    }
+}

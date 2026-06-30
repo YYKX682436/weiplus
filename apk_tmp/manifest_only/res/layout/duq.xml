@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/fx" android:id="@id/rif" android:background="@color/a9e" android:visibility="gone" android:text="@string/mvh" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/l1" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rig" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bu7" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bl" android:layout_alignParentStart="true" />
+    <TextView android:textStyle="bold" android:id="@id/rij" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/rm" />
+    <Button android:id="@id/rih" android:visibility="gone" android:text="@string/mwh" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/ks" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rii" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/bl" android:layout_marginRight="@dimen/bl" android:src="@raw/icons_outlined_add2" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="@dimen/bl" />
+</RelativeLayout>

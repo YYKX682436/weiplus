@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lxo" android:padding="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/lxn" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <Button android:id="@id/lxm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set in" android:layout_centerVertical="true" android:layout_marginStart="@dimen/d1" android:layout_toEndOf="@id/lxn" />
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/ly1" android:layout_width="20.0dp" android:layout_height="20.0dp" android:text="s" android:layout_marginStart="30.0dp" android:layout_toEndOf="@id/lxm" />
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/ly2" android:layout_width="20.0dp" android:layout_height="20.0dp" android:text="s" android:layout_marginStart="30.0dp" android:layout_toEndOf="@id/ly1" />
+</RelativeLayout>

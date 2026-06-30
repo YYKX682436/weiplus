@@ -1,0 +1,60 @@
+package ws2;
+
+/* loaded from: classes3.dex */
+public final class u0 {
+    public u0(p3321xbce91901.jvm.p3324x21ffc6bd.i iVar) {
+    }
+
+    public final ws2.k1 a() {
+        if (ws2.k1.f530600s == null) {
+            synchronized (this) {
+                if (ws2.k1.f530600s == null) {
+                    ws2.k1.f530600s = new ws2.k1();
+                }
+            }
+        }
+        ws2.k1 k1Var = ws2.k1.f530600s;
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.d(k1Var);
+        return k1Var;
+    }
+
+    public final void b(boolean z17) {
+        ws2.k1 k1Var = ws2.k1.f530600s;
+        if (k1Var == null) {
+            return;
+        }
+        if (!z17) {
+            dt2.b0 b0Var = k1Var.f530606e;
+            com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1617xc84c47e7.C14929x59565fb6 c14929x59565fb6 = b0Var instanceof com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1617xc84c47e7.C14929x59565fb6 ? (com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1617xc84c47e7.C14929x59565fb6) b0Var : null;
+            if (c14929x59565fb6 != null) {
+                c14929x59565fb6.m57646xb4098c93();
+            }
+            ct2.j jVar = (ct2.j) k1Var.e(ct2.j.class);
+            k1Var.l(9, jVar != null ? jVar.O6() : 0L, true);
+            return;
+        }
+        dt2.b0 b0Var2 = k1Var.f530606e;
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1617xc84c47e7.C14929x59565fb6 c14929x59565fb62 = b0Var2 instanceof com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1617xc84c47e7.C14929x59565fb6 ? (com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1617xc84c47e7.C14929x59565fb6) b0Var2 : null;
+        if (c14929x59565fb62 != null) {
+            at2.u1 u1Var = (at2.u1) c14929x59565fb62.mo57682x2a5e9229(at2.u1.class);
+            if (u1Var != null) {
+                u1Var.x1();
+            }
+            com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1617xc84c47e7.C14929x59565fb6.s(c14929x59565fb62, false, false, true, 3, null);
+        }
+    }
+
+    public final boolean c() {
+        ct2.j jVar;
+        if (ws2.k1.f530600s == null) {
+            return false;
+        }
+        ws2.k1 k1Var = ws2.k1.f530600s;
+        if (k1Var == null) {
+            return true;
+        }
+        ws2.k1 k1Var2 = ws2.k1.f530600s;
+        k1Var.l(1, (k1Var2 == null || (jVar = (ct2.j) k1Var2.e(ct2.j.class)) == null) ? 0L : jVar.O6(), true);
+        return true;
+    }
+}

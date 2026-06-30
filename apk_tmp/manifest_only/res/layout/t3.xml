@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/k82" android:background="@drawable/n9" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:background="@color/i2" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <com.google.android.flexbox.FlexboxLayout android:orientation="horizontal" android:id="@id/k8b" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44.0dp" app:alignItems="2" app:flexDirection="0" app:justifyContent="0">
+        <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:alignItems="2" app:flexDirection="0" app:justifyContent="3" app:layout_flexGrow="1.0" app:layout_flexShrink="2.0">
+            <com.google.android.flexbox.FlexboxLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/k7v" android:layout_width="wrap_content" android:layout_height="wrap_content" app:alignItems="2" app:flexDirection="0" app:justifyContent="0" app:layout_flexShrink="0.0">
+                <ImageView android:id="@id/k83" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="6.0dp" android:scaleType="fitXY" app:layout_flexShrink="0.0" />
+                <TextView android:textSize="15.0dp" android:ellipsize="end" android:id="@id/k8a" android:paddingRight="28.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{}" android:singleLine="true" app:layout_flexGrow="1.0" app:layout_flexShrink="2.0" />
+                <ImageView android:id="@id/k85" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="-24.0dp" android:scaleType="fitXY" />
+                <ImageView android:id="@id/k89" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginLeft="8.0dp" app:layout_flexShrink="0.0" style="@style/ry" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/uku" android:layout_width="wrap_content" android:layout_height="wrap_content" app:alignItems="2" app:flexDirection="1" app:justifyContent="0" app:layout_flexShrink="2.0">
+                <ImageView android:layout_gravity="right|center" android:id="@id/k8_" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginLeft="@dimen/j3" app:layout_flexShrink="0.0" style="@style/ry" />
+                <TextView android:textSize="15.0dp" android:ellipsize="end" android:gravity="left" android:layout_gravity="right|center" android:id="@id/k84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" app:layout_flexGrow="1.0" app:layout_flexShrink="2.0" />
+                <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/ukr" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="4.0dp" android:scaleType="fitXY" app:layout_flexShrink="0.0" app:i8="2.0dp" />
+            </com.google.android.flexbox.FlexboxLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="right|center" android:id="@id/k7n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j3" android:src="@raw/arrow_right" app:layout_flexShrink="0.0" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <FrameLayout android:id="@id/k87" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+        <ImageView android:id="@id/k86" android:layout_width="match_parent" android:layout_height="80.0dp" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/k88" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@raw/shortvideo_play_btn" />
+    </FrameLayout>
+</LinearLayout>

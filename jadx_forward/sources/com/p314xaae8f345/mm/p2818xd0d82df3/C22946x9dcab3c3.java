@@ -1,0 +1,53 @@
+package com.p314xaae8f345.mm.p2818xd0d82df3;
+
+@p3321xbce91901.InterfaceC29042xe907df4f(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000e\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0014\u0010\u000b\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006R\u0014\u0010\r\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006R\u001c\u0010\u000f\u001a\u00020\u00048\u0006X\u0087D¢\u0006\u000e\n\u0000\u0012\u0004\b\u0010\u0010\u0002\u001a\u0004\b\u0011\u0010\u0006¨\u0006\u0012"}, d2 = {"Lcom/tencent/mm/wexnet/XnetDataKind;", "", "()V", "StorageDataKindFloat32", "", "getStorageDataKindFloat32", "()I", "StorageDataKindInt32", "getStorageDataKindInt32", "StorageDataKindInt64", "getStorageDataKindInt64", "StorageDataKindInt8", "getStorageDataKindInt8", "StorageDataKindUInt32", "getStorageDataKindUInt32", "StorageDataKindUInt8", "getStorageDataKindUInt8$annotations", "getStorageDataKindUInt8", "plugin-appbrand-integration_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* renamed from: com.tencent.mm.wexnet.XnetDataKind */
+/* loaded from: classes7.dex */
+public final class C22946x9dcab3c3 {
+
+    /* renamed from: INSTANCE */
+    public static final com.p314xaae8f345.mm.p2818xd0d82df3.C22946x9dcab3c3 f39963x4fbc8495 = new com.p314xaae8f345.mm.p2818xd0d82df3.C22946x9dcab3c3();
+    private static final int StorageDataKindUInt8 = 2;
+    private static final int StorageDataKindInt8 = 6;
+    private static final int StorageDataKindUInt32 = 4;
+    private static final int StorageDataKindInt32 = 8;
+    private static final int StorageDataKindInt64 = 9;
+    private static final int StorageDataKindFloat32 = 11;
+
+    private C22946x9dcab3c3() {
+    }
+
+    /* renamed from: getStorageDataKindUInt8 */
+    public static final int m83554x9203823b() {
+        return StorageDataKindUInt8;
+    }
+
+    /* renamed from: getStorageDataKindUInt8$annotations */
+    public static /* synthetic */ void m83555x2abbe3b() {
+    }
+
+    /* renamed from: getStorageDataKindFloat32 */
+    public final int m83556x416e6078() {
+        return StorageDataKindFloat32;
+    }
+
+    /* renamed from: getStorageDataKindInt32 */
+    public final int m83557x916b488b() {
+        return StorageDataKindInt32;
+    }
+
+    /* renamed from: getStorageDataKindInt64 */
+    public final int m83558x916b48ea() {
+        return StorageDataKindInt64;
+    }
+
+    /* renamed from: getStorageDataKindInt8 */
+    public final int m83559x784dc88c() {
+        return StorageDataKindInt8;
+    }
+
+    /* renamed from: getStorageDataKindUInt32 */
+    public final int m83560xae6cc4bc() {
+        return StorageDataKindUInt32;
+    }
+}

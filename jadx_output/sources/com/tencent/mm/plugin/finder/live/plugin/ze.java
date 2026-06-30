@@ -1,0 +1,34 @@
+package com.tencent.mm.plugin.finder.live.plugin;
+
+/* loaded from: classes3.dex */
+public final class ze implements com.tencent.mm.sdk.platformtools.k3 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.live.plugin.mg f115334d;
+
+    public ze(com.tencent.mm.plugin.finder.live.plugin.mg mgVar) {
+        this.f115334d = mgVar;
+    }
+
+    @Override // android.os.Handler.Callback
+    public final boolean handleMessage(android.os.Message it) {
+        kotlin.jvm.internal.o.g(it, "it");
+        int i17 = it.what;
+        int i18 = com.tencent.mm.plugin.finder.live.plugin.mg.f113500y1;
+        com.tencent.mm.plugin.finder.live.plugin.mg mgVar = this.f115334d;
+        if (i17 == i18) {
+            java.lang.Object obj = it.obj;
+            kotlin.jvm.internal.o.e(obj, "null cannot be cast to non-null type java.util.ArrayList<com.tencent.mm.plugin.finder.live.model.IFinderLiveMsg>{ kotlin.collections.TypeAliasesKt.ArrayList<com.tencent.mm.plugin.finder.live.model.IFinderLiveMsg> }");
+            mgVar.T1((java.util.ArrayList) obj, true, it.arg1 == 1, java.lang.Boolean.valueOf(it.arg2 == 1));
+        } else if (i17 == com.tencent.mm.plugin.finder.live.plugin.mg.f113501z1) {
+            java.lang.Object obj2 = it.obj;
+            kotlin.jvm.internal.o.e(obj2, "null cannot be cast to non-null type java.util.ArrayList<com.tencent.mm.plugin.finder.live.model.IFinderLiveMsg>{ kotlin.collections.TypeAliasesKt.ArrayList<com.tencent.mm.plugin.finder.live.model.IFinderLiveMsg> }");
+            mgVar.T1((java.util.ArrayList) obj2, false, it.arg1 == 1, java.lang.Boolean.TRUE);
+        } else if (i17 == com.tencent.mm.plugin.finder.live.plugin.mg.A1) {
+            java.lang.Object obj3 = it.obj;
+            kotlin.jvm.internal.o.e(obj3, "null cannot be cast to non-null type java.util.ArrayList<com.tencent.mm.plugin.finder.live.model.IFinderLiveMsg>{ kotlin.collections.TypeAliasesKt.ArrayList<com.tencent.mm.plugin.finder.live.model.IFinderLiveMsg> }");
+            mgVar.Q1((java.util.ArrayList) obj3, java.lang.Boolean.TRUE, true);
+        }
+        return true;
+    }
+}

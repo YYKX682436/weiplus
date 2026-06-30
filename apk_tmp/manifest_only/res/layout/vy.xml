@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp">
+            <FrameLayout android:id="@id/bkg" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/bkm" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ImageView android:id="@id/bko" android:background="@drawable/lx" android:layout_width="@dimen/a3" android:layout_height="@dimen/a3" />
+                <ImageView android:layout_gravity="center" android:id="@id/bqy" android:background="@null" android:layout_width="@dimen/a8" android:layout_height="@dimen/a8" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp">
+            <TextView android:ellipsize="end" android:id="@id/bjp" android:layout_marginLeft="0.0dp" android:singleLine="true" style="@style/eb" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

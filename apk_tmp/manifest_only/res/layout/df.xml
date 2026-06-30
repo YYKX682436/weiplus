@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/jg" android:baselineAligned="false" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/mg" android:focusable="true" android:scrollbars="none" android:transcriptMode="disabled" android:overScrollMode="never" style="@style/js" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.tencent.mm.ui.base.AlphabetScrollBar android:id="@id/mx" android:layout_width="@dimen/d" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <include layout="@layout/cxk" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+package qk5;
+
+/* loaded from: classes.dex */
+public final class b implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final qk5.b f445984d = new qk5.b();
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/ui/vas/launcher/VASLauncher$startActivityForResult$1$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.VAS.VASLauncher", "vaslauncher onclick protect");
+        yj0.a.h(this, "com/tencent/mm/ui/vas/launcher/VASLauncher$startActivityForResult$1$1", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

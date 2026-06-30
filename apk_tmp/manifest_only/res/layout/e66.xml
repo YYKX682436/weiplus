@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.convert.comment.FinderCommentImageGalleryView android:layout_gravity="center_horizontal" android:id="@id/u76" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ssh" android:background="@drawable/uc" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/df" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn">
+        <com.tencent.mm.plugin.finder.view.CollapsibleTextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_8" android:id="@id/vic" android:layout_width="match_parent" android:layout_height="wrap_content" app:collapseMaxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/uc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+            <ImageView android:id="@id/hke" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/bhm" android:contentDescription="@string/a6x" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/cb" android:textColor="@color/BW_100_Alpha_0_5" android:ellipsize="end" android:gravity="top" android:id="@id/oog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="105.0dp" android:maxLines="1" android:layout_marginStart="@dimen/dv" />
+            <com.tencent.mm.ui.MMImageView android:id="@id/u79" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:contentDescription="@string/cpg" android:layout_marginStart="@dimen/bj" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_3" android:ellipsize="end" android:id="@id/vip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/bl" />
+            <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_3" android:ellipsize="end" android:id="@id/vid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="@dimen/bl" />
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_5" android:gravity="center" android:id="@id/vj2" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/dsa" android:paddingHorizontal="@dimen/dv" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ucc" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/dv">
+                <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/c9" android:textColor="@color/BW_100_Alpha_0_5" android:gravity="center" android:id="@id/vjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/bl" />
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u7q" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_good" android:scaleType="fitXY" app:fs="@color/BW_100_Alpha_0_5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom" android:id="@id/vnc" android:layout="@layout/e67" android:inflatedId="@id/vbb" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

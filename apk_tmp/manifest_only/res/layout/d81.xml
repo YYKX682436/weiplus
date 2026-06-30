@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" style="@style/s9">
+        <TextView android:textColor="@color/sz" android:id="@id/hdt" android:layout_marginBottom="@dimen/j" android:text="@string/kx3" style="@style/sk" />
+        <LinearLayout style="@style/sy">
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:gravity="right|center" android:id="@id/k3n" android:clickable="false" wallet:de="false" wallet:contentHint="@string/kx7" wallet:dp="@color/tk" wallet:titleText="@string/kx6" style="@style/oh" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/bb3" android:minHeight="45.0dp" wallet:contentHint="@string/kx5" wallet:titleText="@string/kx1" style="@style/sp" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5u" wallet:contentHint="@string/kj9" wallet:titleText="@string/kj_" style="@style/f0" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5m" wallet:contentHint="@string/kj3" wallet:titleText="@string/kj4" style="@style/f0" />
+        </LinearLayout>
+        <Button android:id="@id/kao" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/ww" style="@style/su" />
+        <LinearLayout android:orientation="horizontal" android:layout_marginTop="8.0dp" android:layout_marginBottom="38.0dp" style="@style/jo">
+            <CheckBox android:textSize="@dimen/h2" android:textColor="@color/a0c" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/nu" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jo" android:checked="true" android:minHeight="22.0dp" android:text="@string/kjp" style="@style/l4" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/a_r" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/nt" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp" android:text="@string/kjo" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:layout_gravity="bottom" android:id="@id/pek" android:paddingTop="5.0dp" android:layout_height="match_parent" android:layout_margin="0.0dp" style="@style/t3" />
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/cye" />
+</RelativeLayout>

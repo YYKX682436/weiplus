@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a9e" android:paddingLeft="@dimen/dv" android:layout_width="wrap_content" android:layout_height="@dimen/df"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/oe9" android:background="@drawable/mu" android:paddingLeft="@dimen/dv" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_centerVertical="true">
+        <ImageView android:gravity="center_vertical" android:id="@id/oec" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@drawable/nu" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:id="@id/oem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginRight="@dimen/c9" android:maxWidth="@dimen/bw" android:minWidth="@dimen/d7" android:text="[今天吃什么？]" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/oec" android:layout_centerVertical="true" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/oea" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/d7" android:layout_marginLeft="-12.0dp" android:layout_marginRight="@dimen/c9" android:layout_toRightOf="@id/oem" android:layout_centerVertical="true">
+            <ImageView android:id="@id/oeb" android:background="@color/FG_4" android:layout_width="@dimen/pc" android:layout_height="14.0dp" android:layout_marginLeft="@dimen/bl" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/h2" android:textStyle="bold" android:textColor="@color/m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="@string/v5" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/oeb" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/oeh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-12.0dp" android:layout_marginRight="@dimen/c9" android:layout_toRightOf="@id/oem" android:layout_centerVertical="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center_vertical" android:id="@id/oei" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:src="@raw/icons_outlined_me" android:scaleType="centerCrop" android:layout_centerVertical="true" app:fs="@color/FG_2" />
+            <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:id="@id/oej" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[12]" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/oei" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

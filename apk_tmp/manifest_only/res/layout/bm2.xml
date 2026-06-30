@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="20.0dp" android:paddingTop="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.ipcall.ui.IPCallCounponCardLayout android:background="@drawable/afj" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ofz" android:paddingLeft="@dimen/a2z" android:paddingTop="@dimen/a2z" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@raw/ipcall_giftcard_call_icon" />
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/g69" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/g68" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/cro" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="@dimen/a2z" android:layout_marginRight="@dimen/a2z" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <com.tencent.mm.plugin.ipcall.ui.IPCallRoundUrlHeadImage android:id="@id/gyk" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="@dimen/a2z" android:layout_marginRight="@dimen/a2z" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <LinearLayout android:background="#4cffffff" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="40.0dp" android:layout_marginTop="@dimen/a2y" android:layout_marginRight="20.0dp" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/auq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a2z" android:layout_marginBottom="@dimen/a2z" android:layout_alignParentBottom="true">
+            <TextView android:textSize="10.0dp" android:textColor="@color/ab0" android:gravity="left|center" android:id="@id/ob5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:text="@string/g6l" android:layout_centerVertical="true" android:alpha="0.5" />
+            <ImageView android:layout_width="5.0dp" android:layout_height="12.0dp" android:layout_marginLeft="30.0dp" android:src="@drawable/b0b" android:layout_alignTop="@id/ob5" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="40.0dp" android:textStyle="normal" android:textColor="@color/ab0" android:id="@id/ckd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="10.0dp" android:textColor="@color/ab0" android:id="@id/cqh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="32.0dp" android:textColor="@color/ab0" android:id="@id/dki" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+        <ImageView android:background="@raw/ipcall_giftcard_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </com.tencent.mm.plugin.ipcall.ui.IPCallCounponCardLayout>
+</LinearLayout>

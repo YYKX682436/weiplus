@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/uhg" android:layout_width="match_parent" android:layout_height="@dimen/dd"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/t2s" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="left|center" android:id="@id/aa8" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingHorizontal="@dimen/cn">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@drawable/cs1" app:fs="@color/FG_0" />
+        </FrameLayout>
+        <com.tencent.mm.ui.chatting.history.widgets.MsgHistoryGalleryTypeFilterView android:layout_gravity="center" android:id="@id/vk1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/abw" android:gravity="center" android:layout_gravity="right|center" android:id="@id/select_btn" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pcx" android:paddingHorizontal="@dimen/cn" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/miq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/k" android:textColor="@color/ahw" android:gravity="center" android:layout_gravity="left|center" android:id="@id/v25" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pb7" android:paddingHorizontal="@dimen/cn" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/ahz" android:gravity="center" android:layout_gravity="center" android:id="@id/v2d" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingHorizontal="@dimen/cn" android:textFontWeight="500" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/ahy" android:gravity="center" android:layout_gravity="right|center" android:id="@id/mi1" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pcy" android:paddingHorizontal="@dimen/cn" />
+    </FrameLayout>
+</FrameLayout>

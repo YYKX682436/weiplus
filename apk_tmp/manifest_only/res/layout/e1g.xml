@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tx" style="@style/eg" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/bkg" android:layout_width="@dimen/ac2" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bn" app:ds="@dimen/bl">
+            <com.tencent.mm.plugin.ting.widget.TingChatRoomView android:id="@id/srq" android:layout_width="@dimen/ac2" android:layout_height="match_parent" />
+            <ImageView android:id="@id/bko" android:background="@drawable/lv" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+    </LinearLayout>
+    <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

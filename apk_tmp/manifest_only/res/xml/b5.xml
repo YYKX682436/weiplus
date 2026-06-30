@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:newtip="http://schemas.android.com/apk/res-auto" xmlns:mm="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.pluginsdk.ui.preference.AccountInfoPreference mm:key="more_tab_setting_personal_info" mm:gc="@layout/c2h" mm:title="@string/iwa" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference mm:fr="@raw/icons_outlined_wechatpay" mm:fs="@color/m" mm:key="settings_mm_wallet" mm:path="pay" mm:title="@string/isv" />
+    <PreferenceSmallCategory />
+    <NormalIconPreference mm:fr="?cv" mm:key="settings_mm_favorite" mm:title="@string/ist" />
+    <com.tencent.mm.ui.pref.MoreTabSnsPreference mm:fr="@raw/icons_outlined_album" mm:fs="@color/a3" mm:key="settings_my_album" mm:path="album" mm:title="@string/itq" />
+    <com.tencent.mm.ui.pref.MoreTabFinderPreference mm:fr="@raw/icons_outlined_play" mm:key="settings_my_finder_and_biz" mm:title="@string/ito" />
+    <com.tencent.mm.ui.pref.MoreTabFinderPreference mm:fr="@raw/icons_outlined_play" mm:fs="@color/a7" mm:key="settings_my_finder_album" mm:title="@string/ito" />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference mm:fr="?cu" mm:key="settings_mm_cardpackage" mm:path="card" mm:title="@string/isr" />
+    <com.tencent.mm.ui.mmec.NewCardPackageTipPreference mm:fr="?cu" mm:key="settings_mm_cardpackage_new" mm:title="@string/mcc" />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference mm:fr="@raw/icons_outlined_emoji" mm:fs="@color/Yellow_100" mm:key="settings_emoji_store" mm:path="sticker" mm:title="@string/iqn" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference mm:fr="@raw/icons_outlined_setting" mm:fs="@color/a3" mm:key="more_setting" mm:path="setting" mm:title="@string/izw" />
+    <PreferenceSmallCategory />x 
+    <NormalIconPreference mm:fr="@raw/more_ui_show" mm:key="more_uishow" mm:title="@string/k2a" />
+    <PreferenceCategory />
+    <Preference mm:key="settings_privacy_agreements" mm:gc="@layout/c0k" />
+    <Preference mm:key="bottom_empty_place_holder" mm:gc="@layout/ek4" />
+</PreferenceScreen>

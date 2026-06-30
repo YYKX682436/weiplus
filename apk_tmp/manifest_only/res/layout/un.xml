@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/qw4" android:background="@color/d" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/hhs" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cz" android:layout_marginVertical="@dimen/cn">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_centerInParent="true">
+            <ImageView android:id="@id/qu3" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.66">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/sps" android:layout_width="@dimen/d7" android:layout_height="@dimen/d1" android:layout_marginTop="@dimen/bl" android:scaleType="centerCrop" android:layout_centerInParent="true" app:i8="@dimen/bl" />
+                    <com.tencent.mm.ui.widget.progress.RoundProgressBtn android:layout_gravity="center" android:id="@id/bl6" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_centerInParent="true" app:l8="@color/aaw" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/bj_" android:visibility="gone" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:layout_centerInParent="true" app:fs="@color/aaw" />
+                    <com.tencent.mm.ui.MMImageView android:layout_gravity="center" android:id="@id/spu" android:visibility="gone" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:layout_marginTop="@dimen/bj" android:src="@raw/shortvideo_play_btn" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+                </FrameLayout>
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/hhc" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/hx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/hhs" android:layout_centerVertical="true" android:layout_toStartOf="@id/qty">
+        <TextView android:textSize="@dimen/cb" android:textColor="@color/FG_0" android:ellipsize="middle" android:id="@id/hjn" style="@style/j3" />
+        <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_2" android:id="@id/hjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bi" android:layout_below="@id/hjn" android:layout_alignParentLeft="true" style="@style/j2" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/qty" android:padding="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/cb" android:id="@id/qxl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dcx" android:layout_below="@id/hjn" android:layout_alignParentLeft="true" style="@style/hp" />
+    </FrameLayout>
+    <View android:id="@id/qtv" android:background="@color/FG_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/df" />
+</RelativeLayout>

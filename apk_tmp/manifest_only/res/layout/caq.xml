@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginStart="@dimen/d1" android:layout_marginEnd="@dimen/d1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/jgl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/c9">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jgk" android:padding="@dimen/c8" android:layout_width="@dimen/df" android:layout_height="@dimen/df" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/jh6" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:requiresFadingEdge="horizontal" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+package b20;
+
+/* loaded from: classes9.dex */
+public final class j extends y10.a {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public j(java.lang.String name) {
+        super(name);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(name, "name");
+    }
+
+    @Override // t10.c
+    public void b(pq.a context, bw5.x7 jumpInfo, t10.d callback) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(jumpInfo, "jumpInfo");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(callback, "callback");
+        if (((com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1138xd7c2f34f.xc) ((com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1187x7643c6b5.h6) i95.n0.c(com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06.p1187x7643c6b5.h6.class))).Ni()) {
+            callback.c("current device has issue on transparent mode.");
+            return;
+        }
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("ECS_O.NativeHandler.MpActivityGiftPack", "launch mp lottery with params: " + jumpInfo.g().b().f273689a.length);
+        java.lang.String c17 = n51.d.c(jumpInfo.g().b().f273689a, 0);
+        org.json.JSONObject jSONObject = new org.json.JSONObject();
+        jSONObject.put("activity_info_base64", c17);
+        if (context.f439086c != null) {
+            java.lang.String wi6 = ((j00.o) ((c00.d3) i95.n0.c(c00.d3.class))).wi(context.f439086c);
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("ECS_O.NativeHandler.MpActivityGiftPack", "set open event callback, eventId:" + wi6);
+            jSONObject.put("ecsOpenEventId", wi6);
+        }
+        c00.m3 m3Var = (c00.m3) i95.n0.c(c00.m3.class);
+        android.content.Context c18 = context.c();
+        java.lang.String jSONObject2 = jSONObject.toString();
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.f(jSONObject2, "toString(...)");
+        ((j00.d2) m3Var).Ni(c18, jSONObject2);
+        callback.d(null);
+    }
+}

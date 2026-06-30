@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowlayout="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/hsi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/hsg" android:paddingTop="@dimen/c8" android:paddingBottom="@dimen/c8" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/j3" android:paddingEnd="@dimen/j3">
+            <com.tencent.mm.ui.base.MMTagPanelScrollView android:id="@id/hsj" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="true">
+                <com.tencent.mm.plugin.label.ui.widget.MMLabelPanel android:id="@id/hsh" android:paddingTop="@dimen/c8" android:paddingBottom="@dimen/c8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/c8" android:paddingEnd="@dimen/c8" flowlayout:horizontalSpacing="@dimen/j3" flowlayout:verticalSpacing="@dimen/c8" />
+            </com.tencent.mm.ui.base.MMTagPanelScrollView>
+        </FrameLayout>
+        <include android:id="@id/hsq" android:visibility="gone" layout="@layout/d7" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/i3c" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dj" android:layout_below="@id/hsi">
+        <LinearLayout android:orientation="vertical" android:id="@id/hsc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/hsa" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/js" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/hs4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" style="@style/n6">
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="0.3">
+                <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g98" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="0.7" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/jiq" android:background="@color/b" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auk" android:background="@color/b" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+            <Button android:textSize="@dimen/hv" android:textColor="@color/vs" android:gravity="center" android:autoLink="all" android:id="@id/k9k" android:background="@drawable/b9" android:layout_height="match_parent" android:minWidth="@dimen/i7" android:text="@string/g99" android:layout_alignParentLeft="true" style="@style/kn" />
+            <Button android:textSize="@dimen/hv" android:textColor="@color/vs" android:gravity="center" android:autoLink="all" android:id="@id/d5y" android:background="@drawable/ap3" android:layout_height="match_parent" android:minWidth="@dimen/i7" android:text="@string/o70" android:layout_alignParentRight="true" style="@style/kn" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/d61" android:background="@color/b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/aul" android:background="@color/b" android:layout_width="match_parent" android:layout_height="@dimen/dj">
+            <TextView android:textSize="@dimen/iy" android:textColor="@color/FG_1" android:id="@id/gx0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_alignParentLeft="true" />
+            <Button android:textSize="@dimen/hc" android:textColor="@color/fd" android:gravity="center" android:autoLink="all" android:id="@id/js4" android:background="@drawable/b9" android:visibility="gone" android:layout_height="match_parent" android:minWidth="@dimen/i7" android:text="@string/g92" android:layout_alignParentRight="true" style="@style/kn" />
+            <Button android:textSize="@dimen/hc" android:textColor="@color/v7" android:gravity="center" android:autoLink="all" android:layout_gravity="center" android:id="@id/ctd" android:background="@drawable/ap3" android:layout_height="match_parent" android:minWidth="@dimen/i7" android:text="@string/bod" android:layout_weight="1.0" android:layout_alignParentRight="true" style="@style/kn" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/ail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ch" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/iy" android:textColor="@color/BW_0_Alpha_0_3" android:gravity="center" android:id="@id/d4f" android:background="@drawable/aif" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/dh" android:text="@string/g8y" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/o0p" android:layout_width="match_parent" android:layout_height="@dimen/bx" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

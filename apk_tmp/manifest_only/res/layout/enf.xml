@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/zy" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/d7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/h3" android:textColor="@color/a0c" android:gravity="center_horizontal" android:id="@id/odf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:text="@string/p9l" android:screenReaderFocusable="true" android:textFontWeight="500" />
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/Red_100" android:gravity="center_horizontal" android:id="@id/t3a" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:text="@string/p9k" android:screenReaderFocusable="true" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/g5z" android:visibility="invisible" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginTop="@dimen/dj" android:src="@raw/icons_outlined_pay_fingerprint_android" app:fs="@color/a84" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ka"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/azm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:minHeight="@dimen/j2">
+        <LinearLayout android:orientation="horizontal" android:id="@id/t2j" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:layout_height="wrap_content" android:minHeight="@dimen/j2" android:importantForAccessibility="yes" style="@style/ju">
+            <TextView android:id="@id/t2i" android:layout_width="0.0dp" android:text="@string/bmu" android:singleLine="false" android:layout_weight="1.0" android:importantForAccessibility="no" style="@style/ix" />
+            <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/cot" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:importantForAccessibility="no" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:background="@drawable/bfj" android:layout_width="match_parent" android:layout_height="1.0sp" android:layout_marginLeft="@dimen/cn" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/t2g" android:paddingLeft="@dimen/i_" android:paddingRight="@dimen/i_" android:layout_height="wrap_content" android:minHeight="@dimen/j2" android:importantForAccessibility="yes" style="@style/ju">
+            <TextView android:id="@id/t2f" android:layout_width="0.0dp" android:text="@string/nd9" android:singleLine="false" android:layout_weight="1.0" android:importantForAccessibility="no" style="@style/ix" />
+            <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/t2h" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:importantForAccessibility="no" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/j4" android:textColor="@color/Link_100" android:layout_gravity="center|bottom" android:id="@id/u_m" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/bmn" android:importantForAccessibility="yes" />
+</FrameLayout>

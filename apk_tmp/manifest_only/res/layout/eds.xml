@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:orientation="horizontal" android:id="@id/fsk" android:background="#804c4c4c" android:paddingLeft="@dimen/bl" android:paddingTop="@dimen/bj" android:paddingRight="@dimen/bl" android:paddingBottom="@dimen/bj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bl" android:paddingVertical="@dimen/bj" app:ds="9.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/fsm" android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/vip_filled_new" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:fs="@color/q_" />
+    <TextView android:textSize="@dimen/a1" android:textColor="@color/q_" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/em9" android:layout_toRightOf="@id/fsm" android:layout_centerVertical="true" android:textAlignment="center" android:layout_marginStart="@dimen/bj" />
+</com.tencent.mm.ui.widget.RoundCornerRelativeLayout>

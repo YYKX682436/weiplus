@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/v6" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:gravity="center" android:id="@id/d4v" android:layout_width="wrap_content" android:layout_height="@dimen/dn" android:text="@string/euu" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <FrameLayout android:layout_gravity="start|center" android:id="@id/byz" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_centerVertical="true" android:contentDescription="@string/b9a" android:layout_alignParentStart="true" app:layout_constraintBottom_toBottomOf="@id/d4v" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@id/d4v">
+        <FrameLayout android:layout_gravity="start|center" android:id="@id/bzb" android:background="@drawable/ad6" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:importantForAccessibility="noHideDescendants" android:layout_marginStart="@dimen/c9">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/bza" android:layout_width="10.0dp" android:layout_height="20.0dp" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/FG_0" />
+        </FrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

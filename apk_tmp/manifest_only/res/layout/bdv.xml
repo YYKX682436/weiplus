@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/gpl" android:layout_width="162.0dp" android:layout_height="162.0dp" android:src="@raw/game_weaknet" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="17.0dp" android:textColor="@color/tk" android:id="@id/gpn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="@string/fkh" android:layout_below="@id/gpl" android:layout_centerHorizontal="true" />
+        <Button android:gravity="center" android:id="@id/gpm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:text="@string/fkg" android:layout_below="@id/gpn" android:layout_centerHorizontal="true" style="@style/ks" />
+    </RelativeLayout>
+</RelativeLayout>

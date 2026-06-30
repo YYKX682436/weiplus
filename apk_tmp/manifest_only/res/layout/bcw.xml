@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/lto" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/uy4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/t4c" android:background="@color/a" android:layout_width="match_parent" android:layout_height="@dimen/dv" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/uy2" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/db" android:layout_marginStart="@dimen/cn">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/bj" android:src="@raw/fts_websearch_icon" app:fs="@color/ac" />
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/jj" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ltq" android:paddingTop="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/db" android:text="@string/ido" android:singleLine="true" android:layout_marginStart="@dimen/dv" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/amd">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uy1" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/amz" android:layout_height="@dimen/ca" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" app:fs="@color/FG_4" app:srcCompat="@raw/icon_negative_feedback_new" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/cn" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ltc" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

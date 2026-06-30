@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lfi" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/lew" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/lf1" android:layout_width="@dimen/cu" android:layout_height="@dimen/cu" android:layout_centerInParent="true" />
+    <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/co" android:textColor="@color/BW_0_Alpha_0_9" android:ellipsize="end" android:gravity="center" android:id="@id/lf0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/d7" android:maxWidth="@dimen/cu" android:maxLines="3" android:layout_above="@id/lf1" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/lev" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginBottom="@dimen/cn" android:layout_above="@id/lf0" android:layout_centerHorizontal="true" android:contentDescription="@string/ip9" />
+    <TextView android:textSize="@dimen/c9" android:textColor="@color/tk" android:gravity="center" android:layout_gravity="center" android:id="@id/lf7" android:layout_width="@dimen/cw" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:maxWidth="@dimen/cu" android:layout_below="@id/lf1" android:layout_centerHorizontal="true" />
+    <Button android:textColor="@color/a5" android:id="@id/lfj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dk" android:text="@string/hq8" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/hp" />
+</RelativeLayout>

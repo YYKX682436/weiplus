@@ -1,0 +1,24 @@
+package px0;
+
+/* loaded from: classes5.dex */
+public final class n extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.mj_publisher.finder.shoot_composing.fragment.MaterialImportPreviewFragment f358790d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public n(com.tencent.mm.mj_publisher.finder.shoot_composing.fragment.MaterialImportPreviewFragment materialImportPreviewFragment) {
+        super(1);
+        this.f358790d = materialImportPreviewFragment;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        com.tencent.mm.mj_publisher.finder.shoot_composing.ShootComposingPluginLayout shootComposingPluginLayout = this.f358790d.f69653q;
+        if (shootComposingPluginLayout != null) {
+            shootComposingPluginLayout.z0();
+        }
+        com.tencent.mars.xlog.Log.i("MaterialImportPreviewFragment", "saveAsyncAIGCDraft cancel");
+        return jz5.f0.f302826a;
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/of5" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cks" android:layout_width="match_parent" android:layout_height="@dimen/s3">
+        <ImageView android:id="@id/cki" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/cle" android:background="@drawable/bwx" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/s2" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/odc" android:background="@drawable/gv" android:paddingLeft="@dimen/hf" android:paddingTop="20.0dp" android:paddingRight="@dimen/hf" android:paddingBottom="@dimen/hx" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wp" android:maxLines="2" android:layout_alignParentBottom="true" android:lineSpacingExtra="@dimen/j_" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/au4" android:background="@drawable/nn" android:paddingLeft="@dimen/hf" android:paddingTop="@dimen/hf" android:paddingRight="@dimen/hf" android:paddingBottom="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/cks">
+        <com.tencent.mm.ui.widget.MMNeat7extView android:textSize="@dimen/s2" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/obc" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wp" android:maxLines="4" />
+        <TextView android:ellipsize="end" android:id="@id/d02" android:paddingTop="@dimen/f" android:layout_width="match_parent" android:text="@string/wp" android:maxLines="15" style="@style/s3" />
+    </LinearLayout>
+    <ImageView android:orientation="vertical" android:id="@id/l3k" android:background="@drawable/o4" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/s3" android:layout_alignTop="@id/cks" android:layout_alignBottom="@id/au4" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout android:id="@id/fb7" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fb5" android:visibility="gone" android:layout_width="@dimen/cx" android:layout_height="@dimen/cx" android:layout_centerInParent="true" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/b98" android:background="@color/UN_BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/r29" android:background="#fffcf3" android:paddingBottom="@dimen/dv" android:layout_width="334.0dp" android:layout_height="480.0dp" app:ds="@dimen/c9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        <ImageView android:id="@id/for" android:layout_width="382.0dp" android:layout_height="552.0dp" android:translationY="-48.0dp" app:layout_constraintEnd_toEndOf="@id/b6y" app:layout_constraintStart_toStartOf="@id/b6y" app:layout_constraintTop_toTopOf="@id/b6y" />
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/b6y" android:paddingBottom="@dimen/dv" android:layout_width="334.0dp" android:layout_height="480.0dp" app:ds="@dimen/c9" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <include android:id="@id/iso" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/cn" layout="@layout/avi" />
+            <include android:id="@id/isr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/avj" />
+            <include android:id="@id/is8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/avh" />
+        </com.tencent.mm.ui.widget.RoundedCornerFrameLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/d7" android:src="@raw/icons_outlined_close2" app:fs="@color/an" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/b6y" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/qyn" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/qyo" android:visibility="gone" android:layout_width="@dimen/c0" android:layout_height="@dimen/c0" />
+    </FrameLayout>
+</com.tencent.mm.plugin.finder.live.view.FinderDisallowInterceptRelativeLayout>

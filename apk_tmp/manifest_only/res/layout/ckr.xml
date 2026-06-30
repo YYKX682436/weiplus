@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/m82" android:background="@color/c" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cn" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:background="@drawable/au3" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_filled_down_arrow" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/f5" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iw3" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/f5" android:gravity="center" android:id="@id/cu2" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_below="@id/obc" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/inl" android:background="@drawable/au4" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/df" android:layout_marginRight="@dimen/cn" android:layout_below="@id/cu2">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/f5" android:layout_gravity="center_horizontal" android:id="@id/ntu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ivs" />
+            <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/ntc" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_alignParentEnd="true" app:off_color="@color/BW_0_Alpha_0_0_3" app:on_color="#089f71" />
+        </RelativeLayout>
+        <TextView android:id="@id/pjl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dn" android:layout_below="@id/inl" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.tencent.mm.ui.widget.RoundedCornerFrameLayout>

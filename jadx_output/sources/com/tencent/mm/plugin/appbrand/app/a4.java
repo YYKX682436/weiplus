@@ -1,0 +1,26 @@
+package com.tencent.mm.plugin.appbrand.app;
+
+/* loaded from: classes6.dex */
+public class a4 implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f75009d = 0;
+
+    public a4(com.tencent.mm.plugin.appbrand.app.b4 b4Var, com.tencent.mm.plugin.appbrand.app.z3 z3Var) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f75009d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f75009d;
+        this.f75009d = i17 + 1;
+        if (i17 == 0) {
+            return com.tencent.mm.plugin.appbrand.app.o1.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

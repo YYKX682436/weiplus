@@ -1,0 +1,21 @@
+package com.tencent.wechat.mm.biz;
+
+/* loaded from: classes2.dex */
+public enum s4 implements com.tencent.mm.protobuf.h {
+    FinderShowType_DEFAULT(0),
+    FinderShowType_FINDER_NORMAL(1),
+    FinderShowType_FINDER_RECOMMEND_HORIZON(2);
+
+
+    /* renamed from: d, reason: collision with root package name */
+    public final int f218621d;
+
+    s4(int i17) {
+        this.f218621d = i17;
+    }
+
+    @Override // com.tencent.mm.protobuf.h
+    public final int getNumber() {
+        return this.f218621d;
+    }
+}

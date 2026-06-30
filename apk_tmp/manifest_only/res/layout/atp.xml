@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df">
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/a54" android:layout_width="@dimen/dh" android:layout_height="@dimen/dh">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_filled_reward_new" app:fs="@android:color/white" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/r" android:textColor="@color/BW_0_Alpha_0_9" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/irg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz" android:layout_marginHorizontal="@dimen/cz" />
+        <TextView android:textSize="@dimen/h1" android:textColor="@color/BW_0_Alpha_0_9" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/dqd" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/is4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/p8" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/c9" android:text="@string/dqn" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="10.0dp" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_arrow" android:layout_marginStart="@dimen/bl" app:fs="@color/p8" />
+        </LinearLayout>
+        <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/db" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/cn" android:layout_marginHorizontal="@dimen/d7" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/irb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/dv" android:layout_marginHorizontal="@dimen/d7">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dr" android:text="@string/dqk" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/ird" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/d7" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginHorizontal="@dimen/d7">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dr" android:text="@string/dqm" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/irf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/d7" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/d7" android:layout_marginHorizontal="@dimen/d7">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dr" android:text="@string/dqj" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/irc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/d7" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/d7" android:layout_marginHorizontal="@dimen/d7">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dr" android:text="@string/dql" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/ire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/d7" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/BW_0_Alpha_0_5" android:layout_gravity="center|bottom" android:id="@id/irq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" android:text="@string/drs" />
+</FrameLayout>

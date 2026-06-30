@@ -1,0 +1,6 @@
+package com.tencent.mm.vfs;
+
+/* loaded from: classes12.dex */
+public interface a0 {
+    java.lang.Object b(java.util.Map map);
+}

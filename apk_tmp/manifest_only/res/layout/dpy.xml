@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b8p" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rci" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cs" android:layout_marginBottom="@dimen/cs" android:src="@drawable/ctx" android:layout_marginStart="@dimen/cn" android:layout_marginVertical="@dimen/cs" />
+    <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/FG_0" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/mvf" />
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/abw" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rcj" android:paddingLeft="@dimen/cz" android:paddingRight="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:paddingHorizontal="@dimen/cz" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/cu" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/cz" android:layout_marginRight="@dimen/cn" android:layout_marginBottom="@dimen/cz" android:layout_marginHorizontal="@dimen/cn" android:layout_marginVertical="@dimen/cz">
+        <View style="@style/fh" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cn">
+            <RelativeLayout android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/cn">
+                <TextView android:textSize="@dimen/k" android:textColor="@color/f5" android:id="@id/rco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mvf" android:layout_alignParentStart="true" />
+                <TextView android:textSize="@dimen/h2" android:id="@id/rck" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rco" android:layout_alignParentStart="true" />
+                <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/rch" android:focusableInTouchMode="true" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View style="@style/fh" />
+            <LinearLayout android:orientation="vertical" android:id="@id/rcn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View style="@style/y_" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/cn">
+                            <TextView android:textSize="@dimen/k" android:textColor="@color/f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mx2" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                            <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/rcl" android:focusableInTouchMode="true" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                        <View style="@style/fh" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View style="@style/y_" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/cn">
+                            <TextView android:textSize="@dimen/k" android:textColor="@color/f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mx3" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                            <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/rcm" android:focusableInTouchMode="true" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                        <View style="@style/fh" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

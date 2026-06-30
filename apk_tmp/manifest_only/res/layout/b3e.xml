@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/mc9" android:background="@color/c" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.InputPanelFrameLayout android:id="@id/hdq" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/ei1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7">
+                    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/ft2" android:layout_width="match_parent" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="110.0dp" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/df" android:maxLines="1" style="@style/ho" />
+                    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ft1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.tencent.mm.plugin.finder.view.SignatureEditText android:textSize="@dimen/ia" android:textColor="@color/a0c" android:textColorHint="@color/a9e" android:id="@id/ec8" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/dv" />
+                        <TextView android:textSize="@dimen/f9" android:textColor="@color/BW_0_Alpha_0_3" android:ellipsize="end" android:gravity="end" android:layout_gravity="end|bottom" android:id="@id/ec_" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:singleLine="true" />
+                    </LinearLayout>
+                    <View android:background="@color/FG_3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+                    <TextView android:ellipsize="end" android:id="@id/jps" android:visibility="gone" android:layout_marginTop="@dimen/dv" android:text="{modify_max_tip}" android:singleLine="true" style="@style/fe" />
+                    <View android:id="@id/d9d" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    <Button android:layout_gravity="center_horizontal" android:id="@id/ft0" android:layout_marginBottom="@dimen/bu" android:text="@string/v5" style="@style/kr" />
+                </LinearLayout>
+            </com.tencent.mm.ui.widget.InputPanelFrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/aaw" android:gravity="center" android:id="@id/ofn" android:background="@drawable/xt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/df" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/dv" android:textAllCaps="false" />
+</FrameLayout>

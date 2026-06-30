@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/o_f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hi" android:layout_marginTop="44.0dp" android:layout_marginRight="@dimen/hi" android:layout_centerHorizontal="true">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/h7n" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@raw/pay_safe" app:fs="@color/aa2" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/UN_BW_0_Alpha_0_9" android:gravity="center" android:layout_gravity="center" android:id="@id/s7" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="24.0dp" android:text="@string/kro" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_below="@id/o_f" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <Button android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/h5h" android:layout_marginBottom="64.0dp" android:text="@string/vj" style="@style/kr" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/ah" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/nxl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:text="@string/krp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

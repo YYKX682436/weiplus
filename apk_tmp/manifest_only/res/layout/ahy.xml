@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.FlowTextMixView android:gravity="center_vertical" android:id="@id/efw" android:background="@drawable/y8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/efx" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn" android:src="@raw/finder_live_icon" android:layout_marginVertical="@dimen/cn" app:fs="@color/pv" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv" android:paddingVertical="@dimen/bl">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/u6" android:ellipsize="end" android:id="@id/efv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/u6" android:ellipsize="end" android:id="@id/efy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cvv" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/f9" android:textColor="@color/u4" android:ellipsize="end" android:id="@id/rl5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <com.tencent.mm.plugin.finder.view.notice.NoticeStatusViewDarkMode android:layout_gravity="center_vertical" android:id="@id/fek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="5.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="5.0dp" />
+    </LinearLayout>
+</com.tencent.mm.ui.widget.FlowTextMixView>

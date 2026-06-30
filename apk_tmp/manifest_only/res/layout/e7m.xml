@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/q6" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/d7" android:paddingEnd="@dimen/cz"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bj">
+            <ImageView android:id="@id/tfh" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@raw/finder_live_highlight_play_medium" app:fs="@color/abw" />
+            <com.tencent.mm.view.MMPAGView android:id="@id/tfj" android:visibility="gone" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" />
+            <TextView android:textSize="@dimen/h0" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/tfg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/dv" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:gravity="center" android:layout_width="@dimen/cq" android:layout_height="match_parent" android:layout_marginStart="0.0px">
+                <View android:layout_gravity="center_horizontal" android:id="@id/tfi" android:background="#000000" android:layout_width="@dimen/bg" android:layout_height="match_parent" android:alpha="0.4" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/adg" android:id="@id/tff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/amd" android:layout_marginStart="@dimen/dv" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+package com.p176xb6135e39.p280x308fcb;
+
+/* loaded from: classes16.dex */
+public abstract class p extends java.lang.RuntimeException {
+}

@@ -1,0 +1,19 @@
+package com.tencent.mm.plugin.finder.view;
+
+/* loaded from: classes3.dex */
+public final class h1 extends kotlin.jvm.internal.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.view.ECProductCardView f132203d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public h1(com.tencent.mm.plugin.finder.view.ECProductCardView eCProductCardView) {
+        super(0);
+        this.f132203d = eCProductCardView;
+    }
+
+    @Override // yz5.a
+    public java.lang.Object invoke() {
+        return (android.widget.ImageView) this.f132203d.findViewById(com.tencent.mm.R.id.uqw);
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ezx" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ezu" android:background="@drawable/a17" android:layout_width="wrap_content" android:layout_height="@dimen/cz" android:paddingEnd="@dimen/bl">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/a4i" android:paddingLeft="@dimen/bl" android:paddingRight="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginRight="@dimen/bl">
+            <ImageView android:layout_width="@dimen/ca" android:layout_height="@dimen/ca" android:src="@drawable/c4z" />
+            <TextView android:textSize="@dimen/c8" android:textColor="@color/an" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dl5" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dp" android:textColor="@color/ab0" android:ellipsize="end" android:id="@id/f4v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:maxLines="1" android:maxEms="10" android:singleLine="false" />
+        <com.tencent.mm.plugin.finder.live.view.FinderLiveGiftTextView android:textColor="@color/ab0" android:id="@id/ezr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:paddingEnd="@dimen/dv" android:layout_marginStart="@dimen/bl" />
+    </LinearLayout>
+</RelativeLayout>

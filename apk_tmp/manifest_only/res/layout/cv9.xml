@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7g" android:background="@color/aac" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.plugin.webview.ui.tools.WebViewKeyboardLinearLayout android:id="@id/pil" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48.0dp">
+        <FrameLayout android:id="@id/m7j" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/cg7" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/d9x" />
+                <com.tencent.mm.plugin.webview.ui.tools.LogoWebViewWrapper android:id="@id/ipl" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:id="@id/ipm" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </com.tencent.mm.plugin.webview.ui.tools.LogoWebViewWrapper>
+            </FrameLayout>
+            <include layout="@layout/bpp" />
+            <com.tencent.mm.ui.base.MMFalseProgressBar android:layout_gravity="left|top" android:id="@id/phm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:progressDrawable="@drawable/ap4" android:contentDescription="progressBar" />
+        </FrameLayout>
+        <include layout="@layout/d9j" />
+    </com.tencent.mm.plugin.webview.ui.tools.WebViewKeyboardLinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mel" android:background="@drawable/b3_" android:paddingLeft="48.0dp" android:paddingRight="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="14.0dp">
+            <com.tencent.mm.plugin.websearch.widget.SOSEditTextView android:id="@id/ndt" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/ndv" android:background="@color/a4m" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="48.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48.0dp">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/aa8" android:background="@null" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/b35" android:contentDescription="@string/ig" />
+            <ImageButton android:id="@id/b5i" android:background="@null" android:paddingLeft="@dimen/j3" android:paddingRight="@dimen/j3" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/b37" android:contentDescription="@string/ig" />
+        </FrameLayout>
+        <View android:layout_gravity="center_vertical" android:background="#e1e1e1" android:layout_width="2.0px" android:layout_height="22.0dp" />
+    </LinearLayout>
+</RelativeLayout>

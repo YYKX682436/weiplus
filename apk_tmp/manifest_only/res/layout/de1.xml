@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/q2m" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/q2o" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="horizontal" android:id="@id/q2g" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:id="@id/q2i" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/outlined_arrow_down" app:fs="@color/FG_0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:gravity="left" android:id="@id/q2t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q2w" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="16.0dp" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="horizontal" android:id="@id/q2h" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:id="@id/q2j" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@raw/outlined_arrow_down" app:fs="@color/FG_0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/q2u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginRight="16.0dp" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

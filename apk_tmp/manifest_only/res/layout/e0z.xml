@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.view.StretchFrameLayout android:id="@id/bkg" android:background="@drawable/lx" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bkm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="@dimen/a4" />
+    <ImageView android:id="@id/bko" android:background="@drawable/lx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/d4_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/x4" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/mh" android:background="@drawable/lx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.progress.RoundProgressBtn android:layout_gravity="center" android:id="@id/lg" android:layout_width="@dimen/a8" android:layout_height="@dimen/a8" app:hasPause="false" app:l8="@android:color/white" app:roundColor="#a6aaaaaa" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/otv" android:background="@drawable/lx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/ott" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wa" />
+        <TextView android:textColor="@color/ab0" android:id="@id/otu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.tencent.mm.view.StretchFrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m7k" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/oxs" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/kqc" android:background="@drawable/atw" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="35.0dp" android:layout_centerInParent="true">
+        <ImageView android:id="@id/kqd" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="10.0dp" android:src="@raw/pause_video_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/kqe" android:layout_width="40.0dp" android:layout_height="17.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="已暂停" android:includeFontPadding="false" android:layout_toRightOf="@id/kqd" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ate" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="4.0dp" android:layout_alignParentBottom="true">
+        <com.tencent.mm.pluginsdk.ui.tools.VideoPlayerSeekBar android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/h5t" android:layout_width="74.0dp" android:layout_height="40.0dp" android:layout_marginRight="10.0dp" android:layout_toRightOf="@id/lbl" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/n56" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@raw/icon_volume_off" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/n55" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="10.0dp" android:src="@raw/icon_video_short_screen" android:scaleType="centerCrop" android:layout_toLeftOf="@id/n56" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

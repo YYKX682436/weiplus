@@ -1,0 +1,11 @@
+package com.tencent.mm.plugin.ball.service;
+
+/* loaded from: classes14.dex */
+public class a2 implements com.tencent.mm.ipcinvoker.r {
+    public a2(com.tencent.mm.plugin.ball.service.o4 o4Var) {
+    }
+
+    @Override // com.tencent.mm.ipcinvoker.r
+    public /* bridge */ /* synthetic */ void a(java.lang.Object obj) {
+    }
+}

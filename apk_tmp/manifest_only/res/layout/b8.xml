@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/rn" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="?m"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/n0m" android:background="@drawable/ays" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dv" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bub" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/dv" />
+    </LinearLayout>
+    <Button android:enabled="false" android:id="@id/n0p" android:background="@drawable/jg" android:text="@string/ya" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" style="@style/ks" />
+    <EditText android:textSize="@dimen/hv" android:textColor="@color/an" android:textColorHint="#4dffffff" android:ellipsize="end" android:id="@id/n0o" android:background="@null" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/j5h" android:singleLine="true" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/afr" android:layout_marginEnd="@dimen/dv" android:layout_toStartOf="@id/n0p" android:layout_toEndOf="@id/n0m" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.FinderFeedBubbleTipsLayout android:id="@id/m7g" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ci5" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/dzb" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/iqf" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/iqn" android:background="@color/tx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/akd" />
+                </FrameLayout>
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/g99" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/icons_filled_pause" android:alpha="0.8" app:fs="@color/an" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/cn">
+                    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" layout="@layout/b30" />
+                    <FrameLayout android:id="@id/frs" android:background="@drawable/ao4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/b2c" />
+                    </FrameLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="bottom" android:id="@id/oy0" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="@dimen/bj" android:max="1000" android:progress="20" android:progressDrawable="@drawable/ayj" android:thumb="@null" />
+                <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/bl" layout="@layout/dgw" />
+                <include android:id="@id/frr" android:visibility="gone" layout="@layout/dmo" />
+                <include android:id="@id/fup" android:visibility="gone" layout="@layout/b4j" />
+            </FrameLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/iqo" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <com.google.android.material.appbar.AppBarLayout android:id="@id/ipw" android:background="@color/aaw" android:paddingTop="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="71.0dp" app:layout_scrollFlags="0x3">
+                        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" layout="@layout/ah9" />
+                        <TextView android:textSize="@dimen/gz" android:textColor="@color/f5" android:ellipsize="end" android:id="@id/e0e" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" android:maxLines="1" android:paddingHorizontal="@dimen/cn" />
+                        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" layout="@layout/ah_" />
+                        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" layout="@layout/acl" />
+                        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cs" layout="@layout/ahh" />
+                        <View android:id="@id/mf1" android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    </LinearLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/lr8" android:background="@color/BW_97" android:layout_width="match_parent" android:layout_height="match_parent" app:enableAutoLoadMore="true" app:enableFooterFollowWhenNoMoreData="true" app:enableFooterMoveContent="true" app:enableOverScrollDrag="false" app:enableRefresh="false" app:layout_behavior="@string/zz">
+                    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/la3" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+                    <com.tencent.mm.plugin.finder.view.refreshloader.FinderLoaderMoreFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:loadMoreLayout="@layout/bs6" />
+                </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/iql" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:indeterminateDrawable="@drawable/avj" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/mss" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/ack" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/mst" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:indeterminateDrawable="@drawable/avj" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/m2d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m2c" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:src="@raw/icons_outlined_refresh" app:fs="@color/f5" app:layout_constraintBottom_toTopOf="@id/m2g" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/f5" android:gravity="center" android:id="@id/m2g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="@string/f8x" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/m2c" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/dj6" />
+</com.tencent.mm.plugin.finder.view.FinderFeedBubbleTipsLayout>

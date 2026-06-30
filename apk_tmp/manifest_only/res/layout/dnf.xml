@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/p0w" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ght" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@id/vek" android:background="@color/a9e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.tencent.mm.plugin.thumbplayer.view.ThumbPlayerViewContainer android:id="@id/vej" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/vei" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <com.tencent.mm.plugin.fav.ui.widget.FavVideoView android:id="@id/p0x" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <include android:visibility="gone" layout="@layout/e2y" />
+        <include android:visibility="gone" layout="@layout/eo7" />
+        <View android:id="@id/vel" android:background="@drawable/ah9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/akq" android:layout_alignParentBottom="true" />
+        <com.tencent.mm.pluginsdk.ui.tools.RedesignVideoPlayerSeekBarWithAnimation android:id="@id/veh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ajw" android:layout_alignParentBottom="true" android:paddingStart="@dimen/aii" android:layout_marginEnd="@dimen/aii" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ssk" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/uc5" android:background="@drawable/d7q" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sxs" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/shu" android:background="@drawable/d7r" android:padding="2.0dp" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="14.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+            <ImageView android:id="@id/u7e" android:layout_width="20.0dp" android:layout_height="10.0dp" android:src="@raw/poi_navigation_back_arrow" app:layout_constraintBottom_toBottomOf="@id/shu" app:layout_constraintEnd_toEndOf="@id/shu" app:layout_constraintStart_toStartOf="@id/shu" app:layout_constraintTop_toTopOf="@id/shu" />
+            <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pgo" android:textFontWeight="500" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:paddingBottom="64.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:layout_gravity="center_horizontal" android:id="@id/qxd" android:paddingTop="72.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="124.0dp" android:text="@string/pgn" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/ueh" android:background="@drawable/d7o" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:divider="@null" android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

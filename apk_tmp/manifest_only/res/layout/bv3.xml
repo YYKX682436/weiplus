@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/ila" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ilb" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+    <ScrollView android:orientation="vertical" android:id="@id/il5" android:background="@color/a" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyEnvelopeTouchRecyclerView android:layout_gravity="center_vertical" android:id="@id/il_" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="32.0dp" android:layout_marginBottom="32.0dp" android:layout_weight="1.0" android:overScrollMode="never" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/il4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/il7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="24.0dp" android:text="{领取并使用}" style="@style/kv" />
+                <TextView android:textColor="@color/Link_100" android:layout_gravity="center_horizontal" android:id="@id/il9" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="56.0dp" android:text="@string/gn9" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/vr" android:layout_gravity="center_horizontal" android:id="@id/il8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="16.0dp" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/il6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15.0dp" android:textColor="@color/f9" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="108.0dp" android:text="@string/gmt" />
+    </LinearLayout>
+</RelativeLayout>

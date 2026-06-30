@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/aa8" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cn" android:src="@raw/icons_outlined_back" android:layout_centerVertical="true" android:contentDescription="@string/b9a" wallet:fs="@color/FG_0" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/FG_0" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l9r" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/df" android:layout_marginTop="@dimen/cn">
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_2" android:id="@id/dim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l9b" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:gravity="center" android:id="@id/pk_" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/bl" android:layout_marginRight="@dimen/bj" android:src="@raw/wecoin_balance_icons" android:importantForAccessibility="no" wallet:fs="@color/FG_2" />
+        <com.tencent.mm.wallet_core.ui.WalletTextView android:textSize="17.0dp" android:textColor="@color/FG_2" android:gravity="center" android:id="@id/c13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" wallet:walletTypeFace="0" />
+    </LinearLayout>
+    <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/hdd" android:background="@color/a9e" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/d7" android:inputType="number" android:textCursorDrawable="@drawable/afr" wallet:contentHint="" wallet:dn="10" wallet:gd="@layout/d63" wallet:titleText="@string/kyi" wallet:walletTypeFace="0" style="@style/sw" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/Red_100" android:id="@id/hdu" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/df" android:layout_marginTop="@dimen/bl" android:layout_marginRight="@dimen/df" android:text="最高充值金额6000元，本次输入金额已超额。" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/pkl" android:layout_marginTop="@dimen/cz" android:layout_marginBottom="@dimen/db" android:text="@string/kf8" style="@style/kr" />
+</LinearLayout>

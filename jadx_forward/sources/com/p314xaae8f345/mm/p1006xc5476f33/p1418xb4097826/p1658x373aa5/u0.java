@@ -1,0 +1,6 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1658x373aa5;
+
+/* loaded from: classes15.dex */
+public interface u0 {
+    void a(android.view.MotionEvent motionEvent);
+}

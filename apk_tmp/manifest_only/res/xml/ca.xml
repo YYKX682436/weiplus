@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:newtip="http://schemas.android.com/apk/res-auto">
+    <Preference newtip:key="settings_bind_qq" newtip:gc="@layout/byv" newtip:title="@string/j0a" />
+    <com.tencent.mm.plugin.newtips.NormalIconNewTipPreference newtip:key="settings_email_addr" newtip:path="sec_bind_email" newtip:title="@string/iqi" />
+    <Preference newtip:key="settings_email_bind_tip_wechat" newtip:gc="@layout/c0d" newtip:title="@string/itj" />
+    <Preference newtip:key="settings_about_domainmail" newtip:gc="@layout/byv" newtip:title="@string/iot" />
+    <Preference newtip:key="settings_facebook" newtip:gc="@layout/byv" newtip:title="@string/fu7" />
+    <PreferenceSmallCategory />
+    <Preference newtip:key="settings_dump_personal_data" newtip:gc="@layout/byv" newtip:title="@string/iqh" />
+    <com.tencent.mm.ui.base.preference.IconSwitchKeyValuePreference newtip:key="settings_phone_security" newtip:gc="@layout/byv" newtip:title="@string/hhw" />
+    <Preference newtip:key="settings_delete_account" newtip:gc="@layout/byv" newtip:title="@string/ij9" />
+</PreferenceScreen>

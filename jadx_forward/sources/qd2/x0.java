@@ -1,0 +1,17 @@
+package qd2;
+
+/* loaded from: classes10.dex */
+public final class x0 implements com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.p3 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.z2 f443383a;
+
+    public x0(com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.z2 z2Var) {
+        this.f443383a = z2Var;
+    }
+
+    @Override // com.p314xaae8f345.mm.ui.p2747xd1075a44.p2757xb099fd48.p3
+    public final void a() {
+        this.f443383a.B();
+    }
+}

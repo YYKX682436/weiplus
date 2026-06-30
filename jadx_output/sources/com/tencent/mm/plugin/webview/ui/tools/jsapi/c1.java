@@ -1,0 +1,16833 @@
+package com.tencent.mm.plugin.webview.ui.tools.jsapi;
+
+/* loaded from: classes.dex */
+public class c1 implements com.tencent.mm.ui.da {
+    public static final java.util.HashSet B1;
+    public static final java.lang.String C1;
+    public static final java.lang.String D1;
+    public static final java.lang.String E1;
+    public static final java.lang.String F1;
+    public static final java.lang.String G1;
+    public static final java.lang.String H1;
+    public static final int I1;
+    public static final int J1;
+    public static final int K1;
+    public static final int L1;
+    public static final int M1;
+    public static final int N1;
+    public static final int O1;
+    public static final java.util.LinkedList P1;
+    public static boolean Q1;
+    public static final com.tencent.mm.plugin.webview.ui.tools.jsapi.e8 R1;
+    public final com.tencent.mm.plugin.webview.ui.tools.jsapi.r A;
+    public final int B;
+    public final com.tencent.mm.plugin.webview.ui.tools.jsapi.u8 D;
+    public final com.tencent.mm.plugin.webview.modeltools.t E;
+    public final com.tencent.mm.plugin.webview.modeltools.i1 F;
+    public final hy4.d0 G;
+
+    /* renamed from: J, reason: collision with root package name */
+    public int f184974J;
+    public com.tencent.mm.sdk.event.IListener P;
+    public com.tencent.mm.sdk.platformtools.n3 S;
+    public boolean T;
+    public boolean U;
+    public java.lang.String Y;
+    public final com.tencent.mm.sdk.event.IListener Z;
+
+    /* renamed from: d, reason: collision with root package name */
+    public android.content.Context f184975d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public nw4.y2 f184976e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public com.tencent.mm.opensdk.modelmsg.WXMediaMessage f184977f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public volatile java.lang.String f184978g;
+
+    /* renamed from: l1, reason: collision with root package name */
+    public final com.tencent.mm.sdk.event.IListener f184981l1;
+
+    /* renamed from: m, reason: collision with root package name */
+    public final java.util.HashSet f184982m;
+
+    /* renamed from: n, reason: collision with root package name */
+    public final java.util.HashSet f184983n;
+
+    /* renamed from: o, reason: collision with root package name */
+    public android.os.Bundle f184984o;
+
+    /* renamed from: p0, reason: collision with root package name */
+    public final java.util.Map f184986p0;
+
+    /* renamed from: p1, reason: collision with root package name */
+    public boolean f184987p1;
+
+    /* renamed from: v, reason: collision with root package name */
+    public boolean f184993v;
+
+    /* renamed from: x0, reason: collision with root package name */
+    public int f184996x0;
+
+    /* renamed from: x1, reason: collision with root package name */
+    public boolean f184997x1;
+
+    /* renamed from: y, reason: collision with root package name */
+    public com.tencent.mm.plugin.webview.stub.z0 f184998y;
+
+    /* renamed from: y0, reason: collision with root package name */
+    public com.tencent.mm.sdk.event.IListener f184999y0;
+
+    /* renamed from: y1, reason: collision with root package name */
+    public boolean f185000y1;
+
+    /* renamed from: z, reason: collision with root package name */
+    public com.tencent.mm.plugin.webview.stub.z0 f185001z;
+
+    /* renamed from: z1, reason: collision with root package name */
+    public static final char[] f184973z1 = {'<', '>', '\"', '\'', '&', ' ', '\''};
+    public static final java.lang.String[] A1 = {"&lt;", "&gt;", "&quot;", "&apos;", "&amp;", "&nbsp;", "&#39;"};
+
+    /* renamed from: h, reason: collision with root package name */
+    public android.app.ProgressDialog f184979h = null;
+
+    /* renamed from: i, reason: collision with root package name */
+    public boolean f184980i = true;
+
+    /* renamed from: p, reason: collision with root package name */
+    public java.lang.String f184985p = null;
+
+    /* renamed from: q, reason: collision with root package name */
+    public java.lang.String f184988q = null;
+
+    /* renamed from: r, reason: collision with root package name */
+    public java.util.HashMap f184989r = null;
+
+    /* renamed from: s, reason: collision with root package name */
+    public java.util.HashMap f184990s = null;
+
+    /* renamed from: t, reason: collision with root package name */
+    public java.lang.String f184991t = null;
+
+    /* renamed from: u, reason: collision with root package name */
+    public boolean f184992u = false;
+
+    /* renamed from: w, reason: collision with root package name */
+    public java.lang.String f184994w = null;
+
+    /* renamed from: x, reason: collision with root package name */
+    public boolean f184995x = false;
+    public boolean C = false;
+    public final nw4.m H = new nw4.m();
+    public long I = 0;
+    public boolean K = false;
+    public boolean L = false;
+    public boolean M = false;
+    public int N = -1;
+    public i11.e Q = null;
+    public i11.d R = null;
+    public java.util.Map V = null;
+    public long W = 0;
+    public final java.util.Map X = new java.util.HashMap();
+
+    static {
+        java.util.HashSet hashSet = new java.util.HashSet();
+        B1 = hashSet;
+        hashSet.add("gcj02");
+        hashSet.add("wgs84");
+        C1 = "https://" + com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fyn) + "/security/";
+        D1 = "https://" + com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fym) + "/security/";
+        E1 = "https://" + com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fys) + "/security/";
+        F1 = "https://" + com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fyo) + "/security/";
+        G1 = "https://" + com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.f492289fy0) + "/security/";
+        H1 = "https://" + com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fy8) + "/security/";
+        I1 = 1;
+        J1 = 2;
+        K1 = 3;
+        L1 = 1;
+        M1 = 2;
+        N1 = 3;
+        O1 = 4;
+        P1 = new java.util.LinkedList();
+        Q1 = false;
+        R1 = new com.tencent.mm.plugin.webview.ui.tools.jsapi.a2();
+    }
+
+    public c1(int i17) {
+        this.f184993v = false;
+        this.A = null;
+        final com.tencent.mm.app.a0 a0Var = com.tencent.mm.app.a0.f53288d;
+        this.Z = new com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.WebViewWillCloseWindowEvent>(a0Var) { // from class: com.tencent.mm.plugin.webview.ui.tools.jsapi.MsgHandler$87
+            {
+                this.__eventId = -410575635;
+            }
+
+            @Override // com.tencent.mm.sdk.event.IListener
+            public boolean callback(com.tencent.mm.autogen.events.WebViewWillCloseWindowEvent webViewWillCloseWindowEvent) {
+                com.tencent.mm.autogen.events.WebViewWillCloseWindowEvent webViewWillCloseWindowEvent2 = webViewWillCloseWindowEvent;
+                com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var = com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.this;
+                if (c1Var.f184998y == null) {
+                    return false;
+                }
+                try {
+                    android.os.Bundle bundle = new android.os.Bundle();
+                    bundle.putInt("closeWindow. result: %d", webViewWillCloseWindowEvent2.f54989g.f7689a);
+                    c1Var.f184998y.ec();
+                    c1Var.f184998y.b(bundle);
+                    int i18 = webViewWillCloseWindowEvent2.f54989g.f7689a;
+                } catch (android.os.RemoteException e17) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+                }
+                if (webViewWillCloseWindowEvent2.f54989g.f7689a == -1) {
+                    c1Var.i5(c1Var.f184976e, "get_h5_transaction_request:ok", null);
+                } else {
+                    c1Var.i5(c1Var.f184976e, "get_h5_transaction_request:cancel", null);
+                }
+                dead();
+                return true;
+            }
+        };
+        this.f184986p0 = new java.util.HashMap();
+        this.f184996x0 = 1000;
+        this.f184981l1 = new com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.MusicPlayerEvent>(a0Var) { // from class: com.tencent.mm.plugin.webview.ui.tools.jsapi.MsgHandler$151
+            {
+                this.__eventId = -1155728636;
+            }
+
+            @Override // com.tencent.mm.sdk.event.IListener
+            public boolean callback(com.tencent.mm.autogen.events.MusicPlayerEvent musicPlayerEvent) {
+                android.os.Bundle bundle;
+                boolean z17;
+                com.tencent.mm.autogen.events.MusicPlayerEvent musicPlayerEvent2 = musicPlayerEvent;
+                am.jk jkVar = musicPlayerEvent2.f54512g;
+                java.lang.String str = jkVar.f7040f;
+                java.lang.String str2 = jkVar.f7047m;
+                int i18 = jkVar.f7036b;
+                boolean z18 = jkVar.f7041g;
+                b21.r rVar = jkVar.f7037c;
+                int i19 = jkVar.f7035a;
+                long j17 = jkVar.f7039e;
+                int i27 = jkVar.f7045k;
+                java.lang.String str3 = jkVar.f7046l;
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "backgroundAudioListener callback in, state:%s, action: %s, event: %s", str, java.lang.Integer.valueOf(i18), musicPlayerEvent2);
+                com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var = com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.this;
+                char[] cArr = com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.f184973z1;
+                c1Var.getClass();
+                boolean z19 = rVar != null && rVar.U;
+                if (z18 || z19) {
+                    qk.p9 p9Var = i19 == 1 ? qk.p9.f364313e : null;
+                    try {
+                        android.os.Bundle bundle2 = new android.os.Bundle();
+                        bundle2.putString("background_audio_state_player_state", str);
+                        float f17 = (((float) j17) * 1.0f) / 1000.0f;
+                        bundle2.putFloat("background_audio_state_player_duration", f17);
+                        bundle2.putFloat("background_audio_state_current_time", (((rk4.a) ((qk.k6) i95.n0.c(qk.k6.class))).Ai(p9Var, null, null, null) * 1.0f) / 1000.0f);
+                        if (rVar != null) {
+                            bundle2.putString("background_audio_state_player_src", rVar.f17352n);
+                            bundle2.putString("background_audio_state_player_src_id", rVar.E);
+                        }
+                        bundle2.putInt("background_audio_state_player_err_code", i27);
+                        if (android.text.TextUtils.isEmpty(str3)) {
+                            str3 = "";
+                        }
+                        bundle2.putString("background_audio_state_player_err_msg", str3);
+                        if (!com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                            bundle2.putString("background_audio_state_event", str2);
+                        }
+                        b21.r b17 = b21.m.b();
+                        if (b17 != null) {
+                            rVar = b17;
+                        }
+                        java.lang.String str4 = rVar != null ? rVar.f17346e : null;
+                        if (com.tencent.mm.sdk.platformtools.t8.K0(str4)) {
+                            bundle = bundle2;
+                        } else if (c1Var.f184987p1) {
+                            rk4.a aVar = (rk4.a) ((qk.k6) i95.n0.c(qk.k6.class));
+                            bw5.lp0 Zi = aVar.Zi(p9Var, null, null, null);
+                            if (Zi != null) {
+                                bundle2.putString("background_audio_state_player_state", rk4.m.f396834a.a(aVar.Bi(p9Var, null, null, null)));
+                                bundle = bundle2;
+                                bundle.putString("background_audio_state_listen_item", aVar.Di(Zi, f17, p9Var, null, null, null).toString());
+                                java.lang.String e17 = Zi.d().e();
+                                if (e17 == null) {
+                                    e17 = "";
+                                }
+                                bundle.putString("background_audio_state_category_id", e17);
+                                bundle.putFloat("background_audio_state_buffered", ((aVar.wi(p9Var, null, null, null) * f17) * 1.0f) / 100.0f);
+                            } else {
+                                bundle = bundle2;
+                                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "backgroundAudioListener callback playingItem is null");
+                            }
+                        } else {
+                            bundle = bundle2;
+                            if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                                synchronized (com.tencent.mm.plugin.webview.ui.tools.media.e1.class) {
+                                    if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                                        android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+                                        kotlin.jvm.internal.o.f(context, "getContext(...)");
+                                        com.tencent.mm.plugin.webview.ui.tools.media.e1 e1Var = new com.tencent.mm.plugin.webview.ui.tools.media.e1(context, null);
+                                        com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k = e1Var;
+                                        com.tencent.mm.sdk.event.IListener iListener = e1Var.f185765e;
+                                        if (iListener != null) {
+                                            iListener.alive();
+                                        }
+                                    }
+                                }
+                            }
+                            r45.ca7 e18 = com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k.e(str4);
+                            java.lang.String str5 = e18 != null ? e18.f371406f : null;
+                            if (!com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+                                bundle.putString("background_audio_state_player_audio_id", str5);
+                            }
+                        }
+                        bundle.putBoolean("background_audio_state_is_ting", c1Var.f184987p1);
+                        java.lang.String str6 = rVar != null ? rVar.E : null;
+                        if (i19 == 2 && !com.tencent.mm.sdk.platformtools.t8.K0(str6)) {
+                            org.json.JSONObject jSONObject = new org.json.JSONObject();
+                            jSONObject.put("srcId", str6);
+                            bundle.putString("background_audio_state_listen_item", jSONObject.toString());
+                        }
+                        if (c1Var.f184998y != null) {
+                            z17 = true;
+                            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "onBackgroundAudioStateChange musicId=%s, srcId=%s isTing=%b", str4, str6, java.lang.Boolean.valueOf(c1Var.f184987p1));
+                            c1Var.f184998y.callback(2100, bundle);
+                        } else {
+                            z17 = true;
+                            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "backgroundAudioListener callbacker is null");
+                        }
+                        return z17;
+                    } catch (java.lang.Exception e19) {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "" + e19.getMessage());
+                    }
+                } else {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "is not from QQMusicPlayer or TingMusicPlayer, don't callback!");
+                }
+                return false;
+            }
+        };
+        this.f184987p1 = false;
+        this.f184997x1 = false;
+        this.f185000y1 = false;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "MsgHandler init: %d", java.lang.Integer.valueOf(i17));
+        this.B = i17;
+        this.f184993v = false;
+        this.f184982m = new java.util.HashSet();
+        this.f184983n = new java.util.HashSet();
+        this.A = new com.tencent.mm.plugin.webview.ui.tools.jsapi.r(i17);
+        this.D = new com.tencent.mm.plugin.webview.ui.tools.jsapi.u8();
+        this.E = new com.tencent.mm.plugin.webview.modeltools.t();
+        this.F = new com.tencent.mm.plugin.webview.modeltools.i1();
+        this.G = new hy4.d0();
+    }
+
+    public static boolean A(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "gestrueOnPressBackControl");
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "gestrueOnPressBackControl %s", map);
+        try {
+            ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).Bi(com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1), com.tencent.mm.plugin.websearch.l2.c(map, "enabled", true));
+        } catch (java.lang.Exception unused) {
+        }
+        return false;
+    }
+
+    /* JADX WARN: Can't wrap try/catch for region: R(27:1|(2:2|3)|(3:5|6|7)|(3:8|9|10)|(6:62|63|64|65|66|(21:68|14|(1:16)(2:59|(1:61))|17|(1:19)|20|(1:22)(1:58)|23|(2:25|(1:27)(1:56))(1:57)|(1:29)(1:55)|30|31|32|33|(1:35)(1:49)|36|(2:40|(4:42|43|44|45))|48|43|44|45))(1:12)|13|14|(0)(0)|17|(0)|20|(0)(0)|23|(0)(0)|(0)(0)|30|31|32|33|(0)(0)|36|(3:38|40|(0))|48|43|44|45|(1:(0))) */
+    /* JADX WARN: Code restructure failed: missing block: B:50:0x02ad, code lost:
+    
+        r0 = e;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:16:0x0176 A[Catch: Exception -> 0x02af, TryCatch #0 {Exception -> 0x02af, blocks: (B:66:0x0109, B:68:0x0162, B:14:0x0172, B:16:0x0176, B:17:0x0184, B:19:0x019f, B:20:0x01a7, B:23:0x01cf, B:25:0x020f, B:27:0x0213, B:30:0x0222, B:55:0x0220, B:57:0x0218, B:59:0x0179, B:61:0x0182), top: B:65:0x0109 }] */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x019f A[Catch: Exception -> 0x02af, TryCatch #0 {Exception -> 0x02af, blocks: (B:66:0x0109, B:68:0x0162, B:14:0x0172, B:16:0x0176, B:17:0x0184, B:19:0x019f, B:20:0x01a7, B:23:0x01cf, B:25:0x020f, B:27:0x0213, B:30:0x0222, B:55:0x0220, B:57:0x0218, B:59:0x0179, B:61:0x0182), top: B:65:0x0109 }] */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x01cc  */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x020f A[Catch: Exception -> 0x02af, TryCatch #0 {Exception -> 0x02af, blocks: (B:66:0x0109, B:68:0x0162, B:14:0x0172, B:16:0x0176, B:17:0x0184, B:19:0x019f, B:20:0x01a7, B:23:0x01cf, B:25:0x020f, B:27:0x0213, B:30:0x0222, B:55:0x0220, B:57:0x0218, B:59:0x0179, B:61:0x0182), top: B:65:0x0109 }] */
+    /* JADX WARN: Removed duplicated region for block: B:29:0x021f  */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x0252 A[Catch: Exception -> 0x02ad, TryCatch #1 {Exception -> 0x02ad, blocks: (B:33:0x022c, B:35:0x0252, B:36:0x025a, B:38:0x0264, B:40:0x026a, B:43:0x027c), top: B:32:0x022c }] */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x027a  */
+    /* JADX WARN: Removed duplicated region for block: B:49:0x0259  */
+    /* JADX WARN: Removed duplicated region for block: B:55:0x0220 A[Catch: Exception -> 0x02af, TryCatch #0 {Exception -> 0x02af, blocks: (B:66:0x0109, B:68:0x0162, B:14:0x0172, B:16:0x0176, B:17:0x0184, B:19:0x019f, B:20:0x01a7, B:23:0x01cf, B:25:0x020f, B:27:0x0213, B:30:0x0222, B:55:0x0220, B:57:0x0218, B:59:0x0179, B:61:0x0182), top: B:65:0x0109 }] */
+    /* JADX WARN: Removed duplicated region for block: B:57:0x0218 A[Catch: Exception -> 0x02af, TryCatch #0 {Exception -> 0x02af, blocks: (B:66:0x0109, B:68:0x0162, B:14:0x0172, B:16:0x0176, B:17:0x0184, B:19:0x019f, B:20:0x01a7, B:23:0x01cf, B:25:0x020f, B:27:0x0213, B:30:0x0222, B:55:0x0220, B:57:0x0218, B:59:0x0179, B:61:0x0182), top: B:65:0x0109 }] */
+    /* JADX WARN: Removed duplicated region for block: B:58:0x01ce  */
+    /* JADX WARN: Removed duplicated region for block: B:59:0x0179 A[Catch: Exception -> 0x02af, TryCatch #0 {Exception -> 0x02af, blocks: (B:66:0x0109, B:68:0x0162, B:14:0x0172, B:16:0x0176, B:17:0x0184, B:19:0x019f, B:20:0x01a7, B:23:0x01cf, B:25:0x020f, B:27:0x0213, B:30:0x0222, B:55:0x0220, B:57:0x0218, B:59:0x0179, B:61:0x0182), top: B:65:0x0109 }] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean A0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r24, nw4.y2 r25) {
+        /*
+            Method dump skipped, instructions count: 751
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.A0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean A1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("operationType");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOperateBackgroundAudio(), optype:%s", str);
+        nw4.e3.a(y2Var.f341018h, false, null, c1Var.i6());
+        if (!c1Var.t6(y2Var)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOperateBackgroundAudio getMusicPermission is false");
+            c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+            return true;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOperateBackgroundAudio optype is empty");
+            c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+            return true;
+        }
+        c1Var.f184981l1.alive();
+        if (str.equalsIgnoreCase(com.tencent.tav.core.AssetExtension.SCENE_PLAY)) {
+            if (b21.n.c()) {
+                c1Var.i5(y2Var, "operateBackgroundAudio:ok", null);
+                return true;
+            }
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "operateBackgroundAudio play fail");
+            c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+            return true;
+        }
+        if (str.equalsIgnoreCase("resume")) {
+            if (b21.n.c()) {
+                c1Var.i5(y2Var, "operateBackgroundAudio:ok", null);
+                return true;
+            }
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "operateBackgroundAudio resume fail");
+            c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+            return true;
+        }
+        if (str.equalsIgnoreCase("pause")) {
+            if (b21.n.b()) {
+                com.tencent.mm.sdk.platformtools.u3.h(new b21.i());
+                c1Var.i5(y2Var, "operateBackgroundAudio:ok", null);
+                return true;
+            }
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "operateBackgroundAudio pause fail");
+            c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+            return true;
+        }
+        if (str.equalsIgnoreCase("seek")) {
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("currentTime"), -1);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "currentTime:%d", java.lang.Integer.valueOf(P));
+            if (P < 0) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "currentTime is invalid!");
+                c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+                return true;
+            }
+            if (b21.m.h(P * 1000)) {
+                c1Var.i5(y2Var, "operateBackgroundAudio:ok", null);
+                return true;
+            }
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "operateBackgroundAudio seek fail");
+            c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+            return true;
+        }
+        if (str.equalsIgnoreCase("stop")) {
+            if (b21.n.d()) {
+                c1Var.i5(y2Var, "operateBackgroundAudio:ok", null);
+                return true;
+            }
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "operateBackgroundAudio stop fail");
+            c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+            return true;
+        }
+        if (str.equalsIgnoreCase("next")) {
+            com.tencent.mm.sdk.platformtools.u3.h(new b21.g());
+            c1Var.i5(y2Var, "operateBackgroundAudio:ok", null);
+            return true;
+        }
+        if (str.equalsIgnoreCase("pre")) {
+            com.tencent.mm.sdk.platformtools.u3.h(new b21.h());
+            c1Var.i5(y2Var, "operateBackgroundAudio:ok", null);
+            return true;
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "operateBackgroundAudio fail, invalid opeType");
+        c1Var.i5(y2Var, "operateBackgroundAudio:fail", null);
+        return true;
+    }
+
+    public static boolean A2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        android.os.Bundle b17 = nw4.y2.b(y2Var.f340790a);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "remove video player   params %s", y2Var.f340790a);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(200002, b17);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doRemoveVideoPlayer exception" + e17.getMessage());
+        }
+        c1Var.i5(y2Var, "removeVideoPlayer:ok", null);
+        return true;
+    }
+
+    public static void A3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        if (!y2Var.f341019i.equalsIgnoreCase(com.tencent.mm.plugin.appbrand.jsapi.appdownload.q.NAME) || c1Var.f184975d == null) {
+            return;
+        }
+        ((ku5.t0) ku5.t0.f312615d).B(new com.tencent.mm.plugin.webview.ui.tools.jsapi.k4(c1Var));
+    }
+
+    public static boolean A4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        boolean z17;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        java.lang.Object obj = y2Var.f340790a.get("isShowProgressTips");
+        if (obj != null) {
+            try {
+                z17 = com.tencent.mm.sdk.platformtools.t8.P(obj.toString(), 0) == 1;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Exception has occured : %s", e17.getMessage());
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "isShowProgressTips(%s)", java.lang.Boolean.valueOf(z17));
+            nw4.e3.a(y2Var.f341018h, false, null, str);
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "The localId(%s) is null or appId(%s) is null.", str2, str);
+                c1Var.i5(y2Var, "translateVoice:fail_missing arguments", null);
+            } else {
+                com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str2);
+                if (b17 != null) {
+                    com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.a7(c1Var, z17, y2Var, str2, b17));
+                } else {
+                    c1Var.i5(y2Var, "translateVoice:fail_arguments error", null);
+                }
+            }
+            return true;
+        }
+        z17 = true;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "isShowProgressTips(%s)", java.lang.Boolean.valueOf(z17));
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "The localId(%s) is null or appId(%s) is null.", str2, str);
+        c1Var.i5(y2Var, "translateVoice:fail_missing arguments", null);
+        return true;
+    }
+
+    public static boolean B(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "showNavBarShadow");
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "showNavBarShadow %s", map);
+        try {
+            int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1);
+            java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "color");
+            double doubleValue = java.lang.Double.valueOf(map.get("alpha").toString()).doubleValue();
+            int parseInt = java.lang.Integer.parseInt(f17.substring(1, f17.length()), 16);
+            float d17 = com.tencent.mm.plugin.websearch.l2.d(map, "animateDuration", 0.2f);
+            ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).aj(e17, parseInt, (int) (doubleValue * 255.0d), d17);
+        } catch (java.lang.Throwable unused) {
+        }
+        return false;
+    }
+
+    public static boolean B0(final com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, final nw4.y2 y2Var) {
+        int i17;
+        int i18;
+        c1Var.getClass();
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "businessType");
+        java.lang.String n66 = c1Var.n6();
+        java.lang.String j66 = c1Var.j6(n66);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(j66)) {
+            j66 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "referrerAppId");
+        }
+        java.lang.String str = j66;
+        final java.util.HashMap hashMap = new java.util.HashMap();
+        if (com.tencent.mm.sdk.platformtools.t8.K0(f17)) {
+            hashMap.put("err_code", -4);
+            c1Var.i5(y2Var, "openBusinessView:fail invalid businessType", hashMap);
+        } else if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            hashMap.put("err_code", -1);
+            c1Var.i5(y2Var, "openBusinessView:fail invalid referrerAppId", hashMap);
+        } else {
+            java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "envVersion");
+            if (f18 == null) {
+                f18 = "";
+            }
+            if (f18.equals("trial")) {
+                i17 = 2;
+            } else if (f18.equals("develop")) {
+                i18 = 1;
+                java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "queryString");
+                ((com.tencent.mm.plugin.appbrand.launching.xc) ((com.tencent.mm.plugin.appbrand.service.h6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.h6.class))).fj(c1Var.f184975d, n66, str, f17, f19, i18, c1Var.g6());
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenBusinessView appid:%s, businessType:%s, queryString:%s, referrerUrl:%s", str, f17, f19, n66);
+                final com.tencent.mm.app.a0 a0Var = com.tencent.mm.app.a0.f53288d;
+                com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.NavigateBackH5Event> iListener = new com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.NavigateBackH5Event>(a0Var) { // from class: com.tencent.mm.plugin.webview.ui.tools.jsapi.MsgHandler$141
+                    {
+                        this.__eventId = 123962501;
+                    }
+
+                    @Override // com.tencent.mm.sdk.event.IListener
+                    public boolean callback(com.tencent.mm.autogen.events.NavigateBackH5Event navigateBackH5Event) {
+                        com.tencent.mm.autogen.events.NavigateBackH5Event navigateBackH5Event2 = navigateBackH5Event;
+                        com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2 = com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.this;
+                        c1Var2.f184999y0.dead();
+                        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenBusinessView errCode %d", java.lang.Integer.valueOf(navigateBackH5Event2.f54515g.f7352a));
+                        am.mk mkVar = navigateBackH5Event2.f54515g;
+                        java.lang.Integer valueOf = java.lang.Integer.valueOf(mkVar.f7352a);
+                        java.util.Map map = hashMap;
+                        map.put("err_code", valueOf);
+                        int i19 = mkVar.f7352a;
+                        nw4.y2 y2Var2 = y2Var;
+                        if (i19 == -4) {
+                            c1Var2.i5(y2Var2, "openBusinessView:fail invalid businessType", map);
+                            return false;
+                        }
+                        if (i19 == -3) {
+                            c1Var2.i5(y2Var2, "openBusinessView:fail cancel", map);
+                            return false;
+                        }
+                        if (i19 == -2) {
+                            c1Var2.i5(y2Var2, "openBusinessView:fail request CGI error", map);
+                            return false;
+                        }
+                        if (i19 != 0) {
+                            c1Var2.i5(y2Var2, "openBusinessView:fail system error", map);
+                            return false;
+                        }
+                        map.put(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_EXTRA_DATA, mkVar.f7353b);
+                        c1Var2.i5(y2Var2, "openBusinessView:ok", map);
+                        return false;
+                    }
+                };
+                c1Var.f184999y0 = iListener;
+                iListener.alive();
+            } else {
+                i17 = 0;
+            }
+            i18 = i17;
+            java.lang.String f192 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "queryString");
+            ((com.tencent.mm.plugin.appbrand.launching.xc) ((com.tencent.mm.plugin.appbrand.service.h6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.h6.class))).fj(c1Var.f184975d, n66, str, f17, f192, i18, c1Var.g6());
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenBusinessView appid:%s, businessType:%s, queryString:%s, referrerUrl:%s", str, f17, f192, n66);
+            final androidx.lifecycle.y a0Var2 = com.tencent.mm.app.a0.f53288d;
+            com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.NavigateBackH5Event> iListener2 = new com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.NavigateBackH5Event>(a0Var2) { // from class: com.tencent.mm.plugin.webview.ui.tools.jsapi.MsgHandler$141
+                {
+                    this.__eventId = 123962501;
+                }
+
+                @Override // com.tencent.mm.sdk.event.IListener
+                public boolean callback(com.tencent.mm.autogen.events.NavigateBackH5Event navigateBackH5Event) {
+                    com.tencent.mm.autogen.events.NavigateBackH5Event navigateBackH5Event2 = navigateBackH5Event;
+                    com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2 = com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.this;
+                    c1Var2.f184999y0.dead();
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenBusinessView errCode %d", java.lang.Integer.valueOf(navigateBackH5Event2.f54515g.f7352a));
+                    am.mk mkVar = navigateBackH5Event2.f54515g;
+                    java.lang.Integer valueOf = java.lang.Integer.valueOf(mkVar.f7352a);
+                    java.util.Map map = hashMap;
+                    map.put("err_code", valueOf);
+                    int i19 = mkVar.f7352a;
+                    nw4.y2 y2Var2 = y2Var;
+                    if (i19 == -4) {
+                        c1Var2.i5(y2Var2, "openBusinessView:fail invalid businessType", map);
+                        return false;
+                    }
+                    if (i19 == -3) {
+                        c1Var2.i5(y2Var2, "openBusinessView:fail cancel", map);
+                        return false;
+                    }
+                    if (i19 == -2) {
+                        c1Var2.i5(y2Var2, "openBusinessView:fail request CGI error", map);
+                        return false;
+                    }
+                    if (i19 != 0) {
+                        c1Var2.i5(y2Var2, "openBusinessView:fail system error", map);
+                        return false;
+                    }
+                    map.put(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_EXTRA_DATA, mkVar.f7353b);
+                    c1Var2.i5(y2Var2, "openBusinessView:ok", map);
+                    return false;
+                }
+            };
+            c1Var.f184999y0 = iListener2;
+            iListener2.alive();
+        }
+        return true;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:162:0x05c2  */
+    /* JADX WARN: Removed duplicated region for block: B:164:0x05cb  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x0620  */
+    /* JADX WARN: Removed duplicated region for block: B:45:0x0653  */
+    /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.String] */
+    /* JADX WARN: Type inference failed for: r1v14 */
+    /* JADX WARN: Type inference failed for: r1v16 */
+    /* JADX WARN: Type inference failed for: r1v17, types: [java.lang.String] */
+    /* JADX WARN: Type inference failed for: r1v19 */
+    /* JADX WARN: Type inference failed for: r1v22 */
+    /* JADX WARN: Type inference failed for: r1v32 */
+    /* JADX WARN: Type inference failed for: r1v34 */
+    /* JADX WARN: Type inference failed for: r1v35 */
+    /* JADX WARN: Type inference failed for: r1v36 */
+    /* JADX WARN: Type inference failed for: r1v37 */
+    /* JADX WARN: Type inference failed for: r1v38 */
+    /* JADX WARN: Type inference failed for: r1v39 */
+    /* JADX WARN: Type inference failed for: r1v40, types: [java.util.ArrayList] */
+    /* JADX WARN: Type inference failed for: r1v41 */
+    /* JADX WARN: Type inference failed for: r1v42 */
+    /* JADX WARN: Type inference failed for: r1v49 */
+    /* JADX WARN: Type inference failed for: r1v50 */
+    /* JADX WARN: Type inference failed for: r2v10 */
+    /* JADX WARN: Type inference failed for: r2v11, types: [int] */
+    /* JADX WARN: Type inference failed for: r2v13 */
+    /* JADX WARN: Type inference failed for: r2v16 */
+    /* JADX WARN: Type inference failed for: r2v24 */
+    /* JADX WARN: Type inference failed for: r2v26 */
+    /* JADX WARN: Type inference failed for: r2v27 */
+    /* JADX WARN: Type inference failed for: r2v28, types: [int] */
+    /* JADX WARN: Type inference failed for: r2v51 */
+    /* JADX WARN: Type inference failed for: r2v52 */
+    /* JADX WARN: Type inference failed for: r2v6 */
+    /* JADX WARN: Type inference failed for: r2v9, types: [java.lang.String] */
+    /* JADX WARN: Type inference failed for: r3v18 */
+    /* JADX WARN: Type inference failed for: r3v19 */
+    /* JADX WARN: Type inference failed for: r3v25 */
+    /* JADX WARN: Type inference failed for: r4v55, types: [org.json.JSONArray] */
+    /* JADX WARN: Type inference failed for: r4v58, types: [org.json.JSONArray] */
+    /* JADX WARN: Type inference failed for: r4v67 */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean B1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r81, nw4.y2 r82, com.tencent.mm.protocal.JsapiPermissionWrapper r83) {
+        /*
+            Method dump skipped, instructions count: 1948
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.B1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean B2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        android.os.Bundle b17 = nw4.y2.b(y2Var.f340790a);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "operate video player  params %s", y2Var.f340790a);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(200003, b17);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doOperateVideoPlayer exception" + e17.getMessage());
+        }
+        c1Var.i5(y2Var, "operateVideoPlayer:ok", null);
+        return true;
+    }
+
+    public static /* synthetic */ boolean B4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.T5(y2Var, jsapiPermissionWrapper);
+        return true;
+    }
+
+    public static boolean C(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hideNavBarShadow");
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "hideNavBarShadow");
+        try {
+            ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).wi(com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1), com.tencent.mm.plugin.websearch.l2.d(map, "animateDuration", 0.2f));
+        } catch (java.lang.Throwable unused) {
+        }
+        return false;
+    }
+
+    public static boolean C0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("idKeyDataInfo");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "idkey data is null");
+            c1Var.i5(y2Var, "reportIDKey:fail_invaild_parms", null);
+        } else {
+            try {
+                org.json.JSONArray jSONArray = new org.json.JSONArray(str);
+                java.util.ArrayList arrayList = new java.util.ArrayList();
+                for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                    org.json.JSONObject optJSONObject = jSONArray.optJSONObject(i17);
+                    com.tencent.mars.smc.IDKey iDKey = new com.tencent.mars.smc.IDKey();
+                    iDKey.SetID(com.tencent.mm.sdk.platformtools.t8.P(optJSONObject.optString(dm.i4.COL_ID), 0));
+                    iDKey.SetKey(com.tencent.mm.sdk.platformtools.t8.P(optJSONObject.optString("key"), 0));
+                    iDKey.SetValue(com.tencent.mm.sdk.platformtools.t8.P(optJSONObject.optString("value"), 0));
+                    arrayList.add(iDKey);
+                }
+                if (arrayList.size() > 0) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.j(arrayList, true, false);
+                    c1Var.i5(y2Var, "reportIDKey:ok", null);
+                }
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "parse json array faild : %s", e17.getMessage());
+            }
+            c1Var.i5(y2Var, "reportIDKey:fail", null);
+        }
+        return false;
+    }
+
+    public static boolean C1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        int i17;
+        int i18;
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetBackgroundAudioState()");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("albumId");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("needLastPlayInfo"), 0);
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        java.lang.String c17 = !com.tencent.mm.sdk.platformtools.t8.K0(str3) ? xw4.b.c(str3) : null;
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            str = null;
+        } else {
+            if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                synchronized (com.tencent.mm.plugin.webview.ui.tools.media.e1.class) {
+                    if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                        android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+                        kotlin.jvm.internal.o.f(context, "getContext(...)");
+                        com.tencent.mm.plugin.webview.ui.tools.media.e1 e1Var = new com.tencent.mm.plugin.webview.ui.tools.media.e1(context, null);
+                        com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k = e1Var;
+                        com.tencent.mm.sdk.event.IListener iListener = e1Var.f185765e;
+                        if (iListener != null) {
+                            iListener.alive();
+                        }
+                    }
+                }
+            }
+            str = com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k.c(str2, c17);
+        }
+        if (c1Var.t6(y2Var)) {
+            c1Var.H6(false);
+            b21.r b17 = b21.m.b();
+            if (b17 != null) {
+                b21.o a17 = b21.m.a();
+                if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                    com.tencent.mm.plugin.webview.ui.tools.media.c1 c1Var2 = com.tencent.mm.plugin.webview.ui.tools.media.e1.f185759j;
+                    r45.ca7 e17 = c1Var2.a().e(b17.f17346e);
+                    java.lang.String str4 = e17 != null ? e17.f371407g : null;
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(str4) || P == 1) {
+                        if (com.tencent.mm.sdk.platformtools.t8.K0(str4)) {
+                            com.tencent.mm.plugin.webview.ui.tools.media.e1 a18 = c1Var2.a();
+                            synchronized (a18) {
+                                str = a18.c(com.tencent.mm.sdk.platformtools.v3.t(a18.f185764d, "currentAlbumIdKey_" + c17 + '}', null, 2, null), c17);
+                            }
+                        } else {
+                            str = c1Var2.a().c(str4, c17);
+                        }
+                    }
+                    str2 = str4;
+                }
+                if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                    synchronized (com.tencent.mm.plugin.webview.ui.tools.media.e1.class) {
+                        if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                            android.content.Context context2 = com.tencent.mm.sdk.platformtools.x2.f193071a;
+                            kotlin.jvm.internal.o.f(context2, "getContext(...)");
+                            com.tencent.mm.plugin.webview.ui.tools.media.e1 e1Var2 = new com.tencent.mm.plugin.webview.ui.tools.media.e1(context2, null);
+                            com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k = e1Var2;
+                            com.tencent.mm.sdk.event.IListener iListener2 = e1Var2.f185765e;
+                            if (iListener2 != null) {
+                                iListener2.alive();
+                            }
+                        }
+                    }
+                }
+                r45.ca7 e18 = com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k.e(b17.f17346e);
+                java.lang.String str5 = e18 != null ? e18.f371406f : null;
+                if (a17 != null) {
+                    i17 = a17.f17337a;
+                    i18 = a17.f17338b;
+                } else {
+                    i17 = -1;
+                    i18 = -1;
+                }
+                if (a17 != null && !"stop".equals(a17.f17341e) && i17 >= 0 && i18 >= 0) {
+                    int i19 = i17 / 1000;
+                    int i27 = i18 / 1000;
+                    int i28 = a17.f17339c;
+                    int i29 = i19 > 0 ? (a17.f17340d * i19) / 100 : 0;
+                    java.util.HashMap hashMap = new java.util.HashMap();
+                    hashMap.put("duration", java.lang.Integer.valueOf(i19));
+                    hashMap.put("currentTime", java.lang.Integer.valueOf(i27));
+                    hashMap.put("paused", java.lang.Integer.valueOf(i28 == 1 ? 0 : 1));
+                    hashMap.put("src", b17.f17352n);
+                    hashMap.put("buffered", java.lang.Integer.valueOf(i29));
+                    hashMap.put(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, b17.f17348g);
+                    hashMap.put("epname", b17.f17350i);
+                    hashMap.put("singer", b17.f17349h);
+                    hashMap.put("coverImgUrl", b17.f17351m);
+                    hashMap.put("isLive", 0);
+                    hashMap.put("startTime", java.lang.Integer.valueOf(b17.D / 1000));
+                    hashMap.put("srcId", b17.E);
+                    java.lang.String str6 = b17.F;
+                    if (str6 == null) {
+                        str6 = "";
+                    }
+                    hashMap.put("protocol", str6);
+                    hashMap.put("webUrl", b17.f17354p);
+                    hashMap.put("playState", a17.f17341e);
+                    hashMap.put("songLyric", b17.f17355q);
+                    hashMap.put("playbackRate", java.lang.Double.valueOf(b17.K));
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                        hashMap.put("audioListState", str);
+                    }
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+                        hashMap.put("audioId", str5);
+                    }
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                        hashMap.put("albumId", str2);
+                    }
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getBackgroundAudioState ok");
+                    c1Var.i5(y2Var, "getBackgroundAudioState:ok", hashMap);
+                } else if (!c1Var.t5(str, P, c17)) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "return parameter is invalid");
+                    c1Var.i5(y2Var, "getBackgroundAudioState:fail", null);
+                }
+            } else if (!c1Var.t5(str, P, c17)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "currentWrapper is null");
+                c1Var.i5(y2Var, "getBackgroundAudioState:fail", null);
+            }
+        } else if (b21.m.b() != null || !c1Var.t5(str, P, c17)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "no permission to do get state");
+            c1Var.i5(y2Var, "getBackgroundAudioState:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean C2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        q0Var.getClass();
+        int i17 = c1Var.B;
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "getSearchHistory count %d, webviewId %d", 20, java.lang.Integer.valueOf(i17));
+        com.tencent.mm.plugin.websearch.o0 o0Var = new com.tencent.mm.plugin.websearch.o0(q0Var, null);
+        o0Var.f351141c = "";
+        o0Var.f351147i = 20;
+        o0Var.f351151m = q0Var.f181592e;
+        o0Var.f181578s = i17;
+        ((com.tencent.mm.plugin.fts.d0) ((o13.z) i95.n0.c(o13.z.class))).sj(8, o0Var);
+        return false;
+    }
+
+    public static boolean C4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("desc");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("img_url");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("link");
+        try {
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str3)) {
+                str3 = c1Var.f184998y.getCurrentUrl();
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Get current url fail. exception : %s", e17.getMessage());
+        }
+        java.lang.String x66 = c1Var.x6(str3);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(x66)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "link is null or nil.");
+            c1Var.i5(y2Var, "shareWeiboApp:fail", null);
+        } else {
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                str = ((java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE)) + " " + x66;
+            }
+            java.util.HashMap hashMap = new java.util.HashMap();
+            hashMap.put("type", 0);
+            hashMap.put("openLBS", 0);
+            com.tencent.mm.sdk.platformtools.i6 i6Var = com.tencent.mm.pluginsdk.ui.tools.e9.f191608a;
+            hashMap.put("content", com.tencent.mm.sdk.platformtools.y9.a(str));
+            hashMap.put("url", com.tencent.mm.sdk.platformtools.y9.a(str2));
+            hashMap.put("thumbnailurl", com.tencent.mm.sdk.platformtools.y9.a(str2));
+            android.content.Intent intent = new android.content.Intent("android.intent.action.VIEW", android.net.Uri.parse("weibo://t.qq.com/proxy/write"));
+            java.lang.StringBuilder sb6 = new java.lang.StringBuilder("TencentWeibo://Edit?from=weixin&");
+            sb6.append(com.tencent.mm.pluginsdk.ui.tools.e9.c(hashMap));
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "Uri : %s", sb6.toString());
+            intent.putExtra("microblog.intent.extra.ACTION", sb6.toString());
+            intent.setFlags(268435456);
+            if (com.tencent.mm.sdk.platformtools.t8.I0(c1Var.f184975d, intent, true, false)) {
+                try {
+                    android.content.Context context = c1Var.f184975d;
+                    java.util.ArrayList arrayList = new java.util.ArrayList();
+                    arrayList.add(intent);
+                    java.util.Collections.reverse(arrayList);
+                    yj0.a.d(context, arrayList.toArray(), "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doShareWeiboApp", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+                    context.startActivity((android.content.Intent) arrayList.get(0));
+                    yj0.a.f(context, "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doShareWeiboApp", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+                    c1Var.i5(y2Var, "shareWeiboApp:ok", null);
+                } catch (java.lang.Exception e18) {
+                    c1Var.i5(y2Var, "shareWeiboApp:fail", null);
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+                }
+            } else {
+                c1Var.i5(y2Var, "shareWeiboApp:fail", null);
+            }
+        }
+        return true;
+    }
+
+    public static boolean D(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", com.tencent.mm.plugin.appbrand.jsapi.finder.h0.NAME);
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "openFinderProfile %s", map);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "userName");
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(map, "reportExtraInfo");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("finder_username", f17);
+        intent.putExtra("report_scene", 14);
+        boolean z17 = true;
+        intent.putExtra("key_enter_profile_type", 1);
+        intent.putExtra("key_extra_info", f18);
+        if (com.tencent.mm.plugin.websearch.l2.e(map, "isInsideFinder", 0) != 1 && !com.tencent.mm.plugin.websearch.l2.c(map, "isInsideFinder", false)) {
+            z17 = false;
+        }
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "commentScene", 0);
+        intent.putExtra("key_is_in_finder", z17);
+        intent.putExtra("key_entry_type", e17);
+        ((c61.l7) ((zy2.b6) i95.n0.c(zy2.b6.class))).Bj(6, 2, 32, intent);
+        ((zy2.b6) i95.n0.c(zy2.b6.class)).getClass();
+        ya2.e1.f460472a.w(com.tencent.mm.sdk.platformtools.x2.f193071a, intent);
+        return false;
+    }
+
+    public static boolean D0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        ((r60.e) ((s60.e) i95.n0.c(s60.e.class))).getClass();
+        if (com.tencent.mm.model.gdpr.g.a()) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "eu user just return fail");
+            c1Var.i5(y2Var, "add_contact:fail EU user failed", null);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_USERNAME);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "user name is null or nil");
+            c1Var.i5(y2Var, "add_contact:fail", null);
+        } else {
+            if (!com.tencent.mm.storage.z3.F3(str) || ((ox.g) ((tk.o) i95.n0.c(tk.o.class))).Ui()) {
+                java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE);
+                java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("profileReportInfo");
+                java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("scenenote");
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doQuicklyAddContact scene = %s, sceneNote = %s", str2, str4);
+                int P = com.tencent.mm.sdk.platformtools.t8.P(str2, 91);
+                o25.a aVar = new o25.a();
+                aVar.f342463a = str3;
+                aVar.f342464b = 4;
+                aVar.f342465c = str4;
+                aVar.f342466d = (java.lang.String) y2Var.f340790a.get("finderBuffer");
+                aVar.f342467e = (java.lang.String) y2Var.f340790a.get("searchClickId");
+                aVar.f342469g = false;
+                com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.c8(c1Var, ((r35.p) ((o25.o1) i95.n0.c(o25.o1.class))).wi(c1Var.f184975d, str, P, new com.tencent.mm.plugin.webview.ui.tools.jsapi.b8(c1Var, y2Var), aVar)));
+                return true;
+            }
+            android.content.Context context = c1Var.f184975d;
+            if (context != null) {
+                dp.a.makeText(context, context.getString(com.tencent.mm.R.string.pgv), 0).show();
+            }
+            c1Var.f184993v = false;
+        }
+        return false;
+    }
+
+    public static boolean D1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if (y2Var == null || y2Var.f340790a == null) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "wcpaySecurityCrosscutBack fail");
+            c1Var.i5(y2Var, "wcpay_security_crosscut_back:fail", null);
+        }
+        ((h45.q) i95.n0.c(h45.q.class)).startJSApiWCPaySecurityCrosscut(y2Var.f340790a);
+        try {
+            android.os.Bundle bundle = new android.os.Bundle();
+            c1Var.f184998y.ec();
+            c1Var.f184998y.b(bundle);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        c1Var.i5(y2Var, "wcpay_security_crosscut_back:ok", null);
+        c1Var.f184993v = false;
+        return false;
+    }
+
+    public static boolean D2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "showType", 0);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "query");
+        if (com.tencent.mm.plugin.websearch.l2.e(map, "isDeleteAll", 0) == 1) {
+            com.tencent.mm.plugin.fts.d0 d0Var = (com.tencent.mm.plugin.fts.d0) ((o13.z) i95.n0.c(o13.z.class));
+            if (d0Var.mj()) {
+                android.util.SparseArray sparseArray = d0Var.f137398z;
+                if (sparseArray.indexOfKey(8) >= 0) {
+                    ((o13.w) sparseArray.get(8)).a();
+                }
+            }
+        } else {
+            java.lang.String str = f17 + "\u200b" + e17;
+            com.tencent.mm.plugin.fts.d0 d0Var2 = (com.tencent.mm.plugin.fts.d0) ((o13.z) i95.n0.c(o13.z.class));
+            if (d0Var2.mj()) {
+                android.util.SparseArray sparseArray2 = d0Var2.f137398z;
+                if (sparseArray2.indexOfKey(8) >= 0) {
+                    ((o13.w) sparseArray2.get(8)).e(str);
+                }
+            }
+        }
+        return false;
+    }
+
+    public static java.util.Map D3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, org.json.JSONObject jSONObject) {
+        c1Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        if (jSONObject != null) {
+            java.util.Iterator<java.lang.String> keys = jSONObject.keys();
+            while (keys.hasNext()) {
+                java.lang.String next = keys.next();
+                hashMap.put(next, jSONObject.opt(next));
+            }
+        }
+        return hashMap;
+    }
+
+    public static boolean D4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        if (c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("key");
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("procint"), 0);
+            int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("dataint"), 0);
+            android.content.Intent intent = new android.content.Intent();
+            intent.putExtra("encryptKey", str);
+            intent.putExtra("procInterval", P);
+            intent.putExtra("dataInterval", P2);
+            intent.putExtra("exdevice_airkiss_open_type", 1);
+            ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+            j45.l.n(c1Var.f184975d, "exdevice", ".ui.ExdeviceConnectWifiUI", intent, 19);
+        } else {
+            c1Var.i5(y2Var, "configWXDeviceWiFi:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean E(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).f(y2Var.f340790a);
+        return false;
+    }
+
+    public static boolean E0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("consumedCardId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("consumedCode");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doConsumedShareCard consumedCardId is " + str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doConsumedShareCard failed, illegal params (id : %s, code : %s)", str, str2);
+            c1Var.i5(y2Var, "consumedShareCard:fail", null);
+            return false;
+        }
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_from_scene", 1);
+        intent.putExtra("key_consumed_card_id", str);
+        intent.putExtra("key_consumed_Code", str2);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.n(c1Var.f184975d, "card", ".sharecard.ui.CardConsumeSuccessUI", intent, 29);
+        return true;
+    }
+
+    public static boolean E1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.util.Map map;
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSetBackgroundAudioStateMV()");
+        c1Var.H6(false);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        if (c1Var.f184984o != null) {
+            if (android.text.TextUtils.isEmpty(str)) {
+                str = c1Var.f184984o.getString("jsapi_args_appid");
+            }
+            if (android.text.TextUtils.isEmpty(str)) {
+                str = c1Var.A.c(c1Var.n6());
+            }
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "appId:%s", str);
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("url");
+        java.lang.String c17 = !com.tencent.mm.sdk.platformtools.t8.K0(str2) ? xw4.b.c(str2) : null;
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("src");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("lowbandSrc");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("epname");
+        java.lang.String str7 = (java.lang.String) y2Var.f340790a.get("singer");
+        java.lang.String str8 = (java.lang.String) y2Var.f340790a.get("coverImgUrl");
+        java.lang.String str9 = (java.lang.String) y2Var.f340790a.get("webUrl");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("startTime"), 0);
+        java.lang.String str10 = (java.lang.String) y2Var.f340790a.get("srcId");
+        java.lang.String str11 = (java.lang.String) y2Var.f340790a.get("protocol");
+        java.lang.String str12 = (java.lang.String) y2Var.f340790a.get("musicbar_url");
+        boolean f17 = jsapiPermissionWrapper.f(com.tencent.thumbplayer.tplayer.plugins.ITPEventID.RICH_MEDIA_SYNCHRONIZER_ON_ERROR);
+        java.lang.String str13 = str;
+        java.lang.String str14 = (java.lang.String) y2Var.f340790a.get("songLyric");
+        java.lang.String str15 = (java.lang.String) y2Var.f340790a.get("src_username");
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("needStartMusicUI"), 0);
+        double L = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) y2Var.f340790a.get("playbackRate"), 1.0f);
+        java.lang.String str16 = c17;
+        double L2 = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) y2Var.f340790a.get("volume"), 1.0f);
+        if (L < 0.5d || L > 2.0d) {
+            L = 1.0d;
+        }
+        if (android.text.TextUtils.isEmpty(str14)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "songLyric is empty");
+        } else {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "songLyric:%s", str14);
+        }
+        java.lang.String str17 = str8 == null ? "" : str8;
+        java.lang.String str18 = (java.lang.String) y2Var.f340790a.get("mid");
+        java.lang.String str19 = (java.lang.String) y2Var.f340790a.get("mvMusicGenre");
+        java.lang.String str20 = (java.lang.String) y2Var.f340790a.get("mvIdentification");
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("mvIssueDate"), 0L);
+        long V2 = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("mvDuration"), 0L);
+        java.lang.String str21 = (java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.LiveExKeys.LIVE_EX_EXTRA_INFO);
+        java.lang.String str22 = (java.lang.String) y2Var.f340790a.get("mvObjectId");
+        java.lang.String str23 = (java.lang.String) y2Var.f340790a.get("mvNonceId");
+        java.lang.String str24 = (java.lang.String) y2Var.f340790a.get("mvCoverUrl");
+        java.lang.String str25 = (java.lang.String) y2Var.f340790a.get("mvMakerFinderNickname");
+        java.lang.String str26 = (java.lang.String) y2Var.f340790a.get("musicOperationUrl");
+        java.lang.String str27 = (java.lang.String) y2Var.f340790a.get("sceneNote");
+        java.lang.String str28 = (java.lang.String) y2Var.f340790a.get("musicAppId");
+        java.lang.String str29 = !android.text.TextUtils.isEmpty(str28) ? str28 : str13;
+        double d17 = L;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "src : %s, title : %s, singer : %s, coverImgUrl : %s, webUrl : %s, startTime:%d, protocol:%s, barBackToWebView:%b, musicbar_url:%s, playbackRate:%f, volume:%f", str3, str5, str7, str17, str9, java.lang.Integer.valueOf(P), str11, java.lang.Boolean.valueOf(f17), str12, java.lang.Double.valueOf(L), java.lang.Double.valueOf(L2));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "genre:%s, identification:%s, issueDate:%d, duration:%d, extraInfo:%s, mvObjectId:%s, mvNonceId:%s, mvCoverUrl:%s, mvMakerFinderNickname:%s, sceneNote:%s, musicAppId:%s", str19, str20, java.lang.Long.valueOf(V), java.lang.Long.valueOf(V2), str21, str22, str23, str24, str25, str27, str28);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str3) || com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "setBackgroundAudioStateMv fail, src or title is null");
+            c1Var.i5(y2Var, "setBackgroundAudioStateMv:fail, src or title is null", null);
+            return true;
+        }
+        if (str14 != null && str14.length() > 32768) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "setBackgroundAudioState fail, src or title is null");
+            c1Var.i5(y2Var, "setBackgroundAudioStateMv:fail", null);
+            return true;
+        }
+        java.lang.String str30 = "" + str3.hashCode();
+        b21.r a17 = b21.s.a(10, str17, str5, str7, str9, str4, str3, "" + str3.hashCode(), lp0.b.D(), g83.a.a() + str17.hashCode(), str6, str29);
+        a17.C = str16;
+        a17.D = P * 1000;
+        a17.E = str10;
+        a17.F = str11;
+        a17.H = str12;
+        a17.f17355q = str14;
+        a17.I = str15;
+        a17.K = d17;
+        a17.L = (float) L2;
+        a17.P = str18;
+        r45.xs4 xs4Var = new r45.xs4();
+        xs4Var.set(0, str22);
+        xs4Var.set(1, str23);
+        xs4Var.set(2, str24);
+        xs4Var.set(3, str25);
+        xs4Var.set(14, str5);
+        xs4Var.set(4, str7);
+        xs4Var.set(16, str17);
+        xs4Var.set(5, str6);
+        xs4Var.set(8, java.lang.Long.valueOf(V));
+        int i17 = (int) V2;
+        xs4Var.set(10, java.lang.Integer.valueOf(i17));
+        xs4Var.set(9, str20);
+        xs4Var.set(6, str21);
+        xs4Var.set(15, str14);
+        xs4Var.set(7, str19);
+        xs4Var.set(11, str18);
+        b21.t a18 = b21.t.a(str30, xs4Var);
+        ((s90.e) ((t90.e) i95.n0.c(t90.e.class))).getClass();
+        b21.u.d(a17, a18);
+        boolean z17 = a17.b(b21.m.b()) && b21.m.c();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "needStartMusicUI :%d", java.lang.Integer.valueOf(P2));
+        if (z17) {
+            map = null;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "The same music is playing");
+            b21.m.k(a17);
+        } else {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "play the music");
+            b21.m.i(a17);
+            if (P2 == 1) {
+                android.content.Intent intent = new android.content.Intent();
+                intent.putExtra("key_scene", 8);
+                map = null;
+                j45.l.j(c1Var.f184975d, "music", ".ui.MusicMainUI", intent, null);
+            } else if (P2 == 2) {
+                android.content.Intent intent2 = new android.content.Intent();
+                intent2.putExtra("key_mv_song_name", str5);
+                intent2.putExtra("key_mv_song_lyric", str14);
+                intent2.putExtra("key_mv_album_cover_url", str17);
+                intent2.putExtra("key_mv_feed_id", str22);
+                intent2.putExtra("key_mv_nonce_id", str23);
+                intent2.putExtra("key_mv_cover_url", str24);
+                intent2.putExtra("key_mv_poster", str25);
+                intent2.putExtra("key_mv_singer_name", str7);
+                intent2.putExtra("key_mv_album_name", str6);
+                intent2.putExtra("key_mv_music_genre", str19);
+                intent2.putExtra("key_mv_issue_date", V + "");
+                intent2.putExtra("key_mv_identification", str20);
+                intent2.putExtra("key_mv_extra_info", str21);
+                intent2.putExtra("key_mv_music_duration", i17);
+                intent2.putExtra("key_mv_music_operation_url", str26);
+                intent2.putExtra("key_mv_song_mid", str18);
+                intent2.putExtra("key_mv_scene_note", str27);
+                r45.bt4 bt4Var = new r45.bt4();
+                java.lang.String uuid = java.util.UUID.randomUUID().toString();
+                kotlin.jvm.internal.o.f(uuid, "toString(...)");
+                bt4Var.f371037e = uuid;
+                bt4Var.f371036d = 22;
+                bt4Var.f371039g = str30;
+                try {
+                    intent2.putExtra("key_mv_report_data", bt4Var.toByteArray());
+                } catch (java.io.IOException e17) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+                }
+                intent2.setFlags(268435456);
+                map = null;
+                j45.l.j(com.tencent.mm.sdk.platformtools.x2.f193071a, "mv", ".ui.MusicMvMainUI", intent2, null);
+            } else {
+                map = null;
+            }
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "setBackgroundAudioStateMV ok");
+        c1Var.i5(y2Var, "setBackgroundAudioStateMv:ok", map);
+        return true;
+    }
+
+    public static boolean E2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        mf0.z zVar = (mf0.z) i95.n0.c(mf0.z.class);
+        java.util.Map map = y2Var.f340790a;
+        ((lf0.u) zVar).getClass();
+        r45.un6 un6Var = new r45.un6();
+        un6Var.f387508n = com.tencent.mm.plugin.websearch.l2.f(map, "query");
+        un6Var.f387506i = com.tencent.mm.plugin.websearch.l2.e(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 21);
+        un6Var.f387512r = java.util.UUID.randomUUID().toString();
+        un6Var.f387507m = com.tencent.mm.plugin.websearch.l2.f(map, "searchId");
+        if (com.tencent.mars.comm.NetStatusUtil.isConnected(com.tencent.mm.sdk.platformtools.x2.f193071a) && !com.tencent.mars.comm.NetStatusUtil.isWifi(com.tencent.mm.sdk.platformtools.x2.f193071a)) {
+            un6Var.f387514t = true;
+        }
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "videoId");
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(com.tencent.mm.plugin.websearch.l2.f(map, "videoUrls"));
+            if (jSONArray.length() > 0) {
+                for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                    r45.zn6 zn6Var = new r45.zn6();
+                    zn6Var.f392244d = jSONArray.getString(i17);
+                    arrayList.add(zn6Var);
+                }
+            }
+        } catch (org.json.JSONException unused) {
+        }
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(f17)) {
+            r45.xn6 xn6Var = new r45.xn6();
+            un6Var.f387509o = xn6Var;
+            xn6Var.f390255d = com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+            un6Var.f387509o.f390257f = com.tencent.mm.plugin.websearch.l2.f(map, "thumbUrl");
+            un6Var.f387509o.f390258g = com.tencent.mm.plugin.websearch.l2.e(map, "mediaDuration", 0);
+            r45.xn6 xn6Var2 = un6Var.f387509o;
+            xn6Var2.f390259h = f17;
+            xn6Var2.f390274y = com.tencent.mm.plugin.websearch.l2.f(map, "strPlayCount");
+            un6Var.f387509o.f390262n = com.tencent.mm.plugin.websearch.l2.f(map, "shareUrl");
+            un6Var.f387509o.f390263o = com.tencent.mm.plugin.websearch.l2.f(map, "shareTitle");
+            un6Var.f387509o.f390275z = com.tencent.mm.plugin.websearch.l2.f(map, "titleUrl");
+            un6Var.f387509o.f390264p = com.tencent.mm.plugin.websearch.l2.f(map, "shareDesc");
+            un6Var.f387509o.f390266q = com.tencent.mm.plugin.websearch.l2.f(map, "shareImgUrl");
+            un6Var.f387509o.f390267r = com.tencent.mm.plugin.websearch.l2.f(map, "shareString");
+            un6Var.f387509o.f390268s = com.tencent.mm.plugin.websearch.l2.f(map, "shareStringUrl");
+            un6Var.f387509o.f390269t = com.tencent.mm.plugin.websearch.l2.f(map, ya.b.SOURCE);
+            un6Var.f387509o.f390270u = com.tencent.mm.plugin.websearch.l2.f(map, "sourceUrl");
+            r45.xn6 xn6Var3 = un6Var.f387509o;
+            java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(map, "relevant_category");
+            long j17 = -1;
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(f18)) {
+                try {
+                    j17 = java.lang.Long.valueOf(f18).longValue();
+                } catch (java.lang.Exception unused2) {
+                }
+            }
+            xn6Var3.f390271v = j17;
+            un6Var.f387509o.f390272w = com.tencent.mm.plugin.websearch.l2.f(map, "shareOpenId");
+            un6Var.f387509o.G = com.tencent.mm.plugin.websearch.l2.f(map, "docID");
+            r45.xn6 xn6Var4 = un6Var.f387509o;
+            java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(map, "videoSize");
+            long j18 = 0;
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(f19)) {
+                try {
+                    j18 = java.lang.Long.valueOf(f19).longValue();
+                } catch (java.lang.Exception unused3) {
+                }
+            }
+            xn6Var4.f390254J = j18;
+            un6Var.f387509o.E = android.os.SystemClock.elapsedRealtime();
+            un6Var.f387509o.A = com.tencent.mm.plugin.websearch.l2.e(map, "itemType", 0);
+            un6Var.f387509o.L = com.tencent.mm.plugin.websearch.l2.e(map, "switchFlag", 0);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(un6Var.f387509o.f390257f)) {
+                un6Var.f387509o.f390257f = "http://shp.qpic.cn/qqvideo_ori/0/" + un6Var.f387509o.f390259h + java.lang.String.format("_%s_%s/0", java.lang.Integer.valueOf(com.tencent.mm.plugin.appbrand.jsapi.storage.e0.CTRL_INDEX), 280);
+            }
+            try {
+                org.json.JSONObject jSONObject = new org.json.JSONObject(com.tencent.mm.plugin.websearch.l2.f(map, "block"));
+                un6Var.f387509o.H = jSONObject.optLong("resultType");
+                un6Var.f387509o.I = jSONObject.optLong("type");
+            } catch (org.json.JSONException unused4) {
+            }
+            un6Var.f387509o.f390273x = com.tencent.mm.plugin.websearch.l2.f(map, "expand");
+            un6Var.f387509o.K.addAll(arrayList);
+            r45.zn6 f27 = pm4.w.f(arrayList);
+            if (f27 != null) {
+                r45.xn6 xn6Var5 = un6Var.f387509o;
+                xn6Var5.f390256e = f27.f392244d;
+                xn6Var5.U = f27.f392245e;
+            }
+            java.lang.String f28 = com.tencent.mm.plugin.websearch.l2.f(map, "show_tag_list");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(f28)) {
+                try {
+                    un6Var.f387509o.D.addAll(pm4.w.b(new org.json.JSONArray(f28)));
+                } catch (org.json.JSONException unused5) {
+                }
+            }
+            un6Var.f387505h = un6Var.f387509o.f390271v;
+            un6Var.f387502e = com.tencent.mm.plugin.websearch.l2.f(map, "expand");
+            un6Var.f387503f = un6Var.f387507m;
+            r45.xn6 xn6Var6 = un6Var.f387509o;
+            un6Var.f387501d = xn6Var6.f390259h;
+            if (un6Var.f387505h == 100203) {
+                xn6Var6.f390260i = com.tencent.wxmm.v2helper.VOIP_ENC_HEIGHT_LV1;
+                xn6Var6.f390261m = 640;
+            } else {
+                xn6Var6.f390260i = com.tencent.mm.plugin.appbrand.jsapi.storage.e0.CTRL_INDEX;
+                xn6Var6.f390261m = 280;
+            }
+            java.lang.String f29 = com.tencent.mm.plugin.websearch.l2.f(map, "videoChannelTitle");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(un6Var.f387509o.f390267r)) {
+                long j19 = un6Var.f387505h;
+                if (j19 == 100202 || j19 == 100204 || j19 == 100205) {
+                    r45.x56 x56Var = new r45.x56();
+                    un6Var.f387510p = x56Var;
+                    x56Var.f389800i = f29;
+                }
+            }
+            java.lang.String f37 = com.tencent.mm.plugin.websearch.l2.f(map, "extReqParams");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(f37)) {
+                try {
+                    org.json.JSONArray jSONArray2 = new org.json.JSONArray(f37);
+                    for (int i18 = 0; i18 < jSONArray2.length(); i18++) {
+                        org.json.JSONObject jSONObject2 = jSONArray2.getJSONObject(i18);
+                        r45.x50 x50Var = new r45.x50();
+                        x50Var.f389788d = jSONObject2.optString("key", "");
+                        x50Var.f389789e = jSONObject2.optInt("uintValue", 0);
+                        x50Var.f389790f = jSONObject2.optString("textValue", "");
+                        un6Var.f387511q.add(x50Var);
+                    }
+                } catch (java.lang.Exception unused6) {
+                }
+            }
+        }
+        tg0.o1 o1Var = (tg0.o1) i95.n0.c(tg0.o1.class);
+        android.content.Context context = c1Var.f184975d;
+        ((sg0.y3) o1Var).getClass();
+        su4.r2.r(context, un6Var);
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("ret", 0);
+        c1Var.i5(y2Var, "0", hashMap);
+        return false;
+    }
+
+    public static boolean E3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        p95.a.a(new com.tencent.mm.plugin.webview.ui.tools.jsapi.d5(c1Var, y2Var));
+        return true;
+    }
+
+    public static boolean E4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        try {
+            com.tencent.mm.autogen.events.ExDeviceGetCurrentSSIDEvent exDeviceGetCurrentSSIDEvent = new com.tencent.mm.autogen.events.ExDeviceGetCurrentSSIDEvent();
+            exDeviceGetCurrentSSIDEvent.f54131g.f7800a = true;
+            exDeviceGetCurrentSSIDEvent.e();
+            am.s5 s5Var = exDeviceGetCurrentSSIDEvent.f54132h;
+            if (s5Var.f7870a) {
+                hashMap.put("currentSSID", s5Var.f7871b);
+                c1Var.i5(y2Var, "getCurrentSSID:ok", hashMap);
+            } else {
+                hashMap.put("err_desc", "not on wifi");
+                c1Var.i5(y2Var, "getCurrentSSID:fail", hashMap);
+            }
+        } catch (java.lang.Exception unused) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getCurrentSSID:fail");
+            hashMap.put("err_desc", "not on wifi");
+            c1Var.i5(y2Var, "getCurrentSSID:fail", hashMap);
+        }
+        return true;
+    }
+
+    public static boolean F(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        su4.g2 g2Var;
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 201);
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(((java.util.HashMap) map).get("webview_instance_id"), -1);
+        java.util.HashMap hashMap = (java.util.HashMap) q0Var.f181597m;
+        if (hashMap.get(java.lang.Integer.valueOf(e17)) == null) {
+            com.tencent.mm.vfs.r6 r6Var = new com.tencent.mm.vfs.r6(ys3.l.a(), su4.g2.a(e17));
+            byte[] N = com.tencent.mm.vfs.w6.N(r6Var.o(), 0, (int) r6Var.C());
+            try {
+                r45.rh4 rh4Var = new r45.rh4();
+                rh4Var.parseFrom(N);
+                g2Var = new su4.g2();
+                try {
+                    g2Var.f412897a = rh4Var.f384871d;
+                    g2Var.f412898b = rh4Var.f384872e;
+                    g2Var.f412899c = rh4Var.f384873f;
+                    g2Var.f412900d = rh4Var.f384874g;
+                    g2Var.f412901e = rh4Var.f384875h;
+                } catch (java.lang.Exception unused) {
+                }
+            } catch (java.lang.Exception unused2) {
+                g2Var = null;
+            }
+            if (g2Var != null) {
+                hashMap.put(java.lang.Integer.valueOf(e17), g2Var);
+            }
+        }
+        su4.g2 g2Var2 = (su4.g2) hashMap.get(java.lang.Integer.valueOf(e17));
+        boolean z17 = true;
+        if (g2Var2 != null) {
+            ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).Ri(o17, g2Var2.f412898b, 1, g2Var2.f412900d + g2Var2.f412899c <= java.lang.System.currentTimeMillis() / 1000 ? 1 : 0, g2Var2.f412901e);
+            if (g2Var2.f412900d + g2Var2.f412899c > java.lang.System.currentTimeMillis() / 1000) {
+                z17 = false;
+            }
+        }
+        if (z17) {
+            gm0.j1.d().a(1866, q0Var);
+            su4.v1 v1Var = new su4.v1(map, e17, 0);
+            v1Var.f413117h = com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1);
+            gm0.j1.d().g(v1Var);
+        }
+        return false;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:25:0x00c0  */
+    /* JADX WARN: Removed duplicated region for block: B:27:0x00c4  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean F0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r12, nw4.y2 r13) {
+        /*
+            r12.getClass()
+            java.lang.String r0 = "getLocalData:fail"
+            java.lang.String r1 = "MicroMsg.MsgHandler"
+            java.util.Map r2 = r13.f340790a
+            java.lang.String r3 = "key"
+            java.util.HashMap r2 = (java.util.HashMap) r2
+            java.lang.Object r2 = r2.get(r3)
+            java.lang.String r2 = (java.lang.String) r2
+            boolean r3 = com.tencent.mm.sdk.platformtools.t8.K0(r2)
+            r4 = 0
+            if (r3 == 0) goto L21
+            java.lang.String r0 = "getLocalData:fail_key_is_null"
+            r12.i5(r13, r0, r4)
+            goto Lfb
+        L21:
+            com.tencent.mm.plugin.webview.stub.z0 r3 = r12.f184998y     // Catch: java.lang.Exception -> Lea
+            java.lang.String r3 = r3.getCurrentUrl()     // Catch: java.lang.Exception -> Lea
+            byte[] r2 = r2.getBytes()
+            r5 = 0
+            byte[] r2 = android.util.Base64.encode(r2, r5)
+            java.lang.String r6 = new java.lang.String
+            r6.<init>(r2)
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.r r2 = r12.A
+            java.lang.String r2 = r2.c(r3)
+            com.tencent.mm.plugin.webview.model.s4 r7 = com.tencent.mm.plugin.webview.modeltools.z.aj()
+            r7.getClass()
+            java.lang.String r8 = com.tencent.mm.sdk.platformtools.t8.E(r3)
+            java.lang.Object[] r9 = new java.lang.Object[]{r6, r2, r8}
+            java.lang.String r10 = "MicroMsg.WebViewLocalDataStorage"
+            java.lang.String r11 = "get value by key = %s, appid = %s, domin = %s"
+            com.tencent.mars.xlog.Log.i(r10, r11, r9)
+            boolean r9 = com.tencent.mm.sdk.platformtools.t8.K0(r6)
+            if (r9 != 0) goto Lb9
+            boolean r9 = com.tencent.mm.sdk.platformtools.t8.K0(r2)
+            if (r9 != 0) goto Lb9
+            boolean r3 = com.tencent.mm.sdk.platformtools.t8.K0(r3)
+            if (r3 != 0) goto Lb9
+            boolean r3 = com.tencent.mm.sdk.platformtools.t8.K0(r8)
+            if (r3 == 0) goto L6a
+            goto Lb9
+        L6a:
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>()
+            r3.append(r2)
+            r3.append(r8)
+            r3.append(r6)
+            java.lang.String r2 = r3.toString()
+            int r2 = r2.hashCode()
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            java.lang.String r8 = "select value from WebviewLocalData where recordId = "
+            r3.<init>(r8)
+            r3.append(r2)
+            java.lang.String r2 = r3.toString()
+            com.tencent.mars.xlog.Log.i(r10, r2)
+            java.lang.String[] r3 = new java.lang.String[r5]
+            android.database.Cursor r2 = r7.rawQuery(r2, r3)
+            if (r2 != 0) goto La0
+            java.lang.String r2 = "get cursor is null"
+            com.tencent.mars.xlog.Log.e(r10, r2)
+            goto Lb9
+        La0:
+            boolean r3 = r2.moveToFirst()
+            if (r3 == 0) goto Lab
+            java.lang.String r3 = r2.getString(r5)
+            goto Lac
+        Lab:
+            r3 = r4
+        Lac:
+            r2.close()
+            java.lang.String r2 = "get value : %s for key : %s"
+            java.lang.Object[] r7 = new java.lang.Object[]{r3, r6}
+            com.tencent.mars.xlog.Log.i(r10, r2, r7)
+            goto Lba
+        Lb9:
+            r3 = r4
+        Lba:
+            boolean r2 = com.tencent.mm.sdk.platformtools.t8.K0(r3)
+            if (r2 == 0) goto Lc4
+            r12.i5(r13, r0, r4)
+            goto Lfb
+        Lc4:
+            byte[] r0 = r3.getBytes()
+            byte[] r0 = android.util.Base64.decode(r0, r5)
+            java.lang.String r2 = new java.lang.String
+            r2.<init>(r0)
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            java.lang.String r3 = "data"
+            r0.put(r3, r2)
+            java.lang.String r3 = "get local data, key = %s, value = %s"
+            java.lang.Object[] r2 = new java.lang.Object[]{r6, r2}
+            com.tencent.mars.xlog.Log.i(r1, r3, r2)
+            java.lang.String r1 = "getLocalData:ok"
+            r12.i5(r13, r1, r0)
+            goto Lfb
+        Lea:
+            r2 = move-exception
+            java.lang.String r2 = r2.getMessage()
+            java.lang.Object[] r2 = new java.lang.Object[]{r2}
+            java.lang.String r3 = "get url failed : %s"
+            com.tencent.mars.xlog.Log.e(r1, r3, r2)
+            r12.i5(r13, r0, r4)
+        Lfb:
+            r12 = 1
+            return r12
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.F0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean F1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.H6(true);
+        if (com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d == null) {
+            synchronized (com.tencent.mm.plugin.webview.ui.tools.media.k1.class) {
+                if (com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d == null) {
+                    android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+                    kotlin.jvm.internal.o.f(context, "getContext(...)");
+                    com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d = new com.tencent.mm.plugin.webview.ui.tools.media.k1(context, null);
+                }
+            }
+        }
+        com.tencent.mm.plugin.webview.ui.tools.media.k1 k1Var = com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d;
+        c1Var.t6(y2Var);
+        synchronized (k1Var) {
+            java.util.HashMap hashMap = new java.util.HashMap();
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("sourceType"), 0);
+            qk.p9 p9Var = P == 1 ? qk.p9.f364313e : null;
+            if (P == 3) {
+                com.tencent.mm.plugin.webview.ui.tools.media.b1.f185746a.a(hashMap);
+                c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+                return true;
+            }
+            hashMap.put("bizAudioPlayerEnable", java.lang.Boolean.valueOf(((java.lang.Boolean) ((jz5.n) ((bv.k0) ((rv.d3) i95.n0.c(rv.d3.class))).f24659e).getValue()).booleanValue()));
+            qk.k6 a17 = k1Var.a();
+            kotlin.jvm.internal.o.f(a17, "<get-audioService>(...)");
+            bw5.lp0 i66 = qk.k6.i6(a17, p9Var, null, null, null, 14, null);
+            if (i66 == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", "no playing item");
+                hashMap.put("status", "idle");
+                hashMap.put("err_code", 0);
+                c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+                return false;
+            }
+            qk.k6 a18 = k1Var.a();
+            kotlin.jvm.internal.o.f(a18, "<get-audioService>(...)");
+            qk.ia Bi = ((rk4.a) a18).Bi(p9Var, null, null, null);
+            java.lang.String e17 = i66.d().e();
+            qk.k6 a19 = k1Var.a();
+            kotlin.jvm.internal.o.f(a19, "<get-audioService>(...)");
+            float X7 = qk.k6.X7(a19, p9Var, null, null, null, 14, null);
+            qk.k6 a27 = k1Var.a();
+            kotlin.jvm.internal.o.f(a27, "<get-audioService>(...)");
+            float Ai = ((rk4.a) a27).Ai(p9Var, null, null, null);
+            if (Bi == qk.ia.f364170f || X7 < 0.0f || Ai < 0.0f) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.WebViewTingHelper", "getTingAudioState audio is stop duration=" + X7 + ", position=" + Ai);
+            }
+            float f17 = X7 / 1000.0f;
+            float f18 = Ai / 1000.0f;
+            kotlin.jvm.internal.o.f(k1Var.a(), "<get-audioService>(...)");
+            float wi6 = f17 > 0.0f ? (((rk4.a) r5).wi(p9Var, null, null, null) * f17) / 100 : 0.0f;
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(e17)) {
+                kotlin.jvm.internal.o.d(e17);
+                hashMap.put("categoryId", e17);
+            }
+            hashMap.put("currentTime", java.lang.Float.valueOf(f18));
+            hashMap.put("buffered", java.lang.Float.valueOf(wi6));
+            hashMap.put("duration", java.lang.Float.valueOf(f17));
+            hashMap.put("status", rk4.m.f396834a.a(Bi));
+            qk.k6 a28 = k1Var.a();
+            kotlin.jvm.internal.o.f(a28, "<get-audioService>(...)");
+            float tg6 = qk.k6.tg(a28, p9Var, null, null, null, 14, null);
+            if (tg6 < 0.5f || tg6 > 2.0f) {
+                tg6 = 1.0f;
+            }
+            hashMap.put("playRate", java.lang.Float.valueOf(tg6));
+            qk.k6 a29 = k1Var.a();
+            kotlin.jvm.internal.o.f(a29, "<get-audioService>(...)");
+            java.lang.String jSONObject = ((rk4.a) a29).Di(i66, f17, null, null, null, null).toString();
+            kotlin.jvm.internal.o.f(jSONObject, "toString(...)");
+            hashMap.put("item", jSONObject);
+            org.json.JSONArray jSONArray = new org.json.JSONArray();
+            jSONArray.put("item");
+            java.lang.String jSONArray2 = jSONArray.toString();
+            kotlin.jvm.internal.o.f(jSONArray2, "toString(...)");
+            hashMap.put("__json_key_set", jSONArray2);
+            java.util.Objects.toString(hashMap.get("status"));
+            i66.b();
+            java.util.Objects.toString(hashMap.get("item"));
+            hashMap.put("err_code", 0);
+            qk.k6 a37 = k1Var.a();
+            kotlin.jvm.internal.o.f(a37, "<get-audioService>(...)");
+            b66.z xa6 = qk.k6.xa(a37, p9Var, null, null, null, 14, null);
+            if (xa6 != null) {
+                b66.w a38 = b66.w.f18168d.a(urgen.ur_2BA9.UR_A847.UR_DD9F(((b66.a0) xa6).getCppPointer()));
+                org.json.JSONObject jSONObject2 = new org.json.JSONObject();
+                if (a38 == b66.w.f18171g) {
+                    jSONObject2.put("shutdownType", "whenEnd");
+                } else if (a38 == b66.w.f18170f) {
+                    jSONObject2.put("shutdownType", "afterMins");
+                    jSONObject2.put("time", urgen.ur_2BA9.UR_A847.UR_AA3C(((b66.a0) xa6).getCppPointer()));
+                    long UR_E76F = urgen.ur_2BA9.UR_A847.UR_E76F(((b66.a0) xa6).getCppPointer()) - java.lang.System.currentTimeMillis();
+                    if (UR_E76F < 0) {
+                        UR_E76F = 0;
+                    }
+                    jSONObject2.put("leftTime", UR_E76F);
+                }
+                if (jSONObject2.length() > 0) {
+                    hashMap.put("shutdown", jSONObject2);
+                }
+            }
+            c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+            return true;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:41:0x011f  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0124  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean F2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r14, nw4.y2 r15) {
+        /*
+            Method dump skipped, instructions count: 509
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.F2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static void F3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var) {
+        c1Var.getClass();
+        try {
+            c1Var.f184998y.i(12, new android.os.Bundle(0));
+            c1Var.f184998y.i(11, new android.os.Bundle(0));
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "clearCloseWindowConfirmDialogInfo, exception = %s", e17);
+        }
+    }
+
+    public static boolean F4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        if (c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+            com.tencent.mm.autogen.events.PayUProceedPayEvent payUProceedPayEvent = new com.tencent.mm.autogen.events.PayUProceedPayEvent();
+            payUProceedPayEvent.f54611g.getClass();
+            payUProceedPayEvent.e();
+            c1Var.mmOnActivityResult(21, -1, null);
+        }
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        return true;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:14:0x0071, code lost:
+    
+        if (r15 != 64) goto L17;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x0110 A[Catch: JSONException -> 0x013f, TryCatch #0 {JSONException -> 0x013f, blocks: (B:3:0x002f, B:4:0x003b, B:6:0x0041, B:15:0x0099, B:17:0x00b3, B:19:0x0110, B:21:0x0122, B:23:0x00cf, B:25:0x00eb, B:26:0x00f0, B:27:0x0074, B:30:0x0127, B:32:0x012d), top: B:2:0x002f }] */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x0122 A[SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean G(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r17, nw4.y2 r18, com.tencent.mm.protocal.JsapiPermissionWrapper r19) {
+        /*
+            Method dump skipped, instructions count: 340
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.G(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean G0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        c1Var.getClass();
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("key");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "set local data, key = %s, data = %s", str2, str3);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2) || com.tencent.mm.sdk.platformtools.t8.K0(str3)) {
+            c1Var.i5(y2Var, "setLocalData:fail_param_should_not_null", null);
+            return true;
+        }
+        if (str2.length() > 1024 || str3.length() > 1024) {
+            c1Var.i5(y2Var, "setLocalData:fail_param_lenght_too_long", null);
+            return true;
+        }
+        try {
+            java.lang.String currentUrl = c1Var.f184998y.getCurrentUrl();
+            byte[] encode = android.util.Base64.encode(str2.getBytes(), 0);
+            byte[] encode2 = android.util.Base64.encode(str3.getBytes(), 0);
+            java.lang.String str4 = new java.lang.String(encode);
+            java.lang.String str5 = new java.lang.String(encode2);
+            java.lang.String c17 = c1Var.A.c(currentUrl);
+            com.tencent.mm.plugin.webview.model.s4 aj6 = com.tencent.mm.plugin.webview.modeltools.z.aj();
+            aj6.getClass();
+            java.lang.String E = com.tencent.mm.sdk.platformtools.t8.E(currentUrl);
+            com.tencent.mars.xlog.Log.i("MicroMsg.WebViewLocalDataStorage", "set data, key = %s, value = %s, url = %s, appId = %s, domin = %s", str4, str5, currentUrl, c17, E);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str4) || com.tencent.mm.sdk.platformtools.t8.K0(currentUrl) || com.tencent.mm.sdk.platformtools.t8.K0(c17) || com.tencent.mm.sdk.platformtools.t8.K0(E)) {
+                str = "fail_params_invalid";
+            } else {
+                int hashCode = (c17 + E + str4).hashCode();
+                java.lang.String str6 = "select count(*) from WebviewLocalData where appId = '" + c17 + "' and domin = '" + E + "'";
+                com.tencent.mars.xlog.Log.i("MicroMsg.WebViewLocalDataStorage", str6);
+                android.database.Cursor rawQuery = aj6.rawQuery(str6, new java.lang.String[0]);
+                if (rawQuery != null) {
+                    if (rawQuery.moveToFirst()) {
+                        int i17 = rawQuery.getInt(0);
+                        com.tencent.mars.xlog.Log.i("MicroMsg.WebViewLocalDataStorage", "now count = %d", java.lang.Integer.valueOf(i17));
+                        rawQuery.close();
+                        if (i17 >= 5) {
+                            str = "fail_exceed_max_count";
+                        } else {
+                            java.lang.String str7 = "select count(*) from WebviewLocalData where recordId =" + hashCode;
+                            android.database.Cursor rawQuery2 = aj6.rawQuery(str7, new java.lang.String[0]);
+                            if (rawQuery2 != null) {
+                                if (rawQuery2.moveToFirst()) {
+                                    int i18 = rawQuery2.getInt(0);
+                                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewLocalDataStorage", "sql = %s, count = %d", str7, java.lang.Integer.valueOf(i18));
+                                    rawQuery2.close();
+                                    if (i18 > 0) {
+                                        java.lang.String str8 = "update WebviewLocalData set value = '" + str5 + "' where recordId =" + hashCode;
+                                        boolean execSQL = aj6.execSQL("WebviewLocalData", str8);
+                                        com.tencent.mars.xlog.Log.i("MicroMsg.WebViewLocalDataStorage", "sql = %s, ret = %b", str8, java.lang.Boolean.valueOf(execSQL));
+                                        if (!execSQL) {
+                                            str = "fail";
+                                        }
+                                        str = "ok";
+                                    }
+                                }
+                                rawQuery2.close();
+                            }
+                            rawQuery = rawQuery2;
+                        }
+                    }
+                    rawQuery.close();
+                }
+                com.tencent.mm.plugin.webview.model.r4 r4Var = new com.tencent.mm.plugin.webview.model.r4();
+                r4Var.field_appId = c17;
+                r4Var.field_domin = E;
+                r4Var.field_key = str4;
+                r4Var.field_value = str5;
+                r4Var.field_recordId = hashCode;
+                com.tencent.mars.xlog.Log.i("MicroMsg.WebViewLocalDataStorage", "insert data, ret = %b", java.lang.Boolean.valueOf(aj6.insert(r4Var)));
+                str = "ok";
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSetLocalData retValue = %s", str);
+            c1Var.i5(y2Var, "setLocalData:".concat(str), null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "get url failed : %s", e17.getMessage());
+            c1Var.i5(y2Var, "setLocalData:fail", null);
+            return true;
+        }
+    }
+
+    /*  JADX ERROR: Type inference failed
+        jadx.core.utils.exceptions.JadxOverflowException: Type update terminated with stack overflow, arg: (r1v24 ??), method size: 3152
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:77)
+        */
+    public static boolean G1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r76, nw4.y2 r77) {
+        /*
+            Method dump skipped, instructions count: 3152
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.G1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean G2(final com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, final nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        java.lang.String str2;
+        java.lang.String str3;
+        c1Var.getClass();
+        if (com.tencent.mm.sdk.platformtools.a0.c()) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddDownloadTask fail, GP Version not allowed to download");
+            c1Var.i5(y2Var, "system:access_denied", null);
+            return true;
+        }
+        java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_name");
+        java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_url");
+        java.lang.String str6 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("alternative_url");
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_size"), 0L);
+        java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("file_md5");
+        java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extInfo");
+        java.lang.String str9 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("fileType");
+        java.lang.String str10 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("appid");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str10)) {
+            str = "appid";
+            str2 = c1Var.j6((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url"));
+        } else {
+            str = "appid";
+            str2 = str10;
+        }
+        java.lang.String str11 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("package_name");
+        java.lang.String str12 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("thumb_url");
+        java.lang.String str13 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("download_type"), 0);
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("teen_allow"), 0);
+        boolean isTeenMode = ((qk.s6) gm0.j1.s(qk.s6.class)).isTeenMode();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTask, md5 = " + str7 + ", url = " + str5 + ", extinfo = " + str8 + ", fileType = " + str9 + ", isTeenMode = " + isTeenMode);
+        if (isTeenMode && P2 == 0) {
+            ((uh4.c0) i95.n0.c(uh4.c0.class)).O8(c1Var.f184975d);
+            c1Var.i5(y2Var, "add_download_task:cancel", null);
+            return true;
+        }
+        android.os.Bundle bundle = c1Var.f184984o;
+        if (bundle != null) {
+            int i17 = bundle.getInt("key_download_restrict", 0);
+            java.lang.String string = c1Var.f184984o.getString("key_function_id", "");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(string)) {
+                str3 = str9;
+            } else {
+                str3 = str9;
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14596, string, java.lang.Integer.valueOf(i17), 0);
+            }
+            if (i17 == 1) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "not allow to download file");
+                c1Var.i5(y2Var, "add_download_task:fail", null);
+                return true;
+            }
+        } else {
+            str3 = str9;
+        }
+        if (!com.tencent.mars.comm.NetStatusUtil.isNetworkConnected(c1Var.f184975d)) {
+            c1Var.i5(y2Var, "add_download_task:fail_network_not_connected", null);
+            com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.q4(c1Var));
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTask fail, network not ready");
+            c1Var.S6(str2, 803, str8);
+            return true;
+        }
+        if (!gm0.j1.u().l()) {
+            c1Var.i5(y2Var, "add_download_task:fail_sdcard_not_ready", null);
+            com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.r4(c1Var));
+            c1Var.S6(str2, 804, str8);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTask fail, sdcard not ready");
+            return true;
+        }
+        if (V > 0) {
+            ((uz.t1) ((vz.u1) i95.n0.c(vz.u1.class))).getClass();
+            if (!com.tencent.mm.plugin.downloader.model.u0.a(V)) {
+                ((uz.t1) ((vz.u1) i95.n0.c(vz.u1.class))).getClass();
+                if (!com.tencent.mm.plugin.downloader.model.u0.c(V)) {
+                    c1Var.i5(y2Var, "add_download_task:fail_sdcard_has_not_enough_space", null);
+                    com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.s4(c1Var));
+                    c1Var.S6(str2, 804, str8);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTask fail, not enough space, require size = " + V);
+                    return true;
+                }
+            }
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddDownloadTask fail, url is null");
+            c1Var.i5(y2Var, "add_download_task:fail_invalid_url", null);
+            c1Var.S6(str2, 700, str8);
+            return true;
+        }
+        android.content.Intent intent = new android.content.Intent();
+        intent.setClass(c1Var.f184975d, com.tencent.mm.plugin.webview.ui.tools.WebViewDownloadUI.class);
+        intent.putExtra("task_name", str4);
+        intent.putExtra("task_download_type", P);
+        intent.putExtra("app_developer", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("developer"));
+        intent.putExtra("app_version", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("app_version"));
+        intent.putExtra("app_desc", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("app_desc"));
+        intent.putExtra("app_privacy_url", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("privacy_agreement_url"));
+        intent.putExtra("app_permission_url", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("permission_url"));
+        intent.putExtra("task_url", str5);
+        intent.putExtra("alternative_url", str6);
+        intent.putExtra("task_size", V);
+        intent.putExtra("file_md5", str7);
+        intent.putExtra("extInfo", str8);
+        intent.putExtra("fileType", str3);
+        intent.putExtra(str, str2);
+        intent.putExtra("package_name", str11);
+        intent.putExtra("thumb_url", str12);
+        intent.putExtra(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, str13);
+        intent.putExtra("page_url", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url"));
+        intent.putExtra("page_scene", 0);
+        java.lang.ref.WeakReference k17 = com.tencent.mm.app.w.k();
+        android.app.Activity activity = k17 != null ? (android.app.Activity) k17.get() : null;
+        if (activity != null) {
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            arrayList.add(intent);
+            java.util.Collections.reverse(arrayList);
+            android.app.Activity activity2 = activity;
+            yj0.a.d(activity2, arrayList.toArray(), "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doAddDownloadTask", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+            activity.startActivity((android.content.Intent) arrayList.get(0));
+            yj0.a.f(activity2, "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doAddDownloadTask", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+        } else {
+            intent.addFlags(268435456);
+            android.content.Context context = c1Var.f184975d;
+            java.util.ArrayList arrayList2 = new java.util.ArrayList();
+            arrayList2.add(intent);
+            java.util.Collections.reverse(arrayList2);
+            yj0.a.d(context, arrayList2.toArray(), "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doAddDownloadTask", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+            context.startActivity((android.content.Intent) arrayList2.get(0));
+            yj0.a.f(context, "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doAddDownloadTask", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+        }
+        final com.tencent.mm.app.a0 a0Var = com.tencent.mm.app.a0.f53288d;
+        com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.AddDownloadTaskEvent> iListener = new com.tencent.mm.sdk.event.IListener<com.tencent.mm.autogen.events.AddDownloadTaskEvent>(a0Var) { // from class: com.tencent.mm.plugin.webview.ui.tools.jsapi.MsgHandler$38
+            {
+                this.__eventId = 1058823164;
+            }
+
+            @Override // com.tencent.mm.sdk.event.IListener
+            public boolean callback(com.tencent.mm.autogen.events.AddDownloadTaskEvent addDownloadTaskEvent) {
+                com.tencent.mm.autogen.events.AddDownloadTaskEvent addDownloadTaskEvent2 = addDownloadTaskEvent;
+                if (!(addDownloadTaskEvent2 instanceof com.tencent.mm.autogen.events.AddDownloadTaskEvent)) {
+                    com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "mismatched event");
+                    return false;
+                }
+                am.j jVar = addDownloadTaskEvent2.f53970g;
+                if (jVar.f6986a != 0) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "not jsapi api callback");
+                    return false;
+                }
+                boolean z17 = jVar.f6987b;
+                java.util.HashMap hashMap = null;
+                nw4.y2 y2Var2 = y2Var;
+                com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2 = com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.this;
+                if (z17) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTask callback, cancel");
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(jVar.f6989d)) {
+                        hashMap = new java.util.HashMap();
+                        hashMap.put("detail_err_msg", jVar.f6989d);
+                    }
+                    c1Var2.i5(y2Var2, "add_download_task:cancel", hashMap);
+                    return false;
+                }
+                if (jVar.f6988c > 0) {
+                    java.util.HashMap hashMap2 = new java.util.HashMap();
+                    hashMap2.put("download_id", java.lang.Long.valueOf(jVar.f6988c));
+                    hashMap2.put("detail_err_msg", jVar.f6989d);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTask callback, ok");
+                    c1Var2.i5(y2Var2, "add_download_task:ok", hashMap2);
+                } else {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTask callback, failed");
+                    c1Var2.i5(y2Var2, "add_download_task:fail", null);
+                }
+                c1Var2.P.dead();
+                return false;
+            }
+        };
+        c1Var.P = iListener;
+        iListener.alive();
+        return true;
+    }
+
+    public static boolean G3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("download_id"), -1L);
+        com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 1000);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doInstallDownloadTask, downloadId = " + V);
+        if (V <= 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doInstallDownloadTask fail, invalid downloadId = " + V);
+            c1Var.i5(y2Var, "install_download_task:fail", null);
+            return true;
+        }
+        ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+        h02.a c17 = com.tencent.mm.plugin.downloader.model.m0.c(V);
+        if (c17 == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doInstallDownloadTask fail, info is null");
+            c1Var.i5(y2Var, "install_download_task:fail", null);
+            return true;
+        }
+        int i17 = c17.field_status;
+        if (i17 == -1) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doInstallDownloadTask fail, apilevel not supported");
+            c1Var.i5(y2Var, "install_download_task:fail_apilevel_too_low", null);
+            return true;
+        }
+        if (i17 != 3) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doInstallDownloadTask fail, invalid status = " + c17.field_status);
+            c1Var.i5(y2Var, "install_download_task:fail", null);
+            return true;
+        }
+        ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+        h02.a c18 = com.tencent.mm.plugin.downloader.model.m0.c(V);
+        if (c18 != null) {
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 0);
+            int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("uiarea"), 0);
+            int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("notice_id"), 0);
+            int P4 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.core.downloadproxy.api.TPDownloadProxyEnum.USER_SSID), 0);
+            c18.field_scene = P;
+            c18.field_uiarea = P2;
+            c18.field_noticeId = P3;
+            c18.field_ssid = P4;
+            ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+            com.tencent.mm.plugin.downloader.model.m0.l(c18);
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("sourceInfo");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("bizInfo");
+        yb0.a.f460612a.b(c17.field_downloadUrl, str2);
+        vz.f1 f1Var = (vz.f1) i95.n0.c(vz.f1.class);
+        long j17 = c17.field_downloadId;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.e5 e5Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.e5(c1Var, str2, str, y2Var);
+        ((uz.a) f1Var).getClass();
+        k02.l.a(j17, false, e5Var);
+        return true;
+    }
+
+    public static boolean G4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doVerifyWCPayPassword JSOAUTH");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+            android.content.Intent intent = new android.content.Intent();
+            intent.putExtra("appId", walletJsapiData.f192129d);
+            intent.putExtra("timeStamp", walletJsapiData.f192133h);
+            intent.putExtra("nonceStr", walletJsapiData.f192132g);
+            intent.putExtra("packageExt", walletJsapiData.f192134i);
+            intent.putExtra("signtype", walletJsapiData.f192131f);
+            intent.putExtra("paySignature", walletJsapiData.f192138p);
+            intent.putExtra("url", walletJsapiData.f192140r);
+            intent.putExtra(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 1);
+            intent.putExtra("pay_channel", walletJsapiData.f192144v);
+            ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+            j45.l.o(c1Var.f184975d, "wallet_core", ".ui.WalletCheckPwdUI", intent, 20, false);
+        }
+        return true;
+    }
+
+    public static java.util.List G6(org.json.JSONArray jSONArray) {
+        if (jSONArray == null || jSONArray.length() <= 0) {
+            return new java.util.LinkedList();
+        }
+        java.util.LinkedList linkedList = new java.util.LinkedList();
+        for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+            linkedList.add(jSONArray.optString(i17));
+        }
+        return linkedList;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:123:0x0350  */
+    /* JADX WARN: Removed duplicated region for block: B:151:0x04ea  */
+    /* JADX WARN: Removed duplicated region for block: B:154:0x04fd  */
+    /* JADX WARN: Removed duplicated region for block: B:168:0x0572  */
+    /* JADX WARN: Removed duplicated region for block: B:173:0x05fc  */
+    /* JADX WARN: Removed duplicated region for block: B:176:0x0621  */
+    /* JADX WARN: Removed duplicated region for block: B:179:0x0638  */
+    /* JADX WARN: Removed duplicated region for block: B:182:0x064d  */
+    /* JADX WARN: Removed duplicated region for block: B:188:0x05aa A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:203:0x0574  */
+    /* JADX WARN: Removed duplicated region for block: B:240:0x0352  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean H(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r34, nw4.y2 r35, com.tencent.mm.protocal.JsapiPermissionWrapper r36) {
+        /*
+            Method dump skipped, instructions count: 1713
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.H(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean H0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        c1Var.getClass();
+        try {
+            java.lang.String currentUrl = c1Var.f184998y.getCurrentUrl();
+            com.tencent.mm.plugin.webview.model.s4 aj6 = com.tencent.mm.plugin.webview.modeltools.z.aj();
+            java.lang.String c17 = c1Var.A.c(currentUrl);
+            aj6.getClass();
+            java.lang.String E = com.tencent.mm.sdk.platformtools.t8.E(currentUrl);
+            com.tencent.mars.xlog.Log.i("MicroMsg.WebViewLocalDataStorage", "appid = %s, url = %s, domin = %s", c17, currentUrl, E);
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(c17) && !com.tencent.mm.sdk.platformtools.t8.K0(currentUrl) && !com.tencent.mm.sdk.platformtools.t8.K0(E)) {
+                if (aj6.execSQL("WebviewLocalData", "delete from WebviewLocalData where appId = '" + c17 + "' and domin = '" + E + "'")) {
+                    str = "ok";
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doClearLocalData retValue = %s", str);
+                    c1Var.i5(y2Var, "clearLocalData:".concat(str), null);
+                    return true;
+                }
+            }
+            str = "fail";
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doClearLocalData retValue = %s", str);
+            c1Var.i5(y2Var, "clearLocalData:".concat(str), null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "get url failed : %s", e17.getMessage());
+            c1Var.i5(y2Var, "clearLocalData:fail", null);
+            return true;
+        }
+    }
+
+    public static boolean H1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        boolean stop;
+        boolean seekTo;
+        java.util.Map map;
+        java.util.Map map2;
+        bw5.lp0 g17;
+        java.lang.String i66 = c1Var.i6();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSetTingAudioState appId:%s", i66);
+        nw4.e3.a(y2Var.f341018h, false, null, i66);
+        c1Var.H6(true);
+        if (com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d == null) {
+            synchronized (com.tencent.mm.plugin.webview.ui.tools.media.k1.class) {
+                if (com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d == null) {
+                    android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+                    kotlin.jvm.internal.o.f(context, "getContext(...)");
+                    com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d = new com.tencent.mm.plugin.webview.ui.tools.media.k1(context, null);
+                }
+            }
+        }
+        com.tencent.mm.plugin.webview.ui.tools.media.k1 k1Var = com.tencent.mm.plugin.webview.ui.tools.media.k1.f185795d;
+        c1Var.t6(y2Var);
+        k1Var.getClass();
+        int O = com.tencent.mm.sdk.platformtools.t8.O(((java.util.HashMap) y2Var.f340790a).get("sourceType"), 0);
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("srcId");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("operationType");
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "doOperateTingAudio, opType:%s, sourceType:%d, srcId:%s", str2, java.lang.Integer.valueOf(O), str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", "doOperateTingAudio optype is empty");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+        } else {
+            java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("listenId");
+            if (O != 3) {
+                java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("categoryPlaylistInfoBuffer");
+                bw5.o50 b17 = !(str4 == null || r26.n0.N(str4)) ? il4.l.f292142a.b(str4, null) : null;
+                if (r26.i0.p(str2, com.tencent.tav.core.AssetExtension.SCENE_PLAY, true) || r26.i0.p(str2, "resume", true)) {
+                    qk.k6 a17 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a17, "<get-audioService>(...)");
+                    if (qk.k6.Hb(a17, null, str3, null, b17 != null ? b17.c() : null, 5, null)) {
+                        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                    } else {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", y2Var.f341019i + " play fail");
+                        c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                    }
+                } else if (r26.i0.p(str2, "pause", true)) {
+                    qk.k6 a18 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a18, "<get-audioService>(...)");
+                    if (qk.k6.Xg(a18, null, str3, null, b17 != null ? b17.c() : null, 5, null)) {
+                        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                    } else {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", y2Var.f341019i + " pause fail");
+                        c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                    }
+                } else if (r26.i0.p(str2, "seek", true)) {
+                    float L = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("seektime"), 0.0f);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio seek currentTime: " + L);
+                    if (L < 0.0f) {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", "currentTime is invalid!");
+                        c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                    } else {
+                        qk.k6 a19 = k1Var.a();
+                        kotlin.jvm.internal.o.f(a19, "<get-audioService>(...)");
+                        long j17 = L * ((float) 1000);
+                        java.lang.String c17 = b17 != null ? b17.c() : null;
+                        rk4.a aVar = (rk4.a) a19;
+                        java.util.ArrayList arrayList = aVar.f396526d;
+                        if (arrayList == null) {
+                            kotlin.jvm.internal.o.o("mImplList");
+                            throw null;
+                        }
+                        java.util.Iterator it = arrayList.iterator();
+                        while (true) {
+                            if (it.hasNext()) {
+                                qk.j6 j6Var = (qk.j6) it.next();
+                                if (j6Var.m(null, str3, null, c17)) {
+                                    seekTo = j6Var.seekTo(j17);
+                                    break;
+                                }
+                            } else {
+                                qk.j6 j6Var2 = aVar.f396527e;
+                                if (j6Var2 == null) {
+                                    kotlin.jvm.internal.o.o("mFallbackImpl");
+                                    throw null;
+                                }
+                                seekTo = ((rk4.h) j6Var2).seekTo(j17);
+                            }
+                        }
+                        if (seekTo) {
+                            c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                        } else {
+                            com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", y2Var.f341019i + " seek fail");
+                            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                        }
+                    }
+                } else if (r26.i0.p(str2, "stop", true)) {
+                    qk.k6 a27 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a27, "<get-audioService>(...)");
+                    java.lang.String c18 = b17 != null ? b17.c() : null;
+                    rk4.a aVar2 = (rk4.a) a27;
+                    java.util.ArrayList arrayList2 = aVar2.f396526d;
+                    if (arrayList2 == null) {
+                        kotlin.jvm.internal.o.o("mImplList");
+                        throw null;
+                    }
+                    java.util.Iterator it6 = arrayList2.iterator();
+                    while (true) {
+                        if (it6.hasNext()) {
+                            qk.j6 j6Var3 = (qk.j6) it6.next();
+                            if (j6Var3.m(null, str3, null, c18)) {
+                                stop = j6Var3.stop();
+                                break;
+                            }
+                        } else {
+                            qk.j6 j6Var4 = aVar2.f396527e;
+                            if (j6Var4 == null) {
+                                kotlin.jvm.internal.o.o("mFallbackImpl");
+                                throw null;
+                            }
+                            stop = ((rk4.h) j6Var4).stop();
+                        }
+                    }
+                    if (stop) {
+                        pv.z zVar = (pv.z) i95.n0.c(pv.z.class);
+                        if (zVar != null) {
+                            ((ov.b) zVar).Ni();
+                        }
+                        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                    } else {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", y2Var.f341019i + " stop fail");
+                        c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                    }
+                } else if (r26.i0.p(str2, "next", true)) {
+                    qk.k6 a28 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a28, "<get-audioService>(...)");
+                    java.lang.String c19 = b17 != null ? b17.c() : null;
+                    rk4.a aVar3 = (rk4.a) a28;
+                    java.util.ArrayList arrayList3 = aVar3.f396526d;
+                    if (arrayList3 == null) {
+                        kotlin.jvm.internal.o.o("mImplList");
+                        throw null;
+                    }
+                    java.util.Iterator it7 = arrayList3.iterator();
+                    while (true) {
+                        if (it7.hasNext()) {
+                            qk.j6 j6Var5 = (qk.j6) it7.next();
+                            if (j6Var5.m(null, str3, null, c19)) {
+                                j6Var5.next();
+                                break;
+                            }
+                        } else {
+                            qk.j6 j6Var6 = aVar3.f396527e;
+                            if (j6Var6 == null) {
+                                kotlin.jvm.internal.o.o("mFallbackImpl");
+                                throw null;
+                            }
+                            ((rk4.h) j6Var6).next();
+                        }
+                    }
+                    c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                } else if (r26.i0.p(str2, "pre", true)) {
+                    qk.k6 a29 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a29, "<get-audioService>(...)");
+                    java.lang.String c27 = b17 != null ? b17.c() : null;
+                    rk4.a aVar4 = (rk4.a) a29;
+                    java.util.ArrayList arrayList4 = aVar4.f396526d;
+                    if (arrayList4 == null) {
+                        kotlin.jvm.internal.o.o("mImplList");
+                        throw null;
+                    }
+                    java.util.Iterator it8 = arrayList4.iterator();
+                    while (true) {
+                        if (it8.hasNext()) {
+                            qk.j6 j6Var7 = (qk.j6) it8.next();
+                            if (j6Var7.m(null, str3, null, c27)) {
+                                j6Var7.y();
+                                break;
+                            }
+                        } else {
+                            qk.j6 j6Var8 = aVar4.f396527e;
+                            if (j6Var8 == null) {
+                                kotlin.jvm.internal.o.o("mFallbackImpl");
+                                throw null;
+                            }
+                            ((rk4.h) j6Var8).y();
+                        }
+                    }
+                    c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                } else if (r26.i0.q(str2, "playRate", false, 2, null)) {
+                    float B12 = com.tencent.mm.sdk.platformtools.t8.B1((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("playRate"));
+                    if (B12 < 0.5f || B12 > 2.0d) {
+                        B12 = 1.0f;
+                    }
+                    float f17 = B12;
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio updatePlayRate: " + f17);
+                    qk.k6 a37 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a37, "<get-audioService>(...)");
+                    qk.k6.q2(a37, f17, null, str3, null, b17 != null ? b17.c() : null, 10, null);
+                    c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                } else if (r26.i0.q(str2, "playMode", false, 2, null)) {
+                    int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("playMode"), 0);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio updatePlayMode: " + P);
+                    qk.k6 a38 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a38, "<get-audioService>(...)");
+                    java.lang.String c28 = b17 != null ? b17.c() : null;
+                    rk4.a aVar5 = (rk4.a) a38;
+                    java.util.ArrayList arrayList5 = aVar5.f396526d;
+                    if (arrayList5 == null) {
+                        kotlin.jvm.internal.o.o("mImplList");
+                        throw null;
+                    }
+                    java.util.Iterator it9 = arrayList5.iterator();
+                    while (true) {
+                        if (it9.hasNext()) {
+                            qk.j6 j6Var9 = (qk.j6) it9.next();
+                            if (j6Var9.m(null, str3, null, c28)) {
+                                j6Var9.t(P);
+                                break;
+                            }
+                        } else {
+                            qk.j6 j6Var10 = aVar5.f396527e;
+                            if (j6Var10 == null) {
+                                kotlin.jvm.internal.o.o("mFallbackImpl");
+                                throw null;
+                            }
+                            ((rk4.h) j6Var10).t(P);
+                        }
+                    }
+                    c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                } else if (r26.i0.q(str2, "shuffle", false, 2, null)) {
+                    boolean y17 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("shuffle"), false);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio updateShuffle: " + y17);
+                    qk.k6 a39 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a39, "<get-audioService>(...)");
+                    java.lang.String c29 = b17 != null ? b17.c() : null;
+                    rk4.a aVar6 = (rk4.a) a39;
+                    java.util.ArrayList arrayList6 = aVar6.f396526d;
+                    if (arrayList6 == null) {
+                        kotlin.jvm.internal.o.o("mImplList");
+                        throw null;
+                    }
+                    java.util.Iterator it10 = arrayList6.iterator();
+                    while (true) {
+                        if (it10.hasNext()) {
+                            qk.j6 j6Var11 = (qk.j6) it10.next();
+                            if (j6Var11.m(null, str3, null, c29)) {
+                                j6Var11.s(y17);
+                                break;
+                            }
+                        } else {
+                            qk.j6 j6Var12 = aVar6.f396527e;
+                            if (j6Var12 == null) {
+                                kotlin.jvm.internal.o.o("mFallbackImpl");
+                                throw null;
+                            }
+                            ((rk4.h) j6Var12).s(y17);
+                        }
+                    }
+                    c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                } else if (r26.i0.q(str2, "getFinishedState", false, 2, null)) {
+                    java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("listenIds");
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio getFinishedState: " + str5);
+                    try {
+                        org.json.JSONArray jSONArray = new org.json.JSONArray(str5);
+                        int length = jSONArray.length();
+                        java.lang.String[] strArr = new java.lang.String[length];
+                        for (int i17 = 0; i17 < length; i17++) {
+                            strArr[i17] = jSONArray.optString(i17);
+                        }
+                        java.util.ArrayList arrayList7 = new java.util.ArrayList();
+                        for (int i18 = 0; i18 < length; i18++) {
+                            java.lang.String str6 = strArr[i18];
+                            kotlin.jvm.internal.o.d(str6);
+                            if (str6.length() > 0) {
+                                arrayList7.add(str6);
+                            }
+                        }
+                        bw5.er0[] b18 = k1Var.b((java.lang.String[]) arrayList7.toArray(new java.lang.String[0]));
+                        if (b18 == null) {
+                            com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio arrRecords is null");
+                            c1Var.i5(y2Var, y2Var.f341019i + ":fail, invalid result", null);
+                        } else {
+                            java.util.HashMap hashMap = new java.util.HashMap();
+                            org.json.JSONArray jSONArray2 = new org.json.JSONArray();
+                            for (bw5.er0 er0Var : b18) {
+                                org.json.JSONObject jSONObject = new org.json.JSONObject();
+                                jSONObject.put("listenId", er0Var.f27032g[1] ? er0Var.f27029d : "");
+                                jSONObject.put("currentTime", er0Var.f27030e);
+                                jSONObject.put("finished", er0Var.f27031f);
+                                jSONArray2.put(jSONObject);
+                            }
+                            hashMap.put("results", jSONArray2);
+                            c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+                        }
+                    } catch (java.lang.Exception unused) {
+                        c1Var.i5(y2Var, y2Var.f341019i + ":fail, invalid listenIds " + str5, null);
+                    }
+                } else if (r26.i0.q(str2, "setForegroundState", false, 2, null)) {
+                    boolean y18 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isForeground"), false);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio setForegroundState: " + y18);
+                    java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("listenId");
+                    java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("categoryPlaylistInfoBuffer");
+                    bw5.o50 b19 = !(str8 == null || r26.n0.N(str8)) ? il4.l.f292142a.b(str8, null) : null;
+                    c1Var.f185000y1 = y18;
+                    if (y18) {
+                        qk.k6 a47 = k1Var.a();
+                        kotlin.jvm.internal.o.f(a47, "<get-audioService>(...)");
+                        qk.k6.ch(a47, false, null, str7, null, b19 != null ? b19.c() : null, 10, null);
+                        qk.k6 a48 = k1Var.a();
+                        kotlin.jvm.internal.o.f(a48, "<get-audioService>(...)");
+                        qk.k6.U3(a48, false, null, str7, null, b19 != null ? b19.c() : null, 10, null);
+                    } else {
+                        java.lang.String str9 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("listenId");
+                        java.lang.String str10 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("categoryPlaylistInfoBuffer");
+                        bw5.o50 b27 = !(str10 == null || r26.n0.N(str10)) ? il4.l.f292142a.b(str10, null) : null;
+                        qk.k6 a49 = k1Var.a();
+                        kotlin.jvm.internal.o.f(a49, "<get-audioService>(...)");
+                        qk.k6.ch(a49, true, null, str9, null, b27 != null ? b27.c() : null, 10, null);
+                        qk.k6 a57 = k1Var.a();
+                        kotlin.jvm.internal.o.f(a57, "<get-audioService>(...)");
+                        if (qk.k6.Yc(a57, null, str9, null, b27 != null ? b27.c() : null, 5, null)) {
+                            qk.k6 a58 = k1Var.a();
+                            kotlin.jvm.internal.o.f(a58, "<get-audioService>(...)");
+                            qk.k6.U3(a58, true, null, str9, null, b27 != null ? b27.c() : null, 10, null);
+                        }
+                    }
+                    c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                } else if (r26.i0.q(str2, "setShutdown", false, 2, null)) {
+                    java.lang.String str11 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("shutdownType");
+                    java.lang.String str12 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("listenId");
+                    java.lang.String str13 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("categoryPlaylistInfoBuffer");
+                    bw5.o50 b28 = !(str13 == null || r26.n0.N(str13)) ? il4.l.f292142a.b(str13, null) : null;
+                    int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("time"), 0);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebViewTingHelper", "operateTingAudio setShutdown: shutdownType:" + str11 + ", time:" + P2);
+                    qk.k6 a59 = k1Var.a();
+                    kotlin.jvm.internal.o.f(a59, "<get-audioService>(...)");
+                    b66.z xa6 = qk.k6.xa(a59, null, str12, null, b28 != null ? b28.c() : null, 5, null);
+                    if (xa6 == null) {
+                        c1Var.i5(y2Var, y2Var.f341019i + ":failed, invalid shutdownController", null);
+                    } else {
+                        if (str11 != null) {
+                            int hashCode = str11.hashCode();
+                            if (hashCode != 3387192) {
+                                if (hashCode != 1019039837) {
+                                    if (hashCode == 1312809793 && str11.equals("whenEnd")) {
+                                        b66.v vVar = b66.w.f18168d;
+                                        urgen.ur_2BA9.UR_A847.UR_EEA7(((b66.a0) xa6).getCppPointer(), 2, 0L);
+                                        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                                    }
+                                } else if (str11.equals("afterMins")) {
+                                    if (P2 <= 0) {
+                                        c1Var.i5(y2Var, y2Var.f341019i + ":failed, invalid time", null);
+                                    } else {
+                                        b66.v vVar2 = b66.w.f18168d;
+                                        urgen.ur_2BA9.UR_A847.UR_EEA7(((b66.a0) xa6).getCppPointer(), 1, P2);
+                                        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                                    }
+                                }
+                            } else if (str11.equals(com.tencent.mm.plugin.lite.LiteAppCenter.FRAMEWORK_TYPE_NONE)) {
+                                b66.v vVar3 = b66.w.f18168d;
+                                urgen.ur_2BA9.UR_A847.UR_EEA7(((b66.a0) xa6).getCppPointer(), 0, 0L);
+                                c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                            }
+                        }
+                        c1Var.i5(y2Var, y2Var.f341019i + ":failed, invalid shutdownType", null);
+                    }
+                } else if (r26.i0.q(str2, "refreshPlayList", false, 2, null)) {
+                    java.lang.String str14 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("categoryPlaylistInfoBuffer");
+                    bw5.o50 b29 = !(str14 == null || r26.n0.N(str14)) ? il4.l.f292142a.b(str14, null) : null;
+                    if (b29 != null) {
+                        rk4.a aVar7 = (rk4.a) k1Var.a();
+                        aVar7.getClass();
+                        java.util.ArrayList arrayList8 = aVar7.f396526d;
+                        if (arrayList8 == null) {
+                            kotlin.jvm.internal.o.o("mImplList");
+                            throw null;
+                        }
+                        java.util.Iterator it11 = arrayList8.iterator();
+                        while (true) {
+                            if (it11.hasNext()) {
+                                qk.j6 j6Var13 = (qk.j6) it11.next();
+                                if (j6Var13.m(null, null, null, b29.c())) {
+                                    j6Var13.g(b29);
+                                    break;
+                                }
+                            } else {
+                                qk.j6 j6Var14 = aVar7.f396527e;
+                                if (j6Var14 == null) {
+                                    kotlin.jvm.internal.o.o("mFallbackImpl");
+                                    throw null;
+                                }
+                                ((rk4.h) j6Var14).g(b29);
+                            }
+                        }
+                        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                    } else {
+                        java.util.HashMap hashMap2 = new java.util.HashMap();
+                        hashMap2.put("err_code", -100);
+                        c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap2);
+                    }
+                } else {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", y2Var.f341019i + " fail, invalid opType");
+                    c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                }
+                return true;
+            }
+            com.tencent.mm.plugin.webview.ui.tools.media.b1 b1Var = com.tencent.mm.plugin.webview.ui.tools.media.b1.f185746a;
+            b66.h hVar = b66.i.f18167d;
+            b66.g playApp = (b66.g) urgen.ur_2BA9.UR_882D.UR_EC54("webSearchStandAlone");
+            b66.n a67 = playApp != null ? ((b66.i) playApp).a() : null;
+            java.lang.String b37 = (a67 == null || (g17 = ((b66.q) a67).g()) == null) ? null : g17.b();
+            if (a67 != null && kotlin.jvm.internal.o.b(b37, str)) {
+                if (!r26.i0.p(str2, "resume", true)) {
+                    map2 = null;
+                    if (r26.i0.p(str2, "pause", true)) {
+                        b66.m.a(a67, null, 1, null);
+                        map = map2;
+                    } else if (r26.i0.p(str2, "stop", true)) {
+                        kotlin.jvm.internal.o.g(playApp, "playApp");
+                        b66.i iVar = (b66.i) playApp;
+                        b66.n a68 = iVar.a();
+                        if (a68 != null) {
+                            b66.q qVar = (b66.q) a68;
+                            if (qVar.n() != bw5.pq0.Idle) {
+                                b66.x xVar = (b66.x) urgen.ur_2BA9.UR_882D.UR_AFB8(iVar.getCppPointer());
+                                if (xVar != null) {
+                                    urgen.ur_2BA9.UR_5769.UR_465E(((b66.y) xVar).getCppPointer());
+                                }
+                                qVar.stop();
+                            }
+                            urgen.ur_2BA9.UR_882D.UR_23E5(iVar.getCppPointer());
+                        }
+                    } else {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.WebViewTingHelper", y2Var.f341019i + " fail, invalid opType for standAlone PlayApp");
+                        map = null;
+                        c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                    }
+                } else if (((b66.q) a67).n() == bw5.pq0.Paused) {
+                    map2 = null;
+                    b66.m.b(a67, null, 1, null);
+                    map = map2;
+                }
+                c1Var.i5(y2Var, y2Var.f341019i + ":ok", map);
+            }
+            map = null;
+            c1Var.i5(y2Var, y2Var.f341019i + ":ok", map);
+        }
+        return true;
+    }
+
+    public static boolean H2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "do open offline pay view");
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        og0.o oVar = (og0.o) i95.n0.c(og0.o.class);
+        android.content.Context context = c1Var.f184975d;
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        ((ng0.q) oVar).getClass();
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("appId", walletJsapiData.f192129d);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", walletJsapiData.f192140r);
+        intent.putExtra("key_from_scene", 6);
+        intent.putExtra("pay_channel", walletJsapiData.f192144v);
+        j45.l.n(context, "offline", ".ui.WalletOfflineEntranceUI", intent, 60);
+        return true;
+    }
+
+    public static boolean H3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("specificview");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenSpecificView fail, invalid specificview");
+            c1Var.i5(y2Var, "specific_view:fail", null);
+            return true;
+        }
+        android.os.Bundle bundle = new android.os.Bundle();
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("webview_scene"), 0);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("url");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("extinfo");
+        bundle.putInt("webview_scene", P);
+        bundle.putString("url", str2);
+        bundle.putString("extinfo", str3);
+        ((com.tencent.mm.app.y7) dw4.a.f244297a).getClass();
+        boolean d17 = ((com.tencent.mm.app.plugin.j) o25.z1.a()).d(c1Var.f184975d, str, bundle);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenSpecificView, targetView = %s, ret = %b", str, java.lang.Boolean.valueOf(d17));
+        if (d17) {
+            c1Var.i5(y2Var, "specific_view:ok", null);
+            return true;
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenSpecificView, targetView not supported in current wechat version");
+        c1Var.i5(y2Var, "specific_view:not_supported", null);
+        return true;
+    }
+
+    public static boolean H4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper, int[] iArr) {
+        c1Var.i5(y2Var, "startMonitoringBeacons:ok", null);
+        return true;
+    }
+
+    public static boolean I(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        su4.v0 Ni = com.tencent.mm.plugin.webview.modeltools.z.Ni();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.d0 d0Var = (com.tencent.mm.plugin.websearch.d0) Ni;
+        d0Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewImageLogic", "getSearchSnsImageList");
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA);
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(map.get("webview_instance_id"), -1);
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(f17);
+            org.json.JSONArray jSONArray2 = new org.json.JSONArray();
+            java.lang.String str = null;
+            for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                org.json.JSONObject jSONObject = jSONArray.getJSONObject(i17);
+                java.lang.String string = jSONObject.getString(dm.i4.COL_ID);
+                java.lang.String string2 = jSONObject.getString("objectXmlDesc");
+                int i18 = jSONObject.getInt(ya.b.INDEX);
+                com.tencent.mm.protocal.protobuf.TimeLineObject Ai = ((n34.v4) ((p94.s0) i95.n0.c(p94.s0.class))).Ai(string2);
+                if (Ai.ContentObj.f369840h.size() > i18) {
+                    r45.jj4 jj4Var = (r45.jj4) Ai.ContentObj.f369840h.get(i18);
+                    com.tencent.mm.autogen.events.SnsImageDownloadedEvent snsImageDownloadedEvent = new com.tencent.mm.autogen.events.SnsImageDownloadedEvent();
+                    am.yv yvVar = snsImageDownloadedEvent.f54816g;
+                    yvVar.f8481a = 3;
+                    yvVar.f8483c = jj4Var.f377855d;
+                    snsImageDownloadedEvent.e();
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewImageLogic", "generatePath: %s", snsImageDownloadedEvent.f54816g.f8484d);
+                    if (com.tencent.mm.vfs.w6.j(snsImageDownloadedEvent.f54816g.f8484d)) {
+                        str = "weixin://fts/sns?path=" + com.tencent.mm.vfs.w6.i(snsImageDownloadedEvent.f54816g.f8484d, false);
+                    } else {
+                        synchronized (d0Var.f181481e) {
+                            java.util.HashSet hashSet = d0Var.f181481e.containsKey(jj4Var.f377855d) ? (java.util.HashSet) d0Var.f181481e.get(jj4Var.f377855d) : new java.util.HashSet();
+                            hashSet.add(string);
+                            d0Var.f181481e.put(jj4Var.f377855d, hashSet);
+                            d0Var.f181484h.put(jj4Var.f377855d, java.lang.Integer.valueOf(o17));
+                        }
+                        com.tencent.mm.autogen.events.SnsImageDownloadedEvent snsImageDownloadedEvent2 = new com.tencent.mm.autogen.events.SnsImageDownloadedEvent();
+                        am.yv yvVar2 = snsImageDownloadedEvent2.f54816g;
+                        yvVar2.f8481a = 1;
+                        yvVar2.f8482b = jj4Var;
+                        snsImageDownloadedEvent2.e();
+                    }
+                    if (str != null) {
+                        org.json.JSONObject jSONObject2 = new org.json.JSONObject();
+                        jSONObject2.put(dm.i4.COL_ID, string);
+                        jSONObject2.put("src", str);
+                        jSONArray2.put(jSONObject2);
+                        str = null;
+                    }
+                }
+            }
+            if (jSONArray2.length() > 0) {
+                ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).Ui(o17, 0, jSONArray2.toString());
+            }
+        } catch (org.json.JSONException unused) {
+        }
+        return false;
+    }
+
+    public static boolean I0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("selectMode"), 0);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSelectSingleContact selectedMode:%d", java.lang.Integer.valueOf(P));
+        android.content.Intent intent = new android.content.Intent();
+        if (P == 1) {
+            intent.putExtra("Select_Conv_Type", 263);
+            intent.putExtra("jsapi_select_mode", 1);
+        } else {
+            intent.putExtra("Select_Conv_Type", com.tencent.mars.cdn.proto.AppType.APPTYPE_259_VALUE);
+        }
+        intent.putExtra("select_is_ret", true);
+        intent.putExtra("Select_block_List", c01.z1.r());
+        intent.putExtra("scene_from", 4);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            j45.l.w((com.tencent.mm.ui.MMActivity) context, ".ui.transmit.SelectConversationUI", intent, 30, c1Var);
+        }
+        return true;
+    }
+
+    public static boolean I1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if (com.tencent.mm.sdk.platformtools.a0.c()) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddDownloadTaskStraight fail, GP Version not allowed to download");
+            c1Var.i5(y2Var, "system:access_denied", null);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("appid");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extInfo");
+        java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_url");
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_size"), 0L);
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 1000);
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("download_type"), 1);
+        int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.core.downloadproxy.api.TPDownloadProxyEnum.USER_SSID), 0);
+        int P4 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("uiarea"), 0);
+        int P5 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("notice_id"), 0);
+        boolean y17 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("use_downloader_widget"), false);
+        g02.c cVar = new g02.c(str, P, str3, P4, P3, P5, P2);
+        ((uz.r1) ((vz.t1) i95.n0.c(vz.t1.class))).getClass();
+        g02.b.c(9, cVar);
+        if (((qk.s6) gm0.j1.s(qk.s6.class)).isTeenMode()) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTaskStraight isTeenMode and ignore");
+            ((uh4.c0) i95.n0.c(uh4.c0.class)).O8(c1Var.f184975d);
+            c1Var.i5(y2Var, "add_download_task_straight:cancel", null);
+        } else if (y17) {
+            com.tencent.mm.plugin.downloader_app.model.a c17 = com.tencent.mm.plugin.downloader_app.model.a.c(y2Var.f340790a);
+            vz.a2 a2Var = (vz.a2) i95.n0.c(vz.a2.class);
+            android.content.Context context = c1Var.f184975d;
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.p4 p4Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.p4(c1Var, y2Var);
+            ((uz.c2) a2Var).getClass();
+            com.tencent.mm.plugin.downloader.model.j1.c(context, c17, false, p4Var);
+        } else if (!com.tencent.mars.comm.NetStatusUtil.isNetworkConnected(c1Var.f184975d)) {
+            android.content.Context context2 = c1Var.f184975d;
+            dp.a.makeText(context2, j65.q.a(context2).getString(com.tencent.mm.R.string.f492208fm1), 0).show();
+            c1Var.i5(y2Var, "add_download_task_straight:fail_network_not_connected", null);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTaskStraight fail, network not ready");
+            c1Var.S6(str, 803, str3);
+        } else if (gm0.j1.u().l()) {
+            if (V > 0) {
+                ((uz.t1) ((vz.u1) i95.n0.c(vz.u1.class))).getClass();
+                if (!com.tencent.mm.plugin.downloader.model.u0.a(V)) {
+                    ((uz.t1) ((vz.u1) i95.n0.c(vz.u1.class))).getClass();
+                    if (!com.tencent.mm.plugin.downloader.model.u0.c(V)) {
+                        android.content.Context context3 = c1Var.f184975d;
+                        dp.a.makeText(context3, j65.q.a(context3).getString(com.tencent.mm.R.string.f492209fm2), 0).show();
+                        c1Var.i5(y2Var, "add_download_task_straight:fail_sdcard_has_not_enough_space", null);
+                        c1Var.S6(str, 804, str3);
+                        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTaskStraight fail, not enough space, require size = " + V);
+                    }
+                }
+            }
+            if (com.tencent.mars.comm.NetStatusUtil.isWifi(c1Var.f184975d)) {
+                c1Var.s5(y2Var, jsapiPermissionWrapper);
+            } else {
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14217, str, 4, str2, str4, 3);
+                android.content.Context context4 = c1Var.f184975d;
+                db5.e1.D(context4, j65.q.a(context4).getString(com.tencent.mm.R.string.l5x), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.l5y), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.l5q), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f490347sg), false, new com.tencent.mm.plugin.webview.ui.tools.jsapi.n4(c1Var, str, str2, str4, y2Var, jsapiPermissionWrapper), new com.tencent.mm.plugin.webview.ui.tools.jsapi.o4(c1Var, str, str2, str4, y2Var), com.tencent.mm.R.color.aaq);
+            }
+        } else {
+            android.content.Context context5 = c1Var.f184975d;
+            dp.a.makeText(context5, j65.q.a(context5).getString(com.tencent.mm.R.string.f492210fm3), 0).show();
+            c1Var.i5(y2Var, "add_download_task_straight:fail_sdcard_not_ready", null);
+            c1Var.S6(str, 804, str3);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTaskStraight fail, sdcard not ready");
+        }
+        return true;
+    }
+
+    public static boolean I2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        java.lang.Object[] objArr = new java.lang.Object[5];
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appid");
+        if (str == null) {
+            str = "";
+        }
+        objArr[0] = str;
+        objArr[1] = walletJsapiData.f192133h;
+        objArr[2] = walletJsapiData.f192132g;
+        objArr[3] = walletJsapiData.f192134i;
+        objArr[4] = walletJsapiData.f192131f;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "appid %s timeStamp %s nonceStr %s packageExt %s signType %s", objArr);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("appId", walletJsapiData.f192129d);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", walletJsapiData.f192140r);
+        intent.putExtra("pay_channel", walletJsapiData.f192144v);
+        intent.putExtra("jsapi_scene", 17);
+        intent.putExtra("intent_jump_package", "wallet");
+        intent.putExtra("intent_jump_ui", ".bind.ui.WalletBankcardManageUI");
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.n(c1Var.f184975d, "wallet", ".ui.WalletJsApiAdapterUI", intent, 59);
+        c1Var.i5(y2Var, "openWCPayCardList:ok", null);
+        return true;
+    }
+
+    public static void I3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, java.lang.String str, java.lang.String str2, java.lang.String str3) {
+        c1Var.getClass();
+        com.tencent.mm.feature.emoji.api.x5 x5Var = (com.tencent.mm.feature.emoji.api.x5) i95.n0.c(com.tencent.mm.feature.emoji.api.x5.class);
+        ((com.tencent.mm.feature.emoji.h2) ((com.tencent.mm.feature.emoji.api.j6) i95.n0.c(com.tencent.mm.feature.emoji.api.j6.class))).getClass();
+        java.lang.String g17 = n22.m.g();
+        ((com.tencent.mm.feature.emoji.o0) x5Var).getClass();
+        java.lang.String p17 = com.tencent.mm.plugin.emoji.model.EmojiLogic.p(g17, "", str);
+        com.tencent.mm.api.IEmojiInfo Bi = ((com.tencent.mm.feature.emoji.k0) ((com.tencent.mm.feature.emoji.api.v5) i95.n0.c(com.tencent.mm.feature.emoji.api.v5.class))).Bi(str);
+        if (Bi == null && com.tencent.mm.vfs.w6.j(p17)) {
+            int i17 = com.tencent.mm.sdk.platformtools.y1.c(p17) ? 2 : 1;
+            ((com.tencent.mm.feature.emoji.k0) ((com.tencent.mm.feature.emoji.api.v5) i95.n0.c(com.tencent.mm.feature.emoji.api.v5.class))).getClass();
+            com.tencent.mm.storage.emotion.EmojiInfo emojiInfo = new com.tencent.mm.storage.emotion.EmojiInfo();
+            emojiInfo.field_md5 = str;
+            emojiInfo.field_catalog = 65;
+            emojiInfo.field_type = i17;
+            emojiInfo.field_size = (int) com.tencent.mm.vfs.w6.k(p17);
+            emojiInfo.field_temp = 1;
+            emojiInfo.field_thumbUrl = str2;
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str3)) {
+                emojiInfo.field_activityid = str3;
+            }
+            ((com.tencent.mm.feature.emoji.k0) ((com.tencent.mm.feature.emoji.api.v5) i95.n0.c(com.tencent.mm.feature.emoji.api.v5.class))).wi(emojiInfo);
+            Bi = emojiInfo;
+        }
+        if (Bi == null) {
+            c1Var.i5(c1Var.f184976e, "addToEmoticon:fail", null);
+            return;
+        }
+        boolean wi6 = ((com.tencent.mm.feature.emoji.s0) ((com.tencent.mm.feature.emoji.api.y5) i95.n0.c(com.tencent.mm.feature.emoji.api.y5.class))).wi(c1Var.f184975d, Bi, 18, c01.z1.r());
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddAction %b", java.lang.Boolean.valueOf(wi6));
+        if (wi6) {
+            c1Var.i5(c1Var.f184976e, "addToEmoticon:ok", null);
+        } else {
+            c1Var.i5(c1Var.f184976e, "addToEmoticon:fail", null);
+        }
+    }
+
+    public static boolean I4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper, int[] iArr) {
+        c1Var.i5(y2Var, "stopMonitoringBeacons:ok", null);
+        return true;
+    }
+
+    public static boolean J(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        boolean z17;
+        boolean z18 = false;
+        c1Var.f184993v = false;
+        su4.v0 Ni = com.tencent.mm.plugin.webview.modeltools.z.Ni();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.d0 d0Var = (com.tencent.mm.plugin.websearch.d0) Ni;
+        d0Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewImageLogic", "getSearchImageList");
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "requestType", 0);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA);
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(map.get("webview_instance_id"), -1);
+        boolean isWifi = com.tencent.mars.comm.NetStatusUtil.isWifi(com.tencent.mm.sdk.platformtools.x2.f193071a);
+        boolean z19 = true;
+        try {
+            if (e17 != 1) {
+                org.json.JSONArray jSONArray = new org.json.JSONArray(f17);
+                org.json.JSONArray jSONArray2 = new org.json.JSONArray();
+                for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                    org.json.JSONObject jSONObject = jSONArray.getJSONObject(i17);
+                    org.json.JSONObject jSONObject2 = new org.json.JSONObject();
+                    java.lang.String string = jSONObject.getString(dm.i4.COL_ID);
+                    java.lang.String string2 = jSONObject.getString("imageUrl");
+                    jSONObject2.put(dm.i4.COL_ID, string);
+                    jSONObject2.put("src", string2);
+                    jSONArray2.put(jSONObject2);
+                }
+                ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).Ui(o17, 0, jSONArray2.toString());
+                return false;
+            }
+            boolean l17 = j62.e.g().l("clicfg_search_comment_use_auto_load_emojis_android", true, true, true);
+            org.json.JSONArray jSONArray3 = new org.json.JSONArray(f17);
+            org.json.JSONArray jSONArray4 = new org.json.JSONArray();
+            int i18 = 0;
+            java.lang.String str = null;
+            while (i18 < jSONArray3.length()) {
+                org.json.JSONObject jSONObject3 = jSONArray3.getJSONObject(i18);
+                int optInt = jSONObject3.optInt("emojiType");
+                boolean optBoolean = jSONObject3.optBoolean("autoLoad", z18);
+                java.lang.String optString = jSONObject3.optString(dm.i4.COL_ID);
+                boolean z27 = (optBoolean && l17) ? z19 : z18;
+                if (optInt == 2) {
+                    com.tencent.mm.autogen.events.FTSEmojiDownloadedEvent fTSEmojiDownloadedEvent = new com.tencent.mm.autogen.events.FTSEmojiDownloadedEvent();
+                    am.n9 n9Var = fTSEmojiDownloadedEvent.f54231g;
+                    n9Var.f7406a = 3;
+                    n9Var.f7412g = jSONObject3.optString("md5");
+                    fTSEmojiDownloadedEvent.f54231g.f7407b = jSONObject3.optString("designerId");
+                    fTSEmojiDownloadedEvent.f54231g.f7410e = jSONObject3.optString("aesKey");
+                    fTSEmojiDownloadedEvent.f54231g.f7411f = jSONObject3.optString("encryptUrl");
+                    fTSEmojiDownloadedEvent.f54231g.f7413h = jSONObject3.optString("productID");
+                    fTSEmojiDownloadedEvent.f54231g.f7409d = jSONObject3.optString("express");
+                    fTSEmojiDownloadedEvent.f54231g.f7408c = jSONObject3.optString("imageUrl");
+                    fTSEmojiDownloadedEvent.e();
+                    if (com.tencent.mm.vfs.w6.j(fTSEmojiDownloadedEvent.f54232h.f7518a)) {
+                        str = "weixin://fts/emoji?path=" + fTSEmojiDownloadedEvent.f54232h.f7518a;
+                        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewImageLogic", "getSearchImageList, emojiType: %d, path=%s", java.lang.Integer.valueOf(optInt), fTSEmojiDownloadedEvent.f54232h.f7518a);
+                    } else {
+                        java.lang.Object[] objArr = new java.lang.Object[5];
+                        objArr[0] = java.lang.Integer.valueOf(optInt);
+                        objArr[1] = isWifi ? "true" : "false";
+                        objArr[2] = z27 ? "true" : "false";
+                        objArr[3] = fTSEmojiDownloadedEvent.f54232h.f7518a;
+                        objArr[4] = fTSEmojiDownloadedEvent.f54231g.f7408c;
+                        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewImageLogic", "getSearchImageList, emojiType: %d, isWifi: %s, forceLoad: %s, path: %s, thumbUrl: %s", objArr);
+                        if (isWifi || z27) {
+                            synchronized (d0Var.f181482f) {
+                                java.util.HashSet hashSet = d0Var.f181482f.containsKey(fTSEmojiDownloadedEvent.f54231g.f7412g) ? (java.util.HashSet) d0Var.f181482f.get(fTSEmojiDownloadedEvent.f54231g.f7412g) : new java.util.HashSet();
+                                hashSet.add(optString);
+                                d0Var.f181482f.put(fTSEmojiDownloadedEvent.f54231g.f7412g, hashSet);
+                                d0Var.f181485i.put(fTSEmojiDownloadedEvent.f54231g.f7412g, java.lang.Integer.valueOf(o17));
+                            }
+                            fTSEmojiDownloadedEvent.f54231g.f7406a = 1;
+                            fTSEmojiDownloadedEvent.e();
+                        } else {
+                            str = jSONObject3.optString("imageUrl");
+                        }
+                    }
+                    if (str != null) {
+                        org.json.JSONObject jSONObject4 = new org.json.JSONObject();
+                        jSONObject4.put(dm.i4.COL_ID, optString);
+                        jSONObject4.put("src", str);
+                        jSONArray4.put(jSONObject4);
+                        str = null;
+                    }
+                    z17 = true;
+                } else if (optInt == 4) {
+                    java.lang.Object[] objArr2 = new java.lang.Object[3];
+                    objArr2[0] = java.lang.Integer.valueOf(optInt);
+                    z17 = true;
+                    objArr2[1] = isWifi ? "true" : "false";
+                    objArr2[2] = z27 ? "true" : "false";
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewImageLogic", "getSearchImageList, emojiType: %d, isWifi: %s, forceLoad: %s", objArr2);
+                    org.json.JSONObject jSONObject5 = new org.json.JSONObject();
+                    jSONObject5.put(dm.i4.COL_ID, optString);
+                    if (!isWifi && !z27) {
+                        jSONObject5.put("src", jSONObject3.optString("imageUrl"));
+                        jSONArray4.put(jSONObject5);
+                    }
+                    jSONObject5.put("src", jSONObject3.optString(com.tencent.tinker.loader.shareutil.ShareConstants.DEXMODE_RAW));
+                    jSONArray4.put(jSONObject5);
+                } else {
+                    z17 = true;
+                    org.json.JSONObject jSONObject6 = new org.json.JSONObject();
+                    jSONObject6.put(dm.i4.COL_ID, optString);
+                    jSONObject6.put("src", jSONObject3.optString("imageUrl"));
+                    jSONArray4.put(jSONObject6);
+                }
+                i18++;
+                z19 = z17;
+                z18 = false;
+            }
+            if (jSONArray4.length() <= 0) {
+                return false;
+            }
+            ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).Ui(o17, 0, jSONArray4.toString());
+            return false;
+        } catch (org.json.JSONException | java.lang.Exception unused) {
+            return false;
+        }
+    }
+
+    public static boolean J0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSendAppMsgToSpecifiedContact");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.google.android.gms.common.Scopes.OPEN_ID);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSendAppMsgToSpecifiedContact openid is null");
+            c1Var.i5(y2Var, "sendAppMessageToSpecifiedContact:fail", null);
+            return true;
+        }
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("appId");
+        if (c1Var.f184984o != null && android.text.TextUtils.isEmpty(str2)) {
+            str2 = c1Var.f184984o.getString("jsapi_args_appid");
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSendAppMsgToSpecifiedContact appid is null");
+            c1Var.i5(y2Var, "sendAppMessageToSpecifiedContact:fail", null);
+            return true;
+        }
+        c1Var.f184977f = c1Var.o5(y2Var, false);
+        com.tencent.mm.plugin.webview.model.s1 s1Var = new com.tencent.mm.plugin.webview.model.s1(str2, str);
+        gm0.j1.d().a(cg1.c.CTRL_INDEX, new com.tencent.mm.plugin.webview.ui.tools.jsapi.m1(c1Var, y2Var, str2));
+        gm0.j1.d().g(s1Var);
+        android.content.Context context = c1Var.f184975d;
+        c1Var.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f490604zq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.o1(c1Var, s1Var));
+        return true;
+    }
+
+    /* JADX WARN: Can't wrap try/catch for region: R(11:1|(1:3)|4|(8:6|(1:8)(2:21|(1:23)(2:24|(1:26)(2:27|(1:29)(2:30|(1:32)))))|9|10|11|(1:13)(1:18)|14|15)|33|9|10|11|(0)(0)|14|15) */
+    /* JADX WARN: Code restructure failed: missing block: B:19:0x0077, code lost:
+    
+        r1 = move-exception;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0078, code lost:
+    
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSetScreenOrientation exception, " + r1.getMessage());
+        r6.i5(r7, "setScreenOrientation:fail", null);
+     */
+    /* JADX WARN: Removed duplicated region for block: B:13:0x005a A[Catch: Exception -> 0x0077, TryCatch #0 {Exception -> 0x0077, blocks: (B:11:0x0056, B:13:0x005a, B:18:0x0073), top: B:10:0x0056 }] */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x0073 A[Catch: Exception -> 0x0077, TRY_LEAVE, TryCatch #0 {Exception -> 0x0077, blocks: (B:11:0x0056, B:13:0x005a, B:18:0x0073), top: B:10:0x0056 }] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean J1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r6, nw4.y2 r7) {
+        /*
+            r6.getClass()
+            java.lang.String r0 = "setScreenOrientation:fail"
+            java.util.Map r1 = r7.f340790a
+            java.lang.String r2 = "orientation"
+            java.lang.Object r1 = r1.get(r2)
+            java.lang.String r1 = (java.lang.String) r1
+            boolean r2 = com.tencent.mm.sdk.platformtools.t8.f192989a
+            if (r1 != 0) goto L16
+            java.lang.String r1 = ""
+        L16:
+            boolean r2 = com.tencent.mm.sdk.platformtools.t8.K0(r1)
+            r3 = 1
+            if (r2 != 0) goto L54
+            java.lang.String r2 = "horizontal"
+            boolean r2 = r1.equals(r2)
+            if (r2 == 0) goto L27
+            r1 = 0
+            goto L55
+        L27:
+            java.lang.String r2 = "vertical"
+            boolean r2 = r1.equals(r2)
+            if (r2 == 0) goto L32
+            r1 = r3
+            goto L55
+        L32:
+            java.lang.String r2 = "sensor"
+            boolean r2 = r1.equals(r2)
+            if (r2 == 0) goto L3d
+            r1 = 4
+            goto L55
+        L3d:
+            java.lang.String r2 = "horizontal_unforced"
+            boolean r2 = r1.equals(r2)
+            if (r2 == 0) goto L48
+            r1 = 1001(0x3e9, float:1.403E-42)
+            goto L55
+        L48:
+            java.lang.String r2 = "vertical_unforced"
+            boolean r1 = r1.equals(r2)
+            if (r1 == 0) goto L54
+            r1 = 1002(0x3ea, float:1.404E-42)
+            goto L55
+        L54:
+            r1 = -1
+        L55:
+            r2 = 0
+            com.tencent.mm.plugin.webview.stub.z0 r4 = r6.f184998y     // Catch: java.lang.Exception -> L77
+            if (r4 == 0) goto L73
+            android.os.Bundle r4 = new android.os.Bundle     // Catch: java.lang.Exception -> L77
+            r4.<init>()     // Catch: java.lang.Exception -> L77
+            java.lang.String r5 = "screen_orientation"
+            r4.putInt(r5, r1)     // Catch: java.lang.Exception -> L77
+            com.tencent.mm.plugin.webview.stub.z0 r1 = r6.f184998y     // Catch: java.lang.Exception -> L77
+            r5 = 1009(0x3f1, float:1.414E-42)
+            r1.i(r5, r4)     // Catch: java.lang.Exception -> L77
+            java.lang.String r1 = "setScreenOrientation:ok"
+            r6.i5(r7, r1, r2)     // Catch: java.lang.Exception -> L77
+            goto L92
+        L73:
+            r6.i5(r7, r0, r2)     // Catch: java.lang.Exception -> L77
+            goto L92
+        L77:
+            r1 = move-exception
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            java.lang.String r5 = "doSetScreenOrientation exception, "
+            r4.<init>(r5)
+            java.lang.String r1 = r1.getMessage()
+            r4.append(r1)
+            java.lang.String r1 = r4.toString()
+            java.lang.String r4 = "MicroMsg.MsgHandler"
+            com.tencent.mars.xlog.Log.e(r4, r1)
+            r6.i5(r7, r0, r2)
+        L92:
+            return r3
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.J1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean J2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        android.content.Context context = c1Var.f184975d;
+        if (context == null || !(context instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+        j45.l.m(c1Var.f184975d, "setting", ".ui.setting.SettingsModifyEmailAddrUI", 58);
+        return true;
+    }
+
+    public static void J3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, boolean z17, android.os.Bundle bundle, int i17) {
+        c1Var.getClass();
+        if (z17) {
+            try {
+                byte[] byteArray = bundle.getByteArray("key_webview_secret_msg_info");
+                if (byteArray != null) {
+                    r45.l97 l97Var = new r45.l97();
+                    l97Var.parseFrom(byteArray);
+                    l97Var.f379264i = 3;
+                    l97Var.f379265m = i17;
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(23341, java.lang.Integer.valueOf(l97Var.f379259d), l97Var.f379260e, java.lang.Integer.valueOf(l97Var.f379264i), l97Var.f379261f, java.lang.Integer.valueOf(l97Var.f379262g), l97Var.f379263h, java.lang.Integer.valueOf(l97Var.f379265m));
+                }
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "reportSecretMsgLaunchAppResult exception", new java.lang.Object[0]);
+            }
+        }
+    }
+
+    public static boolean J4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mm.plugin.webview.modeltools.g1 g1Var = new com.tencent.mm.plugin.webview.modeltools.g1();
+        g1Var.f183255b = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("link");
+        g1Var.f183254a = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        g1Var.f183257d = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("imgUrl");
+        g1Var.f183256c = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("desc");
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("floatBallTitle");
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("key_title", str);
+            try {
+                c1Var.f184998y.callback(72, bundle);
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doUpdateAppMsgData remote ex, %s", e17.getMessage());
+            }
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(g1Var.f183255b)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUpdateAppMsgData link not allow to share %s", g1Var.f183255b);
+            c1Var.i5(y2Var, "updateAppMessageShareData:fail, link is needed.", null);
+            return true;
+        }
+        if (c1Var.Y6(jsapiPermissionWrapper, y2Var)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUpdateAppMsgData link not allow to share %s", g1Var.f183255b);
+            c1Var.i5(y2Var, "updateAppMessageShareData:fail, link must be in JS secure domain list", null);
+            return true;
+        }
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUpdateAppMsgData url %s, imgUrl:%s", str2, g1Var.f183257d);
+        com.tencent.mm.plugin.webview.modeltools.i1 i1Var = c1Var.F;
+        i1Var.f183288a.put(str2, g1Var);
+        java.lang.String m66 = c1Var.m6();
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(m66)) {
+            i1Var.f183288a.put(m66, g1Var);
+        }
+        c1Var.i5(y2Var, "updateAppMessageShareData:ok", null);
+        return true;
+    }
+
+    public static boolean K(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA));
+            org.json.JSONArray jSONArray2 = new org.json.JSONArray();
+            for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                org.json.JSONObject jSONObject = jSONArray.getJSONObject(i17);
+                java.lang.String string = jSONObject.has(dm.i4.COL_ID) ? jSONObject.getString(dm.i4.COL_ID) : "";
+                java.lang.String string2 = jSONObject.has("userName") ? jSONObject.getString("userName") : "";
+                ((sg3.a) ((tg3.v0) i95.n0.c(tg3.v0.class))).getClass();
+                java.lang.String e17 = c01.a2.e(string2);
+                org.json.JSONObject jSONObject2 = new org.json.JSONObject();
+                jSONObject2.put(dm.i4.COL_ID, string);
+                jSONObject2.put("userName", string2);
+                jSONObject2.put("displayName", e17);
+                jSONArray2.put(jSONObject2);
+            }
+            hashMap.put("ret", 0);
+            hashMap.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA, jSONArray2.toString());
+        } catch (org.json.JSONException e18) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.WebSearch.FTSWebViewLogic", e18, "", new java.lang.Object[0]);
+        }
+        c1Var.i5(y2Var, "getSearchDisplayName:ok", hashMap);
+        return true;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:28:0x0128, code lost:
+    
+        if (r0 == null) goto L68;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x010c A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:27:0x0120 A[Catch: all -> 0x012b, TRY_LEAVE, TryCatch #2 {all -> 0x012b, blocks: (B:25:0x0118, B:27:0x0120), top: B:24:0x0118 }] */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x0144  */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x0199  */
+    /* JADX WARN: Removed duplicated region for block: B:65:0x0113 A[ADDED_TO_REGION] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean K0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r17, nw4.y2 r18, com.tencent.mm.protocal.JsapiPermissionWrapper r19) {
+        /*
+            Method dump skipped, instructions count: 532
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.K0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean K1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("base64DataString");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        java.lang.String str2 = str == null ? "" : str;
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("thumbUrl");
+        java.lang.String str4 = str3 == null ? "" : str3;
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("url");
+        if (str5 == null) {
+            str5 = "";
+        }
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("activityId");
+        java.lang.String str7 = str6 == null ? "" : str6;
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            dw4.a.a(new com.tencent.mm.plugin.webview.ui.tools.jsapi.f1(c1Var, str2, y2Var, str4, str7));
+            return true;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddToEmoticon base64DataString is null and url is null");
+            c1Var.i5(y2Var, "addToEmoticon:fail_base64DataString_and_url_is_null", null);
+            return false;
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddToEmoticon use url:%s", str5);
+        com.tencent.mm.vfs.r6 r6Var = new com.tencent.mm.vfs.r6(c1Var.f184975d.getCacheDir(), kk.k.g(str5.getBytes()));
+        if (r6Var.m()) {
+            gm0.j1.e().j(new com.tencent.mm.plugin.webview.ui.tools.jsapi.g1(c1Var, r6Var, str4, str7));
+            return true;
+        }
+        o11.f fVar = new o11.f();
+        fVar.f342078b = true;
+        fVar.f342082f = r6Var.o();
+        fVar.f342102z = new java.lang.Object[]{r6Var.o()};
+        ((com.tencent.mm.feature.emoji.b0) ((com.tencent.mm.feature.emoji.api.s5) i95.n0.c(com.tencent.mm.feature.emoji.api.s5.class))).Di().j(str5, null, fVar.a(), new com.tencent.mm.plugin.webview.ui.tools.jsapi.h1(c1Var, str5, str4, str7, y2Var));
+        return true;
+    }
+
+    public static boolean K2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("osVersion", java.lang.Integer.valueOf(android.os.Build.VERSION.SDK_INT));
+        hashMap.put("cpuCores", java.lang.Integer.valueOf(y7.b.d()));
+        hashMap.put("cpuFreqHz", java.lang.Integer.valueOf(y7.b.b()));
+        hashMap.put("memory", java.lang.Long.valueOf(y7.b.e(com.tencent.mm.sdk.platformtools.x2.f193071a)));
+        hashMap.put("brand", android.os.Build.BRAND);
+        hashMap.put("model", wo.w0.m());
+        c1Var.i5(y2Var, "getSystemInfo:ok", hashMap);
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:24:0x00d3  */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x013e  */
+    /* JADX WARN: Removed duplicated region for block: B:54:0x00b4 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean K3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r12, nw4.y2 r13, com.tencent.mm.protocal.JsapiPermissionWrapper r14) {
+        /*
+            Method dump skipped, instructions count: 469
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.K3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean K4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenWCPaySpecificView JSOAUTH");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (!(c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("appId", walletJsapiData.f192129d);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", walletJsapiData.f192140r);
+        intent.putExtra("pay_channel", walletJsapiData.f192144v);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.o(c1Var.f184975d, "wallet_index", ".ui.WalletSendC2CMsgUI", intent, 210, false);
+        return true;
+    }
+
+    public static boolean L(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 msg, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        boolean z17 = false;
+        c1Var.f184993v = false;
+        com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+        kotlin.jvm.internal.o.g(msg, "msg");
+        ((yq1.z) ((zq1.a0) gm0.j1.s(zq1.a0.class))).getClass();
+        if (com.tencent.mm.plugin.brandservice.ui.timeline.preload.t1.e(5)) {
+            int optInt = msg.f341014d.optInt("itemType", -1);
+            android.os.Bundle bundle = new android.os.Bundle();
+            if (optInt >= 0) {
+                java.lang.String optString = msg.f341014d.optString("jumpUrl");
+                kotlin.jvm.internal.o.f(optString, "optString(...)");
+                bundle.putString("url", optString);
+                bundle.putInt("item_show_type", optInt);
+                bundle.putInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, msg.f341014d.optInt("openScene"));
+                bundle.putInt("openType", -1);
+                bundle.putString("KPublisherId", msg.f341014d.optString("publishId"));
+                bundle.putInt("geta8key_scene", 65);
+                bundle.putInt("KPageScene", 1);
+                java.lang.String e17 = ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).e(optString);
+                if (e17 == null) {
+                    e17 = "";
+                }
+                java.lang.String g17 = ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).g(e17);
+                bundle.putString("KPageInfo", g17 != null ? g17 : "");
+                if (optInt == 5) {
+                    if (msg.f341014d.has("currentInfo")) {
+                        bundle.putString("currentInfo", msg.f341014d.optString("currentInfo"));
+                    }
+                    if (msg.f341014d.has("openScene")) {
+                        bundle.putInt("biz_video_scene", msg.f341014d.optInt("openScene"));
+                    }
+                    bundle.putInt("subscene", msg.f341014d.optInt("subScene", 10000));
+                    bundle.putInt("biz_video_session_id", com.tencent.mm.storage.c2.f193803a);
+                    bundle.putBoolean("isNativePage", true);
+                    org.json.JSONObject rawParams = msg.f341014d;
+                    kotlin.jvm.internal.o.f(rawParams, "rawParams");
+                    if (optInt == 5 || optInt == 16) {
+                        ot0.l1 l1Var = new ot0.l1();
+                        l1Var.f348602m = rawParams.optString("srcUserName");
+                        l1Var.f348603n = rawParams.optString("srcDisplayName");
+                        if (rawParams.has("url")) {
+                            l1Var.f348606q.f348762e = rawParams.optString("url");
+                        } else if (rawParams.has("jumpUrl")) {
+                            l1Var.f348606q.f348762e = rawParams.optString("jumpUrl");
+                        }
+                        l1Var.f348606q.f348761d = rawParams.optString(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+                        l1Var.f348606q.f348769n = rawParams.optString("digest");
+                        l1Var.f348606q.f348766i = rawParams.optString("cover");
+                        ot0.s0 s0Var = l1Var.f348606q;
+                        s0Var.f348770o = optInt;
+                        s0Var.f348765h = rawParams.optInt("pubTime");
+                        l1Var.f348606q.f348774q = rawParams.optInt("duration");
+                        l1Var.f348606q.E = rawParams.optInt(com.tencent.live2.jsplugin.V2TXJSAdapterConstants.PUSHER_KEY_RESOLUTION_WIDTH);
+                        l1Var.f348606q.F = rawParams.optInt(com.tencent.live2.jsplugin.V2TXJSAdapterConstants.PUSHER_KEY_RESOLUTION_HEIGHT);
+                        l1Var.f348606q.G = rawParams.optString(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.Common.COMMON_VID);
+                        l1Var.b(bundle);
+                    }
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.idkeyStat(1061L, 20L, 1L, false);
+                }
+                android.os.Bundle i17 = z0Var != null ? z0Var.i(200, bundle) : null;
+                if (i17 != null && i17.getBoolean(ya.b.SUCCESS)) {
+                    z17 = true;
+                }
+            }
+        }
+        if (z17) {
+            return true;
+        }
+        return ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).n(msg.f340790a, c1Var.B);
+    }
+
+    public static boolean L0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        try {
+            android.os.Bundle bundle = new android.os.Bundle(1);
+            bundle.putString("place_holder", "place_holder");
+            c1Var.f184998y.ec();
+            c1Var.f184998y.b(bundle);
+        } catch (java.lang.Exception unused) {
+        }
+        return true;
+    }
+
+    public static boolean L1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("base64DataString");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (str == null) {
+            str = "";
+        }
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("url");
+        if (str2 == null) {
+            str2 = "";
+        }
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("activityId");
+        java.lang.String str4 = str3 != null ? str3 : "";
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            dw4.a.a(new com.tencent.mm.plugin.webview.ui.tools.jsapi.i1(c1Var, str, y2Var, str4));
+            return true;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doShareEmoticon base64DataString is null and url is null");
+            c1Var.i5(y2Var, "shareEmoticon:fail_base64DataString_and_url_is_null", null);
+            return false;
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doShareEmoticon use url:%s", str2);
+        com.tencent.mm.vfs.r6 r6Var = new com.tencent.mm.vfs.r6(c1Var.f184975d.getCacheDir(), kk.k.g(str2.getBytes()));
+        if (r6Var.m()) {
+            gm0.j1.e().j(new com.tencent.mm.plugin.webview.ui.tools.jsapi.j1(c1Var, r6Var, str4));
+            return true;
+        }
+        o11.f fVar = new o11.f();
+        fVar.f342078b = true;
+        fVar.f342082f = r6Var.o();
+        fVar.f342102z = new java.lang.Object[]{r6Var.o()};
+        ((com.tencent.mm.feature.emoji.b0) ((com.tencent.mm.feature.emoji.api.s5) i95.n0.c(com.tencent.mm.feature.emoji.api.s5.class))).Di().j(str2, null, fVar.a(), new com.tencent.mm.plugin.webview.ui.tools.jsapi.k1(c1Var, str2, str4, y2Var));
+        return true;
+    }
+
+    public static boolean L2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        try {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("tid");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doServiceClick, tid = %s", str);
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("service_click_tid", str);
+            c1Var.f184998y.callback(70, bundle);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        c1Var.f184993v = false;
+        return false;
+    }
+
+    public static void L3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, com.tencent.mm.plugin.webview.stub.z0 z0Var, nw4.y2 y2Var, java.lang.String str, java.util.Map map, boolean z17, boolean z18) {
+        java.lang.String str2;
+        c1Var.f184993v = false;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "callback ret:%s, make isBusy=false", str);
+        if (y2Var == null) {
+            str2 = null;
+        } else {
+            try {
+                str2 = y2Var.f341013c;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "onHandleEnd, ex = " + e17.getMessage());
+                return;
+            }
+        }
+        z0Var.aj(str2, str, nw4.y2.b(map), z17);
+    }
+
+    public static boolean L4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doBatchViewCard JSOAUTH");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("card_list");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("tempalate_id");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("appId");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_app_id", str3);
+        intent.putExtra("card_list", str);
+        intent.putExtra("key_template_id", str2);
+        intent.putExtra("key_from_scene", 7);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+            j45.l.o(c1Var.f184975d, "card", ".ui.CardViewEntranceUI", intent, 23, false);
+            return true;
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doBatchViewCard invalid context");
+        c1Var.i5(y2Var, "batch_view_card:fail", null);
+        return true;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x007d, code lost:
+    
+        if (r10 != 59) goto L63;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean M(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r16, nw4.y2 r17, com.tencent.mm.protocal.JsapiPermissionWrapper r18) {
+        /*
+            Method dump skipped, instructions count: 816
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.M(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean M0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseVideo()");
+        c1Var.y5(y2Var, 0);
+        return true;
+    }
+
+    public static boolean M1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putBoolean("k_need_signature", true);
+        bundle.putInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 3);
+        bundle.putBoolean("needVideo", false);
+        bundle.putBoolean("is_check_dyncfg", false);
+        bundle.putString("k_ticket", (java.lang.String) y2Var.f340790a.get("request_ticket"));
+        bundle.putInt("check_alive_type", 0);
+        com.tencent.mm.autogen.events.RequestStartFaceDetectEvent requestStartFaceDetectEvent = new com.tencent.mm.autogen.events.RequestStartFaceDetectEvent();
+        android.content.Context context = c1Var.f184975d;
+        am.or orVar = requestStartFaceDetectEvent.f54699g;
+        orVar.f7573a = context;
+        orVar.f7575c = 50;
+        orVar.f7574b = bundle;
+        requestStartFaceDetectEvent.e();
+        am.pr prVar = requestStartFaceDetectEvent.f54700h;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: start face register rsa event result: %b", java.lang.Boolean.valueOf(prVar.f7654a));
+        if (!prVar.f7654a) {
+            ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(null);
+            c1Var.i5(y2Var, "requestWxFaceRegisterInternal:fail", nw4.a.a(prVar.f7655b));
+        }
+        return true;
+    }
+
+    public static boolean M2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        if (com.tencent.mm.sdk.platformtools.t8.K0(j66)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "[doOpenRealnameAuth]appid is null, return");
+            c1Var.i5(y2Var, "openRealnameAuth:fail appid is null", null);
+            return false;
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("categoryId");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "[doOpenRealnameAuth]categoryId is null, return");
+            c1Var.i5(y2Var, "openRealnameAuth:fail categoryId is null", null);
+            return false;
+        }
+        android.content.Intent putExtra = new android.content.Intent().putExtra("intent_appid", j66).putExtra("intent_category_id", str);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+            j45.l.n(c1Var.f184975d, "appbrand", ".ui.autofill.AppBrandIDCardUI", putExtra, 62);
+            return true;
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "[doOpenRealnameAuth]context is err, return");
+        c1Var.i5(y2Var, "openRealnameAuth:fail context is err", null);
+        return false;
+    }
+
+    public static boolean M3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doJumpToMall");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("funcId");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("url");
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_app_id", str);
+        intent.putExtra("key_func_id", str2);
+        intent.putExtra("key_url", str3);
+        android.content.Context context = c1Var.f184975d;
+        if (!(context instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", " walletMallV2 switch is ：%s", java.lang.Boolean.TRUE);
+        j45.l.o(c1Var.f184975d, "mall", ".ui.MallIndexUIv2", intent, 5, false);
+        return true;
+    }
+
+    public static boolean M4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        try {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("userName");
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("nickName");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                c1Var.i5(y2Var, "setPageOwner:missing_arguments", null);
+            } else {
+                c1Var.f184998y.D3(str, str2);
+                c1Var.i5(y2Var, "setPageOwner:ok", null);
+            }
+            return false;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "setPageOwner, Exception: %s", e17.getMessage());
+            return false;
+        }
+    }
+
+    public static boolean N(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).m(y2Var.f340790a);
+        return false;
+    }
+
+    public static boolean N0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        boolean z17;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        java.lang.Object obj = y2Var.f340790a.get("isShowProgressTips");
+        if (obj != null) {
+            try {
+                z17 = com.tencent.mm.sdk.platformtools.t8.P(obj.toString(), 0) == 1;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Exception has occurred : %s", e17.getMessage());
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "upload local video, appId = %s, localId = %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localId is null or nil.");
+                c1Var.i5(y2Var, "uploadVideo:fail_missing arguments", null);
+            } else {
+                c1Var.g7(y2Var, str, str2, 5, 0, 0, 0, "uploadVideo", z17);
+            }
+            return true;
+        }
+        z17 = true;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "upload local video, appId = %s, localId = %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localId is null or nil.");
+        c1Var.i5(y2Var, "uploadVideo:fail_missing arguments", null);
+        return true;
+    }
+
+    public static boolean N1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putBoolean("k_need_signature", true);
+        bundle.putString("k_user_name", c01.b9.f37069c.a("login_user_name", ""));
+        bundle.putInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 4);
+        bundle.putBoolean("needVideo", false);
+        bundle.putBoolean("is_check_dyncfg", false);
+        bundle.putString("k_ticket", (java.lang.String) y2Var.f340790a.get("request_ticket"));
+        bundle.putInt("check_alive_type", 0);
+        com.tencent.mm.autogen.events.RequestStartFaceDetectEvent requestStartFaceDetectEvent = new com.tencent.mm.autogen.events.RequestStartFaceDetectEvent();
+        android.content.Context context = c1Var.f184975d;
+        am.or orVar = requestStartFaceDetectEvent.f54699g;
+        orVar.f7573a = context;
+        orVar.f7575c = 51;
+        orVar.f7574b = bundle;
+        requestStartFaceDetectEvent.e();
+        am.pr prVar = requestStartFaceDetectEvent.f54700h;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: start face verify rsa event result: %b", java.lang.Boolean.valueOf(prVar.f7654a));
+        if (!prVar.f7654a) {
+            ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(null);
+            c1Var.i5(y2Var, "requestWxFaceVerifyInternal:fail", nw4.a.a(prVar.f7655b));
+        }
+        return true;
+    }
+
+    public static boolean N2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        com.tencent.mm.opensdk.modelmsg.WXMediaMessage o57 = c1Var.o5(y2Var, false);
+        c1Var.f184977f = o57;
+        if (o57 == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSendSingleAppMessage fail, appmsg is null");
+            c1Var.i5(y2Var, "sendSingleAppMessage:fail", null);
+        } else {
+            java.util.HashMap hashMap = new java.util.HashMap();
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("img_url");
+            hashMap.put("img_url", str);
+            hashMap.put("desc", (java.lang.String) y2Var.f340790a.get("desc"));
+            hashMap.put(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE));
+            hashMap.put("url", (java.lang.String) y2Var.f340790a.get("link"));
+            android.content.Intent intent = new android.content.Intent();
+            intent.putExtra("Select_Conv_Type", 39);
+            intent.putExtra("select_is_ret", true);
+            intent.putExtra("Select_block_List", c01.z1.r());
+            intent.putExtra("Select_block_List", "filehelper," + c01.z1.r());
+            intent.putExtra("scene_from", 10);
+            intent.putExtra("webview_params", hashMap);
+            intent.putExtra("Retr_Msg_Type", 2);
+            android.content.Context context = c1Var.f184975d;
+            if (!(context instanceof com.tencent.mm.ui.MMActivity)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSendSingleAppMessage context is not activity");
+                return false;
+            }
+            j45.l.w((com.tencent.mm.ui.MMActivity) context, ".ui.transmit.SelectConversationUI", intent, 61, c1Var);
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.f9.a(str);
+        }
+        return true;
+    }
+
+    public static boolean N4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        try {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("signature");
+            nw4.e3.a(y2Var.f341018h, false, null, str);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                c1Var.i5(y2Var, "get_wechat_verify_ticket:fail ticket", null);
+            } else {
+                gm0.j1.d().a(1097, new com.tencent.mm.plugin.webview.ui.tools.jsapi.k7(c1Var, y2Var));
+                gm0.j1.d().g(new com.tencent.mm.plugin.webview.model.c1(str, str2));
+            }
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "getWechatVerifyTicket, Exception: %s", e17.getMessage());
+        }
+        return false;
+    }
+
+    public static boolean O(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).l(y2Var.f340790a);
+        return false;
+    }
+
+    public static boolean O0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, boolean z17) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("designerId");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("designerUin"), 0);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("tagId");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("tagDesc");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("keyword");
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("tid"), 0);
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        if (str5 == null) {
+            str5 = "";
+        }
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("desc");
+        if (str6 == null) {
+            str6 = "";
+        }
+        java.lang.String str7 = (java.lang.String) y2Var.f340790a.get("iconUrl");
+        if (str7 == null) {
+            str7 = "";
+        }
+        java.lang.String str8 = (java.lang.String) y2Var.f340790a.get("secondUrl");
+        java.lang.String str9 = str8 != null ? str8 : "";
+        int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("pageType"), 0);
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("searchID"), 0L);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("uin", P);
+        intent.putExtra("headurl", str9);
+        intent.putExtra("set_iconURL", str7);
+        intent.putExtra("set_desc", str6);
+        intent.putExtra("pageType", P3);
+        intent.putExtra("set_title", str5);
+        intent.putExtra("set_id", P2);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openDesignerEmojiView event: designerID:%s tagID:%s tagDesc:%s keyword:%s", str, str2, str3, str4);
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str4)) {
+            intent.putExtra("keyword", str4);
+            intent.putExtra("searchID", V);
+            j45.l.j(c1Var.f184975d, "emoji", ".ui.v2.EmojiStoreV2SingleProductUI", intent, null);
+            c1Var.i5(y2Var, "openDesignerEmojiView:ok" + str4, null);
+            if (!z17) {
+                return true;
+            }
+            com.tencent.mm.plugin.report.service.g0 g0Var = com.tencent.mm.plugin.report.service.g0.INSTANCE;
+            ((com.tencent.mm.feature.emoji.t1) ((com.tencent.mm.feature.emoji.api.h6) i95.n0.c(com.tencent.mm.feature.emoji.api.h6.class))).getClass();
+            g0Var.d(13055, 2, "", "", "", java.lang.Integer.valueOf(f11.e.a()), java.lang.Long.valueOf(V));
+            return true;
+        }
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            intent.putExtra(dm.i4.COL_ID, str);
+            intent.putExtra("searchID", V);
+            j45.l.j(c1Var.f184975d, "emoji", ".ui.v2.EmojiStoreV2SingleProductUI", intent, null);
+            c1Var.i5(y2Var, "openDesignerEmojiView:ok" + str, null);
+            return true;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            j45.l.j(c1Var.f184975d, "emoji", ".ui.v2.EmojiStoreV2SingleProductUI", intent, null);
+            c1Var.i5(y2Var, "openDesignerEmojiView:ok", null);
+            return true;
+        }
+        intent.putExtra("tag_id", str2);
+        intent.putExtra("tag_desc", str3);
+        j45.l.j(c1Var.f184975d, "emoji", ".ui.v2.EmojiStoreV2SingleProductUI", intent, null);
+        c1Var.i5(y2Var, "openDesignerEmojiView:ok" + str2, null);
+        return true;
+    }
+
+    public static boolean O1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doEditAddress");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("req_url", (java.lang.String) y2Var.f340790a.get("url"));
+        intent.putExtra("req_app_id", (java.lang.String) y2Var.f340790a.get("appId"));
+        intent.putExtra("launch_from_webview", true);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+            j45.l.o(c1Var.f184975d, "address", ".ui.WalletSelectAddrUI", intent, 3, false);
+        }
+        return true;
+    }
+
+    public static boolean O2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        java.util.HashMap hashMap = new java.util.HashMap();
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "actionType", 0);
+        if (e17 == 1) {
+            java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "jumpUrl");
+            java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "publishId");
+            android.content.Intent intent = new android.content.Intent();
+            intent.putExtra("rawUrl", f17);
+            intent.putExtra("KPublisherId", f18);
+            j45.l.j(c1Var.f184975d, "webview", ".ui.tools.WebViewUI", intent, null);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenWebSearchOutLinkItemClick actionType %d publishId %s url %s", java.lang.Integer.valueOf(e17), f18, f17);
+            hashMap.put("ret", 0);
+        } else {
+            hashMap.put("ret", -1);
+        }
+        c1Var.i5(y2Var, "0", hashMap);
+        return true;
+    }
+
+    public static boolean O3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.tencent.tmassistantsdk.openSDK.QQDownloader.AssistantStore.DownloadInfos.DownloadInfoColumns.PACKAGENAME);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doWriteCommData fail, packageName is null");
+            c1Var.i5(y2Var, "write_comm_data:fail", null);
+        } else {
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA);
+            boolean commit = c1Var.f184975d.getSharedPreferences(com.tencent.mm.sdk.platformtools.x2.f193072b + "_comm_preferences", 0).edit().putString(str, str2).commit();
+            java.lang.Object[] objArr = new java.lang.Object[3];
+            objArr[0] = java.lang.Boolean.valueOf(commit);
+            objArr[1] = str;
+            objArr[2] = java.lang.Integer.valueOf(str2 != null ? str2.length() : 0);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doWriteCommData, ret = %b, packageName = %s, data length = %d", objArr);
+            if (commit) {
+                c1Var.i5(y2Var, "write_comm_data:ok", null);
+            } else {
+                c1Var.i5(y2Var, "write_comm_data:fail", null);
+            }
+        }
+        return true;
+    }
+
+    public static boolean O4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        qk.n D0;
+        java.lang.String str;
+        int u66 = c1Var.u6();
+        int v66 = c1Var.v6();
+        java.lang.String l66 = c1Var.l6();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "Key Scene(%d)", java.lang.Integer.valueOf(v66));
+        if (v66 == 27) {
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("brandUserName");
+            c1Var.f184988q = str2;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "BrandUserName from shake(%s)", str2);
+        } else if (u66 != 8 && u66 != -1) {
+            java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("brandUserName");
+            c1Var.f184985p = str3;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "BrandUserName from H5(%s)", str3);
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(l66) && !com.tencent.mm.sdk.platformtools.t8.K0(c1Var.f184985p)) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "Chat name(%s)", l66);
+                qk.o b17 = r01.z.b(l66);
+                if (b17 != null && (D0 = b17.D0(false)) != null && D0.e() != null && D0.e().a() && !l66.equals(c1Var.f184985p)) {
+                    c1Var.i5(y2Var, "openWXDeviceLib:fail_UsernameError", null);
+                    return true;
+                }
+            }
+        }
+        java.lang.String y66 = c1Var.y6(y2Var);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "srcUsername(%s)", y66);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+            c1Var.i5(y2Var, "openWXDeviceLib:fail_UsernameError", null);
+        } else {
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "openWXDeviceLib");
+            str = "on";
+            if ((y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+                if (c1Var.f184990s == null) {
+                    c1Var.f184990s = new java.util.HashMap();
+                }
+                try {
+                    com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().e(c1Var.f184998y, y66);
+                    com.tencent.mm.pluginsdk.ui.tools.r8.a(com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d());
+                    str = com.tencent.mars.comm.NetStatusUtil.isWifi(c1Var.f184975d) ? "on" : "off";
+                    java.util.HashMap hashMap = new java.util.HashMap();
+                    hashMap.put("minVersion", 1);
+                    hashMap.put("maxVersion", 1);
+                    hashMap.put("lanState", str);
+                    c1Var.i5(y2Var, "openWXDeviceLib:ok", hashMap);
+                } catch (java.lang.Exception e17) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "openWXDeviceLib failed : %s", e17.getMessage());
+                    c1Var.i5(y2Var, "openWXDeviceLib:fail_exception", null);
+                }
+            } else {
+                if (c1Var.f184989r == null) {
+                    c1Var.f184989r = new java.util.HashMap();
+                }
+                try {
+                    com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().e(c1Var.f184998y, y66);
+                    com.tencent.mm.pluginsdk.ui.tools.r8.a(com.tencent.mm.plugin.webview.jsapi.exdevice.b.d());
+                    android.bluetooth.BluetoothAdapter defaultAdapter = android.bluetooth.BluetoothAdapter.getDefaultAdapter();
+                    java.lang.String str4 = "unknow";
+                    if (defaultAdapter != null) {
+                        switch (defaultAdapter.getState()) {
+                            case 10:
+                                str = "off";
+                                break;
+                            case 11:
+                                str = "resetting";
+                                break;
+                            case 12:
+                                break;
+                            default:
+                                str = "unknow";
+                                break;
+                        }
+                        str4 = str;
+                    }
+                    boolean hasSystemFeature = com.tencent.mm.sdk.platformtools.x2.f193071a.getPackageManager().hasSystemFeature("android.hardware.bluetooth_le");
+                    com.tencent.mars.xlog.Log.i("MicroMsg.webview.ExDeviceBluetoothUtil", "isBLESupported, ret = %b", java.lang.Boolean.valueOf(hasSystemFeature));
+                    java.util.HashMap hashMap2 = new java.util.HashMap();
+                    hashMap2.put("minVersion", 1);
+                    hashMap2.put("maxVersion", 1);
+                    hashMap2.put("bluetoothState", str4);
+                    hashMap2.put("isSupportBLE", hasSystemFeature ? "yes" : "no");
+                    if (u66 == 1) {
+                        hashMap2.put("OS", com.eclipsesource.mmv8.Platform.ANDROID);
+                    }
+                    c1Var.i5(y2Var, "openWXDeviceLib:ok", hashMap2);
+                } catch (java.lang.Exception e18) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "openWXDeviceLib failed : %s", e18.getMessage());
+                    c1Var.i5(y2Var, "openWXDeviceLib:fail_exception", null);
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean P(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        boolean c17 = com.tencent.mm.plugin.websearch.l2.c(map, "hasResult", false);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "query");
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "type", 0);
+        int e18 = com.tencent.mm.plugin.websearch.l2.e(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+        su4.q0 q0Var2 = q0Var.f181598n;
+        if (q0Var2.f413045f == e18 && (str = q0Var2.f413041b) != null && str.equals(f17) && q0Var2.f413044e == e17) {
+            q0Var2.f413042c = c17;
+        } else {
+            com.tencent.mars.xlog.Log.w("MicroMsg.WebSearch.FTSLogObj", "setHasResultNotSame: %s VS %s | %d VS %d | %d VS %d", q0Var2.f413041b, f17, java.lang.Integer.valueOf(q0Var2.f413044e), java.lang.Integer.valueOf(e17), java.lang.Integer.valueOf(q0Var2.f413045f), java.lang.Integer.valueOf(e18));
+        }
+        return false;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0107  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x0126  */
+    /* JADX WARN: Removed duplicated region for block: B:20:0x012e  */
+    /* JADX WARN: Removed duplicated region for block: B:23:0x0134  */
+    /* JADX WARN: Removed duplicated region for block: B:26:0x013a  */
+    /* JADX WARN: Removed duplicated region for block: B:29:0x0140  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x0146  */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x014c  */
+    /* JADX WARN: Removed duplicated region for block: B:38:0x0165  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x0176  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x017d  */
+    /* JADX WARN: Removed duplicated region for block: B:47:0x0168  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x0129  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x0110  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean P0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r21, nw4.y2 r22, boolean r23) {
+        /*
+            Method dump skipped, instructions count: 436
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.P0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, boolean):boolean");
+    }
+
+    public static boolean P1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, int i17) {
+        int i18;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2;
+        boolean z17;
+        c1Var.getClass();
+        java.lang.String obj = ((java.util.HashMap) y2Var.f340790a).containsKey("canvasId") ? ((java.util.HashMap) y2Var.f340790a).get("canvasId").toString() : "";
+        int D12 = ((java.util.HashMap) y2Var.f340790a).containsKey("preLoad") ? com.tencent.mm.sdk.platformtools.t8.D1(((java.util.HashMap) y2Var.f340790a).get("preLoad").toString(), 0) : 0;
+        int D13 = ((java.util.HashMap) y2Var.f340790a).containsKey("noStore") ? com.tencent.mm.sdk.platformtools.t8.D1(((java.util.HashMap) y2Var.f340790a).get("noStore").toString(), 0) : 0;
+        int D14 = ((java.util.HashMap) y2Var.f340790a).containsKey("openFirstSightVoice") ? com.tencent.mm.sdk.platformtools.t8.D1(((java.util.HashMap) y2Var.f340790a).get("openFirstSightVoice").toString(), 0) : 0;
+        long E12 = ((java.util.HashMap) y2Var.f340790a).containsKey("outPlaybackTimeMs") ? com.tencent.mm.sdk.platformtools.t8.E1(((java.util.HashMap) y2Var.f340790a).get("outPlaybackTimeMs").toString()) : 0L;
+        int D15 = ((java.util.HashMap) y2Var.f340790a).containsKey("fromOuterIndex") ? com.tencent.mm.sdk.platformtools.t8.D1(((java.util.HashMap) y2Var.f340790a).get("fromOuterIndex").toString(), 0) : 0;
+        java.lang.String obj2 = ((java.util.HashMap) y2Var.f340790a).containsKey(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_EXTRA_DATA) ? ((java.util.HashMap) y2Var.f340790a).get(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_EXTRA_DATA).toString() : "";
+        java.lang.String obj3 = ((java.util.HashMap) y2Var.f340790a).containsKey("adInfoXml") ? ((java.util.HashMap) y2Var.f340790a).get("adInfoXml").toString() : "";
+        java.lang.String obj4 = ((java.util.HashMap) y2Var.f340790a).containsKey(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_SESSION_ID) ? ((java.util.HashMap) y2Var.f340790a).get(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_SESSION_ID).toString() : "";
+        java.lang.String obj5 = ((java.util.HashMap) y2Var.f340790a).containsKey("adBuffer") ? ((java.util.HashMap) y2Var.f340790a).get("adBuffer").toString() : "";
+        java.lang.String obj6 = ((java.util.HashMap) y2Var.f340790a).containsKey("canvasExt") ? ((java.util.HashMap) y2Var.f340790a).get("canvasExt").toString() : "";
+        java.lang.String obj7 = ((java.util.HashMap) y2Var.f340790a).containsKey("twistCardId") ? ((java.util.HashMap) y2Var.f340790a).get("twistCardId").toString() : "";
+        int i19 = D15;
+        java.lang.String obj8 = ((java.util.HashMap) y2Var.f340790a).containsKey("eggCardExtInfo") ? ((java.util.HashMap) y2Var.f340790a).get("eggCardExtInfo").toString() : "";
+        java.lang.String str = obj7;
+        if (((java.util.HashMap) y2Var.f340790a).containsKey(ya.b.SOURCE)) {
+            i18 = com.tencent.mm.sdk.platformtools.t8.D1(((java.util.HashMap) y2Var.f340790a).get(ya.b.SOURCE).toString(), 0);
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenCanvas, no source param, use default");
+            i18 = 13;
+        }
+        ((p34.t) ((p94.g0) i95.n0.c(p94.g0.class))).getClass();
+        long j17 = E12;
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("checkDecodeUxInfoInAdInfoXml", "com.tencent.mm.plugin.sns.ad.SnsAdService");
+        java.lang.String a17 = n74.d2.a(obj3, i18);
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("checkDecodeUxInfoInAdInfoXml", "com.tencent.mm.plugin.sns.ad.SnsAdService");
+        java.lang.String obj9 = ((java.util.HashMap) y2Var.f340790a).containsKey("canvasDynamicInfo") ? ((java.util.HashMap) y2Var.f340790a).get("canvasDynamicInfo").toString() : "";
+        java.lang.String obj10 = ((java.util.HashMap) y2Var.f340790a).containsKey("canvasDynamicExtInfo") ? ((java.util.HashMap) y2Var.f340790a).get("canvasDynamicExtInfo").toString() : "";
+        int i27 = D14;
+        boolean y17 = ((java.util.HashMap) y2Var.f340790a).containsKey("halfScreen") ? com.tencent.mm.sdk.platformtools.t8.y(((java.util.HashMap) y2Var.f340790a).get("halfScreen").toString(), false) : false;
+        int D16 = ((java.util.HashMap) y2Var.f340790a).containsKey("halfScreenHeight") ? com.tencent.mm.sdk.platformtools.t8.D1(((java.util.HashMap) y2Var.f340790a).get("halfScreenHeight").toString(), 0) : 0;
+        boolean y18 = ((java.util.HashMap) y2Var.f340790a).containsKey("isHalfScreenForbidSlideToTop") ? com.tencent.mm.sdk.platformtools.t8.y(((java.util.HashMap) y2Var.f340790a).get("isHalfScreenForbidSlideToTop").toString(), false) : false;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenCanvas, canvasId=" + obj + ", getCanvasSource=" + i17 + ", preLoad=" + D12 + ", noStore=" + D13 + ", extra=" + obj2 + ", sessionId=" + obj4 + ", adBuffer=" + obj5 + ", canvasExt=" + obj6 + ", source=" + i18 + ", canvasDynamicInfo=" + obj9 + ", canvasDynamicExtInfo=" + obj10 + ", adInfoXml=" + a17 + ", isHalfScreen=" + y17);
+        java.util.HashMap hashMap = new java.util.HashMap();
+        if (com.tencent.mm.sdk.platformtools.t8.K0(obj) || "0".equals(obj)) {
+            hashMap.put("ret", -1);
+            hashMap.put("ret_msg", "invalid page id = " + obj);
+            c1Var.i5(y2Var, "doOpenCanvas:fail", hashMap);
+            return false;
+        }
+        com.tencent.mm.autogen.events.OpenCanvasEvent openCanvasEvent = new com.tencent.mm.autogen.events.OpenCanvasEvent();
+        am.jn jnVar = openCanvasEvent.f54590g;
+        jnVar.f7052a = obj;
+        jnVar.f7053b = obj6;
+        jnVar.f7054c = D12;
+        jnVar.f7055d = D13;
+        jnVar.f7057f = i17;
+        jnVar.f7056e = i18;
+        jnVar.f7058g = a17;
+        jnVar.f7059h = obj9;
+        openCanvasEvent.e();
+        if (D12 != 1) {
+            java.lang.String str2 = openCanvasEvent.f54591h.f7171a;
+            android.content.Intent intent = new android.content.Intent();
+            if (str2 == null) {
+                str2 = "";
+            }
+            intent.putExtra("sns_landing_pages_xml", str2);
+            if (i17 == 1) {
+                intent.putExtra("sns_landing_pages_canvasid", obj);
+                intent.putExtra("sns_landig_pages_from_source", 15);
+                intent.putExtra("sns_landing_pages_search_extra", obj2);
+                intent.putExtra("sns_landing_pages_sessionId", obj4);
+                intent.putExtra("sns_landing_pages_ad_buffer", obj5);
+                intent.putExtra("sns_landing_pages_canvas_ext", obj6);
+            } else {
+                intent.putExtra("sns_landing_pages_pageid", com.tencent.mm.sdk.platformtools.t8.E1(obj));
+                intent.putExtra("sns_landig_pages_from_source", i18);
+                intent.putExtra("sns_landing_pages_extra", obj2);
+            }
+            intent.putExtra("sns_landing_pages_need_enter_and_exit_animation", false);
+            z17 = true;
+            intent.putExtra("sns_landing_pages_is_from_jspi", true);
+            intent.putExtra("sns_landing_pages_no_store", D13);
+            intent.putExtra("sns_landing_pages_ad_info", a17);
+            intent.putExtra("sns_landing_is_native_sight_ad", i27 == 1);
+            intent.putExtra("sns_landing_page_canvas_dynamicinfo", obj9);
+            intent.putExtra("sns_landing_page_canvas_ext_dynamicinfo", obj10);
+            intent.putExtra("sns_landing_page_sight_video_seek_time", j17);
+            if (!android.text.TextUtils.isEmpty(str)) {
+                intent.putExtra("sns_landing_page_egg_card_id", str);
+            }
+            if (!android.text.TextUtils.isEmpty(obj8)) {
+                intent.putExtra("sns_landing_page_egg_card_ext_info", obj8);
+            }
+            intent.putExtra("sns_landing_pages_from_outer_index", i19);
+            intent.putExtra("sns_landing_page_half_screen_mode", y17);
+            intent.putExtra("sns_landing_page_half_screen_height", D16);
+            intent.putExtra("sns_landing_page_half_screen_forbid_slide_top", y18);
+            c1Var2 = c1Var;
+            j45.l.j(c1Var2.f184975d, "sns", ".ui.SnsAdNativeLandingPagesPreviewUI", intent, null);
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.A(1676, 13);
+        } else {
+            c1Var2 = c1Var;
+            z17 = true;
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.A(1676, 14);
+        }
+        hashMap.put("ret", 0);
+        c1Var2.i5(y2Var, "doOpenCanvas:succ", hashMap);
+        return z17;
+    }
+
+    public static boolean P2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        long j17;
+        org.json.JSONObject jSONObject;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("opcode");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("business");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "business %s,opcode %s", str2, str);
+        if (!com.tencent.mm.sdk.platformtools.t8.N0(str, str2)) {
+            if (!str2.equals("regLogin")) {
+                if (com.tencent.mm.model.gdpr.a.a(str2) != null) {
+                    if ("setIsAgree".equals(str)) {
+                        boolean z17 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isAgree"), 0) == 1;
+                        android.os.Bundle bundle = new android.os.Bundle(1);
+                        bundle.putBoolean("OnMPGdprPolicyAgreement_KIsAgree", z17);
+                        try {
+                            c1Var.f184998y.callback(200, bundle);
+                        } catch (java.lang.Exception e17) {
+                            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "wcPrivacyPolicyResult, [mp_gdpr], callback ex = %s", e17);
+                        }
+                    }
+                    c1Var.i5(y2Var, "wcPrivacyPolicyResult:ok", null);
+                } else if (str2.equals(ya.a.SEARCH)) {
+                    str.getClass();
+                    if (str.equals("closeSearch")) {
+                        com.tencent.mm.plugin.websearch.p2 p2Var = (com.tencent.mm.plugin.websearch.p2) ((su4.g1) i95.n0.c(su4.g1.class));
+                        p2Var.getClass();
+                        com.tencent.mars.xlog.Log.i("WebSearchPrivacyMgr", "closeSearch ");
+                        p2Var.wi();
+                        p2Var.wi();
+                        com.tencent.mars.xlog.Log.i("WebSearchPrivacyMgr", " sp name %s ", com.tencent.mm.plugin.websearch.p2.f181588d);
+                        com.tencent.mm.sdk.platformtools.l4.c(com.tencent.mm.sdk.platformtools.x2.f193071a, com.tencent.mm.plugin.websearch.p2.f181588d, 0, false).edit().putBoolean("websearch_confirmed", false).commit();
+                        r45.dw5 dw5Var = new r45.dw5();
+                        dw5Var.f372785d = 1;
+                        dw5Var.f372786e = (int) (java.lang.System.currentTimeMillis() / 1000);
+                        dw5Var.f372787f = 2;
+                        com.tencent.mm.modelbase.l lVar = new com.tencent.mm.modelbase.l();
+                        lVar.f70664a = dw5Var;
+                        lVar.f70665b = new r45.ew5();
+                        lVar.f70666c = "/cgi-bin/mmsearch-bin/searchconfirm";
+                        lVar.f70667d = 2957;
+                        com.tencent.mm.modelbase.z2.d(lVar.a(), new com.tencent.mm.plugin.websearch.o2(p2Var), false);
+                        com.tencent.mm.plugin.fts.d0 d0Var = (com.tencent.mm.plugin.fts.d0) ((o13.z) i95.n0.c(o13.z.class));
+                        if (d0Var.mj()) {
+                            android.util.SparseArray sparseArray = d0Var.f137398z;
+                            if (sparseArray.indexOfKey(8) >= 0) {
+                                ((o13.w) sparseArray.get(8)).a();
+                            }
+                        }
+                        if (su4.t2.f413102a != null) {
+                            su4.t2.f413102a = null;
+                        }
+                        com.tencent.mm.sdk.platformtools.x2.f193071a.getSharedPreferences("fts_recent_biz_sp", 0).edit().remove(su4.t2.b()).commit();
+                    } else if (str.equals("openSearch")) {
+                        com.tencent.mm.plugin.websearch.p2 p2Var2 = (com.tencent.mm.plugin.websearch.p2) ((su4.g1) i95.n0.c(su4.g1.class));
+                        p2Var2.getClass();
+                        com.tencent.mars.xlog.Log.i("WebSearchPrivacyMgr", "openSearch ");
+                        p2Var2.wi();
+                        p2Var2.wi();
+                        com.tencent.mars.xlog.Log.i("WebSearchPrivacyMgr", " sp name %s ", com.tencent.mm.plugin.websearch.p2.f181588d);
+                        com.tencent.mm.sdk.platformtools.l4.c(com.tencent.mm.sdk.platformtools.x2.f193071a, com.tencent.mm.plugin.websearch.p2.f181588d, 0, false).edit().putBoolean("websearch_confirmed", true).commit();
+                        r45.dw5 dw5Var2 = new r45.dw5();
+                        dw5Var2.f372785d = 1;
+                        dw5Var2.f372786e = (int) (java.lang.System.currentTimeMillis() / 1000);
+                        dw5Var2.f372787f = 1;
+                        com.tencent.mm.modelbase.l lVar2 = new com.tencent.mm.modelbase.l();
+                        lVar2.f70664a = dw5Var2;
+                        lVar2.f70665b = new r45.ew5();
+                        lVar2.f70666c = "/cgi-bin/mmsearch-bin/searchconfirm";
+                        lVar2.f70667d = 2957;
+                        com.tencent.mm.modelbase.z2.d(lVar2.a(), new com.tencent.mm.plugin.websearch.n2(p2Var2), false);
+                    }
+                    try {
+                        c1Var.f184998y.b(null);
+                    } catch (java.lang.Exception unused) {
+                    }
+                    new com.tencent.mm.autogen.events.WebViewCloseWindowEvent().e();
+                    c1Var.i5(y2Var, "wcPrivacyPolicyResult:ok", null);
+                } else if (str2.equals("walletIndexGDPR")) {
+                    if (str.equals("setIsAgree")) {
+                        try {
+                            android.os.Bundle bundle2 = new android.os.Bundle();
+                            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isAgree"), 0);
+                            if (P == 1) {
+                                bundle2.putString("go_next", "agree_privacy");
+                            }
+                            com.tencent.mm.autogen.events.WxPayGdprResultEvent wxPayGdprResultEvent = new com.tencent.mm.autogen.events.WxPayGdprResultEvent();
+                            wxPayGdprResultEvent.f54995g.f8257a = "agree_privacy";
+                            wxPayGdprResultEvent.e();
+                            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "walletIndexGDPR agreement %s", java.lang.Integer.valueOf(P));
+                            c1Var.f184998y.ec();
+                            c1Var.f184998y.b(bundle2);
+                            new com.tencent.mm.autogen.events.WebViewCloseWindowEvent().e();
+                            c1Var.i5(y2Var, "set walletIndexGDPR wc privacy policy result:ok", null);
+                        } catch (java.lang.Exception e18) {
+                            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "setwalletIndexGDPR WcPrivacyPolicyResult, ex = " + e18.getMessage());
+                        }
+                    }
+                } else if (str2.equals(ya.b.LOCATION) && str.equals("setIsAgree")) {
+                    try {
+                        android.os.Bundle bundle3 = new android.os.Bundle();
+                        if (com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isAgree"), 0) == 1) {
+                            bundle3.putString("go_next", "gdpr_auth_location");
+                        }
+                        c1Var.f184998y.ec();
+                        c1Var.f184998y.b(bundle3);
+                        new com.tencent.mm.autogen.events.WebViewCloseWindowEvent().e();
+                        c1Var.i5(y2Var, "hint location permission use scene result:ok", null);
+                    } catch (java.lang.Exception e19) {
+                        com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "setLocationPermissionUseScene Result, ex = " + e19.getMessage());
+                    }
+                }
+            } else if (str.equals("setIsAgree")) {
+                try {
+                    android.os.Bundle bundle4 = new android.os.Bundle();
+                    if (com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isAgree"), 0) == 1) {
+                        bundle4.putString("go_next", "agree_privacy");
+                        wo.w0.f447839a = true;
+                        com.tencent.mars.xlog.Log.i("MicroMsg.DeviceInfo", "allowGetSensitiveDataFromSys");
+                        new com.tencent.mm.autogen.events.OnPrivacyPolicyAgreedEvent().e();
+                    }
+                    c1Var.f184998y.ec();
+                    c1Var.f184998y.b(bundle4);
+                    new com.tencent.mm.autogen.events.WebViewCloseWindowEvent().e();
+                    c1Var.i5(y2Var, "set wc privacy policy result:ok", null);
+                } catch (java.lang.Exception e27) {
+                    com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "setWcPrivacyPolicyResult, ex = " + e27.getMessage());
+                }
+            } else {
+                java.lang.String str3 = "";
+                if (str.equals("setBirthday")) {
+                    java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("birthday");
+                    java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("mobile");
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "mobile %s,birthday %s", str5, str4);
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(str5) && gm0.j1.a()) {
+                        gm0.j1.i();
+                        str5 = (java.lang.String) gm0.j1.u().c().l(6, null);
+                    }
+                    if (!com.tencent.mm.sdk.platformtools.t8.N0(str5, str4)) {
+                        java.util.HashMap hashMap = new java.util.HashMap();
+                        hashMap.put("birthday", str4);
+                        hashMap.put("last_update_birthday_time", java.lang.Long.valueOf(java.lang.System.currentTimeMillis() / 1000));
+                        android.content.SharedPreferences sharedPreferences = c01.wa.f37550b.f37551a;
+                        try {
+                            if (hashMap.isEmpty()) {
+                                com.tencent.mars.xlog.Log.i("MicroMsg.RegisterAccountInfo", "kv map is null or empty!");
+                            } else {
+                                if (sharedPreferences.contains(str5)) {
+                                    java.lang.String string = sharedPreferences.getString(str5, "");
+                                    jSONObject = !com.tencent.mm.sdk.platformtools.t8.K0(string) ? new org.json.JSONObject(new java.lang.String(android.util.Base64.decode(string, 0))) : new org.json.JSONObject();
+                                } else {
+                                    jSONObject = new org.json.JSONObject();
+                                }
+                                for (java.lang.String str6 : hashMap.keySet()) {
+                                    jSONObject.put(str6, hashMap.get(str6));
+                                }
+                                com.tencent.mars.xlog.Log.i("MicroMsg.RegisterAccountInfo", "put json str %s", jSONObject.toString());
+                                sharedPreferences.edit().putString(str5, android.util.Base64.encodeToString(jSONObject.toString().getBytes(), 0)).commit();
+                            }
+                        } catch (java.lang.Exception e28) {
+                            com.tencent.mars.xlog.Log.e("MicroMsg.RegisterAccountInfo", "save account info about %s failed, error: %s", str5, e28.getMessage());
+                        }
+                    }
+                    c1Var.i5(y2Var, "setBirthday OK", null);
+                } else if (str.equals("getBirthday")) {
+                    java.util.HashMap hashMap2 = new java.util.HashMap();
+                    java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("mobile");
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getBirthday of %s", str7);
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(str7) && gm0.j1.a()) {
+                        gm0.j1.i();
+                        str7 = (java.lang.String) gm0.j1.u().c().l(6, null);
+                    }
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(str7)) {
+                        j17 = 0;
+                    } else {
+                        c01.wa waVar = c01.wa.f37550b;
+                        str3 = waVar.a(str7, "birthday");
+                        j17 = com.tencent.mm.sdk.platformtools.t8.E1(waVar.a(str7, "last_update_birthday_time"));
+                    }
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "updateTime %s", java.lang.Long.valueOf(j17));
+                    hashMap2.put("birthday", str3);
+                    hashMap2.put("updatetime", java.lang.Long.valueOf(j17));
+                    c1Var.i5(y2Var, "getBirthday OK", hashMap2);
+                } else if (str.equals("birthdayComfirmOK")) {
+                    try {
+                        android.os.Bundle bundle5 = new android.os.Bundle();
+                        bundle5.putString("go_next", "birthdayComfirmOK");
+                        c1Var.f184998y.ec();
+                        c1Var.f184998y.b(bundle5);
+                        new com.tencent.mm.autogen.events.WebViewCloseWindowEvent().e();
+                        c1Var.i5(y2Var, "birthdayConfirmOK", null);
+                    } catch (java.lang.Exception e29) {
+                        com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "setWcPrivacyPolicyResult, ex = " + e29.getMessage());
+                    }
+                } else if (str.equals("continue")) {
+                    try {
+                        android.os.Bundle bundle6 = new android.os.Bundle();
+                        bundle6.putString("go_next", "gdpr_confirm_continue");
+                        c1Var.f184998y.ec();
+                        c1Var.f184998y.b(bundle6);
+                        new com.tencent.mm.autogen.events.WebViewCloseWindowEvent().e();
+                        c1Var.i5(y2Var, "h5 confirm continue OK", null);
+                    } catch (java.lang.Exception e37) {
+                        com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "setWcPrivacyPolicyResult, ex = " + e37.getMessage());
+                    }
+                } else if (str.equals("setPolicyListIsAgree")) {
+                    int e38 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "isAgree", 0);
+                    java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "customInfo");
+                    java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "policyTicket");
+                    java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "policyList");
+                    z61.c cVar = new z61.c(z61.b.f470321d, e38, f17, f18, f19);
+                    ((z61.a) com.tencent.mm.sdk.event.q.f192403a.a(z61.a.class)).O6(cVar);
+                    java.util.Iterator it = ((fs.e) ((fs.c) fs.g.f(z61.h.class)).all()).iterator();
+                    while (true) {
+                        fs.f fVar = (fs.f) it;
+                        if (!fVar.hasNext()) {
+                            break;
+                        }
+                        fs.q qVar = (fs.q) fVar.next();
+                        if (fs.g.d(fs.g.f266086c, qVar)) {
+                            ((b71.i) ((z61.h) ((fs.n) qVar.get()))).onChanged(cVar);
+                        }
+                    }
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "isAgree:%s customInfo:%s ticket:%s policyList:%s", java.lang.Integer.valueOf(e38), f17, f18, f19);
+                    try {
+                        c1Var.f184998y.b(null);
+                    } catch (java.lang.Exception unused2) {
+                    }
+                    c1Var.i5(y2Var, "setPolicyListIsAgree:ok", null);
+                } else if (str.equals("onPrivacyPolicyAgree")) {
+                    if (com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isAgree"), 0) == 1) {
+                        wo.w0.f447839a = true;
+                        com.tencent.mars.xlog.Log.i("MicroMsg.DeviceInfo", "allowGetSensitiveDataFromSys");
+                        new com.tencent.mm.autogen.events.OnPrivacyPolicyAgreedEvent().e();
+                    }
+                    c1Var.i5(y2Var, "set wc privacy policy result:ok", null);
+                }
+            }
+            return true;
+        }
+        return true;
+    }
+
+    public static boolean P3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenProductView");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("productInfo");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("url");
+        int i17 = 0;
+        try {
+            i17 = java.lang.Integer.valueOf(new org.json.JSONObject(str).getInt("product_type"));
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_product_info", str);
+        intent.putExtra("key_source_url", str2);
+        c1Var.M6(i17, 3, 0, null, intent);
+        return true;
+    }
+
+    public static boolean P4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if ((y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+            try {
+                java.lang.String y66 = c1Var.y6(y2Var);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "closeWXDeviceLib");
+                com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().c(c1Var.f184975d);
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "closeWXDeviceLib failed : %s", e17.getMessage());
+                c1Var.i5(y2Var, "closeWXDeviceLib:fail_exception", null);
+            }
+        } else {
+            try {
+                java.lang.String y67 = c1Var.y6(y2Var);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y67, "closeWXDeviceLib");
+                com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().c(c1Var.f184975d);
+            } catch (java.lang.Exception e18) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "closeWXDeviceLib failed : %s", e18.getMessage());
+                c1Var.i5(y2Var, "closeWXDeviceLib:fail_exception", null);
+            }
+        }
+        c1Var.i5(y2Var, "closeWXDeviceLib:ok", null);
+        return true;
+    }
+
+    public static java.lang.String P6(java.lang.String str) {
+        java.lang.String[] strArr;
+        int i17;
+        java.lang.StringBuffer stringBuffer = new java.lang.StringBuffer();
+        int length = str.length();
+        int i18 = 0;
+        while (i18 < length) {
+            int i19 = 0;
+            while (true) {
+                strArr = A1;
+                if (i19 >= 7) {
+                    break;
+                }
+                java.lang.String str2 = strArr[i19];
+                int i27 = 0;
+                while (i27 < str2.length() && (i17 = i18 + i27) < length && str2.charAt(i27) == str.charAt(i17)) {
+                    i27++;
+                }
+                if (i27 == str2.length()) {
+                    break;
+                }
+                i19++;
+            }
+            if (i19 != 7) {
+                stringBuffer.append(f184973z1[i19]);
+                i18 += strArr[i19].length();
+            } else {
+                stringBuffer.append(str.charAt(i18));
+                i18++;
+            }
+        }
+        return stringBuffer.toString();
+    }
+
+    public static boolean Q(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        su4.u0 Di = com.tencent.mm.plugin.webview.modeltools.z.Di();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.a0 a0Var = (com.tencent.mm.plugin.websearch.a0) Di;
+        a0Var.getClass();
+        com.tencent.mars.xlog.Log.i("FTSWebSearchLogic", "getSuggestionData %s", map);
+        su4.r1 r1Var = new su4.r1();
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "query");
+        r1Var.f413062b = f17;
+        try {
+            r1Var.f413062b = java.net.URLDecoder.decode(f17, com.tencent.mapsdk.internal.rv.f51270c);
+        } catch (java.io.UnsupportedEncodingException unused) {
+        }
+        r1Var.f413064d = com.tencent.mm.plugin.websearch.l2.e(map, "type", 0);
+        r1Var.f413066f = com.tencent.mm.plugin.websearch.l2.e(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+        r1Var.f413061a = com.tencent.mm.plugin.websearch.l2.c(map, "isHomePage", false) ? 1 : 0;
+        r1Var.f413077q = com.tencent.mm.sdk.platformtools.t8.o1(map.get("webview_instance_id"), -1);
+        r1Var.f413072l.add(com.tencent.mm.plugin.websearch.l2.f(map, "prefixQuery"));
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "requestType", 0);
+        com.tencent.mm.plugin.websearch.l2.e(map, "subtype", 0);
+        r1Var.f413079s = com.tencent.mm.plugin.websearch.l2.e(map, "isWeAppMore", 0);
+        r1Var.f413082v = com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_SESSION_ID);
+        r1Var.H = com.tencent.mm.plugin.websearch.l2.e(map, "version", 0);
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(map, "extReqParams");
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(f18)) {
+            try {
+                org.json.JSONArray jSONArray = new org.json.JSONArray(f18);
+                for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                    org.json.JSONObject jSONObject = jSONArray.getJSONObject(i17);
+                    r45.x50 x50Var = new r45.x50();
+                    x50Var.f389788d = jSONObject.optString("key", "");
+                    x50Var.f389789e = jSONObject.optInt("uintValue", 0);
+                    x50Var.f389790f = jSONObject.optString("textValue", "");
+                    r1Var.f413075o.add(x50Var);
+                }
+            } catch (java.lang.Exception unused2) {
+            }
+        }
+        if (r1Var.f413079s == 1) {
+            r45.bf7 bf7Var = new r45.bf7();
+            r1Var.f413080t = bf7Var;
+            bf7Var.f370731d = com.tencent.mm.plugin.websearch.l2.a(3);
+            r45.bf7 bf7Var2 = r1Var.f413080t;
+            bf7Var2.f370734g = k01.n.f303048a;
+            bf7Var2.f370732e = com.tencent.mm.plugin.websearch.l2.e(map, "subType", 0);
+            r1Var.f413080t.f370733f = null;
+            java.lang.Object m17 = gm0.j1.u().c().m(com.tencent.mm.storage.u3.USERINFO_WXA_SEARCH_INPUT_HINT_CONTENT_ID_STRING_SYNC, null);
+            if (m17 != null && (m17 instanceof java.lang.String)) {
+                r1Var.f413080t.f370735h = (java.lang.String) m17;
+            }
+        }
+        com.tencent.mars.xlog.Log.i("FTSWebSearchLogic", "getSearchData, webviewID = %d", java.lang.Integer.valueOf(r1Var.f413077q));
+        if (e17 == 0) {
+            com.tencent.mm.plugin.websearch.z zVar = a0Var.f181435r;
+            su4.b bVar = zVar.f181730a;
+            com.tencent.mm.plugin.websearch.a0 a0Var2 = zVar.f181731b;
+            if (bVar != null) {
+                com.tencent.mm.modelbase.r1 d17 = gm0.j1.d();
+                zVar.f181730a.getClass();
+                d17.q(1161, a0Var2);
+                gm0.j1.d().d(zVar.f181730a);
+                zVar.f181730a = null;
+            }
+            if (zVar.f181730a == null) {
+                zVar.f181730a = new su4.b2(r1Var);
+                com.tencent.mm.modelbase.r1 d18 = gm0.j1.d();
+                zVar.f181730a.getClass();
+                d18.a(1161, a0Var2);
+                gm0.j1.d().g(zVar.f181730a);
+            }
+        } else if (e17 == 1) {
+            java.lang.String str = r1Var.f413062b;
+            int i18 = r1Var.f413064d;
+            int i19 = r1Var.f413077q;
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                if (a0Var.f181436s != null) {
+                    ((com.tencent.mm.plugin.fts.d0) ((o13.z) i95.n0.c(o13.z.class))).Ni(a0Var.f181436s);
+                    a0Var.f181436s = null;
+                }
+                int[] iArr = i18 == 8 ? new int[]{131072} : null;
+                if (iArr != null) {
+                    p13.u uVar = new p13.u();
+                    uVar.f351140b = 16;
+                    uVar.f351141c = str;
+                    uVar.f351145g = iArr;
+                    uVar.f351147i = 5;
+                    uVar.f351150l = r13.b.f368602d;
+                    uVar.f351148j = new java.util.HashSet();
+                    uVar.f351151m = a0Var.f181437t;
+                    p13.c sj6 = ((com.tencent.mm.plugin.fts.d0) ((o13.z) i95.n0.c(o13.z.class))).sj(2, uVar);
+                    a0Var.f181436s = sj6;
+                    sj6.f351070m = java.lang.Integer.valueOf(i19);
+                }
+            }
+        } else if (e17 == 2) {
+            int i27 = r1Var.f413077q;
+            zg0.l3 l3Var = (zg0.l3) i95.n0.c(zg0.l3.class);
+            r45.ww5 a17 = su4.p2.a();
+            int size = a17.f389546d.size();
+            org.json.JSONObject jSONObject2 = new org.json.JSONObject();
+            try {
+                org.json.JSONArray jSONArray2 = new org.json.JSONArray();
+                org.json.JSONObject jSONObject3 = new org.json.JSONObject();
+                org.json.JSONArray jSONArray3 = new org.json.JSONArray();
+                int i28 = 0;
+                while (true) {
+                    java.util.LinkedList linkedList = a17.f389546d;
+                    if (i28 >= linkedList.size() || i28 >= size) {
+                        break;
+                    }
+                    r45.vw5 vw5Var = (r45.vw5) linkedList.get(i28);
+                    org.json.JSONObject jSONObject4 = new org.json.JSONObject();
+                    jSONObject4.put("word", vw5Var.f388625d);
+                    jSONArray3.put(jSONObject4);
+                    i28++;
+                }
+                jSONObject3.put("items", jSONArray3);
+                jSONObject3.put("count", jSONArray3.length());
+                jSONObject3.put("type", 4);
+                jSONArray2.put(jSONObject3);
+                jSONObject2.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA, jSONArray2);
+                jSONObject2.put("ret", 0);
+            } catch (org.json.JSONException unused3) {
+            }
+            ((jw4.e) l3Var).Vi(i27, jSONObject2.toString());
+        }
+        return false;
+    }
+
+    public static boolean Q0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openEmoticonTopicList");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("tid"), 0);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("desc");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("iconUrl");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("secondUrl");
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("pageScene"), 61);
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("setKey");
+        int O = com.tencent.mm.sdk.platformtools.t8.O(y2Var.f340790a.get("emotionScene"), 12);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("topic_id", P);
+        intent.putExtra("topic_name", str);
+        intent.putExtra("topic_desc", str2);
+        intent.putExtra("topic_icon_url", str3);
+        intent.putExtra("topic_ad_url", str4);
+        intent.putExtra("entrance_scene", O);
+        if (str5 != null) {
+            r45.vd0 vd0Var = new r45.vd0();
+            vd0Var.f388134d = str5;
+            vd0Var.f388136f = str;
+            vd0Var.f388137g = str2;
+            vd0Var.f388135e = str3;
+            qk.a0 a0Var = new qk.a0(vd0Var);
+            a0Var.f364133i = P2;
+            com.tencent.mm.feature.emoji.api.p6 p6Var = (com.tencent.mm.feature.emoji.api.p6) i95.n0.c(com.tencent.mm.feature.emoji.api.p6.class);
+            if (p6Var == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "unable to get emoticon liteapp feature service");
+            } else {
+                ((com.tencent.mm.feature.emoji.f4) p6Var).wi(c1Var.f184975d, a0Var);
+            }
+        } else {
+            j45.l.j(c1Var.f184975d, "emoji", ".ui.EmojiStoreTopicUI", intent, null);
+        }
+        c1Var.i5(y2Var, "openEmoticonTopicList", null);
+        return true;
+    }
+
+    public static boolean Q1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str = "";
+        c1Var.f184993v = false;
+        int D12 = com.tencent.mm.sdk.platformtools.t8.D1(y2Var.f340790a.get("voteResultIndex").toString(), 0);
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray();
+            java.lang.Object obj = y2Var.f340790a.get("leftVoteInfo");
+            java.lang.Object obj2 = y2Var.f340790a.get("rightVoteInfo");
+            java.lang.String obj3 = obj == null ? "" : obj.toString();
+            java.lang.String obj4 = obj2 == null ? "" : obj2.toString();
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpVoteAdData, leftInfo=" + obj3 + ", rightInfo=" + obj4);
+            if (!android.text.TextUtils.isEmpty(obj3)) {
+                jSONArray.put(new org.json.JSONObject(obj3));
+            }
+            if (!android.text.TextUtils.isEmpty(obj4)) {
+                jSONArray.put(new org.json.JSONObject(obj4));
+            }
+            str = jSONArray.toString();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpVoteAdData, exp:" + e17.toString());
+        }
+        try {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpVoteAdData, voteIndex=" + D12 + ", voteResultInfo=" + str);
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putInt("sns_landing_pages_ad_vote_index", D12);
+            bundle.putString("sns_landing_pages_ad_vote_result", str);
+            c1Var.f184998y.callback(150, bundle);
+        } catch (java.lang.Exception e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpVoteAdData, callback exp:" + e18.toString());
+        }
+        return false;
+    }
+
+    public static boolean Q2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2;
+        nw4.y2 y2Var2;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("brandIcon");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("brandName");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("desc");
+        java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("cover");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("forbidForward"), 0) == 1;
+        boolean z18 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("disableShowFinderLiveTopBar"), 0) == 0;
+        java.lang.String str6 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("alias");
+        boolean y17 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("enableShareImageWatermark"), false);
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("imageWatermarkType"), 0);
+        java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("shareImageWatermarkParams");
+        boolean y18 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("showForwardMp"), false);
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("landingTabId"), 0);
+        boolean z19 = z18;
+        boolean z27 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("showCustomFontScale"), 0) == 1;
+        com.tencent.mm.plugin.webview.modeltools.h1 h1Var = new com.tencent.mm.plugin.webview.modeltools.h1();
+        boolean z28 = z27;
+        h1Var.f183262c = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("itemShowType"), -1);
+        h1Var.f183260a = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("userName");
+        h1Var.f183261b = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("brandName");
+        h1Var.f183263d = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isPaySubscribe"), 0);
+        java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        boolean z29 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isMenuShowBrandInfo"), 0) == 1;
+        boolean z37 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("showSourceInfo"), 0) == 1;
+        h1Var.f183268i = z37;
+        h1Var.f183267h = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.Common.COMMON_VID);
+        h1Var.f183266g = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("duration"), 0);
+        h1Var.f183264e = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.live2.jsplugin.V2TXJSAdapterConstants.PUSHER_KEY_RESOLUTION_WIDTH), 0);
+        h1Var.f183265f = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.live2.jsplugin.V2TXJSAdapterConstants.PUSHER_KEY_RESOLUTION_HEIGHT), 0);
+        h1Var.f183269j = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isDisableMenuHeader"), false);
+        h1Var.f183270k = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("canReadArticle"), false);
+        h1Var.f183272m = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("biz");
+        boolean z38 = z17;
+        h1Var.f183273n = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("mid"), 0L);
+        h1Var.f183274o = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("idx"), 0L);
+        h1Var.f183275p = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("hasFinderElement"), 0);
+        h1Var.f183271l = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("sendArticleReadingBtnClicked"), false);
+        h1Var.f183281v = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("brandServiceType"), 0);
+        h1Var.f183283x = str6;
+        h1Var.f183284y = str2;
+        h1Var.f183282w = y17;
+        h1Var.A = str7;
+        h1Var.f183285z = P;
+        h1Var.B = P2;
+        c1Var.F.f183291d.put(com.tencent.mm.pluginsdk.ui.tools.h9.a(str8), h1Var);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "Abe-Debug msg handler doCurrentMpInfo, %s", str8);
+        boolean z39 = z29;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doCurrentMpInfo brandName:%s, title:%s, brandIcon:%s, userName:%s, itemShowType:%d, isPaySubscribe:%d, forbidForward: %b, showMenuBrandInfo: %b, vid=%s, duration=%d, showSourceInfo: %b, hasFinderElement:%d， landingTabId:%d", str2, str4, str, h1Var.f183260a, java.lang.Integer.valueOf(h1Var.f183262c), java.lang.Integer.valueOf(h1Var.f183263d), java.lang.Boolean.valueOf(z38), java.lang.Boolean.valueOf(z29), h1Var.f183267h, java.lang.Integer.valueOf(h1Var.f183266g), java.lang.Boolean.valueOf(z37), java.lang.Integer.valueOf(h1Var.f183275p), java.lang.Integer.valueOf(h1Var.B));
+        try {
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("key_bag_icon", str);
+            bundle.putString("key_brand_name", str2);
+            bundle.putString("key_desc", str3);
+            bundle.putString("key_url", str8);
+            bundle.putString("key_brand_user_name", h1Var.f183260a);
+            bundle.putString("key_title", str4);
+            bundle.putString("key_cover", str5);
+            bundle.putBoolean("key_show_menu_onfo", z39);
+            bundle.putBoolean("key_forbidForward", z38);
+            bundle.putBoolean("key_show_live_top_bar", z19);
+            bundle.putInt("key_item_show_type", h1Var.f183262c);
+            bundle.putBoolean("key_disable_menu_header", h1Var.f183269j);
+            bundle.putBoolean("key_disable_can_read_articel", h1Var.f183270k);
+            bundle.putBoolean("key_send_article_reading_btn_clicked", h1Var.f183271l);
+            bundle.putString("key_biz_id", h1Var.f183272m);
+            bundle.putLong("key_idx", h1Var.f183274o);
+            bundle.putLong("key_mid", h1Var.f183273n);
+            bundle.putString("key_mp_vid", h1Var.f183267h);
+            y2Var2 = y2Var;
+            try {
+                bundle.putString("key_menu_recent_read_url", (java.lang.String) ((java.util.HashMap) y2Var2.f340790a).get("interaction_url"));
+                bundle.putString("key_menu_underline_url", (java.lang.String) ((java.util.HashMap) y2Var2.f340790a).get("underline_url"));
+                bundle.putBoolean("show_forward_mp", y18);
+                bundle.putBoolean("key_mp_page_new_font", z28);
+                if (y17) {
+                    bundle.putString("key_alias", str6);
+                    bundle.putInt("key_brand_service_type", h1Var.f183281v);
+                    bundle.putBoolean("key_enable_share_image_watermark", y17);
+                    bundle.putString("key_share_image_watermark_params", str7);
+                    bundle.putInt("key_image_watermark_type", P);
+                }
+                c1Var2 = c1Var;
+                try {
+                    c1Var2.f184998y.callback(71, bundle);
+                    c1Var2.i5(y2Var2, "doCurrentMpInfo:ok", null);
+                } catch (java.lang.Exception unused) {
+                    c1Var2.i5(y2Var2, "doCurrentMpInfo:fail", null);
+                    return true;
+                }
+            } catch (java.lang.Exception unused2) {
+                c1Var2 = c1Var;
+            }
+        } catch (java.lang.Exception unused3) {
+            c1Var2 = c1Var;
+            y2Var2 = y2Var;
+        }
+        return true;
+    }
+
+    public static boolean Q3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenProductViewWithPid");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("pid");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("url");
+        java.lang.Integer valueOf = java.lang.Integer.valueOf(com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("type"), 0));
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("view_type"), 0);
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("ext_info");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_product_id", str);
+        intent.putExtra("key_source_url", str2);
+        c1Var.M6(valueOf, 8, P, str3, intent);
+        return true;
+    }
+
+    public static boolean Q4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = "";
+        if ((y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+            if (!com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184161b) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "startScanWXDevice not init");
+                c1Var.i5(y2Var, "startScanWXDevice:fail_notInit", null);
+                return true;
+            }
+            try {
+                java.lang.String y66 = c1Var.y6(y2Var);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "srcUsername(%s)", y66);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "startScanWXDevice");
+                if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                    c1Var.i5(y2Var, "startScanWXDevice:fail_UsernameError", null);
+                } else {
+                    com.tencent.mm.autogen.events.ExDeviceStartScanLanDeviceEvent exDeviceStartScanLanDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceStartScanLanDeviceEvent();
+                    exDeviceStartScanLanDeviceEvent.f54181g.f7607a = true;
+                    exDeviceStartScanLanDeviceEvent.e();
+                    com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184162c = true;
+                    c1Var.i5(y2Var, "startScanWXDevice:ok", null);
+                }
+                return true;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "startScanWXDevice failed : %s", e17.getMessage());
+                c1Var.i5(y2Var, "startScanWXDevice:fail_exception", null);
+                return true;
+            }
+        }
+        if (fp.h.c(23) && !com.tencent.mm.sdk.platformtools.n2.a()) {
+            java.lang.String str2 = android.os.Build.VERSION.RELEASE;
+            if (!str2.equalsIgnoreCase("6.0") && !str2.equalsIgnoreCase("6.0.0")) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "ScannerInThisAndroidVersionRequireGPSServiceOn");
+                c1Var.i5(y2Var, "startScanWXDevice:fail_ThisAndroidVersionRequireGPSServiceOn", null);
+                return true;
+            }
+        }
+        if (!com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "startScanWXDevice not init");
+            c1Var.i5(y2Var, "startScanWXDevice:fail_notInit", null);
+            return true;
+        }
+        try {
+            java.lang.String y67 = c1Var.y6(y2Var);
+            java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("btVersion");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "BtVersion(%s), srcUsername(%s)", str3, y67);
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y67, "startScanWXDevice");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(y67)) {
+                c1Var.i5(y2Var, "startScanWXDevice:fail_UsernameError", null);
+                return true;
+            }
+            com.tencent.mm.autogen.events.ExDeviceScanDeviceEvent exDeviceScanDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceScanDeviceEvent();
+            am.q6 q6Var = exDeviceScanDeviceEvent.f54156g;
+            q6Var.f7693b = true;
+            q6Var.f7692a = y67;
+            if ((str3 == null ? "" : str3).equals("ble")) {
+                q6Var.f7694c = 0;
+            } else {
+                if (str3 != null) {
+                    str = str3;
+                }
+                if (str.equals("bc")) {
+                    q6Var.f7694c = 1;
+                }
+            }
+            com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182103d = q6Var.f7694c;
+            exDeviceScanDeviceEvent.e();
+            if (!exDeviceScanDeviceEvent.f54157h.f7801a) {
+                c1Var.i5(y2Var, "startScanWXDevice:fail", null);
+                return true;
+            }
+            com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182104e = true;
+            c1Var.i5(y2Var, "startScanWXDevice:ok", null);
+            return true;
+        } catch (java.lang.Exception e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "startScanWXDevice failed : %s", e18.getMessage());
+            c1Var.i5(y2Var, "startScanWXDevice:fail_exception", null);
+            return true;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0235  */
+    /* JADX WARN: Removed duplicated region for block: B:15:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean R(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r26, nw4.y2 r27, com.tencent.mm.protocal.JsapiPermissionWrapper r28) {
+        /*
+            Method dump skipped, instructions count: 629
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.R(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean R0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, boolean z17) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openEmotionDetailView");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("ProductId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("searchID");
+        int O = com.tencent.mm.sdk.platformtools.t8.O(y2Var.f340790a.get("emotionScene"), 12);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "openEmotionDetailView failed product id is null.");
+            c1Var.i5(y2Var, "openEmotionDetailView", null);
+            return false;
+        }
+        qk.c0 c0Var = new qk.c0(str == null ? "" : str);
+        c0Var.f364155a = com.tencent.mm.sdk.platformtools.t8.q1(java.lang.Integer.valueOf(O));
+        c0Var.f364198g = 12;
+        c0Var.f364201j = str2 != null ? str2 : "";
+        if (c1Var.C) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "had start emoji stroe detail ui.");
+        } else {
+            com.tencent.mm.feature.emoji.api.p6 p6Var = (com.tencent.mm.feature.emoji.api.p6) i95.n0.c(com.tencent.mm.feature.emoji.api.p6.class);
+            if (p6Var == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "emoticon liteapp service not found");
+                return false;
+            }
+            ((com.tencent.mm.feature.emoji.f4) p6Var).wi(c1Var.f184975d, c0Var);
+            c1Var.C = true;
+        }
+        c1Var.i5(y2Var, "openEmotionDetailView", null);
+        if (z17) {
+            com.tencent.mm.plugin.report.service.g0 g0Var = com.tencent.mm.plugin.report.service.g0.INSTANCE;
+            ((com.tencent.mm.feature.emoji.t1) ((com.tencent.mm.feature.emoji.api.h6) i95.n0.c(com.tencent.mm.feature.emoji.api.h6.class))).getClass();
+            g0Var.d(13055, 0, str, "", "", java.lang.Integer.valueOf(f11.e.a()), str2);
+        }
+        return true;
+    }
+
+    public static boolean R1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        try {
+            java.lang.String obj = y2Var.f340790a.get("jumpUrl").toString();
+            boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+            if (obj == null) {
+                obj = "";
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpAdJump, jumpUrl=".concat(obj));
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("sns_landing_pages_ad_jumpurl", obj);
+            c1Var.f184998y.callback(151, bundle);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpVoteAdData, callback exp:" + e17.toString());
+        }
+        return false;
+    }
+
+    public static boolean R2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        java.lang.String str2;
+        java.util.Map map;
+        c1Var.getClass();
+        if (com.tencent.mm.sdk.platformtools.a0.c()) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "addDownloadApp fail, GP Version not allowed to download");
+            c1Var.i5(y2Var, "system:access_denied", null);
+            return true;
+        }
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("targetAppid");
+        java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("apk_url");
+        java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("file_md5");
+        java.lang.String str6 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_name");
+        java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("alternative_url");
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_size"), 0L);
+        java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extInfo");
+        java.lang.String str9 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("package_name");
+        java.lang.String str10 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("download_type"), 0);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str3)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "addDownloadApp fail_invalid_appid");
+            c1Var.i5(y2Var, "addDownloadApp:fail_invalid_appid", null);
+            return true;
+        }
+        boolean isTeenMode = ((qk.s6) gm0.j1.s(qk.s6.class)).isTeenMode();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "addDownloadApp, md5=%s, url=%s, appid=%s, currentUrl=%s, isTeenMode=%s", str5, str4, str3, str10, java.lang.Boolean.valueOf(isTeenMode));
+        if (isTeenMode) {
+            ((uh4.c0) i95.n0.c(uh4.c0.class)).O8(c1Var.f184975d);
+            c1Var.i5(y2Var, "addDownloadApp:cancel", null);
+            return true;
+        }
+        android.os.Bundle bundle = c1Var.f184984o;
+        if (bundle != null) {
+            int i17 = bundle.getInt("key_download_restrict", 0);
+            java.lang.String string = c1Var.f184984o.getString("key_function_id", "");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(string)) {
+                str = str7;
+                str2 = str5;
+            } else {
+                str2 = str5;
+                str = str7;
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14596, string, java.lang.Integer.valueOf(i17), 0);
+            }
+            if (i17 == 1) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "not allow to download file");
+                c1Var.i5(y2Var, "addDownloadApp:fail", null);
+                return true;
+            }
+            map = null;
+        } else {
+            str = str7;
+            str2 = str5;
+            map = null;
+        }
+        if (!com.tencent.mars.comm.NetStatusUtil.isNetworkConnected(c1Var.f184975d)) {
+            c1Var.i5(y2Var, "addDownloadApp:fail_network_not_connected", map);
+            com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.t4(c1Var));
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "addDownloadApp fail, network not ready");
+            c1Var.S6(str3, 803, "");
+            return true;
+        }
+        if (!gm0.j1.u().l()) {
+            c1Var.i5(y2Var, "addDownloadApp:fail_sdcard_not_ready", null);
+            com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.v4(c1Var));
+            c1Var.S6(str3, 804, "");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "addDownloadApp fail, sdcard not ready");
+            return true;
+        }
+        if (V > 0 && !fp.i.c(V)) {
+            ((uz.t1) ((vz.u1) i95.n0.c(vz.u1.class))).getClass();
+            if (!com.tencent.mm.plugin.downloader.model.u0.c(V)) {
+                c1Var.i5(y2Var, "addDownloadApp:fail_sdcard_has_not_enough_space", null);
+                com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.w4(c1Var));
+                c1Var.S6(str3, 804, str8);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "addDownloadApp fail, not enough space, require size = " + V);
+                return true;
+            }
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str4)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "addDownloadApp fail, url is null");
+            c1Var.i5(y2Var, "addDownloadApp:fail_invalid_url", null);
+            c1Var.S6(str3, 700, "");
+            return true;
+        }
+        com.tencent.mm.modelbase.l lVar = new com.tencent.mm.modelbase.l();
+        lVar.f70664a = new r45.f30();
+        lVar.f70665b = new r45.g30();
+        lVar.f70666c = "/cgi-bin/mmbiz-bin/check_yybmicrodownloadurl";
+        lVar.f70667d = 2643;
+        com.tencent.mm.modelbase.o a17 = lVar.a();
+        r45.f30 f30Var = (r45.f30) a17.f70710a.f70684a;
+        f30Var.f373979e = str10;
+        f30Var.f373978d = str3;
+        com.tencent.mm.modelbase.m1 e17 = com.tencent.mm.modelbase.z2.e(a17, new com.tencent.mm.plugin.webview.ui.tools.jsapi.x4(c1Var, y2Var, str6, str4, str, V, str2, str8, str3, str9, str10, P), true, null);
+        android.content.Context context = c1Var.f184975d;
+        c1Var.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f490604zq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.y4(c1Var, e17));
+        return true;
+    }
+
+    public static boolean R3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_USERNAME);
+        c1Var.d7((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE));
+        return c1Var.M5(str, jsapiPermissionWrapper);
+    }
+
+    public static boolean R4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if ((y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+            if (com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184161b) {
+                try {
+                    java.lang.String y66 = c1Var.y6(y2Var);
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "stopScanWXDevice");
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                        c1Var.i5(y2Var, "stopScanWXDevice:fail_UsernameError", null);
+                    } else {
+                        com.tencent.mm.autogen.events.ExDeviceStartScanLanDeviceEvent exDeviceStartScanLanDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceStartScanLanDeviceEvent();
+                        exDeviceStartScanLanDeviceEvent.f54181g.f7607a = false;
+                        exDeviceStartScanLanDeviceEvent.e();
+                        com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184162c = false;
+                        c1Var.i5(y2Var, "stopScanWXDevice:ok", null);
+                    }
+                } catch (java.lang.Exception e17) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "stopScanWXDevice failed : %s", e17.getMessage());
+                    c1Var.i5(y2Var, "stopScanWXDevice:fail_exception", null);
+                }
+            } else {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "stopScanWXDevice not init");
+                c1Var.i5(y2Var, "stopScanWXDevice:fail_notInit", null);
+            }
+        } else if (com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b) {
+            try {
+                java.lang.String y67 = c1Var.y6(y2Var);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y67, "stopScanWXDevice");
+                if (com.tencent.mm.sdk.platformtools.t8.K0(y67)) {
+                    c1Var.i5(y2Var, "stopScanWXDevice:fail_UsernameError", null);
+                } else {
+                    com.tencent.mm.autogen.events.ExDeviceScanDeviceEvent exDeviceScanDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceScanDeviceEvent();
+                    am.q6 q6Var = exDeviceScanDeviceEvent.f54156g;
+                    q6Var.f7693b = false;
+                    q6Var.f7692a = y67;
+                    q6Var.f7694c = com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182103d;
+                    exDeviceScanDeviceEvent.e();
+                    if (exDeviceScanDeviceEvent.f54157h.f7801a) {
+                        com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182104e = false;
+                        c1Var.i5(y2Var, "stopScanWXDevice:ok", null);
+                    } else {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "stopScanWXDevice fail");
+                        c1Var.i5(y2Var, "stopScanWXDevice:fail", null);
+                    }
+                }
+            } catch (java.lang.Exception e18) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "stopScanWXDevice failed : %s", e18.getMessage());
+                c1Var.i5(y2Var, "stopScanWXDevice:fail_exception", null);
+            }
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "stopScanWXDevice not init");
+            c1Var.i5(y2Var, "stopScanWXDevice:fail_notInit", null);
+        }
+        return true;
+    }
+
+    public static boolean S(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var) {
+        c1Var.getClass();
+        try {
+            c1Var.f184998y.te(3003, null);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doShowOptionMenu, RemoteException : %s", e17.getMessage());
+        }
+        c1Var.f184993v = false;
+        return false;
+    }
+
+    public static boolean S0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        com.tencent.mm.plugin.webview.emojistore.b Bi = com.tencent.mm.plugin.webview.modeltools.z.Bi();
+        java.util.Map map = y2Var.f340790a;
+        Bi.getClass();
+        ((com.tencent.mm.feature.emoji.t1) ((com.tencent.mm.feature.emoji.api.h6) i95.n0.c(com.tencent.mm.feature.emoji.api.h6.class))).getClass();
+        java.lang.String b17 = f11.e.b();
+        if (com.tencent.mm.sdk.platformtools.t8.K0(b17)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.emoji.EmojiStoreWebViewLogic", "load emojiStore Template Path error");
+            return false;
+        }
+        int a17 = com.tencent.mm.plugin.webview.emojistore.b.a(map, "type", 0);
+        java.lang.String b18 = com.tencent.mm.plugin.webview.emojistore.b.b(map, "pageName");
+        java.lang.String b19 = com.tencent.mm.plugin.webview.emojistore.b.b(map, "keyword");
+        int a18 = com.tencent.mm.plugin.webview.emojistore.b.a(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("hardcode_jspermission", com.tencent.mm.protocal.JsapiPermissionWrapper.f192178h);
+        intent.putExtra("hardcode_general_ctrl", com.tencent.mm.protocal.GeneralControlWrapper.f192175e);
+        intent.putExtra("neverGetA8Key", true);
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("file://");
+        sb6.append(b17);
+        sb6.append("/");
+        sb6.append(b18);
+        sb6.append("?type=");
+        sb6.append(a17);
+        sb6.append("&keyword=");
+        sb6.append(b19);
+        sb6.append("&scene=");
+        sb6.append(a18);
+        sb6.append("&lang=");
+        sb6.append(com.tencent.mm.sdk.platformtools.m2.f(com.tencent.mm.sdk.platformtools.x2.f193071a));
+        sb6.append("&clientType=1&version=");
+        ((com.tencent.mm.feature.emoji.t1) ((com.tencent.mm.feature.emoji.api.h6) i95.n0.c(com.tencent.mm.feature.emoji.api.h6.class))).getClass();
+        sb6.append(f11.e.a());
+        intent.putExtra("rawUrl", sb6.toString());
+        intent.putExtra("keyword", b19);
+        intent.putExtra("type", a17);
+        intent.putExtra("sence", a18);
+        j45.l.j(com.tencent.mm.sdk.platformtools.x2.f193071a, "webview", ".ui.tools.emojistore.EmojiStoreSearchWebViewUI", intent, null);
+        com.tencent.mm.plugin.report.service.g0 g0Var = com.tencent.mm.plugin.report.service.g0.INSTANCE;
+        java.lang.Integer valueOf = java.lang.Integer.valueOf(a17);
+        ((com.tencent.mm.feature.emoji.t1) ((com.tencent.mm.feature.emoji.api.h6) i95.n0.c(com.tencent.mm.feature.emoji.api.h6.class))).getClass();
+        g0Var.d(13055, 1, "", "", valueOf, java.lang.Integer.valueOf(f11.e.a()), 0L);
+        com.tencent.mm.autogen.events.PreEmotionSearchEvent preEmotionSearchEvent = new com.tencent.mm.autogen.events.PreEmotionSearchEvent();
+        am.po poVar = preEmotionSearchEvent.f54622g;
+        poVar.f7642b = a17;
+        poVar.f7641a = b19;
+        poVar.f7643c = "";
+        preEmotionSearchEvent.e();
+        return true;
+    }
+
+    public static boolean S1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        try {
+            java.util.Map map = y2Var.f340790a;
+            org.json.JSONObject jSONObject = new org.json.JSONObject();
+            try {
+                for (java.lang.String str : map.keySet()) {
+                    jSONObject.put(str, map.get(str));
+                }
+            } catch (java.lang.Exception unused) {
+            }
+            java.lang.String jSONObject2 = jSONObject.toString();
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpAdH5Func, params=" + jSONObject2);
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("callbackId", y2Var.f341013c);
+            bundle.putString("sns_landing_pages_h5_params", jSONObject2);
+            c1Var.f184998y.callback(152, bundle);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpAdH5Func, callback exp:" + e17.toString());
+        }
+        return false;
+    }
+
+    public static boolean S2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doFaceDetectForPay");
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        int P = y2Var.f340790a.containsKey(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE) ? com.tencent.mm.sdk.platformtools.t8.P(y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE).toString(), 0) : 0;
+        java.lang.String obj = y2Var.f340790a.containsKey("package") ? y2Var.f340790a.get("package").toString() : null;
+        java.lang.String obj2 = y2Var.f340790a.containsKey("package_sign") ? y2Var.f340790a.get("package_sign").toString() : null;
+        java.lang.String obj3 = y2Var.f340790a.containsKey("other_verify_title") ? y2Var.f340790a.get("other_verify_title").toString() : null;
+        java.lang.String obj4 = y2Var.f340790a.containsKey("other_verify_title_front") ? y2Var.f340790a.get("other_verify_title_front").toString() : null;
+        java.lang.String obj5 = y2Var.f340790a.containsKey("need_frontpage") ? y2Var.f340790a.get("need_frontpage").toString() : null;
+        java.lang.String obj6 = y2Var.f340790a.containsKey("face_verify_title") ? y2Var.f340790a.get("face_verify_title").toString() : null;
+        boolean y17 = y2Var.f340790a.containsKey("useHttp") ? com.tencent.mm.sdk.platformtools.t8.y(y2Var.f340790a.get("useHttp").toString(), false) : false;
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.idkeyStat(917L, 34L, 1L, false);
+        com.tencent.mm.autogen.events.RequestFaceVerifyForPayEvent requestFaceVerifyForPayEvent = new com.tencent.mm.autogen.events.RequestFaceVerifyForPayEvent();
+        am.jr jrVar = requestFaceVerifyForPayEvent.f54694g;
+        jrVar.f7067a = P;
+        jrVar.f7068b = obj;
+        jrVar.f7069c = obj2;
+        jrVar.f7070d = obj3;
+        jrVar.f7071e = obj4;
+        jrVar.f7072f = obj5;
+        jrVar.f7074h = 63;
+        jrVar.f7073g = obj6;
+        jrVar.f7075i = y17;
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof android.app.Activity) {
+            jrVar.f7076j = (android.app.Activity) context;
+        }
+        requestFaceVerifyForPayEvent.e();
+        am.kr krVar = requestFaceVerifyForPayEvent.f54695h;
+        if (krVar.f7177a) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(null);
+        c1Var.i5(y2Var, "faceVerifyForPay:fail", nw4.a.a(krVar.f7178b));
+        return true;
+    }
+
+    public static boolean S3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "dogetBrandWCPayBindCardRequest JSOAUTH");
+        if (!(c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        walletJsapiData.f192143u = 4;
+        ((ng0.q) ((og0.o) i95.n0.c(og0.o.class))).Ai((com.tencent.mm.ui.MMActivity) c1Var.f184975d, walletJsapiData, 7, c1Var);
+        return true;
+    }
+
+    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:31:0x00c8 -> B:27:0x0172). Please report as a decompilation issue!!! */
+    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:54:0x0160 -> B:50:0x0172). Please report as a decompilation issue!!! */
+    public static boolean S4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if ((y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+            if (!com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184161b) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "connectWXDevice not init");
+                c1Var.i5(y2Var, "connectWXDevice:fail_notInit", null);
+                return true;
+            }
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("deviceId");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doConnectWXDevice, deviceId : %s", str);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceId is null");
+                c1Var.i5(y2Var, "connectWXDevice:fail_noDeviceId", null);
+                return true;
+            }
+            java.lang.String y66 = c1Var.y6(y2Var);
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "connectWXDevice");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                c1Var.i5(y2Var, "connectWXDevice:fail_UsernameError", null);
+                return true;
+            }
+            java.util.HashMap hashMap = c1Var.f184990s;
+            if (hashMap != null && !hashMap.containsKey(y66)) {
+                c1Var.f184990s.put(y66, str);
+            }
+            try {
+                com.tencent.mm.autogen.events.ExDeviceConnectLanDeviceEvent exDeviceConnectLanDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceConnectLanDeviceEvent();
+                am.l5 l5Var = exDeviceConnectLanDeviceEvent.f54125g;
+                l5Var.f7226c = true;
+                l5Var.f7225b = y66;
+                l5Var.f7224a = str;
+                exDeviceConnectLanDeviceEvent.e();
+                if (exDeviceConnectLanDeviceEvent.f54126h.f7320a) {
+                    c1Var.i5(y2Var, "connectWXDevice:ok", null);
+                } else {
+                    c1Var.i5(y2Var, "connectWXDevice:fail", null);
+                }
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "connectWXDevice failed : %s", e17.getMessage());
+                c1Var.i5(y2Var, "connectWXDevice:fail_exception", null);
+            }
+            return true;
+        }
+        if (!com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "connectWXDevice not init");
+            c1Var.i5(y2Var, "connectWXDevice:fail_notInit", null);
+            return true;
+        }
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("deviceId");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doConnectWXDevice, deviceId : %s", str2);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceId is null");
+            c1Var.i5(y2Var, "connectWXDevice:fail_noDeviceId", null);
+            return true;
+        }
+        java.lang.String y67 = c1Var.y6(y2Var);
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y67, "connectWXDevice");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(y67)) {
+            c1Var.i5(y2Var, "connectWXDevice:fail_UsernameError", null);
+            return true;
+        }
+        java.util.HashMap hashMap2 = c1Var.f184989r;
+        if (hashMap2 != null && !hashMap2.containsValue(str2)) {
+            c1Var.f184989r.put(y67, str2);
+        }
+        try {
+            com.tencent.mm.autogen.events.ExDeviceConnectDeviceEvent exDeviceConnectDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceConnectDeviceEvent();
+            am.j5 j5Var = exDeviceConnectDeviceEvent.f54123g;
+            j5Var.f7012c = true;
+            j5Var.f7010a = y67;
+            j5Var.f7011b = str2;
+            exDeviceConnectDeviceEvent.e();
+            if (exDeviceConnectDeviceEvent.f54124h.f7128a) {
+                c1Var.i5(y2Var, "connectWXDevice:ok", null);
+            } else {
+                c1Var.i5(y2Var, "connectWXDevice:fail", null);
+            }
+        } catch (java.lang.Exception e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "connectWXDevice failed : %s", e18.getMessage());
+            c1Var.i5(y2Var, "connectWXDevice:fail_exception", null);
+        }
+        return true;
+    }
+
+    public static boolean T(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "setSearchInputWord %s", map);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "word");
+        boolean c17 = com.tencent.mm.plugin.websearch.l2.c(map, "isInputChange", false);
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(map, "custom");
+        java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(map, "tagList");
+        boolean c18 = com.tencent.mm.plugin.websearch.l2.c(map, "cache", false);
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(map.get("webview_instance_id"), -1);
+        ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).getClass();
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 a17 = com.tencent.mm.plugin.webview.ui.tools.jsapi.k8.a(o17);
+        a17.getClass();
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("fts_key_new_query", f17);
+        bundle.putString("fts_key_custom_query", f18);
+        bundle.putBoolean("fts_key_need_keyboard", c17);
+        bundle.putString("fts_key_tag_list", f19);
+        bundle.putBoolean("fts_key_cache", c18);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = a17.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(122, bundle);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "onFTSSearchQueryChange exception" + e17.getMessage());
+        }
+        return false;
+    }
+
+    public static boolean T0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        com.tencent.mm.plugin.webview.modeltools.z.Bi().c(y2Var.f340790a);
+        return false;
+    }
+
+    public static boolean T1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("selected_user_name");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("list_type", 15);
+        intent.putExtra("already_select_contact", str);
+        intent.putExtra("titile", j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f489934fx));
+        intent.putExtra("list_attr", com.tencent.mm.ui.contact.i5.g(16384, 1, 4, 1048576, 268435456));
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            j45.l.w((com.tencent.mm.ui.MMActivity) context, ".ui.contact.SelectContactUI", intent, 54, c1Var);
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSelectContact invalid context");
+            c1Var.i5(y2Var, "selectContact:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean T2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appid");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("appId", str);
+        intent.putExtra("view_task", true);
+        intent.addFlags(67108864);
+        ((l02.q) ((m02.s) i95.n0.c(m02.s.class))).Ri(c1Var.f184975d, intent, new com.tencent.mm.plugin.webview.ui.tools.jsapi.i3(c1Var, y2Var));
+        return true;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x00c0, code lost:
+    
+        if (r7 != false) goto L25;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean T3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r6, nw4.y2 r7, com.tencent.mm.protocal.JsapiPermissionWrapper r8) {
+        /*
+            boolean r8 = r6.f184992u
+            r0 = 1
+            java.lang.String r1 = "MicroMsg.MsgHandler"
+            if (r8 == 0) goto L1c
+            com.tencent.mm.plugin.webview.modeltools.z r8 = com.tencent.mm.plugin.webview.modeltools.z.Ai()
+            boolean r8 = r8.f183375n
+            if (r8 != 0) goto L1c
+            java.lang.String r8 = "geo_location:fail_background"
+            r2 = 0
+            r6.i5(r7, r8, r2)
+            java.lang.String r6 = "doGeoLocation fail inBackGround"
+            com.tencent.mars.xlog.Log.i(r1, r6)
+            goto Lc6
+        L1c:
+            java.lang.Class<tb0.j> r8 = tb0.j.class
+            i95.m r8 = i95.n0.c(r8)
+            tb0.j r8 = (tb0.j) r8
+            android.content.Context r2 = r6.f184975d
+            sb0.f r8 = (sb0.f) r8
+            r8.getClass()
+            java.lang.String r8 = "android.permission.ACCESS_FINE_LOCATION"
+            boolean r2 = j35.u.d(r2, r8, r0)
+            java.lang.Boolean r3 = java.lang.Boolean.valueOf(r2)
+            java.lang.Object[] r3 = new java.lang.Object[]{r3}
+            java.lang.String r4 = "location perm: %s"
+            com.tencent.mars.xlog.Log.i(r1, r4, r3)
+            if (r2 != 0) goto L51
+            android.content.Context r7 = r6.f184975d
+            com.tencent.mm.plugin.webview.stub.z0 r1 = r6.f184998y
+            java.lang.String[] r8 = new java.lang.String[]{r8}
+            r2 = 75
+            int r6 = r6.B
+            com.tencent.mm.plugin.webview.stub.WebViewStubTempUI.T6(r7, r1, r8, r2, r6)
+            goto Lc6
+        L51:
+            java.util.Map r7 = r7.f340790a
+            java.lang.String r8 = "liteAppBusinessScene"
+            java.lang.Object r7 = r7.get(r8)
+            java.lang.String r7 = (java.lang.String) r7
+            boolean r8 = com.tencent.mm.sdk.platformtools.t8.f192989a
+            if (r7 != 0) goto L61
+            java.lang.String r7 = ""
+        L61:
+            java.lang.String r8 = "doChooseVideo liteapp business scene:%s"
+            java.lang.Object[] r2 = new java.lang.Object[]{r7}
+            com.tencent.mars.xlog.Log.i(r1, r8, r2)
+            boolean r8 = r7.isEmpty()
+            if (r8 != 0) goto Lc3
+            java.lang.Class<d85.m0> r8 = d85.m0.class
+            i95.m r2 = i95.n0.c(r8)
+            d85.m0 r2 = (d85.m0) r2
+            d85.d1 r2 = (d85.d1) r2
+            d85.f0 r7 = r2.Ai(r7)
+            if (r7 != 0) goto L86
+            java.lang.String r7 = "business2enum return null"
+            com.tencent.mars.xlog.Log.i(r1, r7)
+            goto Lb8
+        L86:
+            i95.m r2 = i95.n0.c(r8)
+            d85.m0 r2 = (d85.m0) r2
+            d85.f0 r3 = d85.f0.S
+            d85.d1 r2 = (d85.d1) r2
+            r2.oj(r3)
+            i95.m r2 = i95.n0.c(r8)
+            d85.m0 r2 = (d85.m0) r2
+            d85.g0 r4 = d85.g0.LOCAION
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.i5 r5 = new com.tencent.mm.plugin.webview.ui.tools.jsapi.i5
+            r5.<init>(r6)
+            d85.d1 r2 = (d85.d1) r2
+            boolean r7 = r2.Di(r4, r7, r5)
+            if (r7 != 0) goto Lba
+            java.lang.String r7 = "checkAndShowPermissionDialog return false, means business was already permitted, do not hava callback!"
+            com.tencent.mars.xlog.Log.i(r1, r7)
+            i95.m r7 = i95.n0.c(r8)
+            d85.m0 r7 = (d85.m0) r7
+            d85.d1 r7 = (d85.d1) r7
+            r7.pj(r3)
+        Lb8:
+            r7 = r0
+            goto Lc0
+        Lba:
+            java.lang.String r7 = "checkAndShowPermissionDialog return true, means business is no permitted, need to wait callback"
+            com.tencent.mars.xlog.Log.i(r1, r7)
+            r7 = 0
+        Lc0:
+            if (r7 != 0) goto Lc3
+            goto Lc6
+        Lc3:
+            r6.E5()
+        Lc6:
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.T3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean T4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if ((y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+            if (!com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184161b) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "disconnectWXDevice  not init");
+                c1Var.i5(y2Var, "disconnectWXDevice:fail_notInit", null);
+                return true;
+            }
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("deviceId");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doDisconnectWXDevice, deviceId : %s", str);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceId is null");
+                c1Var.i5(y2Var, "disconnectWXDevice:fail_noDeviceId", null);
+                return true;
+            }
+            java.lang.String y66 = c1Var.y6(y2Var);
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "disconnectWXDevice");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                c1Var.i5(y2Var, "disconnectWXDevice:fail_UsernameError", null);
+                return true;
+            }
+            try {
+                com.tencent.mm.autogen.events.ExDeviceConnectLanDeviceEvent exDeviceConnectLanDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceConnectLanDeviceEvent();
+                am.l5 l5Var = exDeviceConnectLanDeviceEvent.f54125g;
+                l5Var.f7226c = false;
+                l5Var.f7225b = y66;
+                l5Var.f7224a = str;
+                exDeviceConnectLanDeviceEvent.e();
+                if (exDeviceConnectLanDeviceEvent.f54126h.f7320a) {
+                    c1Var.i5(y2Var, "disconnectWXDevice:ok", null);
+                    java.util.HashMap hashMap = c1Var.f184990s;
+                    if (hashMap != null && hashMap.containsKey(y66)) {
+                        c1Var.f184990s.remove(y66);
+                    }
+                } else {
+                    c1Var.i5(y2Var, "disconnectWXDevice:fail", null);
+                }
+                return true;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "disconnectWXDevice failed : %s", e17.getMessage());
+                c1Var.i5(y2Var, "disconnectWXDevice:fail_exception", null);
+                return true;
+            }
+        }
+        if (!com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "disconnectWXDevice  not init");
+            c1Var.i5(y2Var, "disconnectWXDevice:fail_notInit", null);
+            return true;
+        }
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("deviceId");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doDisconnectWXDevice, deviceId : %s", str2);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceId is null");
+            c1Var.i5(y2Var, "disconnectWXDevice:fail_noDeviceId", null);
+            return true;
+        }
+        java.lang.String y67 = c1Var.y6(y2Var);
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y67, "disconnectWXDevice");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(y67)) {
+            c1Var.i5(y2Var, "disconnectWXDevice:fail_UsernameError", null);
+            return true;
+        }
+        try {
+            com.tencent.mm.autogen.events.ExDeviceConnectDeviceEvent exDeviceConnectDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceConnectDeviceEvent();
+            am.j5 j5Var = exDeviceConnectDeviceEvent.f54123g;
+            j5Var.f7012c = false;
+            j5Var.f7010a = y67;
+            j5Var.f7011b = str2;
+            exDeviceConnectDeviceEvent.e();
+            if (exDeviceConnectDeviceEvent.f54124h.f7128a) {
+                c1Var.i5(y2Var, "disconnectWXDevice:ok", null);
+                java.util.HashMap hashMap2 = c1Var.f184989r;
+                if (hashMap2 != null && hashMap2.containsKey(y67)) {
+                    c1Var.f184989r.remove(y67);
+                }
+            } else {
+                c1Var.i5(y2Var, "disconnectWXDevice:fail", null);
+            }
+            return true;
+        } catch (java.lang.Exception e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "disconnectWXDevice failed : %s", e18.getMessage());
+            c1Var.i5(y2Var, "disconnectWXDevice:fail_exception", null);
+            return true;
+        }
+    }
+
+    public static boolean U(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).a(y2Var.f340790a);
+        return false;
+    }
+
+    public static boolean U0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        com.tencent.mm.plugin.webview.emojistore.b Bi = com.tencent.mm.plugin.webview.modeltools.z.Bi();
+        java.util.Map map = y2Var.f340790a;
+        Bi.getClass();
+        java.lang.String b17 = com.tencent.mm.plugin.webview.emojistore.b.b(map, "urlString");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("rawUrl", b17);
+        j45.l.j(com.tencent.mm.sdk.platformtools.x2.f193071a, "webview", ".ui.tools.WebViewUI", intent, null);
+        return false;
+    }
+
+    public static boolean U1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("phoneNumber");
+        if (android.text.TextUtils.isEmpty(str)) {
+            c1Var.i5(y2Var, "makePhoneCall:fail", null);
+            return true;
+        }
+        java.lang.String string = j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.bd7);
+        java.lang.String string2 = j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f490347sg);
+        android.app.ProgressDialog progressDialog = c1Var.f184979h;
+        if (progressDialog != null) {
+            progressDialog.dismiss();
+            c1Var.f184979h = null;
+        }
+        db5.e1.A(c1Var.f184975d, str, "", string, string2, new com.tencent.mm.plugin.webview.ui.tools.jsapi.f6(c1Var, str, y2Var), new com.tencent.mm.plugin.webview.ui.tools.jsapi.v6(c1Var, y2Var)).setOnDismissListener(new com.tencent.mm.plugin.webview.ui.tools.jsapi.r7(c1Var, y2Var));
+        return true;
+    }
+
+    public static boolean U2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("pkgIdList");
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            try {
+                org.json.JSONArray jSONArray = new org.json.JSONArray(str);
+                if (jSONArray.length() > 0) {
+                    java.util.ArrayList arrayList = new java.util.ArrayList();
+                    for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                        arrayList.add(jSONArray.optString(i17));
+                    }
+                    if (!com.tencent.mm.sdk.platformtools.t8.L0(arrayList)) {
+                        com.tencent.mm.autogen.events.WepkgNotifyEvent wepkgNotifyEvent = new com.tencent.mm.autogen.events.WepkgNotifyEvent();
+                        am.t20 t20Var = wepkgNotifyEvent.f54992g;
+                        t20Var.f7969a = 8;
+                        t20Var.f7975g = 0;
+                        t20Var.f7976h = arrayList;
+                        wepkgNotifyEvent.e();
+                        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+                        return true;
+                    }
+                }
+            } catch (org.json.JSONException unused) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "data is not json");
+            }
+        }
+        c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+        return false;
+    }
+
+    public static boolean U3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        if (!(c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            c1Var.i5(y2Var, "jump_to_biz_profile:fail", null);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("tousername");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extmsg");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("toUserName", str);
+        intent.putExtra("extInfo", str2);
+        intent.putExtra("fromURL", str3);
+        intent.putExtra(ya.b.SOURCE, 2);
+        o25.t1 t1Var = dw4.a.f244297a;
+        com.tencent.mm.ui.MMActivity mMActivity = (com.tencent.mm.ui.MMActivity) c1Var.f184975d;
+        ((com.tencent.mm.app.y7) t1Var).getClass();
+        if (mMActivity == null) {
+            return true;
+        }
+        intent.setClassName(mMActivity, "com.tencent.mm.ui.CheckCanSubscribeBizUI");
+        mMActivity.mmStartActivityForResult((com.tencent.mm.ui.da) c1Var, intent, 8);
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:27:0x012c  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x012d  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean U4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r16, nw4.y2 r17, com.tencent.mm.protocal.JsapiPermissionWrapper r18) {
+        /*
+            Method dump skipped, instructions count: 443
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.U4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean V(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenWeAppPage %s", y2Var.f340790a);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "userName");
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "relativeURL");
+        if (f18.contains("render_data")) {
+            try {
+                org.json.JSONObject jSONObject = new org.json.JSONObject(android.net.Uri.parse(f18).getQueryParameter("widgetData"));
+                jSONObject.remove("render_data");
+                f18 = f18.replaceAll("(widgetData=.*&)|(widgetData=.*$)", "&") + "&widgetData=" + jSONObject.toString();
+            } catch (org.json.JSONException e17) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            }
+        }
+        int e18 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "appVersion", 0);
+        java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "searchId");
+        java.lang.String f27 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "docId");
+        int e19 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "position", 1);
+        int e27 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 1000);
+        int e28 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "debugMode", 0);
+        java.lang.String f28 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "cookie");
+        java.lang.String f29 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "appId");
+        int e29 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "startWeAppScene", 0);
+        org.json.JSONObject jSONObject2 = new org.json.JSONObject();
+        try {
+            jSONObject2.put("cookies", f28);
+        } catch (java.lang.Exception unused) {
+        }
+        if (e28 < 0) {
+            e28 = 0;
+        }
+        if (((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).f181425e != null) {
+            e28 = 1;
+        }
+        com.tencent.mm.autogen.events.StartAppBrandUIFromOuterEvent startAppBrandUIFromOuterEvent = new com.tencent.mm.autogen.events.StartAppBrandUIFromOuterEvent();
+        android.content.Context context = c1Var.f184975d;
+        am.nx nxVar = startAppBrandUIFromOuterEvent.f54857g;
+        nxVar.f7471f = context;
+        nxVar.f7466a = f17;
+        nxVar.f7467b = f18;
+        nxVar.f7474i = e18;
+        nxVar.f7491z = "sos";
+        nxVar.A = jSONObject2.toString();
+        if (com.tencent.mm.sdk.platformtools.t8.K0(f29)) {
+            nxVar.f7490y = f17;
+        } else {
+            nxVar.f7490y = f29;
+        }
+        nxVar.f7468c = e28;
+        java.lang.String f37 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "adUxInfo");
+        nxVar.B = f37;
+        if (!android.text.TextUtils.isEmpty(f37)) {
+            qp3.a.c("WebViewUI", "openWeAppPage", nxVar.B, ya.a.SEARCH);
+        }
+        if (e29 > 0) {
+            nxVar.f7469d = e29;
+        } else if (e27 == 201 || e27 == 14 || e27 == 22) {
+            nxVar.f7469d = 1006;
+        } else if (e27 == 3) {
+            nxVar.f7469d = 1005;
+        } else if (e27 == 16) {
+            nxVar.f7469d = 1042;
+        } else if (e27 == 20 || e27 == 34 || e27 == 67 || e27 == 17 || e27 == 100) {
+            nxVar.f7469d = 1053;
+        } else if (e27 == 42 || e27 == 52) {
+            nxVar.f7469d = 1106;
+        } else {
+            nxVar.f7469d = 1000;
+        }
+        nxVar.f7470e = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "statSessionId") + ":" + com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "statKeywordId") + ":" + f19 + ":" + f27 + ":" + e19 + ":" + com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "subScene");
+        startAppBrandUIFromOuterEvent.e();
+        com.tencent.mm.modelbase.l lVar = new com.tencent.mm.modelbase.l();
+        lVar.f70664a = new r45.l77();
+        lVar.f70665b = new r45.m77();
+        lVar.f70666c = "/cgi-bin/mmux-bin/weappsearchadclick";
+        lVar.f70667d = 1873;
+        com.tencent.mm.modelbase.o a17 = lVar.a();
+        r45.l77 l77Var = (r45.l77) a17.f70710a.f70684a;
+        l77Var.f379208d = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "statSessionId");
+        l77Var.f379209e = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "statKeywordId");
+        l77Var.f379210f = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "searchId");
+        l77Var.f379211g = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "docId");
+        l77Var.f379212h = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "position", 1);
+        l77Var.f379213i = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "userName");
+        l77Var.f379214m = "" + com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "appVersion", 0);
+        l77Var.f379215n = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "adBuffer");
+        l77Var.f379216o = e27;
+        l77Var.f379217p = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "clickExtInfo");
+        m21.x xVar = new m21.x();
+        xVar.a("20StatSessionId", l77Var.f379208d + ",");
+        xVar.a("21KeywordId", l77Var.f379209e + ",");
+        xVar.a("22SearchId", l77Var.f379210f + ",");
+        xVar.a("23DocId", l77Var.f379211g + ",");
+        xVar.a("24Pos", l77Var.f379212h + ",");
+        xVar.a("25AppUserName", l77Var.f379213i + ",");
+        xVar.a("26AppVersion", l77Var.f379214m + ",");
+        xVar.a("27AdBuffer", l77Var.f379215n + ",");
+        xVar.a("28AdClickBuffer", l77Var.f379217p + ",");
+        xVar.a("29scene", e27 + ",");
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("doClickReportScene oreh");
+        sb6.append(xVar.c());
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", sb6.toString());
+        com.tencent.mm.modelbase.z2.d(a17, new com.tencent.mm.plugin.webview.ui.tools.jsapi.c3(c1Var, xVar), false);
+        c1Var.i5(y2Var, "openWeAppPage:ok", null);
+        return true;
+    }
+
+    public static boolean V0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doJumpToInstallUrl");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("url");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "jumpurl is null or nil");
+            c1Var.f184993v = false;
+        } else {
+            android.content.Intent intent = new android.content.Intent("android.intent.action.VIEW", android.net.Uri.parse(str));
+            intent.addFlags(268435456);
+            if (com.tencent.mm.sdk.platformtools.t8.I0(c1Var.f184975d, intent, true, false)) {
+                try {
+                    android.content.Context context = c1Var.f184975d;
+                    java.util.ArrayList arrayList = new java.util.ArrayList();
+                    arrayList.add(intent);
+                    java.util.Collections.reverse(arrayList);
+                    yj0.a.d(context, arrayList.toArray(), "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doJumpToInstallUrl", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+                    context.startActivity((android.content.Intent) arrayList.get(0));
+                    yj0.a.f(context, "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doJumpToInstallUrl", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "Undefined", "startActivity", "(Landroid/content/Intent;)V");
+                } catch (java.lang.Exception e17) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+                }
+            }
+            c1Var.f184993v = false;
+        }
+        return false;
+    }
+
+    public static boolean V1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appid");
+        if (str == null) {
+            str = "";
+        }
+        intent.putExtra("appId", str);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", walletJsapiData.f192140r);
+        intent.putExtra("reset_pwd_token", walletJsapiData.B);
+        intent.putExtra("pay_channel", walletJsapiData.f192144v);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.n(c1Var.f184975d, "wallet", ".pwd.ui.WalletResetPwdAdapterUI", intent, 55);
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:14:0x006a  */
+    /* JADX WARN: Removed duplicated region for block: B:6:0x004a  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean V2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r7, nw4.y2 r8) {
+        /*
+            r7.getClass()
+            java.util.Map r0 = r8.f340790a
+            java.lang.String r1 = "uuid"
+            java.lang.Object r0 = r0.get(r1)
+            java.lang.String r0 = (java.lang.String) r0
+            java.util.Map r1 = r8.f340790a
+            java.lang.String r2 = "req_data"
+            java.lang.Object r1 = r1.get(r2)
+            java.lang.String r1 = (java.lang.String) r1
+            boolean r2 = com.tencent.mm.sdk.platformtools.t8.K0(r1)
+            r3 = 0
+            java.lang.String r4 = "MicroMsg.MsgHandler"
+            if (r2 != 0) goto L38
+            cl0.g r2 = new cl0.g     // Catch: java.lang.Exception -> L2e
+            r2.<init>(r1)     // Catch: java.lang.Exception -> L2e
+            java.lang.String r5 = "disableAutoCloseWebview"
+            boolean r2 = r2.optBoolean(r5, r3)     // Catch: java.lang.Exception -> L2e
+            goto L39
+        L2e:
+            r2 = move-exception
+            java.lang.String r5 = "doPrivateOpenWeappFunctionalPage, parse failed e = %s, uuid = %s, json = %s"
+            java.lang.Object[] r2 = new java.lang.Object[]{r2, r0, r1}
+            com.tencent.mars.xlog.Log.e(r4, r5, r2)
+        L38:
+            r2 = r3
+        L39:
+            java.lang.Boolean r5 = java.lang.Boolean.valueOf(r2)
+            java.lang.Object[] r5 = new java.lang.Object[]{r5}
+            java.lang.String r6 = "disableAutoCloseWebview:%b"
+            com.tencent.mars.xlog.Log.i(r4, r6, r5)
+            java.lang.Class<com.tencent.mm.plugin.appbrand.service.r5> r5 = com.tencent.mm.plugin.appbrand.service.r5.class
+            if (r2 != 0) goto L6a
+            i95.m r8 = i95.n0.c(r5)
+            com.tencent.mm.plugin.appbrand.service.r5 r8 = (com.tencent.mm.plugin.appbrand.service.r5) r8
+            r2 = 0
+            r8.Ug(r0, r1, r2)
+            com.tencent.mm.plugin.webview.stub.z0 r7 = r7.f184998y     // Catch: java.lang.Exception -> L5f
+            android.os.Bundle r8 = android.os.Bundle.EMPTY     // Catch: java.lang.Exception -> L5f
+            r0 = 100000(0x186a0, float:1.4013E-40)
+            r7.i(r0, r8)     // Catch: java.lang.Exception -> L5f
+            goto L78
+        L5f:
+            r7 = move-exception
+            java.lang.String r8 = "doPrivateOpenWeappFunctionalPage, AC_FINISH_ON_RESUME e = %s"
+            java.lang.Object[] r7 = new java.lang.Object[]{r7}
+            com.tencent.mars.xlog.Log.e(r4, r8, r7)
+            goto L78
+        L6a:
+            i95.m r2 = i95.n0.c(r5)
+            com.tencent.mm.plugin.appbrand.service.r5 r2 = (com.tencent.mm.plugin.appbrand.service.r5) r2
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.k3 r4 = new com.tencent.mm.plugin.webview.ui.tools.jsapi.k3
+            r4.<init>(r7, r8)
+            r2.Ug(r0, r1, r4)
+        L78:
+            return r3
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.V2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean V3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        int i17;
+        java.util.Map map;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2 = c1Var;
+        c1Var.getClass();
+        try {
+            float L = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) y2Var.f340790a.get("latitude"), 0.0f);
+            float L2 = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) y2Var.f340790a.get("longitude"), 0.0f);
+            java.lang.String P6 = P6((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_TRACK_NAME));
+            java.lang.String P62 = P6((java.lang.String) y2Var.f340790a.get("address"));
+            java.lang.String P63 = P6((java.lang.String) y2Var.f340790a.get("infoUrl"));
+            try {
+                i17 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("scale"), 0);
+            } catch (java.lang.Exception unused) {
+                i17 = 0;
+            }
+            android.content.Intent intent = new android.content.Intent();
+            try {
+                if (com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) c1Var2.f184976e.f340790a.get("webview_scene"), 0) == 25) {
+                    intent.putExtra("map_view_type", 9);
+                    intent.putExtra("kPoi_url", P63);
+                } else {
+                    intent.putExtra("map_view_type", 10);
+                }
+                intent.putExtra("kwebmap_slat", L);
+                intent.putExtra("kwebmap_lng", L2);
+                if (i17 > 0) {
+                    intent.putExtra("kwebmap_scale", i17);
+                }
+                if (y2Var.f340790a.containsKey("poiId")) {
+                    intent.putExtra("kPoiid", P6((java.lang.String) y2Var.f340790a.get("poiId")));
+                }
+                intent.putExtra("kPoiName", P6);
+                intent.putExtra("Kwebmap_locaion", P62);
+                if (y2Var.f340790a.containsKey("fromMpItem")) {
+                    try {
+                        java.lang.Object obj = y2Var.f340790a.get("fromMpItem");
+                        if (obj instanceof java.lang.String) {
+                            org.json.JSONObject jSONObject = new org.json.JSONObject((java.lang.String) obj);
+                            if (jSONObject.has("bizuin") && jSONObject.has("appmsgid") && jSONObject.has("idx")) {
+                                int i18 = jSONObject.getInt("bizuin");
+                                int i19 = jSONObject.getInt("appmsgid");
+                                int i27 = jSONObject.getInt("idx");
+                                intent.putExtra("key_from_mp_biz_uin", i18);
+                                intent.putExtra("key_from_mp_appmsg_id", i19);
+                                intent.putExtra("key_from_mp_idx", i27);
+                            }
+                        }
+                    } catch (java.lang.Exception e17) {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "error for fromMpItem params. error:", e17);
+                    }
+                }
+                if (y2Var.f340790a.containsKey("showHalfScreen") && com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) y2Var.f340790a.get("showHalfScreen"), false)) {
+                    intent.putExtra("key_from_type", zy2.o9.f477519g);
+                    ((zy2.b6) i95.n0.c(zy2.b6.class)).getClass();
+                    c1Var2 = c1Var;
+                    com.tencent.mm.plugin.finder.service.p3.f126174a.a(c1Var2.f184975d, intent);
+                    map = null;
+                } else {
+                    c1Var2 = c1Var;
+                    map = null;
+                    j45.l.j(c1Var2.f184975d, ya.b.LOCATION, ".ui.RedirectUI", intent, null);
+                }
+                c1Var2.i5(c1Var2.f184976e, "open_location:ok", map);
+                return true;
+            } catch (java.lang.Exception unused2) {
+                c1Var2 = c1Var;
+                c1Var2.i5(c1Var2.f184976e, "open_location:invalid_coordinate", null);
+                return true;
+            }
+        } catch (java.lang.Exception unused3) {
+        }
+    }
+
+    public static boolean V4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if (com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b || com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184161b) {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("deviceId");
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("type");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetWXDeviceTicket, deviceId : %s, type : %s", str, str2);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceId or type is null");
+                c1Var.i5(y2Var, "getWXDeviceTicket:fail_wrongParams", null);
+            } else {
+                try {
+                    java.lang.String y66 = c1Var.y6(y2Var);
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "getWXDeviceTicket");
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                        c1Var.i5(y2Var, "getWXDeviceTicket:fail_UsernameError", null);
+                    } else {
+                        com.tencent.mm.autogen.events.ExDeviceGetTicketEvent exDeviceGetTicketEvent = new com.tencent.mm.autogen.events.ExDeviceGetTicketEvent();
+                        am.z5 z5Var = exDeviceGetTicketEvent.f54139g;
+                        z5Var.f8517c = com.tencent.mm.sdk.platformtools.t8.P(str2, 0);
+                        z5Var.f8515a = y66;
+                        z5Var.f8516b = str;
+                        z5Var.f8518d = y2Var.f341013c;
+                        exDeviceGetTicketEvent.f192364d = new com.tencent.mm.plugin.webview.ui.tools.jsapi.q5(c1Var, exDeviceGetTicketEvent, y2Var);
+                        exDeviceGetTicketEvent.b(android.os.Looper.getMainLooper());
+                    }
+                } catch (java.lang.Exception e17) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getWXDeviceTicket failed : %s", e17.getMessage());
+                    c1Var.i5(y2Var, "getWXDeviceTicket:fail_exception", null);
+                }
+            }
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getWXDeviceTicket not init");
+            c1Var.i5(y2Var, "getWXDeviceTicket:fail_notInit", null);
+        }
+        return true;
+    }
+
+    public static boolean W(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "logId", 0);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "logString");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSearchRailtime oreh id:%d, value:%s, params:%s", java.lang.Integer.valueOf(e17), f17, y2Var.f340790a);
+        sg0.u3 u3Var = (sg0.u3) ((tg0.w1) i95.n0.c(tg0.w1.class));
+        u3Var.getClass();
+        r45.e44 e44Var = new r45.e44();
+        e44Var.f373007d = e17;
+        e44Var.f373009f = (int) (java.lang.System.currentTimeMillis() / 1000);
+        e44Var.f373010g = 1;
+        e44Var.f373008e = new com.tencent.mm.protobuf.g(f17.getBytes());
+        com.tencent.mm.modelbase.l lVar = new com.tencent.mm.modelbase.l();
+        lVar.f70664a = new r45.k3();
+        lVar.f70665b = new r45.l3();
+        lVar.f70666c = "/cgi-bin/mmux-bin/adlog";
+        lVar.f70667d = 1802;
+        com.tencent.mm.modelbase.o a17 = lVar.a();
+        r45.k3 k3Var = (r45.k3) a17.f70710a.f70684a;
+        r45.d44 d44Var = new r45.d44();
+        d44Var.f372091d = o45.wf.f343025c;
+        d44Var.f372092e = o45.wf.f343024b;
+        d44Var.f372093f = o45.wf.f343027e;
+        d44Var.f372094g = wo.q.f447785f;
+        d44Var.f372095h = com.tencent.mm.sdk.platformtools.m2.d();
+        d44Var.f372096i = (int) (java.lang.System.currentTimeMillis() / 1000);
+        k3Var.f378337d = d44Var;
+        k3Var.f378338e.add(e44Var);
+        com.tencent.mm.modelbase.z2.d(a17, new sg0.s3(u3Var), false);
+        c1Var.i5(y2Var, "reportWeAppSearchRealtime:ok", null);
+        return true;
+    }
+
+    public static boolean W0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("operationType");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("dataUrl");
+        nw4.e3.a(y2Var.f341018h, false, null, "");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            c1Var.i5(y2Var, "operateMusicPlayer:fail", null);
+        } else if (str.equalsIgnoreCase(com.tencent.tav.core.AssetExtension.SCENE_PLAY)) {
+            java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+            java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("singer");
+            java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("epname");
+            java.lang.String str6 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("coverImgUrl");
+            java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("lowbandUrl");
+            java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("webUrl");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "title : %s, singer : %s, epName : %s, coverImgUrl : %s, dataUrl : %s, lowbandUrl : %s, webUrl : %s, appid : %s", str3, str4, str5, str6, str2, str7, str8, "");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str3) || com.tencent.mm.sdk.platformtools.t8.K0(str4) || com.tencent.mm.sdk.platformtools.t8.K0(str5) || com.tencent.mm.sdk.platformtools.t8.K0(str6) || com.tencent.mm.sdk.platformtools.t8.K0(str7) || com.tencent.mm.sdk.platformtools.t8.K0(str2) || com.tencent.mm.sdk.platformtools.t8.K0(str8)) {
+                c1Var.i5(y2Var, "operateMusicPlayer:fail", null);
+            } else {
+                b21.m.j();
+                b21.m.i(b21.s.a(7, str6, str3, str4, str8, str7, str2, "" + str2.hashCode(), lp0.b.D(), g83.a.a() + str6.hashCode(), str5, ""));
+                c1Var.i5(y2Var, "operateMusicPlayer:ok", null);
+            }
+        } else if (str.equalsIgnoreCase("resume")) {
+            if (b21.n.a(str2) && b21.m.d() && !b21.m.c()) {
+                b21.m.g();
+                r5 = true;
+            }
+            if (r5) {
+                c1Var.i5(y2Var, "operateMusicPlayer:ok", null);
+            } else {
+                c1Var.i5(y2Var, "operateMusicPlayer:fail", null);
+            }
+        } else if (str.equalsIgnoreCase("pause")) {
+            if (b21.n.a(str2) && b21.m.c()) {
+                b21.m.f();
+                r5 = true;
+            }
+            if (r5) {
+                com.tencent.mm.sdk.platformtools.u3.h(new b21.i());
+                c1Var.i5(y2Var, "operateMusicPlayer:ok", null);
+            } else {
+                c1Var.i5(y2Var, "operateMusicPlayer:fail", null);
+            }
+        } else if (str.equalsIgnoreCase("seek")) {
+            if (b21.n.a(str2) ? b21.m.h(com.tencent.mm.sdk.platformtools.t8.P(com.tencent.mm.sdk.platformtools.t8.f1(((java.util.HashMap) y2Var.f340790a).get("position")), -1) * 1000) : false) {
+                c1Var.i5(y2Var, "operateMusicPlayer:ok", null);
+            } else {
+                c1Var.i5(y2Var, "operateMusicPlayer:fail", null);
+            }
+        } else if (str.equalsIgnoreCase("stop")) {
+            if (b21.n.a(str2) && b21.m.d()) {
+                b21.m.j();
+                r5 = true;
+            }
+            if (r5) {
+                c1Var.i5(y2Var, "operateMusicPlayer:ok", null);
+            } else {
+                c1Var.i5(y2Var, "operateMusicPlayer:fail", null);
+            }
+        } else {
+            c1Var.i5(y2Var, "operateMusicPlayer:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean W1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseInvoiceTitle");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("req_scene", 0);
+        intent.putExtra("launch_from_webview", true);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+            j45.l.o(c1Var.f184975d, "address", ".ui.InvoiceListUI", intent, 56, false);
+        }
+        return true;
+    }
+
+    public static boolean W2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 msg) {
+        java.lang.String str;
+        jz5.f0 f0Var;
+        jz5.f0 f0Var2;
+        c1Var.getClass();
+        try {
+            str = c1Var.f184998y.getCurrentUrl();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doPrivateCommonApi exception in get currentUrl" + e17.getMessage());
+            str = "";
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doPrivateCommonApi currentUrl %s", str);
+        if (!c1Var.E6(str) && !str.equals("liteapp://")) {
+            c1Var.i5(msg, "privateCommonApi:fail access_denied", null);
+            return false;
+        }
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.e9 e9Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.e9(c1Var);
+        kotlin.jvm.internal.o.g(msg, "msg");
+        java.lang.Object obj = msg.f340790a.get("opcode");
+        java.lang.String str2 = obj instanceof java.lang.String ? (java.lang.String) obj : null;
+        if (str2 == null) {
+            str2 = "";
+        }
+        boolean K0 = com.tencent.mm.sdk.platformtools.t8.K0(str2);
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2 = e9Var.f185084a;
+        if (K0) {
+            c1Var2.i5(msg, "privateCommonApi:fail, opcode is empty", null);
+            return false;
+        }
+        if (kotlin.jvm.internal.o.b(str2, "selectContact")) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.PrivateCommonApiHandler", "doPrivateSelectContact");
+            android.content.Context context = c1Var2.f184975d;
+            android.content.Intent intent = new android.content.Intent();
+            intent.putExtra("list_type", 15);
+            intent.putExtra("titile", j65.q.a(context).getString(com.tencent.mm.R.string.f489934fx));
+            intent.putExtra("list_attr", com.tencent.mm.ui.contact.i5.g(2, 16384, 1, 4));
+            if (context instanceof com.tencent.mm.ui.MMActivity) {
+                j45.l.w((com.tencent.mm.ui.MMActivity) context, ".ui.contact.SelectContactUI", intent, 65, c1Var2);
+            } else {
+                com.tencent.mars.xlog.Log.e("MicroMsg.PrivateCommonApiHandler", "doSelectContact invalid context");
+                c1Var2.i5(msg, "selectContact:fail", null);
+            }
+        } else if (kotlin.jvm.internal.o.b(str2, "changeQQLoginType")) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.PrivateCommonApiHandler", "doPrivateChangeQQLoginType");
+            java.lang.Object obj2 = msg.f340790a.get("pwdMd5");
+            java.lang.String str3 = obj2 instanceof java.lang.String ? (java.lang.String) obj2 : null;
+            if (str3 == null) {
+                c1Var2.i5(msg, "changeQQLoginType:fail", kz5.c1.k(new jz5.l("err_msg", "fail"), new jz5.l("errContent", "password empty")));
+            } else {
+                java.lang.Object obj3 = msg.f340790a.get("loginName");
+                java.lang.String str4 = obj3 instanceof java.lang.String ? (java.lang.String) obj3 : null;
+                if (str4 == null) {
+                    str4 = "";
+                }
+                com.tencent.mm.sdk.coroutines.LifecycleScope lifecycleScope = gm0.j1.b().f273245h.f273145e;
+                if (lifecycleScope != null) {
+                    kotlinx.coroutines.l.d(lifecycleScope, null, null, new com.tencent.mm.plugin.webview.ui.tools.jsapi.v8(str3, e9Var, msg, str4, null), 3, null);
+                }
+            }
+        } else if (kotlin.jvm.internal.o.b(str2, "forgetPassword")) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.PrivateCommonApiHandler", "doPrivateForgetPassword");
+            com.tencent.mm.sdk.coroutines.LifecycleScope lifecycleScope2 = gm0.j1.b().f273245h.f273145e;
+            if (lifecycleScope2 != null) {
+                kotlinx.coroutines.l.d(lifecycleScope2, null, null, new com.tencent.mm.plugin.webview.ui.tools.jsapi.z8(e9Var, msg, null), 3, null);
+            }
+        } else {
+            if (!kotlin.jvm.internal.o.b(str2, "setWXAlias")) {
+                if (kotlin.jvm.internal.o.b(str2, "uploadLog")) {
+                    java.lang.Object obj4 = msg.f340790a.get("dateOfDay");
+                    jz5.f0 f0Var3 = jz5.f0.f302826a;
+                    if (obj4 != null) {
+                        android.content.Intent intent2 = new android.content.Intent();
+                        java.lang.Object obj5 = msg.f340790a.get("ccNum");
+                        java.lang.String str5 = obj5 instanceof java.lang.String ? (java.lang.String) obj5 : null;
+                        if (str5 == null) {
+                            str5 = "86";
+                        }
+                        java.lang.Object obj6 = msg.f340790a.get("phoneNum");
+                        java.lang.String str6 = obj6 instanceof java.lang.String ? (java.lang.String) obj6 : null;
+                        if (str6 == null) {
+                            str6 = "";
+                        }
+                        intent2.setClassName(c1Var2.f184975d, "com.tencent.mm.plugin.setting.ui.fixtools.FixToolsUpLogUploadingUI");
+                        intent2.putExtra("KEY_CCNUM", str5);
+                        intent2.putExtra("KEY_PHONENUM", str6);
+                        intent2.putExtra("begin_hour", "0");
+                        intent2.putExtra("end_hour", "24");
+                        java.lang.Object obj7 = msg.f340790a.get("dateOfDay");
+                        java.lang.String str7 = obj7 instanceof java.lang.String ? (java.lang.String) obj7 : null;
+                        java.lang.String str8 = str7 == null ? "" : str7;
+                        java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
+                        java.text.SimpleDateFormat simpleDateFormat2 = new java.text.SimpleDateFormat("yyyyMMdd");
+                        long currentTimeMillis = java.lang.System.currentTimeMillis();
+                        try {
+                            currentTimeMillis = simpleDateFormat.parse(str8).getTime();
+                        } catch (java.text.ParseException unused) {
+                            com.tencent.mars.xlog.Log.e("MicroMsg.PrivateCommonApiHandler", "dateToTimeStamp failed. date:%s, stack:%s", str8, new com.tencent.mm.sdk.platformtools.z3());
+                        }
+                        java.lang.String format = simpleDateFormat2.format(new java.util.Date(currentTimeMillis));
+                        kotlin.jvm.internal.o.f(format, "format(...)");
+                        intent2.putExtra(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_DATE, format);
+                        com.tencent.mars.xlog.Log.i("MicroMsg.PrivateCommonApiHandler", "startUploadingUI");
+                        android.content.Context context2 = c1Var2.f184975d;
+                        com.tencent.mm.ui.MMFragmentActivity mMFragmentActivity = context2 instanceof com.tencent.mm.ui.MMFragmentActivity ? (com.tencent.mm.ui.MMFragmentActivity) context2 : null;
+                        if (mMFragmentActivity != null) {
+                            ((com.tencent.mm.ui.bd) mMFragmentActivity.startActivityForResult(intent2)).f197877a = new com.tencent.mm.plugin.webview.ui.tools.jsapi.d9(e9Var, msg);
+                            f0Var2 = f0Var3;
+                        } else {
+                            f0Var2 = null;
+                        }
+                        if (f0Var2 == null) {
+                            c1Var2.i5(msg, "ok", kz5.c1.k(new jz5.l("err_msg", "ok"), new jz5.l("uploadResult", "uploadFail"), new jz5.l("totalSize", "0")));
+                        }
+                    } else {
+                        android.content.Intent intent3 = new android.content.Intent();
+                        intent3.setClassName(c1Var2.f184975d, "com.tencent.mm.plugin.setting.ui.fixtools.FixToolsUplogUI");
+                        com.tencent.mars.xlog.Log.i("MicroMsg.PrivateCommonApiHandler", "startUploadUI");
+                        android.content.Context context3 = c1Var2.f184975d;
+                        com.tencent.mm.ui.MMFragmentActivity mMFragmentActivity2 = context3 instanceof com.tencent.mm.ui.MMFragmentActivity ? (com.tencent.mm.ui.MMFragmentActivity) context3 : null;
+                        if (mMFragmentActivity2 != null) {
+                            ((com.tencent.mm.ui.bd) mMFragmentActivity2.startActivityForResult(intent3)).f197877a = new com.tencent.mm.plugin.webview.ui.tools.jsapi.c9(e9Var, msg);
+                            f0Var = f0Var3;
+                        } else {
+                            f0Var = null;
+                        }
+                        if (f0Var == null) {
+                            c1Var2.i5(msg, "ok", kz5.c1.k(new jz5.l("err_msg", "ok"), new jz5.l("uploadResult", "uploadFail"), new jz5.l("totalSize", "0")));
+                        }
+                    }
+                } else if (kotlin.jvm.internal.o.b(str2, "onFeedbackConfirm")) {
+                    com.tencent.mm.app.j3.b();
+                    c1Var2.i5(msg, "ok", kz5.b1.e(new jz5.l("err_msg", "ok")));
+                } else if (kotlin.jvm.internal.o.b(str2, "pickCountryCode")) {
+                    android.content.Context context4 = c1Var2.f184975d;
+                    if (context4 instanceof com.tencent.mm.ui.MMActivity) {
+                        android.content.Intent intent4 = new android.content.Intent();
+                        intent4.setClassName(c1Var2.f184975d, "com.tencent.mm.ui.tools.CountryCodeUI");
+                        ((com.tencent.mm.ui.bd) ((com.tencent.mm.ui.MMActivity) context4).startActivityForResult(intent4)).f197877a = new com.tencent.mm.plugin.webview.ui.tools.jsapi.a9(e9Var, msg);
+                    } else {
+                        c1Var2.i5(msg, "pickCountryCode:fail", null);
+                    }
+                } else {
+                    if (!kotlin.jvm.internal.o.b(str2, "accessLastUser")) {
+                        c1Var2.i5(msg, "privateCommonApi:fail, opcode is invalid", null);
+                        return false;
+                    }
+                    c1Var2.i5(msg, "ok", kz5.c1.k(new jz5.l("err_msg", "ok"), new jz5.l(dm.i4.COL_USERNAME, "login_weixin_username")));
+                }
+                return true;
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.PrivateCommonApiHandler", "doPrivateSetWxAlias");
+            java.lang.String c17 = c01.z1.c();
+            if (c17 == null || c17.length() == 0) {
+                android.content.Context context5 = c1Var2.f184975d;
+                if (context5 == null) {
+                    c1Var2.i5(msg, "fail", kz5.b1.e(new jz5.l("err_msg", "fail")));
+                } else {
+                    android.content.Intent intent5 = new android.content.Intent();
+                    intent5.setClassName(context5, "com.tencent.mm.plugin.setting.ui.setting.SettingsModifyAliasUI");
+                    android.content.Context context6 = c1Var2.f184975d;
+                    com.tencent.mm.ui.MMFragmentActivity mMFragmentActivity3 = context6 instanceof com.tencent.mm.ui.MMFragmentActivity ? (com.tencent.mm.ui.MMFragmentActivity) context6 : null;
+                    if (mMFragmentActivity3 != null) {
+                        j45.l.x(mMFragmentActivity3, "com.tencent.mm.plugin.setting.ui.setting.SettingsModifyAliasUI", intent5, 2, new com.tencent.mm.plugin.webview.ui.tools.jsapi.b9(msg, e9Var));
+                    }
+                }
+            } else {
+                c1Var2.i5(msg, "fail", kz5.b1.e(new jz5.l("err_msg", "fail")));
+            }
+        }
+        return true;
+    }
+
+    public static boolean W3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        int i17;
+        c1Var.getClass();
+        try {
+            java.lang.String str = (java.lang.String) c1Var.f184976e.f340790a.get("link");
+            nw4.e3.a(c1Var.f184976e.f341018h, c1Var.p6(com.tencent.mm.plugin.appbrand.jsapi.share.g1.NAME), str, null);
+            if (str != null && str.length() != 0) {
+                c1Var.b7((java.lang.String) c1Var.f184976e.f340790a.get("desc"));
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "naerCheckIn, img_url = " + ((java.lang.String) c1Var.f184976e.f340790a.get("img_url")) + ", title = " + ((java.lang.String) c1Var.f184976e.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE)) + ", desc = " + ((java.lang.String) c1Var.f184976e.f340790a.get("desc")));
+                java.lang.String str2 = (java.lang.String) c1Var.f184976e.f340790a.get("img_width");
+                java.lang.String str3 = (java.lang.String) c1Var.f184976e.f340790a.get("img_height");
+                java.lang.String str4 = (java.lang.String) c1Var.f184976e.f340790a.get("link");
+                java.lang.String x66 = c1Var.x6(str4);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "naerCheckIn, rawUrl:[%s], shareUrl:[%s]", str4, x66);
+                java.lang.String str5 = (java.lang.String) c1Var.f184976e.f340790a.get("type");
+                c1Var.f184976e.f340790a.get("desc");
+                java.lang.String str6 = (java.lang.String) c1Var.f184976e.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+                java.lang.String str7 = (java.lang.String) c1Var.f184976e.f340790a.get("img_url");
+                try {
+                    i17 = java.lang.Integer.valueOf(str2).intValue();
+                    try {
+                        java.lang.Integer.valueOf(str3);
+                    } catch (java.lang.Exception unused) {
+                    }
+                } catch (java.lang.Exception unused2) {
+                    i17 = -1;
+                }
+                android.content.Intent intent = new android.content.Intent();
+                intent.putExtra("Ksnsupload_width", i17);
+                intent.putExtra("Ksnsupload_height", i17);
+                intent.putExtra("Ksnsupload_link", x66);
+                intent.putExtra("Ksnsupload_title", str6);
+                intent.putExtra("Ksnsupload_imgurl", str7);
+                intent.putExtra("Ksnsupload_type", 1);
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(str5) && str5.equals("music")) {
+                    intent.putExtra("ksnsis_music", true);
+                }
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(str5) && str5.equals("video")) {
+                    intent.putExtra("ksnsis_video", true);
+                }
+                java.lang.String str8 = (java.lang.String) c1Var.f184976e.f340790a.get("poiId");
+                java.lang.String str9 = (java.lang.String) c1Var.f184976e.f340790a.get("poiName");
+                java.lang.String str10 = (java.lang.String) c1Var.f184976e.f340790a.get("poiAddress");
+                float L = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) y2Var.f340790a.get("latitude"), 0.0f);
+                float L2 = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) y2Var.f340790a.get("longitude"), 0.0f);
+                intent.putExtra("kpoi_id", str8);
+                intent.putExtra("kpoi_name", str9);
+                intent.putExtra("Kpoi_address", str10);
+                intent.putExtra("k_lat", L);
+                intent.putExtra("k_lng", L2);
+                j45.l.j(c1Var.f184975d, "sns", ".ui.SnsUploadUI", intent, null);
+                c1Var.f184993v = false;
+                return false;
+            }
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "naerCheckIn fail, link is null");
+            c1Var.i5(c1Var.f184976e, "timeline_check_in:fail", null);
+            return true;
+        } catch (java.lang.Exception unused3) {
+            return true;
+        }
+    }
+
+    public static boolean W4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        java.lang.String y66;
+        com.tencent.mm.plugin.report.service.g0 g0Var;
+        java.lang.Object[] objArr;
+        c1Var.getClass();
+        if (!(y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+            if (!com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getWXDeviceInfos not init");
+                c1Var.i5(y2Var, "getWXDeviceInfos:fail_notInit", null);
+                return true;
+            }
+            try {
+                java.lang.String y67 = c1Var.y6(y2Var);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y67, "getWXDeviceInfos");
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetWXDeviceInfos, %s", y67);
+                if (com.tencent.mm.sdk.platformtools.t8.K0(y67)) {
+                    c1Var.i5(y2Var, "getWXDeviceInfos:fail_UsernameError", null);
+                } else {
+                    com.tencent.mm.autogen.events.ExDeviceGetDeviceInfosEvent exDeviceGetDeviceInfosEvent = new com.tencent.mm.autogen.events.ExDeviceGetDeviceInfosEvent();
+                    am.u5 u5Var = exDeviceGetDeviceInfosEvent.f54134h;
+                    am.t5 t5Var = exDeviceGetDeviceInfosEvent.f54133g;
+                    t5Var.f7984b = y67;
+                    t5Var.f7983a = c1Var.f184975d;
+                    exDeviceGetDeviceInfosEvent.e();
+                    if (!u5Var.f8053a || u5Var.f8054b == null) {
+                        c1Var.i5(y2Var, "getWXDeviceInfos:fail", null);
+                    } else {
+                        java.util.HashMap hashMap = new java.util.HashMap();
+                        hashMap.put("jsapi_callback_json_special_key", "deviceInfos");
+                        hashMap.put("deviceInfos", u5Var.f8054b.toString());
+                        c1Var.i5(y2Var, "getWXDeviceInfos:ok", hashMap);
+                    }
+                }
+                return true;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getWXDeviceInfos failed : %s", e17.getMessage());
+                c1Var.i5(y2Var, "getWXDeviceInfos:fail_exception", null);
+                return true;
+            }
+        }
+        if (!com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184161b) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getWXDeviceInfos not init");
+            c1Var.i5(y2Var, "getWXDeviceInfos:fail_notInit", null);
+            return true;
+        }
+        try {
+            y66 = c1Var.y6(y2Var);
+            g0Var = com.tencent.mm.plugin.report.service.g0.INSTANCE;
+            objArr = new java.lang.Object[2];
+            str = "getWXDeviceInfos:fail_exception";
+        } catch (java.lang.Exception e18) {
+            e = e18;
+            str = "getWXDeviceInfos:fail_exception";
+        }
+        try {
+            objArr[0] = "" + y66;
+            objArr[1] = "getWXDeviceInfos";
+            g0Var.d(11533, objArr);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetWXDeviceInfos, %s", y66);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                c1Var.i5(y2Var, "getWXDeviceInfos:fail_UsernameError", null);
+            } else {
+                com.tencent.mm.autogen.events.ExDeviceGetLanDeviceInfosEvent exDeviceGetLanDeviceInfosEvent = new com.tencent.mm.autogen.events.ExDeviceGetLanDeviceInfosEvent();
+                am.w5 w5Var = exDeviceGetLanDeviceInfosEvent.f54136h;
+                am.v5 v5Var = exDeviceGetLanDeviceInfosEvent.f54135g;
+                v5Var.f8172b = y66;
+                v5Var.f8171a = c1Var.f184975d;
+                exDeviceGetLanDeviceInfosEvent.e();
+                if (!w5Var.f8265a || w5Var.f8266b == null) {
+                    c1Var.i5(y2Var, "getWXDeviceInfos:fail", null);
+                } else {
+                    java.util.HashMap hashMap2 = new java.util.HashMap();
+                    hashMap2.put("jsapi_callback_json_special_key", "deviceInfos");
+                    hashMap2.put("deviceInfos", w5Var.f8266b.toString());
+                    c1Var.i5(y2Var, "getWXDeviceInfos:ok", hashMap2);
+                }
+            }
+            return true;
+        } catch (java.lang.Exception e19) {
+            e = e19;
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getWXDeviceInfos failed : %s", e.getMessage());
+            c1Var.i5(y2Var, str, null);
+            return true;
+        }
+    }
+
+    public static boolean X(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "action", 0);
+        if (e17 == 1) {
+            if (su4.p2.f413037a == null) {
+                su4.p2.a();
+            }
+            su4.p2.f413037a.f389546d.clear();
+            android.content.SharedPreferences sharedPreferences = com.tencent.mm.sdk.platformtools.x2.f193071a.getSharedPreferences("fts_history_search_sp", 0);
+            try {
+                java.lang.String str = "key_pb_history_list" + c01.z1.r();
+                java.lang.String encodeToString = android.util.Base64.encodeToString(su4.p2.f413037a.toByteArray(), 0);
+                sharedPreferences.edit().putString(str, encodeToString).apply();
+                com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.WebSearchHistoryLogic", "addHistory pbListString %s", encodeToString);
+            } catch (java.io.IOException unused) {
+            }
+        } else if (e17 == 2) {
+            int e18 = com.tencent.mm.plugin.websearch.l2.e(map, "type", 0);
+            int e19 = com.tencent.mm.plugin.websearch.l2.e(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+            if (java.lang.System.currentTimeMillis() - q0Var.f181593f > 1000) {
+                q0Var.f181593f = java.lang.System.currentTimeMillis();
+                if (com.tencent.mm.plugin.websearch.l2.h(0)) {
+                    boolean wi6 = ((sg0.e2) ((tg0.p1) i95.n0.c(tg0.p1.class))).wi(e19, e18);
+                    java.lang.String e27 = su4.o2.e("searchID");
+                    com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.WebSearchReportLogic", "kvReportGlobalTabClick type:%s, scene:%s, searchId:%s, isTabGuide:%s,sessionId:%s, redDotMsgId:%s", java.lang.Integer.valueOf(e18), java.lang.Integer.valueOf(e19), e27, java.lang.Boolean.FALSE, "", "");
+                    jx3.f.INSTANCE.d(12845, java.lang.Integer.valueOf(e18), 0, java.lang.Integer.valueOf(e19), e27, 0, "", "");
+                    android.content.Intent a17 = su4.r2.a();
+                    a17.putExtra("ftsneedkeyboard", !wi6);
+                    a17.putExtra("ftsbizscene", e19);
+                    a17.putExtra("ftsType", e18);
+                    a17.putExtra("rawUrl", su4.r2.e(su4.r2.b(e19, true, e18), 0));
+                    a17.putExtra("key_load_js_without_delay", true);
+                    a17.putExtra("key_change_search_icon", true);
+                    a17.putExtra("key_from_whole_search", false);
+                    a17.putExtra("key_search_icon_and_hint_fix_default", true);
+                    j45.l.z(com.tencent.mm.sdk.platformtools.x2.f193071a, a17, null);
+                } else {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.WebSearch.FTSWebViewLogic", "fts h5 template not avail");
+                }
+            }
+        } else if (e17 == 3) {
+            int e28 = com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1);
+            ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).getClass();
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 a18 = com.tencent.mm.plugin.webview.ui.tools.jsapi.k8.a(e28);
+            a18.getClass();
+            int e29 = com.tencent.mm.plugin.websearch.l2.e(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+            java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "query");
+            if (e29 != 20 || com.tencent.mm.sdk.platformtools.t8.K0(f17)) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doSearchHotWordOperation warning, scene=%d, query=%s", java.lang.Integer.valueOf(e29), f17);
+            } else {
+                android.os.Bundle bundle = new android.os.Bundle();
+                bundle.putString("fts_key_new_query", f17);
+                try {
+                    com.tencent.mm.plugin.webview.stub.z0 z0Var = a18.f184998y;
+                    if (z0Var != null) {
+                        z0Var.callback(136, bundle);
+                    }
+                } catch (java.lang.Exception e37) {
+                    com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doSearchHotWordOperation exception" + e37.getMessage());
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean X0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        int i17;
+        int i18;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("dataUrl");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("appId");
+        nw4.e3.a(y2Var.f341018h, false, null, str2);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "getMusicPlayerState:fail_dataUrl_null", null);
+            return true;
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "dataUrl : %s, appid : %s", str, str2);
+        b21.r b17 = b21.m.b();
+        if (b17 == null || !b17.f17352n.equals(str)) {
+            c1Var.i5(y2Var, "getMusicPlayerState:failed_dataUrl_diff", null);
+            return true;
+        }
+        b21.o a17 = b21.m.a();
+        if (a17 != null) {
+            i17 = a17.f17337a;
+            i18 = a17.f17338b;
+        } else {
+            i17 = -1;
+            i18 = -1;
+        }
+        if (a17 == null || i17 < 0 || i18 < 0) {
+            c1Var.i5(y2Var, "getMusicPlayerState:fail", null);
+            return true;
+        }
+        int i19 = a17.f17339c;
+        int i27 = a17.f17340d;
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("duration", java.lang.Integer.valueOf(i17 / 1000));
+        hashMap.put("currentPosition", java.lang.Integer.valueOf(i18 / 1000));
+        hashMap.put("status", java.lang.Integer.valueOf(i19));
+        hashMap.put("downloadPercent", java.lang.Integer.valueOf(i27));
+        c1Var.i5(y2Var, "getMusicPlayerState:ok", hashMap);
+        return true;
+    }
+
+    public static boolean X1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        android.os.Bundle bundle = new android.os.Bundle();
+        if (((java.util.HashMap) y2Var.f340790a).containsKey(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE)) {
+            bundle.putString(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE));
+        }
+        if (((java.util.HashMap) y2Var.f340790a).containsKey("desc")) {
+            bundle.putString("desc", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("desc"));
+        }
+        if (((java.util.HashMap) y2Var.f340790a).containsKey("items")) {
+            bundle.putString("items", (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("items"));
+        }
+        try {
+            c1Var.f184998y.callback(133, bundle);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("actionSheetId", java.lang.Integer.valueOf(bundle.getInt("actionSheetId")));
+        c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+        return true;
+    }
+
+    public static boolean X2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("user_ticket");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 0);
+        int i17 = P == 0 ? 6 : P;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "internelWxFaceVerify scene:%d faceCgiScene:%d", java.lang.Integer.valueOf(P), java.lang.Integer.valueOf(i17));
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("check_alive_type"), 1);
+        float L = com.tencent.mm.sdk.platformtools.t8.L((java.lang.String) y2Var.f340790a.get("light_threshold"), 4.0f);
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("upload_video"), 0) == 1;
+        int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("identify_type"), 0);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("business_tips");
+        boolean z18 = z17;
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("business_tips_color");
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 6);
+        bundle.putInt("face_cgi_scene", i17);
+        bundle.putInt("k_from_scene", P);
+        bundle.putString("key_function_name", y2Var.f341019i);
+        bundle.putInt("key_business_type", 1);
+        bundle.putInt("check_alive_type", P2);
+        bundle.putString("k_ticket", str);
+        bundle.putFloat("mLight_threshold", L);
+        bundle.putString("appId", str2);
+        bundle.putString("request_verify_pre_info", (java.lang.String) y2Var.f340790a.get("jsonStr"));
+        bundle.putInt("key_video_upload_type", 1);
+        bundle.putInt("identify_type", P3);
+        bundle.putString("business_tips", str3);
+        bundle.putString("business_tips_color", str4);
+        if (z18) {
+            bundle.putBoolean("needVideo", true);
+        }
+        com.tencent.mm.autogen.events.RequestInternalFaceVerifyEvent requestInternalFaceVerifyEvent = new com.tencent.mm.autogen.events.RequestInternalFaceVerifyEvent();
+        android.content.Context context = c1Var.f184975d;
+        am.lr lrVar = requestInternalFaceVerifyEvent.f54696g;
+        lrVar.f7265a = context;
+        lrVar.f7267c = 64;
+        lrVar.f7266b = bundle;
+        requestInternalFaceVerifyEvent.e();
+        am.mr mrVar = requestInternalFaceVerifyEvent.f54697h;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "start face detect event result: %b", java.lang.Boolean.valueOf(mrVar.f7359a));
+        if (mrVar.f7359a) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(null);
+        c1Var.i5(y2Var, y2Var.f341019i + ":fail", nw4.a.a(mrVar.f7360b));
+        return true;
+    }
+
+    public static boolean X3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenWXCredit JSOAUTH");
+        if (!(c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        walletJsapiData.f192143u = 6;
+        ((ng0.q) ((og0.o) i95.n0.c(og0.o.class))).Ai((com.tencent.mm.ui.MMActivity) c1Var.f184975d, walletJsapiData, 9, c1Var);
+        return true;
+    }
+
+    public static boolean X4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.util.Map map;
+        java.lang.String str;
+        c1Var.getClass();
+        if (!(y2Var.f340790a.containsKey("connType") ? (java.lang.String) y2Var.f340790a.get("connType") : "").equalsIgnoreCase("lan")) {
+            if (!com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "sendDataToWXDevice not init");
+                c1Var.i5(y2Var, "sendDataToWXDevice:fail_notInit", null);
+                return true;
+            }
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("deviceId");
+            java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("base64Data");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSendDataToWXDevice, deviceId : %s, has data : %s", str2, java.lang.Boolean.valueOf(!com.tencent.mm.sdk.platformtools.t8.K0(str3)));
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str2) || str3 == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceId or data is null");
+                c1Var.i5(y2Var, "sendDataToWXDevice:fail_wrongParams", null);
+                return true;
+            }
+            try {
+                java.lang.String y66 = c1Var.y6(y2Var);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "sendDataToWXDevice");
+                if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                    c1Var.i5(y2Var, "sendDataToWXDevice:fail_UsernameError", null);
+                } else {
+                    com.tencent.mm.autogen.events.ExDeviceSendDataToDeviceEvent exDeviceSendDataToDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceSendDataToDeviceEvent();
+                    am.t6 t6Var = exDeviceSendDataToDeviceEvent.f54159g;
+                    t6Var.f7985a = y66;
+                    t6Var.f7987c = android.util.Base64.decode(str3, 0);
+                    t6Var.f7986b = str2;
+                    exDeviceSendDataToDeviceEvent.e();
+                    if (exDeviceSendDataToDeviceEvent.f54160h.f8055a) {
+                        c1Var.i5(y2Var, "sendDataToWXDevice:ok", null);
+                    } else {
+                        c1Var.i5(y2Var, "sendDataToWXDevice:fail", null);
+                    }
+                }
+                return true;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "sendDataToWXDevice failed : %s", e17.getMessage());
+                c1Var.i5(y2Var, "sendDataToWXDevice:fail_exception", null);
+                return true;
+            }
+        }
+        if (!com.tencent.mm.plugin.webview.ui.tools.exdevice.b.d().f184161b) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "sendDataToWXDevice not init");
+            c1Var.i5(y2Var, "sendDataToWXDevice:fail_notInit", null);
+            return true;
+        }
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("deviceId");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("base64Data");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSendDataToWXDevice, deviceId : %s, has data : %s", str4, java.lang.Boolean.valueOf(!com.tencent.mm.sdk.platformtools.t8.K0(str5)));
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str4)) {
+            map = null;
+            str = "deviceId or data is null";
+        } else {
+            if (str5 != null) {
+                try {
+                    java.lang.String y67 = c1Var.y6(y2Var);
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y67, "sendDataToWXDevice");
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(y67)) {
+                        c1Var.i5(y2Var, "sendDataToWXDevice:fail_UsernameError", null);
+                    } else {
+                        com.tencent.mm.autogen.events.ExDeviceSendDataToLanDeviceEvent exDeviceSendDataToLanDeviceEvent = new com.tencent.mm.autogen.events.ExDeviceSendDataToLanDeviceEvent();
+                        am.v6 v6Var = exDeviceSendDataToLanDeviceEvent.f54161g;
+                        v6Var.f8173a = y67;
+                        v6Var.f8175c = str5;
+                        v6Var.f8174b = str4;
+                        exDeviceSendDataToLanDeviceEvent.e();
+                        if (exDeviceSendDataToLanDeviceEvent.f54162h.f8267a) {
+                            c1Var.i5(y2Var, "sendDataToWXDevice:ok", null);
+                        } else {
+                            c1Var.i5(y2Var, "sendDataToWXDevice:fail", null);
+                        }
+                    }
+                    return true;
+                } catch (java.lang.Exception e18) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "sendDataToWXDevice failed : %s", e18.getMessage());
+                    c1Var.i5(y2Var, "sendDataToWXDevice:fail_exception", null);
+                    return true;
+                }
+            }
+            str = "deviceId or data is null";
+            map = null;
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", str);
+        c1Var.i5(y2Var, "sendDataToWXDevice:fail_wrongParams", map);
+        return true;
+    }
+
+    public static boolean Y(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("cmd"), 0);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("param");
+        com.tencent.mm.autogen.events.GameJsApiCommandEvent gameJsApiCommandEvent = new com.tencent.mm.autogen.events.GameJsApiCommandEvent();
+        am.pe peVar = gameJsApiCommandEvent.f54362g;
+        peVar.f7614a = P;
+        peVar.f7615b = str;
+        gameJsApiCommandEvent.e();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("result", gameJsApiCommandEvent.f54363h.f7709a);
+        c1Var.i5(y2Var, "getGameMessages:ok", hashMap);
+        return true;
+    }
+
+    public static boolean Y0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("clearCookie");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "clearflag = %s", str);
+        boolean z17 = !com.tencent.mm.sdk.platformtools.t8.K0(str) && str.equalsIgnoreCase("true");
+        if (c1Var.f184998y != null) {
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putBoolean("clear_webview_cache_clear_cookie", z17);
+            try {
+                c1Var.f184998y.i(com.tencent.liteav.TXLiteAVCode.WARNING_IGNORE_UPSTREAM_FOR_AUDIENCE, bundle);
+                c1Var.i5(y2Var, "clearWebviewCache:ok", null);
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "clear webview cache fail : %s", e17.getMessage());
+                c1Var.i5(y2Var, "clearWebviewCache:fail", null);
+            }
+        } else {
+            c1Var.i5(y2Var, "clearWebviewCache:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean Y1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        if (y2Var.f340790a.containsKey("actionSheetId")) {
+            int D12 = com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) y2Var.f340790a.get("actionSheetId"), 0);
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putInt("actionSheetId", D12);
+            try {
+                c1Var.f184998y.callback(134, bundle);
+            } catch (android.os.RemoteException e17) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            }
+        }
+        c1Var.i5(y2Var, "", null);
+        return true;
+    }
+
+    public static boolean Y2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        ((yq1.z) ((zq1.a0) gm0.j1.s(zq1.a0.class))).getClass();
+        if (!com.tencent.mm.plugin.brandservice.ui.timeline.preload.t1.e(5)) {
+            hashMap.put("err_desc", "abtest closed");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            return false;
+        }
+        if (!y2Var.f341014d.has("url")) {
+            hashMap.put("err_desc", "invalid url");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            return false;
+        }
+        if (!y2Var.f341014d.has("item_show_type")) {
+            hashMap.put("err_desc", "invalid item_show_type");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            return false;
+        }
+        if (!y2Var.f341014d.has(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE)) {
+            hashMap.put("err_desc", "invalid scene");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            return false;
+        }
+        if (!y2Var.f341014d.has("openType")) {
+            hashMap.put("err_desc", "invalid openType");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            return false;
+        }
+        try {
+            y2Var.f341014d.getInt("item_show_type");
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("url", y2Var.f341014d.getString("url"));
+            bundle.putInt("item_show_type", y2Var.f341014d.getInt("item_show_type"));
+            bundle.putInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, y2Var.f341014d.getInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE));
+            bundle.putInt("subscene", y2Var.f341014d.optInt("subscene", 10000));
+            bundle.putInt("openType", y2Var.f341014d.getInt("openType"));
+            bundle.putString("biz_video_channel_session_id", y2Var.f341014d.optString("channelSessionId"));
+            android.os.Bundle i17 = c1Var.f184998y.i(200, bundle);
+            if (i17.getBoolean(ya.b.SUCCESS)) {
+                c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+            } else {
+                java.lang.String string = i17.getString("desc");
+                if (string == null) {
+                    string = "";
+                }
+                hashMap.put("err_desc", string);
+                c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            }
+            return true;
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "doOpenWebViewUseFastload", new java.lang.Object[0]);
+            hashMap.put("err_desc", e17.toString());
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            return false;
+        } catch (org.json.JSONException e18) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "doOpenWebViewUseFastload", new java.lang.Object[0]);
+            hashMap.put("err_desc", e18.toString());
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", hashMap);
+            return false;
+        }
+    }
+
+    public static boolean Y3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        android.os.Bundle bundle = c1Var.f184984o;
+        if (bundle == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSendServiceAppMsg fail, jsapiArgs is null");
+            c1Var.i5(y2Var, "send_service_app_msg:fail", null);
+        } else if (bundle.getBoolean("isFromService", false)) {
+            java.lang.String string = c1Var.f184984o.getString("jsapi_args_appid");
+            java.lang.String string2 = c1Var.f184984o.getString("sendAppMsgToUserName");
+            nw4.e3.a(y2Var.f341018h, false, null, string);
+            com.tencent.mm.opensdk.modelmsg.WXMediaMessage o57 = c1Var.o5(y2Var, false);
+            c1Var.f184977f = o57;
+            if (o57 == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSendServiceAppMsg fail, appmsg is null");
+                c1Var.i5(y2Var, "send_service_app_msg:fail", null);
+            } else {
+                ((kt.c) ((lt.i0) i95.n0.c(lt.i0.class))).getClass();
+                com.tencent.mm.pluginsdk.model.app.m h17 = com.tencent.mm.pluginsdk.model.app.w.h(string);
+                if (com.tencent.mm.sdk.platformtools.t8.K0(string2)) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "toUser is null");
+                    c1Var.i5(y2Var, "send_service_app_msg:fail", null);
+                } else {
+                    java.lang.String str = (java.lang.String) y2Var.f340790a.get("img_url");
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(10923, 13, h17.field_appId, 1, string2);
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                        c1Var.Q5(h17, "", string2, str, null, null, null, null);
+                        android.content.Context context = c1Var.f184975d;
+                        db5.e1.T(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490548y7));
+                        c1Var.i5(y2Var, "send_service_app_msg:ok", null);
+                        c1Var.n5(y2Var);
+                    } else {
+                        android.content.Context context2 = c1Var.f184975d;
+                        com.tencent.mm.ui.widget.dialog.u3 Q = db5.e1.Q(context2, "", j65.q.a(context2).getString(com.tencent.mm.R.string.f490552yb), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.l2(c1Var, str, y2Var));
+                        ((j70.e) ((k70.v) i95.n0.c(k70.v.class))).Ai(str, new com.tencent.mm.plugin.webview.ui.tools.jsapi.m2(c1Var, Q, h17, string2, str, y2Var));
+                    }
+                }
+            }
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSendServiceAppMsg fail, not from service");
+            c1Var.i5(y2Var, "send_service_app_msg:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean Y4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        if (com.tencent.mm.plugin.webview.jsapi.exdevice.b.d().f182101b) {
+            try {
+                java.lang.String str = (java.lang.String) y2Var.f340790a.get("deviceId");
+                java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(com.tencent.map.geolocation.sapp.TencentLocation.EXTRA_DIRECTION);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "setSendDataDirection, deviceId = %s, direction = %s", str, str2);
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(str) && !com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                    int P = com.tencent.mm.sdk.platformtools.t8.P(str2, 0);
+                    java.lang.String y66 = c1Var.y6(y2Var);
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(11533, "" + y66, "setSendDataDirection");
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(y66)) {
+                        c1Var.i5(y2Var, "setSendDataDirection:fail_UsernameError", null);
+                    } else {
+                        com.tencent.mm.autogen.events.ExDeviceSetSendDataDirectionEvent exDeviceSetSendDataDirectionEvent = new com.tencent.mm.autogen.events.ExDeviceSetSendDataDirectionEvent();
+                        am.a7 a7Var = exDeviceSetSendDataDirectionEvent.f54166g;
+                        a7Var.f6130a = str;
+                        a7Var.f6131b = P;
+                        a7Var.f6132c = false;
+                        exDeviceSetSendDataDirectionEvent.e();
+                        if (exDeviceSetSendDataDirectionEvent.f54167h.f6223a) {
+                            c1Var.i5(y2Var, "setSendDataDirection:ok", null);
+                        } else {
+                            c1Var.i5(y2Var, "setSendDataDirection:fail", null);
+                        }
+                    }
+                }
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "wrong args");
+                c1Var.i5(y2Var, "setSendDataDirection:fail_wrongParams", null);
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "setSendDataDirection failed : %s", e17.getMessage());
+                c1Var.i5(y2Var, "setSendDataDirection:fail_exception", null);
+            }
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "setSendDataDirection not init");
+            c1Var.i5(y2Var, "setSendDataDirection:fail_notInit", null);
+        }
+        return true;
+    }
+
+    public static boolean Z(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetWebPayCheckoutCounterRequst start");
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("appId", walletJsapiData.f192129d);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", walletJsapiData.f192140r);
+        intent.putExtra("pay_channel", walletJsapiData.f192144v);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.o(c1Var.f184975d, "wallet", ".pay.ui.WalletLoanRepaymentUI", intent, 28, false);
+        return true;
+    }
+
+    public static boolean Z0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: start soter auth");
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        android.os.Bundle b17 = nw4.y2.b(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        intent.setClassName(c1Var.f184975d, "com.tencent.mm.plugin.soter.ui.SoterAuthenticationUIWC");
+        intent.putExtras(b17);
+        intent.putExtra("key_soter_fp_mp_scene", 0);
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        if (j66 == null) {
+            j66 = (java.lang.String) y2Var.f340790a.get("appId");
+        }
+        intent.putExtra("key_app_id", j66);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).startActivityForResult(intent, 38);
+        return true;
+    }
+
+    public static boolean Z1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetLatestAddress JSOAUTH");
+        try {
+            str = c1Var.f184998y.getCurrentUrl();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "exception in get currentUrl %s", e17.getMessage());
+            str = "";
+        }
+        if (str == null) {
+            c1Var.i5(c1Var.f184976e, "get_recently_used_address:fail", null);
+            return true;
+        }
+        com.tencent.mm.autogen.events.RcptRecentAddrEvent rcptRecentAddrEvent = new com.tencent.mm.autogen.events.RcptRecentAddrEvent();
+        java.lang.String str2 = (java.lang.String) c1Var.f184976e.f340790a.get("appId");
+        am.kp kpVar = rcptRecentAddrEvent.f54643g;
+        kpVar.f7173a = str2;
+        kpVar.f7174b = str;
+        rcptRecentAddrEvent.f54644h.f7253a = org.chromium.net.NetError.ERR_HOST_RESOLVER_QUEUE_TOO_LARGE;
+        rcptRecentAddrEvent.f192364d = new com.tencent.mm.plugin.webview.ui.tools.jsapi.y2(c1Var, rcptRecentAddrEvent, "get_recently_used_address:");
+        rcptRecentAddrEvent.b(android.os.Looper.getMainLooper());
+        return true;
+    }
+
+    public static boolean Z2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        int i17;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("action");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doHandleHaoKanAction action=%s", str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "handleHaokanAction:fail action is empty", null);
+            return false;
+        }
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("server_data");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("client_data");
+        if ("submitMsgToTL".equals(str)) {
+            com.tencent.mm.autogen.events.HaoKanActionEvent haoKanActionEvent = new com.tencent.mm.autogen.events.HaoKanActionEvent();
+            am.gh ghVar = haoKanActionEvent.f54431g;
+            ghVar.f6762a = str2;
+            ghVar.f6763b = str3;
+            haoKanActionEvent.e();
+            c1Var.i5(y2Var, "handleHaokanAction:ok", null);
+        } else if ("update_recommend_status".equals(str)) {
+            java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+            hy4.d0 d0Var = c1Var.G;
+            hy4.c0 c0Var = (hy4.c0) d0Var.f286096a.get(str4);
+            if (c0Var == null) {
+                c0Var = new hy4.c0();
+            }
+            c0Var.f286092a = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("permission"), 0);
+            c0Var.f286093b = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("recommend"), -1);
+            java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+            java.lang.String str6 = c0Var.f286094c;
+            if (str5 == null) {
+                str5 = str6;
+            }
+            c0Var.f286094c = str5;
+            d0Var.f286096a.put(com.tencent.mm.pluginsdk.ui.tools.h9.a(str4), c0Var);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doHandleHaoKanAction Permission=%d,Recommend=%d", java.lang.Integer.valueOf(c0Var.f286092a), java.lang.Integer.valueOf(c0Var.f286093b));
+            c1Var.i5(y2Var, "handleHaokanAction:ok", null);
+            try {
+                c1Var.f184998y.i(203, null);
+            } catch (android.os.RemoteException e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doHandleHaoKanAction e=%s", e17.getMessage());
+            }
+        } else if ("writeComment".equals(str)) {
+            java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("style");
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("style", str7);
+            bundle.putString("action", str);
+            try {
+                c1Var.f184998y.i(202, bundle);
+            } catch (android.os.RemoteException e18) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doHandleHaoKanAction e=%s", e18.getMessage());
+            }
+            c1Var.i5(y2Var, "handleHaokanAction:ok", null);
+        } else if ("closeComment".equals(str)) {
+            android.os.Bundle bundle2 = new android.os.Bundle();
+            bundle2.putString("action", str);
+            try {
+                c1Var.f184998y.i(202, bundle2);
+            } catch (android.os.RemoteException e19) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doHandleHaoKanAction e=%s", e19.getMessage());
+            }
+            c1Var.i5(y2Var, "handleHaokanAction:ok", null);
+        } else if ("jumpToWow".equals(str)) {
+            if (((wm4.z) ((pm4.v) i95.n0.c(pm4.v.class))).wi()) {
+                java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extParams");
+                ((wm4.z) ((pm4.v) i95.n0.c(pm4.v.class))).Ai(c1Var.f184975d, 322, new android.os.Bundle(), str8, y2Var);
+                c1Var.i5(y2Var, "handleHaokanAction:ok", null);
+            } else {
+                c1Var.i5(y2Var, "handleHaokanAction:fail_entrance_not_open", null);
+            }
+        } else if (com.tencent.mm.plugin.appbrand.jsapi.y9.NAME.equals(str)) {
+            if (((wm4.z) ((pm4.v) i95.n0.c(pm4.v.class))).wi()) {
+                pm4.v vVar = (pm4.v) i95.n0.c(pm4.v.class);
+                android.content.Context context = c1Var.f184975d;
+                ((wm4.z) vVar).getClass();
+                wm4.u.t(context, "normal");
+                c1Var.i5(y2Var, "handleHaokanAction:ok", null);
+            } else {
+                c1Var.i5(y2Var, "handleHaokanAction:fail_entrance_not_open", null);
+            }
+        } else if ("openRecommend".equals(str)) {
+            if (((wm4.z) ((pm4.v) i95.n0.c(pm4.v.class))).wi()) {
+                java.lang.String str9 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extParams");
+                try {
+                    i17 = java.lang.Integer.parseInt(((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE).toString());
+                } catch (java.lang.Exception unused) {
+                    i17 = 100;
+                }
+                int i18 = i17;
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "scene :%s", java.lang.Integer.valueOf(i18));
+                ((wm4.z) ((pm4.v) i95.n0.c(pm4.v.class))).Ai(c1Var.f184975d, i18, new android.os.Bundle(), str9, y2Var);
+                c1Var.i5(y2Var, "handleHaokanction:ok", null);
+            } else {
+                c1Var.i5(y2Var, "handleHaokanAction:fail_entrance_not_open", null);
+            }
+        } else if ("shareToGoodLook".equals(str)) {
+            try {
+                c1Var.f184998y.i(205, null);
+            } catch (android.os.RemoteException e27) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "shareToGoodLook e=%s", e27.getMessage());
+            }
+            c1Var.i5(y2Var, "handleHaokanction:ok", null);
+        } else {
+            if (!"turnOnHaoKanSwitch".equals(str)) {
+                if ("submitMsgToPhotosTL".equals(str)) {
+                    java.lang.String jsonData = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA);
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(jsonData)) {
+                        c1Var.i5(y2Var, "handleHaokanAction:fail data is empty.", null);
+                    } else {
+                        ra0.y Di = ((en3.v) ((ra0.v) i95.n0.c(ra0.v.class))).Di();
+                        com.tencent.mm.plugin.webview.ui.tools.jsapi.n3 n3Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.n3(c1Var, y2Var);
+                        en3.l0 l0Var = (en3.l0) Di;
+                        l0Var.getClass();
+                        kotlin.jvm.internal.o.g(jsonData, "jsonData");
+                        try {
+                            org.json.JSONObject jSONObject = new org.json.JSONObject(jsonData);
+                            java.lang.String optString = jSONObject.optString("action");
+                            java.lang.String optString2 = jSONObject.optString("fid");
+                            int optInt = jSONObject.optInt("bizuin");
+                            int optInt2 = jSONObject.optInt("mid");
+                            int optInt3 = jSONObject.optInt("idx");
+                            java.lang.String optString3 = jSONObject.optString(dm.i4.COL_ID);
+                            if (kotlin.jvm.internal.o.b(optString, "setPraiseData")) {
+                                jSONObject.optInt("praiseStatus");
+                                jSONObject.optInt("praiseNum");
+                                i95.m c17 = i95.n0.c(ra0.w.class);
+                                kotlin.jvm.internal.o.f(c17, "getService(...)");
+                                ra0.w.G9((ra0.w) c17, 0L, java.lang.Long.valueOf(pm0.v.Z(optString2)), null, 212, 2, "", false, null, en3.j0.f255305d, 128, null);
+                                n3Var.invoke(null);
+                            } else if (kotlin.jvm.internal.o.b(optString, "getPraiseData")) {
+                                i95.m c18 = i95.n0.c(ra0.w.class);
+                                kotlin.jvm.internal.o.f(c18, "getService(...)");
+                                ra0.w.G9((ra0.w) c18, 0L, java.lang.Long.valueOf(pm0.v.Z(optString2)), null, 212, 2, "", false, null, new en3.k0(l0Var, optInt, optInt2, optInt3, optString3, optString2, optString, n3Var), 128, null);
+                            }
+                        } catch (java.lang.Exception unused2) {
+                        }
+                    }
+                }
+                c1Var.i5(y2Var, "handleHaokanAction:fail, action not support", null);
+                return false;
+            }
+            boolean wi6 = ((lf0.w) ((mf0.e0) i95.n0.c(mf0.e0.class))).wi();
+            com.tencent.mars.xlog.Log.i("MicroMsg.Msg.TopStoryFeatureService", "openLookOneLookEntry isShowLookOneLookEntry:%s", java.lang.Boolean.valueOf(wi6));
+            if (!wi6) {
+                boolean isTeenMode = ((uh4.c0) i95.n0.c(uh4.c0.class)).isTeenMode();
+                boolean f17 = u11.c.f((java.lang.String) gm0.j1.u().c().l(274436, null));
+                com.tencent.mars.xlog.Log.i("MicroMsg.Msg.TopStoryFeatureService", "openLookOneLookEntry isTeenMode:%s, isEuropeanUnionUser:%s", java.lang.Boolean.valueOf(isTeenMode), java.lang.Boolean.valueOf(f17));
+                if (!isTeenMode && !f17) {
+                    long j17 = c01.z1.j() & (-67108865);
+                    gm0.j1.u().c().A(147457, j17);
+                    r45.p53 p53Var = new r45.p53();
+                    p53Var.f382761d = 56;
+                    p53Var.f382762e = 1;
+                    ((e21.z0) ((com.tencent.mm.plugin.messenger.foundation.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).fj()).c(new xg3.p0(23, p53Var));
+                    com.tencent.mars.xlog.Log.i("MicroMsg.Msg.TopStoryFeatureService", "openLookOneLookEntry extStatus:%s functionId:%s functionValue:%s", java.lang.Long.valueOf(j17), java.lang.Integer.valueOf(p53Var.f382761d), java.lang.Integer.valueOf(p53Var.f382762e));
+                }
+            }
+            c1Var.i5(y2Var, "handleHaokanAction:ok", null);
+        }
+        return true;
+    }
+
+    public static boolean Z3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        c1Var.getClass();
+        java.lang.String str2 = "";
+        try {
+            str = c1Var.f184998y.getCurrentUrl();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "JSOAUTH exception in get currentUrl" + e17.getMessage());
+            str = "";
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "currentUrl %s", str);
+        if (!c1Var.E6(str) && !str.equals("liteapp://")) {
+            c1Var.i5(y2Var, "system:access_denied", null);
+            return true;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        try {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", fc1.a.NAME);
+            str2 = android.util.Base64.encodeToString(c1Var.k7(), 0);
+        } catch (java.lang.Exception e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "device info get error %s", e18.getMessage());
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+        }
+        hashMap.put("securityInfo", str2);
+        c1Var.i5(y2Var, "mmsf0001:ok", hashMap);
+        return true;
+    }
+
+    public static boolean Z4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("gameId");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            str = (java.lang.String) y2Var.f340790a.get("appId");
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openGameDetail, appid = %s", str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "openGameDetail:fail", null);
+            return true;
+        }
+        com.tencent.mm.autogen.events.GameCenterOperationEvent gameCenterOperationEvent = new com.tencent.mm.autogen.events.GameCenterOperationEvent();
+        am.ke keVar = gameCenterOperationEvent.f54357g;
+        keVar.f7142c = str;
+        keVar.f7145f = 5;
+        keVar.f7140a = 2;
+        keVar.f7141b = c1Var.f184975d;
+        gameCenterOperationEvent.e();
+        c1Var.i5(y2Var, "openGameDetail:ok", null);
+        return true;
+    }
+
+    public static boolean a(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGoVideoPlayerUI");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("streamingUrl");
+        int F = (int) com.tencent.mm.sdk.platformtools.t8.F((java.lang.String) y2Var.f340790a.get("streamingVideoTime"), 0.0d);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("btnTitle");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("jumpUrl");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("shareTitle");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("shareThumbUrl");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("shareBtnHidden"), 0);
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("reportArgs");
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("needReportData"), 0);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("KFromTimeLine", true);
+        intent.putExtra("KStremVideoUrl", str);
+        intent.putExtra("StreamWording", str2);
+        intent.putExtra("StremWebUrl", str3);
+        intent.putExtra("KThumUrl", str5);
+        intent.putExtra("KMediaId", "fakeid_" + str5.hashCode());
+        intent.putExtra("KMediaVideoTime", F);
+        intent.putExtra("KMediaTitle", str4);
+        intent.putExtra("ShareBtnHidden", P);
+        intent.putExtra("ReportArgs", str6);
+        intent.putExtra("NeedReportData", P2);
+        if (((h62.d) ((e42.e0) i95.n0.c(e42.e0.class))).Ni(e42.d0.clicfg_ad_landing_page_new_stream_video, 1) > 0) {
+            j45.l.j(c1Var.f184975d, "sns", ".ui.SnsAdStreamVideoPlayUI", intent, null);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "use new stream video play UI");
+        } else {
+            j45.l.j(c1Var.f184975d, "sns", ".ui.VideoAdPlayerUI", intent, null);
+        }
+        c1Var.i5(y2Var, "playStreamingVideo:ok", null);
+        return true;
+    }
+
+    public static boolean a0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "setSnsObjectDescList");
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA);
+        boolean c17 = com.tencent.mm.plugin.websearch.l2.c(map, "append", false);
+        com.tencent.mm.plugin.websearch.n0 n0Var = new com.tencent.mm.plugin.websearch.n0(q0Var, null);
+        n0Var.f181572d = f17;
+        n0Var.f181573e = c17;
+        s75.d.b(n0Var, "append_music_list_task");
+        return false;
+    }
+
+    public static boolean a1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: do get soter support");
+        com.tencent.mm.autogen.events.GetIsSupportSoterEvent getIsSupportSoterEvent = new com.tencent.mm.autogen.events.GetIsSupportSoterEvent();
+        getIsSupportSoterEvent.e();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        am.cg cgVar = getIsSupportSoterEvent.f54401g;
+        hashMap.put("support_mode", java.lang.Integer.valueOf(cgVar.f6352a));
+        c1Var.i5(y2Var, "getSupportSoter", hashMap);
+        c1Var.a7(y2Var, 0, cgVar.f6352a == 1 ? 1 : 0);
+        return true;
+    }
+
+    public static boolean a2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        try {
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE));
+            bundle.putString("icon", com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "icon"));
+            bundle.putInt("duration", com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "duration", 500));
+            bundle.putInt("mask", com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "mask", 0));
+            c1Var.f184998y.callback(148, bundle);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        c1Var.i5(y2Var, "showSearchToast:succ", null);
+        return true;
+    }
+
+    public static boolean a3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = y2Var.f340790a.get("pay_packageName") == null ? "" : (java.lang.String) y2Var.f340790a.get("pay_packageName");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "do request joint payment: %s", str != null ? str : "");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+            walletJsapiData.A = 1;
+            walletJsapiData.G = true;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doPay, pay channel: %s, scene: %s", java.lang.Integer.valueOf(walletJsapiData.f192144v), java.lang.Integer.valueOf(walletJsapiData.f192142t));
+            og0.o oVar = (og0.o) i95.n0.c(og0.o.class);
+            com.tencent.mm.ui.MMActivity mMActivity = (com.tencent.mm.ui.MMActivity) c1Var.f184975d;
+            ((ng0.q) oVar).getClass();
+            if (h45.a0.d(mMActivity, walletJsapiData, 68, c1Var)) {
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(10593, walletJsapiData.f192141s, walletJsapiData.f192129d, java.lang.Long.valueOf(com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("message_id"), 0L)), java.lang.Integer.valueOf(com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("message_index"), 0)), java.lang.Integer.valueOf(walletJsapiData.f192142t), walletJsapiData.f192140r);
+                c1Var.N = c1Var.g5(y2Var);
+            } else {
+                c1Var.i5(y2Var, "get_brand_wcpay_request:fail", null);
+            }
+        }
+        return true;
+    }
+
+    public static boolean a4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("singer");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("epname");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("coverImgUrl");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("dataUrl");
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("lowbandUrl");
+        java.lang.String str7 = (java.lang.String) y2Var.f340790a.get("webUrl");
+        java.lang.String str8 = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str9 = (java.lang.String) y2Var.f340790a.get("mid");
+        java.lang.String str10 = str4 == null ? "" : str4;
+        nw4.e3.a(y2Var.f341018h, false, null, str8);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "title : %s, singer : %s, epName : %s, coverImgUrl : %s, dataUrl : %s, lowbandUrl : %s, webUrl : %s, appid : %s, mid:%s", str, str2, str3, str10, str5, str6, str7, str8, str9);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2) || com.tencent.mm.sdk.platformtools.t8.K0(str3) || com.tencent.mm.sdk.platformtools.t8.K0(str10) || com.tencent.mm.sdk.platformtools.t8.K0(str6) || com.tencent.mm.sdk.platformtools.t8.K0(str5) || com.tencent.mm.sdk.platformtools.t8.K0(str7)) {
+            c1Var.i5(y2Var, "playMusic:fail", null);
+            return true;
+        }
+        b21.m.j();
+        b21.m.i(b21.s.a(7, str10, str, str2, str7, str6, str5, "" + str5.hashCode(), lp0.b.D(), g83.a.a() + str10.hashCode(), str3, str8));
+        c1Var.i5(y2Var, "playMusic:ok", null);
+        return true;
+    }
+
+    public static boolean a5(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.i5(y2Var, "gameCenterJump:not support", null);
+        return true;
+    }
+
+    public static boolean b(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: doGetIbgPrepayRequest");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (!(c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        walletJsapiData.A = 2;
+        og0.o oVar = (og0.o) i95.n0.c(og0.o.class);
+        com.tencent.mm.ui.MMActivity mMActivity = (com.tencent.mm.ui.MMActivity) c1Var.f184975d;
+        ((ng0.q) oVar).getClass();
+        if (!h45.a0.d(mMActivity, walletJsapiData, 27, c1Var)) {
+            c1Var.i5(y2Var, "get_h5_prepay_request:fail", null);
+            return true;
+        }
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.d(10593, walletJsapiData.f192141s, walletJsapiData.f192129d, java.lang.Long.valueOf(com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("message_id"), 0L)), java.lang.Integer.valueOf(com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("message_index"), 0)), java.lang.Integer.valueOf(walletJsapiData.f192142t), walletJsapiData.f192140r);
+        c1Var.N = c1Var.g5(y2Var);
+        return true;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:8:0x0057, code lost:
+    
+        if (r1 == false) goto L19;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean b0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r7, nw4.y2 r8, com.tencent.mm.protocal.JsapiPermissionWrapper r9) {
+        /*
+            r9 = 0
+            r7.f184993v = r9
+            su4.w0 r7 = com.tencent.mm.plugin.webview.modeltools.z.Ri()
+            java.util.Map r8 = r8.f340790a
+            com.tencent.mm.plugin.websearch.q0 r7 = (com.tencent.mm.plugin.websearch.q0) r7
+            r7.getClass()
+            java.lang.String r0 = r8.toString()
+            java.lang.Object[] r0 = new java.lang.Object[]{r0}
+            java.lang.String r1 = "MicroMsg.WebSearch.FTSWebViewLogic"
+            java.lang.String r2 = "clickSnsMusicPlayButton %s"
+            com.tencent.mars.xlog.Log.i(r1, r2, r0)
+            java.lang.String r0 = "isLoop"
+            boolean r0 = com.tencent.mm.plugin.websearch.l2.c(r8, r0, r9)
+            java.lang.String r1 = "needStartMusicUI"
+            boolean r1 = com.tencent.mm.plugin.websearch.l2.c(r8, r1, r9)
+            java.lang.String r2 = "snsid"
+            java.lang.String r2 = com.tencent.mm.plugin.websearch.l2.f(r8, r2)
+            java.lang.String r3 = "webview_instance_id"
+            java.lang.Object r3 = r8.get(r3)
+            r4 = -1
+            int r3 = com.tencent.mm.sdk.platformtools.t8.o1(r3, r4)
+            boolean r4 = b21.m.c()
+            r5 = 9
+            if (r4 == 0) goto L5a
+            b21.r r4 = b21.m.b()
+            int r6 = r4.f17345d
+            if (r6 != r5) goto L5a
+            java.lang.String r4 = r4.f17346e
+            boolean r2 = r4.equals(r2)
+            if (r2 == 0) goto L5a
+            b21.m.j()
+            if (r1 != 0) goto L5a
+            goto Lc8
+        L5a:
+            if (r1 == 0) goto L69
+            java.util.List r2 = r7.f181599o
+            if (r2 == 0) goto L69
+            b21.b r4 = new b21.b
+            r6 = 1
+            r4.<init>(r2, r6)
+            com.tencent.mm.sdk.platformtools.u3.h(r4)
+        L69:
+            java.lang.String r2 = "objectXmlDesc"
+            java.lang.String r8 = com.tencent.mm.plugin.websearch.l2.f(r8, r2)
+            java.lang.Class<p94.s0> r2 = p94.s0.class
+            i95.m r2 = i95.n0.c(r2)
+            p94.s0 r2 = (p94.s0) r2
+            n34.v4 r2 = (n34.v4) r2
+            com.tencent.mm.protocal.protobuf.TimeLineObject r8 = r2.Ai(r8)
+            java.lang.Class<t90.e> r2 = t90.e.class
+            i95.m r2 = i95.n0.c(r2)
+            t90.e r2 = (t90.e) r2
+            gm0.j1.i()
+            gm0.b0 r4 = gm0.j1.u()
+            java.lang.String r4 = r4.d()
+            s90.e r2 = (s90.e) r2
+            r2.getClass()
+            r2 = 0
+            b21.r r8 = b21.u.c(r4, r8, r5, r2)
+            r8.A = r0
+            b21.j r0 = new b21.j
+            r0.<init>(r8)
+            com.tencent.mm.sdk.platformtools.u3.h(r0)
+            if (r1 == 0) goto Lbf
+            android.content.Intent r8 = new android.content.Intent
+            r8.<init>()
+            java.lang.String r0 = "key_scene"
+            r1 = 4
+            r8.putExtra(r0, r1)
+            r0 = 268435456(0x10000000, float:2.524355E-29)
+            r8.setFlags(r0)
+            android.content.Context r0 = com.tencent.mm.sdk.platformtools.x2.f193071a
+            java.lang.String r1 = "music"
+            java.lang.String r4 = ".ui.MusicMainUI"
+            j45.l.j(r0, r1, r4, r8, r2)
+        Lbf:
+            java.util.Set r7 = r7.f181591d
+            java.lang.Integer r8 = java.lang.Integer.valueOf(r3)
+            r7.add(r8)
+        Lc8:
+            return r9
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.b0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean b1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        if (c1Var.f184984o != null && android.text.TextUtils.isEmpty(str)) {
+            str = c1Var.f184984o.getString("jsapi_args_appid");
+        }
+        intent.putExtra("appId", str);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", c1Var.n6());
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.o(c1Var.f184975d, "wallet", ".bind.ui.WalletUnbindBankCardProxyUI", intent, 39, false);
+        return true;
+    }
+
+    public static boolean b2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        try {
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE));
+            bundle.putInt("mask", com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "mask", 0));
+            c1Var.f184998y.callback(com.tencent.mm.plugin.appbrand.jsapi.pay.a2.CTRL_INDEX, bundle);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        c1Var.i5(y2Var, "showSearchLoading:succ", null);
+        return true;
+    }
+
+    public static boolean b3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.util.Map q66 = c1Var.q6(y2Var);
+        if (q66 == null) {
+            return true;
+        }
+        og0.o oVar = (og0.o) i95.n0.c(og0.o.class);
+        com.tencent.mm.ui.MMActivity mMActivity = (com.tencent.mm.ui.MMActivity) c1Var.f184975d;
+        ((ng0.q) oVar).getClass();
+        h45.a0.h(mMActivity, "selectPayment", q66, 69, c1Var);
+        return true;
+    }
+
+    public static boolean b4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetTransferMoneyRequest JSOAUTH");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (!(c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        com.tencent.mm.plugin.webview.model.h4.f182914i.a(hy4.a0.f286076i);
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 3);
+        intent.putExtra("appId", walletJsapiData.f192129d);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", walletJsapiData.f192140r);
+        intent.putExtra("pay_channel", walletJsapiData.f192144v);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.n(c1Var.f184975d, "remittance", ".ui.RemittanceAdapterUI", intent, 11);
+        return true;
+    }
+
+    public static boolean b5(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("downloaderType"), 0);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("countryCode");
+        com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("showAllLog"), 0);
+        com.tencent.mm.autogen.events.GameDebugSettingEvent gameDebugSettingEvent = new com.tencent.mm.autogen.events.GameDebugSettingEvent();
+        am.ne neVar = gameDebugSettingEvent.f54360g;
+        neVar.f7421a = P;
+        neVar.f7422b = str;
+        gameDebugSettingEvent.e();
+        c1Var.i5(y2Var, "setGameDebugConfig:ok", null);
+        return true;
+    }
+
+    public static boolean c(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: doGetIbgTransactionRequest");
+        if (c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("closeWebAfterPayDetailBack"), 0);
+            c1Var.f184974J = P;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "close window: %s", java.lang.Integer.valueOf(P));
+            int i17 = walletJsapiData.f192137o;
+            if (i17 == 2) {
+                c1Var.Z.alive();
+                java.lang.String str = walletJsapiData.f192135m;
+                int i18 = walletJsapiData.f192136n;
+                if (i18 == 1) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "businessScene: %d，data.reqKey：%s", java.lang.Integer.valueOf(i17), str);
+                    com.tencent.mm.autogen.events.WalletGetPaidOrderDetailEvent walletGetPaidOrderDetailEvent = new com.tencent.mm.autogen.events.WalletGetPaidOrderDetailEvent();
+                    java.lang.String str2 = walletJsapiData.f192129d;
+                    am.k10 k10Var = walletGetPaidOrderDetailEvent.f54957g;
+                    k10Var.f7116a = str2;
+                    k10Var.f7117b = walletJsapiData.f192133h;
+                    k10Var.f7118c = walletJsapiData.f192132g;
+                    k10Var.f7119d = walletJsapiData.f192134i;
+                    k10Var.f7120e = str;
+                    k10Var.f7121f = i18;
+                    k10Var.f7122g = walletJsapiData.f192131f;
+                    k10Var.f7123h = walletJsapiData.f192138p;
+                    walletGetPaidOrderDetailEvent.e();
+                } else if (i18 == 2) {
+                    og0.o oVar = (og0.o) i95.n0.c(og0.o.class);
+                    com.tencent.mm.ui.MMActivity mMActivity = (com.tencent.mm.ui.MMActivity) c1Var.f184975d;
+                    ((ng0.q) oVar).getClass();
+                    android.content.Intent intent = new android.content.Intent();
+                    intent.putExtra("appId", walletJsapiData.f192129d);
+                    intent.putExtra("timeStamp", walletJsapiData.f192133h);
+                    intent.putExtra("nonceStr", walletJsapiData.f192132g);
+                    intent.putExtra("packageExt", walletJsapiData.f192134i);
+                    intent.putExtra("reqKey", str);
+                    intent.putExtra("signtype", walletJsapiData.f192131f);
+                    intent.putExtra("paySignature", walletJsapiData.f192138p);
+                    intent.putExtra("payScene", i18);
+                    intent.putExtra("is_jsapi_offline_pay", true);
+                    j45.l.k(mMActivity, "wallet_core", ".ui.WalletMixOrderInfoUI", intent, true);
+                }
+            } else {
+                og0.o oVar2 = (og0.o) i95.n0.c(og0.o.class);
+                com.tencent.mm.ui.MMActivity mMActivity2 = (com.tencent.mm.ui.MMActivity) c1Var.f184975d;
+                ((ng0.q) oVar2).getClass();
+                android.content.Intent intent2 = new android.content.Intent();
+                intent2.putExtra("appId", walletJsapiData.f192129d);
+                intent2.putExtra("timeStamp", walletJsapiData.f192133h);
+                intent2.putExtra("nonceStr", walletJsapiData.f192132g);
+                intent2.putExtra("packageExt", walletJsapiData.f192134i);
+                intent2.putExtra("signtype", walletJsapiData.f192131f);
+                intent2.putExtra("paySignature", walletJsapiData.f192138p);
+                intent2.putExtra("url", walletJsapiData.f192140r);
+                mMActivity2.mmSetOnActivityResultCallback(c1Var);
+                com.tencent.mars.xlog.Log.i("MicroMsg.WalletManager", "startIbgOrderResult context %s from %s", mMActivity2, new com.tencent.mm.sdk.platformtools.z3());
+                j45.l.o(mMActivity2, "wallet_core", ".ui.ibg.WalletIbgOrderInfoUI", intent2, 25, true);
+            }
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.d(10593, walletJsapiData.f192141s, walletJsapiData.f192129d, java.lang.Long.valueOf(com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("message_id"), 0L)), java.lang.Integer.valueOf(com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("message_index"), 0)), java.lang.Integer.valueOf(walletJsapiData.f192142t), walletJsapiData.f192140r);
+        }
+        return true;
+    }
+
+    public static boolean c0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddCustomMenuItems start");
+        if (y2Var.f340790a.containsKey("hideMenu")) {
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("hideMenu"), 0);
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddCustomMenuItems hideMenu=" + P);
+            if (c1Var.B6(P == 1)) {
+                c1Var.i5(y2Var, "doAddCustomMenuItems:ok", null);
+            } else {
+                c1Var.i5(y2Var, "doAddCustomMenuItems:fail", null);
+            }
+        } else {
+            c1Var.B6(false);
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("itemList");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddCustomMenuItems fail: key or title must not be null");
+                c1Var.i5(y2Var, "doAddCustomMenuItems:params error", null);
+            } else {
+                try {
+                    org.json.JSONArray jSONArray = new org.json.JSONArray(str);
+                    java.util.ArrayList<java.lang.String> arrayList = new java.util.ArrayList<>();
+                    java.util.ArrayList<java.lang.String> arrayList2 = new java.util.ArrayList<>();
+                    int length = jSONArray.length();
+                    for (int i17 = 0; i17 < length; i17++) {
+                        org.json.JSONObject optJSONObject = jSONArray.optJSONObject(i17);
+                        if (optJSONObject != null) {
+                            java.lang.String optString = optJSONObject.optString("key");
+                            java.lang.String optString2 = optJSONObject.optString(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+                            if (com.tencent.mm.sdk.platformtools.t8.K0(optString) || com.tencent.mm.sdk.platformtools.t8.K0(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE)) {
+                                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "key or title is null,ignore item: " + i17);
+                            } else {
+                                arrayList.add(optString);
+                                arrayList2.add(optString2);
+                            }
+                        }
+                    }
+                    if (arrayList.size() > 0) {
+                        android.os.Bundle bundle = new android.os.Bundle();
+                        bundle.putStringArrayList("keys", arrayList);
+                        bundle.putStringArrayList("titles", arrayList2);
+                        try {
+                            c1Var.f184998y.Ae(bundle);
+                            c1Var.i5(y2Var, "doAddCustomMenuItems:ok", null);
+                        } catch (android.os.RemoteException e17) {
+                            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+                            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddCustomMenuItems:fail");
+                            c1Var.i5(y2Var, "doAddCustomMenuItems:fail", null);
+                        }
+                    }
+                } catch (org.json.JSONException unused) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddCustomMenuItems eroor, parse itemList to jsonarray error");
+                    c1Var.i5(y2Var, "doAddCustomMenuItems:params parse error", null);
+                }
+            }
+        }
+        return true;
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* JADX WARN: Removed duplicated region for block: B:26:0x012f A[Catch: Exception -> 0x0158, TryCatch #0 {Exception -> 0x0158, blocks: (B:3:0x0021, B:5:0x004a, B:8:0x0052, B:23:0x00bf, B:24:0x011b, B:26:0x012f, B:28:0x0136, B:30:0x0140, B:32:0x0146, B:33:0x014d, B:35:0x008d, B:36:0x00b6, B:37:0x00cc, B:38:0x00d5, B:39:0x00ec, B:40:0x0108, B:42:0x0153), top: B:2:0x0021 }] */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x0146 A[Catch: Exception -> 0x0158, TryCatch #0 {Exception -> 0x0158, blocks: (B:3:0x0021, B:5:0x004a, B:8:0x0052, B:23:0x00bf, B:24:0x011b, B:26:0x012f, B:28:0x0136, B:30:0x0140, B:32:0x0146, B:33:0x014d, B:35:0x008d, B:36:0x00b6, B:37:0x00cc, B:38:0x00d5, B:39:0x00ec, B:40:0x0108, B:42:0x0153), top: B:2:0x0021 }] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean c1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r17, nw4.y2 r18) {
+        /*
+            Method dump skipped, instructions count: 408
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.c1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean c2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        try {
+            c1Var.f184998y.callback(150, new android.os.Bundle());
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        c1Var.i5(y2Var, "hideSearchLoading:succ", null);
+        return true;
+    }
+
+    public static boolean c3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("download_id"), -1L);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doCancelDownloadTask, downloadId = " + V);
+        if (V <= 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doCancelDownloadTask fail, invalid downloadId = " + V);
+            c1Var.i5(y2Var, "cancel_download_task:fail", null);
+            return true;
+        }
+        ((uz.v1) ((vz.v1) i95.n0.c(vz.v1.class))).getClass();
+        com.tencent.mm.plugin.downloader.model.FileDownloadTaskInfo p17 = com.tencent.mm.plugin.downloader.model.r0.i().p(V);
+        ((uz.v1) ((vz.v1) i95.n0.c(vz.v1.class))).getClass();
+        int t17 = com.tencent.mm.plugin.downloader.model.r0.i().t(V);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doCancelDownloadTask, ret = " + t17);
+        java.lang.String a17 = com.tencent.mm.plugin.webview.model.s3.f183104a.a(V);
+        if (a17 != null) {
+            ((ee0.c) ((fe0.k3) i95.n0.c(fe0.k3.class))).getClass();
+            com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("reportAddDownloadTaskStraightCancel", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+            l44.z.b(4001074, a17);
+            com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("reportAddDownloadTaskStraightCancel", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+        }
+        if (t17 <= 0) {
+            c1Var.i5(y2Var, "cancel_download_task:fail", null);
+            return true;
+        }
+        if (p17 != null && p17.f96962e != null && p17.f96970p == 2) {
+            ((uz.v1) ((vz.v1) i95.n0.c(vz.v1.class))).getClass();
+            com.tencent.mm.plugin.downloader.model.r0.i().f(p17.f96962e);
+        }
+        c1Var.i5(y2Var, "cancel_download_task:ok", null);
+        return true;
+    }
+
+    public static boolean c4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        int P;
+        java.lang.String str;
+        java.lang.String str2;
+        c1Var.getClass();
+        if (c01.z1.s()) {
+            com.tencent.mm.storage.ja m07 = ((com.tencent.mm.storage.ka) ((com.tencent.mm.plugin.messenger.foundation.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).hj()).m0("@t.qq.com");
+            if (m07 != null) {
+                java.lang.String str3 = m07.f195058b;
+                java.lang.String str4 = "";
+                if (str3 == null) {
+                    str3 = "";
+                }
+                if (str3.length() != 0) {
+                    java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("type");
+                    if (str5 == null) {
+                        str5 = "40";
+                    }
+                    if (str5.length() > 0) {
+                        try {
+                            P = com.tencent.mm.sdk.platformtools.t8.P(str5, 40);
+                        } catch (java.lang.Exception unused) {
+                        }
+                        int i17 = (P != 11 || P == 20) ? P : 40;
+                        str = (java.lang.String) y2Var.f340790a.get("content");
+                        str2 = (java.lang.String) y2Var.f340790a.get("url");
+                        if (str != null && str.trim().length() != 0) {
+                            str4 = str;
+                        }
+                        if (str2 != null || str2.length() == 0) {
+                            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doWeibo fail, invalid argument, content = " + str4 + ", url = " + str2);
+                            c1Var.i5(y2Var, "share_weibo:fail_-2", null);
+                        } else {
+                            nw4.e3.a(y2Var.f341018h, c1Var.p6("shareWeibo"), null, null);
+                            java.lang.String x66 = c1Var.x6(str2);
+                            android.content.Intent intent = new android.content.Intent(c1Var.f184975d, (java.lang.Class<?>) com.tencent.mm.plugin.webview.ui.tools.jsapi.ShareToQQWeiboUI.class);
+                            intent.putExtra("type", i17);
+                            intent.putExtra("shortUrl", x66);
+                            intent.putExtra("content", str4);
+                            android.content.Context context = c1Var.f184975d;
+                            if (context instanceof com.tencent.mm.ui.MMActivity) {
+                                ((com.tencent.mm.ui.MMActivity) context).mmStartActivityForResult((com.tencent.mm.ui.da) c1Var, intent, 2);
+                            }
+                        }
+                    }
+                    P = 40;
+                    if (P != 11) {
+                    }
+                    str = (java.lang.String) y2Var.f340790a.get("content");
+                    str2 = (java.lang.String) y2Var.f340790a.get("url");
+                    if (str != null) {
+                        str4 = str;
+                    }
+                    if (str2 != null) {
+                    }
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doWeibo fail, invalid argument, content = " + str4 + ", url = " + str2);
+                    c1Var.i5(y2Var, "share_weibo:fail_-2", null);
+                }
+            }
+            com.tencent.mm.ui.widget.dialog.j0 o17 = db5.e1.o(c1Var.f184975d, com.tencent.mm.R.string.lac, com.tencent.mm.R.string.f490573yv, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.m3(c1Var));
+            o17.setCancelable(false);
+            o17.setOnDismissListener(new com.tencent.mm.plugin.webview.ui.tools.jsapi.s3(c1Var, y2Var));
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doWeibo fail, qq not binded");
+            com.tencent.mm.ui.widget.dialog.j0 n17 = db5.e1.n(c1Var.f184975d, com.tencent.mm.R.string.lae, com.tencent.mm.R.string.f490573yv, new com.tencent.mm.plugin.webview.ui.tools.jsapi.q2(c1Var), null);
+            n17.setCancelable(false);
+            n17.setOnDismissListener(new com.tencent.mm.plugin.webview.ui.tools.jsapi.b3(c1Var, y2Var));
+        }
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0069  */
+    /* JADX WARN: Removed duplicated region for block: B:20:0x0086  */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x00b4 A[Catch: Exception -> 0x00fe, TRY_ENTER, TryCatch #0 {Exception -> 0x00fe, blocks: (B:18:0x006e, B:21:0x0087, B:24:0x00b4, B:25:0x00bb, B:27:0x00b8), top: B:17:0x006e }] */
+    /* JADX WARN: Removed duplicated region for block: B:27:0x00b8 A[Catch: Exception -> 0x00fe, TryCatch #0 {Exception -> 0x00fe, blocks: (B:18:0x006e, B:21:0x0087, B:24:0x00b4, B:25:0x00bb, B:27:0x00b8), top: B:17:0x006e }] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean c5(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r18, nw4.y2 r19, com.tencent.mm.protocal.JsapiPermissionWrapper r20) {
+        /*
+            Method dump skipped, instructions count: 269
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.c5(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean d(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doJumpToWXWallet");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            android.content.Intent intent = new android.content.Intent();
+            intent.putExtra("key_wallet_region", 1);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", " walletMallV2 switch is ：%s", java.lang.Boolean.TRUE);
+            j45.l.k(c1Var.f184975d, "mall", ".ui.MallIndexUIv2", intent, false);
+            c1Var.i5(y2Var, "jump_to_wx_wallet:ok", null);
+        }
+        return true;
+    }
+
+    public static boolean d0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var) {
+        c1Var.getClass();
+        try {
+            c1Var.f184998y.te(3004, null);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "RemoteException : %s", e17.getMessage());
+        }
+        c1Var.f184993v = false;
+        return false;
+    }
+
+    public static boolean d1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String obj = y2Var.f340790a.get("chat_username").toString();
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("Chat_User", obj);
+        intent.putExtra("finish_direct", true);
+        intent.putExtra("expose_edit_mode", true);
+        intent.setFlags(com.tencent.wcdb.database.SQLiteDatabase.ENABLE_WRITE_AHEAD_LOGGING);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            j45.l.w((com.tencent.mm.ui.MMActivity) context, ".ui.chatting.ChattingUI", intent, 40, c1Var);
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getMsgProofItems invalid context");
+            c1Var.i5(y2Var, "select chat record:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean d2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        su4.u0 Di = com.tencent.mm.plugin.webview.modeltools.z.Di();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.a0 a0Var = (com.tencent.mm.plugin.websearch.a0) Di;
+        a0Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("errcode", 0);
+        hashMap.put("msg", ya.b.SUCCESS);
+        if (map != null) {
+            int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "limit", 3);
+            int e18 = com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1);
+            if (e18 > 0) {
+                java.lang.String str = java.lang.String.valueOf(e18) + '_' + java.lang.String.valueOf(com.tencent.mm.sdk.platformtools.t8.i1() / 300);
+                java.util.HashMap hashMap2 = (java.util.HashMap) a0Var.f181427g;
+                int intValue = hashMap2.containsKey(str) ? ((java.lang.Integer) hashMap2.get(str)).intValue() : 0;
+                if (intValue < e17) {
+                    ((yy.a) ((zy.r) i95.n0.c(zy.r.class))).wi(40);
+                    hashMap2.put(str, java.lang.Integer.valueOf(intValue + 1));
+                } else {
+                    hashMap.put("errcode", -1);
+                    hashMap.put("msg", "fail:over call");
+                }
+            }
+        } else {
+            ((yy.a) ((zy.r) i95.n0.c(zy.r.class))).wi(40);
+        }
+        c1Var.i5(y2Var, "updateWASearchTemplate:succ", hashMap);
+        return true;
+    }
+
+    public static boolean d3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.util.Map q66 = c1Var.q6(y2Var);
+        if (q66 == null) {
+            return true;
+        }
+        og0.o oVar = (og0.o) i95.n0.c(og0.o.class);
+        com.tencent.mm.ui.MMActivity mMActivity = (com.tencent.mm.ui.MMActivity) c1Var.f184975d;
+        ((ng0.q) oVar).getClass();
+        h45.a0.h(mMActivity, "entrustAuthorization", q66, 69, c1Var);
+        return true;
+    }
+
+    public static boolean d4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String[] split;
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenWCPaySpecificView");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+            java.lang.String str = walletJsapiData.f192134i;
+            java.util.HashMap hashMap = new java.util.HashMap();
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str) && (split = str.split("&")) != null && split.length > 0) {
+                for (int i17 = 0; i17 < split.length; i17++) {
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(split[i17])) {
+                        java.lang.String[] split2 = split[i17].split("=");
+                        if (split2.length == 2 && !com.tencent.mm.sdk.platformtools.t8.K0(split2[0])) {
+                            hashMap.put(split2[0], split2[1]);
+                        }
+                    }
+                }
+            }
+            java.lang.String str2 = (java.lang.String) hashMap.get("openview");
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("appId", walletJsapiData.f192129d);
+            bundle.putString("timeStamp", walletJsapiData.f192133h);
+            bundle.putString("nonceStr", walletJsapiData.f192132g);
+            bundle.putString("packageExt", walletJsapiData.f192134i);
+            bundle.putString("signtype", walletJsapiData.f192131f);
+            bundle.putString("paySignature", walletJsapiData.f192138p);
+            bundle.putString("url", walletJsapiData.f192140r);
+            bundle.putInt("pay_channel", walletJsapiData.f192144v);
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                str2.getClass();
+                if (str2.equals("open_lqt_fixed_deposit_deposit")) {
+                    bundle.putInt("entry_scene", com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) hashMap.get("entry_scene"), 0));
+                    ((h45.q) i95.n0.c(h45.q.class)).startLqtFixedDepositMakePlanUseCase(c1Var.f184975d, bundle);
+                    c1Var.i5(y2Var, "open_lqt_fixed_deposit_deposit:ok", null);
+                } else if (str2.equals("open_lqt_fixed_deposit_plan_list")) {
+                    ((h45.q) i95.n0.c(h45.q.class)).startLqtFixedDepositPlanListUseCase(c1Var.f184975d, bundle);
+                    c1Var.i5(y2Var, "open_lqt_fixed_deposit_plan_list:ok", null);
+                }
+            }
+            ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+            j45.l.o(c1Var.f184975d, "wallet_index", ".ui.WalletOpenViewProxyUI", new android.content.Intent().putExtras(bundle), 17, false);
+        }
+        return true;
+    }
+
+    public static boolean d5(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetRecevieBizHongBaoRequest");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        if (!(c1Var.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_way", 3);
+        intent.putExtra("appId", walletJsapiData.f192129d);
+        intent.putExtra("timeStamp", walletJsapiData.f192133h);
+        intent.putExtra("nonceStr", walletJsapiData.f192132g);
+        intent.putExtra("packageExt", walletJsapiData.f192134i);
+        intent.putExtra("signtype", walletJsapiData.f192131f);
+        intent.putExtra("paySignature", walletJsapiData.f192138p);
+        intent.putExtra("url", walletJsapiData.f192140r);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        j45.l.n(c1Var.f184975d, "luckymoney", ".ui.LuckyMoneyBusiReceiveUI", intent, 22);
+        return true;
+    }
+
+    public static boolean e(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        if (!c1Var.J6("nfcIsConnect", 4001, new android.os.Bundle())) {
+            return true;
+        }
+        c1Var.i5(y2Var, "nfcIsConnect:connect", null);
+        return true;
+    }
+
+    public static boolean e0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        c1Var.getClass();
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("useridlist");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("chatname");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("chatscene");
+        try {
+            str = c1Var.f184998y.getCurrentUrl();
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "exception in get currentUrl %s", e17.getMessage());
+            str = null;
+        }
+        java.lang.String c17 = c1Var.A.c(str);
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (c17 == null) {
+            c17 = "";
+        }
+        java.util.LinkedList linkedList = new java.util.LinkedList();
+        java.lang.String[] split = str2.split(";");
+        if (split == null || split.length <= 0) {
+            c1Var.i5(y2Var, "openEnterpriseChat:fail", null);
+            return false;
+        }
+        for (java.lang.String str5 : split) {
+            linkedList.add(str5);
+        }
+        s01.y Ni = r01.q3.Ni();
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.s7 s7Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.s7(c1Var, y2Var, str4);
+        Ni.getClass();
+        gm0.j1.n().f273288b.g(new s01.m0(c17, str3, linkedList, s7Var));
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:36:0x00f5  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x0114  */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x0125  */
+    /* JADX WARN: Removed duplicated region for block: B:44:0x00fa  */
+    /* JADX WARN: Removed duplicated region for block: B:6:0x005c  */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x0069  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean e1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r18, nw4.y2 r19) {
+        /*
+            Method dump skipped, instructions count: 352
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.e1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean e2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "userName");
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "appId");
+        boolean c17 = com.tencent.mm.plugin.websearch.l2.c(y2Var.f340790a, "fakeNative", false);
+        boolean c18 = com.tencent.mm.plugin.websearch.l2.c(y2Var.f340790a, "preloadEnv", false);
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "preload search weapp, username[%s], appId[%s], preloadEnv[%b], fakeNative[%b], scene[%s]。", f17, f18, java.lang.Boolean.valueOf(c18), java.lang.Boolean.valueOf(c17), java.lang.Integer.valueOf(e17));
+        if (f17.length() > 0) {
+            ((com.tencent.mm.plugin.appbrand.service.s6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.s6.class)).h8(f17, e17);
+        }
+        if (c18) {
+            if (c17) {
+                ((com.tencent.mm.plugin.appbrand.service.f5) i95.n0.c(com.tencent.mm.plugin.appbrand.service.f5.class)).Yf(com.tencent.mm.plugin.appbrand.service.x6.E);
+            } else if (f18.length() > 0) {
+                ((com.tencent.mm.plugin.appbrand.service.r5) i95.n0.c(com.tencent.mm.plugin.appbrand.service.r5.class)).xh(f18);
+            }
+        }
+        c1Var.i5(y2Var, "preloadSearchWeapp:succ", null);
+        return true;
+    }
+
+    public static boolean e3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        org.json.JSONObject jSONObject = new org.json.JSONObject();
+        try {
+            if (y2Var.f340790a.get("style") != null) {
+                jSONObject.put("style", y2Var.f340790a.get("style"));
+            }
+        } catch (java.lang.Exception unused) {
+        }
+        tg0.x1 x1Var = (tg0.x1) i95.n0.c(tg0.x1.class);
+        java.lang.String jSONObject2 = jSONObject.toString();
+        ((sg0.w3) x1Var).getClass();
+        c1Var.i5(y2Var, "doVibrateShort:".concat(aw4.n0.f14901a.f(jSONObject2) ? "ok" : "fail"), null);
+        return true;
+    }
+
+    public static boolean e4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseCard JSOAUTH");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.tencent.kinda.framework.widget.tools.ConstantsKinda.INTENT_LITEAPP_APPID);
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("location_id"), 0);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("sign_type");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("card_sign");
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("time_stamp"), 0);
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("nonce_str");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("card_id");
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("card_type");
+        if ("INVOICE".equalsIgnoreCase(str6)) {
+            c1Var.i5(y2Var, "choose_card:fail", new java.util.HashMap());
+            return false;
+        }
+        int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("can_multi_select"), 0);
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra(com.tencent.kinda.framework.widget.tools.ConstantsKinda.INTENT_LITEAPP_APPID, str);
+        intent.putExtra("shop_id", P);
+        intent.putExtra("sign_type", str2);
+        intent.putExtra("card_sign", str3);
+        intent.putExtra("time_stamp", P2);
+        intent.putExtra("nonce_str", str4);
+        intent.putExtra("card_tp_id", str5);
+        intent.putExtra("card_type", str6);
+        intent.putExtra("can_multi_select", P3);
+        intent.putExtra("key_from_scene", 7);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+            j45.l.o(c1Var.f184975d, "card", ".ui.CardListSelectedUI", intent, 13, false);
+        }
+        return true;
+    }
+
+    public static boolean e5(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        if (c1Var.f184975d == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "context is null");
+            c1Var.i5(y2Var, "openMyDeviceProfile:fail", null);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("deviceType");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceType is null");
+            c1Var.i5(y2Var, "openMyDeviceProfile:fail_no deviceType", null);
+            return true;
+        }
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("deviceId");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "deviceId is null");
+            c1Var.i5(y2Var, "openMyDeviceProfile:fail_no deviceId", null);
+            return true;
+        }
+        android.content.Intent intent = new android.content.Intent();
+        if (!(c1Var.f184975d instanceof android.app.Activity)) {
+            intent.addFlags(268435456);
+        }
+        intent.putExtra("device_type", str);
+        intent.putExtra(com.tencent.thumbplayer.core.downloadproxy.api.TPDownloadProxyEnum.USER_DEVICE_ID, str2);
+        j45.l.j(c1Var.f184975d, "exdevice", ".ui.ExdeviceDeviceProfileUI", intent, null);
+        c1Var.i5(y2Var, "openMyDeviceProfile:ok", null);
+        return true;
+    }
+
+    public static boolean f(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        if (!c1Var.J6("nfcConnect", 4002, new android.os.Bundle())) {
+            return true;
+        }
+        c1Var.i5(y2Var, "nfcConnect:connect", null);
+        return true;
+    }
+
+    public static boolean f0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        c1Var.getClass();
+        try {
+            str = c1Var.f184998y.getCurrentUrl();
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "exception in get currentUrl %s", e17.getMessage());
+            str = null;
+        }
+        java.lang.String c17 = c1Var.A.c(str);
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (c17 == null) {
+            c17 = "";
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(c17)) {
+            c1Var.i5(y2Var, "openEnterpriseContact:fail", null);
+        }
+        com.tencent.mm.plugin.webview.model.d1 d1Var = new com.tencent.mm.plugin.webview.model.d1(c17, str, y2Var.f340790a);
+        gm0.j1.d().a(1393, new com.tencent.mm.plugin.webview.ui.tools.jsapi.v7(c1Var, y2Var, c1Var));
+        gm0.j1.d().g(d1Var);
+        android.content.Context context = c1Var.f184975d;
+        c1Var.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f490604zq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.w7(c1Var, d1Var));
+        return true;
+    }
+
+    public static boolean f1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        java.lang.String trim = y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE).toString().trim();
+        if (!trim.equals("expose")) {
+            c1Var.i5(y2Var, "openSecurityView fail, scene error : ".concat(trim), null);
+        } else if (y2Var.f340790a.get("userData") != null) {
+            try {
+                org.json.JSONObject jSONObject = (org.json.JSONObject) new org.json.JSONTokener(y2Var.f340790a.get("userData").toString()).nextValue();
+                android.content.Intent intent = new android.content.Intent();
+                intent.putExtra("sns_permission_userName", jSONObject.get("userName").toString());
+                intent.putExtra("sns_permission_anim", true);
+                intent.putExtra("sns_permission_block_scene", 1);
+                intent.setFlags(com.tencent.wcdb.database.SQLiteDatabase.ENABLE_WRITE_AHEAD_LOGGING);
+                j45.l.j(c1Var.f184975d, "sns", ".ui.SnsPermissionUI", intent, null);
+                c1Var.i5(y2Var, "openSecurityView ok", null);
+            } catch (org.json.JSONException unused) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "openSecurityView error, userData not in json");
+                c1Var.i5(y2Var, "openSecurityView error,userData not in json", null);
+            }
+        } else {
+            c1Var.i5(y2Var, "openSecurityView fail, no userData", null);
+        }
+        return true;
+    }
+
+    public static boolean f2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        java.lang.String obj = y2Var.f340790a.get("list").toString();
+        java.util.LinkedList linkedList = new java.util.LinkedList();
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(obj);
+            for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                org.json.JSONObject optJSONObject = jSONArray.optJSONObject(i17);
+                if (optJSONObject != null) {
+                    r45.bz4 bz4Var = new r45.bz4();
+                    bz4Var.f371180d = optJSONObject.optInt("cmdId");
+                    java.lang.String optString = optJSONObject.optString("cmdBuffer");
+                    if (android.text.TextUtils.isEmpty(optString)) {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doUxSearchOpLog cmdId " + bz4Var.f371180d + " , cmdBuffer is empty");
+                    } else {
+                        bz4Var.f371181e = new com.tencent.mm.protobuf.g(optString.getBytes());
+                        linkedList.add(bz4Var);
+                    }
+                }
+            }
+        } catch (org.json.JSONException e17) {
+            boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", com.tencent.mm.sdk.platformtools.z3.c(e17));
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        boolean z18 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        long currentTimeMillis = java.lang.System.currentTimeMillis();
+        hashMap.put("reqId", java.lang.Long.valueOf(currentTimeMillis));
+        if (!linkedList.isEmpty()) {
+            com.tencent.mm.modelbase.l lVar = new com.tencent.mm.modelbase.l();
+            lVar.f70664a = new r45.j77();
+            lVar.f70665b = new r45.k77();
+            lVar.f70666c = "/cgi-bin/mmux-bin/wxaapp/wxaapp_opsearch";
+            lVar.f70667d = 1865;
+            com.tencent.mm.modelbase.o a17 = lVar.a();
+            ((r45.j77) a17.f70710a.f70684a).f377632d = linkedList;
+            com.tencent.mm.modelbase.z2.d(a17, new com.tencent.mm.plugin.webview.ui.tools.jsapi.d8(c1Var, currentTimeMillis), false);
+        }
+        c1Var.i5(y2Var, "uxSearchOpLog:succ", hashMap);
+        return true;
+    }
+
+    public static boolean f3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("panelShowType");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("mode");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("businessId");
+        java.lang.Object obj = y2Var.f340790a.get("diffWecoinCount");
+        long V = obj != null ? com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) obj, 0L) : 0L;
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.f4 f4Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.f4(c1Var, y2Var);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str3) || "1".equals(str3)) {
+                js4.n nVar = new js4.n();
+                nVar.f301544b = com.tencent.mm.sdk.platformtools.t8.D1(str4, 0);
+                nVar.f301543a = java.lang.Integer.parseInt(str);
+                js4.l.a(str2);
+                nVar.f301545c = "";
+                nVar.f301546d = f4Var;
+                nVar.f301549g = js4.m.COMMON_CHARGE;
+                nVar.f301553k = V;
+                ((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).d((com.tencent.mm.ui.MMActivity) c1Var.f184975d, nVar);
+            } else if ("2".equals(str3)) {
+                java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("customCount");
+                java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("productId");
+                java.lang.String str7 = (java.lang.String) y2Var.f340790a.get("agreementVersion");
+                if (com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[WeCoin] doBuyWCCoin customCount is null");
+                    c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                } else if (com.tencent.mm.sdk.platformtools.t8.K0(str6)) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[WeCoin] doBuyWCCoin productId is null");
+                    c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                } else if (com.tencent.mm.sdk.platformtools.t8.K0(str7)) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[WeCoin] doBuyWCCoin agreementVersion is null");
+                    c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                } else {
+                    js4.n nVar2 = new js4.n();
+                    nVar2.f301544b = com.tencent.mm.sdk.platformtools.t8.D1(str4, 0);
+                    nVar2.f301548f = str6;
+                    nVar2.f301550h = java.lang.Long.parseLong(str5);
+                    nVar2.f301547e = java.lang.Integer.parseInt(str7);
+                    nVar2.f301543a = java.lang.Integer.parseInt(str);
+                    nVar2.f301545c = "";
+                    nVar2.f301546d = f4Var;
+                    nVar2.f301549g = js4.m.DIRECT_CHARGE;
+                    js4.l.a(str2);
+                    nVar2.f301553k = V;
+                    ((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).d((com.tencent.mm.ui.MMActivity) c1Var.f184975d, nVar2);
+                }
+            } else {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "mode not right");
+                c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            }
+            return true;
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[WeCoin] doBuyWCCoin scene is null");
+        c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+        return false;
+    }
+
+    public static boolean f4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseInvoice JSOAUTH");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("signType");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("cardSign");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.google.android.gms.measurement.AppMeasurement.Param.TIMESTAMP), 0);
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("nonceStr");
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra(com.tencent.kinda.framework.widget.tools.ConstantsKinda.INTENT_LITEAPP_APPID, str);
+        intent.putExtra("sign_type", str2);
+        intent.putExtra("card_sign", str3);
+        intent.putExtra("time_stamp", P);
+        intent.putExtra("nonce_str", str4);
+        intent.putExtra("can_multi_select", 1);
+        intent.putExtra("card_type", "INVOICE");
+        intent.putExtra("key_from_scene", 7);
+        android.content.Context context = c1Var.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+            j45.l.o(c1Var.f184975d, "card", ".ui.CardListSelectedUI", intent, 36, false);
+        }
+        return true;
+    }
+
+    public static boolean g(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        if (!c1Var.J6("nfcTransceive", 4002, new android.os.Bundle())) {
+            return true;
+        }
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("apdu", (java.lang.String) y2Var.f340790a.get("apdu"));
+        android.os.Bundle I6 = c1Var.I6("nfcTransceive", com.google.android.gms.wearable.WearableStatusCodes.DATA_ITEM_TOO_LARGE, bundle);
+        if (I6 == null) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "[NFC] nfcGetId callback fail!");
+            c1Var.i5(y2Var, "nfcTransceive:fail", null);
+            return true;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("result", I6.getString("result"));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[NFC] nfcTransceive result : " + I6.getString("result"));
+        c1Var.i5(y2Var, "nfcTransceive:ok", hashMap);
+        return true;
+    }
+
+    public static boolean g0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        c1Var.getClass();
+        try {
+            str = c1Var.f184998y.getCurrentUrl();
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "exception in get currentUrl %s", e17.getMessage());
+            str = null;
+        }
+        java.lang.String c17 = c1Var.A.c(str);
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (c17 == null) {
+            c17 = "";
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(c17)) {
+            c1Var.i5(y2Var, "selectEnterpriseContact:fail", null);
+        }
+        y2Var.f340790a.put("groupId", "");
+        y2Var.f340790a.put(com.google.android.gms.measurement.AppMeasurement.Param.TIMESTAMP, "");
+        y2Var.f340790a.put("nonceStr", "");
+        y2Var.f340790a.put("signature", "");
+        org.json.JSONObject jSONObject = new org.json.JSONObject();
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray((java.lang.String) y2Var.f340790a.get("type"));
+            jSONObject.put("fromDepartmentId", com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) y2Var.f340790a.get("fromDepartmentId"), 0));
+            jSONObject.put("mode", (java.lang.String) y2Var.f340790a.get("mode"));
+            jSONObject.put("type", jSONArray);
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("selectedDepartmentIds");
+            if (str2 != null) {
+                jSONObject.put("selectedDepartmentIds", new org.json.JSONArray(str2));
+            }
+            java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("selectedUserIds");
+            if (str3 != null) {
+                jSONObject.put("selectedUserIds", new org.json.JSONArray(str3));
+            }
+            y2Var.f340790a.put("params", jSONObject);
+        } catch (java.lang.NumberFormatException e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSelectEnterpriseContact ex: %s", e18.getMessage());
+        } catch (org.json.JSONException e19) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSelectEnterpriseContact ex: %s", e19.getMessage());
+        }
+        com.tencent.mm.plugin.webview.model.d1 d1Var = new com.tencent.mm.plugin.webview.model.d1(c17, str, y2Var.f340790a);
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.x7 x7Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.x7(c1Var, y2Var, c1Var);
+        gm0.j1.d().a(1393, x7Var);
+        gm0.j1.d().g(d1Var);
+        android.content.Context context = c1Var.f184975d;
+        c1Var.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f490604zq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.y7(c1Var, d1Var, x7Var));
+        return true;
+    }
+
+    public static boolean g2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("widgetId", (java.lang.String) y2Var.f340790a.get("widgetId"));
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(100001, bundle);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doOpenSearchWAWidgetLogView exception" + e17.getMessage());
+        }
+        c1Var.i5(y2Var, "openSearchWAWidgetLogView:ok", null);
+        return true;
+    }
+
+    public static boolean g3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("buff");
+        if (str == null) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[WeCoin] doConsumeWCCoin rawPrepareBuffParams is null");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            return false;
+        }
+        byte[] decode = android.util.Base64.decode(str, 2);
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("businessId");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("mode");
+        java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("productWecoinPrice");
+        java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("productTitle");
+        java.lang.String str6 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("productTitleInsufficient");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[WeCoin] doConsumeWCCoin businessId is null");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            return false;
+        }
+        pr4.l lVar = new pr4.l(com.tencent.mm.sdk.platformtools.t8.D1(str2, 0), (com.tencent.mm.ui.MMActivity) c1Var.f184975d, new com.tencent.mm.plugin.webview.ui.tools.jsapi.g4(c1Var, y2Var), new com.tencent.mm.plugin.webview.ui.tools.jsapi.h4(c1Var, y2Var), new com.tencent.mm.plugin.webview.ui.tools.jsapi.i4(c1Var, y2Var));
+        lVar.f358026g = decode;
+        if ("2".equals(str3)) {
+            lVar.f358025f = pr4.k.f358017e;
+            kotlin.jvm.internal.o.g(str5, "<set-?>");
+            lVar.f358027h = str5;
+            kotlin.jvm.internal.o.g(str6, "<set-?>");
+            lVar.f358028i = str6;
+            lVar.f358029j = com.tencent.mm.sdk.platformtools.t8.D1(str4, 0);
+            java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("productWecoinRealPrice");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str7)) {
+                kotlin.jvm.internal.o.g(str7, "<set-?>");
+                lVar.f358030k = str7;
+            }
+            java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("consumeTipsWording");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str8)) {
+                try {
+                    org.json.JSONArray jSONArray = new org.json.JSONArray(str8);
+                    int length = jSONArray.length();
+                    java.lang.String[] strArr = new java.lang.String[length];
+                    for (int i17 = 0; i17 < length; i17++) {
+                        strArr[i17] = jSONArray.optString(i17);
+                    }
+                    java.util.List asList = java.util.Arrays.asList(strArr);
+                    kotlin.jvm.internal.o.g(asList, "<set-?>");
+                    lVar.f358031l = asList;
+                } catch (org.json.JSONException unused) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "json parse fail");
+                    c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                    return false;
+                }
+            }
+        }
+        ((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).getClass();
+        new ls4.u(lVar).f();
+        return true;
+    }
+
+    public static boolean g4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("card_list");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("src_username");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("url");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("consumedCardId");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("tempalate_id");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doBatchAddCard consumedCardId %s", str4);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doBatchAddCard %s", y2Var.f340790a.toString());
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("webview_scene"), 0);
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("stastic_scene"), 0);
+        int i17 = P == 25 ? 16 : 7;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doBatchAddCard src_username is %s, scene is %d, stasticScene is %d", str2, java.lang.Integer.valueOf(i17), java.lang.Integer.valueOf(P2));
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_in_card_list", str);
+        intent.putExtra("key_from_scene", i17);
+        intent.putExtra("key_stastic_scene", P2);
+        intent.putExtra("src_username", str2);
+        intent.putExtra("js_url", str3);
+        intent.putExtra("key_consumed_card_id", str4);
+        intent.putExtra("key_template_id", str5);
+        android.content.Context context = c1Var.f184975d;
+        if (!(context instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+        j45.l.o(c1Var.f184975d, "card", ".ui.CardAddEntranceUI", intent, 16, false);
+        return true;
+    }
+
+    public static boolean h(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        if (c1Var.J6("nfcBatchTransceive", 4002, new android.os.Bundle())) {
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("apdus", (java.lang.String) y2Var.f340790a.get("apdus"));
+            bundle.putBoolean("breakIfFail", com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("breakIfFail"), 1) == 1);
+            android.os.Bundle I6 = c1Var.I6("nfcBatchTransceive", com.google.android.gms.wearable.WearableStatusCodes.INVALID_TARGET_NODE, bundle);
+            if (I6 != null) {
+                java.util.HashMap hashMap = new java.util.HashMap();
+                hashMap.put("result", I6.getString("result"));
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[NFC] nfcBatchTransceive result : " + I6.getString("result"));
+                c1Var.i5(y2Var, "nfcBatchTransceive:ok", hashMap);
+            } else {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "[NFC] nfcGetId callback fail!");
+                c1Var.i5(y2Var, "nfcBatchTransceive:fail", null);
+            }
+        }
+        return true;
+    }
+
+    public static boolean h0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        if (c1Var.f184998y == null) {
+            c1Var.i5(y2Var, "sendEnterpriseChat:fail", null);
+            return true;
+        }
+        try {
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("enterprise_action", "enterprise_get_context_bizchat");
+            android.os.Bundle i17 = c1Var.f184998y.i(71, bundle);
+            java.lang.String string = i17.getString("enterprise_context_biz");
+            long j17 = i17.getLong("enterprise_context_bizchatid", -1L);
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(string) && j17 >= 0) {
+                java.lang.String str = (java.lang.String) y2Var.f340790a.get("type");
+                if (com.tencent.thumbplayer.tmediacodec.util.MimeTypes.BASE_TYPE_TEXT.equals(str)) {
+                    c1Var.d6(y2Var, string, j17);
+                } else if ("link".equals(str)) {
+                    c1Var.c6(y2Var, string, j17);
+                } else {
+                    c1Var.i5(y2Var, "sendEnterpriseChat:fail_params error", null);
+                }
+                return true;
+            }
+            c1Var.i5(y2Var, "sendEnterpriseChat:fail_not in enterprise chat", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "clear webview cache fail : %s", e17.getMessage());
+            c1Var.i5(y2Var, "sendEnterpriseChat:fail", null);
+            return true;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:29:0x0103 A[Catch: all -> 0x018c, TRY_LEAVE, TryCatch #5 {all -> 0x018c, blocks: (B:27:0x00f7, B:29:0x0103), top: B:26:0x00f7 }] */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x01b6 A[Catch: all -> 0x01bd, TRY_LEAVE, TryCatch #6 {all -> 0x01bd, blocks: (B:46:0x01aa, B:48:0x01b6), top: B:45:0x01aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:51:0x0201  */
+    /* JADX WARN: Removed duplicated region for block: B:52:0x0208  */
+    /* JADX WARN: Removed duplicated region for block: B:71:0x0185  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean h1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r19, nw4.y2 r20, com.tencent.mm.protocal.JsapiPermissionWrapper r21) {
+        /*
+            Method dump skipped, instructions count: 592
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.h1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean h2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_USERNAME);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "open_biz_chat:param_err", null);
+        } else {
+            com.tencent.mm.storage.z3 n17 = ((com.tencent.mm.plugin.messenger.foundation.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).Bi().n(str, true);
+            if (n17 == null || !n17.k2()) {
+                c1Var.i5(y2Var, "open_biz_chat:not biz username", null);
+            } else if (n17.r2()) {
+                java.lang.String str2 = y2Var.f340790a.containsKey("modalMode") ? (java.lang.String) y2Var.f340790a.get("modalMode") : null;
+                java.lang.String str3 = y2Var.f340790a.containsKey("referInfo") ? (java.lang.String) y2Var.f340790a.get("referInfo") : null;
+                android.content.Intent intent = new android.content.Intent();
+                intent.putExtra("Chat_User", str);
+                intent.putExtra("finish_direct", true);
+                if (str3 != null) {
+                    intent.putExtra("key_biz_half_screen_chat_refer_info", str3);
+                }
+                if ("1".equals(str2)) {
+                    intent.putExtra("key_biz_half_screen_chat_style", true);
+                    intent.addFlags(67108864);
+                    intent.addFlags(268435456);
+                    j45.l.u(c1Var.f184975d, ".ui.chatting.BizHalfScreenChattingUI", intent, null);
+                    try {
+                        if (c1Var.f184998y != null) {
+                            android.os.Bundle bundle = new android.os.Bundle();
+                            bundle.putBoolean("forbid_response_kb_state_when_inactive", true);
+                            c1Var.f184998y.i(305, bundle);
+                        }
+                    } catch (java.lang.Exception e17) {
+                        com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "doOpenBizChat", new java.lang.Object[0]);
+                    }
+                } else {
+                    j45.l.u(c1Var.f184975d, ".ui.chatting.ChattingUI", intent, null);
+                }
+                c1Var.i5(y2Var, "open_biz_chat:ok", null);
+            } else {
+                c1Var.i5(y2Var, "open_biz_chat:unfollow", null);
+            }
+        }
+        return true;
+    }
+
+    public static boolean h3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("alwaysDarkMode");
+        js4.h e17 = ((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).e(c1Var.f184975d, str != null && str.equals("1"));
+        if (e17 == null) {
+            c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+        } else {
+            ((ns4.p1) e17).f339618c = new com.tencent.mm.plugin.webview.ui.tools.jsapi.j4(c1Var, y2Var);
+        }
+        return true;
+    }
+
+    public static boolean h4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.LiveExKeys.LIVE_EX_DEFINATION_SWICH);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("title_cn");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("title_eng");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("ok_cn");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("ok_eng");
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("cancel_cn");
+        java.lang.String str7 = (java.lang.String) y2Var.f340790a.get("cancel_eng");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSetCloseWindowConfirmDialogInfo, switch value : %s, title_cn : %s, title_eng : %s, ok_cn : %s,  ok_eng : %s,  cancel_cn : %s,  cancel_eng : %s", str, str2, str3, str4, str5, str6, str7);
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("close_window_confirm_dialog_switch", str);
+        bundle.putString("close_window_confirm_dialog_title_cn", str2);
+        bundle.putString("close_window_confirm_dialog_title_eng", str3);
+        bundle.putString("close_window_confirm_dialog_ok_cn", str4);
+        bundle.putString("close_window_confirm_dialog_ok_eng", str5);
+        bundle.putString("close_window_confirm_dialog_cancel_cn", str6);
+        bundle.putString("close_window_confirm_dialog_cancel_eng", str7);
+        try {
+            c1Var.f184998y.callback(13, bundle);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSetCloseWindowConfirmDialogInfo invoke callback failed : %s", e17.getMessage());
+        }
+        c1Var.i5(y2Var, "setCloseWindowConfirmDialogInfo:ok", null);
+        return true;
+    }
+
+    public static boolean i(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        android.os.Bundle bundle = new android.os.Bundle();
+        if (!c1Var.J6("nfcGetId", 4002, bundle)) {
+            return true;
+        }
+        android.os.Bundle I6 = c1Var.I6("nfcGetId", com.google.android.gms.wearable.WearableStatusCodes.ASSET_UNAVAILABLE, bundle);
+        if (I6 == null) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "[NFC] nfcGetId callback fail!");
+            c1Var.i5(y2Var, "nfcGetId:fail", null);
+            return true;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put(dm.i4.COL_ID, I6.getString(dm.i4.COL_ID));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[NFC] nfcGetId result : " + I6.getString(dm.i4.COL_ID));
+        c1Var.i5(y2Var, "nfcGetId:ok", hashMap);
+        return true;
+    }
+
+    public static boolean i0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        c1Var.getClass();
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("chatId");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("chatType");
+        try {
+            str = c1Var.f184998y.getCurrentUrl();
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "exception in get currentUrl %s", e17.getMessage());
+            str = null;
+        }
+        java.lang.String c17 = c1Var.A.c(str);
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (c17 == null) {
+            c17 = "";
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2) || com.tencent.mm.sdk.platformtools.t8.K0(str3) || com.tencent.mm.sdk.platformtools.t8.K0(c17)) {
+            c1Var.i5(y2Var, "enterEnterpriseChat:fail_params error", null);
+            return true;
+        }
+        s01.y Ni = r01.q3.Ni();
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.t7 t7Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.t7(c1Var, y2Var);
+        Ni.getClass();
+        gm0.j1.n().f273288b.g(new s01.f0(c17, str2, str3, t7Var));
+        return true;
+    }
+
+    public static boolean i1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        java.lang.String g17 = wo.w0.g(true);
+        java.lang.String k17 = wo.w0.k();
+        if (com.tencent.mm.sdk.platformtools.t8.K0(g17) || com.tencent.mm.sdk.platformtools.t8.K0(j66) || com.tencent.mm.sdk.platformtools.t8.K0(k17)) {
+            c1Var.i5(y2Var, "getOpenDeviceId:fail", null);
+        } else {
+            java.lang.String a17 = com.tencent.mm.sdk.platformtools.w2.a(com.tencent.mm.sdk.platformtools.w2.a(j66 + g17));
+            java.lang.String a18 = com.tencent.mm.sdk.platformtools.w2.a(com.tencent.mm.sdk.platformtools.w2.a(j66 + k17));
+            java.util.HashMap hashMap = new java.util.HashMap();
+            hashMap.put("deviceid", a17);
+            hashMap.put("newDeviceId", a18);
+            c1Var.i5(y2Var, "getOpenDeviceId:ok", hashMap);
+        }
+        return true;
+    }
+
+    public static boolean i2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        int D12 = com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) y2Var.f340790a.get("x"), 0);
+        int D13 = com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) y2Var.f340790a.get("y"), 0);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("eventId");
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("widgetId", (java.lang.String) y2Var.f340790a.get("widgetId"));
+        bundle.putInt("x", D12);
+        bundle.putInt("y", D13);
+        bundle.putString("eventId", str);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(100002, bundle);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doTapSearchWAWidgetView exception" + e17.getMessage());
+        }
+        c1Var.i5(y2Var, "tapSearchWAWidgetView:ok", null);
+        return true;
+    }
+
+    public static boolean i3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        if (com.tencent.mm.sdk.platformtools.t8.K0((java.lang.String) y2Var.f340790a.get("businessId"))) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[WeCoin] doEnterWCCoinHomePage businessId is null");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            return false;
+        }
+        ((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).i(c1Var.f184975d);
+        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+        return true;
+    }
+
+    /* JADX WARN: Can't wrap try/catch for region: R(15:20|(4:23|(2:25|26)(2:28|29)|27|21)|30|31|(1:33)(1:73)|34|(3:35|36|37)|(3:38|39|(5:41|42|43|44|45))|46|47|48|(1:50)(1:59)|51|(1:53)|(1:58)(1:57)) */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x0176  */
+    /* JADX WARN: Removed duplicated region for block: B:53:0x0180  */
+    /* JADX WARN: Removed duplicated region for block: B:55:0x0184 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:59:0x0179  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean i4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r29, nw4.y2 r30, com.tencent.mm.protocal.JsapiPermissionWrapper r31) {
+        /*
+            Method dump skipped, instructions count: 495
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.i4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean j(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        android.os.Bundle bundle = new android.os.Bundle();
+        if (!c1Var.J6("nfcGetInfo", 4002, bundle)) {
+            return true;
+        }
+        android.os.Bundle I6 = c1Var.I6("nfcGetInfo", com.google.android.gms.wearable.WearableStatusCodes.WIFI_CREDENTIAL_SYNC_NO_CREDENTIAL_FETCHED, bundle);
+        if (I6 == null) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "[NFC] nfcGetInfo callback fail!");
+            c1Var.i5(y2Var, "nfcGetInfo:fail", null);
+            return true;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("info", I6.getString("info"));
+        c1Var.i5(y2Var, "nfcGetInfo:ok", hashMap);
+        return true;
+    }
+
+    public static boolean j0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        try {
+            java.lang.String c17 = c1Var.A.c(c1Var.f184998y.getCurrentUrl());
+            boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+            if (c17 == null) {
+                c17 = "";
+            }
+            if (com.tencent.mm.sdk.platformtools.t8.K0(c17)) {
+                c1Var.i5(y2Var, "getEnterpriseChat:fail", null);
+            } else {
+                android.os.Bundle bundle = new android.os.Bundle();
+                bundle.putString("enterprise_action", "enterprise_get_context_bizchat");
+                android.os.Bundle i17 = c1Var.f184998y.i(71, bundle);
+                java.lang.String string = i17.getString("enterprise_context_biz");
+                long j17 = i17.getLong("enterprise_context_bizchatid", -1L);
+                java.lang.String str = s01.r.f401924a;
+                java.lang.String str2 = r01.q3.Ui().z0(j17).field_bizChatServId;
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(string) && !com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                    com.tencent.mm.plugin.webview.ui.tools.jsapi.u7 u7Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.u7(c1Var, y2Var);
+                    gm0.j1.n().f273288b.a(cc1.w.CTRL_INDEX, u7Var);
+                    org.json.JSONObject jSONObject = new org.json.JSONObject();
+                    boolean z18 = false;
+                    try {
+                        jSONObject.put("brand_user_name", string);
+                        jSONObject.put("bizchat_id", str2);
+                        z18 = gm0.j1.n().f273288b.h(new r01.j3(c17, 1, jSONObject.toString(), null), 0);
+                    } catch (java.lang.Exception unused) {
+                    }
+                    if (!z18) {
+                        gm0.j1.n().f273288b.q(cc1.w.CTRL_INDEX, u7Var);
+                        c1Var.i5(y2Var, "getEnterpriseChat:fail", null);
+                    }
+                }
+                c1Var.i5(y2Var, "getEnterpriseChat:fail_not in enterprise chat", null);
+            }
+        } catch (java.lang.Exception unused2) {
+            c1Var.i5(y2Var, "getEnterpriseChat:fail", null);
+        }
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0045 A[Catch: Exception -> 0x009a, TryCatch #0 {Exception -> 0x009a, blocks: (B:3:0x0007, B:5:0x0012, B:10:0x003d, B:12:0x0045, B:13:0x0048, B:15:0x005d, B:17:0x0060, B:19:0x006d, B:21:0x0075, B:23:0x008f, B:24:0x0094, B:29:0x0027, B:31:0x0033, B:33:0x0039), top: B:2:0x0007 }] */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x006d A[Catch: Exception -> 0x009a, LOOP:0: B:18:0x006b->B:19:0x006d, LOOP_END, TryCatch #0 {Exception -> 0x009a, blocks: (B:3:0x0007, B:5:0x0012, B:10:0x003d, B:12:0x0045, B:13:0x0048, B:15:0x005d, B:17:0x0060, B:19:0x006d, B:21:0x0075, B:23:0x008f, B:24:0x0094, B:29:0x0027, B:31:0x0033, B:33:0x0039), top: B:2:0x0007 }] */
+    /* JADX WARN: Removed duplicated region for block: B:23:0x008f A[Catch: Exception -> 0x009a, TryCatch #0 {Exception -> 0x009a, blocks: (B:3:0x0007, B:5:0x0012, B:10:0x003d, B:12:0x0045, B:13:0x0048, B:15:0x005d, B:17:0x0060, B:19:0x006d, B:21:0x0075, B:23:0x008f, B:24:0x0094, B:29:0x0027, B:31:0x0033, B:33:0x0039), top: B:2:0x0007 }] */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x0047  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean j1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r11, nw4.y2 r12) {
+        /*
+            r11.getClass()
+            java.lang.String r0 = "MicroMsg.MsgHandler"
+            r1 = 1
+            r2 = 0
+            com.tencent.mm.plugin.webview.stub.z0 r3 = r11.f184998y     // Catch: java.lang.Exception -> L9a
+            r4 = 90000(0x15f90, float:1.26117E-40)
+            android.os.Bundle r3 = r3.i(r4, r2)     // Catch: java.lang.Exception -> L9a
+            if (r3 == 0) goto La8
+            java.lang.String r4 = "webview_get_route_url_list"
+            java.lang.String[] r4 = r3.getStringArray(r4)     // Catch: java.lang.Exception -> L9a
+            java.lang.String r5 = "webview_get_route_url_geta8key_scene"
+            int r5 = r3.getInt(r5)     // Catch: java.lang.Exception -> L9a
+            r6 = 7
+            if (r5 == r6) goto L27
+            r6 = 56
+            if (r5 != r6) goto L3c
+        L27:
+            java.lang.String r6 = "geta8key_username"
+            java.lang.String r3 = r3.getString(r6)     // Catch: java.lang.Exception -> L9a
+            boolean r6 = com.tencent.mm.sdk.platformtools.t8.K0(r3)     // Catch: java.lang.Exception -> L9a
+            if (r6 != 0) goto L3c
+            qk.o r3 = r01.z.b(r3)     // Catch: java.lang.Exception -> L9a
+            if (r3 == 0) goto L3c
+            java.lang.String r3 = r3.field_appId     // Catch: java.lang.Exception -> L9a
+            goto L3d
+        L3c:
+            r3 = r2
+        L3d:
+            java.lang.String r6 = "routeUrl length = %d, scene = %d, appid = %s"
+            r7 = 3
+            java.lang.Object[] r7 = new java.lang.Object[r7]     // Catch: java.lang.Exception -> L9a
+            if (r4 == 0) goto L47
+            int r8 = r4.length     // Catch: java.lang.Exception -> L9a
+            goto L48
+        L47:
+            r8 = -1
+        L48:
+            java.lang.Integer r8 = java.lang.Integer.valueOf(r8)     // Catch: java.lang.Exception -> L9a
+            r9 = 0
+            r7[r9] = r8     // Catch: java.lang.Exception -> L9a
+            java.lang.Integer r8 = java.lang.Integer.valueOf(r5)     // Catch: java.lang.Exception -> L9a
+            r7[r1] = r8     // Catch: java.lang.Exception -> L9a
+            r8 = 2
+            r7[r8] = r3     // Catch: java.lang.Exception -> L9a
+            com.tencent.mars.xlog.Log.i(r0, r6, r7)     // Catch: java.lang.Exception -> L9a
+            if (r4 == 0) goto La8
+            int r6 = r4.length     // Catch: java.lang.Exception -> L9a
+            if (r6 <= 0) goto La8
+            java.util.HashMap r6 = new java.util.HashMap     // Catch: java.lang.Exception -> L9a
+            r6.<init>()     // Catch: java.lang.Exception -> L9a
+            org.json.JSONArray r7 = new org.json.JSONArray     // Catch: java.lang.Exception -> L9a
+            r7.<init>()     // Catch: java.lang.Exception -> L9a
+            int r8 = r4.length     // Catch: java.lang.Exception -> L9a
+        L6b:
+            if (r9 >= r8) goto L75
+            r10 = r4[r9]     // Catch: java.lang.Exception -> L9a
+            r7.put(r10)     // Catch: java.lang.Exception -> L9a
+            int r9 = r9 + 1
+            goto L6b
+        L75:
+            java.lang.String r4 = "urls"
+            java.lang.String r7 = r7.toString()     // Catch: java.lang.Exception -> L9a
+            r6.put(r4, r7)     // Catch: java.lang.Exception -> L9a
+            java.lang.String r4 = "scene"
+            java.lang.Integer r5 = java.lang.Integer.valueOf(r5)     // Catch: java.lang.Exception -> L9a
+            r6.put(r4, r5)     // Catch: java.lang.Exception -> L9a
+            boolean r4 = com.tencent.mm.sdk.platformtools.t8.K0(r3)     // Catch: java.lang.Exception -> L9a
+            if (r4 != 0) goto L94
+            java.lang.String r4 = "appid"
+            r6.put(r4, r3)     // Catch: java.lang.Exception -> L9a
+        L94:
+            java.lang.String r3 = "getRouteUrl:ok"
+            r11.i5(r12, r3, r6)     // Catch: java.lang.Exception -> L9a
+            goto Lad
+        L9a:
+            r3 = move-exception
+            java.lang.String r3 = r3.getMessage()
+            java.lang.Object[] r3 = new java.lang.Object[]{r3}
+            java.lang.String r4 = "get routeurl failed ; %s"
+            com.tencent.mars.xlog.Log.e(r0, r4, r3)
+        La8:
+            java.lang.String r0 = "getRouteUrl:fail"
+            r11.i5(r12, r0, r2)
+        Lad:
+            return r1
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.j1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean j2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        java.lang.String str = (java.lang.String) map.get("query");
+        java.lang.String str2 = (java.lang.String) map.get("sortedContacts");
+        int D12 = com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) map.get("offset"), 0);
+        int D13 = com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) map.get("count"), 0);
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(map.get("webview_instance_id"), -1);
+        if (android.text.TextUtils.isEmpty(str2)) {
+            str2 = "";
+        }
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(str2);
+            for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                arrayList.add(jSONArray.optString(i17));
+            }
+        } catch (org.json.JSONException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.WebSearch.FTSWebViewLogic", e17, "", new java.lang.Object[0]);
+        }
+        if (q0Var.f181601q == null) {
+            q0Var.f181601q = new dv4.f();
+        }
+        dv4.l lVar = new dv4.l(str, arrayList);
+        dv4.l lVar2 = q0Var.f181602r;
+        if (lVar2 == null || !lVar2.equals(lVar)) {
+            q0Var.f181602r = lVar;
+            dv4.f fVar = (dv4.f) q0Var.f181601q;
+            ((java.util.HashMap) fVar.f244005b).put(lVar, new com.tencent.mm.plugin.websearch.k0(q0Var, D12, D13, o17));
+            fVar.c(lVar, fVar.f244008e);
+        } else {
+            dv4.l lVar3 = q0Var.f181602r;
+            if (lVar3.f244016e) {
+                q0Var.d(lVar3, D12, D13, o17);
+            }
+        }
+        return false;
+    }
+
+    public static boolean j3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        byte[] h17 = fo3.s.INSTANCE.h();
+        if (h17 == null) {
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            return false;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap(1);
+        hashMap.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA, android.util.Base64.encodeToString(h17, 2));
+        c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+        return true;
+    }
+
+    public static /* synthetic */ boolean j4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.X5(y2Var);
+        return true;
+    }
+
+    public static boolean k(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        boolean z17 = false;
+        boolean z18 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("isShowNfcSwitchGuide"), 1) == 1;
+        android.nfc.NfcAdapter defaultAdapter = android.nfc.NfcAdapter.getDefaultAdapter(c1Var.f184975d);
+        if (defaultAdapter == null) {
+            c1Var.i5(y2Var, "nfcCheckState:nfc_not_support", null);
+        } else {
+            int intValue = ((java.lang.Integer) gm0.j1.u().c().m(com.tencent.mm.storage.u3.USERINFO_NFC_OPEN_SWITCH_INT_SYNC, 0)).intValue();
+            int intValue2 = ((java.lang.Integer) gm0.j1.u().c().m(com.tencent.mm.storage.u3.USERINFO_NFC_OPEN_DEFAULT_SWITCH_INT_SYNC, 0)).intValue();
+            if (intValue == 2 || (intValue == 0 && intValue2 != 1)) {
+                z17 = true;
+            }
+            if (z17) {
+                if (z18) {
+                    com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.n7(c1Var, y2Var));
+                } else {
+                    c1Var.i5(y2Var, "nfcCheckState:nfc_wechat_setting_off", null);
+                }
+            } else if (defaultAdapter.isEnabled()) {
+                c1Var.i5(y2Var, "nfcCheckState:nfc_ok", null);
+            } else if (z18) {
+                com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.q7(c1Var, y2Var));
+            } else {
+                c1Var.i5(y2Var, "nfcCheckState:nfc_off", null);
+            }
+        }
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:36:0x00c0  */
+    /* JADX WARN: Removed duplicated region for block: B:37:0x00ca  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean k0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r23, nw4.y2 r24, com.tencent.mm.protocal.JsapiPermissionWrapper r25) {
+        /*
+            Method dump skipped, instructions count: 377
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.k0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean k1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("sendId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("receiveId");
+        int D12 = com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) y2Var.f340790a.get("hbKind"), 0);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "openLuckyMoneyDetailView:fail", null);
+            return true;
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "sendId: %s, hbKind: %s", str, java.lang.Integer.valueOf(D12));
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_sendid", str);
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            intent.putExtra("key_receiveid", str2);
+        }
+        intent.putExtra("key_jump_from", 4);
+        if (D12 == 2) {
+            intent.putExtra("key_hb_kind", D12);
+            j45.l.j(c1Var.f184975d, "luckymoney", ".ui.LuckyMoneyBusiDetailUI", intent, null);
+        } else if (D12 == 5) {
+            intent.putExtra("key_hb_kind", D12);
+            j45.l.j(c1Var.f184975d, "luckymoney", ".ui.LuckyMoneyBeforeDetailUI", intent, null);
+        } else if (D12 == 6) {
+            intent.putExtra("key_hk_scene", 3);
+            intent.putExtra("key_hb_kind", D12);
+            j45.l.j(c1Var.f184975d, "luckymoney", ".hk.ui.LuckyMoneyHKBeforeDetailUI", intent, null);
+        } else if (D12 == 7) {
+            intent.putExtra("key_hb_kind", D12);
+            j45.l.j(c1Var.f184975d, "luckymoney", ".ui.LuckyMoneyBeforeDetailUI", intent, null);
+        } else {
+            j45.l.j(c1Var.f184975d, "luckymoney", ".ui.LuckyMoneyBeforeDetailUI", intent, null);
+        }
+        c1Var.i5(y2Var, "openLuckyMoneyDetailView:ok", null);
+        return true;
+    }
+
+    public static boolean k2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        zb0.c0 c0Var = (zb0.c0) i95.n0.c(zb0.c0.class);
+        android.content.Context context = c1Var.f184975d;
+        ((yb0.c0) c0Var).getClass();
+        if (com.tencent.mm.pluginsdk.ui.tools.t3.f191913f == null) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.HeadingPitchService", "HeadingPitchSensorMgr.instance == null, init here");
+            com.tencent.mm.pluginsdk.ui.tools.t3 t3Var = new com.tencent.mm.pluginsdk.ui.tools.t3();
+            com.tencent.mm.pluginsdk.ui.tools.r8.a(t3Var);
+            com.tencent.mm.pluginsdk.ui.tools.t3.f191913f = t3Var;
+            t3Var.d(context);
+            com.tencent.mm.pluginsdk.ui.tools.t3.f191913f = t3Var;
+        }
+        com.tencent.mm.pluginsdk.ui.tools.t3 t3Var2 = com.tencent.mm.pluginsdk.ui.tools.t3.f191913f;
+        hashMap.put("heading", java.lang.Integer.valueOf(t3Var2.f191915b));
+        hashMap.put("pitch", java.lang.Integer.valueOf(t3Var2.f191916c));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetHeadingAndPitch, heading=[%s], pitch=[%s]", java.lang.Integer.valueOf(t3Var2.f191915b), java.lang.Integer.valueOf(t3Var2.f191916c));
+        c1Var.i5(y2Var, "get_heading_and_pitch:ok", hashMap);
+        return true;
+    }
+
+    public static boolean k3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        byte[] bArr;
+        c1Var.getClass();
+        java.lang.Object obj = y2Var.f340790a.get("rqt");
+        if (obj == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "calrqt, dataIn is null.");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            return false;
+        }
+        if (obj instanceof java.lang.String) {
+            bArr = ((java.lang.String) obj).getBytes(java.nio.charset.Charset.forName(com.tencent.mapsdk.internal.rv.f51270c));
+        } else {
+            if (!(obj instanceof byte[])) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "calrqt, cannot determine type of rqt data.");
+                c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+                return false;
+            }
+            bArr = (byte[]) obj;
+        }
+        byte[] bArr2 = bArr;
+        com.tencent.mm.pointers.PInt pInt = new com.tencent.mm.pointers.PInt();
+        com.tencent.mm.pointers.PInt pInt2 = new com.tencent.mm.pointers.PInt();
+        com.tencent.mm.pointers.PByteArray pByteArray = new com.tencent.mm.pointers.PByteArray();
+        if (!fo3.s.INSTANCE.E1(1, bArr2, 0, bArr2.length, pInt, pInt2, pByteArray)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "calrqt, cannot calculate hash of rqt data.");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            return false;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap(5);
+        hashMap.put("k1", java.lang.Integer.valueOf(pInt.value));
+        hashMap.put("k2", java.lang.Integer.valueOf(pInt2.value));
+        hashMap.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA, android.util.Base64.encodeToString(pByteArray.value, 2));
+        c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+        return true;
+    }
+
+    public static boolean k4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        if (!c1Var.D6()) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Do not in recording state.");
+            c1Var.i5(y2Var, "stopRecord:fail", null);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "stop record appId : %s", str);
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(c1Var.Y);
+        if (b17 == null || !str.equals(b17.f182735d)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "get jssdk file item by id failed or the appid is not corrected, appid is : %s", str);
+            c1Var.i5(y2Var, "stopRecord:fail", null);
+            return true;
+        }
+        com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.n6(c1Var, b17));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "stop record, file name  : %s, file path : %s, localid : %s", b17.f182741m, b17.f182738g, b17.f182736e);
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put(dm.i4.COL_LOCALID, b17.f182736e);
+        try {
+            c1Var.f184998y.callback(com.tencent.rtmp.TXLiveConstants.PLAY_EVT_CHANGE_RESOLUTION, null);
+        } catch (android.os.RemoteException unused) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "callback on stop record failed.");
+        }
+        c1Var.i5(y2Var, "stopRecord:ok", hashMap);
+        return true;
+    }
+
+    public static java.util.ArrayList k6(long[] jArr, java.lang.String str) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        if (jArr != null) {
+            for (long j17 : jArr) {
+                arrayList.add(pt0.f0.Li(str, j17));
+            }
+        }
+        return arrayList;
+    }
+
+    public static boolean l(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        ((r60.e) ((s60.e) i95.n0.c(s60.e.class))).getClass();
+        if (!com.tencent.mm.model.gdpr.g.a()) {
+            c1Var.r5(y2Var, jsapiPermissionWrapper);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_USERNAME);
+        ((r60.e) ((s60.e) i95.n0.c(s60.e.class))).wi(c1Var.f184975d, com.tencent.mm.model.gdpr.a.BIZ, str, new com.tencent.mm.plugin.webview.ui.tools.jsapi.x3(c1Var, y2Var, jsapiPermissionWrapper));
+        return true;
+    }
+
+    public static boolean l0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("brandUsername");
+        ((sg0.y3) ((tg0.o1) i95.n0.c(tg0.o1.class))).getClass();
+        android.content.Intent a17 = su4.r2.a();
+        a17.putExtra("ftsneedkeyboard", true);
+        a17.putExtra("ftsbizscene", 19);
+        a17.putExtra("ftsType", 2);
+        ((sg0.y3) ((tg0.o1) i95.n0.c(tg0.o1.class))).getClass();
+        java.util.Map b17 = su4.r2.b(19, true, 2);
+        ((java.util.HashMap) b17).put("userName", str);
+        ((sg0.y3) ((tg0.o1) i95.n0.c(tg0.o1.class))).getClass();
+        a17.putExtra("rawUrl", su4.r2.e(b17, 0));
+        a17.putExtra("key_load_js_without_delay", true);
+        a17.putExtra("ftsbizusername", str);
+        j45.l.z(com.tencent.mm.sdk.platformtools.x2.f193071a, a17, null);
+        return false;
+    }
+
+    public static boolean l1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("transactionId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("transfer_id");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("receiverName");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("pic");
+        java.lang.String str6 = (java.lang.String) y2Var.f340790a.get("description");
+        java.lang.String str7 = (java.lang.String) y2Var.f340790a.get("left_button_wording");
+        java.lang.String str8 = (java.lang.String) y2Var.f340790a.get("right_button_wording");
+        java.lang.String str9 = (java.lang.String) y2Var.f340790a.get("is_open_im");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str9)) {
+            str9 = "0";
+        }
+        int parseInt = java.lang.Integer.parseInt(str9);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str3) || com.tencent.mm.sdk.platformtools.t8.K0(str4) || com.tencent.mm.sdk.platformtools.t8.K0(str5) || com.tencent.mm.sdk.platformtools.t8.K0(str6) || com.tencent.mm.sdk.platformtools.t8.K0(str7) || com.tencent.mm.sdk.platformtools.t8.K0(str8)) {
+            c1Var.i5(y2Var, "doResendRemittanceMsg:fail", null);
+            return true;
+        }
+        o05.i iVar = (o05.i) i95.n0.c(o05.i.class);
+        android.content.Context context = c1Var.f184975d;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.u4 u4Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.u4(c1Var, str, str2, str3, parseInt, y2Var);
+        ((kw3.j) iVar).getClass();
+        com.tencent.mm.plugin.remittance.ui.d0 d0Var = new com.tencent.mm.plugin.remittance.ui.d0(context);
+        com.tencent.mm.plugin.wxpaysdk.api.ResendMsgInfo resendMsgInfo = new com.tencent.mm.plugin.wxpaysdk.api.ResendMsgInfo();
+        resendMsgInfo.f188590d = str4;
+        resendMsgInfo.f188591e = str5;
+        resendMsgInfo.f188592f = str6;
+        resendMsgInfo.f188593g = str7;
+        resendMsgInfo.f188594h = str8;
+        d0Var.a(resendMsgInfo, u4Var);
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:134:0x0618  */
+    /* JADX WARN: Removed duplicated region for block: B:150:0x0166 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:156:0x012b A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:21:0x015a  */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x015f  */
+    /* JADX WARN: Removed duplicated region for block: B:27:0x0186  */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x01e5  */
+    /* JADX WARN: Removed duplicated region for block: B:82:0x04e6  */
+    /* JADX WARN: Removed duplicated region for block: B:85:0x0531  */
+    /* JADX WARN: Removed duplicated region for block: B:87:0x0544  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean l2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r46, nw4.y2 r47) {
+        /*
+            Method dump skipped, instructions count: 1699
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.l2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean l3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mm.plugin.downloader_app.model.a c17 = com.tencent.mm.plugin.downloader_app.model.a.c(y2Var.f340790a);
+        vz.a2 a2Var = (vz.a2) i95.n0.c(vz.a2.class);
+        android.content.Context context = c1Var.f184975d;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.j3 j3Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.j3(c1Var, y2Var);
+        ((uz.c2) a2Var).getClass();
+        com.tencent.mm.plugin.downloader.model.j1.c(context, c17, false, j3Var);
+        return true;
+    }
+
+    public static boolean l4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doPlayVoice, appId : %s, localId : %s", str, str2);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            c1Var.i5(y2Var, "playVoice:fail_missing arguments", null);
+            return true;
+        }
+        com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str2);
+        if (b17 == null) {
+            c1Var.i5(y2Var, "playVoice:fail_arguments error", null);
+            return true;
+        }
+        com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.q6(c1Var, b17, str2));
+        c1Var.i5(y2Var, "playVoice:ok", null);
+        return true;
+    }
+
+    public static boolean m(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+        ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).d(y2Var.f340790a);
+        return false;
+    }
+
+    public static boolean m0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "start doChangePayActivityView");
+        com.tencent.mm.autogen.events.ChangePayActivityViewEvent changePayActivityViewEvent = new com.tencent.mm.autogen.events.ChangePayActivityViewEvent();
+        am.w1 w1Var = changePayActivityViewEvent.f54032g;
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("showInfo");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "changePayActivityView eroor, parse showinfo to jsonarray error");
+            c1Var.i5(y2Var, "changePayActivityView:fail", null);
+            return false;
+        }
+        try {
+            org.json.JSONObject jSONObject = new org.json.JSONObject(str);
+            w1Var.f8249a = jSONObject.getString("buttonTitle");
+            java.lang.String string = jSONObject.getString("isButtonEnable");
+            java.lang.String string2 = jSONObject.getString("isButtonHidden");
+            java.lang.String string3 = jSONObject.getString("isActivityViewHidden");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "isButtonEnable:" + string + " isButtonHidden:" + string2 + " isActivityViewHidden:" + string3);
+            w1Var.f8250b = com.tencent.mm.sdk.platformtools.t8.P(string, 0) > 0;
+            w1Var.f8251c = com.tencent.mm.sdk.platformtools.t8.P(string2, 0) > 0;
+            w1Var.f8252d = com.tencent.mm.sdk.platformtools.t8.P(string3, 0) > 0;
+            changePayActivityViewEvent.e();
+            if (changePayActivityViewEvent.f54033h.f8334a) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "changePayActivityView:ok");
+                c1Var.i5(y2Var, "changePayActivityView:ok", null);
+            } else {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "changePayActivityView:fail");
+                c1Var.i5(y2Var, "changePayActivityView:fail", null);
+            }
+            return true;
+        } catch (java.lang.Exception unused) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "changePayActivityView eroor, parse showinfo to jsonarray error");
+            c1Var.i5(y2Var, "changePayActivityView:fail", null);
+            return false;
+        }
+    }
+
+    public static boolean m1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doRecordVideo()");
+        c1Var.y5(y2Var, 1);
+        return true;
+    }
+
+    public static boolean m2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 3);
+        boolean z17 = 84 == e17;
+        boolean z18 = 132 == e17;
+        if (!z17 && !z18 && !((java.util.HashMap) y2Var.f340790a).containsKey(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE)) {
+            e17 = 33;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("query", com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "query"));
+        hashMap.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, java.lang.Integer.valueOf(e17));
+        hashMap.put("thirdExtParam", ((java.util.HashMap) y2Var.f340790a).get("thirdExtParam"));
+        hashMap.put("type", java.lang.Integer.valueOf(com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "type", 0)));
+        hashMap.put("extReqParams", com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "extReqParams"));
+        if (((java.util.HashMap) y2Var.f340790a).containsKey("url")) {
+            ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).f181426f = new r45.v97();
+            ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).f181426f.f388015e = new r45.yn();
+            ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).f181426f.f388015e.f391231p = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "url");
+        }
+        if (z17) {
+            ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).getClass();
+            int e18 = com.tencent.mm.plugin.websearch.l2.e(hashMap, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 3);
+            long e19 = c01.id.e();
+            java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(hashMap, "query");
+            int i17 = j62.e.g().i("clicfg_fts_tag_search_style_android", 0, true, true);
+            if (i17 > 0) {
+                e18 = com.tencent.mm.plugin.websearch.k2.a(e18, i17);
+            }
+            java.lang.String l17 = o13.n.l(e18);
+            su4.j2 j2Var = new su4.j2();
+            j2Var.f412938a = com.tencent.mm.sdk.platformtools.x2.f193071a;
+            j2Var.f412939b = e18;
+            j2Var.f412940c = com.tencent.mm.plugin.websearch.l2.e(hashMap, "type", 0);
+            j2Var.f412941d = f17;
+            j2Var.f412954q = f17;
+            j2Var.f412942e = l17;
+            j2Var.f412943f = true;
+            j2Var.f412945h = true;
+            j2Var.f412946i = true;
+            j2Var.f412951n = 1;
+            j2Var.f412952o = i65.a.d(com.tencent.mm.sdk.platformtools.x2.f193071a, com.tencent.mm.R.color.aaw);
+            j2Var.f412953p = true;
+            ((java.util.HashMap) j2Var.f412944g).put("msgSvrId", java.lang.String.valueOf(0L));
+            ((java.util.HashMap) j2Var.f412944g).put("parentSearchID", "163::::");
+            j2Var.f412956s = "163::::";
+            ((java.util.HashMap) j2Var.f412944g).put("fromTagSearch", "1");
+            java.util.HashMap hashMap2 = (java.util.HashMap) j2Var.f412959v;
+            hashMap2.put("ShareSceneId", "");
+            hashMap2.put("SnsContentType", "0");
+            j2Var.f412962y = com.tencent.mm.plugin.websearch.l2.f(hashMap, "extReqParams");
+            if (i17 > 0) {
+                com.tencent.mm.plugin.websearch.j2.a(j2Var, i17, null);
+            }
+            ((com.tencent.mm.plugin.websearch.h2) ((su4.a1) i95.n0.c(su4.a1.class))).Vi(j2Var);
+            if (!android.text.TextUtils.isEmpty(f17) && f17.startsWith("#")) {
+                f17 = f17.substring(1);
+            }
+            com.tencent.mm.autogen.mmdata.rpt.WCTopicSearchContentActionStruct wCTopicSearchContentActionStruct = new com.tencent.mm.autogen.mmdata.rpt.WCTopicSearchContentActionStruct();
+            wCTopicSearchContentActionStruct.f62157d = 1L;
+            wCTopicSearchContentActionStruct.f62158e = e19;
+            wCTopicSearchContentActionStruct.f62159f = 1L;
+            wCTopicSearchContentActionStruct.f62160g = wCTopicSearchContentActionStruct.b("ResultQuery", f17, true);
+            wCTopicSearchContentActionStruct.f62161h = 6L;
+            wCTopicSearchContentActionStruct.f62162i = wCTopicSearchContentActionStruct.b("ShareSceneId", "", true);
+            wCTopicSearchContentActionStruct.f62163j = e19;
+            wCTopicSearchContentActionStruct.f62164k = 0L;
+            wCTopicSearchContentActionStruct.f62165l = wCTopicSearchContentActionStruct.b("SearchSessionId", l17, true);
+            wCTopicSearchContentActionStruct.k();
+            su4.k3.m(wCTopicSearchContentActionStruct);
+        } else {
+            ((com.tencent.mm.plugin.websearch.q0) com.tencent.mm.plugin.webview.modeltools.z.Ri()).getClass();
+            java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(hashMap, "query");
+            int e27 = com.tencent.mm.plugin.websearch.l2.e(hashMap, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 3);
+            int e28 = com.tencent.mm.plugin.websearch.l2.e(hashMap, "type", 0);
+            java.lang.String obj = hashMap.get("thirdExtParam") != null ? hashMap.get("thirdExtParam").toString() : "";
+            java.lang.String f19 = su4.r2.f(e27);
+            java.util.Map b17 = su4.r2.b(e27, true, e28);
+            java.util.HashMap hashMap3 = (java.util.HashMap) b17;
+            hashMap3.put("query", f18);
+            hashMap3.put(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_SESSION_ID, f19);
+            if (!tg0.r2.a(e27)) {
+                obj = fp.s0.a(obj);
+            }
+            hashMap3.put("thirdExtParam", obj);
+            ((com.tencent.mm.plugin.websearch.h2) ((su4.a1) i95.n0.c(su4.a1.class))).Di(com.tencent.mm.sdk.platformtools.x2.f193071a, e27, f18, f19, true, b17, e28, true, com.tencent.mm.plugin.websearch.l2.f(hashMap, "extReqParams"));
+        }
+        c1Var.i5(y2Var, "openWXSearchPage:ok", null);
+        return true;
+    }
+
+    public static boolean m3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        android.os.Bundle bundle;
+        org.json.JSONObject jSONObject;
+        c1Var.getClass();
+        java.util.TreeMap treeMap = new java.util.TreeMap(new com.tencent.mm.plugin.webview.ui.tools.jsapi.l3(c1Var));
+        try {
+            bundle = c1Var.f184998y.i(150, null);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            bundle = null;
+        }
+        if (bundle == null) {
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail", null);
+            return true;
+        }
+        treeMap.put(21, bundle.getString("page_key"));
+        treeMap.put(22, com.tencent.mars.comm.NetStatusUtil.getFormatedNetType(com.tencent.mm.sdk.platformtools.x2.f193071a));
+        treeMap.put(23, java.lang.String.valueOf(y7.c.b(com.tencent.mm.sdk.platformtools.x2.f193071a)));
+        java.lang.String string = bundle.getString("raw_url");
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(string)) {
+            try {
+                treeMap.put(24, fp.s0.b(string, com.tencent.mapsdk.internal.rv.f51270c));
+            } catch (java.io.UnsupportedEncodingException unused) {
+            }
+        }
+        treeMap.put(25, java.lang.Integer.valueOf(bundle.getBoolean("is_used_wepkg", false) ? 1 : 0));
+        treeMap.put(26, 0);
+        treeMap.put(27, 0);
+        treeMap.put(28, bundle.getString("wepkg_version"));
+        treeMap.put(29, bundle.getString("comm_js_version"));
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("type");
+        boolean equals = "1".equals((java.lang.String) y2Var.f340790a.get("isReportNow"));
+        try {
+            jSONObject = new org.json.JSONObject((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA));
+        } catch (org.json.JSONException unused2) {
+            jSONObject = null;
+        }
+        if (jSONObject == null) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "data is null or not json");
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail_data_is_null", null);
+            return true;
+        }
+        if ("1".equals(str)) {
+            treeMap.put(49, 0);
+            treeMap.put(1000, java.lang.Boolean.valueOf(equals));
+            java.util.HashMap hashMap = (java.util.HashMap) sx4.b0.a(jSONObject);
+            for (java.lang.Integer num : hashMap.keySet()) {
+                if (!treeMap.containsKey(num)) {
+                    treeMap.put(num, hashMap.get(num));
+                }
+            }
+            sx4.b0.b(string, treeMap);
+            c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+            return true;
+        }
+        if (!"2".equals(str)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "type is error. type:%s", str);
+            c1Var.i5(y2Var, y2Var.f341019i + ":fail_type_not_right", null);
+            return true;
+        }
+        java.util.HashMap hashMap2 = (java.util.HashMap) sx4.b0.a(jSONObject);
+        for (java.lang.Integer num2 : hashMap2.keySet()) {
+            if (!treeMap.containsKey(num2)) {
+                treeMap.put(num2, hashMap2.get(num2));
+            }
+        }
+        java.lang.String a17 = sx4.y.a(treeMap);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "report web runtime. isReportNow:%b, reportData: [%s]", java.lang.Boolean.valueOf(equals), a17);
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.f(16145, a17, equals, false);
+        c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+        return true;
+    }
+
+    public static boolean m4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doStopVoice, appId : %s, localId : %s", str, str2);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            c1Var.i5(y2Var, "pauseVoice:fail_missing arguments", null);
+            return true;
+        }
+        com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str2);
+        if (b17 == null) {
+            c1Var.i5(y2Var, "pauseVoice:fail_not playing", null);
+            return true;
+        }
+        com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.s6(c1Var, b17));
+        c1Var.i5(y2Var, "pauseVoice:ok", null);
+        return true;
+    }
+
+    public static boolean n(final com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, final nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, dm.i4.COL_USERNAME);
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "contactUsername");
+        java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "appId");
+        java.lang.String f27 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "sceneNote");
+        ((com.tencent.mm.plugin.appbrand.app.t2) ((com.tencent.mm.plugin.appbrand.service.k6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.k6.class))).Ai(c1Var.f184975d, f18, f17, f19, 5, f27, new com.tencent.mm.plugin.appbrand.service.j6() { // from class: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1$$b
+            @Override // com.tencent.mm.plugin.appbrand.service.j6
+            public final void onResult(int i17, java.lang.String str) {
+                com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2 = com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.this;
+                c1Var2.getClass();
+                java.util.HashMap hashMap = new java.util.HashMap();
+                hashMap.put("retCode", java.lang.Integer.valueOf(i17));
+                hashMap.put("errMsg", str);
+                c1Var2.i5(y2Var, "enterWeappContact:ok", hashMap);
+            }
+        });
+        return true;
+    }
+
+    public static boolean n0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        android.content.Context context;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("cardType");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || (context = c1Var.f184975d) == null) {
+            c1Var.i5(y2Var, "scanLicence:fail", null);
+        } else if (!c1Var.E.b(str, context, new com.tencent.mm.plugin.webview.ui.tools.jsapi.b4(c1Var, str, y2Var))) {
+            java.util.HashMap hashMap = new java.util.HashMap(1);
+            hashMap.put("cardType", str);
+            c1Var.i5(y2Var, "scanLicence:type not supported", hashMap);
+        }
+        return true;
+    }
+
+    public static boolean n1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String zj6;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doPreviewVideo(), localId:%s", str);
+        android.content.Intent intent = new android.content.Intent();
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if ((str == null ? "" : str).trim().startsWith("weixin://bgmixid/")) {
+            if (str == null) {
+                str = "";
+            }
+            intent.putExtra("game_bg_mix_fake_local_id", str.trim());
+            android.content.Context context = c1Var.f184975d;
+            if (!(context instanceof com.tencent.mm.ui.MMActivity)) {
+                return true;
+            }
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+            j45.l.n(c1Var.f184975d, "game", ".media.background.GameFakeVideoUI", intent, 46);
+            return true;
+        }
+        if (!((com.tencent.mm.feature.lite.i) ((q80.g0) i95.n0.c(q80.g0.class))).Kj(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "input is invalid");
+            c1Var.i5(y2Var, "previewVideo:fail", null);
+            return true;
+        }
+        if ((str != null ? str : "").startsWith("weixin://resourceid/")) {
+            com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str);
+            if (b17 == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "the item is null");
+                c1Var.i5(y2Var, "previewVideo:fail", null);
+                return true;
+            }
+            if (android.text.TextUtils.isEmpty(b17.f182738g)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "the File item not exist for localId:%s", b17.f182736e);
+                c1Var.i5(y2Var, "previewVideo:fail", null);
+                return true;
+            }
+            zj6 = b17.f182738g;
+        } else {
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("liteAppId");
+            if (str2 == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "localId:%s is liteapp but appId is null", str);
+                c1Var.i5(y2Var, "previewVideo:fail", null);
+                return true;
+            }
+            zj6 = ((com.tencent.mm.feature.lite.i) ((q80.g0) i95.n0.c(q80.g0.class))).zj(str2, java.lang.Long.parseLong((java.lang.String) y2Var.f340790a.get("liteAppUuid")), str);
+        }
+        com.tencent.mm.vfs.z7 a17 = com.tencent.mm.vfs.z7.a(zj6);
+        java.lang.String str3 = a17.f213279f;
+        if (str3 != null) {
+            java.lang.String l17 = com.tencent.mm.vfs.e8.l(str3, false, false);
+            if (!str3.equals(l17)) {
+                a17 = new com.tencent.mm.vfs.z7(a17.f213277d, a17.f213278e, l17, a17.f213280g, a17.f213281h);
+            }
+        }
+        com.tencent.mm.vfs.z2 m17 = com.tencent.mm.vfs.a3.f212781a.m(a17, null);
+        if (!(m17.a() ? m17.f213266a.F(m17.f213267b) : false)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "the File not exist for origFilePath:%s", zj6);
+            c1Var.i5(y2Var, "previewVideo:fail", null);
+            return true;
+        }
+        intent.putExtra("key_video_path", zj6);
+        android.content.Context context2 = c1Var.f184975d;
+        if (!(context2 instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) context2).mmSetOnActivityResultCallback(c1Var);
+        j45.l.n(c1Var.f184975d, "card", ".ui.CardGiftVideoUI", intent, 46);
+        return true;
+    }
+
+    public static boolean n2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.util.Map map;
+        c1Var.f184993v = false;
+        try {
+            if (c1Var.f184998y != null && (map = y2Var.f340790a) != null && map.containsKey("view")) {
+                android.os.Bundle bundle = new android.os.Bundle();
+                bundle.putString("fts_key_data", (java.lang.String) y2Var.f340790a.get("view"));
+                c1Var.f184998y.callback(138, bundle);
+            }
+        } catch (java.lang.Exception unused) {
+        }
+        return false;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:106:0x036e  */
+    /* JADX WARN: Removed duplicated region for block: B:223:0x08cd  */
+    /* JADX WARN: Removed duplicated region for block: B:225:0x0902  */
+    /* JADX WARN: Removed duplicated region for block: B:228:0x090f  */
+    /* JADX WARN: Removed duplicated region for block: B:231:0x0919  */
+    /* JADX WARN: Removed duplicated region for block: B:234:0x091b  */
+    /* JADX WARN: Removed duplicated region for block: B:235:0x0912  */
+    /* JADX WARN: Removed duplicated region for block: B:236:0x0905  */
+    /* JADX WARN: Removed duplicated region for block: B:237:0x08dc  */
+    /* JADX WARN: Removed duplicated region for block: B:80:0x02ed  */
+    /* JADX WARN: Removed duplicated region for block: B:92:0x0341  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean n3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r31, nw4.y2 r32, com.tencent.mm.protocal.JsapiPermissionWrapper r33, boolean r34) {
+        /*
+            Method dump skipped, instructions count: 2363
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.n3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper, boolean):boolean");
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:153:0x03f7, code lost:
+    
+        if (r5 == null) goto L108;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:100:0x0429  */
+    /* JADX WARN: Removed duplicated region for block: B:146:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean n4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r38, nw4.y2 r39, com.tencent.mm.protocal.JsapiPermissionWrapper r40, boolean r41) {
+        /*
+            Method dump skipped, instructions count: 1524
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.n4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper, boolean):boolean");
+    }
+
+    public static /* synthetic */ boolean o(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        return true;
+    }
+
+    public static boolean o0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        try {
+            android.os.Bundle b17 = nw4.y2.b(y2Var.f340790a);
+            c1Var.f184998y.ec();
+            c1Var.f184998y.b(b17);
+            java.lang.String str = "";
+            android.os.Bundle bundle = c1Var.f184984o;
+            if (bundle != null) {
+                bundle.setClassLoader(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.class.getClassLoader());
+                str = c1Var.f184984o.getString("KoriginUrl");
+                c1Var.f184984o.getBoolean("KIsHKAgreeUrl");
+            }
+            com.tencent.mm.autogen.events.WebViewCloseWindowEvent webViewCloseWindowEvent = new com.tencent.mm.autogen.events.WebViewCloseWindowEvent();
+            webViewCloseWindowEvent.f54983g.f7125a = str;
+            webViewCloseWindowEvent.e();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doCloseWindow, ex = " + e17.getMessage());
+        }
+        c1Var.i5(y2Var, "close_window:ok", null);
+        return true;
+    }
+
+    public static boolean o1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        boolean z17;
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUploadEncryptMediaFile()");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        java.lang.Object obj = y2Var.f340790a.get("isShowProgressTips");
+        if (obj != null) {
+            try {
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Exception has occured : %s", e17.getMessage());
+            }
+            if (com.tencent.mm.sdk.platformtools.t8.P(obj.toString(), 0) != 1) {
+                z17 = false;
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUploadEncryptMediaFile, appid = %s, localid = %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localid is null");
+                    c1Var.i5(y2Var, "uploadEncryptMediaFile:fail_missing arguments", null);
+                } else {
+                    nw4.e3.a(y2Var.f341018h, false, null, str);
+                    com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str2);
+                    if (b17 == null) {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "jssdk file item is null for localId:%s", str2);
+                        c1Var.i5(y2Var, "uploadEncryptMediaFile:file_not_exist", null);
+                    } else {
+                        int i17 = b17.f182742n;
+                        if (i17 == 1) {
+                            c1Var.f7(y2Var, str, str2, 10011, 0, 0, "uploadEncryptMediaFile", z17);
+                        } else if (i17 != 4) {
+                            c1Var.g7(y2Var, str, str2, 10011, 0, 0, 0, "uploadEncryptMediaFile", z17);
+                        } else {
+                            c1Var.g7(y2Var, str, str2, 10011, 0, 0, 0, "uploadEncryptMediaFile", z17);
+                        }
+                    }
+                }
+                return true;
+            }
+        }
+        z17 = true;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUploadEncryptMediaFile, appid = %s, localid = %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localid is null");
+        c1Var.i5(y2Var, "uploadEncryptMediaFile:fail_missing arguments", null);
+        return true;
+    }
+
+    public static boolean o2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        org.json.JSONObject jSONObject;
+        c1Var.getClass();
+        try {
+            jSONObject = (org.json.JSONObject) new org.json.JSONTokener(y2Var.f340790a.get("liteAppInfo").toString()).nextValue();
+        } catch (org.json.JSONException unused) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenGameUrlWithExtraWebView param error");
+            jSONObject = null;
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("url");
+        if (jSONObject == null) {
+            return true;
+        }
+        java.lang.String optString = jSONObject.optString("appId");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(optString)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenGameUrlWithExtraWebView openInLiteApp appId is null");
+        }
+        java.lang.String optString2 = jSONObject.optString(com.tencent.kinda.framework.widget.tools.ConstantsKinda.INTENT_LITEAPP_PATH);
+        java.lang.String optString3 = jSONObject.optString("query");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenGameUrlWithExtraWebView openInLiteApp, appId : %s, path : %s, query : %s", optString, optString2, optString3);
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("appId", optString);
+        bundle.putString(com.tencent.kinda.framework.widget.tools.ConstantsKinda.INTENT_LITEAPP_PATH, optString2);
+        bundle.putString("query", optString3);
+        com.tencent.liteapp.storage.LiteAppReferrerInfo liteAppReferrerInfo = new com.tencent.liteapp.storage.LiteAppReferrerInfo();
+        liteAppReferrerInfo.scene = com.tencent.liteapp.gen.LiteAppOpenScene.WEB_VIEW;
+        bundle.putParcelable("liteappReferrerInfo", liteAppReferrerInfo);
+        ((com.tencent.mm.feature.lite.i) ((q80.g0) i95.n0.c(q80.g0.class))).kk(c1Var.f184975d, bundle, true, false, new com.tencent.mm.plugin.webview.ui.tools.jsapi.g3(c1Var, str, y2Var));
+        return true;
+    }
+
+    public static boolean o3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("download_id"), -1L);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doPauseDownloadTask, downloadId = " + V);
+        if (V <= 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doPauseDownloadTask fail, invalid downloadId = " + V);
+            c1Var.i5(y2Var, "pause_download_task:fail", null);
+        } else {
+            ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+            h02.a c17 = com.tencent.mm.plugin.downloader.model.m0.c(V);
+            if (c17 == null) {
+                c1Var.i5(y2Var, "pause_download_task:ok", null);
+            } else {
+                int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 1000);
+                int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("uiarea"), 0);
+                int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("notice_id"), 0);
+                int P4 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.core.downloadproxy.api.TPDownloadProxyEnum.USER_SSID), 0);
+                boolean z17 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("ignoreNetwork"), 0) == 1;
+                boolean z18 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("showDialog"), 0) == 1;
+                c17.field_scene = P;
+                c17.field_uiarea = P2;
+                c17.field_noticeId = P3;
+                c17.field_ssid = P4;
+                c17.field_downloadInWifi = false;
+                ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+                com.tencent.mm.plugin.downloader.model.m0.l(c17);
+                ((uz.c2) ((vz.a2) i95.n0.c(vz.a2.class))).wi(c1Var.f184975d, V, z17, z18, new com.tencent.mm.plugin.webview.ui.tools.jsapi.z4(c1Var, y2Var));
+            }
+        }
+        return true;
+    }
+
+    public static boolean o4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doStopVoice, appId : %s, localId : %s", str, str2);
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            c1Var.i5(y2Var, "stopVoice:fail_missing arguments", null);
+            return true;
+        }
+        com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str2);
+        if (b17 == null) {
+            c1Var.i5(y2Var, "stopVoice:fail_not playing", null);
+            return true;
+        }
+        com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.r6(c1Var, b17));
+        c1Var.i5(y2Var, "stopVoice:ok", null);
+        return true;
+    }
+
+    public static /* synthetic */ boolean p(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        return false;
+    }
+
+    public static boolean p0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        int i17;
+        android.os.Bundle i18;
+        android.os.Bundle bundle;
+        c1Var.f184993v = false;
+        com.tencent.mm.autogen.events.StartAppBrandUIFromOuterEvent startAppBrandUIFromOuterEvent = new com.tencent.mm.autogen.events.StartAppBrandUIFromOuterEvent();
+        android.content.Context context = c1Var.f184975d;
+        am.nx nxVar = startAppBrandUIFromOuterEvent.f54857g;
+        nxVar.f7471f = context;
+        nxVar.f7466a = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "userName");
+        nxVar.f7473h = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "appId");
+        nxVar.f7467b = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "relativeURL");
+        nxVar.f7474i = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "appVersion", 0);
+        nxVar.f7469d = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 1018);
+        int i19 = 2;
+        if (c1Var.g6() == 2 && c1Var.C6(startAppBrandUIFromOuterEvent)) {
+            i17 = 3;
+        } else {
+            if (c1Var.g6() == 1 && c1Var.C6(startAppBrandUIFromOuterEvent)) {
+                try {
+                    com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+                    if (z0Var != null && (i18 = z0Var.i(com.tencent.rtmp.TXLiveConstants.PUSH_EVT_ROOM_USERLIST, null)) != null) {
+                        java.lang.String string = i18.getString("key_get_a8key_req_params_username");
+                        if (!com.tencent.mm.sdk.platformtools.t8.K0(string)) {
+                            if (!string.endsWith("chatroom")) {
+                                i19 = 1;
+                            }
+                            i17 = i19;
+                        }
+                    }
+                    i19 = 0;
+                    i17 = i19;
+                } catch (android.os.RemoteException e17) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult error.%s", e17);
+                }
+            }
+            i17 = 0;
+        }
+        if (i17 != 0) {
+            android.os.Bundle bundle2 = new android.os.Bundle();
+            bundle2.putInt("stat_scene", i17);
+            nxVar.f7489x = bundle2;
+        }
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "sceneNote");
+        nxVar.f7470e = f17;
+        if (com.tencent.mm.sdk.platformtools.t8.K0(f17)) {
+            java.lang.String n66 = c1Var.n6();
+            if (n66 == null) {
+                n66 = "";
+            }
+            nxVar.f7470e = fp.s0.a(n66);
+        }
+        nxVar.f7476k = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "downloadURL");
+        nxVar.f7468c = com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, "openType", 0);
+        nxVar.f7477l = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "checkSumMd5");
+        nxVar.f7479n = false;
+        nxVar.f7480o.f70417f = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "extJsonInfo");
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        nxVar.f7490y = j66;
+        if (com.tencent.mm.sdk.platformtools.t8.K0(j66) && (bundle = y2Var.f341015e) != null) {
+            nxVar.f7490y = bundle.getString("appId");
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(nxVar.f7490y)) {
+            nxVar.f7490y = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "sourceAppId");
+        }
+        nxVar.f7491z = c1Var.n6();
+        nxVar.A = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "privateExtraData");
+        nxVar.E = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_EXTRA_DATA);
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "adUxInfo");
+        nxVar.B = f18;
+        if (android.text.TextUtils.isEmpty(f18)) {
+            try {
+                android.os.Bundle i27 = c1Var.f184998y.i(300, android.os.Bundle.EMPTY);
+                java.lang.String string2 = i27 == null ? null : i27.getString("ad_ux_info_for_jsapi_pay");
+                nxVar.B = string2;
+                qp3.a.c("WebViewUI", "openWeApp", string2, "intent");
+            } catch (java.lang.Throwable th6) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenWeApp try get adUxInfo by ipc, t=%s", th6);
+            }
+        } else {
+            qp3.a.c("WebViewUI", "openWeApp", nxVar.B, "msg.params");
+        }
+        java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "commonUxInfo");
+        nxVar.C = f19;
+        if (android.text.TextUtils.isEmpty(f19)) {
+            try {
+                android.os.Bundle i28 = c1Var.f184998y.i(com.tencent.thumbplayer.tplayer.plugins.ITPEventID.RICH_MEDIA_SYNCHRONIZER_RESET, android.os.Bundle.EMPTY);
+                java.lang.String string3 = i28 == null ? null : i28.getString("common_ux_info_for_jsapi_pay");
+                nxVar.C = string3;
+                qp3.a.d("WebViewUI", "openWeApp", string3, "intent");
+            } catch (java.lang.Throwable th7) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenWeApp try get commonUxInfo by ipc, t=%s", th7);
+            }
+        } else {
+            qp3.a.d("WebViewUI", "openWeApp", nxVar.C, "msg.params");
+        }
+        if (y2Var.f341015e != null) {
+            java.lang.String f27 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "nativeExtraData");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(f27)) {
+                nxVar.G = f27;
+            }
+        }
+        if (y2Var.f340790a.containsKey("devuin")) {
+            nxVar.f7475j = kk.v.b(com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "devuin"));
+        }
+        try {
+            android.os.Bundle i29 = c1Var.f184998y.i(302, android.os.Bundle.EMPTY);
+            i29.setClassLoader(com.tencent.luggage.sdk.launching.ActivityStarterIpcDelegate.class.getClassLoader());
+            nxVar.f7472g = i29.getParcelable("delegate");
+        } catch (android.os.RemoteException e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenWeApp, try get startActivityIpcDelegate e=%s", e18);
+        }
+        startAppBrandUIFromOuterEvent.e();
+        am.ox oxVar = startAppBrandUIFromOuterEvent.f54858h;
+        if (oxVar.f7581a) {
+            c1Var.i5(y2Var, "openWeApp:ok", null);
+        } else {
+            java.lang.String str = oxVar.f7582b;
+            c1Var.i5(y2Var, "openWeApp:fail:".concat(str != null ? str : ""), null);
+        }
+        return true;
+    }
+
+    /* JADX WARN: Can't wrap try/catch for region: R(30:6|(1:8)|9|(26:11|(1:13)(2:66|(1:68)(2:69|(2:71|72)))|14|(1:16)|17|18|19|(1:21)(1:63)|22|23|(1:25)|26|(1:28)|29|(1:31)(1:61)|32|33|(5:35|36|37|38|39)(1:58)|40|41|(1:43)(1:53)|44|(1:46)(1:52)|(1:49)|50|51)|73|72|14|(0)|17|18|19|(0)(0)|22|23|(0)|26|(0)|29|(0)(0)|32|33|(0)(0)|40|41|(0)(0)|44|(0)(0)|(1:49)|50|51) */
+    /* JADX WARN: Code restructure failed: missing block: B:59:0x010a, code lost:
+    
+        r0 = e;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:60:0x010b, code lost:
+    
+        r17 = "";
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:64:0x00a6, code lost:
+    
+        r0 = move-exception;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:65:0x00a7, code lost:
+    
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenCustomWebview, get from shortcut exception : %s", r0.getMessage());
+        r13 = false;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:16:0x0071  */
+    /* JADX WARN: Removed duplicated region for block: B:21:0x0093 A[Catch: Exception -> 0x00a6, TRY_LEAVE, TryCatch #1 {Exception -> 0x00a6, blocks: (B:19:0x008f, B:21:0x0093), top: B:18:0x008f }] */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x00c1  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x00d4  */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x00e6  */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x00ed A[Catch: Exception -> 0x010a, TRY_LEAVE, TryCatch #0 {Exception -> 0x010a, blocks: (B:33:0x00e9, B:35:0x00ed), top: B:32:0x00e9 }] */
+    /* JADX WARN: Removed duplicated region for block: B:43:0x0127  */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x0164  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x017f A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:52:0x016d  */
+    /* JADX WARN: Removed duplicated region for block: B:53:0x012a  */
+    /* JADX WARN: Removed duplicated region for block: B:58:0x0103  */
+    /* JADX WARN: Removed duplicated region for block: B:61:0x00e8  */
+    /* JADX WARN: Removed duplicated region for block: B:63:0x00a3  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean p1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r18, nw4.y2 r19) {
+        /*
+            Method dump skipped, instructions count: 418
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.p1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean p2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String a17 = c01.b9.f37069c.a("login_user_name", "");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("request_ticket");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "requestVoiceLoginVerify, ticket is null");
+            c1Var.i5(y2Var, "requestVoiceLoginVerify:ticket is null", null);
+            return true;
+        }
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("Kusername", a17);
+        intent.putExtra("Kvertify_key", str);
+        android.content.Context context = c1Var.f184975d;
+        if (!(context instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(c1Var);
+        j45.l.n(c1Var.f184975d, "voiceprint", ".ui.VoiceLoginUI", intent, 57);
+        return true;
+    }
+
+    public static boolean p3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.util.LinkedList Ai = ((l02.q) ((m02.s) i95.n0.c(m02.s.class))).Ai();
+        if (com.tencent.mm.sdk.platformtools.t8.L0(Ai)) {
+            c1Var.i5(y2Var, y2Var.f341019i + ":ok", null);
+        } else {
+            java.util.HashMap hashMap = new java.util.HashMap();
+            org.json.JSONArray jSONArray = new org.json.JSONArray();
+            java.util.Iterator it = Ai.iterator();
+            while (it.hasNext()) {
+                com.tencent.mm.plugin.downloader_app.api.DownloadWidgetTaskInfo downloadWidgetTaskInfo = (com.tencent.mm.plugin.downloader_app.api.DownloadWidgetTaskInfo) it.next();
+                org.json.JSONObject jSONObject = new org.json.JSONObject();
+                try {
+                    jSONObject.put("appid", downloadWidgetTaskInfo.f97227d);
+                    jSONObject.put("status", downloadWidgetTaskInfo.f97229f);
+                    jSONObject.put("download_id", downloadWidgetTaskInfo.f97228e);
+                    jSONObject.put("progress", downloadWidgetTaskInfo.f97230g);
+                    jSONObject.put("progress_float", downloadWidgetTaskInfo.f97232i);
+                    if (downloadWidgetTaskInfo.f97231h) {
+                        jSONObject.put("reserve_for_wifi", 1);
+                    }
+                } catch (org.json.JSONException unused) {
+                }
+                jSONArray.put(jSONObject);
+            }
+            hashMap.put("result", jSONArray);
+            c1Var.i5(y2Var, y2Var.f341019i + ":ok", hashMap);
+        }
+        return true;
+    }
+
+    public static boolean p4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        boolean z17;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("appId");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(dm.i4.COL_LOCALID);
+        java.lang.Object obj = ((java.util.HashMap) y2Var.f340790a).get("isShowProgressTips");
+        if (obj != null) {
+            try {
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Exception has occured : %s", e17.getMessage());
+            }
+            if (com.tencent.mm.sdk.platformtools.t8.P(obj.toString(), 0) != 1) {
+                z17 = false;
+                nw4.e3.a(y2Var.f341018h, false, null, str);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUploadVoice, appId : %s, localId : %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localId is null or nil.");
+                    c1Var.i5(y2Var, "uploadVoice:fail_missing arguments", null);
+                } else {
+                    com.tencent.mm.plugin.webview.ui.tools.jsapi.t6 t6Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.t6(c1Var, str2, y2Var);
+                    boolean c17 = com.tencent.mm.plugin.webview.modeltools.z.bj().c(str, str2, 5, 0, 0, t6Var);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUploadVoice, add cdn upload task result : %b", java.lang.Boolean.valueOf(c17));
+                    if (!c17) {
+                        c1Var.i5(y2Var, "uploadVoice:fail", null);
+                    } else if (z17) {
+                        android.content.Context context = c1Var.f184975d;
+                        c1Var.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.lbc), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.u6(c1Var, t6Var, str2, y2Var));
+                    }
+                }
+                return true;
+            }
+        }
+        z17 = true;
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUploadVoice, appId : %s, localId : %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localId is null or nil.");
+        c1Var.i5(y2Var, "uploadVoice:fail_missing arguments", null);
+        return true;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:13:0x0087, code lost:
+    
+        if (r2 == null) goto L17;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean q(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r10, nw4.y2 r11, com.tencent.mm.protocal.JsapiPermissionWrapper r12) {
+        /*
+            Method dump skipped, instructions count: 264
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.q(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean q0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "do ecard jsapi check");
+        com.tencent.mm.autogen.events.ECardJsApiCheckEvent eCardJsApiCheckEvent = new com.tencent.mm.autogen.events.ECardJsApiCheckEvent();
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        java.lang.String str = walletJsapiData.f192129d;
+        am.i4 i4Var = eCardJsApiCheckEvent.f54096g;
+        i4Var.f6900a = str;
+        i4Var.f6901b = walletJsapiData.f192133h;
+        i4Var.f6902c = walletJsapiData.f192132g;
+        i4Var.f6903d = walletJsapiData.f192134i;
+        i4Var.f6904e = walletJsapiData.f192138p;
+        i4Var.f6905f = walletJsapiData.f192131f;
+        i4Var.f6906g = walletJsapiData.f192140r;
+        i4Var.f6907h = (java.lang.String) y2Var.f340790a.get("ecardType");
+        i4Var.f6908i = (java.lang.String) y2Var.f340790a.get("openScene");
+        i4Var.f6909j = new java.lang.ref.WeakReference(c1Var.f184975d);
+        i4Var.f6910k = (java.lang.String) y2Var.f340790a.get("token");
+        i4Var.f6911l = new com.tencent.mm.plugin.webview.ui.tools.jsapi.m4(c1Var, eCardJsApiCheckEvent, y2Var);
+        i4Var.f6912m = walletJsapiData.f192144v;
+        eCardJsApiCheckEvent.e();
+        return true;
+    }
+
+    public static /* synthetic */ boolean q1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.x5(y2Var);
+        return true;
+    }
+
+    public static boolean q2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var2;
+        java.util.HashMap hashMap;
+        android.os.Bundle bundle;
+        long j17;
+        c1Var.getClass();
+        java.util.HashMap hashMap2 = new java.util.HashMap();
+        try {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("next_step");
+            try {
+                java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("result");
+                try {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "next_step: %s, result: %s", str, str2);
+                    bundle = new android.os.Bundle();
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+                        j17 = 0;
+                    } else {
+                        if ("auth_again".equals(str)) {
+                            bundle.putString("go_next", "auth_again");
+                        } else if ("get_reg_verify_code".equals(str)) {
+                            bundle.putString("go_next", "get_reg_verify_code");
+                        } else {
+                            if ("roomlive_verify".equals(str)) {
+                                bundle.putString("go_next", "roomlive_verify");
+                                bundle.putString("result_json", str2);
+                                com.tencent.mm.autogen.events.WebViewExWindowCloseEvent webViewExWindowCloseEvent = new com.tencent.mm.autogen.events.WebViewExWindowCloseEvent();
+                                webViewExWindowCloseEvent.f54984g.f7220a = "next_continue_open_live";
+                                webViewExWindowCloseEvent.e();
+                            } else if ("modify_alias".equals(str)) {
+                                bundle.putString("go_next", "modify_alias");
+                                bundle.putString("result_json", str2);
+                            } else if ("fav_safe_auth_done".equals(str)) {
+                                bundle.putString("go_next", "fav_safe_auth_done");
+                            } else if ("continue_login".equals(str)) {
+                                bundle.putString("go_next", "continue_login");
+                                com.tencent.mm.autogen.events.WebViewExWindowCloseEvent webViewExWindowCloseEvent2 = new com.tencent.mm.autogen.events.WebViewExWindowCloseEvent();
+                                webViewExWindowCloseEvent2.f54984g.f7220a = "continue_login";
+                                webViewExWindowCloseEvent2.b(android.os.Looper.getMainLooper());
+                            } else if ("cancel_login".equals(str)) {
+                                bundle.putString("go_next", "cancel_login");
+                                com.tencent.mm.autogen.events.WebViewExWindowCloseEvent webViewExWindowCloseEvent3 = new com.tencent.mm.autogen.events.WebViewExWindowCloseEvent();
+                                webViewExWindowCloseEvent3.f54984g.f7220a = "cancel_login";
+                                webViewExWindowCloseEvent3.b(android.os.Looper.getMainLooper());
+                            } else if ("escape_change_qq_login_type".equals(str)) {
+                                com.tencent.mm.autogen.events.WebViewExWindowCloseEvent webViewExWindowCloseEvent4 = new com.tencent.mm.autogen.events.WebViewExWindowCloseEvent();
+                                am.l20 l20Var = webViewExWindowCloseEvent4.f54984g;
+                                l20Var.f7220a = "escape_change_qq_login_type";
+                                android.os.Bundle bundle2 = new android.os.Bundle();
+                                l20Var.f7221b = bundle2;
+                                bundle2.putString("liteAppUuid", (java.lang.String) y2Var.f340790a.get("liteAppUuid"));
+                                webViewExWindowCloseEvent4.b(android.os.Looper.getMainLooper());
+                            } else if ("escape_common_lite_app_guidance".equals(str)) {
+                                com.tencent.mm.autogen.events.WebViewExWindowCloseEvent webViewExWindowCloseEvent5 = new com.tencent.mm.autogen.events.WebViewExWindowCloseEvent();
+                                am.l20 l20Var2 = webViewExWindowCloseEvent5.f54984g;
+                                l20Var2.f7220a = "escape_common_lite_app_guidance";
+                                android.os.Bundle bundle3 = new android.os.Bundle();
+                                l20Var2.f7221b = bundle3;
+                                bundle3.putString("liteAppUuid", (java.lang.String) y2Var.f340790a.get("liteAppUuid"));
+                                webViewExWindowCloseEvent5.b(android.os.Looper.getMainLooper());
+                            } else if ("continue_check".equals(str)) {
+                                com.tencent.mm.autogen.events.WebViewExWindowCloseEvent webViewExWindowCloseEvent6 = new com.tencent.mm.autogen.events.WebViewExWindowCloseEvent();
+                                webViewExWindowCloseEvent6.f54984g.f7220a = "continue_check";
+                                webViewExWindowCloseEvent6.b(android.os.Looper.getMainLooper());
+                            } else if ("register_post_verify_ok".equals(str)) {
+                                c01.z1.R(false);
+                            } else if ("jump_to_phone_num_verify".equals(str)) {
+                                bundle.putString("go_next", "jump_to_phone_num_verify");
+                            }
+                            j17 = 500;
+                            bundle.putSerializable("next_params", new java.util.HashMap(y2Var.f340790a));
+                        }
+                        j17 = 0;
+                        bundle.putSerializable("next_params", new java.util.HashMap(y2Var.f340790a));
+                    }
+                    c1Var2 = c1Var;
+                    hashMap = hashMap2;
+                } catch (java.lang.Exception e17) {
+                    e = e17;
+                    c1Var2 = c1Var;
+                    hashMap = hashMap2;
+                }
+            } catch (java.lang.Exception e18) {
+                e = e18;
+                c1Var2 = c1Var;
+                hashMap = hashMap2;
+                c1Var2.A5(e, hashMap);
+                return true;
+            }
+            try {
+                com.tencent.mm.plugin.webview.ui.tools.jsapi.f3 f3Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.f3(c1Var2, bundle, hashMap, y2Var);
+                if (j17 > 0) {
+                    com.tencent.mm.sdk.platformtools.u3.i(f3Var, j17);
+                } else {
+                    f3Var.run();
+                }
+                return true;
+            } catch (java.lang.Exception e19) {
+                e = e19;
+                c1Var2.A5(e, hashMap);
+                return true;
+            }
+        } catch (java.lang.Exception e27) {
+            e = e27;
+            c1Var2 = c1Var;
+        }
+    }
+
+    public static boolean q3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("mediaType"), 3);
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("limitCount"), 9);
+        int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("galleryType"), 0);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("albumInfos");
+        boolean z17 = !"false".equals((java.lang.String) y2Var.f340790a.get("ignoreVideoPreview"));
+        int P4 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("sourceSceneId"), 0);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_can_select_video_and_pic", true);
+        intent.putExtra("key_send_raw_image", false);
+        intent.putExtra("max_select_count", P2);
+        intent.putExtra("query_source_type", 15);
+        intent.putExtra("query_media_type", P);
+        intent.putExtra("show_header_view", false);
+        intent.addFlags(67108864);
+        if (str != null) {
+            intent.putExtra("game_haowan_local_albums_info", str);
+        }
+        intent.putExtra("game_haowan_ignore_video_preview", z17);
+        intent.putExtra("game_haowan_source_scene_id", P4);
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        if (P3 == 2) {
+            j45.l.n(c1Var.f184975d, "game", ".media.GameTabGalleryUI", intent, 66);
+        } else {
+            if (P3 != 1) {
+                c1Var.i5(y2Var, y2Var.f341019i + "fail_galleryType is invalid", null);
+                return true;
+            }
+            j45.l.n(c1Var.f184975d, "game", ".media.GamePublishGalleryUI", intent, 66);
+        }
+        com.tencent.mm.game.report.l.c(c1Var.f184975d, 87, 8761, 0, 1, P4, lj0.a.a(4, null));
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:6:0x005b  */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x0061  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean q4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r12, nw4.y2 r13, com.tencent.mm.protocal.JsapiPermissionWrapper r14) {
+        /*
+            r12.getClass()
+            java.util.Map r14 = r13.f340790a
+            java.lang.String r0 = "appId"
+            java.lang.Object r14 = r14.get(r0)
+            java.lang.String r14 = (java.lang.String) r14
+            java.util.Map r0 = r13.f340790a
+            java.lang.String r1 = "serverId"
+            java.lang.Object r0 = r0.get(r1)
+            java.lang.String r0 = (java.lang.String) r0
+            java.util.Map r1 = r13.f340790a
+            java.lang.String r2 = "isShowProgressTips"
+            java.lang.Object r1 = r1.get(r2)
+            r2 = 1
+            java.lang.String r3 = "MicroMsg.MsgHandler"
+            r4 = 0
+            if (r1 == 0) goto L41
+            java.lang.String r1 = r1.toString()     // Catch: java.lang.Exception -> L33
+            int r1 = com.tencent.mm.sdk.platformtools.t8.P(r1, r4)     // Catch: java.lang.Exception -> L33
+            if (r1 != r2) goto L31
+            goto L41
+        L31:
+            r1 = r4
+            goto L42
+        L33:
+            r1 = move-exception
+            java.lang.String r1 = r1.getMessage()
+            java.lang.Object[] r1 = new java.lang.Object[]{r1}
+            java.lang.String r5 = "Exception has occured : %s"
+            com.tencent.mars.xlog.Log.w(r3, r5, r1)
+        L41:
+            r1 = r2
+        L42:
+            java.util.Map r5 = r13.f341018h
+            r6 = 0
+            nw4.e3.a(r5, r4, r6, r14)
+            java.lang.Boolean r4 = java.lang.Boolean.valueOf(r1)
+            java.lang.Object[] r4 = new java.lang.Object[]{r14, r0, r4}
+            java.lang.String r5 = "doDownloadVoice, appid is : %s, media id is : %s, isShowProgDialog(%s)"
+            com.tencent.mars.xlog.Log.i(r3, r5, r4)
+            boolean r4 = com.tencent.mm.sdk.platformtools.t8.K0(r0)
+            if (r4 == 0) goto L61
+            java.lang.String r14 = "downloadVoice:fail_invaild_serverId"
+            r12.i5(r13, r14, r6)
+            goto La1
+        L61:
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.w6 r4 = new com.tencent.mm.plugin.webview.ui.tools.jsapi.w6
+            r4.<init>(r12, r0, r13)
+            com.tencent.mm.plugin.webview.model.i4 r5 = com.tencent.mm.plugin.webview.modeltools.z.bj()
+            r5.a(r14, r0, r4)
+            java.lang.Boolean r14 = java.lang.Boolean.TRUE
+            java.lang.Object[] r14 = new java.lang.Object[]{r14}
+            java.lang.String r5 = "doDownloadVoice, add cdn download task result : %b"
+            com.tencent.mars.xlog.Log.i(r3, r5, r14)
+            if (r1 == 0) goto La1
+            android.content.Context r6 = r12.f184975d
+            android.content.res.Resources r14 = j65.q.a(r6)
+            r1 = 2131756315(0x7f10051b, float:1.9143534E38)
+            java.lang.String r7 = r14.getString(r1)
+            android.content.Context r14 = r12.f184975d
+            android.content.res.Resources r14 = j65.q.a(r14)
+            r1 = 2131780714(0x7f10646a, float:1.9193021E38)
+            java.lang.String r8 = r14.getString(r1)
+            r9 = 1
+            r10 = 1
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.x6 r11 = new com.tencent.mm.plugin.webview.ui.tools.jsapi.x6
+            r11.<init>(r12, r4, r0, r13)
+            com.tencent.mm.ui.widget.dialog.u3 r13 = db5.e1.Q(r6, r7, r8, r9, r10, r11)
+            r12.f184979h = r13
+        La1:
+            return r2
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.q4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean r(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        su4.u0 Di = com.tencent.mm.plugin.webview.modeltools.z.Di();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.a0 a0Var = (com.tencent.mm.plugin.websearch.a0) Di;
+        a0Var.getClass();
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(map.get("webview_instance_id"), -1);
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "searchId");
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(map, "poiId");
+        com.tencent.mm.modelbase.l lVar = new com.tencent.mm.modelbase.l();
+        r45.hx5 hx5Var = new r45.hx5();
+        hx5Var.f376542e = f18;
+        hx5Var.f376541d = f17;
+        lVar.f70664a = hx5Var;
+        lVar.f70665b = new r45.ix5();
+        lVar.f70666c = "/cgi-bin/mmsearch-bin/searchpoi";
+        lVar.f70667d = 2608;
+        com.tencent.mm.modelbase.z2.d(lVar.a(), new com.tencent.mm.plugin.websearch.r(a0Var, o17, f17, f18), false);
+        return false;
+    }
+
+    public static boolean r0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("miniprogramAppID");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "sendDataToMiniProgram:fail invalid miniprogramAppID", null);
+            return false;
+        }
+        ((com.tencent.mm.plugin.appbrand.service.r5) i95.n0.c(com.tencent.mm.plugin.appbrand.service.r5.class)).sd(str, str2, c1Var.B);
+        c1Var.i5(y2Var, "sendDataToMiniProgram:ok", null);
+        return false;
+    }
+
+    public static boolean r1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        try {
+            java.lang.String obj = y2Var.f340790a.get("type").toString();
+            if (com.tencent.mm.sdk.platformtools.t8.K0(obj)) {
+                c1Var.i5(y2Var, "openLuckyMoneyHistory:fail", null);
+            } else if (obj.equals("send")) {
+                android.content.Intent intent = new android.content.Intent();
+                intent.putExtra("key_type", 1);
+                j45.l.j(c1Var.f184975d, "luckymoney", ".ui.LuckyMoneyMyRecordUI", intent, null);
+                c1Var.i5(y2Var, "openLuckyMoneyHistory:ok", null);
+            } else if (obj.equals("receive")) {
+                android.content.Intent intent2 = new android.content.Intent();
+                intent2.putExtra("key_type", 2);
+                j45.l.j(c1Var.f184975d, "luckymoney", ".ui.LuckyMoneyMyRecordUI", intent2, null);
+                c1Var.i5(y2Var, "openLuckyMoneyHistory:ok", null);
+            }
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenLuckyMoneyHistory error %s", e17);
+            c1Var.i5(y2Var, "openLuckyMoneyHistory:fail", null);
+        }
+        return true;
+    }
+
+    public static boolean r2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String optString = y2Var.f341014d.optString(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_TRACK_NAME);
+        java.lang.Object opt = y2Var.f341014d.opt("arg");
+        try {
+            org.json.JSONObject jSONObject = new org.json.JSONObject();
+            jSONObject.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_TRACK_NAME, optString);
+            jSONObject.put("arg", opt);
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putString("info", jSONObject.toString());
+            c1Var.f184998y.i(139, bundle);
+            c1Var.i5(y2Var, "invokeMiniProgramAPI:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doInvokeMiniProgramApi: %s", e17);
+            c1Var.i5(y2Var, "invokeMiniProgramAPI:fail", null);
+            return true;
+        }
+    }
+
+    public static boolean r3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        org.json.JSONArray Zi;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("postIdList");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            Zi = ((i53.d0) ((m33.n1) i95.n0.c(m33.n1.class))).Zi(null, true);
+        } else {
+            try {
+                Zi = ((i53.d0) ((m33.n1) i95.n0.c(m33.n1.class))).Zi(new org.json.JSONArray(str), false);
+            } catch (org.json.JSONException unused) {
+                c1Var.i5(y2Var, "queryHaowanPublish:fail", null);
+            }
+        }
+        if (Zi == null || Zi.length() <= 0) {
+            c1Var.i5(y2Var, "queryHaowanPublish:ok", null);
+        } else {
+            java.util.HashMap hashMap = new java.util.HashMap();
+            hashMap.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA, Zi);
+            c1Var.i5(y2Var, "queryHaowanPublish:ok", hashMap);
+        }
+        return true;
+    }
+
+    public static /* synthetic */ boolean r4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.v5(y2Var);
+        return true;
+    }
+
+    public static boolean s(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        if (com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("isSearch"), 0) == 1) {
+            tg0.o1 o1Var = (tg0.o1) i95.n0.c(tg0.o1.class);
+            long E12 = com.tencent.mm.sdk.platformtools.t8.E1((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("reddotTimeStamps"));
+            ((sg0.y3) o1Var).getClass();
+            com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.WebSearchInnerLogic", "rec updateRedDotTimestamp %d", java.lang.Long.valueOf(E12));
+            gm0.j1.u().c().x(com.tencent.mm.storage.u3.USERINFO_SEARCH_REDDOT_LONG, java.lang.Long.valueOf(E12));
+        } else {
+            ((lf0.u) ((mf0.z) i95.n0.c(mf0.z.class))).getClass();
+            ((om4.m) ((pm4.r) i95.n0.c(pm4.r.class))).wi().J(com.tencent.mm.sdk.platformtools.t8.E1((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("reddotTimeStamps")));
+        }
+        return false;
+    }
+
+    public static boolean s0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        java.util.List G6;
+        c1Var.f184993v = false;
+        java.lang.Object obj = y2Var.f340790a.get("userNames");
+        java.lang.String str2 = ":ok";
+        if (obj instanceof java.lang.String) {
+            try {
+                G6 = G6(new org.json.JSONArray((java.lang.String) obj));
+            } catch (java.lang.Exception unused) {
+                str = ":fail:param type mismatch";
+            }
+        } else if (obj instanceof org.json.JSONArray) {
+            G6 = G6((org.json.JSONArray) obj);
+        } else if (obj instanceof java.lang.String[]) {
+            G6 = com.tencent.mm.sdk.platformtools.t8.P1((java.lang.String[]) obj);
+        } else {
+            str = ":fail:empty param";
+            str2 = str;
+            G6 = null;
+        }
+        if (!com.tencent.mm.sdk.platformtools.t8.L0(G6)) {
+            ((com.tencent.mm.plugin.appbrand.service.r5) i95.n0.c(com.tencent.mm.plugin.appbrand.service.r5.class)).p7(G6);
+        }
+        c1Var.i5(y2Var, "preloadMiniProgramContacts".concat(str2), null);
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0063  */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x0056  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean s1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r9, nw4.y2 r10, com.tencent.mm.protocal.JsapiPermissionWrapper r11) {
+        /*
+            Method dump skipped, instructions count: 290
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.s1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean s2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        if (com.tencent.mm.sdk.platformtools.t8.K0(j66)) {
+            java.lang.String n66 = c1Var.n6();
+            if (n66 == null) {
+                n66 = "";
+            }
+            android.net.Uri parse = android.net.Uri.parse(n66);
+            if (parse.getHost() == null || !parse.getHost().equals(com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fxy))) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "appId is null");
+                c1Var.i5(y2Var, "setGameData:fail_appid_null", null);
+                return true;
+            }
+            j66 = "wx62d9035fd4fd2059";
+        }
+        java.lang.String str = j66;
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("key");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("value");
+        java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("weight");
+        java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("expireTime");
+        boolean y17 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("autoClean"), true);
+        if (com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("pageCache"), false)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "common webview, not support pagecache");
+            c1Var.i5(y2Var, "setGameData:fail_not_support", null);
+        } else if (com.tencent.mm.sdk.platformtools.t8.K0(str2) || com.tencent.mm.sdk.platformtools.t8.K0(str3)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "key or value is null");
+            c1Var.i5(y2Var, "setGameData:fail_null_key", null);
+        } else {
+            ew4.c c17 = ew4.c.c();
+            c17.getClass();
+            if (c17.e(str, str2, str3, str4, str5, y17, str2.getBytes().length + str3.getBytes().length, "")) {
+                c1Var.i5(y2Var, "setGameData:ok", null);
+            } else {
+                c1Var.i5(y2Var, "setGameData:fail_exceed_size", null);
+            }
+        }
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0093  */
+    /* JADX WARN: Removed duplicated region for block: B:15:0x00a8  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x0095  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean s3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r13, nw4.y2 r14) {
+        /*
+            r13.getClass()
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r1 = "postId"
+            java.lang.Object r0 = r0.get(r1)
+            java.lang.String r0 = (java.lang.String) r0
+            java.util.Map r2 = r14.f340790a
+            java.lang.String r3 = "compressImg"
+            java.lang.Object r2 = r2.get(r3)
+            java.lang.String r2 = (java.lang.String) r2
+            r3 = 1
+            boolean r9 = com.tencent.mm.sdk.platformtools.t8.y(r2, r3)
+            boolean r2 = com.tencent.mm.sdk.platformtools.t8.K0(r0)
+            java.lang.Class<m33.n1> r4 = m33.n1.class
+            if (r2 != 0) goto L32
+            i95.m r2 = i95.n0.c(r4)
+            m33.n1 r2 = (m33.n1) r2
+            i53.d0 r2 = (i53.d0) r2
+            java.lang.String r0 = r2.Ri(r0)
+            goto Lc5
+        L32:
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r2 = "localIds"
+            java.lang.Object r0 = r0.get(r2)
+            java.lang.String r0 = (java.lang.String) r0
+            if (r0 == 0) goto L45
+            org.json.JSONArray r2 = new org.json.JSONArray     // Catch: org.json.JSONException -> L45
+            r2.<init>(r0)     // Catch: org.json.JSONException -> L45
+            r7 = r2
+            goto L47
+        L45:
+            r0 = 0
+            r7 = r0
+        L47:
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r2 = "from"
+            java.lang.Object r0 = r0.get(r2)
+            java.lang.String r0 = (java.lang.String) r0
+            r2 = 0
+            int r5 = com.tencent.mm.sdk.platformtools.t8.P(r0, r2)
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r6 = "postType"
+            java.lang.Object r0 = r0.get(r6)
+            java.lang.String r0 = (java.lang.String) r0
+            int r6 = com.tencent.mm.sdk.platformtools.t8.P(r0, r2)
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r8 = "extra"
+            java.lang.Object r0 = r0.get(r8)
+            r8 = r0
+            java.lang.String r8 = (java.lang.String) r8
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r10 = "sceneId"
+            java.lang.Object r0 = r0.get(r10)
+            java.lang.String r0 = (java.lang.String) r0
+            int r10 = com.tencent.mm.sdk.platformtools.t8.P(r0, r2)
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r11 = "MiniGamePublish"
+            java.lang.Object r0 = r0.get(r11)
+            java.lang.String r0 = (java.lang.String) r0
+            int r0 = com.tencent.mm.sdk.platformtools.t8.P(r0, r2)
+            m33.m1 r11 = new m33.m1
+            r11.<init>()
+            if (r0 != r3) goto L95
+            r0 = r3
+            goto L96
+        L95:
+            r0 = r2
+        L96:
+            r11.f323315a = r0
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r12 = "needDelAfterPost"
+            java.lang.Object r0 = r0.get(r12)
+            java.lang.String r0 = (java.lang.String) r0
+            int r0 = com.tencent.mm.sdk.platformtools.t8.P(r0, r2)
+            if (r0 != r3) goto La9
+            r2 = r3
+        La9:
+            r11.f323317c = r2
+            java.util.Map r0 = r14.f340790a
+            java.lang.String r2 = "videoId"
+            java.lang.Object r0 = r0.get(r2)
+            java.lang.String r0 = (java.lang.String) r0
+            r11.f323316b = r0
+            i95.m r0 = i95.n0.c(r4)
+            m33.n1 r0 = (m33.n1) r0
+            r4 = r0
+            i53.d0 r4 = (i53.d0) r4
+            java.lang.String r0 = r4.Di(r5, r6, r7, r8, r9, r10, r11)
+        Lc5:
+            java.util.HashMap r2 = new java.util.HashMap
+            r2.<init>()
+            r2.put(r1, r0)
+            java.lang.String r0 = "publishHaowanEdition:ok"
+            r13.i5(r14, r0, r2)
+            return r3
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.s3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean s4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        boolean z17;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_LOCALID);
+        java.lang.Object obj = y2Var.f340790a.get("isShowProgressTips");
+        if (obj != null) {
+            try {
+                z17 = com.tencent.mm.sdk.platformtools.t8.P(obj.toString(), 0) == 1;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Exception has occured : %s", e17.getMessage());
+            }
+            nw4.e3.a(y2Var.f341018h, false, null, str);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "upload local image, appid = %s, localid = %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localid is null or nil.");
+                c1Var.i5(y2Var, "uploadImage:fail_missing arguments", null);
+            } else {
+                c1Var.f7(y2Var, str, str2, 5, 0, 0, "uploadImage", z17);
+            }
+            return true;
+        }
+        z17 = true;
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "upload local image, appid = %s, localid = %s, isShowProgressTips(%s)", str, str2, java.lang.Boolean.valueOf(z17));
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+        }
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId or localid is null or nil.");
+        c1Var.i5(y2Var, "uploadImage:fail_missing arguments", null);
+        return true;
+    }
+
+    public static boolean t(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        ((java.util.HashMap) y2Var.f340790a).put("type", 262144);
+        ((java.util.HashMap) y2Var.f340790a).put("subType", 8);
+        ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).f181426f = new r45.v97();
+        ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).f181426f.f388015e = new r45.yn();
+        ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).f181426f.f388015e.f391228m = 1;
+        c1Var.i5(y2Var, y2Var.f341019i + ":ok", new java.util.HashMap());
+        c1Var.f184993v = false;
+        com.tencent.mm.plugin.websearch.l2.e(y2Var.f340790a, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+        ((com.tencent.mm.plugin.websearch.a0) com.tencent.mm.plugin.webview.modeltools.z.Di()).d(y2Var.f340790a);
+        return false;
+    }
+
+    public static boolean t0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.util.Map map;
+        java.lang.Integer num = 0;
+        c1Var.f184993v = false;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetFinderLivePreviewUrl");
+        if (y2Var == null || (map = y2Var.f340790a) == null) {
+            java.util.HashMap hashMap = new java.util.HashMap();
+            hashMap.put("ret", -2);
+            hashMap.put("url", "");
+            hashMap.put("requestId", "");
+            c1Var.i5(y2Var, "onGetFinderLivePreviewUrl:ok", hashMap);
+        } else {
+            java.lang.String str = (map.get("encryptedId") == null || !(map.get("encryptedId") instanceof java.lang.String)) ? "" : (java.lang.String) map.get("encryptedId");
+            java.lang.String str2 = (map.get("nonceId") == null || !(map.get("nonceId") instanceof java.lang.String)) ? "" : (java.lang.String) map.get("nonceId");
+            java.lang.String str3 = (map.get("requestId") == null || !(map.get("requestId") instanceof java.lang.String)) ? "" : (java.lang.String) map.get("requestId");
+            try {
+                if (map.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE) != null && (map.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE) instanceof java.lang.String)) {
+                    num = java.lang.Integer.valueOf(java.lang.Integer.parseInt((java.lang.String) map.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE)));
+                }
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "GetFinderLivePreviewUrl parseParams exception:" + e17.getMessage());
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetFinderLivePreviewUrl encryptedId:%s, nonceId:%s, requestId:%s", str, str2, str3);
+            try {
+                ((com.tencent.mm.feature.finder.live.v4) ((s40.w0) i95.n0.c(s40.w0.class))).Qj(str, str2, num.intValue(), new com.tencent.mm.plugin.webview.ui.tools.jsapi.z2(c1Var, str3, y2Var));
+            } catch (java.lang.Exception e18) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "GetFinderLivePreviewUrl exception:" + e18.getMessage());
+                java.util.HashMap hashMap2 = new java.util.HashMap();
+                hashMap2.put("ret", -1);
+                hashMap2.put("url", "");
+                hashMap2.put("requestId", str3);
+                c1Var.i5(y2Var, "onGetFinderLivePreviewUrl:ok", hashMap2);
+            }
+        }
+        return false;
+    }
+
+    public static boolean t1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, boolean z17) {
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        int i17 = z17 ? 49 : 48;
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putBoolean("k_need_signature", true);
+        bundle.putString("k_user_name", c01.z1.b());
+        bundle.putInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 2);
+        bundle.putBoolean("needVideo", z17);
+        bundle.putBoolean("is_check_dyncfg", false);
+        bundle.putString("key_function_name", y2Var.f341019i);
+        bundle.putInt("key_business_type", 1);
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        if (j66 == null) {
+            j66 = (java.lang.String) y2Var.f340790a.get("appId");
+        }
+        bundle.putString("appId", j66);
+        bundle.putString("request_verify_pre_info", (java.lang.String) y2Var.f340790a.get("request_verify_pre_info"));
+        bundle.putInt("check_alive_type", y2Var.f340790a.containsKey("check_alive_type") ? com.tencent.mm.sdk.platformtools.t8.P(y2Var.f340790a.get("check_alive_type").toString(), 0) : 0);
+        com.tencent.mm.autogen.events.RequestStartFaceDetectEvent requestStartFaceDetectEvent = new com.tencent.mm.autogen.events.RequestStartFaceDetectEvent();
+        android.content.Context context = c1Var.f184975d;
+        am.or orVar = requestStartFaceDetectEvent.f54699g;
+        orVar.f7573a = context;
+        orVar.f7575c = i17;
+        orVar.f7574b = bundle;
+        requestStartFaceDetectEvent.e();
+        am.pr prVar = requestStartFaceDetectEvent.f54700h;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "start face detect event result: %b", java.lang.Boolean.valueOf(prVar.f7654a));
+        if (!prVar.f7654a) {
+            ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(null);
+            c1Var.i5(y2Var, z17 ? "requestWxFacePictureVerifyUnionVideo:fail" : "requestWxFacePictureVerify:fail", nw4.a.a(prVar.f7655b));
+        }
+        return true;
+    }
+
+    public static boolean t2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        if (com.tencent.mm.sdk.platformtools.t8.K0(j66)) {
+            java.lang.String n66 = c1Var.n6();
+            if (n66 == null) {
+                n66 = "";
+            }
+            android.net.Uri parse = android.net.Uri.parse(n66);
+            if (parse.getHost() == null || !parse.getHost().equals(com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fxy))) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "appId is null");
+                c1Var.i5(y2Var, "getGameData:fail_appid_null", null);
+                return true;
+            }
+            j66 = "wx62d9035fd4fd2059";
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("key");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "key is null");
+            c1Var.i5(y2Var, "getGameData:fail", null);
+            return true;
+        }
+        ew4.a a17 = ew4.c.c().a(j66, str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(a17.field_value)) {
+            c1Var.i5(y2Var, "getGameData:ok", null);
+            return true;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("value", a17.field_value);
+        hashMap.put("weight", a17.field_weight);
+        hashMap.put("expireTime", java.lang.Long.valueOf(a17.field_expireTime - (java.lang.System.currentTimeMillis() / 1000)));
+        c1Var.i5(y2Var, "getGameData:ok", hashMap);
+        return true;
+    }
+
+    public static boolean t3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        org.json.JSONArray jSONArray;
+        c1Var.getClass();
+        if (!com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) y2Var.f340790a.get("cancelAll"), false)) {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("postIdList");
+            if (str != null) {
+                try {
+                    jSONArray = new org.json.JSONArray(str);
+                } catch (org.json.JSONException unused) {
+                }
+                if (jSONArray != null || jSONArray.length() == 0) {
+                    c1Var.i5(y2Var, "cancelHaowanPublish:fail_empty_postId", null);
+                    return true;
+                }
+                ((i53.d0) ((m33.n1) i95.n0.c(m33.n1.class))).Ai(jSONArray, false);
+            }
+            jSONArray = null;
+            if (jSONArray != null) {
+            }
+            c1Var.i5(y2Var, "cancelHaowanPublish:fail_empty_postId", null);
+            return true;
+        }
+        ((i53.d0) ((m33.n1) i95.n0.c(m33.n1.class))).Ai(null, true);
+        c1Var.i5(y2Var, "cancelHaowanPublish:ok", null);
+        return true;
+    }
+
+    public static boolean t4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        boolean z17;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("serverId");
+        java.lang.Object obj = y2Var.f340790a.get("isShowProgressTips");
+        if (obj != null) {
+            try {
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Exception has occured : %s", e17.getMessage());
+            }
+            if (com.tencent.mm.sdk.platformtools.t8.P(obj.toString(), 0) != 1) {
+                z17 = false;
+                nw4.e3.a(y2Var.f341018h, false, null, str);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doDownLoadImage, appid is : %s, media id is : %s", str, str2);
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                    c1Var.i5(y2Var, "downloadImage:fail_missing arguments", null);
+                } else {
+                    com.tencent.mm.plugin.webview.ui.tools.jsapi.v5 v5Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.v5(c1Var, str2, y2Var);
+                    com.tencent.mm.plugin.webview.modeltools.z.bj().a(str, str2, v5Var);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doDownLoadImage, add cdn download task result : %b", java.lang.Boolean.TRUE);
+                    if (z17) {
+                        android.content.Context context = c1Var.f184975d;
+                        c1Var.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.laq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.w5(c1Var, v5Var, str2, y2Var));
+                    }
+                }
+                return true;
+            }
+        }
+        z17 = true;
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doDownLoadImage, appid is : %s, media id is : %s", str, str2);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+        }
+        c1Var.i5(y2Var, "downloadImage:fail_missing arguments", null);
+        return true;
+    }
+
+    public static boolean u(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "gotoEmoticonPad");
+        c1Var.f184993v = false;
+        android.os.Bundle bundle = new android.os.Bundle();
+        try {
+            bundle.putString("requestId", y2Var.f340790a.get("requestId").toString());
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(151, bundle);
+            }
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "gotoEmoticonPad exception" + e17.getMessage());
+        }
+        return false;
+    }
+
+    public static boolean u0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.f184993v = false;
+        java.util.HashMap hashMap = new java.util.HashMap();
+        try {
+            java.util.Map map = y2Var.f340790a;
+            java.lang.String str = (map.get("encryptedId") == null || !(map.get("encryptedId") instanceof java.lang.String)) ? "" : (java.lang.String) map.get("encryptedId");
+            java.lang.String str2 = (map.get("nonceId") == null || !(map.get("nonceId") instanceof java.lang.String)) ? "" : (java.lang.String) map.get("nonceId");
+            java.lang.String str3 = (map.get("requestId") == null || !(map.get("requestId") instanceof java.lang.String)) ? "" : (java.lang.String) map.get("requestId");
+            if (map.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE) != null && (map.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE) instanceof java.lang.Integer)) {
+            }
+            ((com.tencent.mm.feature.finder.live.v4) ((s40.w0) i95.n0.c(s40.w0.class))).sk(str, str2, c1Var.f184975d, new com.tencent.mm.plugin.webview.ui.tools.jsapi.a3(c1Var, hashMap, str3, y2Var), ((c61.w8) ((zy2.pa) i95.n0.c(zy2.pa.class))).wi(c1Var.f184975d));
+        } catch (java.lang.Exception unused) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getFinderLivePreviewMicCover ex:${ex.message}");
+            hashMap.put("ret", -1);
+            hashMap.put("err_msg", "Invalid input parameters:${ex.message}");
+            hashMap.put("requestId", "");
+            c1Var.i5(y2Var, "onGetFinderLivePreviewMicCover:ok", hashMap);
+        }
+        return false;
+    }
+
+    public static boolean u1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                android.os.Bundle i17 = z0Var.i(87, null);
+                if (i17 != null) {
+                    java.lang.String string = i17.getString("result");
+                    boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+                    if (string == null) {
+                        string = "";
+                    }
+                    if (string.equals("not_return")) {
+                        c1Var.i5(y2Var, "getWePkgAuthResult:fail_auth_result_not_return", null);
+                    } else {
+                        java.lang.String string2 = i17.getString("full_url");
+                        int i18 = i17.getInt("set_cookie");
+                        if (com.tencent.mm.sdk.platformtools.t8.K0(string2)) {
+                            c1Var.i5(y2Var, "getWePkgAuthResult:fail_full_url_empty", null);
+                        } else {
+                            java.util.HashMap hashMap = new java.util.HashMap();
+                            hashMap.put("full_url", string2);
+                            hashMap.put("set_cookie", java.lang.Integer.valueOf(i18));
+                            c1Var.i5(y2Var, "getWePkgAuthResult:ok", hashMap);
+                        }
+                    }
+                } else {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getWePkgAuthResult get NULL bundle return fail");
+                    c1Var.i5(y2Var, "getWePkgAuthResult:fail", null);
+                }
+            }
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doGetWePkgAuthResult exception, " + e17.getMessage());
+            c1Var.i5(y2Var, "getWePkgAuthResult:fail", null);
+            return true;
+        }
+    }
+
+    public static boolean u2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String j66 = c1Var.j6(c1Var.n6());
+        if (com.tencent.mm.sdk.platformtools.t8.K0(j66)) {
+            java.lang.String n66 = c1Var.n6();
+            if (n66 == null) {
+                n66 = "";
+            }
+            android.net.Uri parse = android.net.Uri.parse(n66);
+            if (parse.getHost() == null || !parse.getHost().equals(com.tencent.mm.sdk.platformtools.t9.a(com.tencent.mm.R.string.fxy))) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "appId is null");
+                c1Var.i5(y2Var, "clearData:fail", null);
+                return true;
+            }
+            j66 = "wx62d9035fd4fd2059";
+        }
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("keys");
+        boolean y17 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("clearAllData"), false);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            if (y17) {
+                ew4.c.c().d().y0(j66);
+                c1Var.i5(y2Var, "clearGameData:ok", null);
+                return true;
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "key is null");
+            c1Var.i5(y2Var, "clearGameData:fail", null);
+            return true;
+        }
+        try {
+            ew4.c.c().d().z0(j66, new org.json.JSONArray(str));
+            c1Var.i5(y2Var, "clearGameData:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doClearData: " + e17.getMessage());
+            c1Var.i5(y2Var, "clearGameData:fail", null);
+            return true;
+        }
+    }
+
+    public static boolean u3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("videoUrl");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("thumbUrl");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("appId");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("sourceSceneId"), 0);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "launchGameVideoEditor:fail_invalid_videoUrl", null);
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) c1Var.f184975d).mmSetOnActivityResultCallback(c1Var);
+        m33.v1 v1Var = (m33.v1) i95.n0.c(m33.v1.class);
+        android.content.Context context = c1Var.f184975d;
+        ((i53.x3) v1Var).getClass();
+        i53.x3.wi(context, 5, null, str3, null, str, str2, true, null, 67, null, P);
+        return true;
+    }
+
+    public static boolean u4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("menuList");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "hideMenuItems:param is empty", null);
+            return true;
+        }
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(str);
+            java.util.ArrayList<java.lang.String> arrayList = new java.util.ArrayList<>();
+            for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                java.lang.String string = jSONArray.getString(i17);
+                arrayList.add(string);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doHideMenuItems:" + string);
+            }
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putStringArrayList("menu_item_list", arrayList);
+            c1Var.f184998y.te(3001, bundle);
+            c1Var.i5(y2Var, "hideMenuItems:ok", null);
+            return true;
+        } catch (android.os.RemoteException unused) {
+            c1Var.i5(y2Var, "hideMenuItems:param is empty", null);
+            return true;
+        } catch (org.json.JSONException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "JSONException : %s", e17.getMessage());
+            c1Var.i5(y2Var, "hideMenuItems:param is empty", null);
+            return true;
+        }
+    }
+
+    public static boolean v(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "querySimilarEmotion");
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(map, "md5");
+        int e17 = com.tencent.mm.plugin.websearch.l2.e(map, "offset", 0);
+        java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(map, "searchId");
+        java.lang.String f19 = com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_SESSION_ID);
+        int e18 = com.tencent.mm.plugin.websearch.l2.e(map, "tab", 0);
+        java.lang.String f27 = com.tencent.mm.plugin.websearch.l2.f(map, "requestId");
+        int e19 = com.tencent.mm.plugin.websearch.l2.e(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, 0);
+        int e27 = com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1);
+        java.lang.String f28 = com.tencent.mm.plugin.websearch.l2.f(map, "emojiUrl");
+        java.lang.String f29 = com.tencent.mm.plugin.websearch.l2.f(map, "aesKey");
+        if (q0Var.f181603s != null) {
+            gm0.j1.d().d(q0Var.f181603s);
+            gm0.j1.d().q(2999, q0Var);
+        }
+        gm0.j1.d().a(2999, q0Var);
+        su4.q1 q1Var = new su4.q1(f17, e17, f18, f19, e18, f27, e19, f28, f29);
+        q0Var.f181603s = q1Var;
+        q1Var.f413048n = e27;
+        gm0.j1.d().g(q0Var.f181603s);
+        return false;
+    }
+
+    public static boolean v0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        if (y2Var.f340790a.containsKey("enable")) {
+            try {
+                boolean parseBoolean = java.lang.Boolean.parseBoolean((java.lang.String) y2Var.f340790a.get("enable"));
+                android.os.Bundle bundle = new android.os.Bundle(1);
+                bundle.putBoolean("enable_fullscreen_params_enable", parseBoolean);
+                c1Var.f184998y.i(45, bundle);
+                c1Var.i5(y2Var, "enableFullScreen:ok", null);
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doEnableFullScreen, exception = %s", e17);
+                c1Var.i5(y2Var, "enableFullScreen:fail", null);
+            }
+        } else {
+            c1Var.i5(y2Var, "enableFullScreen:fail_invalid_arguments", null);
+        }
+        return true;
+    }
+
+    public static boolean v1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getLocalWePkgInfo call");
+        com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.u3(c1Var, y2Var));
+        return true;
+    }
+
+    public static boolean v2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        c1Var.getClass();
+        nw4.e3.a(y2Var.f341018h, c1Var.p6("sendEmail"), null, null);
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        try {
+            str = c1Var.x6(c1Var.f184998y.getCurrentUrl());
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            str = "";
+        }
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("composeType", 1);
+        intent.putExtra("subject", str2);
+        intent.putExtra("mail_content", str);
+        j45.l.k(c1Var.f184975d, "qqmail", ".ui.ComposeUI", intent, false);
+        c1Var.i5(y2Var, "send_email:ok", null);
+        return true;
+    }
+
+    public static boolean v3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String n17 = wo.w0.n();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "MsgHandler, getOAID, oaid=".concat(n17));
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.A(1896, 23);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(n17)) {
+            c1Var.i5(y2Var, "getOAID:fail", null);
+            return true;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("result", n17);
+        c1Var.i5(y2Var, "getOAID:ok", hashMap);
+        return true;
+    }
+
+    public static boolean v4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("menuList");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "showMenuItems:param is empty", null);
+            return true;
+        }
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(str);
+            java.util.ArrayList<java.lang.String> arrayList = new java.util.ArrayList<>();
+            for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                arrayList.add(jSONArray.getString(i17));
+            }
+            android.os.Bundle bundle = new android.os.Bundle();
+            bundle.putStringArrayList("menu_item_list", arrayList);
+            c1Var.f184998y.te(3002, bundle);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "RemoteException : %s", e17.getMessage());
+            c1Var.i5(y2Var, "showMenuItems:param is empty", null);
+        } catch (org.json.JSONException e18) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "JSONException : %s", e18.getMessage());
+            c1Var.i5(y2Var, "showMenuItems:param is empty", null);
+            return true;
+        }
+        c1Var.i5(y2Var, "showMenuItems:ok", null);
+        return true;
+    }
+
+    public static boolean w(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String obj = y2Var.f340790a.get("widgetId").toString();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) ((sg0.u3) ((tg0.w1) i95.n0.c(tg0.w1.class))).f407823n).get(obj);
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("widgetId", obj);
+        hashMap.put("imgUrl", str);
+        c1Var.i5(y2Var, java.lang.String.format("%s:ok", y2Var.f341019i), hashMap);
+        return false;
+    }
+
+    public static boolean w0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("color");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSetStatusBarStyle, color is null or nill");
+            c1Var.i5(y2Var, "setStatusBarStyle:fail", null);
+            return true;
+        }
+        int i17 = str.equalsIgnoreCase("black") ? 48 : str.equalsIgnoreCase("white") ? 49 : -1;
+        if (-1 == i17) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSetStatusBarStyle, color is neither black or white");
+            c1Var.i5(y2Var, "setStatusBarStyle:fail", null);
+            return true;
+        }
+        try {
+            c1Var.f184998y.i(i17, android.os.Bundle.EMPTY);
+            c1Var.i5(y2Var, "setStatusBarStyle:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSetStatusBarStyle, exception = %s", e17);
+            c1Var.i5(y2Var, "setStatusBarStyle:fail", null);
+            return true;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:16:0x0067  */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x007b  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x008f  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean w1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r10, nw4.y2 r11) {
+        /*
+            r10.getClass()
+            java.util.Map r0 = r11.f340790a
+            java.lang.String r1 = "url"
+            java.lang.Object r0 = r0.get(r1)
+            java.lang.String r0 = (java.lang.String) r0
+            boolean r1 = com.tencent.mm.sdk.platformtools.t8.K0(r0)
+            r2 = 1
+            r3 = 0
+            if (r1 == 0) goto L25
+            java.lang.String r0 = "MicroMsg.MsgHandler"
+            java.lang.String r1 = "url is null or nil"
+            com.tencent.mars.xlog.Log.e(r0, r1)
+            java.lang.String r0 = "openGameWebView:fail_invalid_url"
+            r10.i5(r11, r0, r3)
+            goto Le3
+        L25:
+            java.util.Map r1 = r11.f340790a
+            java.lang.String r4 = "orientation"
+            java.lang.Object r1 = r1.get(r4)
+            java.lang.String r1 = (java.lang.String) r1
+            java.lang.String r4 = ""
+            if (r1 != 0) goto L34
+            r1 = r4
+        L34:
+            boolean r5 = com.tencent.mm.sdk.platformtools.t8.K0(r1)
+            if (r5 != 0) goto L5a
+            java.lang.String r5 = "horizontal"
+            boolean r5 = r1.equals(r5)
+            if (r5 == 0) goto L44
+            r1 = 0
+            goto L5b
+        L44:
+            java.lang.String r5 = "vertical"
+            boolean r5 = r1.equals(r5)
+            if (r5 == 0) goto L4f
+            r1 = r2
+            goto L5b
+        L4f:
+            java.lang.String r5 = "sensor"
+            boolean r1 = r1.equals(r5)
+            if (r1 == 0) goto L5a
+            r1 = 4
+            goto L5b
+        L5a:
+            r1 = -1
+        L5b:
+            java.util.Map r5 = r11.f340790a
+            java.lang.String r6 = "fullscreen"
+            java.lang.Object r5 = r5.get(r6)
+            java.lang.String r5 = (java.lang.String) r5
+            if (r5 != 0) goto L68
+            r5 = r4
+        L68:
+            java.lang.String r6 = "true"
+            boolean r5 = r5.equals(r6)
+            java.util.Map r6 = r11.f340790a
+            java.lang.String r7 = "disable_swipe_back"
+            java.lang.Object r6 = r6.get(r7)
+            java.lang.String r6 = (java.lang.String) r6
+            if (r6 != 0) goto L7c
+            r6 = r4
+        L7c:
+            java.lang.String r8 = "1"
+            boolean r6 = r6.equals(r8)
+            java.util.Map r8 = r11.f340790a
+            java.lang.String r9 = "gameAppid"
+            java.lang.Object r8 = r8.get(r9)
+            java.lang.String r8 = (java.lang.String) r8
+            if (r8 != 0) goto L8f
+            goto L90
+        L8f:
+            r4 = r8
+        L90:
+            android.content.Intent r8 = new android.content.Intent
+            r8.<init>()
+            java.lang.String r9 = "rawUrl"
+            r8.putExtra(r9, r0)
+            java.lang.String r0 = "geta8key_scene"
+            r9 = 32
+            r8.putExtra(r0, r9)
+            java.lang.String r0 = "KPublisherId"
+            java.lang.String r9 = "game_webview"
+            r8.putExtra(r0, r9)
+            java.lang.String r0 = "screen_orientation"
+            r8.putExtra(r0, r1)
+            java.lang.String r0 = "show_full_screen"
+            r8.putExtra(r0, r5)
+            r8.putExtra(r7, r6)
+            java.lang.String r0 = "game_hv_menu_appid"
+            r8.putExtra(r0, r4)
+            android.os.Bundle r0 = r8.getExtras()
+            com.tencent.mm.plugin.webview.stub.z0 r1 = r10.f184998y
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.v3 r5 = new com.tencent.mm.plugin.webview.ui.tools.jsapi.v3
+            r5.<init>(r10, r8)
+            java.lang.String r6 = "webview"
+            java.lang.String r7 = ".ui.tools.WebViewUI"
+            com.tencent.mm.plugin.webview.ui.tools.a1.e(r0, r6, r7, r1, r5)
+            com.tencent.mm.autogen.events.GameCommOperationEvent r0 = new com.tencent.mm.autogen.events.GameCommOperationEvent
+            r0.<init>()
+            am.le r1 = r0.f54358g
+            r5 = 2
+            r1.f7243a = r5
+            r1.f7244b = r4
+            r0.e()
+            java.lang.String r0 = "openGameWebView:ok"
+            r10.i5(r11, r0, r3)
+        Le3:
+            return r2
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.w1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean w2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "do handle wcpay buffer");
+        nw4.e3.a(y2Var.f341018h, false, null, (java.lang.String) y2Var.f340790a.get("appId"));
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        com.tencent.mm.autogen.events.WCPayWalletBufferEvent wCPayWalletBufferEvent = new com.tencent.mm.autogen.events.WCPayWalletBufferEvent();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("action");
+        am.e10 e10Var = wCPayWalletBufferEvent.f54951g;
+        e10Var.f6532h = str;
+        e10Var.f6534j = (java.lang.String) y2Var.f340790a.get("buffer");
+        e10Var.f6533i = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("walletRegion"), 0);
+        e10Var.f6525a = walletJsapiData.f192129d;
+        e10Var.f6526b = walletJsapiData.f192133h;
+        e10Var.f6530f = walletJsapiData.f192132g;
+        e10Var.f6528d = walletJsapiData.f192138p;
+        e10Var.f6529e = walletJsapiData.f192131f;
+        e10Var.f6527c = walletJsapiData.f192134i;
+        e10Var.f6531g = walletJsapiData.f192140r;
+        wCPayWalletBufferEvent.f54952h.f6628c = new com.tencent.mm.plugin.webview.ui.tools.jsapi.l4(c1Var, wCPayWalletBufferEvent, y2Var);
+        wCPayWalletBufferEvent.e();
+        return true;
+    }
+
+    public static boolean w3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.lang.String str;
+        java.lang.String str2;
+        boolean z17;
+        c1Var.getClass();
+        try {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "handle qq mail login result");
+            android.os.Bundle bundle = new android.os.Bundle();
+            java.lang.String str3 = "";
+            if (y2Var.f340790a.containsKey("mailAddr")) {
+                str = (java.lang.String) y2Var.f340790a.get("mailAddr");
+                bundle.putString("key_qq_mail", str);
+            } else {
+                str = "";
+            }
+            if (y2Var.f340790a.containsKey("ticket")) {
+                str2 = (java.lang.String) y2Var.f340790a.get("ticket");
+                bundle.putString("key_bind_ticket", str2);
+            } else {
+                str2 = "";
+            }
+            if (y2Var.f340790a.containsKey("needSecPWD")) {
+                z17 = "true".equals((java.lang.String) y2Var.f340790a.get("needSecPWD"));
+                bundle.putBoolean("key_need_second_pwd", z17);
+            } else {
+                z17 = false;
+            }
+            if (y2Var.f340790a.containsKey("secpwdkey")) {
+                str3 = (java.lang.String) y2Var.f340790a.get("secpwdkey");
+                bundle.putString("key_second_pwd_key", str3);
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "mail %s, ticket %s, needSecondPwd %s, secPwdKey %s", str, str2, java.lang.Boolean.valueOf(z17), str3);
+            c1Var.f184998y.ec();
+            c1Var.f184998y.b(bundle);
+            new com.tencent.mm.autogen.events.WebViewCloseWindowEvent().e();
+            c1Var.i5(y2Var, "qqMailLoginResult ok", null);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "qqMailLoginResult exception", new java.lang.Object[0]);
+        }
+        return true;
+    }
+
+    public static boolean w4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        try {
+            c1Var.f184998y.te(3003, null);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "RemoteException : %s", e17.getMessage());
+            c1Var.i5(y2Var, "hideAllNonBaseMenuItem:param is empty", null);
+        }
+        c1Var.i5(y2Var, "hideAllNonBaseMenuItem:ok", null);
+        return true;
+    }
+
+    public static boolean x(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openFinderFeed");
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "openFinderFeed %s", map);
+        try {
+            org.json.JSONObject jSONObject = new org.json.JSONObject();
+            jSONObject.put("feedId", com.tencent.mm.plugin.websearch.l2.f(map, "feedId"));
+            jSONObject.put("extInfo", new org.json.JSONObject(com.tencent.mm.plugin.websearch.l2.f(map, "extInfo")));
+            jSONObject.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.LiveExKeys.LIVE_EX_EXTRA_INFO, com.tencent.mm.plugin.websearch.l2.f(map, com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.LiveExKeys.LIVE_EX_EXTRA_INFO));
+            android.content.Intent intent = new android.content.Intent();
+            intent.putExtra("tab_type", 8);
+            ((c61.l7) ((zy2.b6) i95.n0.c(zy2.b6.class))).Bj(6, 2, 25, intent);
+            ((zy2.b6) i95.n0.c(zy2.b6.class)).getClass();
+            ya2.e1.f460472a.B(com.tencent.mm.sdk.platformtools.x2.f193071a, jSONObject.toString(), intent);
+        } catch (java.lang.Exception unused) {
+        }
+        return false;
+    }
+
+    public static boolean x0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_USERNAME);
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            ((k91.g4) ((com.tencent.mm.plugin.appbrand.service.f6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.f6.class))).Ri(str, null);
+        }
+        c1Var.i5(y2Var, "forceUpdateWxaAttr:ok", null);
+        return true;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:124:0x0333  */
+    /* JADX WARN: Removed duplicated region for block: B:125:0x030e  */
+    /* JADX WARN: Removed duplicated region for block: B:126:0x0257  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x01c9  */
+    /* JADX WARN: Removed duplicated region for block: B:53:0x027c  */
+    /* JADX WARN: Removed duplicated region for block: B:56:0x0285  */
+    /* JADX WARN: Removed duplicated region for block: B:59:0x030c  */
+    /* JADX WARN: Removed duplicated region for block: B:62:0x0313  */
+    /* JADX WARN: Removed duplicated region for block: B:70:0x0342  */
+    /* JADX WARN: Removed duplicated region for block: B:73:0x0350  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean x1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r41, nw4.y2 r42) {
+        /*
+            Method dump skipped, instructions count: 1237
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.x1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2):boolean");
+    }
+
+    public static boolean x2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("reportId");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("reportInstantly");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (str2 == null) {
+            str2 = "";
+        }
+        boolean equals = str2.equals("1");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("reportTimeBegin");
+        boolean equals2 = (str3 != null ? str3 : "").equals("1");
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("reportFormatData");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("reportTabsFormatData");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "reportId is null or nil");
+            c1Var.i5(y2Var, "reportGamePageTime:fail_invalid_reportId", null);
+            return true;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str4) && com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "reportFormatData && reportTabsFormatData is null or nil");
+            c1Var.i5(y2Var, "reportGamePageTime:fail_invalid_reportFormatData_reportTabsFormatData", null);
+            return true;
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "reportGamePageTime, reportId:%s, reportInstantly:%b, reportTimeBegin:%b, reportFormatData:(%s), reportTabsFormatData(%s)", str, java.lang.Boolean.valueOf(equals), java.lang.Boolean.valueOf(equals2), str4, str5);
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("game_page_report_id", str);
+        bundle.putBoolean("game_page_report_instantly", equals);
+        bundle.putBoolean("game_page_report_time_begin", equals2);
+        bundle.putString("game_page_report_format_data", str4);
+        bundle.putString("game_page_report_tabs_format_data", str5);
+        try {
+            c1Var.f184998y.i(95, bundle);
+            c1Var.i5(y2Var, "reportGamePageTime:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "reportGamePageTime, exception = %s", e17);
+            c1Var.i5(y2Var, "reportGamePageTime:fail", null);
+            return true;
+        }
+    }
+
+    public static boolean x3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        java.util.HashMap hashMap = new java.util.HashMap();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("desc");
+        if (str == null || "".equals(str)) {
+            str = com.tencent.mm.sdk.platformtools.x2.f193071a.getString(com.tencent.mm.R.string.f492129fb2);
+        }
+        if (((sb0.f) ((tb0.j) i95.n0.c(tb0.j.class))).Ui(com.tencent.mm.sdk.platformtools.x2.f193071a)) {
+            hashMap.put("ret", 0);
+            c1Var.i5(y2Var, "requestOverlayPermission:ok", hashMap);
+        } else {
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.o3 o3Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.o3(c1Var, hashMap, y2Var);
+            tb0.i iVar = (tb0.i) i95.n0.c(tb0.i.class);
+            android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+            java.lang.String a17 = n25.a.a();
+            ((sb0.f) iVar).getClass();
+            com.tencent.mm.pluginsdk.permission.RequestFloatWindowPermissionDialog.S6(context, str, o3Var, true, a17);
+        }
+        return true;
+    }
+
+    public static boolean x4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        try {
+            c1Var.f184998y.te(3004, null);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "RemoteException : %s", e17.getMessage());
+            c1Var.i5(y2Var, "showAllNonBaseMenuItem:param is empty", null);
+        }
+        c1Var.i5(y2Var, "showAllNonBaseMenuItem:ok", null);
+        return true;
+    }
+
+    /* JADX WARN: Can't wrap try/catch for region: R(8:1|(2:2|3)|(6:5|(1:7)(2:20|(1:22)(1:23))|8|9|(1:11)(3:14|15|(1:17)(1:18))|12)|24|8|9|(0)(0)|12) */
+    /* JADX WARN: Removed duplicated region for block: B:11:0x006e A[Catch: Exception -> 0x00af, TryCatch #0 {Exception -> 0x00af, blocks: (B:9:0x0064, B:11:0x006e, B:14:0x0088, B:17:0x0090, B:18:0x00a4), top: B:8:0x0064 }] */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0088 A[Catch: Exception -> 0x00af, TRY_LEAVE, TryCatch #0 {Exception -> 0x00af, blocks: (B:9:0x0064, B:11:0x006e, B:14:0x0088, B:17:0x0090, B:18:0x00a4), top: B:8:0x0064 }] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static boolean y(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 r5, nw4.y2 r6, com.tencent.mm.protocal.JsapiPermissionWrapper r7) {
+        /*
+            r5.getClass()
+            java.lang.String r7 = "MicroMsg.MsgHandler"
+            java.lang.String r0 = "getCurrentLocation"
+            com.tencent.mars.xlog.Log.i(r7, r0)
+            r7 = 0
+            r5.f184993v = r7
+            su4.w0 r5 = com.tencent.mm.plugin.webview.modeltools.z.Ri()
+            java.util.Map r6 = r6.f340790a
+            com.tencent.mm.plugin.websearch.q0 r5 = (com.tencent.mm.plugin.websearch.q0) r5
+            r5.getClass()
+            java.lang.String r0 = ""
+            java.lang.String r1 = "wrong param: "
+            java.lang.Object[] r2 = new java.lang.Object[]{r6}
+            java.lang.String r3 = "getCurrentLocation %s"
+            java.lang.String r4 = "MicroMsg.WebSearch.FTSWebViewLogic"
+            com.tencent.mars.xlog.Log.i(r4, r3, r2)
+            java.lang.String r2 = "needUpdate"
+            java.lang.Object r2 = r6.get(r2)     // Catch: java.lang.Exception -> L5d
+            if (r2 == 0) goto L63
+            boolean r3 = r2 instanceof java.lang.String     // Catch: java.lang.Exception -> L5d
+            if (r3 == 0) goto L3d
+            java.lang.String r2 = (java.lang.String) r2     // Catch: java.lang.Exception -> L5d
+            java.lang.String r1 = "1"
+            boolean r1 = r2.equals(r1)     // Catch: java.lang.Exception -> L5d
+            goto L64
+        L3d:
+            boolean r3 = r2 instanceof java.lang.Integer     // Catch: java.lang.Exception -> L5d
+            if (r3 == 0) goto L4d
+            java.lang.Integer r2 = (java.lang.Integer) r2     // Catch: java.lang.Exception -> L5d
+            r1 = 1
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.Exception -> L5d
+            boolean r1 = r2.equals(r1)     // Catch: java.lang.Exception -> L5d
+            goto L64
+        L4d:
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch: java.lang.Exception -> L5d
+            r3.<init>(r1)     // Catch: java.lang.Exception -> L5d
+            r3.append(r2)     // Catch: java.lang.Exception -> L5d
+            java.lang.String r1 = r3.toString()     // Catch: java.lang.Exception -> L5d
+            com.tencent.mars.xlog.Log.e(r4, r1)     // Catch: java.lang.Exception -> L5d
+            goto L63
+        L5d:
+            r1 = move-exception
+            java.lang.Object[] r2 = new java.lang.Object[r7]
+            com.tencent.mars.xlog.Log.printErrStackTrace(r4, r1, r0, r2)
+        L63:
+            r1 = r7
+        L64:
+            java.lang.String r2 = "webview_instance_id"
+            r3 = -1
+            int r6 = com.tencent.mm.plugin.websearch.l2.e(r6, r2, r3)     // Catch: java.lang.Exception -> Laf
+            if (r1 == 0) goto L88
+            com.tencent.mm.plugin.websearch.m0 r0 = new com.tencent.mm.plugin.websearch.m0     // Catch: java.lang.Exception -> Laf
+            r0.<init>(r5, r6)     // Catch: java.lang.Exception -> Laf
+            java.lang.Class<u60.g> r5 = u60.g.class
+            i95.m r5 = i95.n0.c(r5)     // Catch: java.lang.Exception -> Laf
+            u60.g r5 = (u60.g) r5     // Catch: java.lang.Exception -> Laf
+            t60.e r5 = (t60.e) r5     // Catch: java.lang.Exception -> Laf
+            r5.getClass()     // Catch: java.lang.Exception -> Laf
+            i11.h r5 = i11.h.e()     // Catch: java.lang.Exception -> Laf
+            r5.k(r0, r7)     // Catch: java.lang.Exception -> Laf
+            goto Laf
+        L88:
+            r45.e64 r1 = su4.r2.i()     // Catch: java.lang.Exception -> Laf
+            java.lang.Class<zg0.l3> r2 = zg0.l3.class
+            if (r1 == 0) goto La4
+            i95.m r0 = i95.n0.c(r2)     // Catch: java.lang.Exception -> Laf
+            zg0.l3 r0 = (zg0.l3) r0     // Catch: java.lang.Exception -> Laf
+            org.json.JSONObject r5 = r5.h(r1)     // Catch: java.lang.Exception -> Laf
+            java.lang.String r5 = r5.toString()     // Catch: java.lang.Exception -> Laf
+            jw4.e r0 = (jw4.e) r0     // Catch: java.lang.Exception -> Laf
+            r0.Ai(r6, r5)     // Catch: java.lang.Exception -> Laf
+            goto Laf
+        La4:
+            i95.m r5 = i95.n0.c(r2)     // Catch: java.lang.Exception -> Laf
+            zg0.l3 r5 = (zg0.l3) r5     // Catch: java.lang.Exception -> Laf
+            jw4.e r5 = (jw4.e) r5     // Catch: java.lang.Exception -> Laf
+            r5.Ai(r6, r0)     // Catch: java.lang.Exception -> Laf
+        Laf:
+            return r7
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.y(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1, nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper):boolean");
+    }
+
+    public static boolean y0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        int i17;
+        int i18;
+        c1Var.getClass();
+        java.lang.String f17 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "targetAppId");
+        java.lang.String n66 = c1Var.n6();
+        java.lang.String j66 = c1Var.j6(n66);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(j66)) {
+            j66 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "referrerAppId");
+        }
+        java.lang.String str = j66;
+        if (com.tencent.mm.sdk.platformtools.t8.K0(f17)) {
+            c1Var.i5(y2Var, "launchMiniProgram:fail_invalid_targetAppId", null);
+        } else if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "launchMiniProgram:fail_invalid_referrerAppId", null);
+        } else {
+            java.lang.String f18 = com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, "envVersion");
+            if (f18 == null) {
+                f18 = "";
+            }
+            if (f18.equals("trial")) {
+                i17 = 2;
+            } else if (f18.equals("develop")) {
+                i18 = 1;
+                ((com.tencent.mm.plugin.appbrand.launching.xc) ((com.tencent.mm.plugin.appbrand.service.h6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.h6.class))).Zi(c1Var.f184975d, n66, str, f17, i18, com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, com.tencent.kinda.framework.widget.tools.ConstantsKinda.INTENT_LITEAPP_PATH), c1Var.g6());
+                c1Var.i5(y2Var, "launchMiniProgram:ok", null);
+            } else {
+                i17 = 0;
+            }
+            i18 = i17;
+            ((com.tencent.mm.plugin.appbrand.launching.xc) ((com.tencent.mm.plugin.appbrand.service.h6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.h6.class))).Zi(c1Var.f184975d, n66, str, f17, i18, com.tencent.mm.plugin.websearch.l2.f(y2Var.f340790a, com.tencent.kinda.framework.widget.tools.ConstantsKinda.INTENT_LITEAPP_PATH), c1Var.g6());
+            c1Var.i5(y2Var, "launchMiniProgram:ok", null);
+        }
+        return true;
+    }
+
+    public static boolean y1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doLoginOrAuthorize!");
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.c2 c2Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.c2(c1Var, y2Var);
+        if (Q1) {
+            P1.add(c2Var);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "add to authJsApiQueue!");
+        } else {
+            Q1 = true;
+            c2Var.run();
+        }
+        return true;
+    }
+
+    public static boolean y2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        int i17 = c1Var.f184996x0;
+        c1Var.f184996x0 = i17 + 1;
+        android.os.Bundle b17 = nw4.y2.b(y2Var.f340790a);
+        if (b17.containsKey("playerId")) {
+            i17 = com.tencent.mm.sdk.platformtools.t8.D1(b17.getString("playerId"), 0);
+        } else {
+            b17.putString("playerId", java.lang.String.valueOf(i17));
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "inserting video player id %d, params %s", java.lang.Integer.valueOf(i17), y2Var.f340790a);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(200000, b17);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doInsertVideoPlayer exception" + e17.getMessage());
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("playerId", java.lang.Integer.valueOf(i17));
+        c1Var.i5(y2Var, "insertVideoPlayer:ok", hashMap);
+        return true;
+    }
+
+    public static boolean y3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        java.util.ArrayList arrayList;
+        fw1.c cVar;
+        java.lang.String str;
+        java.lang.String[] strArr;
+        c1Var.getClass();
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("weappAppId");
+        if (android.text.TextUtils.isEmpty(str2)) {
+            str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("appId");
+        }
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("roomIdList");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doGetWAServiceVoipRecordLocalId appId:%s, roomIdList:%s", str2, str3);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            c1Var.i5(y2Var, "getWAServiceVoipRecordLocalId:fail_invalid_appId", null);
+        } else {
+            java.util.ArrayList arrayList2 = new java.util.ArrayList();
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str3)) {
+                try {
+                    org.json.JSONArray jSONArray = new org.json.JSONArray(str3);
+                    for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                        arrayList2.add(jSONArray.getString(i17));
+                    }
+                } catch (org.json.JSONException unused) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "roomIdList parse error");
+                }
+            }
+            ((gi1.q) ((dz.l) i95.n0.c(dz.l.class))).getClass();
+            if (arrayList2.isEmpty()) {
+                gi1.p pVar = (gi1.p) com.tencent.mm.plugin.appbrand.app.r9.fj(gi1.p.class);
+                pVar.getClass();
+                com.tencent.mars.xlog.Log.i("MicroMsg.OpenVoiceServiceVoipRecordStorage", "getVoipRecordList appId:%s, limit:%d, offset:%d", str2, 300, 0);
+                if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                    arrayList = null;
+                } else {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.OpenVoiceServiceVoipRecordStorage", "getCount:%d", java.lang.Integer.valueOf(pVar.getCount()));
+                    arrayList = new java.util.ArrayList();
+                    java.lang.String[] strArr2 = {"voipRoomId", "appId", "voipRecordPath", dm.i4.COL_UPDATETIME, "voipExtraData"};
+                    if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                        str = null;
+                        strArr = null;
+                    } else {
+                        strArr = new java.lang.String[]{str2.trim()};
+                        str = "appId = ?";
+                    }
+                    android.database.Cursor E = pVar.f272256d.E("OpenVoiceServiceVoipRecord", strArr2, str, strArr, null, null, java.lang.String.format(java.util.Locale.US, " %s desc limit %d offset %d", dm.i4.COL_UPDATETIME, 300, 0));
+                    if (E == null) {
+                        com.tencent.mars.xlog.Log.i("MicroMsg.OpenVoiceServiceVoipRecordStorage", "getVoipRecordList is empty");
+                    } else {
+                        try {
+                            if (E.moveToFirst()) {
+                                do {
+                                    gi1.o oVar = new gi1.o();
+                                    oVar.convertFrom(E);
+                                    fw1.c cVar2 = new fw1.c();
+                                    java.lang.String str4 = oVar.field_appId;
+                                    java.lang.String str5 = oVar.field_voipRoomId;
+                                    cVar2.f267066a = str5;
+                                    java.lang.String str6 = oVar.field_voipRecordPath;
+                                    cVar2.f267067b = str6;
+                                    cVar2.f267068c = oVar.field_voipExtraData;
+                                    com.tencent.mars.xlog.Log.i("MicroMsg.OpenVoiceServiceVoipRecordStorage", "getVoipRecordList appId:%s, roomId:%s, recordPath:%s, updateTime:%d", str4, str5, str6, java.lang.Long.valueOf(oVar.field_updateTime));
+                                    arrayList.add(cVar2);
+                                } while (E.moveToNext());
+                            }
+                            E.close();
+                            if (arrayList.isEmpty()) {
+                                com.tencent.mars.xlog.Log.i("MicroMsg.OpenVoiceServiceVoipRecordStorage", "getVoipRecordList is empty");
+                            }
+                        } catch (java.lang.Throwable th6) {
+                            E.close();
+                            throw th6;
+                        }
+                    }
+                }
+            } else {
+                java.util.ArrayList arrayList3 = new java.util.ArrayList();
+                java.util.Iterator it = arrayList2.iterator();
+                while (it.hasNext()) {
+                    java.lang.String str7 = (java.lang.String) it.next();
+                    gi1.o y07 = ((gi1.p) com.tencent.mm.plugin.appbrand.app.r9.fj(gi1.p.class)).y0(str2, str7);
+                    if (y07 == null) {
+                        com.tencent.mars.xlog.Log.e("MicroMsg.OpenVoiceServiceVoipStorageFeatureService", "getVoipRecord roomInfo is null for appId:%s, roomId:%s", str2, str7);
+                        cVar = null;
+                    } else {
+                        cVar = new fw1.c();
+                        cVar.f267066a = y07.field_voipRoomId;
+                        cVar.f267067b = y07.field_voipRecordPath;
+                        cVar.f267068c = y07.field_voipExtraData;
+                    }
+                    if (cVar != null) {
+                        arrayList3.add(cVar);
+                    }
+                }
+                arrayList = arrayList3;
+            }
+            if (arrayList == null || arrayList.isEmpty()) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getWAServiceVoipRecordLocalId:fail, roomInfos is empty");
+                c1Var.i5(y2Var, "getWAServiceVoipRecordLocalId:fail", null);
+            } else {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getAllVoipRecord size:%s", java.lang.Integer.valueOf(arrayList.size()));
+                java.util.HashMap hashMap = new java.util.HashMap();
+                org.json.JSONArray jSONArray2 = new org.json.JSONArray();
+                java.util.Iterator it6 = arrayList.iterator();
+                while (it6.hasNext()) {
+                    fw1.c cVar3 = (fw1.c) it6.next();
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "roomId:%s, recordPath:%s", cVar3.f267066a, cVar3.f267067b);
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(cVar3.f267067b)) {
+                        com.tencent.mm.vfs.z7 a17 = com.tencent.mm.vfs.z7.a(cVar3.f267067b);
+                        java.lang.String str8 = a17.f213279f;
+                        if (str8 != null) {
+                            java.lang.String l17 = com.tencent.mm.vfs.e8.l(str8, false, false);
+                            if (!str8.equals(l17)) {
+                                a17 = new com.tencent.mm.vfs.z7(a17.f213277d, a17.f213278e, l17, a17.f213280g, a17.f213281h);
+                            }
+                        }
+                        com.tencent.mm.vfs.z2 m17 = com.tencent.mm.vfs.a3.f212781a.m(a17, null);
+                        if (!m17.a() ? false : m17.f213266a.F(m17.f213267b)) {
+                            org.json.JSONObject jSONObject = new org.json.JSONObject();
+                            com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem b17 = com.tencent.mm.plugin.webview.model.m4.b(cVar3.f267067b);
+                            com.tencent.mm.plugin.webview.modeltools.z.Zi().a(b17);
+                            try {
+                                jSONObject.put("roomId", cVar3.f267066a);
+                                jSONObject.put(dm.i4.COL_LOCALID, b17.f182736e);
+                                jSONObject.put(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_EXTRA_DATA, cVar3.f267068c);
+                                jSONArray2.put(jSONObject);
+                            } catch (org.json.JSONException unused2) {
+                                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "roomInfo convert error");
+                            }
+                        } else {
+                            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "recordPath:%s file not exist", cVar3.f267067b);
+                        }
+                    }
+                }
+                hashMap.put(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA, jSONArray2);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getWAServiceVoipRecordLocalId:ok, data:%s", jSONArray2.toString());
+                c1Var.i5(y2Var, "getWAServiceVoipRecordLocalId:ok", hashMap);
+            }
+        }
+        return true;
+    }
+
+    public static boolean y4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mm.plugin.webview.modeltools.g1 g1Var = new com.tencent.mm.plugin.webview.modeltools.g1();
+        g1Var.f183255b = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("link");
+        g1Var.f183254a = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        g1Var.f183257d = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("imgUrl");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(g1Var.f183255b)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUpdateTimelineData link not allow to share %s", g1Var.f183255b);
+            c1Var.i5(y2Var, "updateTimelineShareData:fail, link is needed.", null);
+            return true;
+        }
+        if (c1Var.Y6(jsapiPermissionWrapper, y2Var)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUpdateTimelineData link not allow to share %s", g1Var.f183255b);
+            c1Var.i5(y2Var, "updateTimelineShareData:fail, link must be in JS secure domain list", null);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doUpdateTimelineData url %s, imgUrl:%s", str, g1Var.f183257d);
+        com.tencent.mm.plugin.webview.modeltools.i1 i1Var = c1Var.F;
+        i1Var.f183289b.put(str, g1Var);
+        java.lang.String m66 = c1Var.m6();
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(m66)) {
+            i1Var.f183289b.put(m66, g1Var);
+        }
+        c1Var.i5(y2Var, "updateTimelineShareData:ok", null);
+        return true;
+    }
+
+    public static boolean z(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "navControl");
+        c1Var.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        ((com.tencent.mm.plugin.websearch.q0) Ri).getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "navControl %s", map);
+        try {
+            ((jw4.e) ((zg0.l3) i95.n0.c(zg0.l3.class))).Ni(com.tencent.mm.plugin.websearch.l2.e(map, "webview_instance_id", -1), map);
+        } catch (java.lang.Exception unused) {
+        }
+        return false;
+    }
+
+    public static boolean z0(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get(com.tencent.tmassistantsdk.openSDK.QQDownloader.AssistantStore.DownloadInfos.DownloadInfoColumns.PACKAGENAME);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "packageName is null or nil");
+            c1Var.i5(y2Var, "get_install_state:no", null);
+            return true;
+        }
+        nw4.e3.a(y2Var.f341018h, false, str, null);
+        p95.a.a(new com.tencent.mm.plugin.webview.ui.tools.jsapi.a4(c1Var, str, y2Var));
+        return true;
+    }
+
+    public static boolean z1(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.getClass();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: start do check is support face detect");
+        com.tencent.mm.autogen.events.GetIsSupportFaceEvent getIsSupportFaceEvent = new com.tencent.mm.autogen.events.GetIsSupportFaceEvent();
+        getIsSupportFaceEvent.e();
+        am.bg bgVar = getIsSupportFaceEvent.f54400g;
+        boolean z17 = bgVar.f6251a;
+        int i17 = bgVar.f6252b;
+        java.lang.String str = bgVar.f6253c;
+        int i18 = bgVar.f6254d;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: is support: %b, errCode: %d, errMsg: %s, ilbVersion: %d", java.lang.Boolean.valueOf(z17), java.lang.Integer.valueOf(i17), str, java.lang.Integer.valueOf(i18));
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("err_code", "" + i17);
+        hashMap.put("err_msg", str);
+        hashMap.put("lib_version_code", "" + i18);
+        c1Var.i5(y2Var, "doCheckIsSupportFaceDetect: ok", hashMap);
+        return true;
+    }
+
+    public static boolean z2(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var) {
+        c1Var.f184993v = false;
+        android.os.Bundle b17 = nw4.y2.b(y2Var.f340790a);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "update video player  params %s", y2Var.f340790a);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = c1Var.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(200001, b17);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doInsertVideoPlayer exception" + e17.getMessage());
+        }
+        c1Var.i5(y2Var, "updateVideoPlayer:ok", null);
+        return true;
+    }
+
+    public static boolean z3(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extInfo");
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("url");
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_url");
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("download_id"), -1L);
+        boolean y17 = com.tencent.mm.sdk.platformtools.t8.y((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("use_downloader_widget"), false);
+        ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+        h02.a c17 = com.tencent.mm.plugin.downloader.model.m0.c(V);
+        if (c17 == null) {
+            c1Var.i5(y2Var, "doResumeDownloadTask:fail", null);
+            return true;
+        }
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 1000);
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("uiarea"), 0);
+        int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("notice_id"), 0);
+        int P4 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("download_type"), 1);
+        int P5 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.core.downloadproxy.api.TPDownloadProxyEnum.USER_SSID), 0);
+        yb0.a.f460612a.b(c17.field_downloadUrl, (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("bizInfo"));
+        c17.field_scene = P;
+        c17.field_uiarea = P2;
+        c17.field_noticeId = P3;
+        c17.field_ssid = P5;
+        c17.field_downloadType = P4;
+        ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+        com.tencent.mm.plugin.downloader.model.m0.l(c17);
+        g02.c cVar = new g02.c();
+        cVar.a(c17);
+        cVar.f267429j = 0L;
+        ((uz.r1) ((vz.t1) i95.n0.c(vz.t1.class))).getClass();
+        g02.b.c(10, cVar);
+        if (y17) {
+            long V2 = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("download_id"), -1L);
+            boolean y18 = com.tencent.mm.sdk.platformtools.t8.y("download_in_wifi", false);
+            vz.a2 a2Var = (vz.a2) i95.n0.c(vz.a2.class);
+            android.content.Context context = c1Var.f184975d;
+            com.tencent.mm.plugin.webview.ui.tools.jsapi.c5 c5Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.c5(c1Var, y2Var);
+            ((uz.c2) a2Var).getClass();
+            com.tencent.mm.plugin.downloader.model.j1.f(context, V2, y18, false, false, c5Var);
+        } else if (!com.tencent.mars.comm.NetStatusUtil.isNetworkConnected(c1Var.f184975d)) {
+            android.content.Context context2 = c1Var.f184975d;
+            dp.a.makeText(context2, j65.q.a(context2).getString(com.tencent.mm.R.string.f492208fm1), 0).show();
+            c1Var.i5(y2Var, "doResumeDownloadTask:fail_network_not_connected", null);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doResumeDownloadTask fail, network not ready");
+            c1Var.S6(c17.field_appId, 803, str);
+        } else if (com.tencent.mars.comm.NetStatusUtil.isWifi(c1Var.f184975d)) {
+            c1Var.O5(y2Var, jsapiPermissionWrapper);
+        } else {
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14217, c17.field_appId, 4, str2, str3, 3);
+            android.content.Context context3 = c1Var.f184975d;
+            db5.e1.D(context3, j65.q.a(context3).getString(com.tencent.mm.R.string.l5x), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.l5y), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.l5q), j65.q.a(c1Var.f184975d).getString(com.tencent.mm.R.string.f490347sg), false, new com.tencent.mm.plugin.webview.ui.tools.jsapi.a5(c1Var, c17, str2, str3, y2Var, jsapiPermissionWrapper), new com.tencent.mm.plugin.webview.ui.tools.jsapi.b5(c1Var, c17, str2, str3, y2Var), com.tencent.mm.R.color.aaq);
+        }
+        return true;
+    }
+
+    public static boolean z4(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1 c1Var, nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        boolean z17;
+        c1Var.getClass();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("jsApiList");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            c1Var.i5(y2Var, "checkJsApi:param is empty", null);
+        } else {
+            try {
+                org.json.JSONObject jSONObject = new org.json.JSONObject();
+                org.json.JSONArray jSONArray = new org.json.JSONArray(str);
+                if (jSONArray.length() == 0) {
+                    c1Var.i5(y2Var, "checkJsApi:param is empty", null);
+                } else {
+                    for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                        java.lang.String string = jSONArray.getString(i17);
+                        if (com.tencent.mm.plugin.webview.core.x3.f182012a.a(string) == null && !o45.uf.a(string)) {
+                            z17 = false;
+                            jSONObject.put(string, z17);
+                        }
+                        z17 = true;
+                        jSONObject.put(string, z17);
+                    }
+                    java.util.HashMap hashMap = new java.util.HashMap();
+                    hashMap.put("checkResult", jSONObject.toString());
+                    c1Var.i5(y2Var, "checkJsApi:ok", hashMap);
+                }
+            } catch (org.json.JSONException e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "JSONException : %s", e17.getMessage());
+                c1Var.i5(y2Var, "checkJsApi:param is empty", null);
+            }
+        }
+        return true;
+    }
+
+    public final void A5(java.lang.Exception exc, java.util.Map map) {
+        com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "doCloseWindow, ex = " + exc.getMessage());
+        map.put("err_code", 1);
+        map.put("err_msg", "fail");
+        i5(this.f184976e, "close window and next:fail", map);
+    }
+
+    public boolean A6(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        nw4.y2 y2Var2;
+        java.lang.String E6;
+        android.os.Bundle bundle;
+        org.json.JSONObject jSONObject;
+        java.lang.String n66;
+        if (this.f184993v) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "handleMsg, MsgHandler is busy, old msg will be overrided");
+        }
+        android.os.Bundle bundle2 = this.f184984o;
+        if (bundle2 != null) {
+            bundle2.setClassLoader(com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.class.getClassLoader());
+        }
+        this.f184976e = y2Var;
+        this.f184993v = true;
+        this.L = false;
+        if (((java.util.HashMap) y2Var.f340790a).containsKey("liteAppUuid") && (n66 = n6()) != null && n66.startsWith("liteapp://")) {
+            this.L = true;
+        }
+        if (y2Var.f341012b.equals("call")) {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            java.util.Set set = nw4.e3.f340830a;
+            boolean z17 = z0Var == null;
+            if (z17) {
+                E6 = "";
+            } else {
+                try {
+                    E6 = z0Var.E6();
+                } catch (java.lang.Exception e17) {
+                    com.tencent.mars.xlog.Log.w("MicroMsg.WebViewSecurityUtil", "report, ex = " + e17.getMessage());
+                }
+            }
+            nw4.e3.f340831b = E6;
+            nw4.e3.f340832c = z17 ? "" : z0Var.getCurrentUrl();
+            nw4.e3.f340833d = z17 ? "" : z0Var.za();
+            java.lang.String str2 = y2Var.f341019i;
+            this.f184994w = str2;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "handleMsg function = %s", str2);
+            java.lang.Integer num = (java.lang.Integer) cx4.a.f224583c.get(y2Var.f341019i);
+            if (num == null) {
+                num = -1;
+            }
+            int intValue = num.intValue();
+            if (-1 != intValue) {
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.idkeyStat(157L, intValue, 1L, false);
+            }
+            java.lang.String str3 = this.f184994w;
+            boolean z18 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+            if (str3 == null) {
+                str3 = "";
+            }
+            o45.m b17 = o45.vf.b(str3);
+            if (b17 == null) {
+                try {
+                    jSONObject = y2Var.f341014d;
+                } catch (android.os.RemoteException e18) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "proxy handleMsg:%s", this.f184994w);
+                }
+                if (jSONObject != null) {
+                    bundle = this.f184998y.H6(this.f184994w, jSONObject.toString());
+                    if (bundle == null && bundle.getBoolean("handle")) {
+                        j5(y2Var, bundle.getString("handle_result", ""), null, true, false);
+                        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "proxy function = %s", this.f184994w);
+                        return true;
+                    }
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "unknown function = %s", this.f184994w);
+                    j5(y2Var, "system:function_not_exist", null, true, false);
+                    return true;
+                }
+                bundle = null;
+                if (bundle == null) {
+                }
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "unknown function = %s", this.f184994w);
+                j5(y2Var, "system:function_not_exist", null, true, false);
+                return true;
+            }
+            nw4.m mVar = this.H;
+            int i17 = b17.f342978c;
+            boolean a17 = mVar.a(i17);
+            java.lang.String str4 = b17.f342976a;
+            if (a17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "isTooFrequent func: %s", str4);
+                j5(y2Var, "system:too_frequent", null, true, false);
+                mVar.b(i17, str4, n6());
+                return true;
+            }
+            if (str4 == "recordHistory") {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "handleMsg access denied func: %s", str4);
+                j5(y2Var, "system:access_denied", null, true, false);
+                return true;
+            }
+            if (!this.f184983n.contains(str4) && jsapiPermissionWrapper.d(i17) == 0) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "handleMsg access denied func: %s", str4);
+                j5(y2Var, "system:access_denied", null, true, false);
+                if (y2Var.f341019i.equalsIgnoreCase(com.tencent.mm.plugin.appbrand.jsapi.appdownload.q.NAME) && this.f184975d != null) {
+                    ((ku5.t0) ku5.t0.f312615d).B(new com.tencent.mm.plugin.webview.ui.tools.jsapi.k4(this));
+                }
+                return true;
+            }
+            try {
+                com.tencent.mm.plugin.webview.ui.tools.jsapi.z3 z3Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.z3(this, y2Var, jsapiPermissionWrapper, b17);
+                str = "MicroMsg.MsgHandler";
+                y2Var2 = y2Var;
+                try {
+                    this.A.e(jsapiPermissionWrapper, n6(), m6(), b17.f342978c, y2Var, h6(), z3Var);
+                    return z3Var.f185320a;
+                } catch (java.lang.Exception e19) {
+                    e = e19;
+                    com.tencent.mars.xlog.Log.e(str, "handleMsg excpetion %s", e.getMessage());
+                    com.tencent.mars.xlog.Log.printErrStackTrace(str, e, "", new java.lang.Object[0]);
+                    com.tencent.mars.xlog.Log.e(str, "unknown type = " + y2Var2.f341012b);
+                    this.f184993v = false;
+                    return false;
+                }
+            } catch (java.lang.Exception e27) {
+                e = e27;
+                str = "MicroMsg.MsgHandler";
+                y2Var2 = y2Var;
+            }
+        } else {
+            str = "MicroMsg.MsgHandler";
+            y2Var2 = y2Var;
+        }
+        com.tencent.mars.xlog.Log.e(str, "unknown type = " + y2Var2.f341012b);
+        this.f184993v = false;
+        return false;
+    }
+
+    public boolean B5(nw4.y2 y2Var) {
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("place");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            i5(y2Var, "disableBounceScroll:fail", null);
+            return true;
+        }
+        try {
+            org.json.JSONArray jSONArray = new org.json.JSONArray(str);
+            boolean z17 = false;
+            for (int i17 = 0; i17 < jSONArray.length(); i17++) {
+                if ("top".equalsIgnoreCase(jSONArray.getString(i17))) {
+                    z17 = true;
+                }
+            }
+            if (!z17) {
+                i5(y2Var, "disableBounceScroll:ok", null);
+                return true;
+            }
+            try {
+                android.os.Bundle bundle = new android.os.Bundle(1);
+                bundle.putInt("webview_disable_bounce_scroll_top", 1);
+                this.f184998y.i(38, bundle);
+                i5(y2Var, "disableBounceScroll:ok", null);
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doDisableBounceScroll, exception = %s", e17);
+                i5(y2Var, "disableBounceScroll:fail", null);
+            }
+            return true;
+        } catch (org.json.JSONException unused) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doDisableBounceScroll, invalid json array, string = %s", str);
+            i5(y2Var, "disableBounceScroll:fail", null);
+            return true;
+        }
+    }
+
+    public final boolean B6(boolean z17) {
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hideMenuEntry:" + z17);
+        try {
+            try {
+                this.f184998y.d5(z17);
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hideMenuEntry succ");
+                return true;
+            } catch (android.os.RemoteException e17) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hideMenuEntry error");
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hideMenuEntry succ");
+                return false;
+            }
+        } catch (java.lang.Throwable unused) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hideMenuEntry succ");
+            return true;
+        }
+    }
+
+    public boolean C5() {
+        try {
+            this.f184998y.i(47, android.os.Bundle.EMPTY);
+            i5(this.f184976e, "disablePullDownRefresh:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            i5(this.f184976e, "disablePullDownRefresh:fail", null);
+            return true;
+        }
+    }
+
+    public final boolean C6(com.tencent.mm.autogen.events.StartAppBrandUIFromOuterEvent startAppBrandUIFromOuterEvent) {
+        com.tencent.mm.plugin.appbrand.service.f6 f6Var = (com.tencent.mm.plugin.appbrand.service.f6) i95.n0.c(com.tencent.mm.plugin.appbrand.service.f6.class);
+        am.nx nxVar = startAppBrandUIFromOuterEvent.f54857g;
+        java.lang.String str = nxVar.f7473h;
+        java.lang.String str2 = nxVar.f7466a;
+        k91.g4 g4Var = (k91.g4) f6Var;
+        g4Var.getClass();
+        k91.v5 Ai = !com.tencent.mm.sdk.platformtools.t8.K0(str) ? g4Var.Ai(str) : !com.tencent.mm.sdk.platformtools.t8.K0(str2) ? g4Var.Bi(str2) : null;
+        if (Ai == null || Ai.u0() == null) {
+            return false;
+        }
+        return Ai.u0().c();
+    }
+
+    public boolean D5(nw4.y2 y2Var) {
+        try {
+            this.f184998y.i(34, android.os.Bundle.EMPTY);
+            i5(y2Var, "enablePullDownRefresh:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doEnablePullDownRefresh, exception = %s", e17);
+            i5(y2Var, "enablePullDownRefresh:fail", null);
+            return true;
+        }
+    }
+
+    public final boolean D6() {
+        boolean z17 = !com.tencent.mm.sdk.platformtools.t8.K0(this.Y);
+        if (z17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "in recording state.");
+        }
+        return z17;
+    }
+
+    public final void E5() {
+        java.util.Map map;
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("type");
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str) && !B1.contains(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doGeoLocation fail, unsupported type = %s", str);
+            i5(this.f184976e, "geo_location:fail_unsupported_type", null);
+            return;
+        }
+        ((t60.e) ((u60.g) i95.n0.c(u60.g.class))).getClass();
+        i11.h e17 = i11.h.e();
+        this.Q = e17;
+        if (e17 == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doGeoLocation fail, iGetLocation is null");
+            i5(this.f184976e, "geo_location:fail", null);
+            return;
+        }
+        java.lang.String str2 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("type");
+        long currentTimeMillis = java.lang.System.currentTimeMillis();
+        com.tencent.mm.plugin.webview.core.x3 x3Var = com.tencent.mm.plugin.webview.core.x3.f182012a;
+        if (((java.lang.Boolean) ((jz5.n) com.tencent.mm.plugin.webview.core.x3.f182017f).getValue()).booleanValue() && (map = this.V) != null && com.tencent.mm.sdk.platformtools.t8.C0(map.get("type"), str2) && java.lang.Math.abs(currentTimeMillis - this.W) < ((java.lang.Number) ((jz5.n) com.tencent.mm.plugin.webview.core.x3.f182018g).getValue()).intValue()) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "startGeoLocation return cache location");
+            this.V.put("cached", java.lang.Boolean.TRUE);
+            i5(this.f184976e, "geo_location:ok", this.V);
+            return;
+        }
+        this.W = currentTimeMillis;
+        if (this.R == null) {
+            this.R = new com.tencent.mm.plugin.webview.ui.tools.jsapi.l5(this, str2);
+        }
+        if (this.S == null) {
+            this.S = new com.tencent.mm.sdk.platformtools.n3(android.os.Looper.getMainLooper());
+        }
+        this.S.postDelayed(new com.tencent.mm.plugin.webview.ui.tools.jsapi.m5(this), 20000L);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str2) || str2.equalsIgnoreCase("gcj02")) {
+            ((i11.h) this.Q).j(this.R, false);
+        } else {
+            if (str2.equalsIgnoreCase("wgs84")) {
+                ((i11.h) this.Q).k(this.R, false);
+                return;
+            }
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "startGeoLocation, should not reach here !!!!!");
+            this.R = null;
+            i5(this.f184976e, "geo_location:fail_unsupported_type_startgeo", null);
+        }
+    }
+
+    public boolean E6(java.lang.String str) {
+        return str.startsWith(C1) || str.startsWith(D1) || str.startsWith(F1) || str.startsWith(G1) || str.startsWith(H1) || str.startsWith(E1) || str.startsWith("https://security.wechat.com/security/") || str.startsWith("https://s0.security.wechat.com/") || str.startsWith("https://wx110.qq.com/security/") || str.startsWith("https://sec.wechat.com/security/") || str.startsWith("https://s0.sec.wechat.com/security/");
+    }
+
+    public boolean F5(nw4.y2 y2Var) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getGameCommInfo call");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("cmd"), 0);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("param");
+        if (P != 10002) {
+            p95.a.a(new com.tencent.mm.plugin.webview.ui.tools.jsapi.q1(this, P, str, y2Var));
+            return true;
+        }
+        com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+        if (z0Var == null) {
+            return true;
+        }
+        try {
+            android.os.Bundle i17 = z0Var.i(97, null);
+            if (i17 == null) {
+                return true;
+            }
+            int i18 = i17.getInt("web_page_count");
+            java.util.HashMap hashMap = new java.util.HashMap();
+            hashMap.put("webpageCount", java.lang.Integer.valueOf(i18));
+            i5(y2Var, "getGameCommInfo:ok", hashMap);
+            return true;
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doGetGameCommInfo exception, " + e17.getMessage());
+            i5(y2Var, "getGameCommInfo:fail", null);
+            return true;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0035 A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0036 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final boolean F6() {
+        /*
+            r6 = this;
+            java.lang.String r0 = "MicroMsg.MsgHandler"
+            com.tencent.mm.plugin.webview.core.q1 r1 = com.tencent.mm.plugin.webview.core.s1.f181972a
+            boolean r1 = qk.ka.a()
+            r2 = 1
+            r3 = 0
+            if (r1 == 0) goto L32
+            com.tencent.mm.sdk.platformtools.o4 r1 = com.tencent.mm.plugin.webview.core.t1.a()
+            java.lang.String r4 = "forcesharecard"
+            int r1 = r1.o(r4, r3)
+            if (r1 != r2) goto L1a
+            r1 = r2
+            goto L1b
+        L1a:
+            r1 = r3
+        L1b:
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            java.lang.String r5 = "forceShareCard = "
+            r4.<init>(r5)
+            r4.append(r1)
+            java.lang.String r4 = r4.toString()
+            java.lang.String r5 = "WebViewCommand"
+            com.tencent.mars.xlog.Log.i(r5, r4)
+            if (r1 == 0) goto L32
+            r1 = r2
+            goto L33
+        L32:
+            r1 = r3
+        L33:
+            if (r1 == 0) goto L36
+            return r3
+        L36:
+            com.tencent.mm.plugin.webview.stub.z0 r1 = r6.f184998y     // Catch: java.lang.Exception -> L57
+            r4 = 0
+            if (r1 == 0) goto L41
+            r5 = 259(0x103, float:3.63E-43)
+            android.os.Bundle r4 = r1.i(r5, r4)     // Catch: java.lang.Exception -> L57
+        L41:
+            if (r4 == 0) goto L65
+            java.lang.String r1 = "k_text_url_share"
+            boolean r1 = r4.getBoolean(r1, r3)     // Catch: java.lang.Exception -> L57
+            java.lang.String r4 = "isShareTypeText = %b"
+            java.lang.Object[] r2 = new java.lang.Object[r2]     // Catch: java.lang.Exception -> L57
+            java.lang.Boolean r5 = java.lang.Boolean.valueOf(r1)     // Catch: java.lang.Exception -> L57
+            r2[r3] = r5     // Catch: java.lang.Exception -> L57
+            com.tencent.mars.xlog.Log.i(r0, r4, r2)     // Catch: java.lang.Exception -> L57
+            return r1
+        L57:
+            r1 = move-exception
+            java.lang.String r1 = r1.getMessage()
+            java.lang.Object[] r1 = new java.lang.Object[]{r1}
+            java.lang.String r2 = "isShareTypeText error : %s"
+            com.tencent.mars.xlog.Log.e(r0, r2, r1)
+        L65:
+            return r3
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.F6():boolean");
+    }
+
+    public boolean G5(nw4.y2 y2Var) {
+        java.lang.String str;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doIdCardRealnameVerify call");
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        try {
+            str = this.f184998y.getCurrentUrl();
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            str = null;
+        }
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            intent.putExtra("appId", this.A.c(str));
+            intent.putExtra("timeStamp", walletJsapiData.f192133h);
+            intent.putExtra("nonceStr", walletJsapiData.f192132g);
+            intent.putExtra("packageExt", walletJsapiData.f192134i);
+            intent.putExtra("signtype", walletJsapiData.f192131f);
+            intent.putExtra("paySignature", walletJsapiData.f192138p);
+            try {
+                intent.putExtra("url", this.f184998y.getCurrentUrl());
+            } catch (android.os.RemoteException e18) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+            }
+            intent.putExtra("pay_channel", walletJsapiData.f192144v);
+            intent.putExtra("real_name_verify_mode", 2);
+            intent.setFlags(com.tencent.wcdb.database.SQLiteDatabase.ENABLE_WRITE_AHEAD_LOGGING);
+            intent.putExtra("realname_scene", 1);
+            ((com.tencent.mm.ui.MMActivity) this.f184975d).mmSetOnActivityResultCallback(this);
+            j45.l.n(this.f184975d, "wallet_core", ".id_verify.WalletRealNameProcessProxyUI", intent, 41);
+        }
+        return true;
+    }
+
+    public boolean H5(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        int P = com.tencent.mm.sdk.platformtools.t8.P(com.tencent.mm.sdk.platformtools.t8.f1(y2Var.f340790a.get(dm.i4.COL_ID)), 0);
+        if (P <= 0) {
+            i5(y2Var, "kvReport:fail", null);
+            return true;
+        }
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.f(P, com.tencent.mm.sdk.platformtools.t8.f1(y2Var.f340790a.get("value")), com.tencent.mm.sdk.platformtools.t8.P(com.tencent.mm.sdk.platformtools.t8.f1(y2Var.f340790a.get("is_report_now")), 0) > 0, com.tencent.mm.sdk.platformtools.t8.P(com.tencent.mm.sdk.platformtools.t8.f1(y2Var.f340790a.get("is_important")), 0) > 0);
+        i5(y2Var, "kvReport:ok", null);
+        return true;
+    }
+
+    public final void H6(boolean z17) {
+        this.f184987p1 = z17;
+        if (this.f184997x1) {
+            return;
+        }
+        this.f184997x1 = true;
+        this.f184981l1.alive();
+    }
+
+    public final void I5(java.lang.String str, java.lang.String str2, java.lang.String str3, java.lang.String str4) {
+        try {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doLaunch3RdAppImpl pkg:" + str);
+            android.content.Intent launchIntentForPackage = com.tencent.mm.sdk.platformtools.x2.f193071a.getPackageManager().getLaunchIntentForPackage(str);
+            if (launchIntentForPackage != null) {
+                android.os.Bundle bundle = new android.os.Bundle();
+                com.tencent.mm.pluginsdk.model.app.j1.i(bundle, str2);
+                launchIntentForPackage.putExtras(bundle);
+                launchIntentForPackage.addFlags(268435456).addFlags(134217728);
+                android.os.Bundle bundle2 = new android.os.Bundle();
+                bundle2.putString("current_page_url", str3);
+                bundle2.putString("current_page_appid", str4);
+                lt.i0 i0Var = (lt.i0) i95.n0.c(lt.i0.class);
+                android.content.Context context = this.f184975d;
+                com.tencent.mm.plugin.webview.ui.tools.jsapi.h5 h5Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.h5(this, str);
+                ((kt.c) i0Var).getClass();
+                com.tencent.mm.pluginsdk.model.app.w.v(context, launchIntentForPackage, null, h5Var, bundle2);
+                return;
+            }
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doLaunch3RdAppImpl getLaunchIntentForPackage, %s", e17.getMessage());
+        }
+        i5(this.f184976e, "launch_3rdApp:fail", null);
+    }
+
+    public final android.os.Bundle I6(java.lang.String str, int i17, android.os.Bundle bundle) {
+        try {
+            return this.f184998y.i(i17, bundle);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "[NFC] " + str + " callback RemoteException!" + e17.toString());
+            return null;
+        }
+    }
+
+    public boolean J5(nw4.y2 y2Var) {
+        if (iq.b.v(this.f184975d) || iq.b.e(this.f184975d)) {
+            return false;
+        }
+        tb0.j jVar = (tb0.j) i95.n0.c(tb0.j.class);
+        android.app.Activity activity = (android.app.Activity) this.f184975d;
+        ((sb0.f) jVar).getClass();
+        boolean a17 = j35.u.a(activity, "android.permission.CAMERA", 18, "", "");
+        java.lang.Boolean valueOf = java.lang.Boolean.valueOf(a17);
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doOpenCamera checkPermission checkCamera[%b], stack[%s], activity[%s]", valueOf, new com.tencent.mm.sdk.platformtools.z3(), this.f184975d);
+        if (!a17) {
+            return false;
+        }
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 0);
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("use");
+        com.tencent.mm.modelcontrol.VideoTransPara videoTransPara = new com.tencent.mm.plugin.mmsight.SightParams(3, 0).f148819f;
+        com.tencent.mm.plugin.recordvideo.jumper.RecordConfigProvider f17 = com.tencent.mm.plugin.recordvideo.jumper.RecordConfigProvider.f(videoTransPara, videoTransPara.f71195h * 1000, 16);
+        java.lang.Boolean bool = java.lang.Boolean.TRUE;
+        f17.f155681s = bool;
+        f17.f155682t = java.lang.Boolean.FALSE;
+        f17.f155684v = bool;
+        ((pc0.e2) ((qc0.c1) i95.n0.c(qc0.c1.class))).wi((androidx.activity.ComponentActivity) this.f184975d, f17, new com.tencent.mm.plugin.webview.ui.tools.jsapi.f5(this, y2Var, str, P));
+        return true;
+    }
+
+    public final boolean J6(java.lang.String str, int i17, android.os.Bundle bundle) {
+        android.os.Bundle I6 = I6(str, i17, bundle);
+        int i18 = -1;
+        if (I6 != null) {
+            i18 = I6.getInt("status", -1);
+        } else {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "[NFC] " + str + " callback fail!");
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[NFC] " + str + " result status : " + i18);
+        if (i18 == 0) {
+            i5(this.f184976e, str + ":nfc_not_support", null);
+            return false;
+        }
+        if (i18 == 1) {
+            i5(this.f184976e, str + ":nfc_off", null);
+            return false;
+        }
+        if (i18 == 2) {
+            i5(this.f184976e, str + ":disconnect", null);
+        } else if (i18 != 3) {
+            if (i18 != 4) {
+                i5(this.f184976e, str + ":fail", null);
+                return false;
+            }
+            i5(this.f184976e, str + ":card_not_support", null);
+            return false;
+        }
+        return true;
+    }
+
+    public boolean K5(nw4.y2 y2Var) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openGameRegion call");
+        android.content.Context context = this.f184975d;
+        if (!(context instanceof com.tencent.mm.ui.MMActivity)) {
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(this);
+        j45.l.o(this.f184975d, "game", ".ui.GameRegionSelectUI", null, 42, false);
+        return true;
+    }
+
+    public void K6(int i17, java.lang.String str, java.util.Map map, boolean z17) {
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putInt("FTS_KEY_onStartWebSearch_type", i17);
+        bundle.putString("FTS_KEY_onStartWebSearch_query", str);
+        bundle.putSerializable("FTS_KEY_onStartWebSearch_params", new java.util.HashMap(map));
+        bundle.putBoolean("FTS_KEY_onStartWebSearch_isBack", z17);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(135, bundle);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "onSearchDataReady exception" + e17.getMessage());
+        }
+    }
+
+    public boolean L5(nw4.y2 y2Var) {
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("latitude");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("longitude");
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("destinationName");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            i5(y2Var, "openMapNavigateMenu:fail", null);
+            return true;
+        }
+        try {
+            double parseDouble = java.lang.Double.parseDouble(str);
+            double parseDouble2 = java.lang.Double.parseDouble(str2);
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("preferMap"), 0);
+            android.content.Context context = this.f184975d;
+            if (context == null || !(context instanceof android.app.Activity) || ((android.app.Activity) context).isFinishing()) {
+                i5(y2Var, "openMapNavigateMenu:fail", null);
+            } else {
+                com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.e3(this, P, parseDouble, parseDouble2, str3, g5(y2Var)));
+            }
+            return true;
+        } catch (java.lang.Exception unused) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenMapNavigateMenu, parse double, exception = %s");
+            i5(y2Var, "openMapNavigateMenu:fail", null);
+            return true;
+        }
+    }
+
+    public boolean L6(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openMusicPage");
+        this.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        java.util.HashMap hashMap = (java.util.HashMap) map;
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(hashMap.get("webview_instance_id"), -1);
+        q0Var.f181591d.add(java.lang.Integer.valueOf(o17));
+        org.json.JSONObject jSONObject = new org.json.JSONObject();
+        for (java.util.Map.Entry entry : hashMap.entrySet()) {
+            try {
+                jSONObject.put((java.lang.String) entry.getKey(), entry.getValue());
+            } catch (java.lang.Exception unused) {
+            }
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "openMusicPage webviewID:%s", java.lang.Integer.valueOf(o17));
+        ((sg0.w3) ((tg0.x1) i95.n0.c(tg0.x1.class))).getClass();
+        aw4.n0.f14901a.a(jSONObject, true);
+        return false;
+    }
+
+    public boolean M5(java.lang.String str, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.util.Map map;
+        int i17;
+        java.util.Map map2;
+        java.util.Map map3;
+        java.util.Map map4;
+        java.util.Map map5;
+        java.util.Map map6;
+        if (str == null || str.length() == 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doProfile fail, username is null");
+            this.f184993v = false;
+            return false;
+        }
+        int i18 = 3;
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            dp.a.makeText(com.tencent.mm.sdk.platformtools.x2.f193071a, j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.fds, 3, -1), 0).show();
+            this.f184993v = false;
+            return false;
+        }
+        nw4.y2 y2Var = this.f184976e;
+        if (y2Var != null) {
+            nw4.e3.a(y2Var.f341018h, p6(com.google.android.gms.common.Scopes.PROFILE), str, null);
+        }
+        if (!gm0.j1.b().n()) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doProfile, hasLogin is false");
+            this.f184993v = false;
+            return false;
+        }
+        com.tencent.mm.storage.z3 n17 = ((com.tencent.mm.plugin.messenger.foundation.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).Bi().n(str, true);
+        if (n17 == null || ((int) n17.E2) <= 0) {
+            n17 = ((com.tencent.mm.plugin.messenger.foundation.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).Bi().g0(str);
+        }
+        android.content.Intent intent = new android.content.Intent();
+        nw4.y2 y2Var2 = this.f184976e;
+        java.lang.String str2 = (y2Var2 == null || (map6 = y2Var2.f340790a) == null || map6.get("profileReportInfo") == null) ? "" : (java.lang.String) this.f184976e.f340790a.get("profileReportInfo");
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+            intent.putExtra("key_add_contact_report_info", str2);
+        }
+        android.os.Bundle bundle = this.f184984o;
+        if (bundle != null && bundle.getBoolean("KFromBizSearch")) {
+            intent.putExtra("Contact_Ext_Args", this.f184984o.getBundle("KBizSearchExtArgs"));
+        }
+        nw4.y2 y2Var3 = this.f184976e;
+        if (y2Var3 != null && (map5 = y2Var3.f340790a) != null && map5.get("channelSessionId") != null) {
+            intent.putExtra("key_channel_session_id", (java.lang.String) this.f184976e.f340790a.get("channelSessionId"));
+        }
+        nw4.y2 y2Var4 = this.f184976e;
+        if (y2Var4 != null && (map4 = y2Var4.f340790a) != null && map4.get("isFromFinder") != null) {
+            intent.putExtra("biz_profile_enter_from_finder", this.f184976e.f340790a.get("isFromFinder").equals("true"));
+        }
+        nw4.y2 y2Var5 = this.f184976e;
+        if (y2Var5 != null && (map3 = y2Var5.f340790a) != null && map3.get("luckMoneySpringEventUrl") != null) {
+            intent.putExtra("biz_profile_enter_from_luck_money_spring_event_url", (java.lang.String) this.f184976e.f340790a.get("luckMoneySpringEventUrl"));
+        }
+        nw4.y2 y2Var6 = this.f184976e;
+        if (y2Var6 == null || (map2 = y2Var6.f340790a) == null || map2.get("halfPage") == null) {
+            this.M = false;
+        } else {
+            intent.putExtra("key_open_profile_half_page", "true".equals(this.f184976e.f340790a.get("halfPage")));
+            this.M = true;
+        }
+        com.tencent.mm.plugin.webview.modeltools.h1 s66 = s6(n6());
+        int i19 = 2;
+        if (s66 == null || (i17 = s66.B) <= 0) {
+            nw4.y2 y2Var7 = this.f184976e;
+            if (y2Var7 != null && (map = y2Var7.f340790a) != null && map.get("tabType") != null) {
+                if (com.tencent.mm.sdk.platformtools.t8.D1((java.lang.String) this.f184976e.f340790a.get("tabType"), 0) == 2) {
+                    intent.putExtra("biz_profile_tab_type", 1);
+                } else {
+                    intent.putExtra("biz_profile_tab_type", 0);
+                }
+            }
+        } else {
+            if (i17 != 1) {
+                if (i17 != 2) {
+                    i19 = 4;
+                    if (i17 != 3) {
+                        i18 = i17 != 4 ? 0 : 1;
+                    }
+                }
+                intent.putExtra("biz_profile_tab_type", i18);
+            }
+            i18 = i19;
+            intent.putExtra("biz_profile_tab_type", i18);
+        }
+        intent.putExtra("biz_profile_trace_report", true);
+        if (n17 == null || ((int) n17.E2) <= 0) {
+            if (this.f184991t != null) {
+                ((c01.k7) c01.n8.a()).f(this.f184991t);
+            }
+            this.f184991t = str;
+            ((c01.k7) c01.n8.a()).b(str, 17, new com.tencent.mm.plugin.webview.ui.tools.jsapi.n1(this, intent));
+            try {
+                android.os.Bundle bundle2 = new android.os.Bundle();
+                bundle2.putString("function", com.google.android.gms.common.Scopes.PROFILE);
+                bundle2.putString(dm.i4.COL_USERNAME, str);
+                this.f184998y.i(nd1.d1.CTRL_INDEX, bundle2);
+                this.f184993v = false;
+            } catch (android.os.RemoteException e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "show dialog fail %s", e17.getMessage());
+            }
+            return true;
+        }
+        intent.addFlags(268435456);
+        intent.putExtra("Contact_User", n17.d1());
+        if (n17.k2()) {
+            android.os.Bundle bundle3 = this.f184984o;
+            int i27 = bundle3 != null ? bundle3.getInt("Contact_Scene", 42) : 42;
+            com.tencent.mm.plugin.report.service.g0.INSTANCE.kvStat(10298, n17.d1() + "," + i27);
+            intent.putExtra("Contact_Scene", i27);
+        }
+        if (n17.r2()) {
+            com.tencent.mm.autogen.events.SetLocalQQMobileEvent setLocalQQMobileEvent = new com.tencent.mm.autogen.events.SetLocalQQMobileEvent();
+            am.au auVar = setLocalQQMobileEvent.f54766g;
+            auVar.f6187a = intent;
+            auVar.f6188b = n17.d1();
+            setLocalQQMobileEvent.e();
+        }
+        i7(intent);
+        i5(this.f184976e, "profile:ok", null);
+        return false;
+    }
+
+    public final boolean M6(java.lang.Integer num, int i17, int i18, java.lang.String str, android.content.Intent intent) {
+        intent.putExtra("key_product_scene", i17);
+        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenProductView, productType = %d", num);
+        android.content.Context context = this.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(this);
+            int intValue = num.intValue();
+            if (intValue != 0) {
+                if (intValue == 10000 || intValue == 20000) {
+                    j45.l.j(this.f184975d, "card", ".ui.CardProductUI", intent, null);
+                    i5(this.f184976e, "open_product_view:ok", null);
+                } else {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenProductView fail, productType = %d", num);
+                    if (i17 == 8) {
+                        i5(this.f184976e, "open_product_view_with_id:fail", null);
+                    } else {
+                        i5(this.f184976e, "open_product_view:fail", null);
+                    }
+                }
+            } else if (i18 == 0) {
+                j45.l.j(this.f184975d, "product", ".ui.MallProductUI", intent, null);
+                i5(this.f184976e, "open_product_view:ok", null);
+            } else if (i18 != 1) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenProductView fail, productType = %d, viewType = %d", num, java.lang.Integer.valueOf(i18));
+                i5(this.f184976e, "open_product_view:fail", null);
+            } else {
+                intent.putExtra("key_Qrcode_Url", str);
+                intent.putExtra("key_ProductUI_getProductInfoScene", 4);
+                j45.l.n(this.f184975d, "scanner", ".ui.ProductUI", intent, 10);
+            }
+        } else {
+            i5(this.f184976e, "open_product_view:fail", null);
+        }
+        return true;
+    }
+
+    public boolean N5(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        long j17;
+        boolean z17 = false;
+        int P = com.tencent.mm.sdk.platformtools.t8.P(com.tencent.mm.sdk.platformtools.t8.f1(y2Var.f340790a.get(dm.i4.COL_ID)), 0);
+        if (P <= 0) {
+            i5(y2Var, "realtimeReport:fail", null);
+            return true;
+        }
+        java.lang.String f17 = com.tencent.mm.sdk.platformtools.t8.f1(y2Var.f340790a.get("value"));
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P(com.tencent.mm.sdk.platformtools.t8.f1(y2Var.f340790a.get("type")), 0);
+        com.tencent.mm.plugin.webview.model.w0 w0Var = com.tencent.mm.plugin.webview.model.v0.f183133a;
+        w0Var.getClass();
+        if (gm0.j1.a()) {
+            com.tencent.mm.plugin.webview.model.t0 Ui = com.tencent.mm.plugin.webview.modeltools.z.Ui();
+            java.lang.Integer valueOf = java.lang.Integer.valueOf(P);
+            com.tencent.mm.sdk.platformtools.p6 p6Var = Ui.f183112e;
+            java.lang.Long l17 = (java.lang.Long) p6Var.b(valueOf);
+            if (l17 != null) {
+                j17 = l17.longValue();
+            } else {
+                android.database.Cursor f18 = Ui.f183111d.f(java.lang.String.format("select %s from %s where %s=?", "liftTime", "JsLogBlockList", "logId"), new java.lang.String[]{java.lang.String.valueOf(P)}, 2);
+                if (f18 != null) {
+                    if (f18.moveToFirst()) {
+                        j17 = f18.getLong(0);
+                        f18.close();
+                    } else {
+                        f18.close();
+                    }
+                }
+                j17 = 0;
+            }
+            if (j17 != 0 && j17 < com.tencent.mm.sdk.platformtools.t8.i1()) {
+                java.lang.Integer valueOf2 = java.lang.Integer.valueOf(P);
+                if (valueOf2 == null) {
+                    throw new java.lang.NullPointerException("key == null");
+                }
+                if (p6Var.b(valueOf2) != null) {
+                    p6Var.c(valueOf2, null);
+                }
+                j17 = 0;
+            }
+            if (j17 == 0 || j17 < com.tencent.mm.sdk.platformtools.t8.i1()) {
+                r45.e44 e44Var = new r45.e44();
+                e44Var.f373007d = P;
+                e44Var.f373008e = com.tencent.mm.protobuf.g.c(f17);
+                e44Var.f373011h = P2;
+                ((java.util.LinkedList) w0Var.f183162d).add(e44Var);
+                z17 = true;
+            }
+        } else {
+            com.tencent.mars.xlog.Log.i("MicroMsg.WebView.JsLogHelper", "kvStat(), acc not ready, skip");
+        }
+        if (z17) {
+            i5(y2Var, "realtimeReport:ok", null);
+            return true;
+        }
+        i5(y2Var, "realtimeReport:fail", null);
+        return true;
+    }
+
+    public boolean N6(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "playMusic");
+        this.f184993v = false;
+        su4.w0 Ri = com.tencent.mm.plugin.webview.modeltools.z.Ri();
+        java.util.Map map = y2Var.f340790a;
+        com.tencent.mm.plugin.websearch.q0 q0Var = (com.tencent.mm.plugin.websearch.q0) Ri;
+        q0Var.getClass();
+        java.util.HashMap hashMap = (java.util.HashMap) map;
+        int o17 = com.tencent.mm.sdk.platformtools.t8.o1(hashMap.get("webview_instance_id"), -1);
+        q0Var.f181591d.add(java.lang.Integer.valueOf(o17));
+        org.json.JSONObject jSONObject = new org.json.JSONObject();
+        for (java.util.Map.Entry entry : hashMap.entrySet()) {
+            try {
+                jSONObject.put((java.lang.String) entry.getKey(), entry.getValue());
+            } catch (java.lang.Exception unused) {
+            }
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.WebSearch.FTSWebViewLogic", "playMusic webviewID:%s", java.lang.Integer.valueOf(o17));
+        ((sg0.w3) ((tg0.x1) i95.n0.c(tg0.x1.class))).getClass();
+        aw4.n0.f14901a.a(jSONObject, false);
+        return false;
+    }
+
+    public final boolean O5(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) y2Var.f340790a.get("download_id"), -1L);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doResumeDownloadTask, downloadId = " + V);
+        if (V <= 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doResumeDownloadTask fail, invalid downloadId = " + V);
+            i5(y2Var, "resume_download_task:fail", null);
+            return true;
+        }
+        ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+        h02.a c17 = com.tencent.mm.plugin.downloader.model.m0.c(V);
+        if (c17 != null && c17.field_fromDownloadApp) {
+            c17.field_fromDownloadApp = false;
+            c17.field_showNotification = true;
+            ((uz.p1) ((vz.q1) i95.n0.c(vz.q1.class))).getClass();
+            com.tencent.mm.plugin.downloader.model.m0.l(c17);
+            m02.s sVar = (m02.s) i95.n0.c(m02.s.class);
+            java.lang.String str = c17.field_appId;
+            ((l02.q) sVar).getClass();
+            com.tencent.mm.plugin.downloader_app.model.s0.e(str);
+        }
+        ((uz.v1) ((vz.v1) i95.n0.c(vz.v1.class))).getClass();
+        boolean w17 = com.tencent.mm.plugin.downloader.model.r0.i().w(V);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doResumeDownloadTask, ret = " + w17);
+        if (w17) {
+            i5(y2Var, "resume_download_task:ok", null);
+        } else {
+            i5(y2Var, "resume_download_task:fail", null);
+        }
+        return true;
+    }
+
+    public boolean O6(java.lang.String str) {
+        boolean remove = this.f184983n.remove(str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "removeInvokedJsApiFromMenu, functionName = %s, succ = %s.", str, java.lang.Boolean.valueOf(remove));
+        return remove;
+    }
+
+    public boolean P5(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        android.content.Context context = this.f184975d;
+        if (context == null || !(context instanceof com.tencent.mm.ui.MMActivity)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "context is null");
+            i5(y2Var, "selectPedometerSource:fail", null);
+            return true;
+        }
+        ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(this);
+        j45.l.n(this.f184975d, "exdevice", ".ui.ExdeviceAddDataSourceUI", new android.content.Intent(), 26);
+        return true;
+    }
+
+    public final void Q5(com.tencent.mm.pluginsdk.model.app.m mVar, java.lang.String str, java.lang.String str2, java.lang.String str3, java.lang.String str4, java.lang.String str5, java.lang.String str6, java.lang.String str7) {
+        R5(mVar, str, str2, str3, str4, str5, str6, str7, null);
+    }
+
+    public final void Q6(nw4.y2 y2Var, boolean z17) {
+        com.tencent.mm.plugin.webview.stub.z0 z0Var;
+        java.lang.String[] stringArray;
+        java.lang.Object[] objArr;
+        if (y2Var == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "msg is null when report.");
+            return;
+        }
+        java.lang.String str = y2Var.f341019i;
+        java.util.HashMap hashMap = (java.util.HashMap) y2Var.f341018h;
+        hashMap.put("isSuccess", java.lang.Boolean.valueOf(z17));
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("key_webview_init_url");
+        boolean z18 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (str2 == null) {
+            str2 = "";
+        }
+        hashMap.put("report_initUrl", str2);
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("key_wxapp_id");
+        if (str3 == null) {
+            str3 = "";
+        }
+        hashMap.put("containerEnv", str3);
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("key_wxapp_path");
+        if (str4 == null) {
+            str4 = "";
+        }
+        hashMap.put("miniProgramPath", str4);
+        nw4.e3.b(str, hashMap);
+        android.os.Bundle bundle = this.f184984o;
+        if (!"miniProgram".equals(bundle != null ? bundle.getString("key_webview_container_env") : "") || (z0Var = this.f184998y) == null) {
+            return;
+        }
+        try {
+            android.os.Bundle i17 = z0Var.i(145, null);
+            if (i17 == null || (stringArray = i17.getStringArray("key_webview_apbrand_jsapi_report_args")) == null || stringArray.length != 19) {
+                return;
+            }
+            stringArray[10] = str;
+            str.getClass();
+            stringArray[11] = !str.equals("getBrandWCPayRequest") ? "" : y2Var.f340790a.get("package").toString();
+            stringArray[12] = "true".equals(com.tencent.mm.plugin.webview.ui.tools.jsapi.j9.a(y2Var, "isSuccess")) ? "1" : "2";
+            stringArray[13] = com.tencent.mm.plugin.webview.ui.tools.jsapi.j9.a(y2Var, "permissionValue");
+            stringArray[14] = com.tencent.mm.plugin.webview.ui.tools.jsapi.j9.a(y2Var, "jsapiErrorCode");
+            com.tencent.mm.plugin.report.service.g0 g0Var = com.tencent.mm.plugin.report.service.g0.INSTANCE;
+            int i18 = 0;
+            if (stringArray.length <= 0) {
+                objArr = new java.lang.Object[0];
+            } else {
+                java.lang.Object[] objArr2 = new java.lang.Object[stringArray.length];
+                int length = stringArray.length;
+                int i19 = 0;
+                while (i18 < length) {
+                    java.lang.String str5 = stringArray[i18];
+                    if (str5 == null) {
+                        str5 = "";
+                    } else if (str5.contains(",") || str5.contains("/")) {
+                        str5 = com.tencent.mm.plugin.webview.ui.tools.jsapi.j9.b(str5);
+                    }
+                    objArr2[i19] = str5;
+                    i18++;
+                    i19++;
+                }
+                objArr = objArr2;
+            }
+            g0Var.d(14993, objArr);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("kv_14993", "" + e17);
+        }
+    }
+
+    public final void R5(final com.tencent.mm.pluginsdk.model.app.m mVar, final java.lang.String str, final java.lang.String str2, final java.lang.String str3, final java.lang.String str4, final java.lang.String str5, final java.lang.String str6, final java.lang.String str7, final com.tencent.mm.plugin.webview.ui.tools.jsapi.j8 j8Var) {
+        ((ku5.t0) ku5.t0.f312615d).g(new java.lang.Runnable() { // from class: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1$$a
+            /* JADX WARN: Can't wrap try/catch for region: R(24:84|85|(1:87)|88|(1:90)|91|(1:93)|94|(1:96)|97|(1:99)|100|(2:181|182)(1:102)|103|(1:105)|110|(9:(3:168|169|(19:171|172|173|174|(14:176|114|115|116|117|118|119|120|(1:124)|(1:128)|(6:130|(1:132)(1:158)|133|(4:153|154|155|156)(1:137)|138|(1:151))(1:159)|142|(1:144)|145)|113|114|115|116|117|118|119|120|(2:122|124)|(2:126|128)|(0)(0)|142|(0)|145))|119|120|(0)|(0)|(0)(0)|142|(0)|145)|112|113|114|115|116|117|118) */
+            /* JADX WARN: Code restructure failed: missing block: B:163:0x0310, code lost:
+            
+                r0 = e;
+             */
+            /* JADX WARN: Removed duplicated region for block: B:122:0x0227 A[Catch: Exception -> 0x022d, TryCatch #2 {Exception -> 0x022d, blocks: (B:120:0x01e5, B:122:0x0227, B:126:0x0234, B:128:0x0238, B:130:0x0241, B:132:0x0257, B:133:0x025b, B:153:0x026b), top: B:119:0x01e5 }] */
+            /* JADX WARN: Removed duplicated region for block: B:126:0x0234 A[Catch: Exception -> 0x022d, TryCatch #2 {Exception -> 0x022d, blocks: (B:120:0x01e5, B:122:0x0227, B:126:0x0234, B:128:0x0238, B:130:0x0241, B:132:0x0257, B:133:0x025b, B:153:0x026b), top: B:119:0x01e5 }] */
+            /* JADX WARN: Removed duplicated region for block: B:130:0x0241 A[Catch: Exception -> 0x022d, TryCatch #2 {Exception -> 0x022d, blocks: (B:120:0x01e5, B:122:0x0227, B:126:0x0234, B:128:0x0238, B:130:0x0241, B:132:0x0257, B:133:0x025b, B:153:0x026b), top: B:119:0x01e5 }] */
+            /* JADX WARN: Removed duplicated region for block: B:144:0x0300 A[Catch: Exception -> 0x0345, TryCatch #7 {Exception -> 0x0345, blocks: (B:140:0x02ab, B:142:0x02fa, B:144:0x0300, B:145:0x0309, B:39:0x0330, B:147:0x02b3, B:149:0x02b7, B:151:0x02bd, B:156:0x0281), top: B:155:0x0281 }] */
+            /* JADX WARN: Removed duplicated region for block: B:159:0x02f8  */
+            /* JADX WARN: Removed duplicated region for block: B:46:0x0369  */
+            /* JADX WARN: Removed duplicated region for block: B:53:0x03ec A[ADDED_TO_REGION] */
+            /* JADX WARN: Removed duplicated region for block: B:58:0x03fd  */
+            /* JADX WARN: Removed duplicated region for block: B:5:0x0440  */
+            /* JADX WARN: Removed duplicated region for block: B:61:0x0406  */
+            /* JADX WARN: Removed duplicated region for block: B:64:0x0408  */
+            /* JADX WARN: Removed duplicated region for block: B:65:0x03ff  */
+            /* JADX WARN: Removed duplicated region for block: B:70:0x0424  */
+            /* JADX WARN: Removed duplicated region for block: B:74:0x03e7  */
+            /* JADX WARN: Removed duplicated region for block: B:8:? A[RETURN, SYNTHETIC] */
+            @Override // java.lang.Runnable
+            /*
+                Code decompiled incorrectly, please refer to instructions dump.
+                To view partially-correct add '--show-bad-code' argument
+            */
+            public final void run() {
+                /*
+                    Method dump skipped, instructions count: 1101
+                    To view this dump add '--comments-level debug' option
+                */
+                throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1$$a.run():void");
+            }
+        });
+    }
+
+    public final void R6(com.tencent.mm.modelsns.SnsAdClick snsAdClick) {
+        com.tencent.mm.autogen.events.ReportAdClickEvent reportAdClickEvent = new com.tencent.mm.autogen.events.ReportAdClickEvent();
+        reportAdClickEvent.f54680g.f8210a = snsAdClick;
+        reportAdClickEvent.e();
+    }
+
+    public boolean S5(nw4.y2 y2Var) {
+        android.os.Bundle bundle = new android.os.Bundle();
+        java.lang.String e17 = com.tencent.mm.pluginsdk.ui.tools.e9.e((java.lang.String) y2Var.f340790a.get("wxbackgroundColor"));
+        if (com.tencent.mm.sdk.platformtools.t8.K0(e17)) {
+            e17 = (java.lang.String) y2Var.f340790a.get("backgroundColor");
+        }
+        bundle.putString("key_set_bounce_background_color", e17);
+        try {
+            this.f184998y.i(72, bundle);
+            i5(y2Var, "setBounceBackground:ok", null);
+            return true;
+        } catch (java.lang.Exception e18) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "setBounceBackground, exception = %s", e18);
+            i5(y2Var, "setBounceBackground:fail", null);
+            return true;
+        }
+    }
+
+    public final void S6(java.lang.String str, int i17, java.lang.String str2) {
+        com.tencent.mm.autogen.events.GameWatchReportEvent gameWatchReportEvent = new com.tencent.mm.autogen.events.GameWatchReportEvent();
+        am.ze zeVar = gameWatchReportEvent.f54372g;
+        zeVar.f8556a = str;
+        zeVar.f8557b = 2;
+        zeVar.f8558c = i17;
+        zeVar.f8559d = str2;
+        gameWatchReportEvent.e();
+    }
+
+    public final boolean T5(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        if (!com.tencent.mm.plugin.webview.stub.a.a(this.f184975d)) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Tencent QQ hasn't installed at all.");
+            i5(y2Var, "shareQQ:fail", null);
+            return true;
+        }
+        if (this.f184977f == null) {
+            this.f184977f = o5(y2Var, false);
+        }
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("img_url");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("desc");
+        java.lang.String string = j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.f490495wp);
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("link");
+        try {
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str4)) {
+                str4 = this.f184998y.getCurrentUrl();
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "Get current url fail. exception : %s", e17.getMessage());
+        }
+        java.lang.String x66 = x6(str4);
+        android.content.Intent intent = new android.content.Intent();
+        if ("shareQQ".equals(y2Var.f341019i)) {
+            intent.setAction("android.intent.action.SEND");
+            intent.setPackage("com.tencent.mobileqq");
+            intent.setType("text/plain");
+            intent.putExtra("android.intent.extra.TEXT", x66);
+        } else {
+            if (com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                str2 = j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.l6g);
+            }
+            if (com.tencent.mm.sdk.platformtools.t8.K0(x66) || com.tencent.mm.sdk.platformtools.t8.K0(str2)) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "url(%s) or title(%s) or description(%s) is null or nil.", x66, str2, str3);
+                i5(y2Var, "shareQQ:fail", null);
+                return true;
+            }
+            java.util.HashMap hashMap = new java.util.HashMap();
+            hashMap.put("image_url", com.tencent.mm.pluginsdk.ui.tools.e9.d(str, 2));
+            hashMap.put(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, com.tencent.mm.pluginsdk.ui.tools.e9.d(str2, 2));
+            hashMap.put("description", com.tencent.mm.pluginsdk.ui.tools.e9.d(str3, 2));
+            hashMap.put("url", com.tencent.mm.pluginsdk.ui.tools.e9.d(x66, 2));
+            hashMap.put("app_name", com.tencent.mm.pluginsdk.ui.tools.e9.d(string, 2));
+            hashMap.put("req_type", com.tencent.mm.pluginsdk.ui.tools.e9.d(java.lang.String.valueOf(1), 2));
+            if (y2Var.f341019i.equalsIgnoreCase("shareQZone")) {
+                hashMap.put("cflag", com.tencent.mm.pluginsdk.ui.tools.e9.d(java.lang.String.valueOf(1), 2));
+            }
+            android.net.Uri parse = android.net.Uri.parse("mqqapi://share/to_fri?file_type=news&share_id=1103188687&" + com.tencent.mm.pluginsdk.ui.tools.e9.c(hashMap));
+            intent.setAction("android.intent.action.VIEW");
+            intent.setData(parse);
+            intent.putExtra("pkg_name", "com.tencent.mm");
+        }
+        intent.setFlags(268435456);
+        int i17 = "shareQQ".equals(y2Var.f341019i) ? 5 : 6;
+        this.F.a(i17, (java.lang.String) y2Var.f340790a.get("use_update_jsapi_data"));
+        if (com.tencent.mm.sdk.platformtools.t8.I0(this.f184975d, intent, true, false) && (this.f184975d instanceof android.app.Activity)) {
+            try {
+                j7(i17, 1);
+                android.content.Context context = this.f184975d;
+                android.app.Activity activity = (android.app.Activity) context;
+                java.util.ArrayList arrayList = new java.util.ArrayList();
+                java.lang.ThreadLocal threadLocal = zj0.c.f473285a;
+                arrayList.add(44);
+                arrayList.add(intent);
+                java.util.Collections.reverse(arrayList);
+                yj0.a.k(activity, arrayList.toArray(), "com/tencent/mm/plugin/webview/ui/tools/jsapi/MsgHandler", "doShareQQ", "(Lcom/tencent/mm/plugin/webview/jsapi/MsgWrapper;Lcom/tencent/mm/protocal/JsapiPermissionWrapper;)Z", "android/app/Activity", "startActivityForResult", "(Landroid/content/Intent;I)V");
+                i5(y2Var, y2Var.f341019i + ":ok", null);
+            } catch (java.lang.Exception e18) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+                j7(i17, 2);
+                i5(y2Var, y2Var.f341019i + ":fail", null);
+            }
+        } else {
+            j7(i17, 2);
+            i5(y2Var, y2Var.f341019i + ":fail", null);
+        }
+        return true;
+    }
+
+    public final void T6(java.lang.String str) {
+        qg5.e3 e3Var = (qg5.e3) ((ct.k3) i95.n0.c(ct.k3.class));
+        if (str == null) {
+            e3Var.getClass();
+        } else if (kotlin.jvm.internal.o.b(str, (java.lang.String) e3Var.fj(e3Var.f362963n).get("webview_session_id"))) {
+            java.util.Map nj6 = e3Var.nj(e3Var.f362963n);
+            if (nj6.isEmpty()) {
+                return;
+            }
+            ((cy1.a) e3Var.ij()).Ej("yuanbao_h5_forward_succ", nj6, 35480);
+        }
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:42:0x019f, code lost:
+    
+        if (r12 > 0) goto L56;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final boolean U5(nw4.y2 r23, com.tencent.mm.protocal.JsapiPermissionWrapper r24, boolean r25, boolean r26) {
+        /*
+            Method dump skipped, instructions count: 736
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.U5(nw4.y2, com.tencent.mm.protocal.JsapiPermissionWrapper, boolean, boolean):boolean");
+    }
+
+    public final void U6(java.lang.String str, java.lang.String str2, java.lang.String str3, int i17, int i18, android.os.Bundle bundle) {
+        if (bundle == null) {
+            return;
+        }
+        java.lang.String string = bundle.getString("share_report_pre_msg_url");
+        java.lang.String string2 = bundle.getString("share_report_pre_msg_title");
+        java.lang.String string3 = bundle.getString("share_report_pre_msg_desc");
+        java.lang.String string4 = bundle.getString("share_report_pre_msg_icon_url");
+        java.lang.String string5 = bundle.getString("share_report_pre_msg_appid");
+        int i19 = bundle.getInt("share_report_from_scene", 0);
+        java.lang.String string6 = bundle.getString("share_report_biz_username");
+        java.lang.String string7 = bundle.getString("share_report_current_url");
+        java.lang.String string8 = bundle.getString("share_report_current_title");
+        com.tencent.mm.opensdk.modelmsg.WXMediaMessage wXMediaMessage = this.f184977f;
+        com.tencent.mm.opensdk.modelmsg.WXMediaMessage.IMediaObject iMediaObject = wXMediaMessage.mediaObject;
+        java.lang.String str4 = iMediaObject instanceof com.tencent.mm.opensdk.modelmsg.WXWebpageObject ? ((com.tencent.mm.opensdk.modelmsg.WXWebpageObject) iMediaObject).webpageUrl : "";
+        java.lang.String str5 = wXMediaMessage.title;
+        java.lang.String str6 = wXMediaMessage.description;
+        com.tencent.mm.plugin.report.service.g0 g0Var = com.tencent.mm.plugin.report.service.g0.INSTANCE;
+        g0Var.d(14062, string, string2, string3, string4, string5, java.lang.Integer.valueOf(i19), string6, string7, string8, str, str4, str5, str6, str2, java.lang.Integer.valueOf(i17));
+        android.os.Bundle bundle2 = bundle.getBundle("ad_report_bundle");
+        java.lang.String n66 = n6();
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(n66) && bundle2 != null) {
+            java.lang.String string9 = bundle2.getString("ad_report_ux_info");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(string9)) {
+                g0Var.d(19214, java.lang.Integer.valueOf((int) (java.lang.System.currentTimeMillis() / 1000)), java.lang.Integer.valueOf(i18), str3, string9, str, bundle2.getString("ad_report_mid", ""), bundle2.getString("ad_report_idx", ""), n66);
+            }
+        }
+        if (!F6() || i18 <= 0 || i18 >= 4) {
+            return;
+        }
+        int i27 = bundle.getInt("geta8key_scene", 0);
+        int i28 = bundle.getInt("key_get_a8key_req_params_req_id", 0);
+        java.lang.String string10 = bundle.getString("rawUrl");
+        com.tencent.mm.sdk.platformtools.i6 i6Var = com.tencent.mm.pluginsdk.ui.tools.e9.f191608a;
+        g0Var.d(24710, str3, java.lang.Integer.valueOf(i18), java.lang.Integer.valueOf(i27), com.tencent.mm.sdk.platformtools.y9.a(string10), com.tencent.mm.sdk.platformtools.y9.a(x6(string7)), com.tencent.mm.sdk.platformtools.y9.a(string7), java.lang.Integer.valueOf(i28), bundle.getString("key_get_a8key_req_params_msg_id"), java.lang.Integer.valueOf(bundle.getInt("key_get_a8key_req_params_ctrl_mode")));
+    }
+
+    public boolean V5(nw4.y2 y2Var) {
+        this.f184993v = false;
+        try {
+            android.os.Bundle i17 = this.f184998y.i(79, new android.os.Bundle());
+            java.util.HashMap hashMap = new java.util.HashMap();
+            int i18 = i17.getInt("height", 0);
+            if (i18 > 0) {
+                hashMap.put("height", java.lang.Integer.valueOf(i65.a.c(com.tencent.mm.sdk.platformtools.x2.f193071a, i18)));
+                h5(this.f184998y, y2Var, "showSmileyPanel:ok", hashMap, true, false, true);
+            } else {
+                h5(this.f184998y, y2Var, "showSmileyPanel:fail", null, true, false, true);
+            }
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doShowSmileyPanel, exception = %s", e17);
+            h5(this.f184998y, y2Var, "showSmileyPanel:fail", null, true, false, true);
+            return true;
+        }
+    }
+
+    public void V6(android.content.Context context, com.tencent.mm.plugin.webview.stub.z0 z0Var) {
+        java.lang.Object[] objArr = new java.lang.Object[1];
+        objArr[0] = z0Var == null ? "null" : z0Var.toString();
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "set context and callbacker, callbacker %s", objArr);
+        this.f184975d = context;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.r rVar = this.A;
+        if (rVar != null) {
+            rVar.f185374h = context;
+            rVar.f185375i = z0Var;
+        }
+        this.f184998y = z0Var;
+    }
+
+    public boolean W5(nw4.y2 y2Var) {
+        try {
+            this.f184998y.i(35, android.os.Bundle.EMPTY);
+            i5(y2Var, "startPullDownRefresh:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doStartPullDownRefresh, exception = %s", e17);
+            i5(y2Var, "startPullDownRefresh:fail", null);
+            return true;
+        }
+    }
+
+    public void W6(android.content.Context context, com.tencent.mm.plugin.webview.stub.z0 z0Var, com.tencent.mm.plugin.webview.stub.z0 z0Var2) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "set context, callbacker and service callbacker");
+        this.f184975d = context;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.r rVar = this.A;
+        if (rVar != null) {
+            rVar.f185374h = context;
+            rVar.f185375i = z0Var;
+        }
+        if (z0Var2 == null) {
+            f6();
+        }
+        this.f184998y = z0Var;
+        this.f185001z = z0Var2;
+    }
+
+    public final boolean X5(nw4.y2 y2Var) {
+        if (D6()) {
+            try {
+                this.f184998y.callback(com.tencent.rtmp.TXLiveConstants.PLAY_EVT_PLAY_LOADING, null);
+            } catch (java.lang.Exception unused) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "callback start record failed");
+            }
+            i5(y2Var, "startRecord:fail_recording", null);
+            return true;
+        }
+        java.lang.String str = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("appId");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "appId is null or nil.");
+            i5(y2Var, "startRecord:fail_missing arguments", null);
+            return true;
+        }
+        nw4.e3.a(y2Var.f341018h, false, null, str);
+        tb0.j jVar = (tb0.j) i95.n0.c(tb0.j.class);
+        android.content.Context context = this.f184975d;
+        ((sb0.f) jVar).getClass();
+        if (!j35.u.d(context, "android.permission.RECORD_AUDIO", true)) {
+            com.tencent.mm.plugin.webview.stub.WebViewStubTempUI.T6(this.f184975d, this.f184998y, new java.lang.String[]{"android.permission.RECORD_AUDIO"}, 116, this.B);
+            return true;
+        }
+        java.util.HashMap hashMap = com.tencent.mm.plugin.webview.model.o5.f183050a;
+        java.lang.String str2 = "_USER_FOR_WEBVIEW_JSAPI" + c01.y1.a(str, java.lang.System.currentTimeMillis());
+        com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem c17 = com.tencent.mm.plugin.webview.model.m4.c(str2);
+        c17.f182735d = str;
+        com.tencent.mm.plugin.webview.modeltools.z.Zi().a(c17);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "start record appId : %s, voice file name : %s, voice file path : %s", str, str2, c17.f182738g);
+        this.Y = c17.f182736e;
+        com.tencent.mm.sdk.platformtools.u3.h(new com.tencent.mm.plugin.webview.ui.tools.jsapi.l6(this, c17, y2Var));
+        try {
+            this.f184998y.callback(com.tencent.rtmp.TXLiveConstants.PLAY_EVT_PLAY_LOADING, null);
+        } catch (java.lang.Exception unused2) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "callback start record failed");
+        }
+        i5(y2Var, "startRecord:ok", null);
+        return true;
+    }
+
+    public void X6(boolean z17, java.lang.String str) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "setIsBusy: %b, function:%s", java.lang.Boolean.valueOf(z17), str);
+        this.f184993v = z17;
+    }
+
+    public boolean Y5(nw4.y2 y2Var) {
+        try {
+            this.f184998y.i(36, android.os.Bundle.EMPTY);
+            i5(y2Var, "stopPullDownRefresh:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doStopPullDownRefresh, exception = %s", e17);
+            i5(y2Var, "stopPullDownRefresh:fail", null);
+            return true;
+        }
+    }
+
+    public final boolean Y6(com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper, nw4.y2 y2Var) {
+        java.lang.Object obj = y2Var.f340790a.get("__jsapi_fw_ext_info");
+        return Z6((java.lang.String) y2Var.f340790a.get("link"), obj instanceof android.os.Bundle ? ((android.os.Bundle) obj).getString("__jsapi_fw_ext_info_key_current_url") : null);
+    }
+
+    public boolean Z5(nw4.y2 y2Var) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSwitchWalletCurrency call");
+        ((com.tencent.mm.ui.MMActivity) this.f184975d).mmSetOnActivityResultCallback(this);
+        j45.l.n(this.f184975d, "wallet_core", ".ui.WalletSwitchWalletCurrencyUI", null, 211);
+        return true;
+    }
+
+    public final boolean Z6(java.lang.String str, java.lang.String str2) {
+        java.util.List<java.lang.String> list;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.r rVar = this.A;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.q d17 = rVar.d(str2);
+        if (d17 == null) {
+            d17 = rVar.d(m6());
+        }
+        if (android.text.TextUtils.isEmpty(str) || d17 == null || (list = d17.f185346b) == null || ((java.util.LinkedList) list).size() <= 0) {
+            return false;
+        }
+        java.util.LinkedList<java.lang.String> linkedList = new java.util.LinkedList();
+        int indexOf = str.indexOf("://");
+        boolean z17 = true;
+        java.lang.String substring = str.substring(indexOf + (indexOf == -1 ? 1 : 3));
+        for (java.lang.String str3 : list) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "now domain : %s", str3);
+            if (!android.text.TextUtils.isEmpty(str3)) {
+                int indexOf2 = str3.indexOf("://");
+                java.lang.String substring2 = str3.substring(indexOf2 + (indexOf2 == -1 ? 1 : 3));
+                if (substring2.contains("/")) {
+                    if (!substring.equals(substring2)) {
+                        if (!substring2.endsWith("/")) {
+                            substring2 = substring2.concat("/");
+                        }
+                        if (substring.startsWith(substring2)) {
+                        }
+                    }
+                    z17 = false;
+                    break;
+                }
+                linkedList.add(substring2);
+            }
+        }
+        if (z17 && !linkedList.isEmpty()) {
+            java.net.URI create = java.net.URI.create(str);
+            java.lang.String host = create.getHost();
+            int port = create.getPort();
+            java.lang.String str4 = host + ":" + port;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "share domain : %s", host);
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(host)) {
+                for (java.lang.String str5 : linkedList) {
+                    if (host.equals(str5)) {
+                        return false;
+                    }
+                    if (host.endsWith("." + str5)) {
+                        return false;
+                    }
+                    if (port != -1) {
+                        if (str4.equals(str5)) {
+                            return false;
+                        }
+                        if (str4.endsWith("." + str5)) {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+        return z17;
+    }
+
+    public boolean a6(nw4.y2 y2Var) {
+        i5(y2Var, "uploadIdCardSuccess:ok", null);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "uploadIdCardSuccess");
+        com.tencent.mm.autogen.events.WalletRealNameResultNotifyMoreEvent walletRealNameResultNotifyMoreEvent = new com.tencent.mm.autogen.events.WalletRealNameResultNotifyMoreEvent();
+        walletRealNameResultNotifyMoreEvent.f54974g.f6210a = -1;
+        walletRealNameResultNotifyMoreEvent.e();
+        ((h45.q) i95.n0.c(h45.q.class)).notifyUploadCardSuccess();
+        return true;
+    }
+
+    public final void a7(nw4.y2 y2Var, int i17, int i18) {
+        java.lang.String str = y2Var.f341019i;
+        if (str.equals("requireSoterBiometricAuthentication") || str.equals("getSupportSoter")) {
+            re4.f0.INSTANCE.a(str, j6(n6()), i17, i18);
+        }
+    }
+
+    public boolean b6(nw4.y2 y2Var) {
+        java.lang.String str;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doWCPayRealnameVerify call");
+        com.tencent.mm.pluginsdk.wallet.WalletJsapiData walletJsapiData = new com.tencent.mm.pluginsdk.wallet.WalletJsapiData(y2Var.f340790a);
+        android.content.Intent intent = new android.content.Intent();
+        try {
+            str = this.f184998y.getCurrentUrl();
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            str = null;
+        }
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            intent.putExtra("appId", this.A.c(str));
+            intent.putExtra("timeStamp", walletJsapiData.f192133h);
+            intent.putExtra("nonceStr", walletJsapiData.f192132g);
+            intent.putExtra("packageExt", walletJsapiData.f192134i);
+            intent.putExtra("signtype", walletJsapiData.f192131f);
+            intent.putExtra("paySignature", walletJsapiData.f192138p);
+            try {
+                intent.putExtra("url", this.f184998y.getCurrentUrl());
+            } catch (android.os.RemoteException e18) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+            }
+            intent.setFlags(com.tencent.wcdb.database.SQLiteDatabase.ENABLE_WRITE_AHEAD_LOGGING);
+            intent.putExtra("pay_channel", walletJsapiData.f192144v);
+            intent.putExtra("realname_scene", 1);
+            intent.putExtra("realname_verify_process_from_scene", com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("entryScene"), 10));
+            ((com.tencent.mm.ui.MMActivity) this.f184975d).mmSetOnActivityResultCallback(this);
+            j45.l.n(this.f184975d, "wallet_core", ".id_verify.WalletRealNameProcessProxyUI", intent, 34);
+        }
+        return true;
+    }
+
+    public final java.lang.String b7(java.lang.String str) {
+        return str.startsWith("http://") ? str.substring(7) : str.startsWith("https://") ? str.substring(8) : str;
+    }
+
+    public final boolean c6(nw4.y2 y2Var, java.lang.String str, long j17) {
+        org.json.JSONObject jSONObject = new org.json.JSONObject((java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportParams.PROP_KEY_DATA));
+        java.lang.String optString = jSONObject.optString("link");
+        java.lang.String optString2 = jSONObject.optString(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        java.lang.String optString3 = jSONObject.optString("desc");
+        java.lang.String optString4 = jSONObject.optString("imgUrl");
+        if (com.tencent.mm.sdk.platformtools.t8.K0(optString2) && com.tencent.mm.sdk.platformtools.t8.K0(optString3)) {
+            i5(y2Var, "sendEnterpriseChat:fail_params error", null);
+            return true;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(optString)) {
+            i5(y2Var, "sendEnterpriseChat:fail_params error", null);
+            return true;
+        }
+        com.tencent.mm.opensdk.modelmsg.WXWebpageObject wXWebpageObject = new com.tencent.mm.opensdk.modelmsg.WXWebpageObject();
+        wXWebpageObject.webpageUrl = optString;
+        com.tencent.mm.opensdk.modelmsg.WXMediaMessage wXMediaMessage = new com.tencent.mm.opensdk.modelmsg.WXMediaMessage();
+        this.f184977f = wXMediaMessage;
+        wXMediaMessage.mediaObject = wXWebpageObject;
+        wXMediaMessage.title = optString2;
+        wXMediaMessage.description = optString3;
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("appid");
+        if (this.f184984o != null && android.text.TextUtils.isEmpty(str2)) {
+            str2 = this.f184984o.getString("jsapi_args_appid");
+        }
+        java.lang.String str3 = str2;
+        ((kt.c) ((lt.i0) i95.n0.c(lt.i0.class))).getClass();
+        com.tencent.mm.pluginsdk.model.app.m h17 = com.tencent.mm.pluginsdk.model.app.w.h(str3);
+        android.content.Context context = this.f184975d;
+        if (context == null || context.getResources() == null) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "showSendAppMsgDialog fail, context or context.getResources() is null");
+            i5(y2Var, "sendEnterpriseChat:fail", null);
+            return true;
+        }
+        android.content.Context context2 = this.f184975d;
+        if (!(context2 instanceof android.app.Activity)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "showsSendAppMsgDialog fail, context is not activity");
+            i5(y2Var, "sendEnterpriseChat:fail", null);
+            return true;
+        }
+        r35.u3 u3Var = r35.t3.f369263a;
+        com.tencent.mm.ui.ga controller = ((com.tencent.mm.ui.MMActivity) context2).getController();
+        java.lang.String string = j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.f490551ya);
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.a8 a8Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.a8(this, optString4, j17, h17, str3, str, y2Var);
+        ((ez.z0) u3Var).getClass();
+        r35.j1.j(controller, optString2, optString4, optString3, null, true, string, a8Var);
+        return true;
+    }
+
+    public final com.tencent.mm.plugin.webview.ui.tools.jsapi.g8 c7(int i17) {
+        return (com.tencent.mm.plugin.webview.ui.tools.jsapi.g8) ((java.util.HashMap) this.f184986p0).get(java.lang.Integer.valueOf(i17));
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:16:0x0059  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x0060  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final boolean d6(nw4.y2 r6, java.lang.String r7, long r8) {
+        /*
+            r5 = this;
+            java.util.Map r0 = r6.f340790a
+            java.lang.String r1 = "data"
+            java.util.HashMap r0 = (java.util.HashMap) r0
+            java.lang.Object r0 = r0.get(r1)
+            java.lang.String r0 = (java.lang.String) r0
+            org.json.JSONObject r1 = new org.json.JSONObject
+            r1.<init>(r0)
+            java.lang.String r0 = "content"
+            java.lang.String r0 = r1.optString(r0)
+            boolean r1 = com.tencent.mm.sdk.platformtools.t8.K0(r0)
+            r2 = 1
+            r3 = 0
+            if (r1 == 0) goto L26
+            java.lang.String r7 = "sendEnterpriseChat:fail_params error"
+            r5.i5(r6, r7, r3)
+            return r2
+        L26:
+            s01.m r1 = r01.q3.Ui()
+            s01.h r8 = r1.z0(r8)
+            java.lang.Object r9 = s01.r.f401927d
+            monitor-enter(r9)
+            java.lang.String r1 = s01.r.i()     // Catch: java.lang.Throwable -> L7c
+            s01.r.j(r8)     // Catch: java.lang.Throwable -> L7c
+            com.tencent.mm.autogen.events.SendMsgEvent r8 = new com.tencent.mm.autogen.events.SendMsgEvent     // Catch: java.lang.Throwable -> L7c
+            r8.<init>()     // Catch: java.lang.Throwable -> L7c
+            am.mt r4 = r8.f54752g     // Catch: java.lang.Throwable -> L7c
+            r4.f7362a = r7     // Catch: java.lang.Throwable -> L7c
+            r4.f7363b = r0     // Catch: java.lang.Throwable -> L7c
+            int r7 = c01.e2.C(r7)     // Catch: java.lang.Throwable -> L7c
+            r4.f7364c = r7     // Catch: java.lang.Throwable -> L7c
+            am.mt r7 = r8.f54752g     // Catch: java.lang.Throwable -> L7c
+            r0 = 0
+            r7.f7365d = r0     // Catch: java.lang.Throwable -> L7c
+            boolean r7 = r8.e()     // Catch: java.lang.Throwable -> L7c
+            monitor-enter(r9)     // Catch: java.lang.Throwable -> L7c
+            s01.r.f401924a = r1     // Catch: java.lang.Throwable -> L79
+            monitor-exit(r9)     // Catch: java.lang.Throwable -> L79
+            monitor-exit(r9)     // Catch: java.lang.Throwable -> L7c
+            if (r7 != 0) goto L60
+            java.lang.String r7 = "sendEnterpriseChat:fail"
+            r5.i5(r6, r7, r3)
+            return r2
+        L60:
+            java.lang.String r7 = "sendEnterpriseChat:ok"
+            r5.i5(r6, r7, r3)
+            android.content.Context r6 = r5.f184975d
+            if (r6 == 0) goto L78
+            android.content.res.Resources r7 = j65.q.a(r6)
+            r8 = 2131756294(0x7f100506, float:1.9143491E38)
+            java.lang.String r7 = r7.getString(r8)
+            db5.e1.T(r6, r7)
+        L78:
+            return r2
+        L79:
+            r6 = move-exception
+            monitor-exit(r9)     // Catch: java.lang.Throwable -> L79
+            throw r6     // Catch: java.lang.Throwable -> L7c
+        L7c:
+            r6 = move-exception
+            monitor-exit(r9)     // Catch: java.lang.Throwable -> L7c
+            throw r6
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.d6(nw4.y2, java.lang.String, long):boolean");
+    }
+
+    public final void d7(java.lang.String str) {
+        android.os.Bundle bundle;
+        if (this.f184984o == null) {
+            this.f184984o = new android.os.Bundle();
+        }
+        int P = com.tencent.mm.sdk.platformtools.t8.P(str, 33);
+        if (this.f184984o.getBoolean("KFromBizSearch") && (bundle = this.f184984o.getBundle("KBizSearchExtArgs")) != null) {
+            P = bundle.getInt("Contact_Scene");
+        }
+        if (this.f184984o.getInt("Contact_Scene", -1) < 0) {
+            this.f184984o.putInt("Contact_Scene", P);
+        }
+    }
+
+    public final boolean e6() {
+        return "1".equals(j62.e.g().a("clicfg_enable_weixin_js_parse_url_android", "0", false, true)) || c01.e2.a0();
+    }
+
+    public final void e7(java.util.Map map) {
+        if (map == null || map.get("url") == null) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "updateMpDataWithCoverUrl null");
+            return;
+        }
+        java.lang.String str = (java.lang.String) map.get("url");
+        com.tencent.mm.plugin.webview.modeltools.h1 s66 = s6(com.tencent.mm.pluginsdk.ui.tools.h9.a(str));
+        if (s66 == null) {
+            s66 = new com.tencent.mm.plugin.webview.modeltools.h1();
+        }
+        java.lang.Object obj = map.get("coverPicImageUrl");
+        com.tencent.mm.plugin.webview.modeltools.i1 i1Var = this.F;
+        if (obj != null && !((java.lang.String) map.get("coverPicImageUrl")).isEmpty() && map.get("picCount") != null && !((java.lang.String) map.get("picCount")).isEmpty()) {
+            s66.f183276q = (java.lang.String) map.get("coverPicImageUrl");
+            s66.f183277r = com.tencent.mm.sdk.platformtools.t8.Q((java.lang.String) map.get("coverPicWidth"), 0);
+            s66.f183278s = com.tencent.mm.sdk.platformtools.t8.Q((java.lang.String) map.get("coverPicHeight"), 0);
+            s66.f183279t = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) map.get("picCount"), 0);
+            s66.f183280u = (java.lang.String) map.get("isFinderContact");
+            i1Var.f183291d.put(com.tencent.mm.pluginsdk.ui.tools.h9.a(com.tencent.mm.pluginsdk.ui.tools.h9.a(str)), s66);
+            return;
+        }
+        if (((java.util.HashMap) this.f184976e.f340790a).get("coverPicImageUrl") == null || ((java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("coverPicImageUrl")).isEmpty() || ((java.util.HashMap) this.f184976e.f340790a).get("duration") == null || ((java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("duration")).isEmpty()) {
+            return;
+        }
+        s66.f183276q = (java.lang.String) map.get("coverPicImageUrl");
+        s66.f183277r = com.tencent.mm.sdk.platformtools.t8.Q((java.lang.String) map.get("coverPicWidth"), 0);
+        s66.f183278s = com.tencent.mm.sdk.platformtools.t8.Q((java.lang.String) map.get("coverPicHeight"), 0);
+        s66.f183266g = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) map.get("duration"), -1);
+        s66.f183280u = (java.lang.String) map.get("isFinderContact");
+        i1Var.f183291d.put(com.tencent.mm.pluginsdk.ui.tools.h9.a(com.tencent.mm.pluginsdk.ui.tools.h9.a(str)), s66);
+    }
+
+    public final void f5(nw4.y2 y2Var, android.content.Intent intent) {
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("liteAppBusinessScene");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (str == null) {
+            str = "";
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseVideo liteapp business scene:%s", str);
+        if (str.isEmpty()) {
+            return;
+        }
+        intent.putExtra("key_liteapp_business_scene", str);
+    }
+
+    public void f6() {
+        nw4.y2 y2Var;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.g8 c76;
+        if (this.f185001z == null || (y2Var = this.f184976e) == null || (c76 = c7(y2Var.hashCode())) == null) {
+            return;
+        }
+        c76.f185141b = this.f185001z;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "blockMsg use persistentCallbacker fun = %s", this.f184976e.f341019i);
+    }
+
+    public final void f7(nw4.y2 y2Var, java.lang.String str, java.lang.String str2, int i17, int i18, int i19, java.lang.String str3, boolean z17) {
+        java.lang.String str4;
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.a6 a6Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.a6(this, str3, str2, y2Var);
+        com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str2);
+        if (b17 == null) {
+            i5(y2Var, str3 + ":fail", null);
+            return;
+        }
+        int i27 = !b17.f182748t ? 1 : 0;
+        com.tencent.mm.plugin.webview.modeltools.z.Zi();
+        java.lang.String str5 = b17.f182738g;
+        char[] cArr = com.tencent.mm.sdk.platformtools.w2.f193046a;
+        java.lang.String str6 = com.tencent.mm.plugin.webview.model.l4.c() + com.tencent.mm.sdk.platformtools.w2.b(str5.getBytes());
+        java.lang.String c17 = com.tencent.mm.plugin.webview.model.l4.c();
+        if (!com.tencent.mm.vfs.w6.j(c17) && !com.tencent.mm.vfs.w6.u(c17)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.WebViewJSSDKFileItemManager", "checkJSSDKFileTempDirectory mkdirs failed");
+        }
+        long d17 = com.tencent.mm.vfs.w6.d(str5, str6, false);
+        if (d17 < 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.WebViewJSSDKFileItemManager", "copyFile src: %s, target: %s, ret: %s", str5, str6, java.lang.Long.valueOf(d17));
+        }
+        long k17 = com.tencent.mm.vfs.w6.k(str6);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "uploadImageImpl, origPath = " + str6 + ", len = " + k17 + ", compressType = " + i27);
+        if (i27 != 0 || k17 <= 102400) {
+            str4 = "MicroMsg.MsgHandler";
+            b17.f182738g = str6;
+        } else {
+            m11.b b18 = m11.c.b(str6);
+            int i28 = b18.f322631d;
+            int i29 = b18.f322630c;
+            com.tencent.mm.pointers.PBool pBool = new com.tencent.mm.pointers.PBool();
+            pBool.value = true;
+            java.lang.String str7 = str6 + "_cp";
+            str4 = "MicroMsg.MsgHandler";
+            boolean f17 = m11.c.f(str6, str7, i29, i28, pBool, 70, 0, false);
+            com.tencent.mars.xlog.Log.i(str4, "origPath = " + str6 + ", comLev = 70, succ = " + f17);
+            if (!f17) {
+                com.tencent.mars.xlog.Log.e(str4, "origToJpg failed");
+                i5(y2Var, str3 + ":fail", null);
+                return;
+            }
+            b17.f182738g = str7;
+        }
+        com.tencent.mars.xlog.Log.i(str4, "uploadImageImpl, item.origFilePath = " + b17.f182738g + ", len = " + com.tencent.mm.vfs.w6.k(b17.f182738g) + ", isWxam = " + com.tencent.mm.sdk.platformtools.y1.g(b17.f182738g));
+        boolean c18 = com.tencent.mm.plugin.webview.modeltools.z.bj().c(str, str2, i17, i18, i19, a6Var);
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
+        sb6.append(str3);
+        sb6.append(", add cdn upload task result : %b");
+        com.tencent.mars.xlog.Log.i(str4, sb6.toString(), java.lang.Boolean.valueOf(c18));
+        if (!c18) {
+            i5(y2Var, str3 + ":fail", null);
+        } else if (z17) {
+            android.content.Context context = this.f184975d;
+            this.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.lbc), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.b6(this, a6Var, str2, y2Var, str3));
+        } else {
+            android.content.Context context2 = this.f184975d;
+            if (context2 instanceof android.app.Activity) {
+                ((android.app.Activity) context2).finish();
+                this.f184998y = this.f185001z;
+            }
+        }
+        b17.f182738g = str6;
+    }
+
+    public final int g5(nw4.y2 y2Var) {
+        int hashCode = y2Var.hashCode();
+        ((java.util.HashMap) this.f184986p0).put(java.lang.Integer.valueOf(hashCode), new com.tencent.mm.plugin.webview.ui.tools.jsapi.g8(this, y2Var, this.f184998y));
+        this.f184993v = false;
+        try {
+            this.f184998y.V1();
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "blockMsg, dealNext ex = %s", e17.getMessage());
+        }
+        return hashCode;
+    }
+
+    public final int g6() {
+        android.os.Bundle i17;
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var == null || (i17 = z0Var.i(99, null)) == null) {
+                return 0;
+            }
+            return i17.getInt("geta8key_scene");
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult error.%s", e17);
+            return 0;
+        }
+    }
+
+    public final void g7(nw4.y2 y2Var, java.lang.String str, java.lang.String str2, int i17, int i18, int i19, int i27, java.lang.String str3, boolean z17) {
+        com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(str2);
+        if (b17 == null || com.tencent.mm.sdk.platformtools.t8.K0(b17.f182738g) || !com.tencent.mm.vfs.w6.j(b17.f182738g)) {
+            i5(y2Var, str3 + ":fail_file not exist", null);
+            return;
+        }
+        if (com.tencent.mm.network.y2.a(this.f184975d)) {
+            h7(y2Var, str, str2, i17, i18, i19, i27, str3, z17);
+            return;
+        }
+        java.lang.String h07 = com.tencent.mm.sdk.platformtools.t8.h0(com.tencent.mm.vfs.w6.k(b17.f182738g));
+        android.content.Context context = this.f184975d;
+        db5.e1.H(context, j65.q.a(context).getString(com.tencent.mm.R.string.l6k, h07), j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.f490573yv), false, new com.tencent.mm.plugin.webview.ui.tools.jsapi.c6(this, y2Var, str, str2, i17, i18, i19, i27, str3, z17), new com.tencent.mm.plugin.webview.ui.tools.jsapi.d6(this, y2Var, str3));
+    }
+
+    public final void h5(com.tencent.mm.plugin.webview.stub.z0 z0Var, nw4.y2 y2Var, java.lang.String str, java.util.Map map, boolean z17, boolean z18, boolean z19) {
+        java.lang.String str2;
+        if (!z19) {
+            this.f184993v = false;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "callback ret:%s, make isBusy=false", str);
+        }
+        if (y2Var == null) {
+            str2 = null;
+        } else {
+            try {
+                str2 = y2Var.f341013c;
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "onHandleEnd, ex = " + e17.getMessage());
+                return;
+            }
+        }
+        z0Var.aj(str2, str, nw4.y2.b(map), z17);
+    }
+
+    public final int h6() {
+        android.os.Bundle i17;
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var == null || (i17 = z0Var.i(com.tencent.rtmp.TXLiveConstants.PUSH_EVT_ROOM_USERLIST, null)) == null) {
+                return 0;
+            }
+            return i17.getInt("key_get_a8key_req_params_req_id");
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult error.%s", e17);
+            return 0;
+        }
+    }
+
+    public final void h7(nw4.y2 y2Var, java.lang.String str, java.lang.String str2, int i17, int i18, int i19, int i27, java.lang.String str3, boolean z17) {
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.e6 e6Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.e6(this, str3, str2, y2Var, i27);
+        boolean d17 = com.tencent.mm.plugin.webview.modeltools.z.bj().d(str, str2, i17, i18, i19, i27, e6Var);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", str3 + ", add cdn upload task result : %b", java.lang.Boolean.valueOf(d17));
+        if (!d17) {
+            i5(y2Var, str3 + ":fail", null);
+            return;
+        }
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.f8 f8Var = new com.tencent.mm.plugin.webview.ui.tools.jsapi.f8(null);
+        f8Var.f185110a = y2Var;
+        f8Var.f185111b = e6Var;
+        ((java.util.HashMap) this.X).put(str2, f8Var);
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("close_window_confirm_dialog_switch", "true");
+        bundle.putString("close_window_confirm_dialog_title_cn", j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.l6l));
+        bundle.putString("close_window_confirm_dialog_title_eng", j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.l6l));
+        bundle.putString("close_window_confirm_dialog_ok_cn", j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.l6i));
+        bundle.putString("close_window_confirm_dialog_ok_eng", j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.l6i));
+        bundle.putString("close_window_confirm_dialog_cancel_cn", j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.l6j));
+        bundle.putString("close_window_confirm_dialog_cancel_eng", j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.l6j));
+        try {
+            this.f184998y.callback(13, bundle);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doSetCloseWindowConfirmDialogInfo invoke callback failed : %s", e17.getMessage());
+        }
+        if (z17) {
+            android.content.Context context = this.f184975d;
+            com.tencent.mm.ui.widget.dialog.u3 Q = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.lbc), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.g6(this, e6Var, str2, y2Var, str3));
+            this.f184979h = Q;
+            Q.setOnKeyListener(new com.tencent.mm.plugin.webview.ui.tools.jsapi.j6(this));
+            return;
+        }
+        android.content.Context context2 = this.f184975d;
+        if (context2 instanceof android.app.Activity) {
+            ((android.app.Activity) context2).finish();
+            this.f184998y = this.f185001z;
+        }
+    }
+
+    public void i5(nw4.y2 y2Var, java.lang.String str, java.util.Map map) {
+        j5(y2Var, str, map, true, true);
+    }
+
+    public java.lang.String i6() {
+        java.lang.String j66 = j6(n6());
+        return !com.tencent.mm.sdk.platformtools.t8.K0(j66) ? j66 : (java.lang.String) this.f184976e.f340790a.get("appId");
+    }
+
+    public final void i7(android.content.Intent intent) {
+        try {
+            android.os.Bundle i17 = this.f184998y.i(18, null);
+            if (i17 != null) {
+                java.lang.String string = i17.getString("preChatName");
+                java.lang.String string2 = i17.getString("preUsername");
+                int i18 = i17.getInt("preChatTYPE", 0);
+                intent.putExtra("preChatName", string);
+                intent.putExtra("preUsername", string2);
+                intent.putExtra("preChatTYPE", i18);
+                intent.putExtra("preChatTYPE", i18);
+                intent.putExtra("url", i17.getString("url"));
+                intent.putExtra("rawUrl", i17.getString("rawUrl"));
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        } catch (java.lang.Exception e18) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+        }
+        com.tencent.mm.plugin.webview.ui.tools.a1.e(intent.getExtras(), com.google.android.gms.common.Scopes.PROFILE, ".ui.ContactInfoUI", this.f184998y, new com.tencent.mm.plugin.webview.ui.tools.jsapi.b2(this, intent));
+    }
+
+    public final void j5(nw4.y2 y2Var, java.lang.String str, java.util.Map map, boolean z17, boolean z18) {
+        this.f184993v = false;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "callback ret:%s, make isBusy=false", str);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var != null) {
+                z0Var.aj(y2Var == null ? null : y2Var.f341013c, str, nw4.y2.b(map), z17);
+            }
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "onHandleEnd, ex = " + e17.getMessage());
+        }
+    }
+
+    public java.lang.String j6(java.lang.String str) {
+        com.tencent.mm.plugin.webview.ui.tools.jsapi.r rVar = this.A;
+        if (rVar == null) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getCachedAppId, jsVerifyHelper is null, return null");
+            return null;
+        }
+        java.lang.String c17 = rVar.c(str);
+        if (com.tencent.mm.sdk.platformtools.t8.K0(c17)) {
+            c17 = rVar.c(m6());
+        }
+        return (this.f184984o == null || !com.tencent.mm.sdk.platformtools.t8.K0(c17)) ? c17 : this.f184984o.getString("jsapi_args_appid");
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:28:0x007b  */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x0082 A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x0083  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x007d  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public void j7(int r20, int r21) {
+        /*
+            Method dump skipped, instructions count: 224
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.j7(int, int):void");
+    }
+
+    public final void k5(int i17, int i18) {
+        com.tencent.mm.plugin.report.service.g0.INSTANCE.f(22269, "" + i17 + "," + i18 + "," + ((((h62.d) ((e42.e0) i95.n0.c(e42.e0.class))).Ni(e42.d0.clicfg_android_id_card_scan_v2, 0) == 1 ? 1 : 0) ^ 1), false, false);
+    }
+
+    public byte[] k7() {
+        try {
+            java.lang.String a17 = fp.b.a(this.f184975d);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "xml %s", a17);
+            r45.ar6 ar6Var = new r45.ar6();
+            com.tencent.mm.protobuf.g b17 = com.tencent.mm.protobuf.g.b(wo.w0.k().getBytes());
+            b17.f(16);
+            ar6Var.f370231d = b17;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", com.tencent.mm.sdk.platformtools.t8.l(b17.f192156a));
+            ar6Var.f370232e = a17;
+            android.content.SharedPreferences a18 = c01.h9.a();
+            byte[] h17 = com.tencent.mm.sdk.platformtools.t8.h(a18.getString("_auth_key", ""));
+            int i17 = a18.getInt("_auth_uin", 0);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "cpan aak string:%s md5:%s uin:%d", com.tencent.mm.sdk.platformtools.t8.l(h17), kk.k.g(h17), java.lang.Integer.valueOf(i17));
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "aat len:%d", java.lang.Integer.valueOf(h17.length));
+            ar6Var.f370233f = com.tencent.mm.protobuf.g.b(h17);
+            ar6Var.f370234g = i17;
+            o45.pi d17 = o45.pi.d();
+            byte[] byteArray = ar6Var.toByteArray();
+            com.tencent.mm.pointers.PByteArray pByteArray = new com.tencent.mm.pointers.PByteArray();
+            if (com.tencent.mm.protocal.MMProtocalJni.rsaPublicEncrypt(byteArray, pByteArray, d17.f342997a.getBytes(), d17.f342998b.getBytes())) {
+                byteArray = pByteArray.value;
+            }
+            com.tencent.mm.sdk.platformtools.t8.l(byteArray);
+            r45.br6 br6Var = new r45.br6();
+            br6Var.f371011e = d17.f342999c;
+            br6Var.f371010d = o45.wf.f343029g;
+            br6Var.f371012f = wo.q.f447780a;
+            br6Var.f371013g = com.tencent.mm.protobuf.g.b(byteArray);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getdevice done");
+            return br6Var.toByteArray();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "report error");
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+            return null;
+        }
+    }
+
+    public final void l5(android.content.Intent intent, int i17) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "isFromLiteApp: %b | isOriginSize: %b", java.lang.Boolean.valueOf(this.L), java.lang.Boolean.valueOf(this.K));
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "chooseMediaFromAlbum");
+        intent.putExtra("key_pick_local_pic_capture", 4096);
+        f5(this.f184976e, intent);
+        if (this.L) {
+            intent.putExtra("key_from_liteapp", true);
+        }
+        if (!(this.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "chooseMediaFromCamera context invalid");
+            return;
+        }
+        android.os.Bundle z66 = z6();
+        if (z66 != null) {
+            intent.putExtra("key_select_pic_from_mm_gallery_without_clear_top", z66.getBoolean("key_select_pic_from_mm_gallery_without_clear_top", false));
+        }
+        ((com.tencent.mm.ui.MMActivity) this.f184975d).mmSetOnActivityResultCallback(this);
+        j45.l.o(this.f184975d, "webview", ".ui.tools.OpenFileChooserUI", intent, i17, false);
+    }
+
+    public final java.lang.String l6() {
+        android.os.Bundle i17;
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var == null || (i17 = z0Var.i(18, null)) == null) {
+                return null;
+            }
+            return i17.getString("preChatName");
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult error.%s", e17);
+            return null;
+        }
+    }
+
+    public final void m5(java.lang.String str, android.content.Intent intent, int i17, java.lang.String str2) {
+        tb0.j jVar = (tb0.j) i95.n0.c(tb0.j.class);
+        android.app.Activity activity = (android.app.Activity) this.f184975d;
+        ((sb0.f) jVar).getClass();
+        if (j35.u.a(activity, "android.permission.CAMERA", 150, "", "")) {
+            if (i17 == 47) {
+                boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+                if (str2 == null) {
+                    str2 = "";
+                }
+                if (str2.contains("video")) {
+                    tb0.j jVar2 = (tb0.j) i95.n0.c(tb0.j.class);
+                    android.app.Activity activity2 = (android.app.Activity) this.f184975d;
+                    ((sb0.f) jVar2).getClass();
+                    boolean a17 = j35.u.a(activity2, "android.permission.RECORD_AUDIO", 120, "", "");
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", " checkPermission checkMicroPhone[%b]", java.lang.Boolean.valueOf(a17));
+                    if (!a17) {
+                        return;
+                    }
+                }
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "chooseMediaFromCamera");
+            int i18 = str.equals("front") ? 16 : 256;
+            if (!(this.f184975d instanceof com.tencent.mm.ui.MMActivity)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "chooseMediaFromCamera context invalid");
+                return;
+            }
+            intent.putExtra("key_pick_local_pic_capture", i18);
+            android.os.Bundle z66 = z6();
+            if (z66 != null) {
+                intent.putExtra("key_select_pic_from_mm_gallery_without_clear_top", z66.getBoolean("key_select_pic_from_mm_gallery_without_clear_top", false));
+            }
+            f5(this.f184976e, intent);
+            ((com.tencent.mm.ui.MMActivity) this.f184975d).mmSetOnActivityResultCallback(this);
+            j45.l.o(this.f184975d, "webview", ".ui.tools.OpenFileChooserUI", intent, i17, false);
+        }
+    }
+
+    public java.lang.String m6() {
+        com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+        if (z0Var == null) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getCommitUrl, callbacker is null");
+            return null;
+        }
+        try {
+            return z0Var.Ni();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getCommitUrl, exception = %s", e17);
+            return null;
+        }
+    }
+
+    @Override // com.tencent.mm.ui.xc
+    public void mmOnActivityResult(int i17, int i18, android.content.Intent intent) {
+        java.lang.String str;
+        com.tencent.mm.modelsns.SnsAdClick snsAdClick;
+        java.lang.String stringExtra;
+        int i19;
+        org.json.JSONArray jSONArray;
+        int i27;
+        int i28;
+        java.lang.String str2;
+        com.tencent.mm.modelsns.SnsAdClick snsAdClick2;
+        java.util.Map map;
+        com.tencent.mm.plugin.webview.stub.z0 z0Var;
+        java.util.Map map2;
+        java.util.HashMap hashMap;
+        int i29;
+        int i37;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "mmOnActivityResult, requestCode = " + i17 + ", resultCode = " + i18);
+        int i38 = 1;
+        if (i17 == 1 || i17 == 221) {
+            int i39 = 0;
+            if (this.f184977f == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult fail, appmsg is null");
+                j7(1, 2);
+                i5(this.f184976e, "send_app_msg:fail", null);
+                return;
+            }
+            java.lang.String str3 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("appid");
+            android.os.Bundle bundle = this.f184984o;
+            if (bundle != null) {
+                snsAdClick = (com.tencent.mm.modelsns.SnsAdClick) bundle.getParcelable("KSnsAdTag");
+                if (android.text.TextUtils.isEmpty(str3)) {
+                    str3 = this.f184984o.getString("jsapi_args_appid");
+                }
+                str = str3;
+            } else {
+                str = str3;
+                snsAdClick = null;
+            }
+            java.lang.Object obj = ((java.util.HashMap) this.f184976e.c()).get("Internal@AsyncReport");
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    return;
+                }
+                if (snsAdClick != null) {
+                    snsAdClick.f71469g = 8;
+                    R6(snsAdClick);
+                }
+                nw4.e3.a(this.f184976e.c(), p6("sendAppMessage"), null, str);
+                if (obj != null && (obj instanceof java.lang.Boolean) && ((java.lang.Boolean) obj).booleanValue()) {
+                    i19 = 1;
+                    Q6(this.f184976e, true);
+                } else {
+                    i19 = 1;
+                }
+                j7(i19, 3);
+                i5(this.f184976e, "send_app_msg:ok", null);
+                return;
+            }
+            if (snsAdClick != null) {
+                snsAdClick.f71469g = 7;
+                R6(snsAdClick);
+            }
+            com.tencent.mm.pluginsdk.model.app.m Ni = ((kt.c) ((lt.i0) i95.n0.c(lt.i0.class))).Ni(str);
+            java.lang.String stringExtra2 = intent == null ? null : intent.getStringExtra("Select_Conv_User");
+            if (stringExtra2 == null || stringExtra2.length() == 0) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult fail, toUser is null");
+                j7(1, 2);
+                i5(this.f184976e, "send_app_msg:fail", null);
+                return;
+            }
+            java.util.HashMap hashMap2 = new java.util.HashMap();
+            if (i17 == 221 && (stringExtra = intent.getStringExtra("Select_Conv_User")) != null) {
+                int i47 = 0;
+                for (java.lang.String str4 : stringExtra.split(",")) {
+                    i47 = com.tencent.mm.storage.z3.R4(str4) ? i47 | 2 : i47 | 1;
+                }
+                hashMap2.put("sendChatType", java.lang.Integer.valueOf(i47));
+            }
+            java.lang.String str5 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("img_url");
+            java.lang.String str6 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("src_username");
+            java.lang.String str7 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("src_displayname");
+            java.lang.String o66 = o6();
+            nw4.e3.a(this.f184976e.c(), p6("sendAppMessage"), stringExtra2, str);
+            if (obj != null && (obj instanceof java.lang.Boolean) && ((java.lang.Boolean) obj).booleanValue()) {
+                Q6(this.f184976e, true);
+            }
+            java.lang.String[] split = stringExtra2.split(",");
+            int length = split.length;
+            int i48 = 0;
+            int i49 = 0;
+            while (i39 < length) {
+                java.lang.String[] strArr = split;
+                if (split[i39].endsWith("@chatroom")) {
+                    i49++;
+                } else {
+                    i48++;
+                }
+                i39++;
+                split = strArr;
+            }
+            if (((java.util.HashMap) this.f184976e.f340790a).get("share_callback_with_scene") != null && ((java.lang.Boolean) ((java.util.HashMap) this.f184976e.f340790a).get("share_callback_with_scene")).booleanValue()) {
+                hashMap2.put("groupCount", java.lang.Integer.valueOf(i49));
+                hashMap2.put("singleCount", java.lang.Integer.valueOf(i48));
+            }
+            if (com.tencent.mm.sdk.platformtools.t8.K0(o66)) {
+                Q5(null, com.tencent.mm.sdk.platformtools.t8.K0(str) ? "" : str, stringExtra2, str5, str6, str7, intent == null ? null : intent.getStringExtra("custom_send_text"), o66);
+                if (this.f184975d != null && !com.tencent.mm.repairer.config.forward.RepairerConfigForwardSnackBarJumpChatting.f192214a.a()) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "EnterChattingAfterTrans config disabled, show normal dialog for H5 forward");
+                    android.content.Context context = this.f184975d;
+                    db5.e1.T(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490560yi));
+                }
+                j7(1, 1);
+                java.lang.StringBuilder sb6 = new java.lang.StringBuilder("send_app_msg sendChatType=");
+                sb6.append(hashMap2.get("sendChatType") == null ? "NULL" : hashMap2.get("sendChatType"));
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", sb6.toString());
+                i5(this.f184976e, "send_app_msg:ok", hashMap2);
+                return;
+            }
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str5)) {
+                android.content.Context context2 = this.f184975d;
+                ((j70.e) ((k70.v) i95.n0.c(k70.v.class))).Ai(str5, new com.tencent.mm.plugin.webview.ui.tools.jsapi.o2(this, db5.e1.Q(context2, "", context2.getResources().getString(com.tencent.mm.R.string.f490552yb), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.n2(this, str5)), Ni, str, stringExtra2, str5, str6, str7, o66, hashMap2));
+                return;
+            }
+            Q5(null, "", stringExtra2, str5, str6, str7, null, o66);
+            android.content.Context context3 = this.f184975d;
+            db5.e1.T(context3, j65.q.a(context3).getString(com.tencent.mm.R.string.f490548y7));
+            java.lang.StringBuilder sb7 = new java.lang.StringBuilder("send_app_msg sendChatType=");
+            sb7.append(hashMap2.get("sendChatType") == null ? "NULL" : hashMap2.get("sendChatType"));
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", sb7.toString());
+            i5(this.f184976e, "send_app_msg:ok", hashMap2);
+            return;
+        }
+        if (i17 == 2) {
+            if (i18 == -1) {
+                android.content.Context context4 = this.f184975d;
+                db5.e1.T(context4, j65.q.a(context4).getString(com.tencent.mm.R.string.f490560yi));
+                i5(this.f184976e, "share_weibo:ok", null);
+                return;
+            } else {
+                if (i18 == 0) {
+                    i5(this.f184976e, "share_weibo:cancel", null);
+                    return;
+                }
+                if (i18 == 1) {
+                    i5(this.f184976e, "share_weibo:fail_" + intent.getIntExtra("err_code", 0), null);
+                    return;
+                }
+                i5(this.f184976e, "share_weibo:fail_" + intent.getIntExtra("err_code", 0), null);
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "unknown resultCode");
+                return;
+            }
+        }
+        if (i17 == 3) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "get callback address, result code = %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1 && intent != null) {
+                java.lang.String l17 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("nationalCode"), "");
+                java.lang.String l18 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("userName"), "");
+                java.lang.String l19 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("telNumber"), "");
+                java.lang.String l110 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("addressPostalCode"), "");
+                java.lang.String l111 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("proviceFirstStageName"), "");
+                java.lang.String l112 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("addressCitySecondStageName"), "");
+                java.lang.String l113 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("addressCountiesThirdStageName"), "");
+                java.lang.String l114 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("addressCountiesFourStageName"), "");
+                java.lang.String l115 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("addressDetailInfo"), "");
+                java.lang.String format = (android.text.TextUtils.isEmpty(l114) || l115.startsWith(l114)) ? l115 : java.lang.String.format("%s%s", l114, l115);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "first =  " + l111 + " ; detail =" + l115 + "; second = " + l112 + " ; tel = " + l19 + "; third = " + l113 + "; fourth = " + l114 + "; fullDetail = " + format);
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(l18)) {
+                    java.util.HashMap hashMap3 = new java.util.HashMap();
+                    hashMap3.put("nationalCode", (l17 == null || l17.length() <= 6) ? l17 : l17.substring(0, 6));
+                    hashMap3.put("nationalCodeFull", l17);
+                    hashMap3.put("userName", l18);
+                    hashMap3.put("telNumber", l19);
+                    hashMap3.put("addressPostalCode", l110);
+                    hashMap3.put("proviceFirstStageName", l111);
+                    hashMap3.put("addressCitySecondStageName", l112);
+                    hashMap3.put("addressCountiesThirdStageName", l113);
+                    hashMap3.put("addressStreetFourthStageName", l114);
+                    hashMap3.put("addressDetailInfo", format);
+                    hashMap3.put("addressDetailInfoNew", l115);
+                    new nw4.b(1, i6(), "editAddress", "", 1).l();
+                    i5(this.f184976e, "edit_address:ok", hashMap3);
+                    return;
+                }
+            }
+            if (i18 == 0) {
+                i5(this.f184976e, "edit_address:cancel", null);
+                return;
+            } else {
+                i5(this.f184976e, "edit_address:fail", null);
+                return;
+            }
+        }
+        if (i17 == 4) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request pay, resultCode = " + i18);
+            int i57 = this.N;
+            if (i57 != -1 && c7(i57) != null) {
+                this.f184976e = c7(this.N).f185140a;
+                this.f184998y = c7(this.N).f185141b;
+            }
+            this.N = -1;
+            nw4.y2 y2Var = this.f184976e;
+            if (y2Var == null || !com.tencent.mm.sdk.platformtools.t8.D0("getBrandWCPayRequest", y2Var.f341019i)) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request pay, wrong function");
+                return;
+            }
+            if (i18 != -1) {
+                if (i18 == 5) {
+                    java.util.HashMap hashMap4 = new java.util.HashMap();
+                    if (intent != null) {
+                        int intExtra = intent.getIntExtra("key_jsapi_pay_err_code", 0);
+                        java.lang.String s17 = com.tencent.mm.sdk.platformtools.t8.s1(intent.getStringExtra("key_jsapi_pay_err_msg"));
+                        hashMap4.put("err_code", java.lang.Integer.valueOf(intExtra));
+                        hashMap4.put("err_desc", s17);
+                        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hy: pay jsapi failed. errCode: %d, errMsg: %s", java.lang.Integer.valueOf(intExtra), s17);
+                    }
+                    i5(this.f184976e, "get_brand_wcpay_request:fail", hashMap4);
+                    return;
+                }
+                java.util.HashMap hashMap5 = new java.util.HashMap();
+                if (intent != null) {
+                    int intExtra2 = intent.getIntExtra("key_is_clear_failure", -1);
+                    if (intExtra2 == 0) {
+                        hashMap5.put("pay_status", "pending");
+                    } else if (intExtra2 == 1) {
+                        hashMap5.put("pay_status", "fail");
+                    }
+                }
+                i5(this.f184976e, "get_brand_wcpay_request:cancel", hashMap5);
+                return;
+            }
+            java.util.HashMap hashMap6 = new java.util.HashMap();
+            if (intent == null) {
+                i5(this.f184976e, "get_brand_wcpay_request:ok", hashMap6);
+                return;
+            }
+            int intExtra3 = intent.getIntExtra("key_is_clear_failure", -1);
+            if (intExtra3 == 0) {
+                hashMap6.put("pay_status", "pending");
+            } else if (intExtra3 == 1) {
+                hashMap6.put("pay_status", "fail");
+            }
+            com.tencent.mm.plugin.webview.stub.z0 z0Var2 = this.f184998y;
+            i5(this.f184976e, "get_brand_wcpay_request:ok", hashMap6);
+            int intExtra4 = intent.getIntExtra("key_jsapi_close_page_after_pay", 0);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "closePage: %s", java.lang.Integer.valueOf(intExtra4));
+            if (intExtra4 == 1) {
+                try {
+                    android.content.Context context5 = this.f184975d;
+                    if (context5 != null && (context5 instanceof android.app.Activity)) {
+                        ((android.app.Activity) context5).finish();
+                    }
+                    if (z0Var2 != null) {
+                        z0Var2.ec();
+                        z0Var2.b(null);
+                    }
+                } catch (java.lang.Exception e17) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+                }
+                ((ku5.t0) ku5.t0.f312615d).k(new com.tencent.mm.plugin.webview.ui.tools.jsapi.p2(this), 1000L);
+                return;
+            }
+            return;
+        }
+        if (i17 == 69) {
+            java.util.Map a17 = intent != null ? nw4.a.a(intent.getExtras()) : null;
+            if (i18 == -1) {
+                i5(this.f184976e, this.f184976e.f341019i + ":ok", a17);
+                return;
+            }
+            if (i18 == 5) {
+                i5(this.f184976e, this.f184976e.f341019i + ":fail", a17);
+                return;
+            }
+            if (i18 == 0) {
+                i5(this.f184976e, this.f184976e.f341019i + ":cancel", a17);
+                return;
+            }
+            return;
+        }
+        if (i17 == 68) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request joint pay, resultCode = " + i18);
+            int i58 = this.N;
+            if (i58 != -1 && c7(i58) != null) {
+                this.f184976e = c7(this.N).f185140a;
+                this.f184998y = c7(this.N).f185141b;
+            }
+            this.N = -1;
+            nw4.y2 y2Var2 = this.f184976e;
+            if (y2Var2 == null || !com.tencent.mm.sdk.platformtools.t8.D0(com.tencent.mm.plugin.appbrand.jsapi.pay.p1.NAME, y2Var2.f341019i)) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request joint pay, wrong function");
+                return;
+            }
+            if (i18 != -1) {
+                if (i18 == 5) {
+                    java.util.HashMap hashMap7 = new java.util.HashMap();
+                    if (intent != null) {
+                        int intExtra5 = intent.getIntExtra("key_jsapi_pay_err_code", 0);
+                        java.lang.String s18 = com.tencent.mm.sdk.platformtools.t8.s1(intent.getStringExtra("key_jsapi_pay_err_msg"));
+                        hashMap7.put("err_code", java.lang.Integer.valueOf(intExtra5));
+                        hashMap7.put("err_desc", s18);
+                        com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hy: pay jsapi failed. errCode: %d, errMsg: %s", java.lang.Integer.valueOf(intExtra5), s18);
+                    }
+                    i5(this.f184976e, "requestJointPayment:fail", hashMap7);
+                    return;
+                }
+                java.util.HashMap hashMap8 = new java.util.HashMap();
+                if (intent != null) {
+                    int intExtra6 = intent.getIntExtra("key_is_clear_failure", -1);
+                    if (intExtra6 == 0) {
+                        hashMap8.put("pay_status", "pending");
+                    } else if (intExtra6 == 1) {
+                        hashMap8.put("pay_status", "fail");
+                    }
+                }
+                i5(this.f184976e, "requestJointPayment:cancel", hashMap8);
+                return;
+            }
+            java.util.HashMap hashMap9 = new java.util.HashMap();
+            if (intent != null) {
+                int intExtra7 = intent.getIntExtra("key_jsapi_close_page_after_pay", 0);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "closePage: %s", java.lang.Integer.valueOf(intExtra7));
+                if (intExtra7 == 1) {
+                    try {
+                        android.content.Context context6 = this.f184975d;
+                        if (context6 != null && (context6 instanceof android.app.Activity)) {
+                            ((android.app.Activity) context6).finish();
+                        }
+                        com.tencent.mm.plugin.webview.stub.z0 z0Var3 = this.f184998y;
+                        if (z0Var3 != null) {
+                            z0Var3.ec();
+                            this.f184998y.b(null);
+                        }
+                    } catch (java.lang.Exception e18) {
+                        com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e18, "", new java.lang.Object[0]);
+                    }
+                }
+                int intExtra8 = intent.getIntExtra("key_is_clear_failure", -1);
+                if (intExtra8 == 0) {
+                    hashMap9.put("pay_status", "pending");
+                } else if (intExtra8 == 1) {
+                    hashMap9.put("pay_status", "fail");
+                }
+            }
+            i5(this.f184976e, "requestJointPayment:ok", hashMap9);
+            return;
+        }
+        if (i17 == 27) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request ibg prepay request, resultCode = " + i18);
+            int i59 = this.N;
+            if (i59 != -1) {
+                this.f184976e = c7(i59).f185140a;
+                this.f184998y = c7(this.N).f185141b;
+                this.N = -1;
+            }
+            if (i18 != -1) {
+                if (intent == null || !intent.hasExtra("is_from_native")) {
+                    i5(this.f184976e, "get_h5_prepay_request:cancel", null);
+                    return;
+                }
+                java.util.HashMap hashMap10 = new java.util.HashMap();
+                hashMap10.put("is_from_native", "1");
+                i5(this.f184976e, "get_h5_prepay_request:cancel", hashMap10);
+                return;
+            }
+            if (intent != null && intent.hasExtra("url")) {
+                try {
+                    this.f184998y.Ic(intent.getStringExtra("url"), intent.hasExtra("view_port_code") ? intent.getStringExtra("view_port_code") : null);
+                } catch (android.os.RemoteException e19) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "loadUrl ex: %s", e19.getMessage());
+                }
+                i5(this.f184976e, "get_h5_prepay_request:ok", null);
+                return;
+            }
+            if (intent == null || !intent.hasExtra("is_from_native")) {
+                i5(this.f184976e, "get_h5_prepay_request:ok", null);
+                return;
+            }
+            com.tencent.mm.autogen.events.HKCashierJSApiPayResultEvent hKCashierJSApiPayResultEvent = new com.tencent.mm.autogen.events.HKCashierJSApiPayResultEvent();
+            hKCashierJSApiPayResultEvent.f54428g.f6451a = 1;
+            hKCashierJSApiPayResultEvent.e();
+            if (hKCashierJSApiPayResultEvent.f54428g.f6452b == 1) {
+                try {
+                    this.f184998y.b(new android.os.Bundle());
+                } catch (android.os.RemoteException e27) {
+                    com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "get_h5_prepay_request doCloseWindow, ex = " + e27.getMessage());
+                }
+            }
+            java.util.HashMap hashMap11 = new java.util.HashMap();
+            hashMap11.put("is_from_native", "1");
+            i5(this.f184976e, "get_h5_prepay_request:ok", hashMap11);
+            return;
+        }
+        if (i17 == 5) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request jump to mall, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "jump_wcmall:ok", null);
+                return;
+            } else {
+                i5(this.f184976e, "jump_wcmall:fail", null);
+                return;
+            }
+        }
+        if (i17 == 6) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request jump to product view, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "open_product_view:ok", null);
+                return;
+            } else {
+                i5(this.f184976e, "open_product_view:fail", null);
+                return;
+            }
+        }
+        if (i17 == 7) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request bind card, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "get_brand_wcpay_bind_card_request:ok", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_brand_wcpay_bind_card_request:ok");
+            } else {
+                i5(this.f184976e, "get_brand_wcpay_bind_card_request:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_brand_wcpay_bind_card_request:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 9) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request open wxcredit, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "get_wcpay_create_credit_card_request:ok", null);
+                return;
+            } else {
+                i5(this.f184976e, "get_wcpay_create_credit_card_request:fail", null);
+                return;
+            }
+        }
+        if (i17 == 8) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request jumpToBizProfile, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "jump_to_biz_profile:ok", null);
+                return;
+            }
+            if (i18 == 0) {
+                i5(this.f184976e, "jump_to_biz_profile:cancel", null);
+                return;
+            } else if (i18 == 2 || i18 == 3) {
+                i5(this.f184976e, "jump_to_biz_profile:check_fail", null);
+                return;
+            } else {
+                i5(this.f184976e, "jump_to_biz_profile:fail", null);
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "unknown resultCode");
+                return;
+            }
+        }
+        if (i17 == 10) {
+            if (i18 == 0) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "open scan product ui back");
+                i5(this.f184976e, "open_scan_product_view:ok", null);
+                return;
+            }
+            return;
+        }
+        if (i17 == 11) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request transfer_money, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "get_transfer_money_request:ok", null);
+                com.tencent.mm.plugin.webview.model.h4.b(hy4.a0.f286077m);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_transfer_money_request:ok");
+            } else {
+                i5(this.f184976e, "get_transfer_money_request:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_transfer_money_request:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 17) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request open_wcpay_specific_view, resultCode = " + i18);
+            if (intent != null && "1".equals(intent.getStringExtra("closeWebView"))) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "close web view");
+                try {
+                    this.f184998y.ec();
+                    this.f184998y.b(null);
+                } catch (android.os.RemoteException e28) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "REQUEST_OPEN_WCPAY_SPECIFIC_VIEW ex: %s", e28.getMessage());
+                }
+            }
+            if (i18 == -1) {
+                i5(this.f184976e, "open_wcpay_specific_view:ok", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "open_wcpay_specific_view:ok");
+            } else {
+                i5(this.f184976e, "open_wcpay_specific_view:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "open_wcpay_specific_view:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 210) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request request_wcpay_send_c2c_msg, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "get_send_c2c_message_request:ok", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_send_c2c_message_request:ok");
+            } else if (i18 == 0) {
+                i5(this.f184976e, "get_send_c2c_message_request:cancel", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_send_c2c_message_request:cancel");
+            } else {
+                i5(this.f184976e, "get_send_c2c_message_request:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_send_c2c_message_request:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 13) {
+            java.util.HashMap hashMap12 = new java.util.HashMap();
+            if (i18 == -1) {
+                if (intent != null) {
+                    hashMap12.put("choose_card_info", com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("choose_card_info"), ""));
+                }
+                new nw4.b(1, i6(), "chooseCard", "", 1).l();
+                i5(this.f184976e, "choose_card:ok", hashMap12);
+                return;
+            }
+            if (i18 == 0) {
+                i5(this.f184976e, "choose_card:cancel", hashMap12);
+                return;
+            } else {
+                i5(this.f184976e, "choose_card:fail", hashMap12);
+                return;
+            }
+        }
+        if (i17 == 36) {
+            java.util.HashMap hashMap13 = new java.util.HashMap();
+            if (i18 == -1) {
+                if (intent != null) {
+                    hashMap13.put("choose_invoice_info", com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("choose_invoice_info"), ""));
+                }
+                new nw4.b(1, i6(), com.tencent.mm.plugin.appbrand.jsapi.s4.NAME, "", 1).l();
+                i5(this.f184976e, "choose_invoice:ok", hashMap13);
+                return;
+            }
+            if (i18 == 0) {
+                i5(this.f184976e, "choose_invoice:cancel", hashMap13);
+                return;
+            } else {
+                i5(this.f184976e, "choose_invoice:fail", hashMap13);
+                return;
+            }
+        }
+        if (i17 == 16) {
+            java.util.HashMap hashMap14 = new java.util.HashMap();
+            if (intent != null) {
+                hashMap14.put("card_list", com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("card_list"), ""));
+            }
+            if (i18 == -1) {
+                i5(this.f184976e, "batch_add_card:ok", hashMap14);
+                return;
+            }
+            if (intent != null) {
+                i29 = 2;
+                i37 = intent.getIntExtra("result_code", 2);
+            } else {
+                i29 = 2;
+                i37 = 2;
+            }
+            if (i37 == i29) {
+                i5(this.f184976e, "batch_add_card:fail", hashMap14);
+                return;
+            } else {
+                i5(this.f184976e, "batch_add_card:cancel", hashMap14);
+                return;
+            }
+        }
+        if (i17 == 23) {
+            if (i18 == -1) {
+                i5(this.f184976e, "batch_view_card:ok", null);
+                return;
+            } else {
+                i5(this.f184976e, "batch_view_card:fail", null);
+                return;
+            }
+        }
+        if (i17 == 15) {
+            nw4.y2 y2Var3 = this.f184976e;
+            if (y2Var3 == null || com.tencent.mm.sdk.platformtools.t8.K0(y2Var3.f341019i)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "msg is null");
+                return;
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request to scan qr code, result code = %d, function is %s", java.lang.Integer.valueOf(i18), this.f184976e.f341019i);
+            if (this.f184976e.f341019i.equals("scanQRCode")) {
+                if (i18 != -1) {
+                    if (i18 != 0) {
+                        i5(this.f184976e, "scanQRCode:fail", null);
+                        return;
+                    } else {
+                        i5(this.f184976e, "scanQRCode:cancel", null);
+                        return;
+                    }
+                }
+                java.util.HashMap hashMap15 = new java.util.HashMap();
+                if (intent != null) {
+                    java.lang.String stringExtra3 = intent.getStringExtra("key_scan_result_code_name");
+                    java.lang.String stringExtra4 = intent.getStringExtra("key_scan_result");
+                    if (!com.tencent.mm.plugin.scanner.j1.c(stringExtra3)) {
+                        stringExtra4 = stringExtra3 + "," + stringExtra4;
+                    }
+                    hashMap15.put("resultStr", stringExtra4);
+                    hashMap15.put("resultSource", java.lang.Integer.valueOf(intent.getIntExtra("result_image_source", 0)));
+                }
+                i5(this.f184976e, "scanQRCode:ok", hashMap15);
+                return;
+            }
+            return;
+        }
+        if (i17 == 14) {
+            boolean booleanExtra = intent == null ? false : intent.getBooleanExtra("key_pick_local_media_show_memory_warning", false);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request to open file chooser, result code = %d, hasShowMemoryWarning = %b", java.lang.Integer.valueOf(i18), java.lang.Boolean.valueOf(booleanExtra));
+            java.util.HashMap hashMap16 = new java.util.HashMap();
+            if (booleanExtra) {
+                hashMap16.put("memoryWarning", java.lang.Boolean.TRUE);
+            }
+            if (i18 == -1) {
+                java.lang.String stringExtra5 = intent.getStringExtra("key_pick_local_media_local_ids");
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "localIds = %s", stringExtra5);
+                if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra5)) {
+                    i5(this.f184976e, "chooseImage:fail", hashMap16);
+                    return;
+                }
+                hashMap16.put("localIds", stringExtra5);
+                java.lang.String stringExtra6 = intent.getStringExtra("key_pick_local_pic_source_type");
+                if (stringExtra6 != null) {
+                    hashMap16.put("sourceType", stringExtra6);
+                }
+                if (gm0.j1.a()) {
+                    new nw4.b(1, i6(), com.tencent.mm.plugin.appbrand.jsapi.media.e3.NAME, "", 1).l();
+                }
+                i5(this.f184976e, "chooseImage:ok", hashMap16);
+                return;
+            }
+            if (i18 == 0) {
+                i5(this.f184976e, "chooseImage:cancel", hashMap16);
+                return;
+            }
+            if (i18 != 1) {
+                i5(this.f184976e, "chooseImage:fail", hashMap16);
+                return;
+            }
+            java.lang.String stringExtra7 = intent.getStringExtra("key_pick_local_pic_fail_reason");
+            i5(this.f184976e, com.tencent.mm.sdk.platformtools.t8.K0(stringExtra7) ? "chooseImage:fail" : "chooseImage:fail, " + stringExtra7, hashMap16);
+            return;
+        }
+        if (i17 == 32) {
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    i5(this.f184976e, "chooseVideo:fail", null);
+                    return;
+                } else {
+                    i5(this.f184976e, "chooseVideo:cancel", null);
+                    return;
+                }
+            }
+            java.lang.String stringExtra8 = intent.getStringExtra("key_pick_local_media_local_id");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra8)) {
+                i5(this.f184976e, "chooseVideo:fail", null);
+                return;
+            }
+            com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b17 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(stringExtra8);
+            if (b17 == null || !(b17 instanceof com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem)) {
+                i5(this.f184976e, "chooseVideo:fail", null);
+                return;
+            }
+            com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem webViewJSSDKVideoItem = (com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem) b17;
+            java.util.HashMap hashMap17 = new java.util.HashMap();
+            hashMap17.put(dm.i4.COL_LOCALID, stringExtra8);
+            hashMap17.put("duration", java.lang.Integer.valueOf(webViewJSSDKVideoItem.f182754w));
+            hashMap17.put("height", java.lang.Integer.valueOf(webViewJSSDKVideoItem.f182745q));
+            hashMap17.put("size", java.lang.Integer.valueOf(webViewJSSDKVideoItem.f182743o));
+            hashMap17.put("width", java.lang.Integer.valueOf(webViewJSSDKVideoItem.f182744p));
+            new nw4.b(1, i6(), com.tencent.mm.plugin.appbrand.jsapi.media.e3.NAME, "", 1).l();
+            i5(this.f184976e, "chooseVideo:ok", hashMap17);
+            return;
+        }
+        if (i17 == 45) {
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    i5(this.f184976e, "recordVideo:fail", null);
+                    return;
+                } else {
+                    i5(this.f184976e, "recordVideo:cancel", null);
+                    return;
+                }
+            }
+            java.lang.String stringExtra9 = intent.getStringExtra("key_pick_local_media_local_id");
+            java.lang.String stringExtra10 = intent.getStringExtra("key_pick_local_media_thumb_local_id");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "localId:%s", stringExtra9);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "thumbLocalId:%s", stringExtra10);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra9)) {
+                i5(this.f184976e, "recordVideo:fail", null);
+                return;
+            }
+            com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b18 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(stringExtra9);
+            if (b18 == null || !(b18 instanceof com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem)) {
+                i5(this.f184976e, "recordVideo:fail", null);
+                return;
+            }
+            com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem webViewJSSDKVideoItem2 = (com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem) b18;
+            java.util.HashMap hashMap18 = new java.util.HashMap();
+            hashMap18.put(dm.i4.COL_LOCALID, stringExtra9);
+            hashMap18.put("duration", java.lang.Integer.valueOf(webViewJSSDKVideoItem2.f182754w));
+            hashMap18.put("height", java.lang.Integer.valueOf(webViewJSSDKVideoItem2.f182745q));
+            hashMap18.put("size", java.lang.Integer.valueOf(webViewJSSDKVideoItem2.f182743o));
+            hashMap18.put("width", java.lang.Integer.valueOf(webViewJSSDKVideoItem2.f182744p));
+            hashMap18.put("thumbLocalId", stringExtra10);
+            new nw4.b(1, i6(), com.tencent.mm.plugin.appbrand.jsapi.media.e3.NAME, "", 1).l();
+            i5(this.f184976e, "recordVideo:ok", hashMap18);
+            return;
+        }
+        if (i17 == 47) {
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    i5(this.f184976e, "chooseMedia:fail", null);
+                    return;
+                } else {
+                    i5(this.f184976e, "chooseMedia:cancel", null);
+                    return;
+                }
+            }
+            if (intent == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult REQUEST_CHOOSE_MEDIA data is null,");
+                i5(this.f184976e, "chooseMedia:fail", null);
+                return;
+            }
+            int intExtra9 = intent.getIntExtra("key_pick_local_media_callback_type", 0);
+            java.lang.String stringExtra11 = intent.getStringExtra("sourceType");
+            if (intExtra9 == 1) {
+                java.lang.String stringExtra12 = intent.getStringExtra("key_pick_local_media_local_id");
+                java.lang.String stringExtra13 = intent.getStringExtra("key_pick_local_media_thumb_local_id");
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "video localId:%s", stringExtra12);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "video thumbLocalId:%s", stringExtra13);
+                if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra12)) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult REQUEST_CHOOSE_MEDIA video localId is null");
+                    i5(this.f184976e, "chooseMedia:fail", null);
+                    return;
+                }
+                com.tencent.mm.plugin.webview.model.WebViewJSSDKFileItem b19 = com.tencent.mm.plugin.webview.modeltools.z.Zi().b(stringExtra12);
+                if (b19 == null || !(b19 instanceof com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem)) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult REQUEST_CHOOSE_MEDIA nor the videoitem");
+                    i5(this.f184976e, "chooseMedia:fail", null);
+                    return;
+                }
+                com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem webViewJSSDKVideoItem3 = (com.tencent.mm.plugin.webview.model.WebViewJSSDKVideoItem) b19;
+                java.lang.String i66 = com.tencent.mm.plugin.webview.model.o5.i(stringExtra12, stringExtra13, webViewJSSDKVideoItem3.f182754w, webViewJSSDKVideoItem3.f182745q, webViewJSSDKVideoItem3.f182744p, webViewJSSDKVideoItem3.f182743o);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "after parse to json data : %s", i66);
+                java.util.HashMap hashMap19 = new java.util.HashMap();
+                hashMap19.put("type", 1);
+                hashMap19.put("localIds", i66);
+                if (!com.tencent.mm.sdk.platformtools.t8.K0(stringExtra11)) {
+                    hashMap19.put("sourceType", stringExtra11);
+                }
+                new nw4.b(1, i6(), com.tencent.mm.plugin.appbrand.jsapi.media.e3.NAME, "", 1).l();
+                i5(this.f184976e, "chooseMedia:ok", hashMap19);
+                return;
+            }
+            if (intExtra9 != 2) {
+                if (intExtra9 == 3) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "type:%d is OK", java.lang.Integer.valueOf(intExtra9));
+                    i5(this.f184976e, "chooseMedia:ok", null);
+                    return;
+                } else {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "type:%d is error", java.lang.Integer.valueOf(intExtra9));
+                    i5(this.f184976e, "chooseMedia:fail", null);
+                    return;
+                }
+            }
+            java.lang.String stringExtra14 = intent.getStringExtra("key_pick_local_media_local_ids");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "chooseMedia localIds:%s", stringExtra14);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra14)) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult REQUEST_CHOOSE_MEDIA image localIds is null");
+                i5(this.f184976e, "chooseMedia:fail", null);
+                return;
+            }
+            java.util.HashMap hashMap20 = new java.util.HashMap();
+            hashMap20.put("type", 2);
+            hashMap20.put("localIds", stringExtra14);
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(stringExtra11)) {
+                hashMap20.put("sourceType", stringExtra11);
+            }
+            new nw4.b(1, i6(), com.tencent.mm.plugin.appbrand.jsapi.media.e3.NAME, "", 1).l();
+            if (this.L) {
+                try {
+                    org.json.JSONArray jSONArray2 = new org.json.JSONArray(stringExtra14);
+                    for (int i67 = 0; i67 < jSONArray2.length(); i67++) {
+                        org.json.JSONObject jSONObject = jSONArray2.getJSONObject(i67);
+                        double[] latLong = new androidx.exifinterface.media.ExifInterface(((yg0.u4) ((zg0.r3) i95.n0.c(zg0.r3.class))).Bi(jSONObject.getString(dm.i4.COL_LOCALID))).getLatLong();
+                        if (latLong != null) {
+                            jSONObject.put("latitude", latLong[0]);
+                            jSONObject.put("longitude", latLong[1]);
+                        }
+                    }
+                    java.lang.String jSONArray3 = jSONArray2.toString();
+                    hashMap20.put("localIds", jSONArray3);
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "prase success, localIds: %s", jSONArray3);
+                } catch (java.lang.Exception e29) {
+                    com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "prase localIds error: " + e29.getMessage());
+                }
+            }
+            i5(this.f184976e, "chooseMedia:ok", hashMap20);
+            return;
+        }
+        if (i17 == 46) {
+            if (i18 == -1) {
+                i5(this.f184976e, "previewVideo:ok", null);
+                return;
+            } else if (i18 != 0) {
+                i5(this.f184976e, "previewVideo:fail", null);
+                return;
+            } else {
+                i5(this.f184976e, "previewVideo:cancel", null);
+                return;
+            }
+        }
+        if (i17 == 19) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request to config exdevice wifi connection, result code = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "configWXDeviceWiFi:ok", null);
+                return;
+            }
+            if (i18 != 0) {
+                if (i18 != 1) {
+                    return;
+                }
+                i5(this.f184976e, "configWXDeviceWiFi:fail", null);
+                return;
+            } else {
+                if (intent == null || intent.getBooleanExtra("is_wifi_connected", true)) {
+                    hashMap = null;
+                } else {
+                    hashMap = new java.util.HashMap();
+                    hashMap.put("desc", "wifi_not_connected");
+                }
+                i5(this.f184976e, "configWXDeviceWiFi:cancel", hashMap);
+                return;
+            }
+        }
+        if (i17 == 20) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request request_verify_wcpay_password, resultCode = " + i18);
+            java.util.HashMap hashMap21 = new java.util.HashMap();
+            if (i18 == -1) {
+                java.lang.String l116 = intent != null ? com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("token"), "") : "";
+                if (android.text.TextUtils.isEmpty(l116)) {
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "checkPwdToken is empty, verifyWCPayPassword:fail");
+                    i5(this.f184976e, "verifyWCPayPassword:fail", null);
+                    if (!h45.y.c()) {
+                        com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "verifyWCPayPassword:fail");
+                    }
+                } else {
+                    hashMap21.put("token", l116);
+                    i5(this.f184976e, "verifyWCPayPassword:ok", hashMap21);
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "verifyWCPayPassword:ok");
+                    com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "checkPwdToken is valid, verifyWCPayPassword:ok");
+                }
+            } else {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "resultCode is canlcel, verifyWCPayPassword:fail");
+                i5(this.f184976e, "verifyWCPayPassword:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "verifyWCPayPassword:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (21 == i17) {
+            i5(this.f184976e, "see_order_ok", null);
+            return;
+        }
+        if (i17 == 22) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request get_recevie_biz_hongbao_request, resultCode = " + i18);
+            if (i18 == -1) {
+                i5(this.f184976e, "get_recevie_biz_hongbao_request:ok", null);
+                return;
+            } else if (i18 == 0) {
+                i5(this.f184976e, "get_recevie_biz_hongbao_request:cancel", null);
+                return;
+            } else {
+                i5(this.f184976e, "get_recevie_biz_hongbao_request:fail", null);
+                return;
+            }
+        }
+        if (i17 == 24) {
+            android.os.Bundle bundle2 = this.f184984o;
+            com.tencent.mm.modelsns.SnsAdClick snsAdClick3 = bundle2 != null ? (com.tencent.mm.modelsns.SnsAdClick) bundle2.getParcelable("KSnsAdTag") : null;
+            if (i18 != -1) {
+                if (snsAdClick3 != null) {
+                    snsAdClick3.f71469g = 10;
+                    R6(snsAdClick3);
+                }
+                j7(2, 3);
+                java.lang.String str8 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("url");
+                boolean p17 = ((yq1.z) ((zq1.a0) gm0.j1.s(zq1.a0.class))).p(str8);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "currentPageUrl:%s", str8);
+                if (p17) {
+                    i5(this.f184976e, "share_timeline:cancel", null);
+                    return;
+                } else {
+                    i5(this.f184976e, "share_timeline:ok", null);
+                    return;
+                }
+            }
+            if (snsAdClick3 != null) {
+                snsAdClick3.f71469g = 9;
+                R6(snsAdClick3);
+            }
+            j7(2, 1);
+            if (com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("open_from_scene"), 0) == 4) {
+                ((y30.w) ((z30.y) i95.n0.c(z30.y.class))).wi(this.f184984o.getLong("favlocalid", 0L), 0, 0);
+            }
+            try {
+                if (this.f184998y != null) {
+                    java.lang.String str9 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("appId");
+                    if (android.text.TextUtils.isEmpty(str9)) {
+                        str9 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("appid");
+                    }
+                    try {
+                        map2 = null;
+                        try {
+                            U6(str9, (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("img_url"), "", 1, 3, this.f184998y.i(85, null));
+                        } catch (android.os.RemoteException e37) {
+                            e = e37;
+                            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult : %s", e);
+                            i5(this.f184976e, "share_timeline:ok", map2);
+                            return;
+                        }
+                    } catch (android.os.RemoteException e38) {
+                        e = e38;
+                        map2 = null;
+                    }
+                } else {
+                    map2 = null;
+                }
+            } catch (android.os.RemoteException e39) {
+                e = e39;
+                map2 = null;
+            }
+            i5(this.f184976e, "share_timeline:ok", map2);
+            return;
+        }
+        if (i17 == 26) {
+            if (i18 == -1) {
+                i5(this.f184976e, "selectPedometerSource:ok", null);
+                return;
+            } else if (i18 == 0) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "selectPedometerSource result cancel");
+                i5(this.f184976e, "selectPedometerSource:cancel", null);
+                return;
+            } else {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "selectPedometerSource result fail");
+                i5(this.f184976e, "selectPedometerSource:fail", null);
+                return;
+            }
+        }
+        if (i17 == 25) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: get ibg order finish. result code: %d", java.lang.Integer.valueOf(i18));
+            if (this.f184974J == 1 && (z0Var = this.f184998y) != null) {
+                try {
+                    z0Var.ec();
+                    this.f184998y.b(null);
+                } catch (android.os.RemoteException e47) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e47, "", new java.lang.Object[0]);
+                }
+            }
+            if (i18 == -1) {
+                i5(this.f184976e, "get_h5_transaction_request:ok", null);
+                return;
+            } else {
+                i5(this.f184976e, "get_h5_transaction_request:cancel", null);
+                return;
+            }
+        }
+        if (i17 == 28) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "get web pay checkout counter request finish. result code: %d", java.lang.Integer.valueOf(i18));
+            boolean booleanExtra2 = intent != null ? intent.getBooleanExtra("is_new_cashier", false) : false;
+            if (i18 == -1) {
+                java.util.HashMap hashMap22 = new java.util.HashMap();
+                java.lang.String l117 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("token"), "");
+                java.lang.String l118 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("bind_serial"), "");
+                hashMap22.put("token", l117);
+                hashMap22.put("bind_serial", l118);
+                hashMap22.put("is_new_cashier", booleanExtra2 ? "1" : "0");
+                i5(this.f184976e, "getWebPayCheckoutCounterRequst:ok", hashMap22);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "getWebPayCheckoutCounterRequst:ok");
+            } else {
+                java.util.HashMap hashMap23 = new java.util.HashMap();
+                hashMap23.put("is_new_cashier", booleanExtra2 ? "1" : "0");
+                i5(this.f184976e, "getWebPayCheckoutCounterRequst:fail", hashMap23);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "getWebPayCheckoutCounterRequst:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 31) {
+            if (i18 != -1) {
+                i5(this.f184976e, "openEnterpriseContact:ok", null);
+                return;
+            }
+            android.os.Bundle bundleExtra = intent.getBundleExtra("result_data");
+            if (bundleExtra == null) {
+                i5(this.f184976e, "openEnterpriseContact:ok", null);
+                return;
+            }
+            java.lang.String string = bundleExtra.getString("result");
+            java.util.HashMap hashMap24 = new java.util.HashMap();
+            hashMap24.put("result", string);
+            i5(this.f184976e, "openEnterpriseContact:ok", hashMap24);
+            return;
+        }
+        if (i17 == 53) {
+            if (i18 != -1) {
+                i5(this.f184976e, "selectEnterpriseContact:ok", null);
+                return;
+            }
+            android.os.Bundle bundleExtra2 = intent.getBundleExtra("result_data");
+            if (bundleExtra2 == null) {
+                i5(this.f184976e, "selectEnterpriseContact:ok", null);
+                return;
+            }
+            java.lang.String string2 = bundleExtra2.getString("result");
+            java.util.HashMap hashMap25 = new java.util.HashMap();
+            hashMap25.put("result", string2);
+            org.json.JSONArray jSONArray4 = new org.json.JSONArray();
+            jSONArray4.put("result");
+            hashMap25.put("__json_key_set", jSONArray4.toString());
+            i5(this.f184976e, "selectEnterpriseContact:ok", hashMap25);
+            return;
+        }
+        if (i17 == 29) {
+            if (i18 == -1) {
+                i5(this.f184976e, "consumedShareCard:ok", null);
+                return;
+            } else {
+                i5(this.f184976e, "consumedShareCard:fail", null);
+                return;
+            }
+        }
+        if (i17 == 150 || i17 == 149) {
+            if (i18 == -1) {
+                v5(this.f184976e);
+                return;
+            } else {
+                i5(this.f184976e, "chooseImage:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 152 || i17 == 151 || i17 == 113) {
+            if (i18 == -1) {
+                w5(this.f184976e);
+                return;
+            } else {
+                i5(this.f184976e, "doChooseIdCard:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 116) {
+            if (i18 == -1) {
+                X5(this.f184976e);
+                return;
+            } else {
+                i5(this.f184976e, "startRecord:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 115) {
+            if (i18 == -1) {
+                y5(this.f184976e, 0);
+                return;
+            } else {
+                i5(this.f184976e, "chooseVideo:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 117) {
+            if (i18 == -1) {
+                y5(this.f184976e, 1);
+                return;
+            } else {
+                i5(this.f184976e, "recordVideo:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 118) {
+            if (i18 == -1) {
+                y5(this.f184976e, 1);
+                return;
+            } else {
+                i5(this.f184976e, "recordVideo:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 119) {
+            if (i18 == -1) {
+                x5(this.f184976e);
+                return;
+            } else {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "chooseMedia:fail_android_permission_denied:CAMERA");
+                i5(this.f184976e, "chooseMedia:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 120) {
+            if (i18 == -1) {
+                x5(this.f184976e);
+                return;
+            } else {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "chooseMedia:fail_android_permission_denied:MICROPHONE");
+                i5(this.f184976e, "chooseMedia:fail_android_permission_denied", null);
+                return;
+            }
+        }
+        if (i17 == 30) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doSelectSingleContact activtiy callback");
+            java.lang.String str10 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("appId");
+            if (this.f184984o != null && android.text.TextUtils.isEmpty(str10)) {
+                str10 = this.f184984o.getString("jsapi_args_appid");
+            }
+            int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("selectMode"), 0);
+            java.lang.String str11 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("busiId");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "select single contact : appId:%s, busiId:%s, selectedMode:%d", str10, str11, java.lang.Integer.valueOf(P));
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    return;
+                }
+                i5(this.f184976e, "selectSingleContact:cancel", null);
+                return;
+            }
+            java.lang.String stringExtra15 = intent == null ? null : intent.getStringExtra("Select_Conv_User");
+            if (stringExtra15 == null || stringExtra15.length() == 0) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult,selectSingleContact fail, user is null");
+                i5(this.f184976e, "selectSingleContact:fail", null);
+                return;
+            }
+            if (P == 0) {
+                com.tencent.mm.plugin.webview.model.g1 g1Var = new com.tencent.mm.plugin.webview.model.g1(str10, stringExtra15);
+                gm0.j1.d().a(1566, new com.tencent.mm.plugin.webview.ui.tools.jsapi.r2(this));
+                gm0.j1.d().g(g1Var);
+                android.content.Context context7 = this.f184975d;
+                this.f184979h = db5.e1.Q(context7, j65.q.a(context7).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.f490604zq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.s2(this, g1Var));
+                return;
+            }
+            if (P == 1) {
+                com.tencent.mm.plugin.webview.model.m1 m1Var = new com.tencent.mm.plugin.webview.model.m1(str10, str11, stringExtra15);
+                gm0.j1.d().a(1177, new com.tencent.mm.plugin.webview.ui.tools.jsapi.t2(this));
+                gm0.j1.d().g(m1Var);
+                android.content.Context context8 = this.f184975d;
+                this.f184979h = db5.e1.Q(context8, j65.q.a(context8).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.f490604zq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.u2(this, m1Var));
+                return;
+            }
+            return;
+        }
+        if (i17 == 34) {
+            if (i18 == -1) {
+                i5(this.f184976e, "get_wcpay_realname_verify:ok", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_wcpay_realname_verify:ok");
+            } else if (i18 == 1) {
+                i5(this.f184976e, "get_wcpay_realname_verify:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_wcpay_realname_verify:fail");
+                }
+            } else {
+                i5(this.f184976e, "get_wcpay_realname_verify:cancel", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "get_wcpay_realname_verify:cancel");
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 211) {
+            if (i18 != -1) {
+                i5(this.f184976e, "selectWalletCurrency:cancel", null);
+                return;
+            }
+            com.tencent.mm.autogen.events.RequestEnterWalletEvent requestEnterWalletEvent = new com.tencent.mm.autogen.events.RequestEnterWalletEvent();
+            requestEnterWalletEvent.f54693g.f6968a = this.f184975d;
+            requestEnterWalletEvent.e();
+            try {
+                this.f184998y.ec();
+                this.f184998y.b(null);
+                return;
+            } catch (android.os.RemoteException e48) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e48, "", new java.lang.Object[0]);
+                return;
+            }
+        }
+        if (i17 == 37) {
+            if (this.f184977f == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult fail, appmsg is null");
+                i5(this.f184976e, "send_app_msg:fail", null);
+                return;
+            }
+            java.lang.String str12 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("appid");
+            android.os.Bundle bundle3 = this.f184984o;
+            if (bundle3 != null) {
+                snsAdClick2 = (com.tencent.mm.modelsns.SnsAdClick) bundle3.getParcelable("KSnsAdTag");
+                if (android.text.TextUtils.isEmpty(str12)) {
+                    str12 = this.f184984o.getString("jsapi_args_appid");
+                }
+                str2 = str12;
+            } else {
+                str2 = str12;
+                snsAdClick2 = null;
+            }
+            java.lang.Object obj2 = ((java.util.HashMap) this.f184976e.c()).get("Internal@AsyncReport");
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    return;
+                }
+                if (snsAdClick2 != null) {
+                    snsAdClick2.f71469g = 8;
+                    R6(snsAdClick2);
+                }
+                nw4.e3.a(this.f184976e.c(), p6("sendAppMessage"), null, str2);
+                if (obj2 != null && (obj2 instanceof java.lang.Boolean) && ((java.lang.Boolean) obj2).booleanValue()) {
+                    Q6(this.f184976e, true);
+                }
+                i5(this.f184976e, "send_app_msg:cancel", null);
+                return;
+            }
+            if (snsAdClick2 != null) {
+                snsAdClick2.f71469g = 7;
+                R6(snsAdClick2);
+            }
+            com.tencent.mm.pluginsdk.model.app.m Ni2 = ((kt.c) ((lt.i0) i95.n0.c(lt.i0.class))).Ni(str2);
+            if (intent == null) {
+                return;
+            }
+            java.lang.String stringExtra16 = intent.getStringExtra("enterprise_biz_name");
+            long longExtra = intent.getLongExtra("key_biz_chat_id", -1L);
+            java.lang.String stringExtra17 = intent.getStringExtra("enterprise_share_append_text");
+            if (stringExtra16 == null || stringExtra16.length() == 0) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult fail, toUser is null");
+                i5(this.f184976e, "send_app_msg:fail", null);
+                return;
+            }
+            java.lang.String str13 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("img_url");
+            java.lang.String str14 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("src_username");
+            java.lang.String str15 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("src_displayname");
+            java.lang.String o67 = o6();
+            nw4.e3.a(this.f184976e.c(), p6("sendAppMessage"), stringExtra16, str2);
+            if (obj2 != null && (obj2 instanceof java.lang.Boolean) && ((java.lang.Boolean) obj2).booleanValue()) {
+                Q6(this.f184976e, true);
+            }
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(str13)) {
+                ((j70.e) ((k70.v) i95.n0.c(k70.v.class))).Ai(str13, new com.tencent.mm.plugin.webview.ui.tools.jsapi.v2(this, longExtra, Ni2, str2, stringExtra16, str13, str14, str15, stringExtra17, o67));
+                return;
+            }
+            if (longExtra >= 0) {
+                s01.h z07 = r01.q3.Ui().z0(longExtra);
+                java.lang.Object obj3 = s01.r.f401927d;
+                synchronized (obj3) {
+                    java.lang.String i68 = s01.r.i();
+                    s01.r.j(z07);
+                    map = null;
+                    Q5(Ni2, str2, stringExtra16, str13, str14, str15, stringExtra17, o67);
+                    synchronized (obj3) {
+                        s01.r.f401924a = i68;
+                    }
+                }
+            } else {
+                map = null;
+                Q5(Ni2, str2, stringExtra16, str13, str14, str15, stringExtra17, o67);
+            }
+            android.content.Context context9 = this.f184975d;
+            db5.e1.T(context9, j65.q.a(context9).getString(com.tencent.mm.R.string.f490940bb2));
+            i5(this.f184976e, "send_app_msg:ok", map);
+            return;
+        }
+        if (i17 == 38) {
+            if (i18 == -1) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: soter auth ok");
+                i5(this.f184976e, "soter_biometric_authentication:ok", nw4.a.a(intent.getExtras()));
+                return;
+            } else if (i18 == 1) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "hy: soter auth failed");
+                i5(this.f184976e, "soter_biometric_authentication:fail", nw4.a.a(intent.getExtras()));
+                return;
+            } else {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "hy: soter user cancelled");
+                i5(this.f184976e, "soter_biometric_authentication:cancel", nw4.a.a(intent.getExtras()));
+                return;
+            }
+        }
+        if (i17 == 39) {
+            if (i18 == -1) {
+                i5(this.f184976e, "unbind_bank_card:ok", null);
+                return;
+            } else if (i18 == 1) {
+                i5(this.f184976e, "unbind_bank_card:fail", null);
+                return;
+            } else {
+                i5(this.f184976e, "unbind_bank_card:cancel", null);
+                return;
+            }
+        }
+        int i69 = 49;
+        if (i17 == 40) {
+            if (i18 != -1) {
+                i5(this.f184976e, "select chat record:cancel", null);
+                return;
+            }
+            android.os.Bundle bundle4 = new android.os.Bundle();
+            if (intent == null) {
+                i5(this.f184976e, "select chat record:fail", null);
+                return;
+            }
+            long[] longArrayExtra = intent.getLongArrayExtra("k_outside_expose_proof_item_list");
+            java.lang.String stringExtra18 = intent.getStringExtra("k_username");
+            if (stringExtra18 == null || stringExtra18.isEmpty()) {
+                stringExtra18 = intent.getStringExtra("Chat_User");
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request select chat record callback, talker: %s", stringExtra18);
+            java.util.ArrayList k66 = k6(longArrayExtra, stringExtra18);
+            int size = k66.size();
+            java.lang.String[] strArr2 = new java.lang.String[size];
+            java.lang.String[] strArr3 = new java.lang.String[size];
+            java.lang.String[] strArr4 = new java.lang.String[size];
+            int[] iArr = new int[size];
+            int[] iArr2 = new int[size];
+            java.lang.String[] strArr5 = new java.lang.String[size];
+            int i76 = 0;
+            while (i76 < size) {
+                com.tencent.mm.storage.f9 f9Var = (com.tencent.mm.storage.f9) k66.get(i76);
+                strArr2[i76] = java.lang.String.valueOf(f9Var.I0());
+                if (intent.getBooleanExtra("k_is_group_chat", false)) {
+                    if (f9Var.isVideo()) {
+                        strArr3[i76] = c01.w9.u(f9Var.J0());
+                    } else {
+                        strArr3[i76] = c01.w9.u(f9Var.j());
+                    }
+                    strArr4[i76] = c01.w9.s(f9Var.j());
+                } else {
+                    if (f9Var.isVideo()) {
+                        strArr3[i76] = f9Var.J0();
+                    } else {
+                        strArr3[i76] = f9Var.j();
+                    }
+                    if (com.tencent.mm.storage.z3.V3(f9Var.Q0())) {
+                        ((c61.l7) ((zy2.b6) i95.n0.c(zy2.b6.class))).Zj();
+                        strArr4[i76] = com.tencent.mm.plugin.finder.service.m4.f126148a.h(f9Var.Q0());
+                    } else if (com.tencent.mm.storage.z3.H4(f9Var.Q0())) {
+                        strArr4[i76] = ((ki4.i0) ((bi4.y0) i95.n0.c(bi4.y0.class))).wi(f9Var.Q0());
+                    } else {
+                        strArr4[i76] = f9Var.Q0();
+                    }
+                }
+                if (f9Var.A0() == i38) {
+                    if (com.tencent.mm.storage.z3.V3(f9Var.Q0())) {
+                        ((c61.l7) ((zy2.b6) i95.n0.c(zy2.b6.class))).Zj();
+                        strArr4[i76] = com.tencent.mm.plugin.finder.service.m4.f126148a.f(f9Var.Q0());
+                    } else {
+                        strArr4[i76] = c01.z1.r();
+                    }
+                }
+                if (strArr3[i76] == null) {
+                    strArr3[i76] = "";
+                }
+                if (strArr4[i76] == null) {
+                    strArr4[i76] = "";
+                }
+                if (f9Var.k2()) {
+                    iArr[i76] = i69;
+                } else {
+                    iArr[i76] = f9Var.getType();
+                }
+                iArr2[i76] = (int) (f9Var.getCreateTime() / 1000);
+                java.util.Map d17 = com.tencent.mm.sdk.platformtools.aa.d(f9Var.G0(), "msgsource", null);
+                if (d17 != null && d17.get(".msgsource.signature") != null) {
+                    strArr5[i76] = (java.lang.String) d17.get(".msgsource.signature");
+                    if (d17.get(".msgsource.realcreatetime") != null) {
+                        iArr2[i76] = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) d17.get(".msgsource.realcreatetime"), (int) (f9Var.getCreateTime() / 1000));
+                        i76++;
+                        i69 = 49;
+                        i38 = 1;
+                    }
+                }
+                i76++;
+                i69 = 49;
+                i38 = 1;
+            }
+            bundle4.putStringArray("msgIds", strArr2);
+            bundle4.putStringArray("contents", strArr3);
+            bundle4.putStringArray("senders", strArr4);
+            bundle4.putIntArray("msgTypes", iArr);
+            bundle4.putIntArray("msgTimes", iArr2);
+            bundle4.putStringArray("msgSignature", strArr5);
+            try {
+                com.tencent.mm.plugin.webview.stub.z0 z0Var4 = this.f184998y;
+                if (z0Var4 != null) {
+                    z0Var4.callback(48, bundle4);
+                }
+                i5(this.f184976e, "select chat record:ok", null);
+                return;
+            } catch (android.os.RemoteException e49) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "onGetMsgProofItems exception" + e49.getMessage());
+                i5(this.f184976e, "select chat record:fail", null);
+                return;
+            }
+        }
+        if (i17 == 41) {
+            if (i18 == -1) {
+                i5(this.f184976e, "id_card_realname_verify:ok", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "id_card_realname_verify:ok");
+            } else if (i18 == 1) {
+                i5(this.f184976e, "id_card_realname_verify:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "id_card_realname_verify:fail");
+                }
+            } else {
+                i5(this.f184976e, "id_card_realname_verify:cancel", null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "id_card_realname_verify:cancel");
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 42) {
+            if (i18 != -1) {
+                if (i18 == 1) {
+                    i5(this.f184976e, "get game region:fail", null);
+                    return;
+                } else {
+                    i5(this.f184976e, "get game region:cancel", null);
+                    return;
+                }
+            }
+            if (intent == null) {
+                i5(this.f184976e, "get game region:fail", null);
+                return;
+            }
+            java.lang.String l119 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("gameRegionName"), "");
+            java.util.HashMap hashMap26 = new java.util.HashMap();
+            hashMap26.put("gameRegionName", l119);
+            i5(this.f184976e, "get game region:ok", hashMap26);
+            return;
+        }
+        if (i17 == 43) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request to open file chooser for id card image, result code = " + i18);
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    k5(J1, L1);
+                    i5(this.f184976e, "chooseImage:fail", null);
+                    return;
+                } else {
+                    k5(J1, M1);
+                    i5(this.f184976e, "chooseIdCard:cancel", null);
+                    return;
+                }
+            }
+            java.util.HashMap hashMap27 = new java.util.HashMap();
+            java.lang.String stringExtra19 = intent.getStringExtra("key_pick_local_pic_callback_local_ids");
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "localIds = %s", stringExtra19);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra19)) {
+                k5(J1, L1);
+                i5(this.f184976e, "chooseIdCard:fail", null);
+                return;
+            }
+            try {
+                org.json.JSONArray jSONArray5 = new org.json.JSONArray(stringExtra19);
+                if (jSONArray5.length() <= 0) {
+                    k5(J1, L1);
+                    i5(this.f184976e, "chooseImage:fail", null);
+                    return;
+                }
+                hashMap27.put(dm.i4.COL_LOCALID, jSONArray5.get(0).toString());
+                if (intent.getStringExtra("key_pick_local_pic_source_type") != null) {
+                    hashMap27.put("sourceType", com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_ALBUM);
+                }
+                k5(J1, N1);
+                i5(this.f184976e, "chooseIdCard:ok", hashMap27);
+                return;
+            } catch (java.lang.Exception e57) {
+                com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e57, "", new java.lang.Object[0]);
+                k5(J1, L1);
+                i5(this.f184976e, "chooseImage:fail", null);
+                return;
+            }
+        }
+        if (i17 == 48) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "requestWxFacePictureVerify resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                i5(this.f184976e, "requestWxFacePictureVerify:ok", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else if (i18 == 1) {
+                i5(this.f184976e, "requestWxFacePictureVerify:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else {
+                if (i18 == 0) {
+                    i5(this.f184976e, "requestWxFacePictureVerify:cancel", nw4.a.a(intent != null ? intent.getExtras() : null));
+                    return;
+                }
+                return;
+            }
+        }
+        if (i17 == 49) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: REQUEST_FACE_DETECT_WITH_VIDEO resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                i5(this.f184976e, "requestWxFacePictureVerifyUnionVideo:ok", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else if (i18 == 1) {
+                i5(this.f184976e, "requestWxFacePictureVerifyUnionVideo:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else {
+                if (i18 == 0) {
+                    i5(this.f184976e, "requestWxFacePictureVerifyUnionVideo:cancel", nw4.a.a(intent != null ? intent.getExtras() : null));
+                    return;
+                }
+                return;
+            }
+        }
+        if (i17 == 52) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "share emmotion resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    i5(this.f184976e, "shareEmoticon:fail", null);
+                    return;
+                } else {
+                    i5(this.f184976e, "shareEmoticon:cancel", null);
+                    return;
+                }
+            }
+            java.lang.String l120 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("Select_Conv_User"), "");
+            java.lang.String l121 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("emoji_thumb_path"), "");
+            java.lang.String l122 = com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("emoji_activity_id"), "");
+            com.tencent.mm.api.IEmojiInfo Bi = ((com.tencent.mm.feature.emoji.k0) ((com.tencent.mm.feature.emoji.api.v5) i95.n0.c(com.tencent.mm.feature.emoji.api.v5.class))).Bi(l121);
+            if (Bi == null) {
+                java.lang.String wi6 = ((com.tencent.mm.feature.emoji.o0) ((com.tencent.mm.feature.emoji.api.x5) i95.n0.c(com.tencent.mm.feature.emoji.api.x5.class))).wi(((com.tencent.mm.feature.emoji.h2) ((com.tencent.mm.feature.emoji.api.j6) i95.n0.c(com.tencent.mm.feature.emoji.api.j6.class))).Bi(), "", l121);
+                if (com.tencent.mm.vfs.w6.j(wi6)) {
+                    int i77 = com.tencent.mm.sdk.platformtools.y1.c(wi6) ? 2 : 1;
+                    com.tencent.mm.api.IEmojiInfo Ai = ((com.tencent.mm.feature.emoji.k0) ((com.tencent.mm.feature.emoji.api.v5) i95.n0.c(com.tencent.mm.feature.emoji.api.v5.class))).Ai();
+                    com.tencent.mm.storage.emotion.EmojiInfo emojiInfo = (com.tencent.mm.storage.emotion.EmojiInfo) Ai;
+                    emojiInfo.P0(l121);
+                    emojiInfo.I0(65);
+                    emojiInfo.setType(i77);
+                    emojiInfo.R0((int) com.tencent.mm.vfs.w6.k(wi6));
+                    emojiInfo.T0(1);
+                    if (!com.tencent.mm.sdk.platformtools.t8.K0(l122)) {
+                        emojiInfo.F0(l122);
+                    }
+                    Bi = ((com.tencent.mm.feature.emoji.k0) ((com.tencent.mm.feature.emoji.api.v5) i95.n0.c(com.tencent.mm.feature.emoji.api.v5.class))).wi(Ai);
+                }
+            }
+            java.util.Iterator it = com.tencent.mm.sdk.platformtools.t8.P1(com.tencent.mm.sdk.platformtools.t8.l1(l120, "").split(",")).iterator();
+            while (it.hasNext()) {
+                java.lang.String str16 = (java.lang.String) it.next();
+                if (Bi != null) {
+                    ((com.tencent.mm.feature.emoji.s0) ((com.tencent.mm.feature.emoji.api.y5) i95.n0.c(com.tencent.mm.feature.emoji.api.y5.class))).Ai(str16, Bi, null);
+                }
+            }
+            java.lang.String stringExtra20 = intent.getStringExtra("custom_send_text");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(stringExtra20)) {
+                com.tencent.mm.autogen.events.SendMsgEvent sendMsgEvent = new com.tencent.mm.autogen.events.SendMsgEvent();
+                am.mt mtVar = sendMsgEvent.f54752g;
+                mtVar.f7362a = l120;
+                mtVar.f7363b = stringExtra20;
+                mtVar.f7364c = c01.e2.C(l120);
+                sendMsgEvent.f54752g.f7365d = 0;
+                sendMsgEvent.e();
+            }
+            android.content.Context context10 = this.f184975d;
+            db5.e1.T(context10, j65.q.a(context10).getString(com.tencent.mm.R.string.f490560yi));
+            i5(this.f184976e, "shareEmoticon:ok", null);
+            return;
+        }
+        if (i17 == 50) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: requestWxFaceRegisterInternal resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                i5(this.f184976e, "requestWxFaceRegisterInternal:ok", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else if (i18 == 1) {
+                i5(this.f184976e, "requestWxFaceRegisterInternal:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else {
+                if (i18 == 0) {
+                    i5(this.f184976e, "requestWxFaceRegisterInternal:cancel", nw4.a.a(intent != null ? intent.getExtras() : null));
+                    return;
+                }
+                return;
+            }
+        }
+        if (i17 == 51) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: requestWxFaceVerifyInternal resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                i5(this.f184976e, "requestWxFaceVerifyInternal:ok", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else if (i18 == 1) {
+                i5(this.f184976e, "requestWxFaceVerifyInternal:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else {
+                if (i18 == 0) {
+                    i5(this.f184976e, "requestWxFaceVerifyInternal:cancel", nw4.a.a(intent != null ? intent.getExtras() : null));
+                    return;
+                }
+                return;
+            }
+        }
+        if (i17 == 54) {
+            if (i18 != -1 || intent == null) {
+                i5(this.f184976e, "selectContact:fail", null);
+                return;
+            }
+            java.lang.String stringExtra21 = intent.getStringExtra("Select_Contact");
+            java.lang.String displayName = ((sg3.a) ((tg3.v0) i95.n0.c(tg3.v0.class))).getDisplayName(stringExtra21);
+            android.os.Bundle bundle5 = new android.os.Bundle();
+            bundle5.putString(dm.i4.COL_USERNAME, stringExtra21);
+            bundle5.putString("nickname", displayName);
+            bundle5.putInt("ret", 0);
+            try {
+                com.tencent.mm.plugin.webview.stub.z0 z0Var5 = this.f184998y;
+                if (z0Var5 != null) {
+                    z0Var5.callback(126, bundle5);
+                }
+            } catch (android.os.RemoteException e58) {
+                com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "onSearchDataReady exception" + e58.getMessage());
+            }
+            i5(this.f184976e, "selectContact:succ", null);
+            return;
+        }
+        if (i17 == 65) {
+            if (i18 != -1 || intent == null) {
+                i5(this.f184976e, "selectContact:fail", null);
+                return;
+            }
+            java.lang.String stringExtra22 = intent.getStringExtra("Select_Contact");
+            java.lang.String displayName2 = ((sg3.a) ((tg3.v0) i95.n0.c(tg3.v0.class))).getDisplayName(stringExtra22);
+            java.util.HashMap hashMap28 = new java.util.HashMap();
+            hashMap28.put(dm.i4.COL_USERNAME, stringExtra22);
+            hashMap28.put("nickname", displayName2);
+            com.tencent.mm.modelavatar.r0 n07 = ((com.tencent.mm.modelavatar.s0) ((com.tencent.mm.feature.avatar.w) ((kv.a0) i95.n0.c(kv.a0.class))).Zi()).n0(stringExtra22);
+            if (n07 != null) {
+                hashMap28.put("headurl", n07.d());
+            }
+            com.tencent.mm.storage.z3 m17 = ((com.tencent.mm.storage.k4) ((com.tencent.mm.plugin.messenger.foundation.h2) ((vg3.x3) gm0.j1.s(vg3.x3.class))).Bi()).m(stringExtra22);
+            if (m17 != null && !com.tencent.mm.sdk.platformtools.t8.K0(m17.t0())) {
+                hashMap28.put("alias", m17.t0());
+            }
+            i5(this.f184976e, "selectContact:ok", hashMap28);
+            return;
+        }
+        if (i17 == 55) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: REQUEST_SET_RESET_WALLET_PWD_REQUEST resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                i5(this.f184976e, "setWCPayPassword:ok", nw4.a.a(intent != null ? intent.getExtras() : null));
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "setWCPayPassword:ok");
+            } else if (i18 == 0) {
+                i5(this.f184976e, "setWCPayPassword:cancel", nw4.a.a(intent != null ? intent.getExtras() : null));
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "setWCPayPassword:cancel");
+            } else {
+                i5(this.f184976e, "setWCPayPassword:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "setWCPayPassword:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 56) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request choose invoice title, resultCode = " + i18);
+            java.util.HashMap hashMap29 = new java.util.HashMap();
+            if (i18 == -1) {
+                if (intent != null) {
+                    hashMap29.put("choose_invoice_title_info", com.tencent.mm.sdk.platformtools.t8.l1(intent.getStringExtra("choose_invoice_title_info"), ""));
+                }
+                new nw4.b(1, i6(), com.tencent.mm.plugin.appbrand.jsapi.u4.NAME, "", 1).l();
+                i5(this.f184976e, "chooseInvoiceTitle:ok", hashMap29);
+                return;
+            }
+            if (i18 == 0) {
+                i5(this.f184976e, "chooseInvoiceTitle:cancel", hashMap29);
+                return;
+            } else {
+                i5(this.f184976e, "chooseInvoiceTitle:fail", hashMap29);
+                return;
+            }
+        }
+        if (i17 == 57) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request voice login verify, resultCode: %d", java.lang.Integer.valueOf(i18));
+            java.util.HashMap hashMap30 = new java.util.HashMap();
+            if (i18 == -1) {
+                hashMap30.put("err_code", 0);
+                hashMap30.put("err_msg", "verify ok");
+                i5(this.f184976e, "request voice login verify:ok", hashMap30);
+                return;
+            } else if (i18 == 0) {
+                hashMap30.put("err_code", 1);
+                hashMap30.put("err_msg", "verify cancel");
+                i5(this.f184976e, "request voice login verify:cancel", hashMap30);
+                return;
+            } else {
+                hashMap30.put("err_code", 2);
+                hashMap30.put("err_msg", "verify error");
+                i5(this.f184976e, "request voice login verify:error", hashMap30);
+                return;
+            }
+        }
+        if (i17 == 59) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "hy: REQUEST_OPEN_CARD_LIST resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                i5(this.f184976e, "openWCPayCardList:ok", nw4.a.a(intent != null ? intent.getExtras() : null));
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "openWCPayCardList:ok");
+            } else if (i18 == 0) {
+                i5(this.f184976e, "openWCPayCardList:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "openWCPayCardList:fail");
+                }
+            } else {
+                i5(this.f184976e, "openWCPayCardList:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "openWCPayCardList:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 60) {
+            if (intent != null) {
+                java.lang.String stringExtra23 = intent.getStringExtra("key_callback");
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "open offline pay view callback: %s", stringExtra23);
+                i5(this.f184976e, java.lang.String.format("openOfflinePayView:%s", stringExtra23), null);
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "openOfflinePayView:ok");
+            } else {
+                i5(this.f184976e, "openOfflinePayView:fail", null);
+                if (!h45.y.c()) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(14954, h45.y.b(), "openOfflinePayView:fail");
+                }
+            }
+            if (h45.y.c()) {
+                return;
+            }
+            h45.y.a();
+            return;
+        }
+        if (i17 == 58) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "request bind email, resultCode %d", java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                i5(this.f184976e, "bindEmail:ok", null);
+                return;
+            } else {
+                i5(this.f184976e, "bindEmail:cancel", null);
+                return;
+            }
+        }
+        if (i17 == 62) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "[openRealnameAuth]resultCode:%d", java.lang.Integer.valueOf(i18));
+            java.util.HashMap hashMap31 = new java.util.HashMap();
+            if (i18 == -1) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openRealnameAuth ok");
+                java.lang.String stringExtra24 = intent.getStringExtra("intent_auth_token");
+                if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra24)) {
+                    i5(this.f184976e, "openRealnameAuth:fail", hashMap31);
+                    return;
+                }
+                hashMap31.put("err_code", 0);
+                hashMap31.put("auth_token", stringExtra24);
+                i5(this.f184976e, "openRealnameAuth:ok", hashMap31);
+                return;
+            }
+            if (i18 == 0) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openRealnameAuth cancel");
+                i5(this.f184976e, "openRealnameAuth:cancel", hashMap31);
+                return;
+            }
+            if (i18 == 1) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openRealnameAuth fail");
+                if (intent == null) {
+                    i5(this.f184976e, "openRealnameAuth:fail", hashMap31);
+                    return;
+                }
+                int intExtra10 = intent.getIntExtra("intent_err_code", -1);
+                java.lang.String stringExtra25 = intent.getStringExtra("intent_err_msg");
+                hashMap31.put("err_code", java.lang.Integer.valueOf(intExtra10));
+                hashMap31.put("err_msg", stringExtra25);
+                i5(this.f184976e, "openRealnameAuth:fail", hashMap31);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "openRealnameAuth errCode:%d, errMsg:%s", java.lang.Integer.valueOf(intExtra10), stringExtra25);
+                return;
+            }
+            return;
+        }
+        if (i17 == 61) {
+            if (this.f184977f == null) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult fail, appmsg is null");
+                i5(this.f184976e, "sendSingleAppMessage:fail", null);
+                return;
+            }
+            if (i18 != -1) {
+                if (i18 != 0) {
+                    i5(this.f184976e, "sendSingleAppMessage:fail", null);
+                    return;
+                } else {
+                    i5(this.f184976e, "sendSingleAppMessage:cancel", null);
+                    return;
+                }
+            }
+            java.lang.String stringExtra26 = intent == null ? null : intent.getStringExtra("Select_Conv_User");
+            if (stringExtra26 == null || stringExtra26.length() == 0) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "mmOnActivityResult fail, toUser is null");
+                i5(this.f184976e, "sendSingleAppMessage:fail", null);
+                return;
+            }
+            java.lang.Object obj4 = ((java.util.HashMap) this.f184976e.f340790a).get("__jsapi_fw_ext_info");
+            java.lang.String c17 = this.A.c(obj4 instanceof android.os.Bundle ? ((android.os.Bundle) obj4).getString("__jsapi_fw_ext_info_key_current_url") : null);
+            if (com.tencent.mm.sdk.platformtools.t8.K0(c17)) {
+                c17 = (java.lang.String) ((java.util.HashMap) this.f184976e.f340790a).get("appId");
+            }
+            com.tencent.mm.plugin.webview.model.m1 m1Var2 = new com.tencent.mm.plugin.webview.model.m1(c17, "", stringExtra26);
+            gm0.j1.d().a(1177, new com.tencent.mm.plugin.webview.ui.tools.jsapi.w2(this, intent, stringExtra26));
+            gm0.j1.d().g(m1Var2);
+            android.content.Context context11 = this.f184975d;
+            this.f184979h = db5.e1.Q(context11, j65.q.a(context11).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(this.f184975d).getString(com.tencent.mm.R.string.f490604zq), true, true, new com.tencent.mm.plugin.webview.ui.tools.jsapi.x2(this, m1Var2));
+            return;
+        }
+        if (i17 == 75) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "onActivityResult for webviewId:%d, requestCode:%d, resultCode:%d", java.lang.Integer.valueOf(this.B), java.lang.Integer.valueOf(i17), java.lang.Integer.valueOf(i18));
+            if (i18 == -1) {
+                E5();
+                return;
+            } else {
+                i5(this.f184976e, "geo_location:fail permission", null);
+                return;
+            }
+        }
+        if (i17 == 63) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "REQUEST_FACE_VERIFY_FOR_PAY resultCode: %d", java.lang.Integer.valueOf(i18));
+            if (intent != null) {
+                i27 = 0;
+                i28 = intent.getIntExtra("err_code", 0);
+            } else {
+                i27 = 0;
+                i28 = 0;
+            }
+            if (intent != null) {
+                intent.getStringExtra("err_msg");
+            }
+            int intExtra11 = intent != null ? intent.getIntExtra(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE, i27) : i27;
+            int intExtra12 = intent != null ? intent.getIntExtra("countFace", i27) : 0;
+            long longExtra2 = intent != null ? intent.getLongExtra("totalTime", 0L) : 0L;
+            int intExtra13 = intent != null ? intent.getIntExtra("err_type", 6) : 6;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "errCode：%s , scene：%s , countFace：%s ,totalTime：%s ,errorType：%s  otherVerifyTitle：%s otherVerifyTitleFront:%s", java.lang.Integer.valueOf(i28), java.lang.Integer.valueOf(intExtra11), java.lang.Integer.valueOf(intExtra12), java.lang.Long.valueOf(longExtra2), java.lang.Integer.valueOf(intExtra13), intent != null ? intent.getStringExtra("click_other_verify_btn") : "", intent != null ? intent.getStringExtra("click_other_verify_btn_front") : "");
+            if (i18 == -1) {
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(15711, java.lang.Integer.valueOf(intExtra11), 0, java.lang.Integer.valueOf(intExtra12), java.lang.Long.valueOf(longExtra2), 2, 0, java.lang.Integer.valueOf(i28));
+                i5(this.f184976e, "faceVerifyForPay:ok", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else if (i18 == 1) {
+                com.tencent.mm.plugin.report.service.g0.INSTANCE.d(15711, java.lang.Integer.valueOf(intExtra11), 3, java.lang.Integer.valueOf(intExtra12), java.lang.Long.valueOf(longExtra2), 2, java.lang.Integer.valueOf(intExtra13), java.lang.Integer.valueOf(i28));
+                i5(this.f184976e, "faceVerifyForPay:fail", nw4.a.a(intent != null ? intent.getExtras() : null));
+                return;
+            } else {
+                if (i18 == 0) {
+                    com.tencent.mm.plugin.report.service.g0.INSTANCE.d(15711, java.lang.Integer.valueOf(intExtra11), 2, java.lang.Integer.valueOf(intExtra12), java.lang.Long.valueOf(longExtra2), 2, 1, java.lang.Integer.valueOf(i28));
+                    i5(this.f184976e, "faceVerifyForPay:cancel", nw4.a.a(intent != null ? intent.getExtras() : null));
+                    return;
+                }
+                return;
+            }
+        }
+        if (i17 == 64) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "REQUEST_FACE_VERIFY resultCode: %d", java.lang.Integer.valueOf(i18));
+            android.os.Bundle bundle6 = new android.os.Bundle();
+            if (intent != null) {
+                java.lang.String stringExtra27 = intent.getStringExtra("err_msg");
+                java.lang.String stringExtra28 = intent.getStringExtra("k_bio_id");
+                java.lang.String stringExtra29 = intent.getStringExtra("key_pic_cdn_id");
+                java.lang.String stringExtra30 = intent.getStringExtra("key_cdn_aes_key");
+                int intExtra14 = intent.getIntExtra("check_alive_type", 0);
+                bundle6.putString("err_msg", stringExtra27);
+                bundle6.putInt("check_alive_type", intExtra14);
+                bundle6.putString("bioid", stringExtra28);
+                bundle6.putString("fileid", stringExtra29);
+                bundle6.putString("aeskey", stringExtra30);
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "errMsg： %s ,bioID：%s ,fileID： %s ,aesKey： %s ,check_alive_type： %d", stringExtra27, stringExtra28, stringExtra29, stringExtra30, java.lang.Integer.valueOf(intExtra14));
+            }
+            if (i18 == -1) {
+                i5(this.f184976e, "internelWxFaceVerify:ok", nw4.a.a(bundle6));
+                return;
+            } else if (i18 == 1) {
+                i5(this.f184976e, "internelWxFaceVerify:fail", nw4.a.a(bundle6));
+                return;
+            } else {
+                if (i18 == 0) {
+                    i5(this.f184976e, "internelWxFaceVerify:cancel", nw4.a.a(bundle6));
+                    return;
+                }
+                return;
+            }
+        }
+        if (i17 == 66) {
+            if (i18 != -1) {
+                i5(this.f184976e, "chooseHaowanMedia:cancel", null);
+                lj0.a.b(com.tencent.mm.sdk.platformtools.x2.b(), 87, 8761, 1, 2, 0, lj0.a.a(4, null));
+                return;
+            }
+            java.util.HashMap hashMap32 = new java.util.HashMap();
+            java.lang.String stringExtra31 = intent.getStringExtra("key_video_info");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(stringExtra31)) {
+                java.util.ArrayList stringArrayListExtra = intent.getStringArrayListExtra("CropImage_OutputPath_List");
+                if (!com.tencent.mm.sdk.platformtools.t8.L0(stringArrayListExtra)) {
+                    p5(this.f184975d, stringArrayListExtra, intent);
+                    return;
+                }
+                if (!intent.getBooleanExtra("key_game_haowan_text", false)) {
+                    i5(this.f184976e, "chooseHaowanMedia:cancel", null);
+                    return;
+                }
+                hashMap32.put("type", 3);
+                hashMap32.put("appId", intent.getStringExtra("key_game_video_appid"));
+                hashMap32.put("appName", intent.getStringExtra("key_game_video_appname"));
+                i5(this.f184976e, "chooseHaowanMedia:ok", hashMap32);
+                return;
+            }
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "video, result: %s", stringExtra31);
+            hashMap32.put("type", 2);
+            if (intent.getBooleanExtra("key_game_video_encode_json_array", false)) {
+                try {
+                    jSONArray = new org.json.JSONArray(stringExtra31);
+                } catch (org.json.JSONException e59) {
+                    com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e59, "CHOOSE_HAOWAN_MEDIA:JSONException", new java.lang.Object[0]);
+                    jSONArray = null;
+                }
+                hashMap32.put("localIds", jSONArray);
+            } else {
+                hashMap32.put("localIds", stringExtra31);
+            }
+            hashMap32.put("localIds", stringExtra31);
+            hashMap32.put("appId", intent.getStringExtra("key_game_video_appid"));
+            hashMap32.put("appName", intent.getStringExtra("key_game_video_appname"));
+            hashMap32.put("transInfo", intent.getStringExtra("key_game_trans_info"));
+            hashMap32.put("pageType", java.lang.Integer.valueOf(intent.getIntExtra("key_game_video_page_type", 0)));
+            i5(this.f184976e, "chooseHaowanMedia:ok", hashMap32);
+            return;
+        }
+        if (i17 == 67) {
+            if (i18 != -1) {
+                i5(this.f184976e, "launchGameVideoEditor:cancel", null);
+                return;
+            }
+            int intExtra15 = intent.getIntExtra("webview_callback_err", 0);
+            if (intExtra15 == 0) {
+                java.util.HashMap hashMap33 = new java.util.HashMap();
+                try {
+                    hashMap33.put("videoInfo", new org.json.JSONArray(intent.getStringExtra("key_video_info")).getJSONObject(0));
+                } catch (org.json.JSONException e66) {
+                    com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "json_err:%s", e66.getMessage());
+                }
+                i5(this.f184976e, "launchGameVideoEditor:ok", hashMap33);
+                return;
+            }
+            if (intExtra15 == 1) {
+                i5(this.f184976e, "launchGameVideoEditor:cancel", null);
+                return;
+            } else {
+                if (intExtra15 != 2) {
+                    return;
+                }
+                i5(this.f184976e, "launchGameVideoEditor:fail_download_err", null);
+                return;
+            }
+        }
+        if (i17 == 70) {
+            if (i18 != -1) {
+                i5(this.f184976e, "openCamera:cancel", null);
+                return;
+            }
+            if (((h62.d) ((e42.e0) i95.n0.c(e42.e0.class))).fj(e42.d0.clicfg_jump_to_record_media, true)) {
+                i5(this.f184976e, "openCamera:cancel", null);
+                return;
+            }
+            com.tencent.mm.plugin.mmsight.SightCaptureResult sightCaptureResult = (com.tencent.mm.plugin.mmsight.SightCaptureResult) intent.getParcelableExtra("key_req_result");
+            if (sightCaptureResult == null) {
+                i5(this.f184976e, "openCamera:fail", null);
+                return;
+            }
+            java.lang.String str17 = sightCaptureResult.f148815p;
+            try {
+                su4.i1 i1Var = new su4.i1();
+                i1Var.f412923b = this.f184975d;
+                i1Var.f412928g = str17;
+                i1Var.f412930i = 83;
+                i1Var.f412925d = 11;
+                ((com.tencent.mm.plugin.websearch.w1) ((su4.x0) i95.n0.c(su4.x0.class))).fj(i1Var);
+                i5(this.f184976e, "doOpenCamera:success", null);
+            } catch (java.lang.Exception e67) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doOpenCamera fail, ex = ", e67);
+                i5(this.f184976e, "doOpenCamera:fail", null);
+            }
+        }
+    }
+
+    public final void n5(nw4.y2 y2Var) {
+        android.os.Bundle b17 = nw4.y2.b(y2Var.f340790a);
+        try {
+            this.f184998y.ec();
+            this.f184998y.b(b17);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "SendServiceAppMsg doCloseWindow, ex = " + e17.getMessage());
+        }
+    }
+
+    public java.lang.String n6() {
+        com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+        if (z0Var == null) {
+            z0Var = this.f185001z;
+        }
+        if (z0Var == null) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getCurrentUrl, callbacker is null");
+            return null;
+        }
+        try {
+            return z0Var.getCurrentUrl();
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getCurrentUrl, exception = %s", e17);
+            return null;
+        }
+    }
+
+    public final com.tencent.mm.opensdk.modelmsg.WXMediaMessage o5(nw4.y2 y2Var, boolean z17) {
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("link");
+        if (str == null || str.length() == 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "convert fail, link is null");
+            return null;
+        }
+        if (!com.tencent.mm.sdk.platformtools.t8.K0((java.lang.String) y2Var.f340790a.get("appid"))) {
+            try {
+                android.os.Bundle i17 = this.f184998y.i(207, null);
+                if (i17 != null && !i17.getBoolean("webview_allow_msg_tail", false)) {
+                    y2Var.f340790a.put("appid", "");
+                }
+            } catch (java.lang.Exception e17) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult ex %s", e17.getMessage());
+            }
+        }
+        java.lang.String x66 = x6(str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "rawurl:[%s], shareurl:[%s]", str, x66);
+        com.tencent.mm.opensdk.modelmsg.WXMediaMessage wXMediaMessage = new com.tencent.mm.opensdk.modelmsg.WXMediaMessage();
+        if (z17) {
+            com.tencent.mm.opensdk.modelmsg.WXTextObject wXTextObject = new com.tencent.mm.opensdk.modelmsg.WXTextObject();
+            wXTextObject.text = x66;
+            wXMediaMessage.mediaObject = wXTextObject;
+        } else {
+            com.tencent.mm.opensdk.modelmsg.WXWebpageObject wXWebpageObject = new com.tencent.mm.opensdk.modelmsg.WXWebpageObject();
+            wXWebpageObject.webpageUrl = x66;
+            wXWebpageObject.extInfo = (java.lang.String) y2Var.f340790a.get("review_data");
+            wXMediaMessage.mediaObject = wXWebpageObject;
+        }
+        wXMediaMessage.title = (java.lang.String) y2Var.f340790a.get(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE);
+        wXMediaMessage.description = (java.lang.String) y2Var.f340790a.get("desc");
+        return wXMediaMessage;
+    }
+
+    public final java.lang.String o6() {
+        java.lang.String string = r6().getString("connector_local_report");
+        r6().remove("connector_local_report");
+        return string;
+    }
+
+    public final void p5(android.content.Context context, java.util.ArrayList arrayList, android.content.Intent intent) {
+        java.lang.String str = com.tencent.mm.plugin.game.commlib.util.m.b(com.tencent.mm.plugin.game.commlib.util.l.ONE_MONTH) + "haowan/";
+        java.util.ArrayList arrayList2 = new java.util.ArrayList();
+        this.f184979h = db5.e1.Q(context, j65.q.a(context).getString(com.tencent.mm.R.string.f490573yv), j65.q.a(context).getString(com.tencent.mm.R.string.g6v), true, false, new com.tencent.mm.plugin.webview.ui.tools.jsapi.r3(this));
+        ((ku5.t0) ku5.t0.f312615d).g(new com.tencent.mm.plugin.webview.ui.tools.jsapi.q3(this, arrayList, str, arrayList2, intent));
+    }
+
+    public boolean p6(java.lang.String str) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getFromMenu, functionName = " + str);
+        java.util.HashSet hashSet = this.f184982m;
+        if (!hashSet.contains(str)) {
+            return false;
+        }
+        hashSet.remove(str);
+        return true;
+    }
+
+    public final boolean q5(com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper, nw4.y2 y2Var, boolean z17) {
+        java.lang.Object obj = y2Var.f340790a.get("__jsapi_fw_ext_info");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("link");
+        java.lang.String string = obj instanceof android.os.Bundle ? ((android.os.Bundle) obj).getString("__jsapi_fw_ext_info_key_current_url") : null;
+        if (!Z6(str, string) && z17) {
+            return false;
+        }
+        try {
+            android.os.Bundle i17 = this.f184998y.i(84, null);
+            if (i17 == null) {
+                return false;
+            }
+            if (android.text.TextUtils.isEmpty(string)) {
+                string = x6(i17.getString("webview_current_url"));
+            }
+            y2Var.f340790a.put("link", string);
+            y2Var.f340790a.put(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_TITLE, i17.getString("webview_current_title"));
+            if (e6()) {
+                return true;
+            }
+            y2Var.f340790a.put("img_url", "");
+            y2Var.f340790a.put("desc", i17.getString("webview_current_desc"));
+            return true;
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult error : %s", e17);
+            return false;
+        }
+    }
+
+    public final java.util.Map q6(nw4.y2 y2Var) {
+        if (this.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            java.lang.String str = (java.lang.String) y2Var.f340790a.get("appId");
+            java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("sessionid");
+            java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("url");
+            if (str2 != null && str != null && !str2.isEmpty() && !str.isEmpty()) {
+                java.util.HashMap hashMap = new java.util.HashMap();
+                hashMap.put("appId", str);
+                hashMap.put(com.tencent.liteapp.storage.WxaLiteAppInfo.KEY_SESSION_ID, str2);
+                hashMap.put("JSAPIFunc", y2Var.f341019i);
+                if (str3 != null) {
+                    hashMap.put("webViewUrl", str3);
+                }
+                return hashMap;
+            }
+            i5(y2Var, y2Var.f341019i + ":fail", new com.tencent.mm.plugin.webview.ui.tools.jsapi.e4(this));
+        }
+        return null;
+    }
+
+    public final boolean r5(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("webtype");
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get(dm.i4.COL_USERNAME);
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE);
+        java.lang.String str4 = (java.lang.String) y2Var.f340790a.get("scenenote");
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("profileReportInfo");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddContact scene = %s, sceneNote = %s", str3, str4);
+        if (str == null || str.length() == 0 || str2 == null || str2.length() == 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddContact fail, invalid arguments, webType = " + str + ", username = " + str2);
+            i5(y2Var, "add_contact:fail", null);
+            return true;
+        }
+        d7(str3);
+        int P = com.tencent.mm.sdk.platformtools.t8.P(str, -1);
+        if (P == -1) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddContact fail, parseInt fail, str = ".concat(str));
+            i5(y2Var, "add_contact:fail", null);
+            return true;
+        }
+        if (!(this.f184975d instanceof android.app.Activity)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddContact invalid context");
+            i5(y2Var, "add_contact:fail", null);
+            return false;
+        }
+        nw4.e3.a(y2Var.f341018h, false, str2, null);
+        if (P != 1) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "unknown addScene = " + P);
+            i5(y2Var, "add_contact:fail", null);
+            return true;
+        }
+        android.os.Bundle bundle = this.f184984o;
+        int i17 = bundle == null ? 33 : bundle.getInt("Contact_Scene", 33);
+        o25.a aVar = new o25.a();
+        aVar.f342463a = str5;
+        aVar.f342464b = 4;
+        aVar.f342465c = str4;
+        aVar.f342466d = (java.lang.String) y2Var.f340790a.get("finderBuffer");
+        ((r35.o) ((r35.p) ((o25.o1) i95.n0.c(o25.o1.class))).wi(this.f184975d, str2, i17, new com.tencent.mm.plugin.webview.ui.tools.jsapi.y3(this, y2Var), aVar)).f();
+        return true;
+    }
+
+    public android.os.Bundle r6() {
+        if (this.f184984o == null) {
+            this.f184984o = new android.os.Bundle();
+        }
+        return this.f184984o;
+    }
+
+    public final boolean s5(nw4.y2 y2Var, com.tencent.mm.protocal.JsapiPermissionWrapper jsapiPermissionWrapper) {
+        java.lang.String str;
+        long j17;
+        java.lang.String str2;
+        java.util.Map map;
+        boolean z17;
+        long b17;
+        com.tencent.mm.plugin.downloader.model.r0 i17;
+        com.tencent.mm.plugin.report.service.g0 g0Var = com.tencent.mm.plugin.report.service.g0.INSTANCE;
+        g0Var.idkeyStat(157L, 27L, 1L, false);
+        java.lang.String str3 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_name");
+        java.lang.String str4 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_url");
+        java.lang.String str5 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("alternative_url");
+        long V = com.tencent.mm.sdk.platformtools.t8.V((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("task_size"), 0L);
+        java.lang.String str6 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("file_md5");
+        java.lang.String str7 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("extInfo");
+        java.lang.String str8 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("fileType");
+        java.lang.String str9 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("appid");
+        java.lang.String str10 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("package_name");
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE), 1000);
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("download_type"), 1);
+        int P3 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get(com.tencent.thumbplayer.core.downloadproxy.api.TPDownloadProxyEnum.USER_SSID), 0);
+        int P4 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("uiarea"), 0);
+        int P5 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("notice_id"), 0);
+        java.lang.String str11 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("sourceInfo");
+        java.lang.String str12 = (java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("bizInfo");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTaskStraight, md5 = " + str6 + ", url = " + str4 + ", extinfo = " + str7 + ", fileType = " + str8 + ", reportScene = " + P);
+        android.os.Bundle bundle = this.f184984o;
+        if (bundle != null) {
+            str = str3;
+            j17 = V;
+            int i18 = bundle.getInt("key_download_restrict", 0);
+            java.lang.String string = this.f184984o.getString("key_function_id", "");
+            if (com.tencent.mm.sdk.platformtools.t8.K0(string)) {
+                str2 = "";
+            } else {
+                str2 = "";
+                g0Var.d(14596, string, java.lang.Integer.valueOf(i18), 0);
+            }
+            z17 = true;
+            if (i18 == 1) {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "not allow to download file");
+                i5(y2Var, "add_download_task_straight:fail", null);
+                return true;
+            }
+            map = null;
+        } else {
+            str = str3;
+            j17 = V;
+            str2 = "";
+            map = null;
+            z17 = true;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str4)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddDownloadTaskStraight fail, url is null");
+            i5(y2Var, "add_download_task_straight:fail_invalid_url", map);
+            S6(str9, 700, str7);
+            return z17;
+        }
+        int P6 = (str9 == null ? str2 : str9).startsWith("wx") ? com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("downloader_type"), 1) : com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) ((java.util.HashMap) y2Var.f340790a).get("downloader_type"), 0);
+        com.tencent.mm.autogen.events.GameDownloadReport4WebViewEvent gameDownloadReport4WebViewEvent = new com.tencent.mm.autogen.events.GameDownloadReport4WebViewEvent();
+        am.oe oeVar = gameDownloadReport4WebViewEvent.f54361g;
+        oeVar.f7526a = str4;
+        oeVar.f7527b = str6;
+        oeVar.f7529d = str7;
+        oeVar.f7528c = str9;
+        oeVar.f7530e = P;
+        gameDownloadReport4WebViewEvent.e();
+        com.tencent.mm.plugin.downloader.model.t0 t0Var = new com.tencent.mm.plugin.downloader.model.t0(null);
+        t0Var.f97150a = str4;
+        t0Var.f97151b = str5;
+        t0Var.f97152c = j17;
+        t0Var.f97153d = str;
+        t0Var.f97154e = str6;
+        t0Var.f97156g = str9;
+        t0Var.f97157h = str10;
+        t0Var.f97158i = true;
+        t0Var.f97155f = com.tencent.mm.sdk.platformtools.t8.P(str8, 1);
+        t0Var.f97161l = P;
+        t0Var.f97166q = str7;
+        t0Var.f97171v = P2;
+        t0Var.f97168s = P3;
+        t0Var.f97170u = P4;
+        t0Var.f97169t = P5;
+        yb0.a.f460612a.b(str4, str12);
+        if (P6 == 1) {
+            ((uz.v1) ((vz.v1) i95.n0.c(vz.v1.class))).getClass();
+            b17 = com.tencent.mm.plugin.downloader.model.r0.i().c(t0Var);
+        } else {
+            ((uz.v1) ((vz.v1) i95.n0.c(vz.v1.class))).getClass();
+            b17 = com.tencent.mm.plugin.downloader.model.r0.i().b(t0Var);
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAddDownloadTaskStraight, downloadId = " + b17);
+        if (b17 <= 0) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doAddDownloadTaskStraight fail, downloadId = " + b17);
+            i5(y2Var, "add_download_task_straight:fail", null);
+            return true;
+        }
+        com.tencent.mm.plugin.webview.model.s3 s3Var = com.tencent.mm.plugin.webview.model.s3.f183104a;
+        java.lang.String b18 = s3Var.b(str12, str11);
+        if (b18 != null) {
+            ((com.tencent.mm.sdk.platformtools.r2) com.tencent.mm.plugin.webview.model.s3.f183105b).put(java.lang.Long.valueOf(b17), new com.tencent.mm.plugin.webview.model.t3(str12, str11));
+            com.tencent.mm.plugin.downloader.model.FileDownloadTaskInfo p17 = (((vz.v1) i95.n0.c(vz.v1.class)) == null || (i17 = com.tencent.mm.plugin.downloader.model.r0.i()) == null) ? null : i17.p(b17);
+            if (p17 == null) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.WebViewAdReportHelper", "reportAddDownloadTaskStraightStart, downloadTaskInfo is null");
+                ((ee0.c) ((fe0.k3) i95.n0.c(fe0.k3.class))).getClass();
+                com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("reportAddDownloadTaskStraightStart", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+                l44.z.b(4001001, b18);
+                com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("reportAddDownloadTaskStraightStart", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+            } else if (p17.f96963f == 3 && com.tencent.mm.vfs.w6.j(p17.f96964g)) {
+                com.tencent.mars.xlog.Log.i("MicroMsg.WebViewAdReportHelper", "not reportAddDownloadTaskStraightStart, because download finished and do install report");
+                java.lang.String b19 = s3Var.b(str12, str11);
+                if (b19 != null) {
+                    ((ee0.c) ((fe0.k3) i95.n0.c(fe0.k3.class))).getClass();
+                    com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("reportAddDownloadTaskStraightInstallStart", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+                    l44.z.b(4001010, b19);
+                    com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("reportAddDownloadTaskStraightInstallStart", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+                }
+            } else {
+                com.tencent.mars.xlog.Log.i("MicroMsg.WebViewAdReportHelper", "reportAddDownloadTaskStraightStart, downloadTaskInfo status is " + p17.f96963f + ", path is " + p17.f96964g);
+                ((ee0.c) ((fe0.k3) i95.n0.c(fe0.k3.class))).getClass();
+                com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("reportAddDownloadTaskStraightStart", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+                l44.z.b(4001001, b18);
+                com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("reportAddDownloadTaskStraightStart", "com.tencent.mm.feature.sns.AdConversionOnlineReportService");
+            }
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("download_id", java.lang.Long.valueOf(b17));
+        i5(y2Var, "add_download_task_straight:ok", hashMap);
+        return true;
+    }
+
+    public com.tencent.mm.plugin.webview.modeltools.h1 s6(java.lang.String str) {
+        java.lang.String a17 = com.tencent.mm.pluginsdk.ui.tools.h9.a(str);
+        com.tencent.mm.plugin.webview.modeltools.i1 i1Var = this.F;
+        java.util.HashMap hashMap = i1Var.f183291d;
+        if (hashMap.containsKey(a17) && hashMap.get(a17) != null) {
+            return (com.tencent.mm.plugin.webview.modeltools.h1) i1Var.f183291d.get(a17);
+        }
+        return null;
+    }
+
+    public final boolean t5(java.lang.String str, int i17, java.lang.String str2) {
+        java.lang.String c17;
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str) && i17 == 0) {
+            return false;
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                synchronized (com.tencent.mm.plugin.webview.ui.tools.media.e1.class) {
+                    if (com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k == null) {
+                        android.content.Context context = com.tencent.mm.sdk.platformtools.x2.f193071a;
+                        kotlin.jvm.internal.o.f(context, "getContext(...)");
+                        com.tencent.mm.plugin.webview.ui.tools.media.e1 e1Var = new com.tencent.mm.plugin.webview.ui.tools.media.e1(context, null);
+                        com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k = e1Var;
+                        com.tencent.mm.sdk.event.IListener iListener = e1Var.f185765e;
+                        if (iListener != null) {
+                            iListener.alive();
+                        }
+                    }
+                }
+            }
+            com.tencent.mm.plugin.webview.ui.tools.media.e1 e1Var2 = com.tencent.mm.plugin.webview.ui.tools.media.e1.f185760k;
+            synchronized (e1Var2) {
+                c17 = e1Var2.c(com.tencent.mm.sdk.platformtools.v3.t(e1Var2.f185764d, "currentAlbumIdKey_" + str2 + '}', null, 2, null), str2);
+            }
+            if (c17 == null) {
+                return false;
+            }
+            str = c17;
+        }
+        java.util.HashMap hashMap = new java.util.HashMap();
+        hashMap.put("audioListState", str);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doAudioListStateCallback ok");
+        i5(this.f184976e, "getBackgroundAudioState:ok", hashMap);
+        return true;
+    }
+
+    /* JADX WARN: Type inference failed for: r1v1 */
+    /* JADX WARN: Type inference failed for: r1v12 */
+    /* JADX WARN: Type inference failed for: r1v13 */
+    /* JADX WARN: Type inference failed for: r1v2, types: [int, boolean] */
+    /* JADX WARN: Type inference failed for: r1v6 */
+    public final boolean t6(nw4.y2 y2Var) {
+        ?? r17;
+        b21.r b17 = b21.m.b();
+        java.lang.String i66 = i6();
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("url");
+        java.lang.String c17 = !com.tencent.mm.sdk.platformtools.t8.K0(str) ? xw4.b.c(str) : null;
+        if (b17 != null) {
+            java.lang.String str2 = b17.f17358t;
+            java.lang.String c18 = xw4.b.c(b17.f17354p);
+            java.lang.String str3 = b17.C;
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "app_id:%s, musicAppId:%s", i66, str2);
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "domain: %s, songWebDomain: %s, jsWebDomain: %s， with no port", c17, c18, str3);
+            boolean z17 = !android.text.TextUtils.isEmpty(i66) && i66.equalsIgnoreCase(str2);
+            boolean z18 = z17;
+            if (!android.text.TextUtils.isEmpty(c17)) {
+                z18 = z17;
+                if (c17.equalsIgnoreCase(c18)) {
+                    z18 = true;
+                }
+            }
+            r17 = z18;
+            if (!android.text.TextUtils.isEmpty(c17)) {
+                r17 = z18;
+                if (c17.equalsIgnoreCase(str3)) {
+                    r17 = 1;
+                }
+            }
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "currentWrapper is null");
+            r17 = 0;
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getMusicPermission hasPermmision:%d", java.lang.Integer.valueOf((int) r17));
+        return r17;
+    }
+
+    public boolean u5(nw4.y2 y2Var) {
+        k5(I1, 0);
+        new com.tencent.mm.ui.tools.s6(this.f184975d).a(null, new com.tencent.mm.plugin.webview.ui.tools.jsapi.r1(this), new com.tencent.mm.plugin.webview.ui.tools.jsapi.s1(this, y2Var), new com.tencent.mm.plugin.webview.ui.tools.jsapi.t1(this, y2Var));
+        return true;
+    }
+
+    public final int u6() {
+        android.os.Bundle i17;
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var == null || (i17 = z0Var.i(22, null)) == null) {
+                return -1;
+            }
+            return i17.getInt("pay_channel");
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult error.%s", e17);
+            return -1;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:13:0x00ef  */
+    /* JADX WARN: Removed duplicated region for block: B:16:0x00fb  */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x0105  */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x0153  */
+    /* JADX WARN: Removed duplicated region for block: B:27:0x0182 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x01b3  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x01bc  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x01f2  */
+    /* JADX WARN: Removed duplicated region for block: B:47:0x0210  */
+    /* JADX WARN: Removed duplicated region for block: B:57:0x0155  */
+    /* JADX WARN: Removed duplicated region for block: B:5:0x0059  */
+    /* JADX WARN: Removed duplicated region for block: B:60:0x0114  */
+    /* JADX WARN: Removed duplicated region for block: B:64:0x00b2 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final boolean v5(nw4.y2 r26) {
+        /*
+            Method dump skipped, instructions count: 573
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.mm.plugin.webview.ui.tools.jsapi.c1.v5(nw4.y2):boolean");
+    }
+
+    public final int v6() {
+        android.os.Bundle i17;
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var == null || (i17 = z0Var.i(25, null)) == null) {
+                return 0;
+            }
+            return i17.getInt(com.tencent.thumbplayer.tplayer.plugins.report.TPReportKeys.PlayerStep.PLAYER_BUFFERING_SCENE);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "invokeAsResult error.%s", e17);
+            return 0;
+        }
+    }
+
+    public final void w5(nw4.y2 y2Var) {
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "real scene = %d", 1);
+        tb0.j jVar = (tb0.j) i95.n0.c(tb0.j.class);
+        android.app.Activity activity = (android.app.Activity) this.f184975d;
+        ((sb0.f) jVar).getClass();
+        boolean a17 = j35.u.a(activity, "android.permission.READ_EXTERNAL_STORAGE", 151, "", "");
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "checkPermission checkStorage[%b]", java.lang.Boolean.valueOf(a17));
+        if (!a17) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseImageIdCard storage permission denied, go to settings");
+            android.content.Intent intent = new android.content.Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
+            if (android.os.Build.VERSION.SDK_INT >= 33) {
+                intent.setAction("android.provider.action.PICK_IMAGES_SETTINGS");
+            }
+            intent.setData(android.net.Uri.fromParts("package", this.f184975d.getPackageName(), null));
+            ((sb0.f) ((tb0.j) i95.n0.c(tb0.j.class))).aj(intent, new com.tencent.mm.plugin.webview.ui.tools.jsapi.v1(this, y2Var));
+            return;
+        }
+        android.content.Intent intent2 = new android.content.Intent();
+        intent2.putExtra("key_pick_local_pic_capture", 1);
+        intent2.putExtra("key_pick_local_pic_query_source_type", 8);
+        intent2.putExtra("query_media_type", 1);
+        intent2.putExtra("key_pick_local_pic_count", 1);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseImageIdCard: realScene: %d, querySourceType: %d", 1, 8);
+        android.content.Context context = this.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(this);
+            j45.l.o(this.f184975d, "webview", ".ui.tools.OpenFileChooserUI", intent2, 43, false);
+        }
+    }
+
+    public void w6(java.lang.String str, boolean z17, java.lang.String str2, long j17) {
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("emoji_store_json_data", str);
+        bundle.putBoolean("emoji_store_new_query", z17);
+        bundle.putString("emoji_store_page_buf", str2);
+        bundle.putLong("emoji_store_search_id", j17);
+        try {
+            com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+            if (z0Var != null) {
+                z0Var.callback(com.tencent.thumbplayer.tmediacodec.codec.CodecError.RESET_CODECEXCEPTION, bundle);
+            }
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "getSearchEmotionDataCallBack exception" + e17.getMessage());
+        }
+    }
+
+    public final boolean x5(nw4.y2 y2Var) {
+        int i17;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseMedia()");
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("sourceType");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        java.lang.String str2 = "";
+        if (str == null) {
+            str = "";
+        }
+        java.lang.String str3 = (java.lang.String) y2Var.f340790a.get("mediaType");
+        java.lang.String str4 = str3 == null ? "" : str3;
+        int min = java.lang.Math.min(com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("maxDuration"), 10), 10);
+        java.lang.String str5 = (java.lang.String) y2Var.f340790a.get("camera");
+        java.lang.String str6 = str5 == null ? "" : str5;
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("count"), 1);
+        java.lang.String str7 = (java.lang.String) y2Var.f340790a.get("sizeType");
+        java.lang.String str8 = str7 == null ? "" : str7;
+        java.lang.String[] split = str4.length() == 0 ? new java.lang.String[0] : str4.split("\\|");
+        int length = split.length;
+        int i18 = 0;
+        boolean z18 = false;
+        boolean z19 = false;
+        while (i18 < length) {
+            java.lang.String str9 = split[i18];
+            java.lang.String str10 = str2;
+            if ("image".equals(str9)) {
+                z19 = true;
+            } else if (!"video".equals(str9) && "livePhoto".equals(str9)) {
+                z18 = true;
+            }
+            i18++;
+            str2 = str10;
+        }
+        java.lang.String str11 = str2;
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("livePhotoMaxDuration"), 0);
+        java.lang.String str12 = (java.lang.String) y2Var.f340790a.get("livePhoto");
+        boolean z27 = z18 || (!com.tencent.mm.sdk.platformtools.t8.K0(str12) && str12.equals("true"));
+        boolean z28 = z18 && !z19;
+        java.lang.String str13 = str8;
+        java.lang.String str14 = str;
+        java.lang.String str15 = str6;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseMedia sourceType:%s, mediaType:%s, maxDuration:%d, camera:%s, count:%d, sizeType:%s livePhoto:%b livePhotoOnly:%b", str, str4, java.lang.Integer.valueOf(min), str6, java.lang.Integer.valueOf(P), str13, java.lang.Boolean.valueOf(z27), java.lang.Boolean.valueOf(z28));
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_pick_local_pic_count", P);
+        intent.putExtra("key_pick_local_media_duration", min <= 0 ? 10 : min);
+        intent.putExtra("key_live_photo_max_duration", P2);
+        intent.putExtra("query_media_type", 3);
+        int i19 = 2;
+        intent.putExtra("key_pick_local_media_video_type", 2);
+        intent.putExtra("key_pick_local_media_sight_type", str4);
+        ((hs.v) ((qk.r7) i95.n0.c(qk.r7.class))).getClass();
+        if (qp.b.f365678e && z27) {
+            intent.putExtra("key_pick_local_media_localphoto", true);
+            if (z28) {
+                intent.putExtra("key_pick_local_media_livephoto_only", true);
+            }
+        }
+        intent.putExtra("key_force_hide_edit_image_button", true);
+        java.lang.Boolean valueOf = java.lang.Boolean.valueOf(!str13.contains("compressed"));
+        if (!str13.contains("original") && !str13.contains("compressed")) {
+            valueOf = java.lang.Boolean.FALSE;
+        }
+        this.K = str13.equals("original");
+        intent.putExtra("key_pick_local_pic_send_raw", valueOf);
+        java.lang.String str16 = com.tencent.mm.sdk.platformtools.t8.K0(str14) ? "album|camera" : str14;
+        if (!str16.contains("timeline")) {
+            intent.putExtra("key_pick_local_pic_query_source_type", str13.contains("original") ^ str13.contains("compressed") ? 7 : 8);
+            if (str16.contains(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_ALBUM) && str16.contains("camera")) {
+                new com.tencent.mm.ui.tools.s6(this.f184975d).a(null, new com.tencent.mm.plugin.webview.ui.tools.jsapi.x5(this), new com.tencent.mm.plugin.webview.ui.tools.jsapi.y5(this, str15, intent, str4, y2Var), new com.tencent.mm.plugin.webview.ui.tools.jsapi.z5(this, y2Var));
+                return true;
+            }
+            if (str16.contains(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_ALBUM)) {
+                java.lang.String str17 = (java.lang.String) y2Var.f340790a.get("liteAppUuid");
+                intent.putExtra("liteAppUuid", str17 == null ? str11 : str17);
+                l5(intent, 47);
+                return true;
+            }
+            if (str16.contains("camera")) {
+                m5(str15, intent, 47, str4);
+                return true;
+            }
+            i5(y2Var, "chooseMedia:fail_sourceType_error", null);
+            return true;
+        }
+        intent.putExtra("key_pick_local_pic_query_source_type", 43);
+        java.lang.String str18 = (java.lang.String) y2Var.f340790a.get("liteAppUuid");
+        if (str18 == null) {
+            str18 = str11;
+        }
+        intent.putExtra("liteAppUuid", str18);
+        try {
+            java.lang.String str19 = (java.lang.String) y2Var.f340790a.get("liteAppNavigationBarHeight");
+            i17 = java.lang.Integer.parseInt(str19 == null ? str11 : str19);
+        } catch (java.lang.NumberFormatException e17) {
+            com.tencent.mars.xlog.Log.w("MicroMsg.MsgHandler", "navigationBarHeight invalid, e: " + e17.toString());
+            i17 = -1;
+        }
+        intent.putExtra("intent_bottom_navigationbar_height", i17);
+        intent.putExtra("KEY_PARAMS_EXIT_ANIM", 0);
+        if (this.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+            if (str16.contains(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_ALBUM)) {
+                i19 = 0;
+            } else if (!str16.contains("camera")) {
+                i19 = 1;
+            }
+            if (this.L) {
+                intent.putExtra("key_from_liteapp", true);
+            }
+            intent.putExtra("key_pick_local_media_init_select_tab_index", i19);
+            intent.putExtra("key_pick_local_pic_capture", 4);
+            if (this.f184975d instanceof com.tencent.mm.ui.MMActivity) {
+                android.os.Bundle z66 = z6();
+                if (z66 != null) {
+                    intent.putExtra("key_select_pic_from_mm_gallery_without_clear_top", z66.getBoolean("key_select_pic_from_mm_gallery_without_clear_top", false));
+                }
+                ((com.tencent.mm.ui.MMActivity) this.f184975d).mmSetOnActivityResultCallback(this);
+                j45.l.o(this.f184975d, "webview", ".ui.tools.OpenFileChooserUI", intent, 47, false);
+            } else {
+                com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "chooseMediaFromCamera context invalid");
+            }
+        } else {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "chooseMediaFromTimeLine context invalid");
+        }
+        return true;
+    }
+
+    public java.lang.String x6(java.lang.String str) {
+        hy4.d dVar = hy4.d.f286095a;
+        try {
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "getShareUrl error : %s", e17.getMessage());
+        }
+        if (com.tencent.mm.sdk.platformtools.t8.K0(str)) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "currentUrl is null");
+            return null;
+        }
+        android.os.Bundle bundle = new android.os.Bundle();
+        bundle.putString("webview_current_url", str);
+        com.tencent.mm.plugin.webview.stub.z0 z0Var = this.f184998y;
+        android.os.Bundle i17 = z0Var != null ? z0Var.i(258, bundle) : null;
+        if (i17 != null) {
+            java.lang.String string = i17.getString("k_share_url");
+            if (!com.tencent.mm.sdk.platformtools.t8.K0(string)) {
+                return dVar.a(string, n6());
+            }
+        }
+        return dVar.a(com.tencent.mm.plugin.webview.model.c6.b(str), n6());
+    }
+
+    public final boolean y5(nw4.y2 y2Var, int i17) {
+        java.lang.String str = (java.lang.String) y2Var.f340790a.get("sourceType");
+        boolean z17 = com.tencent.mm.sdk.platformtools.t8.f192989a;
+        if (str == null) {
+            str = "";
+        }
+        java.lang.String str2 = (java.lang.String) y2Var.f340790a.get("camera");
+        if (str2 == null) {
+            str2 = "";
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseVideo sourceType = %s, camera = %s, isVideoType:%d", str, str2, java.lang.Integer.valueOf(i17));
+        int P = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("maxDuration"), 60);
+        int i18 = str.contains(com.tencent.mm.plugin.mmsight.segment.FFmpegMetadataRetriever.METADATA_KEY_ALBUM) ? 4096 : 0;
+        if (str.contains("camera")) {
+            if (P <= 0) {
+                i5(y2Var, "chooseVideo:fail", null);
+                return true;
+            }
+            i18 = str2.equals("front") ? i18 | 16 : i18 | 256;
+        }
+        if (i18 == 0) {
+            i18 = 4352;
+        }
+        if (i18 == 16 || i18 == 256 || i18 == 4352) {
+            if (i17 == 1) {
+                tb0.j jVar = (tb0.j) i95.n0.c(tb0.j.class);
+                android.app.Activity activity = (android.app.Activity) this.f184975d;
+                ((sb0.f) jVar).getClass();
+                if (!j35.u.a(activity, "android.permission.CAMERA", 117, "", "")) {
+                    return true;
+                }
+                tb0.j jVar2 = (tb0.j) i95.n0.c(tb0.j.class);
+                android.app.Activity activity2 = (android.app.Activity) this.f184975d;
+                ((sb0.f) jVar2).getClass();
+                if (!j35.u.a(activity2, "android.permission.RECORD_AUDIO", 118, "", "")) {
+                    return true;
+                }
+            } else {
+                tb0.j jVar3 = (tb0.j) i95.n0.c(tb0.j.class);
+                android.app.Activity activity3 = (android.app.Activity) this.f184975d;
+                ((sb0.f) jVar3).getClass();
+                if (!j35.u.a(activity3, "android.permission.CAMERA", 115, "", "")) {
+                    return true;
+                }
+            }
+        }
+        int P2 = com.tencent.mm.sdk.platformtools.t8.P((java.lang.String) y2Var.f340790a.get("quality"), 1);
+        if (P2 != 0 && P2 != 1) {
+            P2 = 1;
+        }
+        int i19 = P <= 60 ? P : 60;
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseVideo real scene = %d, select count = %d, video quality = %d, duration = %d", java.lang.Integer.valueOf(i18), 1, java.lang.Integer.valueOf(P2), java.lang.Integer.valueOf(i19));
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("key_pick_local_pic_capture", i18);
+        intent.putExtra("key_pick_local_pic_count", 1);
+        intent.putExtra("key_pick_local_pic_query_source_type", 7);
+        intent.putExtra("key_pick_local_media_quality", P2);
+        intent.putExtra("key_pick_local_media_duration", i19);
+        intent.putExtra("query_media_type", 2);
+        intent.putExtra("key_pick_local_media_video_type", i17);
+        f5(y2Var, intent);
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "doChooseVideo: realScene: %d, count: %d, querySourceType: %d", java.lang.Integer.valueOf(i18), 1, 7);
+        android.os.Bundle z66 = z6();
+        if (z66 != null) {
+            intent.putExtra("key_select_pic_from_mm_gallery_without_clear_top", z66.getBoolean("key_select_pic_from_mm_gallery_without_clear_top", false));
+        }
+        android.content.Context context = this.f184975d;
+        if (context instanceof com.tencent.mm.ui.MMActivity) {
+            ((com.tencent.mm.ui.MMActivity) context).mmSetOnActivityResultCallback(this);
+            if (i17 == 1) {
+                j45.l.o(this.f184975d, "webview", ".ui.tools.OpenFileChooserUI", intent, 45, false);
+            } else {
+                j45.l.o(this.f184975d, "webview", ".ui.tools.OpenFileChooserUI", intent, 32, false);
+            }
+        }
+        return true;
+    }
+
+    public final java.lang.String y6(nw4.y2 y2Var) {
+        java.lang.String str;
+        qk.n D0;
+        java.lang.String l66 = l6();
+        if (v6() == 27) {
+            return this.f184988q;
+        }
+        if (u6() == 8 || u6() == -1) {
+            if (y2Var != null) {
+                str = (java.lang.String) y2Var.f340790a.get("src_username");
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "key_src_username(%s)", (java.lang.String) y2Var.f340790a.get("src_username"));
+                return str;
+            }
+            return null;
+        }
+        java.lang.String str2 = this.f184985p;
+        if (str2 != null) {
+            return str2;
+        }
+        if (!com.tencent.mm.sdk.platformtools.t8.K0(l66)) {
+            com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "BrandUsername in H5 is null, check if it is in hardBiz chat");
+            qk.o b17 = r01.z.b(l66);
+            if (b17 != null && (D0 = b17.D0(false)) != null && D0.e() != null && D0.e().a()) {
+                str = (java.lang.String) y2Var.f340790a.get("src_username");
+                com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "HardBiz chat, key_src_username(%s)", (java.lang.String) y2Var.f340790a.get("src_username"));
+                return str;
+            }
+        }
+        return null;
+    }
+
+    public boolean z5(nw4.y2 y2Var) {
+        try {
+            this.f184998y.i(39, new android.os.Bundle(0));
+            i5(y2Var, "clearBounceBackground:ok", null);
+            return true;
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.MsgHandler", "doClearBounceBackground, exception = %s", e17);
+            i5(y2Var, "clearBounceBackground:fail", null);
+            return true;
+        }
+    }
+
+    public android.os.Bundle z6() {
+        android.os.Bundle bundle = null;
+        try {
+            bundle = this.f184998y.i(33, null);
+        } catch (android.os.RemoteException e17) {
+            com.tencent.mars.xlog.Log.printErrStackTrace("MicroMsg.MsgHandler", e17, "", new java.lang.Object[0]);
+        }
+        com.tencent.mars.xlog.Log.i("MicroMsg.MsgHandler", "getWebViewIntentExtras(%s)", bundle);
+        return bundle;
+    }
+}

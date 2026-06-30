@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/e4r" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:layout_gravity="center_vertical" android:id="@id/e4q" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dv" android:layout_marginEnd="@dimen/dn" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:layout_gravity="end|center" android:id="@id/e4c" android:paddingLeft="@dimen/dv" android:paddingRight="@dimen/dv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:text="@string/f0j" android:layout_marginEnd="@dimen/cn" />
+    </FrameLayout>
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/e4s" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/e4r" android:paddingStart="@dimen/dv" android:layout_marginEnd="@dimen/dn" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android" xmlns:newtip="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference newtip:key="still_notify_message_at_me_pref" newtip:gc="@layout/byv" newtip:title="@string/og1" />
+    <CheckBoxPreference newtip:key="still_notify_message_at_all_pref" newtip:gc="@layout/byv" newtip:title="@string/og0" />
+    <CheckBoxPreference newtip:key="still_notify_message_announcement_pref" newtip:gc="@layout/byv" newtip:title="@string/og3" />
+    <PreferenceTitleCategory newtip:title="@string/ofw" />
+    <com.tencent.mm.chatroom.ui.preference.StillNotifyMessageManagerFollowMemberPreference newtip:key="still_notify_message_follow_member" newtip:gc="@layout/byv" newtip:title="" />
+    <PreferenceTitleCategory newtip:title="@string/ofy" />
+</PreferenceScreen>

@@ -1,0 +1,7 @@
+package com.tencent.mm.plugin.appbrand.luggage.export.functionalpage;
+
+/* loaded from: classes7.dex */
+public abstract class a0 {
+    public a0(kotlin.jvm.internal.i iVar) {
+    }
+}

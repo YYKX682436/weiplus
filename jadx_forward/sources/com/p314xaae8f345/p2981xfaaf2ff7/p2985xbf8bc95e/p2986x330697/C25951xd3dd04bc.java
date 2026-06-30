@@ -1,0 +1,133 @@
+package com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697;
+
+/* renamed from: com.tencent.tencentmap.mapsdk.maps.CameraUpdateFactory */
+/* loaded from: classes13.dex */
+public final class C25951xd3dd04bc {
+    private C25951xd3dd04bc() {
+    }
+
+    /* renamed from: getSymmetricPoint */
+    private static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 m99098xff66598f(com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 c26041x873d1d26, com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 c26041x873d1d262) {
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26((c26041x873d1d26.f49501xaa2bac6c * 2.0d) - c26041x873d1d262.f49501xaa2bac6c, (c26041x873d1d26.f49502x83009af * 2.0d) - c26041x873d1d262.f49502x83009af);
+    }
+
+    /* renamed from: newCameraPosition */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99099x1526e92e(com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26015xa89e978e c26015xa89e978e) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49374xa82adaec;
+        c26014x36345e6d.f49390xc2040e9f = c26015xa89e978e;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: newLatLng */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99100xcf810ec6(com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 c26041x873d1d26) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49375xac34aaa6;
+        c26014x36345e6d.f49403xf544149f = c26041x873d1d26;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: newLatLngBounds */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99101x6303451b(com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26042xcb530b7b c26042xcb530b7b, int i17) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49376xebac166e;
+        c26014x36345e6d.f49395xb872ca59 = c26042xcb530b7b;
+        c26014x36345e6d.f49400x21a5dced = i17;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: newLatLngBoundsRect */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99102xf77c0d9f(com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26042xcb530b7b c26042xcb530b7b, int i17, int i18, int i19, int i27) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49378xcb87c915;
+        c26014x36345e6d.f49396x7b715e52 = c26042xcb530b7b;
+        c26014x36345e6d.f49392x1f929caf = i17;
+        c26014x36345e6d.f49393xd3175a74 = i18;
+        c26014x36345e6d.f49394x5bdb8fad = i19;
+        c26014x36345e6d.f49391x5bdb4c18 = i27;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: newLatLngBoundsWithMapCenter */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99103xf12d2550(com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26042xcb530b7b c26042xcb530b7b, com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 c26041x873d1d26, int i17) {
+        if (c26042xcb530b7b == null) {
+            return null;
+        }
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 c26041x873d1d262 = c26042xcb530b7b.f49513x1a6ba282;
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 m99098xff66598f = m99098xff66598f(c26041x873d1d26, c26041x873d1d262);
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 c26041x873d1d263 = c26042xcb530b7b.f49514x9e7cbcfc;
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 m99098xff66598f2 = m99098xff66598f(c26041x873d1d26, c26041x873d1d263);
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(c26041x873d1d262);
+        arrayList.add(m99098xff66598f);
+        arrayList.add(c26041x873d1d263);
+        arrayList.add(m99098xff66598f2);
+        return m99101x6303451b(new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26042xcb530b7b.Builder().m99565x73c954a8(arrayList).m99563x59bc66e(), i17);
+    }
+
+    /* renamed from: newLatLngZoom */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99104xf75ad3b9(com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26041x873d1d26 c26041x873d1d26, float f17) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49379xccee1cc;
+        c26014x36345e6d.f49401xf863684c = c26041x873d1d26;
+        c26014x36345e6d.f49402xe0957499 = f17;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: rotateTo */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99105xfd98fd36(float f17, float f18) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49381x2c3ef116;
+        c26014x36345e6d.f49404x6d1894a4 = f17;
+        c26014x36345e6d.f49405x79dada93 = f18;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: scrollBy */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99106xe8077004(float f17, float f18) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49382x16ad63e4;
+        c26014x36345e6d.f49406xe80dad89 = f17;
+        c26014x36345e6d.f49407xe9c28628 = f18;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: zoomBy */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99107xd67f838a(float f17) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49383x9e127b6a;
+        c26014x36345e6d.f49410x33239aad = f17;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: zoomIn */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99109xd67f8458() {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49385x9e127c38;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: zoomOut */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99110xf9711e7b() {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49386x243d227b;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: zoomTo */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99111xd67f85ae(float f17) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49387x9e127d8e;
+        c26014x36345e6d.f49411x83cab3c4 = f17;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+
+    /* renamed from: zoomBy */
+    public static com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e m99108xd67f838a(float f17, android.graphics.Point point) {
+        com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d c26014x36345e6d = new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d();
+        c26014x36345e6d.f49389x95299fad = com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.p2990x633fb29.C26014x36345e6d.f49384x7507845b;
+        c26014x36345e6d.f49408xefa2609c = f17;
+        c26014x36345e6d.f49409x10442c14 = point;
+        return new com.p314xaae8f345.p2981xfaaf2ff7.p2985xbf8bc95e.p2986x330697.C25950xd5528c6e(c26014x36345e6d);
+    }
+}

@@ -1,0 +1,8 @@
+package s33;
+
+/* loaded from: classes4.dex */
+public enum i {
+    KEEP_ALIVE_TYPE_RECEIVE_CHATROOM_MSG,
+    KEEP_ALIVE_TYPE_GET_CHATROOM_REALTIME_INFO,
+    KEEP_ALIVE_TYPE_GET_MY_CHAT_ROOM
+}

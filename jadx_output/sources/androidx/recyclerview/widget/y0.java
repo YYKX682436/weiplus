@@ -1,0 +1,9 @@
+package androidx.recyclerview.widget;
+
+/* loaded from: classes8.dex */
+public final class y0 implements android.view.animation.Interpolator {
+    @Override // android.animation.TimeInterpolator
+    public float getInterpolation(float f17) {
+        return f17 * f17 * f17 * f17 * f17;
+    }
+}

@@ -1,0 +1,72 @@
+package com.tencent.mm.plugin.finder.ui;
+
+/* loaded from: classes8.dex */
+public final class zk implements gm5.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ kotlin.jvm.internal.h0 f130110a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.ui.FinderWxProfileJumpDetailUI f130111b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.view.RefreshLoadMoreLayout f130112c;
+
+    public zk(kotlin.jvm.internal.h0 h0Var, com.tencent.mm.plugin.finder.ui.FinderWxProfileJumpDetailUI finderWxProfileJumpDetailUI, com.tencent.mm.view.RefreshLoadMoreLayout refreshLoadMoreLayout) {
+        this.f130110a = h0Var;
+        this.f130111b = finderWxProfileJumpDetailUI;
+        this.f130112c = refreshLoadMoreLayout;
+    }
+
+    @Override // gm5.a
+    public java.lang.Object call(java.lang.Object obj) {
+        java.util.LinkedList list;
+        java.util.LinkedList list2;
+        java.util.LinkedList<r45.pg2> list3;
+        com.tencent.mm.modelbase.f fVar = (com.tencent.mm.modelbase.f) obj;
+        if (fVar.f70615a == 0 && fVar.f70616b == 0) {
+            r45.n81 n81Var = (r45.n81) fVar.f70618d;
+            this.f130110a.f310123d = n81Var.getByteString(2);
+            com.tencent.mm.plugin.finder.ui.FinderWxProfileJumpDetailUI finderWxProfileJumpDetailUI = this.f130111b;
+            int size = finderWxProfileJumpDetailUI.f128799t.size();
+            r45.wg2 wg2Var = (r45.wg2) ((r45.n81) fVar.f70618d).getCustom(1);
+            java.util.ArrayList arrayList = finderWxProfileJumpDetailUI.f128799t;
+            int i17 = 0;
+            if (wg2Var != null && (list3 = wg2Var.getList(0)) != null) {
+                java.util.ArrayList arrayList2 = new java.util.ArrayList();
+                for (r45.pg2 pg2Var : list3) {
+                    cu2.a0 a0Var = cu2.b0.f222371a;
+                    kotlin.jvm.internal.o.d(pg2Var);
+                    androidx.appcompat.app.AppCompatActivity context = finderWxProfileJumpDetailUI.getContext();
+                    kotlin.jvm.internal.o.f(context, "getContext(...)");
+                    arrayList2.add(a0Var.k(1, pg2Var, xy2.c.e(context)));
+                }
+                java.util.ArrayList arrayList3 = new java.util.ArrayList(kz5.d0.q(arrayList2, 10));
+                java.util.Iterator it = arrayList2.iterator();
+                while (it.hasNext()) {
+                    arrayList3.add(new so2.o3((dm.pd) it.next()));
+                }
+                arrayList.addAll(arrayList3);
+            }
+            java.lang.StringBuilder sb6 = new java.lang.StringBuilder("loadmore mentionList: ");
+            r45.wg2 wg2Var2 = (r45.wg2) ((r45.n81) fVar.f70618d).getCustom(1);
+            sb6.append((wg2Var2 == null || (list2 = wg2Var2.getList(0)) == null) ? null : java.lang.Integer.valueOf(list2.size()));
+            com.tencent.mars.xlog.Log.i("FinderSupportAggregatedMsgConvert", sb6.toString());
+            com.tencent.mm.view.RefreshLoadMoreLayout refreshLoadMoreLayout = this.f130112c;
+            androidx.recyclerview.widget.f2 adapter = refreshLoadMoreLayout.getRecyclerView().getAdapter();
+            if (adapter != null) {
+                adapter.notifyItemRangeInserted(size, arrayList.size() - size);
+            }
+            if (n81Var.getInteger(6) == 1) {
+                r45.wg2 wg2Var3 = (r45.wg2) n81Var.getCustom(1);
+                if (wg2Var3 != null && (list = wg2Var3.getList(0)) != null) {
+                    i17 = list.size();
+                }
+                refreshLoadMoreLayout.N(i17);
+            } else {
+                com.tencent.mm.view.RefreshLoadMoreLayout.I(refreshLoadMoreLayout, null, 1, null);
+            }
+        }
+        return jz5.f0.f302826a;
+    }
+}

@@ -1,0 +1,26 @@
+package zg0;
+
+/* loaded from: classes6.dex */
+public class r1 implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f472779d = 0;
+
+    public r1(zg0.s1 s1Var, zg0.q1 q1Var) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f472779d < 1;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f472779d;
+        this.f472779d = i17 + 1;
+        if (i17 == 0) {
+            return yg0.n4.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 1");
+    }
+}

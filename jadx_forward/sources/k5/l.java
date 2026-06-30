@@ -1,0 +1,41 @@
+package k5;
+
+/* loaded from: classes13.dex */
+public class l implements java.util.concurrent.Executor {
+
+    /* renamed from: e, reason: collision with root package name */
+    public final java.util.concurrent.Executor f385670e;
+
+    /* renamed from: g, reason: collision with root package name */
+    public volatile java.lang.Runnable f385672g;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final java.util.ArrayDeque f385669d = new java.util.ArrayDeque();
+
+    /* renamed from: f, reason: collision with root package name */
+    public final java.lang.Object f385671f = new java.lang.Object();
+
+    public l(java.util.concurrent.Executor executor) {
+        this.f385670e = executor;
+    }
+
+    public void a() {
+        synchronized (this.f385671f) {
+            java.lang.Runnable runnable = (java.lang.Runnable) this.f385669d.poll();
+            this.f385672g = runnable;
+            if (runnable != null) {
+                this.f385670e.execute(this.f385672g);
+            }
+        }
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(java.lang.Runnable runnable) {
+        synchronized (this.f385671f) {
+            this.f385669d.add(new k5.k(this, runnable));
+            if (this.f385672g == null) {
+                a();
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+package cc1;
+
+/* loaded from: classes7.dex */
+public final class x extends qz5.d {
+
+    /* renamed from: d, reason: collision with root package name */
+    public java.lang.Object f40457d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public java.lang.Object f40458e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public java.lang.Object f40459f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public /* synthetic */ java.lang.Object f40460g;
+
+    /* renamed from: h, reason: collision with root package name */
+    public final /* synthetic */ cc1.y f40461h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public int f40462i;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public x(cc1.y yVar, kotlin.coroutines.Continuation continuation) {
+        super(continuation);
+        this.f40461h = yVar;
+    }
+
+    @Override // qz5.a
+    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+        this.f40460g = obj;
+        this.f40462i |= Integer.MIN_VALUE;
+        return this.f40461h.C(null, null, this);
+    }
+}

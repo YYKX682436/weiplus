@@ -1,0 +1,105 @@
+package vf2;
+
+/* loaded from: classes3.dex */
+public final class p implements gm5.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ vf2.q f436351a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ yz5.l f436352b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f436353c;
+
+    public p(vf2.q qVar, yz5.l lVar, java.lang.String str) {
+        this.f436351a = qVar;
+        this.f436352b = lVar;
+        this.f436353c = str;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:23:0x005d A[SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:29:? A[LOOP:0: B:8:0x0022->B:29:?, LOOP_END, SYNTHETIC] */
+    @Override // gm5.a
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.Object call(java.lang.Object r8) {
+        /*
+            r7 = this;
+            com.tencent.mm.modelbase.f r8 = (com.tencent.mm.modelbase.f) r8
+            int r0 = r8.f70615a
+            r1 = 0
+            r2 = 1
+            if (r0 != 0) goto Le
+            int r0 = r8.f70616b
+            if (r0 != 0) goto Le
+            r0 = r2
+            goto Lf
+        Le:
+            r0 = r1
+        Lf:
+            if (r0 == 0) goto L65
+            com.tencent.mm.protobuf.f r8 = r8.f70618d
+            r45.hv1 r8 = (r45.hv1) r8
+            java.util.LinkedList r8 = r8.getList(r2)
+            java.lang.String r3 = "getGame_user_info_list(...)"
+            kotlin.jvm.internal.o.f(r8, r3)
+            java.util.Iterator r8 = r8.iterator()
+        L22:
+            boolean r3 = r8.hasNext()
+            r4 = 0
+            if (r3 == 0) goto L5e
+            java.lang.Object r3 = r8.next()
+            r5 = r3
+            r45.n73 r5 = (r45.n73) r5
+            com.tencent.mm.protobuf.f r6 = r5.getCustom(r2)
+            r45.z53 r6 = (r45.z53) r6
+            if (r6 == 0) goto L3d
+            java.lang.String r6 = r6.getString(r1)
+            goto L3e
+        L3d:
+            r6 = r4
+        L3e:
+            boolean r6 = com.tencent.mm.sdk.platformtools.t8.K0(r6)
+            if (r6 != 0) goto L5a
+            com.tencent.mm.protobuf.f r5 = r5.getCustom(r2)
+            r45.z53 r5 = (r45.z53) r5
+            if (r5 == 0) goto L50
+            java.lang.String r4 = r5.getString(r1)
+        L50:
+            java.lang.String r5 = r7.f436353c
+            boolean r4 = kotlin.jvm.internal.o.b(r4, r5)
+            if (r4 == 0) goto L5a
+            r4 = r2
+            goto L5b
+        L5a:
+            r4 = r1
+        L5b:
+            if (r4 == 0) goto L22
+            r4 = r3
+        L5e:
+            r45.n73 r4 = (r45.n73) r4
+            vf2.q r8 = r7.f436351a
+            r8.f436354m = r4
+            goto L7a
+        L65:
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            java.lang.String r2 = "[requestGameUserInfo] errcode = "
+            r1.<init>(r2)
+            int r8 = r8.f70616b
+            r1.append(r8)
+            java.lang.String r8 = r1.toString()
+            java.lang.String r1 = "FinderLiveAnchorScreenCastLivingStatusController"
+            com.tencent.mars.xlog.Log.i(r1, r8)
+        L7a:
+            yz5.l r8 = r7.f436352b
+            java.lang.Boolean r0 = java.lang.Boolean.valueOf(r0)
+            r8.invoke(r0)
+            jz5.f0 r8 = jz5.f0.f302826a
+            return r8
+        */
+        throw new UnsupportedOperationException("Method not decompiled: vf2.p.call(java.lang.Object):java.lang.Object");
+    }
+}

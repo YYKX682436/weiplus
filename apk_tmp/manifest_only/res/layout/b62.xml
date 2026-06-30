@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="18.0dp" android:layout_width="match_parent" android:layout_height="@dimen/cd" android:paddingStart="@dimen/cn" android:paddingEnd="@dimen/cn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="start|center" android:id="@id/fwg" android:background="@drawable/xm" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:importantForAccessibility="noHideDescendants">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/bza" android:layout_width="10.0dp" android:layout_height="20.0dp" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/FG_0" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/f5" android:id="@id/fwh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ewz" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" />
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/f5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d9" android:layout_marginBottom="@dimen/dn" android:text="@string/ewy" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/fwh" />
+</androidx.constraintlayout.widget.ConstraintLayout>

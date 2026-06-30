@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.FinderMaxSizeLinearLayout android:orientation="vertical" android:id="@id/tva" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/abw" android:gravity="left|center" android:id="@id/u_a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="40.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="16.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/abw" android:id="@id/i12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="16.0dp" android:lineSpacingMultiplier="1.1" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/u_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="51.0dp" android:layout_marginRight="24.0dp">
+            <CheckBox android:layout_gravity="top" android:id="@id/i11" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginRight="@dimen/bl" style="@style/gw" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/FG_1" android:gravity="center_horizontal" android:layout_gravity="center|top" android:id="@id/u_9" android:paddingLeft="0.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dp" android:layout_marginBottom="76.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/u_7" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="@string/oz6" android:layout_marginEnd="8.0dp" style="@style/xl" />
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/u__" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="@string/oz7" android:layout_marginStart="8.0dp" style="@style/xk" />
+        </LinearLayout>
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.view.FinderMaxSizeLinearLayout>

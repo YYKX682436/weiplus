@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingTop="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/a7" android:textColor="@color/f5" android:layout_gravity="start|center" android:id="@id/e8l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f0q" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="@dimen/cz" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/r" android:textColor="@color/f5" android:id="@id/e8f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/d7" android:text="@string/cr5" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_marginBottom="@dimen/dn">
+        <TextView android:enabled="true" android:textSize="17.0dp" android:gravity="center" android:id="@id/ei_" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:text="@string/cr3" android:layout_marginEnd="@dimen/cn" style="@style/l1" />
+        <TextView android:enabled="true" android:textSize="17.0dp" android:gravity="center" android:id="@id/eia" android:layout_width="@dimen/c0" android:layout_height="@dimen/db" android:text="@string/cr4" style="@style/ks" />
+    </LinearLayout>
+</LinearLayout>

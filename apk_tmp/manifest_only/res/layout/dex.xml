@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/db"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@id/er2" android:background="@drawable/a1k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/akz" android:minHeight="@dimen/cz" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9">
+        <LinearLayout android:orientation="horizontal" android:id="@id/b23" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/bl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@id/b20" android:visibility="gone" android:layout_width="@dimen/ct" android:layout_height="@dimen/ct" android:layout_marginRight="@dimen/bl" />
+            <ImageView android:id="@id/b21" android:visibility="gone" android:layout_width="@dimen/ct" android:layout_height="@dimen/ct" android:layout_marginRight="@dimen/bl" />
+            <ImageView android:id="@id/b22" android:visibility="gone" android:layout_width="@dimen/ct" android:layout_height="@dimen/ct" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dp" android:textColor="@color/ab0" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/b1u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/b23" app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

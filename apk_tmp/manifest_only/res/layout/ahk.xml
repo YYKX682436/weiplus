@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.FinderFeedBubbleTipsLayout android:id="@id/dzb" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/aaw" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/iqf" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn">
+            <FrameLayout android:id="@id/iqn" android:background="@color/tx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/akd" />
+            </FrameLayout>
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/g99" android:visibility="gone" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/icons_filled_pause" android:alpha="0.8" app:fs="@color/an" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/frs" android:background="@drawable/ao4" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dn" android:paddingHorizontal="@dimen/cn">
+                <include layout="@layout/b2c" />
+            </FrameLayout>
+            <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/bl" layout="@layout/dgw" />
+            <include android:id="@id/frr" android:visibility="gone" layout="@layout/b29" />
+            <include android:id="@id/fup" android:visibility="gone" layout="@layout/b4j" />
+        </FrameLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/c9" android:layout_marginStart="@dimen/cn" android:layout_marginEnd="@dimen/cn" layout="@layout/ah9" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="13.5dp" layout="@layout/ah_" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/ahh" />
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.view.FinderFeedBubbleTipsLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/a2k" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ski" android:background="@drawable/bbq" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bbq" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="start|center" android:id="@id/lrc" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:contentDescription="@string/d1c" android:paddingStart="@dimen/cn">
+                <FrameLayout android:layout_gravity="start|center" android:background="@drawable/bbr" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:importantForAccessibility="noHideDescendants">
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="20.0dp" android:src="@raw/icons_filled_arrow" android:rotation="270.0" app:fs="@color/FG_0" />
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/cb" android:textColor="@color/a0c" android:gravity="center" android:id="@id/qxn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/hrg" android:text="@string/dcz" android:layout_marginEnd="@dimen/cn" style="@style/xm" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/taj" android:background="@color/d" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/dv" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/d0i" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/hhc" android:paddingTop="@dimen/c9" android:paddingRight="@dimen/hx" android:paddingBottom="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/jrb" android:layout_toRightOf="@id/hje">
+                    <TextView android:textSize="@dimen/cb" android:ellipsize="middle" android:id="@id/hjn" android:layout_height="wrap_content" android:text="@string/nh2" android:singleLine="true" style="@style/j3" />
+                    <TextView android:textSize="@dimen/ca" android:textColor="@color/FG_2" android:id="@id/hjf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" android:text="@string/nh0" android:layout_below="@id/hjn" android:layout_alignParentLeft="true" style="@style/j2" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/hje" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:layout_marginRight="@dimen/c9" android:layout_alignParentStart="true">
+                    <CheckBox android:layout_gravity="right|center" android:id="@id/vfh" android:background="@drawable/aoe" android:focusable="false" android:clickable="true" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/cz" android:checked="true" style="@style/im" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

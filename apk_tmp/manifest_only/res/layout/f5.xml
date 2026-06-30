@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b8p" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/krl" android:padding="@dimen/cn" android:layout_width="@dimen/dd" android:layout_height="@dimen/dj" android:layout_marginLeft="@dimen/dv" android:src="@raw/icons_outlined_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fs="@color/FG_1" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/krp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a1h" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/krm" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

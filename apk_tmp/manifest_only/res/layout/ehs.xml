@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/che" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/uw8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="@dimen/bl" android:maxWidth="275.0dp" android:minHeight="@dimen/cz">
+        <RelativeLayout android:id="@id/lgy" android:background="@drawable/apt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="275.0dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/ji" android:ellipsize="end" android:gravity="left|center" android:id="@id/bjp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="8.0dp" android:maxWidth="259.0dp" android:maxLines="2" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv" />
+            <FrameLayout android:id="@id/jts" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginTop="8.0dp" android:layout_marginRight="@dimen/dv" android:layout_marginBottom="8.0dp" android:layout_toRightOf="@id/bjp" android:layout_centerVertical="true">
+                <ImageView android:id="@id/jtt" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center" android:id="@id/jtx" android:background="@null" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/lgx" android:background="@drawable/apx" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/lgy" app:layout_constraintLeft_toLeftOf="@id/lgy" app:layout_constraintRight_toRightOf="@id/lgy" app:layout_constraintTop_toTopOf="@id/lgy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

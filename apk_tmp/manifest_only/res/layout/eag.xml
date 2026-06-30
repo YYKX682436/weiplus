@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.widget.RoundCornerLinearLayout android:id="@id/tlx" android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/yd" app:ds="@dimen/dv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/tlo" android:paddingLeft="@dimen/aih" android:paddingRight="@dimen/aih" android:paddingBottom="@dimen/aih" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tln" android:layout_width="match_parent" android:layout_height="@dimen/ajr" android:layout_marginTop="@dimen/yd" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@id/tll" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_centerVertical="true" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/tls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bn" android:layout_toEndOf="@id/tll">
+                <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/tlt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@id/tly" app:layout_constraintTop_toTopOf="0" />
+                <ImageView android:id="@id/tly" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginStart="@dimen/dv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@id/tlt" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:id="@id/tlu" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" app:ds="@dimen/bl" app:layout_constraintDimensionRatio="3:4" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/tln">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/tlp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                <FrameLayout android:id="@id/tlq" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+                <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:layout_gravity="start|bottom" android:id="@id/tlw" android:background="#4d4c4c4c" android:layout_width="wrap_content" android:layout_height="@dimen/cs" android:layout_marginBottom="@dimen/dv" android:layout_marginStart="@dimen/dv" app:ds="@dimen/bl">
+                    <TextView android:textSize="12.0dp" android:textColor="@color/adh" android:ellipsize="end" android:id="@id/tlv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bn" android:layout_marginRight="@dimen/bn" android:singleLine="true" />
+                </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+            </FrameLayout>
+        </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+        <com.tencent.mm.ui.widget.RoundCornerLinearLayout android:gravity="center" android:id="@id/tlm" android:layout_width="match_parent" android:layout_height="@dimen/d7" android:layout_marginTop="@dimen/c9" app:ds="@dimen/bn" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/tlu">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tlh" android:background="@color/abt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginRight="4.0dp" android:src="@raw/icons_filled_video_call" app:fs="@color/abu" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/abu" android:id="@id/tli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmt" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/tlj" android:background="@color/abt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="14.0dp" android:textColor="@color/abu" android:id="@id/tlk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmv" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/tlr" android:background="@color/abt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ProgressBar android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" style="@style/x4" />
+            </LinearLayout>
+        </com.tencent.mm.ui.widget.RoundCornerLinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mm.ui.widget.RoundCornerLinearLayout>

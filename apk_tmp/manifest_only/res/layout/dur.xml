@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/close_icon" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="21.0dp" android:layout_marginTop="25.0dp" android:layout_marginBottom="25.0dp" android:src="@raw/close" app:fs="@color/FG_0_5" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginRight="40.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/rfk" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="8.0dp" android:src="@raw/checkmark_circle_filled" app:fs="#34c759" />
+            <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/re0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:includeFontPadding="false" android:lineSpacingExtra="0.0dp" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp">
+                <com.tencent.mm.ui.widget.MMRoundCornerImageView android:layout_gravity="center_vertical" android:id="@id/awq" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginRight="8.0dp" android:scaleType="centerCrop" app:i8="13.0dp" />
+                <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/aws" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="0.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rdw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxLines="2" android:lineSpacingExtra="0.0dp" />
+            <com.tencent.mm.plugin.sns.ad.widget.appcompat.AdAppCompatButton android:textSize="17.0dp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rsc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="68.0dp" app:aq="17.0dp" app:ar="1.0dp" app:as="os_" style="@style/kz" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

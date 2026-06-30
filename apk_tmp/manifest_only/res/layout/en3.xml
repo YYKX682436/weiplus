@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/vg4" android:background="@drawable/d8f" android:paddingTop="@dimen/c8" android:paddingBottom="@dimen/c8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/vg5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginRight="@dimen/cs">
+        <TextView android:textSize="15.0dp" android:textColor="@color/FG_0" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/og9" android:textFontWeight="500" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:layout_marginLeft="@dimen/bl" android:src="@raw/share_filled" app:fs="@color/FG_0" />
+    </LinearLayout>
+    <android.widget.ProgressBar android:layout_gravity="center" android:id="@id/vg3" android:visibility="gone" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" style="@style/w9" />
+</FrameLayout>

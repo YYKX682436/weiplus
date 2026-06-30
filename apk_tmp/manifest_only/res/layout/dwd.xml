@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/s90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mhf" android:lines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/ord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="24.0dp" android:text="@string/mhg" android:includeFontPadding="false" android:lineSpacingMultiplier="1.2" android:layout_marginHorizontal="24.0dp" />
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp">
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/b02" android:minWidth="@dimen/c0" android:minHeight="@dimen/df" android:text="@string/mof" style="@style/xl" />
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/rel" android:layout_marginLeft="16.0dp" android:minWidth="@dimen/c0" android:minHeight="@dimen/df" android:text="@string/mog" style="@style/xk" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

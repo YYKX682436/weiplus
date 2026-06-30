@@ -1,0 +1,24 @@
+package r45;
+
+/* loaded from: classes2.dex */
+public enum i03 implements com.p314xaae8f345.mm.p2495xc50a8b8b.h {
+    FinderTipsShowInfoJumpType_None(0),
+    FinderTipsShowInfoJumpType_WxMentionList(1),
+    FinderTipsShowInfoJumpType_FinderMentionList(2),
+    FinderTipsShowInfoJumpType_WxPrivateMsg(3),
+    FinderTipsShowInfoJumpType_FinderPrivateMsg(4);
+
+
+    /* renamed from: d, reason: collision with root package name */
+    public final int f458153d;
+
+    i03(int i17) {
+        this.f458153d = i17;
+    }
+
+    @Override // com.p314xaae8f345.mm.p2495xc50a8b8b.h
+    /* renamed from: getNumber */
+    public final int mo11476x276ffe3f() {
+        return this.f458153d;
+    }
+}

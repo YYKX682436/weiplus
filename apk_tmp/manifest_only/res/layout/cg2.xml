@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.widget.MMEditText android:gravity="top" android:id="@id/orm" android:layout_width="match_parent" android:layout_height="@dimen/df" android:hint="type" android:inputType="number" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/khs" android:layout_width="120.0dp" android:layout_height="48.0dp" android:layout_marginTop="@dimen/cn" android:text="请求" style="@style/kq" />
+    <TextView android:id="@id/knd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" />
+</LinearLayout>

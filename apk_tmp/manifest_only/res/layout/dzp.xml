@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:key="biz_fans_msg_hide_disturb_pref" android:gc="@layout/byv" android:persistent="false" android:title="@string/n5p" />
+    <CheckBoxPreference android:key="biz_fans_remind_pref" android:gc="@layout/byv" android:persistent="false" android:title="@string/n5q" />
+    <Preference android:key="biz_fans_private_msg_scope_pref" android:title="@string/nfm" />
+    <CheckBoxPreference android:key="biz_fans_receive_on_msg_limited_pref" android:gc="@layout/byv" android:persistent="false" android:title="@string/ng3" />
+    <com.tencent.mm.plugin.brandservice.ui.timeline.BizTimelineSettingLoadingPreference android:key="biz_fans_msg_loading_pref" android:gc="@layout/byv" android:persistent="false" />
+</PreferenceScreen>

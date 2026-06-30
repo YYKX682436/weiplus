@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="156.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.MMImageView android:id="@id/rg" android:layout_width="match_parent" android:layout_height="156.0dp" android:scaleType="centerCrop" />
+    <com.tencent.mm.ui.MMImageView android:id="@id/rh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/j8" android:layout_marginBottom="@dimen/j8" android:src="@raw/icons_filled_photo_wall" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.tencent.mm.ui.widget.MMTextView android:textSize="@dimen/hv" android:textColor="@color/ab0" android:id="@id/ra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/f" android:layout_marginBottom="@dimen/j_" android:shadowColor="@color/f3" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

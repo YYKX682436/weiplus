@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionGroup="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/p06" android:layout="@layout/bkd" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/qy" android:layout="@layout/bk7" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textColor="@color/a2y" android:id="@id/cra" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/mwo" android:visibility="gone" android:layout="@layout/cn9" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tencent.mm.ui.base.WxImageView android:gravity="center" android:id="@id/pr8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:tileBackgroundColor="@color/an" />
+    <com.tencent.mm.ui.base.MultiTouchImageView android:gravity="center" android:id="@id/h88" android:layout_width="match_parent" android:layout_height="match_parent" app:imageBackgroundColor="@color/an" />
+    <ViewStub android:id="@id/u3v" android:layout="@layout/eh6" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/h9f" android:layout="@layout/bkb" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/h9d" android:layout="@layout/bkc" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/h9c" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/w_" />
+    <FrameLayout android:id="@id/ufn" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

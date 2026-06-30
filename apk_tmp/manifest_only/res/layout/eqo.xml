@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/ob2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:text="" android:maxLines="1" style="@style/rm" />
+    <com.tencent.mm.view.MaxHeightScrollView android:layout_gravity="left" android:id="@id/mc2" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/BW_0_Alpha_0_5" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/oad" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/d9m" android:visibility="gone" android:layout_width="@dimen/cu" android:layout_height="@dimen/cc" android:layout_marginLeft="20.0dp" android:layout_marginTop="@dimen/cn" android:layout_marginRight="20.0dp" android:layout_marginBottom="20.0dp" android:layout_below="@id/d9r" />
+        </LinearLayout>
+    </com.tencent.mm.view.MaxHeightScrollView>
+    <LinearLayout android:gravity="center" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/db" android:layout_marginBottom="@dimen/br">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/b5i" android:layout_width="@dimen/c0" android:text="@string/baz" style="@style/kz" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/kao" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:layout_width="@dimen/c0" android:layout_marginLeft="@dimen/cn" android:text="@string/i9" style="@style/kr" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/oae" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz" />
+</LinearLayout>

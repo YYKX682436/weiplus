@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/aaw" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never" android:paddingStart="@dimen/d7" android:paddingEnd="@dimen/d7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/h3" android:textStyle="bold" android:textColor="@color/a0c" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:text="@string/oh0" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:layout_below="@id/hup">
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/si9" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/ho" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/a0c" android:gravity="center" android:id="@id/v5j" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ais" android:text="@string/ohs" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="center" android:id="@id/si2" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ogz" />
+        <View android:id="@id/auy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:enabled="true" android:textSize="@dimen/ia" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/kao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bu" android:text="@string/j0b" style="@style/kz" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:layout_gravity="right" style="@style/ea"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bjy" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/em">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="30.0dp" android:layout_height="match_parent" android:layout_marginBottom="@dimen/i_">
+            <ImageView android:id="@id/bqx" android:layout_centerVertical="true" style="@style/es" />
+            <ProgressBar android:layout_gravity="right|center" android:id="@id/ott" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/c9" style="@style/x4" />
+        </LinearLayout>
+        <FrameLayout android:orientation="horizontal" android:id="@id/a1l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.chatting.viewitems.mvvmview.ChattingRecordMvvmView android:id="@id/sri" android:background="@drawable/ob" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/me" />
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/tz" />
+</LinearLayout>

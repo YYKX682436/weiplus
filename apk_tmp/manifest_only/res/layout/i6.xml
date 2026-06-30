@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/m7j" android:layout_width="match_parent" android:layout_height="@dimen/aw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/gk" android:layout_width="wrap_content" android:layout_height="@dimen/m8" android:layout_marginRight="@dimen/lt">
+        <FrameLayout android:id="@id/dk7" android:background="@drawable/e4" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginEnd="16.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/dk4" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/icons_filled_expand" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/bz4" android:background="@drawable/e4" android:layout_width="@dimen/d1" android:layout_height="@dimen/d1" android:layout_marginEnd="6.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bys" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/icons_filled_close_thin" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

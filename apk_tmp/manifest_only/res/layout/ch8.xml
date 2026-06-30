@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/dn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:id="@id/m5u" android:layout_width="22.0dp" android:layout_height="22.0dp" android:contentDescription="@string/so" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.ringtone.widget.MediumBoldTextView android:textSize="@dimen/k" android:textColor="@color/FG_0" android:layout_gravity="center" android:id="@id/m57" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/inf" />
+    <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:gravity="center" android:id="@id/m5v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/in_" />
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/m55" android:background="@drawable/axn" android:layout_width="match_parent" android:layout_height="@dimen/br" android:layout_marginTop="@dimen/db" custom:ds="8.0dp">
+        <RelativeLayout android:id="@id/qu" android:layout_width="@dimen/br" android:layout_height="@dimen/br">
+            <ImageView android:id="@id/m4p" android:background="@drawable/si" android:layout_width="@dimen/br" android:layout_height="@dimen/br" android:scaleType="centerCrop" />
+            <LinearLayout android:id="@id/ldp" android:background="@drawable/aqp" android:layout_width="match_parent" android:layout_height="@dimen/db" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                <ImageView android:layout_gravity="start|bottom" android:id="@id/ldo" android:visibility="visible" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginBottom="4.0dp" android:layout_marginStart="4.0dp" />
+                <TextView android:textSize="8.0dp" android:textColor="@color/BW_100_Alpha_0_8" android:layout_gravity="start|bottom" android:id="@id/ldq" android:layout_width="wrap_content" android:layout_height="10.0dp" android:layout_marginBottom="2.0dp" android:layout_marginStart="2.0dp" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/qk" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.tencent.mm.plugin.gif.MMAnimateView android:layout_gravity="start|center" android:id="@id/m4s" android:layout_width="@dimen/d9" android:layout_height="@dimen/d9" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/m5b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_marginEnd="@dimen/cn" android:layout_toStartOf="@id/m38" android:layout_toEndOf="@id/qu">
+            <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:ellipsize="end" android:id="@id/m5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/m4y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m38" android:visibility="gone" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@drawable/c71" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" custom:fs="@color/FG_1" />
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mn_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9">
+        <ImageView android:id="@id/mna" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/checkbox_selected_filled" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iiw" android:layout_marginStart="@dimen/bl" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/c9" android:src="@raw/ringtone_status_icon" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/bl" custom:fs="@color/FG_1" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iix" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/bz" android:layout_marginTop="@dimen/dj">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/m5t" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/df" android:layout_margin="0.0dp" android:text="@string/ye" style="@style/kr" />
+        <com.tencent.mm.plugin.ringtone.widget.MediumBoldTextView android:textSize="@dimen/j4" android:textColor="@color/a5" android:layout_gravity="center_horizontal" android:id="@id/bua" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dr" android:text="@string/b75" />
+    </FrameLayout>
+</LinearLayout>

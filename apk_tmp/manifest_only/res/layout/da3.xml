@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/lcz"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/hvd" android:background="@drawable/bd7" android:layout_width="match_parent" android:layout_height="@dimen/af1" android:layout_alignParentTop="true" android:contentDescription="@null" android:paddingStart="@dimen/af2" android:paddingEnd="@dimen/af2">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/h89" android:focusable="true" android:clickable="true" android:layout_width="@dimen/aey" android:layout_height="@dimen/aey" android:src="@drawable/bfq" android:scaleType="fitCenter" android:contentDescription="@string/lck" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hve" android:background="@drawable/bcx" android:layout_width="match_parent" android:layout_height="@dimen/aet" android:layout_alignParentBottom="true" android:contentDescription="@null" android:paddingStart="@dimen/aeu" android:paddingEnd="@dimen/aeu">
+        <ImageView android:gravity="center_vertical" android:id="@id/h8c" android:focusable="true" android:clickable="true" android:layout_width="@dimen/aey" android:layout_height="@dimen/aey" android:src="@drawable/bft" android:scaleType="fitCenter" android:contentDescription="@string/lcq" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hv5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/aes">
+            <TextView android:textSize="@dimen/aex" android:textStyle="bold" android:textColor="@color/abc" android:id="@id/om1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="monospace" />
+            <FrameLayout android:gravity="center_vertical" android:id="@id/kxn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/kxi" android:background="#33ffffff" style="@style/vl" />
+                <ImageView android:id="@id/kxk" android:background="#80ffffff" style="@style/vl" />
+                <ImageView android:id="@id/kxj" android:background="@color/abc" style="@style/vl" />
+                <ImageView android:id="@id/kxm" android:paddingLeft="@dimen/aen" android:paddingTop="@dimen/aen" android:paddingRight="@dimen/aen" android:paddingBottom="@dimen/aen" android:focusable="true" android:clickable="true" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/bfu" android:contentDescription="@string/lcr" android:layout_marginStart="8.0dp" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/aex" android:textStyle="bold" android:textColor="@color/abc" android:id="@id/oqp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="monospace" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/h8b" android:focusable="true" android:clickable="true" android:layout_width="@dimen/aey" android:layout_height="@dimen/aey" android:src="@drawable/bd1" android:scaleType="fitCenter" android:contentDescription="@string/lco" android:layout_marginStart="@dimen/aes" />
+        <TextView android:textSize="@dimen/aeo" android:textColor="@color/abg" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/o3p" android:background="@drawable/bd4" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:minWidth="@dimen/aez" android:minHeight="@dimen/aey" android:text="@string/lcs" android:contentDescription="@string/lcs" android:paddingStart="@dimen/aep" android:paddingEnd="@dimen/aep" android:layout_marginStart="@dimen/aes" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/h8a" android:focusable="true" android:clickable="true" android:layout_width="@dimen/aey" android:layout_height="@dimen/aey" android:src="@drawable/bfr" android:scaleType="fitCenter" android:contentDescription="@string/lcm" android:layout_marginStart="@dimen/aes" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/hux" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/hve" android:layout_below="@id/hvd" android:contentDescription="@string/lcl">
+        <com.tencent.xweb.extension.video.ClickableFrameLayout android:id="@id/huw" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.xweb.extension.video.VideoStatusLayout android:layout_gravity="center" android:id="@id/hvc" android:layout_width="200.0dp" android:layout_height="200.0dp" />
+        </com.tencent.xweb.extension.video.ClickableFrameLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/lbk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/vm" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/hv6" android:background="@drawable/bd5" android:paddingTop="@dimen/af1" android:paddingBottom="@dimen/aet" android:visibility="gone" android:layout_width="150.0dp" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <include android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/da5" />
+    </FrameLayout>
+</RelativeLayout>

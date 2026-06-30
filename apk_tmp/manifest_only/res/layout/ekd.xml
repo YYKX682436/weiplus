@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uhi" android:paddingTop="@dimen/db" android:paddingBottom="@dimen/dn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/r" android:textColor="@color/abw" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dj" android:text="@string/pcp" android:textFontWeight="500" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz">
+        <CheckBox android:id="@id/btf" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" style="@style/im" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/adg" android:id="@id/cut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/pbl" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/b5i" android:layout_width="@dimen/c0" android:layout_height="wrap_content" android:text="@string/pb7" style="@style/xl" />
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/c9z" android:layout_width="@dimen/c0" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:text="@string/pcj" style="@style/xk" />
+    </LinearLayout>
+</LinearLayout>

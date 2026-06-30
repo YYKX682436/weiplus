@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/egs" android:layout_width="match_parent" android:layout_height="@dimen/dj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/ofy" android:background="@color/BW_100_Alpha_0_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/cn" android:layout_marginRight="@dimen/cn" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/gln" android:layout_width="@dimen/db" android:layout_height="@dimen/db" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cn" android:layout_weight="1.0">
+            <TextView android:textSize="17.0dp" android:textColor="@color/BW_0_Alpha_0_9" android:id="@id/gpb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/gjf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dgw" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

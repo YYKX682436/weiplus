@@ -1,0 +1,22 @@
+package com.tencent.mm.plugin.finder.ui;
+
+/* loaded from: classes8.dex */
+public final class cg extends kotlin.jvm.internal.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.ui.FinderSelfQRCodeUI f128992d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public cg(com.tencent.mm.plugin.finder.ui.FinderSelfQRCodeUI finderSelfQRCodeUI) {
+        super(1);
+        this.f128992d = finderSelfQRCodeUI;
+    }
+
+    @Override // yz5.l
+    public java.lang.Object invoke(java.lang.Object obj) {
+        r45.bs2 it = (r45.bs2) obj;
+        kotlin.jvm.internal.o.g(it, "it");
+        pm0.v.X(new com.tencent.mm.plugin.finder.ui.bg(this.f128992d, it));
+        return jz5.f0.f302826a;
+    }
+}

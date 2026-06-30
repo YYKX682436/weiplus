@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res-auto" xmlns:android1="http://schemas.android.com/apk/res/android">
+    <PreferenceTitleCategory android:title="@string/isi" />
+    <CheckBoxPreference android1:contentDescription="@string/j_b" android:defaultValue="false" android:fr="@raw/icons_outlined_colorful_moment" android:key="settings_sns_switch" android:title="@string/j_b" />
+    <CheckBoxPreference android1:contentDescription="@string/cfk" android:defaultValue="true" android:fr="@raw/icons_outlined_float_window_on" android:fs="@color/yz" android:key="settings_finder_live_switch" android:title="@string/cfk" />
+    <CheckBoxPreference android1:contentDescription="@string/cfs" android:defaultValue="false" android:fr="@raw/icons_outlined_scan" android:fs="@color/Indigo_100" android:key="settings_scan_switch" android:title="@string/cfs" />
+    <CheckBoxPreference android1:contentDescription="@string/j39" android:defaultValue="false" android:fr="@raw/icons_outlined_shake" android:fs="@color/Indigo_100" android:key="settings_shake_switch" android:title="@string/j39" />
+    <CheckBoxPreference android1:contentDescription="@string/cfk" android:defaultValue="true" android:fr="@raw/icons_outlined_float_window_on" android:fs="@color/yz" android:key="settings_finder_live_above_look_switch" android:title="@string/cfk" />
+    <CheckBoxPreference android1:contentDescription="@string/h6j" android:defaultValue="false" android:fr="@raw/icons_outlined_nearby" android:fs="@color/Indigo_100" android:key="settings_nearby_switch" android:title="@string/h6j" />
+    <CheckBoxPreference android1:contentDescription="@string/h6s" android:defaultValue="false" android:fr="@raw/icons_outlined_live_nearby" android:fs="@color/Indigo_100" android:key="settings_nearby_live_friend_switch" android:title="@string/h6s" />
+    <com.tencent.mm.plugin.setting.ui.widget.SecondCheckBoxPreference android1:contentDescription="@string/h6r" android:defaultValue="false" android:fr="@drawable/atc" android:key="settings_nearby_live_friend_person_switch" android:title="@string/h6r" />
+    <CheckBoxPreference android1:contentDescription="@string/cg5" android:defaultValue="false" android:fr="@raw/icons_outlined_shop" android:fs="@color/ac" android:key="settings_shopping_switch" android:title="@string/cg5" />
+    <CheckBoxPreference android1:contentDescription="@string/fow" android:defaultValue="false" android:fr="@raw/icons_outlined_colorful_game" android:key="settings_game_switch" android:title="@string/fow" />
+    <CheckBoxPreference android1:contentDescription="@string/g3s" android:defaultValue="false" android:fr="@raw/icons_outlined_wechatout" android:fs="@color/aaq" android:key="settings_wechatout_switch" android:title="@string/g3s" />
+    <PreferenceTitleCategory android:title="@string/isj" />
+    <CheckBoxPreference android1:contentDescription="@string/cfj" android:defaultValue="true" android:fr="@raw/icons_outlined_finder_icon" android:fs="@color/a7" android:key="settings_finder_switch" android:title="@string/cfj" />
+    <CheckBoxPreference android1:contentDescription="@string/lc" android:defaultValue="false" android:fr="@raw/icons_outlined_miniprogram" android:fs="@color/a8" android:key="settings_miniprogram_switch" android:title="@string/lc" />
+    <CheckBoxPreference android1:contentDescription="@string/cg4" android:defaultValue="false" android:fr="@raw/icons_outlined_searchlogo" android:fs="@color/ac" android:key="settings_search_switch" android:title="@string/cg4" />
+    <CheckBoxPreference android1:contentDescription="@string/cfz" android:defaultValue="false" android:fr="@raw/icons_outlined_news" android:fs="@color/Yellow_100" android:key="settings_look_switch" android:title="@string/cfz" />
+    <Preference android:key="settings_switch_bottom_tip" android:gc="@layout/c0d" android:title="@string/iso" />
+</PreferenceScreen>

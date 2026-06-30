@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fwo" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/FG_1" android:ellipsize="end" android:gravity="end" android:id="@id/i0j" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dv" style="@style/s3" />
+    <com.tencent.mm.plugin.finder.view.FinderRedDotTextView android:id="@id/k9n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dv" app:endGapWidth="@dimen/dv" />
+    <RelativeLayout android:id="@id/a9w" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/ge6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:layout_centerVertical="true">
+            <ImageView android:id="@id/ge5" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" />
+        </FrameLayout>
+        <ImageView android:gravity="center" android:id="@id/m47" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dp" android:src="@drawable/b8i" android:layout_alignTop="@id/ge6" android:layout_marginEnd="-4.0dp" android:layout_alignEnd="@id/ge6" />
+        <FrameLayout android:id="@id/geg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="4.0dp">
+            <ImageView android:layout_gravity="center" android:id="@id/gex" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" />
+        </FrameLayout>
+        <ImageView android:gravity="center" android:id="@id/m4e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dp" android:src="@drawable/b8i" android:layout_alignTop="@id/geg" android:layout_marginEnd="-4.0dp" android:layout_alignEnd="@id/geg" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/juj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/gf0" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_centerVertical="true" android:layout_marginEnd="4.0dp" />
+        <ImageView android:gravity="center" android:id="@id/m4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dp" android:src="@drawable/b8i" android:layout_alignTop="@id/gf0" android:layout_marginEnd="-4.0dp" android:layout_alignEnd="@id/gf0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/gf1" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_centerVertical="true" android:layout_marginEnd="4.0dp" android:layout_toEndOf="@id/gf0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/gf2" android:visibility="gone" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" android:layout_centerVertical="true" android:layout_marginEnd="4.0dp" android:layout_toEndOf="@id/gf1" />
+    </RelativeLayout>
+    <ImageView android:gravity="center_vertical" android:id="@id/kdj" android:visibility="visible" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:src="@drawable/b8i" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/m4k" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textColor="@color/FG_1" android:ellipsize="end" android:id="@id/m4j" android:background="@null" android:visibility="visible" android:layout_width="0.0dp" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/bl" style="@style/s3" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/m4l" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_fire" app:fs="@color/BW_0_Alpha_0_5" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.finder.view.FinderRedDotTextView android:id="@id/k9y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dv" app:endGapWidth="@dimen/dv" />
+    <TextView android:id="@id/g5b" android:visibility="gone" android:text="@string/wv" android:includeFontPadding="false" style="@style/wn" />
+</LinearLayout>

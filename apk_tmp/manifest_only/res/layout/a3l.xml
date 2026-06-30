@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_width="match_parent" android:layout_height="120.0dp" android:layout_marginTop="40.0dp" android:src="@raw/fix_tools_recover" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ngw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+            <TextView android:textSize="18.0dp" android:textColor="@color/a0c" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" android:text="@string/bn3" />
+            <Button android:id="@id/ngc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bf" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/bf" android:text="@string/bn4" style="@style/kq" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/d26" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+            <TextView android:textSize="18.0dp" android:textColor="@color/a0c" android:gravity="center" android:id="@id/lc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" />
+            <ProgressBar android:id="@id/lbl" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:progress="0" style="@style/kf" />
+            <Button android:id="@id/b5i" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bf" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/bf" android:text="@string/bn6" style="@style/ku" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

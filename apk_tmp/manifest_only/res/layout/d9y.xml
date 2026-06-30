@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m7g" android:background="@color/b" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pi_" android:background="@color/b" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/dv" android:paddingRight="16.0dp" android:paddingBottom="@dimen/dv" style="@style/j4">
+        <com.tencent.mm.ui.widget.MMEditText android:textSize="@dimen/iy" android:textColor="@color/a0c" android:gravity="top" android:layout_gravity="center_vertical" android:id="@id/pia" android:background="@drawable/bav" android:paddingTop="@dimen/j3" android:paddingBottom="@dimen/j3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxHeight="@dimen/bu" android:minHeight="@dimen/ac" android:singleLine="false" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/afr" android:paddingStart="@dimen/c9" android:paddingEnd="@dimen/c9" />
+        <LinearLayout android:layout_gravity="bottom" android:id="@id/pif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageButton android:layout_gravity="center_vertical" android:id="@id/pik" android:background="@null" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/o1" android:scaleType="fitXY" android:contentDescription="@string/axk" android:layout_marginStart="8.0dp" />
+            <FrameLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/pii" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="28.0dp" android:layout_marginStart="8.0dp">
+                <Button android:enabled="false" android:id="@id/pih" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ya" style="@style/mg" />
+                <Button android:id="@id/pid" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ya" style="@style/mg" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/b3" android:textColor="@color/jj" android:id="@id/piz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:layout_marginStart="@dimen/c9" />
+    <FrameLayout android:id="@id/pic" android:layout_width="match_parent" android:layout_height="0.0dp" />
+</LinearLayout>

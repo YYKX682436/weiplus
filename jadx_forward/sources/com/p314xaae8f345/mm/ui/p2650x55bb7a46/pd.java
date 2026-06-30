@@ -1,0 +1,6 @@
+package com.p314xaae8f345.mm.ui.p2650x55bb7a46;
+
+/* loaded from: classes5.dex */
+public interface pd {
+    void a(boolean z17, java.lang.String str);
+}

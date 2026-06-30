@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.blur.mask.BlurMaskBackgroundView android:id="@id/vmm" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/p0w" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/ght" android:background="@color/f3" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <FrameLayout android:id="@id/p0y" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <com.tencent.mm.plugin.sns.ui.OnlineVideoView android:id="@id/p0x" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+        </RelativeLayout>
+    </com.tencent.mm.ui.blur.mask.BlurMaskBackgroundView>
+    <ImageView android:id="@id/gzz" android:background="@drawable/b8y" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/u4v" android:layout_alignParentBottom="true" />
+    <com.tencent.mm.ui.widget.InsectLinearLayout android:gravity="center|bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/u4v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/gzz" layout="@layout/eh3" />
+        <include android:background="@drawable/d9c" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/cz" android:layout_marginBottom="@dimen/aih" android:layout_centerHorizontal="true" layout="@layout/epk" />
+        <ViewStub android:gravity="center" android:id="@id/v9a" android:paddingBottom="@dimen/ajw" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.ui.widget.InsectLinearLayout>
+    <Button android:id="@id/gne" android:visibility="gone" style="@style/vz" />
+</RelativeLayout>

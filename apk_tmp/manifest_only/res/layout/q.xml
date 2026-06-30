@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.live.view.FinderLiveListHorizontalContainer android:orientation="vertical" android:id="@id/ian" android:background="@color/mn" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dp" android:textColor="@color/u6" android:id="@id/ifd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/bl" />
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/icm" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gbh" android:paddingLeft="@dimen/c9" android:paddingTop="@dimen/cz" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/c9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dp" android:textColor="@color/u6" android:id="@id/gcc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.live.view.FinderLiveListHorizontalContainer>

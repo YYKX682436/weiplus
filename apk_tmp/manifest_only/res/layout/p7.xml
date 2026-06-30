@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/bvt" android:background="@drawable/c11" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/l3" android:paddingLeft="@dimen/cn" android:paddingTop="@dimen/cz" android:paddingRight="@dimen/cn" android:paddingBottom="@dimen/cz" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/cn" android:paddingVertical="@dimen/cz">
+        <com.tencent.mm.ui.widget.RoundCornerImageView android:id="@id/bvs" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginRight="12.0dp" android:scaleType="centerCrop" android:importantForAccessibility="no" app:roundHeight="@dimen/cz" app:roundWidth="@dimen/cz" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/ia" android:textColor="#907744" android:ellipsize="end" android:id="@id/bvx" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{test title}" android:maxLines="1" android:shadowRadius="4.0" />
+            <TextView android:textSize="@dimen/j4" android:textColor="#cc907744" android:ellipsize="end" android:id="@id/bvr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="{test title}" android:maxLines="1" android:shadowRadius="4.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/bvv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:layout_marginRight="@dimen/dv" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

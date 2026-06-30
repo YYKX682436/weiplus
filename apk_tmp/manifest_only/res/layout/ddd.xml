@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/a2p" android:minHeight="@dimen/a2p"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/kn_" android:background="@drawable/cp_" android:layout_width="@dimen/a2o" android:layout_height="@dimen/a2o" />
+    <View android:layout_gravity="center" android:id="@id/hd2" android:background="@drawable/apc" android:layout_width="@dimen/a2n" android:layout_height="@dimen/a2n" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/lbl" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:indeterminate="true" style="@style/w1" />
+    <com.tencent.mm.mj_publisher.finder.shoot_composing.RecordButtonCircularCustomProgressBar android:layout_gravity="center" android:id="@id/bwq" android:visibility="gone" android:layout_width="@dimen/a2p" android:layout_height="@dimen/a2p" />
+    <com.tencent.mm.mj_publisher.finder.shoot_composing.RecordButtonCircularProgressBar android:layout_gravity="center" android:id="@id/bwr" android:visibility="gone" android:layout_width="@dimen/a2p" android:layout_height="@dimen/a2p" />
+</FrameLayout>

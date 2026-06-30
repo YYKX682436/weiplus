@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pbn" android:background="@color/zy" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/pf3" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/pax" android:paddingTop="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/s9">
+            <TextView android:id="@id/pbj" android:visibility="gone" android:text="@string/kjc" android:drawableLeft="@drawable/bps" android:drawablePadding="7.0dp" style="@style/sk" />
+            <TextView android:id="@id/pbd" android:text="@string/ki_" style="@style/sk" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/gcw" android:visibility="gone" app:contentHint="@string/kjk" app:titleText="@string/kjn" app:titleWidth="@dimen/aeb" style="@style/sz" />
+            <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pbb" app:contentHint="@string/kit" app:titleText="@string/kiu" app:titleWidth="@dimen/aeb" style="@style/s8" />
+            <TextView android:id="@id/pbc" android:text="@string/ki3" style="@style/sn" />
+            <TextView android:id="@id/pb5" android:text="@string/kh_" style="@style/sk" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/sy">
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pbg" app:contentHint="@string/klc" app:titleText="@string/khb" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pbk" android:visibility="gone" app:contentHint="@string/kld" app:titleText="@string/khc" app:titleWidth="@dimen/aeb" style="@style/f0" />
+            </LinearLayout>
+            <TextView android:textColor="#888888" android:id="@id/pb_" android:visibility="gone" style="@style/sn" />
+            <TextView android:textColor="#888888" android:id="@id/pb6" style="@style/sn" />
+            <TextView android:id="@id/pb8" android:text="@string/kht" style="@style/sk" />
+            <LinearLayout style="@style/sy">
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/cpz" android:imeOptions="actionNext" app:contentHint="@string/khr" app:titleText="@string/khs" app:titleWidth="@dimen/aeb" style="@style/sh" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/cqm" app:contentHint="@string/khu" app:titleText="@string/khz" app:titleWidth="@dimen/aeb" style="@style/si" />
+            </LinearLayout>
+            <TextView android:id="@id/pb7" android:text="@string/khq" style="@style/sn" />
+            <TextView android:id="@id/pbf" android:text="@string/kig" style="@style/sk" />
+            <LinearLayout style="@style/sy">
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/k3n" app:contentHint="@string/kjk" app:titleText="@string/kjn" app:titleWidth="@dimen/aeb" style="@style/sz" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pby" app:contentHint="@string/khm" app:titleText="@string/khn" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/h83" android:imeOptions="actionNext" app:contentHint="@string/kic" app:titleText="@string/kif" app:titleWidth="@dimen/aeb" style="@style/sp" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pbw" android:visibility="gone" app:contentHint="@string/khp" app:f7="o1p" app:titleText="@string/kho" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pbx" android:visibility="gone" app:contentHint="@string/khh" app:f7="o1p" app:titleText="@string/khg" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/pbv" android:visibility="gone" app:contentHint="@string/khf" app:titleText="@string/khe" app:titleWidth="@dimen/aeb" style="@style/f0" />
+            </LinearLayout>
+            <TextView android:id="@id/pbi" android:text="@string/kja" style="@style/sk" />
+            <LinearLayout style="@style/sy">
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5v" app:contentHint="@string/khj" app:titleText="@string/khk" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5u" app:contentHint="@string/kj9" app:titleText="@string/kj_" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5m" app:contentHint="@string/kh5" app:titleText="@string/kh6" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5l" app:contentHint="@string/kj3" app:titleText="@string/kj4" app:titleWidth="@dimen/aeb" style="@style/dh" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5n" app:contentHint="@string/kj6" app:f7="o1p" app:titleText="@string/kj5" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l5o" app:contentHint="@string/kj7" app:titleText="@string/kj8" app:titleWidth="@dimen/aeb" style="@style/f0" />
+            </LinearLayout>
+            <com.tencent.mm.plugin.wallet_core.ui.view.WalletPhoneInputView android:id="@id/jn7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:phoneHint="@string/kim" app:phoneTitle="@string/kin" />
+            <TextView android:id="@id/pbe" android:visibility="visible" android:text="@string/kie" style="@style/sn" />
+            <TextView android:id="@id/pb3" android:text="@string/kha" style="@style/sk" />
+            <LinearLayout style="@style/sy">
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/g6v" android:imeOptions="actionNext" app:contentHint="@string/ki6" app:titleText="@string/ki7" app:titleWidth="@dimen/aeb" style="@style/dh" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/ht8" android:imeOptions="actionNext" app:contentHint="@string/kik" app:titleText="@string/kil" app:titleWidth="@dimen/aeb" style="@style/dh" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/a4d" android:imeOptions="actionNext" app:contentHint="@string/kh5" app:titleText="@string/kh6" app:titleWidth="@dimen/aeb" style="@style/f0" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/mo" android:imeOptions="actionNext" app:contentHint="@string/kgz" app:maxLength="90" app:titleText="@string/kh0" app:titleWidth="@dimen/aeb" style="@style/dh" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/ku3" android:imeOptions="actionNext" app:contentHint="@string/kiw" app:titleText="@string/kj0" app:titleWidth="@dimen/aeb" style="@style/t2" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/l0a" android:imeOptions="actionNext" app:contentHint="@string/kj1" app:titleText="@string/kj2" app:titleWidth="@dimen/aeb" style="@style/dh" />
+                <com.tencent.mm.wallet_core.ui.formview.WalletFormView android:id="@id/d_j" android:imeOptions="actionNext" app:contentHint="@string/ki0" app:titleText="@string/ki1" app:titleWidth="@dimen/aeb" style="@style/sl" />
+            </LinearLayout>
+            <TextView android:id="@id/pb2" android:text="@string/ki2" style="@style/sn" />
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_marginLeft="@dimen/jo" android:layout_marginTop="@dimen/hf" android:layout_marginRight="@dimen/jo" style="@style/jo">
+                <CheckBox android:textSize="@dimen/h2" android:textColor="@color/a0c" android:gravity="right|center" android:layout_gravity="left|center" android:id="@id/nu" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:minHeight="22.0dp" android:text="@string/kjp" style="@style/l4" />
+                <Button android:textSize="@dimen/h2" android:textColor="@color/a_r" android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/nn" android:paddingTop="5.0dp" android:paddingRight="0.0dp" android:paddingBottom="5.0dp" android:layout_marginLeft="0.0dp" android:minHeight="30.0dp" android:text="@string/kjo" android:singleLine="true" style="@style/so" />
+            </LinearLayout>
+            <CheckBox android:textSize="@dimen/h2" android:textColor="@color/a0c" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/np" android:background="@null" android:paddingLeft="24.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j3" android:checked="true" android:minHeight="22.0dp" android:drawableLeft="@drawable/aon" android:drawablePadding="8.0dp" style="@style/se" />
+            <Button android:id="@id/kao" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="38.0dp" android:text="@string/ww" style="@style/su" />
+            <TextView android:layout_gravity="bottom" android:id="@id/pek" android:paddingTop="5.0dp" android:layout_height="match_parent" android:layout_margin="0.0dp" style="@style/t3" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/cye" />
+</LinearLayout>

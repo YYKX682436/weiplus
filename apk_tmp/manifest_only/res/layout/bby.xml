@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ri" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/gzi" android:paddingLeft="@dimen/ei" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/a_4" android:layout_width="@dimen/eo" android:layout_height="@dimen/eo" android:layout_marginRight="@dimen/is" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/j8" android:paddingRight="@dimen/cn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.tencent.mm.ui.base.EllipsizeTextView android:id="@id/kbq" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/j3" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cn" android:layout_height="@dimen/d7" android:src="@raw/icons_filled_arrow" app:fs="@color/FG_2" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/at9" android:background="@color/a48" android:layout_width="match_parent" android:layout_height="@dimen/dv" android:layout_below="@id/gzi" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gzj" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="@dimen/ei" android:minHeight="40.0dp" android:layout_below="@id/at9" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@id/gzf" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="{header}" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@color/a48" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/ei" android:layout_below="@id/gzj" />
+</RelativeLayout>

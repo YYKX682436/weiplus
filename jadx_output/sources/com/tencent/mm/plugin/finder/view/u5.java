@@ -1,0 +1,19 @@
+package com.tencent.mm.plugin.finder.view;
+
+/* loaded from: classes10.dex */
+public final class u5 implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.finder.view.FinderCommentFooter f133158d;
+
+    public u5(com.tencent.mm.plugin.finder.view.FinderCommentFooter finderCommentFooter) {
+        this.f133158d = finderCommentFooter;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        com.tencent.mm.plugin.finder.view.FinderCommentFooter finderCommentFooter = this.f133158d;
+        finderCommentFooter.setFrozen(false);
+        finderCommentFooter.D(true);
+    }
+}

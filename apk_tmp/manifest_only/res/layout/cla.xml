@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/kj">
+        <LinearLayout style="@style/ij">
+            <LinearLayout android:orientation="vertical" android:id="@id/cpp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:paddingBottom="@dimen/i_" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/a_4" android:layout_width="@dimen/g" android:layout_height="@dimen/g" />
+                    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:gravity="left|top" android:id="@id/kbq" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/a_4" />
+                    <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:gravity="left" android:id="@id/ovg" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_toRightOf="@id/a_4" android:layout_below="@id/kbq" />
+                </RelativeLayout>
+                <View style="@style/l3" />
+                <EditText android:textColor="@color/a0c" android:layout_gravity="bottom" android:id="@id/ls6" android:layout_marginTop="@dimen/j3" android:minHeight="@dimen/h8" style="@style/jq" />
+                <View style="@style/l3" />
+                <TextView android:gravity="left|top" android:id="@id/jpv" android:text="@string/gye" android:height="70.0dp" style="@style/jr" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

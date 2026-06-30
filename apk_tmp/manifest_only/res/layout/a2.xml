@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/af" android:background="@drawable/m" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/al" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/am" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_close" android:layout_centerVertical="true" wallet:fs="@color/FG_0" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/fa" android:id="@id/an" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ga6" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ai" android:layout_width="wrap_content" android:layout_height="198.0dp" android:layout_below="@id/al" android:layout_centerHorizontal="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/aj" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="40.0dp" android:src="@raw/aa_solitatire_icon" wallet:fs="@color/FG_2" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/FG_2" android:id="@id/ak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/ga5" />
+    </LinearLayout>
+    <com.tencent.mm.view.MaxHeightScrollView android:id="@id/ah" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/dn" android:layout_below="@id/al" android:overScrollMode="never">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ag" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:overScrollMode="never" />
+    </com.tencent.mm.view.MaxHeightScrollView>
+</RelativeLayout>

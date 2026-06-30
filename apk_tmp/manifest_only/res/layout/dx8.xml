@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/s3a" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.tencent.mm.plugin.textstatus.ui.StatusIndicator android:gravity="center" android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/s7d" android:background="@drawable/cw6" android:paddingTop="@dimen/aih" android:paddingBottom="@dimen/aih" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/aih" android:paddingStart="@dimen/yd" android:paddingEnd="@dimen/yd" />
+</FrameLayout>

@@ -1,0 +1,538 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33;
+
+/* loaded from: classes10.dex */
+public final class na extends com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l {
+
+    /* renamed from: p, reason: collision with root package name */
+    public final java.lang.String f195136p;
+
+    /* renamed from: q, reason: collision with root package name */
+    public final com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 f195137q;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public na(android.view.ViewGroup root, qo0.c statusMonitor) {
+        super(root, statusMonitor, null);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(root, "root");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(statusMonitor, "statusMonitor");
+        this.f195136p = "FinderLiveBattleInfoPlugin";
+        this.f195137q = new com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8(root, statusMonitor, this);
+        K0(8);
+    }
+
+    public final void A1(int i17, boolean z17) {
+        dk2.u4 u4Var = ((mm2.o4) P0(mm2.o4.class)).Z;
+        java.lang.Boolean valueOf = u4Var != null ? java.lang.Boolean.valueOf(u4Var.i()) : null;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, "onBattleFinishPublicityCountDown timeLeft: " + i17 + " timeLeft: " + i17 + " isBattleFinish: " + valueOf);
+        boolean b17 = p3321xbce91901.jvm.p3324x21ffc6bd.o.b(valueOf, java.lang.Boolean.FALSE);
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+        if (b17) {
+            r8Var.j();
+            r8Var.i();
+            r8Var.a().a(0, true);
+        } else {
+            if (z17) {
+                r8Var.j();
+                r8Var.i();
+            }
+            r8Var.a().a(i17, z17);
+        }
+    }
+
+    public final void B1() {
+        if (zl2.q4.f555466a.E()) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, "releaseBattle: " + android.util.Log.getStackTraceString(new java.lang.Throwable("releaseBattle")));
+        }
+        ((mm2.y2) P0(mm2.y2.class)).c7();
+        ((mm2.y2) P0(mm2.y2.class)).f411099s = null;
+        pm0.v.X(new com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.ka(this));
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // qo0.a
+    public void C0(java.util.LinkedHashMap micUserMap) {
+        xh2.i iVar;
+        android.view.View f17;
+        android.view.View f18;
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(micUserMap, "micUserMap");
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("micUserMap size: ");
+        sb6.append(micUserMap.size());
+        sb6.append(" isPk: ");
+        km2.q l76 = ((mm2.o4) P0(mm2.o4.class)).l7();
+        java.lang.Object obj = null;
+        sb6.append(l76 != null ? java.lang.Boolean.valueOf(l76.f390710h) : null);
+        sb6.append(" isLink: ");
+        sb6.append(((mm2.c1) P0(mm2.c1.class)).S7());
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, sb6.toString());
+        v1();
+        xh2.b bVar = ((mm2.y2) P0(mm2.y2.class)).f411098r;
+        if (bVar != null) {
+            com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+            r8Var.getClass();
+            r8Var.l();
+            int i17 = bVar.f536060f;
+            if ((i17 == 1 || (i17 == 0 && bVar.f536059e == 0)) == true) {
+                yi2.o0 o0Var = r8Var.f201131i;
+                com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l lVar = r8Var.f201125c;
+                int i18 = bVar.f536058d;
+                if (i18 == 4) {
+                    ((yi2.p) o0Var).mo177186xcd1079b0(8);
+                    yi2.o0 g17 = r8Var.g();
+                    if (g17 != null) {
+                        g17.mo177186xcd1079b0(8);
+                    }
+                    yi2.o0 f19 = r8Var.f();
+                    if (f19 != null) {
+                        f19.mo177186xcd1079b0(((mm2.o4) lVar.P0(mm2.o4.class)).Z == null ? 8 : 0);
+                        return;
+                    }
+                    return;
+                }
+                if (i18 != 5 && i18 != 6) {
+                    yi2.o0 g18 = r8Var.g();
+                    if (g18 != null) {
+                        g18.mo177186xcd1079b0(8);
+                    }
+                    yi2.o0 f27 = r8Var.f();
+                    if (f27 != null) {
+                        f27.mo177186xcd1079b0(8);
+                        return;
+                    }
+                    return;
+                }
+                ((yi2.p) o0Var).mo177186xcd1079b0(8);
+                yi2.o0 f28 = r8Var.f();
+                if (f28 != null) {
+                    f28.mo177186xcd1079b0(8);
+                }
+                yi2.o0 g19 = r8Var.g();
+                if (g19 != null) {
+                    g19.mo177186xcd1079b0(((mm2.o4) lVar.P0(mm2.o4.class)).Z != null ? 0 : 8);
+                }
+                if (i18 == 6) {
+                    yi2.o0 g27 = r8Var.g();
+                    android.view.ViewGroup.LayoutParams layoutParams = (g27 == null || (f18 = g27.f()) == null) ? null : f18.getLayoutParams();
+                    android.view.ViewGroup.MarginLayoutParams marginLayoutParams = layoutParams instanceof android.view.ViewGroup.MarginLayoutParams ? (android.view.ViewGroup.MarginLayoutParams) layoutParams : null;
+                    if (marginLayoutParams != null) {
+                        marginLayoutParams.topMargin = 0;
+                        return;
+                    }
+                    return;
+                }
+                yi2.o0 g28 = r8Var.g();
+                android.view.ViewGroup.LayoutParams layoutParams2 = (g28 == null || (f17 = g28.f()) == null) ? null : f17.getLayoutParams();
+                android.view.ViewGroup.MarginLayoutParams marginLayoutParams2 = layoutParams2 instanceof android.view.ViewGroup.MarginLayoutParams ? (android.view.ViewGroup.MarginLayoutParams) layoutParams2 : null;
+                if (marginLayoutParams2 != null) {
+                    java.util.Iterator it = bVar.f536063i.iterator();
+                    while (true) {
+                        if (!it.hasNext()) {
+                            break;
+                        }
+                        java.lang.Object next = it.next();
+                        if ((((xh2.a) next).f536054b.f536086e == 2) != false) {
+                            obj = next;
+                            break;
+                        }
+                    }
+                    xh2.a aVar = (xh2.a) obj;
+                    if (aVar == null || (iVar = aVar.f536054b) == null) {
+                        return;
+                    }
+                    marginLayoutParams2.topMargin = ((int) (bVar.f536057c.height() * iVar.f364143b)) - i65.a.b(r8Var.f201123a.getContext(), 16);
+                }
+            }
+        }
+    }
+
+    public final void C1() {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, "restoreBattleInfo curBattle:" + ((mm2.o4) P0(mm2.o4.class)).Z);
+        dk2.u4 u4Var = ((mm2.o4) P0(mm2.o4.class)).Z;
+        if (u4Var != null) {
+            int i17 = u4Var.f315691e;
+            if (i17 == 0) {
+                E1();
+                return;
+            }
+            if (i17 == 1) {
+                D1();
+                return;
+            }
+            com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+            if (i17 == 2) {
+                r8Var.l();
+                u1(false);
+            } else {
+                if (i17 != 3) {
+                    return;
+                }
+                r8Var.l();
+                t1(false);
+            }
+        }
+    }
+
+    public final void D1() {
+        km2.k a17;
+        dk2.u4 u4Var = ((mm2.o4) P0(mm2.o4.class)).Z;
+        if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b((u4Var == null || (a17 = u4Var.a()) == null) ? null : a17.f390647a, ((mm2.c1) P0(mm2.c1.class)).f410385o)) {
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, "showAppliedBattileTip cur user is applicant");
+            return;
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+        r8Var.h();
+        K0(0);
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            ((lj2.c0) w17).g(0);
+        }
+        qi2.s1 w18 = w1();
+        if (w18 != null) {
+            pm0.v.X(new lj2.a0((lj2.c0) w18));
+        }
+        r8Var.k(8);
+    }
+
+    public final void E1() {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+        r8Var.h();
+        K0(0);
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            ((lj2.c0) w17).g(0);
+        }
+        qi2.s1 w18 = w1();
+        if (w18 != null) {
+            pm0.v.X(new lj2.b0((lj2.c0) w18));
+        }
+        r8Var.k(8);
+    }
+
+    public final void F1(boolean z17) {
+        this.f195137q.getClass();
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.po0
+    public boolean G() {
+        return true;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l, qo0.a
+    public void K0(int i17) {
+        super.K0(i17);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, "set FinderLiveBattleInfoPlugin visibility: " + i17);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:34:0x0091, code lost:
+    
+        if (p3321xbce91901.jvm.p3324x21ffc6bd.o.b(r0, r4) == false) goto L38;
+     */
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l, qo0.a
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public void M0(qo0.b r11, android.os.Bundle r12) {
+        /*
+            Method dump skipped, instructions count: 344
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.na.M0(qo0.b, android.os.Bundle):void");
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l, qo0.a
+    public void O0() {
+        super.O0();
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            lj2.c0 c0Var = (lj2.c0) w17;
+            c0Var.e(null);
+            qi2.s1.a(c0Var, null, 1, null);
+            c0Var.g(8);
+        }
+        this.f195137q.h();
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l
+    public void c1(boolean z17) {
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+        if (z17) {
+            r8Var.f201123a.setVisibility(8);
+        } else {
+            r8Var.getClass();
+            r8Var.k(0);
+        }
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.po0
+    public boolean k() {
+        return ((mm2.c1) P0(mm2.c1.class)).f410334f2 != 1;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.po0
+    public boolean r() {
+        return false;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r10v1, types: [java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r11v10 */
+    /* JADX WARN: Type inference failed for: r11v11 */
+    /* JADX WARN: Type inference failed for: r11v3 */
+    /* JADX WARN: Type inference failed for: r11v4 */
+    /* JADX WARN: Type inference failed for: r11v5 */
+    /* JADX WARN: Type inference failed for: r11v9 */
+    /* JADX WARN: Type inference failed for: r2v18 */
+    /* JADX WARN: Type inference failed for: r2v19 */
+    /* JADX WARN: Type inference failed for: r2v23 */
+    /* JADX WARN: Type inference failed for: r2v24 */
+    /* JADX WARN: Type inference failed for: r2v27 */
+    /* JADX WARN: Type inference failed for: r2v29 */
+    public final void t1(boolean z17) {
+        java.util.List list;
+        r45.r22 r22Var;
+        android.view.View h17;
+        java.util.List list2;
+        java.lang.Object obj;
+        android.view.View h18;
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, "battleEnd withAnim: " + z17);
+        K0(0);
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            ((lj2.c0) w17).g(8);
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+        r8Var.k(0);
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("battleEnd curBattle:");
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l lVar = r8Var.f201125c;
+        sb6.append(((mm2.o4) lVar.P0(mm2.o4.class)).Z);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(r8Var.f201126d, sb6.toString());
+        if (((mm2.o4) lVar.P0(mm2.o4.class)).Z != null) {
+            r8Var.f201137o = r8Var.f201127e;
+            r45.r22 r22Var2 = null;
+            r45.r22 r22Var3 = null;
+            r22Var2 = null;
+            if (((mm2.o4) lVar.P0(mm2.o4.class)).f410857s.size() <= 1) {
+                dk2.u4 u4Var = ((mm2.o4) lVar.P0(mm2.o4.class)).Z;
+                if ((u4Var != null && u4Var.f()) != false) {
+                    dk2.u4 u4Var2 = ((mm2.o4) lVar.P0(mm2.o4.class)).Z;
+                    if ((u4Var2 != null && u4Var2.f315701o == 0) != false) {
+                        r8Var.f201135m.j(z17, null);
+                    }
+                }
+            }
+            dk2.u4 u4Var3 = ((mm2.o4) lVar.P0(mm2.o4.class)).Z;
+            if (u4Var3 != null) {
+                ai2.a b17 = r8Var.b();
+                android.view.ViewGroup.LayoutParams layoutParams = (b17 == null || (h18 = b17.h()) == null) ? null : h18.getLayoutParams();
+                android.view.ViewGroup.MarginLayoutParams marginLayoutParams = layoutParams instanceof android.view.ViewGroup.MarginLayoutParams ? (android.view.ViewGroup.MarginLayoutParams) layoutParams : null;
+                if (marginLayoutParams != null) {
+                    marginLayoutParams.setMargins(0, 0, 0, 0);
+                }
+                if (u4Var3.k()) {
+                    dk2.u4 u4Var4 = ((mm2.o4) lVar.P0(mm2.o4.class)).Z;
+                    if (u4Var4 == null || (list2 = u4Var4.f315696j) == null) {
+                        r22Var = null;
+                    } else {
+                        java.util.Iterator it = list2.iterator();
+                        while (true) {
+                            if (it.hasNext()) {
+                                obj = it.next();
+                                if ((((r45.r22) obj).m75939xb282bd08(2) != 3) != false) {
+                                    break;
+                                }
+                            } else {
+                                obj = null;
+                                break;
+                            }
+                        }
+                        r22Var = (r45.r22) obj;
+                    }
+                    if (r22Var == null) {
+                        if (u4Var3.f315693g == 2 && !((mm2.e1) lVar.P0(mm2.e1.class)).g7()) {
+                            ai2.a b18 = r8Var.b();
+                            android.view.ViewGroup.LayoutParams layoutParams2 = (b18 == null || (h17 = b18.h()) == null) ? null : h17.getLayoutParams();
+                            android.view.ViewGroup.MarginLayoutParams marginLayoutParams2 = layoutParams2 instanceof android.view.ViewGroup.MarginLayoutParams ? (android.view.ViewGroup.MarginLayoutParams) layoutParams2 : null;
+                            if (marginLayoutParams2 != null) {
+                                marginLayoutParams2.setMargins(0, i65.a.b(r8Var.f201123a.getContext(), 120), 0, 0);
+                            }
+                        }
+                        ai2.a b19 = r8Var.b();
+                        if (b19 != null) {
+                            b19.j(z17, u4Var3);
+                        }
+                    }
+                }
+                int i17 = u4Var3.f315693g;
+                if (i17 != 2 && u4Var3.f315690d == 3) {
+                    ai2.a b27 = r8Var.b();
+                    if (b27 != null) {
+                        b27.j(z17, u4Var3);
+                    }
+                } else if (i17 == 2) {
+                    dk2.u4 u4Var5 = ((mm2.o4) lVar.P0(mm2.o4.class)).Z;
+                    if (u4Var5 != null && (list = u4Var5.f315696j) != null) {
+                        java.util.Iterator it6 = list.iterator();
+                        while (true) {
+                            if (!it6.hasNext()) {
+                                break;
+                            }
+                            ?? next = it6.next();
+                            if ((((r45.r22) next).m75939xb282bd08(2) != 3) != false) {
+                                r22Var3 = next;
+                                break;
+                            }
+                        }
+                        r22Var2 = r22Var3;
+                    }
+                    if (r22Var2 == null) {
+                        ai2.a b28 = r8Var.b();
+                        if (b28 != null) {
+                            b28.j(z17, u4Var3);
+                        }
+                    }
+                }
+            }
+            java.util.ArrayList<ai2.a> d17 = r8Var.d();
+            if (d17 != null) {
+                for (ai2.a aVar : d17) {
+                    if (aVar != null) {
+                        aVar.j(z17, ((mm2.o4) lVar.P0(mm2.o4.class)).Z);
+                    }
+                }
+            }
+        }
+        r8Var.a().c(z17);
+        tf2.n nVar = (tf2.n) U0(tf2.n.class);
+        if (nVar != null) {
+            nVar.Z6(false);
+        }
+    }
+
+    public final void u1(boolean z17) {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, "battleStart withAnim: " + z17);
+        K0(0);
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            lj2.c0 c0Var = (lj2.c0) w17;
+            c0Var.e(null);
+            qi2.s1.a(c0Var, null, 1, null);
+            c0Var.g(8);
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1543xd1075a44.r8 r8Var = this.f195137q;
+        r8Var.k(0);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(r8Var.f201126d, "battleStart withAnim:" + z17);
+        lj2.d dVar = r8Var.f201135m;
+        if (dVar != null) {
+            dVar.i(z17);
+        }
+        ai2.a b17 = r8Var.b();
+        if (b17 != null) {
+            b17.i(z17);
+        }
+        java.util.ArrayList<ai2.a> d17 = r8Var.d();
+        if (d17 != null) {
+            for (ai2.a aVar : d17) {
+                if (aVar != null) {
+                    aVar.i(z17);
+                }
+            }
+        }
+        r8Var.f201137o = 0;
+        r8Var.a().i(z17);
+        if (z17) {
+            xi2.g c17 = r8Var.c();
+            qo0.c cVar = r8Var.f201124b;
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.e(cVar, "null cannot be cast to non-null type com.tencent.mm.plugin.finder.live.view.FinderBaseLivePluginLayout");
+            c17.b(((com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1534x373aa5.k0) cVar).m57691xa0fa63f9());
+        } else {
+            r8Var.c().mo140757x901b6914(8);
+        }
+        tf2.n nVar = (tf2.n) U0(tf2.n.class);
+        if (nVar != null) {
+            nVar.Z6(true);
+        }
+    }
+
+    public final void v1() {
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("checkNeedRelease isPk: ");
+        km2.q l76 = ((mm2.o4) P0(mm2.o4.class)).l7();
+        sb6.append(l76 != null ? java.lang.Boolean.valueOf(l76.f390710h) : null);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f195136p, sb6.toString());
+        java.util.List list = ((mm2.o4) P0(mm2.o4.class)).f410857s;
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.f(list, "<get-anchorPkMicUserList>(...)");
+        if (pm0.v.F(list)) {
+            dk2.u4 u4Var = ((mm2.o4) P0(mm2.o4.class)).Z;
+            boolean z17 = false;
+            if (u4Var != null && u4Var.f()) {
+                z17 = true;
+            }
+            if (z17) {
+                B1();
+            }
+        }
+    }
+
+    public final qi2.s1 w1() {
+        km2.k a17;
+        zi2.w wVar = (zi2.w) X0(zi2.w.class);
+        if (wVar == null) {
+            return null;
+        }
+        dk2.u4 u4Var = ((mm2.o4) P0(mm2.o4.class)).Z;
+        lj2.u0 y17 = ((fi2.a) wVar.x1()).y((u4Var == null || (a17 = u4Var.a()) == null) ? null : a17.f390647a);
+        if (y17 != null) {
+            return y17.mo124428x3f645dea();
+        }
+        return null;
+    }
+
+    public final void x1() {
+        K0(0);
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            ((lj2.c0) w17).g(0);
+        }
+        qi2.s1 w18 = w1();
+        if (w18 != null) {
+            ((lj2.c0) w18).d(new com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.ia(this));
+        }
+        this.f195137q.k(8);
+    }
+
+    public final void y1() {
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            lj2.c0 c0Var = (lj2.c0) w17;
+            android.view.View view = c0Var.b().f400477h;
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f554818a;
+            arrayList.add(8);
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(view, arrayList.toArray(), "com/tencent/mm/plugin/finder/live/mic/widget/FinderLiveNewBattleAnchorTipWidget", "onBattleAcceptFail", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view.setVisibility(((java.lang.Integer) arrayList.get(0)).intValue());
+            yj0.a.f(view, "com/tencent/mm/plugin/finder/live/mic/widget/FinderLiveNewBattleAnchorTipWidget", "onBattleAcceptFail", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            c0Var.b().f400476g.setVisibility(0);
+        }
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1473x32b0ec.p1525xc5476f33.l, qo0.a
+    public void z0() {
+        super.z0();
+    }
+
+    public final void z1() {
+        qi2.s1 w17 = w1();
+        if (w17 != null) {
+            lj2.c0 c0Var = (lj2.c0) w17;
+            android.view.View view = c0Var.b().f400477h;
+            java.util.ArrayList arrayList = new java.util.ArrayList();
+            java.lang.ThreadLocal threadLocal = zj0.c.f554818a;
+            arrayList.add(8);
+            java.util.Collections.reverse(arrayList);
+            yj0.a.d(view, arrayList.toArray(), "com/tencent/mm/plugin/finder/live/mic/widget/FinderLiveNewBattleAnchorTipWidget", "onBattleAcceptSucc", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            view.setVisibility(((java.lang.Integer) arrayList.get(0)).intValue());
+            yj0.a.f(view, "com/tencent/mm/plugin/finder/live/mic/widget/FinderLiveNewBattleAnchorTipWidget", "onBattleAcceptSucc", "()V", "android/view/View_EXEC_", "setVisibility", "(I)V");
+            c0Var.b().f400476g.setVisibility(0);
+            qi2.s1.a(c0Var, null, 1, null);
+        }
+    }
+}

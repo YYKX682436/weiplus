@@ -1,0 +1,174 @@
+package com.tencent.mm.pluginsdk.ui.tools;
+
+/* loaded from: classes3.dex */
+public class VideoPlayerSeekBar extends com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar implements com.tencent.mm.pluginsdk.ui.z0 {
+    public static final /* synthetic */ int D = 0;
+    public int A;
+    public int B;
+    public int C;
+
+    /* renamed from: y, reason: collision with root package name */
+    public final com.tencent.mm.pointers.PInt f191445y;
+
+    /* renamed from: z, reason: collision with root package name */
+    public boolean f191446z;
+
+    public VideoPlayerSeekBar(android.content.Context context) {
+        super(context);
+        this.f191445y = new com.tencent.mm.pointers.PInt();
+        this.f191446z = false;
+        this.A = -1;
+        this.B = -1;
+        this.C = -1;
+    }
+
+    private int getBarPointPaddingLeft() {
+        if (this.B == -1) {
+            this.B = this.f162475h.getPaddingLeft();
+        }
+        return this.B;
+    }
+
+    private int getBarPointPaddingRight() {
+        if (this.C == -1) {
+            this.C = this.f162475h.getPaddingRight();
+        }
+        return this.C;
+    }
+
+    public static int s(com.tencent.mm.pluginsdk.ui.tools.VideoPlayerSeekBar videoPlayerSeekBar, int i17, com.tencent.mm.pointers.PInt pInt) {
+        int barPointPaddingLeft = ((android.widget.FrameLayout.LayoutParams) videoPlayerSeekBar.f162474g.getLayoutParams()).leftMargin - videoPlayerSeekBar.getBarPointPaddingLeft();
+        int i18 = i17 - barPointPaddingLeft;
+        int i19 = videoPlayerSeekBar.f162479o;
+        int barLen = (int) (((i18 * 1.0d) / videoPlayerSeekBar.getBarLen()) * i19);
+        pInt.value = barLen;
+        if (barLen <= 0) {
+            pInt.value = 0;
+            if (i18 > barPointPaddingLeft) {
+                barPointPaddingLeft = i18;
+            }
+            return barPointPaddingLeft;
+        }
+        if (barLen < i19) {
+            return i18;
+        }
+        pInt.value = i19;
+        return videoPlayerSeekBar.getBarLen() - (((videoPlayerSeekBar.getBarPointWidth() - videoPlayerSeekBar.getBarPointPaddingLeft()) - videoPlayerSeekBar.getBarPointPaddingRight()) / 2);
+    }
+
+    @Override // com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar, m34.d
+    public void a(int i17) {
+        if (i17 < 0) {
+            i17 = 0;
+        }
+        int i18 = this.f162479o;
+        if (i17 >= i18) {
+            i17 = i18;
+        }
+        if (this.f162480p != i17) {
+            this.f162480p = i17;
+            m();
+        }
+    }
+
+    @Override // com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar
+    public int getBarPointWidth() {
+        if (this.A == -1) {
+            this.A = this.f162475h.getWidth();
+        }
+        return this.A;
+    }
+
+    @Override // com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar
+    public int getLayoutId() {
+        return com.tencent.mm.R.layout.d3n;
+    }
+
+    public android.widget.ImageView getPlayBtn() {
+        return this.f162476i;
+    }
+
+    public android.widget.TextView getPlaytimeTv() {
+        return this.f162477m;
+    }
+
+    @Override // com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar
+    public void j() {
+        android.view.View inflate = android.view.View.inflate(getContext(), getLayoutId(), this);
+        this.f162472e = inflate;
+        this.f162473f = (android.widget.ImageView) inflate.findViewById(com.tencent.mm.R.id.kxj);
+        this.f162474g = (android.widget.ImageView) this.f162472e.findViewById(com.tencent.mm.R.id.kxi);
+        this.f162475h = (android.widget.ImageView) this.f162472e.findViewById(com.tencent.mm.R.id.kxm);
+        this.f162476i = (android.widget.ImageView) this.f162472e.findViewById(com.tencent.mm.R.id.kwj);
+        this.f162477m = (android.widget.TextView) this.f162472e.findViewById(com.tencent.mm.R.id.kwl);
+        this.f162478n = (android.widget.TextView) this.f162472e.findViewById(com.tencent.mm.R.id.kxa);
+        this.f162475h.setOnTouchListener(new com.tencent.mm.pluginsdk.ui.tools.n7(this));
+    }
+
+    @Override // com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar
+    public void m() {
+        if (this.f162479o == 0 || this.f162483s || this.f162475h == null || getBarLen() == 0) {
+            return;
+        }
+        setPlayTimeText(this.f162480p);
+        android.widget.FrameLayout.LayoutParams layoutParams = (android.widget.FrameLayout.LayoutParams) this.f162475h.getLayoutParams();
+        int barLen = getBarLen();
+        layoutParams.leftMargin = u(this.f162480p, barLen);
+        this.f162475h.setLayoutParams(layoutParams);
+        android.widget.FrameLayout.LayoutParams layoutParams2 = (android.widget.FrameLayout.LayoutParams) this.f162473f.getLayoutParams();
+        layoutParams2.width = (int) (((this.f162480p * 1.0d) / this.f162479o) * barLen);
+        this.f162473f.setLayoutParams(layoutParams2);
+        requestLayout();
+    }
+
+    @Override // com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar, m34.d
+    public void setIsPlay(boolean z17) {
+        this.f191446z = z17;
+        super.setIsPlay(z17);
+    }
+
+    public void setPlayBtnOnClickListener(android.view.View.OnClickListener onClickListener) {
+        android.widget.ImageView imageView = this.f162476i;
+        if (imageView != null) {
+            imageView.setOnClickListener(onClickListener);
+        }
+    }
+
+    public void setPlayTimeText(int i17) {
+        this.f162477m.setText(k(i17 / 60) + ":" + k(i17 % 60));
+    }
+
+    @Override // com.tencent.mm.plugin.sight.decode.ui.AdVideoPlayerLoadingBar, m34.d, com.tencent.mm.pluginsdk.ui.z0
+    public void setVideoTotalTime(int i17) {
+        this.f162479o = i17;
+        this.f162480p = 0;
+        this.f162478n.setText(k(this.f162479o / 60) + ":" + k(this.f162479o % 60));
+        m();
+    }
+
+    public int u(int i17, int i18) {
+        if (i17 <= 0) {
+            return 0;
+        }
+        int i19 = this.f162479o;
+        return i17 >= i19 ? i18 - (((getBarPointWidth() - getBarPointPaddingLeft()) - getBarPointPaddingRight()) / 2) : (int) (((i17 * 1.0d) / i19) * i18);
+    }
+
+    public VideoPlayerSeekBar(android.content.Context context, android.util.AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.f191445y = new com.tencent.mm.pointers.PInt();
+        this.f191446z = false;
+        this.A = -1;
+        this.B = -1;
+        this.C = -1;
+    }
+
+    public VideoPlayerSeekBar(android.content.Context context, android.util.AttributeSet attributeSet, int i17) {
+        super(context, attributeSet, i17);
+        this.f191445y = new com.tencent.mm.pointers.PInt();
+        this.f191446z = false;
+        this.A = -1;
+        this.B = -1;
+        this.C = -1;
+    }
+}

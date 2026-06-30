@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/uy4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/t4c" android:background="@color/a" android:layout_width="match_parent" android:layout_height="@dimen/dv" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/uy3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/db" android:paddingStart="@dimen/cn">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginTop="@dimen/bj" android:src="@raw/fts_websearch_icon" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/bj" app:fs="@color/a2y" />
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/jj" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ltq" android:paddingTop="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/db" android:text="@string/ido" android:singleLine="true" android:layout_marginStart="@dimen/dv" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/amd">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/uy1" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/amz" android:layout_height="@dimen/ca" android:src="@raw/icon_negative_feedback_new" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" app:fs="@color/FG_4" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/uy0" android:background="@color/BW_0_Alpha_0_1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/ei" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/qak" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout android:orientation="vertical" android:layout_width="150.0dp" android:layout_height="wrap_content" app:corner="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout android:orientation="vertical" android:id="@id/sj2" android:layout_width="150.0dp" android:layout_height="wrap_content" app:corner="8.0dp">
+        <com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout android:orientation="vertical" android:id="@id/sj3" android:background="@drawable/cy1" android:layout_width="150.0dp" android:layout_height="wrap_content" app:corner="8.0dp">
+            <FrameLayout android:paddingTop="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingEnd="6.0dp">
+                <com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner="2.0dp">
+                    <com.tencent.mm.view.CropImageView android:id="@id/bcb" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@color/d" android:scaleType="centerCrop" />
+                </com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout>
+                <ImageView android:id="@id/szt" android:background="@drawable/cy1" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <View android:layout_gravity="bottom" android:id="@id/sj7" android:background="@drawable/coz" android:layout_width="match_parent" android:layout_height="@dimen/bo" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/sj6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dv" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/dv">
+                    <ImageView android:id="@id/sj4" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+                    <TextView android:textSize="@dimen/c9" android:textColor="@color/an" android:ellipsize="end" android:id="@id/sj5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:paddingEnd="@dimen/bl" android:layout_marginStart="@dimen/bl" />
+                    <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cq" android:layout_height="@dimen/cn" android:src="@raw/picture_regular" app:fs="@color/an" />
+                    <TextView android:textSize="@dimen/c9" android:textColor="@color/an" android:id="@id/ptk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="@dimen/bj" />
+                </LinearLayout>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/b9_" android:paddingTop="8.0dp" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+        </com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout>
+    </com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout>
+</com.tencent.mm.plugin.sns.ui.item.improve.view.ImproveRoundLinearLayout>

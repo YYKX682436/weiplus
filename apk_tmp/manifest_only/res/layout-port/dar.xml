@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/b3g" android:layout_width="match_parent" android:layout_height="@dimen/cl"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ipu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dh" android:layout_alignParentTop="true">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/kwo" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_play" android:alpha="0.1" app:fs="@color/an" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/kwp" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_filled_play" android:alpha="0.1" android:layout_marginStart="-6.0dp" app:fs="@color/an" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f23" android:layout_marginStart="11.0dp" />
+    </LinearLayout>
+</FrameLayout>

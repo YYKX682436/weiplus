@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/scl" android:background="@drawable/ah9" android:paddingBottom="@dimen/bl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/d2" android:paddingStart="@dimen/bn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="bottom" android:id="@id/sck" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@raw/icons_filled_live_photo" app:fs="@color/an" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/scj" android:background="@drawable/d59" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bl" android:layout_marginStart="@dimen/bn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/scd" android:layout_width="@dimen/cq" android:layout_height="@dimen/cq" android:src="@raw/icons_filled_live_photo" app:fs="@color/t" />
+    </LinearLayout>
+</merge>

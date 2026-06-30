@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/u6f" android:background="@null" android:paddingTop="@dimen/cn" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/aht" android:id="@id/u6e" android:layout_width="@dimen/bp" android:layout_height="wrap_content" android:singleLine="false" android:layout_alignTop="@id/u6g" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/u6a" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:layout_toRightOf="@id/u6e" android:layout_alignTop="@id/u6g">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:id="@id/u6b" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+86" android:singleLine="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cs2" android:layout_marginStart="@dimen/bl" app:fs="@color/a84" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.MMEditText android:textSize="@dimen/ia" android:textColor="@color/FG_0" android:textColorHint="@color/FG_2" android:id="@id/u6g" android:background="@null" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false" android:layout_toRightOf="@id/u6a" android:textCursorDrawable="@drawable/afr" />
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/u6_" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/arrow_right_regular" android:scaleType="center" android:layout_alignTop="@id/h0c" android:layout_alignParentRight="true" app:fs="@color/a84" />
+</RelativeLayout>

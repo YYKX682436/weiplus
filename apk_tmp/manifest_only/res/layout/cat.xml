@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lp4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/ntp" android:background="@null" android:layout_width="@dimen/d2" android:layout_height="@dimen/d2" android:src="@raw/icons_filled_improve_switch_camera" android:contentDescription="@string/hue" app:fs="@color/BW_100_Alpha_0_9" />
+        </FrameLayout>
+        <com.tencent.mm.plugin.mmsight.ui.ImproveMMSightRecordButton android:id="@id/lok" android:layout_width="@dimen/a2p" android:layout_height="@dimen/a2p" android:contentDescription="@string/h1" />
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/jh8" android:background="@null" android:layout_width="@dimen/d2" android:layout_height="@dimen/d2" app:fs="@color/BW_100_Alpha_0_9" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/jgb" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginBottom="@dimen/dv" android:layout_above="@id/lp4" layout="@layout/cao" />
+    <include android:id="@id/hc_" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginBottom="@dimen/dv" android:layout_above="@id/lp4" android:layout_centerHorizontal="true" layout="@layout/cas" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:id="@id/b6r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cn" android:text="@string/gw4" android:layout_above="@id/jgb" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:id="@id/b6t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="@dimen/cn" android:layout_above="@id/jgb" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ht7" android:includeFontPadding="false" />
+        <ImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/cn" android:layout_marginLeft="@dimen/dv" android:src="@drawable/c71" />
+    </LinearLayout>
+</RelativeLayout>

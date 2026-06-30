@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/pvc" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cz">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/pvd" android:layout_width="@dimen/afk" android:layout_height="@dimen/afk" android:src="@raw/icons_filled_edit_photo_eraser" app:fs="@color/ac5" />
+    </FrameLayout>
+    <View android:id="@id/pva" android:background="@color/BW_100_Alpha_0_3" android:layout_width="1.0dp" android:layout_height="@dimen/cs" android:layout_centerVertical="true" android:layout_marginStart="@dimen/c9" android:layout_toEndOf="@id/pvc" />
+    <FrameLayout android:id="@id/pvb" android:background="@drawable/ckb" android:padding="@dimen/afl" android:layout_width="@dimen/afm" android:layout_height="@dimen/afm" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cn" android:layout_toEndOf="@id/pva">
+        <ImageView android:layout_gravity="center" android:id="@id/pve" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/clc" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/pv9" android:background="@drawable/ckb" android:padding="@dimen/afl" android:layout_width="@dimen/afm" android:layout_height="@dimen/afm" android:layout_centerVertical="true" android:layout_marginStart="@dimen/d1" android:layout_toEndOf="@id/pvb">
+        <ImageView android:layout_gravity="center" android:id="@id/pv_" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/clb" android:scaleType="centerCrop" />
+    </FrameLayout>
+</RelativeLayout>

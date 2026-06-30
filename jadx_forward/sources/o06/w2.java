@@ -1,0 +1,12 @@
+package o06;
+
+/* loaded from: classes16.dex */
+public final class w2 extends o06.y2 {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final o06.w2 f423536c = new o06.w2();
+
+    public w2() {
+        super(com.p159x477cd522.p160x333422.C1461x7397cc93.f4739x19d1382a, false);
+    }
+}

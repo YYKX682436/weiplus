@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/t80" android:background="@color/BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/t81" android:background="@drawable/d97" android:layout_width="@dimen/an3" android:layout_height="wrap_content">
+        <com.tencent.mm.emoji.view.EmojiStatusView android:id="@id/t83" android:layout_width="@dimen/ch" android:layout_height="@dimen/ch" android:layout_marginTop="@dimen/dj" />
+        <TextView android:textSize="@dimen/a9x" android:textColor="@color/Link_100" android:gravity="center" android:id="@id/t82" android:paddingTop="@dimen/dv" android:paddingBottom="@dimen/dv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/df" android:layout_marginBottom="@dimen/cn" android:text="@string/oj_" android:paddingStart="@dimen/cz" android:paddingEnd="@dimen/cz" />
+    </LinearLayout>
+</FrameLayout>

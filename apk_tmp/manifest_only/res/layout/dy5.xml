@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/jcb" android:background="@color/po" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/cgz" android:background="@drawable/d7k" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginRight="@dimen/aii" android:minHeight="351.0dp" android:layout_marginHorizontal="@dimen/aii">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/h6y" android:layout_width="@dimen/ajt" android:layout_height="@dimen/ajt" android:layout_marginTop="@dimen/ail" android:src="@raw/ai_regular" />
+        <TextView android:textSize="@dimen/r" android:textColor="@color/f5" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajw" android:text="@string/pgc" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/FG_1" android:gravity="center" android:id="@id/cut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ajw" android:layout_marginTop="@dimen/aii" android:layout_marginRight="@dimen/ajw" android:text="@string/pgb" android:layout_marginHorizontal="@dimen/ajw" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b3v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ajt" android:layout_marginBottom="@dimen/ajs">
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/sm4" android:layout_width="@dimen/ali" android:layout_height="wrap_content" android:text="@string/pga" android:layout_marginEnd="@dimen/aih" style="@style/xl" />
+            <com.tencent.mm.ui.widget.button.WeButton android:id="@id/slr" android:layout_width="@dimen/ali" android:layout_height="wrap_content" android:text="@string/pg_" android:layout_marginStart="@dimen/aih" style="@style/xk" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

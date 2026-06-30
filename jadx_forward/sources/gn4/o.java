@@ -1,0 +1,31 @@
+package gn4;
+
+/* loaded from: classes15.dex */
+public class o implements m34.e {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ gn4.z f355176d;
+
+    public o(gn4.z zVar) {
+        this.f355176d = zVar;
+    }
+
+    @Override // m34.e
+    public void a(int i17) {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.TopStory.TopStoryFSVideoContainer", "onSeekTo %d", java.lang.Integer.valueOf(i17));
+        gn4.z zVar = this.f355176d;
+        zVar.f(i17);
+        zVar.G.y();
+        uu4.a.a(22);
+    }
+
+    @Override // m34.e
+    public void b() {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.TopStory.TopStoryFSVideoContainer", "onSeekPre");
+        this.f355176d.G.z();
+    }
+
+    @Override // m34.e
+    public void d(int i17) {
+    }
+}

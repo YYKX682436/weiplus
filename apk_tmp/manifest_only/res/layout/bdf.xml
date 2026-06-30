@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/BW_0_Alpha_0_5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/c4" android:layout_height="@dimen/c4" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/gh_" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wa" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_horizontal" android:id="@id/gh9" android:visibility="gone" android:layout_width="@dimen/dj" android:layout_height="@dimen/dj" app:fs="@color/ab0" app:srcCompat="@raw/icons_outlined_error" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/ab0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/gha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="@string/hft" android:maxLines="1" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/oy5" android:background="@drawable/axt" android:visibility="invisible" android:layout_width="@dimen/rv" android:layout_height="@dimen/rv" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/cn" android:layout_alignParentBottom="true" android:onClick="onClick">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_filled_close" android:contentDescription="@string/b9a" app:fs="@color/an" />
+    </FrameLayout>
+</RelativeLayout>

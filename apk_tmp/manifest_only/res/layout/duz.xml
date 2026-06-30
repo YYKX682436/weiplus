@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.ball.appbrand.FloatBallRadiusLayout android:orientation="vertical" android:id="@id/rpr" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/rpq" android:visibility="gone" android:layout_width="@dimen/dr" android:layout_height="@dimen/dr" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/rpp" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/float_ball_icon_mini_program_regular" android:layout_centerInParent="true" />
+    <TextureView android:gravity="center" android:id="@id/txk" android:layout_width="@dimen/dr" android:layout_height="@dimen/dr" />
+</com.tencent.mm.plugin.ball.appbrand.FloatBallRadiusLayout>

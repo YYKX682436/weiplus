@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/che" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/s7a" app:layout_constraintDimensionRatio="1:1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2" app:layout_constraintWidth_percent="0.6">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/nh8" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@raw/microphone_note_filled" />
+        <com.tencent.mm.plugin.finder.live.mic.voiceroom.wave.RipperAnimateView android:id="@id/qxy" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:ci="@color/af1" app:mode="auto" app:strokeWidth="4.0dp" />
+        <ImageView android:id="@id/qrn" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/qxy" app:layout_constraintDimensionRatio="1:1" app:layout_constraintLeft_toLeftOf="@id/qxy" app:layout_constraintRight_toRightOf="@id/qxy" app:layout_constraintTop_toTopOf="@id/qxy" app:layout_constraintWidth_percent="0.7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/q4" android:id="@id/s7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@id/che" />
+</androidx.constraintlayout.widget.ConstraintLayout>

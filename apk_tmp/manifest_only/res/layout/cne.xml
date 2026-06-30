@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/kj">
+        <LinearLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/hf" android:paddingRight="@dimen/hf" style="@style/ij">
+            <TextView android:gravity="center" android:id="@id/mvq" android:layout_marginBottom="@dimen/hf" android:lineSpacingExtra="4.0dp" style="@style/ik" />
+            <ImageView android:id="@id/ml4" android:layout_width="280.0dp" android:layout_height="280.0dp" android:layout_marginBottom="@dimen/hf" />
+            <Button android:id="@id/ml5" android:text="@string/ww" style="@style/kq" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

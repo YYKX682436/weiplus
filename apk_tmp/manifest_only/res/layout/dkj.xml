@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hhj" android:background="@drawable/a8s" android:layout_width="match_parent" android:layout_height="@dimen/dj" android:layout_marginEnd="104.0dp">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/o6s" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:layout_marginLeft="@dimen/c9" android:src="@raw/icons_filled_call" app:fs="@color/ae" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dv" android:layout_marginRight="@dimen/c9">
+            <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="@dimen/b3" android:textColor="@color/UN_BW_0_Alpha_0_9" android:ellipsize="end" android:id="@id/odb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="54.0dp" android:text="@string/lyw" android:lines="1" android:layout_centerVertical="true" />
+            <com.tencent.mm.plugin.finder.live.view.FinderFixedTextView android:textSize="14.0dp" android:textColor="@color/BW_0_Alpha_0_8" android:id="@id/bp" android:background="@drawable/aoa" android:paddingTop="@dimen/bl" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmt" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/eqy" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/dr" android:src="@raw/icons_outlined_close2" android:layout_alignParentEnd="true" app:fs="@color/an" />
+</RelativeLayout>

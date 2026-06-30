@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rli" android:background="@drawable/zy" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textColor="@color/an" android:id="@id/obc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi4" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <com.tencent.mm.plugin.finder.live.view.FinderLiveSquareRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cn" app:layout_constraintTop_toBottomOf="@id/obc">
+        <com.tencent.mm.ui.widget.RoundedCornerFrameLayout android:id="@id/s2b" android:layout_width="match_parent" android:layout_height="match_parent" app:ds="@dimen/bl" />
+        <ImageView android:id="@id/oz4" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:src="@drawable/cx3" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    </com.tencent.mm.plugin.finder.live.view.FinderLiveSquareRelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

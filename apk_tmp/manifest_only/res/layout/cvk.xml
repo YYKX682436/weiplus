@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/al_" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="40.0dp" android:layout_height="match_parent" android:layout_marginLeft="60.0dp" android:layout_centerVertical="true">
+            <View android:background="@color/ale" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/hx5" android:layout_width="wrap_content" android:layout_height="45.0dp">
+            <TextView android:textColor="@color/all" android:gravity="right" android:id="@id/oqb" android:layout_width="60.0dp" android:layout_height="wrap_content" android:text="20:00" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/hyf" android:layout_width="40.0dp" android:layout_height="45.0dp" android:layout_toRightOf="@id/oqb" android:layout_centerVertical="true">
+                <View android:background="@color/ale" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/hlt" android:background="@color/al_" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/b3j" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/hyj" android:background="?ih" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_toLeftOf="@id/hxw" android:layout_toRightOf="@id/hx5">
+            <TextView android:textStyle="normal" android:textColor="@color/alk" android:id="@id/oqh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电量事件" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/hxw" android:background="?ih" android:visibility="invisible" android:layout_width="50.0dp" android:layout_height="45.0dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0sp" android:id="@id/oo7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="△" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

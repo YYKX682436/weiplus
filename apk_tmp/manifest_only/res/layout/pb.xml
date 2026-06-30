@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/h0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/UN_BW_93" android:layout_width="match_parent" android:layout_height="@dimen/it" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/h1" android:ellipsize="end" android:gravity="left" android:id="@id/cwf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/hf" android:layout_marginRight="@dimen/hf" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/cwe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/hx" android:layout_marginRight="@dimen/hf" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/gy" android:ellipsize="end" android:gravity="left" android:id="@id/cwd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/p" android:layout_marginRight="@dimen/hf" android:text="@string/asb" android:singleLine="true" />
+    <View android:id="@id/b88" android:background="@drawable/qx" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/hf" android:layout_marginBottom="0.0dp" android:layerType="software" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+package com.p314xaae8f345.mm.ui.p2650x55bb7a46.p2671xc90c42a8;
+
+/* loaded from: classes9.dex */
+public final class i5 implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.p314xaae8f345.mm.ui.p2650x55bb7a46.p2671xc90c42a8.m5 f283803d;
+
+    public i5(com.p314xaae8f345.mm.ui.p2650x55bb7a46.p2671xc90c42a8.m5 m5Var) {
+        this.f283803d = m5Var;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        com.p314xaae8f345.mm.ui.p2650x55bb7a46.p2671xc90c42a8.m5 m5Var = this.f283803d;
+        if (m5Var.f284076f == null || m5Var.f283881s.get()) {
+            return;
+        }
+        m5Var.f284076f.A(false, 0);
+    }
+}

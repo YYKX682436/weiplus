@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="horizontal" android:background="@drawable/q2" android:paddingTop="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="top" android:id="@id/hke" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:src="@raw/default_avatar" android:layout_marginStart="@dimen/cn" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bfj" android:paddingBottom="@dimen/dv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dv">
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/fp" android:ellipsize="end" android:gravity="left|top" android:layout_gravity="left|top" android:id="@id/oog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:lineSpacingExtra="0.0dp" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/haq" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_like" app:fs="@color/f5" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/BW_0_Alpha_0_5" android:id="@id/oqb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</LinearLayout>

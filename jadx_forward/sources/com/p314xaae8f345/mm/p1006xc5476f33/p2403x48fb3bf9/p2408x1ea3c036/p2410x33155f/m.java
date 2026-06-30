@@ -1,0 +1,22 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p2403x48fb3bf9.p2408x1ea3c036.p2410x33155f;
+
+/* loaded from: classes8.dex */
+public class m extends sd.e {
+    public m(com.p314xaae8f345.mm.p1006xc5476f33.p2403x48fb3bf9.p2408x1ea3c036.p2410x33155f.o oVar) {
+    }
+
+    @Override // sd.e
+    public org.json.JSONObject a() {
+        org.json.JSONObject jSONObject = new org.json.JSONObject();
+        try {
+            jSONObject.put(com.p314xaae8f345.p3006xb8ff1437.p3069xbd917455.p3070xe3a677a0.p3071xc84c5534.C26529xf7ae38e4.PlayerStep.f54548xbbf10811, "favorite");
+        } catch (org.json.JSONException unused) {
+        }
+        return jSONObject;
+    }
+
+    @Override // sd.e
+    public java.lang.String b() {
+        return "menu:share:appmessage";
+    }
+}

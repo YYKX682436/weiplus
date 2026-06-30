@@ -1,0 +1,206 @@
+package za;
+
+/* loaded from: classes13.dex */
+public class b implements za.a {
+
+    /* renamed from: b, reason: collision with root package name */
+    public static volatile za.a f470863b;
+
+    /* renamed from: a, reason: collision with root package name */
+    public final com.google.android.gms.measurement.AppMeasurement f470864a;
+
+    public b(com.google.android.gms.measurement.AppMeasurement appMeasurement) {
+        com.google.android.gms.common.internal.Preconditions.checkNotNull(appMeasurement);
+        this.f470864a = appMeasurement;
+        new java.util.concurrent.ConcurrentHashMap();
+    }
+
+    public static za.a getInstance(android.content.Context context) {
+        com.google.android.gms.common.internal.Preconditions.checkNotNull(context);
+        com.google.android.gms.common.internal.Preconditions.checkNotNull(context.getApplicationContext());
+        if (f470863b == null) {
+            synchronized (za.a.class) {
+                if (f470863b == null) {
+                    f470863b = new za.b(com.google.android.gms.measurement.AppMeasurement.getInstance(context));
+                }
+            }
+        }
+        return f470863b;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:23:0x0048 A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x0049  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public void logEvent(java.lang.String r5, java.lang.String r6, android.os.Bundle r7) {
+        /*
+            r4 = this;
+            if (r7 != 0) goto L7
+            android.os.Bundle r7 = new android.os.Bundle
+            r7.<init>()
+        L7:
+            java.util.List r0 = ab.b.f2693b
+            boolean r0 = r0.contains(r5)
+            r1 = 1
+            r0 = r0 ^ r1
+            if (r0 != 0) goto L21
+            java.lang.String r5 = java.lang.String.valueOf(r5)
+            int r6 = r5.length()
+            if (r6 == 0) goto L20
+            java.lang.String r6 = "Origin not allowed : "
+            r6.concat(r5)
+        L20:
+            return
+        L21:
+            java.util.List r0 = ab.b.f2692a
+            boolean r0 = r0.contains(r6)
+            r2 = 0
+            if (r0 == 0) goto L2b
+            goto L43
+        L2b:
+            java.util.List r0 = ab.b.f2694c
+            java.util.Iterator r0 = r0.iterator()
+        L31:
+            boolean r3 = r0.hasNext()
+            if (r3 == 0) goto L45
+            java.lang.Object r3 = r0.next()
+            java.lang.String r3 = (java.lang.String) r3
+            boolean r3 = r7.containsKey(r3)
+            if (r3 == 0) goto L31
+        L43:
+            r0 = r2
+            goto L46
+        L45:
+            r0 = r1
+        L46:
+            if (r0 != 0) goto L49
+            return
+        L49:
+            java.lang.String r0 = "_cmp"
+            boolean r0 = r0.equals(r6)
+            if (r0 != 0) goto L52
+            goto L94
+        L52:
+            java.util.List r0 = ab.b.f2693b
+            boolean r0 = r0.contains(r5)
+            r0 = r0 ^ r1
+            if (r0 != 0) goto L5c
+            goto L88
+        L5c:
+            java.util.List r0 = ab.b.f2694c
+            java.util.Iterator r0 = r0.iterator()
+        L62:
+            boolean r3 = r0.hasNext()
+            if (r3 == 0) goto L75
+            java.lang.Object r3 = r0.next()
+            java.lang.String r3 = (java.lang.String) r3
+            boolean r3 = r7.containsKey(r3)
+            if (r3 == 0) goto L62
+            goto L88
+        L75:
+            r5.getClass()
+            java.lang.String r0 = "fcm"
+            boolean r0 = r5.equals(r0)
+            if (r0 != 0) goto L8d
+            java.lang.String r0 = "fdl"
+            boolean r0 = r5.equals(r0)
+            if (r0 != 0) goto L8a
+        L88:
+            r1 = r2
+            goto L94
+        L8a:
+            java.lang.String r0 = "fdl_integration"
+            goto L8f
+        L8d:
+            java.lang.String r0 = "fcm_integration"
+        L8f:
+            java.lang.String r2 = "_cis"
+            r7.putString(r2, r0)
+        L94:
+            if (r1 != 0) goto L97
+            return
+        L97:
+            com.google.android.gms.measurement.AppMeasurement r0 = r4.f470864a
+            r0.logEventInternal(r5, r6, r7)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: za.b.logEvent(java.lang.String, java.lang.String, android.os.Bundle):void");
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:20:0x003e  */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x004e  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public void setUserProperty(java.lang.String r4, java.lang.String r5, java.lang.Object r6) {
+        /*
+            r3 = this;
+            java.util.List r0 = ab.b.f2693b
+            boolean r0 = r0.contains(r4)
+            r1 = 1
+            r0 = r0 ^ r1
+            if (r0 != 0) goto L1a
+            java.lang.String r4 = java.lang.String.valueOf(r4)
+            int r5 = r4.length()
+            if (r5 == 0) goto L19
+            java.lang.String r5 = "Origin not allowed : "
+            r5.concat(r4)
+        L19:
+            return
+        L1a:
+            java.util.List r0 = ab.b.f2695d
+            boolean r0 = r0.contains(r5)
+            if (r0 == 0) goto L23
+            goto L3b
+        L23:
+            java.util.List r0 = ab.b.f2696e
+            java.util.Iterator r0 = r0.iterator()
+        L29:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L3c
+            java.lang.Object r2 = r0.next()
+            java.lang.String r2 = (java.lang.String) r2
+            boolean r2 = r5.matches(r2)
+            if (r2 == 0) goto L29
+        L3b:
+            r1 = 0
+        L3c:
+            if (r1 != 0) goto L4e
+            java.lang.String r4 = java.lang.String.valueOf(r5)
+            int r5 = r4.length()
+            if (r5 == 0) goto L4d
+            java.lang.String r5 = "User Property not allowed : "
+            r5.concat(r4)
+        L4d:
+            return
+        L4e:
+            java.lang.String r0 = "_ce1"
+            boolean r0 = r5.equals(r0)
+            if (r0 != 0) goto L5e
+            java.lang.String r0 = "_ce2"
+            boolean r0 = r5.equals(r0)
+            if (r0 == 0) goto L7a
+        L5e:
+            java.lang.String r0 = "fcm"
+            boolean r0 = r4.equals(r0)
+            if (r0 != 0) goto L7a
+            java.lang.String r0 = "frc"
+            boolean r0 = r4.equals(r0)
+            if (r0 != 0) goto L7a
+            int r4 = r5.length()
+            if (r4 == 0) goto L79
+            java.lang.String r4 = "User Property not allowed for this origin: "
+            r4.concat(r5)
+        L79:
+            return
+        L7a:
+            com.google.android.gms.measurement.AppMeasurement r0 = r3.f470864a
+            r0.setUserPropertyInternal(r4, r5, r6)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: za.b.setUserProperty(java.lang.String, java.lang.String, java.lang.Object):void");
+    }
+}

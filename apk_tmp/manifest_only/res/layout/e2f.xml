@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/voj" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/voi" android:background="@drawable/ccl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/adg" android:id="@id/vok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c8" android:layout_marginBottom="@dimen/c8" android:maxWidth="@dimen/an2" android:text="@string/npy" android:includeFontPadding="false" android:layout_centerVertical="true" android:paddingStart="@dimen/c9" android:layout_marginVertical="@dimen/c8" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/Link_100" android:id="@id/voh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/an2" android:text="@string/npr" android:includeFontPadding="false" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/bz2" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/dv" android:paddingEnd="@dimen/c8">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/icons_outlined_close" app:fs="@color/a84" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ccm" android:translationY="-3.5dp" android:elevation="1.0dp" />
+    </LinearLayout>
+</FrameLayout>

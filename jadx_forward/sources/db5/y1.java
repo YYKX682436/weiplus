@@ -1,0 +1,6 @@
+package db5;
+
+/* loaded from: classes15.dex */
+public interface y1 {
+    void a(int i17, int i18);
+}

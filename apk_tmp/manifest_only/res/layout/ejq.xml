@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.media.view.gesture.PreviewGestureContainer android:gravity="center" android:id="@id/ut5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/jdk" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/oz7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/p0y" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.tencent.mm.plugin.media.view.gesture.PreviewGestureContainer>
+    <com.tencent.mm.ui.widget.MMPinProgressBtn android:id="@id/oyq" android:visibility="gone" android:layout_width="@dimen/a7m" android:layout_height="@dimen/a7m" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/oyy" android:background="@color/t_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/oyx" android:layout_width="@dimen/h" android:layout_height="@dimen/h" android:src="@raw/exclamation_mark_circle_regular" />
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/aaw" android:id="@id/oyz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/it" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

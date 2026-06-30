@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/qo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cdj" android:layout_width="@dimen/amh" android:layout_height="@dimen/amh">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@raw/icons_outlined_add2" app:fs="@color/vo" />
+            <TextView android:textSize="@dimen/b3" android:textColor="@color/vo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dv" android:text="@string/gxy" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/uxb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="@dimen/dv" android:layout_height="match_parent">
+                <View android:background="@color/kj" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dv" android:layout_marginBottom="@dimen/dv" android:layout_marginVertical="@dimen/dv" />
+            </LinearLayout>
+            <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/uxa" android:padding="@dimen/j3" android:layout_width="@dimen/amh" android:layout_height="@dimen/amh">
+                <TextView android:textSize="@dimen/aks" android:textColor="@color/adg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/od1" />
+                <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/uxc" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/bl" android:scaleType="centerCrop" app:i8="@dimen/bl" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

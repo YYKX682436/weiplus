@@ -1,0 +1,20 @@
+package com.p314xaae8f345.p2845xc516c4b6.p2851xae3a4f69;
+
+@p3321xbce91901.InterfaceC29042xe907df4f(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Lcom/tencent/pigeon/data_report/FlutterDataReportHostCodec;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
+/* renamed from: com.tencent.pigeon.data_report.FlutterDataReportHost$Companion$codec$2 */
+/* loaded from: classes13.dex */
+public final class C23623x97493caa extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: INSTANCE */
+    public static final com.p314xaae8f345.p2845xc516c4b6.p2851xae3a4f69.C23623x97493caa f41904x4fbc8495 = new com.p314xaae8f345.p2845xc516c4b6.p2851xae3a4f69.C23623x97493caa();
+
+    public C23623x97493caa() {
+        super(0);
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public final com.p314xaae8f345.p2845xc516c4b6.p2851xae3a4f69.C23629x242bb5d4 mo152xb9724478() {
+        return com.p314xaae8f345.p2845xc516c4b6.p2851xae3a4f69.C23629x242bb5d4.f41910x4fbc8495;
+    }
+}

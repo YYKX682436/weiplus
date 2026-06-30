@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/ak6" android:layout_width="@dimen/ca" android:layout_height="@dimen/bn" android:src="@raw/icons_pop_arrow" android:rotation="180.0" android:layout_marginStart="@dimen/bx" app:fs="@color/BW_0_Alpha_0_0_5" />
+    <FrameLayout android:background="@color/BW_0_Alpha_0_0_5" android:layout_width="match_parent" android:layout_height="191.0dp">
+        <com.tencent.mm.ui.widget.MMProcessBar android:layout_gravity="center" android:id="@id/aka" android:background="@drawable/akq" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/FG_2" android:layout_gravity="center" android:id="@id/akb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bck" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:paddingLeft="@dimen/cs" android:paddingRight="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:paddingHorizontal="@dimen/cs">
+                <TextView android:textSize="@dimen/f9" android:textColor="@color/FG_1" android:id="@id/akc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bci" />
+                <TextView android:textSize="@dimen/f9" android:textColor="@color/a1k" android:layout_gravity="end" android:id="@id/ake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bcj" />
+            </FrameLayout>
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/akd" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/c9" android:overScrollMode="never" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

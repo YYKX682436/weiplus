@@ -1,0 +1,39 @@
+package vm1;
+
+/* loaded from: classes11.dex */
+public final class g0 implements com.p314xaae8f345.mm.p2470x93e71c27.p2474x633fb29.app.a5 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ boolean f519541a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ vm1.x0 f519542b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f519543c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f519544d;
+
+    public g0(boolean z17, vm1.x0 x0Var, java.lang.String str, java.lang.String str2) {
+        this.f519541a = z17;
+        this.f519542b = x0Var;
+        this.f519543c = str;
+        this.f519544d = str2;
+    }
+
+    @Override // com.p314xaae8f345.mm.p2470x93e71c27.p2474x633fb29.app.a5
+    public void a(boolean z17, boolean z18) {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("FlutterBizAudioInteractPlugin", "launchApplicationWithUrl onLaunchApp launchSuccess: " + z17 + ", launchCancel: " + z18);
+        if (z18 || z17) {
+            return;
+        }
+        boolean z19 = this.f519541a;
+        vm1.x0 x0Var = this.f519542b;
+        if (z19) {
+            x0Var.mo92907x301b9a2c(this.f519543c);
+        } else {
+            x0Var.mo92906x31154900(this.f519544d, -1L);
+        }
+    }
+}

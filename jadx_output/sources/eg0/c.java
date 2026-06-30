@@ -1,0 +1,12 @@
+package eg0;
+
+/* loaded from: classes6.dex */
+public class c implements java.lang.Iterable {
+    public c(eg0.a aVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new eg0.b(this, null);
+    }
+}

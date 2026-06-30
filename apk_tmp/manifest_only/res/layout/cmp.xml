@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/a49" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:layout_width="match_parent" android:layout_height="@dimen/ay">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/jzx" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_arrow" android:layout_centerVertical="true" android:rotation="180.0" app:fs="@color/an" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/ia" android:textColor="@color/an" android:id="@id/r0r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j39" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/k0w" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/icons_outlined_more" android:layout_centerInParent="true" android:layout_alignParentEnd="true" app:fs="@color/an" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mr_" android:layout_width="match_parent" android:layout_height="400.0dp">
+        <View android:id="@id/mrb" android:background="@drawable/b07" android:layout_width="400.0dp" android:layout_height="400.0dp" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/mra" android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_centerInParent="true">
+            <View android:background="@drawable/b08" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <View android:background="@drawable/b08" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/d9" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.tencent.mm.plugin.gif.MMAnimateView android:id="@id/mrm" android:layout_width="@dimen/br" android:layout_height="@dimen/br" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/j4" android:textColor="@color/BW_100_Alpha_0_5" android:gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j32" android:layout_below="@id/mrm" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+package go0;
+
+/* loaded from: classes14.dex */
+public final class x0 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ int f355436d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ int f355437e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ int f355438f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ int f355439g;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public x0(int i17, int i18, int i19, int i27) {
+        super(0);
+        this.f355436d = i17;
+        this.f355437e = i18;
+        this.f355438f = i19;
+        this.f355439g = i27;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        return new go0.w0(0, 0, this.f355436d, this.f355437e, this.f355438f, this.f355439g);
+    }
+}

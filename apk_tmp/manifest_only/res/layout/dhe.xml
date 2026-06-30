@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/qdl" android:layout_width="@dimen/cs" android:layout_height="1.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.tencent.mm.plugin.textstatus.ui.TextStatusCircleIconLayout android:layout_gravity="center" android:id="@id/qdj" android:layout_width="wrap_content" android:layout_height="@dimen/db" app:icon_size="@dimen/d2" app:layout_size="@dimen/db" />
+        <TextView android:textSize="@dimen/b3" android:textColor="@color/adg" android:gravity="center" android:layout_gravity="center" android:id="@id/qdk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bj" />
+    </LinearLayout>
+</LinearLayout>

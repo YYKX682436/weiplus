@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/m5s" android:background="@drawable/axq" android:layout_width="match_parent" android:layout_height="@dimen/d9" android:layout_marginTop="@dimen/c8" android:layout_marginBottom="@dimen/c8" android:layout_marginStart="@dimen/dv" android:layout_marginEnd="@dimen/dv">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/icons_outlined_search" custom:fs="@color/FG_1" />
+        <TextView android:textSize="@dimen/k" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/y8" android:layout_marginStart="@dimen/bl" />
+    </LinearLayout>
+    <com.tencent.mm.view.TouchableLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.mm.view.refreshLayout.WxRefreshLayout android:id="@id/m6e" android:layout_width="match_parent" android:layout_height="match_parent" custom:enableFooterFollowWhenNoMoreData="true" custom:enableLoadMore="true" custom:enableLoadMoreWhenContentNotFull="true" custom:enableOverScrollBounce="true" custom:enableOverScrollDrag="true" custom:enableRefresh="true">
+            <com.tencent.mm.plugin.ringtone.widget.RingtoneRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/m5d" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+            <com.tencent.mm.plugin.ringtone.widget.RingtoneLoaderMoreFooter android:id="@id/m5e" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.tencent.mm.view.refreshLayout.WxRefreshLayout>
+        <FrameLayout android:id="@id/dg3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/lbi" android:visibility="gone" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/cf" style="@style/w9" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/m2g" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/cf" android:text="@string/i2z" style="@style/s4" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/dft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cf" android:text="@string/ti" style="@style/s4" />
+        </FrameLayout>
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:src="@raw/icons_filled_mask_left" android:layout_marginStart="@dimen/cn" custom:fs="@color/a" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="right" android:layout_width="@dimen/dv" android:layout_height="@dimen/dv" android:layout_marginRight="@dimen/cn" android:src="@raw/icons_filled_mask_right" custom:fs="@color/a" />
+    </com.tencent.mm.view.TouchableLayout>
+</LinearLayout>

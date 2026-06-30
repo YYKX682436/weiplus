@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/n6r" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.media.camera.view.CameraKitView android:id="@id/b5a" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/kik" android:layout_centerHorizontal="true" app:cameraId="0" app:cameraView="0" app:ratioHeight="16" app:ratioWidth="9" />
+    <View android:id="@id/b55" android:background="@drawable/f9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cc" android:layout_alignTop="@id/b5a" />
+    <RelativeLayout android:id="@id/kik" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/cn">
+        <ImageView android:id="@id/ntp" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/mmsight_camera_navbar_icon_switch" android:contentDescription="@string/hue" android:layout_marginEnd="@dimen/cn" android:layout_alignParentEnd="true" />
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/bzo" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@drawable/buc" android:contentDescription="@string/ht2" android:layout_marginStart="@dimen/cn" android:layout_alignParentStart="true" app:fs="@color/an" />
+    </RelativeLayout>
+    <com.tencent.mm.plugin.mmsight.ui.MMSightRecordButton android:layout_gravity="center_horizontal" android:id="@id/lok" android:layout_width="@dimen/a5z" android:layout_height="@dimen/a5z" android:layout_marginBottom="@dimen/dd" android:layout_alignBottom="@id/b5a" android:layout_centerHorizontal="true" android:contentDescription="@string/h1" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:gravity="center" android:id="@id/b6r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="30.0dp" android:text="@string/gw4" android:layout_above="@id/lok" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:id="@id/b6t" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginRight="@dimen/d7" android:layout_marginBottom="30.0dp" android:layout_above="@id/lok" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/ab0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ht7" android:includeFontPadding="false" />
+        <ImageView android:layout_width="@dimen/c9" android:layout_height="@dimen/cn" android:src="@drawable/c71" android:layout_marginStart="@dimen/dv" />
+    </LinearLayout>
+</RelativeLayout>

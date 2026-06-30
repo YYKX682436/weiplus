@@ -1,0 +1,48 @@
+package com.tencent.mm.plugin.textstatus.ui;
+
+/* loaded from: classes11.dex */
+public final class jc extends androidx.recyclerview.widget.w2 {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ androidx.recyclerview.widget.LinearLayoutManager f174012d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.textstatus.ui.TextStatusHistoryUI f174013e;
+
+    public jc(androidx.recyclerview.widget.LinearLayoutManager linearLayoutManager, com.tencent.mm.plugin.textstatus.ui.TextStatusHistoryUI textStatusHistoryUI) {
+        this.f174012d = linearLayoutManager;
+        this.f174013e = textStatusHistoryUI;
+    }
+
+    @Override // androidx.recyclerview.widget.w2
+    public void onScrollStateChanged(androidx.recyclerview.widget.RecyclerView recyclerView, int i17) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(recyclerView);
+        arrayList.add(java.lang.Integer.valueOf(i17));
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/textstatus/ui/TextStatusHistoryUI$initView$2", "androidx/recyclerview/widget/RecyclerView$OnScrollListener", "onScrollStateChanged", "(Landroidx/recyclerview/widget/RecyclerView;I)V", this, array);
+        kotlin.jvm.internal.o.g(recyclerView, "recyclerView");
+        if (this.f174012d.y() >= r7.getItemCount() - 5) {
+            bk4.d dVar = this.f174013e.f173635g;
+            if (dVar == null) {
+                kotlin.jvm.internal.o.o("dataLoader");
+                throw null;
+            }
+            dVar.b();
+        }
+        yj0.a.h(this, "com/tencent/mm/plugin/textstatus/ui/TextStatusHistoryUI$initView$2", "androidx/recyclerview/widget/RecyclerView$OnScrollListener", "onScrollStateChanged", "(Landroidx/recyclerview/widget/RecyclerView;I)V");
+    }
+
+    @Override // androidx.recyclerview.widget.w2
+    public void onScrolled(androidx.recyclerview.widget.RecyclerView recyclerView, int i17, int i18) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(recyclerView);
+        arrayList.add(java.lang.Integer.valueOf(i17));
+        arrayList.add(java.lang.Integer.valueOf(i18));
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/textstatus/ui/TextStatusHistoryUI$initView$2", "androidx/recyclerview/widget/RecyclerView$OnScrollListener", "onScrolled", "(Landroidx/recyclerview/widget/RecyclerView;II)V", this, array);
+        yj0.a.h(this, "com/tencent/mm/plugin/textstatus/ui/TextStatusHistoryUI$initView$2", "androidx/recyclerview/widget/RecyclerView$OnScrollListener", "onScrolled", "(Landroidx/recyclerview/widget/RecyclerView;II)V");
+    }
+}

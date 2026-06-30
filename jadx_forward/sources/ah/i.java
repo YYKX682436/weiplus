@@ -1,0 +1,20 @@
+package ah;
+
+/* loaded from: classes7.dex */
+public abstract class i {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static ah.g f86248a = new ah.f(null);
+
+    public static void a(java.lang.String str, java.lang.String str2, java.lang.Object... objArr) {
+        f86248a.e(str, str2, objArr);
+    }
+
+    public static void b(java.lang.String str, java.lang.String str2, java.lang.Object... objArr) {
+        f86248a.i(str, str2, objArr);
+    }
+
+    public static void c(java.lang.String str, java.lang.Throwable th6, java.lang.String str2, java.lang.Object... objArr) {
+        f86248a.mo1904x6e0e6e2a(str, th6, str2, objArr);
+    }
+}

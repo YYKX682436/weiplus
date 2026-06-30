@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/c" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fillViewport="true" style="@style/kj">
+        <RelativeLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/d7" android:paddingTop="@dimen/bo" android:paddingRight="@dimen/d7" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/h1" android:textColor="@color/a0c" android:gravity="center" android:id="@id/moa" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="4" android:singleLine="false" android:layout_weight="1.0" android:lineSpacingExtra="4.0dp" style="@style/kc" />
+                <TextView android:textSize="@dimen/gz" android:textColor="@color/vo" android:id="@id/ci9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/agy" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/h1" android:textColor="@color/a0c" android:gravity="center" android:id="@id/mo_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:singleLine="false" android:layout_below="@id/mob" android:lineSpacingExtra="4.0dp" style="@style/kc" />
+            <TextView android:textSize="@dimen/gz" android:textColor="@color/a0c" android:gravity="center" android:id="@id/mo9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" android:layout_marginBottom="@dimen/hj" android:maxLines="8" android:singleLine="false" android:layout_below="@id/mob" android:lineSpacingExtra="4.0dp" style="@style/kc" />
+            <LinearLayout android:gravity="center|bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/mo9" android:layout_alignParentBottom="true">
+                <Button android:id="@id/mo8" android:layout_marginBottom="@dimen/hf" style="@style/kr" />
+                <Button android:id="@id/moc" android:layout_marginBottom="@dimen/hf" style="@style/kz" />
+                <TextView android:textSize="@dimen/j4" android:id="@id/mo7" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dd" android:layout_marginBottom="@dimen/cz" android:text="@string/agh" style="@style/hp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

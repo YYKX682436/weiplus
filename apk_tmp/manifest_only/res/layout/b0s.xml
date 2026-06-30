@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/ti6" android:background="@drawable/a6z" android:layout_width="@dimen/db" android:layout_height="@dimen/db" android:layout_marginRight="@dimen/cn">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:id="@id/thy" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/finder_live_comment_danmaku_switch" app:fs="@color/BW_100_Alpha_0_8" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/ews" android:background="@drawable/a6z" android:layout_width="@dimen/db" android:layout_height="@dimen/db">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:src="@raw/bullet_screen_gear" app:fs="@color/BW_100_Alpha_0_8" />
+    </FrameLayout>
+</LinearLayout>

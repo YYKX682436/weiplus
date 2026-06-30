@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/a08" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:form="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/keyboard_change_scroll_view" android:scrollbars="none" android:layout_width="400.0dp" android:layout_height="match_parent" android:fillViewport="true">
+        <com.tencent.mm.ui.widget.InputPanelLinearLayout android:orientation="vertical" android:id="@id/keyboard_change_input_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cz">
+            <LinearLayout android:orientation="vertical" android:id="@id/ofg" android:paddingLeft="@dimen/i_" android:paddingTop="@dimen/hj" android:paddingRight="@dimen/i_" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/o" android:textColor="@color/a0c" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ipf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/hj" android:text="@string/gho" />
+                <com.tencent.mm.ui.base.MMFormInputView android:id="@id/iod" android:focusableInTouchMode="false" form:form_layout="@layout/byh" form:form_title="@string/gh4" style="@style/j8" />
+                <com.tencent.mm.ui.base.MMFormInputView android:id="@id/ip_" android:focusableInTouchMode="false" form:form_hint="@string/gif" form:form_layout="@layout/byj" form:form_title="@string/gie" style="@style/j8" />
+                <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j3" android:layout_marginTop="@dimen/hi" android:text="@string/gih" />
+                <Button android:id="@id/iov" android:layout_marginLeft="@dimen/j3" android:layout_marginTop="@dimen/hi" android:text="@string/gwn" style="@style/yt" />
+            </LinearLayout>
+            <View android:id="@id/t8r" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="left" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/ej0" />
+            </LinearLayout>
+            <com.tencent.mm.plugin.account.sdk.view.ProgressButton android:layout_gravity="center_horizontal" android:id="@id/iol" android:layout_marginTop="@dimen/cz" android:minWidth="@dimen/cf" android:text="@string/gi7" style="@style/kr" />
+            <Button android:textSize="@dimen/ia" android:textColor="@color/vr" android:layout_gravity="center|bottom" android:id="@id/iog" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dj" android:text="@string/gh_" />
+        </com.tencent.mm.ui.widget.InputPanelLinearLayout>
+    </ScrollView>
+</LinearLayout>

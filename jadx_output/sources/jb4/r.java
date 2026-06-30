@@ -1,0 +1,87 @@
+package jb4;
+
+/* loaded from: classes4.dex */
+public class r extends android.os.AsyncTask {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final java.lang.String f298839a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public java.lang.String f298840b = "";
+
+    /* renamed from: c, reason: collision with root package name */
+    public final int f298841c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final int f298842d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final java.lang.String f298843e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ jb4.v f298844f;
+
+    public r(jb4.v vVar, java.lang.String str, int i17, int i18, java.lang.String str2) {
+        this.f298844f = vVar;
+        this.f298839a = str;
+        this.f298841c = i17;
+        this.f298842d = i18;
+        this.f298843e = str2;
+    }
+
+    /* JADX WARN: Can't wrap try/catch for region: R(8:(9:14|(1:16)|17|18|19|20|21|22|23)|50|18|19|20|21|22|23) */
+    /* JADX WARN: Code restructure failed: missing block: B:37:0x00be, code lost:
+    
+        r0 = e;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:38:0x0118, code lost:
+    
+        r16.f298840b = r0.toString();
+        com.tencent.mars.xlog.Log.e("SphereImageView.SphereImageLoader", "ImageDecodeTask, exp:" + r16.f298840b);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:40:0x00bc, code lost:
+    
+        r0 = e;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:47:0x00c0, code lost:
+    
+        r0 = e;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:48:0x00c1, code lost:
+    
+        r5 = 0;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:62:0x0067, code lost:
+    
+        if (r12.f298853b < 1080) goto L30;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:26:0x0148  */
+    /* JADX WARN: Removed duplicated region for block: B:29:0x0156  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x0158  */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x014a  */
+    @Override // android.os.AsyncTask
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.Object doInBackground(java.lang.Object[] r17) {
+        /*
+            Method dump skipped, instructions count: 388
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: jb4.r.doInBackground(java.lang.Object[]):java.lang.Object");
+    }
+
+    @Override // android.os.AsyncTask
+    public void onPostExecute(java.lang.Object obj) {
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("onPostExecute", "com.tencent.mm.plugin.sns.storage.AdLandingPagesStorage.AdLandingPageComponent.widget.SphereImageView.SphereImageLoader$ImageDecodeTask");
+        android.graphics.Bitmap bitmap = (android.graphics.Bitmap) obj;
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markStartTimeMs("onPostExecute", "com.tencent.mm.plugin.sns.storage.AdLandingPagesStorage.AdLandingPageComponent.widget.SphereImageView.SphereImageLoader$ImageDecodeTask");
+        jb4.u uVar = this.f298844f.f298852a;
+        if (uVar != null) {
+            uVar.a(bitmap != null, this.f298840b, bitmap, this.f298839a);
+        }
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("onPostExecute", "com.tencent.mm.plugin.sns.storage.AdLandingPagesStorage.AdLandingPageComponent.widget.SphereImageView.SphereImageLoader$ImageDecodeTask");
+        com.tencent.mm.plugin.sns.ui.monitor.SnsMethodCalculate.markEndTimeMs("onPostExecute", "com.tencent.mm.plugin.sns.storage.AdLandingPagesStorage.AdLandingPageComponent.widget.SphereImageView.SphereImageLoader$ImageDecodeTask");
+    }
+}

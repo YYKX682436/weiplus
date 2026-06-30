@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.view.refreshLayout.horizontal.WxHRefreshLayout android:id="@id/lr1" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableOverScrollBounce="true" app:enableOverScrollDrag="true">
+        <com.tencent.mm.plugin.repairer.ui.demo.refresh.view.DemoHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lq8" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        <com.tencent.mm.plugin.repairer.ui.demo.refresh.view.DemoFooter android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.view.refreshLayout.horizontal.WxHRefreshLayout>
+</LinearLayout>

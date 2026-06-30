@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.plugin.finder.view.FinderMaxSizeLinearLayout android:orientation="vertical" android:id="@id/th3" android:background="@drawable/apo" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/abw" android:gravity="center" android:id="@id/spe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="40.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="16.0dp" android:text="聊一聊" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/abw" android:gravity="center" android:id="@id/sp8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="24.0dp" android:text="通过聊一聊开始直播后，将为你随机匹配人连麦聊天。" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/t3y" android:layout_width="180.0dp" android:layout_height="320.0dp" android:layout_marginBottom="32.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="76.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <com.tencent.mm.ui.widget.button.WeButton android:id="@id/sp7" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="@string/opo" android:layout_marginEnd="8.0dp" style="@style/xl" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/spd" android:background="@drawable/a0f" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" android:paddingVertical="12.0dp">
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="@dimen/cs" android:layout_height="@dimen/cs" android:src="@raw/finder_live_icon" app:fs="@color/ab0" />
+            <TextView android:textSize="17.0dp" android:textColor="@color/ab0" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f5x" android:lines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/bl" />
+        </LinearLayout>
+    </LinearLayout>
+</com.tencent.mm.plugin.finder.view.FinderMaxSizeLinearLayout>

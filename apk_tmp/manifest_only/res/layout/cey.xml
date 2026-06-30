@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/a" android:padding="@dimen/cn" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:id="@id/odf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{title}" />
+    <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:id="@id/cut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="{desc}" />
+    <TextView android:textSize="@dimen/j9" android:textColor="@color/tk" android:id="@id/o7z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="time" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/ot3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="更新这条消息" />
+        <Button android:id="@id/ct6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="删除" android:layout_marginStart="12.0dp" />
+    </LinearLayout>
+</LinearLayout>

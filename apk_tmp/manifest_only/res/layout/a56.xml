@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/c7a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hf" android:layout_marginTop="@dimen/hi" android:layout_marginRight="@dimen/hf">
+        <com.tencent.mm.ui.widget.MMEditText android:textColor="@color/a0c" android:textColorHint="@color/tj" android:gravity="top" android:id="@id/cgi" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="false" android:layout_weight="1.0" style="@style/ir" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:layout_gravity="right|bottom" android:id="@id/po1" android:padding="@dimen/j_" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hj">
+        <TextView android:textSize="@dimen/ia" android:textColor="@color/a_0" android:layout_gravity="right|bottom" android:id="@id/p1x" android:padding="@dimen/j_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j58" />
+    </LinearLayout>
+</LinearLayout>

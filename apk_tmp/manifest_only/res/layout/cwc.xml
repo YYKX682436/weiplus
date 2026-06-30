@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/nle" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/nl9" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/nkl" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.plugin.story.ui.view.CommentsContainer android:id="@id/nl1" android:paddingBottom="80.0dp" android:clipToPadding="false" android:layout_width="272.0dp" android:layout_height="match_parent" android:layout_marginTop="80.0dp" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp" />
+            <FrameLayout android:id="@id/nke" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nl_" android:background="@drawable/b3z" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginBottom="32.0dp" android:layout_marginStart="32.0dp">
+                    <com.tencent.mm.plugin.story.ui.view.StoryCommentBubbleView android:id="@id/nla" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/bnj" android:layout_marginStart="6.0dp" />
+                    <View android:background="@color/aaw" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" />
+                    <com.tencent.mm.plugin.story.ui.view.StoryCommentBubbleView android:id="@id/nlb" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginEnd="6.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nlf" android:background="@drawable/b3z" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginBottom="32.0dp" android:layout_marginStart="32.0dp">
+                    <com.tencent.mm.plugin.story.ui.view.StoryCommentBubbleView android:id="@id/nlg" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" />
+                </LinearLayout>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/j4" android:textColor="@color/ab0" android:gravity="center" android:id="@id/nkp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="96.0dp" android:minWidth="112.0dp" android:text="@string/jlk" android:layout_alignParentBottom="true" android:alpha="0.0" android:layerType="software" android:layout_marginStart="16.0dp" android:layout_alignParentStart="true" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/nld" android:paddingBottom="16.0dp" android:fadingEdgeLength="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dp" android:layout_above="@id/nke" android:requiresFadingEdge="vertical" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

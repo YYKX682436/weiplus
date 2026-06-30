@@ -1,0 +1,119 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2060xf8bc3f31.p2062x5582bc23.p2076x229fdf4d;
+
+@p3321xbce91901.InterfaceC29042xe907df4f(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"Lcom/tencent/mm/plugin/setting/ui/setting_new/settings/personal_info/SettingActivityItemWeCoin;", "Ls24/a;", "Landroidx/appcompat/app/AppCompatActivity;", com.p314xaae8f345.p3076xcbed6b1f.p3080xbe953013.p3081x4189335b.C26617x73f7249d.f55566xbe5e9100, "<init>", "(Landroidx/appcompat/app/AppCompatActivity;)V", "plugin-setting_release"}, k = 1, mv = {1, 9, 0})
+/* renamed from: com.tencent.mm.plugin.setting.ui.setting_new.settings.personal_info.SettingActivityItemWeCoin */
+/* loaded from: classes.dex */
+public final class C17648x39856631 extends s24.a {
+
+    /* renamed from: p, reason: collision with root package name */
+    public final java.lang.String f243519p;
+
+    /* renamed from: q, reason: collision with root package name */
+    public java.lang.String f243520q;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C17648x39856631(p012xc85e97e9.p016x746ad0e3.app.ActivityC0065xcd7aa112 activity) {
+        super(activity);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(activity, "activity");
+        this.f243519p = "MicroMsg.SettingActivityWeCoin";
+        this.f243520q = "";
+    }
+
+    @Override // s24.a
+    public java.lang.String L7() {
+        return ".ui.setting.SettingsModifyNameUI";
+    }
+
+    @Override // s24.a
+    public java.lang.String M7() {
+        return "setting";
+    }
+
+    @Override // a24.i
+    public java.lang.Integer Y6() {
+        return 0;
+    }
+
+    @Override // a24.i
+    public java.lang.String a7() {
+        return "SettingGroup_Main_PersonalInfo_WeCoin";
+    }
+
+    @Override // a24.i
+    public a24.u b7() {
+        return new a24.u(com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2060xf8bc3f31.p2062x5582bc23.C17527x718322dd.class, com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2060xf8bc3f31.p2062x5582bc23.p2076x229fdf4d.C17638x24ba6dbb.class);
+    }
+
+    @Override // s24.a, s24.f, a24.i
+    /* renamed from: clone */
+    public java.lang.Object mo446x5a5dd5d() {
+        return super.mo446x5a5dd5d();
+    }
+
+    @Override // a24.i
+    public int d7() {
+        return com.p314xaae8f345.mm.R.C30867xcad56011.p8r;
+    }
+
+    @Override // a24.i
+    public java.lang.Class e7() {
+        return com.p314xaae8f345.mm.p1006xc5476f33.p2051x765f0e50.ui.p2060xf8bc3f31.p2062x5582bc23.C17527x718322dd.class;
+    }
+
+    @Override // a24.i
+    public int m7() {
+        return 2;
+    }
+
+    @Override // a24.i
+    /* renamed from: n7 */
+    public java.lang.String getF243411p() {
+        java.lang.String str;
+        if (!((uh4.c0) i95.n0.c(uh4.c0.class)).mo168058x74219ae7()) {
+            ((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).getClass();
+            java.lang.Long valueOf = java.lang.Long.valueOf(os4.h.i());
+            p3321xbce91901.jvm.p3324x21ffc6bd.o.d(valueOf);
+            if (valueOf.longValue() > 0) {
+                str = valueOf.longValue() + ' ' + m158362x2fec8307(com.p314xaae8f345.mm.R.C30867xcad56011.j1_);
+            } else {
+                str = "";
+            }
+            java.lang.String str2 = !p3321xbce91901.jvm.p3324x21ffc6bd.o.b(this.f243520q, "") ? this.f243520q : "";
+            if (!p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str2, "")) {
+                str = str2;
+            }
+            com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f243519p, "updateWeCoinEntry balance catch: %s", str);
+            if (!p3321xbce91901.jvm.p3324x21ffc6bd.o.b(str, "")) {
+                return str;
+            }
+        }
+        return null;
+    }
+
+    @Override // com.p314xaae8f345.mm.ui.p2687xac8f1cfd.AbstractC22275x3ce1d8c9, pf5.g
+    /* renamed from: onResume */
+    public void mo2284x57429eec() {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(this.f243519p, "updateWeCoinEntry CGI");
+        ((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).b(new o24.i(this));
+    }
+
+    @Override // a24.i
+    public boolean q7() {
+        return !((uh4.c0) i95.n0.c(uh4.c0.class)).mo168058x74219ae7();
+    }
+
+    @Override // s24.a, a24.i
+    public void r7(android.content.Context context, android.view.View itemView, int i17) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(context, "context");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(itemView, "itemView");
+        t7(m158354x19263085().getIntent());
+        if (!((ms4.z) ((js4.i) gm0.j1.s(js4.i.class))).c()) {
+            v24.o0.b(context, 8L, true, new o24.h(context));
+            return;
+        }
+        com.p314xaae8f345.mm.p1006xc5476f33.p2029xc84c5534.p2031x7643c6b5.g0.INSTANCE.d(21650, 0);
+        android.content.Intent intent = new android.content.Intent();
+        intent.putExtra("launch_from_webview", false);
+        j45.l.k(context, "wallet", ".wecoin.ui.WeCoinRechargeView", intent, true);
+    }
+}

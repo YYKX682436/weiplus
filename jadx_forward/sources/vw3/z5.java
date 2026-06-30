@@ -1,0 +1,32 @@
+package vw3;
+
+/* loaded from: classes12.dex */
+public final class z5 implements android.view.View.OnClickListener {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ com.tencent.mm.plugin.repairer.ui.RepairerSportUI f522741d;
+
+    public z5(com.tencent.mm.plugin.repairer.ui.RepairerSportUI repairerSportUI) {
+        this.f522741d = repairerSportUI;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(android.view.View view) {
+        java.util.ArrayList arrayList = new java.util.ArrayList();
+        arrayList.add(view);
+        java.lang.Object[] array = arrayList.toArray();
+        arrayList.clear();
+        yj0.a.b("com/tencent/mm/plugin/repairer/ui/RepairerSportUI$onCreate$4", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        com.p314xaae8f345.mm.p632xd97a1f41.p633xb307e119.C5401xe4b21f18 c5401xe4b21f18 = new com.p314xaae8f345.mm.p632xd97a1f41.p633xb307e119.C5401xe4b21f18();
+        c5401xe4b21f18.f135744g.f89522a = 3;
+        c5401xe4b21f18.e();
+        java.lang.String str = this.f522741d.d;
+        java.lang.StringBuilder sb6 = new java.lang.StringBuilder("getconfig:  ");
+        am.u8 u8Var = c5401xe4b21f18.f135745h;
+        sb6.append(u8Var.f89591c);
+        sb6.append(' ');
+        sb6.append(u8Var.f89589a);
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i(str, sb6.toString());
+        yj0.a.h(this, "com/tencent/mm/plugin/repairer/ui/RepairerSportUI$onCreate$4", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

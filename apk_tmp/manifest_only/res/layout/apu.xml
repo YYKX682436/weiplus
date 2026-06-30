@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ewo" android:layout_width="match_parent" android:layout_height="360.0dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" />
+    <View android:background="@drawable/a2b" android:layout_width="match_parent" android:layout_height="@dimen/df" app:layout_constraintBottom_toBottomOf="@id/ewo" app:layout_constraintLeft_toLeftOf="0" />
+    <include android:visibility="gone" layout="@layout/apt" />
+    <include layout="@layout/apv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

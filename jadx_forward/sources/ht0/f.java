@@ -1,0 +1,23 @@
+package ht0;
+
+/* loaded from: classes10.dex */
+public class f implements java.lang.Runnable {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ ht0.s f366225d;
+
+    public f(ht0.s sVar) {
+        this.f366225d = sVar;
+    }
+
+    @Override // java.lang.Runnable
+    public void run() {
+        com.p314xaae8f345.p542x3306d5.p550x382fcc.Log.i("MicroMsg.Media.MediaCodecMP4MuxRecorder", "frame to stop timeout");
+        ht0.s sVar = this.f366225d;
+        sVar.f366300o.f334572a = ei3.l.WaitStop;
+        ls0.k kVar = sVar.I;
+        ht0.d dVar = new ht0.d(this);
+        kVar.getClass();
+        kVar.d(new ls0.h(dVar));
+    }
+}

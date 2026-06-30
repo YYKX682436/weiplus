@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/zz" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="43.0dp" android:paddingTop="33.0dp" android:paddingRight="43.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/k" android:textColor="@color/ab0" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bpp" android:drawableBottom="@drawable/bkl" android:drawablePadding="20.0dp" />
+            <TextView android:visibility="gone" android:text="@string/bpn" style="@style/wj" />
+            <TextView android:text="@string/bph" style="@style/wj" />
+            <TextView android:visibility="gone" android:text="@string/hlr" style="@style/wj" />
+        </LinearLayout>
+        <com.tencent.mm.ui.base.MMProgressBar android:id="@id/cy8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="50.0dp" android:layout_marginRight="30.0dp" />
+        <TextView android:id="@id/lzd" android:layout_marginBottom="20.0dp" android:text="@string/bpg" style="@style/wm" />
+    </LinearLayout>
+</ScrollView>

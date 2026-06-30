@@ -1,0 +1,40 @@
+package fg0;
+
+/* loaded from: classes12.dex */
+public final class b extends x65.l {
+
+    /* renamed from: h, reason: collision with root package name */
+    public final jz5.g f343356h;
+
+    /* renamed from: i, reason: collision with root package name */
+    public final p3325xe03a0797.p3326xc267989b.p3332x361a9b.m f343357i;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(p012xc85e97e9.p093xedfae76a.y lifecycleOwner) {
+        super(lifecycleOwner);
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(lifecycleOwner, "lifecycleOwner");
+        this.f343356h = jz5.h.b(new fg0.a(lifecycleOwner));
+        this.f343357i = p3325xe03a0797.p3326xc267989b.p3332x361a9b.p.a(2, 0, 2, null);
+    }
+
+    @Override // x65.l
+    public java.lang.String e() {
+        return "MicroMsg.MsgVoiceSyncDownloadGroup";
+    }
+
+    @Override // x65.l
+    public com.p314xaae8f345.mm.sdk.p2597xc267989b.C20976x6ba6452a j() {
+        return (com.p314xaae8f345.mm.sdk.p2597xc267989b.C20976x6ba6452a) ((jz5.n) this.f343356h).mo141623x754a37bb();
+    }
+
+    @Override // x65.l
+    public p3325xe03a0797.p3326xc267989b.p3332x361a9b.m k() {
+        return this.f343357i;
+    }
+
+    @Override // x65.a
+    /* renamed from: name */
+    public java.lang.String mo45041x337a8b() {
+        return "MsgVoiceSyncDownloadGroup";
+    }
+}

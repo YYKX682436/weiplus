@@ -1,0 +1,20 @@
+package hc2;
+
+/* loaded from: classes8.dex */
+public final class t0 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.l {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ java.lang.String f361873d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public t0(java.lang.String str) {
+        super(1);
+        this.f361873d = str;
+    }
+
+    @Override // yz5.l
+    /* renamed from: invoke */
+    public java.lang.Object mo146xb9724478(java.lang.Object obj) {
+        return java.lang.Boolean.valueOf(p3321xbce91901.jvm.p3324x21ffc6bd.o.b(((r45.f03) obj).f455425i, this.f361873d));
+    }
+}

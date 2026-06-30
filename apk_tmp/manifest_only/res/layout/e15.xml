@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_below="@id/br1" style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.MMNeat7extView android:textColor="@color/FG_0" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bkl" android:background="@drawable/mh" android:maxWidth="@dimen/sa" android:minHeight="@dimen/a_" style="@style/eu" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:layout_marginTop="@dimen/bl">
+            <TextView android:textSize="@dimen/c9" android:textColor="@color/BW_0_Alpha_0_5" android:layout_gravity="right" android:id="@id/bjp" android:background="@drawable/ls" android:paddingLeft="@dimen/dv" android:paddingTop="@dimen/bl" android:paddingRight="@dimen/dv" android:paddingBottom="@dimen/bl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cnn" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

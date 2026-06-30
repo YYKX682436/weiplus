@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/k37" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/d7" android:layout_marginRight="@dimen/cz">
+        <ImageView android:id="@id/a_4" android:background="@drawable/bhp" android:layout_width="@dimen/d7" android:layout_height="@dimen/d7" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/f5" android:layout_gravity="center_vertical" android:id="@id/kbq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dv" android:text="{nickname}" />
+    </LinearLayout>
+    <com.tencent.mm.ui.widget.RoundCornerRelativeLayout android:id="@id/m7z" android:layout_width="match_parent" android:layout_height="@dimen/bo" android:layout_marginTop="@dimen/cz" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz">
+        <View android:id="@id/asz" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jyc" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tencent.mm.ui.widget.MMRoundCornerImageView android:id="@id/o70" android:layout_width="@dimen/bo" android:layout_height="@dimen/bo" android:src="@raw/icons_filled_music" android:scaleType="centerCrop" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dv" android:layout_weight="1.0" android:layout_marginEnd="@dimen/c9">
+                <TextView android:textSize="@dimen/ia" android:textColor="@color/a0c" android:ellipsize="end" android:id="@id/k2_" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="我要飞的更高" android:singleLine="true" />
+                <TextView android:textSize="@dimen/j4" android:textColor="@color/jj" android:ellipsize="end" android:id="@id/k2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:text="BTS防弹少年团" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.tencent.mm.ui.widget.RoundCornerRelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ben" android:background="@drawable/as9" android:paddingLeft="@dimen/c9" android:paddingRight="@dimen/c9" android:layout_width="wrap_content" android:layout_height="@dimen/cz" android:layout_marginLeft="@dimen/cz" android:layout_marginTop="@dimen/cn" android:layout_marginRight="@dimen/cz">
+        <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:src="@raw/common_icons_album" app:fs="@color/FG_0" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/a0c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bl" android:text="@string/h4l" />
+    </LinearLayout>
+</LinearLayout>

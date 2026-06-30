@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/kvt" android:background="@color/f" android:layout_width="match_parent" android:layout_height="112.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textSize="@dimen/a7i" android:id="@id/azh" android:layout_width="120.0dp" android:layout_height="40.0dp" android:text="@string/got" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="@id/p14" app:layout_constraintStart_toEndOf="@id/p14" app:layout_constraintTop_toTopOf="@id/p14" style="@style/kr" />
+    <View android:id="@id/p14" android:background="@color/a9e" android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_marginTop="40.0dp" android:layout_marginBottom="32.0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <Button android:textSize="@dimen/a7i" android:id="@id/azg" android:layout_width="120.0dp" android:layout_height="40.0dp" android:text="@string/gos" android:layout_marginEnd="8.0dp" app:layout_constraintBottom_toBottomOf="@id/p14" app:layout_constraintEnd_toStartOf="@id/p14" app:layout_constraintTop_toTopOf="@id/p14" style="@style/kz" />
+</androidx.constraintlayout.widget.ConstraintLayout>

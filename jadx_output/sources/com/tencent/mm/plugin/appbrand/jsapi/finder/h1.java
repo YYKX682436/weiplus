@@ -1,0 +1,25 @@
+package com.tencent.mm.plugin.appbrand.jsapi.finder;
+
+/* loaded from: classes.dex */
+public class h1 extends com.tencent.mm.plugin.appbrand.jsapi.f {
+    public static final int CTRL_INDEX = 1448;
+    public static final java.lang.String NAME = "startChannelsLive";
+
+    @Override // com.tencent.mm.plugin.appbrand.jsapi.f
+    public void A(com.tencent.mm.plugin.appbrand.jsapi.l lVar, org.json.JSONObject jSONObject, int i17) {
+        com.tencent.mm.plugin.appbrand.e9 e9Var = (com.tencent.mm.plugin.appbrand.e9) lVar;
+        new com.tencent.mm.plugin.appbrand.jsapi.finder.JsApiStartChannelsLive$StartChannelsLiveTask(e9Var, i17, jSONObject).d();
+        java.lang.String str = android.text.TextUtils.isEmpty(null) ? "ok" : null;
+        if (str == null) {
+            str = "";
+        }
+        java.lang.String str2 = com.tencent.mm.sdk.platformtools.z.f193105a;
+        org.json.JSONObject jSONObject2 = new org.json.JSONObject();
+        try {
+            jSONObject2.put("errno", 0);
+        } catch (java.lang.Exception e17) {
+            com.tencent.mars.xlog.Log.e("MicroMsg.AppBrandJsApi", "makeReturnJson with JSONObject, put errno, e=%s", e17);
+        }
+        e9Var.a(i17, u(str, jSONObject2));
+    }
+}

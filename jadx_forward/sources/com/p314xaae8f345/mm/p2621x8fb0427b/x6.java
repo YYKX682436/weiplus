@@ -1,0 +1,38 @@
+package com.p314xaae8f345.mm.p2621x8fb0427b;
+
+/* loaded from: classes6.dex */
+public class x6 implements java.util.Iterator {
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f277863d = 0;
+
+    public x6(com.p314xaae8f345.mm.p2621x8fb0427b.y6 y6Var, com.p314xaae8f345.mm.p2621x8fb0427b.w6 w6Var) {
+    }
+
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f277863d < 5;
+    }
+
+    @Override // java.util.Iterator
+    public java.lang.Object next() {
+        int i17 = this.f277863d;
+        this.f277863d = i17 + 1;
+        if (i17 == 0) {
+            return k41.u0.INSTANCE;
+        }
+        if (i17 == 1) {
+            return no3.k.INSTANCE;
+        }
+        if (i17 == 2) {
+            return j00.c.INSTANCE;
+        }
+        if (i17 == 3) {
+            return f01.u1.INSTANCE;
+        }
+        if (i17 == 4) {
+            return y00.m.INSTANCE;
+        }
+        throw new java.lang.IndexOutOfBoundsException("No more elements, total count: 5");
+    }
+}

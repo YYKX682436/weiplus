@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ek"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tx" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/el">
+        <TextView android:id="@id/brc" android:visibility="gone" style="@style/eq" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bkg" android:background="@drawable/k5" android:padding="0.0dp" android:layout_width="@dimen/rq" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/aii" android:layout_marginTop="@dimen/all" android:layout_marginRight="@dimen/all" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/a45" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_centerVertical="true" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aih" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <com.tencent.mm.ui.widget.MMTextView android:textSize="17.0dp" android:textColor="@color/aby" android:ellipsize="middle" android:id="@id/a48" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                        <com.tencent.mm.ui.widget.MMTextView android:textSize="14.0dp" android:textColor="@color/aby" android:ellipsize="end" android:id="@id/a44" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ib" android:singleLine="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/gbh" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aii" android:layout_marginTop="@dimen/aih" android:layout_marginRight="@dimen/all" android:layout_marginBottom="@dimen/aih">
+                <TextView android:textSize="12.0dp" android:textColor="@color/adh" android:id="@id/a46" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b3a" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/adh" android:id="@id/a47" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b31" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

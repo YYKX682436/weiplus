@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:background="#eeeeee" android:paddingTop="@dimen/hj" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ipj" android:layout_width="@dimen/hh" android:layout_height="@dimen/hh" android:src="@drawable/bwu" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/ia" android:id="@id/dh_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hj" android:text="@string/c2j" android:layout_below="@id/ipj" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/h2" android:textColor="@color/tk" android:id="@id/dha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hf" android:text="" android:layout_below="@id/dh_" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/gvk" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/hp" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.ui.base.MaxListView android:id="@id/cgl" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/a9e" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="@dimen/jp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <Button android:id="@id/c_z" android:layout_marginLeft="@dimen/i_" android:layout_marginTop="@dimen/hp" android:layout_marginRight="@dimen/i_" android:text="@string/c2x" style="@style/kq" />
+            <Button android:id="@id/kan" android:layout_marginLeft="@dimen/i_" android:layout_marginTop="@dimen/i_" android:layout_marginRight="@dimen/i_" android:text="@string/c26" style="@style/kx" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

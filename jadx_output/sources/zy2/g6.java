@@ -1,0 +1,5 @@
+package zy2;
+
+/* loaded from: classes6.dex */
+public interface g6 extends i95.m {
+}

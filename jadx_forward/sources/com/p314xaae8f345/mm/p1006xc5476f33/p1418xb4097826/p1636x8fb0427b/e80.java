@@ -1,0 +1,26 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1636x8fb0427b;
+
+/* loaded from: classes2.dex */
+public final class e80 extends com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1438x38b81db3.eh {
+
+    /* renamed from: r, reason: collision with root package name */
+    public final /* synthetic */ yz5.q f208230r;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public e80(yz5.q qVar, int i17, tu2.b bVar) {
+        super(i17, bVar, null, null, 12, null);
+        this.f208230r = qVar;
+    }
+
+    @Override // com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1438x38b81db3.eh, in5.r
+    /* renamed from: q */
+    public void h(in5.s0 holder, com.p314xaae8f345.mm.p1006xc5476f33.p1418xb4097826.p1570x633fb29.AbstractC14490x69736cb5 item, int i17, int i18, boolean z17, java.util.List list) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(holder, "holder");
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(item, "item");
+        super.h(holder, item, i17, i18, z17, list);
+        yz5.q qVar = this.f208230r;
+        if (qVar != null) {
+            qVar.mo147xb9724478(holder, item, java.lang.Integer.valueOf(i17));
+        }
+    }
+}

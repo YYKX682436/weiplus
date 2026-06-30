@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/v6" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="@dimen/cq" android:paddingBottom="@dimen/cq" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/tew" android:layout_width="@dimen/dj" android:layout_height="@dimen/dd" android:layout_centerVertical="true" android:contentDescription="@string/b9a">
+            <FrameLayout android:layout_gravity="center" android:background="@drawable/xm" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:importantForAccessibility="noHideDescendants">
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_gravity="center" android:layout_width="10.0dp" android:layout_height="20.0dp" android:src="@raw/icons_filled_arrow" android:rotation="90.0" app:fs="@color/FG_0" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/a9x" android:textColor="@color/a0c" android:id="@id/tey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nm5" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/FG_2" android:layout_width="match_parent" android:layout_height="@dimen/be" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bl" android:layout_marginStart="@dimen/cz" android:layout_marginEnd="@dimen/cz">
+        <LinearLayout android:orientation="vertical" android:id="@id/tex" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

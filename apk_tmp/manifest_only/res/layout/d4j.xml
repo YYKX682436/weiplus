@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/p6e" android:background="@color/aaw" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/p6a" android:background="@raw/voice_icon_new" android:layout_width="@dimen/ady" android:layout_height="@dimen/ady" android:layout_marginTop="@dimen/adz" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+    <TextView android:textSize="@dimen/ct" android:textColor="@color/FG_0" android:id="@id/p6i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:text="@string/k_q" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/p6a" />
+    <LinearLayout android:orientation="vertical" android:id="@id/p6h" android:background="@drawable/afp" android:paddingLeft="@dimen/cn" android:paddingRight="@dimen/cn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/d7" android:layout_marginTop="@dimen/db" android:layout_marginRight="@dimen/d7" android:layout_marginHorizontal="@dimen/d7" android:paddingHorizontal="@dimen/cn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/p6i">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/a0c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j0x" />
+            <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.MMSwitchBtn android:id="@id/kj9" android:layout_width="@dimen/jh" android:layout_height="@dimen/je" />
+        </LinearLayout>
+        <View android:background="@drawable/afv" android:layout_width="match_parent" android:layout_height="@dimen/bd" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/p6d" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/a0c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j11" />
+            <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_arrow" android:importantForAccessibility="no" android:layout_marginStart="@dimen/dv" app:fs="@color/a8w" />
+        </LinearLayout>
+        <View android:background="@drawable/afv" android:layout_width="match_parent" android:layout_height="@dimen/bd" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/p65" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dj">
+            <TextView android:textSize="@dimen/r" android:textColor="@color/a0c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j0t" />
+            <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <com.tencent.mm.ui.widget.imageview.WeImageView android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@raw/icons_outlined_arrow" android:importantForAccessibility="no" android:layout_marginStart="@dimen/dv" app:fs="@color/a8w" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="17.0dp" android:textColor="@color/FG_0" android:gravity="center_horizontal" android:id="@id/p6f" android:paddingLeft="@dimen/d7" android:paddingRight="@dimen/d7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cz" android:text="@string/k_h" android:paddingHorizontal="@dimen/d7" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@id/p6i" />
+    <Button android:textSize="@dimen/k" android:id="@id/cm8" android:padding="@dimen/f" android:visibility="gone" android:layout_width="@dimen/cf" android:layout_height="@dimen/df" android:layout_marginBottom="@dimen/bu" android:text="@string/k_f" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="@style/kq" />
+</androidx.constraintlayout.widget.ConstraintLayout>

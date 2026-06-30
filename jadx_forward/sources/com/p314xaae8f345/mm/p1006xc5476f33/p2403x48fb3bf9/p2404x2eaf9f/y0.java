@@ -1,0 +1,8 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p2403x48fb3bf9.p2404x2eaf9f;
+
+/* loaded from: classes8.dex */
+public interface y0 {
+    void a(com.p314xaae8f345.mm.p1006xc5476f33.p2403x48fb3bf9.p2404x2eaf9f.x0 x0Var);
+
+    boolean b();
+}

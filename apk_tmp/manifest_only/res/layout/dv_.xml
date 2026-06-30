@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/rwm" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wa" />
+    <TextView android:textSize="@dimen/r" android:textColor="@color/ab0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rwn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c9" android:text="@string/mu1" />
+    <FrameLayout android:layout_width="@dimen/du" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/dv">
+        <View android:layout_gravity="center" android:id="@id/rwl" android:background="@drawable/cvr" android:layout_width="@dimen/dh" android:layout_height="@dimen/d7" />
+        <Button android:textSize="14.0sp" android:textColor="@color/afz" android:gravity="center" android:layout_gravity="center" android:id="@id/rwk" android:background="@color/a9e" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/aq7" />
+    </FrameLayout>
+</LinearLayout>

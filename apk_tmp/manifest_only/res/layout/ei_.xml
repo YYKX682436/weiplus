@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ukw" android:paddingTop="@dimen/cs" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/r" android:textColor="@color/abw" android:id="@id/vfb" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phe" />
+    <TextView android:textSize="@dimen/ja" android:id="@id/ukx" android:visibility="gone" android:includeFontPadding="false" android:layout_marginStart="@dimen/dv" style="@style/rv" />
+    <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/a9w" android:layout_width="wrap_content" android:layout_height="@dimen/alv" android:layout_marginEnd="@dimen/dv">
+        <ImageView android:id="@id/sgc" android:layout_width="@dimen/alw" android:layout_height="@dimen/alv" />
+        <ImageView android:id="@id/sgd" android:layout_width="@dimen/alw" android:layout_height="@dimen/alv" />
+        <ImageView android:id="@id/sge" android:layout_width="@dimen/alw" android:layout_height="@dimen/alv" />
+        <ImageView android:id="@id/sg_" android:visibility="gone" android:layout_width="@dimen/alw" android:layout_height="@dimen/alv" />
+        <View android:id="@id/sg9" android:background="@drawable/d7w" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/alv" />
+    </FrameLayout>
+    <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/a4s" android:layout_width="@dimen/c9" android:layout_height="@dimen/cz" android:layout_marginTop="@dimen/bl" android:layout_marginBottom="@dimen/bl" android:src="@raw/icons_outlined_arrow" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginEnd="@dimen/bn" app:fs="@color/FG_2" />
+</LinearLayout>

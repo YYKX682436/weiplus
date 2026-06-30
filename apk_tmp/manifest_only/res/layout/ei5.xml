@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/szo" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/jp9" android:animateLayoutChanges="true">
+        <com.tencent.mm.view.shadow.layout.WxShadowLinearLayout android:id="@id/t2c" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.mm.plugin.ball.view.DisableDisallowInterceptTouchFrameLayout android:id="@id/t2d" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.tencent.mm.plugin.ball.view.ContentFloatBallRecyclerView android:id="@id/t2b" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+            </com.tencent.mm.plugin.ball.view.DisableDisallowInterceptTouchFrameLayout>
+        </com.tencent.mm.view.shadow.layout.WxShadowLinearLayout>
+    </LinearLayout>
+</merge>

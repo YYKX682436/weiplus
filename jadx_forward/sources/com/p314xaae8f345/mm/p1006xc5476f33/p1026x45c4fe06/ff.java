@@ -1,0 +1,236 @@
+package com.p314xaae8f345.mm.p1006xc5476f33.p1026x45c4fe06;
+
+/* loaded from: classes12.dex */
+public final class ff implements qu5.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final com.p314xaae8f345.mm.sdk.p2603x2137b148.n3 f159586a = new com.p314xaae8f345.mm.sdk.p2603x2137b148.n3(android.os.Looper.getMainLooper());
+
+    /* renamed from: b, reason: collision with root package name */
+    public final android.os.Handler f159587b;
+
+    public ff() {
+        this.f159587b = android.os.Build.VERSION.SDK_INT >= 28 ? android.os.Handler.createAsync(android.os.Looper.getMainLooper()) : null;
+    }
+
+    @Override // qu5.a
+    /* renamed from: dispatchMessage */
+    public void mo50277x8245362d(android.os.Message message) {
+        this.f159586a.mo50277x8245362d(message);
+    }
+
+    @Override // qu5.a
+    /* renamed from: dump */
+    public void mo50278x2f39f4(android.util.Printer printer, java.lang.String str) {
+        this.f159586a.mo50278x2f39f4(printer, str);
+    }
+
+    @Override // qu5.a
+    /* renamed from: executeOrSendMessage */
+    public boolean mo50279x9b89c07(android.os.Message message) {
+        return this.f159586a.mo50279x9b89c07(message);
+    }
+
+    @Override // qu5.a
+    /* renamed from: getLooper */
+    public android.os.Looper mo50280x23b2dd47() {
+        return this.f159586a.mo50280x23b2dd47();
+    }
+
+    @Override // qu5.a
+    /* renamed from: getMessageName */
+    public java.lang.String mo50281xa5c8d9fc(android.os.Message message) {
+        return this.f159586a.mo50281xa5c8d9fc(message);
+    }
+
+    @Override // qu5.a
+    /* renamed from: getSelf */
+    public android.os.Handler mo50282xfb8537c2() {
+        return this.f159586a.mo50282xfb8537c2();
+    }
+
+    @Override // qu5.a
+    /* renamed from: getSerial */
+    public xu5.b mo50283x2f1920ea() {
+        return this.f159586a.mo50283x2f1920ea();
+    }
+
+    @Override // qu5.a
+    /* renamed from: getSerialTag */
+    public java.lang.String mo50284xdd3e8650() {
+        return this.f159586a.mo50284xdd3e8650();
+    }
+
+    @Override // qu5.a
+    /* renamed from: hasMessages */
+    public boolean mo50285x8fc9be06(int i17) {
+        return this.f159586a.mo50285x8fc9be06(i17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: isQuit */
+    public boolean mo50287xb9a7fe99() {
+        return this.f159586a.mo50287xb9a7fe99();
+    }
+
+    @Override // qu5.a
+    /* renamed from: obtainMessage */
+    public android.os.Message mo50288x733c63a2() {
+        return this.f159586a.mo50288x733c63a2();
+    }
+
+    @Override // qu5.a
+    /* renamed from: post */
+    public boolean mo50293x3498a0(java.lang.Runnable runnable) {
+        return this.f159586a.mo50293x3498a0(runnable);
+    }
+
+    @Override // qu5.a
+    /* renamed from: postAtFrontOfQueue */
+    public boolean mo50294x9395cba4(java.lang.Runnable runnable) {
+        return this.f159586a.mo50294x9395cba4(runnable);
+    }
+
+    @Override // qu5.a
+    /* renamed from: postAtTime */
+    public boolean mo50295x41bd0e60(java.lang.Runnable runnable, long j17) {
+        return this.f159586a.mo50295x41bd0e60(runnable, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: postDelayed */
+    public boolean mo50297x7c4d7ca2(java.lang.Runnable runnable, long j17) {
+        return this.f159586a.mo50297x7c4d7ca2(runnable, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: quit */
+    public boolean mo50299x35224f() {
+        return this.f159586a.mo50299x35224f();
+    }
+
+    @Override // qu5.a
+    /* renamed from: removeCallbacks */
+    public void mo50301x3fa464aa(java.lang.Runnable runnable, java.lang.Object obj) {
+        this.f159586a.mo50301x3fa464aa(runnable, obj);
+    }
+
+    @Override // qu5.a
+    /* renamed from: removeCallbacksAndMessages */
+    public void mo50302x6b17ad39(java.lang.Object obj) {
+        this.f159586a.mo50302x6b17ad39(obj);
+        android.os.Handler handler = this.f159587b;
+        if (handler != null) {
+            handler.removeCallbacksAndMessages(obj);
+        }
+    }
+
+    @Override // qu5.a
+    /* renamed from: removeMessages */
+    public void mo50303x856b99f0(int i17) {
+        this.f159586a.mo50303x856b99f0(i17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: sendEmptyMessage */
+    public boolean mo50305x3d8a09a2(int i17) {
+        return this.f159586a.mo50305x3d8a09a2(i17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: sendEmptyMessageAtTime */
+    public boolean mo50306x754635e2(int i17, long j17) {
+        return this.f159586a.mo50306x754635e2(i17, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: sendEmptyMessageDelayed */
+    public boolean mo50307xb9e94560(int i17, long j17) {
+        return this.f159586a.mo50307xb9e94560(i17, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: sendMessage */
+    public boolean mo50308x2936bf5f(android.os.Message message) {
+        return this.f159586a.mo50308x2936bf5f(message);
+    }
+
+    @Override // qu5.a
+    /* renamed from: sendMessageAtFrontOfQueue */
+    public boolean mo50309x6d91b823(android.os.Message message) {
+        return this.f159586a.mo50309x6d91b823(message);
+    }
+
+    @Override // qu5.a
+    /* renamed from: sendMessageAtTime */
+    public boolean mo50310xc5d0e9df(android.os.Message message, long j17) {
+        return this.f159586a.mo50310xc5d0e9df(message, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: sendMessageDelayed */
+    public boolean mo50311x7ab51103(android.os.Message message, long j17) {
+        return this.f159586a.mo50311x7ab51103(message, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: hasMessages */
+    public boolean mo50286x8fc9be06(int i17, java.lang.Object obj) {
+        return this.f159586a.mo50286x8fc9be06(i17, obj);
+    }
+
+    @Override // qu5.a
+    /* renamed from: obtainMessage */
+    public android.os.Message mo50289x733c63a2(int i17) {
+        return this.f159586a.mo50289x733c63a2(i17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: postAtTime */
+    public boolean mo50296x41bd0e60(java.lang.Runnable runnable, java.lang.Object obj, long j17) {
+        return this.f159586a.mo50296x41bd0e60(runnable, obj, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: postDelayed */
+    public boolean mo50298x7c4d7ca2(java.lang.Runnable runnable, java.lang.Object obj, long j17) {
+        return this.f159586a.mo50298x7c4d7ca2(runnable, obj, j17);
+    }
+
+    @Override // qu5.a
+    /* renamed from: removeCallbacks */
+    public void mo50300x3fa464aa(java.lang.Runnable runnable) {
+        if (runnable == null) {
+            return;
+        }
+        this.f159586a.mo50300x3fa464aa(runnable);
+        android.os.Handler handler = this.f159587b;
+        if (handler != null) {
+            handler.removeCallbacks(runnable);
+        }
+    }
+
+    @Override // qu5.a
+    /* renamed from: removeMessages */
+    public void mo50304x856b99f0(int i17, java.lang.Object obj) {
+        this.f159586a.mo50304x856b99f0(i17, obj);
+    }
+
+    @Override // qu5.a
+    /* renamed from: obtainMessage */
+    public android.os.Message mo50290x733c63a2(int i17, int i18, int i19) {
+        return this.f159586a.mo50290x733c63a2(i17, i18, i19);
+    }
+
+    @Override // qu5.a
+    /* renamed from: obtainMessage */
+    public android.os.Message mo50291x733c63a2(int i17, int i18, int i19, java.lang.Object obj) {
+        return this.f159586a.mo50291x733c63a2(i17, i18, i19, obj);
+    }
+
+    @Override // qu5.a
+    /* renamed from: obtainMessage */
+    public android.os.Message mo50292x733c63a2(int i17, java.lang.Object obj) {
+        return this.f159586a.mo50292x733c63a2(i17, obj);
+    }
+}

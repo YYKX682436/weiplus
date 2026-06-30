@@ -1,0 +1,12 @@
+package cm1;
+
+/* loaded from: classes6.dex */
+public class c implements java.lang.Iterable {
+    public c(cm1.a aVar) {
+    }
+
+    @Override // java.lang.Iterable
+    public java.util.Iterator iterator() {
+        return new cm1.b(this, null);
+    }
+}

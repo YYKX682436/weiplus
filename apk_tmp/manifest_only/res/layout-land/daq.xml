@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/agy" android:paddingTop="@dimen/bo" android:paddingBottom="@dimen/bo" android:layout_width="@dimen/cu" android:layout_height="match_parent" android:weightSum="5.0" android:layout_alignParentEnd="true" android:paddingVertical="@dimen/bo">
+        <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/net" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/f20" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/nes" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/f1z" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/ner" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/f1y" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/neu" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/f21" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/co" android:textColor="@color/an" android:gravity="center" android:id="@id/nep" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/f1x" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

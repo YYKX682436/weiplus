@@ -1,0 +1,28 @@
+package az0;
+
+/* loaded from: classes5.dex */
+public final class x5 implements kotlinx.coroutines.flow.k {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ kotlin.jvm.internal.e0 f16046d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ kotlinx.coroutines.flow.k f16047e;
+
+    public x5(kotlin.jvm.internal.e0 e0Var, kotlinx.coroutines.flow.k kVar) {
+        this.f16046d = e0Var;
+        this.f16047e = kVar;
+    }
+
+    @Override // kotlinx.coroutines.flow.k
+    public java.lang.Object emit(java.lang.Object obj, kotlin.coroutines.Continuation continuation) {
+        float floatValue = ((java.lang.Number) obj).floatValue();
+        float f17 = this.f16046d.f310115d;
+        jz5.f0 f0Var = jz5.f0.f302826a;
+        if (floatValue <= f17) {
+            return f0Var;
+        }
+        java.lang.Object emit = this.f16047e.emit(new java.lang.Float(floatValue), continuation);
+        return emit == pz5.a.f359186d ? emit : f0Var;
+    }
+}

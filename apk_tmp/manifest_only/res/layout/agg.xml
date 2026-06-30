@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/j8p" android:background="@color/f" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/m6g" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableRefresh="false">
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/la3" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+    <FrameLayout android:id="@id/dbv" android:background="@color/c" android:paddingTop="132.0dp" android:paddingBottom="@dimen/bu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="52.0dp">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/oao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/evi" style="@style/s4" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/oav" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/el4" style="@style/s4" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/oai" android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:indeterminateDrawable="@drawable/avj" />
+    </FrameLayout>
+</FrameLayout>

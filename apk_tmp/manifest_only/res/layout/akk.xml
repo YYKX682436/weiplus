@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cgk" android:background="@color/BW_93" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/g4h" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/by" android:layout_marginStart="@dimen/bo" android:layout_marginEnd="@dimen/bo">
+        <TextView android:textSize="@dimen/gz" android:textColor="@color/FG_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f8l" />
+        <com.tencent.mm.view.recyclerview.WxRecyclerView android:id="@id/oh8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cn" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.finder.view.FinderRefreshLayout android:orientation="vertical" android:id="@id/m6e" android:background="@color/BW_93" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:enableFooterFollowWhenNoMoreData="true" app:enableLoadMoreWhenContentNotFull="true" app:enableRefresh="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lqa" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </com.tencent.mm.plugin.finder.view.FinderRefreshLayout>
+    <TextView android:gravity="center" android:id="@id/kcj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginTop="@dimen/bu" android:text="@string/f30" style="@style/s4" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/im7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <ProgressBar android:background="@color/a9e" android:layout_width="@dimen/cz" android:layout_height="@dimen/cz" android:indeterminateDrawable="@drawable/avj" />
+    </LinearLayout>
+</RelativeLayout>

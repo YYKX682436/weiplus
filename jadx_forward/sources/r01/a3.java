@@ -1,0 +1,62 @@
+package r01;
+
+/* loaded from: classes7.dex */
+public class a3 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public int f449554a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final java.lang.Long[] f449555b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final java.util.HashSet[] f449556c;
+
+    public a3(int i17) {
+        this.f449554a = i17;
+        java.lang.Long[] lArr = new java.lang.Long[3];
+        for (int i18 = 0; i18 < 3; i18++) {
+            lArr[i18] = 0L;
+        }
+        this.f449555b = lArr;
+        java.util.HashSet[] hashSetArr = new java.util.HashSet[3];
+        for (int i19 = 0; i19 < 3; i19++) {
+            hashSetArr[i19] = new java.util.HashSet();
+        }
+        this.f449556c = hashSetArr;
+    }
+
+    public final void a(java.lang.String key) {
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(key, "key");
+        long abs = java.lang.Math.abs(android.os.SystemClock.elapsedRealtime() / this.f449554a);
+        int i17 = (int) (abs % 3);
+        java.lang.Long[] lArr = this.f449555b;
+        long longValue = lArr[i17].longValue();
+        java.util.HashSet[] hashSetArr = this.f449556c;
+        if (longValue != abs) {
+            hashSetArr[i17].clear();
+            lArr[i17] = java.lang.Long.valueOf(abs);
+        }
+        hashSetArr[i17].add(key);
+    }
+
+    public final boolean b(java.lang.String key) {
+        java.util.HashSet hashSet;
+        p3321xbce91901.jvm.p3324x21ffc6bd.o.g(key, "key");
+        long abs = java.lang.Math.abs(android.os.SystemClock.elapsedRealtime() / this.f449554a);
+        int i17 = (int) (abs % 3);
+        java.lang.Long[] lArr = this.f449555b;
+        long longValue = lArr[i17].longValue();
+        java.util.HashSet[] hashSetArr = this.f449556c;
+        if (abs == longValue) {
+            hashSet = hashSetArr[i17];
+        } else {
+            int abs2 = java.lang.Math.abs(i17 - 1) % 3;
+            hashSet = abs == lArr[abs2].longValue() ? hashSetArr[abs2] : null;
+        }
+        if (hashSet != null) {
+            return hashSet.contains(key);
+        }
+        return false;
+    }
+}

@@ -1,0 +1,13 @@
+package k0;
+
+/* loaded from: classes14.dex */
+public final class n implements k0.v {
+    @Override // k0.v
+    public long a(a2.k1 textLayoutResult, long j17, int i17, boolean z17, a2.m1 m1Var) {
+        kotlin.jvm.internal.o.g(textLayoutResult, "textLayoutResult");
+        if (a2.m1.b(j17)) {
+            return k0.w.a((int) (j17 >> 32), r26.n0.H(textLayoutResult.f765a.f754a), z17, m1Var != null ? a2.m1.g(m1Var.f783a) : false);
+        }
+        return j17;
+    }
+}

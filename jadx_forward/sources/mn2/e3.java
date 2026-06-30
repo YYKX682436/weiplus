@@ -1,0 +1,29 @@
+package mn2;
+
+/* loaded from: classes15.dex */
+public final class e3 extends p3321xbce91901.jvm.p3324x21ffc6bd.q implements yz5.a {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ mn2.g3 f411480d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public e3(mn2.g3 g3Var) {
+        super(0);
+        this.f411480d = g3Var;
+    }
+
+    @Override // yz5.a
+    /* renamed from: invoke */
+    public java.lang.Object mo152xb9724478() {
+        yo0.a aVar = new yo0.a();
+        aVar.f545593c = new mn2.l0();
+        aVar.f545594d = new mn2.b1();
+        aVar.f545595e = new ap0.a();
+        aVar.f545592b = new mn2.z(mn2.k4.f411569e);
+        aVar.b((yo0.i) ((jz5.n) this.f411480d.F).mo141623x754a37bb());
+        dp0.e eVar = new dp0.e(true, 0.1f);
+        eVar.f323649c = dp0.c.f323644e;
+        aVar.a(eVar);
+        return new yo0.b(aVar);
+    }
+}

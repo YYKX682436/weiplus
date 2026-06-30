@@ -1,0 +1,9 @@
+package r45;
+
+/* loaded from: classes2.dex */
+public class qb4 extends com.tencent.mm.protobuf.e {
+    public qb4() {
+        super(com.tencent.mm.protobuf.i.u(1, com.tencent.tmassistantsdk.storage.table.ClientInfoTable.Columns.CLIENTID), com.tencent.mm.protobuf.i.i(2, "tryCount"), com.tencent.mm.protobuf.i.i(3, "uploadState"), com.tencent.mm.protobuf.i.s(4, "uploadMediaList", r45.mb4.class), com.tencent.mm.protobuf.i.i(5, "postProgress"), com.tencent.mm.protobuf.i.i(6, "postStage"), com.tencent.mm.protobuf.i.n(7, "postStartTime"), com.tencent.mm.protobuf.i.n(8, "totalCost"), com.tencent.mm.protobuf.i.n(9, "processCost"), com.tencent.mm.protobuf.i.n(10, "uploadCost"), com.tencent.mm.protobuf.i.n(11, "doSceneCost"), com.tencent.mm.protobuf.i.s(12, "atContactList", r45.gb4.class), com.tencent.mm.protobuf.i.r(13, "remotePostParams", r45.qo5.class), com.tencent.mm.protobuf.i.i(14, "waitType"), com.tencent.mm.protobuf.i.u(15, "vstId"), com.tencent.mm.protobuf.i.c(16, "isClubAuthor"), com.tencent.mm.protobuf.i.i(17, "postCgiEndTime"), com.tencent.mm.protobuf.i.n(18, "lastConfirmCgiTimeMs"), com.tencent.mm.protobuf.i.r(19, "postRefFeedInfo", r45.kc4.class), com.tencent.mm.protobuf.i.u(20, "memberProviderUsername"), com.tencent.mm.protobuf.i.u(21, "qaSelfFinderUsername"), com.tencent.mm.protobuf.i.u(22, "mjPublisherVideoChecksum"), com.tencent.mm.protobuf.i.i(23, "tag_type"), com.tencent.mm.protobuf.i.u(24, "tag_sec_key"), com.tencent.mm.protobuf.i.r(25, "newlife_info", r45.zp2.class), com.tencent.mm.protobuf.i.a(26, "finder_secret_data"), com.tencent.mm.protobuf.i.c(27, "hasShowFailedRedDot"), com.tencent.mm.protobuf.i.a(28, "clipbundle_timeline"), com.tencent.mm.protobuf.i.a(29, "clipbundle_json"), com.tencent.mm.protobuf.i.r(30, "attach_ext_info", r45.ip2.class), com.tencent.mm.protobuf.i.c(31, "has_show_origin_tips"), com.tencent.mm.protobuf.i.r(32, "createTemplateInfo", r45.ab4.class));
+        this.__printBytes = true;
+    }
+}

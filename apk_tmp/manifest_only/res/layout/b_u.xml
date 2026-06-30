@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rya" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/azm" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/hhj" android:paddingLeft="@dimen/c9" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/b1">
+                <ImageView android:id="@id/a_4" android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:src="@drawable/bhm" android:layout_marginVertical="@dimen/c9" />
+                <include android:layout_width="@dimen/df" android:layout_height="@dimen/df" android:layout_marginTop="@dimen/c9" android:layout_marginBottom="@dimen/c9" android:layout_marginVertical="@dimen/c9" layout="@layout/dtv" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/c9" android:paddingBottom="@dimen/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cn" android:layout_weight="1.0">
+                    <com.tencent.mm.plugin.finder.view.FinderMentionTitleView android:orientation="vertical" android:id="@id/rx5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/c9" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" />
+                    <TextView android:textSize="15.0dp" android:ellipsize="end" android:id="@id/jt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c9" android:layout_marginTop="@dimen/bn" android:singleLine="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@id/rx5" style="@style/r7" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.tencent.mm.ui.widget.imageview.WeImageView android:id="@id/rx4" android:visibility="gone" android:layout_width="@dimen/cn" android:layout_height="@dimen/cn" android:layout_marginTop="@dimen/d9" android:src="@raw/icons_outlined_bellring_off" app:fs="@color/FG_2" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:layout_marginBottom="@dimen/c9">
+                    <com.tencent.mm.ui.widget.RoundCornerImageView android:id="@id/o78" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/bn" android:layout_marginRight="@dimen/c9" android:scaleType="centerCrop" app:roundHeight="1.0dp" app:roundWidth="1.0dp" />
+                    <TextView android:textSize="@dimen/ja" android:gravity="center" android:id="@id/o48" android:visibility="gone" android:layout_width="@dimen/dn" android:layout_height="@dimen/dn" android:layout_marginLeft="@dimen/cn" android:layout_marginTop="@dimen/bl" android:layout_marginRight="@dimen/c9" />
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dr" android:src="@drawable/afv" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dtu" />
+</LinearLayout>
