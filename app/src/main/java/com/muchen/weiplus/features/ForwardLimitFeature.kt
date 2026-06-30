@@ -14,72 +14,60 @@ class ForwardLimitFeature : BaseFeature() {
     override val name = "\u89e3\u9664\u8f6c\u53d1\u9650\u5236"
 
     private lateinit var module: XposedModule
-    private val hookedClasses = HashSet<String>()
 
     override fun onEnable(module: XposedModule, classLoader: ClassLoader) {
         this.module = module
 
-        // Observe + boolean auto-intercept forwarding-related classes
-        observeBools(classLoader, "com.tencent.mm.ui.contact.SelectContactUI")
-        observeBools(classLoader, "com.tencent.mm.feature.forward.ui.ForwardMsgPreviewUI")
-        observeBools(classLoader, "com.tencent.mm.pluginsdk.ui.MultiSelectContactView")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.ChattingUI")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.e")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.d")
-        observeBools(classLoader, "com.tencent.mm.ui.chatting.f")
+        // Strategy 1: Hook onCreateContextMenu to find menu builder class
+        hookContextMenu(classLoader)
 
-        // Intercept Intent extras for max select count
-        hookIntentBroadcast(classLoader)
+        // Strategy 2: Hook Intent.putExtra(int) to find the max select key
+        hookIntentPutExtra(classLoader)
 
-        // Activity scanner for forwarding activities
+        // Strategy 3: Activity scanner (keep from v6)
         hookActivityCreate(classLoader)
 
-        module.log(Log.INFO, TAG, "v6: bool interceptor only, NO int intercept, 7 classes")
+        module.log(Log.INFO, TAG, "v7: context menu + Intent discovery, no auto-intercept")
     }
 
-    private fun observeBools(classLoader: ClassLoader, clsName: String) {
+    private fun hookContextMenu(classLoader: ClassLoader) {
         try {
-            val clz = classLoader.loadClass(clsName)
-            var boolCount = 0
-            for (m in clz.declaredMethods) {
-                if (m.returnType != Boolean::class.javaPrimitiveType) continue
-                module.hook(m).intercept { chain ->
-                    val result = chain.proceed()
-                    if (FeatureConfig.forwardLimit && result as? Boolean == false) {
-                        module.log(Log.INFO, TAG, "BOOL " + clsName.substringAfterLast('.') + "." + m.name + "() F\u2192T")
-                        return@intercept true
-                    }
-                    result
+            val clz = classLoader.loadClass("com.tencent.mm.ui.chatting.ChattingUI")
+            val m = clz.getDeclaredMethod("onCreateContextMenu",
+                classLoader.loadClass("android.view.ContextMenu"),
+                classLoader.loadClass("android.view.View"),
+                classLoader.loadClass("android.view.ContextMenu\$ContextMenuInfo"))
+            module.hook(m).intercept { chain ->
+                if (FeatureConfig.forwardLimit) {
+                    val view = chain.args[1]
+                    val info = chain.args[2]
+                    module.log(Log.INFO, TAG, "CONTEXT_MENU ChattingUI view=" + (view?.javaClass?.simpleName ?: "null") + " info=" + (info?.javaClass?.simpleName ?: "null"))
                 }
-                boolCount++
+                chain.proceed()
             }
-            if (boolCount > 0)
-                module.log(Log.INFO, TAG, "  " + clsName.substringAfterLast('.') + " [" + clz.declaredMethods.size + "m, " + boolCount + "bool]")
-            else
-                module.log(Log.WARN, TAG, "  " + clsName.substringAfterLast('.') + " [" + clz.declaredMethods.size + "m, 0bool]")
+            module.log(Log.INFO, TAG, "  ChattingUI.onCreateContextMenu Hook OK")
         } catch (e: Throwable) {
-            module.log(Log.WARN, TAG, "  " + clsName.substringAfterLast('.') + " NOT FOUND: " + (e.message ?: ""))
+            module.log(Log.WARN, TAG, "  ChattingUI.onCreateContextMenu: " + (e.message ?: ""))
         }
     }
 
-    private fun hookIntentBroadcast(classLoader: ClassLoader) {
+    private fun hookIntentPutExtra(classLoader: ClassLoader) {
         try {
             val intentClass = classLoader.loadClass("android.content.Intent")
-            val getIntExtra = intentClass.getDeclaredMethod(
-                "getIntExtra", String::class.java, Int::class.javaPrimitiveType!!
-            )
-            module.hook(getIntExtra).intercept { chain ->
-                val key = chain.args[0] as? String ?: ""
-                val result = chain.proceed() as Int
-                if (FeatureConfig.forwardLimit && (key.contains("MAX_SELECT") || key.contains("max_select") || key.contains("maxSelect")) && result in 1..100) {
-                    module.log(Log.INFO, TAG, "Intent.getIntExtra($key): $result \u2192 9999")
-                    return@intercept 9999
+            val putExtraInt = intentClass.getDeclaredMethod("putExtra", String::class.java, Int::class.javaPrimitiveType!!)
+            module.hook(putExtraInt).intercept { chain ->
+                if (FeatureConfig.forwardLimit) {
+                    val key = chain.args[0] as? String ?: ""
+                    val value = (chain.args[1] as? Int) ?: 0
+                    if (value in 1..1000) {
+                        module.log(Log.INFO, TAG, "Intent.putExtra($key, $value)")
+                    }
                 }
-                result
+                chain.proceed()
             }
-            module.log(Log.INFO, TAG, "  Intent.getIntExtra Hook OK")
+            module.log(Log.INFO, TAG, "  Intent.putExtra(int) Hook OK")
         } catch (e: Throwable) {
-            module.log(Log.ERROR, TAG, "  Intent.getIntExtra FAIL: " + (e.message ?: ""))
+            module.log(Log.ERROR, TAG, "  Intent.putExtra FAIL: " + (e.message ?: ""))
         }
     }
 
@@ -92,12 +80,26 @@ class ForwardLimitFeature : BaseFeature() {
                 val activity = chain.thisObject as? Activity ?: return@intercept null
                 val clsName = activity.javaClass.name
                 val lower = clsName.lowercase()
-                if ((lower.contains("forward") || lower.contains("transmit") ||
-                     lower.contains("selectcontact") || lower.contains("selectconv") ||
-                     lower.contains("multiselect") || lower.contains("sharehistory") ||
-                     lower.contains("msgrecord")) && hookedClasses.add(clsName)) {
+                if (lower.contains("forward") || lower.contains("transmit") ||
+                    lower.contains("selectcontact") || lower.contains("selectconv") ||
+                    lower.contains("multiselect") || lower.contains("sharehistory") ||
+                    lower.contains("msgrecord")) {
                     module.log(Log.INFO, TAG, "ACTIVITY: $clsName")
-                    try { observeBools(classLoader, clsName) } catch (_: Throwable) {}
+                    // Log the intent extras
+                    try {
+                        val intent = activity.intent
+                        if (intent != null) {
+                            val extras = intent.extras
+                            if (extras != null) {
+                                for (key in extras.keySet()) {
+                                    val v = extras.get(key)
+                                    if (v is Number || v is String) {
+                                        module.log(Log.INFO, TAG, "  EXTRA: $key = $v")
+                                    }
+                                }
+                            }
+                        }
+                    } catch (_: Throwable) {}
                 }
                 null
             }
